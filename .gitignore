@@ -1,0 +1,14 @@
+log/
+obj/
+_site/
+.optemp/
+_themes*/
+_repo.*/
+
+tex2pdf.*/
+
+.openpublishing.buildcore.ps1
+
+*.orig
+.vs/
+.DS_Store

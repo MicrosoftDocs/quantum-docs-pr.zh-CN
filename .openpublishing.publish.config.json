@@ -1,0 +1,101 @@
+{
+  "docsets_to_publish": [
+    {
+      "docset_name": "quamtum-api",
+      "build_source_folder": "api",
+      "build_output_subfolder": "quamtum-api",
+      "locale": "zh-CN",
+      "monikers": [],
+      "moniker_ranges": [],
+      "xref_query_tags": [
+        "/quantum"
+      ],
+      "enable_xrefmap_share": true,
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "QSharpNamespace": "Content",
+        "QSharpType": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
+        ]
+      },
+      "JoinTOCPlugin": [
+        {
+          "ReferenceTOC": "api/TOC.yml",
+          "ConceptualTOC": "articles/TOC.yml",
+          "ReferenceTOCUrl": "/qsharp/api/toc.json",
+          "ConceptualTOCUrl": "/quantum/toc.json"
+        }
+      ]
+    },
+    {
+      "docset_name": "quantum-docs",
+      "build_source_folder": "articles",
+      "build_output_subfolder": "quantum-docs",
+      "locale": "zh-CN",
+      "monikers": [],
+      "moniker_ranges": [],
+      "xref_query_tags": [
+        "/qsharp",
+        "/dotnet"
+      ],
+      "enable_xrefmap_share": true,
+      "open_to_public_contributors": false,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "Odata": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
+    }
+  ],
+  "notification_subscribers": [],
+  "sync_notification_subscribers": [],
+  "branches_to_filter": [
+    "live-sxs",
+    "master-sxs"
+  ],
+  "continue_with_document_error": true,
+  "skip_source_output_uploading": false,
+  "need_preview_pull_request": true,
+  "contribution_branch_mappings": {},
+  "dependent_repositories": [
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft.zh-CN",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "_repo.en-us",
+      "url": "https://github.com/MicrosoftDocs/quantum-docs-pr",
+      "branch": "live",
+      "branch_mapping": {
+        "live": "live",
+        "master": "master"
+      }
+    }
+  ],
+  "branch_target_mapping": {},
+  "need_generate_pdf_url_template": false,
+  "targets": {
+    "Pdf": {
+      "template_folder": "_themes.pdf"
+    }
+  },
+  "dependent_packages": [
+    {
+      "id": "Microsoft.OpenPublishing.CommonPlugins",
+      "nuget_feed": "https://www.myget.org/F/op/api/v2",
+      "path_to_root": "_dependentPackages/CommonPlugins",
+      "target_framework": "net45",
+      "version": "latest"
+    }
+  ]
+}
