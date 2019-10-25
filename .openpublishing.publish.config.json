@@ -4,7 +4,7 @@
       "docset_name": "quamtum-api",
       "build_source_folder": "api",
       "build_output_subfolder": "quamtum-api",
-      "locale": "zh-CN",
+      "locale": "zh-cn",
       "monikers": [],
       "moniker_ranges": [],
       "xref_query_tags": [
@@ -37,7 +37,7 @@
       "docset_name": "quantum-docs",
       "build_source_folder": "articles",
       "build_output_subfolder": "quantum-docs",
-      "locale": "zh-CN",
+      "locale": "zh-cn",
       "monikers": [],
       "moniker_ranges": [],
       "xref_query_tags": [
@@ -58,8 +58,9 @@
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
-    "live-sxs",
-    "master-sxs"
+    "live",
+    "master-sxs",
+    "master"
   ],
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
@@ -68,7 +69,7 @@
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.zh-CN",
+      "url": "https://github.com/Microsoft/templates.docs.msft.zh-cn",
       "branch": "master",
       "branch_mapping": {}
     },
