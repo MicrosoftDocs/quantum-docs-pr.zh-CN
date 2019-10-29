@@ -46,6 +46,9 @@
       "ms.devlang": "qsharp",
       "ms.topic": "conceptual",
       "searchScope": ["quantum", "q#", "qsharp"],
+      "feedback_system": "GitHub",
+      "feedback_github_repo": "MicrosoftDocs/quantum-docs-pr.zh-cn",
+      "feedback_product_url": "https://github.com/Microsoft/quantum/issues",
       "titleSuffix": "Microsoft Quantum"
     },
     "fileMetadata": {
