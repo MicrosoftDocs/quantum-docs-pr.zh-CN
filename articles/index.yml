@@ -1,0 +1,99 @@
+### YamlMime:Landing
+title: Microsoft Quantum 文档
+summary: 了解如何使用 Microsoft Quantum 开发工具包和量子算法语言 Q#。 了解关键概念并编写你的第一个量子程序。
+metadata:
+  title: Microsoft Quantum 文档 - Q# API 参考
+  description: 了解如何使用 Microsoft Quantum 开发工具包和量子算法语言 Q#。 了解关键概念并编写你的第一个量子程序。
+  ms.prod: quantum
+  ms.topic: landing-page
+  ms.collection: collection
+  author: cjgronlund
+  ms.author: cgronlun
+  ms.date: 09/30/2019
+  ms.openlocfilehash: 692456cb6b117b206d202b01967202b7ac89e59d
+  ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+  ms.translationtype: HT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/30/2019
+  ms.locfileid: "73065055"
+landingContent:
+- title: Microsoft Quantum 入门
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 欢迎使用 Microsoft Quantum 开发人员工具包
+      url: welcome.md
+  - linkListType: get-started
+    links:
+    - text: 安装 QDK
+      url: install-guide/index.md
+    - text: 更新 QDK
+      url: install-guide/update.md
+  - linkListType: quickstart
+    links:
+    - text: 编写第一个量子程序
+      url: quickstart.md
+- title: 学习量子计算
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: 什么是量子计算？
+      url: concepts/index.md
+    - text: 向量和矩阵
+      url: concepts/vectors-and-matrices.md
+    - text: 高级矩阵概念
+      url: concepts/advanced-matrices.md
+    - text: 量子位
+      url: concepts/the-qubit.md
+    - text: 软件堆栈
+      url: concepts/software-stack.md
+- title: 量子开发技术
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 什么是 Q#？
+      url: techniques/file-structure.md
+    - text: 运算和函数
+      url: techniques/operations-and-functions.md
+    - text: 局部变量
+      url: techniques/local-variables.md
+    - text: 使用量子位
+      url: techniques/working-with-qubits.md
+    - text: 组合量子：隐形传送
+      url: techniques/putting-it-all-together.md
+- title: 管理计算机和驱动程序
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: 经典驱动程序和计算机
+      url: machines/index.md
+    - text: QDK 完全状态模拟器
+      url: machines/full-state-simulator.md
+    - text: 资源估算器
+      url: machines/resources-estimator.md
+    - text: 量子跟踪模拟器
+      url: machines/qc-trace-simulator/index.md
+    - text: QDK Toffoli 模拟器
+      url: machines/toffoli-simulator.md
+- title: Q# 语言和库
+  linkLists:
+  - linkListType: concept
+    links:
+    - text: Q# 语言介绍
+      url: language/index.md
+    - text: 发行说明
+      url: relnotes/index.md
+  - linkListType: reference
+    links:
+    - text: 标准库
+      url: libraries/standard/index.md
+    - text: 化学库
+      url: libraries/chemistry/index.md
+    - text: 数字库
+      url: libraries/numerics/index.md
+  - linkListType: reference
+    links:
+    - text: Q# 参考
+      url: https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.bitwise?view=qsharp-preview
+    - text: C# 组件
+      url: https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators?view=quantum-dotnet-latest
