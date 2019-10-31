@@ -1,0 +1,22 @@
+- name: OSS 许可
+  href: licensing.md
+- name: prelude
+  href: prelude.md
+- name: 经典数学
+  href: math.md
+- name: 类型转换
+  href: convert.md
+- name: 高阶控制流
+  href: control-flow.md
+- name: 数据结构和建模
+  href: data-structures.md
+- name: 量子算法
+  href: algorithms.md
+- name: 诊断
+  href: diagnostics.md
+- name: 表征
+  href: characterization.md
+- name: 错误更正
+  href: error-correction.md
+- name: 应用程序
+  href: applications.md
