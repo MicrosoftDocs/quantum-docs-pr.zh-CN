@@ -1,0 +1,41 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.m
+name: M
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: >-
+  对 Pauli $Z $ basis 中的单个 qubit 进行度量。
+
+
+  此输出结果由分发 \begin{align} \Pr （\texttt{Zero} | \ket{\psi}） = \braket{\psi | 0} \braket{0 | \psi}. 提供
+
+  \end{align}
+remarks: >-
+  等效于：
+
+
+  ```qsharp
+
+  Measure([PauliZ], [qubit]);
+
+  ```
+syntax: 'operation M (qubit : Qubit) : Result'
+input:
+  content: '(qubit : Qubit)'
+  types:
+  - name: qubit
+    summary: 要测量的 Qubit。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Result
+  types:
+  - summary: 如果观察到 $ + $1 eigenvalue，则 `Zero` `One` 是否观察到 $-$1 eigenvalue。
+    isPrimitive: true
+    uid: Result
+ms.openlocfilehash: 842035790ecd03df97f9ad583b049121681b4f2b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73234132"

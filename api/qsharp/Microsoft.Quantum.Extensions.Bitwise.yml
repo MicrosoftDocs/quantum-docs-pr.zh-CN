@@ -1,0 +1,45 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.extensions.bitwise
+name: Microsoft 量子。
+functions:
+- uid: microsoft.quantum.extensions.bitwise.and
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.bitwise.and"。
+- uid: microsoft.quantum.extensions.bitwise.not
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.bitwise.not"。
+- uid: microsoft.quantum.extensions.bitwise.or
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.bitwise.or"。
+- uid: microsoft.quantum.extensions.bitwise.parity
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.bitwise.parity"。
+- uid: microsoft.quantum.extensions.bitwise.xbits
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.bitwise.xbits"。
+- uid: microsoft.quantum.extensions.bitwise.xor
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.bitwise.xor"。
+- uid: microsoft.quantum.extensions.bitwise.zbits
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.bitwise.zbits"。
+ms.openlocfilehash: ac63e91ec3fefe0002f14b1542eaa97456bd33aa
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73056755"

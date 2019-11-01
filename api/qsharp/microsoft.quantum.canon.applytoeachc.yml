@@ -1,0 +1,60 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applytoeachc
+name: ApplyToEachC
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  对寄存器中的每个元素应用 qubit 操作。
+
+  修饰符 `C` 指示 qubit 操作可控制。
+examples: >-
+  准备 qubit $ \ket{+} $ 状态：
+
+
+  ```qsharp
+
+  using (register = Qubit[3]) {
+      ApplyToEach(H, register);
+  }
+
+  ```
+syntax: "operation ApplyToEachC (singleElementOperation : ('T => Unit is Ctl), register : 'T[]) : Unit"
+input:
+  content: "(singleElementOperation : ('T => Unit is Ctl), register : 'T[])"
+  types:
+  - name: singleElementOperation
+    summary: 要应用到每个 qubit 的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: register
+    summary: 要在其上应用给定操作的 qubits 数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 操作的目标。
+functors:
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applytoeach
+ms.openlocfilehash: ba49e50f643f061b3f1257e66f9ebb4c686ee1ba
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73210467"

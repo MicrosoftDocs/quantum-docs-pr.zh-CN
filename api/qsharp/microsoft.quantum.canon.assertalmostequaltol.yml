@@ -1,0 +1,36 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.assertalmostequaltol
+name: AssertAlmostEqualTol
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请改用 @"Microsoft.Quantum.Diagnostics.EqualityWithinToleranceFact"。
+syntax: 'function AssertAlmostEqualTol (actual : Double, expected : Double, tolerance : Double) : Unit'
+input:
+  content: '(actual : Double, expected : Double, tolerance : Double)'
+  types:
+  - name: actual
+    isPrimitive: true
+    uid: Double
+  - name: expected
+    isPrimitive: true
+    uid: Double
+  - name: tolerance
+    isPrimitive: true
+    uid: Double
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 238b23cbfa41c294702a46b3570a453f68c215da
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73212474"

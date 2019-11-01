@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.addi
+name: AddI
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 根据 `ys`的寄存器大小，自动选择 "执行" 和 "无"。
+syntax: 'operation AddI (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
+input:
+  content: '(xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: xs
+    summary: $n $ 加数。
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: ys
+    summary: 至少 $n $ qubits 的加数。 将保存结果。
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: b32c32c9275d5b0132c2e1d5c2de174d74e53432
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215364"

@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.min
+name: Min
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 给定整数数组，返回最小元素。
+syntax: 'function Min (value : Int[]) : Int'
+input:
+  content: '(value : Int[])'
+  types:
+  - name: value
+    isArray: true
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - summary: '`values`的最小元素。'
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: c38922857fc7530f9ef7b413f75498713bb4d89a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73234863"

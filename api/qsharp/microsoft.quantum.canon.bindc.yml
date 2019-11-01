@@ -1,0 +1,49 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.bindc
+name: BindC
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.canon.boundc"。
+syntax: "function BindC (operations : ('T => Unit is Ctl)[]) : ('T => Unit is Ctl)"
+input:
+  content: （操作：（t = > 单位为 Ctl） []）
+  types:
+  - name: 操作
+    isArray: true
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+output:
+  content: （不等于 > 单位为 Ctl）
+  types:
+  - isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+ms.openlocfilehash: 2245c54209b987b812d57af5cdc13de1aa7e02d0
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73068336"
