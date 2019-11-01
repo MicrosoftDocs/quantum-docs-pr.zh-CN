@@ -1,0 +1,36 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.ampampphasesfixedpoint
+name: AmpAmpPhasesFixedPoint
+type: function
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: 计算固定点幅度放大的部分反射阶段。
+syntax: 'function AmpAmpPhasesFixedPoint (nQueries : Int, successMin : Double) : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases'
+references: >-
+  我们使用 "使用最佳查询数进行定点的固定点放大" 中的阶段
+
+
+  - [YoderLowChuang2014](https://arxiv.org/abs/1409.3305)另请参阅 "复合量程入口方法"
+
+  - `RotationPhases` 格式的阶段的[LowYoderChuang2016](https://arxiv.org/abs/1603.03996) 。
+input:
+  content: '(nQueries : Int, successMin : Double)'
+  types:
+  - name: nQueries
+    summary: Oracle 状态准备的查询数。 必须是奇整数。
+    isPrimitive: true
+    uid: Int
+  - name: successMin
+    summary: 最小成功概率。
+    isPrimitive: true
+    uid: Double
+output:
+  content: Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases
+  types:
+  - summary: 可在定点波幅放大量程算法实现中使用的阶段数组。
+    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+ms.openlocfilehash: 0dc2c9b18998bac65cd746b5c4065a09a990ef13
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215687"

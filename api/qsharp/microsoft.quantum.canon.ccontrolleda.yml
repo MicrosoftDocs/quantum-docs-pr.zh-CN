@@ -1,0 +1,54 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.ccontrolleda
+name: CControlledA
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果 `false`，则不会执行任何操作。
+
+  修饰符 `A` 指示操作为 adjointable。
+syntax: "function CControlledA (op : ('T => Unit is Adj)) : ((Bool, 'T) => Unit is Adj)"
+input:
+  content: （op：（= = > 单位为形容词））
+  types:
+  - name: 基金
+    summary: 要有条件地应用的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+output:
+  content: （（Bool，t） = > 单位为形容词）
+  types:
+  - summary: 如果经典控制位为 true，则为 op 的新操作。
+    isOperation: true
+    input:
+      types:
+      - isPrimitive: true
+        uid: Bool
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+typeParameters:
+- uid: "'T"
+  summary: 要有条件地应用的操作的输入类型。
+seeAlso:
+- microsoft.quantum.canon.ccontrolled
+ms.openlocfilehash: e02446273f93b51a228679d3eb75bf16a2526e8a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73068098"

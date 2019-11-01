@@ -1,0 +1,25 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.convert.boolasstring
+name: BoolAsString
+type: function
+namespace: Microsoft.Quantum.Convert
+summary: 将给定的布尔值转换为等效的字符串表示形式。
+remarks: 有关更多详细信息，请参阅[ C# Convert。](https://docs.microsoft.com/dotnet/api/system.convert.tostring?view=netframework-4.7.1#System_Convert_ToString_System_Boolean_)
+syntax: 'function BoolAsString (a : Bool) : String'
+input:
+  content: '(a : Bool)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Bool
+output:
+  content: String
+  types:
+  - isPrimitive: true
+    uid: String
+ms.openlocfilehash: edcc398ab30909ed7965fbb484ebd4f6917a9053
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73232347"

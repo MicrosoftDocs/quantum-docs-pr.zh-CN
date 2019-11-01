@@ -1,0 +1,14 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.littleendian
+name: LittleEndian
+type: newtype
+namespace: Microsoft.Quantum.Arithmetic
+summary: 注册以小字节序顺序编码无符号整数。 带有索引 `0` 的 qubit 对无符号整数的最低位进行编码。
+remarks: 我们将在文档中将 `LittleEndian` 缩写为 `LE`。
+syntax: newtype LittleEndian = Qubit[];
+ms.openlocfilehash: 6431500dfe67b46cab590f0fc31953d9fb80f9af
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218815"

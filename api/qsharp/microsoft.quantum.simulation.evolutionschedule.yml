@@ -1,0 +1,17 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.evolutionschedule
+name: EvolutionSchedule
+type: newtype
+namespace: Microsoft.Quantum.Simulation
+summary: >-
+  表示依赖时间的 dynamical 生成器。
+
+
+  `Double` 参数是 $ [0，1] $ 中的一个计划。
+syntax: newtype EvolutionSchedule = (Microsoft.Quantum.Simulation.EvolutionSet, (Double -> Microsoft.Quantum.Simulation.GeneratorSystem));
+ms.openlocfilehash: 44cbb1c42fa60219ed3125a41752cd8867d1a764
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211097"

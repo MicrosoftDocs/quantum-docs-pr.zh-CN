@@ -1,0 +1,41 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.noop
+name: NoOp
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  对参数执行标识操作（无操作）。
+
+
+  此操作采用任何类型的值，但不执行任何操作。
+
+  这在需要输入操作类型时非常有用，但不应采取任何措施。
+
+  例如，如果特定错误更正症状指示未发生错误，则 `NoOp<Qubit[]>` 可能是正确的恢复过程。
+
+  同样，如果某个操作需要状态准备过程作为输入，可以使用 `NoOp<Qubit[]>` 来准备状态 $ \ket{0 \cdots 0} $。
+remarks: 几乎在所有情况下，都需要显式指定 `NoOp` 的 type 参数。 例如，`NoOp<Qubit>` 与 <xref:microsoft.quantum.intrinsic.i>相同。
+syntax: "operation NoOp (input : 'T) : Unit"
+input:
+  content: "(input : 'T)"
+  types:
+  - name: input
+    summary: 要忽略的值。
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.intrinsic.i
+ms.openlocfilehash: 8752eb93c1fba59065518ffd4665ea6f110ce1cc
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73222674"

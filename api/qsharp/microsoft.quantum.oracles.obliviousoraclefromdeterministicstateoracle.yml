@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.oracles.obliviousoraclefromdeterministicstateoracle
+name: ObliviousOracleFromDeterministicStateOracle
+type: function
+namespace: Microsoft.Quantum.Oracles
+summary: 将 oracles `DeterministicStateOracle` 和 `ObliviousOracle`组合在一起。
+syntax: 'function ObliviousOracleFromDeterministicStateOracle (ancillaOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle) : Microsoft.Quantum.Oracles.ObliviousOracle'
+input:
+  content: '(ancillaOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle)'
+  types:
+  - name: ancillaOracle
+    summary: 一种状态，它准备 `DeterministicStateOracle` 操作 $a $ 的类型为的 oracle $A $。
+    uid: microsoft.quantum.oracles.deterministicstateoracle
+  - name: signalOracle
+    summary: 类型为的 oracle $U $ `ObliviousOracle` 联合 $a，s $。
+    uid: microsoft.quantum.oracles.obliviousoracle
+output:
+  content: Microsoft.Quantum.Oracles.ObliviousOracle
+  types:
+  - summary: Oracle $O = UA $ of `ObliviousOracle`类型。
+    uid: microsoft.quantum.oracles.obliviousoracle
+seeAlso:
+- microsoft.quantum.canon.deterministicstateoracle
+- microsoft.quantum.canon.obliviousoracle
+ms.openlocfilehash: 2fc80a583ef8990b0a9043e4847d926f37b48b77
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231004"

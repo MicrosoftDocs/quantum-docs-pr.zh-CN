@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.convert.pauliarraytoint
+name: PauliArrayToInt
+type: function
+namespace: Microsoft.Quantum.Extensions.Convert
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.convert.pauliarrayasint"。
+syntax: 'function PauliArrayToInt (paulis : Pauli[]) : Int'
+input:
+  content: '(paulis : Pauli[])'
+  types:
+  - name: paulis
+    isArray: true
+    isPrimitive: true
+    uid: Pauli
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 7bc968152b077ee8bd97e0743c70f148a2d49c31
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73234268"

@@ -1,0 +1,80 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.oracles
+name: Microsoft.Quantum.Oracles
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间提供了用户定义的类型，以通过其在量程估算和振幅放大等量程算法中的用途来装饰各种类型的 oracles。"
+functions:
+- uid: microsoft.quantum.oracles.deterministicstateoraclefromstateoracle
+  summary: 将 `StateOracle` 类型的 oracle 转换为 `DeterministicStateOracle`。
+- uid: microsoft.quantum.oracles.obliviousoraclefromdeterministicstateoracle
+  summary: 将 oracles `DeterministicStateOracle` 和 `ObliviousOracle`组合在一起。
+- uid: microsoft.quantum.oracles.oracletodiscrete
+  summary: 给定一个表示 "黑盒" oracle 的操作，将返回一个独立的 oracle，它表示重复多次的 "黑箱" oracle。
+- uid: microsoft.quantum.oracles.reflectionoraclefromdeterministicstateoracle
+  summary: >-
+    从 oracle 构造有关给定状态的反射。
+
+
+    给定 oracle $O $ 类型 <xref:microsoft.quantum.oracles.deterministicstateoracle>时，此函数的结果是围绕状态 $ \ket{\psi} $ 反射的，其中 $O \ket{0} = \ket{\psi} $。
+- uid: microsoft.quantum.oracles.stateoraclefromdeterministicstateoracle
+  summary: 将 `DeterministicStateOracle` 类型的 oracle 转换为 `StateOracle`。
+newtypes:
+- uid: microsoft.quantum.oracles.continuousoracle
+  summary: >-
+    表示连续 oracle。
+
+
+    这是一种 oracle，它实现 $U （\delta t）： \ket{\psi （t）} \mapsto \ket{\psi （t + \delta t）} $ $t $，其中 $U $ 是一个固定操作，其中 $ \delta t $ 是非负数实数。
+- uid: microsoft.quantum.oracles.deterministicstateoracle
+  summary: >-
+    表示 oracle for 确定性状态准备。
+
+
+    Oracle $O $ 的输入为：
+
+
+    - 将存储所需量程状态 $ \ket{\psi} 的寄存器\_s $。
+- uid: microsoft.quantum.oracles.discreteoracle
+  summary: >-
+    表示离散 oracle。
+
+
+    这是一种 oracle，它实现 $U ^ m $ $U $ 的固定操作和非负 $m 整数。
+- uid: microsoft.quantum.oracles.obliviousoracle
+  summary: >-
+    表示 oracle for 在意波幅放大。
+
+
+    Oracle $O $ 的输入为：
+
+
+    - Ancilla 注册了 $O $ $a $ 的操作。
+
+    - 系统注册 $s $，需要应用所需的单一 $U $，并在 register $a $ $ 上的 $ \ket{t}\_$。
+- uid: microsoft.quantum.oracles.reflectionoracle
+  summary: >-
+    表示 oracle 反射。
+
+
+    反射 oracle $O $，具有输入：
+
+
+    - 用于旋转反射子空间的阶段 $ \phi $。
+
+    - 要对其执行给定反射的 qubit 注册。
+- uid: microsoft.quantum.oracles.stateoracle
+  summary: >-
+    表示 oracle for 状态准备。
+
+
+    Oracle $O $ 的输入为：
+
+
+    - 对标志 qubit $f $ 进行索引的整数。
+
+    - 系统注册 $s $，将存储所需的量程状态 $ \ket{\psi}\_s $。
+ms.openlocfilehash: 10eb2c7acebf805b955816abe2bf1cabb95ce059
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216095"

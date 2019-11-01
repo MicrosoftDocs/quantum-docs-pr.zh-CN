@@ -1,0 +1,36 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.primitive.rz
+name: Vny-rz-j42
+type: operation
+namespace: Microsoft.Quantum.Primitive
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.intrinsic.rz"。
+syntax: 'operation Rz (theta : Double, qubit : Qubit) : Unit'
+input:
+  content: （theta： Double，qubit： Qubit）
+  types:
+  - name: θ
+    isPrimitive: true
+    uid: Double
+  - name: qubit
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: 计价单位
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 2dca6ca927c738d6b3743e20dc116e077aa6a92e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066330"

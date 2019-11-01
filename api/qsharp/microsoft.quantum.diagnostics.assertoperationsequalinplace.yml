@@ -1,0 +1,61 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.assertoperationsequalinplace
+name: AssertOperationsEqualInPlace
+type: operation
+namespace: Microsoft.Quantum.Diagnostics
+summary: >-
+  假设有两个运算，则断言它们对于所有输入状态都是相同的。
+
+
+  此断言是通过以下方式实现的：检查所有状态的操作的操作： $V _0 \otimes ... \otimes V_ {n-1} $，其中 $V _k $ 是状态 $ \ket{0}$，$ \ket{1}$，$ \ket{+} $ 和 $ \ket{i} $ （+ 1 eigenstate of Pauli Y 运算符）。
+
+
+  此断言使用 $n $ qubits，需要对要比较的操作进行多次调用。
+syntax: 'operation AssertOperationsEqualInPlace (nQubits : Int, givenU : (Qubit[] => Unit), expectedU : (Qubit[] => Unit is Adj)) : Unit'
+references: 状态 $ \ket{0}$，$ \ket{1}$，$ \ket{+} $ 和 $ \ket{i} $ 是语-Nielsen 的基础，如[ 中所述。 ](https://arxiv.org/abs/quant-ph/9610001)
+input:
+  content: '(nQubits : Int, givenU : (Qubit[] => Unit), expectedU : (Qubit[] => Unit is Adj))'
+  types:
+  - name: nQubits
+    summary: 操作 `givenU` 和 `expectedU` 操作的 qubits $n $ 的数目。
+    isPrimitive: true
+    uid: Int
+  - name: givenU
+    summary: 要检查 $n $ qubits 上的操作。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: expectedU
+    summary: 要与 `givenU` 进行比较 $n $ qubits 上的引用操作。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+seeAlso:
+- assertoperationsequalreferenced
+ms.openlocfilehash: a6c58f51bbc30f3917457d4137afb083533519fe
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73225751"

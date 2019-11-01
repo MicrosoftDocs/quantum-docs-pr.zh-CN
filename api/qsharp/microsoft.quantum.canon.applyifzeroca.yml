@@ -1,0 +1,59 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applyifzeroca
+name: ApplyIfZeroCA
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  应用在传统结果值为零的条件运算。
+
+
+  给定一个操作 `op` 并且结果值 `result`，如果 `result` `Zero`，则将 `op` 应用于 `target`。 如果 `One`，则 `target`不会执行任何操作。
+
+  后缀 `CA` 指示要应用的操作为单一（可控和 adjointable）。
+syntax: "operation ApplyIfZeroCA (result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T)) : Unit"
+input:
+  content: "(result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T))"
+  types:
+  - name: result
+    summary: 用于控制是否应用 op 的测量结果。
+    isPrimitive: true
+    uid: Result
+  - name: op
+    summary: 要有条件地应用的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+  - name: target
+    summary: 将操作应用到的输入。
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 要有条件地应用的操作的输入类型。
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applyifzeroc
+- microsoft.quantum.canon.applyifzeroa
+- microsoft.quantum.canon.applyifzeroca
+ms.openlocfilehash: 9ec05f688c3895b2d68fc3f4717401e127fbe641
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73213596"

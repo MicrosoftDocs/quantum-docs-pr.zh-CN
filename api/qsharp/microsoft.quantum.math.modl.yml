@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.modl
+name: ModL
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回与另一个数字相关的数字的模数。
+syntax: 'function ModL (a : BigInt, b : BigInt) : BigInt'
+input:
+  content: '(a : BigInt, b : BigInt)'
+  types:
+  - name: a
+    summary: 要返回其模数的输入 $a $。
+    isPrimitive: true
+    uid: BigInt
+  - name: b
+    summary: 要返回其 $a $ 的模数的相对数量。
+    isPrimitive: true
+    uid: BigInt
+output:
+  content: BigInt
+  types:
+  - summary: 取模 $a \bmod b $。
+    isPrimitive: true
+    uid: BigInt
+ms.openlocfilehash: 7431cc366b8c8e592008d2787a58e45d101dd2e6
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233707"

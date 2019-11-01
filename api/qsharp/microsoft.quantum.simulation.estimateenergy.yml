@@ -1,0 +1,69 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.estimateenergy
+name: EstimateEnergy
+type: operation
+namespace: Microsoft.Quantum.Simulation
+summary: 通过对自动分配的输入状态阶段估算应用 `statePrepUnitary` 来执行状态准备，这一点与使用 `phaseEstAlgorithm`的结果状态 `qpeUnitary`相关。
+syntax: 'operation EstimateEnergy (nQubits : Int, statePrepUnitary : (Qubit[] => Unit), qpeUnitary : (Qubit[] => Unit is Adj + Ctl), phaseEstAlgorithm : ((Microsoft.Quantum.Oracles.DiscreteOracle, Qubit[]) => Double)) : Double'
+input:
+  content: '(nQubits : Int, statePrepUnitary : (Qubit[] => Unit), qpeUnitary : (Qubit[] => Unit is Adj + Ctl), phaseEstAlgorithm : ((Microsoft.Quantum.Oracles.DiscreteOracle, Qubit[]) => Double))'
+  types:
+  - name: nQubits
+    summary: 用于执行模拟的 qubits 的数目。
+    isPrimitive: true
+    uid: Int
+  - name: statePrepUnitary
+    summary: Oracle 表示初始 dynamical 生成器的状态准备。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: qpeUnitary
+    summary: Oracle 表示单一操作员 $U $，表示 dynamical 发电机下的时间 $ \ket{\phi} $ 和接地状态能量 $E = \phi\\，\delta t $。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+  - name: phaseEstAlgorithm
+    summary: >-
+      对给定的单一操作执行阶段估计的操作。
+
+      有关更多详细信息，请参阅[迭代阶段估算](/quantum/libraries/characterization#iterative-phase-estimation)。
+    isOperation: true
+    input:
+      types:
+      - uid: microsoft.quantum.oracles.discreteoracle
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Double
+output:
+  content: Double
+  types:
+  - summary: 由 $U $ 表示的生成器的基本状态能量 $ \phi $ 的估计 $ \hat{\phi} $。
+    isPrimitive: true
+    uid: Double
+ms.openlocfilehash: aff8ac5575b6a5e08dc80263a7a8d4bfec59fa12
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73223320"

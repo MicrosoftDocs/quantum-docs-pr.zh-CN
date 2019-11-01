@@ -1,0 +1,49 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.r1
+name: R1
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: >-
+  按给定角度对 $ \ket{1}$ 状态应用旋转。
+
+
+  \begin{align} R_1 （\theta） \mathrel{： =} \operatorname{diag} （1，e ^ {i\theta}）。
+
+  \end{align}
+remarks: >-
+  等效于：
+
+
+  ```qsharp
+
+  R(PauliZ, theta, qubit);
+
+  R(PauliI, -theta, qubit);
+
+  ```
+syntax: 'operation R1 (theta : Double, qubit : Qubit) : Unit'
+input:
+  content: '(theta : Double, qubit : Qubit)'
+  types:
+  - name: theta
+    summary: Qubit 要旋转的角度。
+    isPrimitive: true
+    uid: Double
+  - name: qubit
+    summary: 应将入口应用到的 Qubit。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: ec15deeef7a097927221be19c35917be6aedcdd4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233996"

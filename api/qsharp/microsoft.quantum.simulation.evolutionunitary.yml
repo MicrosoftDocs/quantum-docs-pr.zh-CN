@@ -1,0 +1,17 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.evolutionunitary
+name: EvolutionUnitary
+type: newtype
+namespace: Microsoft.Quantum.Simulation
+summary: >-
+  表示单一的时间演化运算符。
+
+
+  第一个参数是时间演化的持续时间，第二个参数是由单一参数操作的 qubit 寄存器。
+syntax: newtype EvolutionUnitary = ((Double, Qubit[]) => Unit is Adj + Ctl);
+ms.openlocfilehash: 185e621920a7800fd2c78ccbfb7b4ca12d51e8ba
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73067078"

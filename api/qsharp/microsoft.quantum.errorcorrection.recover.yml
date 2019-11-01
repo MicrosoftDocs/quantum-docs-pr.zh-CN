@@ -1,0 +1,34 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.errorcorrection.recover
+name: Recover
+type: operation
+namespace: Microsoft.Quantum.ErrorCorrection
+summary: 按照 `QECC` 类型描述的量程代码执行一轮错误更正。
+syntax: 'operation Recover (code : Microsoft.Quantum.ErrorCorrection.QECC, fn : Microsoft.Quantum.ErrorCorrection.RecoveryFn, logicalRegister : Microsoft.Quantum.ErrorCorrection.LogicalRegister) : Unit'
+input:
+  content: '(code : Microsoft.Quantum.ErrorCorrection.QECC, fn : Microsoft.Quantum.ErrorCorrection.RecoveryFn, logicalRegister : Microsoft.Quantum.ErrorCorrection.LogicalRegister)'
+  types:
+  - name: code
+    summary: 作为 `QECC` 类型打包的量程错误更正代码描述了量程数据的编码和解码，以及如何测量 syndromes 错误。
+    uid: microsoft.quantum.errorcorrection.qecc
+  - name: fn
+    summary: '`RecoveryFn`，它将每个错误症状映射到更正检测到的错误的 `Pauli[]` 操作。'
+    uid: microsoft.quantum.errorcorrection.recoveryfn
+  - name: logicalRegister
+    summary: 定义了稳定程序代码的 qubits 的数组。
+    uid: microsoft.quantum.errorcorrection.logicalregister
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+seeAlso:
+- microsoft.quantum.canon.qecc
+- microsoft.quantum.canon.recoveryfn
+- microsoft.quantum.canon.logicalregister
+ms.openlocfilehash: baaa5862dd189a04667081d762900931e6b5e766
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73220345"

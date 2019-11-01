@@ -1,0 +1,49 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.reversedopleca
+name: ReversedOpLECA
+type: function
+namespace: Microsoft.Quantum.Arithmetic
+summary: 给定一个采用小 endian 输入的操作，将返回采用大字节序输入的新操作。
+syntax: 'function ReversedOpLECA (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj + Ctl)) : (Microsoft.Quantum.Arithmetic.BigEndian => Unit is Adj + Ctl)'
+input:
+  content: '(op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj + Ctl))'
+  types:
+  - name: op
+    summary: 要反转其输入的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: microsoft.quantum.arithmetic.littleendian
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+output:
+  content: (Microsoft.Quantum.Arithmetic.BigEndian => Unit is Adj + Ctl)
+  types:
+  - summary: 接受其输入作为大字节序注册的新操作。
+    isOperation: true
+    input:
+      types:
+      - uid: microsoft.quantum.arithmetic.bigendian
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+seeAlso:
+- applyreversedopleca
+- reversedople
+- reversedoplea
+- reversedoplec
+ms.openlocfilehash: efec02576de7d0d5bce24323c73484f45f544795
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214582"

@@ -1,0 +1,32 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.assertphaselessthan
+name: AssertPhaseLessThan
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 断言 PhaseLittleEndian 中编码的 `number` 小于 `value`。
+remarks: 此操作的受控版本将忽略控件。
+syntax: 'operation AssertPhaseLessThan (value : Int, number : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
+input:
+  content: '(value : Int, number : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
+  types:
+  - name: value
+    summary: '`number` 必须小于此。'
+    isPrimitive: true
+    uid: Int
+  - name: number
+    summary: 与 `value`比较的无符号整数。
+    uid: microsoft.quantum.arithmetic.phaselittleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 391e90783666da5d1549a26f2ad828863aa7dd3b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73221416"

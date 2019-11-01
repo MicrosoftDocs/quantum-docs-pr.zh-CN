@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.primitive.m
+name: M
+type: operation
+namespace: Microsoft.Quantum.Primitive
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.intrinsic.m"。
+syntax: 'operation M (qubit : Qubit) : Result'
+input:
+  content: '(qubit : Qubit)'
+  types:
+  - name: qubit
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Result
+  types:
+  - isPrimitive: true
+    uid: Result
+ms.openlocfilehash: 2b6bfbaeb2d1d3d0bd34c68d1bb0923edcfea831
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73223337"

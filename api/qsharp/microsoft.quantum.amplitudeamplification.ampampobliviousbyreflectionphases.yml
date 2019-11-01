@@ -1,0 +1,43 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.ampampobliviousbyreflectionphases
+name: AmpAmpObliviousByReflectionPhases
+type: function
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: 通过指定部分反射来返回实现在意波幅放大的单一单一。
+syntax: 'function AmpAmpObliviousByReflectionPhases (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, ancillaReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle) : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)'
+input:
+  content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, ancillaReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle)'
+  types:
+  - name: phases
+    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+  - name: ancillaReflection
+    uid: microsoft.quantum.oracles.reflectionoracle
+  - name: targetStateReflection
+    uid: microsoft.quantum.oracles.reflectionoracle
+  - name: signalOracle
+    uid: microsoft.quantum.oracles.obliviousoracle
+output:
+  content: ((Qubit[], Qubit[]) => Unit is Adj + Ctl)
+  types:
+  - isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+ms.openlocfilehash: b73d88ddac0983bb95e6806d01d07f23c39d0b6c
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215738"

@@ -1,0 +1,66 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.conjugatedbyc
+name: ConjugatedByC
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: 给定的外部和内部操作返回一个新的操作，该操作将由外部操作词干内部操作。
+remarks: 外部操作始终被认为是 adjointable 的，但不需要控制以便使组合操作可控制。
+syntax: "function ConjugatedByC (outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Ctl)) : ('T => Unit is Ctl)"
+input:
+  content: （outerOperation：（t = > 单位为形容词），innerOperation：（t = > 单位为 Ctl））
+  types:
+  - name: outerOperation
+    summary: 应使用 $U $ 的操作，该操作应该用于共轭 $V $。 请注意，外部操作 $U $ 需要 adjointable，但不需要进行控制。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: innerOperation
+    summary: 操作 $V $ 正在 conjugated。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+output:
+  content: （不等于 > 单位为 Ctl）
+  types:
+  - summary: 其操作由单一 $U ^ {\dagger} V U $ 表示的新操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+typeParameters:
+- uid: "'T"
+  summary: 每个内部和外部操作作用于的目标的类型。
+seeAlso:
+- conjugatedby
+- conjugatedbya
+- conjugatedbyca
+- applywith
+ms.openlocfilehash: 64b754d98164ea9d7ef5fcdc17141a5b1ef008d4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73067962"

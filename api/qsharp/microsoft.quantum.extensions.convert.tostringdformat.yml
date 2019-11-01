@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.convert.tostringdformat
+name: ToStringDFormat
+type: function
+namespace: Microsoft.Quantum.Extensions.Convert
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.convert.doubleasstringwithformat"。
+syntax: 'function ToStringDFormat (a : Double, fmt : String) : String'
+input:
+  content: '(a : Double, fmt : String)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Double
+  - name: fmt
+    isPrimitive: true
+    uid: String
+output:
+  content: String
+  types:
+  - isPrimitive: true
+    uid: String
+ms.openlocfilehash: e3f15a6b9b0445436e114434e9eb68b1712a276e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73228216"

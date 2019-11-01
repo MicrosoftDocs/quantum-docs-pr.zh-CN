@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.core.rangestart
+name: RangeStart
+type: function
+namespace: Microsoft.Quantum.Core
+summary: 返回给定范围中定义的开始值。
+remarks: >-
+  范围表达式的第一个元素为 `start`，其第二个元素是 `start+step`，第三个元素为 `start+step+step`，依此类推，直到传递 `end`。
+
+
+  请注意，定义的范围的起始值与序列的第一个元素相同，除非该范围指定一个空序列（例如，2.）。 1）。
+syntax: 'function RangeStart (range : Range) : Int'
+input:
+  content: '(range : Range)'
+  types:
+  - name: range
+    isPrimitive: true
+    uid: Range
+output:
+  content: Int
+  types:
+  - summary: 给定范围的定义起始值。
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 0d618a26d71a5b41e6ea6b73503e9f099b18f129
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231752"

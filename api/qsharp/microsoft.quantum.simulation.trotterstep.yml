@@ -1,0 +1,45 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.trotterstep
+name: TrotterStep
+type: function
+namespace: Microsoft.Quantum.Simulation
+summary: 使用 Trotter – Suzuki 分解，通过 `EvolutionGenerator` 中所述的系统来实现一次时间演变。
+remarks: 有关 Trotter – Suzuki 分解的详细信息，请参阅[按时间排序的组合](/quantum/libraries/control-flow#time-ordered-composition)。
+syntax: 'function TrotterStep (evolutionGenerator : Microsoft.Quantum.Simulation.EvolutionGenerator, trotterOrder : Int, trotterStepSize : Double) : (Qubit[] => Unit is Adj + Ctl)'
+input:
+  content: （evolutionGenerator： EvolutionGenerator，trotterOrder： Int，trotterStepSize： Double）
+  types:
+  - name: evolutionGenerator
+    summary: 要模拟的系统的完整说明。
+    uid: microsoft.quantum.simulation.evolutiongenerator
+  - name: trotterOrder
+    summary: Trotter 集成器的顺序。 此值必须是1或偶数。
+    isPrimitive: true
+    uid: Int
+  - name: trotterStepSize
+    summary: 单个 Trotter 步骤中模拟时间演化的持续时间。
+    isPrimitive: true
+    uid: Double
+output:
+  content: （Qubit [] = > 单位为形容词 + Ctl）
+  types:
+  - summary: 一项操作，该操作约为持续时间的单步播放 `trotterStepSize`。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+ms.openlocfilehash: 0605c7de832286b8b7a11b82af50b528d233d18c
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73065208"

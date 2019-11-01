@@ -1,0 +1,58 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.uncurriedop
+name: UncurriedOp
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: 给定一个返回操作的函数，返回一个将两个输入作为元组的新操作。
+syntax: "function UncurriedOp (curriedOp : ('T -> ('U => Unit))) : (('T, 'U) => Unit)"
+input:
+  content: "(curriedOp : ('T -> ('U => Unit)))"
+  types:
+  - name: curriedOp
+    summary: 返回操作的函数。
+    isFunction: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isOperation: true
+        input:
+          types:
+          - uid: "'U"
+            isLocal: true
+        output:
+          types:
+          - isPrimitive: true
+            uid: Unit
+output:
+  content: (('T, 'U) => Unit)
+  types:
+  - summary: '`op(t, u)` 等效于 `(curriedOp(t))(u)`的新操作 `op`。'
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+      - uid: "'U"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 扩充函数第一个参数的类型。
+- uid: "'U"
+  summary: 扩充函数的第二个参数的类型。
+seeAlso:
+- microsoft.quantum.canon.uncurryopc
+- microsoft.quantum.canon.uncurryopa
+- microsoft.quantum.canon.uncurryopca
+ms.openlocfilehash: ebd2c277eee73f8920804ae79815c3b482a3d39b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216996"

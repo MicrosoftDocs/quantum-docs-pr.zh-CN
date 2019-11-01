@@ -1,0 +1,34 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.extendedgreatestcommondivisorl
+name: ExtendedGreatestCommonDivisorL
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 计算元组 $ （u，v） $，以便 $u \cdot a + v \cdot b = \operatorname{GCD} （a，b） $，其中 $ \operatorname{GCD} $ $a $ 最大公因数 $a $ 和 $b $。 GCD 始终为正值。
+syntax: 'function ExtendedGreatestCommonDivisorL (a : BigInt, b : BigInt) : (BigInt, BigInt)'
+references: '- 此实现根据 https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm'
+input:
+  content: '(a : BigInt, b : BigInt)'
+  types:
+  - name: a
+    summary: 计算最大的最大公因数的第一个数字
+    isPrimitive: true
+    uid: BigInt
+  - name: b
+    summary: 正在计算的最大扩展常见除数的第二个数字
+    isPrimitive: true
+    uid: BigInt
+output:
+  content: (BigInt, BigInt)
+  types:
+  - summary: 使用属性的元组 $ （u，v） $ $u \cdot a + v \cdot b = \operatorname{GCD} （a，b） $。
+    types:
+    - isPrimitive: true
+      uid: BigInt
+    - isPrimitive: true
+      uid: BigInt
+ms.openlocfilehash: 0e3c6138d5efe03603338341e37a9cf7bc07fb47
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233010"

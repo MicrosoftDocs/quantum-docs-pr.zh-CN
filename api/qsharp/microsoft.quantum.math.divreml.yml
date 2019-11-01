@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.divreml
+name: DivRemL
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 将一个 BigInteger 值除以另一个值，返回结果，并将余数作为元组返回。
+remarks: 有关更多详细信息，请参阅[BigInteger。](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.divrem)
+syntax: 'function DivRemL (dividend : BigInt, divisor : BigInt) : (BigInt, BigInt)'
+input:
+  content: '(dividend : BigInt, divisor : BigInt)'
+  types:
+  - name: dividend
+    isPrimitive: true
+    uid: BigInt
+  - name: divisor
+    isPrimitive: true
+    uid: BigInt
+output:
+  content: (BigInt, BigInt)
+  types:
+  - types:
+    - isPrimitive: true
+      uid: BigInt
+    - isPrimitive: true
+      uid: BigInt
+ms.openlocfilehash: ca56fbcc7244ba45b660a09a32a06244312439d4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229627"

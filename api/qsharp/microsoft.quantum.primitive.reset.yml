@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.primitive.reset
+name: 重置
+type: operation
+namespace: Microsoft.Quantum.Primitive
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.intrinsic.reset"。
+syntax: 'operation Reset (target : Qubit) : Unit'
+input:
+  content: （target： Qubit）
+  types:
+  - name: 目标
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: 计价单位
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 7a68113316bce6183340c96500005b4bc3c5bd27
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066653"

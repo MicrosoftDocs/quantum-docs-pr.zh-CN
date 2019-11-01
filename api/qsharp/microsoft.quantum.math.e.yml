@@ -1,0 +1,22 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.e
+name: E
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回自然对数底数 $e $。
+remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.e) 。
+syntax: 'function E () : Double'
+input:
+  content: ()
+  types: []
+output:
+  content: Double
+  types:
+  - isPrimitive: true
+    uid: Double
+ms.openlocfilehash: d80906370aa457a690d4b01a826e6783a4519d80
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229542"

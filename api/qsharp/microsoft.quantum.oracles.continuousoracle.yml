@@ -1,0 +1,17 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.oracles.continuousoracle
+name: ContinuousOracle
+type: newtype
+namespace: Microsoft.Quantum.Oracles
+summary: >-
+  表示连续 oracle。
+
+
+  这是一种 oracle，它实现 $U （\delta t）： \ket{\psi （t）} \mapsto \ket{\psi （t + \delta t）} $ $t $，其中 $U $ 是一个固定操作，其中 $ \delta t $ 是非负数实数。
+syntax: newtype ContinuousOracle = ((Double, Qubit[]) => Unit is Adj + Ctl);
+ms.openlocfilehash: b412c93583a68f71c232d2f7e11fd3d506e5f817
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231157"

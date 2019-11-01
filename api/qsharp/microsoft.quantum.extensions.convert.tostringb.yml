@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.convert.tostringb
+name: ToStringB
+type: function
+namespace: Microsoft.Quantum.Extensions.Convert
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.convert.boolasstring"。
+syntax: 'function ToStringB (a : Bool) : String'
+input:
+  content: '(a : Bool)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Bool
+output:
+  content: String
+  types:
+  - isPrimitive: true
+    uid: String
+ms.openlocfilehash: a40adc497cc6e3d31c73a65f49326459c48773fa
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73232126"

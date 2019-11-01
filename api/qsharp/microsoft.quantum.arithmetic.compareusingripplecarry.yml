@@ -1,0 +1,41 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.compareusingripplecarry
+name: CompareUsingRippleCarry
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  如果两个整数 `x` 和 `y` 存储在大小相等的 qubit 寄存器满足 `x > y`，则此项将测试此项。 如果为 true，则将 1 XORed 到输出 qubit。 否则，0将 XORed 到输出 qubit 中。
+
+
+  换句话说，这个单一 $U $ 满足： $ $ \begin{align} U\ket {x} \ 票证 {y} \ 票证 {z} = \ket{x}\ket{y}\ket{z\oplus （x > y）}。
+
+  \end{align} $ $。
+syntax: 'operation CompareUsingRippleCarry (x : Microsoft.Quantum.Arithmetic.LittleEndian, y : Microsoft.Quantum.Arithmetic.LittleEndian, output : Qubit) : Unit'
+references: '- 新的量程波纹-携带加法线路 Steven Cuccaro、Thomas Draper、Samuel Kutin、David Petrie Moulton https://arxiv.org/abs/quant-ph/0410184'
+input:
+  content: '(x : Microsoft.Quantum.Arithmetic.LittleEndian, y : Microsoft.Quantum.Arithmetic.LittleEndian, output : Qubit)'
+  types:
+  - name: x
+    summary: 要进行比较的第一个数字以 `LittleEndian` 格式存储在 qubit 寄存器中。
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: y
+    summary: 要进行比较的第二个数字，在 qubit 寄存器中以 `LittleEndian` 格式进行比较。
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: output
+    summary: Qubit，用于存储比较 $x > y $ 的结果。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: fa3db99da28f96e1cb42dd03e465440e015722fa
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73221093"

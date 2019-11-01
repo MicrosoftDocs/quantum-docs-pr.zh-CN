@@ -1,0 +1,76 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applyifelsera
+name: ApplyIfElseRA
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  应用两个 adjointable 操作之一，具体取决于古典结果的值。
+
+
+  如果结果为 `result`，当 `result` 等于 `Zero`时，将使用 `zeroInput` 作为其输入的操作 `zeroOp`，并且 `oneOp(oneInput)` 时应用 `result == One`。
+syntax: "operation ApplyIfElseRA (result : Result, (zeroOp : ('T => Unit is Adj), zeroInput : 'T), (oneOp : ('U => Unit is Adj), oneInput : 'U)) : Unit"
+input:
+  content: "(result : Result, (zeroOp : ('T => Unit is Adj), zeroInput : 'T), (oneOp : ('U => Unit is Adj), oneInput : 'U))"
+  types:
+  - name: result
+    summary: 用于确定是否应用 `zeroOp` 或 `oneOp` 的测量结果。
+    isPrimitive: true
+    uid: Result
+  - name: zeroOp
+    summary: '`result == Zero`时要应用的 adjointable 操作。'
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: zeroInput
+    summary: '`result == Zero`时提供给 `zeroOp` 的输入。'
+    uid: "'T"
+    isLocal: true
+  - name: oneOp
+    summary: '`result == One`时要应用的 adjointable 操作。'
+    isOperation: true
+    input:
+      types:
+      - uid: "'U"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: oneInput
+    summary: '`result == One`时提供给 `oneOp` 的输入。'
+    uid: "'U"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 要有条件地应用 `zeroOp` 操作的输入类型。
+- uid: "'U"
+  summary: 要有条件地应用 `oneOp` 操作的输入类型。
+functors:
+- Adjoint
+seeAlso:
+- microsoft.quantum.canon.applyifzero
+- microsoft.quantum.canon.applyifone
+- microsoft.quantum.canon.applyifelserc
+- microsoft.quantum.canon.applyifelsera
+- microsoft.quantum.canon.applyifelserca
+ms.openlocfilehash: df838f6eda12db4710ee19cd3c0aeb334935cd22
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73213902"

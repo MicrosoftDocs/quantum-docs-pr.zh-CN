@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.continuedfractionconvergenti
+name: ContinuedFractionConvergentI
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 查找最接近 `fraction` 且分母小于或等于 `denominatorBound` 的连续分数收敛性
+syntax: 'function ContinuedFractionConvergentI (fraction : Microsoft.Quantum.Math.Fraction, denominatorBound : Int) : Microsoft.Quantum.Math.Fraction'
+input:
+  content: '(fraction : Microsoft.Quantum.Math.Fraction, denominatorBound : Int)'
+  types:
+  - name: fraction
+    uid: microsoft.quantum.math.fraction
+  - name: denominatorBound
+    isPrimitive: true
+    uid: Int
+output:
+  content: Microsoft.Quantum.Math.Fraction
+  types:
+  - summary: 与分母小于或等于 `fraction` 的持续分数最接近 `denominatorBound`
+    uid: microsoft.quantum.math.fraction
+ms.openlocfilehash: 9599ec6bee680274547d5d4d505cace554de83e2
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229848"

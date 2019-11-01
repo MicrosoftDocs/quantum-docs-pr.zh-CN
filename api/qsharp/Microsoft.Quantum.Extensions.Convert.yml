@@ -1,0 +1,61 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.extensions.convert
+name: 。转换
+summary: " # <a name=\"summary\"></a>总结\n 这些是 \"系统\" 中的 \"转换\" .NET CLR 的命名空间中的一些函数。\n\n # <a name=\"remarks\"></a>备注\n 如果有多个版本的函数适用于 Bool、Int 和 Double 类型，则对应的函数具有后缀 B、I 和 D。"
+functions:
+- uid: microsoft.quantum.extensions.convert.biginttobools
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.convert.bigintasboolarray"。
+- uid: microsoft.quantum.extensions.convert.boolstobigint
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.convert.boolarrayasbigint"。
+- uid: microsoft.quantum.extensions.convert.pauliarraytoint
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.convert.pauliarrayasint"。
+- uid: microsoft.quantum.extensions.convert.tobigint
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.convert.intasbigint"。
+- uid: microsoft.quantum.extensions.convert.todouble
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.convert.intasdouble"。
+- uid: microsoft.quantum.extensions.convert.tostringb
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.convert.boolasstring"。
+- uid: microsoft.quantum.extensions.convert.tostringd
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.convert.doubleasstring"。
+- uid: microsoft.quantum.extensions.convert.tostringdformat
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.convert.doubleasstringwithformat"。
+- uid: microsoft.quantum.extensions.convert.tostringi
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.convert.intasstring"。
+- uid: microsoft.quantum.extensions.convert.tostringiformat
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.convert.intasstringwithformat"。
+ms.openlocfilehash: 57f341ec6e8f82cfa9fc4bb958a580743a350218
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73056486"

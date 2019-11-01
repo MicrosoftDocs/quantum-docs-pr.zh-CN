@@ -1,0 +1,24 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.research.chemistry.jwoptimizedgeneratorsystem
+name: JWOptimizedGeneratorSystem
+type: function
+namespace: Microsoft.Quantum.Research.Chemistry
+summary: 将 `JWOptimizedHTerms` 描述的 Hamiltonian 转换为 `GeneratorSystem` 在此文件中定义的 `GeneratorIndex` 约定。
+syntax: 'function JWOptimizedGeneratorSystem (data : Microsoft.Quantum.Chemistry.JordanWigner.JWOptimizedHTerms) : Microsoft.Quantum.Simulation.GeneratorSystem'
+input:
+  content: （data： JordanWigner. JWOptimizedHTerms）
+  types:
+  - name: 数据
+    summary: '`JWOptimizedHTerms` 格式的 Hamiltonian 说明。'
+    uid: microsoft.quantum.chemistry.jordanwigner.jwoptimizedhterms
+output:
+  content: GeneratorSystem。
+  types:
+  - summary: Hamiltonian 的表示形式 `GeneratorSystem`。
+    uid: microsoft.quantum.simulation.generatorsystem
+ms.openlocfilehash: 5f5037767f9737391f3fd07d3dd0e330f8995f56
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066160"

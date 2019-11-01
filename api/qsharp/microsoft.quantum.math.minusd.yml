@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.minusd
+name: MinusD
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回两个输入之间的差。
+syntax: 'function MinusD (a : Double, b : Double) : Double'
+input:
+  content: '(a : Double, b : Double)'
+  types:
+  - name: a
+    summary: 要减去的第一个输入 $a $。
+    isPrimitive: true
+    uid: Double
+  - name: b
+    summary: 要减去的第二个输入 $b $。
+    isPrimitive: true
+    uid: Double
+output:
+  content: Double
+  types:
+  - summary: 差异 $a-b $。
+    isPrimitive: true
+    uid: Double
+ms.openlocfilehash: c4c74c1a9eebee07e1633e9e1d0df58de7a0a296
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233843"

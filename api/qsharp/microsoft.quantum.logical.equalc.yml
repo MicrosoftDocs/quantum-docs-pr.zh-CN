@@ -1,0 +1,28 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.logical.equalc
+name: EqualC
+type: function
+namespace: Microsoft.Quantum.Logical
+summary: 当且仅当两个输入相等时，返回 true。
+syntax: 'function EqualC (a : Microsoft.Quantum.Math.Complex, b : Microsoft.Quantum.Math.Complex) : Bool'
+input:
+  content: '(a : Microsoft.Quantum.Math.Complex, b : Microsoft.Quantum.Math.Complex)'
+  types:
+  - name: a
+    summary: 要比较的第一个值。
+    uid: microsoft.quantum.math.complex
+  - name: b
+    summary: 要比较的第二个值。
+    uid: microsoft.quantum.math.complex
+output:
+  content: Bool
+  types:
+  - summary: 当且仅当 `a` 等于 `b`时，`true`。
+    isPrimitive: true
+    uid: Bool
+ms.openlocfilehash: 73d36b39c05fc459371be744e043422e3e324d94
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233248"

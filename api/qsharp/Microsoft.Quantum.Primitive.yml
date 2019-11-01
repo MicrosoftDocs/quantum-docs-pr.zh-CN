@@ -1,0 +1,151 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.primitive
+name: Microsoft.Quantum.Primitive
+functions:
+- uid: microsoft.quantum.primitive.message
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.message"。
+operations:
+- uid: microsoft.quantum.primitive.assert
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.assert"。
+- uid: microsoft.quantum.primitive.assertprob
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.assertprob"。
+- uid: microsoft.quantum.primitive.ccnot
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.ccnot"。
+- uid: microsoft.quantum.primitive.cnot
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.cnot"。
+- uid: microsoft.quantum.primitive.exp
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.exp"。
+- uid: microsoft.quantum.primitive.expfrac
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.expfrac"。
+- uid: microsoft.quantum.primitive.h
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.h"。
+- uid: microsoft.quantum.primitive.i
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.i"。
+- uid: microsoft.quantum.primitive.m
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.m"。
+- uid: microsoft.quantum.primitive.measure
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.measure"。
+- uid: microsoft.quantum.primitive.multix
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.canon.applytoeachca"。
+- uid: microsoft.quantum.primitive.r
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.r"。
+- uid: microsoft.quantum.primitive.r1
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.r1"。
+- uid: microsoft.quantum.primitive.r1frac
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.r1frac"。
+- uid: microsoft.quantum.primitive.random
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.random"。
+- uid: microsoft.quantum.primitive.reset
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.reset"。
+- uid: microsoft.quantum.primitive.resetall
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.resetall"。
+- uid: microsoft.quantum.primitive.rfrac
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.rfrac"。
+- uid: microsoft.quantum.primitive.rx
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.rx"。
+- uid: microsoft.quantum.primitive.ry
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.ry"。
+- uid: microsoft.quantum.primitive.rz
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.rz"。
+- uid: microsoft.quantum.primitive.s
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.s"。
+- uid: microsoft.quantum.primitive.swap
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.swap"。
+- uid: microsoft.quantum.primitive.t
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.t"。
+- uid: microsoft.quantum.primitive.x
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.x"。
+- uid: microsoft.quantum.primitive.y
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.y"。
+- uid: microsoft.quantum.primitive.z
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.intrinsic.z"。
+ms.openlocfilehash: 87dc52b15f7fb17c6e9c3c11ec04a91e775a36ef
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216027"

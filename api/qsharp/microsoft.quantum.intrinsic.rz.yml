@@ -1,0 +1,47 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.rz
+name: Rz
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: >-
+  按给定角度向 $z $ 轴旋转。
+
+
+  \begin{align} R_z （\theta） \mathrel{： =} e ^ {-i \theta \sigma_z/2} = \begin{bmatrix} e ^ {-i \theta/2} & 0 \\\\ 0 & e ^ {i \theta/2} \end{bmatrix}。
+
+  \end{align}
+remarks: >-
+  等效于：
+
+
+  ```qsharp
+
+  R(PauliZ, theta, qubit);
+
+  ```
+syntax: 'operation Rz (theta : Double, qubit : Qubit) : Unit'
+input:
+  content: '(theta : Double, qubit : Qubit)'
+  types:
+  - name: theta
+    summary: Qubit 要旋转的角度。
+    isPrimitive: true
+    uid: Double
+  - name: qubit
+    summary: 应将入口应用到的 Qubit。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 3a1655e226a1f7ac9dafc2b7928de87ee2bd1173
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216367"

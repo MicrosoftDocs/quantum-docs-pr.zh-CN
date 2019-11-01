@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.primitive.random
+name: 随机
+type: operation
+namespace: Microsoft.Quantum.Primitive
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.intrinsic.random"。
+syntax: 'operation Random (probs : Double[]) : Int'
+input:
+  content: （probs： Double []）
+  types:
+  - name: probs
+    isArray: true
+    isPrimitive: true
+    uid: Double
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 4e712760da1bd5f0a71fa7905f710e7b4ed71fb1
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066432"

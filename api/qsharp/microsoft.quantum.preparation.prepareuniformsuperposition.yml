@@ -1,0 +1,53 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.preparation.prepareuniformsuperposition
+name: PrepareUniformSuperposition
+type: operation
+namespace: Microsoft.Quantum.Preparation
+summary: >-
+  创建对 superposition 进行编码0到 `nIndices`的统一。
+
+
+  也就是说，在给定输入状态 $ \ket{0\cdots 0} $ 的情况下，此单一 $U $ 将在所有数字状态 $0 $ 到 $M-$1 上创建一个统一的 superposition。 换句话说，$ $ \begin{align} U\ket{0}= \frac{1}{\sqrt{M}}\sum_{j = 0} ^ {M-1} \ket{j}。
+
+  \end{align} $ $。
+examples: >-
+  下面的示例在 $3 $ qubits 上准备状态 $ \frac{1}{\sqrt{6}} \sum_{j = 0} ^{5}\ket{j} $。
+
+
+  ```Q#
+
+  let nIndices = 6;
+
+  using(indexRegister = Qubit[3]) {
+      PrepareUniformSuperposition(nIndices, LittleEndian(indexRegister));
+  }
+
+  ```
+syntax: 'operation PrepareUniformSuperposition (nIndices : Int, indexRegister : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
+input:
+  content: '(nIndices : Int, indexRegister : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: nIndices
+    summary: 统一 superposition 中所需的状态数 $M $。
+    isPrimitive: true
+    uid: Int
+  - name: indexRegister
+    summary: >-
+      以 `LittleEndian` 格式存储数字状态的 qubit 寄存器。
+
+      此注册必须能够将数字存储 $M-$1，并假定在状态 $ \ket{0\cdots 0} $ 中进行初始化。
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 4bb7c83382f8d48f132fbd91acfd2184a570aea4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73226482"

@@ -1,0 +1,40 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.expmodi
+name: ExpModI
+type: function
+namespace: Microsoft.Quantum.Math
+summary: >-
+  返回一个整数，该整数针对给定的模数引发了给定的幂。
+
+
+  让我们通过 $N $ $p $ 和模数来表示 $x expBase。
+
+  该函数返回 $x ^ p \operatorname{mod} N $。
+
+
+  假定 $N $，$x $ 为正，且 power 为非负数。
+remarks: 与 `power`中的位数（而非 `power` 本身）的时间成正比。
+syntax: 'function ExpModI (expBase : Int, power : Int, modulus : Int) : Int'
+input:
+  content: '(expBase : Int, power : Int, modulus : Int)'
+  types:
+  - name: expBase
+    isPrimitive: true
+    uid: Int
+  - name: power
+    isPrimitive: true
+    uid: Int
+  - name: modulus
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: cd98e60dab928d1cbb5055a762c8ffa31c460009
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229491"

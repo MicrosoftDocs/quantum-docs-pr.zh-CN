@@ -1,0 +1,47 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.ry
+name: Ry
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: >-
+  按给定角度向 $y $ 轴旋转。
+
+
+  \begin{align} R_y （\theta） \mathrel{： =} e ^ {-i \theta \sigma_y/2} = \begin{bmatrix} \cos \frac{\theta}{2} &-\sin \frac{\theta}{2}\\\\{2} \sin &{2} \frac{\theta} \cos \frac{\theta}
+
+  \end{align}
+remarks: >-
+  等效于：
+
+
+  ```qsharp
+
+  R(PauliY, theta, qubit);
+
+  ```
+syntax: 'operation Ry (theta : Double, qubit : Qubit) : Unit'
+input:
+  content: '(theta : Double, qubit : Qubit)'
+  types:
+  - name: theta
+    summary: Qubit 要旋转的角度。
+    isPrimitive: true
+    uid: Double
+  - name: qubit
+    summary: 应将入口应用到的 Qubit。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 6afb1d43c942ca1541b4a0a978d9d1e3289a9bc2
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216418"

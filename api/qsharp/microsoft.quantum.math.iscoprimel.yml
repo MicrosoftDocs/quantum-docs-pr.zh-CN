@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.iscoprimel
+name: IsCoprimeL
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 如果 $a $ 和 $b $ 是共同质数，则返回 true; 否则返回 false。
+syntax: 'function IsCoprimeL (a : BigInt, b : BigInt) : Bool'
+input:
+  content: '(a : BigInt, b : BigInt)'
+  types:
+  - name: a
+    summary: 正在测试的 primality 的第一个数字
+    isPrimitive: true
+    uid: BigInt
+  - name: b
+    summary: 正在测试的 primality 的第二个数字
+    isPrimitive: true
+    uid: BigInt
+output:
+  content: Bool
+  types:
+  - summary: 如果 $a $ 和 $b $ 是共同质数（例如，其最大公因数为1），则为 True; 否则为 false。
+    isPrimitive: true
+    uid: Bool
+ms.openlocfilehash: 8c96c49bd02f7601ba4851fdb81f33d01dfccfdd
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73232687"

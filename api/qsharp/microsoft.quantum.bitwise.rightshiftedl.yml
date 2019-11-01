@@ -1,0 +1,41 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.bitwise.rightshiftedl
+name: RightShiftedL
+type: function
+namespace: Microsoft.Quantum.Bitwise
+summary: 将数字的按位表示形式向右移位给定的位数。
+remarks: >-
+  以下项是等效的：
+
+
+  ```Q#
+
+  let c = a >>> b;
+
+  let c = RightShiftedL(a, b);
+
+  ```
+syntax: 'function RightShiftedL (value : BigInt, amount : Int) : BigInt'
+input:
+  content: '(value : BigInt, amount : Int)'
+  types:
+  - name: value
+    summary: 要向右移动（不太重要）的按位表示形式的数字。
+    isPrimitive: true
+    uid: BigInt
+  - name: amount
+    summary: '`value` 要向右移动的位数。'
+    isPrimitive: true
+    uid: Int
+output:
+  content: BigInt
+  types:
+  - summary: '`value`的值，则向右移动 `amount` 位。'
+    isPrimitive: true
+    uid: BigInt
+ms.openlocfilehash: 4c370d859eefdcff5fc844cf55e17adad7b5df86
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73213851"

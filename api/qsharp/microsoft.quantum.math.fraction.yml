@@ -1,0 +1,13 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.fraction
+name: Fraction
+type: newtype
+namespace: Microsoft.Quantum.Math
+summary: 表示 `p/q`形式的有理数。 整数 `p` 是元组的第一个元素，`q` 是元组的第二个元素。
+syntax: newtype Fraction = (Int, Int);
+ms.openlocfilehash: 5eee4a315cde3e04c93cc7b2a1d558ab9323273c
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73232942"

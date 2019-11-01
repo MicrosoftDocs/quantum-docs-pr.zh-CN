@@ -1,0 +1,37 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.chemistry.jordanwigner.optimizedbexy
+name: OptimizedBEXY
+type: operation
+namespace: Microsoft.Quantum.Chemistry.JordanWigner
+summary: 一个单一 $U $，它在 $ （X ^ {z + 1}\_pY ^ {z}\_p） Z\_{p-1} 上应用 Pauli 字符串 .。。Z_0 $ on qubits $ 0 ... p $\}索引 $z \in\{0，1 $，$p $。 也就是说，$ $ \begin{align} U\ket {z} \ 票证 {p} \ 票证 {\ psi} = \ket{z}\ket{p} （X ^ {z + 1}\_pY ^ {z}\_p） Z\_{p-1} .。。Z_0\ket {\ psi} \end{align} $ $
+syntax: 'operation OptimizedBEXY (pauliBasis : Qubit, indexRegister : Microsoft.Quantum.Arithmetic.LittleEndian, targetRegister : Qubit[]) : Unit'
+references: '- 在带有线性 T 复杂性的 Spectra （Ryan Babbush、Craig Gidney、Dominic Berry、Nathan Wiebe、Jarrod McClean、Alexandru 暗、奥斯汀 Fowler、Hartmut Neven https://arxiv.org/abs/1805.03662'
+input:
+  content: '(pauliBasis : Qubit, indexRegister : Microsoft.Quantum.Arithmetic.LittleEndian, targetRegister : Qubit[])'
+  types:
+  - name: pauliBasis
+    summary: 如果此 qubit 处于状态 $ \ket{0}$，则应用 $X $。 当它处于状态 $ \ket{1}$ 时，将应用 $Y $。
+    isPrimitive: true
+    uid: Qubit
+  - name: indexRegister
+    summary: 此寄存器的状态 $ \ket{p} $ 确定应用 $X $ 或 $Y $ 的 qubit。
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: targetRegister
+    summary: 注册应用 Pauli 运算符的 qubits。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: e0ac3f2f050ed584053f7da7a310f1855e992141
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73228454"

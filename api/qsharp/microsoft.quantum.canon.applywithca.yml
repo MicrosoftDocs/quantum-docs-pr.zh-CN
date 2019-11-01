@@ -1,0 +1,67 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applywithca
+name: ApplyWithCA
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  给定两个操作，将一个操作应用到另一个运算。
+
+
+  给定两个操作，分别由单一运算符 $U $ 和 $V $，按 $U ^ {\dagger} V U $ 的顺序应用。 也就是说，此操作实现由 $U $ $V $ conjugated 指定的单一运算符。
+remarks: 外部操作始终被认为是 adjointable 的，但不需要控制以便使组合操作可控制。
+syntax: "operation ApplyWithCA (outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Adj + Ctl), target : 'T) : Unit"
+input:
+  content: "(outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Adj + Ctl), target : 'T)"
+  types:
+  - name: outerOperation
+    summary: 应使用 $U $ 的操作，该操作应该用于共轭 $V $。 请注意，外部操作 $U $ 需要 adjointable，但不需要进行控制。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: innerOperation
+    summary: 操作 $V $ 正在 conjugated。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+  - name: target
+    summary: 要提供给外部和内部操作的输入。
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 每个内部和外部操作作用于的目标。
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- applywith
+- applywitha
+- applywithc
+ms.openlocfilehash: 740d6a251d4ae30387c5108d8aca71a257a58258
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73212746"

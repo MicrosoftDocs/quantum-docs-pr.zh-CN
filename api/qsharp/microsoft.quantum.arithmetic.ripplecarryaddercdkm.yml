@@ -1,0 +1,41 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.ripplecarryaddercdkm
+name: RippleCarryAdderCDKM
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  可逆的就地波纹-包含两个整数。
+
+  给定两个 $n 在 LittleEndian 中编码的 $ 位整数 `xs` 和 `ys`，而 qubit 包含，则操作将计算两个整数的总和，$n 其中，结果的最小有效位保留在 `ys` 中，而执行 xored 到qubit `carry`。
+remarks: 此操作具有与 RippleCarryAdderD 相同的功能，但仅使用一个 ancilla qubit，而不是 $n $。
+syntax: 'operation RippleCarryAdderCDKM (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, carry : Qubit) : Unit'
+references: >-
+  - Steven Cuccaro、Thomas Draper、Samuel Kutin、David Petrie Moulton： "A 新的量程波纹-携带加法线路"，2004。
+    https://arxiv.org/abs/quant-ph/0410184v1
+input:
+  content: '(xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, carry : Qubit)'
+  types:
+  - name: xs
+    summary: LittleEndian qubit register 第一个整数被加数编码。
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: ys
+    summary: LittleEndian qubit register 编码为第二个整数被加数，将修改为持有 sum 的最小有效位。
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: carry
+    summary: 携带 qubit，是 xored，其最高有效位是 sum。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 2d973659a9457c301ba65a282e4fd4b627c93671
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218475"

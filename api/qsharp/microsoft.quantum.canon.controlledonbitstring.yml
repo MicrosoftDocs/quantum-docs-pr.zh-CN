@@ -1,0 +1,54 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.controlledonbitstring
+name: ControlledOnBitString
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: 如果控件注册状态对应于指定的位掩码，则返回在目标寄存器上应用 oracle 的单一运算符。
+syntax: "function ControlledOnBitString (bits : Bool[], oracle : ('T => Unit is Adj + Ctl)) : ((Qubit[], 'T) => Unit is Adj + Ctl)"
+input:
+  content: "(bits : Bool[], oracle : ('T => Unit is Adj + Ctl))"
+  types:
+  - name: bits
+    summary: 布尔数组。
+    isArray: true
+    isPrimitive: true
+    uid: Bool
+  - name: oracle
+    summary: 单一运算符。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+output:
+  content: ((Qubit[], 'T) => Unit is Adj + Ctl)
+  types:
+  - summary: 当控件注册状态对应于 `bits`的位掩码时，将在目标寄存器上应用 `oracle` 的单一运算符。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+ms.openlocfilehash: 1abe0f1abcbab06aa9821c52878cf85b03d2c592
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227383"

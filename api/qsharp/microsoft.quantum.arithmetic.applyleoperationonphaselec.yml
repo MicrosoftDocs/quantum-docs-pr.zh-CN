@@ -1,0 +1,37 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.applyleoperationonphaselec
+name: ApplyLEOperationOnPhaseLEC
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+syntax: 'operation ApplyLEOperationOnPhaseLEC (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Ctl), target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
+input:
+  content: （op：（LittleEndian = > 单位为 Ctl），目标： PhaseLittleEndian）。）
+  types:
+  - name: 基金
+    isOperation: true
+    input:
+      types:
+      - uid: microsoft.quantum.arithmetic.littleendian
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: 目标
+    uid: microsoft.quantum.arithmetic.phaselittleendian
+output:
+  content: 计价单位
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applyleoperationonphasele
+ms.openlocfilehash: 36350a09f155894c1103558d2ac49281f66f452e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057023"

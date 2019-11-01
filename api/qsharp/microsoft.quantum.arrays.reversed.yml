@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.reversed
+name: Reversed
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 创建一个数组，该数组包含与输入数组相同的元素，但其顺序相反。
+syntax: "function Reversed (array : 'T[]) : 'T[]"
+input:
+  content: "(array : 'T[])"
+  types:
+  - name: array
+    summary: 要以相反顺序复制其元素的数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T[]"
+  types:
+  - summary: 包含 `array[Length(array) - 1]` 的元素的数组。 `array[0]`。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: 数组元素的类型。
+ms.openlocfilehash: 946d1f06619a4533a2c32cf58266815d7a510434
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218016"

@@ -1,0 +1,36 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.assertintequal
+name: AssertIntEqual
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请改用 @"Microsoft.Quantum.Diagnostics.EqualityFactI"。
+syntax: 'function AssertIntEqual (actual : Int, expected : Int, message : String) : Unit'
+input:
+  content: '(actual : Int, expected : Int, message : String)'
+  types:
+  - name: actual
+    isPrimitive: true
+    uid: Int
+  - name: expected
+    isPrimitive: true
+    uid: Int
+  - name: message
+    isPrimitive: true
+    uid: String
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: cd9114e7431b088fcb125f1745cdb6d594f79990
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73212304"

@@ -1,0 +1,34 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.assertmostsignificantbit
+name: AssertMostSignificantBit
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 断言表示无符号整数的 qubit 寄存器的最重要 qubit 处于特定状态。
+remarks: 此操作的受控版本将忽略控件。
+syntax: 'operation AssertMostSignificantBit (value : Result, number : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
+input:
+  content: '(value : Result, number : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: value
+    summary: 要断言的最高位的值。
+    isPrimitive: true
+    uid: Result
+  - name: number
+    summary: 检查高位的无符号整数。
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.intrinsic.assert
+ms.openlocfilehash: 594ecbb7ba3ccc657c4e55f964714b86e575a6ce
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73221603"

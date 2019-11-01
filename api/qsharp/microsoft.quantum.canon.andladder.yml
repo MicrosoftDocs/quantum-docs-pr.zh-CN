@@ -1,0 +1,50 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.andladder
+name: AndLadder
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  在目标 qubits 上执行受控的 "AND 阶梯"。
+
+
+  这适用于计算基础向量： $ $ \begin{align} \ket{x\_1，\dots ..，x\_n} \ket{y\_1，\dots ..，y\_{n-1}} \mapsto \ket{x\_1，\dots ..，x\_n} \ket{y\_1 \oplus （x\_1 \land x\_2），\dots ..，y\_{n-1} \oplus （x\_1 \land x\_2 \land \cdots \land x\_{n-1}}，\end{align} $ $，其中 $ \ket{x\_1，\dots ..，x\_n} $ 表示 `controls`的计算基础状态，其中 $ \ket{y\_1，\dots ..，y\_{n-1}} $ 表示 `targets`的计算基础状态。
+remarks: >-
+  - 用作 <xref:microsoft.quantum.canon.applymulticontrolledc> 和 <xref:microsoft.quantum.canon.applymulticontrolledca>的一部分。
+
+  - 有关说明和线路关系图，请参阅图4.10： Nielsen & 语中的第4.3 节。
+syntax: 'operation AndLadder (ccnot : Microsoft.Quantum.Canon.CCNOTop, controls : Qubit[], targets : Qubit[]) : Unit'
+references: '- [*Michael Nielsen、Isaac 语*、量程计算和量程信息](http://doi.org/10.1017/CBO9780511976667)'
+input:
+  content: '(ccnot : Microsoft.Quantum.Canon.CCNOTop, controls : Qubit[], targets : Qubit[])'
+  types:
+  - name: ccnot
+    summary: 用于构造的 CCNOT 入口。
+    uid: microsoft.quantum.canon.ccnotop
+  - name: controls
+    summary: >-
+      要用作和阶梯控件的 qubits 寄存器。
+
+      此操作使计算基础状态 `controls` 固定。
+
+      `controls` 的长度必须至少为2，并且必须等于 `targets`的长度加1。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+  - name: targets
+    summary: '`targets` 的长度必须至少为1，并且等于 `controls` 减1的长度。'
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+ms.openlocfilehash: 2970f9c783ea233f2f1ceb4089802320efe82602
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73217710"

@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.modi
+name: ModI
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回与另一个数字相关的数字的模数。
+syntax: 'function ModI (a : Int, b : Int) : Int'
+input:
+  content: '(a : Int, b : Int)'
+  types:
+  - name: a
+    summary: 要返回其模数的输入 $a $。
+    isPrimitive: true
+    uid: Int
+  - name: b
+    summary: 要返回其 $a $ 的模数的相对数量。
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - summary: 取模 $a \bmod b $。
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 546d65a3bd08d7a33ebf8157ba7b65041fd1bc64
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233724"

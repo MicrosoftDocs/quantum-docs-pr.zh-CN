@@ -1,0 +1,37 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.testing.assertallzerotol
+name: AssertAllZeroTol
+type: operation
+namespace: Microsoft.Quantum.Extensions.Testing
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.diagnostics.assertallzerowithintolerance"。
+syntax: 'operation AssertAllZeroTol (qubits : Qubit[], tolerance : Double) : Unit'
+input:
+  content: '(qubits : Qubit[], tolerance : Double)'
+  types:
+  - name: qubits
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+  - name: tolerance
+    isPrimitive: true
+    uid: Double
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: c72a3925479abacc135bb6318c4eb0b71bef627d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73235764"

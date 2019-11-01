@@ -1,0 +1,34 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.fst
+name: Fst
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: 给定一对，返回其第一个元素。
+syntax: "function Fst (pair : ('T, 'U)) : 'T"
+input:
+  content: "(pair : ('T, 'U))"
+  types:
+  - name: pair
+    summary: 具有两个元素的元组。
+    types:
+    - uid: "'T"
+      isLocal: true
+    - uid: "'U"
+      isLocal: true
+output:
+  content: "'T"
+  types:
+  - summary: '`pair`的第一个元素。'
+    uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: 对的第一个成员的类型。
+- uid: "'U"
+  summary: 对的第二个成员的类型。
+ms.openlocfilehash: 41188ad3c5f6363fcb4607b4325dff797c9d9be6
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211794"

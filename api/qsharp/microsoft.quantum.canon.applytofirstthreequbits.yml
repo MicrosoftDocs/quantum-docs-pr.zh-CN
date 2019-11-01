@@ -1,0 +1,54 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applytofirstthreequbits
+name: ApplyToFirstThreeQubits
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: 将操作应用于寄存器中的前三个 qubits。
+remarks: >-
+  这等效于：
+
+
+  ```qsharp
+
+  op(register[0], register[1], register[2]);
+
+  ```
+syntax: 'operation ApplyToFirstThreeQubits (op : ((Qubit, Qubit, Qubit) => Unit), register : Qubit[]) : Unit'
+input:
+  content: '(op : ((Qubit, Qubit, Qubit) => Unit), register : Qubit[])'
+  types:
+  - name: op
+    summary: 要应用于前三个 qubits 的操作
+    isOperation: true
+    input:
+      types:
+      - isPrimitive: true
+        uid: Qubit
+      - isPrimitive: true
+        uid: Qubit
+      - isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: register
+    summary: Qubit 数组到应用操作的前三个 qubits。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+seeAlso:
+- microsoft.quantum.canon.applytofirstthreequbitsc
+- microsoft.quantum.canon.applytofirstthreequbitsa
+- microsoft.quantum.canon.applytofirstthreequbitsca
+ms.openlocfilehash: 4b8c08d97d6131ad76758999d76b86d44d0263a4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73213324"

@@ -1,0 +1,40 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.multiplyandaddphasebymodularinteger
+name: MultiplyAndAddPhaseByModularInteger
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 与 ModularAddProductLE 相同，但假定被加数将整数编码为 QFT
+remarks: >-
+  假定 `phaseSummand` 的最大位设置为0。
+
+  还假定 `phaseSummand` 的值小于 N。
+syntax: 'operation MultiplyAndAddPhaseByModularInteger (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, phaseSummand : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
+input:
+  content: '(constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, phaseSummand : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
+  types:
+  - name: constMultiplier
+    isPrimitive: true
+    uid: Int
+  - name: modulus
+    isPrimitive: true
+    uid: Int
+  - name: multiplier
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: phaseSummand
+    uid: microsoft.quantum.arithmetic.phaselittleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.modularaddproductle
+ms.openlocfilehash: f4dab26f55a61d0f3cbaf0b9b17fe4615f74356a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214837"

@@ -1,0 +1,22 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.paulievolutionset
+name: PauliEvolutionSet
+type: function
+namespace: Microsoft.Quantum.Simulation
+summary: 将 dynamical 生成器表示为一组 simulatable 入口和 Pauli 中的扩展。
+remarks: 这是由 <xref:microsoft.quantum.simulation.paulievolutionfunction>的部分应用程序获取的。
+syntax: 'function PauliEvolutionSet () : Microsoft.Quantum.Simulation.EvolutionSet'
+input:
+  content: ()
+  types: []
+output:
+  content: EvolutionSet。
+  types:
+  - summary: '`EvolutionSet`，它将 Pauli 基础的 `GeneratorIndex` 映射到 "EvolutionUnitary"。'
+    uid: microsoft.quantum.simulation.evolutionset
+ms.openlocfilehash: cd1180caa3e2afeea044e409ddde9ac414a7ee84
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73065378"

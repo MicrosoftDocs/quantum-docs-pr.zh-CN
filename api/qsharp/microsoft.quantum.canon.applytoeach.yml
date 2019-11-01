@@ -1,0 +1,55 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applytoeach
+name: ApplyToEach
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: 对寄存器中的每个元素应用 qubit 操作。
+examples: >-
+  准备 qubit $ \ket{+} $ 状态：
+
+
+  ```qsharp
+
+  using (register = Qubit[3]) {
+      ApplyToEach(H, register);
+  }
+
+  ```
+syntax: "operation ApplyToEach (singleElementOperation : ('T => Unit), register : 'T[]) : Unit"
+input:
+  content: "(singleElementOperation : ('T => Unit), register : 'T[])"
+  types:
+  - name: singleElementOperation
+    summary: 要应用到每个 qubit 的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: register
+    summary: 要在其上应用给定操作的 qubits 数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 操作的目标。
+seeAlso:
+- microsoft.quantum.canon.applytoeachc
+- microsoft.quantum.canon.applytoeacha
+- microsoft.quantum.canon.applytoeachca
+ms.openlocfilehash: a8f58bc8f3bf1d460a5b1f4ffbeba95185d09a1a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73210541"

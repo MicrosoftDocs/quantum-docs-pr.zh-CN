@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.oracles.obliviousoracle
+name: ObliviousOracle
+type: newtype
+namespace: Microsoft.Quantum.Oracles
+summary: >-
+  表示 oracle for 在意波幅放大。
+
+
+  Oracle $O $ 的输入为：
+
+
+  - Ancilla 注册了 $O $ $a $ 的操作。
+
+  - 系统注册 $s $，需要应用所需的单一 $U $，并在 register $a $ $ 上的 $ \ket{t}\_$。
+remarks: >-
+  此 oracle 定义者： $ $ O\ket {s}\_a\ket {\ psi}\_s = \lambda\ket{t}\_U \ket{\psi}\_s + \sqrt{1-| \lambda | ^ 2} \ket{t ^ \perp}\_a\cdots $ $ 作用于 ancilla 状态 $ \ket{s}\_$ to在任何系统状态 $ \ket{\psi}\_s $ 中，使用 $\_\ket{t} 标记的基数中的 $ \lambda $ 来实现单一 $U $。
+
+  第一个参数是 $ \ket{s}\_的 qubit 寄存器 $。 第二个参数是 $ \ket{\psi}\_s $ 的 qubit 寄存器。
+syntax: newtype ObliviousOracle = ((Qubit[], Qubit[]) => Unit is Adj + Ctl);
+ms.openlocfilehash: f06527701dfad61843df66faca5dd265525b6aa6
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231055"

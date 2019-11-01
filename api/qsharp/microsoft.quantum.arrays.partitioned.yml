@@ -1,0 +1,43 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.partitioned
+name: Partitioned
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 将数组拆分为多个部分。
+examples: >-
+  ```qsharp
+
+  // The following returns [[1,5],[3],[7]];
+
+  let split = Partitioned([2,1], [1,5,3,7]);
+
+  ```
+syntax: "function Partitioned (nElements : Int[], arr : 'T[]) : 'T[][]"
+input:
+  content: "(nElements : Int[], arr : 'T[])"
+  types:
+  - name: nElements
+    summary: 数组的每个部分中的元素数
+    isArray: true
+    isPrimitive: true
+    uid: Int
+  - name: arr
+    summary: 要拆分的输入数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T[][]"
+  types:
+  - summary: 多个数组，其中第一个数组是 `arr` 的第一个 `nElements[0]`，第二个数组是 `arr` 等的下一个 `nElements[1]`。最后一个数组将包含所有剩余元素。
+    isArray: true
+    types:
+    - isArray: true
+      uid: "'T"
+      isLocal: true
+ms.openlocfilehash: 6e26d4d49f50c8e9ee4c18681f88272a45d2ef20
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218084"

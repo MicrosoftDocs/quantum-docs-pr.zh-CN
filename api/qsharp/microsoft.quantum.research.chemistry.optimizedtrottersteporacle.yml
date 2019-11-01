@@ -1,0 +1,50 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.research.chemistry.optimizedtrottersteporacle
+name: OptimizedTrotterStepOracle
+type: function
+namespace: Microsoft.Quantum.Research.Chemistry
+summary: 返回优化的 Trotter 步骤操作和运行它所需的参数。
+syntax: 'function OptimizedTrotterStepOracle (qSharpData : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerEncodingData, trotterStepSize : Double, trotterOrder : Int) : (Int, (Double, (Qubit[] => Unit is Adj + Ctl)))'
+input:
+  content: （qSharpData： JordanWignerEncodingData，trotterStepSize： Double，trotterOrder： Int）
+  types:
+  - name: qSharpData
+    summary: '`JordanWignerEncodingData` 格式描述的 Hamiltonian。'
+    uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerencodingdata
+  - name: trotterStepSize
+    summary: Trotter 集成器的步长大小。
+    isPrimitive: true
+    uid: Double
+  - name: trotterOrder
+    summary: Trotter 集成器的顺序。
+    isPrimitive: true
+    uid: Int
+output:
+  content: （Int，（Double，（Qubit [] = > Unit 为形容词 + Ctl）））
+  types:
+  - summary: 一个元组，其中： `Int` 是分配的 qubits 数，`Double` 为 `1.0/trotterStepSize`，操作为 Trotter 步骤。
+    types:
+    - isPrimitive: true
+      uid: Int
+    - types:
+      - isPrimitive: true
+        uid: Double
+      - isOperation: true
+        input:
+          types:
+          - isArray: true
+            isPrimitive: true
+            uid: Qubit
+        output:
+          types:
+          - isPrimitive: true
+            uid: Unit
+        functors:
+        - Adjoint
+        - Controlled
+ms.openlocfilehash: f8fe25db9eac627649601b1526e4c81eb13d9b99
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066126"

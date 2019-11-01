@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.negationi
+name: NegationI
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回输入的一元求反。
+syntax: 'function NegationI (input : Int) : Int'
+input:
+  content: '(input : Int)'
+  types:
+  - name: input
+    summary: 要返回其求反的值。
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - summary: '`input`的一元求反。'
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 6eb696cf6e1a8228151e0e3f8dd28f054832b47b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211386"

@@ -1,0 +1,16 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.resultstack
+name: ResultStack
+type: newtype
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  `Result` 变量的后进先出堆栈。
+
+  堆栈包含整数容量、堆栈指针和 `Result` 数组。
+syntax: newtype ResultStack = (Int, Int, Result[]);
+ms.openlocfilehash: 4a0ba6c9e5e4489fd7a28d33df7d179268d46efe
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73222368"

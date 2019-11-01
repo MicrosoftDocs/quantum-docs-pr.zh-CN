@@ -1,0 +1,28 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.convert.doubleasstringwithformat
+name: DoubleAsStringWithFormat
+type: function
+namespace: Microsoft.Quantum.Convert
+summary: 使用给定的格式将给定的双精度浮点数转换为等效的字符串表示形式。
+remarks: 有关更多详细信息，请参阅[ C# Double](https://docs.microsoft.com/dotnet/api/system.double.tostring?view=netframework-4.7.1#System_Double_ToString_System_String_) 。
+syntax: 'function DoubleAsStringWithFormat (a : Double, fmt : String) : String'
+input:
+  content: '(a : Double, fmt : String)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Double
+  - name: fmt
+    isPrimitive: true
+    uid: String
+output:
+  content: String
+  types:
+  - isPrimitive: true
+    uid: String
+ms.openlocfilehash: 77ee195da86e00c017c7eca184a00d7fdf31f592
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233673"

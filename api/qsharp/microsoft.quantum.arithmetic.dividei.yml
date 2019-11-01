@@ -1,0 +1,41 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.dividei
+name: DivideI
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  两个量程整数相除。
+
+
+  `xs` 将保留剩余 `xs - floor(xs/ys) * ys`，`result` 将保留 `floor(xs/ys)`。
+remarks: >-
+  使用标准的移位和减法方法来实现除法。
+
+  受控版本是专用化的，因此不需要其他控制。
+syntax: 'operation DivideI (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, result : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
+input:
+  content: '(xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, result : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: xs
+    summary: 被除数 $n，将替换为余数。
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: ys
+    summary: $n $ 位除数
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: result
+    summary: $n $-bit 结果，必须以 $ \ket{0}$ 为状态，并将替换为整数相除的结果。
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: cf59cded0bb1de135268b578d3e06872c0cb8b68
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215109"

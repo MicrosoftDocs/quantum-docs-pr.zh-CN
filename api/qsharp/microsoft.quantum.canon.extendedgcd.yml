@@ -1,0 +1,36 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.extendedgcd
+name: ExtendedGCD
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.math.extendedgreatestcommondivisori"。
+syntax: 'function ExtendedGCD (a : Int, b : Int) : (Int, Int)'
+input:
+  content: '(a : Int, b : Int)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Int
+  - name: b
+    isPrimitive: true
+    uid: Int
+output:
+  content: (Int, Int)
+  types:
+  - types:
+    - isPrimitive: true
+      uid: Int
+    - isPrimitive: true
+      uid: Int
+ms.openlocfilehash: 69d6829cc0ec144024c521863883ac1966f219f2
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219393"

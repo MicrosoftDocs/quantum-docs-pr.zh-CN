@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.interpolategeneratorsystems
+name: InterpolateGeneratorSystems
+type: function
+namespace: Microsoft.Quantum.Simulation
+summary: 返回表示两个 `GeneratorSystem`之间的线性内插的 `TimeDependentGeneratorSystem`。
+syntax: 'function InterpolateGeneratorSystems (generatorSystemStart : Microsoft.Quantum.Simulation.GeneratorSystem, generatorSystemEnd : Microsoft.Quantum.Simulation.GeneratorSystem) : Microsoft.Quantum.Simulation.TimeDependentGeneratorSystem'
+input:
+  content: （generatorSystemStart： GeneratorSystem，generatorSystemEnd：： GeneratorSystem，）。
+  types:
+  - name: generatorSystemStart
+    summary: 开始 `GeneratorSystem`。
+    uid: microsoft.quantum.simulation.generatorsystem
+  - name: generatorSystemEnd
+    summary: 结束 `GeneratorSystem`。
+    uid: microsoft.quantum.simulation.generatorsystem
+output:
+  content: TimeDependentGeneratorSystem。
+  types:
+  - summary: 一个 `TimeDependentGeneratorSystem`，它表示一个系统，该系统是输入生成器系统的总和，其权重 $ （1-s） $ on `generatorSystemStart`，权重 $s $ on `generatorSystemEnd`。
+    uid: microsoft.quantum.simulation.timedependentgeneratorsystem
+seeAlso:
+- microsoft.quantum.canon.generatorsystem
+- microsoft.quantum.canon.timedependentgeneratorsystem
+ms.openlocfilehash: ac01ddee211ddf2ad741b611707aa6e5e6ea70f9
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73065514"

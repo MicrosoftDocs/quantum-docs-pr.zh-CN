@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.powcp
+name: PowCP
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回一个数的指定幂。
+syntax: 'function PowCP (a : Microsoft.Quantum.Math.ComplexPolar, power : Microsoft.Quantum.Math.ComplexPolar) : Microsoft.Quantum.Math.ComplexPolar'
+input:
+  content: '(a : Microsoft.Quantum.Math.ComplexPolar, power : Microsoft.Quantum.Math.ComplexPolar)'
+  types:
+  - name: a
+    uid: microsoft.quantum.math.complexpolar
+  - name: power
+    summary: $A $ 应引发的 power $b $。
+    uid: microsoft.quantum.math.complexpolar
+output:
+  content: Microsoft.Quantum.Math.ComplexPolar
+  types:
+  - summary: Power $a ^ b $
+    uid: microsoft.quantum.math.complexpolar
+ms.openlocfilehash: 0db0568ede6bf3de8c8086a03b80065499085738
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73221705"

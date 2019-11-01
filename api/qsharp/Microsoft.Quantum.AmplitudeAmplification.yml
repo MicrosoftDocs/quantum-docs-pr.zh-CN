@@ -1,0 +1,43 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.amplitudeamplification
+name: AmplitudeAmplification
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于执行振幅放大的函数和操作。\n\n # <a name=\"description\"></a>描述\n 采用部分反射的在意波幅放大是在此处实现的最常见的波幅放大形式。\n\n 这是通过操作 AmpAmpObliviousByReflectionPhases 调用的。\n\n 这有两个寄存器： `ancillaRegister` 和 `systemRegister`。\n\n 这会接受两个 oracles，这种反射只对 `ancillaRegister` 寄存器执行 `ReflectionOracle` 类型。\n\n 这就接受了一种类型 `ObliviousOracle` 的 oracle 特殊的在意波幅放大，这两种方法在两个寄存器上共同合作。\n\n `ancillaRegister` 的输入状态假定为第一个反射运算符的唯一 $-$1 eigenstate $I-2 \\ 票证 {s} \\ 寄存器 {s} $。\n\n 反射目标量程状态的反射通常是通过假定访问从计算基础 $ \\ket{0\\cdots 0} $ 准备该状态的 oracle 来实现的。\n\n 对于这些 oracles，我们约定需要两个寄存器： qubit `flagQubit` 注册，并注册 ancillaRegister 登记簿上的其他所有内容。\n\n 类型为 `StateOracle` 的 oracle 在两个寄存器上共同操作，用一些真实幅度来创建 `flagQubit` 寄存器中 $ \\ket{1}$ 标记的目标状态。\n\n 此标记状态的反射 `ReflectionOracle` 由操作 `TargetStateReflectionOracle`生成。\n\n 有关 `ancillaRegister` 的输入状态的反射 `ReflectionOracle` 是通过 StateOracle 生成的，然后使用 ReflectionStart （）反射 $ \\ket{0\\cdots 0} $。\n\n `DeterministicStateOracle` 类型的 oracle 对 `qubitState` 寄存器进行操作，以完全不带标志的方式创建目标状态。\n\n `AmpAmpObliviousByOraclePhases` 是接受 oracles `StateOracle` 和 `ObliviousOracle` 而不是反射的在意波幅放大版本。\n\n 请注意，振幅放大是在意波幅放大的一种特殊情况，其中 `ObliviousOracle` 是标识运算符，不存在任何系统 qubits （即 `systemRegister` 为空）。\n\n 这是通过操作 `AmpAmByReflectionPhases` 和 `AmpAmpByOraclePhases`调用的。\n\n Grover 搜索标准情况下的部分反射阶段由函数 AmpAmpPhasesStandard 提供。\n\n 例如，我们有以下依赖项： AmpAmpByOracle-> AmpAmpByOraclePhases-> AmpAmpObliviousByOraclePhases-> AmpAmpObliviousByReflectionPhases。"
+functions:
+- uid: microsoft.quantum.amplitudeamplification.ampampbyoracle
+  summary: 标准振幅放大算法
+- uid: microsoft.quantum.amplitudeamplification.ampampbyoraclephases
+  summary: 用于部分反射的 oracles 放大幅度。
+- uid: microsoft.quantum.amplitudeamplification.ampampbyreflectionsphases
+  summary: 通过部分反射放大幅度。
+- uid: microsoft.quantum.amplitudeamplification.ampampobliviousbyoraclephases
+  summary: 用于部分反射的在意波幅按 oracles 放大。
+- uid: microsoft.quantum.amplitudeamplification.ampampobliviousbyreflectionphases
+  summary: 通过指定部分反射来返回实现在意波幅放大的单一单一。
+- uid: microsoft.quantum.amplitudeamplification.ampampphasesfixedpoint
+  summary: 计算固定点幅度放大的部分反射阶段。
+- uid: microsoft.quantum.amplitudeamplification.ampampphasesstandard
+  summary: 计算标准振幅放大的部分反射阶段。
+- uid: microsoft.quantum.amplitudeamplification.ampamprotationtoreflectionphases
+  summary: 将指定为单一 qubit 旋转的阶段转换为指定为部分反射的阶段。
+- uid: microsoft.quantum.amplitudeamplification.reflectionstart
+  summary: 构造有关 "全零字符串 | 0 ... 0 〉" 的反射，这是到波幅放大的典型输入状态。
+- uid: microsoft.quantum.amplitudeamplification.targetstatereflectionoracle
+  summary: >-
+    构造 qubit 标志唯一标记的目标状态的 `ReflectionOracle`。
+
+
+    目标状态的单个 qubit 设置为1，所有其他0： $ \ket{1}_f $。
+operations:
+- uid: microsoft.quantum.amplitudeamplification.ampamprusbyoracle
+  summary: 定点波幅放大算法
+newtypes:
+- uid: microsoft.quantum.amplitudeamplification.reflectionphases
+  summary: 振幅放大中部分反射序列的阶段。
+- uid: microsoft.quantum.amplitudeamplification.rotationphases
+  summary: 振幅放大中 qubit 旋转序列的各个阶段。
+ms.openlocfilehash: acec4d085e42811618228c8e120842dc400c50b4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73057008"

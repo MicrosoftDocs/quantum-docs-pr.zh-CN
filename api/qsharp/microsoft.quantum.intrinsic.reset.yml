@@ -1,0 +1,24 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.reset
+name: Reset
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: 给定单个 qubit，对其进行度量，并确保其处于 | 0 ⟩状态，以便可以安全地释放它。
+syntax: 'operation Reset (target : Qubit) : Unit'
+input:
+  content: '(target : Qubit)'
+  types:
+  - name: target
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 9c46f5d3162c8f124418b61dae7449f05f86072d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216605"

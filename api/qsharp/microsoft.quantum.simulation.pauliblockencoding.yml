@@ -1,0 +1,42 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.pauliblockencoding
+name: PauliBlockEncoding
+type: function
+namespace: Microsoft.Quantum.Simulation
+summary: >-
+  为 Hamiltonian 创建块编码单一编码。
+
+
+  Hamiltonian $H = \sum_{j}\alpha_j P_j $ 由 Pauli 术语 $P _j $，其中每个项都带有实系数 $ \alpha_j $ 描述。
+remarks: 这是通过以下方法获取的：准备并 unpreparing 状态 $ \ sum_ {j} \ sqrt {\ alpha_j/\ alpha} \ 票证 {j} $，并构造一个按乘法控制的单一 <xref:microsoft.quantum.preparation.statepreparationpositivecoefficients> 和 <xref:microsoft.quantum.canon.multiplexoperationsfromgenerator>。
+syntax: 'function PauliBlockEncoding (generatorSystem : Microsoft.Quantum.Simulation.GeneratorSystem) : (Double, Microsoft.Quantum.Simulation.BlockEncodingReflection)'
+input:
+  content: '(generatorSystem : Microsoft.Quantum.Simulation.GeneratorSystem)'
+  types:
+  - name: generatorSystem
+    summary: 一个 `GeneratorSystem`，它将 $H $ 作为 Pauli 条款的总和进行描述
+    uid: microsoft.quantum.simulation.generatorsystem
+output:
+  content: (Double, Microsoft.Quantum.Simulation.BlockEncodingReflection)
+  types:
+  - summary: >-
+      ## <a name="first-parameter"></a>第一个参数
+
+
+      系数 $ \alpha = \sum_{j} | \alpha_j | $ 的一个标准。
+
+
+      ## <a name="second-parameter"></a>第二个参数
+
+
+      `BlockEncodingReflection` 单一 $U $ Hamiltonian $H $。 由于这个单一的 $U ^ 2 = I $，它也是一个反射。
+    types:
+    - isPrimitive: true
+      uid: Double
+    - uid: microsoft.quantum.simulation.blockencodingreflection
+ms.openlocfilehash: 352ab71457601c38b22e93f706cb59f50bf24151
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216129"

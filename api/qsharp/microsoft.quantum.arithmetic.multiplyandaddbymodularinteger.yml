@@ -1,0 +1,45 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.multiplyandaddbymodularinteger
+name: MultiplyAndAddByModularInteger
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  对 qubit 寄存器上的整数常量执行模块化乘法和-add。
+
+
+  为给定的取模（$N $、常量乘数 $a $ 和 \ket{x} $y $）实现 map $ $ \begin{align} \ket{x} \ket{b} \mapsto \ket{b \cdot + a \operatorname{mod} x \end{align} N} 被加数 $ $。
+remarks: >-
+  - 有关线路和说明，请参阅[arXiv： quant/0205095V3 第7页](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=7)上的图6
+
+  - 此操作对应于 ArXiv 中的 CMULT （a） MOD （N） [： quant/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf)
+syntax: 'operation MultiplyAndAddByModularInteger (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, summand : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
+input:
+  content: '(constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, summand : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: constMultiplier
+    isPrimitive: true
+    uid: Int
+  - name: modulus
+    summary: 取模 $N $，将对执行加法和乘法运算。
+    isPrimitive: true
+    uid: Int
+  - name: multiplier
+    summary: 一个量程寄存器，表示其值要添加到 `summand`的每个基础状态标签的无符号整数。
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: summand
+    summary: 一个量程寄存器，表示要用作此操作的目标的无符号整数。
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 6f445f584af1c05266be8e68a4298d73376cda27
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218764"

@@ -1,0 +1,24 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.chemistry.jordanwigner.optimizedblockencodinggeneratorsystem
+name: OptimizedBlockEncodingGeneratorSystem
+type: function
+namespace: Microsoft.Quantum.Chemistry.JordanWigner
+summary: 将 `JWOptimizedHTerms` 描述的 Hamiltonian 转换为 Pauli `GeneratorIndex`形式表示的一个 `GeneratorSystem`。
+syntax: 'function OptimizedBlockEncodingGeneratorSystem (data : Microsoft.Quantum.Chemistry.JordanWigner.JWOptimizedHTerms) : Microsoft.Quantum.Chemistry.JordanWigner.OptimizedBEGeneratorSystem'
+input:
+  content: '(data : Microsoft.Quantum.Chemistry.JordanWigner.JWOptimizedHTerms)'
+  types:
+  - name: data
+    summary: '`JWOptimizedHTerms` 格式的 Hamiltonian 说明。'
+    uid: microsoft.quantum.chemistry.jordanwigner.jwoptimizedhterms
+output:
+  content: Microsoft.Quantum.Chemistry.JordanWigner.OptimizedBEGeneratorSystem
+  types:
+  - summary: Hamiltonian 的表示形式 `GeneratorSystem`。
+    uid: microsoft.quantum.chemistry.jordanwigner.optimizedbegeneratorsystem
+ms.openlocfilehash: 85e34ffd430096873e9bdb9e15be9ebaf7127e94
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231922"

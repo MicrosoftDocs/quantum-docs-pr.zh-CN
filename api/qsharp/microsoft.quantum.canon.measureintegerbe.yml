@@ -1,0 +1,29 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.measureintegerbe
+name: MeasureIntegerBE
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  此操作已被删除。
+syntax: 'operation MeasureIntegerBE (target : Microsoft.Quantum.Arithmetic.BigEndian) : Int'
+input:
+  content: '(target : Microsoft.Quantum.Arithmetic.BigEndian)'
+  types:
+  - name: target
+    uid: microsoft.quantum.arithmetic.bigendian
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 51669c9167bc92e9fef865d925f9a00cba56e4ba
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73225190"

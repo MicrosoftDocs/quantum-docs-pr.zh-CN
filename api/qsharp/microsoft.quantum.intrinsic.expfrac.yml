@@ -1,0 +1,46 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.expfrac
+name: ExpFrac
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: >-
+  使用由 dyadic 分式给定的自变量对 qubit Pauli 运算符应用指数。
+
+
+  \begin{align} e ^ {i \pi k [P_0 \otimes P_1 \cdots P_ {N-1}]/2 ^ N}，\end{align} 其中 $P _i $ 是 `paulis`的 $i $ th 元素，其中 $N = $`Length(paulis)`。
+syntax: 'operation ExpFrac (paulis : Pauli[], numerator : Int, power : Int, qubits : Qubit[]) : Unit'
+input:
+  content: '(paulis : Pauli[], numerator : Int, power : Int, qubits : Qubit[])'
+  types:
+  - name: paulis
+    summary: Qubit Pauli 值的数组，用于指示每个 qubit 上的 tensor 产品因素。
+    isArray: true
+    isPrimitive: true
+    uid: Pauli
+  - name: numerator
+    summary: Qubit 寄存器旋转角度的 dyadic 分表示法中的分子（$k $）。
+    isPrimitive: true
+    uid: Int
+  - name: power
+    summary: 2的幂（$n $），指定 qubit 寄存器的旋转角度。
+    isPrimitive: true
+    uid: Int
+  - name: qubits
+    summary: 注册以应用给定的旋转。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: d02f48d695db3dd2d7012df5bbf22718ffe41b74
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73223762"

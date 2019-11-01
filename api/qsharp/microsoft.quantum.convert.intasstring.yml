@@ -1,0 +1,25 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.convert.intasstring
+name: IntAsString
+type: function
+namespace: Microsoft.Quantum.Convert
+summary: 将给定整数转换为等效的字符串表示形式。
+remarks: 有关更多详细信息，请参阅[ C# Convert。](https://docs.microsoft.com/dotnet/api/system.convert.tostring?view=netframework-4.7.1#System_Convert_ToString_System_Int64_)
+syntax: 'function IntAsString (a : Int) : String'
+input:
+  content: （a： Int）
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Int
+output:
+  content: 字符串
+  types:
+  - isPrimitive: true
+    uid: String
+ms.openlocfilehash: 0a4b5418194bfd45b904f2469cac3bd020e838a7
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066517"

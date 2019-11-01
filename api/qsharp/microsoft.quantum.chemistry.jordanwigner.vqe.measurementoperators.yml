@@ -1,0 +1,38 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.chemistry.jordanwigner.vqe.measurementoperators
+name: MeasurementOperators
+type: function
+namespace: Microsoft.Quantum.Chemistry.JordanWigner.VQE
+summary: 计算计算 Wigner 条款预期所需的所有度量运算符。
+syntax: 'function MeasurementOperators (nQubits : Int, indices : Int[], termType : Int) : Pauli[][]'
+input:
+  content: '(nQubits : Int, indices : Int[], termType : Int)'
+  types:
+  - name: nQubits
+    summary: 模拟分子系统所需的 qubits 数。
+    isPrimitive: true
+    uid: Int
+  - name: indices
+    summary: 一个数组，该数组包含将每个 Pauli 运算符应用到的 qubit 的索引。
+    isArray: true
+    isPrimitive: true
+    uid: Int
+  - name: termType
+    summary: 约旦 Wigner 术语的类型。
+    isPrimitive: true
+    uid: Int
+output:
+  content: Pauli[][]
+  types:
+  - summary: 度量运算符数组（每个都是 Pauli 的数组）。
+    isArray: true
+    types:
+    - isArray: true
+      isPrimitive: true
+      uid: Pauli
+ms.openlocfilehash: e22af035b43d8b3ebeea22c8c4bfa0f7289ab82c
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227519"

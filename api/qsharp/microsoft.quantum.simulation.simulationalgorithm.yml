@@ -1,0 +1,19 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.simulationalgorithm
+name: SimulationAlgorithm
+type: newtype
+namespace: Microsoft.Quantum.Simulation
+summary: >-
+  表示与时间无关的模拟算法。
+
+
+  与时间无关的模拟技术可转换 <xref:microsoft.quantum.simulation.evolutiongenerator>
+
+  到某个时间间隔内的单一时间演变。
+syntax: newtype SimulationAlgorithm = ((Double, Microsoft.Quantum.Simulation.EvolutionGenerator, Qubit[]) => Unit is Adj + Ctl);
+ms.openlocfilehash: 0d70a6f73c49f4759473981cd2f34254f7d721f7
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73221620"

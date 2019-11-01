@@ -1,0 +1,25 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.convert.intasdouble
+name: IntAsDouble
+type: function
+namespace: Microsoft.Quantum.Convert
+summary: 将给定整数转换为等效的双精度浮点数。
+remarks: 有关更多详细信息，请参阅[ C# ToDouble](https://docs.microsoft.com/dotnet/api/system.convert.todouble?view=netframework-4.7.1#System_Convert_ToDouble_System_Int64_) 。
+syntax: 'function IntAsDouble (a : Int) : Double'
+input:
+  content: '(a : Int)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Int
+output:
+  content: Double
+  types:
+  - isPrimitive: true
+    uid: Double
+ms.openlocfilehash: a81a6f63c00b6d7ab0632d3b55d07b06e0fdfd5a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233486"

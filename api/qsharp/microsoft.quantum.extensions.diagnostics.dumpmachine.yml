@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.diagnostics.dumpmachine
+name: DumpMachine
+type: function
+namespace: Microsoft.Quantum.Extensions.Diagnostics
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.diagnostics.dumpmachine"。
+syntax: "function DumpMachine (location : 'T) : Unit"
+input:
+  content: "(location : 'T)"
+  types:
+  - name: location
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 34693a44ea0298024fa4b798caf571f6f8af7b70
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73224952"

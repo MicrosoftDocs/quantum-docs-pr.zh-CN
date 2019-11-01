@@ -1,0 +1,37 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.logical.not
+name: Not
+type: function
+namespace: Microsoft.Quantum.Logical
+summary: 返回值的布尔值求反。
+remarks: >-
+  以下项是等效的：
+
+
+  ```Q#
+
+  let x = not value;
+
+  let x = Not(value);
+
+  ```
+syntax: 'function Not (value : Bool) : Bool'
+input:
+  content: '(value : Bool)'
+  types:
+  - name: value
+    summary: 要求反的值。
+    isPrimitive: true
+    uid: Bool
+output:
+  content: Bool
+  types:
+  - summary: 当且仅当 `value` `false`时，`true`。
+    isPrimitive: true
+    uid: Bool
+ms.openlocfilehash: 85df2e3787e96ab18c351dc5a210e5b8a2803b09
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73235407"

@@ -1,0 +1,25 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.arcsin
+name: ArcSin
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回其正弦为指定数字的角度。
+remarks: 有关更多详细信息，请参阅[Asin](https://docs.microsoft.com/dotnet/api/system.math.asin) 。
+syntax: 'function ArcSin (y : Double) : Double'
+input:
+  content: '(y : Double)'
+  types:
+  - name: y
+    isPrimitive: true
+    uid: Double
+output:
+  content: Double
+  types:
+  - isPrimitive: true
+    uid: Double
+ms.openlocfilehash: ee6dd6d6ffc66957116162dbe8286291d0c90599
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73221960"

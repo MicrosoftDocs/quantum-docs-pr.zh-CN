@@ -1,0 +1,24 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.measurefxp
+name: MeasureFxP
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 度量固定点数字，将其值返回为 Double，并将所有寄存器重置为零。
+syntax: 'operation MeasureFxP (fp : Microsoft.Quantum.Arithmetic.FixedPoint) : Double'
+input:
+  content: '(fp : Microsoft.Quantum.Arithmetic.FixedPoint)'
+  types:
+  - name: fp
+    summary: 要测量的定点数。
+    uid: microsoft.quantum.arithmetic.fixedpoint
+output:
+  content: Double
+  types:
+  - isPrimitive: true
+    uid: Double
+ms.openlocfilehash: bcf73d2cac3f672096c93824899837fbb348d229
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214905"

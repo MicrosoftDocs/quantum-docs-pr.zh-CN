@@ -1,0 +1,38 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.iteratethroughcartesianpower
+name: IterateThroughCartesianPower
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: 循环访问变量，如 arr，通过笛卡尔积 [0，绑定-1] × [0，绑定-1] × [0，绑定-1]，并为笛卡尔积的每个元素调用 op （arr）
+syntax: 'operation IterateThroughCartesianPower (power : Int, bound : Int, op : (Int[] => Unit)) : Unit'
+input:
+  content: '(power : Int, bound : Int, op : (Int[] => Unit))'
+  types:
+  - name: power
+    isPrimitive: true
+    uid: Int
+  - name: bound
+    isPrimitive: true
+    uid: Int
+  - name: op
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Int
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 4a35dbc3be07bf936e6a0ff2abf09004cc103fd0
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73223014"

@@ -1,0 +1,53 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.zip3
+name: Zip3
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 给定三个数组，返回一个新数组，其中包含3个元组，以便每个第三个元组包含每个原始数组中的一个元素。
+syntax: "function Zip3 (first : 'T1[], second : 'T2[], third : 'T3[]) : ('T1, 'T2, 'T3)[]"
+input:
+  content: "(first : 'T1[], second : 'T2[], third : 'T3[])"
+  types:
+  - name: first
+    summary: 一个数组，其中包含每个元组的第一个元素的值。
+    isArray: true
+    uid: "'T1"
+    isLocal: true
+  - name: second
+    summary: 一个数组，其中包含每个元组的第二个元素的值。
+    isArray: true
+    uid: "'T2"
+    isLocal: true
+  - name: third
+    summary: 一个数组，其中包含每个元组的第三个元素的值。
+    isArray: true
+    uid: "'T3"
+    isLocal: true
+output:
+  content: ('T1, 'T2, 'T3)[]
+  types:
+  - summary: 一个数组，其中包含每个 `idx`的窗体 `(first[idx], second[idx], third[idx])`。 如果三个数组的长度不相等，则输出将与输入的较短内容相同。
+    isArray: true
+    types:
+    - uid: "'T1"
+      isLocal: true
+    - uid: "'T2"
+      isLocal: true
+    - uid: "'T3"
+      isLocal: true
+typeParameters:
+- uid: "'T1"
+  summary: 第一个数组元素的类型。
+- uid: "'T2"
+  summary: 第二个数组元素的类型。
+- uid: "'T3"
+  summary: 第三个数组元素的类型。
+seeAlso:
+- zip
+- zip4
+ms.openlocfilehash: 1a4f3a533178e089d975d5a510d202afe004d999
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214174"

@@ -1,0 +1,28 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.i
+name: I
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: 在单个 qubit 上执行标识操作（无操作）。
+remarks: 这是一个不能操作的。 提供此方法是为了提供完整的，因为有时在算法中调用标识或将其作为参数传递是非常有用的。
+syntax: 'operation I (target : Qubit) : Unit'
+input:
+  content: '(target : Qubit)'
+  types:
+  - name: target
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: fd4e9566c6ed1998681385d46643b4f001c6fb6e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73234166"
