@@ -1,0 +1,42 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.primitive.rfrac
+name: RFrac
+type: operation
+namespace: Microsoft.Quantum.Primitive
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.intrinsic.rfrac"。
+syntax: 'operation RFrac (pauli : Pauli, numerator : Int, power : Int, qubit : Qubit) : Unit'
+input:
+  content: '(pauli : Pauli, numerator : Int, power : Int, qubit : Qubit)'
+  types:
+  - name: pauli
+    isPrimitive: true
+    uid: Pauli
+  - name: numerator
+    isPrimitive: true
+    uid: Int
+  - name: power
+    isPrimitive: true
+    uid: Int
+  - name: qubit
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 28c83389286dffcbe750a400e7a7f37aec0e639a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211998"

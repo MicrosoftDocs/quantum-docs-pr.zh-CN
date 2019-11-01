@@ -1,0 +1,57 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applypauli
+name: ApplyPauli
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: 给定多 qubit Pauli 运算符，将相应的操作应用于寄存器。
+examples: >-
+  以下项是等效的：
+
+
+  ```qsharp
+
+  ApplyPauli([PauliY, PauliZ, PauliX], target);
+
+  ```
+
+
+  and
+
+
+  ```qsharp
+
+  Y(target[0]);
+
+  Z(target[1]);
+
+  X(target[2]);
+
+  ```
+syntax: 'operation ApplyPauli (pauli : Pauli[], target : Qubit[]) : Unit'
+input:
+  content: '(pauli : Pauli[], target : Qubit[])'
+  types:
+  - name: pauli
+    summary: 多 qubit Pauli 运算符，表示为单个 qubit Pauli 运算符的数组。
+    isArray: true
+    isPrimitive: true
+    uid: Pauli
+  - name: target
+    summary: 注册以在上应用给定的 Pauli 操作。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: d44160aebb18ea6308b955f359ff719c6269c264
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73213494"

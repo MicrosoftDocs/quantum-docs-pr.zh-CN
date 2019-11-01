@@ -1,0 +1,63 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.assertoperationsequalreferenced
+name: AssertOperationsEqualReferenced
+type: operation
+namespace: Microsoft.Quantum.Diagnostics
+summary: >-
+  假设有两个运算，则断言它们对于所有输入状态都是相同的。
+
+
+  通过使用 Choi – Jamiłkowski isomorphism 将断言降低到两个放大寄存器上的某个 qubit 状态断言，实现此断言。
+
+  因此，此操作只需对正在测试的每个操作进行一次调用，而需要分配两个要分配的 qubits。
+
+  例如，可以使用这种断言来确保操作的优化版本与其简单的实现完全相同，或者对非量程输入进行操作的操作与已知情况有关。
+remarks: >-
+  此操作要求对预期行为进行建模的操作为 adjointable，以便可以在目标寄存器上单独执行相反的操作。
+
+  正式，可以指定换位操作，该操作放宽此要求，但换位操作并不是对任意量程操作以物理 realizable 的形式进行的，因此不作为选项包含在此处。
+syntax: 'operation AssertOperationsEqualReferenced (nQubits : Int, actual : (Qubit[] => Unit), expected : (Qubit[] => Unit is Adj)) : Unit'
+input:
+  content: （nQubits： Int，实际：（Qubit [] = > Unit），应为：（Qubit [] = > 单位为形容词））
+  types:
+  - name: nQubits
+    summary: 要传递给每个操作的 qubits 数。
+    isPrimitive: true
+    uid: Int
+  - name: 实际上
+    summary: 要测试的操作。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: 结果
+    summary: 定义要测试的操作的预期行为的操作。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+output:
+  content: 计价单位
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 0dfadb6be785c7ba4eaa517c725b79955e037a32
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066568"

@@ -1,0 +1,22 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.timedependentblockencoding
+name: TimeDependentBlockEncoding
+type: newtype
+namespace: Microsoft.Quantum.Simulation
+summary: >-
+  表示由时钟寄存器控制的 `BlockEncoding`。
+
+
+  也就是说，`TimeDependentBlockEncoding` 是 `d` 时钟寄存器中的状态 $ \ket{k}_d $ 控制的单一 $U $，因此，在系统注册 `s` 上操作的任意 $H _k $ 将在与辅助状态 $ \ket 相对应的左上块中进行编码{0}_a $。 那是
+
+
+  $ $ \begin{align} （\bra{0}\_a\otimes I_ {ds}） U （\ket{0}\_a\otimes I_ {ds}） = \sum_{k}\ket{k}\bra{k}\_d\otimes H_k。
+
+  \end{align} $ $。
+syntax: newtype TimeDependentBlockEncoding = ((Qubit[], Qubit[], Qubit[]) => Unit is Adj + Ctl);
+ms.openlocfilehash: 1f41d7592e7f031085430a42edaa341874724851
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211012"

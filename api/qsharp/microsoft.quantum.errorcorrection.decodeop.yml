@@ -1,0 +1,17 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.errorcorrection.decodeop
+name: DecodeOp
+type: newtype
+namespace: Microsoft.Quantum.ErrorCorrection
+summary: >-
+  表示一个操作，该操作将编码的寄存器解码为物理寄存器，并使用 qubits 来记录一个症状。
+
+
+  DecodeOp 的参数与从 EncodeOp 返回的参数相同，反之亦然。
+syntax: newtype DecodeOp = (Microsoft.Quantum.ErrorCorrection.LogicalRegister => (Qubit[], Qubit[]));
+ms.openlocfilehash: ef9ad274336b019961256a63e7e48a8c011779bf
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73234608"

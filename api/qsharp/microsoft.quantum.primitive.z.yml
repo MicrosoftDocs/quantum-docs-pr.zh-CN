@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.primitive.z
+name: Z
+type: operation
+namespace: Microsoft.Quantum.Primitive
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.intrinsic.z"。
+syntax: 'operation Z (qubit : Qubit) : Unit'
+input:
+  content: '(qubit : Qubit)'
+  types:
+  - name: qubit
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: 计价单位
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: fd4415d07339b75befad4b5acf1779a174c2ff01
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73066228"

@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.primitive.t
+name: T
+type: operation
+namespace: Microsoft.Quantum.Primitive
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.intrinsic.t"。
+syntax: 'operation T (qubit : Qubit) : Unit'
+input:
+  content: '(qubit : Qubit)'
+  types:
+  - name: qubit
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 0af98cc34a49afb10acc6d412ec5bc2f1d844d90
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211131"

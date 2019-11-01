@@ -1,0 +1,54 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.delayedc
+name: DelayedC
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: 返回应用给定自变量的给定操作的操作。
+syntax: "function DelayedC (op : ('T => Unit is Ctl), arg : 'T) : (Unit => Unit is Ctl)"
+input:
+  content: "(op : ('T => Unit is Ctl), arg : 'T)"
+  types:
+  - name: op
+    summary: 应用返回值后应用的操作
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: arg
+    summary: 要应用操作 `op` 的输入。
+    uid: "'T"
+    isLocal: true
+output:
+  content: (Unit => Unit is Ctl)
+  types:
+  - summary: 使用输入 `arg` 应用 `op` 的新操作
+    isOperation: true
+    input:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+typeParameters:
+- uid: "'T"
+  summary: 要延迟的操作的输入类型。
+seeAlso:
+- microsoft.quantum.canon.delayed
+- microsoft.quantum.canon.delay
+ms.openlocfilehash: 99a85abc78a28a939f67278458069b46a8c36324
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219410"

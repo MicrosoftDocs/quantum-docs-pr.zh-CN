@@ -1,0 +1,38 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.blockencodingtoreflection
+name: BlockEncodingToReflection
+type: function
+namespace: Microsoft.Quantum.Simulation
+summary: >-
+  将 `BlockEncoding` 转换为等效 `BLockEncodingReflection`。
+
+
+  也就是说，假设有一个 `BlockEncoding` 单一 $U $，该运算符对某个运算符 $H "重要" 进行编码，然后将其转换为对同一运算符进行编码的 `BlockEncodingReflection` $U $，同时还满足 $U "^ \dagger = U" $。
+
+  这会将 $U $ 的辅助寄存器大小增加了一个 qubit。
+remarks: 这会将 $U $ 的辅助寄存器大小增加了一个 qubit。
+syntax: 'function BlockEncodingToReflection (blockEncoding : Microsoft.Quantum.Simulation.BlockEncoding) : Microsoft.Quantum.Simulation.BlockEncodingReflection'
+references: >-
+  - Hamiltonian Simulation by Qubitization
+    Guang Hao Low, Isaac L. Chuang
+    https://arxiv.org/abs/1610.06546
+input:
+  content: （blockEncoding： BlockEncoding）
+  types:
+  - name: blockEncoding
+    summary: '`BlockEncoding` 单一 $U $ 可转换为反射。'
+    uid: microsoft.quantum.simulation.blockencoding
+output:
+  content: BlockEncodingReflection。
+  types:
+  - summary: 单一 $U ' $ 共同作用于寄存器 `a` 和 `s`，并 $H $，并满足 $U ' ^ \dagger = U ' $。
+    uid: microsoft.quantum.simulation.blockencodingreflection
+seeAlso:
+- microsoft.quantum.canon.blockencoding
+- microsoft.quantum.canon.blockencodingreflection
+ms.openlocfilehash: 47eba3c59ef30f89139830aa4d9b98d22d141d8f
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73065616"

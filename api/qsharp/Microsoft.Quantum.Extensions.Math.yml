@@ -1,0 +1,190 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.extensions.math
+name: Microsoft 量子. Math
+functions:
+- uid: microsoft.quantum.extensions.math.absb
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.absl"。
+- uid: microsoft.quantum.extensions.math.absd
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.absd"。
+- uid: microsoft.quantum.extensions.math.absi
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.absi"。
+- uid: microsoft.quantum.extensions.math.arccos
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.arccos"。
+- uid: microsoft.quantum.extensions.math.arcsin
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.arcsin"。
+- uid: microsoft.quantum.extensions.math.arctan
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.arctan"。
+- uid: microsoft.quantum.extensions.math.arctan2
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.arctan2"。
+- uid: microsoft.quantum.extensions.math.ceiling
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.ceiling"。
+- uid: microsoft.quantum.extensions.math.cos
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.cos"。
+- uid: microsoft.quantum.extensions.math.cosh
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.cosh"。
+- uid: microsoft.quantum.extensions.math.divremb
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.divreml"。
+- uid: microsoft.quantum.extensions.math.e
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.e"。
+- uid: microsoft.quantum.extensions.math.expd
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.expd"。
+- uid: microsoft.quantum.extensions.math.floor
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.floor"。
+- uid: microsoft.quantum.extensions.math.ieeeremainder
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.ieeeremainder"。
+- uid: microsoft.quantum.extensions.math.log
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.log"。
+- uid: microsoft.quantum.extensions.math.log10
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.log10"。
+- uid: microsoft.quantum.extensions.math.maxb
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.maxl"。
+- uid: microsoft.quantum.extensions.math.maxd
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.maxd"。
+- uid: microsoft.quantum.extensions.math.maxi
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.maxi"。
+- uid: microsoft.quantum.extensions.math.minb
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.minl"。
+- uid: microsoft.quantum.extensions.math.mind
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.mind"。
+- uid: microsoft.quantum.extensions.math.mini
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.mini"。
+- uid: microsoft.quantum.extensions.math.modpowb
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.modpowl"。
+- uid: microsoft.quantum.extensions.math.pi
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.pi"。
+- uid: microsoft.quantum.extensions.math.powd
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.powd"。
+- uid: microsoft.quantum.extensions.math.round
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.round"。
+- uid: microsoft.quantum.extensions.math.signb
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.signl"。
+- uid: microsoft.quantum.extensions.math.signd
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.signd"。
+- uid: microsoft.quantum.extensions.math.signi
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.signi"。
+- uid: microsoft.quantum.extensions.math.sin
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.sin"。
+- uid: microsoft.quantum.extensions.math.sinh
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.sinh"。
+- uid: microsoft.quantum.extensions.math.sqrt
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.sqrt"。
+- uid: microsoft.quantum.extensions.math.tan
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.tan"。
+- uid: microsoft.quantum.extensions.math.tanh
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.tanh"。
+- uid: microsoft.quantum.extensions.math.truncate
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.math.truncate"。
+ms.openlocfilehash: a1a8cda192f7e95141eb2e34baa37ddaae4cb8c9
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73056335"

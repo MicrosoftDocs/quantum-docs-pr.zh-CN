@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.multiplysi
+name: MultiplySI
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 将有符号整数与有符号整数相乘 `xs` `ys` 并将结果存储在 `result`中，这必须最初为零。
+syntax: 'operation MultiplySI (xs : Microsoft.Quantum.Arithmetic.SignedLittleEndian, ys : Microsoft.Quantum.Arithmetic.SignedLittleEndian, result : Microsoft.Quantum.Arithmetic.SignedLittleEndian) : Unit'
+input:
+  content: '(xs : Microsoft.Quantum.Arithmetic.SignedLittleEndian, ys : Microsoft.Quantum.Arithmetic.SignedLittleEndian, result : Microsoft.Quantum.Arithmetic.SignedLittleEndian)'
+  types:
+  - name: xs
+    summary: n 位被乘数（SignedLittleEndian）
+    uid: microsoft.quantum.arithmetic.signedlittleendian
+  - name: ys
+    summary: n 位乘法器（SignedLittleEndian）
+    uid: microsoft.quantum.arithmetic.signedlittleendian
+  - name: result
+    summary: 2n 位结果（SignedLittleEndian）的状态必须为 $ \ket{0}$ 初始。
+    uid: microsoft.quantum.arithmetic.signedlittleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 154e870416e47547a115fcc5533d187b3ed67213
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214803"

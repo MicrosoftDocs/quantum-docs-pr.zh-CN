@@ -1,0 +1,60 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.delayca
+name: DelayCA
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  应用给定操作，延迟。
+
+
+  给定一个操作和一个对该操作的输入时，只要提供附加输入，就会应用该操作。
+
+  具体而言，表达式 `Delay(op, arg, _)` 是在调用时将 `op` 应用于 `arg` 的操作。
+
+  Expression `Delay(op,arg,_)` 允许延迟 `op`的应用程序。
+syntax: "operation DelayCA (op : ('T => Unit is Ctl + Adj), arg : 'T, aux : Unit) : Unit"
+input:
+  content: "(op : ('T => Unit is Ctl + Adj), arg : 'T, aux : Unit)"
+  types:
+  - name: op
+    summary: 要应用的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+  - name: arg
+    summary: 将操作应用到的输入。
+    uid: "'T"
+    isLocal: true
+  - name: aux
+    summary: 用于通过使用部分应用程序延迟操作应用程序的参数。
+    isPrimitive: true
+    uid: Unit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 要延迟的操作的输入类型。
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.delay
+- microsoft.quantum.canon.delayed
+ms.openlocfilehash: ec419d56854c8398502a29e2d178da5608c1c592
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219648"

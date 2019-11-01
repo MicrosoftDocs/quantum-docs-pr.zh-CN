@@ -1,0 +1,25 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.argcomplexpolar
+name: ArgComplexPolar
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回 `ComplexPolar`类型的复数的相位。
+syntax: 'function ArgComplexPolar (input : Microsoft.Quantum.Math.ComplexPolar) : Double'
+input:
+  content: （input： ComplexPolar）
+  types:
+  - name: input
+    summary: 复数 $c = r e ^ {i t} $。
+    uid: microsoft.quantum.math.complexpolar
+output:
+  content: Double
+  types:
+  - summary: 阶段 $ \text{Arg} [c] = t $。
+    isPrimitive: true
+    uid: Double
+ms.openlocfilehash: 4988eccbf920b766a4cfc4304015749eeb19dc84
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73067486"

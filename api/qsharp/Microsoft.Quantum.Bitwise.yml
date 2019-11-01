@@ -1,0 +1,45 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.bitwise
+name: Microsoft.Quantum.Bitwise
+functions:
+- uid: microsoft.quantum.bitwise.and
+  summary: >-
+    返回两个整数的按位 "与"。
+
+    这会执行与内置 `&&&` 运算符相同的计算。
+- uid: microsoft.quantum.bitwise.leftshiftedi
+  summary: 将数字的按位表示形式向左移动给定的位数。
+- uid: microsoft.quantum.bitwise.leftshiftedl
+  summary: 将数字的按位表示形式向左移动给定的位数。
+- uid: microsoft.quantum.bitwise.not
+  summary: >-
+    返回整数的按位 "非"。
+
+    这会执行与内置 `~~~` 运算符相同的计算。
+- uid: microsoft.quantum.bitwise.or
+  summary: >-
+    返回两个整数的按位 "或"。
+
+    这会执行与内置 `|||` 运算符相同的计算。
+- uid: microsoft.quantum.bitwise.parity
+  summary: 返回整数的按位奇偶校验（如果其二进制表示形式包含奇数个值，则为 1; 否则为0）。
+- uid: microsoft.quantum.bitwise.rightshiftedi
+  summary: 将数字的按位表示形式向右移位给定的位数。
+- uid: microsoft.quantum.bitwise.rightshiftedl
+  summary: 将数字的按位表示形式向右移位给定的位数。
+- uid: microsoft.quantum.bitwise.xbits
+  summary: 返回一个整数，该整数表示 Pauli 运算符数组的 X 位。
+- uid: microsoft.quantum.bitwise.xor
+  summary: >-
+    返回两个整数的按位 "异或" （XOR）。
+
+    这会执行与内置 `^^^` 运算符相同的计算。
+- uid: microsoft.quantum.bitwise.zbits
+  summary: 返回一个整数，该整数表示 Pauli 运算符数组的 Z 位。
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于对传统数据类型的按位表示形式进行操作的函数。"
+ms.openlocfilehash: c474d92e7a40f5491b21d80e00294fbdff96a62a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73210944"

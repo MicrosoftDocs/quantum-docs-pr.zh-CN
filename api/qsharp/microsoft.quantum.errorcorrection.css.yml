@@ -1,0 +1,13 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.errorcorrection.css
+name: CSS
+type: newtype
+namespace: Microsoft.Quantum.ErrorCorrection
+summary: 表示 Calderbank –选定– Steane （CSS）代码，该代码由其编码器、解码器及其每个 `X` 和 `Z` 错误的症状度量过程分别定义。
+syntax: newtype CSS = (Microsoft.Quantum.ErrorCorrection.EncodeOp, Microsoft.Quantum.ErrorCorrection.DecodeOp, Microsoft.Quantum.ErrorCorrection.SyndromeMeasOp, Microsoft.Quantum.ErrorCorrection.SyndromeMeasOp);
+ms.openlocfilehash: d2dd8df5aeb53f1dd0df26e1770929bb13fc6f41
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73234710"

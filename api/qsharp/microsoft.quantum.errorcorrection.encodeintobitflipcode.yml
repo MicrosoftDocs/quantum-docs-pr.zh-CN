@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.errorcorrection.encodeintobitflipcode
+name: EncodeIntoBitFlipCode
+type: operation
+namespace: Microsoft.Quantum.ErrorCorrection
+summary: 编码为 [3，1，3]/⟦3，1，1⟧位翻转代码。
+syntax: 'operation EncodeIntoBitFlipCode (physRegister : Qubit[], auxQubits : Qubit[]) : Microsoft.Quantum.ErrorCorrection.LogicalRegister'
+input:
+  content: '(physRegister : Qubit[], auxQubits : Qubit[])'
+  types:
+  - name: physRegister
+    summary: 物理 qubits 的寄存器，表示要保护的数据。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+  - name: auxQubits
+    summary: 首先在 $ \ket{00}$ 状态中注册辅助 qubits，用于对要保护的数据进行编码。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Microsoft.Quantum.ErrorCorrection.LogicalRegister
+  types:
+  - summary: 编码中使用的物理和辅助 qubits，用逻辑寄存器表示。
+    uid: microsoft.quantum.errorcorrection.logicalregister
+seeAlso:
+- logicalregister
+ms.openlocfilehash: 3890f4eebb70ea38fd23ffbe2b7b7eadf9e41d7b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73234574"
