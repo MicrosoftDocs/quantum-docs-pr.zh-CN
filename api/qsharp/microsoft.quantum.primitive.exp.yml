@@ -1,0 +1,41 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.primitive.exp
+name: Exp
+type: operation
+namespace: Microsoft.Quantum.Primitive
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.intrinsic.exp"。
+syntax: 'operation Exp (paulis : Pauli[], theta : Double, qubits : Qubit[]) : Unit'
+input:
+  content: '(paulis : Pauli[], theta : Double, qubits : Qubit[])'
+  types:
+  - name: paulis
+    isArray: true
+    isPrimitive: true
+    uid: Pauli
+  - name: theta
+    isPrimitive: true
+    uid: Double
+  - name: qubits
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 393e0836b8a420bfb81d2e3aad09a044a1bee912
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73223456"

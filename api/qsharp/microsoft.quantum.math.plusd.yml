@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.plusd
+name: PlusD
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回两个输入之和。
+syntax: 'function PlusD (a : Double, b : Double) : Double'
+input:
+  content: '(a : Double, b : Double)'
+  types:
+  - name: a
+    summary: 要求和 $a $ 的第一个输入。
+    isPrimitive: true
+    uid: Double
+  - name: b
+    summary: 要求和 $b $ 的第二个输入。
+    isPrimitive: true
+    uid: Double
+output:
+  content: Double
+  types:
+  - summary: Sum $a + b $。
+    isPrimitive: true
+    uid: Double
+ms.openlocfilehash: e5bb253f037026670a490534b1947cc230758b2e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211335"

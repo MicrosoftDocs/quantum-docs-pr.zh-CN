@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.computereciprocalfxp
+name: ComputeReciprocalFxP
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 计算固定点数字的 $ 1/x $ $x $。
+syntax: 'operation ComputeReciprocalFxP (x : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
+input:
+  content: '(x : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint)'
+  types:
+  - name: x
+    summary: 要反转的固定点数字。
+    uid: microsoft.quantum.arithmetic.fixedpoint
+  - name: result
+    summary: 将保存结果的定点数。 必须初始化为 $ \ket{0.0} $。
+    uid: microsoft.quantum.arithmetic.fixedpoint
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 258a3386b21286e7a6a7b9a1fc716f69f1a48682
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73221008"

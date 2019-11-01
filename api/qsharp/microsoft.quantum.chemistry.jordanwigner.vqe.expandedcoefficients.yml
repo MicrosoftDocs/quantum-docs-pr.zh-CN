@@ -1,0 +1,32 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.chemistry.jordanwigner.vqe.expandedcoefficients
+name: ExpandedCoefficients
+type: function
+namespace: Microsoft.Quantum.Chemistry.JordanWigner.VQE
+summary: 展开 Wigner 系数的精简表示形式，以便在这些条款和 Pauli 条款之间获取一对一的映射。
+syntax: 'function ExpandedCoefficients (coeff : Double[], termType : Int) : Double[]'
+input:
+  content: '(coeff : Double[], termType : Int)'
+  types:
+  - name: coeff
+    summary: 从 Wigner Hamiltonian 数据结构读取的系数的数组。
+    isArray: true
+    isPrimitive: true
+    uid: Double
+  - name: termType
+    summary: 约旦 Wigner 术语的类型。
+    isPrimitive: true
+    uid: Int
+output:
+  content: Double[]
+  types:
+  - summary: 扩展的系数数组，每个 Pauli 项一个。
+    isArray: true
+    isPrimitive: true
+    uid: Double
+ms.openlocfilehash: 1eb141b0410e8d4cccaef0001bfec67fecf12831
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227502"

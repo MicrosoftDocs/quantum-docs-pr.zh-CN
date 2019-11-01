@@ -1,0 +1,42 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.filter
+name: Filter
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请改用 @"Microsoft.Quantum.Arrays.Filtered"。
+syntax: "function Filter (predicate : ('T -> Bool), array : 'T[]) : 'T[]"
+input:
+  content: "(predicate : ('T -> Bool), array : 'T[])"
+  types:
+  - name: predicate
+    isFunction: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Bool
+  - name: array
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T[]"
+  types:
+  - isArray: true
+    uid: "'T"
+    isLocal: true
+ms.openlocfilehash: 34e60265d9fd78ffa5439fc4df2d4617e054cabe
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73228386"

@@ -1,0 +1,44 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.mapindex
+name: MapIndex
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请改用 @"Microsoft.Quantum.Arrays.MappedByIndex"。
+syntax: "function MapIndex (mapper : ((Int, 'T) -> 'U), array : 'T[]) : 'U[]"
+input:
+  content: "(mapper : ((Int, 'T) -> 'U), array : 'T[])"
+  types:
+  - name: mapper
+    isFunction: true
+    input:
+      types:
+      - isPrimitive: true
+        uid: Int
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - uid: "'U"
+        isLocal: true
+  - name: array
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'U[]"
+  types:
+  - isArray: true
+    uid: "'U"
+    isLocal: true
+ms.openlocfilehash: e72a1e073156fc4a89fcc1ba9f760c748009facd
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73225241"

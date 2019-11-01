@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.bitwise.and
+name: And
+type: function
+namespace: Microsoft.Quantum.Extensions.Bitwise
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.bitwise.and"。
+syntax: 'function And (a : Int, b : Int) : Int'
+input:
+  content: '(a : Int, b : Int)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Int
+  - name: b
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 446d2756762551ef8a8e6a883cad83a34a0b9a80
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73232109"

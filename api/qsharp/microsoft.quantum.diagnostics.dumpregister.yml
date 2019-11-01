@@ -1,0 +1,40 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.dumpregister
+name: DumpRegister
+type: function
+namespace: Microsoft.Quantum.Diagnostics
+summary: 将当前目标计算机的状态转储为与给定的 qubits 相关联。
+remarks: >-
+  此方法允许你将与给定 qubits 的状态关联的信息转储到一个文件或其他位置。
+
+  生成的实际信息和 `location` 的语义特定于每个目标计算机。 但是，将空元组作为位置（`()`）提供通常意味着将输出生成到控制台。
+
+
+  对于作为量程开发工具包的一部分分发的本地完整状态模拟器，此方法需要一个带有文件路径的字符串，该文件将给定 qubits 的状态（即，对应子系统的波形函数）作为一维 ar 写入复数的射线，其中每个元素表示测量相应状态的概率的 amplitudes。
+
+  如果给定的 qubits 与一些其他 qubit 放大，且无法分离其状态，则只会报告 qubits 为放大。
+syntax: "function DumpRegister (location : 'T, qubits : Qubit[]) : Unit"
+input:
+  content: "(location : 'T, qubits : Qubit[])"
+  types:
+  - name: location
+    summary: 提供有关在何处生成状态转储的信息。
+    uid: "'T"
+    isLocal: true
+  - name: qubits
+    summary: 要报告的 qubits 的列表。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - summary: 无。
+    isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 6d553a95bfa619d142b681e2830fc0375c6bcae5
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227026"

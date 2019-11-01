@@ -1,0 +1,25 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.ignore
+name: Ignore
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: 忽略操作或函数的输出。
+syntax: "function Ignore (value : 'T) : Unit"
+input:
+  content: "(value : 'T)"
+  types:
+  - name: value
+    summary: 要忽略的值。
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 9a7d9517a3b9275faa0cb010e76a8ba72f5e2a80
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227808"

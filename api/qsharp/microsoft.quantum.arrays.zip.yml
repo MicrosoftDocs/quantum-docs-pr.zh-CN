@@ -1,0 +1,54 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.zip
+name: Zip
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 给定两个数组，返回一个新的对数组，以便每个对都包含来自每个原始数组的元素。
+examples: >-
+  ```qsharp
+
+  let left = [1, 3, 71];
+
+  let right = [false, true];
+
+  let pairs = Zip(left, right); // [(1, false), (3, true)]
+
+  ```
+syntax: "function Zip (left : 'T[], right : 'U[]) : ('T, 'U)[]"
+input:
+  content: "(left : 'T[], right : 'U[])"
+  types:
+  - name: left
+    summary: 一个数组，其中包含每个元组的第一个元素的值。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+  - name: right
+    summary: 一个数组，其中包含每个元组的第二个元素的值。
+    isArray: true
+    uid: "'U"
+    isLocal: true
+output:
+  content: ('T, 'U)[]
+  types:
+  - summary: 一个数组，其中包含对每个 `idx`的形式 `(left[idx], right[idx])`。 如果两个数组的长度不相等，则输出将与输入的较短内容相同。
+    isArray: true
+    types:
+    - uid: "'T"
+      isLocal: true
+    - uid: "'U"
+      isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: 左侧数组元素的类型。
+- uid: "'U"
+  summary: 右侧数组元素的类型。
+seeAlso:
+- zip3
+- zip4
+ms.openlocfilehash: 9af79a617722ead8102ea4631d96934bf253beda
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73217812"

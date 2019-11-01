@@ -1,0 +1,38 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.preparation.preparequbit
+name: PrepareQubit
+type: operation
+namespace: Microsoft.Quantum.Preparation
+summary: >-
+  准备给定 Pauli 运算符的 + 1 （`Zero`） eigenstate 中的 qubit。
+
+  如果给定标识运算符，则 qubit 在最大化混合状态下准备就绪。
+
+
+  如果 qubit 最初处于 $ \ket{0}$ 状态，则此操作将在给定 Pauli 运算符的 $ + $1 eigenstate 中准备 qubit，或者，对于 `PauliI`，则为最大化混合状态下的（请参阅 <xref:microsoft.quantum.preparation.preparesinglequbitidentity>）。
+
+
+  如果 qubit 的状态不是 $ \ket{0}$，则此操作将应用以下入口： $H $ 用于 `PauliX`，$HS $ for `PauliY`，$I $ 表示 `PauliZ`，<xref:microsoft.quantum.preparation.preparesinglequbitidentity> `PauliI`。
+syntax: 'operation PrepareQubit (basis : Pauli, qubit : Qubit) : Unit'
+input:
+  content: '(basis : Pauli, qubit : Qubit)'
+  types:
+  - name: basis
+    summary: Pauli 运算符 $P $。
+    isPrimitive: true
+    uid: Pauli
+  - name: qubit
+    summary: 要准备的 qubit。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: be4eb730bebd00531aaa49302578b23f4a52237b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73226533"

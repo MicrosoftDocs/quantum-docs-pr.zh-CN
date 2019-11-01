@@ -1,0 +1,34 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.convert.pauliarrayasint
+name: PauliArrayAsInt
+type: function
+namespace: Microsoft.Quantum.Convert
+summary: 将表示为一个 qubit Pauli 运算符数组的多 qubit Pauli 运算符编码为一个整数。
+remarks: >-
+  每个 Pauli 运算符都可以使用两个位进行编码： $ $ \begin{align} \boldone \mapsto 00，\quad X \mapsto 01，\quad Y \mapsto 11，\quad Z \mapsto 10。
+
+  \end{align} $ $
+
+
+  给定 Pauli 运算符的数组 `[P0, ..., Pn]`，此函数将返回一个整数展开的整数，通过将每个 Pauli 运算符的映射串联为大字节序顺序 `bits(Pn) ... bits(P0)`来形成。
+syntax: 'function PauliArrayAsInt (paulis : Pauli[]) : Int'
+input:
+  content: '(paulis : Pauli[])'
+  types:
+  - name: paulis
+    summary: 最多31个 qubit Pauli 运算符的数组。
+    isArray: true
+    isPrimitive: true
+    uid: Pauli
+output:
+  content: Int
+  types:
+  - summary: 唯一标识 `paulis`的整数，如下所述。
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 0c211075d07147b1c1392fe3f3e4ceb110364bb3
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73230749"

@@ -1,0 +1,43 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.characterization.continuousphaseestimationiteration
+name: ContinuousPhaseEstimationIteration
+type: operation
+namespace: Microsoft.Quantum.Characterization
+summary: 使用单一 oracle 的任意实际幂，执行迭代（经典控制）阶段估算算法的单个迭代。
+syntax: 'operation ContinuousPhaseEstimationIteration (oracle : Microsoft.Quantum.Oracles.ContinuousOracle, time : Double, theta : Double, targetState : Qubit[], controlQubit : Qubit) : Unit'
+input:
+  content: '(oracle : Microsoft.Quantum.Oracles.ContinuousOracle, time : Double, theta : Double, targetState : Qubit[], controlQubit : Qubit)'
+  types:
+  - name: oracle
+    summary: 在双 $t $ 和 a 寄存器上操作的操作，因此 $U ^ t $ 应用于给定寄存器，其中 $U $ 是要估计其阶段的那个那个，其中 $t $ 是给定于 oracle 的整数幂
+    uid: microsoft.quantum.oracles.continuousoracle
+  - name: time
+    summary: 应用给定的单一 oracle 的次数。
+    isPrimitive: true
+    uid: Double
+  - name: theta
+    summary: 在操作目标状态之前，要将控制 qubit 上的阶段反转的角度。
+    isPrimitive: true
+    uid: Double
+  - name: targetState
+    summary: 注册由给定的单一 oracle 处理的状态。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+  - name: controlQubit
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 21fcfda2373e145d9565a73af5a89b7fe061d4f8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229236"

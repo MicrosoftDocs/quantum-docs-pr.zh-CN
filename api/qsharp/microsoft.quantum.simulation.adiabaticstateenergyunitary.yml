@@ -1,0 +1,82 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.adiabaticstateenergyunitary
+name: AdiabaticStateEnergyUnitary
+type: operation
+namespace: Microsoft.Quantum.Simulation
+summary: 通过对输入状态应用 `statePrepUnitary` 来执行状态准备，后面是使用 `adiabaticUnitary`进行 adiabatic 状态准备，并最终针对使用 `phaseEstAlgorithm``qpeUnitary`生成状态的阶段估算。
+syntax: 'operation AdiabaticStateEnergyUnitary (statePrepUnitary : (Qubit[] => Unit), adiabaticUnitary : (Qubit[] => Unit), qpeUnitary : (Qubit[] => Unit is Adj + Ctl), phaseEstAlgorithm : ((Microsoft.Quantum.Oracles.DiscreteOracle, Qubit[]) => Double), qubits : Qubit[]) : Double'
+input:
+  content: '(statePrepUnitary : (Qubit[] => Unit), adiabaticUnitary : (Qubit[] => Unit), qpeUnitary : (Qubit[] => Unit is Adj + Ctl), phaseEstAlgorithm : ((Microsoft.Quantum.Oracles.DiscreteOracle, Qubit[]) => Double), qubits : Qubit[])'
+  types:
+  - name: statePrepUnitary
+    summary: Oracle 表示初始 dynamical 生成器的状态准备。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: adiabaticUnitary
+    summary: Oracle，表示要用于实现到算法最终状态的扫描的 adiabatic 进化算法。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: qpeUnitary
+    summary: Oracle 表示单一操作员 $U $，表示 dynamical 发电机下的时间 $ \ket{\phi} $ 和接地状态能量 $E = \phi\\，\delta t $。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+  - name: phaseEstAlgorithm
+    summary: >-
+      对给定的单一操作执行阶段估计的操作。
+
+      有关更多详细信息，请参阅[迭代阶段估算](/quantum/libraries/characterization#iterative-phase-estimation)。
+    isOperation: true
+    input:
+      types:
+      - uid: microsoft.quantum.oracles.discreteoracle
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Double
+  - name: qubits
+    summary: 用于执行模拟的 qubits 寄存器。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Double
+  types:
+  - summary: 由 $U $ 表示的生成器的 "估计 $ \hat{\phi} $"。
+    isPrimitive: true
+    uid: Double
+ms.openlocfilehash: 747e9f6d926863ce1add86d183ca2ed1dc43c8a4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73232024"

@@ -1,0 +1,42 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.chemistry.jordanwigner.preparesparsemulticonfigurationalstate
+name: PrepareSparseMultiConfigurationalState
+type: operation
+namespace: Microsoft.Quantum.Chemistry.JordanWigner
+summary: 通过将 excitations 添加到初始试用状态，对试用状态进行稀疏的多配置状态准备。
+syntax: 'operation PrepareSparseMultiConfigurationalState (initialStatePreparation : (Qubit[] => Unit), excitations : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerInputState[], qubits : Qubit[]) : Unit'
+input:
+  content: '(initialStatePreparation : (Qubit[] => Unit), excitations : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerInputState[], qubits : Qubit[])'
+  types:
+  - name: initialStatePreparation
+    summary: 用于准备初始试用状态的单一订阅。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: excitations
+    summary: 初始试用状态的 Excitations，由 excitation 和 excitation 操作的 qubit 索引表示。
+    isArray: true
+    uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerinputstate
+  - name: qubits
+    summary: Hamiltonian 的 Qubits。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: c97f5e7ec8a4cc26b4fb173414526363db424293
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231803"

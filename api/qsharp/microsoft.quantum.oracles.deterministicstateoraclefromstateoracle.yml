@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.oracles.deterministicstateoraclefromstateoracle
+name: DeterministicStateOracleFromStateOracle
+type: function
+namespace: Microsoft.Quantum.Oracles
+summary: 将 `StateOracle` 类型的 oracle 转换为 `DeterministicStateOracle`。
+syntax: 'function DeterministicStateOracleFromStateOracle (idxFlagQubit : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle) : Microsoft.Quantum.Oracles.DeterministicStateOracle'
+input:
+  content: '(idxFlagQubit : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle)'
+  types:
+  - name: idxFlagQubit
+    summary: '`stateOracle` 的标志 qubit 的索引 $A $，该索引显式作用于两个寄存器： $f $ 和 system $s $，例如 $A \ket{0}\_f\ket {\ psi}\_s $。'
+    isPrimitive: true
+    uid: Int
+  - name: stateOracle
+    summary: 准备 oracle $A $ `StateOracle`类型的状态。
+    uid: microsoft.quantum.oracles.stateoracle
+output:
+  content: Microsoft.Quantum.Oracles.DeterministicStateOracle
+  types:
+  - summary: 同一状态准备 oracle $A $，但现在为类型 `DeterministicStateOracle`，因此它在 $a，s $ 不再显式分离，例如 $A \ket{0\psi}\_{as} $。
+    uid: microsoft.quantum.oracles.deterministicstateoracle
+seeAlso:
+- microsoft.quantum.canon.stateoracle
+- microsoft.quantum.canon.deterministicstateoracle
+ms.openlocfilehash: 5eda40115d4d4ca7b4187f76b5e0807695913407
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231089"

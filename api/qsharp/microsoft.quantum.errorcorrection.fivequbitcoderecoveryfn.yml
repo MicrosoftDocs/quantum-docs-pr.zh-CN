@@ -1,0 +1,27 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.errorcorrection.fivequbitcoderecoveryfn
+name: FiveQubitCodeRecoveryFn
+type: function
+namespace: Microsoft.Quantum.ErrorCorrection
+summary: 返回一个函数，该函数通过表查找⟦5，1，3⟧量程代码，将错误症状度量映射到相应的纠错 Pauli 运算符。
+remarks: >-
+  通过循环访问权重 $1 $ 的所有错误，我们获取总计 $ 3 \ 乘以 5 = 15 $ 可能的非普通 syndromes。
+
+  除了标识，还生成了一个错误表和相应的症状。 对于5个 qubit 代码，此表由提供： $X\_1：（0，0，0，1）;X\_2：（1，0，0，0）;X\_3：（1，1，0，0）;X\_4：（0，1，1，0）;X\_5：（0，0，1，1） $，$Z\_1：（1，0，1，0）;Z\_2：（0，1，0，1）;Z\_3：（0，0，1，0）;Z\_4：（1，0，0，1）;Z\_5：（0，1，0，0） $ $Y 通过添加 $X _i $ 和 $Z _i $ syndromes 获取的 $。 请注意，表查找恢复中的排序是通过将 bitvectors 转换为整数（使用 little endian）来提供的。
+syntax: 'function FiveQubitCodeRecoveryFn () : Microsoft.Quantum.ErrorCorrection.RecoveryFn'
+input:
+  content: ()
+  types: []
+output:
+  content: Microsoft.Quantum.ErrorCorrection.RecoveryFn
+  types:
+  - summary: 使用 `Result[]` 的 `RecoveryFn` 的类型的函数，并返回更正检测到的错误的 `Pauli[]` 运算符。
+    uid: microsoft.quantum.errorcorrection.recoveryfn
+seeAlso:
+- recoveryfn
+ms.openlocfilehash: efeabbeb6595d1440882eef73f152610a3ac74c5
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211624"

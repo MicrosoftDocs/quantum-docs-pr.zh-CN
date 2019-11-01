@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.resultfrombool
+name: ResultFromBool
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.convert.boolasresult"。
+syntax: 'function ResultFromBool (input : Bool) : Result'
+input:
+  content: '(input : Bool)'
+  types:
+  - name: input
+    isPrimitive: true
+    uid: Bool
+output:
+  content: Result
+  types:
+  - isPrimitive: true
+    uid: Result
+ms.openlocfilehash: cc7090e8d627a88a14b8e11ea431a284bec373dc
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73222351"

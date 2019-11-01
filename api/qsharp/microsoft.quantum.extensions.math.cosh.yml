@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.math.cosh
+name: Cosh
+type: function
+namespace: Microsoft.Quantum.Extensions.Math
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.math.cosh"。
+syntax: 'function Cosh (theta : Double) : Double'
+input:
+  content: '(theta : Double)'
+  types:
+  - name: theta
+    isPrimitive: true
+    uid: Double
+output:
+  content: Double
+  types:
+  - isPrimitive: true
+    uid: Double
+ms.openlocfilehash: 932d82077a3150c3b0038a7a3cfcb4f3f1e26c78
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73224578"

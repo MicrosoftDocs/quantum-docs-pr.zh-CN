@@ -1,0 +1,29 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.cascadecnot
+name: CascadeCNOT
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 在给定 qubit 寄存器中的相邻 qubits 上实现一种级联的 CNOT-CONTAINS 入口，从位置0处的 qubit 开始，到位置1处的 qubit，作为目标，然后从 qubit 处的位置1，作为目标等，以 qubit 的位置结束，`Length(register)-1` 目标。
+syntax: 'operation CascadeCNOT (register : Qubit[]) : Unit'
+input:
+  content: '(register : Qubit[])'
+  types:
+  - name: register
+    summary: Qubit 注册。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 9089948665a9ad8d4884196c4a84ed715104048a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73221297"

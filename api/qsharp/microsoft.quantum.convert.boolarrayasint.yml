@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.convert.boolarrayasint
+name: BoolArrayAsInt
+type: function
+namespace: Microsoft.Quantum.Convert
+summary: 从 little endian 格式的位字符串生成一个正整数。
+syntax: 'function BoolArrayAsInt (bits : Bool[]) : Int'
+input:
+  content: '(bits : Bool[])'
+  types:
+  - name: bits
+    summary: 数字的二进制表示形式的位。
+    isArray: true
+    isPrimitive: true
+    uid: Bool
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 723484744d206523c4276a9d7c6fb4f9793093d1
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227434"

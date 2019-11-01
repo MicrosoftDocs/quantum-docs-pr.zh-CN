@@ -1,0 +1,13 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.errorcorrection.qecc
+name: QECC
+type: newtype
+namespace: Microsoft.Quantum.ErrorCorrection
+summary: 表示由其编码器、解码器和症状度量过程定义的纠错码。
+syntax: newtype QECC = (Microsoft.Quantum.ErrorCorrection.EncodeOp, Microsoft.Quantum.ErrorCorrection.DecodeOp, Microsoft.Quantum.ErrorCorrection.SyndromeMeasOp);
+ms.openlocfilehash: 1448c4aaa4507d57d145181d51c133ab08cb12b3
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73230392"

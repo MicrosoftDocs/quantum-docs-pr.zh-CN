@@ -1,0 +1,39 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.measure
+name: Measure
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: >-
+  对指定的 Pauli 中的一个或多个 qubits 执行联合度量。
+
+
+  以下分发提供了输出结果： \begin{align} \Pr （\texttt{Zero} | \ket{\psi}） = \frac12 \braket{\psi \mid | \left （\boldone + P_0 \otimes P_1 \otimes \cdots \otimes P_ {N-1} \right） \mid | \psi}，\end{align}，其中 $P _i $ 是 @no__ 的 $i $ th 元素t_0_，其中 $N = \texttt{Length} （\texttt{bases}） $。
+
+  也就是说，度量值返回一个 `Result` $d $，以使观察到的度量值的 eigenvalue 为 $ （-1） ^ d $。
+remarks: 如果基础数组和 qubit 数组的长度不同，则操作将失败。
+syntax: 'operation Measure (bases : Pauli[], qubits : Qubit[]) : Result'
+input:
+  content: '(bases : Pauli[], qubits : Qubit[])'
+  types:
+  - name: bases
+    summary: Qubit Pauli 值的数组，用于指示每个 qubit 上的 tensor 产品因素。
+    isArray: true
+    isPrimitive: true
+    uid: Pauli
+  - name: qubits
+    summary: 注册要测量的 qubits。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Result
+  types:
+  - summary: 如果观察到 $ + $1 eigenvalue，则 `Zero` `One` 是否观察到 $-$1 eigenvalue。
+    isPrimitive: true
+    uid: Result
+ms.openlocfilehash: 65390f851d82eb579d89072dc770f3ce077ce515
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73234098"

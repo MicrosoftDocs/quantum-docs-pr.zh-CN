@@ -1,0 +1,43 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.reversedopbe
+name: ReversedOpBE
+type: function
+namespace: Microsoft.Quantum.Arithmetic
+summary: 给定一个采用大字节序输入的操作，将返回采用小 endian 输入的新操作。
+syntax: 'function ReversedOpBE (op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit)) : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit)'
+input:
+  content: '(op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit))'
+  types:
+  - name: op
+    summary: 要反转其输入的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: microsoft.quantum.arithmetic.bigendian
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+output:
+  content: (Microsoft.Quantum.Arithmetic.LittleEndian => Unit)
+  types:
+  - summary: 接受其输入作为小字节序注册的新操作。
+    isOperation: true
+    input:
+      types:
+      - uid: microsoft.quantum.arithmetic.littleendian
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+seeAlso:
+- applyreversedopbe
+- reversedopbea
+- reversedopbec
+- reversedopbeca
+ms.openlocfilehash: 7d361b43aa60526394c75dc769b78c6d0053e409
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218696"

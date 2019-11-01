@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.greatestcommondivisorl
+name: GreatestCommonDivisorL
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 计算 $a $ 和 $b $ 的最大公因数。 GCD 始终为正值。
+syntax: 'function GreatestCommonDivisorL (a : BigInt, b : BigInt) : BigInt'
+input:
+  content: '(a : BigInt, b : BigInt)'
+  types:
+  - name: a
+    summary: 计算最大的最大公因数的第一个数字
+    isPrimitive: true
+    uid: BigInt
+  - name: b
+    summary: 正在计算的最大扩展常见除数的第二个数字
+    isPrimitive: true
+    uid: BigInt
+output:
+  content: BigInt
+  types:
+  - summary: $a $ 和 $b $ 的最大公因数
+    isPrimitive: true
+    uid: BigInt
+ms.openlocfilehash: 54808793900a2a4878c91a5b4f8810a9e289f945
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73232806"

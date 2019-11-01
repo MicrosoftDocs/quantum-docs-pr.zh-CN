@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.resultasint
+name: ResultAsInt
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.convert.resultarrayasint"。
+syntax: 'function ResultAsInt (results : Result[]) : Int'
+input:
+  content: '(results : Result[])'
+  types:
+  - name: results
+    isArray: true
+    isPrimitive: true
+    uid: Result
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 9ab8288ed849ed46f3477a133bdcd57cff0a23c8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73222402"

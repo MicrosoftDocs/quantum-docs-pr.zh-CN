@@ -1,0 +1,32 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.resultarrfromboolarr
+name: ResultArrFromBoolArr
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.convert.resultarrayasboolarray"。
+syntax: 'function ResultArrFromBoolArr (input : Bool[]) : Result[]'
+input:
+  content: '(input : Bool[])'
+  types:
+  - name: input
+    isArray: true
+    isPrimitive: true
+    uid: Bool
+output:
+  content: Result[]
+  types:
+  - isArray: true
+    isPrimitive: true
+    uid: Result
+ms.openlocfilehash: 4fb5d7efee2e792b7b30ad3ac4d44b03e9be50e9
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73222419"

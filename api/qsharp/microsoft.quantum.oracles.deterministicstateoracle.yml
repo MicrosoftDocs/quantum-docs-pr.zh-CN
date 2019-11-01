@@ -1,0 +1,24 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.oracles.deterministicstateoracle
+name: DeterministicStateOracle
+type: newtype
+namespace: Microsoft.Quantum.Oracles
+summary: >-
+  表示 oracle for 确定性状态准备。
+
+
+  Oracle $O $ 的输入为：
+
+
+  - 将存储所需量程状态 $ \ket{\psi} 的寄存器\_s $。
+remarks: >-
+  此 oracle 定义的 $O \ket{0}= \ket{\psi} $ 作用于 on 计算基础状态 $ \ket{0}$，以创建状态 $ \ket{\psi} $。
+
+  第一个参数是 $ \ket{\psi} $ 的 qubit 寄存器。
+syntax: newtype DeterministicStateOracle = (Qubit[] => Unit is Adj + Ctl);
+ms.openlocfilehash: bc10b84502866d1f5e19b28e77e54c1b10d01b28
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231123"
