@@ -1,0 +1,29 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.fact
+name: Fact
+type: function
+namespace: Microsoft.Quantum.Diagnostics
+summary: 声明传统条件为 true。
+syntax: 'function Fact (actual : Bool, message : String) : Unit'
+input:
+  content: '(actual : Bool, message : String)'
+  types:
+  - name: actual
+    summary: 要声明的条件。
+    isPrimitive: true
+    uid: Bool
+  - name: message
+    summary: 在古典条件为 false 时要打印的失败消息字符串。
+    isPrimitive: true
+    uid: String
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 63d1044fcee3846237bc99a3ed859a0f8f173afb
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73230664"

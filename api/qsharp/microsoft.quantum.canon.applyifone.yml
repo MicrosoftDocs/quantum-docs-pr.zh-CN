@@ -1,0 +1,51 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applyifone
+name: ApplyIfOne
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  应用对经典结果值为1的操作。
+
+
+  给定一个操作 `op` 并且结果值 `result`，如果 `result` `One`，则将 `op` 应用于 `target`。 如果 `Zero`，则 `target`不会执行任何操作。
+syntax: "operation ApplyIfOne (result : Result, (op : ('T => Unit), target : 'T)) : Unit"
+input:
+  content: "(result : Result, (op : ('T => Unit), target : 'T))"
+  types:
+  - name: result
+    summary: 用于控制是否应用 op 的测量结果。
+    isPrimitive: true
+    uid: Result
+  - name: op
+    summary: 要有条件地应用的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: target
+    summary: 将操作应用到的输入。
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 要有条件地应用的操作的输入类型。
+seeAlso:
+- microsoft.quantum.canon.applyifonec
+- microsoft.quantum.canon.applyifonea
+- microsoft.quantum.canon.applyifoneca
+ms.openlocfilehash: 5609226c113fd6b9660fdad2f05d154a7abde5a3
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73220906"

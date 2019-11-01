@@ -1,0 +1,41 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.bitwise.xor
+name: Xor
+type: function
+namespace: Microsoft.Quantum.Bitwise
+summary: >-
+  返回两个整数的按位 "异或" （XOR）。
+
+  这会执行与内置 `^^^` 运算符相同的计算。
+remarks: 有关更多详细信息，请参阅[ C# ^ 运算符](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/xor-operator)。
+examples: >-
+  ```qsharp
+
+  let a = 248;       //                 11111000₂
+
+  let b = 63;        //                 00111111₂
+
+  let x = Xor(a, b); // x : Int = 199 = 11000111₂.
+
+  ```
+syntax: 'function Xor (a : Int, b : Int) : Int'
+input:
+  content: '(a : Int, b : Int)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Int
+  - name: b
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 5521b9fa4838261e44554de39704c0adbb45f8ed
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73213834"

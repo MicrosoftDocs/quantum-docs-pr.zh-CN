@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.assertallzerofxp
+name: AssertAllZeroFxP
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: Helper 函数，用于断言量程固定点数字初始化为零，即所有 qubits 都处于状态 $ \ket{0}$。
+syntax: 'operation AssertAllZeroFxP (fp : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
+input:
+  content: '(fp : Microsoft.Quantum.Arithmetic.FixedPoint)'
+  types:
+  - name: fp
+    uid: microsoft.quantum.arithmetic.fixedpoint
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 21ea101b9f199f353818cac5876f8a31097bfd84
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73221586"

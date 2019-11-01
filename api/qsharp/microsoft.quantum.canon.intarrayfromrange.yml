@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.intarrayfromrange
+name: IntArrayFromRange
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.convert.rangeasintarray"。
+syntax: 'function IntArrayFromRange (range : Range) : Int[]'
+input:
+  content: '(range : Range)'
+  types:
+  - name: range
+    isPrimitive: true
+    uid: Range
+output:
+  content: Int[]
+  types:
+  - isArray: true
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 464ae346b2b504ca1327beb28aefe6c33b91766b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227264"

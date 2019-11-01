@@ -1,0 +1,27 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.math.e
+name: E
+type: function
+namespace: Microsoft.Quantum.Extensions.Math
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.math.e"。
+syntax: 'function E () : Double'
+input:
+  content: ()
+  types: []
+output:
+  content: Double
+  types:
+  - isPrimitive: true
+    uid: Double
+ms.openlocfilehash: 3850acf801d4d0a352d037a4636da1229135bdcc
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73224493"

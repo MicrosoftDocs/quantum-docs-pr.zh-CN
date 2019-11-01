@@ -1,0 +1,54 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.ccontrolledc
+name: CControlledC
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果 `false`，则不会执行任何操作。
+
+  修饰符 `C` 指示操作可控制。
+syntax: "function CControlledC (op : ('T => Unit is Ctl)) : ((Bool, 'T) => Unit is Ctl)"
+input:
+  content: "(op : ('T => Unit is Ctl))"
+  types:
+  - name: op
+    summary: 要有条件地应用的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+output:
+  content: ((Bool, 'T) => Unit is Ctl)
+  types:
+  - summary: 如果经典控制位为 true，则为 op 的新操作。
+    isOperation: true
+    input:
+      types:
+      - isPrimitive: true
+        uid: Bool
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+typeParameters:
+- uid: "'T"
+  summary: 要有条件地应用的操作的输入类型。
+seeAlso:
+- microsoft.quantum.canon.ccontrolled
+ms.openlocfilehash: 73a953fd2f2380f808fd612e46084c443e6c87ee
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211777"

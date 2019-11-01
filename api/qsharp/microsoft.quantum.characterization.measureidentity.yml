@@ -1,0 +1,34 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.characterization.measureidentity
+name: MeasureIdentity
+type: operation
+namespace: Microsoft.Quantum.Characterization
+summary: 测量 qubits 的寄存器上的标识运算符。
+remarks: >-
+  由于 $ \boldone $ 只有 eigenvalue $1 $，并且没有负 eigenvalue，此操作始终返回 `Zero`，对应于 eigenvalue $ + 1 = （-1） ^ 0 $，而不会导致 `register`的状态折叠。
+
+
+  此操作本身并不有用，但在进程 tomography 的上下文中很有用，因为它提供了有关量程进程的跟踪保存的信息。
+
+  特别是，具有有损度量的目标计算机应将此操作替换为 $ \boldone $ 的实际度量值。
+syntax: 'operation MeasureIdentity (register : Qubit[]) : Result'
+input:
+  content: '(register : Qubit[])'
+  types:
+  - name: register
+    summary: 要测量的寄存器。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Result
+  types:
+  - summary: 结果值 `Zero`。
+    isPrimitive: true
+    uid: Result
+ms.openlocfilehash: fcfe08d4ae7a192074b90b7b45fffbcb5944e7ff
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229117"

@@ -1,0 +1,13 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.errorcorrection.logicalregister
+name: LogicalRegister
+type: newtype
+namespace: Microsoft.Quantum.ErrorCorrection
+summary: 用于注册逻辑 qubits 的物理 qubits `Qubit[]` 的类型。
+syntax: newtype LogicalRegister = Qubit[];
+ms.openlocfilehash: f920c0052a1ec0794160b4e784806109c571cc96
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73226703"

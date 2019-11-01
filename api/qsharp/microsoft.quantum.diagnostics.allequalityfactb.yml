@@ -1,0 +1,35 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.allequalityfactb
+name: AllEqualityFactB
+type: function
+namespace: Microsoft.Quantum.Diagnostics
+summary: 断言布尔值的两个数组相等。
+syntax: 'function AllEqualityFactB (actual : Bool[], expected : Bool[], message : String) : Unit'
+input:
+  content: '(actual : Bool[], expected : Bool[], message : String)'
+  types:
+  - name: actual
+    summary: 由相关测试用例生成的数组。
+    isArray: true
+    isPrimitive: true
+    uid: Bool
+  - name: expected
+    summary: 需要从相关测试用例进行计算的数组。
+    isArray: true
+    isPrimitive: true
+    uid: Bool
+  - name: message
+    summary: 如果数组不相等，则为要打印的消息。
+    isPrimitive: true
+    uid: String
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: ebda74cfe793c2c5ec8411f893aa852f9e091728
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227145"

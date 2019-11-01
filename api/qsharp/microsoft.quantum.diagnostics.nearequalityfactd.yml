@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.nearequalityfactd
+name: NearEqualityFactD
+type: function
+namespace: Microsoft.Quantum.Diagnostics
+summary: 断言传统浮点值的预期值为小公差 1e-10。
+remarks: 这等效于硬编码容差为 $10 ^{-10}$ 的 <xref:microsoft.quantum.diagnostics.equalitywithintolerancefact>。
+syntax: 'function NearEqualityFactD (actual : Double, expected : Double) : Unit'
+input:
+  content: '(actual : Double, expected : Double)'
+  types:
+  - name: actual
+    summary: 要检查的数字。
+    isPrimitive: true
+    uid: Double
+  - name: expected
+    summary: 预期值。
+    isPrimitive: true
+    uid: Double
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 9bbf1ced753b2fde5a3f8fb20417053a47866ada
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73230494"

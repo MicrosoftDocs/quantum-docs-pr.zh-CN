@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.characterization.measureallz
+name: MeasureAllZ
+type: operation
+namespace: Microsoft.Quantum.Characterization
+summary: >-
+  共同度量 Pauli Z 基础的 qubits 寄存器。
+
+
+  换言之，度量给定寄存器上的操作 $Z \otimes Z \otimes \cdots \otimes Z $。
+syntax: 'operation MeasureAllZ (register : Qubit[]) : Result'
+input:
+  content: '(register : Qubit[])'
+  types:
+  - name: register
+    summary: 要测量的寄存器。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Result
+  types:
+  - summary: 度量 $Z \otimes Z \otimes \cdots \otimes Z $ 的结果。
+    isPrimitive: true
+    uid: Result
+ms.openlocfilehash: d9582f1656cbee854600eaf37bf3a0effa52869f
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229134"

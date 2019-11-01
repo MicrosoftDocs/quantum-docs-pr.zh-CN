@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.measurement.mresetx
+name: MResetX
+type: operation
+namespace: Microsoft.Quantum.Measurement
+summary: 在 X 基础上测量单个 qubit，并将其重置为标准基础状态 | 0 〉后面的度量。
+syntax: 'operation MResetX (target : Qubit) : Result'
+input:
+  content: '(target : Qubit)'
+  types:
+  - name: target
+    summary: 要测量的单个 qubit。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Result
+  types:
+  - summary: Pauli 中测量 `target` 的结果 $X $ basis。
+    isPrimitive: true
+    uid: Result
+ms.openlocfilehash: 48c819595cf492588fd5d4b08e1315cfb092fcd1
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231225"

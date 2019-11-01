@@ -1,0 +1,24 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.complexpolarascomplex
+name: ComplexPolarAsComplex
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 将 `ComplexPolar` 类型的复数转换为 `Complex`类型的复数。
+syntax: 'function ComplexPolarAsComplex (input : Microsoft.Quantum.Math.ComplexPolar) : Microsoft.Quantum.Math.Complex'
+input:
+  content: '(input : Microsoft.Quantum.Math.ComplexPolar)'
+  types:
+  - name: input
+    summary: 复数 $c = r e ^ {i t} $。
+    uid: microsoft.quantum.math.complexpolar
+output:
+  content: Microsoft.Quantum.Math.Complex
+  types:
+  - summary: 复数 $c = x + i y $。
+    uid: microsoft.quantum.math.complex
+ms.openlocfilehash: 5754e91abca30dc0c0c4b122d4c8a127e53519a9
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73230069"

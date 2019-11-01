@@ -1,0 +1,45 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.cy
+name: CY
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  将受控 Y （CY）入口应用于一对 qubits。
+
+
+  $ $ \begin{align} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 &-i \\\\ 0 & 0 & & 0 \end{align}，$ $ 其中的行和列组织为 "量程概念" 指南。
+remarks: >-
+  等效于：
+
+
+  ```qsharp
+
+  Controlled Y([control], target);
+
+  ```
+syntax: 'operation CY (control : Qubit, target : Qubit) : Unit'
+input:
+  content: '(control : Qubit, target : Qubit)'
+  types:
+  - name: control
+    summary: 控制 CY 入口的 qubit。
+    isPrimitive: true
+    uid: Qubit
+  - name: target
+    summary: 为 CY 入口定位 qubit。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: d5ea0bcf4697024eeb19b12300a442fffe3d5f56
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227332"

@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.isresultone
+name: IsResultOne
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: 测试给定的结果值是否等于 `One`。
+syntax: 'function IsResultOne (input : Result) : Bool'
+input:
+  content: '(input : Result)'
+  types:
+  - name: input
+    summary: 要测试 `Result` 值。
+    isPrimitive: true
+    uid: Result
+output:
+  content: Bool
+  types:
+  - summary: 如果 `input` 等于 `One`，则返回 `true`。
+    isPrimitive: true
+    uid: Bool
+ms.openlocfilehash: 0b4ffb68cbe07d4aa15a61485af4942b998f201a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73225921"

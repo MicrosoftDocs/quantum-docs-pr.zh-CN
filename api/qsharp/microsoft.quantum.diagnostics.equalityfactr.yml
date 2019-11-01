@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.equalityfactr
+name: EqualityFactR
+type: function
+namespace: Microsoft.Quantum.Diagnostics
+summary: 断言传统结果变量具有预期值。
+syntax: 'function EqualityFactR (actual : Result, expected : Result, message : String) : Unit'
+input:
+  content: '(actual : Result, expected : Result, message : String)'
+  types:
+  - name: actual
+    summary: 要检查的变量。
+    isPrimitive: true
+    uid: Result
+  - name: expected
+    summary: 预期值。
+    isPrimitive: true
+    uid: Result
+  - name: message
+    summary: 触发断言时要使用的失败消息字符串。
+    isPrimitive: true
+    uid: String
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: fa2914770e2b2963b4f180a3fb6376a7c42fa4e8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73226805"

@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.convert.resultarrayasint
+name: ResultArrayAsInt
+type: function
+namespace: Microsoft.Quantum.Convert
+summary: 从结果的字符串中生成一个以 little endian 格式的正整数。
+syntax: 'function ResultArrayAsInt (results : Result[]) : Int'
+input:
+  content: '(results : Result[])'
+  types:
+  - name: results
+    summary: 导致数字的二进制表示形式。
+    isArray: true
+    isPrimitive: true
+    uid: Result
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 341f7c9dd8e7010c9ad8abd71f0f8f3abcf53e14
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73230715"

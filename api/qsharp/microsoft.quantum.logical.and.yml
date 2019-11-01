@@ -1,0 +1,44 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.logical.and
+name: And
+type: function
+namespace: Microsoft.Quantum.Logical
+summary: 返回两个值的布尔值。
+remarks: >-
+  与 `and` 运算符不同，此函数不会短路，因此这两个输入都是完全计算的。
+
+
+  最多短路行为，如下所示：
+
+
+  ```Q#
+
+  let x = a and b;
+
+  let x = And(a, b);
+
+  ```
+syntax: 'function And (a : Bool, b : Bool) : Bool'
+input:
+  content: '(a : Bool, b : Bool)'
+  types:
+  - name: a
+    summary: 要考虑的第一个值。
+    isPrimitive: true
+    uid: Bool
+  - name: b
+    summary: 要考虑的第二个值。
+    isPrimitive: true
+    uid: Bool
+output:
+  content: Bool
+  types:
+  - summary: 当且仅当 `a` 和 `b` 都 `true`时，`true`。
+    isPrimitive: true
+    uid: Bool
+ms.openlocfilehash: 22e884f8041ecd66aba875c38f0b8af234aee0e5
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233367"

@@ -1,0 +1,13 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.fixedpoint
+name: FixedPoint
+type: newtype
+namespace: Microsoft.Quantum.Arithmetic
+summary: 表示 qubits 编码固定点数字的寄存器。 包含一个整数，该整数等于二进制点左侧的 qubits 数，即，qubits 权重大于或等于1，以及一个量程寄存器。
+syntax: newtype FixedPoint = (Int, Qubit[]);
+ms.openlocfilehash: 4ab209ab14486893ea3b23b32e14e6c8a05da514
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219070"

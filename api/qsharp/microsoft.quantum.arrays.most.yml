@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.most
+name: Most
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 创建一个等于输入数组的数组，只不过最后一个数组元素被删除。
+syntax: "function Most (array : 'T[]) : 'T[]"
+input:
+  content: "(array : 'T[])"
+  types:
+  - name: array
+    summary: 一个数组，其第一个到第二个元素是形成输出数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T[]"
+  types:
+  - summary: 包含 `array[0..Length(array) - 2]`的元素的数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: 数组元素的类型。
+ms.openlocfilehash: 8b7d324bac18c03692761ae3fb22669b240f3704
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218067"

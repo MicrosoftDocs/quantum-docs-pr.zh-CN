@@ -1,0 +1,32 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.assertqubit
+name: AssertQubit
+type: operation
+namespace: Microsoft.Quantum.Diagnostics
+summary: 断言 qubit `q` 处于 Pauli Z 运算符所需的 eigenstate 中。
+remarks: <xref:microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance> 允许对任意 qubit 的状态进行断言，而不是仅 $Z $ eigenstates。
+syntax: 'operation AssertQubit (expected : Result, q : Qubit) : Unit'
+input:
+  content: '(expected : Result, q : Qubit)'
+  types:
+  - name: expected
+    summary: 应 qubit 的状态： `Zero` 或 `One`。
+    isPrimitive: true
+    uid: Result
+  - name: q
+    summary: 其状态为 "已断言" 的 qubit。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+seeAlso:
+- assertqubitisinstatewithintolerance
+ms.openlocfilehash: e926e8a106e7ef0999f30d00922394e611aa40a8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227162"

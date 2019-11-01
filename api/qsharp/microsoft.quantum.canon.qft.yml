@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.qft
+name: QFT
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: 对包含大字节序表示形式整数的量程寄存器执行量程傅立叶转换。
+remarks: 输入和输出假定为大字节序编码。
+syntax: 'operation QFT (qs : Microsoft.Quantum.Arithmetic.BigEndian) : Unit'
+input:
+  content: '(qs : Microsoft.Quantum.Arithmetic.BigEndian)'
+  types:
+  - name: qs
+    summary: 量程傅立叶转换应用于的量程寄存器
+    uid: microsoft.quantum.arithmetic.bigendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applyquantumfouriertransformbe
+ms.openlocfilehash: 9791cc9812ee7709e17e0a32e0b98bd2ca85fbb8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73222606"
