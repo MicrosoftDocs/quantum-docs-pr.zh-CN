@@ -1,0 +1,28 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.measureinteger
+name: MeasureInteger
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 测量量程寄存器的内容并将其转换为整数。 度量值是根据标准计算基础执行的（即，`PauliZ`的 eigenbasis）。
+remarks: 此操作将其输入注册重置为 $ \ket{00\cdots 0} $ 状态，适用于释放回目标计算机。
+syntax: 'operation MeasureInteger (target : Microsoft.Quantum.Arithmetic.LittleEndian) : Int'
+input:
+  content: '(target : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: target
+    summary: 用小字节序编码的量程寄存器。
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Int
+  types:
+  - summary: 一个无符号整数，它包含 `target`的度量值。
+    isPrimitive: true
+    uid: Int
+seeAlso:
+- microsoft.quantum.canon.measureintegerbe
+ms.openlocfilehash: 989302867cbfb6b429bf8e8d4b8a76a0c1c4e61d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214871"

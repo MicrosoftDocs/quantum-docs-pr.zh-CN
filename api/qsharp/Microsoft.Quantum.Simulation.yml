@@ -1,0 +1,169 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.simulation
+name: Microsoft.Quantum.Simulation
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于模拟量子系统的动态的一致的函数和操作。"
+functions:
+- uid: microsoft.quantum.simulation.addgeneratorsystems
+  summary: 添加了两个用于创建新 `GeneratorSystem`的 `GeneratorSystem`。
+- uid: microsoft.quantum.simulation.blockencodingbylcu
+  summary: >-
+    将感兴趣的运算符编码为 `BlockEncoding`。
+
+
+    这将构造一个 `BlockEncoding` 单一 $U = P\cdot V\cdot P ^ \dagger $，对某个运算符进行编码，$H = \sum_{j} | \alpha_j |U_j，这是 unitaries 的线性组合。 通常，$P $ 是一种状态准备，因此 $P \ket{0}\_a = \ sum_j\sqrt {\ alpha_j/\|\vec\alpha\|\_2} \ket{j}\_$，$V = \sum_{j}\ket{j}\bra{j}\_a\otimes U_j $。
+- uid: microsoft.quantum.simulation.blockencodingreflectionbylcu
+  summary: >-
+    将感兴趣的运算符编码为 `BlockEncodingReflection`。
+
+
+    这将构造一个 `BlockEncodingReflection` 单一 $U = P\cdot V\cdot P ^ \dagger $，对某个运算符进行编码，$H = \sum_{j} | \alpha_j |U_j，这是 unitaries 的线性组合。 通常情况下，$P $ 是一种状态准备，$P \ket{0}\_a\sum_j\sqrt {\ alpha_j/\|\vec\alpha\|\_2} \ket{j}\_$，$V = \sum_{j}\ket{j}\bra{j}\_a\otimes U_j $。
+- uid: microsoft.quantum.simulation.blockencodingtoreflection
+  summary: >-
+    将 `BlockEncoding` 转换为等效 `BLockEncodingReflection`。
+
+
+    也就是说，假设有一个 `BlockEncoding` 单一 $U $，该运算符对某个运算符 $H "重要" 进行编码，然后将其转换为对同一运算符进行编码的 `BlockEncodingReflection` $U $，同时还满足 $U "^ \dagger = U" $。
+
+    这会将 $U $ 的辅助寄存器大小增加了一个 qubit。
+- uid: microsoft.quantum.simulation.getgeneratorsystemfunction
+  summary: 检索 `GeneratorSystem`中的 `GeneratorIndex` 函数。
+- uid: microsoft.quantum.simulation.getgeneratorsystemnterms
+  summary: 检索 `GeneratorSystem`中的字词数。
+- uid: microsoft.quantum.simulation.identitygeneratorindex
+  summary: 返回与零 Hamiltonian （`H = 0`）一致的生成器索引，该索引与标识演化操作相对应。
+- uid: microsoft.quantum.simulation.identitygeneratorsystem
+  summary: 返回与零 Hamiltonian `H = 0`一致的生成器系统，该系统与标识演化操作相对应。
+- uid: microsoft.quantum.simulation.identitytimedependentgeneratorsystem
+  summary: 返回与 Hamiltonian `H(s) = 0`一致的时间依赖于时间的生成器系统。
+- uid: microsoft.quantum.simulation.interpolatedevolution
+  summary: 使用统一的计划在两个生成器之间进行内插，返回一个操作，该操作在生成的时间依赖生成器下将模拟进化应用于 qubit 寄存器。
+- uid: microsoft.quantum.simulation.interpolategeneratorsystems
+  summary: 返回表示两个 `GeneratorSystem`之间的线性内插的 `TimeDependentGeneratorSystem`。
+- uid: microsoft.quantum.simulation.intstopaulis
+  summary: 将整数数组转换为 qubit Pauli 运算符的数组。
+- uid: microsoft.quantum.simulation.inttopauli
+  summary: 将整数转换为 qubit Pauli 运算符。
+- uid: microsoft.quantum.simulation.multiplygeneratorindex
+  summary: 将 `GeneratorIndex`中的系数相乘。
+- uid: microsoft.quantum.simulation.multiplygeneratorsystem
+  summary: 将 `GeneratorSystem`中所有字词的系数相乘。
+- uid: microsoft.quantum.simulation.pauliblockencoding
+  summary: >-
+    为 Hamiltonian 创建块编码单一编码。
+
+
+    Hamiltonian $H = \sum_{j}\alpha_j P_j $ 由 Pauli 术语 $P _j $，其中每个项都带有实系数 $ \alpha_j $ 描述。
+- uid: microsoft.quantum.simulation.paulicoefficientfromgenidx
+  summary: 提取 `GeneratorIndex`描述的 Pauli 术语的系数。
+- uid: microsoft.quantum.simulation.paulievolutionfunction
+  summary: 将 dynamical 生成器表示为一组 simulatable 入口和 Pauli 中的扩展。
+- uid: microsoft.quantum.simulation.paulievolutionset
+  summary: 将 dynamical 生成器表示为一组 simulatable 入口和 Pauli 中的扩展。
+- uid: microsoft.quantum.simulation.paulistringfromgenidx
+  summary: 提取 `GeneratorIndex`描述的 Pauli 术语的 Pauli 字符串及其 qubit 索引。
+- uid: microsoft.quantum.simulation.quantumwalkbyqubitization
+  summary: >-
+    将 `BlockEncodingReflection` 转换为量程审核。
+
+
+    也就是说，假设有一个 `BlockEncodingReflection` 单一 $U $，该运算符对某个运算符 $H，并将其转换为量程审核 $W $，其中包含 $ \pm e ^ {\pm i\sin ^{-1}（H）} $ 的范围。
+- uid: microsoft.quantum.simulation.sumgeneratorsystems
+  summary: 添加多个 `GeneratorSystem`来创建新 GeneratorSystem。
+- uid: microsoft.quantum.simulation.timedependenttrottersimulationalgorithm
+  summary: '`TimeDependentSimulationAlgorithm` 函数，该函数使用 Trotter – Suzuki 分解来估算求解依赖于时间的 Schrodinger 公式的单一运算符。'
+- uid: microsoft.quantum.simulation.trottersimulationalgorithm
+  summary: '`SimulationAlgorithm` 函数，该函数使用 Trotter – Suzuki 分解来估算时间演化运算符_exp （-iHt）_。'
+- uid: microsoft.quantum.simulation.trotterstep
+  summary: 使用 Trotter – Suzuki 分解，通过 `EvolutionGenerator` 中所述的系统来实现一次时间演变。
+operations:
+- uid: microsoft.quantum.simulation.adiabaticstateenergyunitary
+  summary: 通过对输入状态应用 `statePrepUnitary` 来执行状态准备，后面是使用 `adiabaticUnitary`进行 adiabatic 状态准备，并最终针对使用 `phaseEstAlgorithm``qpeUnitary`生成状态的阶段估算。
+- uid: microsoft.quantum.simulation.estimateenergy
+  summary: 通过对自动分配的输入状态阶段估算应用 `statePrepUnitary` 来执行状态准备，这一点与使用 `phaseEstAlgorithm`的结果状态 `qpeUnitary`相关。
+- uid: microsoft.quantum.simulation.estimateenergywithadiabaticevolution
+  summary: 通过对自动分配的输入状态应用 `statePrepUnitary`，然后使用 `adiabaticUnitary`进行 adiabatic 状态准备，并最终使用 `phaseEstAlgorithm`在生成的状态上 `qpeUnitary`，来执行状态准备。
+newtypes:
+- uid: microsoft.quantum.simulation.blockencoding
+  summary: >-
+    表示从左上方的块对任意相关运算符进行编码的单一项。
+
+
+    也就是说，`BlockEncoding` 是一个单一的 $U $，其中对系统注册 `s` 使用的任意运算符 $H，在与辅助状态 $ \ket{0}_a $ 对应的左上块中进行编码。 那是
+
+
+    $ $ \begin{align} （\bra{0}_a \ otimes I_s） U （\ket{0}_a \ otimes I_s） = H \end{align} $ $。
+- uid: microsoft.quantum.simulation.blockencodingreflection
+  summary: 表示也是反射的 `BlockEncoding`。
+- uid: microsoft.quantum.simulation.evolutiongenerator
+  summary: >-
+    将 dynamical 生成器表示为一组 simulatable 入口，并以这种方式进行扩展。
+
+
+    字词数的最后一个参数。
+- uid: microsoft.quantum.simulation.evolutionschedule
+  summary: >-
+    表示依赖时间的 dynamical 生成器。
+
+
+    `Double` 参数是 $ [0，1] $ 中的一个计划。
+- uid: microsoft.quantum.simulation.evolutionset
+  summary: >-
+    表示一组可随时实现和用于实现模拟算法的入口。
+
+
+    集合中的元素由 <xref:microsoft.quantum.simulation.generatorindex>编制索引，每个集由从 `GeneratorIndex` 到 <xref:microsoft.quantum.simulation.evolutionunitary>的函数描述，这些操作由表示时间的实数参数化
+- uid: microsoft.quantum.simulation.evolutionunitary
+  summary: >-
+    表示单一的时间演化运算符。
+
+
+    第一个参数是时间演化的持续时间，第二个参数是由单一参数操作的 qubit 寄存器。
+- uid: microsoft.quantum.simulation.generatorindex
+  summary: >-
+    表示所有 dynamical 生成器（如 Hermitian 运算符）集中的单个基元术语，该生成器存在一个映射，该生成器将从该生成器通过 `EvolutionSet`进行时间演变。
+
+
+    第一个元素（Int []，Double []）是单个字词的索引，例如，系数0.5 的 Pauli 字符串 XXY 将按（[1，1，2]，[0.5]）进行索引。 或者，通过连续变量（例如 X cos φ + Y sin φ）参数化的 Hamiltonians 可能以（[]，[φ]）表示。 第二个元素对生成器在其上操作的子系统进行索引。
+- uid: microsoft.quantum.simulation.generatorsystem
+  summary: >-
+    表示 `GeneratorIndex`es 的集合。
+
+
+    我们使用单个索引的整数来循环访问此集合，并假定集合的大小是已知的。
+- uid: microsoft.quantum.simulation.simulationalgorithm
+  summary: >-
+    表示与时间无关的模拟算法。
+
+
+    与时间无关的模拟技术可转换 <xref:microsoft.quantum.simulation.evolutiongenerator>
+
+    到某个时间间隔内的单一时间演变。
+- uid: microsoft.quantum.simulation.timedependentblockencoding
+  summary: >-
+    表示由时钟寄存器控制的 `BlockEncoding`。
+
+
+    也就是说，`TimeDependentBlockEncoding` 是 `d` 时钟寄存器中的状态 $ \ket{k}_d $ 控制的单一 $U $，因此，在系统注册 `s` 上操作的任意 $H _k $ 将在与辅助状态 $ \ket 相对应的左上块中进行编码{0}_a $。 那是
+
+
+    $ $ \begin{align} （\bra{0}\_a\otimes I_ {ds}） U （\ket{0}\_a\otimes I_ {ds}） = \sum_{k}\ket{k}\bra{k}\_d\otimes H_k。
+
+    \end{align} $ $。
+- uid: microsoft.quantum.simulation.timedependentgeneratorsystem
+  summary: 表示时间依赖于时间的 dynamical 生成器作为函数，时间与 dynamical 生成器的值相同。
+- uid: microsoft.quantum.simulation.timedependentsimulationalgorithm
+  summary: >-
+    表示依赖时间的模拟算法。
+
+
+    依赖于时间的模拟技术可转换 <xref:microsoft.quantum.simulation.evolutionschedule>
+
+    用于某些时间间隔的单一时间演变。
+- uid: microsoft.quantum.simulation.unitary
+  summary: 表示单一运算符下的演变。
+ms.openlocfilehash: 05db213d04304a635e4e86e0f6c40f15bb81441a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215874"

@@ -1,0 +1,42 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.all
+name: All
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 给定为数组元素定义的数组和谓词，并检查数组的所有元素是否都满足该谓词。
+remarks: "函数是为泛型类型定义的，也就是说，只要数组 `'T[]` 和函数 `predicate: 'T -> Bool` 我们就可以生成一个 `Bool` 值，该值指示所有元素是否都满足 `predicate`。"
+syntax: "function All (predicate : ('T -> Bool), array : 'T[]) : Bool"
+input:
+  content: "(predicate : ('T -> Bool), array : 'T[])"
+  types:
+  - name: predicate
+    summary: 从 `'T` 到用于检查元素的 `Bool` 的函数。
+    isFunction: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Bool
+  - name: array
+    summary: "`'T`上的元素的数组。"
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Bool
+  types:
+  - summary: 应用于所有元素的谓词的和函数的 `Bool` 值。
+    isPrimitive: true
+    uid: Bool
+typeParameters:
+- uid: "'T"
+  summary: '`array` 元素的类型。'
+ms.openlocfilehash: bb439ae76d0f7644625686cd89f05670051a4c9d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214446"

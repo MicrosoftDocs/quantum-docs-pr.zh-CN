@@ -1,0 +1,40 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.greaterthan
+name: GreaterThan
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 严格大于比较两个整数 $x $ 和 $y $，并以 qubit 寄存器 xs 和 y) 编码。 如果 $x > y $，则会翻转结果 qubit，否则保留其状态。
+remarks: 使用 $x-y = （x ' + y） ' $ 的技巧，其中 ' 表示一个补码。
+syntax: 'operation GreaterThan (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, result : Qubit) : Unit'
+references: >-
+  - Steven Cuccaro、Thomas Draper、Samuel Kutin、David Petrie Moulton： "A 新的量程波纹-携带加法线路"，2004。
+    https://arxiv.org/abs/quant-ph/0410184v1
+
+  - Thomas Haener，圣马丁 Roetteler，Krysta Svore： "使用 2n + 2 qubits 和基于 Toffoli 的模块乘法进行因式分解"，2016 https://arxiv.org/abs/1611.07995
+input:
+  content: '(xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, result : Qubit)'
+  types:
+  - name: xs
+    summary: LittleEndian qubit register $x $ 的第一个整数编码。
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: ys
+    summary: LittleEndian qubit register $y $ 的第二个整数编码。
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: result
+    summary: 如果 $x > y $，将翻转的单个 qubit。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 6961a6a4f22d2290a264298a3be3b15f7bdb0ac7
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214939"

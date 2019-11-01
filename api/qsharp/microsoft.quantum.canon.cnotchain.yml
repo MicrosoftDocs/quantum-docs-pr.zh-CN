@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.cnotchain
+name: CNOTChain
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  计算 qubits 数组的奇偶校验。
+
+
+  它遵循模式 $ \ket{q_0} \ket{q_0 \oplus q_1} \ket{q_0 \oplus q_1 \oplus q_2} \cdots $。
+syntax: 'operation CNOTChain (qubits : Qubit[]) : Unit'
+input:
+  content: '(qubits : Qubit[])'
+  types:
+  - name: qubits
+    summary: 计算和存储其奇偶校验的 qubits 数组。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: fd49db5028b3124c05a424a135df2fc22d99e4e4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73223082"

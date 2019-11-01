@@ -1,0 +1,27 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.dividedbycp
+name: DividedByCP
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回两个输入的商。
+syntax: 'function DividedByCP (a : Microsoft.Quantum.Math.ComplexPolar, b : Microsoft.Quantum.Math.ComplexPolar) : Microsoft.Quantum.Math.ComplexPolar'
+input:
+  content: '(a : Microsoft.Quantum.Math.ComplexPolar, b : Microsoft.Quantum.Math.ComplexPolar)'
+  types:
+  - name: a
+    summary: 要相除的第一个输入 $a $。
+    uid: microsoft.quantum.math.complexpolar
+  - name: b
+    summary: 要相除 $b $ 的第二个输入。
+    uid: microsoft.quantum.math.complexpolar
+output:
+  content: Microsoft.Quantum.Math.ComplexPolar
+  types:
+  - summary: 商 $a/b $。
+    uid: microsoft.quantum.math.complexpolar
+ms.openlocfilehash: 4edf66f7eb018cee9e8c4d2c9055d80f5471702b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229746"

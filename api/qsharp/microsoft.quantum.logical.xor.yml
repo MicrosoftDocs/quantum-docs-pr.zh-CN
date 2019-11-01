@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.logical.xor
+name: Xor
+type: function
+namespace: Microsoft.Quantum.Logical
+summary: 返回两个值的布尔互斥析取。
+syntax: 'function Xor (a : Bool, b : Bool) : Bool'
+input:
+  content: '(a : Bool, b : Bool)'
+  types:
+  - name: a
+    summary: 要考虑的第一个值。
+    isPrimitive: true
+    uid: Bool
+  - name: b
+    summary: 要考虑的第二个值。
+    isPrimitive: true
+    uid: Bool
+output:
+  content: Bool
+  types:
+  - summary: 当且仅当 `true``a` 和 `b` 之一时，`true`。
+    isPrimitive: true
+    uid: Bool
+ms.openlocfilehash: a876025d8b3a928e91d686b90f8ceccd65cc1e7c
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73235135"

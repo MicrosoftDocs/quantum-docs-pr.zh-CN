@@ -1,0 +1,39 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.rall0
+name: RAll0
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  执行阶段移位操作。
+
+
+  $R = \boldone-（1-e ^ {i \phi}） \ket{0\cdots 0} \bra{0\cdots 0} $。
+syntax: 'operation RAll0 (phase : Double, qubits : Qubit[]) : Unit'
+input:
+  content: '(phase : Double, qubits : Qubit[])'
+  types:
+  - name: phase
+    summary: 阶段 $ \phi $ 应用于状态 $ \ket{0\cdots 0} \bra{0\cdots 0} $。
+    isPrimitive: true
+    uid: Double
+  - name: qubits
+    summary: 其状态将旋转 $R $ 的寄存器。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.rall1
+ms.openlocfilehash: d9ccee04eadcd8b2a3514eaa173ea40cc56d5c44
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227689"

@@ -1,0 +1,37 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.pnormalized
+name: PNormalized
+type: function
+namespace: Microsoft.Quantum.Math
+summary: >-
+  规范化 `L(p)` 标准中的 `Double`向量。
+
+
+  也就是说，假设数组的类型 $x $ `Double[]`，这将返回一个数组，其中所有元素都按 $p $-标准 $\|x\|_p $ 进行划分。
+syntax: 'function PNormalized (p : Double, array : Double[]) : Double[]'
+input:
+  content: （p： Double，array： Double []）
+  types:
+  - name: p
+    summary: 指数 $p $ $p $-标准。
+    isPrimitive: true
+    uid: Double
+  - name: 数组
+    isArray: true
+    isPrimitive: true
+    uid: Double
+output:
+  content: Double []
+  types:
+  - summary: 数组 $x 按 $p $-标准 $\|x\|_p $ 标准化的 $。
+    isArray: true
+    isPrimitive: true
+    uid: Double
+seeAlso:
+- pnorm
+ms.openlocfilehash: 5fd219b866b14d3d6faf58cdf4f1ce2b9fbadf9d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73067282"

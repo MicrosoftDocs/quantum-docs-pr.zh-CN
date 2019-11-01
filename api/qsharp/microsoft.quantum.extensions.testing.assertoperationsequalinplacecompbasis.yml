@@ -1,0 +1,56 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.testing.assertoperationsequalinplacecompbasis
+name: AssertOperationsEqualInPlaceCompBasis
+type: operation
+namespace: Microsoft.Quantum.Extensions.Testing
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.diagnostics.assertoperationsequalinplaceCompBasis"。
+
+  请注意，此操作的参数顺序已更改。
+syntax: 'operation AssertOperationsEqualInPlaceCompBasis (actual : (Qubit[] => Unit), expected : (Qubit[] => Unit is Adj), nQubits : Int) : Unit'
+input:
+  content: '(actual : (Qubit[] => Unit), expected : (Qubit[] => Unit is Adj), nQubits : Int)'
+  types:
+  - name: actual
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: expected
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: nQubits
+    isPrimitive: true
+    uid: Int
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: ef71e4464f7d79cbe50da5b93201d1e41e4d9e6a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216673"

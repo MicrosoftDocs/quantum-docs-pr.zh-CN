@@ -1,0 +1,45 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.incrementphasebymodularinteger
+name: IncrementPhaseByModularInteger
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  按整数常量执行 qubit 寄存器的模块化增量。
+
+
+  接下来，让我们表示 `increment`，`modulus`，并按 y `target` 进行编码，然后该操作将执行以下转换： | y ⟩↦ | y + a （mod N）⟩整数以小字节序格式在 QFT 中进行编码
+remarks: >-
+  假定 `target` 的最大位设置为0。
+
+  还假定目标值小于 N。
+
+
+  对于 "线路" 关系图和说明，请参阅[arXiv： quant/0205095V3 第5页](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=5)上的图5。
+syntax: 'operation IncrementPhaseByModularInteger (increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
+input:
+  content: '(increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
+  types:
+  - name: increment
+    isPrimitive: true
+    uid: Int
+  - name: modulus
+    isPrimitive: true
+    uid: Int
+  - name: target
+    uid: microsoft.quantum.arithmetic.phaselittleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.modularincrementle
+ms.openlocfilehash: 897e46cca640e714e1f000548ffd3226e8e27fa4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219019"

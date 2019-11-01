@@ -1,0 +1,88 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance
+name: AssertQubitIsInStateWithinTolerance
+type: operation
+namespace: Microsoft.Quantum.Diagnostics
+summary: >-
+  断言处于预期状态的 qubit。
+
+
+  `expected` 表示复杂矢量，$ \ket{\psi} = \begin{bmatrix}a & b\end {bmatrix} ^ {\mathrm{T}} $。
+
+  元组的第一个元素表示每个 $a $，$b $ 是复数的实部，第二个元素是复数的实部。
+
+  最后一个参数定义进行断言的公差。
+remarks: >-
+  以下 Mathematica 代码可用于验证 mi、mx、my、mz 的表达式：
+
+
+  ```mathematica
+
+  {Id, X, Y, Z} = Table[PauliMatrix[k], {k, 0, 3}];
+
+  st = {{ reA + I imA }, { reB + I imB} };
+
+  M = st . ConjugateTranspose[st];
+
+  mx = Tr[M.X] // ComplexExpand;
+
+  my = Tr[M.Y] // ComplexExpand;
+
+  mz = Tr[M.Z] // ComplexExpand;
+
+  mi = Tr[M.Id] // ComplexExpand;
+
+  2 m == Id mi + X mx + Z mz + Y my // ComplexExpand // Simplify
+
+  ```
+
+
+  容差是指3维实向量（x ₂，x ₃，x ₄）定义的 $L\_{\infty} $ 距离，由 $ \langle\psi | \psi\rangle = x\_1 I + x\_2 X + x\_3 Y + x\_4 Z $ 和 real 向量（Y ₂，y ₃，y ₄）由复数 = y ₁ I + y ₂ X + y ₃ Y + y ₄ Z 定义，其中复数是与寄存器状态相对应的密度矩阵。
+
+  这仅在以下假定： Tr （复数）和 Tr （| ψ⟩⟨ψ |）均为1（例如 x ₁ = 1/2、y ₁ = 1/2）时才是如此。
+
+  如果不是这种情况，则该函数将断言（x ₂₁，x ₃-x ₁，x ₄-x ₁，x ₄ + x ₁）与（y ₂-y ₁，y ₃-y ₁，y ₄-y ₁，y ₄ + y ₁）之间的∞距离小于公差参数。
+examples: >-
+  ```Q#
+
+  using (qubits = Qubit[2]) {
+      // Both qubits are initialized as |0〉: a=(1 + 0*i), b=(0 + 0*i)
+      AssertQubitIsInStateWithinTolerance((Complex(1., 0.), Complex(0., 0.)), qubits[0], 1e-5);
+      AssertQubitIsInStateWithinTolerance((Complex(1., 0.), Complex(0., 0.)), qubits[1], 1e-5);
+      Y(qubits[1]);
+      // Y |0〉 = i |1〉: a=(0 + 0*i), b=(0 + 1*i)
+      AssertQubitIsInStateWithinTolerance((Complex(0., 0.), Complex(0., 1.)), qubits[1], 1e-5);
+  }
+
+  ```
+syntax: 'operation AssertQubitIsInStateWithinTolerance (expected : (Microsoft.Quantum.Math.Complex, Microsoft.Quantum.Math.Complex), register : Qubit, tolerance : Double) : Unit'
+input:
+  content: '(expected : (Microsoft.Quantum.Math.Complex, Microsoft.Quantum.Math.Complex), register : Qubit, tolerance : Double)'
+  types:
+  - name: expected
+    summary: 需要分别为 $ \ket{0}$ 和 $ \ket{1}$ 的复杂的 amplitudes。
+    types:
+    - uid: microsoft.quantum.math.complex
+    - uid: microsoft.quantum.math.complex
+  - name: register
+    summary: 要断言其状态的 Qubit。 请注意，假定此 qubit 与其他已分配的 qubits 分离，而不是放大。
+    isPrimitive: true
+    uid: Qubit
+  - name: tolerance
+    summary: >-
+      允许实际 amplitudes 偏离预期值的附加容差。
+
+      有关详细信息，请参阅下面的备注。
+    isPrimitive: true
+    uid: Double
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 8b43bac19173c5ae5a11ff6879a03209c32e7c76
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227111"

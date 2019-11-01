@@ -1,0 +1,36 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.convert.boolarrayaspauli
+name: BoolArrayAsPauli
+type: function
+namespace: Microsoft.Quantum.Convert
+summary: 给定位字符串后，将返回一个 qubit Pauli 运算符，该运算符表示为一个 qubit Pauli 运算符的数组。
+remarks: 布尔数组和量程寄存器的长度必须相等。
+syntax: 'function BoolArrayAsPauli (pauli : Pauli, bitApply : Bool, bits : Bool[]) : Pauli[]'
+input:
+  content: '(pauli : Pauli, bitApply : Bool, bits : Bool[])'
+  types:
+  - name: pauli
+    summary: 要应用于 qubits 的 Pauli 运算符，其中 `bitsApply == bits[idx]`。
+    isPrimitive: true
+    uid: Pauli
+  - name: bitApply
+    summary: 如果 bit 为此值，则应用 Pauli。
+    isPrimitive: true
+    uid: Bool
+  - name: bits
+    summary: 布尔数组。
+    isArray: true
+    isPrimitive: true
+    uid: Bool
+output:
+  content: Pauli[]
+  types:
+  - isArray: true
+    isPrimitive: true
+    uid: Pauli
+ms.openlocfilehash: 3d251215e7f7bc136092caf7bafd677ecb1c05bd
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73227179"

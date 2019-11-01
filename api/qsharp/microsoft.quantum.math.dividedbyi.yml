@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.dividedbyi
+name: DividedByI
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回两个输入的商。
+syntax: 'function DividedByI (a : Int, b : Int) : Int'
+input:
+  content: '(a : Int, b : Int)'
+  types:
+  - name: a
+    summary: 要相除的第一个输入 $a $。
+    isPrimitive: true
+    uid: Int
+  - name: b
+    summary: 要相除 $b $ 的第二个输入。
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - summary: 商 $a/b $。
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 7ca78817169fc56a42bfcd662c112d9d8c902635
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229712"

@@ -1,0 +1,28 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.research.chemistry.jwoptimizedfermionevolutionfunction
+name: JWOptimizedFermionEvolutionFunction
+type: function
+namespace: Microsoft.Quantum.Research.Chemistry
+summary: 将 dynamical 生成器表示为一组 simulatable 入口和 JWOptimized 中的扩展。
+syntax: 'function JWOptimizedFermionEvolutionFunction (generatorIndex : Microsoft.Quantum.Simulation.GeneratorIndex, parityQubit : Qubit) : Microsoft.Quantum.Simulation.EvolutionUnitary'
+input:
+  content: '(generatorIndex : Microsoft.Quantum.Simulation.GeneratorIndex, parityQubit : Qubit)'
+  types:
+  - name: generatorIndex
+    summary: 要在 JWOptimized 基础中表示为单一进化的生成器索引。
+    uid: microsoft.quantum.simulation.generatorindex
+  - name: parityQubit
+    summary: Qubit，用于确定时间演化的符号。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Microsoft.Quantum.Simulation.EvolutionUnitary
+  types:
+  - summary: 一个 `EvolutionUnitary`，它表示 "generatorIndex" 中引用的术语的时间演变。
+    uid: microsoft.quantum.simulation.evolutionunitary
+ms.openlocfilehash: 0e85f9be6001d71980a442ebbc04b88ba4240166
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73228012"

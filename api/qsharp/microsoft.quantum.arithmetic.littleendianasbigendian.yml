@@ -1,0 +1,24 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.littleendianasbigendian
+name: LittleEndianAsBigEndian
+type: function
+namespace: Microsoft.Quantum.Arithmetic
+summary: 通过反转 qubit 排序将 `LittleEndian` qubit 注册转换为 `BigEndian` 的 qubit 寄存器。
+syntax: 'function LittleEndianAsBigEndian (input : Microsoft.Quantum.Arithmetic.LittleEndian) : Microsoft.Quantum.Arithmetic.BigEndian'
+input:
+  content: '(input : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: input
+    summary: Qubit 注册 `LittleEndian` 格式。
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Microsoft.Quantum.Arithmetic.BigEndian
+  types:
+  - summary: Qubit 注册 `BigEndian` 格式。
+    uid: microsoft.quantum.arithmetic.bigendian
+ms.openlocfilehash: 7f87c2a65bede0f77c2dbf360be0f052cc504eea
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218781"

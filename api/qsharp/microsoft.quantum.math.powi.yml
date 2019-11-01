@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.powi
+name: PowI
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回一个数的指定幂。
+syntax: 'function PowI (a : Int, power : Int) : Int'
+input:
+  content: '(a : Int, power : Int)'
+  types:
+  - name: a
+    summary: 要引发 $a $ 的数字。
+    isPrimitive: true
+    uid: Int
+  - name: power
+    summary: $A $ 应引发的 power $b $。
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - summary: Power $a ^ b $
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 3287ec73f90d22a502e2f4e214da7532d0729d1a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73220039"

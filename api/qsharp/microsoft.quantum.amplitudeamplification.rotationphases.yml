@@ -1,0 +1,17 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.rotationphases
+name: RotationPhases
+type: newtype
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: 振幅放大中 qubit 旋转序列的各个阶段。
+remarks: >-
+  第一个参数是一个用于反射的阶段数组，表示为一个 qubit 旋转的积。
+
+  [ G.H. 低，I. L。 语，https://arxiv.org/abs/1707.05391]。
+syntax: newtype RotationPhases = Double[];
+ms.openlocfilehash: 1ad6a80a10cc3880122303a7bbd708087976f906
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215449"

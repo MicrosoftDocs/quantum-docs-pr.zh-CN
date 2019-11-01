@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.modulusi
+name: ModulusI
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 计算 `value` 取模 `modulus`的规范 residue。
+remarks: '此函数的行为与 `%` 运算符在和 Q # C#中的行为方式的行为不同，结果中始终为介于0到 `modulus - 1`之间的正整数，即使值为负。'
+syntax: 'function ModulusI (value : Int, modulus : Int) : Int'
+input:
+  content: '(value : Int, modulus : Int)'
+  types:
+  - name: value
+    summary: 计算 residue 的值
+    isPrimitive: true
+    uid: Int
+  - name: modulus
+    summary: Residues 所采用的模数必须为正数
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - summary: 0到 `value - r` `modulus - 1` 之间的整数 $r
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 1bb3877b4d66b5ad09dabbc072d7d9fb61813745
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73212083"

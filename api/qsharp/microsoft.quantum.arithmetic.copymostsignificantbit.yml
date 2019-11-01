@@ -1,0 +1,35 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.copymostsignificantbit
+name: CopyMostSignificantBit
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 将表示无符号整数的 qubit `from` 寄存器的最高有效位复制到 qubit `target`中。
+syntax: 'operation CopyMostSignificantBit (from : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit'
+input:
+  content: '(from : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit)'
+  types:
+  - name: from
+    summary: >-
+      从中复制高位的无符号整数。
+
+      此整数用小字节序格式进行编码。
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: target
+    summary: 要复制其最大位的 qubit。 位编码为计算基础。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+seeAlso:
+- littleendian
+ms.openlocfilehash: d397bd580600545c2a6f1c6ce0112b82087d99b4
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219121"

@@ -1,0 +1,24 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.negationcp
+name: NegationCP
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回输入的一元求反。
+syntax: 'function NegationCP (input : Microsoft.Quantum.Math.ComplexPolar) : Microsoft.Quantum.Math.ComplexPolar'
+input:
+  content: '(input : Microsoft.Quantum.Math.ComplexPolar)'
+  types:
+  - name: input
+    summary: 要返回其求反的值。
+    uid: microsoft.quantum.math.complexpolar
+output:
+  content: Microsoft.Quantum.Math.ComplexPolar
+  types:
+  - summary: '`input`的一元求反。'
+    uid: microsoft.quantum.math.complexpolar
+ms.openlocfilehash: 62c886936be80cb1694227d5e535327880d60041
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211505"

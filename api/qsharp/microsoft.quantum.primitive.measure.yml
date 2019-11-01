@@ -1,0 +1,35 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.primitive.measure
+name: Measure
+type: operation
+namespace: Microsoft.Quantum.Primitive
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.intrinsic.measure"。
+syntax: 'operation Measure (bases : Pauli[], qubits : Qubit[]) : Result'
+input:
+  content: '(bases : Pauli[], qubits : Qubit[])'
+  types:
+  - name: bases
+    isArray: true
+    isPrimitive: true
+    uid: Pauli
+  - name: qubits
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Result
+  types:
+  - isPrimitive: true
+    uid: Result
+ms.openlocfilehash: 8213dec9c2c50bdf6ab8061ab271c3ab2517a579
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229457"

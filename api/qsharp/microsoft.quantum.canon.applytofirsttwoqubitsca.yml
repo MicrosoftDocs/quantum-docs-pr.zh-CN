@@ -1,0 +1,59 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applytofirsttwoqubitsca
+name: ApplyToFirstTwoQubitsCA
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  将操作应用于寄存器中的前两个 qubits。
+
+  修饰符 `CA` 指示操作可控制和 adjointable。
+remarks: >-
+  这等效于：
+
+
+  ```qsharp
+
+  op(register[0], register[1]);
+
+  ```
+syntax: 'operation ApplyToFirstTwoQubitsCA (op : ((Qubit, Qubit) => Unit is Adj + Ctl), register : Qubit[]) : Unit'
+input:
+  content: '(op : ((Qubit, Qubit) => Unit is Adj + Ctl), register : Qubit[])'
+  types:
+  - name: op
+    summary: 要应用于前两个 qubits 的操作
+    isOperation: true
+    input:
+      types:
+      - isPrimitive: true
+        uid: Qubit
+      - isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+  - name: register
+    summary: Qubit 数组指向应用了该操作的前两个 qubits。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applytofirsttwoqubits
+ms.openlocfilehash: 2be73c142e21e24cae00db9d045f3fa3e6b504f8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73213103"

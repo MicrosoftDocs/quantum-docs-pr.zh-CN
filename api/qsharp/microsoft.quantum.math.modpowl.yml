@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.modpowl
+name: ModPowL
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 对某个数字进行模块化除法运算，使另一个数字的幂。
+remarks: 有关更多详细信息，请参阅[BigInteger。](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.modpow)
+syntax: 'function ModPowL (value : BigInt, exponent : BigInt, modulus : BigInt) : BigInt'
+input:
+  content: '(value : BigInt, exponent : BigInt, modulus : BigInt)'
+  types:
+  - name: value
+    isPrimitive: true
+    uid: BigInt
+  - name: exponent
+    isPrimitive: true
+    uid: BigInt
+  - name: modulus
+    isPrimitive: true
+    uid: BigInt
+output:
+  content: BigInt
+  types:
+  - isPrimitive: true
+    uid: BigInt
+ms.openlocfilehash: dff1a84cb5651857174f55b9561cd585672b9475
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233690"

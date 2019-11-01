@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.chemistry.isnotzero
+name: IsNotZero
+type: function
+namespace: Microsoft.Quantum.Chemistry
+summary: 检查 `Double` 数字是否不约为零。
+syntax: 'function IsNotZero (number : Double) : Bool'
+input:
+  content: '(number : Double)'
+  types:
+  - name: number
+    summary: 要检查的数字
+    isPrimitive: true
+    uid: Double
+output:
+  content: Bool
+  types:
+  - summary: 如果 `number` 的绝对值大于 `1e-15`，则返回 true。
+    isPrimitive: true
+    uid: Bool
+ms.openlocfilehash: dad9a5f63a4adab9eb2ff8c4d969baaf1f2b346b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73228828"

@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.addconstantfxp
+name: AddConstantFxP
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 将传统常量添加到量程固定点数字。
+syntax: 'operation AddConstantFxP (constant : Double, fp : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
+input:
+  content: '(constant : Double, fp : Microsoft.Quantum.Arithmetic.FixedPoint)'
+  types:
+  - name: constant
+    summary: 要添加到量程固定点数字的常量。
+    isPrimitive: true
+    uid: Double
+  - name: fp
+    summary: 要将常量添加到的定点数。
+    uid: microsoft.quantum.arithmetic.fixedpoint
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 2707a711150913106dda0876e45a00f19259bdef
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215500"

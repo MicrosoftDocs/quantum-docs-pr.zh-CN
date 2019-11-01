@@ -1,0 +1,29 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.swapreverseregister
+name: SwapReverseRegister
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: 使用交换入口反转寄存器中 qubits 的顺序。
+syntax: 'operation SwapReverseRegister (register : Qubit[]) : Unit'
+input:
+  content: '(register : Qubit[])'
+  types:
+  - name: register
+    summary: 应使用交换入口反转的 qubits 顺序
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 4c1061d67d89ee813202114879f04a94bbd39b59
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73217132"

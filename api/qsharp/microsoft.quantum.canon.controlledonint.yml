@@ -1,0 +1,53 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.controlledonint
+name: ControlledOnInt
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: 如果控件注册状态对应于指定的正整数，则返回一个单一运算符，该运算符应用目标寄存器上的 oracle。
+syntax: "function ControlledOnInt (numberState : Int, oracle : ('T => Unit is Adj + Ctl)) : ((Qubit[], 'T) => Unit is Adj + Ctl)"
+input:
+  content: "(numberState : Int, oracle : ('T => Unit is Adj + Ctl))"
+  types:
+  - name: numberState
+    summary: 正整数。
+    isPrimitive: true
+    uid: Int
+  - name: oracle
+    summary: 单一运算符。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+output:
+  content: ((Qubit[], 'T) => Unit is Adj + Ctl)
+  types:
+  - summary: 当控件注册状态对应于数字状态 `numberState`时，将在目标寄存器上应用 `oracle` 的单一运算符。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+ms.openlocfilehash: 2d1951df7eca0d48246ac93518594f522221d882
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73226176"

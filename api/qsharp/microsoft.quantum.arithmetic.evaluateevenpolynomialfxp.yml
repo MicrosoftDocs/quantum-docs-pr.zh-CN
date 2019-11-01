@@ -1,0 +1,35 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.evaluateevenpolynomialfxp
+name: EvaluateEvenPolynomialFxP
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 计算定点表示形式的偶数。
+syntax: 'operation EvaluateEvenPolynomialFxP (coefficients : Double[], fpx : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
+input:
+  content: '(coefficients : Double[], fpx : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint)'
+  types:
+  - name: coefficients
+    summary: 作为 double 数组的偶数的系数（即，数组 $ [a_0，a_1，...，a_k] $），用于偶多项式 $P （x） = a_0 + a_1 x ^ 2 + \cdots + a_k x ^ {2k} $。
+    isArray: true
+    isPrimitive: true
+    uid: Double
+  - name: fpx
+    summary: 为其计算多项式的定点数。
+    uid: microsoft.quantum.arithmetic.fixedpoint
+  - name: result
+    summary: 输出固定点数，其中包含 $P （x） $。 必须处于 $ \ket{0}$ 初始状态。
+    uid: microsoft.quantum.arithmetic.fixedpoint
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 4b0979dd2a0758bbefbb4b0456051a38e040ab5a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73221025"

@@ -1,0 +1,46 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.incrementphasebyinteger
+name: IncrementPhaseByInteger
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  使用阶段旋转，将未签名的量程寄存器增加一个传统整数。
+
+
+  假定 `target` 用小字节序编码将无符号整数编码 $x $，并且 `increment` 等于 $a $。
+
+  然后，此操作实现一个单一 $ \ket{x} \mapsto \ket{x + a} $，其中添加操作执行取模 $ 2 ^ n $，其中 $n = \texttt{Length （target！）}$.
+remarks: >-
+  请注意，我们已简化了此线路，因为增量为传统常量，而不是量程寄存器。
+
+
+  请参阅[arXiv： quant/0008033v1 的第6页](https://arxiv.org/pdf/quant-ph/0008033.pdf#page=6)上的图和说明。
+syntax: 'operation IncrementPhaseByInteger (increment : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
+references: '- [*Thomas Draper*，arXiv： quant/0008033](https://arxiv.org/pdf/quant-ph/0008033v1.pdf)'
+input:
+  content: '(increment : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
+  types:
+  - name: increment
+    summary: 用来递增 `target` 的整数。
+    isPrimitive: true
+    uid: Int
+  - name: target
+    summary: 在双重（QFT）基础上，用小字节序编码对无符号整数进行的量程寄存器编码。
+    uid: microsoft.quantum.arithmetic.phaselittleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- incrementbyintegerbe
+- incrementbyintegerle
+ms.openlocfilehash: 379e643826ca54e123c8b855f4bba48a9d79a137
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219036"

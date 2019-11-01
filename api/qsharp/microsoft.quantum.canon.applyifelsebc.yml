@@ -1,0 +1,75 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applyifelsebc
+name: ApplyIfElseBC
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  应用两个可控操作之一，具体取决于传统位的值。
+
+
+  给定一个位 `bit`，当 `bit` 为 `true`时，应用 `trueInput` 作为其输入的操作 `trueOp`，并在 `falseOp(falseInput)` `bit` 时应用 `false`。
+syntax: "operation ApplyIfElseBC (bit : Bool, (trueOp : ('T => Unit is Ctl), trueInput : 'T), (falseOp : ('U => Unit is Ctl), falseInput : 'U)) : Unit"
+input:
+  content: "(bit : Bool, (trueOp : ('T => Unit is Ctl), trueInput : 'T), (falseOp : ('U => Unit is Ctl), falseInput : 'U))"
+  types:
+  - name: bit
+    isPrimitive: true
+    uid: Bool
+  - name: trueOp
+    summary: '`true``bit` 时要应用的可控操作。'
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: trueInput
+    summary: 当 `bit` `true`时，提供给 `trueOp` 的输入。
+    uid: "'T"
+    isLocal: true
+  - name: falseOp
+    summary: '`false``bit` 时要应用的可控操作。'
+    isOperation: true
+    input:
+      types:
+      - uid: "'U"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: falseInput
+    summary: 当 `bit` `false`时，提供给 `falseOp` 的输入。
+    uid: "'U"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 要有条件地应用 `trueOp` 操作的输入类型。
+- uid: "'U"
+  summary: 要有条件地应用 `falseOp` 操作的输入类型。
+functors:
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applyifzero
+- microsoft.quantum.canon.applyifone
+- microsoft.quantum.canon.applyifelserc
+- microsoft.quantum.canon.applyifelsera
+- microsoft.quantum.canon.applyifelserca
+ms.openlocfilehash: 9e703292e4b09f5f8b66ba6efbd0ada054757367
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73217438"

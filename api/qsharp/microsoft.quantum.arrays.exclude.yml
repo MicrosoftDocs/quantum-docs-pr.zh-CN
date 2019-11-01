@@ -1,0 +1,46 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.exclude
+name: Exclude
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 返回一个数组，其中包含另一个数组的元素，而不包括给定索引列表中的元素。
+examples: >-
+  ```qsharp
+
+  let array = [10, 11, 12, 13, 14, 15];
+
+  // The following line returns [10, 12, 15].
+
+  let subarray = Exclude([1, 3, 4], array);
+
+  ```
+syntax: "function Exclude (remove : Int[], array : 'T[]) : 'T[]"
+input:
+  content: "(remove : Int[], array : 'T[])"
+  types:
+  - name: remove
+    summary: 指示应从输出中排除哪些元素的索引数组。
+    isArray: true
+    isPrimitive: true
+    uid: Int
+  - name: array
+    summary: 输出数组中的值采用的数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T[]"
+  types:
+  - summary: 数组 `output` `output[0]` 是 `array` 的第一个元素，该元素的索引未出现在 `remove`中，因此 `output[1]` 为第二个这样的元素，依此类推。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: 数组元素的类型。
+ms.openlocfilehash: 624021333e156a4da58509186bffa3074cf44f85
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214293"

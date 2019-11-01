@@ -1,0 +1,29 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.trottersimulationalgorithm
+name: TrotterSimulationAlgorithm
+type: function
+namespace: Microsoft.Quantum.Simulation
+summary: '`SimulationAlgorithm` 函数，该函数使用 Trotter – Suzuki 分解来估算时间演化运算符_exp （-iHt）_。'
+syntax: 'function TrotterSimulationAlgorithm (trotterStepSize : Double, trotterOrder : Int) : Microsoft.Quantum.Simulation.SimulationAlgorithm'
+input:
+  content: '(trotterStepSize : Double, trotterOrder : Int)'
+  types:
+  - name: trotterStepSize
+    summary: 单个 Trotter 步骤中模拟时间演化的持续时间。
+    isPrimitive: true
+    uid: Double
+  - name: trotterOrder
+    summary: Trotter 集成器的顺序。 此值必须是1或偶数。
+    isPrimitive: true
+    uid: Int
+output:
+  content: Microsoft.Quantum.Simulation.SimulationAlgorithm
+  types:
+  - summary: '`SimulationAlgorithm` 类型。'
+    uid: microsoft.quantum.simulation.simulationalgorithm
+ms.openlocfilehash: 2daaeb3be5d73351797cb9f4efacb6e276b18e10
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231990"

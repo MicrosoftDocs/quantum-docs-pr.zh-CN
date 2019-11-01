@@ -1,0 +1,53 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applytoeachindexca
+name: ApplyToEachIndexCA
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  将单 qubit 操作应用于寄存器中的每个索引元素。
+
+  修饰符 `CA` 指示 qubit 操作 adjointable 且可控。
+syntax: "operation ApplyToEachIndexCA (singleElementOperation : ((Int, 'T) => Unit is Adj + Ctl), register : 'T[]) : Unit"
+input:
+  content: "(singleElementOperation : ((Int, 'T) => Unit is Adj + Ctl), register : 'T[])"
+  types:
+  - name: singleElementOperation
+    summary: 要应用到每个 qubit 的操作。
+    isOperation: true
+    input:
+      types:
+      - isPrimitive: true
+        uid: Int
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+  - name: register
+    summary: 要在其上应用给定操作的 qubits 数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 每个操作操作的目标。
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applytoeachindex
+ms.openlocfilehash: ea42188d5dd9de274617cfc64c3448e1e3447037
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73213528"

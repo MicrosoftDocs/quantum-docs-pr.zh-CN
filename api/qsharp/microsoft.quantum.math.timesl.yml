@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.timesl
+name: TimesL
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回两个输入的乘积。
+syntax: 'function TimesL (a : BigInt, b : BigInt) : BigInt'
+input:
+  content: '(a : BigInt, b : BigInt)'
+  types:
+  - name: a
+    summary: 要相乘的第一个输入 $a $。
+    isPrimitive: true
+    uid: BigInt
+  - name: b
+    summary: 要相乘的第二个输入 $b $。
+    isPrimitive: true
+    uid: BigInt
+output:
+  content: BigInt
+  types:
+  - summary: Product $a \times b $。
+    isPrimitive: true
+    uid: BigInt
+ms.openlocfilehash: a227802accea523ef493c14d49ab8762a207a303
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231429"

@@ -1,0 +1,13 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.unitary
+name: Unitary
+type: newtype
+namespace: Microsoft.Quantum.Simulation
+summary: 表示单一运算符下的演变。
+syntax: newtype Unitary = (Qubit[] => Unit is Adj + Ctl);
+ms.openlocfilehash: 35032a90651de9e7b283dad08440ffba94d823cc
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219869"

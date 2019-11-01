@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.bitwise.not
+name: Not
+type: function
+namespace: Microsoft.Quantum.Extensions.Bitwise
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.bitwise.not"。
+syntax: 'function Not (a : Int) : Int'
+input:
+  content: '(a : Int)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: e621c1673051af87d8f2aff3851e9405fe830339
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233418"

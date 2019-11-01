@@ -1,0 +1,25 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.abscomplex
+name: AbsComplex
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回 `Complex`类型的复数的绝对值。
+syntax: 'function AbsComplex (input : Microsoft.Quantum.Math.Complex) : Double'
+input:
+  content: '(input : Microsoft.Quantum.Math.Complex)'
+  types:
+  - name: input
+    summary: 复数 $c = x + i y $。
+    uid: microsoft.quantum.math.complex
+output:
+  content: Double
+  types:
+  - summary: 绝对值 $ | c |= \sqrt{x ^ 2 + y ^ 2} $。
+    isPrimitive: true
+    uid: Double
+ms.openlocfilehash: 75592bd683679e49ca453ab3c93954c963d536b9
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73235067"

@@ -1,0 +1,34 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.snd
+name: Snd
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: 如果给定对，则返回第二个元素。
+syntax: "function Snd (pair : ('T, 'U)) : 'U"
+input:
+  content: "(pair : ('T, 'U))"
+  types:
+  - name: pair
+    summary: 具有两个元素的元组。
+    types:
+    - uid: "'T"
+      isLocal: true
+    - uid: "'U"
+      isLocal: true
+output:
+  content: "'U"
+  types:
+  - summary: '`pair`的第二个元素。'
+    uid: "'U"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: 对的第一个成员的类型。
+- uid: "'U"
+  summary: 对的第二个成员的类型。
+ms.openlocfilehash: c9a7d38a389411b374fbe2b154ce22a6bed5943e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73222300"

@@ -1,0 +1,35 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.applyxorinplace
+name: ApplyXorInPlace
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  将 `X` 操作应用到基于整数中的1位的小 endian 寄存器中的 qubits。
+
+
+  让我们表示 `value`，并使 y 成为在 `target`中编码的无符号整数，然后 `InPlaceXorLE` 执行以下映射指定的操作： $ \ket{y}\rightarrow \ket{y\oplus a} $，其中 $ \oplus $ 为按位 "异或" 运算符。
+syntax: 'operation ApplyXorInPlace (value : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
+input:
+  content: '(value : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: value
+    summary: 一个整数，其假定为非负数。
+    isPrimitive: true
+    uid: Int
+  - name: target
+    summary: 用于存储小字节序编码 `value` 的量程寄存器。
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: b37de7ed7e838089fe0c3bce00c8a0e9b222c43f
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73221637"

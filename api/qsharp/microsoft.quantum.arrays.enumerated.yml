@@ -1,0 +1,48 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.enumerated
+name: Enumerated
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 给定一个数组，返回一个新数组，其中包含原始数组的元素以及每个元素的索引。
+examples: >-
+  以下 `for` 循环是等效的：
+
+
+  ```Q#
+
+  for (idx in IndexRange(array)) {
+      let element = array[idx];
+      ...
+  }
+
+  for ((idx, element) in Enumerated(array)) { ... }
+
+  ```
+syntax: "function Enumerated (array : 'TElement[]) : (Int, 'TElement)[]"
+input:
+  content: "(array : 'TElement[])"
+  types:
+  - name: array
+    summary: 要枚举其元素的数组。
+    isArray: true
+    uid: "'TElement"
+    isLocal: true
+output:
+  content: (Int, 'TElement)[]
+  types:
+  - summary: 一个新数组，其中包含原始数组的从中及其索引。
+    isArray: true
+    types:
+    - isPrimitive: true
+      uid: Int
+    - uid: "'TElement"
+      isLocal: true
+typeParameters:
+- uid: "'TElement"
+  summary: 数组元素的类型。
+ms.openlocfilehash: 471b62b28ef2014584de637d41158fb8ac7c629d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73220957"

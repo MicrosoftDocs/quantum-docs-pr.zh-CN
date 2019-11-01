@@ -1,0 +1,60 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.rfrac
+name: RFrac
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: >-
+  通过指定为 dyadic 分数的角度，对给定 Pauli 轴进行旋转。
+
+
+  \begin{align} R_ {\mu} （n，k） \mathrel{： =} e ^ {i \pi n \sigma_{\mu}/2 ^ k}，\end{align} 其中，$ \mu \in \{I，X，Y，Z\}$。
+
+
+  > [!WARNING]
+
+  > 此操作使用与 @"microsoft.quantum.intrinsic.r"**相反**的符号约定。
+remarks: >-
+  等效于：
+
+
+  ```qsharp
+
+  // PI() is a Q# function that returns an approximation of π.
+
+  R(pauli, -PI() * IntAsDouble(numerator) / IntAsDouble(2 ^ (power - 1)), qubit);
+
+  ```
+syntax: 'operation RFrac (pauli : Pauli, numerator : Int, power : Int, qubit : Qubit) : Unit'
+input:
+  content: '(pauli : Pauli, numerator : Int, power : Int, qubit : Qubit)'
+  types:
+  - name: pauli
+    summary: 要指数化以形成旋转的 Pauli 运算符。
+    isPrimitive: true
+    uid: Pauli
+  - name: numerator
+    summary: Dyadic 中要旋转 qubit 的角度的分数表示形式的分子。
+    isPrimitive: true
+    uid: Int
+  - name: power
+    summary: 幂 of，指定 qubit 要旋转的角度的分母。
+    isPrimitive: true
+    uid: Int
+  - name: qubit
+    summary: 应将入口应用到的 Qubit。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 10795932b7057ccf58d2219208af2750eff0e363
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216486"

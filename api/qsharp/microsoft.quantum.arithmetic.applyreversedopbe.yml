@@ -1,0 +1,38 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.applyreversedopbe
+name: ApplyReversedOpBE
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 使用小 endian 格式将使用大字节序输入的操作应用到寄存器编码的无符号整数。
+syntax: 'operation ApplyReversedOpBE (op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit), register : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
+input:
+  content: '(op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit), register : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: op
+    summary: 作用于大字节序注册的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: microsoft.quantum.arithmetic.bigendian
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: register
+    summary: 要转换的小 endian 寄存器。
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+seeAlso:
+- applyreversedopbea
+- applyreversedopbec
+- applyreversedopbeca
+ms.openlocfilehash: e31e1eedee32677fb39e1e27370fa9de835cbb28
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215194"

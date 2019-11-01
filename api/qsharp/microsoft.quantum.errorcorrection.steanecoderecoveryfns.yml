@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.errorcorrection.steanecoderecoveryfns
+name: SteaneCodeRecoveryFns
+type: function
+namespace: Microsoft.Quantum.ErrorCorrection
+summary: ⟦7，1，3⟧ Steane 量程代码的稳定 X 和 Z 部分的解码器。
+syntax: 'function SteaneCodeRecoveryFns () : (Microsoft.Quantum.ErrorCorrection.RecoveryFn, Microsoft.Quantum.ErrorCorrection.RecoveryFn)'
+input:
+  content: ()
+  types: []
+output:
+  content: (Microsoft.Quantum.ErrorCorrection.RecoveryFn, Microsoft.Quantum.ErrorCorrection.RecoveryFn)
+  types:
+  - summary: '`RecoveryFn` 的 `Result[]` 类型的函数的元组，该元组并返回更正检测到的错误的 `Pauli[]` 操作。'
+    types:
+    - uid: microsoft.quantum.errorcorrection.recoveryfn
+    - uid: microsoft.quantum.errorcorrection.recoveryfn
+seeAlso:
+- steanecoderecoveryx
+- steanecoderecoveryz
+ms.openlocfilehash: 9dd537688434c4729e6121b4ba230415504eb309
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73228420"

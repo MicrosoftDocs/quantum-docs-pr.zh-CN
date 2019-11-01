@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.assertallzero
+name: AssertAllZero
+type: operation
+namespace: Microsoft.Quantum.Diagnostics
+summary: 断言给定的 qubits 都处于 $ \ket{0}$ 状态。
+syntax: 'operation AssertAllZero (qubits : Qubit[]) : Unit'
+input:
+  content: '(qubits : Qubit[])'
+  types:
+  - name: qubits
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- assertqubit
+ms.openlocfilehash: a157843372839477e40b7fb00c7415e44a06326f
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73228284"

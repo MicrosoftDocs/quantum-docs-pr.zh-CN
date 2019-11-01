@@ -1,0 +1,17 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.reflectionphases
+name: ReflectionPhases
+type: newtype
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: 振幅放大中部分反射序列的阶段。
+remarks: >-
+  第一个参数是有关开始状态的反射的一组阶段。 第二个参数是有关目标状态的反射的一组阶段。
+
+  这两个数组的长度必须相等。 请注意，在许多情况下，有关目标状态的开始状态和最后一阶段的第一阶段会引入全局阶段转换，并可能设置为 $0 $。
+syntax: newtype ReflectionPhases = (Double[], Double[]);
+ms.openlocfilehash: ce9bab0540f70ac0115d5b7780437410e019a09b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215551"

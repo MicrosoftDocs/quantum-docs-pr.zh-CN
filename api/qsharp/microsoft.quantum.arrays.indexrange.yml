@@ -1,0 +1,41 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.indexrange
+name: IndexRange
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 给定一个数组，返回该数组的索引范围，该范围适用于在 for 循环中使用。
+examples: >-
+  以下 `for` 循环是等效的：
+
+
+  ```Q#
+
+  for (idx in IndexRange(array)) { ... }
+
+  for (idx in IndexRange(array)) { ... }
+
+  ```
+syntax: "function IndexRange (array : 'TElement[]) : Range"
+input:
+  content: "(array : 'TElement[])"
+  types:
+  - name: array
+    summary: 应为其返回索引范围的数组。
+    isArray: true
+    uid: "'TElement"
+    isLocal: true
+output:
+  content: Range
+  types:
+  - summary: 数组的所有索引范围。
+    isPrimitive: true
+    uid: Range
+typeParameters:
+- uid: "'TElement"
+  summary: 数组元素的类型。
+ms.openlocfilehash: a70935980fc49a3f8c155fe1901b13da923caaee
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218152"

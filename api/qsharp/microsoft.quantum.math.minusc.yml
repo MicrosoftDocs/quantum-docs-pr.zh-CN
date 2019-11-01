@@ -1,0 +1,27 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.minusc
+name: MinusC
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回两个输入之间的差。
+syntax: 'function MinusC (a : Microsoft.Quantum.Math.Complex, b : Microsoft.Quantum.Math.Complex) : Microsoft.Quantum.Math.Complex'
+input:
+  content: '(a : Microsoft.Quantum.Math.Complex, b : Microsoft.Quantum.Math.Complex)'
+  types:
+  - name: a
+    summary: 要减去的第一个输入 $a $。
+    uid: microsoft.quantum.math.complex
+  - name: b
+    summary: 要减去的第二个输入 $b $。
+    uid: microsoft.quantum.math.complex
+output:
+  content: Microsoft.Quantum.Math.Complex
+  types:
+  - summary: 差异 $a-b $。
+    uid: microsoft.quantum.math.complex
+ms.openlocfilehash: 4a05dd0a4cb52b4d390126147d21110e1e73d17e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73233911"

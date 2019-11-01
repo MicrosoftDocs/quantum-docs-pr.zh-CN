@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.tail
+name: Tail
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 返回数组的最后一个元素。
+syntax: "function Tail (array : 'A[]) : 'A"
+input:
+  content: "(array : 'A[])"
+  types:
+  - name: array
+    summary: 要获取其最后一个元素的数组。 数组的长度必须至少为1。
+    isArray: true
+    uid: "'A"
+    isLocal: true
+output:
+  content: "'A"
+  types:
+  - summary: 数组的最后一个元素。
+    uid: "'A"
+    isLocal: true
+typeParameters:
+- uid: "'A"
+  summary: 数组元素的类型。
+ms.openlocfilehash: 718c4357ccac0cba69250ec86bf2fe2cdd74230a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214191"

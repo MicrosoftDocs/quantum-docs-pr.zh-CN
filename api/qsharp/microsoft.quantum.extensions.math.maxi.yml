@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.math.maxi
+name: MaxI
+type: function
+namespace: Microsoft.Quantum.Extensions.Math
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.math.maxi"。
+syntax: 'function MaxI (a : Int, b : Int) : Int'
+input:
+  content: '(a : Int, b : Int)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Int
+  - name: b
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 74d7695af90bf11a2e45cd1177f161201f24a96d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73224238"

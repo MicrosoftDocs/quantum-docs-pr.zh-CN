@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.math.arctan
+name: ArcTan
+type: function
+namespace: Microsoft.Quantum.Extensions.Math
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.math.arctan"。
+syntax: 'function ArcTan (theta : Double) : Double'
+input:
+  content: '(theta : Double)'
+  types:
+  - name: theta
+    isPrimitive: true
+    uid: Double
+output:
+  content: Double
+  types:
+  - isPrimitive: true
+    uid: Double
+ms.openlocfilehash: a4c8d7d0cdd9544f635dfe1f1d58a5ee55ed36ff
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73224697"

@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.math.tanh
+name: Tanh
+type: function
+namespace: Microsoft.Quantum.Extensions.Math
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.math.tanh"。
+syntax: 'function Tanh (d : Double) : Double'
+input:
+  content: '(d : Double)'
+  types:
+  - name: d
+    isPrimitive: true
+    uid: Double
+output:
+  content: Double
+  types:
+  - isPrimitive: true
+    uid: Double
+ms.openlocfilehash: 6b92557351cd0f1296681958d61c9200b611677c
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73212100"

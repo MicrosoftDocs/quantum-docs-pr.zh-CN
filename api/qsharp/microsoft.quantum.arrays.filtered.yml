@@ -1,0 +1,43 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.filtered
+name: Filtered
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 给定为数组元素定义的数组和谓词后，将返回一个数组，其中包含满足谓词的元素。
+remarks: 函数是为泛型类型定义的，也就是说，只要有数组 `'T[]` 和谓词 `'T -> Bool` 我们就可以筛选元素。
+syntax: "function Filtered (predicate : ('T -> Bool), array : 'T[]) : 'T[]"
+input:
+  content: "(predicate : ('T -> Bool), array : 'T[])"
+  types:
+  - name: predicate
+    summary: 一个函数，从 `'T` 到用于筛选元素的布尔值。
+    isFunction: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Bool
+  - name: array
+    summary: "`'T`上的元素的数组。"
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T[]"
+  types:
+  - summary: 满足谓词的元素 `'T[]` 数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: '`array` 元素的类型。'
+ms.openlocfilehash: f2749f204c6276a0a43ac67bdee9c4cda0de049e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218356"

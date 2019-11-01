@@ -1,0 +1,51 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applytoeachindexc
+name: ApplyToEachIndexC
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  将单 qubit 操作应用于寄存器中的每个索引元素。
+
+  修饰符 `C` 指示 qubit 操作可控制。
+syntax: "operation ApplyToEachIndexC (singleElementOperation : ((Int, 'T) => Unit is Ctl), register : 'T[]) : Unit"
+input:
+  content: （singleElementOperation：（（Int，t） = > 单位为 Ctl），寄存器： t []）
+  types:
+  - name: singleElementOperation
+    summary: 要应用到每个 qubit 的操作。
+    isOperation: true
+    input:
+      types:
+      - isPrimitive: true
+        uid: Int
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: register
+    summary: 要在其上应用给定操作的 qubits 数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: 计价单位
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 每个操作操作的目标。
+functors:
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applytoeachindex
+ms.openlocfilehash: ca5ba68229968b43d28535e3bf728b2b8a8ef4fb
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73068438"

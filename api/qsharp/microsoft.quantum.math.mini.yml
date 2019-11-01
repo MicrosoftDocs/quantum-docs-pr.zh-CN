@@ -1,0 +1,28 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.mini
+name: MinI
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回两个指定数字中较小的一个。
+remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.min) 。
+syntax: 'function MinI (a : Int, b : Int) : Int'
+input:
+  content: '(a : Int, b : Int)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Int
+  - name: b
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: b8e23b0e0ac9f99cd5975c01d05bb802e30a6dce
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73235815"

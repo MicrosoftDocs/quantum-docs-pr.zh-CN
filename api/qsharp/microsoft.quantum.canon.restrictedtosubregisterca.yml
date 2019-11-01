@@ -1,0 +1,57 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.restrictedtosubregisterca
+name: RestrictedToSubregisterCA
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  将操作限制为寄存器的索引数组，即，subregister。
+
+  修饰符 `CA` 指示操作可控制和 adjointable。
+syntax: 'function RestrictedToSubregisterCA (op : (Qubit[] => Unit is Adj + Ctl), idxs : Int[]) : (Qubit[] => Unit is Adj + Ctl)'
+input:
+  content: '(op : (Qubit[] => Unit is Adj + Ctl), idxs : Int[])'
+  types:
+  - name: op
+    summary: 要限制为 subregister 的操作。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+  - name: idxs
+    summary: 索引数组，指示将对操作限制的 qubits。
+    isArray: true
+    isPrimitive: true
+    uid: Int
+output:
+  content: (Qubit[] => Unit is Adj + Ctl)
+  types:
+  - isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+seeAlso:
+- microsoft.quantum.canon.restrictedtosubregister
+ms.openlocfilehash: 699126640d5afaebac8a6276458ffc5a497fe61a
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73222504"

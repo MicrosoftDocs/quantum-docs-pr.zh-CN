@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.arctanh
+name: ArcTanh
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 计算数字的反双曲正切值。
+syntax: 'function ArcTanh (x : Double) : Double'
+input:
+  content: '(x : Double)'
+  types:
+  - name: x
+    summary: 实数 $x $。
+    isPrimitive: true
+    uid: Double
+output:
+  content: Double
+  types:
+  - summary: 实数 $y $，$x = \tanh （y） $。
+    isPrimitive: true
+    uid: Double
+ms.openlocfilehash: ce131c0b9b3d05a15c04d9b64935c37f17639228
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73221756"

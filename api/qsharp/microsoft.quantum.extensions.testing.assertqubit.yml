@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.testing.assertqubit
+name: AssertQubit
+type: operation
+namespace: Microsoft.Quantum.Extensions.Testing
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.diagnostics.assertqubit"。
+syntax: 'operation AssertQubit (expected : Result, q : Qubit) : Unit'
+input:
+  content: '(expected : Result, q : Qubit)'
+  types:
+  - name: expected
+    isPrimitive: true
+    uid: Result
+  - name: q
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 0eebd0274bffbad5db885afaffbbe4e0df201a25
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73212032"

@@ -1,0 +1,56 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.extensions.testing
+name: Microsoft.Quantum.Extensions.Testing
+operations:
+- uid: microsoft.quantum.extensions.testing.assertallzero
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertallzero"。
+- uid: microsoft.quantum.extensions.testing.assertallzerotol
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertallzerowithintolerance"。
+- uid: microsoft.quantum.extensions.testing.assertoperationsequalinplace
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertoperationsequalinplace"。
+
+    请注意，此操作的参数顺序已更改。
+- uid: microsoft.quantum.extensions.testing.assertoperationsequalinplacecompbasis
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertoperationsequalinplaceCompBasis"。
+
+    请注意，此操作的参数顺序已更改。
+- uid: microsoft.quantum.extensions.testing.assertoperationsequalreferenced
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertoperationsequalreferenced"。
+
+    请注意，此操作的参数顺序已更改。
+- uid: microsoft.quantum.extensions.testing.assertqubit
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertqubit"。
+- uid: microsoft.quantum.extensions.testing.assertqubitstate
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance"。
+- uid: microsoft.quantum.extensions.testing.assertqubittol
+  summary: >-
+    > [!WARNING]
+
+    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertqubitwithintolerance"。
+ms.openlocfilehash: 031bbd476ac37f113f9fb692ccd6fca916612ac3
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73210358"

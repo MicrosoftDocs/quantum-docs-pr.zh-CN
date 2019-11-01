@@ -1,0 +1,57 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.ampampobliviousbyoraclephases
+name: AmpAmpObliviousByOraclePhases
+type: function
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: 用于部分反射的在意波幅按 oracles 放大。
+remarks: >-
+  这会对 ancilla 开始和目标状态的形式施加更严格的条件，而不是 `AmpAmpObliviousByReflectionPhases`。
+
+  假定 $A \ket{0}\_f\ket{0}\_A = \ket{\text{start}}\_{fa} $ 准备 ancilla 开始状态 $ \ket{\text{start}}\_计算基础 $ \ket{0}\_f\ket{0}$。
+
+  假定目标状态由 $ \ket \_f ${1}标记。
+
+  假设 \begin{align} O\ket {\ 文本 {start}}\_{fa} \ket{\psi}\_s = \lambda\ket{1}\_f\ket {\ 中文 {target}}\_a\ket {\ text {target}}\_s U \ket{\psi}\_s + \sqrt{1-| \lambda | ^ 2} \ket对于某些单一 $U $，\_{0}f\cdots，\end{align}。
+syntax: 'function AmpAmpObliviousByOraclePhases (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, ancillaOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, idxFlagQubit : Int) : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)'
+input:
+  content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, ancillaOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, idxFlagQubit : Int)'
+  types:
+  - name: phases
+    summary: 部分反射的阶段
+    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+  - name: ancillaOracle
+    summary: 准备 ancilla 开始状态的单一 oracle $A $
+    uid: microsoft.quantum.oracles.deterministicstateoracle
+  - name: signalOracle
+    summary: 单一 oracle $O $ of 类型 `ObliviousOracle`，它在 ancilla 和系统寄存器上共同操作
+    uid: microsoft.quantum.oracles.obliviousoracle
+  - name: idxFlagQubit
+    summary: Qubit 标志注册的索引
+    isPrimitive: true
+    uid: Int
+output:
+  content: ((Qubit[], Qubit[]) => Unit is Adj + Ctl)
+  types:
+  - summary: 基于部分反射实现在意波幅放大的操作。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+ms.openlocfilehash: ff75e09bf106ccc351aa9c6fa1b6bc6ee776ffad
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215755"

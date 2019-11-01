@@ -1,0 +1,24 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.simulation.paulievolutionfunction
+name: PauliEvolutionFunction
+type: function
+namespace: Microsoft.Quantum.Simulation
+summary: 将 dynamical 生成器表示为一组 simulatable 入口和 Pauli 中的扩展。
+syntax: 'function PauliEvolutionFunction (generatorIndex : Microsoft.Quantum.Simulation.GeneratorIndex) : Microsoft.Quantum.Simulation.EvolutionUnitary'
+input:
+  content: '(generatorIndex : Microsoft.Quantum.Simulation.GeneratorIndex)'
+  types:
+  - name: generatorIndex
+    summary: 要在 Pauli 基础中表示为单一进化的生成器索引。
+    uid: microsoft.quantum.simulation.generatorindex
+output:
+  content: Microsoft.Quantum.Simulation.EvolutionUnitary
+  types:
+  - summary: 一个 `EvolutionUnitary`，它表示 "generatorIndex" 中引用的术语的时间演变。
+    uid: microsoft.quantum.simulation.evolutionunitary
+ms.openlocfilehash: 87434cc1cd78747e68c9ada990ef8173734641e8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216180"

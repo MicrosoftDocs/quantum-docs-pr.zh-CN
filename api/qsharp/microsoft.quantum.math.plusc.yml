@@ -1,0 +1,27 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.plusc
+name: PlusC
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回两个输入之和。
+syntax: 'function PlusC (a : Microsoft.Quantum.Math.Complex, b : Microsoft.Quantum.Math.Complex) : Microsoft.Quantum.Math.Complex'
+input:
+  content: '(a : Microsoft.Quantum.Math.Complex, b : Microsoft.Quantum.Math.Complex)'
+  types:
+  - name: a
+    summary: 要求和 $a $ 的第一个输入。
+    uid: microsoft.quantum.math.complex
+  - name: b
+    summary: 要求和 $b $ 的第二个输入。
+    uid: microsoft.quantum.math.complex
+output:
+  content: Microsoft.Quantum.Math.Complex
+  types:
+  - summary: Sum $a + b $。
+    uid: microsoft.quantum.math.complex
+ms.openlocfilehash: 1478e0fb13939c3e266616c8accd564edb64c708
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73211352"

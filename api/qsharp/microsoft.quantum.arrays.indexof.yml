@@ -1,0 +1,49 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.indexof
+name: IndexOf
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 返回满足给定谓词的数组中第一个元素的第一个索引。 如果此类元素不存在，则返回-1。
+examples: >-
+  假定 `IsEven : Int -> Bool` 是在且仅当其输入为偶数时返回 `true` 的函数。 然后，可将其与 `IndexOf` 一起使用，以便查找数组中的第一个偶数元素：
+
+
+  ```Q#
+
+  let items = [1, 3, 17, 2, 21];
+
+  let idx = IndexOf(IsEven, items); // returns 3
+
+  ```
+syntax: "function IndexOf (predicate : ('T -> Bool), arr : 'T[]) : Int"
+input:
+  content: "(predicate : ('T -> Bool), arr : 'T[])"
+  types:
+  - name: predicate
+    summary: 一个谓词函数，该函数对数组的元素进行操作。
+    isFunction: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Bool
+  - name: arr
+    summary: 要使用给定谓词搜索的数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Int
+  types:
+  - summary: 最小索引 `idx` `predicate(arr[idx])` 为 true，如果不存在此类元素，则为-1。
+    isPrimitive: true
+    uid: Int
+ms.openlocfilehash: 6f7fee40a558e7bb17b94c9dd58656c6f34ceac8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218186"

@@ -1,0 +1,70 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applyifelser
+name: ApplyIfElseR
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  应用两个操作之一，具体取决于传统结果的值。
+
+
+  如果结果为 `result`，当 `result` 等于 `Zero`时，将使用 `zeroInput` 作为其输入的操作 `zeroOp`，并且 `oneOp(oneInput)` 时应用 `result == One`。
+syntax: "operation ApplyIfElseR (result : Result, (zeroOp : ('T => Unit), zeroInput : 'T), (oneOp : ('U => Unit), oneInput : 'U)) : Unit"
+input:
+  content: "(result : Result, (zeroOp : ('T => Unit), zeroInput : 'T), (oneOp : ('U => Unit), oneInput : 'U))"
+  types:
+  - name: result
+    summary: 用于确定是否应用 `zeroOp` 或 `oneOp` 的测量结果。
+    isPrimitive: true
+    uid: Result
+  - name: zeroOp
+    summary: '`result == Zero`时要应用的操作。'
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: zeroInput
+    summary: '`result == Zero`时提供给 `zeroOp` 的输入。'
+    uid: "'T"
+    isLocal: true
+  - name: oneOp
+    summary: '`result == One`时要应用的操作。'
+    isOperation: true
+    input:
+      types:
+      - uid: "'U"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: oneInput
+    summary: '`result == One`时提供给 `oneOp` 的输入。'
+    uid: "'U"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 要有条件地应用 `zeroOp` 操作的输入类型。
+- uid: "'U"
+  summary: 要有条件地应用 `oneOp` 操作的输入类型。
+seeAlso:
+- microsoft.quantum.canon.applyifzero
+- microsoft.quantum.canon.applyifone
+- microsoft.quantum.canon.applyifelserc
+- microsoft.quantum.canon.applyifelsera
+- microsoft.quantum.canon.applyifelserca
+ms.openlocfilehash: dc3c41c064297dfa3aef53362095c4d9f998538b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73217421"

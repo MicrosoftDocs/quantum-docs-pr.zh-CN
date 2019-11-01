@@ -1,0 +1,36 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.primitive.cnot
+name: CNOT
+type: operation
+namespace: Microsoft.Quantum.Primitive
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.intrinsic.cnot"。
+syntax: 'operation CNOT (control : Qubit, target : Qubit) : Unit'
+input:
+  content: '(control : Qubit, target : Qubit)'
+  types:
+  - name: control
+    isPrimitive: true
+    uid: Qubit
+  - name: target
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 7a292b5ef8f9eefe13578d5a058caa8fad135113
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73229474"

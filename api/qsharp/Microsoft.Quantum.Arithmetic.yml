@@ -1,0 +1,223 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.arithmetic
+name: Microsoft 量子. 算法
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于一致计算算法的函数和操作。"
+functions:
+- uid: microsoft.quantum.arithmetic.bigendianaslittleendian
+  summary: 通过反转 qubit 排序将 `BigEndian` qubit 注册转换为 `LittleEndian` 的 qubit 寄存器。
+- uid: microsoft.quantum.arithmetic.identicalformatfactfxp
+  summary: 断言提供的数组中的所有固定点都具有相同的点位置和 qubit 数字。
+- uid: microsoft.quantum.arithmetic.identicalpointposfactfxp
+  summary: 断言当从最小有效位进行计数时，提供的数组中的所有固定点都具有相同的点位置。 也就是说，对于数组中的所有固定点，位数减去点的位数必须是常量。
+- uid: microsoft.quantum.arithmetic.littleendianasbigendian
+  summary: 通过反转 qubit 排序将 `LittleEndian` qubit 注册转换为 `BigEndian` 的 qubit 寄存器。
+- uid: microsoft.quantum.arithmetic.reversedopbe
+  summary: 给定一个采用大字节序输入的操作，将返回采用小 endian 输入的新操作。
+- uid: microsoft.quantum.arithmetic.reversedopbea
+  summary: 给定一个采用大字节序输入的操作，将返回采用小 endian 输入的新操作。
+- uid: microsoft.quantum.arithmetic.reversedopbec
+  summary: 给定一个采用大字节序输入的操作，将返回采用小 endian 输入的新操作。
+- uid: microsoft.quantum.arithmetic.reversedopbeca
+  summary: 给定一个采用大字节序输入的操作，将返回采用小 endian 输入的新操作。
+- uid: microsoft.quantum.arithmetic.reversedople
+  summary: 给定一个采用小 endian 输入的操作，将返回采用大字节序输入的新操作。
+- uid: microsoft.quantum.arithmetic.reversedoplea
+  summary: 给定一个采用小 endian 输入的操作，将返回采用大字节序输入的新操作。
+- uid: microsoft.quantum.arithmetic.reversedoplec
+  summary: 给定一个采用小 endian 输入的操作，将返回采用大字节序输入的新操作。
+- uid: microsoft.quantum.arithmetic.reversedopleca
+  summary: 给定一个采用小 endian 输入的操作，将返回采用大字节序输入的新操作。
+operations:
+- uid: microsoft.quantum.arithmetic.addconstantfxp
+  summary: 将传统常量添加到量程固定点数字。
+- uid: microsoft.quantum.arithmetic.addfxp
+  summary: 添加存储在量程寄存器中的两个定点数。
+- uid: microsoft.quantum.arithmetic.addi
+  summary: 根据 `ys`的寄存器大小，自动选择 "执行" 和 "无"。
+- uid: microsoft.quantum.arithmetic.applyleoperationonphasele
+  summary: 应用一个操作，该操作采用 <xref:microsoft.quantum.arithmetic.phaselittleendian> 在 <xref:microsoft.quantum.arithmetic.littleendian>类型的目标寄存器上注册为输入。
+- uid: microsoft.quantum.arithmetic.applyleoperationonphaselea
+  summary: ''
+- uid: microsoft.quantum.arithmetic.applyleoperationonphaselec
+  summary: ''
+- uid: microsoft.quantum.arithmetic.applyleoperationonphaseleca
+  summary: ''
+- uid: microsoft.quantum.arithmetic.applyphaseleoperationonle
+  summary: 应用一个操作，该操作采用 <xref:microsoft.quantum.arithmetic.littleendian> 在 <xref:microsoft.quantum.arithmetic.phaselittleendian>类型的目标寄存器上注册为输入。
+- uid: microsoft.quantum.arithmetic.applyphaseleoperationonlea
+  summary: ''
+- uid: microsoft.quantum.arithmetic.applyphaseleoperationonlec
+  summary: ''
+- uid: microsoft.quantum.arithmetic.applyphaseleoperationonleca
+  summary: ''
+- uid: microsoft.quantum.arithmetic.applyreversedopbe
+  summary: 使用小 endian 格式将使用大字节序输入的操作应用到寄存器编码的无符号整数。
+- uid: microsoft.quantum.arithmetic.applyreversedopbea
+  summary: 使用小 endian 格式将使用大字节序输入的操作应用到寄存器编码的无符号整数。
+- uid: microsoft.quantum.arithmetic.applyreversedopbec
+  summary: 使用小 endian 格式将使用大字节序输入的操作应用到寄存器编码的无符号整数。
+- uid: microsoft.quantum.arithmetic.applyreversedopbeca
+  summary: 使用小 endian 格式将使用大字节序输入的操作应用到寄存器编码的无符号整数。
+- uid: microsoft.quantum.arithmetic.applyreversedople
+  summary: 应用一个操作，该操作将使用大字节序格式对无符号整数进行寄存器编码。
+- uid: microsoft.quantum.arithmetic.applyreversedoplea
+  summary: 应用一个操作，该操作将使用大字节序格式对无符号整数进行寄存器编码。
+- uid: microsoft.quantum.arithmetic.applyreversedoplec
+  summary: 应用一个操作，该操作将使用大字节序格式对无符号整数进行寄存器编码。
+- uid: microsoft.quantum.arithmetic.applyreversedopleca
+  summary: 应用一个操作，该操作将使用大字节序格式对无符号整数进行寄存器编码。
+- uid: microsoft.quantum.arithmetic.applyxorinplace
+  summary: >-
+    将 `X` 操作应用到基于整数中的1位的小 endian 寄存器中的 qubits。
+
+
+    让我们表示 `value`，并使 y 成为在 `target`中编码的无符号整数，然后 `InPlaceXorLE` 执行以下映射指定的操作： $ \ket{y}\rightarrow \ket{y\oplus a} $，其中 $ \oplus $ 为按位 "异或" 运算符。
+- uid: microsoft.quantum.arithmetic.assertallzerofxp
+  summary: Helper 函数，用于断言量程固定点数字初始化为零，即所有 qubits 都处于状态 $ \ket{0}$。
+- uid: microsoft.quantum.arithmetic.assertmostsignificantbit
+  summary: 断言表示无符号整数的 qubit 寄存器的最重要 qubit 处于特定状态。
+- uid: microsoft.quantum.arithmetic.assertphaselessthan
+  summary: 断言 PhaseLittleEndian 中编码的 `number` 小于 `value`。
+- uid: microsoft.quantum.arithmetic.assertprobint
+  summary: >-
+    断言量程寄存器的特定状态的概率具有预期值。
+
+
+    给定 $n $-qubit 量程状态 $ \ket{\psi} = \sum ^ {2 ^ n-1} _ {j = 0} \alpha_j \ket{j} $，断言 $j $ 索引的状态 $ \alpha_j $ 的概率 $ | \ket{j} | ^ 2 $ 具有预期值。
+- uid: microsoft.quantum.arithmetic.carry
+  summary: 实现可逆的执行入口。 给定的 qubit 位在 `carryIn` 中进行了编码，并在 `summand1` 和 `summand2`中编码了两个被加数位，计算 qubit `summand1` 中 `carryIn`、`summand2` 和 `summand2` 的按位 xor，并向 qubit `carryOut`xored。
+- uid: microsoft.quantum.arithmetic.cascadeccnot
+  summary: >-
+    实现控制在两个 qubit 寄存器的相应位上控制的 CCNOT 入口的层叠，这是在其中一个寄存器的下一个 qubit 上进行的。
+
+    从这两个寄存器中的位置0开始，将 CCNOT 应用于目标寄存器的位置1处的 qubit，然后由 qubits 在目标寄存器中的位置2进行控制，在目标寄存器中的位置2上执行 qubits目标 qubit 位置 `Length(nQubits)-1`。
+- uid: microsoft.quantum.arithmetic.cascadecnot
+  summary: 在给定 qubit 寄存器中的相邻 qubits 上实现一种级联的 CNOT-CONTAINS 入口，从位置0处的 qubit 开始，到位置1处的 qubit，作为目标，然后从 qubit 处的位置1，作为目标等，以 qubit 的位置结束，`Length(register)-1` 目标。
+- uid: microsoft.quantum.arithmetic.comparegreaterthanfxp
+  summary: 比较量程寄存器中存储的两个固定点数字，并控制对结果的反向。
+- uid: microsoft.quantum.arithmetic.comparegti
+  summary: 整数比较的包装： `result = x > y`。
+- uid: microsoft.quantum.arithmetic.comparegtsi
+  summary: 带符号整数比较的包装： `result = xs > ys`。
+- uid: microsoft.quantum.arithmetic.compareusingripplecarry
+  summary: >-
+    如果两个整数 `x` 和 `y` 存储在大小相等的 qubit 寄存器满足 `x > y`，则此项将测试此项。 如果为 true，则将 1 XORed 到输出 qubit。 否则，0将 XORed 到输出 qubit 中。
+
+
+    换句话说，这个单一 $U $ 满足： $ $ \begin{align} U\ket {x} \ 票证 {y} \ 票证 {z} = \ket{x}\ket{y}\ket{z\oplus （x > y）}。
+
+    \end{align} $ $。
+- uid: microsoft.quantum.arithmetic.computereciprocalfxp
+  summary: 计算固定点数字的 $ 1/x $ $x $。
+- uid: microsoft.quantum.arithmetic.computereciprocali
+  summary: 使用整除计算无符号整数 x 的倒数 1/x。 将 `floor(2^(2*n-1) / x)`解释为整数的结果。
+- uid: microsoft.quantum.arithmetic.copymostsignificantbit
+  summary: 将表示无符号整数的 qubit `from` 寄存器的最高有效位复制到 qubit `target`中。
+- uid: microsoft.quantum.arithmetic.dividei
+  summary: 两个量程整数相除。
+- uid: microsoft.quantum.arithmetic.evaluateevenpolynomialfxp
+  summary: 计算定点表示形式的偶数。
+- uid: microsoft.quantum.arithmetic.evaluateoddpolynomialfxp
+  summary: 计算定点表示形式的奇多项式。
+- uid: microsoft.quantum.arithmetic.evaluatepolynomialfxp
+  summary: 计算定点表示形式的多项式。
+- uid: microsoft.quantum.arithmetic.greaterthan
+  summary: 严格大于比较两个整数 $x $ 和 $y $，并以 qubit 寄存器 xs 和 y) 编码。 如果 $x > y $，则会翻转结果 qubit，否则保留其状态。
+- uid: microsoft.quantum.arithmetic.incrementbyinteger
+  summary: 使用阶段旋转，将未签名的量程寄存器增加一个传统整数。
+- uid: microsoft.quantum.arithmetic.incrementbymodularinteger
+  summary: >-
+    按整数常量执行 qubit 寄存器的模块化增量。
+
+
+    接下来，让我们表示 `increment`，`modulus`，并按 y `target` 进行编码，然后该操作执行以下转换： \begin{align} \ket{y} \mapsto \ket{y + 1 \operatorname{mod} N} \end{align} 整数以小字节序格式编码。
+- uid: microsoft.quantum.arithmetic.incrementphasebyinteger
+  summary: 使用阶段旋转，将未签名的量程寄存器增加一个传统整数。
+- uid: microsoft.quantum.arithmetic.incrementphasebymodularinteger
+  summary: >-
+    按整数常量执行 qubit 寄存器的模块化增量。
+
+
+    接下来，让我们表示 `increment`，`modulus`，并按 y `target` 进行编码，然后该操作将执行以下转换： | y ⟩↦ | y + a （mod N）⟩整数以小字节序格式在 QFT 中进行编码
+- uid: microsoft.quantum.arithmetic.inplacemajority
+  summary: >-
+    这会计算 3 qubits 上就地的函数。
+
+
+    如果我们将 output qubit 表示为 $z $ 和输入 qubits 作为 $x $ 和 $y $，则该操作将执行以下转换： $ \ket{xyz} \rightarrow \ket{x \oplus z} \ket{y \oplus z} \ket{\operatorname{MAJ} （x，y，z）} $。
+- uid: microsoft.quantum.arithmetic.invert2ssi
+  summary: 反转给定的取模2的补码。
+- uid: microsoft.quantum.arithmetic.maj
+  summary: 这会将就地大多数操作应用到 3 qubits。
+- uid: microsoft.quantum.arithmetic.measurefxp
+  summary: 度量固定点数字，将其值返回为 Double，并将所有寄存器重置为零。
+- uid: microsoft.quantum.arithmetic.measureinteger
+  summary: 测量量程寄存器的内容并将其转换为整数。 度量值是根据标准计算基础执行的（即，`PauliZ`的 eigenbasis）。
+- uid: microsoft.quantum.arithmetic.multiplyandaddbymodularinteger
+  summary: >-
+    对 qubit 寄存器上的整数常量执行模块化乘法和-add。
+
+
+    为给定的取模（$N $、常量乘数 $a $ 和 \ket{x} $y $）实现 map $ $ \begin{align} \ket{x} \ket{b} \mapsto \ket{b \cdot + a \operatorname{mod} x \end{align} N} 被加数 $ $。
+- uid: microsoft.quantum.arithmetic.multiplyandaddphasebymodularinteger
+  summary: 与 ModularAddProductLE 相同，但假定被加数将整数编码为 QFT
+- uid: microsoft.quantum.arithmetic.multiplybymodularinteger
+  summary: >-
+    对 qubit 寄存器上的整数常量执行模块化乘法运算。
+
+
+    让我们用 N 和 constMultiplier 表示取模，然后此操作在计算基础上实现以下映射定义的单一项： | y ⟩↦ | a ⋅ y （mod N）⟩，适用于0和 N-1 之间的所有 y
+- uid: microsoft.quantum.arithmetic.multiplyfxp
+  summary: 将量程寄存器中的两个定点数相乘。
+- uid: microsoft.quantum.arithmetic.multiplyi
+  summary: 将整数 `xs` 乘以整数 `ys` 并将结果存储在 `result`，这必须最初为零。
+- uid: microsoft.quantum.arithmetic.multiplysi
+  summary: 将有符号整数与有符号整数相乘 `xs` `ys` 并将结果存储在 `result`中，这必须最初为零。
+- uid: microsoft.quantum.arithmetic.preparefxp
+  summary: 将量程固定点数字初始化为传统常量。
+- uid: microsoft.quantum.arithmetic.ripplecarryaddercdkm
+  summary: >-
+    可逆的就地波纹-包含两个整数。
+
+    给定两个 $n 在 LittleEndian 中编码的 $ 位整数 `xs` 和 `ys`，而 qubit 包含，则操作将计算两个整数的总和，$n 其中，结果的最小有效位保留在 `ys` 中，而执行 xored 到qubit `carry`。
+- uid: microsoft.quantum.arithmetic.ripplecarryadderd
+  summary: >-
+    可逆的就地波纹-包含两个整数。
+
+    给定两个 $n 在 LittleEndian 中编码的 $ 位整数 `xs` 和 `ys`，而 qubit 包含，则操作将计算两个整数的总和，$n 其中，结果的最小有效位保留在 `ys` 中，而执行 xored 到qubit `carry`。
+- uid: microsoft.quantum.arithmetic.ripplecarryaddernocarryttk
+  summary: 可逆的就地波纹，无需执行即可额外添加两个整数。给定两 $n 在 LittleEndian 中编码的 $ bit 整数 `xs` 和 `ys`，该操作计算两个整数的和，取模 $ 2 ^ n $，其中 $n $ 是输入 `xs` 和 `ys`的位大小。 它不计算执行位。
+- uid: microsoft.quantum.arithmetic.ripplecarryadderttk
+  summary: >-
+    可逆的就地波纹-包含两个整数。
+
+    给定两个 $n 在 LittleEndian 中编码的 $ 位整数 `xs` 和 `ys`，而 qubit 包含，则操作将计算两个整数的总和，$n 其中，结果的最小有效位保留在 `ys` 中，而执行 xored 到qubit `carry`。
+- uid: microsoft.quantum.arithmetic.squarefxp
+  summary: 将定点数值作为平方。
+- uid: microsoft.quantum.arithmetic.squarei
+  summary: 将整数 `xs` 的平方计算为 `result`，该值必须为零。
+- uid: microsoft.quantum.arithmetic.squaresi
+  summary: 方形有符号整数 `xs`，并将结果存储在 `result`中，这必须最初为零。
+- uid: microsoft.quantum.arithmetic.sum
+  summary: 实现可逆的 sum 入口。 给定的 qubit 位在 `carryIn` 中进行编码，并在 `summand1` 和 `summand2`中编码两个被加数位，计算 qubit `summand1` 中 `carryIn`、`summand2` 和 `summand2`的按位 xor。
+newtypes:
+- uid: microsoft.quantum.arithmetic.bigendian
+  summary: 注册以大字节序顺序编码无符号整数。 带有索引 `0` 的 qubit 对无符号整数的最高位进行编码。
+- uid: microsoft.quantum.arithmetic.fixedpoint
+  summary: 表示 qubits 编码固定点数字的寄存器。 包含一个整数，该整数等于二进制点左侧的 qubits 数，即，qubits 权重大于或等于1，以及一个量程寄存器。
+- uid: microsoft.quantum.arithmetic.littleendian
+  summary: 注册以小字节序顺序编码无符号整数。 带有索引 `0` 的 qubit 对无符号整数的最低位进行编码。
+- uid: microsoft.quantum.arithmetic.phaselittleendian
+  summary: >-
+    QFT 基础中的小字节端无符号整数。
+
+
+    例如，如果 $ \ket{x} $ 为计算基础中的整数 $x $ 的小 endian 编码，则 $ \operatorname{QFTLE} \ket{x} $ 是 QFT 中 $x $ 的编码。
+- uid: microsoft.quantum.arithmetic.signedlittleendian
+  summary: 存储在 little endian 中的带符号整数的类型（请参见 LittleEndian）。
+ms.openlocfilehash: 95a399e09ad5c1617c34a68302f9212a8ec4e0ad
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73065140"

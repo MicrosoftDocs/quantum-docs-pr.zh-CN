@@ -1,0 +1,60 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.chemistry.jordanwigner
+name: Microsoft.Quantum.Chemistry.JordanWigner
+functions:
+- uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerblockencodinggeneratorsystem
+  summary: 将 `JWOptimizedHTerms` 描述的 Hamiltonian 转换为 Pauli `GeneratorIndex`形式表示的一个 `GeneratorSystem`。
+- uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerclusteroperatorevolutionset
+  summary: 将 dynamical 生成器表示为一组 simulatable 入口和 JordanWigner 中的扩展。
+- uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerclusteroperatorgeneratorsystem
+  summary: 将 `JWOptimizedHTerms` 描述的 Hamiltonian 转换为 `GeneratorSystem` 在此文件中定义的 `GeneratorIndex` 约定。
+- uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerfermionevolutionset
+  summary: 将 dynamical 生成器表示为一组 simulatable 入口和 JordanWigner 中的扩展。
+- uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerfermionfunction
+  summary: 将 dynamical 生成器表示为一组 simulatable 入口和 JordanWigner 中的扩展。
+- uid: microsoft.quantum.chemistry.jordanwigner.jordanwignergeneratorsystem
+  summary: 将 `JWOptimizedHTerms` 描述的 Hamiltonian 转换为 `GeneratorSystem` 在此文件中定义的 `GeneratorIndex` 约定。
+- uid: microsoft.quantum.chemistry.jordanwigner.optimizedblockencodinggeneratorsystem
+  summary: 将 `JWOptimizedHTerms` 描述的 Hamiltonian 转换为 Pauli `GeneratorIndex`形式表示的一个 `GeneratorSystem`。
+- uid: microsoft.quantum.chemistry.jordanwigner.optimizedqubitizationoracle
+  summary: 返回 T-sql 优化 Qubitization 操作和运行该操作所需的参数。
+- uid: microsoft.quantum.chemistry.jordanwigner.qubitizationoracle
+  summary: 返回 Qubitization 操作和运行该操作所需的参数。
+- uid: microsoft.quantum.chemistry.jordanwigner.trottersteporacle
+  summary: 返回 Trotter 步骤操作和运行该操作所需的参数。
+operations:
+- uid: microsoft.quantum.chemistry.jordanwigner.optimizedbexy
+  summary: 一个单一 $U $，它在 $ （X ^ {z + 1}\_pY ^ {z}\_p） Z\_{p-1} 上应用 Pauli 字符串 .。。Z_0 $ on qubits $ 0 ... p $\}索引 $z \in\{0，1 $，$p $。 也就是说，$ $ \begin{align} U\ket {z} \ 票证 {p} \ 票证 {\ psi} = \ket{z}\ket{p} （X ^ {z + 1}\_pY ^ {z}\_p） Z\_{p-1} .。。Z_0\ket {\ psi} \end{align} $ $
+- uid: microsoft.quantum.chemistry.jordanwigner.preparesingleconfigurationalstatesinglesiteoccupation
+  summary: 通过使用 orbitals 来准备试验状态的简单状态
+- uid: microsoft.quantum.chemistry.jordanwigner.preparesparsemulticonfigurationalstate
+  summary: 通过将 excitations 添加到初始试用状态，对试用状态进行稀疏的多配置状态准备。
+- uid: microsoft.quantum.chemistry.jordanwigner.preparetrialstate
+  summary: ''
+- uid: microsoft.quantum.chemistry.jordanwigner.prepareunitarycoupledclusterstate
+  summary: 单一耦合群集状态准备试验状态
+- uid: microsoft.quantum.chemistry.jordanwigner.selectz
+  summary: 一种单一 $U $，它对索引状态 $ \ket{p} $ $p 上 $Z 的 qubits $ 也就是说，$ $ \begin{align} U\ket {p} \ 票证 {\ psi} = \ket{p}Z\_p\ket {\ psi} \end{align} $ $
+newtypes:
+- uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerencodingdata
+  summary: >-
+    传递C#给 Q # 的数据格式，用于表示 Hamiltonian 模拟的所有信息。
+
+    表示的数据的含义取决于接收数据的算法。
+- uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerinputstate
+  summary: '从C#传递到 Q # 以表示初始状态的准备的数据的格式由所表示的数据的含义决定。'
+- uid: microsoft.quantum.chemistry.jordanwigner.jwoptimizedhterms
+  summary: >-
+    从C#传递到 Q # 以表示 Hamiltonian 的术语的数据格式。
+
+    表示的数据的含义取决于接收数据的算法。
+- uid: microsoft.quantum.chemistry.jordanwigner.optimizedbegeneratorsystem
+  summary: 给定整数 `n`，返回术语 `n` `OptimizedBETermIndex` 数据的函数，以及第一个 `Int` 中的字词数以及 `Double`中所有条款系数的绝对值之和。
+- uid: microsoft.quantum.chemistry.jordanwigner.optimizedbetermindex
+  summary: 优化的块编码算法中的术语数据。
+ms.openlocfilehash: d84c4f8bf74f902cdffc19dc7e489f80c63d7949
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73210927"

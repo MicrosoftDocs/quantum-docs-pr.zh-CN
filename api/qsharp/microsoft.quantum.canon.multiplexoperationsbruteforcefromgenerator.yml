@@ -1,0 +1,60 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.multiplexoperationsbruteforcefromgenerator
+name: MultiplexOperationsBruteForceFromGenerator
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  应用 $U $ 的乘法控制的单一操作，该操作将应用单一 $V 的 qubit 数字状态 $ \ket{j} $。
+
+
+  $U = \sum ^ {N-1} _ {j = 0} \ket{j}\bra{j}\otimes V_j $。
+remarks: 如果指定的 `coefficients` 小于 $ 2 ^ n $，则将用标识元素填充。 此版本通过通过 n 个控制的单一运算符循环直接实现。
+syntax: "operation MultiplexOperationsBruteForceFromGenerator (unitaryGenerator : (Int, (Int -> ('T => Unit is Adj + Ctl))), index : Microsoft.Quantum.Arithmetic.LittleEndian, target : 'T) : Unit"
+input:
+  content: "(unitaryGenerator : (Int, (Int -> ('T => Unit is Adj + Ctl))), index : Microsoft.Quantum.Arithmetic.LittleEndian, target : 'T)"
+  types:
+  - name: unitaryGenerator
+    summary: 一个元组，其中第一个元素 `Int` $N $ 的 unitaries，第二个元素 `(Int -> ('T => () is Adj + Ctl))` 是一个函数，该函数在 $ [0，N-1] $ 中采用整数 $j $，并输出单一操作 $V _j $。
+    types:
+    - isPrimitive: true
+      uid: Int
+    - isFunction: true
+      input:
+        types:
+        - isPrimitive: true
+          uid: Int
+      output:
+        types:
+        - isOperation: true
+          input:
+            types:
+            - uid: "'T"
+              isLocal: true
+          output:
+            types:
+            - isPrimitive: true
+              uid: Unit
+          functors:
+          - Adjoint
+          - Controlled
+  - name: index
+    summary: $n 以小字节序格式编码数字状态 $ \ket{j} $ 的 qubit 控制寄存器。
+    uid: microsoft.quantum.arithmetic.littleendian
+  - name: target
+    summary: $V _j $ 操作的泛型 qubit 寄存器。
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: a010fc41e76c09f064fdb7a0fa890efcfd8a41f8
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73225156"

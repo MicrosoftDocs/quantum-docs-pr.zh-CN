@@ -1,0 +1,37 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.sum
+name: Sum
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 实现可逆的 sum 入口。 给定的 qubit 位在 `carryIn` 中进行编码，并在 `summand1` 和 `summand2`中编码两个被加数位，计算 qubit `summand1` 中 `carryIn`、`summand2` 和 `summand2`的按位 xor。
+remarks: 与 `Carry` 操作相比，此操作不会计算执行该操作。
+syntax: 'operation Sum (carryIn : Qubit, summand1 : Qubit, summand2 : Qubit) : Unit'
+input:
+  content: '(carryIn : Qubit, summand1 : Qubit, summand2 : Qubit)'
+  types:
+  - name: carryIn
+    summary: 传入的 qubit。
+    isPrimitive: true
+    uid: Qubit
+  - name: summand1
+    summary: 第一个被加数 qubit。
+    isPrimitive: true
+    uid: Qubit
+  - name: summand2
+    summary: 第二个被加数 qubit 将替换为 `summand1` 和 `summand2`之和的下限。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 125ee44b5debf5d8c83d7fb5176c4298bd702563
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73218390"

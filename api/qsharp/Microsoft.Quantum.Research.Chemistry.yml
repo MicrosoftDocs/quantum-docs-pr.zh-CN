@@ -1,0 +1,23 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.research.chemistry
+name: Microsoft.Quantum.Research.Chemistry
+functions:
+- uid: microsoft.quantum.research.chemistry.jordanwigneroptimizedfermionevolutionset
+  summary: 将 dynamical 生成器表示为一组 simulatable 入口和 Pauli 中的扩展。
+- uid: microsoft.quantum.research.chemistry.jwoptimizedfermionevolutionfunction
+  summary: 将 dynamical 生成器表示为一组 simulatable 入口和 JWOptimized 中的扩展。
+- uid: microsoft.quantum.research.chemistry.jwoptimizedgeneratorsystem
+  summary: 将 `JWOptimizedHTerms` 描述的 Hamiltonian 转换为 `GeneratorSystem` 在此文件中定义的 `GeneratorIndex` 约定。
+- uid: microsoft.quantum.research.chemistry.optimizedtrottersteporacle
+  summary: 返回优化的 Trotter 步骤操作和运行它所需的参数。
+operations:
+- uid: microsoft.quantum.research.chemistry.applydeltaparity
+  summary: 计算上一个 PQRS 之间的奇偶校验差异条款和下一 PQRS二项式. 这种差异是在辅助 qubit 上计算的。
+- uid: microsoft.quantum.research.chemistry.jwoptimizedstatepreparation
+  summary: 通过使用 orbitals 来准备试验状态的简单状态
+ms.openlocfilehash: 8737229d1362a444f54d1a8d0791da9312923224
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73215942"

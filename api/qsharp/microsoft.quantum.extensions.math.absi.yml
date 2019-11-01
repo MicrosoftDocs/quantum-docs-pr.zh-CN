@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.extensions.math.absi
+name: AbsI
+type: function
+namespace: Microsoft.Quantum.Extensions.Math
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.math.absi"。
+syntax: 'function AbsI (a : Int) : Int'
+input:
+  content: '(a : Int)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Int
+output:
+  content: Int
+  types:
+  - isPrimitive: true
+    uid: Int
+ms.openlocfilehash: f8d19c6c6904bb26dcb19f1254e19d0ae80fa74b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73224816"

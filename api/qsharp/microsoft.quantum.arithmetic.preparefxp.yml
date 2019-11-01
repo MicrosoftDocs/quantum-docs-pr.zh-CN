@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.preparefxp
+name: PrepareFxP
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: 将量程固定点数字初始化为传统常量。
+syntax: 'operation PrepareFxP (constant : Double, fp : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
+input:
+  content: '(constant : Double, fp : Microsoft.Quantum.Arithmetic.FixedPoint)'
+  types:
+  - name: constant
+    summary: 要将量程固定点初始化为的常数。
+    isPrimitive: true
+    uid: Double
+  - name: fp
+    summary: 要初始化的固定点数字（类型为 FixedPoint）。
+    uid: microsoft.quantum.arithmetic.fixedpoint
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 523b4d8a40d5d1625be41a9dd10db56ef45b539d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73214769"

@@ -1,0 +1,38 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.assertboolarrayequal
+name: AssertBoolArrayEqual
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请改用 @"Microsoft.Quantum.Diagnostics.AllEqualityFactB"。
+syntax: 'function AssertBoolArrayEqual (actual : Bool[], expected : Bool[], message : String) : Unit'
+input:
+  content: '(actual : Bool[], expected : Bool[], message : String)'
+  types:
+  - name: actual
+    isArray: true
+    isPrimitive: true
+    uid: Bool
+  - name: expected
+    isArray: true
+    isPrimitive: true
+    uid: Bool
+  - name: message
+    isPrimitive: true
+    uid: String
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 55e22abb268891e5f1cb497554481cd1befce3f9
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73212423"

@@ -1,0 +1,43 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.embedpauli
+name: EmbedPauli
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: 给定 qubit Pauli 运算符和 qubit 的索引后，将返回一个多 qubit Pauli 运算符，该运算符具有该索引处给定的单 qubit 运算符，并在每个其他索引处 `PauliI`。
+examples: >-
+  若要获取阵列 `[PauliI, PauliI, PauliX, PauliI]`：
+
+
+  ```qsharp
+
+  EmbedPauli(PauliX, 2, 3);
+
+  ```
+syntax: 'function EmbedPauli (pauli : Pauli, location : Int, n : Int) : Pauli[]'
+input:
+  content: '(pauli : Pauli, location : Int, n : Int)'
+  types:
+  - name: pauli
+    summary: 要放在给定位置的 qubit Pauli 运算符。
+    isPrimitive: true
+    uid: Pauli
+  - name: location
+    summary: '`output[location] == pauli`的索引，其中 `output` 是此函数的输出。'
+    isPrimitive: true
+    uid: Int
+  - name: n
+    summary: 要返回的数组的长度。
+    isPrimitive: true
+    uid: Int
+output:
+  content: Pauli[]
+  types:
+  - isArray: true
+    isPrimitive: true
+    uid: Pauli
+ms.openlocfilehash: 1e852781f6dd85e5432f5613184f028db0e84b87
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73219376"

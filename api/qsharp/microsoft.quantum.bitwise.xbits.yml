@@ -1,0 +1,30 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.bitwise.xbits
+name: XBits
+type: function
+namespace: Microsoft.Quantum.Bitwise
+summary: 返回一个整数，该整数表示 Pauli 运算符数组的 X 位。
+remarks: 如果 `paulis` 数组的长度大于63，则函数将引发。
+syntax: 'function XBits (paulis : Pauli[]) : Int'
+input:
+  content: '(paulis : Pauli[])'
+  types:
+  - name: paulis
+    summary: 要以整数形式表示的 Pauli 运算符的数组。
+    isArray: true
+    isPrimitive: true
+    uid: Pauli
+output:
+  content: Int
+  types:
+  - summary: 一个整数 $x $，其二进制表示法 $ （p_{62}\,p_{61}\,\dots ..\,p_0） $，其中 $p _i = $0 如果 `paulis[i]` 为 `PauliI` 或 `PauliZ`，其中 $p _i = $1 （如果 `paulis[i]` 为 `PauliX`或 `PauliY`。
+    isPrimitive: true
+    uid: Int
+seeAlso:
+- zbits
+ms.openlocfilehash: 9319e664aaa7af3ea500bd5bee78c09a92d9573b
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73217727"

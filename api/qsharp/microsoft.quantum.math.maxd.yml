@@ -1,0 +1,28 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.maxd
+name: MaxD
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回两个指定数字中较大的一个。
+remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.max) 。
+syntax: 'function MaxD (a : Double, b : Double) : Double'
+input:
+  content: '(a : Double, b : Double)'
+  types:
+  - name: a
+    isPrimitive: true
+    uid: Double
+  - name: b
+    isPrimitive: true
+    uid: Double
+output:
+  content: Double
+  types:
+  - isPrimitive: true
+    uid: Double
+ms.openlocfilehash: 691582f764d79976b682b762eb01261cdb58866c
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73234948"

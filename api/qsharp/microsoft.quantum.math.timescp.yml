@@ -1,0 +1,27 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.timescp
+name: TimesCP
+type: function
+namespace: Microsoft.Quantum.Math
+summary: 返回两个输入的乘积。
+syntax: 'function TimesCP (a : Microsoft.Quantum.Math.ComplexPolar, b : Microsoft.Quantum.Math.ComplexPolar) : Microsoft.Quantum.Math.ComplexPolar'
+input:
+  content: '(a : Microsoft.Quantum.Math.ComplexPolar, b : Microsoft.Quantum.Math.ComplexPolar)'
+  types:
+  - name: a
+    summary: 要相乘的第一个输入 $a $。
+    uid: microsoft.quantum.math.complexpolar
+  - name: b
+    summary: 要相乘的第二个输入 $b $。
+    uid: microsoft.quantum.math.complexpolar
+output:
+  content: Microsoft.Quantum.Math.ComplexPolar
+  types:
+  - summary: Product $a \times b $。
+    uid: microsoft.quantum.math.complexpolar
+ms.openlocfilehash: 49cbf8765b04fa3eb1a2cc708f9e3f5e7e6433c7
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73231446"

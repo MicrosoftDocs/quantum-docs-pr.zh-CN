@@ -1,0 +1,25 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.stackpeek
+name: StackPeek
+type: function
+namespace: Microsoft.Quantum.Canon
+summary: 检索 <xref:microsoft.quantum.canon.resultstack>的最顶层元素。
+syntax: 'function StackPeek (stack : Microsoft.Quantum.Canon.ResultStack) : Result'
+input:
+  content: （stack： Canon. ResultStack）
+  types:
+  - name: 重叠
+    summary: 要检查的堆栈。
+    uid: microsoft.quantum.canon.resultstack
+output:
+  content: 结果
+  types:
+  - summary: 存储在 `stack`顶部的值。
+    isPrimitive: true
+    uid: Result
+ms.openlocfilehash: 36015934319824840a19f1ddbf014d98298a6404
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/30/2019
+ms.locfileid: "73067724"

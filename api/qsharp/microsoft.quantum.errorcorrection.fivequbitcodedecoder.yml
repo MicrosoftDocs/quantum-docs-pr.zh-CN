@@ -1,0 +1,34 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.errorcorrection.fivequbitcodedecoder
+name: FiveQubitCodeDecoder
+type: operation
+namespace: Microsoft.Quantum.ErrorCorrection
+summary: >-
+  > [!WARNING]
+
+  > 已放弃
+
+
+  请使用 @"microsoft.quantum.errorcorrection.decodefromfivequbitcode"。
+syntax: 'operation FiveQubitCodeDecoder (logicalRegister : Microsoft.Quantum.ErrorCorrection.LogicalRegister) : (Qubit[], Qubit[])'
+input:
+  content: '(logicalRegister : Microsoft.Quantum.ErrorCorrection.LogicalRegister)'
+  types:
+  - name: logicalRegister
+    uid: microsoft.quantum.errorcorrection.logicalregister
+output:
+  content: (Qubit[], Qubit[])
+  types:
+  - types:
+    - isArray: true
+      isPrimitive: true
+      uid: Qubit
+    - isArray: true
+      isPrimitive: true
+      uid: Qubit
+ms.openlocfilehash: 2c17b2e6d47ad708530821c8ea33aa1e124b7e4e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73220277"

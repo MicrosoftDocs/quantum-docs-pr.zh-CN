@@ -1,0 +1,45 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.cz
+name: CZ
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  将受控-Z （CZ）入口应用于一对 qubits。
+
+
+  $ $ \begin{align} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 &-1 \end{align}，$ $ 其中的行和列组织为 "量程概念" 指南。
+remarks: >-
+  等效于：
+
+
+  ```qsharp
+
+  Controlled Z([control], target);
+
+  ```
+syntax: 'operation CZ (control : Qubit, target : Qubit) : Unit'
+input:
+  content: '(control : Qubit, target : Qubit)'
+  types:
+  - name: control
+    summary: 控制 CZ 入口的 qubit。
+    isPrimitive: true
+    uid: Qubit
+  - name: target
+    summary: CZ 入口的目标 qubit。
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+ms.openlocfilehash: 000bcb896589343372e415e5a7e628a0665bbc7d
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73226159"

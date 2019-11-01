@@ -1,0 +1,62 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.intrinsic.assertprob
+name: AssertProb
+type: operation
+namespace: Microsoft.Quantum.Intrinsic
+summary: 在给定 Pauli 基础上测量给定 qubits 的断言在某种程度上具有给定概率的给定结果。
+remarks: 请注意，此操作的 Adjoint 和受控版本将不检查该条件。
+examples: >-
+  ```qsharp
+
+  using (register = Qubit()) {
+      H(register);
+      AssertProb([PauliZ], [register], One, 0.5,
+          "Measuring in conjugate basis did not give 50/50 results.", 1e-5);
+  }
+
+  ```
+syntax: 'operation AssertProb (bases : Pauli[], qubits : Qubit[], result : Result, prob : Double, msg : String, tol : Double) : Unit'
+input:
+  content: '(bases : Pauli[], qubits : Qubit[], result : Result, prob : Double, msg : String, tol : Double)'
+  types:
+  - name: bases
+    summary: 用于断言概率的度量效果，表示为多 qubit Pauli 运算符。
+    isArray: true
+    isPrimitive: true
+    uid: Pauli
+  - name: qubits
+    summary: 要对其进行断言的寄存器。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+  - name: result
+    summary: 预期的 `Measure(bases, qubits)`结果。
+    isPrimitive: true
+    uid: Result
+  - name: prob
+    summary: 给定结果预计的概率。
+    isPrimitive: true
+    uid: Double
+  - name: msg
+    summary: 断言失败时要报告的消息。
+    isPrimitive: true
+    uid: String
+  - name: tol
+    isPrimitive: true
+    uid: Double
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- assert
+ms.openlocfilehash: 74260a7e80199049e2854a5cdb7988e5321adf83
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73216639"

@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.equalitywithintolerancefact
+name: EqualityWithinToleranceFact
+type: function
+namespace: Microsoft.Quantum.Diagnostics
+summary: 表示某一传统浮点值具有到给定绝对公差的预期值。
+syntax: 'function EqualityWithinToleranceFact (actual : Double, expected : Double, tolerance : Double) : Unit'
+input:
+  content: '(actual : Double, expected : Double, tolerance : Double)'
+  types:
+  - name: actual
+    summary: 要检查的数字。
+    isPrimitive: true
+    uid: Double
+  - name: expected
+    summary: 预期值。
+    isPrimitive: true
+    uid: Double
+  - name: tolerance
+    summary: 实际值与预期值的绝对容差。
+    isPrimitive: true
+    uid: Double
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+ms.openlocfilehash: 08c21774d566547b6e68dae19e616ad6a5252b9e
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/31/2019
+ms.locfileid: "73226737"

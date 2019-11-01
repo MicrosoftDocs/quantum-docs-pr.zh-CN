@@ -1,0 +1,73 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.logical
+name: Microsoft 量子. 逻辑
+summary: " # <a name=\"summary\"></a>总结\n 包含用于处理逻辑表达式和布尔逻辑的函数。"
+functions:
+- uid: microsoft.quantum.logical.and
+  summary: 返回两个值的布尔值。
+- uid: microsoft.quantum.logical.conditioned
+  summary: 根据布尔条件的值返回两个值中的一个值。
+- uid: microsoft.quantum.logical.equalb
+  summary: 当且仅当两个输入相等时，返回 true。
+- uid: microsoft.quantum.logical.equalc
+  summary: 当且仅当两个输入相等时，返回 true。
+- uid: microsoft.quantum.logical.equalcp
+  summary: 当且仅当两个输入相等时，返回 true。
+- uid: microsoft.quantum.logical.equald
+  summary: 当且仅当两个输入相等时，返回 true。
+- uid: microsoft.quantum.logical.equali
+  summary: 当且仅当两个输入相等时，返回 true。
+- uid: microsoft.quantum.logical.equall
+  summary: 当且仅当两个输入相等时，返回 true。
+- uid: microsoft.quantum.logical.equalr
+  summary: 当且仅当两个输入相等时，返回 true。
+- uid: microsoft.quantum.logical.greaterthand
+  summary: 当且仅当一个数字大于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.greaterthani
+  summary: 当且仅当一个数字大于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.greaterthanl
+  summary: 当且仅当一个数字大于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.greaterthanorequald
+  summary: 当且仅当一个数字大于或等于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.greaterthanorequali
+  summary: 当且仅当一个数字大于或等于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.greaterthanorequall
+  summary: 当且仅当一个数字大于或等于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.lessthand
+  summary: 当且仅当一个数字小于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.lessthani
+  summary: 当且仅当一个数字小于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.lessthanl
+  summary: 当且仅当一个数字小于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.lessthanorequald
+  summary: 当且仅当一个数字小于或等于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.lessthanorequali
+  summary: 当且仅当一个数字小于或等于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.lessthanorequall
+  summary: 当且仅当一个数字小于或等于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.not
+  summary: 返回值的布尔值求反。
+- uid: microsoft.quantum.logical.notequalb
+  summary: 当且仅当两个输入不相等时，返回 true。
+- uid: microsoft.quantum.logical.notequalc
+  summary: 当且仅当两个输入不相等时，返回 true。
+- uid: microsoft.quantum.logical.notequalcp
+  summary: 当且仅当两个输入不相等时，返回 true。
+- uid: microsoft.quantum.logical.notequald
+  summary: 当且仅当两个输入不相等时，返回 true。
+- uid: microsoft.quantum.logical.notequali
+  summary: 当且仅当两个输入不相等时，返回 true。
+- uid: microsoft.quantum.logical.notequall
+  summary: 当且仅当两个输入不相等时，返回 true。
+- uid: microsoft.quantum.logical.notequalr
+  summary: 当且仅当两个输入不相等时，返回 true。
+- uid: microsoft.quantum.logical.or
+  summary: 返回两个值的布尔析取。
+- uid: microsoft.quantum.logical.xor
+  summary: 返回两个值的布尔互斥析取。
+ms.openlocfilehash: 12f462356dfe7ae4bf7c60110e71a9928bc8c178
+ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/29/2019
+ms.locfileid: "73056280"
