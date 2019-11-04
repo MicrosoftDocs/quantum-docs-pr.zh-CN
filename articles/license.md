@@ -1,21 +1,18 @@
 ---
-title: Microsoft Quantum Development Kit 许可证 |Microsoft Docs
+title: Microsoft Quantum Development Kit 许可证
 description: Microsoft Quantum Development Kit 许可证
-services: service-name-with-dashes-AZURE-ONLY
-keywords: 未咨询 SEO 专家的情况下，请不要添加或编辑关键字。
 author: QuantumWriter
-ms.author: MSFT-alias-person-or-DL
-ms.date: 10/09/2017
-ms.topic: article-type-from-white-list
-ms.openlocfilehash: e14720143144d4890358a1c6167541a0ea5a8362
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: HT
+ms.author: cpalmer
+ms.date: 11/04/2019
+ms.openlocfilehash: d864c3e4ecefa6f998b9a893ecc4a3995d67dac4
+ms.sourcegitcommit: c93fea5980d1d46fbda1e7c7153831b9337134bf
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73184927"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73463372"
 ---
 # <a name="microsoft-software-license-terms"></a>Microsoft 软件许可条款 
-# <a name="microsoft-quantum-development-kit-preview"></a>MICROSOFT 量程开发工具包（预览版）
+## <a name="microsoft-quantum-development-kit-preview"></a>MICROSOFT 量程开发工具包（预览版）
 
 
 * * *
@@ -61,13 +58,13 @@ ms.locfileid: "73184927"
     
     e. 共享、发布、分发或出借软件，将该软件作为独立托管解决方案提供给他人使用或将软件或本协议转让给任何第三方。
 
-1. **出口限制**。 必须遵守适用于该软件的所有国内外出口法律法规，其中包括对目的地、最终用户和最终用途的限制。 有关出口限制的更多信息，请访问 http://aka.ms/exporting 。
+1. **出口限制**。 必须遵守适用于该软件的所有国内外出口法律法规，其中包括对目的地、最终用户和最终用途的限制。 有关出口限制的更多信息，请访问 https://aka.ms/exporting 。
 
 1. **支持服务**。 根据本协议，Microsoft 没有义务为软件提供任何支持服务。 提供的任何支持均为“按原样”、“不保证商品没有缺点”，且无任何形式的保证。
 
 1. **更新**。 软件可能会定期检查更新，并为您下载和安装。 只能从 Microsoft 或授权的来源获取这些更新。 Microsoft 可能需要更新系统以为您提供更新。 您同意接收这些自动更新，系统不会发送任何其他通知。 更新可能不包括或支持所有现有软件功能、服务或外围设备。
 
-1. **绑定仲裁和类操作弃权。本部分适用于你的情况（或者，如果业务，你的主要经营地点位于）美国**。  如果您与 Microsoft 有争议，则您和 Microsoft 同意尝试 60 天，以非正式方式进行解决。 如果你和 Microsoft 无法做到这一点，则你和 Microsoft 同意在美国联邦联邦行为（"FAA"）下**的美国仲裁关联之前绑定个人** 中立仲裁员将作出决定。 **不允许** **类操作诉讼、类范围仲裁、私有律师-常规操作**以及任何其他在任何人都在使用代表容量的情况下继续操作。也不会在所有参与方同意的情况下合并单个的。 完整的仲裁协议包含更多条款，可在 http://aka.ms/arb-agreement-1 中查看。 您和 Microsoft 同意这些条款。
+1. **绑定仲裁和类操作弃权。本部分适用于你的情况（或者，如果业务，你的主要经营地点位于）美国**。  如果您与 Microsoft 有争议，则您和 Microsoft 同意尝试 60 天，以非正式方式进行解决。 如果你和 Microsoft 无法做到这一点，则你和 Microsoft 同意在美国联邦联邦行为（"FAA"）下**的美国仲裁关联之前绑定个人** 中立仲裁员将作出决定。 **不允许** **类操作诉讼、类范围仲裁、私有律师-常规操作**以及任何其他在任何人都在使用代表容量的情况下继续操作。也不会在所有参与方同意的情况下合并单个的。 完整的仲裁协议包含更多条款，可在 https://aka.ms/arb-agreement-1 中查看。 您和 Microsoft 同意这些条款。
 
 1. **完整协议**。 本协议以及 Microsoft 可能为补充、更新或第三方应用程序提供的任何其他条款构成该软件的完整协议。
 

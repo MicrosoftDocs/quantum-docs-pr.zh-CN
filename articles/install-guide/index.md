@@ -6,12 +6,12 @@ ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install
-ms.openlocfilehash: 090cf98612c6c549c733e54f9dcbf74442b30fbd
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.openlocfilehash: 2a098d89f13278d7137bf182a184a74afb9393be
+ms.sourcegitcommit: 2ca4755d1a63431e3cb2d2918a10ad477ec2e368
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442278"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462868"
 ---
 # <a name="install-the-microsoft-quantum-development-kit-qdk"></a>安装 Microsoft Quantum 开发工具包 (QDK)
 
@@ -177,8 +177,6 @@ Visual Studio 提供了用于开发 Q# 程序的丰富环境，并且提供了�
 > * 如果一个 Visual Studio 解决方案中具有多个项目，解决方案中包含的所有项目都需要位于解决方案所在的同一文件夹中，或位于其中一个子文件夹中。  
 
 ## <a name="develop-with-c-using-visual-studio-code"></a>使用 Visual Studio Code 以 C# 进行开发
-
-Visual Studio (VS Code) 提供了用于跨许多计算机环境（包括 Windows、Linux 和 Mac）开发 Q# 程序的丰富环境，并且提供了代码完成和语法突出显示等强大功能，以便指导开发人员构建其应用程序。  Q# VS Code 扩展包含语法突出显示和 Q# 代码片段。
 
 Visual Studio (VS Code) 提供了用于跨许多计算机环境（包括 Windows、Linux 和 Mac）开发 Q# 程序的丰富环境，并且提供了代码完成和语法突出显示等强大功能，以便指导开发人员构建其应用程序。  Q# VS Code 扩展包含语法突出显示和 Q# 代码片段。
 

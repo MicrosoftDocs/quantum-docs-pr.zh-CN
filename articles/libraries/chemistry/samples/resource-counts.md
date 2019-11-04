@@ -6,16 +6,16 @@ ms.author: gulow
 ms.date: 10/23/2018
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.resourcecounts
-ms.openlocfilehash: b28a27c4c1f1e64644fcfb074a731ff7b65cacb6
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: HT
+ms.openlocfilehash: f9311c1987ced4336c4e98bdb984fbee009e9acc
+ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73184077"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442457"
 ---
-## <a name="obtaining-resource-counts"></a>获取资源计数
+# <a name="obtaining-resource-counts"></a>获取资源计数
 
-模拟传统计算机上 $n $ qubits 的成本会按 $n $。 这极大地限制了我们可以使用全状态模拟器执行的量程化学模拟的大小。 对于较大的化学实例，我们可能会获得有用的信息。 在这里，我们将检查如何使用[跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)以自动方式获取用于模拟化学的资源成本（例如，T-SQL 或 cnot-contains 入口的数目）。 此类信息通知我们以下情况：量程计算机可能足够大，无法运行这些量程化学算法。 有关参考，请参阅提供的 `GetGateCount` 示例。
+模拟 $n $ qubits 在传统计算机上的成本按 $n $ 进行了线性缩放。 这极大地限制了我们可以使用全状态模拟器执行的量程化学模拟的大小。 对于较大的化学实例，我们可能会获得有用的信息。 在这里，我们将检查如何使用[跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)以自动方式获取用于模拟化学的资源成本（例如，T-SQL 或 cnot-contains 入口的数目）。 此类信息通知我们以下情况：量程计算机可能足够大，无法运行这些量程化学算法。 有关参考，请参阅提供的 `GetGateCount` 示例。
 
 假设我们已有一个 `FermionHamiltonian` 实例，比如从 Broombridge 架构加载，如 "[从文件加载](xref:microsoft.quantum.chemistry.examples.loadhamiltonian)" 示例中所述。 
 
@@ -83,7 +83,7 @@ operation RunQubitizationStep (qSharpData: JordanWignerEncodingData) : Double {
 }
 ```
 
-现在，我们配置跟踪模拟器以跟踪我们感兴趣的资源。 在这种情况下，我们会通过将 `usePrimitiveOperationsCounter` 标志设置为 `true`来计算基元量子运算。 "技术详细信息" `throwOnUnconstraintMeasurement` 设置为 "`false`，以避免在 Q # 代码未正确断言结果的 probabiltiy （如果有）的情况下出现异常。
+现在，我们配置跟踪模拟器以跟踪我们感兴趣的资源。 在这种情况下，我们会通过将 `usePrimitiveOperationsCounter` 标志设置为 `true`来计算基元量子运算。 "技术详细信息" `throwOnUnconstraintMeasurement` 设置为 "`false`，以避免在 Q # 代码未正确断言度量结果的概率（如果执行了任何情况）时出现异常。
 
 ```csharp
 private static QCTraceSimulator CreateAndConfigureTraceSim()

@@ -6,14 +6,14 @@ ms.author: gulow
 ms.date: 10/23/2018
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.loadhamiltonian
-ms.openlocfilehash: 9902e95b09d38323b4b91c29ab897a4f0124b6cd
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: HT
+ms.openlocfilehash: 18f257efe8d53d2a22af4840bd8d17ab6b80a503
+ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73184179"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442345"
 ---
-## <a name="loading-a-hamiltonian-from-file"></a>从文件加载 Hamiltonian
+# <a name="loading-a-hamiltonian-from-file"></a>从文件加载 Hamiltonian
 以前，我们通过向其中添加单个字词来构造 Hamiltonians。 虽然这对小型示例而言很不错，但大规模的量程化学要求 Hamiltonians 或数十亿。 由化学包（如 NWChem）生成的此类 Hamiltonians 太大，无法手动导入。 在此示例中，我们将演示如何通过[Broombridge 架构](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)表示的分子自动生成 `FermionHamiltonian` 实例。 若要进行引用，可以检查提供的 `LithiumHydrideGUI` 示例或 `RunSimulation` 示例。 有限支持还可用于从 LIQUi 使用的格式导入[| >](https://www.microsoft.com/en-us/research/project/language-integrated-quantum-operations-liqui/)。
 
 接下来，请考虑示例存储库 `IntegralData/YAML` 文件夹中提供的 Nitrogen 分子的示例。 用于加载 `Broombridge` 方案的方法非常简单。
