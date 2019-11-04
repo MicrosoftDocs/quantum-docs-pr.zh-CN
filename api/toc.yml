@@ -1,0 +1,12 @@
+- name: 引用
+  items:
+    - name: 'Q# 库'
+      href: qsharp/toc.yml
+    - name: .NET 库
+      items:
+        - name: 跟踪模拟器
+          href: 'https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators'
+        - name: 量子化学
+          href: 'https://docs.microsoft.com/dotnet/api/microsoft.quantum.chemistry'
+    - name: Python 库
+      href: 'https://docs.microsoft.com/python/qsharp'

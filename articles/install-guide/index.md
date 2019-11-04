@@ -6,12 +6,12 @@ ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install
-ms.openlocfilehash: 3ec53934436b47908fd4d794a98933010f6059a7
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 090cf98612c6c549c733e54f9dcbf74442b30fbd
+ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73035279"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442278"
 ---
 # <a name="install-the-microsoft-quantum-development-kit-qdk"></a>安装 Microsoft Quantum 开发工具包 (QDK)
 
@@ -26,11 +26,13 @@ ms.locfileid: "73035279"
 
 ## <a name="develop-with-python"></a>使用 Python 进行开发
 
+使用 Python 的 qsharp 包可以轻松地从 Python 内模拟 Q# 操作和函数。 IQ# （发音为 i-q-sharp）是主要由 Jupyter 和 Python 使用的扩展，它提供用于编译和模拟 Q# 操作的核心功能。
+
 1. 先决条件
 
     - [Python](https://www.python.org/downloads/) 3.6 或更高版本
     - [PIP](https://pip.pypa.io/en/stable/installing) Python 包管理器
-    - [.NET Core SDK 2.1 或更高版本](https://www.microsoft.com/net/download)
+    - [.NET Core SDK 3.0 或更高版本](https://www.microsoft.com/net/download)
 
 1. 安装 `iqsharp` 包
 
@@ -87,11 +89,16 @@ ms.locfileid: "73035279"
 
 ## <a name="develop-with-jupyter-notebooks"></a>使用 Jupyter Notebook 进行开发
 
+Jupyter 笔记本包含非常受人喜爱的学术设置、科学实验室和基于联机的协作编程功能，提供就地代码执行（现在包括 Q# 代码）以及说明、注释和其他内容。  下面是开始创建自己的 Q# 笔记本时需要执行的操作。
+
+IQ#（发音为 i-q-sharp）是主要由 Jupyter 和 Python 使用的 .NET Core SDK 的扩展，它提供用于编译和模拟 Q# 操作的核心功能。
+
+
 1. 先决条件
 
     - [Python](https://www.python.org/downloads/) 3.6 或更高版本
     - [Jupyter 笔记本](https://jupyter.readthedocs.io/en/latest/install.html)
-    - [.NET Core SDK 2.1 或更高版本](https://www.microsoft.com/net/download)
+    - [.NET Core SDK 3.0 或更高版本](https://www.microsoft.com/net/download)
 
 1. 安装 `iqsharp` 包
 
@@ -120,11 +127,22 @@ ms.locfileid: "73035279"
 
     - 运行以下 Notebook 单元格：
 
-        ![Jupyter Notebook 单元格](~/media/install-guide-jupyter.png)
+        ![包含 Q# 代码的 Jupyter 笔记本单元格](~/media/install-guide-jupyter.png)
 
         应在单元格的输出中看到 `SayHello`。 在 Jupyter Notebook 中运行时，将编译 Q# 代码，并且 Notebook 将输出找到的操作的名称。
 
+
+    - 在新单元格中，模拟执行刚刚使用 `%simulate` magic 创建的量子计算机操作：
+
+        ![包含 %simulate magic 的 Jupyter 笔记本单元格](~/media/install-guide-jupyter-simulate.png)
+
+        应会看到在屏幕上显示的消息以及所调用操作的结果（在本例中为空）。
+
+
 ## <a name="develop-with-c-on-windows-using-visual-studio"></a>在 Windows 上使用 C# 进行开发，使用 Visual Studio
+
+Visual Studio 提供了用于开发 Q# 程序的丰富环境，并且提供了代码完成和语法突出显示等强大功能，以便指导开发人员构建其应用程序。  Q# Visual Studio 扩展包含用于 Q# 文件和项目的模板，以及语法突出显示和 IntelliSense 支持。
+
 
 1. 先决条件
 
@@ -158,12 +176,16 @@ ms.locfileid: "73035279"
 > [!NOTE]
 > * 如果一个 Visual Studio 解决方案中具有多个项目，解决方案中包含的所有项目都需要位于解决方案所在的同一文件夹中，或位于其中一个子文件夹中。  
 
-## <a name="develop-with-c-using-vs-code"></a>使用 C# 进行开发，使用 VS Code
+## <a name="develop-with-c-using-visual-studio-code"></a>使用 Visual Studio Code 以 C# 进行开发
+
+Visual Studio (VS Code) 提供了用于跨许多计算机环境（包括 Windows、Linux 和 Mac）开发 Q# 程序的丰富环境，并且提供了代码完成和语法突出显示等强大功能，以便指导开发人员构建其应用程序。  Q# VS Code 扩展包含语法突出显示和 Q# 代码片段。
+
+Visual Studio (VS Code) 提供了用于跨许多计算机环境（包括 Windows、Linux 和 Mac）开发 Q# 程序的丰富环境，并且提供了代码完成和语法突出显示等强大功能，以便指导开发人员构建其应用程序。  Q# VS Code 扩展包含语法突出显示和 Q# 代码片段。
 
 1. 先决条件
 
    - [VS Code](https://code.visualstudio.com/download)
-   - [.NET Core SDK 2.1 或更高版本](https://www.microsoft.com/net/download)
+   - [.NET Core SDK 3.0 或更高版本](https://www.microsoft.com/net/download)
 
 1. 安装量子 VS Code 扩展
 
@@ -195,9 +217,11 @@ ms.locfileid: "73035279"
 
 ## <a name="develop-with-c-using-the-dotnet-command-line-tool"></a>使用 C# 进行开发，使用 `dotnet` 命令行工具
 
+当然，只需安装 .NET Core SDK 和 QDK 项目模板，就可以从命令行生成和运行 Q# 程序。 
+
 1. 先决条件
 
-    - [.NET Core SDK 2.1 或更高版本](https://www.microsoft.com/net/download)
+    - [.NET Core SDK 3.0 或更高版本](https://www.microsoft.com/net/download)
 
 1. 安装适用于 .NET 的量子项目模板
 

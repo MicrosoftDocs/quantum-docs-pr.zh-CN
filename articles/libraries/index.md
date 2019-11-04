@@ -5,13 +5,14 @@ ms.author: chgranad@microsoft.com
 ms.date: 10/17/2018
 ms.topic: article
 uid: microsoft.quantum.libraries
-ms.openlocfilehash: 5a5b28f7e8c1669d26d1064753f20551a6b0d036
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 7b51945a8aaf937856441cdb10e8a024bf816f88
+ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73056453"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442419"
 ---
+# <a name="overview-of-q-libraries"></a>Q# 库概述
 量子开发工具包附带几个库，让在 Q# 中开发量子应用程序变得更轻松。
 在文档的此部分中，我们介绍了这些库，以及如何在程序中使用这些库。
 

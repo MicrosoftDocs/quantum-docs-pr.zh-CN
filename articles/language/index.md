@@ -6,16 +6,16 @@ ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.language.intro
-ms.openlocfilehash: d8759b9f043d2e13f4b0c97d54bd824c7e87d6de
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 560926f6f3e05c32a935f01ca5107a614e743ee2
+ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73035265"
+ms.lasthandoff: 11/02/2019
+ms.locfileid: "73442475"
 ---
 # <a name="the-q-programming-language"></a>Q# 编程语言
 
-# <a name="introduction"></a>介绍
+## <a name="introduction"></a>介绍
 
 量子计算的自然模型是将量子计算机视为协处理器，类似于用于 GPU、FPGA 和其他副处理器的计算机。
 主要控制逻辑在经典“主机”计算机上运行经典代码。
@@ -36,7 +36,7 @@ Q# 中的顶级构造是用户定义的类型、操作和函数。
 - [语句](xref:microsoft.quantum.language.statements)
 - [文件结构](xref:microsoft.quantum.language.file-structure)
 
-# <a name="conventions"></a>约定
+## <a name="conventions"></a>约定
 
 我们正在努力确保在所有情况下都能一致地使用常见标点符号。
 我们预计这会使 Q# 更易于学习和阅读，因为这些标记始终表示相同的含义，相同的概念始终以相同的方式表示。
