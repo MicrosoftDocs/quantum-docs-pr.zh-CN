@@ -1,0 +1,4 @@
+name: 发行说明
+items:
+  - name: 0.3 迁移指南
+    href: 0.3-migration.md

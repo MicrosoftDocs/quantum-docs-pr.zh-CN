@@ -1,4 +1,4 @@
-- name: 经典计算机和驱动程序
+- name: 概述
   href: index.md
 - name: 量子模拟器
   href: full-state-simulator.md
