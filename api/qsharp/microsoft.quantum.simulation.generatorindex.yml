@@ -1,6 +1,6 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.simulation.generatorindex
-name: generatorIndex
+name: GeneratorIndex
 type: newtype
 namespace: Microsoft.Quantum.Simulation
 summary: >-
@@ -28,9 +28,10 @@ syntax: newtype GeneratorIndex = ((Int[], Double[]), Int[]);
 seeAlso:
 - evolutionset
 - paulievolutionset
-ms.openlocfilehash: dc5f5b96a6d1708e94de918a65cbd68e0af06192
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73067044"
+metadata:
+  ms.openlocfilehash: dc5f5b96a6d1708e94de918a65cbd68e0af06192
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73067044"

@@ -7,7 +7,7 @@ summary: 返回一个整数，该整数指定如何计算范围的下一个值�
 remarks: 范围表达式的第一个元素为 `start`，其第二个元素是 `start+step`，第三个元素为 `start+step+step`，依此类推，直到传递 `end`。
 syntax: 'function RangeStep (range : Range) : Int'
 input:
-  content: （范围：范围）
+  content: '(range : Range)'
   types:
   - name: range
     isPrimitive: true
@@ -18,9 +18,10 @@ output:
   - summary: 给定范围的已定义步长值。
     isPrimitive: true
     uid: Int
-ms.openlocfilehash: 0195f0f2eb03c163ae08cc789867627286a44097
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066602"
+metadata:
+  ms.openlocfilehash: 0195f0f2eb03c163ae08cc789867627286a44097
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066602"

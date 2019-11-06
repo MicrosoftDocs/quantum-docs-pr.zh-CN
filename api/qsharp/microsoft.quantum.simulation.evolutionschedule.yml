@@ -9,9 +9,10 @@ summary: >-
 
   `Double` 参数是 $ [0，1] $ 中的一个计划。
 syntax: newtype EvolutionSchedule = (Microsoft.Quantum.Simulation.EvolutionSet, (Double -> Microsoft.Quantum.Simulation.GeneratorSystem));
-ms.openlocfilehash: 44cbb1c42fa60219ed3125a41752cd8867d1a764
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73211097"
+metadata:
+  ms.openlocfilehash: 44cbb1c42fa60219ed3125a41752cd8867d1a764
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73211097"

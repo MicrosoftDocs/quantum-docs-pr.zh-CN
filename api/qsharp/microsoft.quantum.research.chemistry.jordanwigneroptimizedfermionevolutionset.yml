@@ -13,13 +13,14 @@ input:
     isPrimitive: true
     uid: Qubit
 output:
-  content: EvolutionSet。
+  content: Microsoft.Quantum.Simulation.EvolutionSet
   types:
   - summary: '`EvolutionSet`，它将 JWOptimized 基础的 `GeneratorIndex` 映射到 "EvolutionUnitary"。'
     uid: microsoft.quantum.simulation.evolutionset
-ms.openlocfilehash: 7d39228c91995e38423e2b3b5894952ab3bfa533
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066194"
+metadata:
+  ms.openlocfilehash: 7d39228c91995e38423e2b3b5894952ab3bfa533
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066194"

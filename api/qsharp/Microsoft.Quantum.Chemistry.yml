@@ -16,9 +16,10 @@ newtypes:
     从C#传递给 Q # 的数据格式，用于表示 Hamiltonian 的一个术语。
 
     表示的数据的含义取决于接收数据的算法。
-ms.openlocfilehash: 78d6e9f54c25f9d1a6af32c157d23069b8a4872b
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73210910"
+metadata:
+  ms.openlocfilehash: 78d6e9f54c25f9d1a6af32c157d23069b8a4872b
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73210910"

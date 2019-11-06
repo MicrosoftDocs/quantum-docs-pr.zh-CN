@@ -40,9 +40,10 @@ seeAlso:
 - preparechoistatea
 - preparechoistatec
 - preparechoistateca
-ms.openlocfilehash: f1f0ea6233d13ce1850b3b8dfb210ab6b0e378f8
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73228114"
+metadata:
+  ms.openlocfilehash: f1f0ea6233d13ce1850b3b8dfb210ab6b0e378f8
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73228114"

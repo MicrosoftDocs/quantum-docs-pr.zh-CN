@@ -6,20 +6,21 @@ namespace: Microsoft.Quantum.Simulation
 summary: 返回与零 Hamiltonian （`H = 0`）一致的生成器索引，该索引与标识演化操作相对应。
 syntax: 'function IdentityGeneratorIndex (idxTerm : Int) : Microsoft.Quantum.Simulation.GeneratorIndex'
 input:
-  content: （idxTerm： Int）
+  content: '(idxTerm : Int)'
   types:
   - name: idxTerm
     summary: 此输入将被忽略，并定义为与 <xref:microsoft.quantum.simulation.generatorsystem> 用户定义类型保持一致。
     isPrimitive: true
     uid: Int
 output:
-  content: GeneratorIndex。
+  content: Microsoft.Quantum.Simulation.GeneratorIndex
   types:
   - summary: 表示 Hamiltonian $H = $0 下的演变的生成器索引。
     uid: microsoft.quantum.simulation.generatorindex
-ms.openlocfilehash: 004eea82988c6a4f6c776802d5f4634f600ed404
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065582"
+metadata:
+  ms.openlocfilehash: 004eea82988c6a4f6c776802d5f4634f600ed404
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065582"

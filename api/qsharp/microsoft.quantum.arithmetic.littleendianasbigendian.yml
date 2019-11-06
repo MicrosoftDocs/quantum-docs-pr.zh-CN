@@ -16,9 +16,10 @@ output:
   types:
   - summary: Qubit 注册 `BigEndian` 格式。
     uid: microsoft.quantum.arithmetic.bigendian
-ms.openlocfilehash: 7f87c2a65bede0f77c2dbf360be0f052cc504eea
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73218781"
+metadata:
+  ms.openlocfilehash: 7f87c2a65bede0f77c2dbf360be0f052cc504eea
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73218781"

@@ -64,9 +64,10 @@ output:
 seeAlso:
 - microsoft.quantum.canon.blockencoding
 - microsoft.quantum.canon.blockencodingreflection
-ms.openlocfilehash: b2a107a8497e6fdd24f5d6511d61541ce932ec6c
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73227859"
+metadata:
+  ms.openlocfilehash: b2a107a8497e6fdd24f5d6511d61541ce932ec6c
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73227859"

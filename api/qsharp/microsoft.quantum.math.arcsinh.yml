@@ -18,9 +18,10 @@ output:
   - summary: 实数 $y $，$x = \operatorname{sinh} （y） $。
     isPrimitive: true
     uid: Double
-ms.openlocfilehash: 2cbf0882ec06a9247f4e458a5c6a5678969ca5d9
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73221926"
+metadata:
+  ms.openlocfilehash: 2cbf0882ec06a9247f4e458a5c6a5678969ca5d9
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73221926"

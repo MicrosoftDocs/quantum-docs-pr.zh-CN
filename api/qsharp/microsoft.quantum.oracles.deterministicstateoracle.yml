@@ -16,9 +16,10 @@ remarks: >-
 
   第一个参数是 $ \ket{\psi} $ 的 qubit 寄存器。
 syntax: newtype DeterministicStateOracle = (Qubit[] => Unit is Adj + Ctl);
-ms.openlocfilehash: bc10b84502866d1f5e19b28e77e54c1b10d01b28
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73231123"
+metadata:
+  ms.openlocfilehash: bc10b84502866d1f5e19b28e77e54c1b10d01b28
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73231123"

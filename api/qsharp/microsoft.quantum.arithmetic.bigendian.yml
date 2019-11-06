@@ -6,9 +6,10 @@ namespace: Microsoft.Quantum.Arithmetic
 summary: 注册以大字节序顺序编码无符号整数。 带有索引 `0` 的 qubit 对无符号整数的最高位进行编码。
 remarks: 我们将在文档中将 `BigEndian` 缩写为 `BE`。
 syntax: newtype BigEndian = Qubit[];
-ms.openlocfilehash: a4d96ab9299d983583949de5ae8eebba64a189a4
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73221348"
+metadata:
+  ms.openlocfilehash: a4d96ab9299d983583949de5ae8eebba64a189a4
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73221348"

@@ -26,9 +26,10 @@ functors:
 - Controlled
 seeAlso:
 - microsoft.quantum.intrinsic.assert
-ms.openlocfilehash: 594ecbb7ba3ccc657c4e55f964714b86e575a6ce
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73221603"
+metadata:
+  ms.openlocfilehash: 594ecbb7ba3ccc657c4e55f964714b86e575a6ce
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73221603"

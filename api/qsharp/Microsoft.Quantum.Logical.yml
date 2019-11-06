@@ -1,6 +1,6 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.logical
-name: Microsoft 量子. 逻辑
+name: Microsoft.Quantum.Logical
 summary: " # <a name=\"summary\"></a>总结\n 包含用于处理逻辑表达式和布尔逻辑的函数。"
 functions:
 - uid: microsoft.quantum.logical.and
@@ -65,9 +65,10 @@ functions:
   summary: 返回两个值的布尔析取。
 - uid: microsoft.quantum.logical.xor
   summary: 返回两个值的布尔互斥析取。
-ms.openlocfilehash: 12f462356dfe7ae4bf7c60110e71a9928bc8c178
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73056280"
+metadata:
+  ms.openlocfilehash: 12f462356dfe7ae4bf7c60110e71a9928bc8c178
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73056280"

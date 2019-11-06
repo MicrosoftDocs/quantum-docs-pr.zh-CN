@@ -18,16 +18,17 @@ input:
     isPrimitive: true
     uid: Qubit
 output:
-  content: 计价单位
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
 functors:
 - Adjoint
 - Controlled
-ms.openlocfilehash: 1c27bf99d6396e5c0b7af61c2b9aa8f2ad77f6cd
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066262"
+metadata:
+  ms.openlocfilehash: 1c27bf99d6396e5c0b7af61c2b9aa8f2ad77f6cd
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066262"

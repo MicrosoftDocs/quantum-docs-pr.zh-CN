@@ -9,9 +9,10 @@ summary: >-
 
   DecodeOp 的参数与从 EncodeOp 返回的参数相同，反之亦然。
 syntax: newtype DecodeOp = (Microsoft.Quantum.ErrorCorrection.LogicalRegister => (Qubit[], Qubit[]));
-ms.openlocfilehash: ef9ad274336b019961256a63e7e48a8c011779bf
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73234608"
+metadata:
+  ms.openlocfilehash: ef9ad274336b019961256a63e7e48a8c011779bf
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73234608"

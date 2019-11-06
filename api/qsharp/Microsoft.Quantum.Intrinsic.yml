@@ -1,6 +1,6 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.intrinsic
-name: Microsoft 量子
+name: Microsoft.Quantum.Intrinsic
 functions:
 - uid: microsoft.quantum.intrinsic.message
   summary: 记录消息。
@@ -180,9 +180,10 @@ operations:
     \begin{align} \sigma_z \mathrel{： =} \begin{bmatrix} 1 & 0 \\\\ 0 &-1 \end{bmatrix}。
 
     \end{align}
-ms.openlocfilehash: a2f80ca98d86e5a1457efb6dad34c60d6ef75a2e
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73056352"
+metadata:
+  ms.openlocfilehash: a2f80ca98d86e5a1457efb6dad34c60d6ef75a2e
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73056352"

@@ -18,13 +18,13 @@ remarks: >-
   正式，可以指定换位操作，该操作放宽此要求，但换位操作并不是对任意量程操作以物理 realizable 的形式进行的，因此不作为选项包含在此处。
 syntax: 'operation AssertOperationsEqualReferenced (nQubits : Int, actual : (Qubit[] => Unit), expected : (Qubit[] => Unit is Adj)) : Unit'
 input:
-  content: （nQubits： Int，实际：（Qubit [] = > Unit），应为：（Qubit [] = > 单位为形容词））
+  content: '(nQubits : Int, actual : (Qubit[] => Unit), expected : (Qubit[] => Unit is Adj))'
   types:
   - name: nQubits
     summary: 要传递给每个操作的 qubits 数。
     isPrimitive: true
     uid: Int
-  - name: 实际上
+  - name: actual
     summary: 要测试的操作。
     isOperation: true
     input:
@@ -36,7 +36,7 @@ input:
       types:
       - isPrimitive: true
         uid: Unit
-  - name: 结果
+  - name: expected
     summary: 定义要测试的操作的预期行为的操作。
     isOperation: true
     input:
@@ -51,13 +51,14 @@ input:
     functors:
     - Adjoint
 output:
-  content: 计价单位
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
-ms.openlocfilehash: 0dfadb6be785c7ba4eaa517c725b79955e037a32
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066568"
+metadata:
+  ms.openlocfilehash: 0dfadb6be785c7ba4eaa517c725b79955e037a32
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066568"

@@ -61,9 +61,10 @@ seeAlso:
 - microsoft.quantum.canon.applyifelserc
 - microsoft.quantum.canon.applyifelsera
 - microsoft.quantum.canon.applyifelserca
-ms.openlocfilehash: 023608bfe390acff37363fde3dac71ab03eb3bb2
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73217472"
+metadata:
+  ms.openlocfilehash: 023608bfe390acff37363fde3dac71ab03eb3bb2
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73217472"

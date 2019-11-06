@@ -24,9 +24,10 @@ output:
   - summary: 对 `target` register 度量给定的 Pauli 运算符的结果。
     isPrimitive: true
     uid: Result
-ms.openlocfilehash: 4b302c21dac11fbf33138555371ded2c7f43a409
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73231344"
+metadata:
+  ms.openlocfilehash: 4b302c21dac11fbf33138555371ded2c7f43a409
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73231344"

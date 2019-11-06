@@ -37,9 +37,10 @@ functions:
 - uid: microsoft.quantum.bitwise.zbits
   summary: 返回一个整数，该整数表示 Pauli 运算符数组的 Z 位。
 summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于对传统数据类型的按位表示形式进行操作的函数。"
-ms.openlocfilehash: c474d92e7a40f5491b21d80e00294fbdff96a62a
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73210944"
+metadata:
+  ms.openlocfilehash: c474d92e7a40f5491b21d80e00294fbdff96a62a
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73210944"

@@ -9,17 +9,14 @@ summary: >-
 
   也就是说，假设有一个 `BlockEncodingReflection` 单一 $U $，该运算符对某个运算符 $H，并将其转换为量程审核 $W $，其中包含 $ \pm e ^ {\pm i\sin ^{-1}（H）} $ 的范围。
 syntax: 'function QuantumWalkByQubitization (blockEncoding : Microsoft.Quantum.Simulation.BlockEncodingReflection) : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)'
-references: >-
-  - Hamiltonian Simulation by Qubitization
-    Guang Hao Low, Isaac L. Chuang
-    https://arxiv.org/abs/1610.06546
+references: '- Hamiltonian 模拟 by Qubitization Guang 脱离 Hao Low、Isaac 语 https://arxiv.org/abs/1610.06546'
 input:
-  content: （blockEncoding： BlockEncodingReflection）
+  content: '(blockEncoding : Microsoft.Quantum.Simulation.BlockEncodingReflection)'
   types:
   - name: blockEncoding
     uid: microsoft.quantum.simulation.blockencodingreflection
 output:
-  content: （（Qubit []，Qubit []） = > 单位为形容词 + Ctl）
+  content: ((Qubit[], Qubit[]) => Unit is Adj + Ctl)
   types:
   - summary: 量程审核 $W $ `a` 并 `s` 阻止编码 $H $ 的寄存器，并包含 $ \pm e ^ {\pm i\sin ^{-1}（H）} $ 的范围。
     isOperation: true
@@ -41,9 +38,10 @@ output:
 seeAlso:
 - microsoft.quantum.canon.blockencoding
 - microsoft.quantum.canon.blockencodingreflection
-ms.openlocfilehash: aec6e81e44d4fa09e2ca131f0350590541f4dc8d
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065344"
+metadata:
+  ms.openlocfilehash: aec6e81e44d4fa09e2ca131f0350590541f4dc8d
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065344"

@@ -57,9 +57,10 @@ output:
     - Controlled
 seeAlso:
 - microsoft.quantum.canon.multiplexoperationsfromgenerator
-ms.openlocfilehash: 52cd79e2450e7c33c8c5ff2b1d6fbf540200c7e7
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73227757"
+metadata:
+  ms.openlocfilehash: 52cd79e2450e7c33c8c5ff2b1d6fbf540200c7e7
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73227757"

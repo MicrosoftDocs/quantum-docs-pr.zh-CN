@@ -48,9 +48,10 @@ operations:
     > [!WARNING]
 
     > 弃用，请使用 @"microsoft.quantum.diagnostics.assertqubitwithintolerance"。
-ms.openlocfilehash: 031bbd476ac37f113f9fb692ccd6fca916612ac3
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73210358"
+metadata:
+  ms.openlocfilehash: 031bbd476ac37f113f9fb692ccd6fca916612ac3
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73210358"

@@ -53,9 +53,10 @@ typeParameters:
   summary: 要为其提供支持的操作的类型。
 seeAlso:
 - microsoft.quantum.canon.operationpow
-ms.openlocfilehash: d671ba738ec1d8d24b6fe956230ab0af60dbbda1
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73211709"
+metadata:
+  ms.openlocfilehash: d671ba738ec1d8d24b6fe956230ab0af60dbbda1
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73211709"

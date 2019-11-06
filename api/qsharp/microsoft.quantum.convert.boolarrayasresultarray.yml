@@ -6,7 +6,7 @@ namespace: Microsoft.Quantum.Convert
 summary: 将 `Bool[]` 类型转换为 `Result[]` 类型，其中 `true` 映射到 `One`，`false` 映射到 `Zero`。
 syntax: 'function BoolArrayAsResultArray (input : Bool[]) : Result[]'
 input:
-  content: （input： Bool []）
+  content: '(input : Bool[])'
   types:
   - name: input
     summary: 要转换的 `Bool[]`。
@@ -14,15 +14,16 @@ input:
     isPrimitive: true
     uid: Bool
 output:
-  content: Result []
+  content: Result[]
   types:
   - summary: 表示 `input`的 `Result[]`。
     isArray: true
     isPrimitive: true
     uid: Result
-ms.openlocfilehash: c81ac2d1bcfdc8e08769bc448f83fa215e058a9a
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066874"
+metadata:
+  ms.openlocfilehash: c81ac2d1bcfdc8e08769bc448f83fa215e058a9a
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066874"

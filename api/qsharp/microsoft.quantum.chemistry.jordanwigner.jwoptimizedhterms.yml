@@ -8,9 +8,10 @@ summary: >-
 
   表示的数据的含义取决于接收数据的算法。
 syntax: newtype JWOptimizedHTerms = (Microsoft.Quantum.Chemistry.HTerm[], Microsoft.Quantum.Chemistry.HTerm[], Microsoft.Quantum.Chemistry.HTerm[], Microsoft.Quantum.Chemistry.HTerm[]);
-ms.openlocfilehash: 24db6a67c0450606bf43388bb460dfd4018bb580
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73228488"
+metadata:
+  ms.openlocfilehash: 24db6a67c0450606bf43388bb460dfd4018bb580
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73228488"

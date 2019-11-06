@@ -20,9 +20,10 @@ output:
   types:
   - summary: 一个 `EvolutionUnitary`，它表示 "generatorIndex" 中引用的术语的时间演变。
     uid: microsoft.quantum.simulation.evolutionunitary
-ms.openlocfilehash: 0e85f9be6001d71980a442ebbc04b88ba4240166
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73228012"
+metadata:
+  ms.openlocfilehash: 0e85f9be6001d71980a442ebbc04b88ba4240166
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73228012"

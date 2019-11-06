@@ -12,7 +12,7 @@ summary: >-
   请使用 @"microsoft.quantum.convert.resultasbool"。
 syntax: 'function BoolFromResult (input : Result) : Bool'
 input:
-  content: （input： Result）
+  content: '(input : Result)'
   types:
   - name: input
     isPrimitive: true
@@ -22,9 +22,10 @@ output:
   types:
   - isPrimitive: true
     uid: Bool
-ms.openlocfilehash: e65663348d0e0ec5db04283b07795cf37c375835
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73068200"
+metadata:
+  ms.openlocfilehash: e65663348d0e0ec5db04283b07795cf37c375835
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73068200"

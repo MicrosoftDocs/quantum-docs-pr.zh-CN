@@ -66,9 +66,10 @@ seeAlso:
 - microsoft.quantum.canon.applyifc
 - microsoft.quantum.canon.applyifa
 - microsoft.quantum.canon.applyifca
-ms.openlocfilehash: c78136688111a71e6a9a58972c9b9bb71603e0cf
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73213749"
+metadata:
+  ms.openlocfilehash: c78136688111a71e6a9a58972c9b9bb71603e0cf
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73213749"

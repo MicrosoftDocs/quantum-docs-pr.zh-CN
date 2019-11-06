@@ -33,9 +33,10 @@ output:
   - summary: 当且仅当 `a` 不等于 `b`时，`true`。
     isPrimitive: true
     uid: Bool
-ms.openlocfilehash: 644d63676a7b472358c5cc5c0dd1fe6607fd3f67
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73235373"
+metadata:
+  ms.openlocfilehash: 644d63676a7b472358c5cc5c0dd1fe6607fd3f67
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73235373"

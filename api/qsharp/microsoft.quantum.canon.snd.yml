@@ -26,9 +26,10 @@ typeParameters:
   summary: 对的第一个成员的类型。
 - uid: "'U"
   summary: 对的第二个成员的类型。
-ms.openlocfilehash: c9a7d38a389411b374fbe2b154ce22a6bed5943e
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73222300"
+metadata:
+  ms.openlocfilehash: c9a7d38a389411b374fbe2b154ce22a6bed5943e
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73222300"

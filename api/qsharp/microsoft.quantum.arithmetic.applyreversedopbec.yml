@@ -6,9 +6,9 @@ namespace: Microsoft.Quantum.Arithmetic
 summary: 使用小 endian 格式将使用大字节序输入的操作应用到寄存器编码的无符号整数。
 syntax: 'operation ApplyReversedOpBEC (op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit is Ctl), register : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
-  content: （op：（BigEndian = = > Unit 为 Ctl），register： LittleEndian）
+  content: '(op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit is Ctl), register : Microsoft.Quantum.Arithmetic.LittleEndian)'
   types:
-  - name: 基金
+  - name: op
     summary: 作用于大字节序注册的操作。
     isOperation: true
     input:
@@ -24,7 +24,7 @@ input:
     summary: 要转换的小 endian 寄存器。
     uid: microsoft.quantum.arithmetic.littleendian
 output:
-  content: 计价单位
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
@@ -34,9 +34,10 @@ seeAlso:
 - applyreversedopbe
 - applyreversedopbea
 - applyreversedopbeca
-ms.openlocfilehash: fcf4110845e43426b7f2e1ec882bce75159ef789
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057229"
+metadata:
+  ms.openlocfilehash: fcf4110845e43426b7f2e1ec882bce75159ef789
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73057229"

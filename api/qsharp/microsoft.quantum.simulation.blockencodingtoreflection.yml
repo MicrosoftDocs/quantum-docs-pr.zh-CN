@@ -12,27 +12,25 @@ summary: >-
   这会将 $U $ 的辅助寄存器大小增加了一个 qubit。
 remarks: 这会将 $U $ 的辅助寄存器大小增加了一个 qubit。
 syntax: 'function BlockEncodingToReflection (blockEncoding : Microsoft.Quantum.Simulation.BlockEncoding) : Microsoft.Quantum.Simulation.BlockEncodingReflection'
-references: >-
-  - Hamiltonian Simulation by Qubitization
-    Guang Hao Low, Isaac L. Chuang
-    https://arxiv.org/abs/1610.06546
+references: '- Hamiltonian 模拟 by Qubitization Guang 脱离 Hao Low、Isaac 语 https://arxiv.org/abs/1610.06546'
 input:
-  content: （blockEncoding： BlockEncoding）
+  content: '(blockEncoding : Microsoft.Quantum.Simulation.BlockEncoding)'
   types:
   - name: blockEncoding
     summary: '`BlockEncoding` 单一 $U $ 可转换为反射。'
     uid: microsoft.quantum.simulation.blockencoding
 output:
-  content: BlockEncodingReflection。
+  content: Microsoft.Quantum.Simulation.BlockEncodingReflection
   types:
   - summary: 单一 $U ' $ 共同作用于寄存器 `a` 和 `s`，并 $H $，并满足 $U ' ^ \dagger = U ' $。
     uid: microsoft.quantum.simulation.blockencodingreflection
 seeAlso:
 - microsoft.quantum.canon.blockencoding
 - microsoft.quantum.canon.blockencodingreflection
-ms.openlocfilehash: 47eba3c59ef30f89139830aa4d9b98d22d141d8f
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065616"
+metadata:
+  ms.openlocfilehash: 47eba3c59ef30f89139830aa4d9b98d22d141d8f
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065616"

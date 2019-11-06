@@ -1,6 +1,6 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.extensions.convert
-name: 。转换
+name: Microsoft.Quantum.Extensions.Convert
 summary: " # <a name=\"summary\"></a>总结\n 这些是 \"系统\" 中的 \"转换\" .NET CLR 的命名空间中的一些函数。\n\n # <a name=\"remarks\"></a>备注\n 如果有多个版本的函数适用于 Bool、Int 和 Double 类型，则对应的函数具有后缀 B、I 和 D。"
 functions:
 - uid: microsoft.quantum.extensions.convert.biginttobools
@@ -53,9 +53,10 @@ functions:
     > [!WARNING]
 
     > 弃用，请使用 @"microsoft.quantum.convert.intasstringwithformat"。
-ms.openlocfilehash: 57f341ec6e8f82cfa9fc4bb958a580743a350218
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73056486"
+metadata:
+  ms.openlocfilehash: 57f341ec6e8f82cfa9fc4bb958a580743a350218
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73056486"

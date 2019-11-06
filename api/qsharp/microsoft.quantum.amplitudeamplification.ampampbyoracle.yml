@@ -37,9 +37,10 @@ output:
     functors:
     - Adjoint
     - Controlled
-ms.openlocfilehash: b55aed7c3a9381827e79c66a4a255b1515982d8d
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73215789"
+metadata:
+  ms.openlocfilehash: b55aed7c3a9381827e79c66a4a255b1515982d8d
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73215789"

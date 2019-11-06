@@ -17,9 +17,10 @@ output:
   - summary: 平方绝对值 $ | c | ^ 2 = r ^ 2 $。
     isPrimitive: true
     uid: Double
-ms.openlocfilehash: 47fbbcab9707c19d9d6cb064c69a0bc6d2c00011
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73222045"
+metadata:
+  ms.openlocfilehash: 47fbbcab9707c19d9d6cb064c69a0bc6d2c00011
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73222045"

@@ -28,9 +28,10 @@ output:
   types:
   - summary: 可在定点波幅放大量程算法实现中使用的阶段数组。
     uid: microsoft.quantum.amplitudeamplification.reflectionphases
-ms.openlocfilehash: 0dc2c9b18998bac65cd746b5c4065a09a990ef13
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73215687"
+metadata:
+  ms.openlocfilehash: 0dc2c9b18998bac65cd746b5c4065a09a990ef13
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73215687"

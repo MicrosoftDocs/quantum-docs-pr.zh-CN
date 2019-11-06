@@ -1,14 +1,14 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.math.max
-name: 最多
+name: Max
 type: function
 namespace: Microsoft.Quantum.Math
 summary: 给定整数数组，返回最大元素。
 syntax: 'function Max (values : Int[]) : Int'
 input:
-  content: （值： Int []）
+  content: '(values : Int[])'
   types:
-  - name: 值
+  - name: values
     summary: 要获取其最大值的数组。
     isArray: true
     isPrimitive: true
@@ -19,9 +19,10 @@ output:
   - summary: '`values`的最大元素。'
     isPrimitive: true
     uid: Int
-ms.openlocfilehash: 2e5a33b9b476e0428d5afc80957bb2524cc3dd6a
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066500"
+metadata:
+  ms.openlocfilehash: 2e5a33b9b476e0428d5afc80957bb2524cc3dd6a
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066500"

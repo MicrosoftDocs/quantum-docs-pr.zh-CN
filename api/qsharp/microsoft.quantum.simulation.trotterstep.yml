@@ -7,7 +7,7 @@ summary: 使用 Trotter – Suzuki 分解，通过 `EvolutionGenerator` 中所�
 remarks: 有关 Trotter – Suzuki 分解的详细信息，请参阅[按时间排序的组合](/quantum/libraries/control-flow#time-ordered-composition)。
 syntax: 'function TrotterStep (evolutionGenerator : Microsoft.Quantum.Simulation.EvolutionGenerator, trotterOrder : Int, trotterStepSize : Double) : (Qubit[] => Unit is Adj + Ctl)'
 input:
-  content: （evolutionGenerator： EvolutionGenerator，trotterOrder： Int，trotterStepSize： Double）
+  content: '(evolutionGenerator : Microsoft.Quantum.Simulation.EvolutionGenerator, trotterOrder : Int, trotterStepSize : Double)'
   types:
   - name: evolutionGenerator
     summary: 要模拟的系统的完整说明。
@@ -21,7 +21,7 @@ input:
     isPrimitive: true
     uid: Double
 output:
-  content: （Qubit [] = > 单位为形容词 + Ctl）
+  content: (Qubit[] => Unit is Adj + Ctl)
   types:
   - summary: 一项操作，该操作约为持续时间的单步播放 `trotterStepSize`。
     isOperation: true
@@ -37,9 +37,10 @@ output:
     functors:
     - Adjoint
     - Controlled
-ms.openlocfilehash: 0605c7de832286b8b7a11b82af50b528d233d18c
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065208"
+metadata:
+  ms.openlocfilehash: 0605c7de832286b8b7a11b82af50b528d233d18c
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065208"
