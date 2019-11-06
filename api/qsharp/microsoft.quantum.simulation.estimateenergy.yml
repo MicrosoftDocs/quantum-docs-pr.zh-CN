@@ -61,9 +61,10 @@ output:
   - summary: 由 $U $ 表示的生成器的基本状态能量 $ \phi $ 的估计 $ \hat{\phi} $。
     isPrimitive: true
     uid: Double
-ms.openlocfilehash: aff8ac5575b6a5e08dc80263a7a8d4bfec59fa12
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73223320"
+metadata:
+  ms.openlocfilehash: aff8ac5575b6a5e08dc80263a7a8d4bfec59fa12
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73223320"

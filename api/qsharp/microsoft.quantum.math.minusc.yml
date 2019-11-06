@@ -19,9 +19,10 @@ output:
   types:
   - summary: 差异 $a-b $。
     uid: microsoft.quantum.math.complex
-ms.openlocfilehash: 4a05dd0a4cb52b4d390126147d21110e1e73d17e
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73233911"
+metadata:
+  ms.openlocfilehash: 4a05dd0a4cb52b4d390126147d21110e1e73d17e
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73233911"
