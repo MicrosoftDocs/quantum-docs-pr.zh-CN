@@ -24,9 +24,10 @@ output:
   - summary: 一个整数 $i $ with probability $ \Pr （i） = p_i/\sum_i p_i $，其中 $p _i $ 是 `probs`$i $ th 元素。
     isPrimitive: true
     uid: Int
-ms.openlocfilehash: b2a5f6a0b1d2584e385bfa4de2b2c43fc1cf6509
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73233928"
+metadata:
+  ms.openlocfilehash: b2a5f6a0b1d2584e385bfa4de2b2c43fc1cf6509
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73233928"

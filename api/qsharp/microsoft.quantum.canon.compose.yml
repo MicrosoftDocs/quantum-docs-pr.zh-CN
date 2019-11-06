@@ -54,9 +54,10 @@ typeParameters:
   summary: 要应用的第一个函数的输出类型以及要应用的第二个函数的输入类型。
 - uid: "'V"
   summary: 要应用的第二个函数的输出类型。
-ms.openlocfilehash: 69fbd6a4fafbc61a63e41257b7100303fd48d4d4
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73223065"
+metadata:
+  ms.openlocfilehash: 69fbd6a4fafbc61a63e41257b7100303fd48d4d4
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73223065"

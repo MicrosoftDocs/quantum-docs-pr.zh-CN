@@ -23,9 +23,10 @@ output:
   types:
   - isPrimitive: true
     uid: Unit
-ms.openlocfilehash: 7d9b6dc97fe76565b422792e1d8debb00c1bdaff
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73226958"
+metadata:
+  ms.openlocfilehash: 7d9b6dc97fe76565b422792e1d8debb00c1bdaff
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73226958"

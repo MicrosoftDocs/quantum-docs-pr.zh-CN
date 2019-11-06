@@ -33,9 +33,10 @@ output:
   - summary: 如果观察到 $ + $1 eigenvalue，则 `Zero` `One` 是否观察到 $-$1 eigenvalue。
     isPrimitive: true
     uid: Result
-ms.openlocfilehash: 842035790ecd03df97f9ad583b049121681b4f2b
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73234132"
+metadata:
+  ms.openlocfilehash: 842035790ecd03df97f9ad583b049121681b4f2b
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73234132"

@@ -6,17 +6,17 @@ namespace: Microsoft.Quantum.Canon
 summary: 返回为给定操作实现 Trotter – Suzuki 集成器的操作。
 syntax: "function DecomposeIntoTimeStepsCA ((nSteps : Int, op : ((Int, Double, 'T) => Unit is Adj + Ctl)), trotterOrder : Int) : ((Double, 'T) => Unit is Adj + Ctl)"
 references: >-
-  We use the implementation in
+  我们使用中的实现
 
 
-  - [ *D. W. Berry, G. Ahokas, R. Cleve, B. C. Sanders* ](https://arxiv.org/abs/quant-ph/0508139)
+  - [*D. Berry，Ahokas，Cleve，Sanders，，*](https://arxiv.org/abs/quant-ph/0508139)
 input:
-  content: （（nSteps： Int，op：（（Int，Double，t） = > 单位为形容词 + Ctl）），trotterOrder： Int）
+  content: "((nSteps : Int, op : ((Int, Double, 'T) => Unit is Adj + Ctl)), trotterOrder : Int)"
   types:
   - name: nSteps
     isPrimitive: true
     uid: Int
-  - name: 基金
+  - name: op
     isOperation: true
     input:
       types:
@@ -41,7 +41,7 @@ input:
     isPrimitive: true
     uid: Int
 output:
-  content: （（Double，t） = > 单位为形容词 + Ctl）
+  content: ((Double, 'T) => Unit is Adj + Ctl)
   types:
   - summary: 返回一个实现 Trotter – Suzuki 集成器的单一参数，其中第一个参数 `Double` 是集成步骤大小，第二个参数是目标。
     isOperation: true
@@ -61,9 +61,10 @@ output:
 typeParameters:
 - uid: "'T"
   summary: 每次步骤应执行的操作的类型;通常 `Qubit[]` 或 `Qubit`。
-ms.openlocfilehash: 328db9b314320c724cf03adb19ee59d63a33e56e
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73067826"
+metadata:
+  ms.openlocfilehash: 328db9b314320c724cf03adb19ee59d63a33e56e
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73067826"
