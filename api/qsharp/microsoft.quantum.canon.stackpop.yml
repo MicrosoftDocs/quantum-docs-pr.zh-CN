@@ -16,9 +16,10 @@ output:
   types:
   - summary: 移除了顶部元素的 `stack`。 新堆栈具有与旧堆栈相同的容量，但其长度减少1。
     uid: microsoft.quantum.canon.resultstack
-ms.openlocfilehash: 371952e68e9c06fc11d9e8c309a4d388b80a9556
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73219359"
+metadata:
+  ms.openlocfilehash: 371952e68e9c06fc11d9e8c309a4d388b80a9556
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73219359"
