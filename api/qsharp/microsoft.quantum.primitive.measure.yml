@@ -27,9 +27,10 @@ output:
   types:
   - isPrimitive: true
     uid: Result
-ms.openlocfilehash: 8213dec9c2c50bdf6ab8061ab271c3ab2517a579
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73229457"
+metadata:
+  ms.openlocfilehash: 8213dec9c2c50bdf6ab8061ab271c3ab2517a579
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73229457"

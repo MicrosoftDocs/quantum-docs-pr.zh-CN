@@ -53,9 +53,10 @@ output:
     uid: Unit
 seeAlso:
 - assertoperationsequalreferenced
-ms.openlocfilehash: a6c58f51bbc30f3917457d4137afb083533519fe
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73225751"
+metadata:
+  ms.openlocfilehash: a6c58f51bbc30f3917457d4137afb083533519fe
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73225751"

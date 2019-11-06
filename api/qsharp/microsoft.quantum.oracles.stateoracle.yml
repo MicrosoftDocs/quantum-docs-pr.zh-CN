@@ -18,9 +18,10 @@ remarks: >-
 
   第一个参数是 $ \ket{0}的 qubit 寄存器的索引 \_f $。 第二个参数包含两个寄存器。
 syntax: newtype StateOracle = ((Int, Qubit[]) => Unit is Adj + Ctl);
-ms.openlocfilehash: 1faa47c21e43355ed036498adf4e823ff3f8a0e4
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73067214"
+metadata:
+  ms.openlocfilehash: 1faa47c21e43355ed036498adf4e823ff3f8a0e4
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73067214"

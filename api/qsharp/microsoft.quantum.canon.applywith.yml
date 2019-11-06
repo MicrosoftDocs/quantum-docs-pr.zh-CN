@@ -53,9 +53,10 @@ seeAlso:
 - applywitha
 - applywithc
 - applywithca
-ms.openlocfilehash: 910ecee6febcea39c82b02a21ab9231a681a0a4a
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73212933"
+metadata:
+  ms.openlocfilehash: 910ecee6febcea39c82b02a21ab9231a681a0a4a
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73212933"

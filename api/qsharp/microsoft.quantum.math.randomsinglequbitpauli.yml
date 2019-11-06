@@ -15,9 +15,10 @@ output:
   - summary: 作为 `[PauliI, PauliX, PauliY, PauliZ]`之一的 `Pauli` 运算符。
     isPrimitive: true
     uid: Pauli
-ms.openlocfilehash: 564e6c78859d5f74e0fc4ca9c5467e806742b7b2
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73219937"
+metadata:
+  ms.openlocfilehash: 564e6c78859d5f74e0fc4ca9c5467e806742b7b2
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73219937"

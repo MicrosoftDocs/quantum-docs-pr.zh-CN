@@ -143,9 +143,10 @@ operations:
     > [!WARNING]
 
     > 弃用，请使用 @"microsoft.quantum.intrinsic.z"。
-ms.openlocfilehash: 87dc52b15f7fb17c6e9c3c11ec04a91e775a36ef
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73216027"
+metadata:
+  ms.openlocfilehash: 87dc52b15f7fb17c6e9c3c11ec04a91e775a36ef
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73216027"

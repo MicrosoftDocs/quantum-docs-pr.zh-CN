@@ -32,9 +32,10 @@ output:
   types:
   - isPrimitive: true
     uid: BigInt
-ms.openlocfilehash: c314b3b34a1abf253dd9af205f766fad14abea49
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73233044"
+metadata:
+  ms.openlocfilehash: c314b3b34a1abf253dd9af205f766fad14abea49
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73233044"

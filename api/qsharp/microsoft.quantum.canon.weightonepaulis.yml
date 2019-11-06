@@ -21,9 +21,10 @@ output:
     - isArray: true
       isPrimitive: true
       uid: Pauli
-ms.openlocfilehash: 80c17b0c895f39c1548d3fd0535d6e731c6f9615
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73216690"
+metadata:
+  ms.openlocfilehash: 80c17b0c895f39c1548d3fd0535d6e731c6f9615
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73216690"

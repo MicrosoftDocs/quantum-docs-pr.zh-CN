@@ -18,9 +18,10 @@ output:
   - summary: '`input`的一元求反。'
     isPrimitive: true
     uid: Double
-ms.openlocfilehash: e20bae5e2d482f5bad346764ccfecc8a1d77ca7b
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73232381"
+metadata:
+  ms.openlocfilehash: e20bae5e2d482f5bad346764ccfecc8a1d77ca7b
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73232381"

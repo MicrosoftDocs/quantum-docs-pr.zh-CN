@@ -72,9 +72,10 @@ newtypes:
     - 对标志 qubit $f $ 进行索引的整数。
 
     - 系统注册 $s $，将存储所需的量程状态 $ \ket{\psi}\_s $。
-ms.openlocfilehash: 10eb2c7acebf805b955816abe2bf1cabb95ce059
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73216095"
+metadata:
+  ms.openlocfilehash: 10eb2c7acebf805b955816abe2bf1cabb95ce059
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73216095"

@@ -1,6 +1,6 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.intrinsic.exp
-name: .Exp
+name: Exp
 type: operation
 namespace: Microsoft.Quantum.Intrinsic
 summary: >-
@@ -10,14 +10,14 @@ summary: >-
   \begin{align} e ^ {i \theta [P_0 \otimes P_1 \cdots P_ {N-1}]}，\end{align}，其中 $P _i $ 是 `paulis`的 $i $ th 元素，其中 $N = $`Length(paulis)`。
 syntax: 'operation Exp (paulis : Pauli[], theta : Double, qubits : Qubit[]) : Unit'
 input:
-  content: （paulis： Pauli []，theta： Double，qubits： Qubit []）
+  content: '(paulis : Pauli[], theta : Double, qubits : Qubit[])'
   types:
   - name: paulis
     summary: Qubit Pauli 值的数组，用于指示每个 qubit 上的 tensor 产品因素。
     isArray: true
     isPrimitive: true
     uid: Pauli
-  - name: θ
+  - name: theta
     summary: 用于旋转目标寄存器的给定多 qubit Pauli 运算符的角度。
     isPrimitive: true
     uid: Double
@@ -27,16 +27,17 @@ input:
     isPrimitive: true
     uid: Qubit
 output:
-  content: 计价单位
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
 functors:
 - Adjoint
 - Controlled
-ms.openlocfilehash: d301f6281d5c8a07479417fab1e25c66e2251a25
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73067316"
+metadata:
+  ms.openlocfilehash: d301f6281d5c8a07479417fab1e25c66e2251a25
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73067316"

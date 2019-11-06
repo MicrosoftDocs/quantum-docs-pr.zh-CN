@@ -6,21 +6,22 @@ namespace: Microsoft.Quantum.Math
 summary: 返回一个数的指定幂。
 syntax: 'function PowC (base_ : Microsoft.Quantum.Math.Complex, power : Microsoft.Quantum.Math.Complex) : Microsoft.Quantum.Math.Complex'
 input:
-  content: （base_： Complex，power：）的情况下，
+  content: '(base_ : Microsoft.Quantum.Math.Complex, power : Microsoft.Quantum.Math.Complex)'
   types:
-  - name: 基座
+  - name: base_
     uid: microsoft.quantum.math.complex
-  - name: 能源
+  - name: power
     summary: $A $ 应引发的 power $b $。
     uid: microsoft.quantum.math.complex
 output:
-  content: -量子. Complex
+  content: Microsoft.Quantum.Math.Complex
   types:
   - summary: Power $a ^ b $
     uid: microsoft.quantum.math.complex
-ms.openlocfilehash: 77a3f8fdc769947e50b35b31547a98017e6e2529
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73067248"
+metadata:
+  ms.openlocfilehash: 77a3f8fdc769947e50b35b31547a98017e6e2529
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73067248"

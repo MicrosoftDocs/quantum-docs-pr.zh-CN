@@ -22,9 +22,10 @@ output:
   - summary: 如果 $a $ 和 $b $ 是共同质数（例如，其最大公因数为1），则为 True; 否则为 false。
     isPrimitive: true
     uid: Bool
-ms.openlocfilehash: 3071dc6481c1bbf3fb5544e9de84ee6e944ad4ba
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73232721"
+metadata:
+  ms.openlocfilehash: 3071dc6481c1bbf3fb5544e9de84ee6e944ad4ba
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73232721"

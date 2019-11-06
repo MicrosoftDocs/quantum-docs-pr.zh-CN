@@ -5,9 +5,10 @@ type: newtype
 namespace: Microsoft.Quantum.ErrorCorrection
 summary: 函数的类型，它将错误症状映射到更正检测到的错误的 `Pauli[]` 操作序列。
 syntax: newtype RecoveryFn = (Microsoft.Quantum.ErrorCorrection.Syndrome -> Pauli[]);
-ms.openlocfilehash: 86d0c6444a3e822525f605f2c15978323b9e1caf
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73220311"
+metadata:
+  ms.openlocfilehash: 86d0c6444a3e822525f605f2c15978323b9e1caf
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73220311"

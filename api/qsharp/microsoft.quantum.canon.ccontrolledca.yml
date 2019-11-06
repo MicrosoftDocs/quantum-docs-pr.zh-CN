@@ -9,9 +9,9 @@ summary: >-
   修饰符 `CA` 指示操作可控制和 adjointable。
 syntax: "function CControlledCA (op : ('T => Unit is Ctl + Adj)) : ((Bool, 'T) => Unit is Ctl + Adj)"
 input:
-  content: （op：（= = > 单位为 Ctl + 形容词））
+  content: "(op : ('T => Unit is Ctl + Adj))"
   types:
-  - name: 基金
+  - name: op
     summary: 要有条件地应用的操作。
     isOperation: true
     input:
@@ -26,7 +26,7 @@ input:
     - Adjoint
     - Controlled
 output:
-  content: （（Bool，t） = > 单位为 Ctl + 形容词）
+  content: ((Bool, 'T) => Unit is Ctl + Adj)
   types:
   - summary: 如果经典控制位为 true，则为 op 的新操作。
     isOperation: true
@@ -48,9 +48,10 @@ typeParameters:
   summary: 要有条件地应用的操作的输入类型。
 seeAlso:
 - microsoft.quantum.canon.ccontrolled
-ms.openlocfilehash: 918146c6f167050490d3a9047cf75dc66236b004
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73068064"
+metadata:
+  ms.openlocfilehash: 918146c6f167050490d3a9047cf75dc66236b004
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73068064"
