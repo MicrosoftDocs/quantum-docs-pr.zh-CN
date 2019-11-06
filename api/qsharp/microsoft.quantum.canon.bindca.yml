@@ -12,9 +12,9 @@ summary: >-
   请使用 @"microsoft.quantum.canon.boundca"。
 syntax: "function BindCA (operations : ('T => Unit is Adj + Ctl)[]) : ('T => Unit is Adj + Ctl)"
 input:
-  content: （操作：（不 = > 单位为调整 + Ctl） []）
+  content: "(operations : ('T => Unit is Adj + Ctl)[])"
   types:
-  - name: 操作
+  - name: operations
     isArray: true
     isOperation: true
     input:
@@ -29,7 +29,7 @@ input:
     - Adjoint
     - Controlled
 output:
-  content: （不等于 > 单位为调整 + Ctl）
+  content: ('T => Unit is Adj + Ctl)
   types:
   - isOperation: true
     input:
@@ -43,9 +43,10 @@ output:
     functors:
     - Adjoint
     - Controlled
-ms.openlocfilehash: 346b32022d56af5a69b428ff55103ac6cb3381e1
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73068302"
+metadata:
+  ms.openlocfilehash: 346b32022d56af5a69b428ff55103ac6cb3381e1
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73068302"

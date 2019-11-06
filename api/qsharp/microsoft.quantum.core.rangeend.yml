@@ -11,7 +11,7 @@ remarks: >-
   请注意，范围的定义结束值可以与范围指定的序列中的最后一个元素不同;例如，在0到1的范围内。 2.。 5最后一个元素为4，但结束值为5。
 syntax: 'function RangeEnd (range : Range) : Int'
 input:
-  content: （范围：范围）
+  content: '(range : Range)'
   types:
   - name: range
     isPrimitive: true
@@ -22,9 +22,10 @@ output:
   - summary: 给定范围的定义结束值。
     isPrimitive: true
     uid: Int
-ms.openlocfilehash: c7436046b6be7d4d0801471ecc6c78e36421e54a
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066636"
+metadata:
+  ms.openlocfilehash: c7436046b6be7d4d0801471ecc6c78e36421e54a
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066636"

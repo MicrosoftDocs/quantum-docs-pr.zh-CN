@@ -9,9 +9,10 @@ summary: >-
 
   集合中的元素由 <xref:microsoft.quantum.simulation.generatorindex>编制索引，每个集由从 `GeneratorIndex` 到 <xref:microsoft.quantum.simulation.evolutionunitary>的函数描述，这些操作由表示时间的实数参数化
 syntax: newtype EvolutionSet = (Microsoft.Quantum.Simulation.GeneratorIndex -> Microsoft.Quantum.Simulation.EvolutionUnitary);
-ms.openlocfilehash: 2e3e717ca219f5e575f750a32f640215142b170c
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73211080"
+metadata:
+  ms.openlocfilehash: 2e3e717ca219f5e575f750a32f640215142b170c
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73211080"

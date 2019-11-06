@@ -49,9 +49,10 @@ seeAlso:
 - microsoft.quantum.canon.applyifonec
 - microsoft.quantum.canon.applyifonea
 - microsoft.quantum.canon.applyifoneca
-ms.openlocfilehash: 5846b1178a8373f4b21faaa63ae9f6f86e514339
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73217404"
+metadata:
+  ms.openlocfilehash: 5846b1178a8373f4b21faaa63ae9f6f86e514339
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73217404"

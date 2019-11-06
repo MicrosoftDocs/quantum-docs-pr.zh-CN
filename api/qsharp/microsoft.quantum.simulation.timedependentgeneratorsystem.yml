@@ -5,9 +5,10 @@ type: newtype
 namespace: Microsoft.Quantum.Simulation
 summary: 表示时间依赖于时间的 dynamical 生成器作为函数，时间与 dynamical 生成器的值相同。
 syntax: newtype TimeDependentGeneratorSystem = (Double -> Microsoft.Quantum.Simulation.GeneratorSystem);
-ms.openlocfilehash: c57df9cdeda15479b63c6adf0ae559e4766ce949
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065276"
+metadata:
+  ms.openlocfilehash: c57df9cdeda15479b63c6adf0ae559e4766ce949
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065276"

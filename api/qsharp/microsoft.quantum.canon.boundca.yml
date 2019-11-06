@@ -68,9 +68,10 @@ typeParameters:
   summary: 数组中的每个操作的作用。
 seeAlso:
 - microsoft.quantum.canon.bound
-ms.openlocfilehash: 42e32f28e7c91ade9ff00196f7d9fac29c5c48e4
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73225411"
+metadata:
+  ms.openlocfilehash: 42e32f28e7c91ade9ff00196f7d9fac29c5c48e4
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73225411"

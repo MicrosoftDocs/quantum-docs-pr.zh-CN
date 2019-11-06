@@ -1,6 +1,6 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.extensions.math
-name: Microsoft 量子. Math
+name: Microsoft.Quantum.Extensions.Math
 functions:
 - uid: microsoft.quantum.extensions.math.absb
   summary: >-
@@ -182,9 +182,10 @@ functions:
     > [!WARNING]
 
     > 弃用，请使用 @"microsoft.quantum.math.truncate"。
-ms.openlocfilehash: a1a8cda192f7e95141eb2e34baa37ddaae4cb8c9
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73056335"
+metadata:
+  ms.openlocfilehash: a1a8cda192f7e95141eb2e34baa37ddaae4cb8c9
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73056335"

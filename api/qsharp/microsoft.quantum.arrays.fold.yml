@@ -53,9 +53,10 @@ typeParameters:
   summary: '`folder` 函数操作的状态的类型，即接受作为其第一个参数，并返回。'
 - uid: "'T"
   summary: '`array` 元素的类型。'
-ms.openlocfilehash: 4be4752029b10351cfb3fe0fa6aa61b84b157510
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73214344"
+metadata:
+  ms.openlocfilehash: 4be4752029b10351cfb3fe0fa6aa61b84b157510
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73214344"

@@ -7,9 +7,10 @@ summary: 表示也是反射的 `BlockEncoding`。
 syntax: newtype BlockEncodingReflection = Microsoft.Quantum.Simulation.BlockEncoding;
 seeAlso:
 - microsoft.quantum.canon.blockencoding
-ms.openlocfilehash: 1c2102ca43ee73d3aac66f29c4b367d609d6c764
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065650"
+metadata:
+  ms.openlocfilehash: 1c2102ca43ee73d3aac66f29c4b367d609d6c764
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065650"

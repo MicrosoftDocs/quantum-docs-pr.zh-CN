@@ -25,9 +25,10 @@ output:
   - summary: 估计的分子能源
     isPrimitive: true
     uid: Double
-ms.openlocfilehash: 057a695c6206679ec5aad4c8ee8f2bb8e5ffbbd3
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73225020"
+metadata:
+  ms.openlocfilehash: 057a695c6206679ec5aad4c8ee8f2bb8e5ffbbd3
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73225020"

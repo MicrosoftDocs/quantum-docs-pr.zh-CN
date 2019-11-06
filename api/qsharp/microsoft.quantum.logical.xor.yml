@@ -22,9 +22,10 @@ output:
   - summary: 当且仅当 `true``a` 和 `b` 之一时，`true`。
     isPrimitive: true
     uid: Bool
-ms.openlocfilehash: a876025d8b3a928e91d686b90f8ceccd65cc1e7c
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73235135"
+metadata:
+  ms.openlocfilehash: a876025d8b3a928e91d686b90f8ceccd65cc1e7c
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73235135"

@@ -1,6 +1,6 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.characterization
-name: Microsoft 量子. 特性
+name: Microsoft.Quantum.Characterization
 summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于了解量程状态和进程的属性的函数和操作，包括 tomography 和阶段估算。"
 operations:
 - uid: microsoft.quantum.characterization.continuousphaseestimationiteration
@@ -25,9 +25,10 @@ operations:
   summary: 为给定的 oracle `U` 和 eigenstate 执行强健的非迭代量程阶段估算算法，并提供海森堡限制下的变化缩放阶段的单一真实估算。
 - uid: microsoft.quantum.characterization.singlequbitprocesstomographymeasurement
   summary: 根据感兴趣的特定通道，在 Pauli 基础上执行 qubit 进程 tomography 度量。
-ms.openlocfilehash: f6ca8c97c1e44950fb87da8ed7335c885cabc425
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73056949"
+metadata:
+  ms.openlocfilehash: f6ca8c97c1e44950fb87da8ed7335c885cabc425
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73056949"

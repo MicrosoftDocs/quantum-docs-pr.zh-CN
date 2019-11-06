@@ -34,9 +34,10 @@ output:
 typeParameters:
 - uid: "'T"
   summary: '`array` 元素的类型。'
-ms.openlocfilehash: bb439ae76d0f7644625686cd89f05670051a4c9d
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73214446"
+metadata:
+  ms.openlocfilehash: bb439ae76d0f7644625686cd89f05670051a4c9d
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73214446"

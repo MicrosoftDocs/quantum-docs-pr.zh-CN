@@ -1,6 +1,6 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.canon
-name: Canon
+name: Microsoft.Quantum.Canon
 functions:
 - uid: microsoft.quantum.canon.asqubitarray
   summary: >-
@@ -936,9 +936,10 @@ newtypes:
     `Result` 变量的后进先出堆栈。
 
     堆栈包含整数容量、堆栈指针和 `Result` 数组。
-ms.openlocfilehash: 8767d438adcecd7ccbd539d7c123ac42cfb8c295
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73065157"
+metadata:
+  ms.openlocfilehash: 8767d438adcecd7ccbd539d7c123ac42cfb8c295
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73065157"

@@ -57,9 +57,10 @@ functions:
 operations:
 - uid: microsoft.quantum.convert.call
   summary: 调用具有给定输入的函数。
-ms.openlocfilehash: a0c347d8004b8f8bd35fc1b7f7eaf52e6230cee0
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73210961"
+metadata:
+  ms.openlocfilehash: a0c347d8004b8f8bd35fc1b7f7eaf52e6230cee0
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73210961"

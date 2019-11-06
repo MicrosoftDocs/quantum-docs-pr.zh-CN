@@ -14,9 +14,10 @@ summary: >-
 
   \end{align} $ $。
 syntax: newtype TimeDependentBlockEncoding = ((Qubit[], Qubit[], Qubit[]) => Unit is Adj + Ctl);
-ms.openlocfilehash: 1f41d7592e7f031085430a42edaa341874724851
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73211012"
+metadata:
+  ms.openlocfilehash: 1f41d7592e7f031085430a42edaa341874724851
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73211012"

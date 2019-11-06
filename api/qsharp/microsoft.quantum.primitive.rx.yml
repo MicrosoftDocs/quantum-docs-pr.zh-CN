@@ -12,25 +12,26 @@ summary: >-
   请使用 @"microsoft.quantum.intrinsic.rx"。
 syntax: 'operation Rx (theta : Double, qubit : Qubit) : Unit'
 input:
-  content: （theta： Double，qubit： Qubit）
+  content: '(theta : Double, qubit : Qubit)'
   types:
-  - name: θ
+  - name: theta
     isPrimitive: true
     uid: Double
   - name: qubit
     isPrimitive: true
     uid: Qubit
 output:
-  content: 计价单位
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
 functors:
 - Adjoint
 - Controlled
-ms.openlocfilehash: 45e8506eaee901409fdc8c5858e474e7482e8165
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066364"
+metadata:
+  ms.openlocfilehash: 45e8506eaee901409fdc8c5858e474e7482e8165
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066364"

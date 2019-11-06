@@ -1,6 +1,6 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.math
-name: Microsoft 量子. Math
+name: Microsoft.Quantum.Math
 functions:
 - uid: microsoft.quantum.math.abscomplex
   summary: 返回 `Complex`类型的复数的绝对值。
@@ -252,9 +252,10 @@ operations:
   summary: 返回大于或等于0且小于1的间隔中的随机实数。
 - uid: microsoft.quantum.math.randomsinglequbitpauli
   summary: 随机返回一个 qubit Pauli 运算符。
-ms.openlocfilehash: 7f30ee26a1155b64946e8fb16f5692ec602aa602
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73056301"
+metadata:
+  ms.openlocfilehash: 7f30ee26a1155b64946e8fb16f5692ec602aa602
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73056301"

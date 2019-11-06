@@ -7,9 +7,9 @@ summary: 应用一个操作，该操作采用 <xref:microsoft.quantum.arithmetic
 remarks: 注册通过使用 <xref:microsoft.quantum.canon.qftle> 转换为 `PhaseLittleEndian`，然后在应用 `op`后返回到其原始表示形式。
 syntax: 'operation ApplyPhaseLEOperationOnLE (op : (Microsoft.Quantum.Arithmetic.PhaseLittleEndian => Unit), target : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
-  content: （op：（PhaseLittleEndian = > Unit），目标： LittleEndian）。）。
+  content: '(op : (Microsoft.Quantum.Arithmetic.PhaseLittleEndian => Unit), target : Microsoft.Quantum.Arithmetic.LittleEndian)'
   types:
-  - name: 基金
+  - name: op
     summary: 要应用的操作。
     isOperation: true
     input:
@@ -19,11 +19,11 @@ input:
       types:
       - isPrimitive: true
         uid: Unit
-  - name: 目标
+  - name: target
     summary: 要向其应用操作的寄存器。
     uid: microsoft.quantum.arithmetic.littleendian
 output:
-  content: 计价单位
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
@@ -31,9 +31,10 @@ seeAlso:
 - microsoft.quantum.canon.applyphaseleoperationonlea
 - microsoft.quantum.canon.applyphaseleoperationonlea
 - microsoft.quantum.canon.applyphaseleoperationonleca
-ms.openlocfilehash: f610069706c06a3454c15b2f5170cce4b478530d
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73057239"
+metadata:
+  ms.openlocfilehash: f610069706c06a3454c15b2f5170cce4b478530d
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73057239"

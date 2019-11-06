@@ -18,9 +18,10 @@ output:
   - summary: 实数 $y $，$x = \tanh （y） $。
     isPrimitive: true
     uid: Double
-ms.openlocfilehash: ce131c0b9b3d05a15c04d9b64935c37f17639228
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73221756"
+metadata:
+  ms.openlocfilehash: ce131c0b9b3d05a15c04d9b64935c37f17639228
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73221756"

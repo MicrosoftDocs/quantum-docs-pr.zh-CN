@@ -52,9 +52,10 @@ newtypes:
   summary: 给定整数 `n`，返回术语 `n` `OptimizedBETermIndex` 数据的函数，以及第一个 `Int` 中的字词数以及 `Double`中所有条款系数的绝对值之和。
 - uid: microsoft.quantum.chemistry.jordanwigner.optimizedbetermindex
   summary: 优化的块编码算法中的术语数据。
-ms.openlocfilehash: d84c4f8bf74f902cdffc19dc7e489f80c63d7949
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73210927"
+metadata:
+  ms.openlocfilehash: d84c4f8bf74f902cdffc19dc7e489f80c63d7949
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73210927"

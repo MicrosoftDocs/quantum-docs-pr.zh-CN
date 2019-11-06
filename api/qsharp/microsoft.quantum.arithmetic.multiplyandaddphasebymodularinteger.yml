@@ -32,9 +32,10 @@ functors:
 - Controlled
 seeAlso:
 - microsoft.quantum.canon.modularaddproductle
-ms.openlocfilehash: f4dab26f55a61d0f3cbaf0b9b17fe4615f74356a
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73214837"
+metadata:
+  ms.openlocfilehash: f4dab26f55a61d0f3cbaf0b9b17fe4615f74356a
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73214837"

@@ -1,6 +1,6 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.diagnostics
-name: Microsoft 量子诊断
+name: Microsoft.Quantum.Diagnostics
 functions:
 - uid: microsoft.quantum.diagnostics.allequalityfactb
   summary: 断言布尔值的两个数组相等。
@@ -74,9 +74,10 @@ operations:
 - uid: microsoft.quantum.diagnostics.assertqubitwithintolerance
   summary: 断言 qubit `q` 处于 Pauli Z 运算符所需的 eigenstate 中，直到达到给定的容差。
 summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含可用于诊断目的的函数和操作，包括断言操作和声明函数。"
-ms.openlocfilehash: c387a7dc3b2e997d00d54457b0af89a04fa918d3
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73056861"
+metadata:
+  ms.openlocfilehash: c387a7dc3b2e997d00d54457b0af89a04fa918d3
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73056861"

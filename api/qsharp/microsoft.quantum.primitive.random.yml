@@ -1,6 +1,6 @@
 ### YamlMime:QSharpType
 uid: microsoft.quantum.primitive.random
-name: 随机
+name: Random
 type: operation
 namespace: Microsoft.Quantum.Primitive
 summary: >-
@@ -12,7 +12,7 @@ summary: >-
   请使用 @"microsoft.quantum.intrinsic.random"。
 syntax: 'operation Random (probs : Double[]) : Int'
 input:
-  content: （probs： Double []）
+  content: '(probs : Double[])'
   types:
   - name: probs
     isArray: true
@@ -23,9 +23,10 @@ output:
   types:
   - isPrimitive: true
     uid: Int
-ms.openlocfilehash: 4e712760da1bd5f0a71fa7905f710e7b4ed71fb1
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73066432"
+metadata:
+  ms.openlocfilehash: 4e712760da1bd5f0a71fa7905f710e7b4ed71fb1
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73066432"

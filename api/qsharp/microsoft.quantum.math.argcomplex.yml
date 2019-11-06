@@ -17,9 +17,10 @@ output:
   - summary: 阶段 $ \text{Arg} [c] = \text{ArcTan} （y，x） \in （-\pi，\pi] $。
     isPrimitive: true
     uid: Double
-ms.openlocfilehash: 4c05c008eb1ae0728b00b9dd573e08be2c237d74
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73221739"
+metadata:
+  ms.openlocfilehash: 4c05c008eb1ae0728b00b9dd573e08be2c237d74
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73221739"

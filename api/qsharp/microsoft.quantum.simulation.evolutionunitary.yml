@@ -9,9 +9,10 @@ summary: >-
 
   第一个参数是时间演化的持续时间，第二个参数是由单一参数操作的 qubit 寄存器。
 syntax: newtype EvolutionUnitary = ((Double, Qubit[]) => Unit is Adj + Ctl);
-ms.openlocfilehash: 185e621920a7800fd2c78ccbfb7b4ca12d51e8ba
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73067078"
+metadata:
+  ms.openlocfilehash: 185e621920a7800fd2c78ccbfb7b4ca12d51e8ba
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73067078"

@@ -29,9 +29,10 @@ output:
   - summary: 当且仅当 `value` `false`时，`true`。
     isPrimitive: true
     uid: Bool
-ms.openlocfilehash: 85df2e3787e96ab18c351dc5a210e5b8a2803b09
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73235407"
+metadata:
+  ms.openlocfilehash: 85df2e3787e96ab18c351dc5a210e5b8a2803b09
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73235407"

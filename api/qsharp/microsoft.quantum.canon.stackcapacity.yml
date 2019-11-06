@@ -17,9 +17,10 @@ output:
   - summary: 容纳在堆栈中的元素的数目。
     isPrimitive: true
     uid: Int
-ms.openlocfilehash: 9e6c91584f288fb895892d296e82e1855f014cb2
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73222266"
+metadata:
+  ms.openlocfilehash: 9e6c91584f288fb895892d296e82e1855f014cb2
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73222266"

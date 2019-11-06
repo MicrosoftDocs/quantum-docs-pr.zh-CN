@@ -41,9 +41,10 @@ seeAlso:
 - microsoft.quantum.canon.ccontrolledc
 - microsoft.quantum.canon.ccontrolleda
 - microsoft.quantum.canon.ccontrolledca
-ms.openlocfilehash: 340a993f5949d3faa6e4ebf883ee0f15c219a49b
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73211981"
+metadata:
+  ms.openlocfilehash: 340a993f5949d3faa6e4ebf883ee0f15c219a49b
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73211981"

@@ -10,22 +10,23 @@ summary: >-
   给定 oracle $O $ 类型 <xref:microsoft.quantum.oracles.deterministicstateoracle>时，此函数的结果是围绕状态 $ \ket{\psi} $ 反射的，其中 $O \ket{0} = \ket{\psi} $。
 syntax: 'function ReflectionOracleFromDeterministicStateOracle (oracle : Microsoft.Quantum.Oracles.DeterministicStateOracle) : Microsoft.Quantum.Oracles.ReflectionOracle'
 input:
-  content: （oracle： Oracles. DeterministicStateOracle）
+  content: '(oracle : Microsoft.Quantum.Oracles.DeterministicStateOracle)'
   types:
-  - name: 联手
+  - name: oracle
     summary: 类型为 "DeterministicStateOracle" 的 Oracle
     uid: microsoft.quantum.oracles.deterministicstateoracle
 output:
-  content: Oracles. ReflectionOracle
+  content: Microsoft.Quantum.Oracles.ReflectionOracle
   types:
   - summary: 反映状态 $ \ket{\psi} $ 的 `ReflectionOracle`。
     uid: microsoft.quantum.oracles.reflectionoracle
 seeAlso:
 - deterministicstateoracle
 - reflectionoracle
-ms.openlocfilehash: c48c9259b4b3c122a8d7551db6d326ea523dd2a0
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73050320"
+metadata:
+  ms.openlocfilehash: c48c9259b4b3c122a8d7551db6d326ea523dd2a0
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73050320"

@@ -36,9 +36,10 @@ typeParameters:
   summary: '`array` 元素的类型。'
 - uid: "'U"
   summary: '`action` 操作的结果类型。'
-ms.openlocfilehash: f97e01504142681f34772cc84d6e598507d7d734
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73218322"
+metadata:
+  ms.openlocfilehash: f97e01504142681f34772cc84d6e598507d7d734
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73218322"

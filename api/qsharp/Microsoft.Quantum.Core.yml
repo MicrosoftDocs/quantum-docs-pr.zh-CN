@@ -1,6 +1,6 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.core
-name: Microsoft 量子. 核心
+name: Microsoft.Quantum.Core
 summary: " # <a name=\"summary\"></a>总结\n 此命名空间包括 Q # 核心函数和操作。\n\n # <a name=\"remarks\"></a>备注\n 此命名空间由 Q # 编译器自动打开，因此此命名空间的所有元素始终可用。"
 functions:
 - uid: microsoft.quantum.core.length
@@ -13,9 +13,10 @@ functions:
   summary: 返回给定范围中定义的开始值。
 - uid: microsoft.quantum.core.rangestep
   summary: 返回一个整数，该整数指定如何计算范围的下一个值。
-ms.openlocfilehash: 41c28f8e8e11990ec1cf9b315478996a1e0811f4
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73056893"
+metadata:
+  ms.openlocfilehash: 41c28f8e8e11990ec1cf9b315478996a1e0811f4
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73056893"

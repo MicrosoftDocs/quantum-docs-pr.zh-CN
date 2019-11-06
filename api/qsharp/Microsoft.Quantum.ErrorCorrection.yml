@@ -1,6 +1,6 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.errorcorrection
-name: ErrorCorrection
+name: Microsoft.Quantum.ErrorCorrection
 summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于量程错误更正的函数、操作和用户定义类型。"
 functions:
 - uid: microsoft.quantum.errorcorrection.bitflipcode
@@ -109,9 +109,10 @@ newtypes:
   summary: 度量值的类型 `Result[]` 指定量程代码的错误症状。
 - uid: microsoft.quantum.errorcorrection.syndromemeasop
   summary: 表示一个操作，该操作用于测量纠错代码块的症状。
-ms.openlocfilehash: 6e1ef3ba9f22dac172e4edfb93bf1012e7bb21b4
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73056784"
+metadata:
+  ms.openlocfilehash: 6e1ef3ba9f22dac172e4edfb93bf1012e7bb21b4
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73056784"

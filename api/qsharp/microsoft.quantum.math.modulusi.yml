@@ -23,9 +23,10 @@ output:
   - summary: 0到 `value - r` `modulus - 1` 之间的整数 $r
     isPrimitive: true
     uid: Int
-ms.openlocfilehash: 1bb3877b4d66b5ad09dabbc072d7d9fb61813745
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73212083"
+metadata:
+  ms.openlocfilehash: 1bb3877b4d66b5ad09dabbc072d7d9fb61813745
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73212083"

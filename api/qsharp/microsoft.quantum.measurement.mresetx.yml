@@ -18,9 +18,10 @@ output:
   - summary: Pauli 中测量 `target` 的结果 $X $ basis。
     isPrimitive: true
     uid: Result
-ms.openlocfilehash: 48c819595cf492588fd5d4b08e1315cfb092fcd1
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73231225"
+metadata:
+  ms.openlocfilehash: 48c819595cf492588fd5d4b08e1315cfb092fcd1
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73231225"
