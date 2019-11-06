@@ -15,7 +15,7 @@ remarks: >-
   ```
 syntax: 'operation CCNOT (control1 : Qubit, control2 : Qubit, target : Qubit) : Unit'
 input:
-  content: （control1： Qubit，control2： Qubit，target： Qubit）
+  content: '(control1 : Qubit, control2 : Qubit, target : Qubit)'
   types:
   - name: control1
     summary: CCNOT 入口的第一个控件 qubit。
@@ -25,21 +25,22 @@ input:
     summary: CCNOT 入口的第二个控件 qubit。
     isPrimitive: true
     uid: Qubit
-  - name: 目标
+  - name: target
     summary: CCNOT 入口的目标 qubit。
     isPrimitive: true
     uid: Qubit
 output:
-  content: 计价单位
+  content: Unit
   types:
   - isPrimitive: true
     uid: Unit
 functors:
 - Adjoint
 - Controlled
-ms.openlocfilehash: cf3731ba41dde045fb5b7509d7d33801f8e3cee6
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73067350"
+metadata:
+  ms.openlocfilehash: cf3731ba41dde045fb5b7509d7d33801f8e3cee6
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73067350"

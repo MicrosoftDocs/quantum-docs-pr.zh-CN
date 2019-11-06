@@ -29,9 +29,10 @@ seeAlso:
 - microsoft.quantum.canon.css
 - microsoft.quantum.canon.recoveryfn
 - microsoft.quantum.canon.logicalregister
-ms.openlocfilehash: 4e07e66816c347aa9a7e1f06ebe88f65b2d040ce
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73220260"
+metadata:
+  ms.openlocfilehash: 4e07e66816c347aa9a7e1f06ebe88f65b2d040ce
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73220260"
