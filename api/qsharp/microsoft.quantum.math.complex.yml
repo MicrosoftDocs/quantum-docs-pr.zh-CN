@@ -8,9 +8,10 @@ summary: >-
 
   元组的第一个元素是实际的组件，第二个元素是虚部。
 syntax: newtype Complex = (Double, Double);
-ms.openlocfilehash: c8e60a824b10d21d793898bdeb3bc6c4dfa843cb
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73230103"
+metadata:
+  ms.openlocfilehash: c8e60a824b10d21d793898bdeb3bc6c4dfa843cb
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73230103"

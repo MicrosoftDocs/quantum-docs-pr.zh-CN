@@ -22,9 +22,10 @@ output:
     uid: Int
 seeAlso:
 - getqubitsavailabletouse
-ms.openlocfilehash: c0caf866ad9a8773aa11ee7c6951ca3acc60cbaa
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73230477"
+metadata:
+  ms.openlocfilehash: c0caf866ad9a8773aa11ee7c6951ca3acc60cbaa
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73230477"
