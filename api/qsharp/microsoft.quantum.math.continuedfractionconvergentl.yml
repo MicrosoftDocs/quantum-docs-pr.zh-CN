@@ -18,9 +18,10 @@ output:
   types:
   - summary: 与分母小于或等于 `fraction` 的持续分数最接近 `denominatorBound`
     uid: microsoft.quantum.math.bigfraction
-ms.openlocfilehash: 33092dc94b5af0693a019ad2ba19586d8e46c412
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73229831"
+metadata:
+  ms.openlocfilehash: 33092dc94b5af0693a019ad2ba19586d8e46c412
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73229831"

@@ -47,9 +47,10 @@ seeAlso:
 - microsoft.quantum.canon.operationpowc
 - microsoft.quantum.canon.operationpowa
 - microsoft.quantum.canon.operationpowca
-ms.openlocfilehash: 01b62197b0da18169a3a8d7a5e3c24e3169cfeff
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73222657"
+metadata:
+  ms.openlocfilehash: 01b62197b0da18169a3a8d7a5e3c24e3169cfeff
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73222657"

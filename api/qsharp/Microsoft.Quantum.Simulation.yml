@@ -161,9 +161,10 @@ newtypes:
     用于某些时间间隔的单一时间演变。
 - uid: microsoft.quantum.simulation.unitary
   summary: 表示单一运算符下的演变。
-ms.openlocfilehash: 05db213d04304a635e4e86e0f6c40f15bb81441a
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73215874"
+metadata:
+  ms.openlocfilehash: 05db213d04304a635e4e86e0f6c40f15bb81441a
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73215874"

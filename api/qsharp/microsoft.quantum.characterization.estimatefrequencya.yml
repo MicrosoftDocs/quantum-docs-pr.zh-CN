@@ -49,9 +49,10 @@ output:
   - summary: 估计 $ \hat{p} $ of $M （P （\ket{00 \cdots 0} \bra{00 \cdots 0}）） $ 返回 `Zero`，使用无偏差二项式估计器 $ \hat{p} = n\_{\uparrow}/n\_{\text{measurements}} $，其中 $n\_{\向上键} $ 是观察到的 `Zero` 结果数。
     isPrimitive: true
     uid: Double
-ms.openlocfilehash: cfc90cee0b98b88391ee23218489669600a97920
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73229168"
+metadata:
+  ms.openlocfilehash: cfc90cee0b98b88391ee23218489669600a97920
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73229168"

@@ -19,9 +19,10 @@ output:
   - summary: 一个整数，该整数 $x $ [0，2 ^ {\texttt{maxBits}}-1] $;也就是说，用 $ \Pr （x） = \frac{1}{2 ^ {\texttt{maxBits}}} $。
     isPrimitive: true
     uid: Int
-ms.openlocfilehash: e690509a7dcd2b1ec51bdde85da6439a688e75e7
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73219971"
+metadata:
+  ms.openlocfilehash: e690509a7dcd2b1ec51bdde85da6439a688e75e7
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73219971"

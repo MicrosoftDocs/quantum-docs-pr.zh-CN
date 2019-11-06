@@ -55,9 +55,10 @@ typeParameters:
   summary: 扩充函数的第二个参数的类型。
 seeAlso:
 - microsoft.quantum.canon.uncurryop
-ms.openlocfilehash: 2808ad1be091f98185ca9b218d2df6065c15a143
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73216945"
+metadata:
+  ms.openlocfilehash: 2808ad1be091f98185ca9b218d2df6065c15a143
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73216945"

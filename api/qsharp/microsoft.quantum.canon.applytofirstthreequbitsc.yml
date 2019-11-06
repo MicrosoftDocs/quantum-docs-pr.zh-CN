@@ -51,9 +51,10 @@ functors:
 - Controlled
 seeAlso:
 - microsoft.quantum.canon.applytofirstthreequbits
-ms.openlocfilehash: f71af17fefb874c14b4ae7a068c0bea5a9e49e60
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73213341"
+metadata:
+  ms.openlocfilehash: f71af17fefb874c14b4ae7a068c0bea5a9e49e60
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73213341"

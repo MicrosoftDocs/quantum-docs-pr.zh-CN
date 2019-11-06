@@ -30,9 +30,10 @@ output:
   - summary: 如果 `true`，则过程成功，应接受更高质量的副本。 如果 `false`，则过程失败，并且应将寄存器的状态视为未定义。
     isPrimitive: true
     uid: Bool
-ms.openlocfilehash: 81d87b3dcd6f669a63847e331865b1f2c389f3ce
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73226720"
+metadata:
+  ms.openlocfilehash: 81d87b3dcd6f669a63847e331865b1f2c389f3ce
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73226720"

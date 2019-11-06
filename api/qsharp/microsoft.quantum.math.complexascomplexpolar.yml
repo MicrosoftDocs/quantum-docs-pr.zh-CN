@@ -16,9 +16,10 @@ output:
   types:
   - summary: 复数 $c = r e ^ {i t} $。
     uid: microsoft.quantum.math.complexpolar
-ms.openlocfilehash: ec75e8c315f3b880cead8bad8fcfd99f6c2c67b3
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73230086"
+metadata:
+  ms.openlocfilehash: ec75e8c315f3b880cead8bad8fcfd99f6c2c67b3
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73230086"

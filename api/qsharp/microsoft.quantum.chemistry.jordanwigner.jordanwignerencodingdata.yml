@@ -8,9 +8,10 @@ summary: >-
 
   表示的数据的含义取决于接收数据的算法。
 syntax: newtype JordanWignerEncodingData = (Int, Microsoft.Quantum.Chemistry.JordanWigner.JWOptimizedHTerms, (Int, Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerInputState[]), Double);
-ms.openlocfilehash: 9e0dd700be01f80b2e0414c7a67b5a72836e5ba5
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73228709"
+metadata:
+  ms.openlocfilehash: 9e0dd700be01f80b2e0414c7a67b5a72836e5ba5
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73228709"

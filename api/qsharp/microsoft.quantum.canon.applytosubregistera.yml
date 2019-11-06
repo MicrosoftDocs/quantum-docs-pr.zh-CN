@@ -44,9 +44,10 @@ functors:
 - Adjoint
 seeAlso:
 - microsoft.quantum.canon.applytosubregister
-ms.openlocfilehash: f1919f13315674c7842da776a1b9fdb38f496754
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73212916"
+metadata:
+  ms.openlocfilehash: f1919f13315674c7842da776a1b9fdb38f496754
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73212916"

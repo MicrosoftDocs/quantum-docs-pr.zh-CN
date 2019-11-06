@@ -64,9 +64,10 @@ seeAlso:
 - transformedoperationca
 - applywithinputtransformation
 - compose
-ms.openlocfilehash: 4383a28fa6cae8e36438b6c4ba8262f60edbf025
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73217030"
+metadata:
+  ms.openlocfilehash: 4383a28fa6cae8e36438b6c4ba8262f60edbf025
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73217030"

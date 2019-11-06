@@ -22,9 +22,10 @@ output:
   types:
   - summary: 表示由输入 `data`表示的 Hamiltonian 的 GeneratorSystem。
     uid: microsoft.quantum.simulation.generatorsystem
-ms.openlocfilehash: 00ecf3fe97526621d596b4dff17e5fd937a21d7b
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73228879"
+metadata:
+  ms.openlocfilehash: 00ecf3fe97526621d596b4dff17e5fd937a21d7b
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73228879"

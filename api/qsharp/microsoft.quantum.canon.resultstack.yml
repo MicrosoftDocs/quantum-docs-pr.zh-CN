@@ -8,9 +8,10 @@ summary: >-
 
   堆栈包含整数容量、堆栈指针和 `Result` 数组。
 syntax: newtype ResultStack = (Int, Int, Result[]);
-ms.openlocfilehash: 4a0ba6c9e5e4489fd7a28d33df7d179268d46efe
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73222368"
+metadata:
+  ms.openlocfilehash: 4a0ba6c9e5e4489fd7a28d33df7d179268d46efe
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73222368"

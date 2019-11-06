@@ -20,9 +20,10 @@ output:
   content: Microsoft.Quantum.Arithmetic.BigEndian
   types:
   - uid: microsoft.quantum.arithmetic.bigendian
-ms.openlocfilehash: 2d59795cf540e9a39cbf27e815a0cf20b0c711e1
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73222963"
+metadata:
+  ms.openlocfilehash: 2d59795cf540e9a39cbf27e815a0cf20b0c711e1
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73222963"
