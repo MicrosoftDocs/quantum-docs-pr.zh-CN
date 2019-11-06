@@ -18,9 +18,10 @@ output:
   - summary: 如果 `input` 等于 `One`，则返回 `true`。
     isPrimitive: true
     uid: Bool
-ms.openlocfilehash: 0b4ffb68cbe07d4aa15a61485af4942b998f201a
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73225921"
+metadata:
+  ms.openlocfilehash: 0b4ffb68cbe07d4aa15a61485af4942b998f201a
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73225921"

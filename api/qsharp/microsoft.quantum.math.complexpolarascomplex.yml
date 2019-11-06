@@ -16,9 +16,10 @@ output:
   types:
   - summary: 复数 $c = x + i y $。
     uid: microsoft.quantum.math.complex
-ms.openlocfilehash: 5754e91abca30dc0c0c4b122d4c8a127e53519a9
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73230069"
+metadata:
+  ms.openlocfilehash: 5754e91abca30dc0c0c4b122d4c8a127e53519a9
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73230069"
