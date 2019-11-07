@@ -74,9 +74,10 @@ output:
   - summary: 由 $U $ 表示的生成器的 "估计 $ \hat{\phi} $"。
     isPrimitive: true
     uid: Double
-ms.openlocfilehash: 747e9f6d926863ce1add86d183ca2ed1dc43c8a4
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
-ms.translationtype: MT
-ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73232024"
+metadata:
+  ms.openlocfilehash: 747e9f6d926863ce1add86d183ca2ed1dc43c8a4
+  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 11/05/2019
+  ms.locfileid: "73232024"
