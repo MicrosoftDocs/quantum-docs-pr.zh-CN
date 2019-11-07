@@ -6,16 +6,16 @@ ms.author: nakersha
 ms.date: 10/23/2019
 ms.topic: article
 uid: microsoft.quantum.overview.learn
-ms.openlocfilehash: 8967fee11931c6cef4b2d98084b2e319cea55284
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.openlocfilehash: 53682ae8ab9cb31fa0de68832cb3574aa4e30216
+ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73444100"
+ms.lasthandoff: 11/04/2019
+ms.locfileid: "73529959"
 ---
 # <a name="how-to-learn-quantum-computing"></a>如何学习量子计算？
 
-获取有关学习量子计算和编写第一个程序的指导。 这不是一个全面的指南，但却是一个不错的开端。
+获取有关学习量子计算和编写第一个程序的指导。 本指南不全面，但却是一个不错的开端。
 
 ## <a name="getting-started-overview"></a>入门概述
 
@@ -29,7 +29,7 @@ ms.locfileid: "73444100"
 
 * [基本量子力学](xref:microsoft.quantum.concepts.intro)：正如我们刚才所说，你无需知道量子物理学便可以开始编码（这是真的！）。 但一些基本的量子力学概念及其数学表示法有助于了解量子程序。
 
-* **线性代数（向量和矩阵）** ：在量子计算中，量子状态由向量表示，而量子运算则是应用于这些向量的线性转换。  这是[有关线性代数的 Jupyter 笔记本教程](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra)。  也可在有关[矢量和矩阵](xref:microsoft.quantum.concepts.vectors)的概念指南中详细了解此方面的内容。
+* **线性代数（向量和矩阵）** ：在量子计算中，量子状态由向量表示，而量子运算则是应用于这些向量的线性转换。  这是[有关线性代数的 Jupyter 笔记本教程](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra)。  也可在有关[矢量和矩阵](xref:microsoft.quantum.concepts.vectors)的概念指南中详细了解线性代数。
 
 * **复杂算术**：量子状态向量的系数为复数。 即使没有它们，你也可以理解某些基本的量子计算概念，但如果想要深入了解，则需要将它们合并到量子工具包中。  这是[有关复杂算术的 Jupyter 笔记本教程](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic)，介绍了处理量子计算所需的一些数学背景。 
 
@@ -45,8 +45,8 @@ ms.locfileid: "73444100"
 
 * 请从我们的[量子计算概念](xref:microsoft.quantum.concepts.intro)指南开始，其中概述了量子计算的基本概念。
 * 《学习如何使用 Python 和 Q# 执行量子计算》（Sarah C. Kaiser 和 Christopher E. Granade）为几乎不具有量子力学经验但有一些编程背景的人提供了精彩的介绍  。
-* 《量子计算和量子信息》（Michael A. Nielsen、Isaac L. Chuang）中的内容在量子计算领域引用最多  。 它被视为有关该主题的标准内容。 本书假设你拥有最少的量子力学和计算机科学经验。 对于想要细致了解该主题以及正在寻找相关资料以了解高级概念的读者来说，本书是一个不错的选择。
-* MIT OpenCourseWare 有一个优秀的[联机课程](https://www.youtube.com/watch?v=lZ3bPUKo5zc&list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr)，由 Allan Adams 讲授量子力学的基本知识。 非常适合那些想要更好地了解基础物理学的人。
+* 《量子计算和量子信息》（Michael A. Nielsen、Isaac L. Chuang）中的内容在量子计算领域引用最多，被奉为圭臬  。 本书假设你拥有最少的量子力学和计算机科学经验。 对于想要细致了解该主题以及正在寻找相关资料以了解高级概念的读者来说，本书是一个不错的选择。
+* MIT OpenCourseWare 有一个优秀的[联机课程](https://www.youtube.com/watch?v=lZ3bPUKo5zc&list=PLUl4u3cNGP61-9PEhRognw5vryrSEVLPr)，由 Allan Adams 讲授量子力学的基本知识。 非常适合想要更好地了解基础物理学的开发者。
 
 ## <a name="join-the-quantum-community"></a>加入量子社区
 

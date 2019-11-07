@@ -6,12 +6,12 @@ ms.author: megbrow@microsoft.com
 ms.date: 10/25/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.qrng
-ms.openlocfilehash: a7c077eda3e46430cbe6598cb899adb460451f75
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.openlocfilehash: c3039b92c4b3235a397d5cf31280ac2673706e9d
+ms.sourcegitcommit: 2ca4755d1a63431e3cb2d2918a10ad477ec2e368
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73443913"
+ms.lasthandoff: 11/03/2019
+ms.locfileid: "73462834"
 ---
 # <a name="quickstart-implement-a-quantum-random-number-generator-in-q"></a>快速入门：在 Q# 中实现量子随机数生成器
 以 Q# 编写的量子算法的一个简单示例是量子随机数生成器。 此算法利用量子力学特性来生成随机数。 
@@ -69,4 +69,4 @@ ms.locfileid: "73443913"
 
 <img src="./Measurement2.svg" width="450">
 
-由于度量结果是完全随机的，我们获得了一个随机位。 我们可以调用此函数多次来创建多个整数。 例如，如果我们调用此函数三次来获取三个随机位，我们就可以生成随机的 3 位数（即 0 到 7 之间的随机数）。
+由于度量结果是完全随机的，我们获得了一个随机位。 我们可以调用此操作多次来创建多个整数。 例如，如果我们调用此操作三次来获取三个随机位，我们就可以生成随机的 3 位数（即 0 到 7 之间的随机数）。
