@@ -54,11 +54,11 @@ ms.locfileid: "73463372"
 
     c. 删除、最小化、阻止或修改软件中 Microsoft 或其供应商的任何通知;
 
-    d.单击“下一步”。 以任何方式使用本软件，或者创建或传播恶意软件;或
+    d. 以任何方式使用本软件，或者创建或传播恶意软件;或
     
     e. 共享、发布、分发或出借软件，将该软件作为独立托管解决方案提供给他人使用或将软件或本协议转让给任何第三方。
 
-1. **出口限制**。 必须遵守适用于该软件的所有国内外出口法律法规，其中包括对目的地、最终用户和最终用途的限制。 有关出口限制的更多信息，请访问 https://aka.ms/exporting 。
+1. **出口限制**。 必须遵守适用于该软件的所有国内外出口法律法规，其中包括对目的地、最终用户和最终用途的限制。 有关出口限制的更多信息，请访问 https://aka.ms/exporting。
 
 1. **支持服务**。 根据本协议，Microsoft 没有义务为软件提供任何支持服务。 提供的任何支持均为“按原样”、“不保证商品没有缺点”，且无任何形式的保证。
 
@@ -86,7 +86,7 @@ ms.locfileid: "73463372"
 
 <p>15. <strong>损坏的限制和排除。如果你有权恢复损害，而不考虑前述担保，你可以从 MICROSOFT 及其供应商处恢复，仅限美国 $5.00 的直接损害。您无法恢复任何其他损害，包括后果性的、利润损失、特殊、间接或附带的损害。</strong>
 
-**此限制适用于（a）与第三方 Internet 站点上的软件、服务、内容（包括代码）或第三方应用程序相关的任何内容; 以及（b）违反合同、担保、保证或条件的索赔、严格责任、疏忽或其他侵权行为;或任何其他声明;在每种情况下，都可以使用适用法律所允许的范围**。
+**此限制适用于（a）与第三方 Internet 站点上的软件、服务、内容（包括代码）或第三方应用程序相关的任何内容; 以及（b）违反合同、担保、保证或条件、严格责任、过失或其他侵权行为、严格责任、过失或其他侵权行为，或者在每种情况下都适用法律允许的范围**。
 
 **即使 Microsoft 知道或应该知道损坏的可能性，它也同样适用。上述限制或排除可能不适用于你，因为你的州、省或国家/地区可能不允许排除或限制附带的、后果性的或其他损害**。
 </blockquote>
@@ -100,7 +100,7 @@ ms.locfileid: "73463372"
 **限制 DES DOMMAGES-INTÉRÊTS ET RESPONSABILITÉ浇筑 LES DOMMAGES。Vous pouvez obtenir de Microsoft et de se fournisseurs une indemnisation，ca de dommages 指引 uniquement à hauteur de 5，00 $ US。Vous ne pouvez prétendre à aucune indemnisation 浇筑 les autres dommages，y compris les dommages spéciaux，indirects ou accessoires et pertes de bénéfices**。
 
 **Cette 限制 concerne**：
-- **图文并茂 ce qui est relié au logiciel，aux 服务 ou au contenu （y compris le code） figurant .sur des 站点 Internet 分层 ou dans des 服务层;et**
+- **tout ce qui est relié au logiciel, aux services ou au contenu (y compris le code) figurant sur des sites Internet tiers ou dans des programmes tiers; et**
 - **les réclamations au titre 消除违反 contrat ou de garantie，ou au titre de responsabilité stricte，de négligence ou d'une autre faute dans la limite autorisée par la loi en vigueur**。
 
 **Elle s'applique également，même Si Microsoft connaissait ou devrait connaître l'éventualité d'un 电话 dommage。Si votre 支付 n'autorise 的 pas l'exclusion ou la 限制 de responsabilité浇筑 les dommages indirects，accessoires ou de quelque 本质查询 ce soit，il se peut 查询 la 限制 ou l'exclusion ci-dessus ne s'appliquera pas： votre égard**。
