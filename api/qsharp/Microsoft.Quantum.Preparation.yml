@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.preparation
 name: Microsoft.Quantum.Preparation
-summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于将 qubits 准备入任意初始状态的函数和操作。"
+summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含用于将 qubits 准备入任意初始状态的函数和操作。"
 functions:
 - uid: microsoft.quantum.preparation.blochspherecoordinates
   summary: >-
@@ -14,7 +14,7 @@ functions:
     使用量程 ROM 技术来表示给定的密度矩阵。
 
 
-    给定一个 $N $ 系数 $ \alpha_j $ 的列表，这将返回一个单一的 $U $，该类型使用量程方法来准备 "密度" 矩阵 $ purification = \rho = 0} ^ {N-1} \sum_{j 的 \frac{的近似值 $ \tilde\rho\sum_{j = 0} ^ {p_j\ket {j} \ 寄存器 {j} $alpha_j |}{\sum_k | \alpha_k |}\ket{j}\bra{j} $。 在此近似中，错误 $ \epsilon $ 是： $ | p_j-\frac{| alpha_j |}{\sum_k | \alpha_k |} |\le \epsilon/N $ 和 $\|\tilde\rho-\rho\| \le \epsilon $。 换句话说，$ $ \begin{align} U\ket{0}^ {\lceil\log_2 N\rceil} \ 票证{0}^ {m} = \sum_{j = 0} ^ {N-1} \sqrt{p_j} \ket{j}\ket{\text{garbage}_j}。
+    给定一个 $N $ 系数 $ \ alpha_j $ 的列表，这将返回一个单一 $U $，该类型使用量程方法来准备近似值 x $ \rho = \ p_j {j = 0} ^ {N-1} \frac{的 purification 的近似值 $ \tilde\rho\ sum_ {j = 0} ^ {N-1} sum_ \ket{j}\bra{j} $alpha_j |}{\ sum_k | \ alpha_k |}\ket{j}\bra{j} $。 在此近似中，错误 $ \epsilon $ 是： $ | p_j-\frac{| alpha_j |}{\ sum_k | \ alpha_k |} |\le \epsilon/N $ 和 $\|\tilde\rho-\rho\| \le \epsilon $。 换句话说，$ $ \begin{align} U\ket{0}^ {\lceil\ log_2 N\rceil} \ 票证{0}^ {m} = \ sum_ {j = 0} ^ {N-1} \sqrt{p_j} \ket{j}\ket{\text{garbage} _j}。
 
     \end{align} $ $
 - uid: microsoft.quantum.preparation.quantumromqubitcount
@@ -24,10 +24,10 @@ functions:
     返回准备特定量程状态的操作。
 
 
-    返回的操作 $U $ 准备具有复杂系数的任意量程状态 $ \ket{\psi} $，$r $n $-qubit 计算基础状态 $ \ket{0...0} $。
+    返回的操作 $U $ 准备带有复数系数的任意量程状态 $ \ket{\psi} $ $r 从 $n $-qubit 计算基础状态 $ \ket{0...0} $ _j e ^ {i t_j} $。
 
 
-    新分配的寄存器上的 U 操作由 $ $ \begin{align} U\ket {0 ... 0} = \ket{\psi} = \frac{\sum_{j = 0} ^ {2 ^ n-1} r_j e ^ {i t_j} \ket{j}}{\sqrt{\sum_{j = 0} ^ {2 ^ n-1} | r_j | ^ 2}} 提供。
+    新分配的寄存器上的 U 操作由 $ $ \begin{align} U\ket {0 ... 0} = \ket{\psi} = \frac{\ sum_ {j = 0} ^ {2 ^ n-1} r_j e ^ {i t_j} \ket{j}}{\sqrt{\ sum_ {j = 0} ^ {2 ^ n-1} | r_j | ^ 2}}。
 
     \end{align} $ $
 - uid: microsoft.quantum.preparation.statepreparationpositivecoefficients
@@ -35,10 +35,10 @@ functions:
     返回一个准备给定量程状态的操作。
 
 
-    返回的操作 $U $ "从 $n $-qubit 计算基础状态 $ \ket{0...0} $ 准备一个任意量程状态 $ \ket{\psi} $，其中正负系数为 $ \alpha_j\ge $0。
+    返回的操作 $U $ 准备任意量程状态 $ \ket{\psi} $，其中正负系数为 $ \ alpha_j \ge $0，$n $-qubit 计算基础状态 $ \ket{0...0} $。
 
 
-    新分配的寄存器上的 U 操作由 $ $ \begin{align} U \ket{0\cdots 0} = \ket{\psi} = \frac{\sum_{j = 0} ^ {2 ^ n-1} \alpha_j \ket{j}}{\sqrt{\sum_{j = 0} ^ {2 ^ n-1} | \alpha_j | ^ 2}} 提供。
+    新分配的寄存器上的 U 操作是由 $ $ \begin{align} U \ket{0\cdots 0} = \ket{\psi} = \frac{\ sum_ {j = 0} ^ {2 ^ n-1} \ alpha_j \ket{j}}{\sqrt{\ sum_ {j = 0} ^ {2 ^ n-1} | \ alpha_j | ^ 2}}。
 
     \end{align} $ $
 operations:
@@ -47,10 +47,10 @@ operations:
     返回一个准备给定量程状态的操作。
 
 
-    返回的操作 $U $ 准备具有复杂系数的任意量程状态 $ \ket{\psi} $，$r $n $-qubit 计算基础状态 $ \ket{0...0} $。
+    返回的操作 $U $ 准备带有复数系数的任意量程状态 $ \ket{\psi} $ $r 从 $n $-qubit 计算基础状态 $ \ket{0...0} $ _j e ^ {i t_j} $。
 
 
-    $ $ \begin{align} U\ket {0 ... 0} = \ket{\psi} = \frac{\sum_{j = 0} ^ {2 ^ n-1} r_j e ^ {i t_j} \ket{j}}{\sqrt{\sum_{j = 0} ^ {2 ^ n-1} | r_j | ^ 2}}。
+    $ $ \begin{align} U\ket {0 ... 0} = \ket{\psi} = \frac{\ sum_ {j = 0} ^ {2 ^ n-1} r_j e ^ {i t_j} \ket{j}}{\sqrt{\ sum_ {j = 0} ^ {2 ^ n-1} | r_j | ^ 2}}。
 
     \end{align} $ $
 - uid: microsoft.quantum.preparation.preparechoistate
@@ -66,7 +66,7 @@ operations:
     成对 entangles 两个 qubit 寄存器。
 
 
-    也就是说，给定两个寄存器，在各自寄存器上的每对 \left 之间准备最大化放大 state $ \frac{1}{\sqrt{2}} \ket （\ket{00} + \right{11} qubits） $，假定每个注册都在 $ \ket{0\ 中开始。cdots 0} $ 状态。
+    也就是说，给定两个寄存器，在各自寄存器上的每对 \left 之间准备最大化放大 state $ \frac{1}{\sqrt{2}} \ket （\ket{00} + \right{11} qubits） $，假设每个注册都以 $ \ket{0\cdots 0} $ 状态启动。
 - uid: microsoft.quantum.preparation.prepareidentity
   summary: >-
     在给定寄存器的情况下，准备在最大化 mixed 状态下进行注册。
@@ -89,13 +89,13 @@ operations:
     准备处于最大化混合状态的 qubit。
 
 
-    $2 它通过应用 depolarizing 通道 $ $ \begin{align} \Omega （\rho） \mathrel{： =} \frac{1}{4} \sum_{\mu \in \{0，1，2，3\}} \sigma\_{\mu} \rho \sigma\_{\mu} ^ {\剑号}，\end{align} $ $，其中 $ \sigma\_i $ 是 $i $ th Pauli 运算符，其中 $ \rho $ 是表示混合状态的密度运算符。
+    它通过应用 depolarizing 通道 $ $ \begin{align} \Omega （\rho） \mathrel{，在 $ \boldone/$2 状态中准备给定的 qubit： =} \frac{1}{4} \ sum_ {\mu \in \{0，1，2，3\}} \sigma\_{\mu} \rho \sigma\_{\mu} ^ {\dagger}，\end{align} $ $，其中 $ \sigma\_i $ 是 $i $ th Pauli 运算符，其中 $ \rho $ 是表示混合状态的密度运算符。
 - uid: microsoft.quantum.preparation.prepareuniformsuperposition
   summary: >-
     创建对 superposition 进行编码0到 `nIndices`的统一。
 
 
-    也就是说，在给定输入状态 $ \ket{0\cdots 0} $ 的情况下，此单一 $U $ 将在所有数字状态 $0 $ 到 $M-$1 上创建一个统一的 superposition。 换句话说，$ $ \begin{align} U\ket{0}= \frac{1}{\sqrt{M}}\sum_{j = 0} ^ {M-1} \ket{j}。
+    也就是说，在给定输入状态 $ \ket{0\cdots 0} $ 的情况下，此单一 $U $ 将在所有数字状态 $0 $ 到 $M-$1 上创建一个统一的 superposition。 换句话说，$ $ \begin{align} U\ket{0}= \frac{1}{\sqrt{M}}\ sum_ {j = 0} ^ {M-1} \ket{j}。
 
     \end{align} $ $。
 metadata:

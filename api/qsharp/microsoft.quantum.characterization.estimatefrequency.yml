@@ -44,7 +44,7 @@ output:
   content: Double
   types:
   - summary: >-
-      估计 $ \hat{p} $ of $M （P （\ket{00 \cdots 0} \bra{00 \cdots 0}）） $ 返回 `Zero`，使用无偏差二项式估计器 $ \hat{p} = n\_{\uparrow}/n\_{\text{measurements}} $，其中 $n\_{\向上键} $ 是观察到的 `Zero` 结果数。
+      估计 $ \hat{p} $ of $M （P （\ket{00 \cdots 0} \bra{00 \cdots 0}）） $ 返回 `Zero`，使用无偏差二项式估计器 $ \hat{p} = n\_{\uparrow}/n\_{\text{measurements}} $，其中 $n\_{\uparrow} $ 是观察到的 `Zero` 结果数。
 
 
       这对于遵守物理限制的目标计算机尤其重要，因此无法衡量概率。

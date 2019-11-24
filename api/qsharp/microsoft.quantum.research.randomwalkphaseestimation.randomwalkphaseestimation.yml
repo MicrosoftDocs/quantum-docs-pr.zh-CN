@@ -8,7 +8,7 @@ remarks: >-
   ### <a name="iterative-phase-estimation-and-eigenstates"></a>迭代阶段估计和 Eigenstates
 
 
-  通常，输入寄存器 `eigenstate` 不必是 $U $ 的 eigenstate $ \ket{\phi} $，但可以是 eigenstates 上的 superposition。 假设输入状态由 \begin{align} \ket{\psi} & =\_\sum 给定，\_j \ket{\phi\_j}，\end{align}，其中 $\{\alpha\_j\}$ 是复杂系数，因此 $ \sum\_j | \alpha\_j | ^ 2 = $1，其中 $U \ket{\phi\_j} = \phi\_j\ket {\ phi\_j} $。
+  通常，输入寄存器 `eigenstate` 不必是 $U $ 的 eigenstate $ \ket{\phi} $，但可以是 eigenstates 上的 superposition。 假设输入状态由 \begin{align} \ket{\psi} & = \sum\_{j} \alpha\_j \ket{\phi\_j}，\end{align}，其中 $\{\alpha\_j\}$ 为复杂系数，如 $ \sum\_j | \alpha\_j | ^ 2 = $1，其中 $U \ket{\phi\_j} $。\_\_
 
 
   然后，执行迭代阶段估算最终将聚合到单个 eigenstate，如[开发指南](xref:microsoft.quantum.libraries.characterization#iterative-phase-estimation-without-eigenstates)中所述。

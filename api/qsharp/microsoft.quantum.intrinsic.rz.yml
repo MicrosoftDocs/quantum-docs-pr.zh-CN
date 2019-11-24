@@ -7,7 +7,7 @@ summary: >-
   按给定角度向 $z $ 轴旋转。
 
 
-  \begin{align} R_z （\theta） \mathrel{： =} e ^ {-i \theta \sigma_z/2} = \begin{bmatrix} e ^ {-i \theta/2} & 0 \\\\ 0 & e ^ {i \theta/2} \end{bmatrix}。
+  \begin{align} R_z （\theta） \mathrel{： =} e ^ {-i \theta \ sigma_z/2} = \begin{bmatrix} e ^ {-i \theta/2} & 0 \\\\ 0 & e ^ {i \theta/2} \end{bmatrix}。
 
   \end{align}
 remarks: >-

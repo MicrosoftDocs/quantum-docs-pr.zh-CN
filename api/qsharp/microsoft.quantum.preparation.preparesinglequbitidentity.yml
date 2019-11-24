@@ -7,7 +7,7 @@ summary: >-
   准备处于最大化混合状态的 qubit。
 
 
-  $2 它通过应用 depolarizing 通道 $ $ \begin{align} \Omega （\rho） \mathrel{： =} \frac{1}{4} \sum_{\mu \in \{0，1，2，3\}} \sigma\_{\mu} \rho \sigma\_{\mu} ^ {\剑号}，\end{align} $ $，其中 $ \sigma\_i $ 是 $i $ th Pauli 运算符，其中 $ \rho $ 是表示混合状态的密度运算符。
+  它通过应用 depolarizing 通道 $ $ \begin{align} \Omega （\rho） \mathrel{，在 $ \boldone/$2 状态中准备给定的 qubit： =} \frac{1}{4} \ sum_ {\mu \in \{0，1，2，3\}} \sigma\_{\mu} \rho \sigma\_{\mu} ^ {\dagger}，\end{align} $ $，其中 $ \sigma\_i $ 是 $i $ th Pauli 运算符，其中 $ \rho $ 是表示混合状态的密度运算符。
 remarks: >-
   混合状态 $ \boldone/$2 描述将此操作应用于状态的结果。隐式描述此操作中随机选择的预期值。
 

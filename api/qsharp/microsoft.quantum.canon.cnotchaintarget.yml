@@ -7,7 +7,7 @@ summary: >-
   计算 qubits 数组到目标 qubit 的奇偶校验。
 
 
-  如果数组最初处于状态 $ \ket{q_0} \ket{q_1} \cdots \ket{q_{\text{target}}} $，则最终状态由 $ \ket{q_0} \ket{q_1 \oplus q_0} \cdots \ket{q_{n-1} \oplus \cdots \oplus q_0 \oplus q_ {\text{target}}} $ 提供。
+  如果数组最初处于状态 $ \ket{q_0} \ket{q_1} \cdots \ket{q_ {\text{target}}} $，则最终状态由 $ \ket{q_0} \ket{q_1 \oplus q_0} \cdots \ket{q_ {n-1} \oplus \cdots \oplus q_0 \oplus q_ {\text{target}}} $。
 remarks: >-
   以下项是等效的：
 

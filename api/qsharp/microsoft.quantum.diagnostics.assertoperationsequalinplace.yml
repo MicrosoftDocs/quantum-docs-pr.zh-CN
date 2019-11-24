@@ -7,7 +7,7 @@ summary: >-
   假设有两个运算，则断言它们对于所有输入状态都是相同的。
 
 
-  此断言是通过以下方式实现的：检查所有状态的操作的操作： $V _0 \otimes ... \otimes V_ {n-1} $，其中 $V _k $ 是状态 $ \ket{0}$，$ \ket{1}$，$ \ket{+} $ 和 $ \ket{i} $ （+ 1 eigenstate of Pauli Y 运算符）。
+  此断言是通过以下方式实现的：检查对窗体的所有状态的操作的操作： $V _0 \otimes ... \otimes V_ {n-1} $，其中 $V _k $ 是状态 $ \ket{0}$，$ \ket{1}$，$ \ket{+} $，$ \ket{i} $ （+ 1 eigenstate of Pauli Y 运算符）。
 
 
   此断言使用 $n $ qubits，需要对要比较的操作进行多次调用。
