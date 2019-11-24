@@ -10,7 +10,7 @@ remarks: >-
 
   - C. H. Bennett，DiVincenzo，J。 Smolin 和 K. K。 Wootters，"Mixed 状态牵连 and 量子纠错"，"Phys，54（1996） pp 3824-3851;https://arxiv.org/abs/quant-ph/9604024 和
 
-  - Jenkins， Laflamme，Miquel，J P。 巴斯和 W.x.y.z。 Zurek "完美的量程错误纠正代码" Phys Lett。 77（1996） pp 198-201;https://arxiv.org/abs/quant-ph/9602019
+  - R. Laflamme，Miquel，J P。 巴斯和 W.x.y.z。 Zurek "完美的量程错误纠正代码" Phys Lett。 77（1996） pp 198-201;https://arxiv.org/abs/quant-ph/9602019
 syntax: 'function FiveQubitCode () : Microsoft.Quantum.ErrorCorrection.QECC'
 input:
   content: ()

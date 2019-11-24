@@ -15,7 +15,7 @@ input:
 output:
   content: Double
   types:
-  - summary: 以2为底的对数 $y = \log_2 （x） $ $x = 2 ^ y $。
+  - summary: 以2为底的对数 $y = \ log_2 （x） $，$x = 2 ^ y $。
     isPrimitive: true
     uid: Double
 metadata:

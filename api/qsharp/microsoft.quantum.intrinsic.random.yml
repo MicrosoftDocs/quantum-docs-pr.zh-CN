@@ -21,7 +21,7 @@ input:
 output:
   content: Int
   types:
-  - summary: 一个整数 $i $ with probability $ \Pr （i） = p_i/\sum_i p_i $，其中 $p _i $ 是 `probs`$i $ th 元素。
+  - summary: 一个整数 $i $ with probability $ \Pr （i） = p_i/\ sum_i p_i $，其中 $p _i $ 是 $i `probs`$ th 元素。
     isPrimitive: true
     uid: Int
 metadata:

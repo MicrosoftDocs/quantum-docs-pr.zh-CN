@@ -7,7 +7,7 @@ summary: >-
   应用由数值状态数组控制的操作的数组。
 
 
-  也就是说，应用 $U $ 的乘法控制的单一操作，该操作在通过 $n $-qubit number state $ \ket{j} $ 控制时应用单一的 $V _j $。
+  也就是说，应用 $U $ 的乘法控制的单一操作，该操作在通过 $n $-qubit number state $ \ket{j} $ 控制时应用单一 $V _j $。
 
 
   $U = \sum ^ {2 ^ n-1} _ {j = 0} \ket{j}\bra{j}\otimes V_j $。
@@ -36,7 +36,7 @@ input:
     summary: $n 以小字节序格式编码数字状态 $ \ket{j} $ 的 qubit 控制寄存器。
     uid: microsoft.quantum.arithmetic.littleendian
   - name: target
-    summary: $V _j $ 操作的泛型 qubit 寄存器。
+    summary: 泛型 qubit 注册 $V _j $ 作用于。
     uid: "'T"
     isLocal: true
 output:

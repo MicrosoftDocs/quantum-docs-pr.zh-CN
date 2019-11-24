@@ -4,7 +4,7 @@ name: MultiplexerBruteForceFromGenerator
 type: function
 namespace: Microsoft.Quantum.Canon
 summary: >-
-  返回一个按 _j $ 的乘法控制的单一操作，该 $U 操作将应用单一 $V qubit 号状态 $ \ket{j} $ 时应用单一的。
+  返回 $U $ 的乘法控制的单一操作，该操作将应用单一 $V _j $，由 n qubit number state $ \ket{j} $ 控制。
 
 
   $U = \sum ^ {2 ^ n-1} _ {j = 0} \ket{j}\bra{j}\otimes V_j $。

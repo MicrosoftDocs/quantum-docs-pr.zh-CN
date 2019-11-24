@@ -8,7 +8,7 @@ remarks: >-
   此代码在以下文章中找到：
 
 
-  - A. Steane，"多粒子干扰和量程错误纠正"，过程。 Roy. Lond。 A452 （1996） pp 2551;https://arxiv.org/abs/quant-ph/9601029。
+  - 答： Steane，"多粒子干扰和量程错误纠正"，过程。 Roy. Lond。 A452 （1996） pp 2551;https://arxiv.org/abs/quant-ph/9601029。
 syntax: 'function SteaneCode () : Microsoft.Quantum.ErrorCorrection.CSS'
 input:
   content: ()

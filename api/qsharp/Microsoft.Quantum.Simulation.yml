@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.simulation
 name: Microsoft.Quantum.Simulation
-summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于模拟量子系统的动态的一致的函数和操作。"
+summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含用于模拟量子系统的动态的一致的函数和操作。"
 functions:
 - uid: microsoft.quantum.simulation.addgeneratorsystems
   summary: 添加了两个用于创建新 `GeneratorSystem`的 `GeneratorSystem`。
@@ -10,13 +10,13 @@ functions:
     将感兴趣的运算符编码为 `BlockEncoding`。
 
 
-    这将构造一个 `BlockEncoding` 单一 $U = P\cdot V\cdot P ^ \dagger $，对某个运算符进行编码，$H = \sum_{j} | \alpha_j |U_j，这是 unitaries 的线性组合。 通常，$P $ 是一种状态准备，因此 $P \ket{0}\_a = \ sum_j\sqrt {\ alpha_j/\|\vec\alpha\|\_2} \ket{j}\_$，$V = \sum_{j}\ket{j}\bra{j}\_a\otimes U_j $。
+    这将构造一个 `BlockEncoding` 单一 $U = P\cdot V\cdot P ^ \dagger $，对某个运算符进行编码，$H = \ sum_ {j} | \ alpha_j |U_j 是 unitaries 的线性组合。 通常情况下，$P $ 是一种状态准备： $P \ket{0}\_a = \ sum_j \sqrt{\ alpha_j/\|\vec\alpha\|\_2} \ket{j}\_$，$V = \ sum_ {j} \ket{j}\bra{j}\_a\otimes U_j $。
 - uid: microsoft.quantum.simulation.blockencodingreflectionbylcu
   summary: >-
     将感兴趣的运算符编码为 `BlockEncodingReflection`。
 
 
-    这将构造一个 `BlockEncodingReflection` 单一 $U = P\cdot V\cdot P ^ \dagger $，对某个运算符进行编码，$H = \sum_{j} | \alpha_j |U_j，这是 unitaries 的线性组合。 通常情况下，$P $ 是一种状态准备，$P \ket{0}\_a\sum_j\sqrt {\ alpha_j/\|\vec\alpha\|\_2} \ket{j}\_$，$V = \sum_{j}\ket{j}\bra{j}\_a\otimes U_j $。
+    这将构造一个 `BlockEncodingReflection` 单一 $U = P\cdot V\cdot P ^ \dagger $，对某个运算符进行编码，$H = \ sum_ {j} | \ alpha_j |U_j 是 unitaries 的线性组合。 通常情况下，$P $ 是一种状态准备，$P \ket{0}\_\ sum_j \sqrt{\ alpha_j/\|\vec\alpha\|\_2} \ket{j}\_$，$V = \ sum_ {j} \ket{j}\bra{j}\_a\otimes U_j $。
 - uid: microsoft.quantum.simulation.blockencodingtoreflection
   summary: >-
     将 `BlockEncoding` 转换为等效 `BLockEncodingReflection`。
@@ -52,7 +52,7 @@ functions:
     为 Hamiltonian 创建块编码单一编码。
 
 
-    Hamiltonian $H = \sum_{j}\alpha_j P_j $ 由 Pauli 术语 $P _j $，其中每个项都带有实系数 $ \alpha_j $ 描述。
+    Hamiltonian $H = \ sum_ {j} \ alpha_j P_j $ 由 $P $ _j $ 的 Pauli 术语的总和进行描述，每个术语都包含实系数 $ \ alpha_j $。
 - uid: microsoft.quantum.simulation.paulicoefficientfromgenidx
   summary: 提取 `GeneratorIndex`描述的 Pauli 术语的系数。
 - uid: microsoft.quantum.simulation.paulievolutionfunction
@@ -91,7 +91,7 @@ newtypes:
     也就是说，`BlockEncoding` 是一个单一的 $U $，其中对系统注册 `s` 使用的任意运算符 $H，在与辅助状态 $ \ket{0}_a $ 对应的左上块中进行编码。 那是
 
 
-    $ $ \begin{align} （\bra{0}_a \ otimes I_s） U （\ket{0}_a \ otimes I_s） = H \end{align} $ $。
+    $ $ \begin{align} （\bra{0}_a \otimes I_s） U （\ket{0}_a \otimes I_s） = H \end{align} $ $。
 - uid: microsoft.quantum.simulation.blockencodingreflection
   summary: 表示也是反射的 `BlockEncoding`。
 - uid: microsoft.quantum.simulation.evolutiongenerator
@@ -143,10 +143,10 @@ newtypes:
     表示由时钟寄存器控制的 `BlockEncoding`。
 
 
-    也就是说，`TimeDependentBlockEncoding` 是 `d` 时钟寄存器中的状态 $ \ket{k}_d $ 控制的单一 $U $，因此，在系统注册 `s` 上操作的任意 $H _k $ 将在与辅助状态 $ \ket 相对应的左上块中进行编码{0}_a $。 那是
+    也就是说，`TimeDependentBlockEncoding` 是 _d 时钟 `d` 寄存器中的状态 $ \ket{k} $ 控制的单一 $U $，这样，在系统注册 $H 上操作的任意 _k $ 就会在与辅助状态 $ \ket `s`{0}$ 相对应的左上块中进行编码。 那是
 
 
-    $ $ \begin{align} （\bra{0}\_a\otimes I_ {ds}） U （\ket{0}\_a\otimes I_ {ds}） = \sum_{k}\ket{k}\bra{k}\_d\otimes H_k。
+    $ $ \begin{align} （\bra{0}\_a\otimes I_ {ds}） U （\ket{0}\_a\otimes I_ {ds}） = \ sum_ {k} \ket{k}\bra{k}\_d\otimes H_k。
 
     \end{align} $ $。
 - uid: microsoft.quantum.simulation.timedependentgeneratorsystem

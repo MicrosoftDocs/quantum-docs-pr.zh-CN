@@ -7,7 +7,7 @@ summary: >-
   将 Pauli $Y $ 入口。
 
 
-  \begin{align} \sigma_y \mathrel{： =} \begin{bmatrix} 0 &-i \\\\ & 0 \end{bmatrix}。
+  \begin{align} \ sigma_y \mathrel{： =} \begin{bmatrix} 0 &-i \\& \\ 0 \end{bmatrix}。
 
   \end{align}
 syntax: 'operation Y (qubit : Qubit) : Unit'

@@ -7,7 +7,7 @@ summary: >-
   成对 entangles 两个 qubit 寄存器。
 
 
-  也就是说，给定两个寄存器，在各自寄存器上的每对 \left 之间准备最大化放大 state $ \frac{1}{\sqrt{2}} \ket （\ket{00} + \right{11} qubits） $，假定每个注册都在 $ \ket{0\ 中开始。cdots 0} $ 状态。
+  也就是说，给定两个寄存器，在各自寄存器上的每对 \left 之间准备最大化放大 state $ \frac{1}{\sqrt{2}} \ket （\ket{00} + \right{11} qubits） $，假设每个注册都以 $ \ket{0\cdots 0} $ 状态启动。
 syntax: 'operation PrepareEntangledState (left : Qubit[], right : Qubit[]) : Unit'
 input:
   content: '(left : Qubit[], right : Qubit[])'
