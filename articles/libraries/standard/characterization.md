@@ -6,12 +6,12 @@ uid: microsoft.quantum.libraries.characterization
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: d77085aa8aa83c18858056bab1858d990efdb36e
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 1eb48da9d4ae2a730019e2707dcb2c69b998491e
+ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73185556"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74864366"
 ---
 # <a name="quantum-characterization-and-statistics"></a>量程特性和统计信息 #
 
@@ -30,7 +30,7 @@ ms.locfileid: "73185556"
 ## <a name="iterative-phase-estimation"></a>迭代阶段估算 ##
 
 根据量程特征来查看量程编程，这一建议可替代量程阶段估算。
-也就是说，我们可以查看阶段估算，而不是准备 $n $-qubit register *，使其*包含阶段的二进制表示形式（如在量程阶段估算中）。度量.
+也就是说，我们可以查看阶段估算，而不是准备 $n $-qubit register *，使其*包含阶段的二进制表示形式（如在量程阶段估算中）。
 在量程情况下，我们将使用相位 kickback 将黑色方框操作的应用程序转变为一个未知角度来旋转，但会测量 ancilla qubit，这是我们在每一步之后的每个步骤。
 这样做的优点是，我们只需要一个额外的 qubit 来执行量程情况下所述的阶段 kickback，因为我们然后以迭代方式从每个步骤的测量结果中学习阶段。  
 以下建议的每个方法都使用不同的策略来设计试验，并使用不同的数据处理方法来了解这一阶段。  它们各自具有独特的优势，包括严格的错误界限、合并先前信息的能力、容忍错误或在内存 limitted 传统计算机上运行。
@@ -39,7 +39,7 @@ ms.locfileid: "73185556"
 如 "[数据结构](xref:microsoft.quantum.libraries.data-structures)中的 oracles" 一节中所述，Q # canon 按 <xref:microsoft.quantum.oracles.discreteoracle> 用户定义类型对 `((Int, Qubit[]) => Unit : Adjoint, Controlled)`的元组类型定义的操作进行建模。
 具体而言，如果 `U : DiscreteOracle`，则 `U(m)` 实现 `m : Int`$U ^ m $。
 
-通过这种定义，每个迭代阶段估计步骤会在 $ \ket{+} $ 状态中准备一个辅助 qubit，并将其假定为 $U （m） $ $U （m） $，即（m） \ket{\phi} = e ^ {im\phi [} 的初始](xref:microsoft.quantum.concepts.matrix-advanced)状态 $ \ket{\phi} $，\ket{\phi} $。  
+使用此定义时，每个迭代阶段估计步骤会在 $ \ket{+} $ 状态中准备一个辅助 qubit，并将其假定为 $U [eigenvector](xref:microsoft.quantum.concepts.matrix-advanced) （m） $，即 $U （m） \ket{\phi} = e ^ {im\phi} \ 票证 {\ phi} $。  
 然后，将使用 `U(m)` 的受控应用程序来准备状态 $ \left （R\_1 （m \phi） \ket{+} \right） \ket{\phi} $。
 正如在量程情况下，受影响的 oracle `U(m)` 的受控应用程序的影响与在 $ \ket{+} $ 上将 $R _1 $ 应用于未知阶段的效果完全相同，因此我们可以更简单的方式描述 $U $ 的影响。
 然后，该算法通过应用 $R _1 （-m\theta） $ 以获取状态 $ \ket{\psi} = \left （R\_1 （m [\phi-\theta]） \ket{+} \right） \ket{\phi} $ $ 来旋转控件 qubit。
@@ -47,17 +47,17 @@ ms.locfileid: "73185556"
 
 此时，从通过迭代阶段估算获取的 `Result` 值重建阶段是一种传统的统计推理问题。
 如果查找 $m $ 这一值可最大化获取的信息，则在给定固定推理方法的情况下，只是统计信息中的一个问题。
-我们强调这一点，只需要在 Bayesian 参数估算形式中简要介绍理论级别的迭代阶段估算，然后再继续介绍 Q # canon 中提供的用于解决这一传统推理的统计算法解决.
+我们将在 Bayesian 参数估算形式中简要介绍理论级别的迭代阶段估算，然后再继续介绍 Q # canon 中提供的用于解决这一传统推理问题的统计算法。
 
 ### <a name="iterative-phase-estimation-without-eigenstates"></a>不 Eigenstates 的迭代阶段估算 ###
 
 如果提供的是不是 eigenstate 的输入状态，这意味着如果 $U （m） \ket{\phi\_j} = e ^ {im\phi\_j} $，则阶段估算的进程将不确定地将量程状态引导到单个能源 eigenstate。  它最终聚合为的 eigenstate 是最有可能产生观察 `Result`的 eigenstate。
 
-具体而言，PE 的单个步骤会在状态 \begin{align} \sum_j \sqrt{\Pr （\phi\_j）} \ket{\phi\_j} \mapsto \sum\_j\frac {\ sqrt {\ Pr （\phi\_j）} \sqrt{\Pr （\text{Result} | \phi\_j）} \ket{\phi\_j}} {\sqrt{\Pr （\phi\_j） \sum\_j \Pr （\text{Result} | \phi\_j）}}。
-\end{align}，因为此过程是通过多个 `Result` 值进行循环访问的，因此，不具有最大值 $ \prod_k\Pr （\text{Result}\_k | \phi\_j） $ 的 eigenstates 将以指数方式取消。
+具体而言，PE 的单个步骤会在状态 \begin{align} \ sum_j \sqrt{\Pr （\phi\_j）} \ket{\phi\_j} \mapsto \sum\_j\frac {\ sqrt {\ Pr 上执行以下非单一转换（\phi\_j）} \sqrt{\Pr （\text{Result} | \phi\_j）} \ket{\phi\_j}} {\sqrt{\Pr （\phi\_j） \sum\_j \Pr （\text{Result} | \phi\_j）}}。
+\end{align}，因为此过程是通过多个 `Result` 值进行迭代的，所以不具有最大值 $ \ prod_k \Pr （\text{Result}\_k | \phi\_j） $ 的 eigenstates 将被指数地抑制。
 这样一来，如果正确选择了试验，推理过程将成为一种 eigenvalue 的状态。
 
-Bayes ' 定理进一步建议以 \begin{align} \frac{\sqrt{\Pr （\phi\_j）} \sqrt{\Pr （\text{Result} | \phi\_j\_）} \ket{\phi （\sqrt{\Pr | \phi {\Sum （\_j）\_j \Pr （\text{Result} | \phi\_j）}} = \sum_j \sqrt{\Pr （\phi\_j | \text{Result}）} \ket{\phi\_j}。
+Bayes ' 定理进一步建议以 \begin{align} \frac{\sqrt{\Pr （\phi\_j）} \sqrt{\Pr （\text{Result} | \phi\_j）} \ket{\phi （\Sqrt{\Pr | \phi j）} \sum\_j}} {\Pr （\text{Result}\_j） \phi\_j \Sqrt{\Pr （\Phi | \text{Result}\_
 此处的 \end{align} $ \Pr （\phi\_j | \text{Result}） $ 可以解释为每个假设应 ascribe 给每个假设的概率：
 
 1. 计量之前的量程状态的知识，
@@ -71,7 +71,7 @@ Bayes ' 定理进一步建议以 \begin{align} \frac{\sqrt{\Pr （\phi\_j）} \s
 ### <a name="bayesian-phase-estimation"></a>Bayesian 阶段估算 ###
 
 > [!TIP]
-> 有关 Bayesian 阶段估算的详细信息，请参阅[**PhaseEstimation**](https://github.com/Microsoft/Quantum/tree/master/Samples/src/PhaseEstimation)示例。
+> 有关 Bayesian 阶段估算的详细信息，请参阅[**PhaseEstimation**](https://github.com/microsoft/Quantum/tree/master/samples/characterization/phase-estimation)示例。
 
 Bayesian 阶段估算的理念非常简单。
 从阶段估算协议收集度量值统计信息，然后使用 Bayesian 推理来处理结果，并提供参数的估计值。
@@ -82,15 +82,15 @@ Bayesian 阶段估算的理念非常简单。
 若要了解此 Bayesian 推理过程的工作原理，请考虑处理单个 `Zero` 结果的情况。
 请注意，$X = \ket{+} \bra{+}-\ket{-}\bra{-}$，这样，$ \ket{+} $ 就是对应于 `Zero`的 $X $ 的唯一肯定 eigenstate。
 在给定输入状态 $ \ket{\psi}\ket{\phi} $ 的情况 qubit，在第一个上 `Zero` 观察[`PauliX` 度量值](xref:microsoft.quantum.concepts.pauli)的概率，因此 \begin{equation} \Pr （\texttt{Zero} | \psi） = \left |\braket{+ | \psi} \right | ^ 2。
-\end{equation} 在迭代阶段估算的情况下，我们有 $ \ket{\psi} = R_1 （m [\phi-\theta]） \ket{+} $，这样 \begin{align} \Pr （\texttt{Zero} | \phi; m，\theta） & = \left |\braket{+ |R_1 （m [\phi-\theta]） |+} \right | ^ 2 \\\\ & = \left |\frac12 \left （\bra{0} + \bra{1} \right） \left （\ket{0} + e ^ {i m [\phi-\theta]} \ket{1} \right） \right | ^ 2 \\\\ & = \left |\frac{1 + e ^ {i m [\phi-\theta]}}{2} \right | ^ 2 \\\\ & = \cos ^ 2 （m [\phi-\theta]/2） \tag{★} \label{eq：。
+\end{equation} 在迭代阶段估算的情况下，我们已将 $ \ket{\psi} = R_1 （m [\phi-\theta]） \ket{+} $，以便 \begin{align} \Pr （\texttt{Zero} | \phi; m，\theta） & = \left |\braket{+ |R_1 （m [\phi-\theta]） |+} \right | ^ 2 \\\\ & = \left |\frac12 \left （\bra{0} + \bra{1} \right） \left （\ket{0} + e ^ {i m [\phi-\theta]} \ket{1} \right） \right | ^ 2 \\\\ & = \left |\frac{1 + e ^ {i m [\phi-\theta]}}{2} \right | ^ 2 \\\\ & = \cos ^ 2 （m [\phi-\theta]/2） \tag{★} \label{eq：。
 \end{align} 是迭代阶段估算，其中包含正弦函数的振荡频率，因为能够使用该 sinusoid 给定的偏移量来翻转硬币。
 按照传统的传统术语，我们调用了 $ \eqref{eq：时间-est-est} $*概率函数*以进行迭代阶段估算。
 
 在观察到迭代阶段估算可能性函数的 `Result` 后，就可以使用 Bayes 的规则来规定应该将该阶段确定为遵循该观察阶段。
-具体而言，\begin{equation} \Pr （\phi | d） = \frac{\Pr （d | \phi） \Pr （\phi）} {\int \Pr （d | \phi） \Pr （\phi） {\mathrm d} \phi} \Pr （\phi），\end{equation}，其中 $d \in \\{\texttt{Zero}，\texttt{One}\\} $ 为 `Result`，其中 $ \Pr （\phi） $介绍我们以前的信仰约 $ \phi $。
+具体而言，\begin{equation} \Pr （\phi | d） = \frac{\Pr （d | \phi） \Pr （\phi）} {\int \Pr （d | \phi） \Pr （\phi） {\mathrm d} \phi} \Pr （\phi），\end{equation}，其中 $d \in \\{\texttt{Zero}，\texttt{One}\\} $ 是 `Result`，其中 $ \Pr （\phi） $ 描述了之前的信仰 $ \phi $。
 然后，这会使迭代阶段的迭代本质明确明了，因为后验分布 $ \Pr （\phi | d） $ 介绍了我们的信仰，紧靠下一个 `Result`。
 
-在此过程中，我们可以在此过程中的任何时间点将古典控制器推导为 \begin{equation} \hat{\phi} \mathrel{： =} \expect [\phi | \text{data}] = \int \phi \Pr （\phi | \text{data}） {\mathrm d} \phi，\end{equation} （其中 $ \）的阶段 $ \hat{\phi}text {data} $ 代表获得的所有 `Result` 值的整个记录。
+在此过程中，我们可以在此过程中的任何时间点将古典控制器推导为 \begin{equation} \hat{\phi} \mathrel{： =} \expect [\phi | \text{data}] = \int \phi \Pr （\phi | \text{data}） {\mathrm d} \phi，\end{equation}，其中 $ \text{data} $ 代表获得的所有 `Result` 值的整个记录。
 
 确切的 Bayesian 推理在实践棘手中。
 为此，我们想要了解 $x $ $n $ 位变量。
@@ -104,12 +104,12 @@ Bayesian 阶段估算的理念非常简单。
 
 一个这样的示例（一个有效的传统后处理步骤）是[可靠的阶段估算算法](https://arxiv.org/abs/1502.02677)，其签名和输入如下所述。 它假定输入单一的黑框 $U $ 封装为 `DiscreteOracle` 类型，因此仅查询受控 $U $ 的整数幂。 如果 `Qubit[]` register 中的输入状态为 eigenstate $U \ket{\psi} = e ^ {i\phi} \ 票证 {\ psi} $，则可靠阶段估算算法会将 $ \hat{\phi}\in $ 的估算值返回为 `Double`。
 
-与大多数其他有用的变体共享的可靠阶段估算的最重要功能是，$ \hat{\phi} $ 的重建质量在某种意义上是海森堡的。 这意味着，如果从 true 值到 $ \sigma $，$ \hat{\phi} $ 的偏差为 $ \sigma $，则 $ $ 将按对受控-$U $ （即 $ \sigma = \mathcal{O} （1/Q） $ 进行的 $Q 查询总数成反比。 现在，偏差定义在不同的估计算法之间有所不同。 在某些情况下，这可能意味着至少有 $ \mathcal{O} （1） $ 概率，估计错误 $ | \hat{\phi}-\phi |\_\circ\le \sigma $ on a 循环度量 $ \circ $。 对于可靠的阶段估算，偏差精确到 $ \sigma ^ 2 = \mathbb{E}\_\hat{\phi} [（\mod\_{2 \ pi} （\hat{\phi}-\phi + \pi）-\pi） ^ 2] $ 如果将定期阶段解为单个有限间隔 $ （-\pi，\pi] $。 更准确地说，可靠阶段估算的标准偏差满足不相等 $ $ \begin{align} 2.0 \pi/Q \le \sigma \le 2 \ pi/2 ^ {n} \le 10.7 \ pi/Q，\end{align} $ $，其中的下限在 asymptotically 大 $Q $ 和上限即使是小型样本大小，也保证绑定。  请注意，$n 由 `bitsPrecision` 输入选择的 $，它隐式定义 $Q $。
+与大多数其他有用的变体共享的可靠阶段估算的最重要功能是，$ \hat{\phi} $ 的重建质量在某种意义上是海森堡的。 这意味着，如果从 true 值到 $ \sigma $，$ \hat{\phi} $ 的偏差为 $ \sigma $，则 $ $ 将按对受控-$U $ （即 $ \sigma = \mathcal{O} （1/Q） $ 进行的 $Q 查询总数成反比。 现在，偏差定义在不同的估计算法之间有所不同。 在某些情况下，这可能意味着至少有 $ \mathcal{O} （1） $ 概率，估计错误 $ | \hat{\phi}-\phi |\_\circ\le \sigma $ on a 循环度量 $ \circ $。 对于可靠的阶段估算，偏差精确到 $ \sigma ^ 2 = \mathbb{E}\_\hat{\phi} [（\mod\_{2 \ pi} （\hat{\phi}-\phi + \pi）-\pi） ^ 2] $ 如果将定期阶段解为单个有限间隔 $ （-\pi，\pi] $。 更准确地说，可靠阶段估算中的标准偏差满足不相等 $ $ \begin{align} 2.0 \pi/Q \le \sigma \le 2 \ pi/2 ^ {n} \le 10.7 \ pi/Q，\end{align} $ $，其中的下限达到了 asymptotically 大 $Q $ 的限制，并且即使是小型样本大小也可保证上限。  请注意，$n 由 `bitsPrecision` 输入选择的 $，它隐式定义 $Q $。
 
 其他相关的详细信息包括：仅 $1 $ ancilla qubit 的小空间开销，或该过程是非自适应，这意味着所需的量程试验顺序与中间测量结果无关。 在此示例中，如果选择阶段估算算法非常重要，其中一项应引用文档（如 @"microsoft.quantum.canon.robustphaseestimation"）和引用的发布，以获取详细信息及其实现。
 
 > [!TIP]
-> 在许多示例中，使用了可靠的阶段估算。 有关提取各个物理系统的地面状态能量的阶段估算，请参阅[ **H2 模拟**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/H2SimulationCmdLine)、 [ **SimpleIsing**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/SimpleIsing)和[ **Hubbard 模型**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/HubbardSimulation)。
+> 在许多示例中，使用了可靠的阶段估算。 有关提取各个物理系统的地面状态能量的阶段估算，请参阅[ **H2 模拟**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/h2/command-line)、 [ **SimpleIsing**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/simple)和[ **Hubbard 模型**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/hubbard)。
 
 
 ### <a name="continuous-oracles"></a>连续 Oracles ###
@@ -121,7 +121,7 @@ Bayesian 阶段估算的理念非常简单。
 Eigenstate $ \ket{\phi} $ of $H $，因此 $H \ket{\phi} = \phi \ket{\phi} $ 还 $U （t） $，适用于所有 $t $，eigenstate U （t） \begin{equation} = e ^ {i \ket{\phi} t} \phi
 \end{equation}
 
-可以应用对[Bayesian 阶段估算](#bayesian-phase-estimation)讨论的完全相同的分析，并且可能性函数对于此更常规的 oracle 模型是完全相同的： $ $ \Pr （\texttt{Zero} | \phi; t，\theta） = \cos ^ 2 \ 左（\frac{t [\phi-\theta]}{2}\right).
+可以应用对[Bayesian 阶段估算](#bayesian-phase-estimation)讨论的完全相同的分析，并且可能性函数对于此更常规的 oracle 模型是完全相同的： $ $ \Pr （\texttt{Zero} | \phi; t，\theta） = \cos ^ 2 \ 左（\frac{t [\phi-\theta]}{2}\right）。
 $ $ 而且，如果 $U $ 是 dynamical 生成器的模拟， [Hamiltonian 模拟](xref:microsoft.quantum.libraries.applications#hamiltonian-simulation)情况下，我们会将 $ \phi $ 解释为能源。
 因此，通过连续查询使用阶段估算，可以了解分子、[材料](https://arxiv.org/abs/1510.03859)或[现场理论](https://arxiv.org/abs/1111.3633v2)的模拟[能源](https://arxiv.org/abs/quant-ph/0604193)，无需通过要求将 $t $ 为整数来损害我们选择的实验。
 

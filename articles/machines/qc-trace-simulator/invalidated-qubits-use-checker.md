@@ -1,24 +1,24 @@
 ---
 title: Qubits use 检查器失效 |量程计算机跟踪模拟器 |Microsoft Docs
-description: 量程计算机跟踪模拟器概述
+description: 量子计算机跟踪模拟器的概述
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits
-ms.openlocfilehash: 7403381b995ab660aa5cbc5a52b1e12c5c9ce442
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 283cc7d7d88f731f40fa396c38ae5ea8dd90537f
+ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73184961"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74863174"
 ---
 # <a name="invalidated-qubits-use-checker"></a>Qubits Use 检查器失效
 
 `Invalidated Qubits Use Checker` 是量程计算机[TraceSimulator](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的一部分，旨在检测代码中的潜在 bug。 请考虑以下 Q # 代码部分，以说明 `Invalidated Qubits Use Checker`检测到的问题。
 
 ```qsharp
-operation UseReleasedQubitTest () : Unit {
+operation UseReleasedQubit () : Unit {
     mutable q = new Qubit[1];
     using (ans = Qubit()) {
         set q w/= 0 <- ans;

@@ -5,12 +5,12 @@ author: cgranade
 uid: microsoft.quantum.libraries.diagnostics
 ms.author: chgranad@microsoft.com
 ms.topic: article
-ms.openlocfilehash: b59f91b660281167eab182529b415b6d379e3d63
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: d5889b8d5a92801b0ada65f7a17c655c959fc57f
+ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2019
-ms.locfileid: "73184485"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74864332"
 ---
 # <a name="diagnostics"></a>诊断 #
 
@@ -42,7 +42,7 @@ Message($"About to rotate by an angle of {angle}...");
 
 ## <a name="facts-and-assertions"></a>事实和断言 ##
 
-如[测试和调试](xref:microsoft.quantum.techniques.testing-and-debugging)中所述，具有签名 `Unit -> Unit` 或 `Unit => Unit`的函数或操作分别可作为*单元测试*调用。
+如[测试和调试](xref:microsoft.quantum.techniques.testing-and-debugging)中所述，可以将签名 `Unit -> Unit` 或 `Unit => Unit`的函数或操作分别标记为*单元测试*。
 每个单元测试通常包含一个小型量程计划，以及一个或多个检查该程序的正确性的条件。
 这些条件可采用以下两种形式之一：检查输入的值或_断言_，这些_事实_检查作为输入传递的一个或多个 qubits 的状态。
 
@@ -109,7 +109,7 @@ using (register = Qubit()) {
 因此，需要指定三个断言，它们彼此独立，以便断言所需的状态。
 为此，我们需要查找每个 Pauli 度量值（给定 $ \alpha $ 和 $ \beta $）的观察 `Zero` 的概率，并分别对每个度量值进行断言。
 让 $x $、$y $ 和 $z $ 分别 `Result` 值 $X $、$Y $ 和 $Z $ 度量值。
-然后，对量子度量使用可能性函数 \begin{align} \Pr （x = \texttt{Zero} | \alpha，\beta） & = \frac12 + a\_r b\_r + a\_i b\_\\\\ \Pr （y = \texttt{Zero} | \alpha，\beta） & = \frac12 + a\_r b\_\_\Pr i b\_r \\\\ （z = \texttt{Zero} | \alpha，\beta） & = \frac12\left （1 + a\_r ^ 2 + a\_i ^ 2 + b\_r ^ 2 + b\_i ^ 2 \right）。
+然后，对量程度量值使用可能性函数 \begin{align} \Pr （x = \texttt{Zero} | \alpha，\beta） & = \frac12 + a\_r b\_r + a\_i b\_\\\\ \Pr （y = \texttt{Zero} | \alpha，\beta） & = \frac12 + a\_r b\_\Pr i b\_r \\\\ （z = \texttt{Zero} | \alpha，\beta） & = \frac12\left （1 + a\_r ^ 2 + a\_i ^ 2 + b\_r ^ 2 + b\_\_i ^ 2 \right）。
 \end{align}
 
 <xref:microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance> 操作以 <xref:microsoft.quantum.math.complex>类型的值的形式实现了 $ \alpha $ 和 $ \beta $ 表示形式的这些断言。
@@ -129,7 +129,7 @@ using (register = Qubit()) {
 
 > [!NOTE]
 > 上面所述的引用断言基于[Choi – Jamiłkowski isomorphism](https://en.wikipedia.org/wiki/Channel-state_duality)，这是一个数学框架，该框架将 $n $ qubits 上的操作与 $ 2n $ 放大上的 qubits 状态关联起来。
-> 具体而言，$n $ qubits 上的标识操作由放大状态 $ \ket{\beta_{00}} \mathrel{： =} （\ket{00} + \ket{11}）/\sqrt{2}$ $n $ 副本表示。
+> 具体而言，$n $ qubits 上的标识操作由放大状态 $ \ket{\ beta_{00}} \mathrel{： =} （\ket{00} + \ket{11}）/\sqrt{2}$ $n $ 个副本表示。
 > 操作 <xref:microsoft.quantum.preparation.preparechoistate> 实现此 isomorphism，准备表示给定操作的状态。
 
 大致而言，这些策略可通过时间空间平衡来区分。

@@ -5,18 +5,17 @@ author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 4677b0f9c4f64a9c1bc46d34e8a883dc006ba8f0
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: c079364f8808304e0132fa2a4226cd6400e81339
+ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183295"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74863140"
 ---
-# <a name="going-further"></a>进一步 #
+# <a name="going-further"></a>深入探索 #
 
 现在，你已了解如何在 Q # 中编写有趣的量程程序，本部分将进一步介绍一些更高级的主题，这些主题将有助于今后使用。
 
-<!-- Moved Debugging and Testing Quantum Programs section to a separate article -->
 
 ## <a name="generic-operations-and-functions"></a>泛型操作和函数 ##
 
@@ -24,7 +23,7 @@ ms.locfileid: "73183295"
 > 本节假定一些基本熟悉[中C#的泛型](https://docs.microsoft.com/dotnet/csharp/programming-guide/generics/introduction-to-generics)、[泛型中F#](https://docs.microsoft.com/dotnet/fsharp/language-reference/generics/)的泛型、 [ C++模板](https://docs.microsoft.com/cpp/cpp/templates-cpp)或类似的方法，以用于其他语言的元编程。
 
 我们可能想要定义的许多函数和操作实际上不依赖于其输入类型，而只是通过其他函数或操作隐式使用其类型。
-例如，请考虑许多功能语言共有的*地图*概念;给定一个函数 $f （x） $，值为 $\{的集合 $ x_1，x_2，\dots ..，x_n\}$，map 返回一个新的集合 $\{f （x_1）、f （x_2）、\dots ..、f （x_n）\}$。
+例如，请考虑许多功能语言共有的*地图*概念;给定函数 $f （x） $ 和值为 $\{的集合 $ x_1，x_2，\dots ..，x_n\}$，map 返回一个新的集合 $\{f （x_1）、f （x_2）、\dots ..、f （x_n）\}$。
 若要在 Q # 中实现此功能，我们可以利用该函数作为第一类。
 接下来，编写 `Map`的快捷示例，使用★作为占位符，同时找出所需的类型。
 
@@ -119,7 +118,7 @@ function Compose(outerFn : (B -> C), innerFn : (A -> B)) : (A -> C) {
 
 在此，我们必须准确指定 `A`、`B`和 `C` 的内容，因此会严重限制新 `Compose` 函数的实用工具。
 毕竟，`Compose` 仅依赖于*通过*`innerFn` 和 `outerFn``A`、`B`和 `C`。
-作为替代方法，我们可以将类型参数添加到 `Compose`，这表示它适用于*任何*`A`、`B`和 `C`，前提是这些参数与 `innerFn` 和 `outerFn`所需的参数匹配。:
+作为替代方法，我们可以将类型参数添加到 `Compose`，这表示它适用于*任何*`A`、`B`和 `C`，前提是这些参数与 `innerFn` 和 `outerFn`所需的参数匹配：
 
 ```qsharp
 function ComposeImpl<'A, 'B, 'C>(outerFn : ('B -> 'C), innerFn : ('A -> 'B), input : 'A) : 'C {
@@ -178,6 +177,6 @@ is Adj + Ctl {
 }
 ```
 
-请注意，在此示例中，广泛使用 `With` 连结符---的形式，适用于支持 adjoint 的操作，即，`WithA`---在此示例中进行，这是一个很好的编程风格，它是将控件添加到仅涉及 `With`将控制传播到内部操作。 另外请注意，除了操作 `body` 外，还显式提供操作的 `controlled` 体实现，而不是采用 `controlled auto` 语句。 这样做的原因是，我们从线路的结构中知道如何轻松添加更多的控件，这与将控件添加到 `body`中的每个门和每个单独的门相比，更有利。 
+请注意，广泛使用 `With` 连结符---其形式适用于支持 adjoint 的操作，即，`WithA`---在此示例中，这是一种很好的编程风格，这是将控件添加到包含 `With` 仅将控制传播到内部操作的结构。 另外请注意，除了操作 `body` 外，还显式提供操作的 `controlled` 体实现，而不是采用 `controlled auto` 语句。 这样做的原因是，我们从线路的结构中知道如何轻松添加更多的控件，这与将控件添加到 `body`中的每个门和每个单独的门相比，更有利。 
 
 将此代码与其他 canon 函数进行比较是有益的 `MultiControlledXClean` 该函数实现了执行乘法控制的 `X` 操作的相同目标，然而，这种方法使用了 `using` 机制。 

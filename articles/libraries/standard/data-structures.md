@@ -6,12 +6,12 @@ uid: microsoft.quantum.libraries.data-structures
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: e8b28561f1aba37cb5bf41c6176386d19bfacf06
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 6eb47de84fdfbb9d35fdfc2988883f8e1cffa332
+ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2019
-ms.locfileid: "73184502"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74864349"
 ---
 # <a name="data-structures-and-modeling"></a>数据结构和建模 #
 
@@ -20,9 +20,9 @@ ms.locfileid: "73184502"
 除了用于表示量程概念的用户定义类型外，canon 还提供了操作、函数和类型，以便使用在量程系统控制中使用的传统数据。
 例如，<xref:microsoft.quantum.arrays.reversed> 函数使用数组作为输入，并以相反顺序返回相同的数组。
 然后，可在类型为 `Qubit[]` 的数组中使用，以避免在整数的量程表示形式之间进行转换时必须应用不必要的 $ \operatorname{SWAP} $ 门。
-同样，我们在上一节中看到，窗体 `(Int, Int -> T)` 的类型可用于表示随机访问集合，因此 <xref:microsoft.quantum.arrays.lookupfunction> 函数提供了一种从数组类型构造此类类型的 convienent 方式。
+同样，我们在上一节中看到，窗体 `(Int, Int -> T)` 的类型可用于表示随机访问集合，因此 <xref:microsoft.quantum.arrays.lookupfunction> 函数提供了一种从数组类型中构造此类类型的便利方法。
 
-### <a name="pairs"></a>翻译 ###
+### <a name="pairs"></a>对 ###
 
 Canon 支持对的函数样式表示法，由析构访问元组的补充：
 
@@ -73,11 +73,11 @@ ApplyToEach(
 通常，可以将此子例程视为接受 oracle 的量程算法的输入，以及其他一些参数，并应用一系列的量程操作，并将对此量程子例程的调用视为一个基本入口。
 很明显，若要实际实现更大的算法，必须提供 oracle 到基本入口的具体分解，但这种情况下无需进行此类分解即可了解调用 oracle 的算法。
 在 Q # 中，此抽象通过使用该操作是第一类值来表示的，因此，可以将操作以黑白方式传递到量程算法的实现中。
-此外，用户定义类型用于以类型安全的方式标记不同的 oracle 表示形式，这使得很难意外人们常常会不同种类的黑框操作。
+此外，用户定义的类型用于以类型安全的方式标记不同的 oracle 表示形式，这使得难以偶然人们常常会不同种类的黑框操作。
 
 此类 oracles 显示在多个不同的上下文中，其中包括[Grover 的搜索](https://en.wikipedia.org/wiki/Grover%27s_algorithm)和量程模拟算法等著名示例。
 这里，我们将重点介绍两个应用程序所需的 oracles：振幅放大和相位估算。
-在研究到阶段估算之前，我们将首先讨论幅度放大 oracles。
+首先，我们将讨论振幅放大 oracles，然后再继续进行阶段估算。
 
 ### <a name="amplitude-amplification-oracles"></a>振幅放大 Oracles ###
 
@@ -145,20 +145,20 @@ is Adj + Ctl {
 }
 ```
 
-接下来，我们可以将这两个 oracles 组合在一起，以在两个状态之间旋转{0}，并使用与 $ Hadamard ^ n} $ （ie $m \sqrt{2 ^ n} $）成比例的多层 \Propto与大约 $ 2 ^ n $ 层相比，在观察到结果 $0 $ 之前，需要通过准备和测量初始状态，以不明确的方式准备 $ \ket{0}$ 状态。
+接下来，我们可以将这两个 oracles 组合在一起，以在两个状态之间旋转，并使用多个与 $ Hadamard ^ n 关联的 \Sqrt{2 入口层来确定将 $ \ket{+} ^ {\otimes n} $ 转换为 $ \ket{0}$ （ie $m \propto \sqrt{2 ^ n} $）与大约 $ 2 ^ n $ 层之间的对比，这是因为在观察到结果 $0 $ 之前，通过准备和测量初始状态而不确定地准备 $ \ket{0}$ 状态所需要的。
 
 ### <a name="phase-estimation-oracles"></a>阶段估算 Oracles ###
 
 对于阶段估算，oracles 有些自然。
 阶段估算中的目标是设计一个子例程，该子例程能够从单一矩阵的本征值进行抽样。
-此方法在量程模拟中是或缺的，因为对于化学和材料科学中的许多物理问题，这些本征值提供了针对分子的材料和反应 dynamics。
+这种方法在量程模拟中是不可或缺的，因为化学和材料科学中存在许多物理问题。本征值为凝聚系统提供了分子的材料和反应 dynamics。
 每个阶段估计风格都需要一个输入。
 这种单一方法通常由两种类型的 oracles 之一来描述。
 
 > [!TIP]
 > 示例中介绍了以下两种 oracle 类型。
-> 若要了解有关连续查询 oracles 的详细信息，请参阅[ **PhaseEstimation**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/PhaseEstimation)。
-> 若要了解有关离散查询 oracles 的详细信息，请参阅[ **IsingPhaseEstimation**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/IsingPhaseEstimation)。
+> 若要了解有关连续查询 oracles 的详细信息，请参阅[ **PhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/master/samples/characterization/phase-estimation)。
+> 若要了解有关离散查询 oracles 的详细信息，请参阅[ **IsingPhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/phase-estimation)。
 
 第一种类型的 oracle 是在 oracle 中调用离散查询，并使用用户定义类型 <xref:microsoft.quantum.oracles.discreteoracle>来表示，只涉及一个单一矩阵。
 如果 $U $ 是要估计其本征值的单一项，则 $U $ 的 oracle 只是实现 $U $ 的子程序的一个独立。
@@ -166,8 +166,8 @@ is Adj + Ctl {
 此矩阵的本征值可用于估算初始状态与目标状态之间的重叠，$ \sin ^ 2 （\theta） $，使用的样本越少，将需要其他值。
 这盈利将使用 Grover oracle $Q $ 作为输入的应用程序阶段估算作为输入的名字对象。
 量程 metrology 中广泛使用的另一个常见应用程序涉及到估计一个小旋转角度。
-换句话说，我们想要为 $R _z （\theta） $ 形式的未知旋转入口估计 $ \theta $。
-在这种情况下，我们要与之交互的子例程是： $ $ \begin{align} U & = R_z （\theta） \\\\ & = \begin{bmatrix} e ^ {-i \theta/2} & 0 \\\\ 0 & e ^ {i \theta/2} \end{bmatrix}。
+换而言之，我们想要估算 $R _z （\theta） $ 形式未知旋转入口的 $ \theta $。
+在这种情况下，我们要与之交互的子例程是： $ $ \begin{align} U & = R_z （\theta） \\\\ & = \begin{bmatrix} e ^ {-i \theta/2} & 0 \\\\ 0 & e ^ {i \ theta/2} \end{bmatrix}。
 \end{align} $ $
 
 阶段估算中使用的第二种类型的 oracle 是持续查询 oracle，由 <xref:microsoft.quantum.oracles.continuousoracle> 类型表示。
@@ -185,8 +185,8 @@ $U （t） $ 的本征值直接与 $H $ 的本征值相关。
 这一点非常重要，因为它使我们能够精确地选择可提供有关 $E $ 的最多信息的试验：而基于离散查询的方法必须在算法中选择最大的整数查询来使其成为损害。
 
 作为此问题的具体示例，请考虑估计不是门的旋转角度但旋转后的量程系统的 procession 频率的问题。
-对于演化时间 $t $ 和 unknown frequency $ \omega $，描述此类量程动态的单一 $U （t） = R_z （2 \ omega t） $。
-在这种情况下，我们可以使用单个 $R _z $ 入口来模拟任何 $t $ 的 $U （t） $，因此不需要将自己限制为仅对单一的单独查询。
+描述此类量程动态的单一 $U （t） = R_z （2 \ omega t） $ for 演化时间 $t $ 和 unknown frequency $ \omega $。
+在这种情况下，我们可以使用单个 $R _z $ 入口来模拟任何 $t $ $U （t） $，因此不需要将自己限制为仅对单一的单独查询。
 此类连续模型还具有属性，该属性的频率大于 $ 2 \ pi $，可以从使用连续查询的阶段估算流程中获知，因为在显示在 $t $ 的非相当值上执行试验的结果。
 因此，对于这样的问题，例如，针对阶段估计 oracle 的连续查询模型不仅合适，而且还优于离散查询模型。
 出于此原因，Q # 功能适用于这两种形式的查询，并将其留给用户，以决定满足其需求的阶段估算算法，以及可用的 oracle 类型。
@@ -199,17 +199,17 @@ Dynamical 模拟的主要目标是对在量程计算机的 qubits 中编码的�
 
 $ $ \begin{align} H & = \sum ^ {d-1} _ {j = 0} H_j，\end{align} $ $
 
-在量程计算机上，每个术语单独进行的时间演化非常容易实现。 例如，如果 $H _j $ 是一个 Pauli $X _1X_2 $ 运算符，该运算符作用于 qubit 寄存器 `qubits`的第一个和第二个元素，则在任何时间 $t $ 可以通过调用 `Exp([PauliX,PauliX], t, qubits[1..2])`的操作 `((Pauli[], Double, Qubit[]) => Unit is Adj + Ctl)`来实现，只需调用具有签名的操作即可。 如稍后在 Hamiltonian 模拟中所述，一个解决方案是通过使用一系列简单的操作 $H $ 来估算时间演变。
+在量程计算机上，每个术语单独进行的时间演化非常容易实现。 例如，如果 $H _j $ 是一个 Pauli $X _1X_2 $ operator，该运算符作用于 qubit 寄存器 `qubits`的第1个和第二个元素，则在任何时候都可以通过调用操作 $t 来实现 `Exp([PauliX,PauliX], t, qubits[1..2])`$ 的时间 如稍后在 Hamiltonian 模拟中所述，一个解决方案是通过使用一系列简单的操作 $H $ 来估算时间演变。
 
-$ $ \begin{align} U （t） & = \left （e ^ {-iH\_0 t/r} e ^ {-iH\_1 t/r} \cdots e ^ {-iH\_{d} + \Right （d ^ 2 \mathcal{O} \\|H\_j\\| ^ 2 t ^ 2/r），\end{align} $ $
+$ $ \begin{align} U （t） & = \left （e ^ {-iH\_0 t/r} e ^ {-iH\_1 t/r} \cdots e ^ {-iH\_{d} + \Right （d ^ 2 \ max_j \\|H\_j\\| ^ 2 t ^ 2/r），\end{align} $ $
 
 其中整数 $r > $0 控制近似值错误。
 
 Dynamical 生成器建模库提供了一个框架，用于在更简单的生成器方面系统地编码复杂的生成器。 然后，可以通过所选的模拟算法将此类描述传递给模拟库，以实现由所选模拟算法进行的时间演化，并自动处理许多详细信息。
 
 > [!TIP]
-> 示例中介绍了下面描述的 dynamical 生成器库。 有关基于 Ising 模型的示例，请参阅[ **IsingGenerators**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/IsingGenerators)。
-> 有关基于分子 Hydrogen 的示例，请参阅[**H2SimulationCmdLine**](https://github.com/Microsoft/Quantum/tree/master/Samples/src/H2SimulationCmdLine)和[**H2SimulationGUI**](https://github.com/Microsoft/Quantum/tree/master/Samples/src/H2SimulationGUI)示例。
+> 示例中介绍了下面描述的 dynamical 生成器库。 有关基于 Ising 模型的示例，请参阅[ **IsingGenerators**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/generators)。
+> 有关基于分子 Hydrogen 的示例，请参阅[**H2SimulationCmdLine**](https://github.com/microsoft/Quantum/tree/master/samples/simulation/h2/command-line)和[**H2SimulationGUI**](https://github.com/microsoft/Quantum/tree/master/samples/simulation/h2/gui)示例。
 
 ### <a name="complete-description-of-a-generator"></a>生成器的完整说明 ###
 
@@ -225,7 +225,7 @@ newtype EvolutionGenerator = (EvolutionSet, GeneratorSystem);
 newtype GeneratorSystem = (Int, (Int -> GeneratorIndex));
 ```
 
-元组的第一个元素 `Int` 在 Hamiltonian 中存储 $d $ 的字词数量，第二个元素 `(Int -> GeneratorIndex)` 是一个函数，该函数将 $\{0 中的整数索引映射到，1,...,\}$ 到唯一标识每个Hamiltonian 中的基元术语。 请注意，通过将 Hamiltonian 中的字词集合表示为函数而不是数组 `GeneratorIndex[]`，这可以实现 `GeneratorIndex` 的实时计算，这在描述包含大量字词的 Hamiltonians 时特别有用。
+元组的第一个元素 `Int` 在 Hamiltonian 中存储 $d $ 的字词数量，第二个元素 `(Int -> GeneratorIndex)` 是一个函数，该函数将 $\{0 中的整数索引映射到,..., $\}$ 到 `GeneratorIndex` 用户定义类型（该类型在 Hamiltonian 中唯一标识每个基元术语）。 请注意，通过将 Hamiltonian 中的字词集合表示为函数而不是数组 `GeneratorIndex[]`，这可以实现 `GeneratorIndex` 的实时计算，这在描述包含大量字词的 Hamiltonians 时特别有用。
 
 至关重要，我们不会对由 `GeneratorIndex` 标识的基元术语进行简单模拟的约定。 例如，基元术语可能是 Pauli 运算符，如前文所述，但也可以是 Fermionic annihilation 和创建运算符，通常用于量程化学模拟。 它本身就没有任何意义 `GeneratorIndex`，因为它不会描述它所指向的字词的时间演变如何作为一个量子线路来实现。
 
@@ -244,7 +244,7 @@ $ $ \begin{align} H & = \sum ^ {d-1} _ {j = 0} a_j H_j，\end{align} $ $，其�
 newtype GeneratorIndex = ((Int[], Double[]), Int[]);
 ```
 
-在编码中，第一个参数 `Int[]` 指定一个 Pauli 字符串，其中 $ \hat I\rightarrow $0，$ \hat X\rightarrow $1，$ \hat Y\rightarrow $2，$ \hat Z\rightarrow $3。 第二个参数 `Double[]` 将 Pauli 字符串的系数存储在 Hamiltonian 中。 请注意，只使用此数组的第一个元素。 第三个参数 `Int[]` 为此 Pauli 字符串操作的 qubits 编制索引，并且必须没有重复元素。 因此，Hamiltonian 术语 $0.4 \hat X_0 \hat Y_8\hat I_2\hat $ 可以表示为
+在编码中，第一个参数 `Int[]` 指定一个 Pauli 字符串，其中 $ \hat I\rightarrow $0，$ \hat X\rightarrow $1，$ \hat Y\rightarrow $2，$ \hat Z\rightarrow $3。 第二个参数 `Double[]` 将 Pauli 字符串的系数存储在 Hamiltonian 中。 请注意，只使用此数组的第一个元素。 第三个参数 `Int[]` 为此 Pauli 字符串操作的 qubits 编制索引，并且必须没有重复元素。 因此，Hamiltonian 术语 $0.4 \hat X_0 \hat Y_8 \hat I_2 \hat Z_1 $ 可以表示为
 
 ```qsharp
 let generatorIndexExample = GeneratorIndex(([1,2,0,3], [0.4]]), [0,8,2,1]);

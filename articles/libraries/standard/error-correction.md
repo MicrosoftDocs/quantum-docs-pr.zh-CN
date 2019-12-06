@@ -6,12 +6,12 @@ uid: microsoft.quantum.libraries.error-correction
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 5aac40686ba9b45a51e0274a1828f2ff7cce6fc3
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: e1b78cf94ae0a043ad275d4cb06b230eafd7fc85
+ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2019
-ms.locfileid: "73184434"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74863191"
 ---
 # <a name="error-correction"></a>错误更正 #
 
@@ -28,7 +28,7 @@ ms.locfileid: "73184434"
 这样做有助于了解我们如何将错误更正通用化到量程情况。
 因此，让 $ \ket{\overline{0}} = \ket{000} = \ket{0} \otimes \ket{0} \otimes \ket{0}$，并让 $ \ket{\overline{1}} = \ket{111}$。
 然后，按线性，为所有输入定义重复代码;例如，$ \ket{\overline{+}} = （\ket{\overline{0}} + \ket{\overline{1}}）/\sqrt{2} = （\ket{000} + \ket{111}）/\sqrt{2}$。
-具体而言，在 qubit 中使用 _1 $ act $X 时，请注意，这两个分支中所需的更正都精确地 $X _1 $： $ $ \begin{align} X_1 \ket{\overline{+}} & = \frac{1}{\sqrt{2}} \left （X_1 \ket{000} + X_1 \ket{111} \right） \\\\ & = \frac{1}{\sqrt{2}} \left （\ket{010} + \ket{101} \right）。
+特别是，如果在中间 qubit 上使用 _1 $ act $X，则会看到两个分支中所需的更正都精确地 $X _1 $： $ $ \begin{align} X_1 \ket{\overline{+}} & = \frac{1}{\sqrt{2}} \left （X_1 \ket{000} + X_1 \ket{111} \right
 \end{align} $ $
 
 若要查看我们如何确定这种情况，而无需测量我们尝试保护的状态，可以记下每个不同的位翻转错误对逻辑状态的操作：
@@ -36,26 +36,26 @@ ms.locfileid: "73184434"
 | 错误 $E $ | $E \ket{\overline{0}} $ | $E \ket{\overline{1}} $ |
 | --- | --- | --- |
 | $ \boldone $ | $ \ket{000}$ | $ \ket{111}$ |
-| $X _0 $ | $ \ket{100}$ | $ \ket{011}$ |
-| $X _1 $ | $ \ket{010}$ | $ \ket{101}$ |
-| $X _2 $ | $ \ket{001}$ | $ \ket{110}$ |
+| $X_0$ | $ \ket{100}$ | $ \ket{011}$ |
+| $X_1$ | $ \ket{010}$ | $ \ket{101}$ |
+| $X_2$ | $ \ket{001}$ | $ \ket{110}$ |
 
 为了保护我们所编码的状态，我们需要能够区分三个错误，并将其从标识 $ \boldone $ 区分开来，而不区分 $ \ket{\overline{0}} $ 和 $ \ket{\overline{1}} $。
 例如，如果度量 $Z _0 $，则在无错误情况下，我们将为 $ \ket{\overline{0}} $ 和 $ \ket{\overline{1}} $ 获取不同的结果，以便折叠已编码状态。
-另一方面，请考虑在每个计算基础状态下测量 $Z _0 Z_1 $，即前两位的奇偶校验。
+另一方面，请考虑在每个计算基础状态下测量 Z_1 $ $Z _0 的前两位的奇偶校验。
 回忆一下，Pauli 运算符的每个度量值都会检查正在测量的状态对应的 eigenvalue，因此对于上表中的每个状态 $ \ket{\psi} $，我们都可以计算 $Z _0 Z_1 \ket{\psi} $，以查看是否获得 $ \pm\ket{\psi} $。
-请注意，$Z _0 Z_1 \ket{000} = \ket{000}$ and，$Z _0 Z_1 \ket{111} = \ket{111}$，因此，我们得出这一衡量方法对于这两种编码的状态都是相同的。
-另一方面，$Z _0 Z_1 \ket{100} =-\ket{100}$ and $Z _0 Z_1 \ket{011} =-\ket{011}$，因此衡量 $Z _0 Z_1 $ 的结果会显示有关发生了哪些错误的有用信息。
+请注意，$Z _0 Z_1 \ket{000} = \ket{000}$ and，$Z _0 Z_1 \ket{111} = \ket{111}$，因此，我们得出这一衡量方法对两种编码状态执行相同的操作。
+另一方面，$Z _0 Z_1 \ket{100} =-\ket{100}$ and $Z _0 Z_1 \ket{011} =-\ket{011}$，因此，$Z _0 Z_1 $ 显示有关发生了哪些错误的有用信息。
 
 为了强调这一点，请重复上述表，但在每一行上添加度量 $Z _0 Z_1 $ 和 $Z _1 Z_2 $ 的结果。
 我们通过分别与 `Zero` 和 `One`的 Q # `Result` 值相对应的 eigenvalue 的符号（$ + $ 或 $-$）来表示每个度量值的结果。
 
-| 错误 $E $ | $E \ket{\overline{0}} $ | $E \ket{\overline{1}} $ | $Z _0 Z_1 $ 的结果 | $Z _1 Z_2 $ 的结果 |
+| 错误 $E $ | $E \ket{\overline{0}} $ | $E \ket{\overline{1}} $ | $Z _0 的结果 Z_1 $ | $Z _1 Z_2 $ 的结果 |
 | --- | --- | --- | --- | --- |
 | $ \boldone $ | $ \ket{000}$ | $ \ket{111}$ | $+$ | $+$ |
-| $X _0 $ | $ \ket{100}$ | $ \ket{011}$ | $-$ | $+$ |
-| $X _1 $ | $ \ket{010}$ | $ \ket{101}$ | $-$ | $-$ |
-| $X _2 $ | $ \ket{001}$ | $ \ket{110}$ | $+$ | $-$ |
+| $X_0$ | $ \ket{100}$ | $ \ket{011}$ | $-$ | $+$ |
+| $X_1$ | $ \ket{010}$ | $ \ket{101}$ | $-$ | $-$ |
+| $X_2$ | $ \ket{001}$ | $ \ket{110}$ | $+$ | $-$ |
 
 因此，两个度量值的结果可唯一确定发生了哪个位翻转错误，但不会泄漏有关所编码的状态的任何信息。
 我们将这些结果称为 "不*症状*"，并参阅将一个症状映射回导致其*恢复*的错误的过程。
@@ -67,7 +67,7 @@ ms.locfileid: "73184434"
 > 同样，应用阶段翻转操作 `Z` 会将 $ \ket{\overline{1}} $ 映射到 $-\ket{\overline{1}} $，因此会将 $ \ket{\overline{+}} $ 映射到 $ \ket{\overline{-}} $。
 > 通常，可以创建代码来处理更多错误，并处理 $Z $ 个错误以及 $X $ 个错误。
 
-对于在所有代码状态下以相同方式操作的量程错误更正，我们可以对其进行描述，这是*稳定形式*的 essense。
+对于在所有代码状态下以相同方式操作的量程错误更正，我们可以对其进行描述，这就是*稳定的形式*。
 Q # canon 提供了一个框架，用于描述从稳定程序代码进行的编码和解码，并描述了一个从错误中恢复的方法。
 在本部分中，我们使用几个简单的量程纠错代码描述此框架及其应用程序。
 
@@ -117,6 +117,6 @@ using (scratch = Qubit[nScratch]) {
 }
 ```
 
-我们将在[位翻转代码示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/BitFlipCode)中更详细地探讨这一点。
+我们将在[位翻转代码示例](https://github.com/microsoft/Quantum/tree/master/samples/error-correction/bit-flip-code)中更详细地探讨这一点。
 
-除了位翻转代码外，Q # canon 还提供了[5 qubit 完美代码](https://arxiv.org/abs/1305.08)的实现和[七 qubit 代码](https://arxiv.org/abs/quant-ph/9705052)，这两者都可以更正任意单 qubit 错误。
+除了位翻转代码外，Q # canon 还提供了[5 qubit 完美代码](https://arxiv.org/abs/quant-ph/9602019)的实现和[七 qubit 代码](https://arxiv.org/abs/quant-ph/9705052)，这两者都可以更正任意单 qubit 错误。

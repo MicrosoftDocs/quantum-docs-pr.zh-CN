@@ -1,19 +1,19 @@
 ---
 title: 参与代码 |Microsoft Docs
-description: 参与代码
+description: 发布代码
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.code
-ms.openlocfilehash: cca50e6c63d4bb982aa5f0a59fc19d08ecbec508
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 3ff15a744bf15924564d5a8fee54f4fbce4c04ee
+ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73185896"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74864417"
 ---
-# <a name="contributing-code"></a>参与代码 #
+# <a name="contributing-code"></a>贡献代码 #
 
 除了报告问题和改进文档外，对量子开发工具包编写代码也是一种非常直接的方式，可帮助您在量子编程社区中进行同行。
 通过编写代码，你可以帮助解决问题、提供新示例、使现有库更易于使用，甚至添加全新的功能。
@@ -30,13 +30,14 @@ ms.locfileid: "73185896"
 
 构成库（如 canon）的 Q # 函数、操作和用户定义类型在[**Microsoft/QuantumLibraries**](https://github.com/Microsoft/QuantumLibraries/)存储库中作为开发的一部分自动进行测试。
 例如，当打开一个新的拉取请求时， [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/)配置将检查拉取请求中的更改是否不会破坏该量程编程社区依赖的任何现有功能。
-这些测试是使用[Xunit](https://www.nuget.org/packages/Microsoft.Quantum.Xunit/)包编写的，它将 Q # 函数和操作公开为[Xunit](https://xunit.github.io/)框架的测试。
 
-[`Standard/tests/Standard.Tests.csproj`](https://github.com/microsoft/QuantumLibraries/blob/master/Standard/tests/Standard.Tests.csproj)使用此 xUnit 集成来运行以 `Test`结束的任何函数或操作。
-例如，以下函数用于确保 <xref:microsoft.quantum.canon.fst> 和 <xref:microsoft.quantum.canon.snd> 函数在一个代表性示例中返回正确的输出。
+使用最新的 Q # 版本时，将使用 `@Test("QuantumSimulator")` 特性定义单元测试。 参数可以是 "QuantumSimulator"、"ToffoliSimulator"、"TraceSimulator"，也可以是指定执行目标的任何完全限定名称。 定义不同执行目标的多个属性可能附加到同一个可调用的。 某些测试仍使用不推荐使用的[Xunit](https://www.nuget.org/packages/Microsoft.Quantum.Xunit/)包，该程序包公开以 `Test` 结束的[Xunit](https://xunit.github.io/)框架中的所有 Q # 函数和操作。 定义单元测试不再需要此包。 
+
+以下函数用于确保 <xref:microsoft.quantum.canon.fst> 和 <xref:microsoft.quantum.canon.snd> 函数在一个代表性示例中返回正确的输出。
 如果 `Fst` 或 `Snd` 的输出不正确，则使用 `fail` 语句来导致测试失败。
 
 ```qsharp
+@Test("QuantumSimulator")
 function PairTest () : Unit {
     let pair = (12, PauliZ);
 
@@ -56,6 +57,7 @@ function PairTest () : Unit {
 例如，下面的测试检查 <xref:microsoft.quantum.canon.applywith> 调用的 `H(q); X(q); H(q);` 与 `Z(q)`执行的操作相同。
 
 ```qsharp
+@Test("QuantumSimulator")
 operation WithTest () : Unit {
     let actual = ApplyWith(H, X, _);
     let expected = Z;

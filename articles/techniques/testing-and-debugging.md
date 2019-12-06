@@ -6,12 +6,12 @@ ms.author: mamykhai@microsoft.com
 uid: microsoft.quantum.techniques.testing-and-debugging
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 25679331f1bed9f98b86c6eb20f511c891bac1af
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: d352ffa315b654cfcf8991fa116465d3dad49f0a
+ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183482"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74864264"
 ---
 # <a name="testing-and-debugging"></a>测试和调试
 
@@ -30,7 +30,7 @@ Q # 支持为量程程序创建单元测试，可在[xUnit](https://xunit.github
 #### <a name="visual-studio-2019tabtabid-vs2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
 打开 Visual Studio 2019。 请在 "`File`" 菜单中选择 "`New` > " `Project...`"。
-在 "项目模板资源管理器" 中的 "`Installed` > `Visual C#`下，选择 `Q# Test Project` 模板。
+在右上角，搜索 "`Q#`"，然后选择 `Q# Test Project` 模板。
 
 #### <a name="command-line--visual-studio-codetabtabid-vscode"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
 
@@ -43,12 +43,13 @@ $ code . # To open in Visual Studio Code
 
 ****
 
-在任一情况下，新项目都将打开两个文件。
-第一个文件 `Tests.qs`为定义新的 Q # 单元测试提供了一个方便的位置。
-最初，此文件包含一个示例单元测试 `AllocateQubitTest`，它检查新分配的 qubit 是否在 $ \ket{0}$ 状态下并输出一条消息：
+你的新项目将具有一个 `Tests.qs`的文件，该文件提供了一个用于定义新的 Q # 单元测试的便利位置。
+最初，此文件包含一个示例单元测试 `AllocateQubit`，它检查新分配的 qubit 是否在 $ \ket{0}$ 状态下并输出一条消息：
 
 ```qsharp
-    operation AllocateQubitTest () : Unit {
+    @Test("QuantumSimulator")
+    operation AllocateQubit () : Unit {
+
         using (q = Qubit()) {
             Assert([PauliZ], [q], Zero, "Newly allocated qubit must be in the |0⟩ state.");
         }
@@ -57,28 +58,16 @@ $ code . # To open in Visual Studio Code
     }
 ```
 
-与类型 `(Unit => Unit)` 或与 `(Unit -> Unit)` 兼容的任何 Q # 操作都可以作为单元测试来执行。 
-
-第二个文件 `TestSuiteRunner.cs` 包含一个方法，该方法可发现并运行 Q # 单元测试。 这是 `TestTarget` 通过 `OperationDriver` 属性进行批注的方法。
-`OperationDriver` 属性是 Xunit 扩展库 Xunit 中的一部分。
-单元测试框架为它发现的每个 Q # 单元测试调用 `TestTarget` 方法。
-框架通过 `op` 参数将单元测试说明传递给方法。 以下代码行：
-```csharp
-op.TestOperationRunner(sim);
+：新：任何采用类型为 `Unit` 类型参数的 Q # 操作或函数都可以通过 `@Test("...")` 特性将 `Unit` 标记为单元测试。 该属性的参数 `"QuantumSimulator"` 以上，它指定执行测试的目标。 可对多个目标执行单个测试。 例如，`@Test("ResourcesEstimator")` `AllocateQubit`上方添加属性。 
+```qsharp
+    @Test("QuantumSimulator")
+    @Test("ResourcesEstimator")
+    operation AllocateQubit () : Unit {
+        ...
 ```
-对 `QuantumSimulator`执行单元测试。
+保存该文件并执行所有测试。 现在应有两个单元测试，其中一个在 QuantumSimulator 上执行 AllocateQubit，另一个在 ResourceEstimator 中执行。 
 
-默认情况下，单元测试发现机制将查找满足以下属性的所有 Q # 函数或兼容类型的操作：
-* 与用 `OperationDriver` 特性批注的方法位于同一程序集中。
-* 与用 `OperationDriver` 特性批注的方法位于同一命名空间中。
-* 具有以 `Test`结尾的名称。
-
-可以使用 `OperationDriver` 特性的可选参数设置程序集、命名空间以及单元测试函数和操作的后缀：
-* `AssemblyName` 参数设置要在其中搜索测试的程序集的名称。
-* `TestNamespace` 参数设置要在其中搜索测试的命名空间的名称。
-* `Suffix` 设置被视为单元测试的运算或函数名的后缀。
-
-此外，`TestCasePrefix` 可选参数可用于设置测试用例的名称前缀。 操作名称前面的前缀将显示在测试用例的列表中。 例如，`TestCasePrefix = "QSim:"` 将导致 `AllocateQubitTest` 在找到的测试列表中显示为 "`QSim:AllocateQubitTest`"。 这对于指示用于运行测试的模拟器很有用。
+Q # 编译器可识别内置目标 "QuantumSimulator"、"ToffoliSimulator" 和 "ResourcesEstimator" 作为单元测试的有效执行目标。 还可以指定任何完全限定名称来定义自定义执行目标。 
 
 ### <a name="running-q-unit-tests"></a>运行 Q # 单元测试
 
@@ -90,7 +79,7 @@ op.TestOperationRunner(sim);
 > Visual Studio 的默认处理器结构设置存储在每个解决方案的解决方案选项（`.suo`）文件中。
 > 如果删除此文件，则需要再次选择 "`X64`" 作为处理器体系结构。
 
-生成项目，请在 "`Test`" 菜单中，选择 "`Windows` > " `Test Explorer`"。 `AllocateQubitTest` 将显示在 `Not Run Tests` 组中的测试列表中。 选择 `Run All` 或运行此单个测试，它应通过！
+生成项目，请在 "`Test`" 菜单中，选择 "`Windows` > " `Test Explorer`"。 `AllocateQubit` 将显示在 `Not Run Tests` 组中的测试列表中。 选择 `Run All` 或运行此单个测试，它应通过！
 
 #### <a name="command-line--visual-studio-codetabtabid-vscode"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
 
@@ -122,30 +111,17 @@ Test Run Successful.
 Test execution time: 1.9607 Seconds
 ```
 
+可根据单元测试的名称和/或执行目标筛选单元测试：
+
+```bash 
+$ dotnet test --filter "Target=QuantumSimulator"
+$ dotnet test --filter "Name=AllocateQubit"
+```
+
+
 ***
 
-## <a name="logging-and-assertions"></a>日志记录和断言
-
-不会影响 Q # 中的函数的一项重要结果是，执行其输出类型为空元组的函数的任何影响将永远不会从 Q # 程序中观察到 `()`。
-也就是说，目标计算机可以选择不执行任何返回 `()` 的函数，保证此省略不会修改任何以下 Q # 代码的行为。
-这使函数返回 `()` 一个有用的工具，用于将断言和调试逻辑嵌入到 Q # 程序中。 
-
-### <a name="logging"></a>日志记录
-
 内部函数 <xref:microsoft.quantum.intrinsic.message> 具有类型 `(String -> Unit)` 并支持创建诊断消息。
-
-`QuantumSimulator` 的 `onLog` 操作可用于定义在 Q # 代码调用 `Message`时执行的操作。 默认情况下，记录的消息将打印到标准输出。
-
-定义单元测试套件时，可以将记录的消息定向到测试输出。 如果项目是通过 Q # 测试项目模板创建的，则会为该套件预先配置此重定向，并按如下所示创建默认值：
-
-```qsharp
-using (var sim = new QuantumSimulator())
-{
-    // OnLog defines action(s) performed when Q# test calls operation Message
-    sim.OnLog += (msg) => { output.WriteLine(msg); };
-    op.TestOperationRunner(sim);
-}
-```
 
 #### <a name="visual-studio-2019tabtabid-vs2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
@@ -156,11 +132,15 @@ using (var sim = new QuantumSimulator())
 #### <a name="command-line--visual-studio-codetabtabid-vscode"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
 
 通过 `dotnet test`将每个测试的通过/失败状态打印到控制台。
-对于未通过的测试，还会将上述 `output.WriteLine(msg)` 调用的输出记录到控制台中，以帮助诊断失败。
+对于失败的测试，还会将输出输出到控制台，以帮助诊断故障。
 
 ***
 
-### <a name="assertions"></a>断言
+## <a name="assertions"></a>断言
+
+由于 Q # 中的函数没有_逻辑_副作用，因此执行其输出类型为空元组的函数的任何_其他类型_的影响将永远不会从 Q # 程序中观察到 `()`。
+也就是说，目标计算机可以选择不执行任何返回 `()` 的函数，保证此省略不会修改任何以下 Q # 代码的行为。
+这使函数返回 `()` 一个有用的工具，用于将断言和调试逻辑嵌入到 Q # 程序中。 
 
 可以应用相同的逻辑来实现断言。 我们来看一个简单的示例：
 
@@ -203,7 +183,7 @@ using (register = Qubit())
 
 ### <a name="dumpmachine"></a>DumpMachine
 
-作为量程开发工具包的一部分分发的全状态量程模拟器会将整个量程系统的[声波函数](https://en.wikipedia.org/wiki/Wave_function)写入文件中，作为一维复数数组，其中每个元素都表示度量计算基础状态 $ \ket{n} $ 的概率，其中 $ \ket{n} = \ket{b_{n-1}.。。b_1b_0} $ 表示 bits $\{b_i\}$。 例如，在仅分配了两个 qubits 并在量程状态 $ $ \begin{align} \ket{\psi} = \frac 中的计算机上{1}{\sqrt{2}} \ket{00}-\frac{（1 + i）}{2} \ket{10}，\end{align} $ $ 调用 <xref:microsoft.quantum.diagnostics.dumpmachine> 生成此输出:
+作为量程开发工具包的一部分分发的全状态量程模拟器会将整个量程系统的[波形函数](https://en.wikipedia.org/wiki/Wave_function)写入文件中，这是一维复数数组，其中每个元素都表示度量计算基础状态 $ \ket{n} $ 的概率的波幅，其中 $ \ket{n} = \ket{b_ {n-1} .。。对于 bits $\{，b_1b_0} $ b_i\}$。 例如，在仅分配了两个 qubits 并在量程状态 $ $ \begin{align} \ket{\psi} = \frac 中的计算机上{1}{\sqrt{2}} \ket{00}-\frac{（1 + i）}{2} \ket{10}，\end{align} $ $ 调用 <xref:microsoft.quantum.diagnostics.dumpmachine> 会生成以下输出：
 
 ```
 # wave function for qubits with ids (least to most significant): 0;1
@@ -333,7 +313,7 @@ namespace Samples {
 
 <xref:microsoft.quantum.diagnostics.dumpregister> 的工作方式类似于 <xref:microsoft.quantum.diagnostics.dumpmachine>，只不过它还采用 qubits 数组，以将信息量限制为仅与对应 qubits 相关。
 
-与 <xref:microsoft.quantum.diagnostics.dumpmachine>一样，<xref:microsoft.quantum.diagnostics.dumpregister> 生成的信息取决于目标计算机。 对于全状态量程模拟器，它会将波形函数写入文件中，由提供的 qubits 生成的量程子系统的全局阶段，格式与 <xref:microsoft.quantum.diagnostics.dumpmachine>相同。  例如，将只分配了两个 qubits 并在量程状态 $ $ \begin{align} \ket{\psi} = \frac{1}{\sqrt{2}} \ket{00}-\frac{（1 + i）}{2} \ket{10} =-e ^ {-i \ pi/4} \票证{0}-\frac{（1 + i）}{2} \ket{1}） \otimes \frac{-（1 + i）} {\sqrt{2}} \ket{0}），\end{align} $ $ 调用 <xref:microsoft.quantum.diagnostics.dumpregister> `qubit[0]` 生成此输出：
+与 <xref:microsoft.quantum.diagnostics.dumpmachine>一样，<xref:microsoft.quantum.diagnostics.dumpregister> 生成的信息取决于目标计算机。 对于全状态量程模拟器，它会将波形函数写入文件中，由提供的 qubits 生成的量程子系统的全局阶段，格式与 <xref:microsoft.quantum.diagnostics.dumpmachine>相同。  例如，将只分配了两个 qubits 的计算机，并在量程状态 $ $ \begin{align} \ket{\psi} = \frac{1}{\sqrt{2}} \ket{00}-\frac{（1 + i）}{2} \ket{10} =-e ^ {-i \ pi/4} （（\frac{1}{\sqrt{2}} \ket{0}-\frac{（1 + i）}{2} \ket{1}） \otimes \frac{-（1 + i）} {\sqrt{2}} \ket{0}），\end{align} $ $ 调用 `qubit[0]` <xref:microsoft.quantum.diagnostics.dumpregister> 会生成此输出:
 
 ```
 # wave function for qubits with ids (least to most significant): 0
@@ -382,7 +362,6 @@ namespace app
 
 ## <a name="debugging"></a>调试
 
-在 `Assert` 和 `Dump` 函数和操作的基础上，Q # 支持标准 Visual Studio 调试功能的子集：[设置行断点](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints)、[使用 F10 逐句通过代码](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger)和[检查经典变量的值](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows)在模拟器上的代码执行过程中可能会出现这种情况。
+在 `Assert` 和 `Dump` 函数和操作的基础上，Q # 支持标准 Visual Studio 调试功能的子集：[设置行断点](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints)、[使用 F10 逐句通过代码](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger)和[检查典型变量的值](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows)在模拟器上的代码执行过程中都可能。
 
-目前尚不支持在 Visual Studio Code 中进行调试。
-
+在 Visual Studio Code 中进行调试利用了C#由 OmniSharp 提供的 Visual Studio Code 的调试功能，并需要安装[最新版本](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)。 

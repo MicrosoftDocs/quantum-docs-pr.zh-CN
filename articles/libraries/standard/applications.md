@@ -1,21 +1,21 @@
 ---
 title: 'Q # 标准库-应用程序 |Microsoft Docs'
-description: 'Q # 标准库'
+description: Q# 标准库
 author: QuantumWriter
 uid: microsoft.quantum.libraries.applications
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: e6eca45dd67b3566340c2a2a4fded0f6e7c3c5c3
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: ef22460a5bca63ebaf32c0ba21984e103ec8ebdd
+ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73185165"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74864383"
 ---
 # <a name="applications"></a>应用程序 #
 
-## <a name="hamiltonian-simulation"></a>Hamiltonian 模拟 ##
+## <a name="hamiltonian-simulation"></a>哈密顿模拟 ##
 
 量程系统的模拟是最令人兴奋的量程计算应用程序之一。
 在传统计算机上，模拟量程机制的难点通常是使用其状态向量表示形式的维度 $N $ 进行缩放。
@@ -24,13 +24,13 @@ ms.locfileid: "73185165"
 但是，这种情况在量程硬件上可能会有很大的差异。 量程模拟的最常见变化形式称为与时间无关的 Hamiltonian 模拟问题。 其中，提供了系统 Hamiltonian $H $ 的说明，它是一个 Hermitian 矩阵，另一个最初的量程状态 $ \ket{\psi （0）} $，是在量程计算机上 $n $ qubits 进行编码的。 由于关闭的系统中的量程状态在 Schrödinger 等式 $ $ \begin{align} i\frac {d \ket{\psi （t）}} {d t} & = H \ket{\psi （t）}、\end{align} $ $ 下发展，因此目标是在某个固定时间实现单一时间演化运算符 $U （t） = e ^ {-iHt} $ $t $，其中 $ \ket{\psi （t）} = U （t） \ket{\psi （0）} $ 将求解 Schrödinger 公式。
 类似，依赖于时间的 Hamiltonian 模拟问题解决了同一公式，但 $H （t） $ 现在为时间函数。
 
-Hamiltonian 模拟是许多其他量子模拟问题的主要组成部分，Hamiltonian 模拟问题的解决方案是描述综合 a 逼近单一 $ \tilde{U} $ 的一系列基元量子入口的算法。出现错误 $\\| \tilde{U} （t）\\|[spectral 标准](xref:microsoft.quantum.concepts.matrix-advanced)中的 \le \epsilon $。 这些算法的复杂性非常严格地取决于量程计算机如何访问相关 Hamiltonian 的说明。 例如，在最坏情况下，如果要将 $H $ $n $ qubits 上的 $ 提供为 $ 2 ^ n \times 2 ^ n $ 数字的列表，每个矩阵元素对应一个矩阵元素，只需读取数据就会需要指数时间。 在最佳情况下，可能会假设有权访问 $O \ket{t}\ket{\psi （0）} = \ket{t}U （t） \ket{\psi （0）} $ 完全的黑色框。 这两个输入模型都不是特别感兴趣的，即前者不能比传统方法更好，而后者则隐藏其实现的基元门复杂度，这在 qubits 数中可能是指数的。
+Hamiltonian 模拟是许多其他量子模拟问题的主要组成部分，而 Hamiltonian 模拟问题的解决方案是一种算法，用于描述综合 a 逼近单一 $ \tilde{U}\\\\$ 的一系列的[spectral 标准](xref:microsoft.quantum.concepts.matrix-advanced)中的 \le \epsilon $。 这些算法的复杂性非常严格地取决于量程计算机如何访问相关 Hamiltonian 的说明。 例如，在最坏情况下，如果要将 $H $ $n $ qubits 上的 $ 提供为 $ 2 ^ n \times 2 ^ n $ 数字的列表，每个矩阵元素对应一个矩阵元素，只需读取数据就会需要指数时间。 在最佳情况下，可能会假设有权访问 $O \ket{t}\ket{\psi （0）} = \ket{t}U （t） \ket{\psi （0）} $ 完全的黑色框。 这两个输入模型都不是特别感兴趣的，即前者不能比传统方法更好，而后者则隐藏其实现的基元门复杂度，这在 qubits 数中可能是指数的。
 
 ### <a name="descriptions-of-hamiltonians"></a>Hamiltonians 的说明 ###
 
 因此需要输入格式的其他假设。 精细平衡在输入模型之间必须是有意义的，这两个输入模型对包含感兴趣的 Hamiltonians （如那些实际的物理系统或相关的计算问题）和具有足够限制的输入模型在量程计算机上有效实施。 在该宣传资料中可以找到各种非常重要的输入模型，范围从量子到古典。 
 
-作为量程输入模型的示例，[基于样本的 Hamiltonian 模拟](http://www.nature.com/articles/s41534-017-0013-7)假定对生成密度矩阵 $ \rho $ （被视为 Hamiltonian $H $）副本的量程操作具有黑白访问。 在[单一访问模型](https://arxiv.org/abs/1202.5822)中，假设 Hamiltonian 改为 unitaries $ $ \begin{align} H & = \sum ^ {d-1} 的总和\_{j = 0} a\_j \hat{U}\_j，\end{align} $ $，其中 $a\_j > 0 $ 是系数和 $ \hat{U}\_j $ 为 unitaries。 然后假设有一个对单一 oracle $V = \sum ^ {d}\_{j = 0} \ket{j}\bra{j}\otimes \hat{U}\_j $ 的黑白访问，该选择所需的 $ \hat{U}\_j $，oracle $A \ket{0}= \sum ^ {d-1}\_{j = 0} \sqrt{a\_j/\ sum ^ {d-1}\_{k = 0} \alpha\_j} \ket{j} $ 来创建量程状态编码这些系数。 对于[稀疏 Hamiltonian 模拟](https://arxiv.org/abs/quant-ph/0301023)，一种假设 Hamiltonian 是一个稀疏矩阵，其中每一行只包含 $d = \mathcal{O} （\Text{polylog} （N）） $ 非零元素。 此外，还假定存在有效的量程线路，它们输出了这些非零元素的位置以及它们的值。 [Hamiltonian 模拟算法](xref:microsoft.quantum.more-information)的复杂性是根据对这些黑色框进行查询的数量来计算的，因此，基元入口的复杂性很大程度上取决于实现这些黑框的难度。
+作为量程输入模型的示例，[基于样本的 Hamiltonian 模拟](http://www.nature.com/articles/s41534-017-0013-7)假定对生成密度矩阵 $ \rho $ （被视为 Hamiltonian $H $）副本的量程操作具有黑白访问。 在[单一访问模型](https://arxiv.org/abs/1202.5822)中，将 Hamiltonian 分解为 unitaries $ $ \begin{align} H & = \sum ^ {d}\_{j = 0}\_j \hat{U}\_j，\end{align} $ $，其中 $a\_j > 0 $ 是系数，$ \hat{U}\_j $ 为 unitaries。 然后假设有一个对单一 oracle $V = \sum ^ {d}\_{j = 0} \ket{j}\bra{j}\otimes \hat{U}\_j $ 的黑白访问，该选择所需的 $ \hat{U}\_j $，和 oracle $A \ket{0}= \sum ^ {d-1}\_{j = 0} \sqrt{a\_j/\ sum ^ {d-1}\_{k = 0} \alpha\_j} \ket{j} $，用于创建量程状态编码这些系数。 对于[稀疏 Hamiltonian 模拟](https://arxiv.org/abs/quant-ph/0301023)，一种假设 Hamiltonian 是一个稀疏矩阵，其中每一行只包含 $d = \mathcal{O} （\Text{polylog} （N）） $ 非零元素。 此外，还假定存在有效的量程线路，它们输出了这些非零元素的位置以及它们的值。 [Hamiltonian 模拟算法](xref:microsoft.quantum.more-information)的复杂性是根据对这些黑色框进行查询的数量来计算的，因此，基元入口的复杂性很大程度上取决于实现这些黑框的难度。
 
 > [!NOTE]
 > 大 O 表示法通常用于描述算法的复杂性缩放。 假设有两个真正的函数 $f，g $，表达式 $g （x） = \mathcal{O} （f （x）） $ 表示存在绝对正值 $x\_0，c > 0 $，$g （x） \le c f （x） $ 表示所有 $x \ge x\_$0。 
@@ -45,21 +45,21 @@ Hamiltonian 模拟是许多其他量子模拟问题的主要组成部分，Hamil
 
 量程模拟算法将 Hamiltonian 的给定描述转换为一系列基元量子入口，作为一个整体，这是一项 Hamiltonian 的大致时间演变。
 
-在 Hamiltonian 分解为 Hermitian 部分求和的特殊情况下，Trotter-Suzuki 分解是一个特别简单且直观的算法，用于模拟将分解为 Hamiltonians 组件的总和的 Hermitian。 例如，此系列的第一个订单集成器约为 $ $ \begin{align} U （t） & = \left （e ^ {-iH\_0 t/r} e ^ {-iH\_1 t/r} \cdots e ^ {-iH\_{d-1} t/r} \right） ^ {r} + \mathcal{O} （d ^ 2 \max_j\\|H\_j\\| ^ 2 t ^ 2/r），\end{align} $ $ 使用 $r d $ 条款的产品。 
+在 Hamiltonian 分解为 Hermitian 部分求和的特殊情况下，Trotter-Suzuki 分解是一个特别简单且直观的算法，用于模拟将分解为 Hamiltonians 组件的总和的 Hermitian。 例如，此系列的第一个订单集成器约为 $ $ \begin{align} U （t） & = \left （e ^ {-iH\_0 t/r} e ^ {-iH\_1 t/r} \cdots e ^ {-iH\_{d-1} t/r} max_j \rightH\_j\\| ^ 2 t ^ 2/r），\end{align} $ $ 使用 $r d $ 条款的产品。 
 
 > [!TIP]
 > 示例中介绍了 Trotter-Suzuki 模拟算法的应用程序。
-> 对于 Ising 模型，只使用每个目标计算机提供的内部操作，请参阅[ **SimpleIsing**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/SimpleIsing)。
-> 对于使用 Trotter-Suzuki 库控件结构的 Ising 模型，请参阅[ **IsingTrotter**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/IsingTrotterEvolution)。
-> 对于使用 Trotter-Suzuki 库控件结构的分子 Hydrogen，请参阅[ **H2 模拟**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/H2SimulationCmdLine)。
+> 对于 Ising 模型，只使用每个目标计算机提供的内部操作，请参阅[ **SimpleIsing**示例](https://github.com/microsoft/Quantum/blob/master/samples/simulation/ising/simple)。
+> 对于使用 Trotter-Suzuki 库控件结构的 Ising 模型，请参阅[ **IsingTrotter**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/trotter-evolution)。
+> 对于使用 Trotter-Suzuki 库控件结构的分子 Hydrogen，请参阅[ **H2 模拟**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/h2/command-line)。
 
-在许多情况下，我们想要实现模拟算法，但并不关心其实现的详细信息。 例如，第二顺序集成器近似于 $ $ \begin{align} U （t） & = \left （e ^ {-iH\_0 t/2r} e ^ {-iH\_1 t/2r} \cdots e ^ {-iH\_{d-1} t/2r} e ^ {-iH\_{d-1} t/2r} \cdots e ^ {-iH\_1 t/2r} e ^ {-iH\_0 t/2r} \right） ^ {r} + \mathcal{O} （d ^ 3 \max_j\\|H\_j\\| ^ 3 t ^ 3/r ^ 2），\end{align} $ $ 使用产品 $ 2rd $ 条款。 更大的订单会涉及更多的术语，而优化后的变量可能需要对指数的高度非常重要的排序。 其他高级算法还可能涉及在中间步骤中使用 ancilla qubits。 因此，我们将 canon 中的模拟算法打包为用户定义的类型
+在许多情况下，我们想要实现模拟算法，但并不关心其实现的详细信息。 例如，第二顺序集成器近似于 $ $ \begin{align} U （t） & = \left （e ^ {-iH\_0 t/2r} e ^ {-iH\_1 t/2r} \cdots e ^ {-iH\_{d-1} t/2r} e ^ {-iH\_{d-1} t/2r} \cdots e ^ {-iH\_1 t/2r} e ^ {-iH\_0 t/2r} \right） ^ {r} + \mathcal{O} （d ^ 3 \ max_j\\|H\_j\\| ^ 3 t ^ 3/r ^ 2），\end{align} $ $ 使用产品 $ 2rd $ 条款。 更大的订单会涉及更多的术语，而优化后的变量可能需要对指数的高度非常重要的排序。 其他高级算法还可能涉及在中间步骤中使用 ancilla qubits。 因此，我们将 canon 中的模拟算法打包为用户定义的类型
 
 ```qsharp
 newtype SimulationAlgorithm = ((Double, EvolutionGenerator, Qubit[]) => Unit is Adj + Ctl);
 ```
 
-第一个参数 `Double` 是模拟时间，第二个参数 `EvolutionGenerator`（在[数据结构](xref:microsoft.quantum.libraries.data-structures)的 Dynamical 生成器表示部分中介绍），它是与有关 Hamiltonian 中的每个术语如何由量程线路模拟的说明。 此形式的类型近似于第三个参数 `Qubit[]`的单一操作 $e ^ {iHt} $，该参数是存储模拟系统的量程状态的寄存器。 与时间相关的情况类似，我们使用 `EvolutionSchedule` 类型来定义用户定义的类型，该类型是依赖于时间的 Hamiltonian 的传统说明。
+第一个参数 `Double` 是模拟时间，第二个参数 `EvolutionGenerator`（在[数据结构](xref:microsoft.quantum.libraries.data-structures)的 Dynamical 生成器表示形式部分中），它是一种与时间无关的 Hamiltonian 的传统说明，其中包含有关 Hamiltonian 中每个术语如何由量程线路模拟的说明。 此形式的类型近似于第三个参数 `Qubit[]`的单一操作 $e ^ {iHt} $，该参数是存储模拟系统的量程状态的寄存器。 与时间相关的情况类似，我们使用 `EvolutionSchedule` 类型来定义用户定义的类型，该类型是依赖于时间的 Hamiltonian 的传统说明。
 
 ```qsharp
 newtype TimeDependentSimulationAlgorithm = ((Double, EvolutionSchedule, Qubit[]) => Unit : Adjoint, Controlled);
@@ -83,13 +83,13 @@ function TimeDependentTrotterSimulationAlgorithm(
 ```
 
 > [!TIP]
-> 示例中介绍了模拟库的应用程序。 有关使用 `SimulationAlgorithm`的 Ising 模型中的阶段估算，请参阅[ **IsingPhaseEstimation**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/IsingPhaseEstimation)。
-> 有关使用 `TimeDependentSimulationAlgorithm`在 Ising 模型中准备 adiabatic 状态，请参阅[ **AdiabaticIsing**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/AdiabaticIsing)。
+> 示例中介绍了模拟库的应用程序。 有关使用 `SimulationAlgorithm`的 Ising 模型中的阶段估算，请参阅[ **IsingPhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/phase-estimation)。
+> 有关使用 `TimeDependentSimulationAlgorithm`在 Ising 模型中准备 adiabatic 状态，请参阅[ **AdiabaticIsing**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/adiabatic)。
 
 
 ### <a name="adiabatic-state-preparation--phase-estimation"></a>Adiabatic 状态准备 & 阶段估计 ###
 
-Hamiltonian 模拟的一个常见应用是 adiabatic 状态准备。 此处提供了两个 Hamiltonians $H 的两个\_{\text{start}} $ 和 $H\_{\text{end}} $）和一个量程状态 $ \ket{\psi （0）} $，它是启动 Hamiltonian $H\_{\text{start}} $ 的基本状态。 通常情况下，会选择 $H\_{\text{start}} $，以便可以从计算基础状态 $ \ket{0\cdots 0} $ 轻松准备 $ \ket{\psi （0）} $。 通过在依赖于时间的模拟问题 sufficientl 缓慢的情况下，在这些 Hamiltonians 之间进行插值，最终 Hamiltonian $H\_{\text{end}} $ 的基本状态下，可能会有很高的概率。 尽管准备好的方法是 Hamiltonian 的基本状态，但通过在依赖于时间的 Hamiltonian 模拟算法上调用作为子例程的其他方法（如 variational 量程），eigensolver 是可能的。
+Hamiltonian 模拟的一个常见应用是 adiabatic 状态准备。 此处提供了两个 Hamiltonians $H 的两个\_{\text{start}} $ 和 $H\_{\text{end}} $）和一个量程状态 $ \ket{\psi （0）} $，它是启动 Hamiltonian $H\_{\text{start}} $ 的基本状态。 通常情况下，会选择 $H\_{\text{start}} $，以便可以从计算基础状态 $ \ket{0\cdots 0} $ 轻松准备 $ \ket{\psi （0）} $。 通过在依赖于时间的模拟问题中将这些 Hamiltonians 内插到非常缓慢的情况下，最终 Hamiltonian $H 的基本状态下，可能会有很高的概率\_{\text{end}} $。 尽管准备好的方法是 Hamiltonian 的基本状态，但通过在依赖于时间的 Hamiltonian 模拟算法上调用作为子例程的其他方法（如 variational 量程），eigensolver 是可能的。
 
 然而，在量子化学中普遍的另一个应用程序正在估算 Hamiltonians 的地面状态能量，表示化学反应的中间步骤。 例如，这种方案可以依赖 adiabatic 状态准备来创建地面状态，然后将与时间无关的 Hamiltonian 模拟合并为阶段估算特征中的子例程，以利用一些有限的错误来提取此能量，并成功的概率。 
 
@@ -128,13 +128,13 @@ operation AdiabaticStateEnergyEstimate(
 `nQubits` 是用于对初始量程状态进行编码的 qubits 的数目。 `statePrepUnitary` 从计算基础 $ \ket{0\cdots 0} $ 准备开始状态。 `adiabaticUnitary` 是实现 adiabatic 状态准备的单一操作，如 `InterpolatedEvolution` 函数生成的。 `qpeUnitary` 是用于对生成的量程状态执行阶段估算的单一操作。 `phaseEstAlgorithm` 是我们选择的阶段估算算法。
 
 > [!TIP]
-> 示例中介绍了 adiabatic 状态准备的应用程序。 对于 Ising 模型，使用手动实现 adiabatic 状态准备与使用 `AdiabaticEvolution` 函数，请参阅[ **AdiabaticIsing**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/AdiabaticIsing)。
-> 有关 Ising 模型中的阶段估算和 adiabatic 状态准备，请参阅[ **IsingPhaseEstimation**示例](https://github.com/Microsoft/Quantum/tree/master/Samples/src/IsingPhaseEstimation)。
+> 示例中介绍了 adiabatic 状态准备的应用程序。 对于 Ising 模型，使用手动实现 adiabatic 状态准备与使用 `AdiabaticEvolution` 函数，请参阅[ **AdiabaticIsing**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/adiabatic)。
+> 有关 Ising 模型中的阶段估算和 adiabatic 状态准备，请参阅[ **IsingPhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/phase-estimation)。
 
 > [!TIP]
-> [分子 Hydrogen 的模拟](https://github.com/Microsoft/Quantum/tree/master/Samples/src/H2SimulationCmdLine)是一个有趣且简单的示例。 [O'Malley et](https://arxiv.org/abs/1512.06860)中报告的模型和实验性结果。 仅要求使用 Pauli 矩阵，并采用 "$ \hat H = g\_格式" 的形式 {0}I\_0 I\_1 + g\_1 {Z\_0} {Z\_1} + g\_4 {Y\_0} {Y\_1} + g\_5 {X\_0} {X\_1} $。 这是一个有效的 Hamiltonian，只需要2个 qubits，在这种情况下，将根据两个 Hydrogen 原子之间的距离 $R $ 计算 $g $ 的常量。 使用 canon 函数，Paulis 转换为 unitaries，然后使用 Trotter-Suzuki 分解在短时间段内演变。 可以在不使用 adiabatic 状态准备的情况下创建 $H _2 $ 地面状态的良好近似值，因此，可以通过利用 canon 中的阶段估算直接找到地面状态。
+> [分子 Hydrogen 的模拟](https://github.com/microsoft/Quantum/tree/master/samples/simulation/h2/command-line)是一个有趣且简单的示例。 [O'Malley et](https://arxiv.org/abs/1512.06860)中报告的模型和实验性结果。 仅要求使用 Pauli 矩阵，并采用 "$ \hat H = g\_" 形式 {0}I\_0 I\_1 + g\_1 {Z\_{Z\_0} {Z\_1} + g\_4 {Y\_0} {Y\_1} + g\_5 {X\_0} {X\_1} $。 这是一个有效的 Hamiltonian，只需要2个 qubits，在这种情况下，将根据两个 Hydrogen 原子之间的距离 $R $ 计算 $g $ 的常量。 使用 canon 函数，Paulis 转换为 unitaries，然后使用 Trotter-Suzuki 分解在短时间段内演变。 可以在不使用 adiabatic 状态准备的情况下创建 $H _2 $ 地面状态的良好近似值，因此，可以通过利用 canon 中的阶段估算直接找到地面状态。
 
-## <a name="shors-algorithm"></a>选定的算法 ##
+## <a name="shors-algorithm"></a>秀尔算法 ##
 选定的算法仍是量程计算中最重要的开发，因为它显示了量程计算机可以用于解决重要的当前经典棘手问题。
 选定的算法提供了一种使用量程计算机（称为 "*分解*" 的问题）对较大数字进行因式分解的快速方法。
 许多 cryptosystems 的安全是基于不存在任何快速算法以进行分解的假设。
@@ -151,7 +151,7 @@ operation AdiabaticStateEnergyEstimate(
 
 给定两个整数 $a $ 和 $N $，其中 $a < N $，句点的目标（也称为顺序查找）是查找 $r $ $a $ $N $ 的_顺序_$r $ $a $，其中 $ 被定义为最少的正整数，^ r \equiv 1 \text{Mod} N $。  
 
-若要查找使用量程计算机的顺序，可以使用应用于以下单一运算符的阶段估算算法，$U _a $： $ $ U_a\ket {x} \equiv \ket{（ax） \text{mod} N}。 $ $ $U 本征向量 $ 的 _a 用于 integer $s $ 和 $ 0 \ leq s \leq r-$1，$ $ \ket{x_s} \equiv 1/\sqrt{r} \sum\_{k = 0} ^ {r-1} e ^ {\frac{-2\pi i sk} {r}} \ket{a ^ k\text {mod} N}，$ $ 是 $U eigenstates $ 的 __a_ 。
+若要查找使用量程计算机的顺序，可以使用应用于以下单一运算符的阶段估算算法，$U _a $： $ $ U_a \ket{x} \equiv \ket{（ax） \text{mod} N}。 $ $ $U _a $ 的本征向量为 integer $s $ 和 $ 0 \ leq s \leq r-$1，$ $ \ket{x_s} \equiv 1/\sqrt{r} \sum\_{k = 0} ^ {r}} \frac{-2\pi ^ \ket{a {mod} N}，$ $ 是 $U _a $ 的_k\text_ 。
 $U _a $ 的本征值是 $ $ U\_\ket{x\_s} = e ^ {2 \ pi i s/r} \ket{x\_s}。 $$
 
 这样，阶段估计就会输出本征值 $e ^ {2 \ pi i s/r} $，其中 $r $ 可以通过 $s/r $ 中的[连续分数](https://en.wikipedia.org/wiki/Continued_fraction)有效地进行学习。
@@ -169,7 +169,7 @@ $U _a $ 的本征值是 $ $ U\_\ket{x\_s} = e ^ {2 \ pi i s/r} \ket{x\_s}。 $$
 
 线路包含 QFT 和多个受控入口。
 [之前](xref:microsoft.quantum.libraries.standard.algorithms)已描述 QFT 入口。
-如果控件 qubit 是 $ \ket{1}$，则受控 $U _a $ 入口将 $ \ket{x} $ 映射到 $ \ket{（ax） \text{mod} N} $，否则将 $ \ket{x} $ 映射到 $ \ket{x} $。
+如果 control qubit 是 $ \ket{1}$，则受控 $U _a $ \ket{x} $ 到 $ \ket{（ax） \text{mod} N} $，否则将 $ \ket{x} $ 映射到 $ \ket{x} $。
 
 若要实现 $ （a ^ nx） \text{mod} N $，我们只需应用受控-$U _ {a ^ N} $，我们计算 $a ^ N \text{mod} N $ 经典，以插入量程线路。  
 [量程算法文档](./algorithms.md#arithmetic)中介绍了实现这种模块化算法的线路，具体而言，我们需要使用模块求幂线路来实现受控-$U\_{a ^ i} $ 操作。
