@@ -1,0 +1,26 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.core.default
+name: Default
+type: function
+namespace: Microsoft.Quantum.Core
+summary: 返回指定类型的默认实例。
+syntax: "function Default () : 'T"
+input:
+  content: ()
+  types: []
+output:
+  content: "'T"
+  types:
+  - summary: 默认值。
+    uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: 要返回的默认值的类型。
+metadata:
+  ms.openlocfilehash: fb84a7a73d1f1be28734db8e5f4be9e862bb2c1f
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74866812"

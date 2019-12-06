@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.y
 name: Y
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.y"。
+summary: Y 已弃用。 请改用 @"microsoft.quantum.intrinsic.y"。
 syntax: 'operation Y (qubit : Qubit) : Unit'
 input:
   content: '(qubit : Qubit)'
@@ -26,9 +20,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: c197c136c9b2a766a2d621a18f3f0157af507976
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 917d7a3116a114d072e20e09f38a4e7ddb199b9b
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73211029"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863227"

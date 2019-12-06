@@ -3,19 +3,13 @@ uid: microsoft.quantum.extensions.diagnostics
 name: Microsoft.Quantum.Extensions.Diagnostics
 functions:
 - uid: microsoft.quantum.extensions.diagnostics.dumpmachine
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.diagnostics.dumpmachine"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nDumpMachine 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.dumpmachine\"。\n请使用 @\"microsoft.quantum.diagnostics.dumpmachine\"。"
 - uid: microsoft.quantum.extensions.diagnostics.dumpregister
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.diagnostics.dumpregister"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nDumpRegister 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.dumpregister\"。\n请使用 @\"microsoft.quantum.diagnostics.dumpregister\"。"
 metadata:
-  ms.openlocfilehash: 4b875e544a07377010a144fcf1653f9ed289736c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 71f997adf7dbca7e45250652032237c07f1354e5
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73210377"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74858286"

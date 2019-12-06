@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.forany
 name: ForAny
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请改用 @"Microsoft.Quantum.Arrays.Any"。
+summary: ForAny 已被弃用。 请改用 @"microsoft.quantum.arrays.any"。
 syntax: "function ForAny (predicate : ('T -> Bool), array : 'T[]) : Bool"
 input:
   content: "(predicate : ('T -> Bool), array : 'T[])"
@@ -34,9 +28,9 @@ output:
   - isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 0ad8141e72d35bedaab6390c30d2424a43f12898
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b102d74243f101de431e3a04aa97c43a735dd08e
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73229372"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74860676"

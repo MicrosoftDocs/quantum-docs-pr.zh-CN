@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.resultfrombool
 name: ResultFromBool
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.convert.boolasresult"。
+summary: ResultFromBool 已被弃用。 请改用 @"microsoft.quantum.convert.boolasresult"。
 syntax: 'function ResultFromBool (input : Bool) : Result'
 input:
   content: '(input : Bool)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: cc7090e8d627a88a14b8e11ea431a284bec373dc
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d4bf696287a24e728a6e7dd0865cf7c488d0b7ea
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73222351"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863567"

@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.math.maxb
 name: MaxB
 type: function
 namespace: Microsoft.Quantum.Extensions.Math
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.maxl"。
+summary: MaxB 已被弃用。 请改用 @"microsoft.quantum.math.maxl"。
 syntax: 'function MaxB (a : BigInt, b : BigInt) : BigInt'
 input:
   content: '(a : BigInt, b : BigInt)'
@@ -26,9 +20,9 @@ output:
   - isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: 47542e6edb073d5b055729490c066ebceb5e8f8c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 50dbfbf0e83f7f14d22fab9c507d72e2ee4f320f
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73224323"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74865284"

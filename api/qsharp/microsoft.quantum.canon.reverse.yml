@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.reverse
 name: Reverse
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请改用 @"Microsoft.Quantum.Arrays.Reversed"。
+summary: 已弃用反转。 请改用 @"microsoft.quantum.arrays.reversed"。
 syntax: "function Reverse (array : 'T[]) : 'T[]"
 input:
   content: "(array : 'T[])"
@@ -25,9 +19,9 @@ output:
     uid: "'T"
     isLocal: true
 metadata:
-  ms.openlocfilehash: f65cddf16f2270d39c29c892d41942b409ded77e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 4442e3a3d433563d937c0caafcd44ad45db89f99
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73222334"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863550"

@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.resultasint
 name: ResultAsInt
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.convert.resultarrayasint"。
+summary: ResultAsInt 已被弃用。 请改用 @"microsoft.quantum.convert.resultarrayasint"。
 syntax: 'function ResultAsInt (results : Result[]) : Int'
 input:
   content: '(results : Result[])'
@@ -24,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 9ab8288ed849ed46f3477a133bdcd57cff0a23c8
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: aae76124567b6a16f94ca0d20d35df2601dd7d46
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73222402"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863584"

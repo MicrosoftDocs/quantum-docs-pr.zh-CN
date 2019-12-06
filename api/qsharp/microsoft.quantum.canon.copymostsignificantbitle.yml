@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.copymostsignificantbitle
 name: CopyMostSignificantBitLE
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"Microsoft.Quantum.Arithmetic.CopyMostSignificantBit"。
+summary: CopyMostSignificantBitLE 已被弃用。 请改用 @"microsoft.quantum.arithmetic.copymostsignificantbit"。
 syntax: 'operation CopyMostSignificantBitLE (from : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit'
 input:
   content: '(from : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit)'
@@ -27,9 +21,9 @@ output:
 functors:
 - Adjoint
 metadata:
-  ms.openlocfilehash: 0df9106d46c9c2a7f8cdd11026d6e648b40bb4e5
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 4a27544d7dd2206f11c75892ce958ea6c3fa0063
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73225360"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863992"

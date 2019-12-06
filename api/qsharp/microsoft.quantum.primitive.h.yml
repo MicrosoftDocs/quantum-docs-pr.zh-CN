@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.h
 name: H
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.h"。
+summary: 已弃用 H。 请改用 @"microsoft.quantum.intrinsic.h"。
 syntax: 'operation H (qubit : Qubit) : Unit'
 input:
   content: '(qubit : Qubit)'
@@ -26,9 +20,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 64ae87c6d7843d9db81e37a7934b52111aa6a5df
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: c7f49b395838fd8053c7b7b95e963ecfe61f1412
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73223371"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864859"

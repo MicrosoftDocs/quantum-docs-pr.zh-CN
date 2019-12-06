@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.mapindex
 name: MapIndex
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请改用 @"Microsoft.Quantum.Arrays.MappedByIndex"。
+summary: MapIndex 已被弃用。 请改用 @"microsoft.quantum.arrays.mappedbyindex"。
 syntax: "function MapIndex (mapper : ((Int, 'T) -> 'U), array : 'T[]) : 'U[]"
 input:
   content: "(mapper : ((Int, 'T) -> 'U), array : 'T[])"
@@ -37,9 +31,9 @@ output:
     uid: "'U"
     isLocal: true
 metadata:
-  ms.openlocfilehash: e72a1e073156fc4a89fcc1ba9f760c748009facd
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 0abc5a41f097801c1fc3a5bd0228b732c61837d7
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73225241"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74859887"

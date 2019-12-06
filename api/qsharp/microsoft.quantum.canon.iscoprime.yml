@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.iscoprime
 name: IsCoprime
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.greatestcommondivisori"。
+summary: IsCoprime 已被弃用。 请改用 @"microsoft.quantum.math.iscoprimei"。
 syntax: 'function IsCoprime (a : Int, b : Int) : Bool'
 input:
   content: '(a : Int, b : Int)'
@@ -26,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: b808d160974faf7c874e1bbaf6f2a670a6b10888
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 4ca3cb0ea2691db6d7957bd9f74e633ce7dd0fe2
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73225938"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74860071"

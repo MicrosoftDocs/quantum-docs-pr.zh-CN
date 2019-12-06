@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.uncurryopc
 name: UncurryOpC
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.canon.uncurriedopc"。
+summary: UncurryOpC 已被弃用。 请改用 @"microsoft.quantum.canon.uncurriedopc"。
 syntax: "function UncurryOpC (curriedOp : ('T -> ('U => Unit is Ctl))) : (('T, 'U) => Unit is Ctl)"
 input:
   content: "(curriedOp : ('T -> ('U => Unit is Ctl)))"
@@ -50,9 +44,9 @@ output:
     functors:
     - Controlled
 metadata:
-  ms.openlocfilehash: 3d0faf1d4f0c174985950329ea9020cd9cee4d1c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5751bf177fc8bad0f93ab7739d93a346be4828f1
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216741"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74859119"

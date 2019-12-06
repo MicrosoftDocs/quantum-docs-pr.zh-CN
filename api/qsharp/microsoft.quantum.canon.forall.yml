@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.forall
 name: ForAll
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请改用 @"Microsoft.Quantum.Arrays.All"。
+summary: ForAll 已被弃用。 请改用 @"microsoft.quantum.arrays.all"。
 syntax: "function ForAll (predicate : ('T -> Bool), array : 'T[]) : Bool"
 input:
   content: "(predicate : ('T -> Bool), array : 'T[])"
@@ -34,9 +28,9 @@ output:
   - isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: fdf5f988f5e7b48a20019728defd5c3c7eed935a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: e95c66d92bd0f4346333018c25557402a5e1be97
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73223031"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74860572"

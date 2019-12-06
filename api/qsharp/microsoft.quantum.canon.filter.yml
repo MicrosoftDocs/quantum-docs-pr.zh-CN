@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.filter
 name: Filter
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请改用 @"Microsoft.Quantum.Arrays.Filtered"。
+summary: 已弃用筛选器。 请改用 @"microsoft.quantum.arrays.filtered"。
 syntax: "function Filter (predicate : ('T -> Bool), array : 'T[]) : 'T[]"
 input:
   content: "(predicate : ('T -> Bool), array : 'T[])"
@@ -35,9 +29,9 @@ output:
     uid: "'T"
     isLocal: true
 metadata:
-  ms.openlocfilehash: 34e60265d9fd78ffa5439fc4df2d4617e054cabe
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 038539f30afdd57cf74249184e86d6094634a6ae
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228386"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74860640"

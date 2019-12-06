@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.convert.tobigint
 name: ToBigInt
 type: function
 namespace: Microsoft.Quantum.Extensions.Convert
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.convert.intasbigint"。
+summary: ToBigInt 已被弃用。 请改用 @"microsoft.quantum.convert.intasbigint"。
 syntax: 'function ToBigInt (a : Int) : BigInt'
 input:
   content: '(a : Int)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: 2f8daeb136397a3a014a6c91d30885b9dc276b38
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ac9010bbd235c5b691c8d6527f612443c8619da5
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73234234"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863499"

@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.measure
 name: Measure
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.measure"。
+summary: 度量值已弃用。 请改用 @"microsoft.quantum.intrinsic.measure"。
 syntax: 'operation Measure (bases : Pauli[], qubits : Qubit[]) : Result'
 input:
   content: '(bases : Pauli[], qubits : Qubit[])'
@@ -28,9 +22,9 @@ output:
   - isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 8213dec9c2c50bdf6ab8061ab271c3ab2517a579
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 3d7cb1f7bdb57adbe03575c21ef63894e48710e8
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73229457"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864808"

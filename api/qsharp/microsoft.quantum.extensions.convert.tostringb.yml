@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.convert.tostringb
 name: ToStringB
 type: function
 namespace: Microsoft.Quantum.Extensions.Convert
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.convert.boolasstring"。
+summary: ToStringB 已被弃用。 请改用 @"microsoft.quantum.convert.boolasstring"。
 syntax: 'function ToStringB (a : Bool) : String'
 input:
   content: '(a : Bool)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: String
 metadata:
-  ms.openlocfilehash: a40adc497cc6e3d31c73a65f49326459c48773fa
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b4ba5e40b412d75fa0ead6a6da8242b46ce1535c
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73232126"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74865624"

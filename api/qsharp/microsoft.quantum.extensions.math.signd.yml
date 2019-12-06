@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.math.signd
 name: SignD
 type: function
 namespace: Microsoft.Quantum.Extensions.Math
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.signd"。
+summary: SignD 已被弃用。 请改用 @"microsoft.quantum.math.signd"。
 syntax: 'function SignD (a : Double) : Int'
 input:
   content: '(a : Double)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: d6ebf865b3adad57d8f2f1435330718315d880c0
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: f8331aa815e22d73f333e8f67ea4c8dadb30b1e5
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73223949"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863397"

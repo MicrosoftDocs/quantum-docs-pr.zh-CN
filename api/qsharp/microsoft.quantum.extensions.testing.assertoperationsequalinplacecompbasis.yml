@@ -3,15 +3,7 @@ uid: microsoft.quantum.extensions.testing.assertoperationsequalinplacecompbasis
 name: AssertOperationsEqualInPlaceCompBasis
 type: operation
 namespace: Microsoft.Quantum.Extensions.Testing
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.diagnostics.assertoperationsequalinplaceCompBasis"。
-
-  请注意，此操作的参数顺序已更改。
+summary: AssertOperationsEqualInPlaceCompBasis 已被弃用。 请改用 @"microsoft.quantum.diagnostics.assertoperationsequalinplacecompbasis"。
 syntax: 'operation AssertOperationsEqualInPlaceCompBasis (actual : (Qubit[] => Unit), expected : (Qubit[] => Unit is Adj), nQubits : Int) : Unit'
 input:
   content: '(actual : (Qubit[] => Unit), expected : (Qubit[] => Unit is Adj), nQubits : Int)'
@@ -49,9 +41,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: ef71e4464f7d79cbe50da5b93201d1e41e4d9e6a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6768fa79389f9f9a9b04360daed26e067901aba1
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216673"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74865029"

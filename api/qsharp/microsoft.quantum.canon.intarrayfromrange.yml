@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.intarrayfromrange
 name: IntArrayFromRange
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.convert.rangeasintarray"。
+summary: IntArrayFromRange 已被弃用。 请改用 @"microsoft.quantum.convert.rangeasintarray"。
 syntax: 'function IntArrayFromRange (range : Range) : Int[]'
 input:
   content: '(range : Range)'
@@ -24,9 +18,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 464ae346b2b504ca1327beb28aefe6c33b91766b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: dad500cfddd8f79fea8476e7584d243e2919b721
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73227264"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863873"

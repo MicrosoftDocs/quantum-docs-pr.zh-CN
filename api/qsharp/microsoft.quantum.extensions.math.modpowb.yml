@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.math.modpowb
 name: ModPowB
 type: function
 namespace: Microsoft.Quantum.Extensions.Math
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.modpowl"。
+summary: ModPowB 已被弃用。 请改用 @"microsoft.quantum.math.modpowl"。
 syntax: 'function ModPowB (value : BigInt, exponent : BigInt, modulus : BigInt) : BigInt'
 input:
   content: '(value : BigInt, exponent : BigInt, modulus : BigInt)'
@@ -29,9 +23,9 @@ output:
   - isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: cb39b3b92f44a2d3eb5a80e12849d84887ccd85a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5c2db569e170bcac094744cb3efdca5bd738db0d
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73224102"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74865182"

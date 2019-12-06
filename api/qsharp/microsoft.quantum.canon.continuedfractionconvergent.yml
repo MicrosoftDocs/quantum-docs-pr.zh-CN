@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.continuedfractionconvergent
 name: ContinuedFractionConvergent
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.continuedfractionconvergenti"。
+summary: ContinuedFractionConvergent 已被弃用。 请改用 @"microsoft.quantum.math.continuedfractionconvergenti"。
 syntax: 'function ContinuedFractionConvergent (fraction : Microsoft.Quantum.Math.Fraction, denominatorBound : Int) : Microsoft.Quantum.Math.Fraction'
 input:
   content: '(fraction : Microsoft.Quantum.Math.Fraction, denominatorBound : Int)'
@@ -24,9 +18,9 @@ output:
   types:
   - uid: microsoft.quantum.math.fraction
 metadata:
-  ms.openlocfilehash: b419dd1232944f1837c8899a9d0222cf5e7c9732
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: e21f2076d9e260a9cad883d26e4c7490f85ac97c
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067928"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74860606"

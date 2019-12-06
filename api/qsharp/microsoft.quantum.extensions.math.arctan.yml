@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.math.arctan
 name: ArcTan
 type: function
 namespace: Microsoft.Quantum.Extensions.Math
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.arctan"。
+summary: ArcTan 已被弃用。 请改用 @"microsoft.quantum.math.arctan"。
 syntax: 'function ArcTan (theta : Double) : Double'
 input:
   content: '(theta : Double)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: a4c8d7d0cdd9544f635dfe1f1d58a5ee55ed36ff
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 579c53bfde5e375328fb9b6ac31f9a0f662a255f
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73224697"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74865420"

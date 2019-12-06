@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.inplacexorle
 name: InPlaceXorLE
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"Microsoft.Quantum.Measurement.ApplyXorInPlace"。
+summary: InPlaceXorLE 已被弃用。 请改用 @"microsoft.quantum.measurement.applyxorinplace"。
 syntax: 'operation InPlaceXorLE (value : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
   content: '(value : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian)'
@@ -28,9 +22,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 16583975d11f1c727d0d583fcf380fb26e45837d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 8719ae4aa6a76905be85bacad6e5ee6216cc0319
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226040"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863907"

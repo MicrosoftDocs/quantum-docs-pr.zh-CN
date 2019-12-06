@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.math.cosh
 name: Cosh
 type: function
 namespace: Microsoft.Quantum.Extensions.Math
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.cosh"。
+summary: Cosh 已被弃用。 请改用 @"microsoft.quantum.math.cosh"。
 syntax: 'function Cosh (theta : Double) : Double'
 input:
   content: '(theta : Double)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 932d82077a3150c3b0038a7a3cfcb4f3f1e26c78
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 3d85812ba0c6c23c11e5a7b110e2ae18b2da2dc2
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73224578"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863448"

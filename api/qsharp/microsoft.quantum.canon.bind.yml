@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.bind
 name: Bind
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.canon.bound"。
+summary: 绑定已被弃用。 请改用 @"microsoft.quantum.canon.bound"。
 syntax: "function Bind (operations : ('T => Unit)[]) : ('T => Unit)"
 input:
   content: "(operations : ('T => Unit)[])"
@@ -38,9 +32,9 @@ output:
       - isPrimitive: true
         uid: Unit
 metadata:
-  ms.openlocfilehash: 688b9f9fd1630617b0fafefb8e9c22b99fec1f0f
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 9c8f9006e3d625bfac0d414e0944aed7bbb19ed0
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73225428"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74861636"

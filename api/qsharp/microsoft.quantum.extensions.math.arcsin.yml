@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.math.arcsin
 name: ArcSin
 type: function
 namespace: Microsoft.Quantum.Extensions.Math
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.arcsin"。
+summary: ArcSin 已被弃用。 请改用 @"microsoft.quantum.math.arcsin"。
 syntax: 'function ArcSin (theta : Double) : Double'
 input:
   content: '(theta : Double)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 928e6790c4327d788a93d94bab68dfb96b1ef64e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 384aec71c37a2b64e4cf07bb019b1f9330f4e33b
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73224731"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74865471"

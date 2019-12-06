@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.math.signb
 name: SignB
 type: function
 namespace: Microsoft.Quantum.Extensions.Math
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.signl"。
+summary: SignB 已被弃用。 请改用 @"microsoft.quantum.math.signl"。
 syntax: 'function SignB (a : BigInt) : Int'
 input:
   content: '(a : BigInt)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 9e6c2a8f822a4318069a177c61383bee23c6f857
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: e2dfcaedc58fc72e79f2f8fc01fa7cdf0de0ef1c
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73223966"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74865131"

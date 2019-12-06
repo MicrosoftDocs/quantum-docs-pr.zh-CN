@@ -3,189 +3,81 @@ uid: microsoft.quantum.extensions.math
 name: Microsoft.Quantum.Extensions.Math
 functions:
 - uid: microsoft.quantum.extensions.math.absb
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.absl"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAbsB 已被弃用。 请改用 @\"microsoft.quantum.math.absl\"。\n请使用 @\"microsoft.quantum.math.absl\"。"
 - uid: microsoft.quantum.extensions.math.absd
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.absd"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAbsD 已被弃用。 请改用 @\"microsoft.quantum.math.absd\"。\n请使用 @\"microsoft.quantum.math.absd\"。"
 - uid: microsoft.quantum.extensions.math.absi
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.absi"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAbsI 已被弃用。 请改用 @\"microsoft.quantum.math.absi\"。\n请使用 @\"microsoft.quantum.math.absi\"。"
 - uid: microsoft.quantum.extensions.math.arccos
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.arccos"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nArcCos 已被弃用。 请改用 @\"microsoft.quantum.math.arccos\"。\n请使用 @\"microsoft.quantum.math.arccos\"。"
 - uid: microsoft.quantum.extensions.math.arcsin
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.arcsin"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nArcSin 已被弃用。 请改用 @\"microsoft.quantum.math.arcsin\"。\n请使用 @\"microsoft.quantum.math.arcsin\"。"
 - uid: microsoft.quantum.extensions.math.arctan
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.arctan"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nArcTan 已被弃用。 请改用 @\"microsoft.quantum.math.arctan\"。\n请使用 @\"microsoft.quantum.math.arctan\"。"
 - uid: microsoft.quantum.extensions.math.arctan2
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.arctan2"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nArcTan2 已被弃用。 请改用 @\"microsoft.quantum.math.arctan2\"。\n请使用 @\"microsoft.quantum.math.arctan2\"。"
 - uid: microsoft.quantum.extensions.math.ceiling
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.ceiling"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\n天花板已弃用。 请改用 @\"microsoft.quantum.math.ceiling\"。\n请使用 @\"microsoft.quantum.math.ceiling\"。"
 - uid: microsoft.quantum.extensions.math.cos
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.cos"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nCos 已弃用。 请改用 @\"microsoft.quantum.math.cos\"。\n请使用 @\"microsoft.quantum.math.cos\"。"
 - uid: microsoft.quantum.extensions.math.cosh
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.cosh"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nCosh 已被弃用。 请改用 @\"microsoft.quantum.math.cosh\"。\n请使用 @\"microsoft.quantum.math.cosh\"。"
 - uid: microsoft.quantum.extensions.math.divremb
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.divreml"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nDivRemB 已被弃用。 请改用 @\"microsoft.quantum.math.divreml\"。\n请使用 @\"microsoft.quantum.math.divreml\"。"
 - uid: microsoft.quantum.extensions.math.e
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.e"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nE 已弃用。 请使用 @\"microsoft.quantum.math.e\" 时，才收集此数据。\n请使用 @\"microsoft.quantum.math.e\"。"
 - uid: microsoft.quantum.extensions.math.expd
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.expd"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nExpD 已被弃用。 请改用 @\"microsoft.quantum.math.expd\"。\n请使用 @\"microsoft.quantum.math.expd\"。"
 - uid: microsoft.quantum.extensions.math.floor
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.floor"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\n楼层已弃用。 请改用 @\"microsoft.quantum.math.floor\"。\n请使用 @\"microsoft.quantum.math.floor\"。"
 - uid: microsoft.quantum.extensions.math.ieeeremainder
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.ieeeremainder"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nIEEERemainder 已被弃用。 请改用 @\"microsoft.quantum.math.ieeeremainder\"。\n请使用 @\"microsoft.quantum.math.ieeeremainder\"。"
 - uid: microsoft.quantum.extensions.math.log
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.log"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\n日志已被弃用。 请改用 @\"microsoft.quantum.math.log\"。\n请使用 @\"microsoft.quantum.math.log\"。"
 - uid: microsoft.quantum.extensions.math.log10
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.log10"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nLog10 已被弃用。 请改用 @\"microsoft.quantum.math.log10\"。\n请使用 @\"microsoft.quantum.math.log10\"。"
 - uid: microsoft.quantum.extensions.math.maxb
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.maxl"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nMaxB 已被弃用。 请改用 @\"microsoft.quantum.math.maxl\"。\n请使用 @\"microsoft.quantum.math.maxl\"。"
 - uid: microsoft.quantum.extensions.math.maxd
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.maxd"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nMaxD 已被弃用。 请改用 @\"microsoft.quantum.math.maxd\"。\n请使用 @\"microsoft.quantum.math.maxd\"。"
 - uid: microsoft.quantum.extensions.math.maxi
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.maxi"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nMaxI 已被弃用。 请改用 @\"microsoft.quantum.math.maxi\"。\n请使用 @\"microsoft.quantum.math.maxi\"。"
 - uid: microsoft.quantum.extensions.math.minb
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.minl"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nMinB 已被弃用。 请改用 @\"microsoft.quantum.math.minl\"。\n请使用 @\"microsoft.quantum.math.minl\"。"
 - uid: microsoft.quantum.extensions.math.mind
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.mind"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\n不推荐使用。 请改用 @\"microsoft.quantum.math.mind\"。\n请使用 @\"microsoft.quantum.math.mind\"。"
 - uid: microsoft.quantum.extensions.math.mini
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.mini"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\n已弃用最小化。 请改用 @\"microsoft.quantum.math.mini\"。\n请使用 @\"microsoft.quantum.math.mini\"。"
 - uid: microsoft.quantum.extensions.math.modpowb
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.modpowl"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nModPowB 已被弃用。 请改用 @\"microsoft.quantum.math.modpowl\"。\n请使用 @\"microsoft.quantum.math.modpowl\"。"
 - uid: microsoft.quantum.extensions.math.pi
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.pi"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nPI 已弃用。 请改用 @\"microsoft.quantum.math.pi\"。\n请使用 @\"microsoft.quantum.math.pi\"。"
 - uid: microsoft.quantum.extensions.math.powd
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.powd"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nPowD 已被弃用。 请改用 @\"microsoft.quantum.math.powd\"。\n请使用 @\"microsoft.quantum.math.powd\"。"
 - uid: microsoft.quantum.extensions.math.round
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.round"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\n已弃用舍入。 请改用 @\"microsoft.quantum.math.round\"。\n请使用 @\"microsoft.quantum.math.round\"。"
 - uid: microsoft.quantum.extensions.math.signb
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.signl"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nSignB 已被弃用。 请改用 @\"microsoft.quantum.math.signl\"。\n请使用 @\"microsoft.quantum.math.signl\"。"
 - uid: microsoft.quantum.extensions.math.signd
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.signd"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nSignD 已被弃用。 请改用 @\"microsoft.quantum.math.signd\"。\n请使用 @\"microsoft.quantum.math.signd\"。"
 - uid: microsoft.quantum.extensions.math.signi
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.signi"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nSignI 已被弃用。 请改用 @\"microsoft.quantum.math.signi\"。\n请使用 @\"microsoft.quantum.math.signi\"。"
 - uid: microsoft.quantum.extensions.math.sin
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.sin"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nSin 已弃用。 请改用 @\"microsoft.quantum.math.sin\"。\n请使用 @\"microsoft.quantum.math.sin\"。"
 - uid: microsoft.quantum.extensions.math.sinh
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.sinh"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nSinh 已被弃用。 请改用 @\"microsoft.quantum.math.sinh\"。\n请使用 @\"microsoft.quantum.math.sinh\"。"
 - uid: microsoft.quantum.extensions.math.sqrt
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.sqrt"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nSqrt 已弃用。 请改用 @\"microsoft.quantum.math.sqrt\"。\n请使用 @\"microsoft.quantum.math.sqrt\"。"
 - uid: microsoft.quantum.extensions.math.tan
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.tan"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nTan 已弃用。 请改用 @\"microsoft.quantum.math.tan\"。\n请使用 @\"microsoft.quantum.math.tan\"。"
 - uid: microsoft.quantum.extensions.math.tanh
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.tanh"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nTanh 已被弃用。 请改用 @\"microsoft.quantum.math.tanh\"。\n请使用 @\"microsoft.quantum.math.tanh\"。"
 - uid: microsoft.quantum.extensions.math.truncate
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.math.truncate"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\n截断已被弃用。 请改用 @\"microsoft.quantum.math.truncate\"。\n请使用 @\"microsoft.quantum.math.truncate\"。"
 metadata:
-  ms.openlocfilehash: a1a8cda192f7e95141eb2e34baa37ddaae4cb8c9
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 1eb20bd8834d2a34022ee503808fd26eccaf8c64
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73056335"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74858830"

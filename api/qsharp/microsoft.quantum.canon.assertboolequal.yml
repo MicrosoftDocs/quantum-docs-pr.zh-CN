@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.assertboolequal
 name: AssertBoolEqual
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请改用 @"Microsoft.Quantum.Diagnostics.EqualityFactB"。
+summary: AssertBoolEqual 已被弃用。 请改用 @"microsoft.quantum.diagnostics.equalityfactb"。
 syntax: 'function AssertBoolEqual (actual : Bool, expected : Bool, message : String) : Unit'
 input:
   content: '(actual : Bool, expected : Bool, message : String)'
@@ -29,9 +23,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 9b35caaee135b27b0b02182cc4d89d60f0a01295
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 037660c016fc23e9bf8c1172d56b54b7174ed0e4
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73212389"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74861806"

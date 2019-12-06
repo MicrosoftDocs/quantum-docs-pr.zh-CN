@@ -1,0 +1,23 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.complexpolartocomplex
+name: ComplexPolarToComplex
+type: function
+namespace: Microsoft.Quantum.Math
+summary: ComplexPolarToComplex 已被弃用。 请改用 @"microsoft.quantum.math.complexpolarascomplex"。
+syntax: 'function ComplexPolarToComplex (input : Microsoft.Quantum.Math.ComplexPolar) : Microsoft.Quantum.Math.Complex'
+input:
+  content: '(input : Microsoft.Quantum.Math.ComplexPolar)'
+  types:
+  - name: input
+    uid: microsoft.quantum.math.complexpolar
+output:
+  content: Microsoft.Quantum.Math.Complex
+  types:
+  - uid: microsoft.quantum.math.complex
+metadata:
+  ms.openlocfilehash: e040dc901e73bbb91915f06ed27dcc73d7fd4900
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864961"

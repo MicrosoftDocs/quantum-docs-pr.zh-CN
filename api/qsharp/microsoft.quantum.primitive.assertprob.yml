@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.assertprob
 name: AssertProb
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.assertprob"。
+summary: AssertProb 已被弃用。 请改用 @"microsoft.quantum.intrinsic.assertprob"。
 syntax: 'operation AssertProb (bases : Pauli[], qubits : Qubit[], result : Result, prob : Double, msg : String, tol : Double) : Unit'
 input:
   content: '(bases : Pauli[], qubits : Qubit[], result : Result, prob : Double, msg : String, tol : Double)'
@@ -43,9 +37,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: c670102e25ed6588cf002e231ba889c52817f2e8
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b454224dd2630d04fcfd134c2856bc78018972af
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226261"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864927"

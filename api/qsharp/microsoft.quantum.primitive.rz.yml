@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.rz
 name: Rz
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.rz"。
+summary: Vny-rz-j42 已被弃用。 请改用 @"microsoft.quantum.intrinsic.rz"。
 syntax: 'operation Rz (theta : Double, qubit : Qubit) : Unit'
 input:
   content: '(theta : Double, qubit : Qubit)'
@@ -29,9 +23,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 2dca6ca927c738d6b3743e20dc116e077aa6a92e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5ce58cd9d33b8d236edb86dc7584b3282e2bccd3
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066330"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864604"

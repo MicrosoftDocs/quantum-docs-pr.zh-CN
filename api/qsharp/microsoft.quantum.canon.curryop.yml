@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.curryop
 name: CurryOp
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.canon.curriedop"。
+summary: CurryOp 已被弃用。 请改用 @"microsoft.quantum.canon.curriedop"。
 syntax: "function CurryOp (op : (('T, 'U) => Unit)) : ('T -> ('U => Unit))"
 input:
   content: "(op : (('T, 'U) => Unit))"
@@ -46,9 +40,9 @@ output:
           - isPrimitive: true
             uid: Unit
 metadata:
-  ms.openlocfilehash: 3f409fb9354c8b1559965ad01a94a0e286fd1155
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6fa060c51a8110bdbb83be92ab8779fd98d38f10
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73227366"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863975"

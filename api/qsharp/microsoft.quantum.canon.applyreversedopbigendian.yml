@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.applyreversedopbigendian
 name: ApplyReversedOpBigEndian
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"Microsoft.Quantum.Arithmetic.ApplyReversedOpBE"。
+summary: ApplyReversedOpBigEndian 已被弃用。 请改用 @"microsoft.quantum.arithmetic.applyreversedopbe"。
 syntax: 'operation ApplyReversedOpBigEndian (op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit), register : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
   content: '(op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit), register : Microsoft.Quantum.Arithmetic.LittleEndian)'
@@ -31,9 +25,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 89f8e44c1f1baea604f94d9c0c44f4430deefa76
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d0d99f8c5f81d6ac3240af9004479c2f74adf198
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220651"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74862814"

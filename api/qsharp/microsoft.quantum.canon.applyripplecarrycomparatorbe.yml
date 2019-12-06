@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.applyripplecarrycomparatorbe
 name: ApplyRippleCarryComparatorBE
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  此操作已被删除。
+summary: ApplyRippleCarryComparatorBE 已被弃用。 请改用 @ "compareusingripplecarry （bigendianaslittleendian （x），bigendianaslittleendian （y），output）"。
 syntax: 'operation ApplyRippleCarryComparatorBE (x : Microsoft.Quantum.Arithmetic.BigEndian, y : Microsoft.Quantum.Arithmetic.BigEndian, output : Qubit) : Unit'
 input:
   content: '(x : Microsoft.Quantum.Arithmetic.BigEndian, y : Microsoft.Quantum.Arithmetic.BigEndian, output : Qubit)'
@@ -26,13 +20,10 @@ output:
   types:
   - isPrimitive: true
     uid: Unit
-functors:
-- Adjoint
-- Controlled
 metadata:
-  ms.openlocfilehash: e5237be6118794440e372ef837e002edc69c4154
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 2913d706fd23746cf9033bcc25b5dcb0a73ad17c
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219682"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864141"
