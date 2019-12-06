@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.resetall
 name: ResetAll
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.resetall"。
+summary: ResetAll 已被弃用。 请改用 @"microsoft.quantum.intrinsic.resetall"。
 syntax: 'operation ResetAll (qubits : Qubit[]) : Unit'
 input:
   content: '(qubits : Qubit[])'
@@ -24,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: abd8e8f8af35044846860d4f4405eb37bf2a25fa
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 9a1db429b9333f9c6ce9ed050341389a0843f4bd
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066398"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864655"

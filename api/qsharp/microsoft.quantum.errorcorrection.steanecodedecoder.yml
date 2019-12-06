@@ -3,13 +3,7 @@ uid: microsoft.quantum.errorcorrection.steanecodedecoder
 name: SteaneCodeDecoder
 type: operation
 namespace: Microsoft.Quantum.ErrorCorrection
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.errorcorrection.decodefromfivequbitcode"。
+summary: SteaneCodeDecoder 已被弃用。 请改用 @"microsoft.quantum.errorcorrection.decodefromsteanecode"。
 syntax: 'operation SteaneCodeDecoder (logicalRegister : Microsoft.Quantum.ErrorCorrection.LogicalRegister) : (Qubit[], Qubit[])'
 input:
   content: '(logicalRegister : Microsoft.Quantum.ErrorCorrection.LogicalRegister)'
@@ -27,9 +21,9 @@ output:
       isPrimitive: true
       uid: Qubit
 metadata:
-  ms.openlocfilehash: 97dd96c395ef96849369c35ad4878dbe4233eba3
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 793978bdd228d6bd79adb6b6dc0fce11bff94ed9
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220243"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74865845"

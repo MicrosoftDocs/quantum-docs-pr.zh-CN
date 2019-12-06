@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.bindc
 name: BindC
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.canon.boundc"。
+summary: BindC 已被弃用。 请改用 @"microsoft.quantum.canon.boundc"。
 syntax: "function BindC (operations : ('T => Unit is Ctl)[]) : ('T => Unit is Ctl)"
 input:
   content: "(operations : ('T => Unit is Ctl)[])"
@@ -42,9 +36,9 @@ output:
     functors:
     - Controlled
 metadata:
-  ms.openlocfilehash: 2245c54209b987b812d57af5cdc13de1aa7e02d0
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d4586e15c5df5dfc94ab15be2b21f014b5734ade
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73068336"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74861031"

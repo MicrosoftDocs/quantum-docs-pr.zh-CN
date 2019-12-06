@@ -1,0 +1,56 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applyseriesofopsc
+name: ApplySeriesOfOpsC
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: 在数组上按顺序应用 ops 及其目标的列表。 操控
+syntax: "operation ApplySeriesOfOpsC (listOfOps : ('T[] => Unit is Ctl)[], targets : Int[][], register : 'T[]) : Unit"
+input:
+  content: "(listOfOps : ('T[] => Unit is Ctl)[], targets : Int[][], register : 'T[])"
+  types:
+  - name: listOfOps
+    summary: >-
+      要应用的 ops 列表，每个操作都采用 "t" 数组。 它们按顺序应用，最小索引优先。
+
+      每个必须具有受控函子
+    isArray: true
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: targets
+    summary: 描述 op 目标的嵌套数组。 每个数组都应包含一个整数列表，其中包含描述要使用的索引的整数。
+    isArray: true
+    types:
+    - isArray: true
+      isPrimitive: true
+      uid: Int
+  - name: register
+    summary: 要对其进行操作的 Qubit 寄存器。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applyoprepeatedlyover
+metadata:
+  ms.openlocfilehash: 96bdcbc47483c9c7e066c0004bf41a4e21a78454
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74866608"

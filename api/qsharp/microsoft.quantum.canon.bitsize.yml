@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.bitsize
 name: BitSize
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.bitsizei"。
+summary: BitSize 已被弃用。 请改用 @"microsoft.quantum.math.bitsizei"。
 syntax: 'function BitSize (a : Int) : Int'
 input:
   content: '(a : Int)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 9a1e31a0e874505ec380d23d865691d738dac9f7
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 923c8cbb610d4495aa8aea4ebed095bcfd8e173c
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73068268"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864009"

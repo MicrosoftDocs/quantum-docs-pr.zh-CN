@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.assertprobintbe
 name: AssertProbIntBE
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  此操作已被删除。
+summary: AssertProbIntBE 已被弃用。 请改用 @ "assertprobint （stateindex，prob，bigendianaslittleendian （qubits），容忍）"。
 syntax: 'operation AssertProbIntBE (stateIndex : Int, prob : Double, qubits : Microsoft.Quantum.Arithmetic.BigEndian, tolerance : Double) : Unit'
 input:
   content: '(stateIndex : Int, prob : Double, qubits : Microsoft.Quantum.Arithmetic.BigEndian, tolerance : Double)'
@@ -31,9 +25,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 687e30ca8468329cc4b491ec124156a46d954282
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 0a4ba2bae2a28e0f54f8c168323a308788cb7614
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73068404"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864111"

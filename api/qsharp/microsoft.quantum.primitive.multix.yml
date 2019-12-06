@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.multix
 name: MultiX
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.canon.applytoeachca"。
+summary: MultiX 已被弃用。 请改用 @ "applytoeachca （x，_）"。
 syntax: 'operation MultiX (qubits : Qubit[]) : Unit'
 input:
   content: '(qubits : Qubit[])'
@@ -27,9 +21,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 35626d001eaf6540bd56a19a521b43dfea717557
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: db92fdff3c47a3cb35c058122daa967a5fa1d165
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066466"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864756"

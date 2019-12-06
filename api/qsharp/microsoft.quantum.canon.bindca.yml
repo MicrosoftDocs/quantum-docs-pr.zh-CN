@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.bindca
 name: BindCA
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.canon.boundca"。
+summary: BindCA 已被弃用。 请改用 @"microsoft.quantum.canon.boundca"。
 syntax: "function BindCA (operations : ('T => Unit is Adj + Ctl)[]) : ('T => Unit is Adj + Ctl)"
 input:
   content: "(operations : ('T => Unit is Adj + Ctl)[])"
@@ -44,9 +38,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: 346b32022d56af5a69b428ff55103ac6cb3381e1
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5fb19cdb68fee25a7b09f75dd30df8ce38822be4
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73068302"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74860820"

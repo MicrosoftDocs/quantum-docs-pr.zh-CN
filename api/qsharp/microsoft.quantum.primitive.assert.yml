@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.assert
 name: Assert
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.assert"。
+summary: 已弃用断言。 请改用 @"microsoft.quantum.intrinsic.assert"。
 syntax: 'operation Assert (bases : Pauli[], qubits : Qubit[], result : Result, msg : String) : Unit'
 input:
   content: '(bases : Pauli[], qubits : Qubit[], result : Result, msg : String)'
@@ -37,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: d74ebcd378bebaf86c7fe0fb2f6fd8b9533cdeeb
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 858907b81fa544303a25ae6836f05e8a4cbeb1d6
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226329"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864944"

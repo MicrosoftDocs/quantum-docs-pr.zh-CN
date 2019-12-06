@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.m
 name: M
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.m"。
+summary: M 已弃用。 请改用 @"microsoft.quantum.intrinsic.m"。
 syntax: 'operation M (qubit : Qubit) : Result'
 input:
   content: '(qubit : Qubit)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 2b6bfbaeb2d1d3d0bd34c68d1bb0923edcfea831
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: eb4a773e52b9cb5b1afd81369b50dba758ac3927
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73223337"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864825"

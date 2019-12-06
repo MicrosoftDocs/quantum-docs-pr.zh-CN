@@ -37,7 +37,7 @@ input:
     summary: >-
       选择要使用的 Trotter – Suzuki 集成器的顺序。
 
-      当前支持订单1和2。
+      订单1，甚至订单2，4，6,.。。当前支持。
     isPrimitive: true
     uid: Int
 output:
@@ -62,9 +62,9 @@ typeParameters:
 - uid: "'T"
   summary: 每次步骤应执行的操作的类型;通常 `Qubit[]` 或 `Qubit`。
 metadata:
-  ms.openlocfilehash: 328db9b314320c724cf03adb19ee59d63a33e56e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ac9e4b4359c77205b7a823c334222a049ff49c10
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067826"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863958"

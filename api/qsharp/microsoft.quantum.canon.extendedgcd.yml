@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.extendedgcd
 name: ExtendedGCD
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.extendedgreatestcommondivisori"。
+summary: ExtendedGCD 已被弃用。 请改用 @"microsoft.quantum.math.extendedgreatestcommondivisori"。
 syntax: 'function ExtendedGCD (a : Int, b : Int) : (Int, Int)'
 input:
   content: '(a : Int, b : Int)'
@@ -29,9 +23,9 @@ output:
     - isPrimitive: true
       uid: Int
 metadata:
-  ms.openlocfilehash: 69d6829cc0ec144024c521863883ac1966f219f2
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6b52eb689caac14b4455a3f8aaef3c41492a1b34
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219393"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74860589"

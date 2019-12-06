@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.with
 name: With
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"Microsoft.Quantum.Canon.ApplyWith"。
+summary: 已不推荐使用。 请改用 @"microsoft.quantum.canon.applywith"。
 syntax: "operation With (outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit), target : 'T) : Unit"
 input:
   content: "(outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit), target : 'T)"
@@ -45,9 +39,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: cea09741de97676400b55f0773f63a49305aa3e0
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: e6294590f8597dafa47dae2951a5007104935059
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216707"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74859085"

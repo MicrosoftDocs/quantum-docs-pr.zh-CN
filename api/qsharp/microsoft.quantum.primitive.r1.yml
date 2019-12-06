@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.r1
 name: R1
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.r1"。
+summary: R1 已弃用。 请改用 @"microsoft.quantum.intrinsic.r1"。
 syntax: 'operation R1 (theta : Double, qubit : Qubit) : Unit'
 input:
   content: '(theta : Double, qubit : Qubit)'
@@ -29,9 +23,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 3ff007d598a5d89ed1bc877940a0ecffc505ea84
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 0376a0f1c2249773b741f80f40cb6b38089c30a1
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226278"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864723"

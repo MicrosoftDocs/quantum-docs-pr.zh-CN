@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.map
 name: Map
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请改用 @"Microsoft.Quantum.Arrays.Mapped"。
+summary: 映射已被弃用。 请改用 @"microsoft.quantum.arrays.mapped"。
 syntax: "function Map (mapper : ('T -> 'U), array : 'T[]) : 'U[]"
 input:
   content: "(mapper : ('T -> 'U), array : 'T[])"
@@ -35,9 +29,9 @@ output:
     uid: "'U"
     isLocal: true
 metadata:
-  ms.openlocfilehash: bd297e19ec040cca0768ec0fc8c95b5bf6a68f82
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 0d53aed3ff9e48cb9278e9ecdc410e7fd14f69a3
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73222946"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74860020"

@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.applyripplecarrycomparatorle
 name: ApplyRippleCarryComparatorLE
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"Microsoft.Quantum.Arithmetic.CompareUsingRippleCarry"。
+summary: ApplyRippleCarryComparatorLE 已被弃用。 请改用 @"microsoft.quantum.arithmetic.compareusingripplecarry"。
 syntax: 'operation ApplyRippleCarryComparatorLE (x : Microsoft.Quantum.Arithmetic.LittleEndian, y : Microsoft.Quantum.Arithmetic.LittleEndian, output : Qubit) : Unit'
 input:
   content: '(x : Microsoft.Quantum.Arithmetic.LittleEndian, y : Microsoft.Quantum.Arithmetic.LittleEndian, output : Qubit)'
@@ -30,9 +24,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: c469bbebe8814ff2529be2cd8e20db8c10344d68
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 00d84f5117e598752d386f10cd6d8f55841114e1
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73212134"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74861893"

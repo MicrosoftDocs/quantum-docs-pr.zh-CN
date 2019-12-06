@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.convert.tostringiformat
 name: ToStringIFormat
 type: function
 namespace: Microsoft.Quantum.Extensions.Convert
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.convert.intasstringwithformat"。
+summary: ToStringIFormat 已被弃用。 请改用 @"microsoft.quantum.convert.intasstringwithformat"。
 syntax: 'function ToStringIFormat (a : Int, fmt : String) : String'
 input:
   content: '(a : Int, fmt : String)'
@@ -26,9 +20,9 @@ output:
   - isPrimitive: true
     uid: String
 metadata:
-  ms.openlocfilehash: b91a8490b452756c3e88cf262fac20d16cc36c8e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 3eb21efd8964d351cc54b95c748abb043144510b
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73225003"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74865556"

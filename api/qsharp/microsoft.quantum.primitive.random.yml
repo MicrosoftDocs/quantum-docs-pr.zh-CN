@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.random
 name: Random
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.random"。
+summary: 已不推荐使用随机。 请改用 @"microsoft.quantum.intrinsic.random"。
 syntax: 'operation Random (probs : Double[]) : Int'
 input:
   content: '(probs : Double[])'
@@ -24,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 4e712760da1bd5f0a71fa7905f710e7b4ed71fb1
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 4e6804b7a9e1c80e62fd98e5e8b67d294fb9ba7b
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066432"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864689"

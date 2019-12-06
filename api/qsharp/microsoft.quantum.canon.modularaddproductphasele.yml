@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.modularaddproductphasele
 name: ModularAddProductPhaseLE
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"Microsoft.Quantum.Arithmetic.MultiplyAndAddPhaseByModularInteger"。
+summary: ModularAddProductPhaseLE 已被弃用。 请改用 @"microsoft.quantum.arithmetic.multiplyandaddphasebymodularinteger"。
 syntax: 'operation ModularAddProductPhaseLE (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, phaseSummand : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
 input:
   content: '(constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, phaseSummand : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
@@ -33,9 +27,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: a88de7f710a8d2b7741cc593625c2bef944e4b45
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 1574170446abebeda06508afeb33fd34b218418a
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73222929"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74859742"

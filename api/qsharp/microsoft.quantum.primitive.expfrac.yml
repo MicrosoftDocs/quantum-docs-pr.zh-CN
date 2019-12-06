@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.expfrac
 name: ExpFrac
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.expfrac"。
+summary: ExpFrac 已被弃用。 请改用 @"microsoft.quantum.intrinsic.expfrac"。
 syntax: 'operation ExpFrac (paulis : Pauli[], numerator : Int, power : Int, qubits : Qubit[]) : Unit'
 input:
   content: '(paulis : Pauli[], numerator : Int, power : Int, qubits : Qubit[])'
@@ -37,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: ac7ee4b82b473304f19d93af984ca9ddcbf3b227
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5462417c7f4ef1364803e1a5c796c7643ed51c78
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73223422"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864876"

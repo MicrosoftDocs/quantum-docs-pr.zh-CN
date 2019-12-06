@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.asserthighestbit
 name: AssertHighestBit
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"Microsoft.Quantum.Arithmetic.AssertMostSignificantBit"。
+summary: AssertHighestBit 已被弃用。 请改用 @"microsoft.quantum.arithmetic.assertmostsignificantbit"。
 syntax: 'operation AssertHighestBit (value : Result, number : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
   content: '(value : Result, number : Microsoft.Quantum.Arithmetic.LittleEndian)'
@@ -28,9 +22,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 39eeed8be6595fc1c1916f5372b28d982dc0d007
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 0af2eb84e4ba76a03d0a5e9133ec47e4e3e42d4d
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73212355"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864060"

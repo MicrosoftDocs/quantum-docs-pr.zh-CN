@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.swap
 name: SWAP
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.swap"。
+summary: 交换已弃用。 请改用 @"microsoft.quantum.intrinsic.swap"。
 syntax: 'operation SWAP (qubit1 : Qubit, qubit2 : Qubit) : Unit'
 input:
   content: '(qubit1 : Qubit, qubit2 : Qubit)'
@@ -29,9 +23,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 56e7c27dee7f89830dfb02cb6e778d1377516729
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: fb71616270ae618bd1b14b2b01064ac36243911f
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066296"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864502"

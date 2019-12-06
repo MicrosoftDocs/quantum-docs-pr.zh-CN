@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.uncurryopca
 name: UncurryOpCA
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.canon.uncurriedopca"。
+summary: UncurryOpCA 已被弃用。 请改用 @"microsoft.quantum.canon.uncurriedopca"。
 syntax: "function UncurryOpCA (curriedOp : ('T -> ('U => Unit is Adj + Ctl))) : (('T, 'U) => Unit is Adj + Ctl)"
 input:
   content: "(curriedOp : ('T -> ('U => Unit is Adj + Ctl)))"
@@ -52,9 +46,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: 433840579f899c03244bd4c4859d48a08dc73078
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 05eedde6a07a07ea65413e895ce932144085c152
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216724"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74859102"

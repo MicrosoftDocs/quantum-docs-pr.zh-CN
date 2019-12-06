@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.math.divremb
 name: DivRemB
 type: function
 namespace: Microsoft.Quantum.Extensions.Math
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.divreml"。
+summary: DivRemB 已被弃用。 请改用 @"microsoft.quantum.math.divreml"。
 syntax: 'function DivRemB (dividend : BigInt, divisor : BigInt) : (BigInt, BigInt)'
 input:
   content: '(dividend : BigInt, divisor : BigInt)'
@@ -29,9 +23,9 @@ output:
     - isPrimitive: true
       uid: BigInt
 metadata:
-  ms.openlocfilehash: 452372636a6e9986d361cf606df1e031609fe52f
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b83f5618c7908741390a31687a5cc12d35ad437a
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73224561"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863431"

@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.binda
 name: BindA
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.canon.bounda"。
+summary: BindA 已被弃用。 请改用 @"microsoft.quantum.canon.bounda"。
 syntax: "function BindA (operations : ('T => Unit is Adj)[]) : ('T => Unit is Adj)"
 input:
   content: "(operations : ('T => Unit is Adj)[])"
@@ -42,9 +36,9 @@ output:
     functors:
     - Adjoint
 metadata:
-  ms.openlocfilehash: 8b53db59bdb8b2e8d86977a2ed55c3a7b7346aee
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 91f82353679ccd04e153870697c6c24aca0b5069
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73068370"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74861568"

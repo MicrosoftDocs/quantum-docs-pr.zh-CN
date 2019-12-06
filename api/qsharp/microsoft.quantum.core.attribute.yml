@@ -1,0 +1,14 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.core.attribute
+name: Attribute
+type: newtype
+namespace: Microsoft.Quantum.Core
+summary: 编译器可识别的属性，用于将用户定义的类型标记为属性。
+syntax: newtype Attribute = Unit;
+metadata:
+  ms.openlocfilehash: c884b1ab5f3d3b4db431990958333e0bc354b357
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74866778"

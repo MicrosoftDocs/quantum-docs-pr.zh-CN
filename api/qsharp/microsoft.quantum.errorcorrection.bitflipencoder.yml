@@ -3,13 +3,7 @@ uid: microsoft.quantum.errorcorrection.bitflipencoder
 name: BitFlipEncoder
 type: operation
 namespace: Microsoft.Quantum.ErrorCorrection
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.errorcorrection.encodeintobitflipcode"。
+summary: BitFlipEncoder 已被弃用。 请改用 @"microsoft.quantum.errorcorrection.encodeintobitflipcode"。
 syntax: 'operation BitFlipEncoder (physRegister : Qubit[], auxQubits : Qubit[]) : Microsoft.Quantum.ErrorCorrection.LogicalRegister'
 input:
   content: '(physRegister : Qubit[], auxQubits : Qubit[])'
@@ -27,9 +21,9 @@ output:
   types:
   - uid: microsoft.quantum.errorcorrection.logicalregister
 metadata:
-  ms.openlocfilehash: 4456452741451c59352ac4952b40283d806dd702
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 82b7b39f0617e54f1626f13ba2f49455cfbdf2d0
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73234778"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74865913"

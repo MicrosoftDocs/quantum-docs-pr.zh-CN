@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.withca
 name: WithCA
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"Microsoft.Quantum.Canon.ApplyWithCA"。
+summary: WithCA 已被弃用。 请改用 @"microsoft.quantum.canon.applywithca"。
 syntax: "operation WithCA (outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Adj + Ctl), target : 'T) : Unit"
 input:
   content: "(outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Adj + Ctl), target : 'T)"
@@ -51,9 +45,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 0c572b981ab01895a27da74c0386cf7f986e44e9
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 280ad001dda553ad2c823f4e85eb02949ca49199
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067622"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74859034"

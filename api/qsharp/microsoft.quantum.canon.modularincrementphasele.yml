@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.modularincrementphasele
 name: ModularIncrementPhaseLE
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"Microsoft.Quantum.Arithmetic.IncrementPhaseByModularInteger"。
+summary: ModularIncrementPhaseLE 已被弃用。 请改用 @"microsoft.quantum.arithmetic.incrementphasebymodularinteger"。
 syntax: 'operation ModularIncrementPhaseLE (increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
 input:
   content: '(increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
@@ -31,9 +25,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 0f020d72e64222fd3557eddaa0a93d43aa31a031
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 527baf72b66cdf043a27f2ea6ff6f69737a7e64e
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73222861"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74859675"

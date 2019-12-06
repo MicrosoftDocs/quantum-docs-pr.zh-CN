@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.t
 name: T
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.t"。
+summary: T 已弃用。 请改用 @"microsoft.quantum.intrinsic.t"。
 syntax: 'operation T (qubit : Qubit) : Unit'
 input:
   content: '(qubit : Qubit)'
@@ -26,9 +20,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 0af98cc34a49afb10acc6d412ec5bc2f1d844d90
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b25b72095d6c884fcac5a8649fc07f8de07c74a3
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73211131"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863244"

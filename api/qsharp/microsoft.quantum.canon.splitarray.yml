@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.splitarray
 name: SplitArray
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请改用 @"Microsoft.Quantum.Arrays.Partitioned"。
+summary: SplitArray 已被弃用。 请改用 @"microsoft.quantum.arrays.partitioned"。
 syntax: "function SplitArray (nElements : Int[], arr : 'T[]) : 'T[][]"
 input:
   content: "(nElements : Int[], arr : 'T[])"
@@ -31,9 +25,9 @@ output:
       uid: "'T"
       isLocal: true
 metadata:
-  ms.openlocfilehash: 91a4a0fa90e3d7ccd9687ca2264ed5af98a04d7d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6dc23abab6c00d8214f681e0d52df129da2c4002
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73222283"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863533"

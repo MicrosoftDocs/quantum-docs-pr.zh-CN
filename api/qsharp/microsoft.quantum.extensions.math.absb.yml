@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.math.absb
 name: AbsB
 type: function
 namespace: Microsoft.Quantum.Extensions.Math
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.absl"。
+summary: AbsB 已被弃用。 请改用 @"microsoft.quantum.math.absl"。
 syntax: 'function AbsB (a : BigInt) : BigInt'
 input:
   content: '(a : BigInt)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: 21368bd84971c26add01b5ea713af02d4539d10a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 2246a20c5934faa25f9feecae6fa70e86a388b28
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73224901"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74865505"

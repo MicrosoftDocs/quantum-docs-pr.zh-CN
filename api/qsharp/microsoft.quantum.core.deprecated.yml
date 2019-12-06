@@ -1,0 +1,14 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.core.deprecated
+name: Deprecated
+type: newtype
+namespace: Microsoft.Quantum.Core
+summary: 编译器可识别的属性，用于将类型或可调用标记为已弃用。
+syntax: newtype Deprecated = String;
+metadata:
+  ms.openlocfilehash: d387e270635a74a216ac5289b34f3d694343e247
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74866761"

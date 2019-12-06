@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.measureintegerbe
 name: MeasureIntegerBE
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  此操作已被删除。
+summary: MeasureIntegerBE 已被弃用。 请改用 @ "measureinteger （bigendianaslittleendian （target））"。
 syntax: 'operation MeasureIntegerBE (target : Microsoft.Quantum.Arithmetic.BigEndian) : Int'
 input:
   content: '(target : Microsoft.Quantum.Arithmetic.BigEndian)'
@@ -22,9 +16,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 51669c9167bc92e9fef865d925f9a00cba56e4ba
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 8e281315d6baab21e2ac8c56f1ed7ea87997bebe
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73225190"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74859871"

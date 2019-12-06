@@ -3,6 +3,8 @@ uid: microsoft.quantum.core
 name: Microsoft.Quantum.Core
 summary: " # <a name=\"summary\"></a>总结\n 此命名空间包括 Q # 核心函数和操作。\n\n # <a name=\"remarks\"></a>备注\n 此命名空间由 Q # 编译器自动打开，因此此命名空间的所有元素始终可用。"
 functions:
+- uid: microsoft.quantum.core.default
+  summary: 返回指定类型的默认实例。
 - uid: microsoft.quantum.core.length
   summary: 返回数组中的元素数。
 - uid: microsoft.quantum.core.rangeend
@@ -13,10 +15,17 @@ functions:
   summary: 返回给定范围中定义的开始值。
 - uid: microsoft.quantum.core.rangestep
   summary: 返回一个整数，该整数指定如何计算范围的下一个值。
+newtypes:
+- uid: microsoft.quantum.core.attribute
+  summary: 编译器可识别的属性，用于将用户定义的类型标记为属性。
+- uid: microsoft.quantum.core.deprecated
+  summary: 编译器可识别的属性，用于将类型或可调用标记为已弃用。
+- uid: microsoft.quantum.core.entrypoint
+  summary: 编译器可识别的属性，用于标记可执行文件的入口点。
 metadata:
-  ms.openlocfilehash: 41c28f8e8e11990ec1cf9b315478996a1e0811f4
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6391521907deddbf4425b927b1dec12e73f0ee5d
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73056893"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74858575"

@@ -3,55 +3,25 @@ uid: microsoft.quantum.extensions.testing
 name: Microsoft.Quantum.Extensions.Testing
 operations:
 - uid: microsoft.quantum.extensions.testing.assertallzero
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertallzero"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertAllZero 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertallzero\"。\n请使用 @\"microsoft.quantum.diagnostics.assertallzero\"。"
 - uid: microsoft.quantum.extensions.testing.assertallzerotol
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertallzerowithintolerance"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertAllZeroTol 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertallzerowithintolerance\"。\n请使用 @\"microsoft.quantum.diagnostics.assertallzerowithintolerance\"。"
 - uid: microsoft.quantum.extensions.testing.assertoperationsequalinplace
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertoperationsequalinplace"。
-
-    请注意，此操作的参数顺序已更改。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertOperationsEqualInPlace 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertoperationsequalinplace\"。\n请使用 @\"microsoft.quantum.diagnostics.assertoperationsequalinplace\"。\n请注意，此操作的参数顺序已更改。"
 - uid: microsoft.quantum.extensions.testing.assertoperationsequalinplacecompbasis
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertoperationsequalinplaceCompBasis"。
-
-    请注意，此操作的参数顺序已更改。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertOperationsEqualInPlaceCompBasis 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertoperationsequalinplacecompbasis\"。\n请使用 @\"microsoft.quantum.diagnostics.assertoperationsequalinplaceCompBasis\"。\n请注意，此操作的参数顺序已更改。"
 - uid: microsoft.quantum.extensions.testing.assertoperationsequalreferenced
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertoperationsequalreferenced"。
-
-    请注意，此操作的参数顺序已更改。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertOperationsEqualReferenced 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertoperationsequalreferenced\"。\n请使用 @\"microsoft.quantum.diagnostics.assertoperationsequalreferenced\"。\n请注意，此操作的参数顺序已更改。"
 - uid: microsoft.quantum.extensions.testing.assertqubit
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertqubit"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertQubit 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertqubit\"。\n请使用 @\"microsoft.quantum.diagnostics.assertqubit\"。"
 - uid: microsoft.quantum.extensions.testing.assertqubitstate
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertQubitState 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance\"。\n请使用 @\"microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance\"。"
 - uid: microsoft.quantum.extensions.testing.assertqubittol
-  summary: >-
-    > [!WARNING]
-
-    > 弃用，请使用 @"microsoft.quantum.diagnostics.assertqubitwithintolerance"。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertQubitTol 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertqubitwithintolerance\"。\n请使用 @\"microsoft.quantum.diagnostics.assertqubitwithintolerance\"。"
 metadata:
-  ms.openlocfilehash: 031bbd476ac37f113f9fb692ccd6fca916612ac3
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 0d06129c66f13c8c5ee9158ef6be41bf447791f9
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73210358"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74858408"

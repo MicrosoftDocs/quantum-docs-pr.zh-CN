@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.r
 name: R
 type: operation
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.r"。
+summary: R 已弃用。 请改用 @"microsoft.quantum.intrinsic.r"。
 syntax: 'operation R (pauli : Pauli, theta : Double, qubit : Qubit) : Unit'
 input:
   content: '(pauli : Pauli, theta : Double, qubit : Qubit)'
@@ -32,9 +26,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 19ed71daeb4359203f0c95b7d6a231791606a4f4
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: e56674782ca1f7b7aa9298aeb0afeab94ab6063c
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067146"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864773"

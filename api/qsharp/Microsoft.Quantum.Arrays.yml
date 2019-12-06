@@ -45,8 +45,12 @@ functions:
   summary: 获取给定时间间隔内的整数数组。
 - uid: microsoft.quantum.arrays.subarray
   summary: 采用一个数组和一个位置列表，并生成一个新数组，该数组由与给定位置匹配的原始数组的元素构成。
+- uid: microsoft.quantum.arrays.swapped
+  summary: 应用数组中两个元素的交换。
 - uid: microsoft.quantum.arrays.tail
   summary: 返回数组的最后一个元素。
+- uid: microsoft.quantum.arrays.tuplearrayasnestedarray
+  summary: 将2元组的列表转换为嵌套数组。
 - uid: microsoft.quantum.arrays.zip
   summary: 给定两个数组，返回一个新的对数组，以便每个对都包含来自每个原始数组的元素。
 - uid: microsoft.quantum.arrays.zip3
@@ -57,9 +61,9 @@ operations:
 - uid: microsoft.quantum.arrays.foreach
   summary: 给定为数组元素定义的数组和操作，返回一个新数组，该数组由该操作下的原始数组的图像组成。
 metadata:
-  ms.openlocfilehash: 7c377d5df0e32be0da75f133b08c778ec94c6a39
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 12835bef2608d979809027cb9a271f2cda864b10
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73057022"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74858864"

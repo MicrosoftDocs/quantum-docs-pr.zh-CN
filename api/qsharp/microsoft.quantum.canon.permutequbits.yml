@@ -1,0 +1,48 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.permutequbits
+name: PermuteQubits
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: 使用交换操作 Permutes qubits。
+examples: >-
+  给定顺序 = [2，1，0]，并注册 $ \ket{\ alpha_0} \ket{\ alpha_1} \ket{\ alpha_2} $，PermuteQubits 将寄存器更改为 $ \ket{\ alpha_2} \ket{\ alpha_1} \ket{\ alpha_0} $
+
+
+  ```qsharp
+
+  // The following two lines are equivalent
+
+  PermuteQubits([2, 1, 0], register);
+
+  SWAP(register[0], register[2]);
+
+  ```
+syntax: 'operation PermuteQubits (ordering : Int[], register : Qubit[]) : Unit'
+input:
+  content: '(ordering : Int[], register : Qubit[])'
+  types:
+  - name: ordering
+    summary: 介绍 qubits 的新排序，其中，索引 i 处的 qubit 现在将按顺序 [i] 排序。
+    isArray: true
+    isPrimitive: true
+    uid: Int
+  - name: register
+    summary: 要对其进行操作的 Qubit 寄存器。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+metadata:
+  ms.openlocfilehash: ad5b37017edfc6ba3cb2f552172da1b910227681
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74866574"

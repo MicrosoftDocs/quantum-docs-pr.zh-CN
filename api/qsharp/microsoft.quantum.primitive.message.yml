@@ -3,13 +3,7 @@ uid: microsoft.quantum.primitive.message
 name: Message
 type: function
 namespace: Microsoft.Quantum.Primitive
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.intrinsic.message"。
+summary: 消息已被弃用。 请改用 @"microsoft.quantum.intrinsic.message"。
 syntax: 'function Message (msg : String) : Unit'
 input:
   content: '(msg : String)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 19506f689073ec417519b92269c25204f734b0ff
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6a6d5b34a0c258c5179cf6e6bc68977494d3ff83
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73229440"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74864791"

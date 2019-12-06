@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.intabs
 name: IntAbs
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  此函数已被移除。
+summary: IntAbs 已被弃用。 请改用 @"microsoft.quantum.math.absi"。
 syntax: 'function IntAbs (input : Int) : Int'
 input:
   content: '(input : Int)'
@@ -23,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 23bd003cf64e52c993620868b8c8d1dc8641278b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 68bfd150440cda967a3d0eb2b36b013bc121676a
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226006"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863890"

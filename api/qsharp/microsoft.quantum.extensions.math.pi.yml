@@ -3,13 +3,7 @@ uid: microsoft.quantum.extensions.math.pi
 name: PI
 type: function
 namespace: Microsoft.Quantum.Extensions.Math
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.pi"。
+summary: PI 已弃用。 请改用 @"microsoft.quantum.math.pi"。
 syntax: 'function PI () : Double'
 input:
   content: ()
@@ -20,9 +14,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: aa393528dd83d472cfb72e06a265cf6d4cc57bac
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ef9fce22f8be8043750942e759c35c2e2187c056
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73224068"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74865148"
