@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.pnormalize
 name: PNormalize
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.pnormalized"。
+summary: PNormalize 已被弃用。 请改用 @"microsoft.quantum.math.pnormalized"。
 syntax: 'function PNormalize (p : Double, array : Double[]) : Double[]'
 input:
   content: '(p : Double, array : Double[])'
@@ -28,9 +22,9 @@ output:
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 36550c8eb125bb7070934e49d4301c2265347fde
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: c1da2c65ff8f4dff70d35e38f4cd8866648f26d2
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73225122"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863720"

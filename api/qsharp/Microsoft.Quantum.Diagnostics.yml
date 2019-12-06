@@ -40,7 +40,7 @@ operations:
     假设有两个运算，则断言它们对于所有输入状态都是相同的。
 
 
-    此断言是通过以下方式实现的：检查所有状态的操作的操作： $V _0 \otimes ... \otimes V_ {n-1} $，其中 $V _k $ 是状态 $ \ket{0}$，$ \ket{1}$，$ \ket{+} $ 和 $ \ket{i} $ （+ 1 eigenstate of Pauli Y 运算符）。
+    此断言是通过以下方式实现的：检查对窗体的所有状态的操作的操作： $V _0 \otimes ... \otimes V_ {n-1} $，其中 $V _k $ 是状态 $ \ket{0}$，$ \ket{1}$，$ \ket{+} $，$ \ket{i} $ （+ 1 eigenstate of Pauli Y 运算符）。
 
 
     此断言使用 $n $ qubits，需要对要比较的操作进行多次调用。
@@ -73,11 +73,14 @@ operations:
     最后一个参数定义进行断言的公差。
 - uid: microsoft.quantum.diagnostics.assertqubitwithintolerance
   summary: 断言 qubit `q` 处于 Pauli Z 运算符所需的 eigenstate 中，直到达到给定的容差。
+newtypes:
+- uid: microsoft.quantum.diagnostics.test
+  summary: 编译器可识别的属性，用于标记单元测试。
 summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含可用于诊断目的的函数和操作，包括断言操作和声明函数。"
 metadata:
-  ms.openlocfilehash: c387a7dc3b2e997d00d54457b0af89a04fa918d3
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: a633a9555f380e6aa6c6701d277d026c58130ff2
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73056861"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74858269"

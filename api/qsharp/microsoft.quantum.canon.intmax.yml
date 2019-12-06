@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.intmax
 name: IntMax
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  此函数已被移除。
+summary: IntMax 已被弃用。 请改用 @"microsoft.quantum.math.maxi"。
 syntax: 'function IntMax (a : Int, b : Int) : Int'
 input:
   content: '(a : Int, b : Int)'
@@ -26,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: b5182222b350c4f994af849f76ba638aaa286907
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d8fe5eb386669461d0509fa23bafbaf532042349
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73223507"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863805"
