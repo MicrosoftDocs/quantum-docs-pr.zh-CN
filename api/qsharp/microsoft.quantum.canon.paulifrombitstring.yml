@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.paulifrombitstring
 name: PauliFromBitString
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.convert.boolarrayaspauli"。
+summary: PauliFromBitString 已被弃用。 请改用 @"microsoft.quantum.convert.boolarrayaspauli"。
 syntax: 'function PauliFromBitString (pauli : Pauli, bitApply : Bool, bits : Bool[]) : Pauli[]'
 input:
   content: '(pauli : Pauli, bitApply : Bool, bits : Bool[])'
@@ -31,9 +25,9 @@ output:
     isPrimitive: true
     uid: Pauli
 metadata:
-  ms.openlocfilehash: 0cc07068a3c3dc86baa63c0df106f4d14c5a27bf
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: a2878c7fee7e71aee355d1b897545f172c81cc3c
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73222623"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863754"

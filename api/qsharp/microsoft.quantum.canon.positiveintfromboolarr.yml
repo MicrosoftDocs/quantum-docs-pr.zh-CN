@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.positiveintfromboolarr
 name: PositiveIntFromBoolArr
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.convert.boolarrayasint"。
+summary: PositiveIntFromBoolArr 已被弃用。 请改用 @"microsoft.quantum.convert.boolarrayasint"。
 syntax: 'function PositiveIntFromBoolArr (bits : Bool[]) : Int'
 input:
   content: '(bits : Bool[])'
@@ -24,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: eaf537a662876e0847547b8e4c7f4dc647a3d697
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: df611d6c7ccf4ed69f34f62e06f37e14f42238f4
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73225819"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863703"

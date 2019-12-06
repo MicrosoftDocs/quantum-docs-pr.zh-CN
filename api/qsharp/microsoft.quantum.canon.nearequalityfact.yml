@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.nearequalityfact
 name: NearEqualityFact
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请改用 @"Microsoft.Quantum.Diagnostics.NearEqualityFactD"。
+summary: NearEqualityFact 已被弃用。 请改用 @"microsoft.quantum.diagnostics.nearequalityfactd"。
 syntax: 'function NearEqualityFact (actual : Double, expected : Double) : Unit'
 input:
   content: '(actual : Double, expected : Double)'
@@ -26,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 0beddcd0b0ec25cfac0c8445a6d589c6ad36caf2
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 4f1f0552abd67ba497038df8124feab7d3eab5aa
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220600"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863771"

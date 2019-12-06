@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.inversemod
 name: InverseMod
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.math.inversemodi"。
+summary: InverseMod 已被弃用。 请改用 @"microsoft.quantum.math.inversemodi"。
 syntax: 'function InverseMod (a : Int, modulus : Int) : Int'
 input:
   content: '(a : Int, modulus : Int)'
@@ -26,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 5cf17d23a3c56eae71d2b055d49984da79bd8b14
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: edf4fdeff32d5efa58f1798696d09f9934350042
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73225955"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863788"

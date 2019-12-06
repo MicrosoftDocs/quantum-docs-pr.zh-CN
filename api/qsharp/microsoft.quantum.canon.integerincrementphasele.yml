@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.integerincrementphasele
 name: IntegerIncrementPhaseLE
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"Microsoft.Quantum.Arithmetic.IncrementPhaseByInteger"。
+summary: IntegerIncrementPhaseLE 已被弃用。 请改用 @"microsoft.quantum.arithmetic.incrementphasebyinteger"。
 syntax: 'operation IntegerIncrementPhaseLE (increment : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
 input:
   content: '(increment : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
@@ -28,9 +22,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 8fb3f461979afff1d423c364103a644e4732f89d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: a3e907004fbe4c1edca071bf43ea7716543e5c91
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73225292"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863822"

@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.restricttosubregister
 name: RestrictToSubregister
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"microsoft.quantum.canon.restrictedtosubregister"。
+summary: RestrictToSubregister 已被弃用。 请改用 @"microsoft.quantum.canon.restrictedtosubregister"。
 syntax: 'function RestrictToSubregister (op : (Qubit[] => Unit), idxs : Int[]) : (Qubit[] => Unit)'
 input:
   content: '(op : (Qubit[] => Unit), idxs : Int[])'
@@ -43,9 +37,9 @@ output:
       - isPrimitive: true
         uid: Unit
 metadata:
-  ms.openlocfilehash: 708504c5770f72eb94e8be381f21cd3ea542e2e8
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 950d5313882092fa9e3c078fe9712f2e6ba98d4b
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067758"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863669"

@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.integerincrementle
 name: IntegerIncrementLE
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请使用 @"Microsoft.Quantum.Arithmetic.IncrementByInteger"。
+summary: IntegerIncrementLE 已被弃用。 请改用 @"microsoft.quantum.arithmetic.incrementbyinteger"。
 syntax: 'operation IntegerIncrementLE (increment : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
   content: '(increment : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian)'
@@ -28,9 +22,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 40b6a9d607d43a9e7c0d097c0c31df8d407b829d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 91e8a9ce333087987e5bf54e16cdd0ec89d12f03
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73225343"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863839"

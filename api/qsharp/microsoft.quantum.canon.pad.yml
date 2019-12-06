@@ -3,13 +3,7 @@ uid: microsoft.quantum.canon.pad
 name: Pad
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  > [!WARNING]
-
-  > 已放弃
-
-
-  请改用 @"Microsoft.Quantum.Arrays.Padded"。
+summary: 已弃用 Pad。 请改用 @"microsoft.quantum.arrays.padded"。
 syntax: "function Pad (nElementsTotal : Int, defaultElement : 'T, inputArray : 'T[]) : 'T[]"
 input:
   content: "(nElementsTotal : Int, defaultElement : 'T, inputArray : 'T[])"
@@ -31,9 +25,9 @@ output:
     uid: "'T"
     isLocal: true
 metadata:
-  ms.openlocfilehash: ee2683e1d83b7975ce0aa41b28070ab3c292b368
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ec596c3fa29a136bf7bb22bd9e90804af7910353
+  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73211692"
+  ms.lasthandoff: 12/05/2019
+  ms.locfileid: "74863737"
