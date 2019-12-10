@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 10/22/2019
 ms.topic: article
 uid: microsoft.quantum.overview.qsharp
-ms.openlocfilehash: 3fd288439c7db7f939240b4388c9cdb114b6535c
-ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+ms.openlocfilehash: e04d72bafe390ff5c79af408db1d9400754b06ce
+ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73529986"
+ms.lasthandoff: 12/05/2019
+ms.locfileid: "74864281"
 ---
 # <a name="what-is-q"></a>什么是 Q#？
 
@@ -25,12 +25,11 @@ Q# 编程语言提供了一组直观的类型、运算和逻辑表达式来开�
 
 早期的量子计算时代，算法以图形（类似于经典计算中的线路图）方式表示。  虽然线路模型在量子计算研究方面一直有用，但 Microsoft 认为，开发者可以超越量子电路，使用 Q# 开发量子算法和应用程序。 使用 Q# 语言时，可以直接利用我们在数十年的经典软件开发中学到的经验，并且它还为量子开发者提供了针对量子计算的高级语言功能。
 
-
 ## <a name="how-does-q-work"></a>Q# 的工作原理是什么？
 
 Q# 的基本构建基块之一是 `Qubit` 类型，它不能复制，也不能直接访问，就像真实的量子位。 相反，我们可以对其进行度量并将度量结果存储在 `Result` 变量中，这种 Q# 类型可以采用两个可能的值：`Zero` 和 `One`。 此类构造可保证算法始终遵守量子物理学定律，并可在量子计算机或模拟器上正常运行。
 
-Q# 还包括经典逻辑功能（如条件或循环），这些功能又有些微不同，以确保遵循所有量子定律。 例如，对循环执行方式进行约束，确保量子操作也是如此。
+Q# 还包括经典逻辑功能（如条件和循环），这些功能又有些微不同，以确保遵循所有量子定律。 例如，约束执行循环的方式，以确保不在可能只包含确定性经典子例程的函数中调用量子运算。
 
 Q# 程序通常与用 C# 或 Python 编写的主机程序配对使用，可以方便地整理经典代码和量子代码。 除了支持 C# 和 Python 之类的语言，QDK 还提供 IQ# Jupyter 内核，因此支持 Jupyter Notebook。
 
