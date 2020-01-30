@@ -39,41 +39,34 @@
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+      "show_latex": true,
+      "ms.prod": "quantum",
+      "ms.topic": "managed-reference",
+      "ms.devlang":"qsharp",
+      "searchScope": ["quantum", "q#", "qsharp"],
+      "titleSuffix": "Q# reference - Microsoft Quantum"
+    },
+    "fileMetadata": {
       "latex_macros": {
-        "ket": [
-          "\\left| #1\\right\\rangle",
-          1
-        ],
-        "bra": [
-          "\\left\\langle #1\\right|",
-          1
-        ],
-        "braket": [
-          "\\left\\langle #1 \\right\\rangle",
-          1
-        ],
+        "**/**.yml": {
+          "ket": ["\\left| #1\\right\\rangle", 1],
+          "bra": ["\\left\\langle #1\\right|", 1],
+          "braket": [ "\\left\\langle #1 \\right\\rangle", 1 ],
+          "id": "\\mathbb{1}",
         "boldone": "\\mathbf{1}",
         "expect": "\\mathbb{E}",
         "variance": "\\operatorname{Var}",
-        "defeq": "\\mathrel{:=}"
+          "defeq": "\\mathrel{:=}",
+          "dd": "\\mathrm{d}"
+        }
       },
-      "ms.prod": "quantum",
-      "ms.topic": "managed-reference",
-      "ms.devlang": "qsharp",
-      "searchScope": [
-        "quantum",
-        "q#",
-        "qsharp"
-      ],
-      "titleSuffix": "Q# reference - Microsoft Quantum",
-      "disable_contribution_on_translation_quality": [
+       "disable_contribution_on_translation_quality": [
         "MT",
         "MTE75",
         "MTE95",
         "Blank"
       ]
     },
-    "fileMetadata": {},
     "template": [],
     "dest": "quantum-api"
   }
