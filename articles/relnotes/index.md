@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: c709f1eb130d37f930ffc4acc4bd663b8b8ba24a
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: c135dacb2fc305fa97874cb4abcf4e2ac489b9e4
+ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74863157"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76871611"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -20,6 +20,19 @@ ms.locfileid: "74863157"
 有关安装说明，请参阅[安装指南](xref:microsoft.quantum.install)。
 
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
+
+## <a name="version-01020012831"></a>版本 0.10.2001.2831
+
+发行日期：  2020 年 1 月 29 日
+
+此版本包含以下各项：
+
+- 新的 Microsoft.Quantum.SDK NuGet 包。如需更多详细信息，请参阅[自述文件](https://github.com/microsoft/qsharp-compiler/blob/master/src/QuantumSdk/README.md)
+- 添加了对 .NET Core 3.1 的支持。强烈建议安装版本 3.1.100，因为使用旧 .NET Core SDK 版本进行生成可能会导致问题
+- Microsoft.Quantum.QsCompiler.Experimental 下提供新的编译器转换
+- 在 IQ# 中将输出状态矢量作为 HTML 公开的新功能
+- 针对 Hadamard 和 SWAP 测试向 Microsoft.Quantum.Characterization 添加了对 EstimateFrequencyA 的支持
+- AmplitudeAmplification 命名空间现在使用 Q# 样式指南
 
 ## <a name="version-01019120501"></a>版本 0.10.1912.0501
 
@@ -127,7 +140,7 @@ ms.locfileid: "74863157"
 * 添加了对[多参考波函数](xref:microsoft.quantum.chemistry.concepts.multireference)（稀疏多参考波函数和单一耦合群集）的支持。  [PR #110](https://github.com/Microsoft/QuantumLibraries/pull/110)。
 * （谢谢！）[1QBit](https://1qbit.com) 参与者 ([@valentinS4t1qbit](https://github.com/ValentinS4t1qbit))：使用变分拟设的能量评估。 [PR #120](https://github.com/Microsoft/QuantumLibraries/pull/120)。
 * 将 [Broombridge](xref:microsoft.quantum.libraries.chemistry.schema.broombridge) 架构更新为新[版本 0.2](xref:microsoft.quantum.libraries.chemistry.schema.spec_v_0_2)，并添加单一耦合群集规范。 [问题 #65](https://github.com/microsoft/QuantumLibraries/issues/65)。
-* 将 Python 互操作性添加到化学库函数。 尝试此[示例](https://github.com/microsoft/Quantum/tree/master/Chemistry/PythonIntegration)。 [问题 #53](https://github.com/microsoft/QuantumLibraries/issues/53) [PR #110](https://github.com/Microsoft/QuantumLibraries/pull/110)。
+* 将 Python 互操作性添加到化学库函数。 尝试此[示例](https://github.com/microsoft/Quantum/tree/master/Chemistry/PythonIntegration)。 [问题 53](https://github.com/microsoft/QuantumLibraries/issues/53) [PR 110](https://github.com/Microsoft/QuantumLibraries/pull/110)。
 
 ## <a name="version-061905"></a>版本 0.6.1905
 
@@ -351,13 +364,13 @@ ms.locfileid: "74863157"
 
 发行日期：  2018 年 6 月 22 日
 
-此版本包含多项社区贡献，并改进了调试体验，提高了性能。  具体而言：
+此版本包含多项社区贡献，并改进了调试体验，提高了性能。  具体来说：
 
 * 对 QuantumSimulator 目标计算机的小型和大型模拟进行性能改进。
 * 改进了调试功能。
 * 在 bug 修复、新的帮助程序函数、操作和新示例方面的社区贡献。
 
-### <a name="performance-improvements"></a>性能提升
+### <a name="performance-improvements"></a>性能改进
 
 此更新包括对所有目标计算机的大量和少量量子位模拟的显著性能改进。  这种改进在量子开发工具包中的标准示例 H<sub>2</sub> 模拟中非常明显。
 
@@ -433,7 +446,7 @@ dotnet clean
 
 发行日期：  2018 年 2 月 26 日
 
-此版本支持在多个平台上开发、语言互操作和性能增强。 具体而言：
+此版本支持在多个平台上开发、语言互操作和性能增强。 具体来说：
 
 - 支持基于 macOS 和 Linux 的开发。 
 - 兼容 .NET Core，包括支持跨平台的 Visual Studio Code。
