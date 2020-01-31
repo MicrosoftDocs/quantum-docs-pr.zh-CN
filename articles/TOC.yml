@@ -26,10 +26,18 @@
       href: quickstart.md
     - name: 实现 Grover 的搜索算法
       href: quickstarts/search.md
-- name: 操作指南
+- name: 操作方法指南
   items:
     - name: 安装 QDK
-      href: install-guide/index.md
+      items:
+        - name: 安装概述
+          href: install-guide/index.md
+        - name: 'Q# + C#'
+          href: install-guide/csinstall.md
+        - name: 'Q# + Python'
+          href: install-guide/pyinstall.md
+        - name: 'Q# Jupyter 笔记本'
+          href: install-guide/qjupyter.md
     - name: 更新 QDK
       href: install-guide/update.md
     - name: '创建 Q# 项目'
