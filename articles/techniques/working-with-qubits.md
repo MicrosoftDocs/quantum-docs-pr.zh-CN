@@ -1,23 +1,23 @@
 ---
-title: 使用 Qubits |Microsoft Docs
-description: 使用 Qubits
+title: 使用 Qubits
+description: '使用 Qubits-Q # 技术'
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.techniques.qubits
-ms.openlocfilehash: 477b358c3eba58b62926b4e9094770c9741cac92
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: dc6db93dadc37534aece9624fe516125d919f8cd
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74864247"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819988"
 ---
-# <a name="working-with-qubits"></a>使用 Qubits #
+# <a name="working-with-qubits"></a>使用 Qubits
 
 现在，您已经看到了几个不同的 Q # 语言部分，接下来让我们来看看它的多样性，并了解如何使用 qubits 本身。
 
-## <a name="allocating-qubits"></a>分配量子位 ##
+## <a name="allocating-qubits"></a>分配 Qubits
 
 首先，若要获取可在 Q # 中使用的 qubit，我们将在 `using` 块中*分配*qubits：
 
@@ -33,9 +33,9 @@ using (register = Qubit[5]) {
 > [!WARNING]
 > 目标计算机预期 qubits 在释放前立即处于 $ \ket{0}$ 状态，以便可以重用它们并将其提供给其他 `using` 块进行分配。
 > 请尽可能使用单一操作将分配的任何 qubits 返回到 $ \ket{0}$。
-> 如果需要，可以使用 @"microsoft.quantum.intrinsic.reset" 操作来度量 qubit，并使用该度量值来确保度量的 qubit 返回到 $ \ket{0}$。 此类度量会销毁所有牵连和剩余 qubits，因而会影响计算。 
+> 如果需要，可以使用 @"microsoft.quantum.intrinsic.reset" 操作来度量 qubit，并使用该度量值来确保度量的 qubit 返回到 $ \ket{0}$。 此类度量会销毁所有牵连和剩余 qubits，因而会影响计算。
 
-## <a name="intrinsic-operations"></a>内部操作 ##
+## <a name="intrinsic-operations"></a>内部操作
 
 分配后，可以将 qubit 传递到函数和操作。
 在某种意义上，Q # 程序可以使用 qubit 执行的操作，因为可执行的操作全部定义为操作。
@@ -43,12 +43,11 @@ using (register = Qubit[5]) {
 
 首先，qubit Pauli 运算符 $X $、$Y $ 和 $Z $ 通过内部运算 `X`、`Y`和 `Z`表示，其中每个操作都具有类型 `(Qubit => Unit is Adj + Ctl)`。
 如[内部操作和函数](xref:microsoft.quantum.libraries.standard.prelude)中所述，我们可以将 $X $ 并因此 `X` 为位翻转操作或不进行操作。
-这样 $s，我们就可以将 "$ \ket{s_0 s_1 \dots . s_n} $"
+`X` 操作允许我们为某些传统位字符串 $s $ \ket{s_0 s_1 \dots . s_n} $ 准备状态：
 
 ```qsharp
-operation PrepareBitString(bitstring : Bool[], register : Qubit[]) : Unit 
+operation PrepareBitString(bitstring : Bool[], register : Qubit[]) : Unit
 is Adj + Ctl {
-
     let nQubits = Length(register);
     for (idxQubit in 0..nQubits - 1) {
         if (bitstring[idxQubit]) {
@@ -57,14 +56,15 @@ is Adj + Ctl {
     }
 }
 
-operation Example() : Unit {
-
+operation RunExample() : Unit {
     using (register = Qubit[8]) {
         PrepareBitString(
             [true, true, false, false, true, false, false, true],
             register
         );
         // At this point, register now has the state |11001001〉.
+        // Resetting the qubits will allow us to deallocate them properly.
+        ResetAll(register);
     }
 }
 ```
@@ -76,7 +76,6 @@ operation Example() : Unit {
 
 ```qsharp
 operation PreparePlusMinusState(bitstring : Bool[], register : Qubit[]) : Unit {
-
     // First, get a computational basis state of the form
     // |s_0 s_1 ... s_n〉 by using PrepareBitString, above.
     PrepareBitString(bitstring, register);
@@ -88,40 +87,39 @@ operation PreparePlusMinusState(bitstring : Bool[], register : Qubit[]) : Unit {
 }
 ```
 
-## <a name="measurements"></a>度量 ##
+## <a name="measurements"></a>度量
 
-使用 `Measure` 操作（这是一种内置的内部非单一操作），我们可以从类型为 `Qubit` 的对象中提取传统信息，并分配一个传统值作为结果，该类型具有一个保留类型 `Result`，这表示结果不再是量程状态。 `Measure` 的输入是 Bloch 球体上的一个 Pauli 轴，由 `Pauli` 类型的对象（例如 `PauliX`）和类型 `Qubit`的对象表示。 
+使用 `Measure` 操作（这是一种内置的固有非单一操作），我们可以从类型为 `Qubit` 的对象中提取传统信息，并分配一个传统值作为结果，该类型具有保留类型 `Result`，这表示结果不再是量程状态。
+`Measure` 的输入是 Bloch 球体上的一个 Pauli 轴，由类型 `Pauli` （例如 `PauliX`）的值和 `Qubit`类型的值表示。
 
-一个简单的示例是以下操作，它在 $ \ket{0}$ 状态下创建一个 qubit，然后向其应用 Hadamard 入口 ``H``，然后在 `PauliZ` 基础测量结果。 
+一个简单的示例是以下操作，它在 $ \ket{0}$ 状态下分配一个 qubit，然后将 Hadamard 操作 `H` 应用到该操作并按 `PauliZ` 度量结果。
 
 ```qsharp
-operation MeasurementOneQubit () : Result {
-
-    // The following using block creates a fresh qubit and initializes it 
+operation MeasureOneQubit() : Result {
+    // The following using block creates a fresh qubit and initializes it
     // in the |0〉 state.
     using (qubit = Qubit()) {
-        // We apply a Hadamard operation H to the state, thereby creating the 
-        // state 1/sqrt(2)(|0〉+|1〉). 
-        H(qubit); 
+        // We apply a Hadamard operation H to the state, thereby preparing the
+        // state 1 / sqrt(2) (|0〉 + |1〉).
+        H(qubit);
         // Now we measure the qubit in Z-basis.
         let result = M(qubit);
-        // As the qubit is now in an eigenstate of the measurement operator, 
-        // we reset the qubit before releasing it. 
-        if (result == One) { X(qubit); }   
-        // Finally, we return the result of the measurement. 
+        // As the qubit is now in an eigenstate of the measurement operator,
+        // we reset the qubit before releasing it.
+        if (result == One) { X(qubit); }
+        // Finally, we return the result of the measurement.
         return result;
     }
 }
 ```
 
-如果 `Qubit[]` 类型的寄存器中的所有 qubits 的状态均为零，则在按指定的 `false` Pauli 进行度量时，将返回布尔值，这会稍微复杂一些的示例，否则，将返回布尔值 `true`。 
+以下操作指定了一个稍微复杂的示例，如果 `Qubit[]` 类型的寄存器中的所有 qubits 的值在指定的 Pauli 时为零，则返回布尔值 `true`; 否则返回 `false`。
 
 ```qsharp
-operation AllMeasurementsZero (qs : Qubit[], pauli : Pauli) : Bool {
-
+operation MeasureIfAllQubitsAreZero(qubits : Qubit[], pauli : Pauli) : Bool {
     mutable value = true;
-    for (q in qs) {
-        if ( Measure([pauli], [q]) == One ) {
+    for (qubit in qubits) {
+        if (Measure([pauli], [qubit]) == One) {
             set value = false;
         }
     }
@@ -129,35 +127,40 @@ operation AllMeasurementsZero (qs : Qubit[], pauli : Pauli) : Bool {
 }
 ```
 
-Q # 语言允许 qubits 的测量结果的传统控制流的依赖关系。 这进而使实现功能强大的概率小工具，从而降低了实现 unitaries 的计算成本。 例如，可以很容易地在 Q # 中实现所谓的 "*重复-成功*"，这是概率的线路，这些电路在基本入口方面具有*预期*的低成本，但真正的成本取决于实际运行情况以及各种可能 branchings 的实际交错。 
+Q # 语言允许经典控制流依赖于测量 qubits 的结果。
+此功能反过来允许实现功能强大的概率小工具，从而降低实现 unitaries 的计算成本。
+例如，可以轻松地在 Q # 中实现所谓的 "*重复到-成功*" （ru）模式。
+这些 ru 模式是概率的程序，这些程序在基本入口方面具有*预期*的低成本，但真正的成本取决于实际运行以及各种可能的 branchings 的实际交错。
 
 为了便于重复到成功（ru）模式，Q # 支持构造
+
 ```qsharp
 repeat {
-    statementBlock1 
+    statementBlock1
 }
 until (expression)
 fixup {
     statementBlock2
 }
 ```
-其中 `statementBlock1` 和 `statementBlock2` 是零个或多个 Q # 语句，`expression` 任何计算结果为类型 `Bool`值的有效表达式。 在典型用例中，以下线路实现绕 Bloch 球上的无理数轴（I + 2i Z）/\sqrt{5}$ 的旋转。 这是通过使用已知的 RUS 模式来实现的： 
+
+其中 `statementBlock1` 和 `statementBlock2` 是零个或多个 Q # 语句，`expression` 任何计算结果为类型 `Bool`值的有效表达式。
+在典型用例中，以下 Q # 操作实现绕 Bloch 球上的无理数轴（I + 2i Z）/\sqrt{5}$ 的旋转。 这是通过使用已知的 RUS 模式来实现的：
 
 ```qsharp
-operation RUScircuit (qubit : Qubit) : Unit {
-
-    using(ancillas = Qubit[2]) {
-        ApplyToEachA(H, ancillas);
+operation ApplyVRotationUsingRUS(qubit : Qubit) : Unit {
+    using (controls = Qubit[2]) {
+        ApplyToEachA(H, controls);
         mutable finished = false;
         repeat {
-            Controlled X(ancillas, qubit);
+            Controlled X(controls, qubit);
             S(qubit);
-            Controlled X(ancillas, qubit);
+            Controlled X(controls, qubit);
             Z(qubit);
         }
-        until(finished)
+        until (finished)
         fixup {
-            if AllMeasurementsZero(ancillas, Xpauli) {
+            if (MeasureIfAllQubitsAreZero(controls, PauliX)) {
                 set finished = true;
             }
         }
@@ -167,49 +170,53 @@ operation RUScircuit (qubit : Qubit) : Unit {
 
 此示例演示如何使用可变变量 `finished` 它在整个重复截止时间延迟循环范围内，并在循环之前进行了初始化并在修正步骤中更新。
 
-最后，我们将演示一个用于准备量子状态 $ \frac{1}{\sqrt{3}} \left （\sqrt{2}\ket{0}+ \ket{1}\right） $ （从 $ \ket{+} $ 状态开始）的 ru 模式的示例。 另请参阅[标准库提供的单元测试示例](https://github.com/microsoft/Quantum/blob/master/samples/diagnostics/unit-testing/RepeatUntilSuccessCircuits.qs)： 
+最后，我们将演示一个用于准备量子状态 $ \frac{1}{\sqrt{3}} \left （\sqrt{2}\ket{0}+ \ket{1}\right） $ （从 $ \ket{+} $ 状态开始）的 ru 模式的示例。
+另请参阅[标准库提供的单元测试示例](https://github.com/microsoft/Quantum/blob/master/samples/diagnostics/unit-testing/RepeatUntilSuccessCircuits.qs)：
 
 ```qsharp
-operation RepeatUntilSuccessStatePreparation( target : Qubit ) : Unit {
-
-    using( ancilla = Qubit() ) {
-        H(ancilla);
+operation PrepareStateUsingRUS(target : Qubit) : Unit {
+    using (auxiliary = Qubit()) {
+        H(auxiliary);
         repeat {
-            // We expect target and ancilla qubit to be in |+⟩ state.
-            AssertProb( 
-                [PauliX], [target], Zero, 1.0, 
+            // We expect the target and auxiliary qubits to each be in
+            // the |+⟩ state.
+            AssertProb(
+                [PauliX], [target], Zero, 1.0,
                 "target qubit should be in the |+⟩ state", 1e-10 );
-            AssertProb( 
-                [PauliX], [ancilla], Zero, 1.0,
-                "ancilla qubit should be in the |+⟩ state", 1e-10 );
-                
-            Adjoint T(ancilla);
-            CNOT(target, ancilla);
-            T(ancilla);
+            AssertProb(
+                [PauliX], [auxiliary], Zero, 1.0,
+                "auxiliary qubit should be in the |+⟩ state", 1e-10 );
 
-            // The probability of measuring |+⟩ state on ancilla is 3/4.
-            AssertProb( 
-                [PauliX], [ancilla], Zero, 3. / 4., 
-                "Error: the probability to measure |+⟩ in the first 
-                ancilla must be 3/4",
+            Adjoint T(auxiliary);
+            CNOT(target, auxiliary);
+            T(auxiliary);
+
+            // The probability of measuring |+⟩ state on the auxiliary qubit
+            // is 3/4.
+            AssertProb(
+                [PauliX], [auxiliary], Zero, 3. / 4.,
+                "Error: the probability to measure |+⟩ in the first
+                auxiliary must be 3/4",
                 1e-10);
 
-            // If we get measurement outcome Zero, we prepare the required state 
-            let outcome = Measure([PauliX], [ancilla]);
+            // If we get the measurement outcome Zero, we prepare the
+            // required state.
+            let outcome = Measure([PauliX], [auxiliary]);
         }
-        until( outcome == Zero )
+        until (outcome == Zero)
         fixup {
-            // Bring ancilla and target back to |+⟩ state
-            if( outcome == One ) {
-                Z(ancilla);
+            // Bring the auxiliary and target qubits back to |+⟩ state.
+            if (outcome == One) {
+                Z(auxiliary);
                 X(target);
                 H(target);
             }
         }
-        // Return ancilla back to Zero state
-        H(ancilla);
+        // Return the auxiliary qubit back to the Zero state.
+        H(auxiliary);
     }
 }
 ```
- 
-此操作中所示的明显编程功能是更复杂 `fixup` 的循环部分，它涉及量程操作，并且使用 `AssertProb` 语句来确定在程序中的某些指定点测量量程状态的概率。 有关 `Assert` 和 `AssertProb` 语句的详细信息，另请参阅[测试和调试](xref:microsoft.quantum.techniques.testing-and-debugging)。 
+
+此操作中所示的明显编程功能是更复杂 `fixup` 的循环部分，它涉及量程操作，并且使用 `AssertProb` 语句来确定在程序中的特定点测量量程状态的概率。
+有关[`Assert`](xref:microsoft.quantum.intrinsic.assert)和[`AssertProb`](xref:microsoft.quantum.intrinsic.assertprob)操作的详细信息，另请参阅[测试和调试](xref:microsoft.quantum.techniques.testing-and-debugging)。

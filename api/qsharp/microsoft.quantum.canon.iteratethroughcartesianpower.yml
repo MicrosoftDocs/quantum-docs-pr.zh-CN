@@ -3,18 +3,51 @@ uid: microsoft.quantum.canon.iteratethroughcartesianpower
 name: IterateThroughCartesianPower
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: 循环访问变量，如 arr，通过笛卡尔积 [0，绑定-1] × [0，绑定-1] × [0，绑定-1]，并为笛卡尔积的每个元素调用 op （arr）
+summary: >-
+  以整数范围的笛卡尔幂对每个索引应用操作。
+
+
+  以迭代方式为范围 `0..(bound - 1)`范围的每个元素应用操作。
+examples: >-
+  给定一个操作 `op`，以下两个代码段是等效的：
+
+
+  ```Q#
+
+  IterateThroughCartesianPower(2, 3, op);
+
+  ```
+
+
+  ```Q#
+
+  op([0, 0]);
+
+  op([1, 0]);
+
+  op([2, 0]);
+
+  op([0, 1]);
+
+  // ..
+
+  op([2, 2]);
+
+  ```
 syntax: 'operation IterateThroughCartesianPower (power : Int, bound : Int, op : (Int[] => Unit)) : Unit'
 input:
   content: '(power : Int, bound : Int, op : (Int[] => Unit))'
   types:
   - name: power
+    summary: 应对范围 `0..(bound - 1)` 应引发的笛卡尔幂。
     isPrimitive: true
     uid: Int
   - name: bound
+    summary: 要循环访问的范围的规范，给定为范围的长度。
     isPrimitive: true
     uid: Int
   - name: op
+    summary: 为给定笛卡尔幂的每个元素调用的操作。
     isOperation: true
     input:
       types:
@@ -30,10 +63,12 @@ output:
   types:
   - isPrimitive: true
     uid: Unit
+seeAlso:
+- microsoft.quantum.canon.iteratethroughcartesianproduct
 metadata:
-  ms.openlocfilehash: 4a35dbc3be07bf936e6a0ff2abf09004cc103fd0
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 4679e1b569dab167eecbb22947543ab993d7fa8d
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73223014"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76870931"

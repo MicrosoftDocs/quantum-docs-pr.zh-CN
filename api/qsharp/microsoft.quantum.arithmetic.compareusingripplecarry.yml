@@ -4,12 +4,14 @@ name: CompareUsingRippleCarry
 type: operation
 namespace: Microsoft.Quantum.Arithmetic
 summary: >-
-  如果两个整数 `x` 和 `y` 存储在大小相等的 qubit 寄存器满足 `x > y`，则此项将测试此项。 如果为 true，则将 1 XORed 到输出 qubit。 否则，0将 XORed 到输出 qubit 中。
+  此操作测试由 qubits 的寄存器表示的整数是否大于另一个整数，并将结果 XOR 应用到输出 qubit。
 
 
-  换句话说，这个单一 $U $ 满足： $ $ \begin{align} U\ket {x} \ 票证 {y} \ 票证 {z} = \ket{x}\ket{y}\ket{z\oplus （x > y）}。
+  给定两个整数 `x` 和 `y` 存储在大小相等的 qubit 寄存器中，此操作检查它们是否满足 `x > y`。 如果为 true，则将 1 XORed 到输出 qubit。 否则，0将 XORed 到输出 qubit 中。
 
-  \end{align} $ $。
+  换句话说，此操作可由单一 $ $ \begin{align} U\ket {x} \ 票证 {y} \ 票证 {z} = \ket{x}\ket{y}\ket{z\oplus （x > y）} 表示。
+
+  \end{align} $ $
 syntax: 'operation CompareUsingRippleCarry (x : Microsoft.Quantum.Arithmetic.LittleEndian, y : Microsoft.Quantum.Arithmetic.LittleEndian, output : Qubit) : Unit'
 references: '- 新的量程波纹-携带加法线路 Steven Cuccaro、Thomas Draper、Samuel Kutin、David Petrie Moulton https://arxiv.org/abs/quant-ph/0410184'
 input:
@@ -34,9 +36,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: fa3db99da28f96e1cb42dd03e465440e015722fa
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 1ef346a9fd33859abffe9c30b14b5ea95068169d
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221093"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871118"

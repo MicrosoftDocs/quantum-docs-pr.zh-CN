@@ -1,17 +1,17 @@
 ---
 title: 'Q # 类型模型 |Microsoft Docs'
-description: 'Q # 类型模型'
+description: Q# 类型模型
 author: QuantumWriter
 uid: microsoft.quantum.language.type-model
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 4e251053d1b8306bf8956314d8099e95c56bce55
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 0aabb144779da301b71ad215c8e975cc29b4dcce
+ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "73184740"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76871628"
 ---
 # <a name="the-type-model"></a>类型模型
 
@@ -116,11 +116,11 @@ Q # 不提供在创建元组内容之后更改元组内容的机制。
 
 我们将此属性称为_单独元组等效_。
 
-## <a name="user-defined-types"></a>用户定义的类型
+## <a name="user-defined-types"></a>用户定义类型
 
 Q # 文件可以定义包含任何合法类型的单个值的新命名类型。
 对于任何元组类型 `T`，可以声明一个新的用户定义类型，该类型是具有 `newtype` 语句 `T` 的子类型。
-例如，在 @"microsoft.quantum.canon" 命名空间中，复数定义为用户定义的类型：
+例如，在 @"microsoft.quantum.math" 命名空间中，复数定义为用户定义的类型：
 
 ```qsharp
 newtype Complex = (Double, Double);
@@ -141,7 +141,7 @@ newtype Nested = (Double, (ItemName : Int, String));
 命名项的优点是可以通过访问运算符 `::`直接访问它们。 
 
 ```qsharp
-function Addition (c1 : Complex, c2 : Complex) : Complex {
+function ComplexAddition(c1 : Complex, c2 : Complex) : Complex {
     return Complex(c1::Re + c2::Re, c1::Im + c2::Im);
 }
 ```
@@ -151,7 +151,7 @@ function Addition (c1 : Complex, c2 : Complex) : Complex {
 此类 "解包" 表达式的类型为用户定义类型的基础类型。 
 
 ```qsharp
-function PrintMsg (value : Nested) : Unit {
+function PrintedMessage(value : Nested) : Unit {
     let (d, (_, str)) = value!;
     Message ($"{str}, value: {d}");
 }
@@ -227,7 +227,7 @@ newtype Polar = (Radius : Double, Phase : Double);
 ## <a name="operation-and-function-types"></a>操作和函数类型
 
 Q #_操作_是一个量程子例程。
-也就是说，它是包含量程操作的可调用例程。
+也就是说，它是一个包含量子操作的可调用例程。
 
 Q #_函数_是在量程算法中使用的传统子例程。
 它可能包含传统代码，但不包含量程运算。
@@ -286,27 +286,28 @@ Q # 对于输入类型是逆变的：使用类型 `'A` 作为输入的可调用�
 也就是说，提供以下定义：
 
 ```qsharp
-operation Invertible (qs : Qubit[]) : Unit 
+operation Invert(qubits : Qubit[]) : Unit 
 is Adj {...} 
-operation Unitary (qs : Qubit[]) : Unit 
+
+operation ApplyUnitary(qubits : Qubit[]) : Unit 
 is Adj + Ctl {...} 
 
-function ConjugateInvertibleWith (
-   inner: (Qubit[] => Unit is Adj),
-   outer : (Qubit[] => Unit is Adj))
+function ConjugateInvertWith(
+    inner : (Qubit[] => Unit is Adj),
+    outer : (Qubit[] => Unit is Adj))
 : (Qubit[] => Unit is Adj) {...}
 
-function ConjugateUnitaryWith (
-   inner: (Qubit[] => Unit is Adj + Ctl),
-   outer : (Qubit[] => Unit is Adj))
+function ConjugateUnitaryWith(
+    inner : (Qubit[] => Unit is Adj + Ctl),
+    outer : (Qubit[] => Unit is Adj))
 : (Qubit[] => Unit is Adj + Ctl) {...}
 ```
 
 以下为 true：
 
-- 可以使用 `Invertible` 或 `Unitary`的 `inner` 参数调用操作 `ConjugateInvertibleWith`。
-- 可以使用 `Unitary`的 `inner` 参数调用 `ConjugateUnitaryWith` 操作，但是不能 `Invertible`。
-- 类型 `(Qubit[] => Unit is Adj + Ctl)` 的值可能从 `ConjugateInvertibleWith`返回。
+- 函数 `ConjugateInvertWith` 可以使用 `Invert` 或 `ApplyUnitary`的 `inner` 参数调用。
+- 函数 `ConjugateUnitaryWith` 可以使用 `ApplyUnitary`的 `inner` 参数调用，但不能 `Invert`。
+- 类型 `(Qubit[] => Unit is Adj + Ctl)` 的值可能从 `ConjugateInvertWith`返回。
 
 > [!IMPORTANT]
 > Q # 0.3 在用户定义类型的行为上引入了显著的差异。
@@ -377,14 +378,12 @@ Adjoint 函子是其自身的反向;也就是说，`Adjoint Adjoint Op` 始终�
 ```qsharp
 /// # Summary
 /// Prepares a state and measures it in the Pauli-Z basis.
-operation MeasureOneQubit () : Result {
+operation MeasureOneQubit() : Result {
         mutable result = Zero;
 
         using (qubit = Qubit()) { // Allocate a qubit
             H(qubit);               // Use a quantum operation on that qubit
-
             set result = M(qubit);      // Measure the qubit
-
             if (result == One) {    // Reset the qubit so that it can be released
                 X(qubit);
             }
@@ -396,12 +395,11 @@ operation MeasureOneQubit () : Result {
 
 此函数示例来自[PhaseEstimation](https://github.com/microsoft/Quantum/tree/master/samples/characterization/phase-estimation)示例。 它包含纯传统代码。 您可以看到，与上面的示例不同，不会分配任何 qubits，也不会使用任何量程运算。
 
-
 ```qsharp
 /// # Summary
 /// Given two arrays, returns a new array that is the pointwise product
 /// of each of the given arrays.
-function MultiplyPointwise (left : Double[], right : Double[]) : Double[] {
+function PointwiseProduct(left : Double[], right : Double[]) : Double[] {
     mutable product = new Double[Length(left)];
 
     for (idxElement in IndexRange(left)) {
@@ -417,7 +415,10 @@ function MultiplyPointwise (left : Double[], right : Double[]) : Double[] {
 /// # Summary
 /// Translate MCT masks into multiple-controlled Toffoli gates (with single
 /// targets).
-function GateMasksToToffoliGates (qubits : Qubit[], masks : MCMTMask[]) : MCTGate[] {
+function GateMasksToToffoliGates(
+    qubits : Qubit[], 
+    masks : MCMTMask[]) 
+: MCTGate[] {
 
     mutable result = new MCTGate[0];
     let n = Length(qubits);

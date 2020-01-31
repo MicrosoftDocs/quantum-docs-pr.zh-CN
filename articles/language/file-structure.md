@@ -6,12 +6,12 @@ uid: microsoft.quantum.language.file-structure
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 40b2e7ddf5def6285250dffe130b152429dce1f8
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 364d353c55bda38f227456909755d13dc7e67080
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73185182"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821076"
 ---
 # <a name="file-structure"></a>文件结构
 
@@ -84,13 +84,13 @@ newtype PairOfInts = (Int, Int);
 
 操作名称在命名空间中必须是唯一的，并且可能不会与类型和函数名称冲突。
 
-操作声明由关键字 `operation`组成，后跟作为操作名称的符号、定义操作参数的类型化标识符元组、冒号 `:`，以及描述操作结果类型的类型批注。（可选）具有操作特征的批注、`{`的左大括号、操作声明的主体以及最后一个右大括号 `}`。
+操作声明包含关键字 `operation`，后跟作为操作名称的符号、定义操作的参数的类型化标识符元组、冒号 `:`、描述操作结果类型的类型批注、可以选择具有操作特征的批注、左大括号 `{`、操作声明的正文和最终右大括号 `}`。
 
 操作声明的主体既包含默认实现，也包含专用化列表。
 如果只需显式指定默认的正文专用化的实现，则可以在声明中直接指定默认实现。
 在这种情况下，声明中具有操作特征的批注非常有用，可确保编译器根据默认实现自动生成其他专用化。 
 
-例如 
+例如： 
 
 ```qsharp
 operation PrepareEntangledPair(here : Qubit, there : Qubit) : Unit 
@@ -138,7 +138,7 @@ is Ctl + Adj {
 }
 ```
 
-在上面的示例中，`adjoint invert;` 指示将通过反 `controlled adjoint invert;` 体实现来生成 adjoint 专用化，并通过对的给定实现进行反应生成控制 adjoint 特殊化受控专用化。
+在上面的示例中，`adjoint invert;` 指示将通过反 `controlled adjoint invert;` 体实现生成 adjoint 专用化，并通过反转受控专用化的给定实现来生成受控 adjoint 专用化。
 
 对于支持 `Adjoint` 和/或 `Controlled` 函子应用程序的操作，必须 `Unit`其返回类型。 
 
@@ -187,12 +187,12 @@ Q # 操作可能包含以下显式专用化声明：
 如果需要显式声明默认正文之外的一个或多个特殊化，则默认体的实现也需要包装到适当的专用化声明中：
 
 ```qsharp
-operation CountOnes(qs: Qubit[]) : Int {
+operation CountOnes(qubits: Qubit[]) : Int {
 
     body (...) // default body specialization
     {
         mutable n = 0;
-        for (q in qs) {
+        for (qubit in qubits) {
             set n += M(q) == One ? 1 | 0;
         }
         return n;
@@ -208,7 +208,7 @@ operation CountOnes(qs: Qubit[]) : Int {
 如果操作的声明包含 adjoint 专用化的隐式或显式声明，则该操作支持 `Adjoint` 的函子。
 显式声明的受控 adjoint 专用化意味着存在 adjoint 专用化。 
 
-对于其正文包含重复执行循环、set 语句、度量、return 语句或对不支持 `Adjoint` 函子的其他操作的操作的操作，请按照 `invert` 或 @no__ 自动生成 adjoint 特殊化不能 t_2_ 指令。
+对于其正文包含重复截止时间循环、set 语句、度量、return 语句或对不支持 `Adjoint` 函子的其他操作的操作，如果不可能，请遵循 `invert` 或 `auto` 指令自动生成 adjoint 特殊化。
 
 ### <a name="controlled"></a>操控
 
@@ -236,7 +236,7 @@ operation CountOnes(qs: Qubit[]) : Int {
 操作声明可能非常简单，如下所示：定义基元 Pauli X 操作：
 
 ```qsharp
-operation X (q : Qubit) : Unit
+operation X (qubit : Qubit) : Unit
 is Adj + Ctl {
     body intrinsic;
     adjoint self;
@@ -282,7 +282,7 @@ operation Teleport (source : Qubit, target : Qubit) : Unit {
 函数是 Q # 中纯传统例程。
 每个 Q # 源文件可以定义任意数量的函数。
 
-函数声明包含关键字 `function`，后跟作为函数名称的符号、类型化标识符元组、描述函数的返回类型的类型批注以及描述的实现的语句块。才能.
+函数声明包含关键字 `function`，后跟作为函数名称的符号、类型化标识符元组、描述函数的返回类型的类型批注以及描述函数实现的语句块。
 
 定义函数的语句块必须与任何其他语句块 `{` 和 `}` 括起来。
 

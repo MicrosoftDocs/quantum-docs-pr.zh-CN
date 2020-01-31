@@ -6,12 +6,12 @@ uid: microsoft.quantum.concepts.control-flow
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 5e865dbb48029724b6f507ecb63b85d10d80c9a7
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: ff73cef12a3b8c2a6559308dc244c7c2e865ba9f
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73185641"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820447"
 ---
 # <a name="higher-order-control-flow"></a>高阶控制流 #
 
@@ -52,9 +52,9 @@ Canon 提供的一项主要抽象是迭代的一部分。
 ```qsharp
 /// # Summary
 /// Applies $H$ to all qubits in a register.
-operation HAll(register : Qubit[]) : Unit 
-is Adj + Ctl {
-
+operation ApplyHadamardToAll(
+    register : Qubit[])
+: Unit is Adj + Ctl {
     for (qubit in register) {
         H(qubit);
     }
@@ -108,9 +108,9 @@ function Sum(xs : Int[]) {
 例如，模式 $UVU ^ {\dagger} $ 在量程编程中非常常见，因此 canon 提供操作 <xref:microsoft.quantum.canon.applywith> 作为此模式的抽象。
 此抽象还允许更有效地 compliation 线路，因为在序列 `Controlled` 操作时，`U(qubit); V(qubit); Adjoint U(qubit);` 不需要对每个 `U`进行操作。
 为此，请将 $c （U） $ 指定为代表 `Controlled U([control], target)` 的单一，并以相同方式定义 $c （V） $。
-然后，针对任意状态 $ \ket{\psi} $，\begin{align} c （u） c （V） c （U） ^ \dagger \ket{1} \otimes \ket{\psi} & = \ket{1} \otimes （UVU ^ {\dagger} \ket{\psi}） \\\\ & = （\boldone \otimes U）票证{1} \otimes \ket{\psi}。
+然后针对任意状态 $ \ket{\psi} $，\begin{align} c （u） c （V） c （U） ^ \dagger \ket{1} \otimes \ket{\psi} & = \ket{1} \otimes （UVU ^ {\dagger} \ket{\psi}） \\\\ & = （\boldone \otimes U）（c （V））（\boldone \otimes U ^ \dagger） \ket{1} \otimes \ket{\psi}。
 按 `Controlled`的定义 \end{align}。
-另一方面，\begin{align} c （U） c （V） c （U） ^ \dagger \ket{0} \otimes \ket{\psi} & = \ket{0} \otimes \ket{\psi} \\\\ & = \ket{0} \otimes （UU ^ \dagger \ket{\psi}） \\\\ & = （\boldone \otimes U）（c （V））（\boldone \otimes U ^ \dagger） \ket{0} \otimes \ket{\psi}。
+另一方面，\begin{align} c （U） c （V） c （U） ^ \dagger \ket{0} \otimes \ket{\psi} & = \ket{0} \otimes \ket{\psi} \\\\ & = \ket{0} \otimes （UU ^ \dagger \ket{\psi}） \\\\ & = （\boldone \otimes U ^ \boldone） \otimes{0} \dagger \ket
 通过线性 \end{align}，我们可以通过这种方式将对所有输入状态 $U $ out。
 也就是说，$c （UVU ^ \dagger） = U c （V） U ^ \dagger $。
 由于控制操作的总体开销可能很高，因此使用 `WithC` 和 `WithCA` 等受控变体有助于减少需要应用的控制函子的数目。
@@ -123,30 +123,30 @@ function Sum(xs : Int[]) {
 >     ('T => Unit is Adj + Ctl), 'T) => Unit
 > ```
 
-同样，<xref:microsoft.quantum.canon.bind> 生成的操作依次应用其他操作序列。
+同样，<xref:microsoft.quantum.canon.bound> 生成的操作依次应用其他操作序列。
 例如，以下项是等效的：
 
 ```qsharp
 H(qubit); X(qubit);
-Bind([H, X], qubit);
+Bound([H, X], qubit);
 ```
 
 与迭代模式合并会使此方法特别有用：
 
 ```qsharp
 // Bracket the quantum Fourier transform with $XH$ on each qubit.
-ApplyWith(ApplyToEach(Bind([H, X]), _), QFT, _);
+ApplyWith(ApplyToEach(Bound([H, X]), _), QFT, _);
 ```
 
 ### <a name="time-ordered-composition"></a>有序组合 ###
 
 我们还可以通过在部分应用程序和传统函数方面考虑 flow 控制来进一步进一步了解，并且还可以根据古典 flow 控制来建模相当复杂的量程概念。
 这种类比是通过识别来精确进行的，即，单一运算符完全对应于调用操作的副作用，以便在其他单一运算符方面进行的任何单一运算符分解都与构造特定调用传统子例程的序列，这些子例程发出说明，作为特定的单一运算符。
-在此视图中，`Bind` 精确表示矩阵产品，因为 `Bind([A, B])(target)` 等效于 `A(target); B(target);`，而后者又是对应于 $BA $ 的调用序列。
+在此视图中，`Bound` 精确表示矩阵产品，因为 `Bound([A, B])(target)` 等效于 `A(target); B(target);`，而后者又是对应于 $BA $ 的调用序列。
 
 更复杂的示例是[Trotter – Suzuki 扩展](https://arxiv.org/abs/math-ph/0506007v1)。
 如[数据结构](xref:microsoft.quantum.libraries.data-structures)的 "Dynamical 生成器表示" 部分所述，Trotter – Suzuki 扩展提供了一种表示矩阵指数的特别有用的方式。
-例如，以最低顺序应用扩展会生成，对于任何运算符 $A $ 和 $B $，$A = A ^ \dagger $ 和 $B = B ^ \dagger $，\begin{align} \tag{★} \label{eq： trotter-suzuki-0} \exp （i [A + B] t） \lim_{n\to\infty} （i B t/n） \right） ^ n。
+例如，以最低顺序应用扩展时，会生成任何运算符 $A $ 和 $B $，$A = A ^ \dagger $ 和 $B = B ^ \dagger $，\begin{align} \tag{★} \label{eq： trotter-suzuki-0} \exp （i [A + B] t） = \ lim_ {n\to\infty} \left （\exp （i A t/n） \exp （i B t/n） \right） ^ n。
 \end{align} 俗称，这意味着我们可以通过在 $A $ 和 $B $ 单独的情况下进行发展，在 $A + B $ 下提高状态。
 如果我们在应用 $e ^ {i t A} $ 的操作 `A : (Double, Qubit[]) => Unit` 下，使用 $A $ 来表示进化，则在重新排列调用序列方面，Trotter – Suzuki 扩展的表示形式就变得清晰。
 具体而言在给定操作 `U : ((Int, Double, Qubit[]) => Unit is Adj + Ctl` 以便 `A = U(0, _, _)` 和 `B = U(1, _, _)`，可以通过生成格式的序列来定义一个新操作，该操作表示时间 $t $ `U` 的整数
@@ -183,12 +183,11 @@ DecomposeIntoTimeStepsCA((2, U), 1);
 
 ```qsharp
 operation _ControlledOnBitString(
-        bits : Bool[],
-        oracle: (Qubit[] => Unit is Adj + Ctl),
-        controlRegister : Qubit[],
-        targetRegister: Qubit[]) 
-: Unit 
-is Adj + Ctl {
+    bits : Bool[],
+    oracle: (Qubit[] => Unit is Adj + Ctl),
+    controlRegister : Qubit[],
+    targetRegister: Qubit[])
+: Unit is Adj + Ctl
 ```
 
 请注意，我们采用一个由 `Bool` 数组表示的位字符串，用于指定要应用于 `oracle` 所提供的操作的调节。
@@ -201,6 +200,7 @@ is Adj + Ctl {
 此构造精确地 `ApplyWith`，因此我们会相应地编写新操作的正文：
 
 ```qsharp
+{
     ApplyWithCA(
         ApplyPauliFromBitString(PauliX, false, bits, _),
         (Controlled oracle)(_, targetRegister),
@@ -219,8 +219,8 @@ is Adj + Ctl {
 
 ```qsharp
 function ControlledOnBitString(
-        bits : Bool[],
-        oracle: (Qubit[] => Unit is Adj + Ctl)) 
+    bits : Bool[],
+    oracle: (Qubit[] => Unit is Adj + Ctl))
 : ((Qubit[], Qubit[]) => Unit is Adj + Ctl) {
     return _ControlledOnBitString(bits, oracle, _, _);
 }

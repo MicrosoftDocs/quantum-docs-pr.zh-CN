@@ -1,16 +1,17 @@
 ---
-title: 'Q # 技术-局部变量 |Microsoft Docs'
-description: 'Q # 技术-局部变量'
+title: '局部变量-Q # 技术 |Microsoft Docs'
+description: '局部变量-Q # 技术'
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 4f5eff1ee8482fa5e5fee9dff421efab93fc0c5a
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+uid: microsoft.quantum.techniques.local-variables
+ms.openlocfilehash: 8b1de5c096210fb36a81c127a8bbbe1b39522741
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183278"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820175"
 ---
 # <a name="local-variables"></a>局部变量 #
 

@@ -3,23 +3,21 @@ uid: microsoft.quantum.canon.stackpop
 name: StackPop
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: 从 <xref:microsoft.quantum.canon.resultstack>中移除最顶层元素。
+summary: StackPop 已被弃用。
 syntax: 'function StackPop (stack : Microsoft.Quantum.Canon.ResultStack) : Microsoft.Quantum.Canon.ResultStack'
 input:
   content: '(stack : Microsoft.Quantum.Canon.ResultStack)'
   types:
   - name: stack
-    summary: 要弹出的堆栈。
     uid: microsoft.quantum.canon.resultstack
 output:
   content: Microsoft.Quantum.Canon.ResultStack
   types:
-  - summary: 移除了顶部元素的 `stack`。 新堆栈具有与旧堆栈相同的容量，但其长度减少1。
-    uid: microsoft.quantum.canon.resultstack
+  - uid: microsoft.quantum.canon.resultstack
 metadata:
-  ms.openlocfilehash: 371952e68e9c06fc11d9e8c309a4d388b80a9556
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 23c54fb83155e32415348d160649580a8b0cc501
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219359"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871458"

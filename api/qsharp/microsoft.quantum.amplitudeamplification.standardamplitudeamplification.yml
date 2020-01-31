@@ -1,0 +1,46 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.standardamplitudeamplification
+name: StandardAmplitudeAmplification
+type: function
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: 标准振幅放大算法
+remarks: 这是由 `AmpAmpPhasesStandard` 计算的一系列反射阶段所获得的标准幅度放大算法，假设 \begin{align} A\ket{0}\_{f} \ket{0}\_s = \lambda\ket{1}\_f\ket {\ text {target}}\_s + \sqrt{1-| \lambda | ^ 2} \ket{0}\_f\cdots，\end{align} 此操作将准备状态 \begin{align} \operatorname{AmpAmpByOracle}\ket{0}\_{f} \ket{0}\_s = \sin （（2n + 1） \sin ^{-1}（\lambda）） \ket{1}\_f\ket {\ text {target}}\_s + \cdots\ket{0}\_f \end{align} 在大多数情况下，`flagQubit` 和 `auxiliaryRegister` 在状态 $ \ket 中初始化{0}\_{0}\_。
+syntax: 'function StandardAmplitudeAmplification (nIterations : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int) : (Qubit[] => Unit is Adj + Ctl)'
+references: '- [*G. Brassard，Hoyer，Mosca，Tapp*](https://arxiv.org/abs/quant-ph/0005055)'
+input:
+  content: '(nIterations : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int)'
+  types:
+  - name: nIterations
+    summary: $n $ 的幅度放大次数的迭代数
+    isPrimitive: true
+    uid: Int
+  - name: stateOracle
+    uid: microsoft.quantum.oracles.stateoracle
+  - name: idxFlagQubit
+    summary: 用于标记 qubit 的索引
+    isPrimitive: true
+    uid: Int
+output:
+  content: (Qubit[] => Unit is Adj + Ctl)
+  types:
+  - summary: 实现标准振幅放大量程算法的操作
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+metadata:
+  ms.openlocfilehash: 5779087131a60436b6c0beb4bcebc4fc802e93d7
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76872710"

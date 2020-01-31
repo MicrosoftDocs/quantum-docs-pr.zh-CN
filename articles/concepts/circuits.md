@@ -1,17 +1,17 @@
 ---
 title: 量程线路 |Microsoft Docs
-description: 量程线路
+description: 量子线路
 author: QuantumWriter
 uid: microsoft.quantum.concepts.circuits
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 7c2afa58fd70d893529cf794ae07df480466aaec
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: fe845aa0dde7c780ea6721dfe2559119e90b4aa5
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2019
-ms.locfileid: "73210625"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820787"
 ---
 # <a name="quantum-circuits"></a>量程线路
 请考虑一下单一转换 $ \text{CNOT-CONTAINS} _{01}（H\otimes 1） $。
@@ -39,7 +39,7 @@ $ $ \mathrm{CNOT}_{01}（H\otimes 1） \ket{00} = \frac{1}{\sqrt{2}} \left （\k
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
 ![](~/media/concepts_2.png)
 
-是对 qubit 寄存器使用的[Hadamard](xref:microsoft.quantum.primitive.h)入口。
+是对 qubit 寄存器使用的[Hadamard](xref:microsoft.quantum.intrinsic.h)入口。
 
 量程入口按时间顺序排列，并将最左侧的入口排列为第一个应用到 qubits 的入口。
 换而言之，如果将电缆画为包含量程状态，则电缆会从左到右从图中的每个入口开始显示量程状态。
@@ -72,7 +72,7 @@ $ $ \mathrm{CNOT}_{01}（H\otimes 1） \ket{00} = \frac{1}{\sqrt{2}} \left （\k
 
 ## <a name="controlled-gates"></a>受控入口
 内置于 qubit 量程线路关系图的另一种构造是控件。
-量程单向控制入口的操作（表示 $ \Lambda （G） $，其中单个 qubit 的值控制 $G $ 的应用）可以通过查看以下产品状态输入 $ \Lambda （\alpha \ket{0} + \beta \ket 的示例来理解{1}） \ket{\psi} = \alpha \ket{0} \ket{\psi} + \beta \ket{1} G\ket {\ psi} $。
+量程单向控制入口的操作（表示 $ \Lambda （G） $，其中单个 qubit 的值控制 $G $ 的应用）可以通过查看以下产品状态输入 $ \Lambda （G）（\alpha \ket{0} + \beta \ket{1}） \ket{\psi} = \alpha \ket{0} \ket{\psi} + \beta \ket{1} G\ket {\ psi} $ 的示例来了解。
 也就是说，当且仅当控件 qubit 采用值 $1 $ 时，受控的入口才会将 $G $ 应用于包含 $ \psi $ 的寄存器。
 通常，我们会将这些受控操作介绍为
 
@@ -81,7 +81,7 @@ $ $ \mathrm{CNOT}_{01}（H\otimes 1） \ket{00} = \frac{1}{\sqrt{2}} \left （\k
 ![](~/media/concepts_5.png)
 
 此时，黑色圆圈表示控制门的量程位，垂直线路表示在控件 qubit 采用值 $1 $ 时应用的单一。
-对于 $G = X $ 和 $G = Z $ 的特殊情况，我们引入了以下表示法来描述控制的入口版本（请注意，受控-X 门是[$CNOT $ 门](xref:microsoft.quantum.primitive.cnot)）：
+对于 $G = X $ 和 $G = Z $ 的特殊情况，我们引入了以下表示法来描述控制的入口版本（请注意，受控-X 门是[$CNOT $ 门](xref:microsoft.quantum.intrinsic.cnot)）：
 
 <!--- ![](.\media\6.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
@@ -106,7 +106,7 @@ is Ctl { // Auto-generate the controlled specialization of the operation
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
 ![度量线路](~/media/concepts_7.png)
 
-Q # 为此目的实现了[度量运算符](xref:microsoft.quantum.primitive.measure)。
+Q # 为此目的实现了[度量运算符](xref:microsoft.quantum.intrinsic.measure)。
 有关详细信息，请参阅[有关度量值的部分](xref:microsoft.quantum.libraries.standard.prelude#measurements)。
 
 同样，subcircuit

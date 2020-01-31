@@ -1,23 +1,23 @@
 ---
-title: 'Q # 技术-将其放在一起 |Microsoft Docs'
-description: 'Q # 技巧-将其全部放在一起'
+title: '将其全部放在一起-Q # 技术 |Microsoft Docs'
+description: '将其全部放在一起-Q # 技术'
 uid: microsoft.quantum.techniques.puttingittogether
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: f65b3e260f98a7a90da13b62edd6cc63d200f5af
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 3605826da159757d4b321dbf4ec6acd7f4e6be05
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183261"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820158"
 ---
 # <a name="putting-it-all-together-teleportation"></a>全部放在一起： Teleportation #
 让我们返回到在[量程线路](xref:microsoft.quantum.concepts.circuits)中定义的 teleportation 线路的示例。 我们将使用它来说明我们目前了解到的概念。 下面为不熟悉理论的用户提供了对量程 teleportation 的说明，后面是 Q # 中代码实现的演练。 
 
 ## <a name="quantum-teleportation-theory"></a>量程 Teleportation：理论
-量程 teleportation 是一种方法，用于将未知的量程状态（我们将称为 "__消息__"）从一个位置的 qubit 发送到另一个位置中的 qubit （我们会将这些 qubits 称为 "__此处__" 和 "__存在__"，分别为）。 我们可以使用 Dirac 表示法将__消息__表示为矢量： 
+量程 teleportation 是一种方法，用于将未知的量程状态（我们将称为 "__消息__"）从一个位置中的 qubit 发送到另一个位置中的 qubit （我们将分别指代为 "__此处__" 和 "__存在__" 的 qubits）。 我们可以使用 Dirac 表示法将__消息__表示为矢量： 
 
 $ $ \ket{\psi} = \alpha\ket{0} + \beta\ket{1} $ $
 
@@ -64,7 +64,7 @@ $ $ \frac{\alpha}{2}（\ket{0} + \ket{1}） \ket{00} + \frac{\alpha}{2}（\ket{0
 
 $ \Frac{1}{2}$ 系数对于每个术语都是通用的，因此我们现在可以将其移到方括号以外：
 
-$ $ \frac{1}{2}\big [\alpha （\ket{0} + \ket{1}） \ket{00} + \alpha （\ket{0} + \ket{1}） \ket{11} + \beta （\ket{0}-\ket{1}） \ket{10} + \beta （\ket{0}-\ket{1}） \ket{01}\big] $ $
+$ $ \frac{1}{2}\big [\alpha （\ket{0} + \ket{1}） \ket{00} + \alpha （\ket{0} + \ket{1}） \ket{11} + \beta （\ket{0}-\ket{1}） \ket{10} \beta] $ $
 
 然后，可以将每个术语的方括号相乘，提供：
 
@@ -94,7 +94,7 @@ $ $ \ket{\psi} = \alpha\ket{0} + \beta\ket{1} $ $
 
 总而言之，如果度量值为1，并且第一个 qubit 为1，则应用 Z 入口。 如果度量值为1，第二个 qubit 为1，则应用 NOT 入口。
 
-### <a name="summary"></a>总结
+### <a name="summary"></a>摘要
 下面显示了一个用于实现 teleportation 的短信量程线路。 从左到右移动可以看到：
 - 步骤 1 __：通过应用__Hadamard__入口和 Cnot-contains 入口，Entangling。__
 - 步骤2：使用 CNOT-CONTAINS 入口和 Hadamard 入口发送__消息__。
@@ -125,7 +125,7 @@ operation Teleport(msg : Qubit, there : Qubit) : Unit {
 ```
 
 ### <a name="step-1-create-an-entangled-state"></a>步骤1：创建放大状态
-然后，可以使用 @"microsoft.quantum.primitive.h" 和 @"microsoft.quantum.primitive.cnot" 操作在 `here` 和 `there` 之间创建放大对：
+然后，可以使用 @"microsoft.quantum.intrinsic.h" 和 @"microsoft.quantum.intrinsic.cnot" 操作在 `here` 和 `there` 之间创建放大对：
 
 ```qsharp
         H(here);
@@ -141,7 +141,7 @@ operation Teleport(msg : Qubit, there : Qubit) : Unit {
 ```
 
 ### <a name="step-3--4-measuring-and-interpreting-the-result"></a>步骤 3 & 4：测量和解释结果
-最后，我们使用 @"microsoft.quantum.primitive.m" 执行度量，并执行必要的入口操作以获取所需状态，如 `if` 语句所示：
+最后，我们使用 @"microsoft.quantum.intrinsic.m" 执行度量，并执行必要的入口操作以获取所需状态，如 `if` 语句所示：
 
 ```qsharp
         // Measure out the entanglement

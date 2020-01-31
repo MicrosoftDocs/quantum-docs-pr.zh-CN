@@ -7,12 +7,12 @@ ms.date: 10/19/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.howto.createproject
-ms.openlocfilehash: 10b1048501c2de055f5711fc0fdbc4bac76e8f77
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: 5fa32f14291fa2070b49e4bb3b720cbf31ee614b
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74864400"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819886"
 ---
 # <a name="create-a-q-project-in-your-development-environment"></a>在开发环境中创建 Q # 项目
 
@@ -23,7 +23,7 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 从以下部分选择你的开发环境和语言：
 
 * [Python](#create-a-python-project)
-* [Jupyter 笔记本](#create-a-jupyter-notebook-project)
+* [Q # Jupyter 笔记本](#create-a-q-jupyter-notebook-project)
 * [C#Visual Studio](#create-a-c-project-on-windows-using-visual-studio)
 * [C#与 VS Code](#create-a-c-project-using-vs-code)
 * [C#用命令行](#create-a-c-project-using-the-dotnet-command-line-tool)
@@ -32,7 +32,7 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 
 1. 必备组件
 
-     * [用于 Python 的量程开发工具包](xref:microsoft.quantum.install#develop-with-python)
+     * 安装[适用于 Python 的量程开发工具包](xref:microsoft.quantum.install.python)
 
 1. 为项目创建一个文件夹，并导航到该文件夹
 
@@ -75,11 +75,11 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 
 现在，你可以继续开发量程计划。
 
-## <a name="create-a-jupyter-notebook-project"></a>创建 Jupyter Notebook 项目
+## <a name="create-a-q-jupyter-notebook-project"></a>创建 Q # Jupyter Notebook 项目
 
 1. 必备组件
 
-    * [适用于 Jupyter 笔记本的量程开发工具包](xref:microsoft.quantum.install#develop-with-jupyter-notebooks)
+    * 安装[适用于 Jupyter 笔记本的量程开发工具包](xref:microsoft.quantum.install.jupyter)
 
 1. 运行以下命令以启动 Notebook 服务器：
 
@@ -115,7 +115,7 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 
 1. 必备组件
 
-    * [适用于 Visual Studio 的量程开发工具包](xref:microsoft.quantum.install#develop-with-c-on-windows-using-visual-studio)
+    * 安装[适用于 Visual Studio 的量程开发工具包扩展](xref:microsoft.quantum.install.cs)
 
 1. 创建新的 Q# 应用程序
 
@@ -144,7 +144,7 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 
 1. 必备组件
 
-    * [VS Code 的量程开发工具包](xref:microsoft.quantum.install#develop-with-c-using-visual-studio-code)
+    * 安装[VS Code 的量程开发工具包扩展](xref:microsoft.quantum.install.cs)
 
 1. 创建新项目：
 
@@ -169,7 +169,7 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 
 1. 必备组件
 
-    * [命令行的量程开发工具包](xref:microsoft.quantum.install#develop-with-c-using-the-dotnet-command-line-tool)
+    * 安装[命令行的量程开发工具包](xref:microsoft.quantum.install.cs)
 
 1. 创建新应用程序
 

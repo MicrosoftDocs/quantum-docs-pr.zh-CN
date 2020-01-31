@@ -1,18 +1,19 @@
 ---
-title: 量程开发技巧简介 |Microsoft Docs
-description: 量程开发技巧简介
+title: 'Q # 计划概述-Q # 技术 |Microsoft Docs'
+description: 'Q # 计划概述-Q # 技术'
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 702d23293a1c340ddd3d7032d0e05294345469b2
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+uid: microsoft.quantum.techniques.file-structure
+ms.openlocfilehash: e8f52e6b0d4382331665a8e845ef19a3a1beabf9
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442562"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820821"
 ---
-# <a name="q-program-overview"></a>Q # 计划概述
+# <a name="q-program-overview"></a>Q# 编程概述
 
 Q # 是一种可扩展的多模式域特定编程语言，用于量程计算。 Q # 是一种量程编程语言，因为它可用于描述在量程计算机上执行指令的方式。 可从模拟器到实际的量程硬件的目标计算机。 Q # 是可缩放的：它可用于编写简单的演示程序，如在几个 qubits 上运行的传送，但也支持编写大量复杂的程序，例如模拟复杂的分子，这些程序需要使用数百万的 qubits 大型计算机。 即使大型物理计算机仍在将来，Q # 也能让程序员立即对复杂的量程算法进行编程。 此外，Q # 支持各种任务，如调试、分析、资源估算，以及以可缩放方式进行的特定用途模拟。 
 

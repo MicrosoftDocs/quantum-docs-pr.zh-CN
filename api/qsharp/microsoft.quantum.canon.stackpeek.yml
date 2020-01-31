@@ -3,24 +3,22 @@ uid: microsoft.quantum.canon.stackpeek
 name: StackPeek
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: 检索 <xref:microsoft.quantum.canon.resultstack>的最顶层元素。
+summary: StackPeek 已被弃用。
 syntax: 'function StackPeek (stack : Microsoft.Quantum.Canon.ResultStack) : Result'
 input:
   content: '(stack : Microsoft.Quantum.Canon.ResultStack)'
   types:
   - name: stack
-    summary: 要检查的堆栈。
     uid: microsoft.quantum.canon.resultstack
 output:
   content: Result
   types:
-  - summary: 存储在 `stack`顶部的值。
-    isPrimitive: true
+  - isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 36015934319824840a19f1ddbf014d98298a6404
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 32ad253d38ca2c9c17e458bb17920607bd8ddeb8
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067724"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76870914"

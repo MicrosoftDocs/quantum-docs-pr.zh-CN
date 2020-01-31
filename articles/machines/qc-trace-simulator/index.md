@@ -6,12 +6,12 @@ ms.author: vadym@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.intro
-ms.openlocfilehash: 7fd9d1fa4fb3c5dd216d846038abd40454ece2e8
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 929745a6da6034599e97d2f573190308fde6eb75
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73035134"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820430"
 ---
 # <a name="quantum-trace-simulator"></a>量子跟踪模拟器
 
@@ -24,29 +24,26 @@ Microsoft 量子计算机跟踪模拟器执行量子程序，而无需实际模�
 
 ## <a name="providing-the-probability-of-measurement-outcomes"></a>提供度量结果的概率
 
-量子算法中出现两种类型的度量。 第一种类型起到辅助作用，用户通常从中了解结果的概率。 在这种情况下，用户可以编写 <xref:microsoft.quantum.primitive> 命名空间中的 <xref:microsoft.quantum.primitive.assertprob> 来表达此知识。 以下示例对此进行了说明：
+量子算法中出现两种类型的度量。 第一种类型起到辅助作用，用户通常从中了解结果的概率。 在这种情况下，用户可以编写 <xref:microsoft.quantum.intrinsic> 命名空间中的 <xref:microsoft.quantum.intrinsic.assertprob> 来表达此知识。 以下示例对此进行了说明：
 
 ```qsharp
-operation Teleportation (source : Qubit, target : Qubit) : Unit {
-
-    using (ancilla = Qubit()) {
-
-        H(ancilla);
-        CNOT(ancilla, target);
-
-        CNOT(source, ancilla);
+operation TeleportQubit(source : Qubit, target : Qubit) : Unit {
+    using (qubit = Qubit()) {
+        H(qubit);
+        CNOT(qubit, target);
+        CNOT(source, qubit);
         H(source);
 
         AssertProb([PauliZ], [source], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
-        AssertProb([PauliZ], [ancilla], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
+        AssertProb([PauliZ], [q], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
 
         if (M(source) == One)  { Z(target); X(source); }
-        if (M(ancilla) == One) { X(target); X(ancilla); }
+        if (M(q) == One) { X(target); X(q); }
     }
 }
 ```
 
-当跟踪模拟器执行 `AssertProb` 时，它将在 `source` 上记录测量 `PauliZ`，并且应向 `ancilla` 提供 `Zero` 的结果，其概率为 0.5。 当模拟器稍后执行 `M` 时，它将找到结果概率的记录值，并且 `M` 将返回 `Zero` 或 `One`，其概率为 0.5。 在跟踪量子状态的模拟器上执行相同的代码时，此类模拟器将检查 `AssertProb` 中提供的概率是否正确。
+当跟踪模拟器执行 `AssertProb` 时，它将在 `source` 上记录测量 `PauliZ`，并且应向 `q` 提供 `Zero` 的结果，其概率为 0.5。 当模拟器稍后执行 `M` 时，它将找到结果概率的记录值，并且 `M` 将返回 `Zero` 或 `One`，其概率为 0.5。 在跟踪量子状态的模拟器上执行相同的代码时，此类模拟器将检查 `AssertProb` 中提供的概率是否正确。
 
 ## <a name="running-your-program-with-the-quantum-computer-trace-simulator"></a>使用量子计算机跟踪模拟器运行程序 
 

@@ -6,12 +6,12 @@ ms.author: anpaz@microsoft.com
 ms.date: 1/22/2019
 ms.topic: article
 uid: microsoft.quantum.machines.resources-estimator
-ms.openlocfilehash: 591e306b3001934bd81342a533e3f6ca25129781
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 960fda3dade7648f9cd24496c3a49fd11d6f807a
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73184978"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820855"
 ---
 # <a name="the-resourcesestimator-target-machine"></a>ResourcesEstimator 目标计算机
 
@@ -97,37 +97,37 @@ namespace Quantum.MyProgram
 * __QubitClifford__：执行的任何单个 qubit Clifford 和 Pauli 入口的计数。
 * __度量值__：执行的任何度量值的计数。
 * __R__：执行的任何单个 qubit 循环的计数，不包括 T、Clifford 和 Pauli 入口。
-* __T__： t 入口及其词干的计数，包括 t 门、T_x = T_y 和 = 1xt-hy-ubw，已执行。
+* __T__： t 入口及其词干的计数（包括 t 入口、T_x = 1xt-hy-ubw）和 T_y = 1xt-hy-ubw，已执行。
 * __深度__：由 Q # 操作执行的量程线路的深度。 默认情况下，在深度中只对 T 个入口计数，有关详细信息，请参阅[深度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)。
 * __Width__：在执行 Q # 操作期间分配的最大 qubits 数。
 * __BorrowedWidth__： Q # 操作内借用的最大 qubits 数。
 
 
-## <a name="providing-the-probability-of-measurement-outcomes"></a>提供测量结果的概率
+## <a name="providing-the-probability-of-measurement-outcomes"></a>提供度量结果的概率
 
-<xref:microsoft.quantum.primitive> 命名空间中的 <xref:microsoft.quantum.primitive.assertprob> 可用于提供有关测量的预期概率的信息，以帮助驱动 Q # 计划的执行。 以下示例对此进行了说明：
+<xref:microsoft.quantum.intrinsic> 命名空间中的 <xref:microsoft.quantum.intrinsic.assertprob> 可用于提供有关测量的预期概率的信息，以帮助驱动 Q # 计划的执行。 以下示例对此进行了说明：
 
 ```qsharp
-operation Teleportation (source : Qubit, target : Qubit) : Unit {
+operation Teleport(source : Qubit, target : Qubit) : Unit {
 
-    using (ancilla = Qubit()) {
+    using (qubit = Qubit()) {
 
-        H(ancilla);
-        CNOT(ancilla, target);
+        H(q);
+        CNOT(qubit, target);
 
-        CNOT(source, ancilla);
+        CNOT(source, qubit);
         H(source);
 
         AssertProb([PauliZ], [source], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
-        AssertProb([PauliZ], [ancilla], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
+        AssertProb([PauliZ], [qubit], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
 
         if (M(source) == One)  { Z(target); X(source); }
-        if (M(ancilla) == One) { X(target); X(ancilla); }
+        if (M(qubit) == One) { X(target); X(qubit); }
     }
 }
 ```
 
-当 `ResourcesEstimator` 遇到 `AssertProb`，它将在 `source` 上记录测量 `PauliZ`，`ancilla` 应得到 `Zero` 的结果为0.5。 在以后 `M`，它将查找结果概率的记录值，并且 `M` 将返回 `Zero` 概率为0.5 的或 `One`。
+当 `ResourcesEstimator` 遇到 `AssertProb`，它将在 `source` 上记录测量 `PauliZ`，`q` 应得到 `Zero` 的结果为0.5。 在以后 `M`，它将查找结果概率的记录值，并且 `M` 将返回 `Zero` 概率为0.5 的或 `One`。
 
 
 ## <a name="see-also"></a>另请参阅

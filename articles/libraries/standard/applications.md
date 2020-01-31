@@ -6,12 +6,12 @@ uid: microsoft.quantum.libraries.applications
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: ef22460a5bca63ebaf32c0ba21984e103ec8ebdd
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: 3e629e095bd2ee492496066710ef6fd4e578a543
+ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74864383"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76868962"
 ---
 # <a name="applications"></a>应用程序 #
 
@@ -69,15 +69,16 @@ newtype TimeDependentSimulationAlgorithm = ((Double, EvolutionSchedule, Qubit[])
 
 ```qsharp
 function TrotterSimulationAlgorithm(
-    trotterStepSize: Double, 
-    trotterOrder: Int) 
-    : SimulationAlgorithm {
+    trotterStepSize : Double, 
+    trotterOrder : Int) 
+: SimulationAlgorithm {
     ...
 }
+
 function TimeDependentTrotterSimulationAlgorithm(
-    trotterStepSize: Double, 
-    trotterOrder: Int) 
-    : TimeDependentSimulationAlgorithm {
+    trotterStepSize : Double, 
+    trotterOrder : Int) 
+: TimeDependentSimulationAlgorithm {
     ...
 }
 ```
@@ -99,11 +100,11 @@ Hamiltonian 模拟的一个常见应用是 adiabatic 状态准备。 此处提�
 
 ```qsharp
 function InterpolatedEvolution(
-        interpolationTime: Double, 
-        evolutionGeneratorStart: EvolutionGenerator,
-        evolutionGeneratorEnd: EvolutionGenerator,
-        timeDependentSimulationAlgorithm: TimeDependentSimulationAlgorithm)
-        : (Qubit[] => Unit is Adj + Ctl) {
+        interpolationTime : Double, 
+        evolutionGeneratorStart : EvolutionGenerator,
+        evolutionGeneratorEnd : EvolutionGenerator,
+        timeDependentSimulationAlgorithm : TimeDependentSimulationAlgorithm)
+: (Qubit[] => Unit is Adj + Ctl) {
         ...
 }
  
@@ -114,13 +115,13 @@ function InterpolatedEvolution(
 我们还定义了一个帮助操作，该操作会自动执行典型的量程化学试验的所有步骤。 例如，我们提供了以下内容，它将返回 adiabatic 状态准备所产生状态的能源估算：
 
 ```qsharp
-operation AdiabaticStateEnergyEstimate( 
-    nQubits : Int, 
-    statePrepUnitary: (Qubit[] => Unit),
-    adiabaticUnitary: (Qubit[] => Unit),
+operation EstimateAdiabaticStateEnergy(
+    nQubits : Int,
+    statePrepUnitary : (Qubit[] => Unit),
+    adiabaticUnitary : (Qubit[] => Unit),
     qpeUnitary: (Qubit[] => Unit is Adj + Ctl),
-    phaseEstAlgorithm : ((DiscreteOracle, Qubit[]) => Double)) 
-    : Double {
+    phaseEstAlgorithm : ((DiscreteOracle, Qubit[]) => Double))
+: Double {
 ...
 }
 ```

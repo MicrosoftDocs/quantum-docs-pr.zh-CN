@@ -1,0 +1,39 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.applyamplitudeamplification
+name: ApplyAmplitudeAmplification
+type: operation
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: 在给定寄存器上应用振幅放大，使用一组给定的阶段和 oracles 来反映初始状态和最终状态。
+syntax: 'operation ApplyAmplitudeAmplification (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, target : Qubit[]) : Unit'
+input:
+  content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, target : Qubit[])'
+  types:
+  - name: phases
+    summary: 描述振幅放大算法的每个步骤中的部分反射的一组阶段。 有关示例，请参阅 @"microsoft.quantum.amplitudeamplification.standardreflectionphases"。
+    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+  - name: startStateReflection
+    summary: 反映初始状态的 oracle。
+    uid: microsoft.quantum.oracles.reflectionoracle
+  - name: targetStateReflection
+    summary: 反映所需最终状态的 oracle。
+    uid: microsoft.quantum.oracles.reflectionoracle
+  - name: target
+    summary: 要对其执行振幅放大的寄存器。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+metadata:
+  ms.openlocfilehash: 36b58c7b553c225c022e44d6c7257ab92a280807
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76872472"

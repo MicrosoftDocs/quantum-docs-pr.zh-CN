@@ -29,12 +29,10 @@ output:
 functors:
 - Adjoint
 - Controlled
-seeAlso:
-- incrementbyintegerphasele
 metadata:
-  ms.openlocfilehash: 3eafc268377e36301d511b77feb4db352a075d5d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d05ed867e62f4f7474319ffe23dcd23aa34675c5
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73215007"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871152"

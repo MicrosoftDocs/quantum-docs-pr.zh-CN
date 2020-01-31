@@ -62,11 +62,7 @@ functions:
 - uid: microsoft.quantum.simulation.paulistringfromgenidx
   summary: 提取 `GeneratorIndex`描述的 Pauli 术语的 Pauli 字符串及其 qubit 索引。
 - uid: microsoft.quantum.simulation.quantumwalkbyqubitization
-  summary: >-
-    将 `BlockEncodingReflection` 转换为量程审核。
-
-
-    也就是说，假设有一个 `BlockEncodingReflection` 单一 $U $，该运算符对某个运算符 $H，并将其转换为量程审核 $W $，其中包含 $ \pm e ^ {\pm i\sin ^{-1}（H）} $ 的范围。
+  summary: 将块编码反射转换为量程审核。
 - uid: microsoft.quantum.simulation.sumgeneratorsystems
   summary: 添加多个 `GeneratorSystem`来创建新 GeneratorSystem。
 - uid: microsoft.quantum.simulation.timedependenttrottersimulationalgorithm
@@ -162,9 +158,9 @@ newtypes:
 - uid: microsoft.quantum.simulation.unitary
   summary: 表示单一运算符下的演变。
 metadata:
-  ms.openlocfilehash: 05db213d04304a635e4e86e0f6c40f15bb81441a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 967c27e6c5c8f475e54f7e9d4f3a14594fb04cc5
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73215874"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76869821"

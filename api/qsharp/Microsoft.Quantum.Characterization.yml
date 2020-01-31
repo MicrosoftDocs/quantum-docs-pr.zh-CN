@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.characterization
 name: Microsoft.Quantum.Characterization
-summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于了解量程状态和进程的属性的函数和操作，包括 tomography 和阶段估算。"
+summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含用于了解量程状态和进程的属性的函数和操作，包括 tomography 和阶段估算。"
 operations:
 - uid: microsoft.quantum.characterization.continuousphaseestimationiteration
   summary: 使用单一 oracle 的任意实际幂，执行迭代（经典控制）阶段估算算法的单个迭代。
@@ -11,12 +11,14 @@ operations:
   summary: 考虑到准备和度量，通过执行给定数量的试验来估算度量成功（返回 `Zero`）的频率。
 - uid: microsoft.quantum.characterization.estimatefrequencya
   summary: 对于 adjointable 和度量值的准备，通过执行给定数量的试验来估算度量成功（返回 `Zero`）的频率。
+- uid: microsoft.quantum.characterization.estimateimagoverlapbetweenstates
+  summary: 假设每个操作都准备好状态的副本，并估计每个操作准备的状态之间重叠部分的虚部。
+- uid: microsoft.quantum.characterization.estimateoverlapbetweenstates
+  summary: 给定两个操作，每个操作都准备状态的副本，并估计每个操作准备的状态之间的平方重叠。
+- uid: microsoft.quantum.characterization.estimaterealoverlapbetweenstates
+  summary: 假设每个操作都准备好状态的副本，并对每个操作准备的状态之间的重叠部分进行估计。
 - uid: microsoft.quantum.characterization.measureallz
-  summary: >-
-    共同度量 Pauli Z 基础的 qubits 寄存器。
-
-
-    换言之，度量给定寄存器上的操作 $Z \otimes Z \otimes \cdots \otimes Z $。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nMeasureAllZ 已被弃用。 请改用 @\"microsoft.quantum.measurement.measureallz\"。\n请使用 @\"microsoft.quantum.measurement.measureAllZ\"。"
 - uid: microsoft.quantum.characterization.measureidentity
   summary: 测量 qubits 的寄存器上的标识运算符。
 - uid: microsoft.quantum.characterization.quantumphaseestimation
@@ -26,9 +28,9 @@ operations:
 - uid: microsoft.quantum.characterization.singlequbitprocesstomographymeasurement
   summary: 根据感兴趣的特定通道，在 Pauli 基础上执行 qubit 进程 tomography 度量。
 metadata:
-  ms.openlocfilehash: f6ca8c97c1e44950fb87da8ed7335c885cabc425
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ff2bee3d5885c4b83a7ba17eeaf578c226dbbf20
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73056949"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76870675"

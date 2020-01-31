@@ -4,6 +4,9 @@ name: InjectPi4YRotation
 type: operation
 namespace: Microsoft.Quantum.ErrorCorrection
 summary: >-
+  围绕 Y 轴旋转单个 qubit 乘以π/4。
+
+
   对 `Y`执行π/4 旋转。
 
 
@@ -21,7 +24,7 @@ remarks: >-
   ```
 
 
-  and
+  和
 
 
   ```qsharp
@@ -56,9 +59,9 @@ output:
 functors:
 - Adjoint
 metadata:
-  ms.openlocfilehash: fa0b69740e94247aa9f31d03715464be1b29a0a6
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 9792980f4b8ad01ec41f1317fb574de85e2d4683
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73211420"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871645"

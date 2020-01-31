@@ -1,17 +1,17 @@
 ---
-title: 'Q # 技术-操作和函数 |Microsoft Docs'
-description: 'Q # 技术-操作和函数'
+title: '操作和函数-Q # 技术 |Microsoft Docs'
+description: '操作和函数-Q # 技术'
 uid: microsoft.quantum.techniques.opsandfunctions
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 06da09dc9c6e0ba0331db6bc0cd3d2ddeb287113
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 1fca20bb44cc42008f7d25d2fc71a39b962525c2
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183448"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820770"
 ---
 # <a name="q-operations-and-functions"></a>Q # 操作和函数
 
@@ -66,7 +66,7 @@ operation Superdense(here : Qubit, there : Qubit) : (Result, Result) {
 在以下示例中，可以将这些专用化的存在声明为操作签名的一部分： `is Adj + Ctl`。 然后，编译器将生成每个此类隐式声明的专用化的相应实现。 
 
 ```qsharp
-operation PrepareEntangledPair(here : Qubit, there : Qubit) : Unit {
+operation PrepareEntangledPair(here : Qubit, there : Qubit) : Unit
 is Adj + Ctl { // implies the existence of an adjoint, a controlled, and a controlled adjoint specialization
     H(here);
     CNOT(here, there);
@@ -111,7 +111,7 @@ is Ctl + Adj {
     controlled adjoint invert; 
 }
 ```
-在上面的示例中，`adjoint invert;` 指示将通过反 `controlled adjoint invert;` 体实现来生成 adjoint 专用化，并通过对的给定实现进行反应生成控制 adjoint 特殊化受控专用化。
+在上面的示例中，`adjoint invert;` 指示将通过反 `controlled adjoint invert;` 体实现生成 adjoint 专用化，并通过反转受控专用化的给定实现来生成受控 adjoint 专用化。
 
 我们将在[更高顺序控制流](xref:microsoft.quantum.concepts.control-flow)中看到更多的示例。
 
@@ -163,7 +163,7 @@ operation U(target : Qubit) : Unit {
 
 每次调用 `U` 时，它将对 `target`执行不同的操作。
 特别是，如果我们将 `adjoint auto` 特殊化声明添加到 `U`，则编译器无法保证 `U(target); Adjoint U(target);` 作为标识（即，非 op）。
-这违反了我们在[向量和矩阵](xref:microsoft.quantum.concepts.vectors)中看到的 adjoint 定义，使你能够在我们调用操作的操作中自动生成 adjoint 特殊化 <xref:microsoft.quantum.math.randomreal> 会破坏编译器提供的保证。;<xref:microsoft.quantum.math.randomreal> 是不存在 adjoint 或受控版本的操作。
+这违反了我们在[向量和矩阵](xref:microsoft.quantum.concepts.vectors)中看到的 adjoint 定义，使在我们调用操作的操作中自动生成 adjoint 特殊化，<xref:microsoft.quantum.math.randomreal> 会破坏编译器提供的保证;<xref:microsoft.quantum.math.randomreal> 是不存在 adjoint 或受控版本的操作。
 
 另一方面，允许 `Square` 等函数调用是安全的，因为编译器可以确保只需将输入保留到 `Square`，以便保持其输出稳定。
 因此，将尽可能多的传统逻辑隔离到函数中，可以轻松地在其他函数和操作中重复使用该逻辑。

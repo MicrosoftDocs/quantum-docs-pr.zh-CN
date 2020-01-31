@@ -3,32 +3,22 @@ uid: microsoft.quantum.amplitudeamplification.ampampbyoraclephases
 name: AmpAmpByOraclePhases
 type: function
 namespace: Microsoft.Quantum.AmplitudeAmplification
-summary: 用于部分反射的 oracles 放大幅度。
-remarks: >-
-  这会在开始和目标状态的形式上比 `AmpAmpByReflectionPhases`中的条件更严格。
-
-  假定目标状态由 $ \ket \_f ${1}标记。
-
-  假定 \begin{align} A\ket{0}\_{f} \ket{0}\_s = \lambda\ket{1}\_\_s + f\ket | \sqrt{1-| ^ 2} \lambda{0}\_\ket大多数情况下，在大多数情况下，`flagQubit` 和 `ancillaRegister` 在状态 $ \ket{0}\_{f} \ket{0}s $ 中进行初始化。
+summary: AmpAmpByOraclePhases 已被弃用。 请改用 @"microsoft.quantum.amplitudeamplification.amplitudeamplificationfromstatepreparation"。
 syntax: 'function AmpAmpByOraclePhases (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int) : (Qubit[] => Unit is Adj + Ctl)'
 input:
   content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int)'
   types:
   - name: phases
-    summary: 部分反射的阶段
     uid: microsoft.quantum.amplitudeamplification.reflectionphases
   - name: stateOracle
-    summary: 准备开始状态的单一 oracle $A $
     uid: microsoft.quantum.oracles.stateoracle
   - name: idxFlagQubit
-    summary: 用于标记 qubit 的索引
     isPrimitive: true
     uid: Int
 output:
   content: (Qubit[] => Unit is Adj + Ctl)
   types:
-  - summary: 实现由部分反射实现的 oracles 放大幅度的操作。
-    isOperation: true
+  - isOperation: true
     input:
       types:
       - isArray: true
@@ -42,9 +32,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: cacd3b34fae01697ee5bba414d9a7422b3260e2f
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: a5a20dbb207841bf5dd9e46746814b4d7560cc67
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73215823"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76869222"

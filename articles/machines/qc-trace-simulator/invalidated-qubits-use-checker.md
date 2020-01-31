@@ -6,19 +6,19 @@ ms.author: vadym@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits
-ms.openlocfilehash: 283cc7d7d88f731f40fa396c38ae5ea8dd90537f
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: 093937346488725eacb69ef7da6affde764ec5c1
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74863174"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820872"
 ---
 # <a name="invalidated-qubits-use-checker"></a>Qubits Use 检查器失效
 
 `Invalidated Qubits Use Checker` 是量程计算机[TraceSimulator](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的一部分，旨在检测代码中的潜在 bug。 请考虑以下 Q # 代码部分，以说明 `Invalidated Qubits Use Checker`检测到的问题。
 
 ```qsharp
-operation UseReleasedQubit () : Unit {
+operation UseReleasedQubit() : Unit {
     mutable q = new Qubit[1];
     using (ans = Qubit()) {
         set q w/= 0 <- ans;

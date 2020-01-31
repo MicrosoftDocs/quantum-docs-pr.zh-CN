@@ -7,7 +7,7 @@ functions:
 - uid: microsoft.quantum.math.abscomplexpolar
   summary: 返回 `ComplexPolar`类型的复数的绝对值。
 - uid: microsoft.quantum.math.absd
-  summary: 返回双精度浮点数字的绝对值。
+  summary: 返回双精度浮点数的绝对值。
 - uid: microsoft.quantum.math.absi
   summary: 返回整数的绝对值。
 - uid: microsoft.quantum.math.absl
@@ -17,17 +17,17 @@ functions:
 - uid: microsoft.quantum.math.abssquaredcomplexpolar
   summary: 返回 `ComplexPolar`类型的复数的平方绝对值。
 - uid: microsoft.quantum.math.arccos
-  summary: 返回余弦值为指定数字的角度。
+  summary: 返回其余弦为指定数字的角度。
 - uid: microsoft.quantum.math.arccosh
   summary: 计算数字的反双曲余弦值。
 - uid: microsoft.quantum.math.arcsin
-  summary: 返回正弦值为指定数字的角度。
+  summary: 返回其正弦为指定数字的角度。
 - uid: microsoft.quantum.math.arcsinh
   summary: 计算数字的反双曲正弦值。
 - uid: microsoft.quantum.math.arctan
-  summary: 返回正切值为指定数字的角度。
+  summary: 返回其正切为指定数字的角度。
 - uid: microsoft.quantum.math.arctan2
-  summary: 返回正切值为两个指定数字的商的角度。
+  summary: 返回其正切为两个指定数字的商的角度。
 - uid: microsoft.quantum.math.arctanh
   summary: 计算数字的反双曲正切值。
 - uid: microsoft.quantum.math.argcomplex
@@ -95,7 +95,7 @@ functions:
 - uid: microsoft.quantum.math.greatestcommondivisorl
   summary: 计算 $a $ 和 $b $ 的最大公因数。 GCD 始终为正值。
 - uid: microsoft.quantum.math.ieeeremainder
-  summary: 返回一指定数字被另一指定数字相除的余数。
+  summary: 返回由指定数值相除后所得的余数。
 - uid: microsoft.quantum.math.inversemodi
   summary: 返回 $b $，$a \cdot b = 1 （\operatorname{mod} \texttt{modulus}） $。
 - uid: microsoft.quantum.math.inversemodl
@@ -109,7 +109,7 @@ functions:
 - uid: microsoft.quantum.math.log
   summary: 返回指定数字的自然对数（底 $e $）。
 - uid: microsoft.quantum.math.log10
-  summary: 返回指定数字以 10 为底的对数。
+  summary: 返回指定数字以10为底的对数。
 - uid: microsoft.quantum.math.logof2
   summary: 返回2的自然对数。
 - uid: microsoft.quantum.math.max
@@ -159,7 +159,7 @@ functions:
 - uid: microsoft.quantum.math.negationl
   summary: 返回输入的一元求反。
 - uid: microsoft.quantum.math.pi
-  summary: 表示圆的周长与其直径的比值，由常数 π 指定。
+  summary: 表示圆的周长与其直径的比值，该比值由常量π指定。
 - uid: microsoft.quantum.math.plusa
   summary: 返回两个输入的总和（串联）。
 - uid: microsoft.quantum.math.plusc
@@ -197,13 +197,13 @@ functions:
 - uid: microsoft.quantum.math.realmod
   summary: 计算两个实数之间的模数。
 - uid: microsoft.quantum.math.round
-  summary: 将值舍入到最接近的整数或指定的小数位数。
+  summary: 将值舍入到最接近的整数。
 - uid: microsoft.quantum.math.signd
-  summary: 返回指示数字符号的整数。
+  summary: 返回一个整数，该整数指示数字的符号。
 - uid: microsoft.quantum.math.signi
-  summary: 返回指示数字符号的整数。
+  summary: 返回一个整数，该整数指示数字的符号。
 - uid: microsoft.quantum.math.signl
-  summary: 返回指示数字符号的整数。
+  summary: 返回一个整数，该整数指示数字的符号。
 - uid: microsoft.quantum.math.sin
   summary: 返回指定角度的正弦值。
 - uid: microsoft.quantum.math.sinh
@@ -225,7 +225,7 @@ functions:
 - uid: microsoft.quantum.math.timesl
   summary: 返回两个输入的乘积。
 - uid: microsoft.quantum.math.truncate
-  summary: 计算一个数字的整数部分。
+  summary: 计算数字的整数部分。
 newtypes:
 - uid: microsoft.quantum.math.bigfraction
   summary: 表示 `p/q`形式的有理数。 整数 `p` 是元组的第一个元素，`q` 是元组的第二个元素。
@@ -242,7 +242,7 @@ newtypes:
     复数的极坐标表示形式为 $c = r e ^ {i t} $。
 - uid: microsoft.quantum.math.fraction
   summary: 表示 `p/q`形式的有理数。 整数 `p` 是元组的第一个元素，`q` 是元组的第二个元素。
-summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含传统数学函数和数据类型。"
+summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含传统数学函数和数据类型。"
 operations:
 - uid: microsoft.quantum.math.randomint
   summary: 生成一个大于或等于零且小于的所提供的上边界的样本随机整数。
@@ -253,9 +253,9 @@ operations:
 - uid: microsoft.quantum.math.randomsinglequbitpauli
   summary: 随机返回一个 qubit Pauli 运算符。
 metadata:
-  ms.openlocfilehash: 00156d553e8378b1a38dcd6f1749c4ff3cb689a7
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: f1a0185252155a39572a6b4159a88686533154c0
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74858252"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76870180"

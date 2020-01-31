@@ -1,0 +1,27 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.standardreflectionphases
+name: StandardReflectionPhases
+type: function
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: 计算标准振幅放大的部分反射阶段。
+remarks: 所有阶段都是 $ \pi $，除了第一次反射（对于开始状态）和最后一次反射（为 $0 $）。
+syntax: 'function StandardReflectionPhases (nIterations : Int) : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases'
+input:
+  content: '(nIterations : Int)'
+  types:
+  - name: nIterations
+    summary: 要为其生成部分反射阶段的波幅放大迭代数。
+    isPrimitive: true
+    uid: Int
+output:
+  content: Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases
+  types:
+  - summary: 用于实现指定为部分反射的阶段的操作
+    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+metadata:
+  ms.openlocfilehash: d2a3a7cd8858dea6c8876ee35214275200d70f46
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76872744"

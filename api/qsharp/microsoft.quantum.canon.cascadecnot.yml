@@ -1,0 +1,29 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.cascadecnot
+name: CascadeCNOT
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: CascadeCNOT 已被弃用。 请改用 @"microsoft.quantum.canon.applycnotchain"。
+syntax: 'operation CascadeCNOT (register : Qubit[]) : Unit'
+input:
+  content: '(register : Qubit[])'
+  types:
+  - name: register
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+metadata:
+  ms.openlocfilehash: 10b5374c3d688a6af6c5d50d4629a4974138dc2e
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76872914"

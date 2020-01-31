@@ -1,17 +1,17 @@
 ---
 title: 'Q # 标准库-算法 |Microsoft Docs'
-description: 'Q # 标准库'
+description: Q# 标准库
 author: QuantumWriter
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.libraries.standard.algorithms
-ms.openlocfilehash: 61efddb9e7199543370ffd66d08f78ec013f4f79
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 91f65b05c83367c2d2ece93212369dc448d8c2a8
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73185692"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821008"
 ---
 # <a name="quantum-algorithms"></a>量程算法 #
 
@@ -19,11 +19,11 @@ ms.locfileid: "73185692"
 
 *振幅放大*是量程计算的一项基本工具。 这是一种基本的概念，即 Grover 的搜索、幅度估算和许多量程机器学习算法。  有很多变体，在 Q # 中，我们提供了一个基于在意波幅放大的通用版本，并提供了部分反射，以允许最广泛的应用程序区域。
 
-振幅放大的中心思想是通过执行一系列反射来放大所需结果的概率。  这些反射会使初始状态更接近所需的目标状态，通常称为标记的状态。  具体来说，如果将初始状态测量为标记状态的概率为 $ \sin ^ 2 （\theta） $，然后在应用振幅放大后 $m $ 次，则成功的概率为 $ \sin ^ 2 （（2m + 1） \theta） $。  这意味着，如果 $ \theta = \ pi/[2 （2n + 1）] $\\$n $ 的某些值，则幅度放大功能能够提高 $n $ 迭代幅度放大后成功 $100% $ 的概率。  由于 $ \theta = \sin ^{-1}（\sqrt{\Pr （success）}） $ 这意味着，确定成功所需的迭代次数几率低于预期的所需数量，需要使用随机来确定标记状态非确定性样本.
+振幅放大的中心思想是通过执行一系列反射来放大所需结果的概率。  这些反射会使初始状态更接近所需的目标状态，通常称为标记的状态。  具体来说，如果将初始状态测量为标记状态的概率为 $ \sin ^ 2 （\theta） $，然后在应用振幅放大后 $m $ 次，则成功的概率为 $ \sin ^ 2 （（2m + 1） \theta） $。  这意味着，如果 $ \theta = \ pi/[2 （2n + 1）] $\\$n $ 的某些值，则幅度放大功能能够提高 $n $ 迭代幅度放大后成功 $100% $ 的概率。  由于 $ \theta = \sin ^{-1}（\sqrt{\Pr （success）}） $ 这意味着，要明确获取成功所需的迭代次数几率低于需要使用随机抽样来确定标记状态的不确定状态所需的次数。
 
-振幅放大的每个迭代都需要指定两个反射运算符。 具体而言，如果 $Q $ 是振幅放大循环访问，$P _0 $ 是在初始子空间上的一个投影仪运算符，并且 $P _1 $ 就是投影仪到标记的子空间，然后 $Q =-（\boldone-2P_0）（\boldone-2P_1） $。  回忆一下，投影仪是 Hermitian 运算符，其中包含本征值 $ + $1 和 $0 $，因此 $ （\boldone-2P_0） $ 是单一的，因为它具有作为 unity 根的本征值（在本例中为 $ \pm $1）。 作为示例，请考虑使用初始状态 $H ^ {\otimes n} \ket{0}$ and 标记状态 $ \ket{m} $，$P _0 = H ^ {\otimes n} \ket{0}\bra{0}H ^ {\otimes n} $ 和 $P _1 = \ket{m}\bra{m} $ 的情况。  在幅度放大的大多数应用程序中 $P _0 $ 将成为初始状态的投影仪，这意味着 $P _0 = \boldone-2 \ 票证 {\ psi} \ 寄存器 {\ psi} $ for a vector $ \ket{\psi} $;但对于在意波幅 amplication $P _0 $ 通常投影到许多量程状态（即，$P _0 $ 的 $ + $1 eigenvalue 的重数大于 $1 $）。
+振幅放大的每个迭代都需要指定两个反射运算符。 具体而言，如果 $Q $ 是振幅放大循环访问，$P _0 $ 是在初始子空间上的一个投影仪运算符，并且 $P _1 $ 就是投影仪到标记的子空间，然后 $Q =-（\boldone-2P_0）（\boldone-2P_1） $。  回忆一下，投影仪是 Hermitian 运算符，其中包含本征值 $ + $1 和 $0 $，因此 $ （\boldone 2P_0） $ 是单一的，因为它具有作为 unity 根的本征值（在本例中为 $ \pm $1）。 作为示例，请考虑使用初始状态 $H ^ {\otimes n} \ket{0}$ and 标记状态 $ \ket{m} $，$P _0 = H ^ {\otimes n} \ket{0}\bra{0}H ^ {\otimes n} $ 和 $P _1 = \ket{m}\bra{m} $ 的情况。  在幅度放大的大多数应用程序中 $P _0 $ 将成为初始状态的投影仪，这意味着 $P _0 = \boldone-2 \ 票证 {\ psi} \ 寄存器 {\ psi} $ for a vector $ \ket{\psi} $;但对于在意波幅 amplication $P _0 $ 通常投影到许多量程状态（即，$P _0 $ 的 $ + $1 eigenvalue 的重数大于 $1 $）。
 
-振幅放大后的逻辑直接在 $Q $ 的本征分解之后。  具体而言，$Q $ 的的本征向量 $ 表明初始状态具有非零支持可以显示为 $P _0 $ 和 $P _1 $ 的 $ + $1 本征向量的线性组合。  具体而言，振幅放大的初始状态（假设它为 $P _0 $ 的 $ + $1 eigenvector）可以编写为 $ $ \ket{\psi} = \frac{-i}{\sqrt{2}} \left （e ^ {i\theta} \ 票证 {\ psi_ +} + e ^ {-i\theta} \ 票证 {\ psi_-} \ right），$ $ 其中 $ \ket{\psi_\pm} $ 是本征向量 $ with 本征值 $e ^ {\pm 2i \ theta} $ $Q $，并且仅支持 $P 本征向量 $ 和 $P _1 $ 的 $ + $1 _0。  本征值 $e 是 ^ {\pm i \theta} $ 这一事实意味着运算符 $Q $ 在两个投影仪指定的二维子空间中执行旋转，而初始状态则为 ""。  这就是 $m $ $Q $ 迭代的原因是 $ \sin ^ 2 （[2m + 1] \theta） $ 的成功概率。
+振幅放大后的逻辑直接在 $Q $ 的本征分解之后。  具体而言，$Q $ 的的本征向量 $ 表明初始状态具有非零支持可以显示为 $P _0 $ 和 $P _1 $ 的 $ + $1 本征向量的线性组合。  具体而言，振幅放大的初始状态（假设它为 $P _0 $ 的 $ + $1 eigenvector）可以编写为 $ $ \ket{\psi} = \frac{-i}{\sqrt{2}} \left （e ^ {i\theta} \ 票证 {\ psi_} \ i\theta {\ psi_-} 票证），$ $ （其中 $ \ket{\ psi_ \pm} $）本征向量 $Q $ with 本征值 $e ^ {\pm 2i \ theta} $，并且仅支持 $P 本征向量 $ 和 $P _1 $ 的 $ + $1 _0。  本征值 $e 是 ^ {\pm i \theta} $ 这一事实意味着运算符 $Q $ 在两个投影仪指定的二维子空间中执行旋转，而初始状态则为 ""。  这就是 $m $ $Q $ 迭代的原因是 $ \sin ^ 2 （[2m + 1] \theta） $ 的成功概率。
 
 这一问题的另一个有用的属性是 eigenvalue $ \theta $ 直接与初始状态要标记的概率相关，在 $P 这种情况下，只会将一个投影仪置于初始状态。  由于 $Q $ 的 eigenphases 是 $ 2 \ theta = 2 \ sin ^{-1}（\sqrt{\Pr （success）}） $，因此，如果我们将阶段估算应用到 $Q $，则我们可以了解单一量程过程成功的概率。  这很有用，因为它需要几率更少的量程过程应用程序，以了解与其他情况下的成功概率。
 
@@ -47,11 +47,11 @@ Q # 将振幅放大引入为在意波幅放大的专用化。  在意波幅放�
 此外，*量程傅立叶转换*（QFT）的效率远远超过了传统计算机上可能的功能，因此，在设计量程算法时，首先要选择的工具之一。
 
 作为 QFT 的大致通用化，我们提供了 <xref:microsoft.quantum.canon.approximateqft> 操作，该操作允许通过修剪旋转（对所需的算法准确性并不是绝对必需的）进行进一步的优化。
-大致的 QFT 要求 dyadic $Z $-旋转操作 <xref:microsoft.quantum.primitive.rfrac> 和 <xref:microsoft.quantum.intrinsic.h> 操作。
+大致的 QFT 要求 dyadic $Z $-旋转操作 <xref:microsoft.quantum.intrinsic.rfrac> 和 <xref:microsoft.quantum.intrinsic.h> 操作。
 假定输入和输出以大字节序编码进行编码（最低位/qubit 位于左侧，与[票证表示法](xref:microsoft.quantum.concepts.dirac)相同）。
 近似值参数 $a $ 确定 $Z $ 旋转的修剪级别，即 $a \in [0 ... n] $。
 在这种情况下，所有 $Z $-循环 $ 2 \ pi/2 ^ k $，其中 $k > $ 将从 QFT 线路中删除。
-已知 $k \ge \log_2 （n） + \log_2 （1/\epsilon） + $3。 一个可以绑定 $\\|\operatorname{QFT}-\operatorname{AQFT} \\|< \epsilon $。
+已知 $k \ge \ log_2 （n） + \ log_2 （1/\epsilon） + $3。 一个可以绑定 $\\|\operatorname{QFT}-\operatorname{AQFT} \\|< \epsilon $。
 此处 $\\| \cdot\\| $ 是运算符标准，这种情况下，这种情况下是 $ （\operatorname{QFT}-\operatorname{AQFT}）（\operatorname{QFT}-\operatorname{AQFT}） ^ \dagger $ 的最大[eigenvalue](xref:microsoft.quantum.concepts.matrix-advanced)的平方根。
 
 ## <a name="arithmetic"></a>算术 ##
@@ -60,9 +60,9 @@ Q # 将振幅放大引入为在意波幅放大的专用化。  在意波幅放�
 
 $ $ \operatorname{Add} （b） \ket{a} = \ket{a + b}。
 $ $ 这一基本的增加，incrementer 比一个增加程序更多。
-它可以通过 $ $ \operatorname{Add}\ket{a}\ket{b} = \ket{a}\ket{a + b}、$ $ （$n 使用窗体 \begin{align} \operatorname{Add}\_& \ket{a} \ket{b} 的添加器 $ 受控应用程序）转换为具有两个量程输入的合并\_0} \left （\operatorname{Add} （1） \right） \Lambda\_{a\_1} \left （\operatorname{Add} （2） \right） \Lambda\_{a\_2} \left （\operatorname{Add} （4） \right） \cdots \Lambda\_{a\_{n-1}} \left （\o {Add} （{{\right}}）） \ket{a}\ket{b} \\\\ & = \ket{a} \ket{b + a}，\end{align} $n $ 位整数 $a $ and $b $，加法取模 $ 2 ^ n $。  请记住，notation $ \Lambda\_x （A） $ 将 qubit $x $ 作为控件的操作的受控版本 $A 引用。
+它可以通过 $ $ \operatorname{Add}\ket{a}\ket{b} = \ket{a}\ket{a + b} 转换为具有两个量程输入的合并程序，$ $ 使用添加器的 $ 受控应用程序 \begin{align} \operatorname{Add} \Ket{a} \ket{b} & = \Lambda\_{a\_0} \left $n （\operatorname{Add} （1） \right） \Lambda\_{a\_1} \left （\operatorname{Add} （2） \right） \Lambda\_{a\_2} \left （\operatorname{Add} （4） \right} \cdots \Lambda （\o {Add} （{{\right}}）） \ket{a}\ket{b} \\\\ & = \ket{a} \ket{b + a}，\end{align} $n $ 位整数 $a $ and $b $，加法取模 $ 2 ^ n $。  请记住，notation $ \Lambda\_x （A） $ 将 qubit $x $ 作为控件的操作的受控版本 $A 引用。
 
-同样，经典受控乘法（这是选定的分解算法必需的模块化形式）可以通过使用一系列类似的受控添加来执行： \begin{align} \operatorname{Mult} （a） \ket{x}\ket{b} & = \Lambda\_{x\_0} \left （\operatorname{Add} （2 ^ 0 a） \right） \Lambda\_{a\_1} \left （\operatorname{Add} （2 ^ 1a） \right） \Lambda\_{a\_2} \left （\operatorname{Add} （2 ^ 2} \right） \cdots \Lambda\_{x\_{n-1}} \left （\operatorname{Add} （{2 ^ {n-1}} a） \right） \ket{x}\ket{b} \\\\ & = \ket{x}\ket{b + ax}。
+同样，经典受控乘法（这是选定的分解算法必需的模块化形式）可以通过使用一系列类似的受控添加来执行： \begin{align} \operatorname{Mult} （a） \ket{x}\ket{b} & = \Lambda\_{x\_0} \left （\operatorname{Add} （2 ^ 0 a） \right） \Lambda\_{a\_1} \left （\operatorname{Add} （2 ^ 1a） \right） \Lambda\_{a\_2} \left （\operatorname{Add} （2 ^ 2 {n-1}} \left （\operatorname{Add} （{2 ^ {n-1}} a） \right） \ket{x}\ket{b} \\\\ & = \ket{x}\ket{b + ax}。
 \end{align} 在量程计算机上有一个个很微妙，你可能会注意到上面 $ \operatorname{Mult} $ 的定义。  与此不同，此线路的量程版本将输入的产品存储在辅助寄存器中而不是输入寄存器中。  在此示例中，寄存器用值 $b $ 进行初始化，但它通常会开始将值保留为零。  这在中是必需的，因为一般情况下，一般 $a $ 和 $x $ 之间没有乘法逆。  由于所有量程操作（节省度量值）都是可逆的，因此我们需要保留足够的信息来反转乘法。  出于此原因，结果将存储在单独的数组中。  在单独的寄存器中保存不可逆操作（如乘法）输出的这一技巧称为 Charlie Bennett 后的 "Bennett 技巧"，它是可逆计算和量程计算的一项基本工具。
 
 已建议使用许多量程线路进行添加，并且每个线路在 qubits （空间）数和所需的入口操作（时间）数方面探讨了不同的折衷。  我们将在以下两个高空间高效的添加器（称为 Draper 的 Beauregard 和的）中查看。
@@ -76,7 +76,7 @@ $ $ 如果我们定义 $ $ \ket{\phi\_k （a）} = \frac{1}{\sqrt{2}} \left （\
 $ $ 要执行转换程序的路径在观察到输入的总和可以写为 $ $ \ket{a + b} = \operatorname{QFT} ^{-1}\ket{\phi\_1 （a + b）} \otimes \cdots \otimes \ket{\phi\_n （a + b）} 后，就变得清楚。
 $ $ $B $ 和 $a $ 的整数，则可以通过使用 $b $ 的位作为控件，在分解中的每个 qubits 上执行受控制的阶段旋转。
 
-请注意，对于任何整数 $j $ 和实数 $x $，$e ^ {i2\pi （x + j）} = e ^ {i2\pi x} $，可以进一步简化此扩展。  这是因为，如果在圆圈中旋转 $ 360 ^ {\circ} $ 度数（$ 2 \ pi $ 弧度），则最终会精确到开始处。  因此 $e ^ {i2\pi x} $ $x $ 的唯一重要部分是 $x $ 的小数部分。  具体而言，如果我们的二进制扩展形式 $x = y +0\_0x\_2 \ ldots x\_n $，则 $e ^ {i2\pi x} = e ^ {i2\pi （0. x\_0x\_2 \ ldots x\_{n-1}）} $，因此 $ $ \ket{\phi\_k （a + b）} = \frac{1}{\sqrt{2}} \left （\ket{0} + e ^ {i2\pi [a/2 ^ k +0\_k\ldots b\_1]} \ket{1} \right）。 $ $ 这意味着，如果通过递增每个tensor $ \ket{a} $ 的傅立叶变换扩展后，旋转的数量就会收缩，因为 $k $ 减小。  这极大地减少了增加插件所需的量程入口数。  我们指出了傅立叶变换、相位加法和反傅立叶变换步骤，这些步骤包含 Draper 添加程序作为 $ \operatorname{QFT} ^{-1} \left （\phi\\\!\operatorname{ADD}\right） \operatorname{QFT} $。 下面显示了使用这种简化实现整个过程的量程线路。
+请注意，对于任何整数 $j $ 和实数 $x $，$e ^ {i2\pi （x + j）} = e ^ {i2\pi x} $，可以进一步简化此扩展。  这是因为，如果在圆圈中旋转 $ 360 ^ {\circ} $ 度数（$ 2 \ pi $ 弧度），则最终会精确到开始处。  因此 $e ^ {i2\pi x} $ $x $ 的唯一重要部分是 $x $ 的小数部分。  具体而言，如果我们的二进制扩展形式 $x = y +0\_0x\_2 \ ldots x\_n $，则 $e ^ {i2\pi x} = e ^ {i2\pi （0）。 x\_0x\_2 \ ldots x\_{n-1}）} $，因此 $ $ \ket{\phi\_k （a + b）} = \frac{1}{\sqrt{2}} \left （\ket{0} + e ^ {i2\pi [a/2 ^ k +0\_k\ldots b\_1]} \ket{1} \right）。 $ $ 这意味着，如果通过递增每个tensor $ \ket{a} $ 的傅立叶变换扩展后，旋转的数量就会收缩，因为 $k $ 减小。  这极大地减少了增加插件所需的量程入口数。  我们指出了傅立叶变换、相位加法和反傅立叶变换步骤，这些步骤包含 Draper 添加程序作为 $ \operatorname{QFT} ^{-1} \left （\phi\\\!\operatorname{ADD}\right） \operatorname{QFT} $。 下面显示了使用这种简化实现整个过程的量程线路。
 
 ![显示为线路关系图的 Draper](~/media/draper.png)
 
@@ -97,20 +97,20 @@ Beauregard 添加使用 Draper 添加，或更具体的 $ \phi\\\!\operatorname{
 
 有关更多详细信息，请参阅[Roetteler、Beth](http://doi.org/10.1007/s00200-008-0072-2 )和[Coppersmith](https://arxiv.org/abs/quant-ph/0201067)。
 
-### <a name="quantum-phase-estimation"></a>量程阶段估算 ###
+### <a name="quantum-phase-estimation"></a>量子相位估计 ###
 
 量程傅立叶转换的一个特别重要的应用是了解单一运算符（称为*阶段估算*的问题）的本征值。
 假设单一 $U $ 和状态 $ \ket{\phi} $，$ \ket{\phi} $ 是包含未知 eigenvalue $ \phi $ 的 $U $ 的 eigenstate，\begin{equation} U\ket {\ phi} = \phi\ket{\phi}。
 \end{equation} 如果仅有权访问作为 oracle $U $，则可以通过使用应用于受控操作目标的 $Z $ 旋转传播回控件来了解阶段 $ \phi $。
 
-假设 $V $ 是 $U $ 的受控应用程序，因此 \begin{align} V （\ket{0} \otimes \ket{\phi}） & = \ket{0} \otimes \ket{\phi} \\\\ \textrm{and} V （\ket{1} \otimes \ket{\phi}） & = e ^ {i \phi} \ket{1} \otimes \ket{\phi}.
+假设 $V $ 是 $U $ 的受控应用程序，因此 \begin{align} V （\ket{0} \otimes \ket{\phi}） & = \ket{0} \otimes \ket{\phi} \\\\ \textrm{and} V （\ket{1} \otimes \ket{\phi}） & = e ^ {i \phi} \ket{1} \otimes \ket{\phi}。
 然后，\end{align}，通过线性，\begin{align} V （\ket{+} \otimes \ket{\phi}） & = \frac{（\ket{0} \otimes \ket{\phi}） + e ^ {i \phi} （\ket{1} \otimes \ket{\phi}）} {\sqrt{2}}。
-\end{align} 我们可以收集术语来查找 \begin{align} V （\ket{+} \otimes \ket{\phi}） & = \frac{\ket{0} + e ^ {i \phi} \ket{1}} {\sqrt{2}} \otimes \ket{\phi} \\\\ & = （R_1 （\phi） \ket{） \otimes \ket{\phi}，\end{align}，其中 $R _1 $ 是 <xref:microsoft.quantum.intrinsic.r1> 操作应用的单一目标。
+\end{align} 我们可以收集术语来查找 \begin{align} V （\ket{+} \otimes \ket{\phi}） & = \frac{\ket{0} + e ^ {i \phi} \ket{1}} {\sqrt{2}} \otimes \ket{\phi} \\\\ & = （R_1 （\phi） \ket{+}） \otimes \ket{\phi}，\end{align}，其中 $R _1 $ 是 <xref:microsoft.quantum.intrinsic.r1> 操作应用的那个。
 换句话说，应用 $V $ 的影响与将 $R _1 $ 应用于未知角度完全相同，即使我们仅有权访问作为 oracle $V $。
 因此，对于本文的其余部分，我们将根据 $R _1 （\phi） $ （通过使用所谓的*阶段 kickback*来实现）讨论阶段估算。
 
 由于在此过程后，控件和目标注册仍处于 untangled 状态，因此，我们可以将 $ \ket{\phi} $ 作为 $U ^ $2 的受控应用程序的目标，以便在州 $R _1 （2 \phi） \ket{+} $ 中准备第二个控制 qubit。
-继续以这种方式，我们可以获取形式为 \begin{align} \ket{\psi} & = \sum_{j = 0} ^ n R_1 （2 ^ j \phi） \ket{+} 的寄存器 \\\\ & \propto \bigotimes_{j = 0} ^ {n} \left （\ket{0} + \exp （i 2 ^ {j} \phi） \ket{1}\right） \\\\ & \propto \sum_{k = 0} ^ {2 ^ n-1} \exp （i \phi k） \ket{k} \end{align}，其中 $n $ 是我们所需的精度位数，而我们已使用了 ${} \propto {}$ 来表明我们已经抑制了 $1/\sqrt{2 ^ n} $。
+继续以这种方式，我们可以获取形式为 \begin{align} \ket{\psi} & = \ sum_ {j = 0} ^ n R_1 （2 ^ j \phi） \ket{+} \\\\ & \propto \ bigotimes_ {j = 0} ^ {n} \left （\ket{0} + \exp （i 2 ^ {j} \phi） \ket{1}\right） \\\\ & \propto \ sum_ {k = 0} ^ {2 ^ n-1} \exp （i \phi k） \ket{k} \end{align}，其中 $n $ 是我们需要的精度位数。而且，我们已使用 ${} \propto $ {}$ 来表明我们抑制了 $1/\sqrt{2 ^ n} $。
 
 如果我们假设 $ \phi = 2 \pi p/2 ^ k $ 用于整数 $p $，则我们会将其识别为 $ \ket{\psi} = \operatorname{QFT} \ket{p_0 p_1 \dots . p_n} $，其中 $p _j $ 是 $2 \textrm{th}} \pi $ 的 $j ^ {\phi $ 位。
 通过应用 "量程傅立叶转换" 的 adjoint，我们将获得编码为量程状态的阶段的二进制表示形式。

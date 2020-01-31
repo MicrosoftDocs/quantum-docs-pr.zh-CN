@@ -1,18 +1,19 @@
 ---
-title: 'Q # 技术-进一步 |Microsoft Docs'
-description: 'Q # 技术-进一步'
+title: '进一步-Q # 技术 |Microsoft Docs'
+description: '进一步-Q # 技术'
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: c079364f8808304e0132fa2a4226cd6400e81339
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+uid: microsoft.quantum.techniques.going-further
+ms.openlocfilehash: bd2b799d4001e280baccb04158247891b9cbb5bc
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74863140"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820192"
 ---
-# <a name="going-further"></a>深入探索 #
+# <a name="going-further"></a>进一步 #
 
 现在，你已了解如何在 Q # 中编写有趣的量程程序，本部分将进一步介绍一些更高级的主题，这些主题将有助于今后使用。
 

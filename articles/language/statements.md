@@ -6,12 +6,12 @@ uid: microsoft.quantum.language.statements
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 5bcbee868c76aaf53d0b7969e6e634da62689aaa
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 9157cf3336ce0894816dbfbaf13ce0e712a6b096
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73184859"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821059"
 ---
 # <a name="statements-and-other-constructs"></a>语句和其他构造
 
@@ -54,8 +54,7 @@ ms.locfileid: "73184859"
 ///
 /// # See Also
 /// - Microsoft.Quantum.Intrinsic.H
-operation ApplyTwice<'T>(op : ('T => Unit), target : 'T) : Unit
-{
+operation ApplyTwice<'T>(op : ('T => Unit), target : 'T) : Unit {
     op(target);
     op(target);
 }
@@ -90,7 +89,6 @@ Q # 遵循的规则与其他 .NET 语言相同。
 
 ```qsharp
 namespace NS {
-
     open Microsoft.Quantum.Intrinsic; // opens the namespace
     open Microsoft.Quantum.Math as Math; // defines a short name for the namespace
 }
@@ -181,7 +179,7 @@ for (i in 1 .. 2 .. 10) {
 类似的语句可用于所有的二元运算符，其中左侧的类型与表达式类型匹配。 这为示例提供了一种简单的方法来累积值：
 ```qsharp
 mutable results = new Result[0];
-for (q in qubits) {
+for (qubit in qubits) {
     set results += [M(q)];
     // ...
 }
@@ -193,7 +191,7 @@ for (q in qubits) {
 ```qsharp
 newtype Complex = (Re : Double, Im : Double);
 
-function AddAll (reals : Double[], ims : Double[]) : Complex[] {
+function ElementwisePlus(reals : Double[], ims : Double[]) : Complex[] {
     mutable res = Complex(0.,0.);
 
     for (r in reals) {
@@ -209,19 +207,17 @@ function AddAll (reals : Double[], ims : Double[]) : Complex[] {
 对于数组，我们的标准库包含用于许多常见数组初始化和操作需求的必需工具，因此有助于避免第一次更新数组项。 如果需要，更新和重新分配语句提供了一种替代方法：
 
 ```qsharp
-operation RandomInts(maxInt : Int, nrSamples : Int) : Int[] {
-
+operation GenerateRandomInts(max : Int, nSamples : Int) : Int[] {
     mutable samples = new Double[0];
-    for (i in 1 .. nrSamples) {
-        set samples += [RandomInt(maxInt)];
+    for (i in 1 .. nSamples) {
+        set samples += [RandomInt(max)];
     }
     return samples;
 }
 
-operation SampleUniformDistr(nrSamples : Int, prec : Int) : Double[] {
-
-    let normalization = 1. / IntAsDouble(prec);
-    mutable samples = RandomInts(prec, nrSamples);
+operation SampleUniformDistrbution(nSamples : Int, nSteps : Int) : Double[] {
+    let normalization = 1. / IntAsDouble(nSteps);
+    mutable samples = GenerateRandomInts(nSteps, nSamples);
     
     for (i in IndexRange(samples) {
         let value = IntAsDouble(samples[i]);
@@ -236,10 +232,9 @@ operation SampleUniformDistr(nrSamples : Int, prec : Int) : Double[] {
 
 函数
 ```qsharp
-function EmbedPauli (pauli : Pauli, location : Int, n : Int) : Pauli[]
-{
-    mutable pauliArray = new Pauli[n];
-    for (index in 0 .. n - 1) {
+function PauliEmbedding(pauli : Pauli, length : Int, location : Int) : Pauli[] {
+    mutable pauliArray = new Pauli[length];
+    for (index in 0 .. length - 1) {
         set pauliArray w/= index <- 
             index == location ? pauli | PauliI;
     }    
@@ -249,8 +244,8 @@ function EmbedPauli (pauli : Pauli, location : Int, n : Int) : Pauli[]
 例如，可以简单地使用 `Microsoft.Quantum.Arrays`中的函数 `ConstantArray`，并返回一个复制和更新表达式：
 
 ```qsharp
-function EmbedPauli (pauli : Pauli, i : Int, n : Int) : Pauli[] {
-    return ConstantArray(n, PauliI) w/ i <- pauli;
+function PauliEmbedding(pauli : Pauli, length : Int, location : Int) : Pauli[] {
+    return ConstantArray(length, PauliI) w/ location <- pauli;
 }
 ```
 
@@ -278,7 +273,7 @@ let n = 8;
 ...                 // n is 8
 ```
 
-and
+和
 
 ```qsharp
 if (a == b) {
@@ -330,8 +325,8 @@ if (a == b) {
 
 ```qsharp
 // ...
-for (qb in qubits) { // qubits contains a Qubit[]
-    H(qb);
+for (qubit in qubits) { // qubits contains a Qubit[]
+    H(qubit);
 }
 
 mutable results = new (Int, Results)[Length(qubits)];
@@ -359,13 +354,13 @@ for ((index, measured) in results) {
 ```qsharp
 mutable iter = 1;
 repeat {
-    ProbabilisticCircuit(qs);
-    let success = ComputeSuccessIndicator(qs);
+    ProbabilisticCircuit(qubits);
+    let success = ComputeSuccessIndicator(qubits);
 }
 until (success || iter > maxIter)
 fixup {
     iter += 1;
-    ComputeCorrection(qs);
+    ComputeCorrection(qubits);
 }
 ```
 
@@ -374,25 +369,25 @@ fixup {
 请注意，完成修正的执行将结束语句的范围，以便在正文或修正范围内进行的符号绑定在后续的重复项中不可用。
 
 例如，下面的代码是一种概率线路，可使用 Hadamard 和 T 入口 $V _3 = （\boldone + 2 i Z）/\sqrt{5}$。
-该循环平均终止于8/5 重复。
+循环在 $ \frac 中终止，{8}平均 {5}$ 重复。
 有关详细信息，请参阅[*重复截止时间：单 qubit unitaries 的非确定性分解*](https://arxiv.org/abs/1311.1074)（Paetznick 和 Svore，2014）。
 
 ```qsharp
-using (anc = Qubit()) {
+using (qubit = Qubit()) {
     repeat {
-        H(anc);
-        T(anc);
-        CNOT(target,anc);
-        H(anc);
-        Adjoint T(anc);
-        H(anc);
-        T(anc);
-        H(anc);
-        CNOT(target,anc);
-        T(anc);
+        H(qubit);
+        T(qubit);
+        CNOT(target, qubit);
+        H(qubit);
+        Adjoint T(qubit);
+        H(qubit);
+        T(qubit);
+        H(qubit);
+        CNOT(target, qubit);
+        T(qubit);
         Z(target);
-        H(anc);
-        let result = M(anc);
+        H(qubit);
+        let result = M(qubit);
     } until (result == Zero);
 }
 ```
@@ -519,15 +514,15 @@ Qubits 应处于语句块末尾的计算 `Zero` 状态;鼓励模拟器强制实�
 例如，
 
 ```qsharp
-using (q = Qubit()) {
+using (qubit = Qubit()) {
     // ...
 }
-using ((ancilla, qubits) = (Qubit(), Qubit[bits * 2 + 3])) {
+using ((auxiliary, qubits) = (Qubit(), Qubit[bits * 2 + 3])) {
     // ...
 }
 ```
 
-### <a name="dirty-qubits"></a>脏 Qubits
+### <a name="borrowed-qubits"></a>借用 Qubits
 
 `borrowing` 语句用于获取临时使用的 qubits。 语句包含关键字 `borrowing`，后跟左括号 `(`、绑定、右括号 `)`和 qubits 将在其中可用的语句块。
 绑定遵循的模式和规则与 `using` 语句中的相同。
@@ -535,10 +530,10 @@ using ((ancilla, qubits) = (Qubit(), Qubit[bits * 2 + 3])) {
 例如，
 
 ```qsharp
-borrowing (q = Qubit()) {
+borrowing (qubit = Qubit()) {
     // ...
 }
-borrowing ((ancilla, qubits) = (Qubit(), Qubit[bits * 2 + 3])) {
+borrowing ((auxiliary, qubits) = (Qubit(), Qubit[bits * 2 + 3])) {
     // ...
 }
 ```
@@ -547,8 +542,7 @@ borrowing ((ancilla, qubits) = (Qubit(), Qubit[bits * 2 + 3])) {
 借款人提交 qubits，使其在其被借用时处于相同状态，即，它们在语句块开始和结束时的状态应相同。
 此状态特别不一定是经典状态，因此在大多数情况下，借款范围不应包含度量值。 
 
-此类 qubits 通常称为 "更新 ancilla"。
-有关脏 Svore 使用的示例，请参阅[*使用 2n + 2 qubits 与基于 Toffoli 的模块乘法*](https://arxiv.org/abs/1611.07995)（Haner、Roetteler 和 ancilla 2017）进行分解。
+有关借用 Svore 使用的示例，请参阅[*使用 2n + 2 qubits 与基于 Toffoli 的模块乘法*](https://arxiv.org/abs/1611.07995)（Haner、Roetteler 和 qubit 2017）进行分解。
 
 借用 qubits 时，系统将首先尝试填写正在使用的 qubits 中的请求，但不会在 `borrowing` 语句的主体中访问该请求。
 如果没有足够的 qubits，则它将分配新的 qubits 来完成请求。

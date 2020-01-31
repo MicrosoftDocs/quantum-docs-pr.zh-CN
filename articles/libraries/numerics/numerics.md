@@ -6,12 +6,12 @@ ms.author: thhaner
 ms.date: 5/14/2019
 ms.topic: article
 uid: microsoft.quantum.numerics.usage
-ms.openlocfilehash: 332781a4356015461426ee7640fd931a41450367
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: ca24ff60cd9ae5077c7f4bae0012fe1180d7e6d4
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73184604"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821025"
 ---
 # <a name="using-the-numerics-library"></a>使用数字库
 
@@ -64,7 +64,7 @@ open Microsoft.Quantum.Arithmetic;
     - 互惠（1/x）
     - 度量值（古典双精度值）
 
-有关这些操作的详细信息和详细信息，请参阅 Q # 库参考文档，网址为[docs.microsoft.com](https://docs.microsoft.com/en-us/quantum)
+有关这些操作的详细信息和详细信息，请参阅 Q # 库参考文档，网址为[docs.microsoft.com](https://docs.microsoft.com/quantum)
 
 ## <a name="sample-integer-addition"></a>示例：整数加法
 
@@ -72,15 +72,14 @@ open Microsoft.Quantum.Arithmetic;
 
 使用量程开发工具包，可以按如下所示应用此操作：
 ```qsharp
-operation MyAdditionTest (xInt : Int, yInt : Int, n : Int) : Unit
-{
+operation TestMyAddition(xValue : Int, yValue : Int, n : Int) : Unit {
     using ((xQubits, yQubits) = (Qubit[n], Qubit[n]))
     {
         x = LittleEndian(xQubits); // define bit order
         y = LittleEndian(yQubits);
         
-        ApplyXorInPlace(xInt, x); // initialize values
-        ApplyXorInPlace(yInt, y);
+        ApplyXorInPlace(xValue, x); // initialize values
+        ApplyXorInPlace(yValue, y);
         
         AddI(x, y); // perform addition x+y into y
         
@@ -95,18 +94,18 @@ operation MyAdditionTest (xInt : Int, yInt : Int, n : Int) : Unit
 
 第一个 `EvaluatePolynomialFxP`允许对 $ $ P （x） = a_0 + a_1x + a_2x ^ 2 + \cdots + a_dx ^ d，$ $ （其中 $d $ 表示*度数*）进行求值。 为此，所需的全部都是多项式系数 `[a_0,..., a_d]` （类型 `Double[]`）、输入 `x : FixedPoint` 和输出 `y : FixedPoint` （最初为零）：
 ```qsharp
-EvaluatePolynomialFxP([1.0, 2.0], xFxP, yFxP);
+EvaluatePolynomialFxP([1.0, 2.0], x, y);
 ```
 结果（$P （x） = 1 + 2x $）将存储在 `yFxP`中。
 
-第二个、`EvaluateEvenPolynomialFxP`和第三个 `EvaluateOddPolynomialFxP`是专用于偶函数和奇数函数的专用化。 也就是说，对于偶数/奇数函数 $f （x） $ 和 $ $ P_ {a_0 （x） = + a_1 x ^ 2 + a_2 x ^ 4 + \cdots + a_d x ^ {2d}，$ $ $f （x） $ $P _ {偶数} （x） $ 或 $P _ {奇} （x）： = x\cdot P_ {偶} （x） $分别.
+第二个、`EvaluateEvenPolynomialFxP`和第三个 `EvaluateOddPolynomialFxP`是专用于偶函数和奇数函数的专用化。 也就是说，对于偶数/奇数函数 $f （x） $ 和 $ $ P_ {偶数} （x） = a_0 + a_1 x ^ 2 + a_2 x ^ 4 + \cdots + a_d x ^ {2d}，$ $ $f （x） $ 近似 $P _ {偶} （x） $ 或 $P _ {奇} （x）： = x\cdot P_ {偶} （x） $。
 在 Q # 中，可以按如下所示处理这两种情况：
 ```qsharp
-EvaluateEvenPolynomialFxP([1.0, 2.0], xFxP, yFxP);
+EvaluateEvenPolynomialFxP([1.0, 2.0], x, y);
 ```
 计算 $P _ {偶数} （x） = 1 + 2x ^ 2 $，和
 ```qsharp
-EvaluateOddPolynomialFxP([1.0, 2.0], xFxP, yFxP);
+EvaluateOddPolynomialFxP([1.0, 2.0], x, y);
 ```
 这会计算 $P _ {奇数} （x） = x + 2x ^ 3 $。
 

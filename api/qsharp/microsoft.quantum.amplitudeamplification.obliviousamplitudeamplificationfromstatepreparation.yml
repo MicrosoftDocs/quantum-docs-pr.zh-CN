@@ -1,0 +1,58 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.amplitudeamplification.obliviousamplitudeamplificationfromstatepreparation
+name: ObliviousAmplitudeAmplificationFromStatePreparation
+type: function
+namespace: Microsoft.Quantum.AmplitudeAmplification
+summary: 用于部分反射的在意波幅按 oracles 放大。
+remarks: >-
+  这对辅助起始状态和目标状态的形式比 `AmpAmpObliviousByReflectionPhases`中的条件更严格。
+
+  假定 $A \ket{0}\_f\ket{0}\_A = \ket{\text{start}}\_{fa} $ 准备辅助开始状态 $ \ket{\text{start}} 从计算基础 $ \ket\_{fa} ${0}\_f\ket{0}$。
+
+  假定目标状态由 $ \ket \_f ${1}标记。
+
+  假设 \begin{align} O\ket {\ 文本 {start}}\_{fa} \ket{\psi}\_s = \lambda\ket{1}\_f\ket {\ text {}}\_a\ket {\ text {target}}\_s U \ket{\psi}\_s + \sqrt{1-| \lambda | ^ 2} \ket{0}\_f\cdots，\end{align} 用于某些单一 $U $。
+syntax: 'function ObliviousAmplitudeAmplificationFromStatePreparation (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, idxFlagQubit : Int) : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)'
+input:
+  content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, idxFlagQubit : Int)'
+  types:
+  - name: phases
+    summary: 部分反射的阶段
+    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+  - name: startStateOracle
+    summary: 准备辅助启动状态的单一 oracle $A $
+    uid: microsoft.quantum.oracles.deterministicstateoracle
+  - name: signalOracle
+    summary: 单一 oracle $O $ of 类型 `ObliviousOracle`，在辅助和系统注册上共同操作
+    uid: microsoft.quantum.oracles.obliviousoracle
+  - name: idxFlagQubit
+    summary: Qubit 标志注册的索引
+    isPrimitive: true
+    uid: Int
+output:
+  content: ((Qubit[], Qubit[]) => Unit is Adj + Ctl)
+  types:
+  - summary: 基于部分反射实现在意波幅放大的操作。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+      - isArray: true
+        isPrimitive: true
+        uid: Qubit
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+metadata:
+  ms.openlocfilehash: fa44068c55a1bb92f8827095889f9c3b4d6f1011
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76872438"

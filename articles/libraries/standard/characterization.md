@@ -6,12 +6,12 @@ uid: microsoft.quantum.libraries.characterization
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 1eb48da9d4ae2a730019e2707dcb2c69b998491e
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: 51124dc78feedf6d5c85fe224898e66a1c5ed459
+ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74864366"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76870342"
 ---
 # <a name="quantum-characterization-and-statistics"></a>量程特性和统计信息 #
 
@@ -106,7 +106,7 @@ Bayesian 阶段估算的理念非常简单。
 
 与大多数其他有用的变体共享的可靠阶段估算的最重要功能是，$ \hat{\phi} $ 的重建质量在某种意义上是海森堡的。 这意味着，如果从 true 值到 $ \sigma $，$ \hat{\phi} $ 的偏差为 $ \sigma $，则 $ $ 将按对受控-$U $ （即 $ \sigma = \mathcal{O} （1/Q） $ 进行的 $Q 查询总数成反比。 现在，偏差定义在不同的估计算法之间有所不同。 在某些情况下，这可能意味着至少有 $ \mathcal{O} （1） $ 概率，估计错误 $ | \hat{\phi}-\phi |\_\circ\le \sigma $ on a 循环度量 $ \circ $。 对于可靠的阶段估算，偏差精确到 $ \sigma ^ 2 = \mathbb{E}\_\hat{\phi} [（\mod\_{2 \ pi} （\hat{\phi}-\phi + \pi）-\pi） ^ 2] $ 如果将定期阶段解为单个有限间隔 $ （-\pi，\pi] $。 更准确地说，可靠阶段估算中的标准偏差满足不相等 $ $ \begin{align} 2.0 \pi/Q \le \sigma \le 2 \ pi/2 ^ {n} \le 10.7 \ pi/Q，\end{align} $ $，其中的下限达到了 asymptotically 大 $Q $ 的限制，并且即使是小型样本大小也可保证上限。  请注意，$n 由 `bitsPrecision` 输入选择的 $，它隐式定义 $Q $。
 
-其他相关的详细信息包括：仅 $1 $ ancilla qubit 的小空间开销，或该过程是非自适应，这意味着所需的量程试验顺序与中间测量结果无关。 在此示例中，如果选择阶段估算算法非常重要，其中一项应引用文档（如 @"microsoft.quantum.canon.robustphaseestimation"）和引用的发布，以获取详细信息及其实现。
+其他相关的详细信息包括：仅 $1 $ ancilla qubit 的小空间开销，或该过程是非自适应，这意味着所需的量程试验顺序与中间测量结果无关。 在此示例中，如果选择阶段估算算法非常重要，其中一项应引用文档（如 @"microsoft.quantum.characterization.robustphaseestimation"）和引用的发布，以获取详细信息及其实现。
 
 > [!TIP]
 > 在许多示例中，使用了可靠的阶段估算。 有关提取各个物理系统的地面状态能量的阶段估算，请参阅[ **H2 模拟**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/h2/command-line)、 [ **SimpleIsing**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/simple)和[ **Hubbard 模型**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/hubbard)。
@@ -154,25 +154,27 @@ operation RobustPhaseEstimation(bitsPrecision : Int, oracle : DiscreteOracle, ei
 
 ```qsharp
 operation H2EstimateEnergy(
-    idxBondLength : Int, 
+    idxBondLength : Int,
     trotterStepSize : Double,
-    phaseEstAlgorithm : ((DiscreteOracle, Qubit[]) => Double)) 
+    phaseEstAlgorithm : ((DiscreteOracle, Qubit[]) => Double))
 : Double
 ```
 
-这些无数阶段估算算法针对不同的属性和输入参数进行了优化，这些属性和输入参数必须被理解为目标应用程序的最佳选择。 例如，某些阶段估算算法是自适应的，这意味着，以后的步骤经典由前面步骤的测量结果控制。 有些情况下，需要能够通过任意实际的 exponentiate 来其黑洞的单一 oracle，而其他人只需使用整数，而只需要解析阶段估算 $ 2 \ pi $。 有些需要多个辅助 qubits，而另一个只需要一个。
+这些无数阶段估算算法针对不同的属性和输入参数进行了优化，这些属性和输入参数必须被理解为目标应用程序的最佳选择。 例如，某些阶段估算算法是自适应的，这意味着，以后的步骤经典由前面步骤的测量结果控制。 有些情况下，需要能够通过任意实际的 exponentiate 来其黑洞的单一 oracle，而其他人只需使用整数，而只需要解析阶段估算 $ 2 \ pi $。 有些辅助 qubits，而其他只需要一个。
 
 同样，使用随机审核阶段估算的方式与 canon 提供的其他算法的执行方式几乎相同：
 
 ```qsharp
-operation ExampleOracle(eigenphase : Double, time : Double, register : Qubit[]) : Unit
-is Adj + Ctl {
+operation ApplyExampleOracle(
+    eigenphase : Double,
+    time : Double,
+    register : Qubit[])
+: Unit is Adj + Ctl {
     Rz(2.0 * eigenphase * time, register[0]);
 }
 
-operation BayesianPhaseEstimationCanonSample(eigenphase : Double) : Double {
-
-    let oracle = ContinuousOracle(ExampleOracle(eigenphase, _, _));
+operation EstimateBayesianPhase(eigenphase : Double) : Double {
+    let oracle = ContinuousOracle(ApplyExampleOracle(eigenphase, _, _));
     using (eigenstate = Qubit()) {
         X(eigenstate);
         // The additional inputs here specify the mean and variance of the prior, the number of

@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.errorcorrection
 name: Microsoft.Quantum.ErrorCorrection
-summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于量程错误更正的函数、操作和用户定义类型。"
+summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含用于量程错误更正的函数、操作和用户定义类型。"
 functions:
 - uid: microsoft.quantum.errorcorrection.bitflipcode
   summary: 返回一个 QECC 值，该值表示⟦3，1，1⟧位翻转代码编码器和解码器，并使用就地症状度量。
@@ -43,19 +43,9 @@ operations:
 - uid: microsoft.quantum.errorcorrection.fivequbitcodeencoder
   summary: "\n> [!WARNING]\n> 已放弃\n\nFiveQubitCodeEncoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.encodeintofivequbitcode\"。\n请使用 @\"microsoft.quantum.errorcorrection.encodeintofivequbitcode\"。"
 - uid: microsoft.quantum.errorcorrection.injectpi4yrotation
-  summary: >-
-    对 `Y`执行π/4 旋转。
-
-
-    旋转是通过使用神奇状态来执行的;也就是说，状态 $ $ \begin{align} \cos\frac{\pi}{8} \ket{0} + \sin \frac{\pi}{8} \ket{1}的副本。
-
-    \end{align} $ $
+  summary: 围绕 Y 轴旋转单个 qubit 乘以π/4。
 - uid: microsoft.quantum.errorcorrection.knilldistill
-  summary: >-
-    实现 Knill 幻状态升华算法。
-
-
-    给定15个近似状态 $ $ \begin{align} \cos\frac{\pi}{8} \ket{0} + \sin \frac{\pi}{8} \ket{1} \end{align}，$ $ 会生成一个较高质量的副本。
+  summary: 实现 Knill 幻状态升华算法。
 - uid: microsoft.quantum.errorcorrection.measurestabilizergenerators
   summary: 度量稳定组的给定生成器集。
 - uid: microsoft.quantum.errorcorrection.recover
@@ -92,9 +82,9 @@ newtypes:
 - uid: microsoft.quantum.errorcorrection.syndromemeasop
   summary: 表示一个操作，该操作用于测量纠错代码块的症状。
 metadata:
-  ms.openlocfilehash: 2f72286018b39e2d51d6e0ffa6babf7ce350d976
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 0a149810314453e816c7754dd535b2f3bb7d8e58
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74858354"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76870782"
