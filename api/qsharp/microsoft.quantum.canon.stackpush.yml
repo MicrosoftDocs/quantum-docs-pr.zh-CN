@@ -3,27 +3,24 @@ uid: microsoft.quantum.canon.stackpush
 name: StackPush
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: 将新元素推送到 <xref:microsoft.quantum.canon.resultstack>。
+summary: StackPush 已被弃用。
 syntax: 'function StackPush (stack : Microsoft.Quantum.Canon.ResultStack, datum : Result) : Microsoft.Quantum.Canon.ResultStack'
 input:
   content: '(stack : Microsoft.Quantum.Canon.ResultStack, datum : Result)'
   types:
   - name: stack
-    summary: 要增长的堆栈。
     uid: microsoft.quantum.canon.resultstack
   - name: datum
-    summary: 要推送到 `stack``Result` 值。
     isPrimitive: true
     uid: Result
 output:
   content: Microsoft.Quantum.Canon.ResultStack
   types:
-  - summary: '`datum` 添加为其新的顶部元素的 `stack`。 新堆栈的长度增加1。'
-    uid: microsoft.quantum.canon.resultstack
+  - uid: microsoft.quantum.canon.resultstack
 metadata:
-  ms.openlocfilehash: 63191d8f9a7649f8b229d1288cb244dfe4fd7293
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 92217c8b0e5dda83fac30a92856697d71cf04682
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219342"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76870897"

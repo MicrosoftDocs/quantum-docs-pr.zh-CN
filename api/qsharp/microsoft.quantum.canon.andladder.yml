@@ -4,10 +4,10 @@ name: AndLadder
 type: operation
 namespace: Microsoft.Quantum.Canon
 summary: >-
-  在目标 qubits 上执行受控的 "AND 阶梯"。
+  在目标 qubits 的寄存器上执行受控的 "AND 阶梯"。
 
 
-  这适用于计算基础向量： $ $ \begin{align} \ket{x\_1，\dots ..，x\_n} \ket{y\_1，\dots ..，y\_{n-1}} \mapsto \ket{x\_1，\dots ..，x\_n} \ket{y\_1 \oplus （x\_1 \land x\_2），\dots ..，y\_{n-1} \oplus （x\_1 \land x\_2 \land \cdots \land x\_{n-1}}，\end{align} $ $，其中 $ \ket{x\_1，\dots ..，x\_n} $ 表示 `controls`的计算基础状态，其中 $ \ket{y\_1，\dots ..，y\_{n-1}} $ 表示 `targets`的计算基础状态。
+  此操作应用以下映射所描述的转换： $ $ \begin{align} \ket{x\_1，\dots ..，x\_n} \ket{y\_1，\dots ..，y\_{n-1}} \mapsto \ket{x\_1，\dots ..，x\_n} \ket{y\_1 \oplus （x\_1 \land x\_2），\dots ..，y\_{n-1} \oplus （x\_1 \land x\_2 \land \cdots \land x\_{n-1}}，\end{align} $ $，其中 $ \ket{x\_1，\dots ..，x\_n} $ 表示 `controls`的计算基础状态，其中 $ \ket{y\_1，\dots ..，y\_{n-1}} $ 表示 `targets`的计算基础状态。
 remarks: >-
   - 用作 <xref:microsoft.quantum.canon.applymulticontrolledc> 和 <xref:microsoft.quantum.canon.applymulticontrolledca>的一部分。
 
@@ -43,9 +43,9 @@ output:
 functors:
 - Adjoint
 metadata:
-  ms.openlocfilehash: 2970f9c783ea233f2f1ceb4089802320efe82602
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: bf5b262ca55bea542218356918cf36eb95502967
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73217710"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871033"

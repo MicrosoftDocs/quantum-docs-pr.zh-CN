@@ -13,6 +13,7 @@ input:
   content: "(bit : Bool, (trueOp : ('T => Unit is Adj + Ctl), trueInput : 'T), (falseOp : ('U => Unit is Adj + Ctl), falseInput : 'U))"
   types:
   - name: bit
+    summary: 用于确定是否应用 `trueOp` 或 `falseOp` 的布尔值。
     isPrimitive: true
     uid: Bool
   - name: trueOp
@@ -71,9 +72,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifelsera
 - microsoft.quantum.canon.applyifelserca
 metadata:
-  ms.openlocfilehash: d9fa6aad5c319d4cde19ff6b1da697f47bcc8806
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 526170a58fcab51aa36abeee6bd1573dc5eeddbb
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73213766"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871322"

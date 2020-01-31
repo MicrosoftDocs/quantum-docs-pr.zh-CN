@@ -2,6 +2,8 @@
 uid: microsoft.quantum.measurement
 name: Microsoft.Quantum.Measurement
 operations:
+- uid: microsoft.quantum.measurement.measureallz
+  summary: 共同度量 Pauli Z 基础的 qubits 寄存器。
 - uid: microsoft.quantum.measurement.measurepaulis
   summary: 给定多 qubit Pauli 运算符的数组，使用指定的度量小工具测量每个运算符，然后返回结果的数组。
 - uid: microsoft.quantum.measurement.measurewithscratch
@@ -15,9 +17,9 @@ operations:
 - uid: microsoft.quantum.measurement.multim
   summary: 按标准度量给定数组中的每个 qubit。
 metadata:
-  ms.openlocfilehash: 872031f8a6ebd77e72cd74e1c98e7347c09ca14a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 7964ab7b090fdff8f1a8af556e901dbab68cff9f
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73210978"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76870024"

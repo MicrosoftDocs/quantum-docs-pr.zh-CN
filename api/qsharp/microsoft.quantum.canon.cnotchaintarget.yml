@@ -3,41 +3,16 @@ uid: microsoft.quantum.canon.cnotchaintarget
 name: CNOTChainTarget
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  计算 qubits 数组到目标 qubit 的奇偶校验。
-
-
-  如果数组最初处于状态 $ \ket{q_0} \ket{q_1} \cdots \ket{q_ {\text{target}}} $，则最终状态由 $ \ket{q_0} \ket{q_1 \oplus q_0} \cdots \ket{q_ {n-1} \oplus \cdots \oplus q_0 \oplus q_ {\text{target}}} $。
-remarks: >-
-  以下项是等效的：
-
-
-  ```qsharp
-
-  CNOTChainTarget(Most(qs), Last(qs));
-
-  ```
-
-
-  and
-
-
-  ```qsharp
-
-  CNOTChain(qs);
-
-  ```
+summary: CNOTChainTarget 已被弃用。 请改用 @"microsoft.quantum.canon.applycnotchainwithtarget"。
 syntax: 'operation CNOTChainTarget (qubits : Qubit[], targetQubit : Qubit) : Unit'
 input:
   content: '(qubits : Qubit[], targetQubit : Qubit)'
   types:
   - name: qubits
-    summary: 计算其奇偶校验的 qubits 数组。
     isArray: true
     isPrimitive: true
     uid: Qubit
   - name: targetQubit
-    summary: "\"Qubits\" 的奇偶校验的最终 qubit 为 XORed。"
     isPrimitive: true
     uid: Qubit
 output:
@@ -49,9 +24,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 26893296ec8fe7ec8d8cc5309e2bd5066f315849
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 691709d2406862885887a1e35d093611063d26cf
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73068030"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871288"

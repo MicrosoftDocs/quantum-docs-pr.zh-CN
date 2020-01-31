@@ -7,26 +7,26 @@ summary: >-
   从 oracle 构造有关给定状态的反射。
 
 
-  给定 oracle $O $ 类型 <xref:microsoft.quantum.oracles.deterministicstateoracle>时，此函数的结果是围绕状态 $ \ket{\psi} $ 反射的，其中 $O \ket{0} = \ket{\psi} $。
+  假设确定性状态准备由单一矩阵 $O $ 表示，则此函数的结果是一个 oracle，它围绕 oracle $O $ 准备的状态 $ \ket{\psi} $ 应用反射。也就是说，状态 $ \ket{\psi} $ $O \ket{0} = \ket{\psi} $。
 syntax: 'function ReflectionOracleFromDeterministicStateOracle (oracle : Microsoft.Quantum.Oracles.DeterministicStateOracle) : Microsoft.Quantum.Oracles.ReflectionOracle'
 input:
   content: '(oracle : Microsoft.Quantum.Oracles.DeterministicStateOracle)'
   types:
   - name: oracle
-    summary: 类型为 "DeterministicStateOracle" 的 Oracle
+    summary: 准备状态 $ \ket{\psi} $ 的副本的 oracle。
     uid: microsoft.quantum.oracles.deterministicstateoracle
 output:
   content: Microsoft.Quantum.Oracles.ReflectionOracle
   types:
-  - summary: 反映状态 $ \ket{\psi} $ 的 `ReflectionOracle`。
+  - summary: 反映状态 $ \ket{\psi} $ 的 oracle。
     uid: microsoft.quantum.oracles.reflectionoracle
 seeAlso:
-- deterministicstateoracle
-- reflectionoracle
+- microsoft.quantum.oracles.deterministicstateoracle
+- microsoft.quantum.oracles.reflectionoracle
 metadata:
-  ms.openlocfilehash: c48c9259b4b3c122a8d7551db6d326ea523dd2a0
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 604c0dab70979e3f429b58168a969a7557e2a0de
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73050320"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76868928"

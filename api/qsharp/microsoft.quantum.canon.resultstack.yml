@@ -3,15 +3,12 @@ uid: microsoft.quantum.canon.resultstack
 name: ResultStack
 type: newtype
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  `Result` 变量的后进先出堆栈。
-
-  堆栈包含整数容量、堆栈指针和 `Result` 数组。
+summary: ResultStack 已被弃用。
 syntax: newtype ResultStack = (Int, Int, Result[]);
 metadata:
-  ms.openlocfilehash: 4a0ba6c9e5e4489fd7a28d33df7d179268d46efe
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 98349f4136aa8780e6d51e1dc2f2a15ddb238dcd
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73222368"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871492"

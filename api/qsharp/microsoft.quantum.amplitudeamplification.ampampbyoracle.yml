@@ -3,28 +3,23 @@ uid: microsoft.quantum.amplitudeamplification.ampampbyoracle
 name: AmpAmpByOracle
 type: function
 namespace: Microsoft.Quantum.AmplitudeAmplification
-summary: 标准振幅放大算法
-remarks: 这是由 `AmpAmpPhasesStandard` 计算的一系列反射阶段所获得的标准幅度放大算法，假设 \begin{align} A\ket{0}\_{f} \ket{0}\_s = \lambda\ket{1}\_f\ket {\ text {target}}\_s + \sqrt{1-| \lambda | ^ 2} \ket{0}\_f\cdots，\end{align} 此操作准备状态 \begin{align} \operatorname{AmpAmpByOracle}\ket{0}\_{f} \ket{0}\_s = \sin （（2n + 1） \sin ^{-1}（\lambda）） \ket{1}\_f\ket {\ text {target}}\_s + \cdots\ket{0}\_f \end{align} 在大多数情况下，`flagQubit` 和 `ancillaRegister` 在状态 $ \ket{0}\_f\ket{0}\_$。
+summary: AmpAmpByOracle 已被弃用。 请改用 @"microsoft.quantum.amplitudeamplification.standardamplitudeamplification"。
 syntax: 'function AmpAmpByOracle (nIterations : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int) : (Qubit[] => Unit is Adj + Ctl)'
-references: '- [*G. Brassard，Hoyer，Mosca，Tapp*](https://arxiv.org/abs/quant-ph/0005055)'
 input:
   content: '(nIterations : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int)'
   types:
   - name: nIterations
-    summary: $n $ 的幅度放大次数的迭代数
     isPrimitive: true
     uid: Int
   - name: stateOracle
     uid: microsoft.quantum.oracles.stateoracle
   - name: idxFlagQubit
-    summary: 用于标记 qubit 的索引
     isPrimitive: true
     uid: Int
 output:
   content: (Qubit[] => Unit is Adj + Ctl)
   types:
-  - summary: 实现标准振幅放大量程算法的操作
-    isOperation: true
+  - isOperation: true
     input:
       types:
       - isArray: true
@@ -38,9 +33,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: b55aed7c3a9381827e79c66a4a255b1515982d8d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 1ad7a0fe677ff23f520a8130a1002078c82a21bc
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73215789"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76869432"

@@ -4,10 +4,10 @@ name: Compose
 type: function
 namespace: Microsoft.Quantum.Canon
 summary: >-
-  生成两个函数的组合。
+  返回两个函数的组合。
 
 
-  也就是说，如果 $g $ $f 两个函数，则返回一个表示 $f \circ g $ 的新函数。
+  如果 $g $ $f 两个函数，则返回一个表示 $f \circ g $ 的新函数。
 syntax: "function Compose (outer : ('U -> 'V), inner : ('T -> 'U)) : ('T -> 'V)"
 input:
   content: "(outer : ('U -> 'V), inner : ('T -> 'U))"
@@ -55,9 +55,9 @@ typeParameters:
 - uid: "'V"
   summary: 要应用的第二个函数的输出类型。
 metadata:
-  ms.openlocfilehash: 69fbd6a4fafbc61a63e41257b7100303fd48d4d4
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 44296db92d6261fc8aba843346700bf8e22663bb
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73223065"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871543"

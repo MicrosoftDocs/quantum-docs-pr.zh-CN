@@ -3,7 +3,7 @@ uid: microsoft.quantum.canon.xor
 name: XOR
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: 这将计算两位的互斥或。
+summary: 不推荐使用 XOR。 请改用 @"microsoft.quantum.logical.xor"。
 syntax: 'function XOR (bit1 : Bool, bit2 : Bool) : Bool'
 input:
   content: '(bit1 : Bool, bit2 : Bool)'
@@ -20,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: df32252c7294bad7bdcd601f3e6de923d0d1582c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 3db37f53196b21201a1c41522c3b0f8b05c9445a
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73229287"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871203"

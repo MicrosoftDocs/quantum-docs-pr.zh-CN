@@ -3,13 +3,8 @@ uid: microsoft.quantum.canon.decomposeintotimestepsca
 name: DecomposeIntoTimeStepsCA
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: 返回为给定操作实现 Trotter – Suzuki 集成器的操作。
+summary: DecomposeIntoTimeStepsCA 已被弃用。 请改用 @"microsoft.quantum.canon.decomposedintotimestepsca"。
 syntax: "function DecomposeIntoTimeStepsCA ((nSteps : Int, op : ((Int, Double, 'T) => Unit is Adj + Ctl)), trotterOrder : Int) : ((Double, 'T) => Unit is Adj + Ctl)"
-references: >-
-  我们使用中的实现
-
-
-  - [*D. Berry，Ahokas，Cleve，Sanders，，*](https://arxiv.org/abs/quant-ph/0508139)
 input:
   content: "((nSteps : Int, op : ((Int, Double, 'T) => Unit is Adj + Ctl)), trotterOrder : Int)"
   types:
@@ -34,17 +29,12 @@ input:
     - Adjoint
     - Controlled
   - name: trotterOrder
-    summary: >-
-      选择要使用的 Trotter – Suzuki 集成器的顺序。
-
-      订单1，甚至订单2，4，6,.。。当前支持。
     isPrimitive: true
     uid: Int
 output:
   content: ((Double, 'T) => Unit is Adj + Ctl)
   types:
-  - summary: 返回一个实现 Trotter – Suzuki 集成器的单一参数，其中第一个参数 `Double` 是集成步骤大小，第二个参数是目标。
-    isOperation: true
+  - isOperation: true
     input:
       types:
       - isPrimitive: true
@@ -58,13 +48,10 @@ output:
     functors:
     - Adjoint
     - Controlled
-typeParameters:
-- uid: "'T"
-  summary: 每次步骤应执行的操作的类型;通常 `Qubit[]` 或 `Qubit`。
 metadata:
-  ms.openlocfilehash: ac9e4b4359c77205b7a823c334222a049ff49c10
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 20cb9256ee3f9ff408cd605975980aed3488496e
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74863958"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871271"

@@ -7,11 +7,13 @@ summary: >-
   按整数常量执行 qubit 寄存器的模块化增量。
 
 
-  接下来，让我们表示 `increment`，`modulus`，并按 y `target` 进行编码，然后该操作将执行以下转换： | y ⟩↦ | y + a （mod N）⟩整数以小字节序格式在 QFT 中进行编码
+  让我们通过 `target` $ $y $ $a $、`modulus` $N $ 和整数编码来表示 `increment`。
+
+  然后，该操作将执行以下转换： \begin{align} \ket{y} \mapsto \ket{（y + a） \operatorname{mod} N} \end{align} 将以小字节序格式编码。
 remarks: >-
   假定 `target` 的最大位设置为0。
 
-  还假定目标值小于 N。
+  还假定目标值小于 $N $。
 
 
   对于 "线路" 关系图和说明，请参阅[arXiv： quant/0205095V3 第5页](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=5)上的图5。
@@ -20,12 +22,15 @@ input:
   content: '(increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
   types:
   - name: increment
+    summary: 要添加到 $y $ $a $ 的整数增量。
     isPrimitive: true
     uid: Int
   - name: modulus
+    summary: 整数 $N $ mods $y + a $。
     isPrimitive: true
     uid: Int
   - name: target
+    summary: '`increment` $a $ 添加到的、阶段编码的小字节序格式的整数 $y $。'
     uid: microsoft.quantum.arithmetic.phaselittleendian
 output:
   content: Unit
@@ -36,11 +41,11 @@ functors:
 - Adjoint
 - Controlled
 seeAlso:
-- microsoft.quantum.canon.modularincrementle
+- microsoft.quantum.arithmetic.incrementbymodularinteger
 metadata:
-  ms.openlocfilehash: 897e46cca640e714e1f000548ffd3226e8e27fa4
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 69240c9ecac0917f8f2a6d1f6a3554cc93269cbd
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219019"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871407"

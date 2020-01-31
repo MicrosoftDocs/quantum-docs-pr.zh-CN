@@ -3,24 +3,22 @@ uid: microsoft.quantum.canon.stackcapacity
 name: StackCapacity
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: 检索 <xref:microsoft.quantum.canon.resultstack>的容量。
+summary: StackCapacity 已被弃用。
 syntax: 'function StackCapacity (stack : Microsoft.Quantum.Canon.ResultStack) : Int'
 input:
   content: '(stack : Microsoft.Quantum.Canon.ResultStack)'
   types:
   - name: stack
-    summary: 要确定其容量的堆栈。
     uid: microsoft.quantum.canon.resultstack
 output:
   content: Int
   types:
-  - summary: 容纳在堆栈中的元素的数目。
-    isPrimitive: true
+  - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 9e6c91584f288fb895892d296e82e1855f014cb2
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: bc1d46f3614a7a3ab4a9aba7dd7434704ace84d4
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73222266"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871475"

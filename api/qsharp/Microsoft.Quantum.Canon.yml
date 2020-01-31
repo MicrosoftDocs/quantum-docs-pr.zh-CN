@@ -69,11 +69,7 @@ functions:
 
     修饰符 `CA` 指示操作可控制和 adjointable。
 - uid: microsoft.quantum.canon.compose
-  summary: >-
-    生成两个函数的组合。
-
-
-    也就是说，如果 $g $ $f 两个函数，则返回一个表示 $f \circ g $ 的新函数。
+  summary: 返回两个函数的组合。
 - uid: microsoft.quantum.canon.conjugatedby
   summary: 给定的外部和内部操作返回一个新的操作，该操作将由外部操作词干内部操作。
 - uid: microsoft.quantum.canon.conjugatedbya
@@ -96,8 +92,10 @@ functions:
     也就是说，假设有一个具有两个输入的操作，则此函数将应用咖喱的 isomorphism $f （x，y） \equiv f （x）（y） $ 以返回一个输入的操作，该操作返回一个输入的操作。
 - uid: microsoft.quantum.canon.curryop
   summary: "\n> [!WARNING]\n> 已放弃\n\nCurryOp 已被弃用。 请改用 @\"microsoft.quantum.canon.curriedop\"。\n请使用 @\"microsoft.quantum.canon.curriedop\"。"
-- uid: microsoft.quantum.canon.decomposeintotimestepsca
+- uid: microsoft.quantum.canon.decomposedintotimestepsca
   summary: 返回为给定操作实现 Trotter – Suzuki 集成器的操作。
+- uid: microsoft.quantum.canon.decomposeintotimestepsca
+  summary: "\n> [!WARNING]\n> 已放弃\n\nDecomposeIntoTimeStepsCA 已被弃用。 请改用 @\"microsoft.quantum.canon.decomposedintotimestepsca\"。"
 - uid: microsoft.quantum.canon.delayed
   summary: 返回应用给定自变量的给定操作的操作。
 - uid: microsoft.quantum.canon.delayeda
@@ -238,17 +236,17 @@ functions:
 - uid: microsoft.quantum.canon.splitarray
   summary: "\n> [!WARNING]\n> 已放弃\n\nSplitArray 已被弃用。 请改用 @\"microsoft.quantum.arrays.partitioned\"。\n请改用 @\"Microsoft.Quantum.Arrays.Partitioned\"。"
 - uid: microsoft.quantum.canon.stackcapacity
-  summary: 检索 <xref:microsoft.quantum.canon.resultstack>的容量。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nStackCapacity 已被弃用。"
 - uid: microsoft.quantum.canon.stacklength
-  summary: 检索存储在 <xref:microsoft.quantum.canon.resultstack>中的元素的数目。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nStackLength 已被弃用。"
 - uid: microsoft.quantum.canon.stacknew
-  summary: 创建具有给定容量的新空 <xref:microsoft.quantum.canon.resultstack>。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nStackNew 已被弃用。"
 - uid: microsoft.quantum.canon.stackpeek
-  summary: 检索 <xref:microsoft.quantum.canon.resultstack>的最顶层元素。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nStackPeek 已被弃用。"
 - uid: microsoft.quantum.canon.stackpop
-  summary: 从 <xref:microsoft.quantum.canon.resultstack>中移除最顶层元素。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nStackPop 已被弃用。"
 - uid: microsoft.quantum.canon.stackpush
-  summary: 将新元素推送到 <xref:microsoft.quantum.canon.resultstack>。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nStackPush 已被弃用。"
 - uid: microsoft.quantum.canon.tooperation
   summary: "\n> [!WARNING]\n> 已放弃\n\nToOperation 已被弃用。 请改用 @\"microsoft.quantum.convert.functionasoperation\"。\n请使用 @\"microsoft.quantum.convert.functionasoperation\"。"
 - uid: microsoft.quantum.canon.transformedoperation
@@ -287,16 +285,18 @@ functions:
 - uid: microsoft.quantum.canon.weightonepaulis
   summary: 返回给定数量的 qubits 上的所有 Pauli 运算符的数组。
 - uid: microsoft.quantum.canon.xor
-  summary: 这将计算两位的互斥或。
+  summary: "\n> [!WARNING]\n> 已放弃\n\n不推荐使用 XOR。 请改用 @\"microsoft.quantum.logical.xor\"。\n请使用 @\"microsoft.quantum.logical.xor\"。"
 operations:
 - uid: microsoft.quantum.canon.adiabaticstateenergyunitary
   summary: "\n> [!WARNING]\n> 已放弃\n\nAdiabaticStateEnergyUnitary 已被弃用。 请改用 @\"microsoft.quantum.simulation.estimateenergywithadiabaticevolution\"。\n请使用 @\"microsoft.quantum.simuilation.pnormalized\"。"
 - uid: microsoft.quantum.canon.andladder
-  summary: >-
-    在目标 qubits 上执行受控的 "AND 阶梯"。
-
-
-    这会在计算基础向量上应用以下映射给定的单一项： $ $ \begin{align} \ket{x\_1，\dots ..，x\_n} \ket{y\_1，\dots ..，y\_{n-1}} \mapsto \ket{x\_1，\dots ..，x\_n} \ket{y\_1 \oplus （x\_1 \land x\_2），\dots ..，y\_{n-1} \oplus （x\_1 \land x\_2 \land \cdots \land x\_{n-1}}，\end{align} $ $，其中 $ \ket{x\_1，\dots ..，x\_n} $ 表示 `controls`的计算基础状态，其中 $ \ket{y\_1，\dots ..，y\_{n-1}} $ 表示 `targets`的计算基础状态。
+  summary: 在目标 qubits 的寄存器上执行受控的 "AND 阶梯"。
+- uid: microsoft.quantum.canon.applyand
+  summary: 当且仅当两个控件 qubits 都处于1状态时，使用度量来执行 adjoint 操作，以反转给定的目标 qubit。
+- uid: microsoft.quantum.canon.applycnotchain
+  summary: 计算 qubits 的寄存器的奇偶校验。
+- uid: microsoft.quantum.canon.applycnotchainwithtarget
+  summary: 计算 qubits 数组到目标 qubit 的奇偶校验。
 - uid: microsoft.quantum.canon.applydiagonalunitary
   summary: >-
     将复杂阶段数组应用于 qubits 寄存器的数字基础状态。
@@ -348,6 +348,8 @@ operations:
   summary: 应用在传统结果值为零的可控操作。
 - uid: microsoft.quantum.canon.applyifzeroca
   summary: 应用在传统结果值为零的条件运算。
+- uid: microsoft.quantum.canon.applylowdepthand
+  summary: 当且仅当两个 control qubits 都处于1状态时，使用 qubit 执行 adjoint 操作时，使用度量来反转给定目标。
 - uid: microsoft.quantum.canon.applymulticontrolledc
   summary: >-
     应用单个受控操作的多重控制版本。
@@ -528,7 +530,7 @@ operations:
 - uid: microsoft.quantum.canon.applywitha
   summary: 给定两个操作，将一个操作应用到另一个运算。
 - uid: microsoft.quantum.canon.applywithc
-  summary: ''
+  summary: 给定两个操作，将一个操作应用到另一个运算。
 - uid: microsoft.quantum.canon.applywithca
   summary: 给定两个操作，将一个操作应用到另一个运算。
 - uid: microsoft.quantum.canon.applywithinputtransformation
@@ -553,18 +555,12 @@ operations:
     具体而言，断言某些任意实数的 "\phi $" 的量程状态（可能表示为 $ \frac{e ^ {i t}} {\sqrt{2}} （e ^ {i\phi} \ 票证{0} + e ^ {-i\phi} \ 票证{1}） $）为所需的值。
 - uid: microsoft.quantum.canon.assertprobintbe
   summary: "\n> [!WARNING]\n> 已放弃\n\nAssertProbIntBE 已被弃用。 请改用 @ \"assertprobint （stateindex，prob，bigendianaslittleendian （qubits），容忍）\"。\n此操作已被删除。"
+- uid: microsoft.quantum.canon.cascadecnot
+  summary: "\n> [!WARNING]\n> 已放弃\n\nCascadeCNOT 已被弃用。 请改用 @\"microsoft.quantum.canon.applycnotchain\"。\n请使用 @\"microsoft.quantum.canon.applycnotchain\"。"
 - uid: microsoft.quantum.canon.cnotchain
-  summary: >-
-    计算 qubits 数组的奇偶校验。
-
-
-    它遵循模式 $ \ket{q_0} \ket{q_0 \oplus q_1} \ket{q_0 \oplus q_1 \oplus q_2} \cdots $。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nCNOTChain 已被弃用。 请改用 @\"microsoft.quantum.canon.applycnotchain\"。"
 - uid: microsoft.quantum.canon.cnotchaintarget
-  summary: >-
-    计算 qubits 数组到目标 qubit 的奇偶校验。
-
-
-    如果数组最初处于状态 $ \ket{q_0} \ket{q_1} \cdots \ket{q_ {\text{target}}} $，则最终状态由 $ \ket{q_0} \ket{q_1 \oplus q_0} \cdots \ket{q_ {n-1} \oplus \cdots \oplus q_0 \oplus q_ {\text{target}}} $。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nCNOTChainTarget 已被弃用。 请改用 @\"microsoft.quantum.canon.applycnotchainwithtarget\"。"
 - uid: microsoft.quantum.canon.copymostsignificantbitle
   summary: "\n> [!WARNING]\n> 已放弃\n\nCopyMostSignificantBitLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.copymostsignificantbit\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.CopyMostSignificantBit\"。"
 - uid: microsoft.quantum.canon.cx
@@ -604,6 +600,8 @@ operations:
     \begin{align} H_Y \mathrel{： =} \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\\\ &-i \end{bmatrix}。
 
     \end{align}
+- uid: microsoft.quantum.canon.inplacemajority
+  summary: "\n> [!WARNING]\n> 已放弃\n\nInPlaceMajority 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applymajorityinplace\"。\n请使用 @\"microsoft.quantum.arithmetic.applymajorityinplace\"。"
 - uid: microsoft.quantum.canon.inplacexorbe
   summary: "\n> [!WARNING]\n> 已放弃\n\nInPlaceXorBE 已被弃用。 请改用 @ \"applyreversedopleca （applyxorinplace （value，_），target）\"。\n此操作已被删除。"
 - uid: microsoft.quantum.canon.inplacexorle
@@ -613,9 +611,9 @@ operations:
 - uid: microsoft.quantum.canon.integerincrementphasele
   summary: "\n> [!WARNING]\n> 已放弃\n\nIntegerIncrementPhaseLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.incrementphasebyinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.IncrementPhaseByInteger\"。"
 - uid: microsoft.quantum.canon.iteratethroughcartesianpower
-  summary: 循环访问变量，如 arr，通过笛卡尔积 [0，绑定-1] × [0，绑定-1] × [0，绑定-1]，并为笛卡尔积的每个元素调用 op （arr）
+  summary: 以整数范围的笛卡尔幂对每个索引应用操作。
 - uid: microsoft.quantum.canon.iteratethroughcartesianproduct
-  summary: 通过笛卡尔积 [0，界限 [0]-1] × [0，界限 [1]-1] × [0，界限 [长度（界限）-1]-1] 来循环访问变量 `arr`，并为笛卡尔积的每个元素调用 op （arr）。
+  summary: 对若干范围内笛卡尔积中的每个索引应用操作。
 - uid: microsoft.quantum.canon.measureintegerbe
   summary: "\n> [!WARNING]\n> 已放弃\n\nMeasureIntegerBE 已被弃用。 请改用 @ \"measureinteger （bigendianaslittleendian （target））\"。\n此操作已被删除。"
 - uid: microsoft.quantum.canon.modularaddproductle
@@ -701,14 +699,11 @@ newtypes:
 - uid: microsoft.quantum.canon.ccnotop
   summary: CCNOT 入口的签名类型。
 - uid: microsoft.quantum.canon.resultstack
-  summary: >-
-    `Result` 变量的后进先出堆栈。
-
-    堆栈包含整数容量、堆栈指针和 `Result` 数组。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nResultStack 已被弃用。"
 metadata:
-  ms.openlocfilehash: 457d211ace716ddc09ebcd94c5cbc3c33b42d704
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 8d54303daeb32281b1e531fce50443c132c14093
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74858541"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76870718"

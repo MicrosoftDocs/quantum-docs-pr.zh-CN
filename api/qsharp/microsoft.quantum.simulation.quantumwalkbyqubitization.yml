@@ -4,10 +4,10 @@ name: QuantumWalkByQubitization
 type: function
 namespace: Microsoft.Quantum.Simulation
 summary: >-
-  将 `BlockEncodingReflection` 转换为量程审核。
+  将块编码反射转换为量程审核。
 
 
-  也就是说，假设有一个 `BlockEncodingReflection` 单一 $U $，该运算符对某个运算符 $H，并将其转换为量程审核 $W $，其中包含 $ \pm e ^ {\pm i\sin ^{-1}（H）} $ 的范围。
+  给定一个由单一 $U $ 表示的 `BlockEncodingReflection`，该类型对某个运算符 $H 相关，并将其转换为量程审核 $W $，其中包含 $ \pm e ^ {\pm i\sin ^{-1}（H）} $ 的范围。
 syntax: 'function QuantumWalkByQubitization (blockEncoding : Microsoft.Quantum.Simulation.BlockEncodingReflection) : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)'
 references: '- Hamiltonian 模拟 by Qubitization Guang 脱离 Hao Low、Isaac 语 https://arxiv.org/abs/1610.06546'
 input:
@@ -39,9 +39,9 @@ seeAlso:
 - microsoft.quantum.canon.blockencoding
 - microsoft.quantum.canon.blockencodingreflection
 metadata:
-  ms.openlocfilehash: aec6e81e44d4fa09e2ca131f0350590541f4dc8d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: aed748abe8f3468da0cc772606afc4f577c4abeb
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73065344"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76869145"

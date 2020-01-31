@@ -4,6 +4,9 @@ name: ApplyXorInPlace
 type: operation
 namespace: Microsoft.Quantum.Arithmetic
 summary: >-
+  在传统整数和由 qubits 的寄存器表示的整数之间应用按位 "异或" 运算。
+
+
   将 `X` 操作应用到基于整数中的1位的小 endian 寄存器中的 qubits。
 
 
@@ -28,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: b37de7ed7e838089fe0c3bce00c8a0e9b222c43f
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 9d3d837d92537cc5d51a80e8e1c83c230b7acc28
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221637"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871169"

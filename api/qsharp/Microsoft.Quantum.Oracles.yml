@@ -10,11 +10,7 @@ functions:
 - uid: microsoft.quantum.oracles.oracletodiscrete
   summary: 给定一个表示 "黑盒" oracle 的操作，将返回一个独立的 oracle，它表示重复多次的 "黑箱" oracle。
 - uid: microsoft.quantum.oracles.reflectionoraclefromdeterministicstateoracle
-  summary: >-
-    从 oracle 构造有关给定状态的反射。
-
-
-    给定 oracle $O $ 类型 <xref:microsoft.quantum.oracles.deterministicstateoracle>时，此函数的结果是围绕状态 $ \ket{\psi} $ 反射的，其中 $O \ket{0} = \ket{\psi} $。
+  summary: 从 oracle 构造有关给定状态的反射。
 - uid: microsoft.quantum.oracles.stateoraclefromdeterministicstateoracle
   summary: 将 `DeterministicStateOracle` 类型的 oracle 转换为 `StateOracle`。
 newtypes:
@@ -73,9 +69,9 @@ newtypes:
 
     - 系统注册 $s $，将存储所需的量程状态 $ \ket{\psi}\_s $。
 metadata:
-  ms.openlocfilehash: 10eb2c7acebf805b955816abe2bf1cabb95ce059
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 7e582286b69563bc4baa856f5236e5c2bd292ae0
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216095"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76869997"

@@ -7,7 +7,7 @@ summary: >-
   对 qubit 寄存器上的整数常量执行模块化乘法和-add。
 
 
-  为给定的取模（$N $、常量乘数 $a $ 和 \ket{x} $y $）实现 map $ $ \begin{align} \ket{x} \ket{b} \mapsto \ket{b \cdot + a \operatorname{mod} x \end{align} N} 被加数 $ $。
+  为给定的取模（$N $、常量乘数 $a $ 和 \ket{x} $y $）实现 map $ $ \begin{align} \ket{x} \ket{b} \mapsto \ket{\cdot （b + a \operatorname{mod} x） \end{align} N} 被加数 $ $。
 remarks: >-
   - 有关线路和说明，请参阅[arXiv： quant/0205095V3 第7页](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=7)上的图6
 
@@ -37,10 +37,12 @@ output:
 functors:
 - Adjoint
 - Controlled
+seeAlso:
+- microsoft.quantum.arithmetic.multiplyandaddphasebymodularinteger
 metadata:
-  ms.openlocfilehash: 6f445f584af1c05266be8e68a4298d73376cda27
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d0f3a28df20b6dd3a353a445bb9a6130e6100f99
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218764"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76871424"

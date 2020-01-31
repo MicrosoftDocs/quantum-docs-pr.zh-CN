@@ -3,28 +3,21 @@ uid: microsoft.quantum.amplitudeamplification.ampamprotationtoreflectionphases
 name: AmpAmpRotationToReflectionPhases
 type: function
 namespace: Microsoft.Quantum.AmplitudeAmplification
-summary: 将指定为单一 qubit 旋转的阶段转换为指定为部分反射的阶段。
+summary: AmpAmpRotationToReflectionPhases 已被弃用。 请改用 @"microsoft.quantum.amplitudeamplification.rotationphasesasreflectionphases"。
 syntax: 'function AmpAmpRotationToReflectionPhases (rotPhases : Microsoft.Quantum.AmplitudeAmplification.RotationPhases) : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases'
-references: >-
-  我们使用中的约定
-
-
-  - [ *G.H. Low，语*](https://arxiv.org/abs/1707.05391)将 qubit 循环阶段与反射运算符阶段相关联。
 input:
   content: '(rotPhases : Microsoft.Quantum.AmplitudeAmplification.RotationPhases)'
   types:
   - name: rotPhases
-    summary: 要转换为部分反射的 qubit 旋转的数组。
     uid: microsoft.quantum.amplitudeamplification.rotationphases
 output:
   content: Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases
   types:
-  - summary: 用于实现指定为部分反射的阶段的操作。
-    uid: microsoft.quantum.amplitudeamplification.reflectionphases
+  - uid: microsoft.quantum.amplitudeamplification.reflectionphases
 metadata:
-  ms.openlocfilehash: 2e4e447fd7ceef02249aa6577ff0274db046b9f2
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 37dc7b7b0590ae4eaf04b2187898668de9163a37
+  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73215602"
+  ms.lasthandoff: 01/29/2020
+  ms.locfileid: "76870812"
