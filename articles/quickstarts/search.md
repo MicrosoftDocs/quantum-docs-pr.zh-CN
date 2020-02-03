@@ -6,12 +6,12 @@ ms.author: chgranad@microsoft.com
 ms.date: 10/19/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.search
-ms.openlocfilehash: 75028a1dc29abe5fbea2e789d896563f3d6331c9
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.openlocfilehash: c1fd578fdb3d56a7b48972e6ccc9b1605047fe36
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73443930"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820345"
 ---
 # <a name="quickstart-implement-grovers-search-algorithm-in-q"></a>快速入门：在 Q# 中实现 Grover 搜索算法
 
@@ -23,7 +23,7 @@ Grover 算法在非结构化数据列表中搜索特定项。 例如，它可以
 
 只需几行代码，就能生成 Grover 搜索算法。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 - Microsoft [Quantum 开发工具包][install]。
 
@@ -43,11 +43,11 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
 1. 在新项目中，将以下代码添加到 `Operations.qs` 文件中：
 
-    [!code-qsharp[](~/quantum/samples/algorithms/simple-grover/SimpleGrover.qs?highlight=5,27)]
+    :::code language="qsharp" source="~/quantum/samples/algorithms/simple-grover/SimpleGrover.qs" range="4-23" highlight="5,27":::
 
 1. 要定义搜索列表，请创建一个新文件 `Reflections.qs`，并粘贴以下代码：
 
-    [!code-qsharp[](~/quantum/samples/algorithms/simple-grover/Reflections.qs)]
+    :::code language="qsharp" source="~/quantum/samples/algorithms/simple-grover/Reflections.qs" range="4-70":::
 
     `ReflectAboutMarked` 运算定义要搜索的标记输入：0 和 1 交替的字符串。 此示例对标记输入进行硬编码，并且可以扩展为搜索不同的输入或针对任何输入进行通用化。
 
@@ -57,7 +57,7 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
     要从 Python 运行你的新 Q# 程序，请将以下代码另存为 `host.py`：
 
-    [!code-python[](~/quantum/samples/algorithms/simple-grover/host.py)]
+    :::code language="python" source="~/quantum/samples/algorithms/simple-grover/host.py" range="9-14":::
 
     然后便可以从命令行运行 Python 主机程序：
 
@@ -75,7 +75,7 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
     要从 C# 运行你的新 Q# 程序，请修改 `Driver.cs` 以包含以下 C# 代码：
 
-    [!code-csharp[](~/quantum/samples/algorithms/simple-grover/Host.cs)]
+    :::code language="csharp" source="~/quantum/samples/algorithms/simple-grover/Host.cs" range="4-23":::
 
     然后便可以从命令行运行 C# 主机程序：
 
@@ -94,7 +94,7 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
     在 Visual Studio 中，若要通过 C# 运行新的 Q# 程序，请修改 `Driver.cs`，使之包含以下 C# 代码：
 
-    [!code-csharp[](~/quantum/samples/algorithms/simple-grover/Host.cs)]
+    :::code language="csharp" source="~/quantum/samples/algorithms/simple-grover/Host.cs" range="4-23":::
 
     然后按 F5，此时系统就会开始执行程序并弹出一个新窗口，其中包含以下结果： 
 
