@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 10/17/2019
 ms.topic: overview
 uid: microsoft.quantum.overview.katas
-ms.openlocfilehash: 7fb8dba2a10f9a983ebee52e394260bbdc0d2f9c
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.openlocfilehash: af54a2260147b8ca07919b241548aac85ed0d8a1
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73444134"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76821093"
 ---
 # <a name="learn-quantum-computing-with-the-quantum-katas"></a>使用 Quantum Katas 学习量子计算
 
@@ -19,7 +19,7 @@ ms.locfileid: "73444134"
 
 ## <a name="learning-by-doing"></a>从实践中学习
 
-此项目中收集的教程和 kata 强调从实践中学习：提供的编程任务涵盖的特定主题一开始很简单，到最后会极具挑战性。 每项任务都要求你填写一些代码；头几项任务可能只要求填写一行，而后面的任务则可能要求填写相当大的代码片段。
+此项目中收集的教程和练习强调从实践中学习：提供的编程任务涵盖的特定主题一开始很简单，到最后会极具挑战性。 每项任务都要求你填写一些代码；头几项任务可能只要求填写一行，而后面的任务则可能要求填写相当大的代码片段。
 
 最重要的是，kata 包括用于设置、运行和验证任务解决方案的测试框架。 这样你就可以获取解决方案的即时反馈，在其不正确的情况下重新考虑你的方法。
 
@@ -36,10 +36,12 @@ ms.locfileid: "73444134"
 
 ### <a name="introduction-to-quantum-computing-concepts"></a>量子计算概念简介
 
-* [复杂算术](https://github.com/microsoft/QuantumKatas/blob/master/tutorials/ComplexArithmetic)
-* [线性代数](https://github.com/microsoft/QuantumKatas/blob/master/tutorials/LinearAlgebra)
-* [量子位的概念](https://github.com/microsoft/QuantumKatas/blob/master/tutorials/Qubit)
-* [单量子位量子门](https://github.com/microsoft/QuantumKatas/blob/master/tutorials/SingleQubitGates)
+* [复杂算术](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic)
+* [线性代数](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra)
+* [量子位的概念](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/Qubit)
+* [单量子位量子门](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates)
+* [多量子位系统](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/MultiQubitSystems)
+* [多量子位门](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/MultiQubitGates)
 
 ### <a name="quantum-computing-fundamentals"></a>量子计算基础知识
 
@@ -52,10 +54,10 @@ ms.locfileid: "73444134"
 
 * [量子隐形传送](https://github.com/microsoft/QuantumKatas/tree/master/Teleportation)
 * [超密集编码](https://github.com/microsoft/QuantumKatas/tree/master/SuperdenseCoding)
-* [Deutsch–Jozsa 算法](https://github.com/microsoft/QuantumKatas/blob/master/tutorials/DeutschJozsaAlgorithm)
+* [Deutsch–Jozsa 算法](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringDeutschJozsaAlgorithm)
 * [实现 Grover 的搜索算法](https://github.com/microsoft/QuantumKatas/tree/master/GroversAlgorithm)
-* [探索 Grover 搜索算法的高级属性](https://github.com/microsoft/QuantumKatas/blob/master/tutorials/ExploringGroversAlgorithm)
-* 使用 Grover 的算法解决实际问题：[SAT 问题](https://github.com/microsoft/QuantumKatas/blob/master/SolveSATWithGrover)和[图形着色问题](https://github.com/microsoft/QuantumKatas/blob/master/GraphColoring)
+* [探索 Grover 搜索算法的高级属性](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringGroversAlgorithm)
+* 使用 Grover 的算法解决实际问题：[SAT 问题](https://github.com/microsoft/QuantumKatas/tree/master/SolveSATWithGrover)和[图形着色问题](https://github.com/microsoft/QuantumKatas/tree/master/GraphColoring)
 
 ### <a name="protocols-and-libraries"></a>协议和库
 
@@ -66,8 +68,8 @@ ms.locfileid: "73444134"
 
 ### <a name="entanglement-games"></a>纠缠游戏
 
-* [CHSH 游戏](https://github.com/microsoft/QuantumKatas/blob/master/CHSHGame)
-* [GHZ 游戏](https://github.com/microsoft/QuantumKatas/blob/master/GHZGame)
+* [CHSH 游戏](https://github.com/microsoft/QuantumKatas/tree/master/CHSHGame)
+* [GHZ 游戏](https://github.com/microsoft/QuantumKatas/tree/master/GHZGame)
 * [Mermin-Peres 魔方游戏](https://github.com/microsoft/QuantumKatas/tree/master/MagicSquareGame)
 
 ## <a name="resources"></a>资源

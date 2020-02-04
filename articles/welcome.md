@@ -6,16 +6,18 @@ author: natke
 ms.author: nakersha
 ms.date: 10/23/2019
 ms.topic: overview
-ms.openlocfilehash: 8fb3b7181632bd6f2b562735546adbf4b461a1b6
-ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+ms.openlocfilehash: 4308bf7e0e48e5735419fab836e479641455e9a5
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73530022"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76819921"
 ---
 # <a name="get-started-with-the-quantum-development-kit-qdk"></a>Quantum 开发工具包 (QDK) 入门
 
-欢迎使用 Microsoft Quantum 开发工具包！  此工具包中提供了全部所需工具，你可以通过它们来了解如何使用 Q# 进行量子编程。  为帮助你了解如何使用 Q# 执行量子计算，我们提供了此入门指南。该指南详细介绍了所有过程，适用于希望开始量子程序编码的人员，也适用于尚未准备好开始编码但是想要详细了解 Q# 和量子编程的人员。
+欢迎使用 Microsoft Quantum 开发工具包！  此工具包中提供了全部所需工具，你可以通过它们来了解如何使用 Q# 进行量子编程。  为帮助你了解如何使用 Q# 执行量子计算，我们提供了此入门指南。此指南适用于希望开始量子程序编码的人员，以及尚未准备好开始编码但是想要详细了解 Q# 和量子编程的人员。 
+
+如果准备开始编码，请[立即安装 QDK](xref:microsoft.quantum.install)。
 
 ## <a name="questions-about-quantum-computing"></a>关于量子计算的问题
 
@@ -54,9 +56,8 @@ Q# 和 Quantum 开发工具包提供了开发量子计算程序所需的工具�
 * 浏览 [Q# 示例](https://docs.microsoft.com/samples/browse/?languages=qsharp)并发现可通过量子计算解决的问题。
 
 * 使用所选主机编程语言和开发环境在本地计算机上进行开发：
-  * 使用 [Python](xref:microsoft.quantum.install#develop-with-python) 进行开发
-  * 使用 [Visual Studio](xref:microsoft.quantum.install#develop-with-c-on-windows-using-visual-studio) 进行开发
-  * 使用 [Visual Studio Code](xref:microsoft.quantum.install#develop-with-c-using-visual-studio-code) 进行开发
-  * 使用 [Jupyter Notebook](xref:microsoft.quantum.install#develop-with-jupyter-notebooks) 进行开发
+  * 使用 [Q# + Python](xref:microsoft.quantum.install.python) 进行开发
+  * 使用 [Q# + C#](xref:microsoft.quantum.install.cs) 进行开发
+  * 使用 [Q# Jupyter Notebooks](xref:microsoft.quantum.install.jupyter) 进行开发
 
 * 通过参与编写 [QDK](xref:microsoft.quantum.contributing) 开放源代码项目，成为 Microsoft Quantum 社区的一份子。

@@ -6,17 +6,17 @@ ms.author: megbrow@microsoft.com
 ms.date: 10/25/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.qrng
-ms.openlocfilehash: c3039b92c4b3235a397d5cf31280ac2673706e9d
-ms.sourcegitcommit: 2ca4755d1a63431e3cb2d2918a10ad477ec2e368
+ms.openlocfilehash: 134617455b720cc755b9ee9fb68fb59e624d3f1a
+ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2019
-ms.locfileid: "73462834"
+ms.lasthandoff: 01/29/2020
+ms.locfileid: "76820892"
 ---
 # <a name="quickstart-implement-a-quantum-random-number-generator-in-q"></a>快速入门：在 Q# 中实现量子随机数生成器
 以 Q# 编写的量子算法的一个简单示例是量子随机数生成器。 此算法利用量子力学特性来生成随机数。 
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 - Microsoft [Quantum 开发工具包](xref:microsoft.quantum.install)。
 - [创建 Q# 项目](xref:microsoft.quantum.howto.createproject)
@@ -33,10 +33,10 @@ ms.locfileid: "73462834"
         open Microsoft.Quantum.Intrinsic;
 
         operation QuantumRandomNumberGenerator() : Result {
-            using(q = Qubit())  { // Allocate a qubit.
-                H(q);             // Put the qubit to superposition. It now has a 50% chance of being 0 or 1.
-                let r = M(q);     // Measure the qubit value.
-                Reset(q);
+            using(qubit = Qubit())  { // Allocate a qubit.
+                H(qubit);             // Put the qubit to superposition. It now has a 50% chance of being 0 or 1.
+                let r = M(v);     // Measure the qubit value.
+                Reset(qubit);
                 return r;
             }
         }
@@ -57,16 +57,59 @@ ms.locfileid: "73462834"
 
 在 Bloch 球中，北极表示经典值 **0**，南极表示经典值 **1**。 任何叠加态都可以用球上的某个点来表示（用箭头表示）。 箭头末端越靠近极点，量子位塌缩成经典值（在度量时分配给该极点）的概率越高。 例如，下面的红色箭头表示的量子位状态在我们度量它时有较高的概率给出值 **0**。
 
-<img src="./Bloch.svg" width="175">
+<img src="~/media/qrng-Bloch.png" width="175">
 
 我们可以使用此表示法将代码的功能可视化：
 
 * 首先，我们一开始的量子位初始化为状态 **0**，对其应用 `H` 后会产生一个叠加态，其中获得 **0** 和 **1** 的概率相同。
 
-<img src="./H.svg" width="450">
+<img src="~/media/qrng-H.png" width="450">
 
 * 然后，我们度量该量子位并保存输出：
 
-<img src="./Measurement2.svg" width="450">
+<img src="~/media/qrng-meas.png" width="450">
 
 由于度量结果是完全随机的，我们获得了一个随机位。 我们可以调用此操作多次来创建多个整数。 例如，如果我们调用此操作三次来获取三个随机位，我们就可以生成随机的 3 位数（即 0 到 7 之间的随机数）。
+
+## <a name="creating-a-complete-random-number-generator-using-a-host-program"></a>使用主机程序创建完整的随机数生成器
+
+有了一个生成随机位的 Q# 操作以后，即可使用它通过主机程序构建完整的量子随机数生成器。
+
+ ### <a name="python-with-visual-studio-code-or-the-command-linetabtabid-python"></a>[在 Visual Studio Code 或命令行中使用 Python](#tab/tabid-python)
+ 
+ 要从 Python 运行你的新 Q# 程序，请将以下代码另存为 `host.py`：
+ 
+:::code language="python" source="~/quantum/samples/getting-started/qrng/host.py" range="11-30":::
+
+ 然后便可以从命令行运行 Python 主机程序：
+ ```bash
+ $ python host.py
+ Preparing Q# environment...
+ ..The random number generated is 42
+ ```
+ ### <a name="c-with-visual-studio-code-or-the-command-linetabtabid-csharp"></a>[在 Visual Studio Code 或命令行中使用 C#](#tab/tabid-csharp)
+ 
+ 要从 C# 运行你的新 Q# 程序，请修改 `Driver.cs` 以包含以下 C# 代码：
+ 
+ :::code language="csharp" source="~/quantum/samples/getting-started/qrng/Host.cs" range="4-39":::
+ 
+ 然后便可以从命令行运行 C# 主机程序：
+ 
+ ```bash
+ $ dotnet run
+ The random number generated is 42
+ ```
+
+ ### <a name="c-with-visual-studio-2019tabtabid-vs2019"></a>[在 Visual Studio 2019 中使用 C#](#tab/tabid-vs2019)
+
+ 在 Visual Studio 中，若要通过 C# 运行新的 Q# 程序，请修改 `Driver.cs`，使之包含以下 C# 代码：
+
+ :::code language="csharp" source="~/quantum/samples/getting-started/qrng/Host.cs" range="4-39":::
+
+ 然后按 F5，此时系统就会开始执行程序并弹出一个新窗口，其中包含生成的随机数： 
+
+ ```bash
+ $ dotnet run
+ The random number generated is 42
+ ```
+ ***
