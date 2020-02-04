@@ -44,7 +44,13 @@
       "ms.topic": "managed-reference",
       "ms.devlang":"qsharp",
       "searchScope": ["quantum", "q#", "qsharp"],
-      "titleSuffix": "Q# reference - Microsoft Quantum"
+      "titleSuffix": "Q# reference - Microsoft Quantum",
+       "disable_contribution_on_translation_quality": [
+        "MT",
+        "MTE75",
+        "MTE95",
+        "Blank"
+      ]
     },
     "fileMetadata": {
       "latex_macros": {
@@ -59,13 +65,7 @@
           "defeq": "\\mathrel{:=}",
           "dd": "\\mathrm{d}"
         }
-      },
-       "disable_contribution_on_translation_quality": [
-        "MT",
-        "MTE75",
-        "MTE95",
-        "Blank"
-      ]
+      }
     },
     "template": [],
     "dest": "quantum-api"
