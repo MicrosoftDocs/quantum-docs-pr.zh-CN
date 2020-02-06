@@ -6,12 +6,12 @@ ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.techniques.going-further
-ms.openlocfilehash: bd2b799d4001e280baccb04158247891b9cbb5bc
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 41713827a93d2cc97e198fa4ad377012c846cf8b
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820192"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036230"
 ---
 # <a name="going-further"></a>进一步 #
 
@@ -29,7 +29,7 @@ ms.locfileid: "76820192"
 接下来，编写 `Map`的快捷示例，使用★作为占位符，同时找出所需的类型。
 
 ```qsharp
-function Map(fn : ★ -> ★, values : ★[]) : ★[] {
+function Map(fn : (★ -> ★), values : ★[]) : ★[] {
     mutable mappedValues = new ★[Length(values)];
     for (idx in 0..Length(values) - 1) {
         set mappedValues w/= idx <- fn(values[idx]);
@@ -42,7 +42,7 @@ function Map(fn : ★ -> ★, values : ★[]) : ★[] {
 例如，从整数到 Paulis 的映射与从浮点数到字符串的映射大致相同：
 
 ```qsharp
-function MapIntsToPaulis(fn : Int -> Pauli, values : Int[]) : Pauli[] {
+function MapIntsToPaulis(fn : (Int -> Pauli), values : Int[]) : Pauli[] {
     mutable mappedValues = new Pauli[Length(values)];
     for (idx in 0..Length(values) - 1) {
         set mappedValues w/= idx <- fn(values[idx]);
@@ -50,7 +50,7 @@ function MapIntsToPaulis(fn : Int -> Pauli, values : Int[]) : Pauli[] {
     return mappedValues;
 }
 
-function MapDoublesToStrings(fn : Double -> String, values : Double[]) : String[] {
+function MapDoublesToStrings(fn : (Double -> String), values : Double[]) : String[] {
     mutable mappedValues = new String[Length(values)];
     for (idx in 0..Length(values) - 1) {
         set mappedValues w/= idx <- fn(values[idx]);
@@ -79,7 +79,7 @@ function MapDoublesToStrings(fn : Double -> String, values : Double[]) : String[
 对于 `Map`，我们编写：
 
 ```qsharp
-function Map<'Input, 'Output>(fn : 'Input -> 'Output, values : 'Input[]) : 'Output {
+function Map<'Input, 'Output>(fn : ('Input -> 'Output), values : 'Input[]) : 'Output[] {
     mutable mappedValues = new 'Output[Length(values)];
     for (idx in 0..Length(values) - 1) {
         set mappedValues w/= idx <- fn(values[idx]);

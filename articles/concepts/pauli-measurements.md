@@ -6,12 +6,12 @@ uid: microsoft.quantum.concepts.pauli
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 0a3ee595022ec389ecadcab081ccd126cb3252ae
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 300a1ebcfd5d7bca8b025c69adebaad03106433d
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819903"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036589"
 ---
 # <a name="pauli-measurements"></a>Pauli 度量值
 

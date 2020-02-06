@@ -7,12 +7,12 @@ ms.date: 10/19/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.howto.createproject
-ms.openlocfilehash: 5fa32f14291fa2070b49e4bb3b720cbf31ee614b
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: c093284f1ea33b72d4d264992b0ba6bf6bc72782
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819886"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036434"
 ---
 # <a name="create-a-q-project-in-your-development-environment"></a>在开发环境中创建 Q # 项目
 
@@ -30,7 +30,7 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 
 ## <a name="create-a-python-project"></a>创建 Python 项目
 
-1. 必备组件
+1. 先决条件
 
      * 安装[适用于 Python 的量程开发工具包](xref:microsoft.quantum.install.python)
 
@@ -77,7 +77,7 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 
 ## <a name="create-a-q-jupyter-notebook-project"></a>创建 Q # Jupyter Notebook 项目
 
-1. 必备组件
+1. 先决条件
 
     * 安装[适用于 Jupyter 笔记本的量程开发工具包](xref:microsoft.quantum.install.jupyter)
 
@@ -87,7 +87,7 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
     jupyter notebook
     ```
 
-1. 浏览到命令行上显示的 URL。 例如：[http://localhost:8888/?token=c790a52ba54f0cf77465c3c8983d776348285b0280d91b85 ]
+1. 浏览到命令行上显示的 URL。 例如：[http://localhost:8888/?token=c790a52ba54f0cf77465c3c8983d776348285b0280d91b85]
 
 1. 浏览器中将出现一个 Jupyter 页。 在 "**文件**" 选项卡上，选择 "**新建** > **Q #** " 以使用 q # 内核创建 Jupyter 笔记本。 将以下代码添加到第一个笔记本单元：
 
@@ -113,16 +113,16 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 
 ## <a name="create-a-c-project-on-windows-using-visual-studio"></a>使用 Visual C# Studio 在 Windows 上创建项目
 
-1. 必备组件
+1. 先决条件
 
     * 安装[适用于 Visual Studio 的量程开发工具包扩展](xref:microsoft.quantum.install.cs)
 
 1. 创建新的 Q# 应用程序
 
-    * 转到“文件” -> “新建” -> “项目”
+    * 转到“文件” **“新建”** “项目” ->  -> 
     * 在搜索框中键入 `Q#`
     * 选择“Q# 应用程序”
-    * 选择“下一步”
+    * 选择 **“下一步”** 。
     * 为应用程序选择名称和位置
     * 选择“创建”
 
@@ -142,13 +142,13 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 
 ## <a name="create-a-c-project-using-vs-code"></a>使用 VS Code C#创建项目
 
-1. 必备组件
+1. 先决条件
 
     * 安装[VS Code 的量程开发工具包扩展](xref:microsoft.quantum.install.cs)
 
 1. 创建新项目：
 
-    * 转到“视图” -> “命令面板”
+    * 转到“视图” **“命令面板”**  -> 
     * 选择**Q #：创建新项目**
     * 选择**独立控制台应用程序**
     * 导航到要在其中创建应用程序的文件系统上的位置
@@ -167,13 +167,13 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 
 ## <a name="create-a-c-project-using-the-dotnet-command-line-tool"></a>使用 `dotnet` C#命令行工具创建项目
 
-1. 必备组件
+1. 先决条件
 
     * 安装[命令行的量程开发工具包](xref:microsoft.quantum.install.cs)
 
 1. 创建新应用程序
 
-    ```bash
+    ```dotnetcli
     dotnet new console -lang Q# -o <project name>
     ```
 
@@ -187,7 +187,7 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 
 1. 运行应用程序
 
-    ```bash
+    ```dotnetcli
     dotnet run
     ```
 
@@ -195,6 +195,6 @@ Q # 项目包含包含量程代码的 Q # 文件，以及运行量程程序的�
 
 现在，使用命令行工具继续进行量程开发。
 
-## <a name="whats-next"></a>还有什么？
+## <a name="whats-next"></a>后续步骤
 
 现在您已在首选环境中创建了一个项目，您可以继续进行量程开发。

@@ -6,12 +6,12 @@ ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.update
-ms.openlocfilehash: ed2a90749bbe245dde97424fc3191682f995d85b
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: f19285ae0e008b3460d06430a236f098d716e268
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76819733"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036300"
 ---
 # <a name="update-the-microsoft-quantum-development-kit-qdk"></a>更新 Microsoft Quantum Development Kit （QDK）
 
@@ -28,10 +28,12 @@ ms.locfileid: "76819733"
 无论你是使用C#还是 Python 来承载 q # 操作，请按照以下说明更新你的 q # 项目。
 
 1. 首先，请检查是否安装了最新版本的[.NET Core SDK 3.1](https://dotnet.microsoft.com/download)。 在命令提示符下运行以下命令：
-    ```bash
+
+    ```dotnetcli
     dotnet --version
     ```
-验证输出 `3.1.100` 或更高版本。 如果未安装，请安装[最新版本](https://dotnet.microsoft.com/download)，然后重新检查。 然后根据您的设置（Visual Studio、Visual Studio Code 或直接命令行），按照以下说明进行操作。
+
+    验证输出 `3.1.100` 或更高版本。 如果未安装，请安装[最新版本](https://dotnet.microsoft.com/download)，然后重新检查。 然后根据您的设置（Visual Studio、Visual Studio Code 或直接命令行），按照以下说明进行操作。
 
 ### <a name="update-q-projects-in-visual-studio"></a>在 Visual Studio 中更新 Q # 项目
  
@@ -40,18 +42,22 @@ ms.locfileid: "76819733"
 3. 从菜单中选择 "**生成** -> **清理解决方案**"
 4. 在每个 .csproj 文件中，将目标框架更新为 `netcoreapp3.0` （如果它是库项目，则将 `netstandard2.1`）。
     也就是说，编辑以下格式的行：
+
     ```xml
     <TargetFramework>netcoreapp3.0</TargetFramework>
     ```
+
     可在[此处](https://docs.microsoft.com/dotnet/standard/frameworks#how-to-specify-target-frameworks)找到有关指定目标框架的详细信息。
 5. 保存并关闭解决方案中的所有文件
 6.  ->  **命令行** -> 选择工具**开发人员命令提示**
 7. 对于解决方案中的每个项目，请运行以下命令：
-    ```bash
+
+    ```dotnetcli
     dotnet add [project_name].csproj package Microsoft.Quantum.Development.Kit
     ```
-    如果你的项目使用任何其他的 Microsoft 量子包（如 Microsoft 量子），则也要为这些包运行命令。
-8. 关闭命令提示符并选择 "**生成** -> **生成解决方案**" （*请勿选择*"重新生成解决方案"，因为重新生成操作最初会失败）
+
+   如果你的项目使用任何其他的 Microsoft 量子包（如 Microsoft 量子），则也要为这些包运行命令。
+8. 关闭命令提示符并选择 "**生成** -> **生成解决方案**" （*不选择 "* 重新生成解决方案"）
 
 你现在可以直接跳到[更新你的 Visual STUDIO QDK 扩展](#update-visual-studio-qdk-extension)。
 
@@ -66,24 +72,30 @@ ms.locfileid: "76819733"
 
 1. 导航到包含项目文件的文件夹
 2. 运行以下命令：
-    ```bash
+
+    ```dotnetcli
     dotnet clean [project_name].csproj
     ```
 
 3. 在每个 .csproj 文件中，将目标框架更新为 `netcoreapp3.0` （如果它是库项目，则将 `netstandard2.1`）。
     也就是说，编辑以下格式的行：
+
     ```xml
     <TargetFramework>netcoreapp3.0</TargetFramework>
     ```
+
     可在[此处](https://docs.microsoft.com/dotnet/standard/frameworks#how-to-specify-target-frameworks)找到有关指定目标框架的详细信息。
 4. 运行以下命令：
-    ```bash
+
+    ```dotnetcli
     dotnet add package Microsoft.Quantum.Development.Kit
     ```
+
     如果你的项目使用任何其他的 Microsoft 量子包（如 Microsoft 量子），则也要为这些包运行命令。
 5. 保存并关闭所有文件。
 6. 为每个项目依赖项重复1-4，然后导航回到包含主项目的文件夹，然后运行：
-    ```bash
+
+    ```dotnetcli
     dotnet build [project_name].csproj
     ```
 
@@ -105,23 +117,24 @@ ms.locfileid: "76819733"
 
 1. 更新 `iqsharp` 内核 
 
-    ```bash
+    ```dotnetcli
     dotnet tool update -g Microsoft.Quantum.IQSharp
     dotnet iqsharp install
     ```
 
 2. 验证 `iqsharp` 版本
 
-    ```bash
+    ```dotnetcli
     dotnet iqsharp --version
     ```
 
-    应该会看到以下输出：
+    您应看到下列输出：
 
     ```bash
     iqsharp: 0.10.1912.501
     Jupyter Core: 1.2.20112.0
     ```
+
     请不要担心 `iqsharp` 版本是否较高，它应与[最新版本](xref:microsoft.quantum.relnotes)相匹配。
 
 3. 更新 `qsharp` 包
@@ -136,7 +149,7 @@ ms.locfileid: "76819733"
     pip show qsharp
     ```
 
-    应该会看到以下输出：
+    您应看到下列输出：
 
     ```bash
     Name: qsharp
@@ -144,7 +157,9 @@ ms.locfileid: "76819733"
     Summary: Python client for Q#, a domain-specific quantum programming language
     ...
     ```
+
 5. 从 `.qs` 文件的位置运行以下命令
+
     ```bash
     python -c "import qsharp; qsharp.reload()"
     ```
@@ -155,14 +170,14 @@ ms.locfileid: "76819733"
 
 1. 更新 `iqsharp` 内核
 
-    ```bash
+    ```dotnetcli
     dotnet tool update -g Microsoft.Quantum.IQSharp
     dotnet iqsharp install
     ```
 
 2. 验证 `iqsharp` 版本
 
-    ```bash
+    ```dotnetcli
     dotnet iqsharp --version
     ```
 
@@ -172,9 +187,11 @@ ms.locfileid: "76819733"
     iqsharp: 0.10.1912.501
     Jupyter Core: 1.2.20112.0
     ```
+
     请不要担心 `iqsharp` 版本是否较高，它应与[最新版本](xref:microsoft.quantum.relnotes)相匹配。
 
 3. 在 Jupyter Notebook 中的单元格上运行以下命令：
+
     ```
     %workspace reload
     ```
@@ -202,7 +219,7 @@ ms.locfileid: "76819733"
 
 2. 更新量程项目模板：
 
-   - 转到“视图” -> “命令面板”
+   - 转到“视图” **“命令面板”**  -> 
    - 选择**Q #：安装项目模板**
    - 几秒钟后，你应该会看到一个弹出窗口，确认 "项目模板已成功安装"
 
@@ -210,10 +227,10 @@ ms.locfileid: "76819733"
 
 1. 更新 .NET 的量程项目模板
 
-    ```bash
+    ```dotnetcli
     dotnet new -i Microsoft.Quantum.ProjectTemplates
     ```
 
-## <a name="whats-next"></a>还有什么？
+## <a name="whats-next"></a>后续步骤
 
 现在，你已在首选环境中更新了量程开发工具包，接下来可以继续开发并运行量程程序。 如果还没有编写程序，可以开始使用[第一个量程计划](xref:microsoft.quantum.write-program)。

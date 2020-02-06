@@ -6,12 +6,12 @@ uid: microsoft.quantum.libraries.characterization
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 51124dc78feedf6d5c85fe224898e66a1c5ed459
-ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+ms.openlocfilehash: 0c347113339a77e9eaf63dc0967c320f8b063a0e
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76870342"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036247"
 ---
 # <a name="quantum-characterization-and-statistics"></a>量程特性和统计信息 #
 
@@ -57,7 +57,7 @@ ms.locfileid: "76870342"
 \end{align}，因为此过程是通过多个 `Result` 值进行迭代的，所以不具有最大值 $ \ prod_k \Pr （\text{Result}\_k | \phi\_j） $ 的 eigenstates 将被指数地抑制。
 这样一来，如果正确选择了试验，推理过程将成为一种 eigenvalue 的状态。
 
-Bayes ' 定理进一步建议以 \begin{align} \frac{\sqrt{\Pr （\phi\_j）} \sqrt{\Pr （\text{Result} | \phi\_j）} \ket{\phi （\Sqrt{\Pr | \phi j）} \sum\_j}} {\Pr （\text{Result}\_j） \phi\_j \Sqrt{\Pr （\Phi | \text{Result}\_
+Bayes ' 定理进一步建议以 \begin{align} \frac{\sqrt{\Pr （\phi\_j）} \sqrt{\Pr （\text{Result} | \phi\_j）} \ket{\phi （\Sqrt{\Pr | \phi j）} \sum\_j}} {\Pr （\text{Result}\_j） \phi\_j \Sqrt{\Pr （\Phi | \text{Result}\_\_\_
 此处的 \end{align} $ \Pr （\phi\_j | \text{Result}） $ 可以解释为每个假设应 ascribe 给每个假设的概率：
 
 1. 计量之前的量程状态的知识，
@@ -88,7 +88,7 @@ Bayesian 阶段估算的理念非常简单。
 
 在观察到迭代阶段估算可能性函数的 `Result` 后，就可以使用 Bayes 的规则来规定应该将该阶段确定为遵循该观察阶段。
 具体而言，\begin{equation} \Pr （\phi | d） = \frac{\Pr （d | \phi） \Pr （\phi）} {\int \Pr （d | \phi） \Pr （\phi） {\mathrm d} \phi} \Pr （\phi），\end{equation}，其中 $d \in \\{\texttt{Zero}，\texttt{One}\\} $ 是 `Result`，其中 $ \Pr （\phi） $ 描述了之前的信仰 $ \phi $。
-然后，这会使迭代阶段的迭代本质明确明了，因为后验分布 $ \Pr （\phi | d） $ 介绍了我们的信仰，紧靠下一个 `Result`。
+然后，这会使迭代阶段的迭代本质明确明了，因为后验分布 $ \Pr （\phi | d） $ 描述了我们在下一 `Result`的情况之前的信仰。
 
 在此过程中，我们可以在此过程中的任何时间点将古典控制器推导为 \begin{equation} \hat{\phi} \mathrel{： =} \expect [\phi | \text{data}] = \int \phi \Pr （\phi | \text{data}） {\mathrm d} \phi，\end{equation}，其中 $ \text{data} $ 代表获得的所有 `Result` 值的整个记录。
 

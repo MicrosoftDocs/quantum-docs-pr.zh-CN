@@ -6,12 +6,12 @@ ms.author: gulow
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.chemistry.concepts.installation
-ms.openlocfilehash: fd43c783fa82c7219e143a57759919606fdd197f
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: de13d1814821c612ed74a347dc8ffb5881063576
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73184196"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036468"
 ---
 # <a name="chemistry-library-installation-and-validation"></a>化学库安装和验证
 
@@ -51,18 +51,18 @@ Install-Package Microsoft.Quantum.Chemistry
 
 **命令行或 Visual Studio Code：** 你可以使用命令行自己使用命令行，也可以从 Visual Studio Code 中，使用 `dotnet` 命令将 NuGet 包引用添加到你的项目：
 
-```bash
+```dotnetcli
 dotnet add package Microsoft.Quantum.Chemistry
 ```
 
 ## <a name="verifying-your-installation"></a>验证安装 
 
 与量程开发工具包的其余部分一样，量程化学库附带了多个完整记录的示例，可帮助你快速启动和运行。
-若要使用这些示例测试安装，请克隆[主示例存储库](https://github.com/Microsoft/Quantum)，然后运行其中一个示例。  例如，若要运行[`MolecularHydrogen`](https://github.com/Microsoft/Quantum/tree/master/Chemistry/MolecularHydrogen)示例：
+若要使用这些示例测试安装，请克隆[主示例存储库](https://github.com/Microsoft/Quantum)，然后运行其中一个示例。  例如，若要运行[`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogen)示例：
 
 ```bash
 git clone https://github.com/Microsoft/Quantum.git
-cd Quantum/Chemistry/MolecularHydrogen
+cd Quantum/samples/chemistry/MolecularHydrogen
 dotnet run
 ```
 
@@ -78,11 +78,11 @@ dotnet run
 
 MolecularHydrogen 示例使用手动配置的分子输入数据。  虽然这对小型示例而言很不错，但大规模的量程化学要求 Hamiltonians 或数十亿。 可缩放的计算化学包生成的此类 Hamiltonians 太大，无法手动导入。 
 
-量程开发工具包的量程化学库旨在与计算化学包一起正常工作，最值得注意的是，环境分子科学实验室开发的[**NWChem**](http://www.nwchem-sw.org/)计算化学平台（EMSL）。
+适用于量子开发工具包的量程化学库旨在与计算化学包一起正常工作，最值得注意的是，在太平洋西北部国家实验室，环境分子科学实验室（EMSL）开发的[**NWChem**](http://www.nwchem-sw.org/)计算化学平台。
 具体而言，`Microsoft.Quantum.Chemistry` 包提供的工具可用于加载在[Broombridge 架构](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)中表示的量程化学模拟问题的实例，还支持 NWChem 最新版本的导出。
 
 若要将 NWChem 与量程开发工具包一起使用，我们建议使用以下方法之一：
-- 开始使用在[IntegralData/YAML](https://github.com/Microsoft/Quantum/tree/master/Chemistry/IntegralData/YAML)的示例中提供的现有 Broombridge 文件。
+- 开始使用在[IntegralData/YAML](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML)的示例中提供的现有 Broombridge 文件。
 - 将[EMSL 箭头生成器用于](https://arrows.emsl.pnnl.gov/api/qsharp_chem)作为基于 web 的前端到 NWChem 的 Microsoft Quantum Development Kit，以生成新的 Broombridge 格式化分子输入文件。  
 - 使用 PNNL 提供的[Docker 映像](https://hub.docker.com/r/nwchemorg/nwchem-qc/)运行 NWChem，或
 - [编译](http://www.nwchem-sw.org/index.php/Compiling_NWChem)平台的 NWChem。
@@ -90,9 +90,10 @@ MolecularHydrogen 示例使用手动配置的分子输入数据。  虽然这对
 请参阅[使用 NWChem 的端到端](xref:microsoft.quantum.chemistry.examples.endtoend)的详细信息，了解有关如何使用 NWChem 到化学模型的详细信息，以使用量程开发套件化学库进行分析。
 
 ### <a name="getting-started-using-broombridge-files-provided-with-the-samples"></a>使用示例提供的 Broombridge 文件入门
-量程开发工具包示例存储库中的[IntegralData/YAML](https://github.com/Microsoft/Quantum/tree/master/Chemistry/IntegralData/YAML)文件夹包含 Broombridge 格式化的分子数据文件。  
 
-作为一个简单的示例，请使用化学 library 示例， [GetGateCount](https://github.com/Microsoft/Quantum/tree/master/Chemistry/GetGateCount)从 Broombridge 文件之一加载 Hamiltonian，并执行量程模拟 algorigthms 的入口估计：
+量程开发工具包示例存储库中的[IntegralData/YAML](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML)文件夹包含 Broombridge 格式化的分子数据文件。  
+
+作为一个简单的示例，请使用化学 library 示例， [GetGateCount](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/GetGateCount)从 Broombridge 文件之一加载 Hamiltonian，并执行量程模拟 algorigthms 的入口估计：
 
 ```bash
 cd Quantum/Chemistry/GetGateCount
@@ -171,5 +172,3 @@ Convert-NWChemToBroombridge ./input.nw
 Convert-NWChemToBroombridge -?
 Get-Help Convert-NWChemToBroombridge -Full
 ```
-
-

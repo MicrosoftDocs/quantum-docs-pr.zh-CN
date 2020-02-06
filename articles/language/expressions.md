@@ -6,12 +6,12 @@ ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.language.expressions
-ms.openlocfilehash: 09d493df4e1178fee1f7a5946cfda2f411111006
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 83fe697aa07a8ab28bd64437c8f5746bc5893b27
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73185199"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036299"
 ---
 # <a name="expressions"></a>表达式
 
@@ -61,7 +61,7 @@ Q # 中 `Double` 文本与中C#的双文本相同，只不过不需要尾随 "d"
 
 假设有两个整数或大整数表达式，则可以使用 `%` （取模）、`&&&` （位与）、`|||` （位或）或 `^^^` （位 XOR）运算符来形成一个新整数或大整数表达式。
 
-给定左侧的整数或大整数表达式，并在右侧输入整数表达式，`<<<` （算术左移位）或 `>>>` （算术右移位）运算符可用于创建新的表达式，该表达式的类型与左边的类型相同表达式.
+给定左侧的整数或大整数表达式，并在右侧输入整数表达式，则可以使用 `<<<` （算术左移位）或 `>>>` （算术右移位）运算符来创建与左侧表达式具有相同类型的新表达式。
 
 转换操作的第二个参数（移位量）必须大于或等于零;负移位量的行为是不确定的。
 移位运算的移位量还必须适合32位;否则，将引发运行时错误。
@@ -77,8 +77,8 @@ Q # 中 `Double` 文本与中C#的双文本相同，只不过不需要尾随 "d"
 
  `A` | `B` | `A / B` | `A % B`
 ---------|----------|---------|---------
- 5 | 2 | 2 | 第
- 5 | -2 | -2 | 第
+ 5 | 2 | 2 | 1
+ 5 | -2 | -2 | 1
  -5 | 2 | -2 | -1
  -5 | -2 | 2 | -1
 
@@ -94,9 +94,9 @@ Q # 中 `Double` 文本与中C#的双文本相同，只不过不需要尾随 "d"
 两个 `Bool` 文字值都 `true` 并 `false`。
 
 给定任意两个具有相同基元类型的表达式时，可以使用 `==` 和 `!=` 二元运算符来构造 `Bool` 表达式。
-如果两个表达式为（resp）相等，则表达式将为 true。
+如果两个表达式相等，则表达式将为 true; 否则为 false。
 
-不能比较用户定义类型的值，只能比较其值。 例如，
+不能比较用户定义类型的值，只能比较它们的解包值。 例如，使用 "解包" 运算符 `!` （在 " [Q # 类型模型" 页](xref:microsoft.quantum.language.type-model#user-defined-types)中进行了说明）。
 
 ```qsharp
 newtype WrappedInt = Int;     // Yes, this is a contrived example
@@ -112,7 +112,7 @@ let t = x == y;               // This will cause a compiler error.
 由于舍入效果，`Double` 值的相等比较可能会产生误导。
 例如，`49.0 * (1.0/49.0) != 1.0`。
 
-给定任意两个数值表达式，可以使用二元运算符 `>`、`<`、`>=`和 `<=` 来构造新的布尔表达式，如果第一个表达式分别大于、小于、大于或等于，则该表达式为 true或小于或等于第二个表达式。
+给定任意两个数值表达式，可以使用二元运算符 `>`、`<`、`>=`和 `<=` 来构造新的布尔表达式，如果第一个表达式分别大于、小于、大于或等于，或者小于或等于第二个表达式，则该值为 true。
 
 给定任意两个布尔表达式，都可以使用 `and` 和 `or` 二元运算符来构造新的布尔表达式，如果两个表达式（resp）均为 true，则这两个表达式均为 true。
 
@@ -125,7 +125,7 @@ Q # 允许在 `fail` 语句和 `Log` 标准函数中使用字符串。
 Q # 中的字符串是文本或内插字符串。
 字符串文本类似于大多数语言中的简单字符串文本：括在双引号中的 Unicode 字符序列 `"`。
 在字符串中，反斜杠字符 `\` 可以用于转义双引号字符，还可以将新行作为 `\n`插入，将回车作为 `\r`，将制表符作为 `\t`。
-对于实例：
+例如：
 
 ```qsharp
 "\"Hello world!\", she said.\n"
@@ -229,7 +229,7 @@ SomeOtherFun(Fun);           // This also causes a compilation error.
 如果未指定类型参数化的参数，则此参数对于部分应用程序是必需的（见下文）。
 在将具有不同函子支持的操作传递给可调用时，有时也很有用。
 
-例如，如果 `Func` 具有签名 `('T1, 'T2, 'T1) -> 'T2`，则 `Op1` 和 `Op2` 具有签名 `(Qubit[] => Unit is Adj)`，`Op3` 具有签名 `(Qubit[] => Unit)`，则调用 `Func` 作为第一个参数，`Op1` 为第二个参数，并 `Op3` 为第三个：
+例如，如果 `Func` 具有签名 `('T1, 'T2, 'T1) -> 'T2`，则 `Op1` 和 `Op2` 具有签名 `(Qubit[] => Unit is Adj)`，`Op3` 具有签名 `(Qubit[] => Unit)`，则调用 `Func` 作为第一个参数，`Op1` 为第二个参数，`Op2` 为第三个参数：`Op3`
 
 ```qsharp
 let combinedOp = Func<(Qubit[] => Unit), (Qubit[] => Unit is Adj)>(Op1, Op2, Op3);
@@ -347,7 +347,7 @@ let g = Foo(arg)!;      // Syntax error
 
 每种类型的默认值为：
 
-Type | 默认
+类型 | 默认
 ---------|----------
  `Int` | `0`
  `BigInt` | `0L`
@@ -488,21 +488,21 @@ newtype Complex = (Re : Double, Im : Double);
 
 按优先顺序排列的运算符，从高到低：
 
-运算符 | 元 | 描述 | 操作数类型
+运算符 | 元 | 说明 | 操作数类型
 ---------|----------|---------|---------------
- 尾随 `!` | 运算符 | 解包 | 任何用户定义类型
- `-`、`~~~`、`not` | 运算符 | 数值负，按位求补，逻辑求反 | `Int`、`BigInt` 或 `Double` `-``Int` `BigInt` `~~~``Bool`
- `^` | 二进制 | 整数幂 | 指数的 `Int` 或 `BigInt`，`Int` 指数
- `/`、`*`、`%` | 二进制 | 除法、乘法、integer 模数 | `Int`、`BigInt` 或 `Double` `/` 和 `*`，`Int` 或 `BigInt` `%`
- `+`，`-` | 二进制 | 加法或 string 和 array 串联，减法 | `Int`、`BigInt` 或 `Double`，另外 `String` 或 `+` 的任意数组类型
- `<<<`，`>>>` | 二进制 | 左移、右移 | `Int` 或 `BigInt`
- `<`、`<=`、`>`、`>=` | 二进制 | 小于、小于或等于、大于、大于等于或等于比较的比较 | `Int`、`BigInt` 或 `Double`
- `==`，`!=` | 二进制 | 相等，不等于比较 | 任何基元类型
- `&&&` | 二进制 | 位与 | `Int` 或 `BigInt`
- `^^^` | 二进制 | 按位 XOR | `Int` 或 `BigInt`
- <code>\|\|\|</code> | 二进制 | 按位 OR | `Int` 或 `BigInt`
- `and` | 二进制 | 逻辑与 | `Bool`
- `or` | 二进制 | 逻辑或 | `Bool`
+ 尾随 `!` | 一元 | 解包 | 任何用户定义类型
+ `-`、`~~~`、`not` | 一元 | 数值负，按位求补，逻辑求反 | `Int`、`BigInt` 或 `Double` `-``Int` `BigInt` `~~~``Bool``not`
+ `^` | Binary | 整数幂 | 指数的 `Int` 或 `BigInt`，`Int` 指数
+ `/`、`*`、`%` | Binary | 除法、乘法、integer 模数 | `Int`、`BigInt` 或 `Double` `/` 和 `*`，`Int` 或 `BigInt` `%`
+ `+`、`-` | Binary | 加法或 string 和 array 串联，减法 | `Int`、`BigInt` 或 `Double`，另外 `String` 或 `+` 的任意数组类型
+ `<<<`、`>>>` | Binary | 左移、右移 | `Int` 或 `BigInt`
+ `<`、`<=`、`>`、`>=` | Binary | 小于、小于或等于、大于、大于等于或等于比较的比较 | `Int`、`BigInt` 或 `Double`
+ `==`、`!=` | Binary | 相等，不等于比较 | 任何基元类型
+ `&&&` | Binary | 位与 | `Int` 或 `BigInt`
+ `^^^` | Binary | 按位“异或” | `Int` 或 `BigInt`
+ <code>\|\|\|</code> | Binary | 按位“或” | `Int` 或 `BigInt`
+ `and` | Binary | 逻辑与 | `Bool`
+ `or` | Binary | 逻辑或 | `Bool`
  `..` | 二进制/三元 | 范围运算符 | `Int`
- `?` `|` | 三元 | 条件逻辑 | 左侧的 `Bool`
+ `?` `|` | 三元 | 条件 | 左侧的 `Bool`
 `w/` `<-` | 三元 | 复制和更新 | 请参阅[复制和更新表达式](#copy-and-update-expressions)

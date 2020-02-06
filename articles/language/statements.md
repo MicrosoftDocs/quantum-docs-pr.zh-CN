@@ -6,16 +6,16 @@ uid: microsoft.quantum.language.statements
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 9157cf3336ce0894816dbfbaf13ce0e712a6b096
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 9a6f5d53ec21090d0c13f4369e0270d264cd1e9b
+ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821059"
+ms.lasthandoff: 02/06/2020
+ms.locfileid: "77036485"
 ---
 # <a name="statements-and-other-constructs"></a>语句和其他构造
 
-## <a name="comments"></a>注释
+## <a name="comments"></a>Comments
 
 注释以两个正斜杠（`//`）开头，并继续到行尾。
 注释可以出现在 Q # 源文件中的任何位置。
@@ -191,7 +191,7 @@ for (qubit in qubits) {
 ```qsharp
 newtype Complex = (Re : Double, Im : Double);
 
-function ElementwisePlus(reals : Double[], ims : Double[]) : Complex[] {
+function ComplexSum(reals : Double[], ims : Double[]) : Complex[] {
     mutable res = Complex(0.,0.);
 
     for (r in reals) {
@@ -273,7 +273,7 @@ let n = 8;
 ...                 // n is 8
 ```
 
-和
+and
 
 ```qsharp
 if (a == b) {
@@ -310,7 +310,7 @@ if (a == b) {
 
 ## <a name="control-flow"></a>控制流
 
-### <a name="for-loop"></a>For 循环
+### <a name="for-loop"></a>适用于循环
 
 `for` 语句支持对整数范围或数组进行迭代。
 语句由关键字 `for`、左括号 `(`、符号或符号元组、关键字 `in`、类型 `Range` 或数组的表达式、右括号 `)`和语句块组成。
@@ -475,7 +475,7 @@ return ();
 return (results, qubits);
 ```
 
-### <a name="fail"></a>失败
+### <a name="fail"></a>Fail
 
 Fail 语句结束操作的执行，并将错误值返回给调用方。
 它由关键字 `fail`组成，后跟一个字符串和一个终止分号。
