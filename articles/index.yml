@@ -1,122 +1,96 @@
 ### YamlMime:Landing
-title: Microsoft Quantum 开发工具包
-summary: 了解如何使用 Microsoft Quantum 开发工具包和 Q#（一种量子算法编程语言）。
+title: Microsoft Quantum 文档
+summary: 了解如何使用 Microsoft Quantum 开发工具包和量子算法语言 Q#。 了解关键概念并编写你的第一个量子程序。
 metadata:
-  title: Microsoft Quantum 开发工具包 - Q# API 参考
-  description: 了解如何使用 Microsoft Quantum 开发工具包和 Q#（一种量子算法编程语言）。 了解关键概念并编写你的第一个量子程序。  探索 QDK 的丰富工具和库。
+  title: Microsoft Quantum 文档 - Q# API 参考
+  description: 了解如何使用 Microsoft Quantum 开发工具包和量子编程语言 Q#。 了解关键概念并编写你的第一个量子程序。  探索 QDK 的丰富工具和库。
   ms.prod: quantum
   ms.topic: landing-page
   ms.collection: collection
   author: cjgronlund
   ms.author: cgronlun
   ms.date: 10/21/2019
-  ms.openlocfilehash: 53ee7b0a1ba7a83fb943f18afd27b5c699f848b2
-  ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+  ms.openlocfilehash: a39b230bc3b740afd23f0050b9c45df6094bea4e
+  ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76820719"
+  ms.lasthandoff: 02/06/2020
+  ms.locfileid: "77036570"
 landingContent:
 - title: Microsoft Quantum 入门
   linkLists:
   - linkListType: overview
     links:
-    - text: 关于量子计算的五个问题
+    - text: Quantum 开发工具包
       url: welcome.md
-  - linkListType: get-started
+  - linkListType: learn
+    links:
+    - text: 什么是量子计算？
+      url: overview/what-is-quantum-computing.md
+    - text: 量子计算机有何用途？
+      url: overview/quantum-computers.md
+    - text: 为何学习量子计算？
+      url: overview/why-learn-quantum-computing.md
+    - text: 什么是 Q#？
+      url: overview/what-is-qsharp.md
+    - text: 如何学习量子计算？
+      url: overview/how-to-learn-quantum-computing.md
+- title: 获取 Quantum 开发工具包
+  linkLists:
+  - linkListType: download
+    links:
+    - text: 安装 QDK
+      url: install-guide/index.md
+    - text: 更新 QDK
+      url: install-guide/update.md
+- title: 快速入门
+  linkLists:
+  - linkListType: quickstart
     links:
     - text: 生成量子随机数生成器
       url: quickstarts/qrng.md
     - text: Q# 的量子基础知识
       url: quickstart.md
-    - text: 了解如何使用 Q# 编写作用巨大的量子程序
+    - text: 量子加速：Grover 的搜索算法
       url: quickstarts/search.md
-    - text: 了解如何解决化学领域的最大挑战
-      url: https://cloudblogs.microsoft.com/quantum/2018/12/04/simulating-nature-with-the-new-microsoft-quantum-development-kit-chemistry-library/
-  - linkListType: learn
-    links:
-    - text: 了解如何使用 Quantum Katas
-      url: intro-to-katas.md
-    - text: '浏览 Q # 示例'
-      url: https://docs.microsoft.com/samples/browse/?languages=qsharp
-- title: 使用 Q#、Python 或 Jupyter Notebook 进行开发
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Python 安装
-      url: install-guide/pyinstall.md
-    - text: Jupyter 安装
-      url: install-guide/qjupyter.md
-  - linkListType: how-to-guide
-    links:
-    - text: 使用 Python 运行 Q# 示例
-      url: https://docs.microsoft.com/samples/browse/?languages=python&products=qdk
-    - text: 传送 Q# Jupyter 笔记本
-      url: https://docs.microsoft.com/samples/microsoft/quantum/quantum-teleportation/
-    - text: 如何构建 Q# Jupyter 笔记本
-      url: https://docs.microsoft.com/samples/microsoft/quantum/intro-to-qsharp-jupyter/
-- title: Q# 开发环境
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: Visual Studio 安装
-      url: install-guide/csinstall.md
-    - text: Visual Studio Code 安装
-      url: install-guide/csinstall.md
-- title: Q# 示例
-  linkLists:
-  - linkListType: how-to-guide
-    links:
-    - text: 三个简单算法
-      url: https://docs.microsoft.com/samples/microsoft/quantum/simple-quantum-algorithms
-    - text: 使用 Grover 算法进行搜索
-      url: https://docs.microsoft.com/samples/microsoft/quantum/searching-with-grovers-algorithm
-    - text: 量子隐形传送
-      url: https://docs.microsoft.com/samples/microsoft/quantum/quantum-teleportation/
-    - text: 所有示例
-      url: https://docs.microsoft.com/samples/browse/?languages=qsharp
-- title: Q# 语言和开发技术
-  linkLists:
-  - linkListType: learn
-    links:
-    - text: Q# 语言介绍
-      url: language/index.md
-  - linkListType: how-to-guide
-    links:
-    - text: 量子模拟器和主机应用程序
-      url: machines/index.md
-  - linkListType: how-to-guide
-    links:
-    - text: Q# 编程概述
-      url: techniques/file-structure.md
-    - text: 运算和函数
-      url: techniques/operations-and-functions.md
-    - text: 局部变量
-      url: techniques/local-variables.md
-    - text: 使用量子位
-      url: techniques/working-with-qubits.md
-    - text: 组合量子：隐形传送
-      url: techniques/putting-it-all-together.md
 - title: 量子计算概念
   linkLists:
   - linkListType: concept
     links:
     - text: 量子计算概念
       url: concepts/index.md
-    - text: 术语表
-      url: Glossary.md
-- title: Q# 算法和应用程序
+- title: Q# 编程语言
   linkLists:
-  - linkListType: reference
+  - linkListType: learn
     links:
-    - text: 振幅放大
-      url: libraries/standard/algorithms.md
-    - text: 量子相位估计
-      url: libraries/standard/algorithms.md#quantum-phase-estimation
-    - text: 秀尔算法
-      url: libraries/standard/applications.md#shors-algorithm
-    - text: 哈密顿模拟
-      url: libraries/standard/applications.md
+    - text: Q# 语言介绍
+      url: language/index.md
+    - text: Q# 开发技术
+      url: techniques/index.md
+- title: 目标计算机
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: 量子模拟器和主机应用程序
+      url: machines/index.md
+  - linkListType: architecture
+    links:
+    - text: 全状态模拟器
+      url: machines/full-state-simulator.md
+    - text: 资源估算器
+      url: machines/resources-estimator.md
+    - text: 跟踪模拟器
+      url: machines/qc-trace-simulator/index.md
+    - text: Toffoli 模拟器
+      url: machines/toffoli-simulator.md
+- title: Q# 学习资源
+  linkLists:
+  - linkListType: learn
+    links:
+    - text: 了解如何使用 Quantum Katas
+      url: intro-to-katas.md
+    - text: 浏览 Q# 代码示例
+      url: https://docs.microsoft.com/samples/browse/?languages=qsharp
 - title: Q# 库
   linkLists:
   - linkListType: reference
@@ -129,14 +103,18 @@ landingContent:
       url: libraries/chemistry/index.md
     - text: 化学概念
       url: libraries/chemistry/concepts/quantum-dynamics.md
-  - linkListType: how-to-guide
+- title: Q# 算法和应用程序（来自标准库）
+  linkLists:
+  - linkListType: reference
     links:
-    - text: 数字 Q# 示例
-      url: libraries/numerics/numerics.md
-    - text: 化学 Q# 示例
-      url: libraries/chemistry/samples/index.md
-    - text: NWChem 端到端
-      url: libraries/chemistry/samples/end-to-end.md
+    - text: 振幅放大
+      url: libraries/standard/algorithms.md
+    - text: 量子相位估计
+      url: libraries/standard/algorithms.md#quantum-phase-estimation
+    - text: 秀尔算法
+      url: libraries/standard/applications.md#shors-algorithm
+    - text: 哈密顿模拟
+      url: libraries/standard/applications.md
 - title: 社区和贡献
   linkLists:
   - linkListType: how-to-guide
