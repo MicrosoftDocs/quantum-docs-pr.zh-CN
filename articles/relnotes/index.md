@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: c135dacb2fc305fa97874cb4abcf4e2ac489b9e4
-ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+ms.openlocfilehash: be1eff8127be9fb024a1dc2de3ec82952ac2dc2b
+ms.sourcegitcommit: b7e205aaa7fa1ca9f0daa163e46154945f4bc965
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76871611"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77441036"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -21,13 +21,14 @@ ms.locfileid: "76871611"
 
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
 
+
 ## <a name="version-01020012831"></a>版本 0.10.2001.2831
 
 发行日期：  2020 年 1 月 29 日
 
 此版本包含以下各项：
 
-- 新的 Microsoft.Quantum.SDK NuGet 包。如需更多详细信息，请参阅[自述文件](https://github.com/microsoft/qsharp-compiler/blob/master/src/QuantumSdk/README.md)
+- 新的 Microsoft.Quantum.SDK NuGet 包
 - 添加了对 .NET Core 3.1 的支持。强烈建议安装版本 3.1.100，因为使用旧 .NET Core SDK 版本进行生成可能会导致问题
 - Microsoft.Quantum.QsCompiler.Experimental 下提供新的编译器转换
 - 在 IQ# 中将输出状态矢量作为 HTML 公开的新功能
