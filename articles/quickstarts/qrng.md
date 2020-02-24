@@ -6,12 +6,12 @@ ms.author: megbrow@microsoft.com
 ms.date: 10/25/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.qrng
-ms.openlocfilehash: 134617455b720cc755b9ee9fb68fb59e624d3f1a
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: d1ad2c1153814e2fa19a38307b2c668c77eae4e3
+ms.sourcegitcommit: b7e205aaa7fa1ca9f0daa163e46154945f4bc965
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820892"
+ms.lasthandoff: 02/18/2020
+ms.locfileid: "77441074"
 ---
 # <a name="quickstart-implement-a-quantum-random-number-generator-in-q"></a>快速入门：在 Q# 中实现量子随机数生成器
 以 Q# 编写的量子算法的一个简单示例是量子随机数生成器。 此算法利用量子力学特性来生成随机数。 
@@ -28,20 +28,7 @@ ms.locfileid: "76820892"
 
 1. 将 Operation.qs 文件的内容替换为以下代码：
 
-    ```qsharp
-    namespace Quantum {
-        open Microsoft.Quantum.Intrinsic;
-
-        operation QuantumRandomNumberGenerator() : Result {
-            using(qubit = Qubit())  { // Allocate a qubit.
-                H(qubit);             // Put the qubit to superposition. It now has a 50% chance of being 0 or 1.
-                let r = M(v);     // Measure the qubit value.
-                Reset(qubit);
-                return r;
-            }
-        }
-    }
-    ```
+ :::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="3-14":::
 
 如 [What is Quantum Computing?](xref:microsoft.quantum.overview.what)（什么是量子计算？）一文所述，量子位是可以处于叠加态的量子信息单元。 度量时，量子位只能是 0 或 1。 但在执行时，量子位的状态表示进行度量时读取值为 0 或 1 的概率。 此概率状态称为叠加。 我们可以根据此概率生成随机数。
 
@@ -75,7 +62,7 @@ ms.locfileid: "76820892"
 
 有了一个生成随机位的 Q# 操作以后，即可使用它通过主机程序构建完整的量子随机数生成器。
 
- ### <a name="python-with-visual-studio-code-or-the-command-linetabtabid-python"></a>[在 Visual Studio Code 或命令行中使用 Python](#tab/tabid-python)
+ ### <a name="python-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 Python](#tab/tabid-python)
  
  要从 Python 运行你的新 Q# 程序，请将以下代码另存为 `host.py`：
  
@@ -87,7 +74,7 @@ ms.locfileid: "76820892"
  Preparing Q# environment...
  ..The random number generated is 42
  ```
- ### <a name="c-with-visual-studio-code-or-the-command-linetabtabid-csharp"></a>[在 Visual Studio Code 或命令行中使用 C#](#tab/tabid-csharp)
+ ### <a name="c-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 C#](#tab/tabid-csharp)
  
  要从 C# 运行你的新 Q# 程序，请修改 `Driver.cs` 以包含以下 C# 代码：
  
@@ -100,7 +87,7 @@ ms.locfileid: "76820892"
  The random number generated is 42
  ```
 
- ### <a name="c-with-visual-studio-2019tabtabid-vs2019"></a>[在 Visual Studio 2019 中使用 C#](#tab/tabid-vs2019)
+ ### <a name="c-with-visual-studio-2019"></a>[在 Visual Studio 2019 中使用 C#](#tab/tabid-vs2019)
 
  在 Visual Studio 中，若要通过 C# 运行新的 Q# 程序，请修改 `Driver.cs`，使之包含以下 C# 代码：
 
