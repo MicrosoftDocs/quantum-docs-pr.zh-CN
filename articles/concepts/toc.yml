@@ -16,3 +16,5 @@
   href: circuits.md
 - name: 量子预言机
   href: oracles.md
+- name: 术语表
+  href: glossary.md

@@ -1,5 +1,3 @@
-- name: OSS 许可
-  href: licensing.md
 - name: prelude
   href: prelude.md
 - name: 经典数学
@@ -20,3 +18,5 @@
   href: error-correction.md
 - name: 应用程序
   href: applications.md
+- name: OSS 许可
+  href: licensing.md
