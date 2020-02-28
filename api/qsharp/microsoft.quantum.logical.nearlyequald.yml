@@ -1,0 +1,42 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.logical.nearlyequald
+name: NearlyEqualD
+type: function
+namespace: Microsoft.Quantum.Logical
+summary: 当且仅当两个输入几乎相等时（即在1e 的容错范围内），将返回 true。
+remarks: >-
+  以下项是等效的：
+
+
+  ```Q#
+
+  let cond = Microsoft.Quantum.Math.AbsD(a - b) < 1e-12;
+
+  let cond = NearlyEqualD(a, b);
+
+  ```
+syntax: 'function NearlyEqualD (a : Double, b : Double) : Bool'
+input:
+  content: '(a : Double, b : Double)'
+  types:
+  - name: a
+    summary: 要比较的第一个值。
+    isPrimitive: true
+    uid: Double
+  - name: b
+    summary: 要比较的第二个值。
+    isPrimitive: true
+    uid: Double
+output:
+  content: Bool
+  types:
+  - summary: 当且仅当 `a` 几乎等于 `b`时，`true`。
+    isPrimitive: true
+    uid: Bool
+metadata:
+  ms.openlocfilehash: 72aa5e424628e2336ff76c61cc4309101d1fdd8e
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77909562"

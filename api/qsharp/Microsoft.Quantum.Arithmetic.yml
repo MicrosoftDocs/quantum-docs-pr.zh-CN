@@ -139,6 +139,8 @@ operations:
   summary: 将有符号整数与有符号整数相乘 `xs` `ys` 并将结果存储在 `result`中，这必须最初为零。
 - uid: microsoft.quantum.arithmetic.preparefxp
   summary: 将量程固定点数字初始化为传统常量。
+- uid: microsoft.quantum.arithmetic.reflectaboutinteger
+  summary: 反映给定的传统整数的量程寄存器。
 - uid: microsoft.quantum.arithmetic.ripplecarryaddercdkm
   summary: 可逆的就地波纹-包含两个整数。
 - uid: microsoft.quantum.arithmetic.ripplecarryadderd
@@ -177,9 +179,9 @@ newtypes:
 - uid: microsoft.quantum.arithmetic.signedlittleendian
   summary: 存储在 little endian 中的带符号整数的类型（请参见 LittleEndian）。
 metadata:
-  ms.openlocfilehash: f4bdca1f7b6339079cd1e13cfafc2de4e592901a
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 905bac104c15881be6b2e600bd090ff650d63e0e
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870436"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77904547"

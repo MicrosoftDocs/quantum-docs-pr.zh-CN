@@ -1,0 +1,50 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.machinelearning.cyclicentanglinglayer
+name: CyclicEntanglingLayer
+type: function
+namespace: Microsoft.Quantum.MachineLearning
+summary: 返回沿给定轴进行了单独控制的旋转的数组，将循环排列在 qubits 的寄存器中，并通过不同的模型参数进行参数化。
+examples: >-
+  以下项是等效的：
+
+
+  ```Q#
+
+  let layer = CyclicEntanglingLayer(3, PauliX, 2);
+
+  let layer = [
+      ControlledRotation((0, [2]), PauliX, 0),
+      ControlledRotation((1, [0]), PauliX, 1),
+      ControlledRotation((2, [1]), PauliX, 2)
+  ];
+
+  ```
+syntax: 'function CyclicEntanglingLayer (nQubits : Int, axis : Pauli, stride : Int) : Microsoft.Quantum.MachineLearning.ControlledRotation[]'
+input:
+  content: '(nQubits : Int, axis : Pauli, stride : Int)'
+  types:
+  - name: nQubits
+    summary: 给定层处理的 qubits 的数目。
+    isPrimitive: true
+    uid: Int
+  - name: axis
+    summary: 给定层中每次旋转的旋转轴。
+    isPrimitive: true
+    uid: Pauli
+  - name: stride
+    summary: 每个旋转的目标索引和控件索引之间的分隔。
+    isPrimitive: true
+    uid: Int
+output:
+  content: Microsoft.Quantum.MachineLearning.ControlledRotation[]
+  types:
+  - summary: 在 `nQubits` qubits 的寄存器中布局循环的由两个 qubit 控制的循环组成的数组。
+    isArray: true
+    uid: microsoft.quantum.machinelearning.controlledrotation
+metadata:
+  ms.openlocfilehash: 64f64fcfe2cbb969a0d16fba07ca39d64b53cbd4
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77908729"

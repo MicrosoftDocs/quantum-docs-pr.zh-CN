@@ -4,6 +4,8 @@ name: Microsoft.Quantum.Diagnostics
 functions:
 - uid: microsoft.quantum.diagnostics.allequalityfactb
   summary: 断言布尔值的两个数组相等。
+- uid: microsoft.quantum.diagnostics.allequalityfacti
+  summary: 断言整数值的两个数组相等。
 - uid: microsoft.quantum.diagnostics.dumpmachine
   summary: 转储当前目标计算机的状态。
 - uid: microsoft.quantum.diagnostics.dumpregister
@@ -76,11 +78,11 @@ operations:
 newtypes:
 - uid: microsoft.quantum.diagnostics.test
   summary: 编译器可识别的属性，用于标记单元测试。
-summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含可用于诊断目的的函数和操作，包括断言操作和声明函数。"
+summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含可用于诊断目的的函数和操作，包括断言操作和声明函数。"
 metadata:
-  ms.openlocfilehash: a633a9555f380e6aa6c6701d277d026c58130ff2
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 353750a6714b1cdd54ff866657a39bb825e34425
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74858269"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77905907"

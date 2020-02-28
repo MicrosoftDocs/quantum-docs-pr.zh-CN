@@ -1,0 +1,31 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.machinelearning.localrotationslayer
+name: LocalRotationsLayer
+type: function
+namespace: Microsoft.Quantum.MachineLearning
+summary: 返回沿给定轴的不受控制的（单 qubit）旋转的数组，对寄存器中的每个 qubit 进行一次旋转，由不同的模型参数参数化。
+syntax: 'function LocalRotationsLayer (nQubits : Int, axis : Pauli) : Microsoft.Quantum.MachineLearning.ControlledRotation[]'
+input:
+  content: '(nQubits : Int, axis : Pauli)'
+  types:
+  - name: nQubits
+    summary: 给定层处理的 qubits 的数目。
+    isPrimitive: true
+    uid: Int
+  - name: axis
+    summary: 给定层中每次旋转的旋转轴。
+    isPrimitive: true
+    uid: Pauli
+output:
+  content: Microsoft.Quantum.MachineLearning.ControlledRotation[]
+  types:
+  - summary: 有关给定轴的受控旋转数组，每个 `nQubits` qubits 上一个轴。
+    isArray: true
+    uid: microsoft.quantum.machinelearning.controlledrotation
+metadata:
+  ms.openlocfilehash: 51883447aedaf43b5134d9adec6a6fafbe1bf399
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77909273"

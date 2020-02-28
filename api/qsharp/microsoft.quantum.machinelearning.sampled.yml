@@ -1,0 +1,32 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.machinelearning.sampled
+name: Sampled
+type: function
+namespace: Microsoft.Quantum.MachineLearning
+summary: 使用给定的计划来采集给定数组的示例。
+syntax: "function Sampled (schedule : Microsoft.Quantum.MachineLearning.SamplingSchedule, values : 'T[]) : 'T[]"
+input:
+  content: "(schedule : Microsoft.Quantum.MachineLearning.SamplingSchedule, values : 'T[])"
+  types:
+  - name: schedule
+    summary: 用于采样值的计划。
+    uid: microsoft.quantum.machinelearning.samplingschedule
+  - name: values
+    summary: 要取样的值数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T[]"
+  types:
+  - summary: 按给定计划后的值的元素数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+metadata:
+  ms.openlocfilehash: 6b6693f43e2684f3195c2f7ddbeb0268759020db
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77908593"

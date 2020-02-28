@@ -16,10 +16,12 @@ operations:
   summary: 按 `Z` 度量单个 qubit，并将其重置为标准基础状态 | 0 〉之后的度量。
 - uid: microsoft.quantum.measurement.multim
   summary: 按标准度量给定数组中的每个 qubit。
+- uid: microsoft.quantum.measurement.settobasisstate
+  summary: 通过测量 qubit 并在需要时应用位翻转，将 qubit 设置为给定的计算基础状态。
 metadata:
-  ms.openlocfilehash: 7964ab7b090fdff8f1a8af556e901dbab68cff9f
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: dc74db43b60728bf9924c05346bae4c6b329a265
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870024"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77905754"

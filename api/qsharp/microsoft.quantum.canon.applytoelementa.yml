@@ -1,0 +1,56 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applytoelementa
+name: ApplyToElementA
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: >-
+  将操作应用到数组的给定元素。
+
+
+  给定一个操作 `op`，索引 `index`和 `targets`目标的数组，将应用 `op(targets[index])`。
+syntax: "operation ApplyToElementA (op : ('T => Unit is Adj), index : Int, targets : 'T[]) : Unit"
+input:
+  content: "(op : ('T => Unit is Adj), index : Int, targets : 'T[])"
+  types:
+  - name: op
+    summary: 要应用的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: index
+    summary: 目标数组中的索引。
+    isPrimitive: true
+    uid: Int
+  - name: targets
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 要应用的操作的输入类型。
+functors:
+- Adjoint
+seeAlso:
+- microsoft.quantum.canon.applytoelement
+- microsoft.quantum.canon.applytoelementc
+- microsoft.quantum.canon.applytoelementca
+metadata:
+  ms.openlocfilehash: 9350a002eea26f5eb9a2471c0d35b8b7b8447462
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77908049"

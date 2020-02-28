@@ -1,10 +1,10 @@
 ### YamlMime:QSharpType
-uid: microsoft.quantum.preparation.preparearbitrarystate
-name: PrepareArbitraryState
+uid: microsoft.quantum.preparation.approximatelypreparearbitrarystate
+name: ApproximatelyPrepareArbitraryState
 type: operation
 namespace: Microsoft.Quantum.Preparation
 summary: >-
-  给定一组系数和一个小 endian 编码的量程寄存器，就给定的系数所描述的那个寄存器的状态进行准备。
+  给定一组系数和一个小 endian 编码的量程寄存器，就给定系数所描述的那一寄存器的状态进行准备，直到达到给定的近似值。
 
 
   此操作将准备一个具有复杂系数的任意量程状态 $ \ket{\psi} $ $r _j e ^ {$n t_j 计算基础状态 $ \ket{0 \cdots 0} $。
@@ -16,11 +16,15 @@ summary: >-
 
   \end{align} $ $
 remarks: 负的输入系数 $r 将被视为值为 $ | r_j | $ 的 _j < $0。 如果指定了小于 $ 2 ^ n $ 的元素 $ （r_j，t_j） = （0.0，0.0） $，则 `coefficients` 将填充。
-syntax: 'operation PrepareArbitraryState (coefficients : Microsoft.Quantum.Math.ComplexPolar[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
+syntax: 'operation ApproximatelyPrepareArbitraryState (tolerance : Double, coefficients : Microsoft.Quantum.Math.ComplexPolar[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 references: '- 量程逻辑电路的合成 Vivek Shende、Stephen Bullock、Igor Markov https://arxiv.org/abs/quant-ph/0406176'
 input:
-  content: '(coefficients : Microsoft.Quantum.Math.ComplexPolar[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  content: '(tolerance : Double, coefficients : Microsoft.Quantum.Math.ComplexPolar[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian)'
   types:
+  - name: tolerance
+    summary: 准备给定状态时要使用的近似值。
+    isPrimitive: true
+    uid: Double
   - name: coefficients
     summary: 由其绝对值和相位 $ （r_j，t_j） $ 表示的最大值为 $ 2 ^ n $ 复数系数的数组。 $J $ th 用于索引以小字节序格式编码的数字状态 $ \ket{j} $。
     isArray: true
@@ -39,9 +43,9 @@ functors:
 seeAlso:
 - microsoft.quantum.preparation.approximatelypreparearbitrarystate
 metadata:
-  ms.openlocfilehash: 2567df40b04c25e1cc579bf97787b2d8bbed6793
+  ms.openlocfilehash: 1d815ef49cef3355d6b7109bc58e444f673ec681
   ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77907607"
+  ms.locfileid: "77908389"

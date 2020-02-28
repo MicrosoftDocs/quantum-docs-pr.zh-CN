@@ -1,0 +1,15 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.machinelearning.sequentialmodel
+name: SequentialModel
+type: newtype
+namespace: Microsoft.Quantum.MachineLearning
+summary: 描述一种量程分类器模型，该模型由一系列参数化和控制旋转、旋转角度的赋值和模型所识别的两个类之间的偏差构成。
+syntax: newtype SequentialModel = (Microsoft.Quantum.MachineLearning.ControlledRotation[], Double[], Double);
+references: '- [arXiv:1804.00633](https://arxiv.org/abs/1804.00633)'
+metadata:
+  ms.openlocfilehash: 90e54e3eb5a23acdfde262f72ef3d6ccac1ff6c4
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77909052"

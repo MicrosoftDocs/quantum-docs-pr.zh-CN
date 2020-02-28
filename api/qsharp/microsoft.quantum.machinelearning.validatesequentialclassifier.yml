@@ -1,0 +1,39 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.machinelearning.validatesequentialclassifier
+name: ValidateSequentialClassifier
+type: operation
+namespace: Microsoft.Quantum.MachineLearning
+summary: 针对给定的一组预标记的示例，对给定的顺序分类器进行验证。
+syntax: 'operation ValidateSequentialClassifier (model : Microsoft.Quantum.MachineLearning.SequentialModel, samples : Microsoft.Quantum.MachineLearning.LabeledSample[], tolerance : Double, nMeasurements : Int, validationSchedule : Microsoft.Quantum.MachineLearning.SamplingSchedule) : Microsoft.Quantum.MachineLearning.ValidationResults'
+input:
+  content: '(model : Microsoft.Quantum.MachineLearning.SequentialModel, samples : Microsoft.Quantum.MachineLearning.LabeledSample[], tolerance : Double, nMeasurements : Int, validationSchedule : Microsoft.Quantum.MachineLearning.SamplingSchedule)'
+  types:
+  - name: model
+    summary: 要验证的顺序模型。
+    uid: microsoft.quantum.machinelearning.sequentialmodel
+  - name: samples
+    summary: 要用于验证给定模型的示例。
+    isArray: true
+    uid: microsoft.quantum.machinelearning.labeledsample
+  - name: tolerance
+    summary: 将每个样本编码为顺序分类器的输入时使用的近似值公差。
+    isPrimitive: true
+    uid: Double
+  - name: nMeasurements
+    summary: 要用于对每个样本进行分类的度量值的数量。
+    isPrimitive: true
+    uid: Int
+  - name: validationSchedule
+    summary: 从验证集绘制样本的计划。
+    uid: microsoft.quantum.machinelearning.samplingschedule
+output:
+  content: Microsoft.Quantum.MachineLearning.ValidationResults
+  types:
+  - uid: microsoft.quantum.machinelearning.validationresults
+metadata:
+  ms.openlocfilehash: 211f5110f11a1128da4c73edbdfc948bc87e7959
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77908474"

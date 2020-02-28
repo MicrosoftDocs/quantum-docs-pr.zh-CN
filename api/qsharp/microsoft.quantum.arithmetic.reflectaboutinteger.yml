@@ -1,0 +1,36 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arithmetic.reflectaboutinteger
+name: ReflectAboutInteger
+type: operation
+namespace: Microsoft.Quantum.Arithmetic
+summary: >-
+  反映给定的传统整数的量程寄存器。
+
+
+  给定一个量程寄存器，最初处于状态 $ \ sum_i \ alpha_i \ket{i} $，其中每个 $ \ket{i} $ 是表示整数 $i $ 的基本状态，它反映了给定整数 $ \ket{j} $、$ $ \ sum_i （-1） ^ {\ delta_ {ij}} \alpha 的基本状态的寄存器状态。_i \ket{i} $ $
+remarks: 此操作就地实现，无需显式分配额外的辅助 qubits。
+syntax: 'operation ReflectAboutInteger (index : Int, reg : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
+input:
+  content: '(index : Int, reg : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: index
+    summary: 对要反射的基础状态的传统整数进行索引。
+    isPrimitive: true
+    uid: Int
+  - name: reg
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+metadata:
+  ms.openlocfilehash: 4a76b08b8d8b7b70a63a615f8e69e26cd4df7129
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77908253"

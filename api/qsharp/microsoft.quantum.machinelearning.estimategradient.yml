@@ -1,0 +1,35 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.machinelearning.estimategradient
+name: EstimateGradient
+type: operation
+namespace: Microsoft.Quantum.MachineLearning
+summary: 估算特定模型和给定编码输入的顺序分类器的定型渐变。
+remarks: 此操作使用 Hadamard 测试和参数移位技术来估算渐变。
+syntax: 'operation EstimateGradient (model : Microsoft.Quantum.MachineLearning.SequentialModel, encodedInput : Microsoft.Quantum.MachineLearning.StateGenerator, nMeasurements : Int) : Double[]'
+input:
+  content: '(model : Microsoft.Quantum.MachineLearning.SequentialModel, encodedInput : Microsoft.Quantum.MachineLearning.StateGenerator, nMeasurements : Int)'
+  types:
+  - name: model
+    summary: 要估计其渐变的顺序模型。
+    uid: microsoft.quantum.machinelearning.sequentialmodel
+  - name: encodedInput
+    summary: 对顺序分类器的输入，编码为状态准备操作。
+    uid: microsoft.quantum.machinelearning.stategenerator
+  - name: nMeasurements
+    summary: 要在估计渐变时使用的度量值的数量。
+    isPrimitive: true
+    uid: Int
+output:
+  content: Double[]
+  types:
+  - summary: 给定输入和模型参数的定型渐变的估计值。
+    isArray: true
+    isPrimitive: true
+    uid: Double
+metadata:
+  ms.openlocfilehash: 05f80d57bc84e937e3a2580e9941a50ec60eab56
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77909409"

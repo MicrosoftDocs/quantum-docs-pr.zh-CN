@@ -5,6 +5,26 @@ type: function
 namespace: Microsoft.Quantum.Arrays
 summary: 给定为数组元素定义的数组和谓词，检查数组中是否至少有一个元素满足该谓词。
 remarks: "函数是为泛型类型定义的，也就是说，只要有一个数组 `'T[]` 和一个函数 `predicate: 'T -> Bool` 我们就可以生成一个 `Bool` 值，该值指示某个元素是否满足 `predicate`。"
+examples: >-
+  ```qsharp
+
+  open Microsoft.Quantum.Arrays;
+
+  open Microsoft.Quantum.Logical;
+
+
+  function IsThreePresent() : Bool {
+      let arrayOfInts = [1, 2, 3, 4, 5];
+      let is3Present = IsNumberPresentInArray(3, arrayOfInts);
+      return is3Present;
+  }
+
+
+  function IsNumberPresentInArray(n : Int, array : Int[]) : Bool {
+      return Any(EqualI(_, n), array);
+  }
+
+  ```
 syntax: "function Any (predicate : ('T -> Bool), array : 'T[]) : Bool"
 input:
   content: "(predicate : ('T -> Bool), array : 'T[])"
@@ -35,9 +55,9 @@ typeParameters:
 - uid: "'T"
   summary: '`array` 元素的类型。'
 metadata:
-  ms.openlocfilehash: 11e76d2b0b26d2dfcfed36d126e6ebb6ce76cef8
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 35555080f90588bc61d70e89ea412a23209408d6
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218373"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77905550"

@@ -1,0 +1,72 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.machinelearning
+name: Microsoft.Quantum.MachineLearning
+summary: " # <a name=\"summary\"></a>摘要\n 此命名空间提供量程机器学习应用程序中使用的函数和操作。\n\n # <a name=\"references\"></a>参考\n - Maria Schuld、Alex Bocharov、Krysta Svore、Nathan Wiebe、\"以线路为中心的量程分类器\" https://arxiv.org/abs/1804.00633。"
+functions:
+- uid: microsoft.quantum.machinelearning.approximateinputencoder
+  summary: 给定一组系数和公差后，将返回状态准备操作，以便将每个系数准备为计算基础状态的相应波幅，直到达到给定的公差。
+- uid: microsoft.quantum.machinelearning.combinedstructure
+  summary: 给定一个或多个受控旋转层时，将返回具有模型参数索引移动的单个层，以使不同的层由不同的模型参数参数化。
+- uid: microsoft.quantum.machinelearning.cyclicentanglinglayer
+  summary: 返回沿给定轴进行了单独控制的旋转的数组，将循环排列在 qubits 的寄存器中，并通过不同的模型参数进行参数化。
+- uid: microsoft.quantum.machinelearning.defaulttrainingoptions
+  summary: 返回用于定型分类器的一组默认选项。
+- uid: microsoft.quantum.machinelearning.featureregistersize
+  summary: 返回对特定功能向量进行编码所需的 qubits 的数目。
+- uid: microsoft.quantum.machinelearning.inferredlabel
+  summary: 给定一个分类概率和一个偏差，返回从该概率推导出的标签。
+- uid: microsoft.quantum.machinelearning.inferredlabels
+  summary: 给定一组分类概率和一个偏差，返回从每个概率推导出的标签。
+- uid: microsoft.quantum.machinelearning.inputencoder
+  summary: 给定一组系数和公差后，将返回状态准备操作，以便将每个系数准备为计算基础状态的相应波幅。
+- uid: microsoft.quantum.machinelearning.localrotationslayer
+  summary: 返回沿给定轴的不受控制的（单 qubit）旋转的数组，对寄存器中的每个 qubit 进行一次旋转，由不同的模型参数参数化。
+- uid: microsoft.quantum.machinelearning.misclassifications
+  summary: 给定一组推断标签和一组正确标签，返回每组标签不同的位置的索引。
+- uid: microsoft.quantum.machinelearning.nmisclassifications
+  summary: 给定一组推断标签和一组正确标签，返回每组标签不同的索引数。
+- uid: microsoft.quantum.machinelearning.nqubitsrequired
+  summary: 返回应用给定顺序分类器所需的 qubits 的数目。
+- uid: microsoft.quantum.machinelearning.partialrotationslayer
+  summary: 返回沿给定轴旋转的 qubit 旋转数组，由不同的模型参数参数化。
+- uid: microsoft.quantum.machinelearning.sampled
+  summary: 使用给定的计划来采集给定数组的示例。
+- uid: microsoft.quantum.machinelearning.schedulelength
+  summary: 返回给定抽样计划中的元素数。
+operations:
+- uid: microsoft.quantum.machinelearning.applysequentialclassifier
+  summary: 给定顺序分类器的结构和参数化，将分类器应用到 qubits 的寄存器。
+- uid: microsoft.quantum.machinelearning.estimateclassificationprobabilities
+  summary: 给定一组示例和顺序分类器，通过反复测量每个样本上分类器的输出来估算这些样本的分类概率。
+- uid: microsoft.quantum.machinelearning.estimateclassificationprobability
+  summary: 给定一个示例和顺序分类器，通过反复测量给定示例中分类器的输出来估计该样本的分类概率。
+- uid: microsoft.quantum.machinelearning.estimategradient
+  summary: 估算特定模型和给定编码输入的顺序分类器的定型渐变。
+- uid: microsoft.quantum.machinelearning.trainsequentialclassifier
+  summary: 给定顺序分类器的结构，训练给定标记定型集上的分类器。
+- uid: microsoft.quantum.machinelearning.trainsequentialclassifieratmodel
+  summary: 给定顺序分类器的结构，从特定模型开始训练给定标签定型集上的分类器。
+- uid: microsoft.quantum.machinelearning.validatesequentialclassifier
+  summary: 针对给定的一组预标记的示例，对给定的顺序分类器进行验证。
+newtypes:
+- uid: microsoft.quantum.machinelearning.controlledrotation
+  summary: 描述在其目标和控件索引、旋转轴和模型参数向量的索引方面的受控旋转。
+- uid: microsoft.quantum.machinelearning.labeledsample
+  summary: 一个示例，使用该示例所属的类进行标记。
+- uid: microsoft.quantum.machinelearning.samplingschedule
+  summary: 用于从一组示例中绘制批处理的计划。
+- uid: microsoft.quantum.machinelearning.sequentialmodel
+  summary: 描述一种量程分类器模型，该模型由一系列参数化和控制旋转、旋转角度的赋值和模型所识别的两个类之间的偏差构成。
+- uid: microsoft.quantum.machinelearning.stategenerator
+  summary: 描述为顺序分类器准备给定输入的操作。
+- uid: microsoft.quantum.machinelearning.trainingoptions
+  summary: 用于训练量子分类器的选项的集合。
+- uid: microsoft.quantum.machinelearning.validationresults
+  summary: 根据一组示例验证了分类器后得到的结果。
+metadata:
+  ms.openlocfilehash: be0c17b6f3e42c03bacadbf02c693980f89cbe39
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77908304"
