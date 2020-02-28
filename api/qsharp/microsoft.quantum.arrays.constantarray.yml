@@ -4,6 +4,15 @@ name: ConstantArray
 type: function
 namespace: Microsoft.Quantum.Arrays
 summary: 创建一个给定长度的数组，其中的所有元素都等于给定的值。
+examples: >-
+  下面的代码创建一个3个布尔值的数组，每个数组都等于 `true`：
+
+
+  ```qsharp
+
+  let array = ConstantArray(3, true);
+
+  ```
 syntax: "function ConstantArray (length : Int, value : 'T) : 'T[]"
 input:
   content: "(length : Int, value : 'T)"
@@ -13,7 +22,7 @@ input:
     isPrimitive: true
     uid: Int
   - name: value
-    summary: 将包含在新数组的每个索引中的值。
+    summary: 新数组的每个元素的值。
     uid: "'T"
     isLocal: true
 output:
@@ -24,9 +33,9 @@ output:
     uid: "'T"
     isLocal: true
 metadata:
-  ms.openlocfilehash: 7b641f4e037b760ac036abfc23ac197d7008bc0e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 3eb9380a9bf3c2229b936941d31041ef2adcce06
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73214429"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77905414"

@@ -1,0 +1,32 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.math.squarednorm
+name: SquaredNorm
+type: function
+namespace: Microsoft.Quantum.Math
+summary: >-
+  返回向量的2平方标准。
+
+
+  返回向量的2平方值;也就是说，如果输入 $ \vec{x} $，则返回 x_i ^ 2 $ 的 $ \ sum_i。
+syntax: 'function SquaredNorm (array : Double[]) : Double'
+input:
+  content: '(array : Double[])'
+  types:
+  - name: array
+    summary: 要返回其方形2标准的向量。
+    isArray: true
+    isPrimitive: true
+    uid: Double
+output:
+  content: Double
+  types:
+  - summary: '`array`的平方2标准。'
+    isPrimitive: true
+    uid: Double
+metadata:
+  ms.openlocfilehash: b0b8a4c81a07e24ca5559adfff0d0f5cf8febc6c
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77908984"

@@ -42,17 +42,10 @@ functions:
 
     \end{align} $ $
 operations:
+- uid: microsoft.quantum.preparation.approximatelypreparearbitrarystate
+  summary: 给定一组系数和一个小 endian 编码的量程寄存器，就给定系数所描述的那一寄存器的状态进行准备，直到达到给定的近似值。
 - uid: microsoft.quantum.preparation.preparearbitrarystate
-  summary: >-
-    返回一个准备给定量程状态的操作。
-
-
-    返回的操作 $U $ 准备带有复数系数的任意量程状态 $ \ket{\psi} $ $r 从 $n $-qubit 计算基础状态 $ \ket{0...0} $ _j e ^ {i t_j} $。
-
-
-    $ $ \begin{align} U\ket {0 ... 0} = \ket{\psi} = \frac{\ sum_ {j = 0} ^ {2 ^ n-1} r_j e ^ {i t_j} \ket{j}}{\sqrt{\ sum_ {j = 0} ^ {2 ^ n-1} | r_j | ^ 2}}。
-
-    \end{align} $ $
+  summary: 给定一组系数和一个小 endian 编码的量程寄存器，就给定的系数所描述的那个寄存器的状态进行准备。
 - uid: microsoft.quantum.preparation.preparechoistate
   summary: 将给定操作的 Choi – Jamiłkowski 状态准备到给定的引用和目标寄存器。
 - uid: microsoft.quantum.preparation.preparechoistatea
@@ -99,9 +92,9 @@ operations:
 
     \end{align} $ $。
 metadata:
-  ms.openlocfilehash: 2b9e3b89a29eb73b9b7417210628fce046c91209
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: dd28a9a066fabd5afab7114d78cc2aca79254e18
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216010"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77905669"

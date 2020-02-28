@@ -1,10 +1,10 @@
 ### YamlMime:QSharpType
-uid: microsoft.quantum.canon.multiplexz
-name: MultiplexZ
+uid: microsoft.quantum.canon.approximatelymultiplexz
+name: ApproximatelyMultiplexZ
 type: operation
 namespace: Microsoft.Quantum.Canon
 summary: >-
-  对 qubits 数组应用 Pauli Z 旋转。
+  对 qubits 数组应用 Pauli Z 旋转，根据给定的公差截断小旋转角度。
 
 
   这将应用按角度 $ \ theta_j $ 来执行循环的多次控制的单一操作，该操作将由 $n $-qubit 号 state $ \ket{j} $ 控制，按角度 $ \ qubit Pauli operator $Z $ 进行旋转。
@@ -16,11 +16,15 @@ summary: >-
 
   \end{align} $ $
 remarks: 如果指定了小于 $ 2 ^ n $ 的元素，则将用 $ \ theta_j = $0.0 填充 `coefficients`。
-syntax: 'operation MultiplexZ (coefficients : Double[], control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit'
+syntax: 'operation ApproximatelyMultiplexZ (tolerance : Double, coefficients : Double[], control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit'
 references: '- 量程逻辑电路的合成 Vivek Shende、Stephen Bullock、Igor Markov https://arxiv.org/abs/quant-ph/0406176'
 input:
-  content: '(coefficients : Double[], control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit)'
+  content: '(tolerance : Double, coefficients : Double[], control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit)'
   types:
+  - name: tolerance
+    summary: 小于其小系数的公差将被截断。
+    isPrimitive: true
+    uid: Double
   - name: coefficients
     summary: 最多 $ 2 ^ n $ 系数 $ \ theta_j $ 的数组。 $J $ th 用于索引以小字节序格式编码的数字状态 $ \ket{j} $。
     isArray: true
@@ -42,11 +46,11 @@ functors:
 - Adjoint
 - Controlled
 seeAlso:
-- approximatelymultiplexz
+- multiplexz
 metadata:
-  ms.openlocfilehash: fc686baf501a1bfaba9989e20a0da0787970d352
+  ms.openlocfilehash: 8ca9463a4444ce205cdeeeb3098d47eeab34d8e9
   ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: zh-CN
   ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77906553"
+  ms.locfileid: "77907913"

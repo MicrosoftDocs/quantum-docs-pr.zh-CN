@@ -1,0 +1,27 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.machinelearning.inputencoder
+name: InputEncoder
+type: function
+namespace: Microsoft.Quantum.MachineLearning
+summary: 给定一组系数和公差后，将返回状态准备操作，以便将每个系数准备为计算基础状态的相应波幅。
+syntax: 'function InputEncoder (coefficients : Double[]) : Microsoft.Quantum.MachineLearning.StateGenerator'
+input:
+  content: '(coefficients : Double[])'
+  types:
+  - name: coefficients
+    summary: 要编码为输入状态的系数。
+    isArray: true
+    isPrimitive: true
+    uid: Double
+output:
+  content: Microsoft.Quantum.MachineLearning.StateGenerator
+  types:
+  - summary: 准备将给定的系数作为给定寄存器上的输入状态的状态准备操作。
+    uid: microsoft.quantum.machinelearning.stategenerator
+metadata:
+  ms.openlocfilehash: 736c2495ec96981d2ca3dc81f7053e6bfb9aa48a
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77909256"

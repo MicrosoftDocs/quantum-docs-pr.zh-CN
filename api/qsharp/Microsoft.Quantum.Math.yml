@@ -53,9 +53,9 @@ functions:
 - uid: microsoft.quantum.math.complexpolarascomplex
   summary: 将 `ComplexPolar` 类型的复数转换为 `Complex`类型的复数。
 - uid: microsoft.quantum.math.complexpolartocomplex
-  summary: "\n> [!WARNING]\n> 已放弃\n\nComplexPolarToComplex 已被弃用。 请改用 @\"microsoft.quantum.math.complexpolarascomplex\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nComplexPolarToComplex 已被弃用。 请改用 @\"microsoft.quantum.math.complexpolarascomplex\"。"
 - uid: microsoft.quantum.math.complextocomplexpolar
-  summary: "\n> [!WARNING]\n> 已放弃\n\nComplexToComplexPolar 已被弃用。 请改用 @\"microsoft.quantum.math.complexascomplexpolar\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nComplexToComplexPolar 已被弃用。 请改用 @\"microsoft.quantum.math.complexascomplexpolar\"。"
 - uid: microsoft.quantum.math.continuedfractionconvergenti
   summary: 查找最接近 `fraction` 且分母小于或等于 `denominatorBound` 的连续分数收敛性
 - uid: microsoft.quantum.math.continuedfractionconvergentl
@@ -95,7 +95,7 @@ functions:
 - uid: microsoft.quantum.math.greatestcommondivisorl
   summary: 计算 $a $ 和 $b $ 的最大公因数。 GCD 始终为正值。
 - uid: microsoft.quantum.math.ieeeremainder
-  summary: 返回由指定数值相除后所得的余数。
+  summary: 返回一指定数字被另一指定数字相除的余数。
 - uid: microsoft.quantum.math.inversemodi
   summary: 返回 $b $，$a \cdot b = 1 （\operatorname{mod} \texttt{modulus}） $。
 - uid: microsoft.quantum.math.inversemodl
@@ -199,17 +199,19 @@ functions:
 - uid: microsoft.quantum.math.round
   summary: 将值舍入到最接近的整数。
 - uid: microsoft.quantum.math.signd
-  summary: 返回一个整数，该整数指示数字的符号。
+  summary: 返回指示数字符号的整数。
 - uid: microsoft.quantum.math.signi
-  summary: 返回一个整数，该整数指示数字的符号。
+  summary: 返回指示数字符号的整数。
 - uid: microsoft.quantum.math.signl
-  summary: 返回一个整数，该整数指示数字的符号。
+  summary: 返回指示数字符号的整数。
 - uid: microsoft.quantum.math.sin
   summary: 返回指定角度的正弦值。
 - uid: microsoft.quantum.math.sinh
   summary: 返回指定角度的双曲正弦值。
 - uid: microsoft.quantum.math.sqrt
   summary: 返回指定数字的平方根。
+- uid: microsoft.quantum.math.squarednorm
+  summary: 返回向量的2平方标准。
 - uid: microsoft.quantum.math.tan
   summary: 返回指定角度的正切值。
 - uid: microsoft.quantum.math.tanh
@@ -225,7 +227,7 @@ functions:
 - uid: microsoft.quantum.math.timesl
   summary: 返回两个输入的乘积。
 - uid: microsoft.quantum.math.truncate
-  summary: 计算数字的整数部分。
+  summary: 计算一个数字的整数部分。
 newtypes:
 - uid: microsoft.quantum.math.bigfraction
   summary: 表示 `p/q`形式的有理数。 整数 `p` 是元组的第一个元素，`q` 是元组的第二个元素。
@@ -253,9 +255,9 @@ operations:
 - uid: microsoft.quantum.math.randomsinglequbitpauli
   summary: 随机返回一个 qubit Pauli 运算符。
 metadata:
-  ms.openlocfilehash: f1a0185252155a39572a6b4159a88686533154c0
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 03a0eba2101d3a20b393b7f685ac463b1abcd727
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870180"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77905822"

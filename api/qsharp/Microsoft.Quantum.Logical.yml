@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.logical
 name: Microsoft.Quantum.Logical
-summary: " # <a name=\"summary\"></a>总结\n 包含用于处理逻辑表达式和布尔逻辑的函数。"
+summary: " # <a name=\"summary\"></a>摘要\n 包含用于处理逻辑表达式和布尔逻辑的函数。"
 functions:
 - uid: microsoft.quantum.logical.and
   summary: 返回两个值的布尔值。
@@ -45,6 +45,8 @@ functions:
   summary: 当且仅当一个数字小于或等于另一个数字时，返回 true。
 - uid: microsoft.quantum.logical.lessthanorequall
   summary: 当且仅当一个数字小于或等于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.nearlyequald
+  summary: 当且仅当两个输入几乎相等时（即在1e 的容错范围内），将返回 true。
 - uid: microsoft.quantum.logical.not
   summary: 返回值的布尔值求反。
 - uid: microsoft.quantum.logical.notequalb
@@ -61,14 +63,16 @@ functions:
   summary: 当且仅当两个输入不相等时，返回 true。
 - uid: microsoft.quantum.logical.notequalr
   summary: 当且仅当两个输入不相等时，返回 true。
+- uid: microsoft.quantum.logical.notnearlyequald
+  summary: 当且仅当两个输入不相等（即，不在1e 的容差中）时，返回 true。
 - uid: microsoft.quantum.logical.or
   summary: 返回两个值的布尔析取。
 - uid: microsoft.quantum.logical.xor
   summary: 返回两个值的布尔互斥析取。
 metadata:
-  ms.openlocfilehash: 12f462356dfe7ae4bf7c60110e71a9928bc8c178
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 356a31be888d7ed3a96e219f8f7b31151179d3eb
+  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73056280"
+  ms.lasthandoff: 02/28/2020
+  ms.locfileid: "77905890"
