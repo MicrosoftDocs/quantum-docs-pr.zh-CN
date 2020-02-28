@@ -1,24 +1,24 @@
 ---
-title: 量程 oracles |Microsoft Docs
-description: 量程 oracles
+title: 量子预言机
+description: 了解如何使用和定义量程 oracles、用于作为其他算法的输入的黑色框操作。
 author: cgranade
 uid: microsoft.quantum.concepts.oracles
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 07/11/2018
 ms.topic: article
-ms.openlocfilehash: 96949b371a3a5a1135d624690933a48ea0214a2e
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 1d1d0b0903db8e994166c3e8a5798f70742a1c7e
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "73184706"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904921"
 ---
 # <a name="quantum-oracles"></a>量程 Oracles
 
 Oracle $O $ 是一个 "黑色框" 操作，用于作为其他算法的输入。
 通常，此类操作使用传统函数定义 $f： \\{0，1\\} ^ n \to \\{0，1\\} ^ m $，这将采用 $n $ 位二进制输入，并生成 $m $ 位二进制输出。
 为此，请考虑使用特定的二进制输入 $x = （x_{0}，x_{1}，\dots ..，x_ {n-1}） $。
-我们可以将 qubit 状态标记为 $ \ket{\vec{x}} = \ket{x_{0}} \otimes \ket{x_{1}} \otimes \cdots \otimes $。
+我们可以将 qubit 状态标记为 $ \ket{\vec{x}} = \ket{x_{0}} \otimes \ket{x_{1}} \otimes \cdots \otimes \ket{x_ {n-1}} $。
 
 我们可能首先尝试定义 $O $，$O \ket{x} = \ket{f （x）} $，但这会有几个问题。
 首先，$f $ 可能会有不同的输入和输出大小（$n \ne m $），因此应用 $O $ 将更改寄存器中的 qubits 数。
@@ -43,16 +43,16 @@ $ $ \begin{align} O （\ket{x} \otimes \ket{y}） = \ket{x} \otimes \ket{y \oplu
 例如，假设 Hadamard 操作由 $H \ket{0} = \ket{+} $ 和 $H \ket{1} = \ket{-}$ 定义。
 如果希望了解 $H $ 如何处理 $ \ket{+} $，可以使用 $H $ 是线性的，
 
-$ $ \begin{align} H\ket {+} & = \frac{1}{\sqrt{2}} H （\ket{0} + \ket{1}） = \frac{1}{\sqrt{2}} （H\ket{0} + H\ket{1}） \\\\ & = \frac{1}{\sqrt{2}} （\票证 {+} + \ket{-}） = \frac12 （\ket{0} + \ket{1} + \ket{0}-\ket{1}） = \ket{0}。
+$ $ \begin{align} H\ket {+} & = \frac{1}{\sqrt{2}} H （\ket{0} + \ket{1}） = \frac{1}{\sqrt{2}} （H\ket{0} + H\ket{1}） \\\\ & = \frac{1}{\sqrt{2}} （\ket{{-}+ \ket{0} + \frac12{1}-\ket{0}） = \ket{1}。{0}
 \end{align} $ $
 
 如果定义 oracle $O $，则可以同样使用 $n + m $ qubits 上的任何状态 $ \ket{\psi} $ 都可以编写为
 
-$ $ \begin{align} \ket{\psi} & = \sum_{x \in \\{0，1\\} ^ n，y \in \\{0，1\\} ^ m} \alpha （x，y） \ket{x} \ket{y} \end{align} $ $
+$ $ \begin{align} \ket{\psi} & = \ sum_ {x \in \\{0，1\\} ^ n，y \in \\{0，1\\} ^ m} \alpha （x，y） \ket{x} \ket{y} \end{align} $ $
 
 其中 $ \alpha： \\{0，1\\} ^ n \times \\{0，1\\} ^ m \to \mathbb{C} $ 表示状态 $ \ket{\psi} $ 的系数。 因此
 
-$ $ \begin{align} O \ket{\psi} & = O \sum_{x \in \\{0，1\\} ^ n，y \in \\{0，1\\} ^ m} \alpha （x，y） \ket{x} \ket{y} \\\\ & = \sum_{x \in \\{0，1\\} ^ n，y \in \\{0，1\\} ^ m} \alpha （x，y） O \ket{x} \ket{y} \\\\ & = \sum_{x \in \\{0，1\\} ^ n，y \in \\{0，1\\} ^ m} \alpha （x，y） \ket{x} \ket{y \oplus f （x）}。
+$ $ \begin{align} O \ket{\psi} & = O \ sum_ {x \in \\{0，1\\} ^ n，y \in \\{0，1\\} ^ m} \alpha （x，y） \ket{x} \ket{y} \\\\ & = \ sum_ {x \in \\{0，1\\} ^ n，y \in \\{0，1\\} ^ m} \alpha （x，y） O \ket{x} \ket{y} \\\\ & = \ sum_ {x \in \\{0，1\\} ^ n，y \in \\{0，1\\} ^ m} \alpha （x，y） \ket{x} \ket{y \oplus f （x）}。
 \end{align} $ $
 
 ## <a name="phase-oracles"></a>阶段 oracles
@@ -60,7 +60,7 @@ $ $ \begin{align} O \ket{\psi} & = O \sum_{x \in \\{0，1\\} ^ n，y \in \\{0，
 例如，我们可能会定义 $O $，$ $ \begin{align} O \ket{x} = （-1） ^ {f （x）} \ket{x}。
 \end{align} $ $ 如果某阶段 oracle 最初在计算基础状态 $ \ket{x} $ 中操作，则此阶段是全局阶段，因此不能观察到。
 但如果应用于 superposition 或作为受控操作，此类 oracle 可能是非常强大的资源。
-例如，假设有一个阶段 orcale $O _f $ for qubit 函数 $f $。
+例如，假设有一个阶段 orcale $O _f $ 用于 qubit 函数 $f $。
 然后，$ $ \begin{align} O_f \ket{+} & = O_f （\ket{0} + \ket{1}）/\sqrt{2} \\\\ & = （（-1） ^ {f （0）} \ket{0} + （-1） ^ {f （1）} \ket{1}）/\sqrt{2} \\\\ & = （-1） ^ {f （0）} （\ket{0} + （-1） ^ {f （1）-f （0）} \ket{1}）/\sqrt{2} \\\\ & = （-1） ^ {f （0）} Z ^ {f （0）-f （1）} \ket{+}。
 \end{align} $ $
 

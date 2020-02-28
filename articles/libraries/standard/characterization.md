@@ -1,17 +1,17 @@
 ---
-title: 'Q # 标准库-特性 |Microsoft Docs'
-description: 'Q # 标准库-特性'
+title: 量程特性和统计信息
+description: 了解如何使用阶段估计中的度量统计信息来估算量程编程中的结果值。
 author: QuantumWriter
 uid: microsoft.quantum.libraries.characterization
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 0c347113339a77e9eaf63dc0967c320f8b063a0e
-ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
+ms.openlocfilehash: 7ed92c29020ccf389faa099f5bd80516af525578
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036247"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907182"
 ---
 # <a name="quantum-characterization-and-statistics"></a>量程特性和统计信息 #
 

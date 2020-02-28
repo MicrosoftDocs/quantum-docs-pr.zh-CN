@@ -1,17 +1,17 @@
 ---
-title: 基元操作计数器 |量程计算机跟踪模拟器 |Microsoft Docs
-description: 量子计算机跟踪模拟器的概述
+title: 基元操作计数器
+description: 了解 Microsoft QDK 基元操作计数器，该计数器跟踪量程程序中操作所使用的原始执行数。
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.primitive-counter
-ms.openlocfilehash: 1f554c0a1b92c8f6b59be3a9d9965e0e25bd074f
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 8bdb0aed370e72b58b23025f1685ad7ce1a77a43
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820413"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77905941"
 ---
 # <a name="primitive-operations-counter"></a>基元操作计数器  
 

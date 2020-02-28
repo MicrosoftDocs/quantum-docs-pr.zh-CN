@@ -1,17 +1,17 @@
 ---
-title: 获取能源水平估算 |Microsoft Docs
-description: 获取能源水平估计文档
+title: 获取能量级别估算
+description: '演练一个示例 Q # 程序，该程序估算分子 hydrogen 的能源级别值。'
 author: guanghaolow
 ms.author: gulow
 ms.date: 10/23/2018
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.energyestimate
-ms.openlocfilehash: 0fd457b152083af364d924502c18bc0813e34b83
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.openlocfilehash: 3242d8c6dc6fad2bd99055027dd7ce4ec3510ff4
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442577"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907301"
 ---
 # <a name="obtaining-energy-level-estimates"></a>获取能量级别估算
 估计能耗级别的值是量程化学的主要应用程序之一。 在此，我们概述了如何针对分子 Hydrogen 的规范示例执行此操作。 本部分中所述的示例在化学示例存储库中 `MolecularHydrogen`。 绘制输出的更直观的示例是 `MolecularHydrogenGUI` 演示。

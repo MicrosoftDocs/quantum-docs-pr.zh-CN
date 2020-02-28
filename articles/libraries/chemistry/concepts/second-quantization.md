@@ -1,17 +1,17 @@
 ---
-title: 第二个量化 |Microsoft Docs
-description: 第二个量化概念文档
+title: 第二量化
+description: 了解第二种量化方法，用于在量程编程中对电子结构建模。
 author: nathanwiebe2
 ms.author: nawiebe@microsoft.com
 ms.date: 10/09/2017
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.concepts.secondquantization
-ms.openlocfilehash: 4b7b5a6be6d0c1f3520128609e6b9fa83e5460d5
-ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
+ms.openlocfilehash: e17c97767b05395af46a82c4035337406c7e3218
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036417"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907335"
 ---
 # <a name="second-quantization"></a>第二量化
 

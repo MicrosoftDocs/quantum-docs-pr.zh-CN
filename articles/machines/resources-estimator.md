@@ -1,24 +1,24 @@
 ---
-title: 量程开发工具包资源估计器 |Microsoft Docs
-description: Microsoft 的量子开发工具包资源概述估计器
+title: 量程开发工具包资源估计器
+description: '了解资源估计器，这些资源估计在量程计算机上运行 Q # 操作的给定实例所需的资源。'
 author: anpaz-msft
 ms.author: anpaz@microsoft.com
 ms.date: 1/22/2019
 ms.topic: article
 uid: microsoft.quantum.machines.resources-estimator
-ms.openlocfilehash: 960fda3dade7648f9cd24496c3a49fd11d6f807a
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 37c901e5a861f0e8a10cdc911ad1d84ddd3e6e00
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820855"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907046"
 ---
 # <a name="the-resourcesestimator-target-machine"></a>ResourcesEstimator 目标计算机
 
 顾名思义，`ResourcesEstimator` 估算在量程计算机上运行 Q # 操作的给定实例所需的资源。
 它通过执行量程操作来实现此操作，而无需实际模拟量子计算机的状态;出于此原因，它可以估计使用上千个 qubits 的 Q # 操作的资源。
 
-## <a name="usage"></a>使用情况
+## <a name="usage"></a>用法
 
 `ResourcesEstimator` 只是另一种类型的目标计算机，因此它可用于运行任何 Q # 操作。 
 

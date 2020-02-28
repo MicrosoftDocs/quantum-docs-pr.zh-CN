@@ -1,17 +1,17 @@
 ---
-title: 'Q # 类型模型 |Microsoft Docs'
-description: Q# 类型模型
+title: 'Q # 数据类型'
+description: '了解问题解答 # 编程语言中使用的不同类型，包括内置类型、数组、元组、操作、函数和用户定义类型。'
 author: QuantumWriter
 uid: microsoft.quantum.language.type-model
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 0aabb144779da301b71ad215c8e975cc29b4dcce
-ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+ms.openlocfilehash: 1fc4c0b3fed9277c7f9f3ac421330df03c1b30e4
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76871628"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904649"
 ---
 # <a name="the-type-model"></a>类型模型
 
@@ -31,7 +31,7 @@ Q # 语言提供若干*基元类型*，可以从这些类型构造其他类型�
 - `Int` 类型表示64位有符号整数，例如： `2`、`107``-5`。
 - `BigInt` 类型表示任意大小的有符号整数，如 `2L`、`107L``-5L`。
    此类型基于 .NET <xref:System.Numerics.BigInteger>
-   类别.
+   type。
 - `Double` 类型表示双精度浮点数，例如： `0.0`、`-1.3``4e-7`。
 - `Bool` 类型表示可 `true` 或 `false`的布尔值。
 - `Qubit` 类型表示量程位或 qubit。
@@ -160,7 +160,7 @@ function PrintedMessage(value : Nested) : Unit {
 解包运算符仅解包一层包装。
 可以使用多个解包运算符来访问乘换行值。
 
-对于实例：
+例如：
 
 ```qsharp
 newtype WrappedInt = Int;

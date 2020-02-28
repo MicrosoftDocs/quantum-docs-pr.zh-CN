@@ -1,17 +1,17 @@
 ---
-title: 'Q # 计划概述-Q # 技术 |Microsoft Docs'
-description: 'Q # 计划概述-Q # 技术'
+title: Q# 编程概述
+description: 了解量程程序的基本结构，以及它如何表示量程状态的转换。
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.techniques.file-structure
-ms.openlocfilehash: e8f52e6b0d4382331665a8e845ef19a3a1beabf9
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 5c75bb5499efac2c49cbfc4555fd15b3e072181c
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820821"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907692"
 ---
 # <a name="q-program-overview"></a>Q# 编程概述
 

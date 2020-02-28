@@ -1,17 +1,17 @@
 ---
-title: Qubits use 检查器失效 |量程计算机跟踪模拟器 |Microsoft Docs
-description: 量子计算机跟踪模拟器的概述
+title: 失效的量子位使用检查器
+description: '了解 Microsoft QDK 失效 Qubits Use 检查器，它会检查您的 Q # 代码中是否有可能无效的 Qubits。'
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits
-ms.openlocfilehash: 093937346488725eacb69ef7da6affde764ec5c1
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: e2bbb12448e27f28db030a0084302fb24f46f26b
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820872"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907063"
 ---
 # <a name="invalidated-qubits-use-checker"></a>Qubits Use 检查器失效
 

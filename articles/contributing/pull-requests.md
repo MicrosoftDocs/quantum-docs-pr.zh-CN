@@ -1,17 +1,17 @@
 ---
-title: 打开拉取请求 |Microsoft Docs
-description: 打开拉取请求
+title: 打开拉取请求
+description: 了解如何在准备好向 Microsoft Quantum Development Kit 提供代码或文档时提交 GitHub 拉取请求。
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.pulls
-ms.openlocfilehash: d70a0a0319d14cfdae4910b897733d77b236f2f9
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: a4373a65688893c95e0475356c8f6fca0912f8c5
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183720"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907454"
 ---
 # <a name="opening-pull-requests"></a>打开拉取请求 #
 
@@ -42,19 +42,19 @@ ms.locfileid: "73183720"
 假设已在_分支_中启动了一个名为 `feature`的内容。
 那么， **Microsoft/量子**的分叉可能如下所示：
 
-![](~/media/git-workflow-step0.png)
+![GitHub 中的工作分支](~/media/git-workflow-step0.png)
 
 如果你在本地存储库中进行更改，则可以将另一个存储库中的更改_拉取_到你的存储库中，以捕获上游发生的任何更改。
 
-![](~/media/git-workflow-step1.png)
+![从上游存储库中提取和合并更改](~/media/git-workflow-step1.png)
 
 拉取请求的工作方式相同，但反向：打开拉取请求时，请求上游存储库请求你的参与。
 
-![](~/media/git-workflow-step2.png)
+![请求将更改请求回原始存储库](~/media/git-workflow-step2.png)
 
 当你打开某个存储库的拉取请求时，GitHub 将为社区中的其他人提供机会，以查看你的更改摘要、对这些更改进行评论，并为如何帮助做出更好的贡献提供建议。
 
-![](~/media/pull-request-header.png)
+![GitHub 中的拉取请求的屏幕截图](~/media/pull-request-header.png)
 
 使用此过程可帮助我们使用 GitHub 功能提高贡献，并为量程编程社区维护高质量的产品。
 

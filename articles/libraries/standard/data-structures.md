@@ -1,17 +1,17 @@
 ---
-title: 'Q # 标准库-数据结构 |Microsoft Docs'
-description: 'Q # 标准库-数据结构'
+title: 'Q # 标准库中的数据结构'
+description: '了解 Microsoft Q # 标准库中的数据结构、oracles 和 dynamical 生成器。'
 author: QuantumWriter
 uid: microsoft.quantum.libraries.data-structures
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 6eb47de84fdfbb9d35fdfc2988883f8e1cffa332
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: 46ac6794d1e21e111aa1d98e11a6f83194f8d54e
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74864349"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907777"
 ---
 # <a name="data-structures-and-modeling"></a>数据结构和建模 #
 
@@ -22,7 +22,7 @@ ms.locfileid: "74864349"
 然后，可在类型为 `Qubit[]` 的数组中使用，以避免在整数的量程表示形式之间进行转换时必须应用不必要的 $ \operatorname{SWAP} $ 门。
 同样，我们在上一节中看到，窗体 `(Int, Int -> T)` 的类型可用于表示随机访问集合，因此 <xref:microsoft.quantum.arrays.lookupfunction> 函数提供了一种从数组类型中构造此类类型的便利方法。
 
-### <a name="pairs"></a>对 ###
+### <a name="pairs"></a>翻译 ###
 
 Canon 支持对的函数样式表示法，由析构访问元组的补充：
 
@@ -31,7 +31,7 @@ let pair = (PauliZ, register); // type (Pauli, Qubit[])
 ApplyToEach(H, Snd(pair)); // No need to deconstruct to access the register.
 ```
 
-### <a name="arrays"></a>数组 ###
+### <a name="arrays"></a>阵列 ###
 
 Canon 提供了若干用于操作数组的函数。
 这些函数是类型参数化的，因此可以与任何 Q # 类型的数组一起使用。
@@ -199,7 +199,7 @@ Dynamical 模拟的主要目标是对在量程计算机的 qubits 中编码的�
 
 $ $ \begin{align} H & = \sum ^ {d-1} _ {j = 0} H_j，\end{align} $ $
 
-在量程计算机上，每个术语单独进行的时间演化非常容易实现。 例如，如果 $H _j $ 是一个 Pauli $X _1X_2 $ operator，该运算符作用于 qubit 寄存器 `qubits`的第1个和第二个元素，则在任何时候都可以通过调用操作 $t 来实现 `Exp([PauliX,PauliX], t, qubits[1..2])`$ 的时间 如稍后在 Hamiltonian 模拟中所述，一个解决方案是通过使用一系列简单的操作 $H $ 来估算时间演变。
+在量程计算机上，每个术语单独进行的时间演化非常容易实现。 例如，如果 $H _j $ 是一个 Pauli $X _1X_2 $ operator，该运算符作用于 qubit 寄存器 `qubits`的第1个和第二个元素，则在任何时候都可以通过调用操作 $t 来实现 `Exp([PauliX,PauliX], t, qubits[1..2])`$ 的时间`((Pauli[], Double, Qubit[]) => Unit is Adj + Ctl)` 如稍后在 Hamiltonian 模拟中所述，一个解决方案是通过使用一系列简单的操作 $H $ 来估算时间演变。
 
 $ $ \begin{align} U （t） & = \left （e ^ {-iH\_0 t/r} e ^ {-iH\_1 t/r} \cdots e ^ {-iH\_{d} + \Right （d ^ 2 \ max_j \\|H\_j\\| ^ 2 t ^ 2/r），\end{align} $ $
 

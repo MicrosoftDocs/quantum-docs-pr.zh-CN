@@ -1,17 +1,17 @@
 ---
-title: 高级矩阵概念 |Microsoft Docs
-description: 高级矩阵概念
+title: 高级矩阵概念
+description: 了解本征向量、本征值和 matrix 指数，这是用于描述和模拟量程算法的基本工具。
 author: QuantumWriter
 uid: microsoft.quantum.concepts.matrix-advanced
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: f87b3bcd19d2f98fea2a9724a280781a78c4cbb9
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: a83911e01ad758bbcb7f701000fd58b4f1c91cd2
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183754"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907573"
 ---
 # <a name="advanced-matrix-concepts"></a>高级矩阵概念 #
 
@@ -27,19 +27,19 @@ ms.locfileid: "73183754"
 
 作为另一个示例，请考虑使用[*对角矩阵*](https://en.wikipedia.org/wiki/Diagonal_matrix)$D $，其对角线上只包含非零条目：
 
-$ $ \begin{bmatrix} d_1 & 0 & 0 \\\\ 0 & d_2 & 0 \\\\ 0 & 0 & d_3 \end{bmatrix}。
+$ $ \begin{bmatrix} d_1 & 0 & 0 \\\\ 0 & d_2 & \\\\ & & d_3 \end{bmatrix}。
 $$
 
 矢量
 
-$ $ \begin{bmatrix}1 \\\\ 0 \\\\ 0 \end{bmatrix}、\begin{bmatrix}0 \\\\ 1 \\\\ 0 \ end {bmatrix} 和 \begin{bmatrix}0 \\\\ 0 \\\\1 \ 结束 {bmatrix} $ $
+$ $ \begin{bmatrix}1 \\\\ 0 \\\\ 0 \end{bmatrix}、\begin{bmatrix}0 \\\\ 1 \\\\ 0 \ end {bmatrix} 和 \begin{bmatrix}0 \\\\ 0 \\\\ 1 \ end {bmatrix} $ $
 
 此矩阵的本征向量是本征值 $d _1 $、$d _2 $ 和 $d _3 $）。 如果 $d _1 $、$d _2 $ 和 $d _3 $ 是不同的数字，则这些矢量（及其序列图）是矩阵 $D $ 的唯一本征向量。 通常，对于对角矩阵，可以轻松地将本征值和本征向量读取。 本征值是显示在对角线上的所有数字，其各自的本征向量是单位矢量，其中一项等于 $1 $，剩余项等于 $0 $。
 
-请注意，在上面的示例中，$D $ 构成 $ 3 $ 维向量的基础。 基础是一组矢量，以便可以将任何矢量编写为它们的线性组合。 更明确地 $v _1 $、$v _2 $ 和 $v _3 $ 窗体，如果任何向量 $v $ 可以编写为 $v = a_1 v_1 + a_2 v_2 + a_3 v_3 $ for 某些数字 $a _1 $、$a _2 $ 和 $a _3 $。
+请注意，在上面的示例中，$D $ 构成 $ 3 $ 维向量的基础。 基础是一组矢量，以便可以将任何矢量编写为它们的线性组合。 更明确地 $v _1 $、$v _2 $ 和 $v _3 $ 窗体，如果任何向量 $v $ 可以编写为 $v = a_1 v_1 + a_2 v_2 + a_3 v_3 $ $a _1 $、$a _2 $ 和 $a _3 $。
 
 回忆一下，Hermitian 矩阵（也称为 adjoint）是一个复杂的正方形矩阵，它等于其自身的共轭复数，而单一矩阵是一个复杂的正方形矩阵，其反转等于其复数共轭。
-对于 Hermitian 和单一矩阵，它们实质上是在量程计算中遇到的唯一矩阵，一般结果称为[*spectral 定理*](https://en.wikipedia.org/wiki/Spectral_theorem)，这会断言以下内容：对于任何 Hermitian 或单一矩阵 $M $，都存在单一 $U $ $M = U ^ \dagger D U $ 表示某个对角矩阵 $D $。 而且，$D $ 的对角线条目将是 $M $ 的本征值。
+对于本质上只是在量程计算中遇到的唯一矩阵的 Hermitian 和单一矩阵，一般结果称为[*spectral 定理*](https://en.wikipedia.org/wiki/Spectral_theorem)，这会断言以下内容：对于任何 Hermitian 或单一矩阵 $M $，都存在一个单一的 $U $，$M = U ^ \Dagger D U $ 表示某些对角线矩阵 $D $。 而且，$D $ 的对角线条目将是 $M $ 的本征值。
 
 我们已经知道如何计算对角矩阵的本征值和本征向量 $D $。 使用此定理，我们知道，如果 $v $ 是 $D $ 的 eigenvector 为 eigenvalue $c $，即 $Dv = cv $，则 $U ^ \dagger v $ 将是 $M $ 的 eigenvector $c $。 这是因为
 
@@ -55,7 +55,7 @@ $ $ e ^ A = \boldone + A + \frac{A ^ 2} {2！}+ \frac{A ^ 3} {3！}+ \cdots $ $
 
 了解如何计算矩阵指数的最简单方法是通过该矩阵的本征值和本征向量。  具体而言，以上所述的 spectral 定理说明对于每个 Hermitian 或单一矩阵 $A $ $U $ 和对角矩阵 $D $，$A = U ^ \dagger D U $。  由于 unitarity 的属性，因此，我们已 $A ^ 2 = U ^ \dagger D ^ 2 U $，并且类似于任何 power $p $ $A ^ p = U ^ \dagger D ^ p U $。  如果将此替换为我们获得的运算符指数的运算符定义：
 
-$ $ e ^ A = U ^ \dagger \left （\boldone + D + \frac{D ^ 2} {2！}+ \cdots \right） U = U ^ \dagger \begin{bmatrix}\exp （D_{11}） & 0 & \cdots & 0\\\\ 0 & \exp （D_{22}） & \cdots & 0\\\\ \vdots & \vdots & \ddots & \vdots\\\\ 0& 0 & \cdots & \exp （D_ {NN}） \end{bmatrix} U. $ $
+$ $ e ^ A = U ^ \dagger \left （\boldone + D + \frac{D ^ 2} {2！}+ \cdots \right） U = U ^ \dagger \begin{bmatrix}\exp （D_{11}） & 0 & \cdots & 0\\\\ 0 & \exp （D_{22}） & \cdots &\\\\ & \vdots & \vdots & \ddots\\\vdots \\ & & & D_
 
 换言之，如果您转换为矩阵的 eigenbasis $A $，则计算矩阵指数等效于计算矩阵本征值的普通指数。  在量程计算中，许多操作都涉及到执行矩阵指数，这种转换为矩阵的 eigenbasis 以简化执行运算符指数的这一技巧经常出现，这是许多量程算法（如）的基础Trotter –本指南稍后介绍的 Suzuki 的量程模拟方法。
 

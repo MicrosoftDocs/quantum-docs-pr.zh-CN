@@ -1,17 +1,17 @@
 ---
-title: 'Q # 标准库-算法 |Microsoft Docs'
-description: Q# 标准库
+title: 问答中的量程算法#
+description: 了解基本的量程计算算法，包括波幅放大、傅立叶转换、Draper 和 Beauregard 添加器以及相位估算。
 author: QuantumWriter
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.libraries.standard.algorithms
-ms.openlocfilehash: 1c45808207a2020f603448eba05900cdc40b4916
-ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
+ms.openlocfilehash: aaa9ddf47e5ea35e7e57b9828db082889d0e6adf
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036349"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907233"
 ---
 # <a name="quantum-algorithms"></a>量程算法 #
 

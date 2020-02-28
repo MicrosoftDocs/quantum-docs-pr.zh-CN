@@ -1,17 +1,17 @@
 ---
-title: 'Q # 标准库-prelude |Microsoft Docs'
-description: 'Q # 标准库-prelude'
+title: QDK 中的内部操作和函数
+description: 了解 QDK 中的内部操作和函数，包括传统函数和单一、旋转和度量运算。
 author: QuantumWriter
 uid: microsoft.quantum.libraries.standard.prelude
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: dddb3d4a5ebcdca16da41a5ae5520d98ea900a7f
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: b1c26c632f36b6c254d940a89b13638f7592ab80
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73183227"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907199"
 ---
 # <a name="the-prelude"></a>Prelude #
 
@@ -27,7 +27,7 @@ ms.locfileid: "73183227"
 - 实现度量的操作。
 
 由于 Clifford + $T $ 入口集[通用](xref:microsoft.quantum.concepts.multiple-qubits)于量程计算，因此这些操作足以满足 negligibly 小错误中的任何量程算法的要求。
-通过同时提供旋转，Q # 允许程序员在单个 qubit 单一和 CNOT-CONTAINS 入口库中工作。 此库更容易考虑，因为它不需要程序员直接学习 Clifford + $T $ 分解，而是因为存在用于将单个 qubit unitaries 编译到 Clifford 和 $T $ 入口的高效方法（请参阅[此处](xref:microsoft.quantum.more-information)）有关详细信息）。
+通过同时提供旋转，Q # 允许程序员在单个 qubit 单一和 CNOT-CONTAINS 入口库中工作。 此库更容易考虑，因为它不需要程序员直接学习 Clifford + $T $ 分解，而是因为存在用于将单个 qubit unitaries 编译到 Clifford 和 $T $ 入口的高效方法（有关详细信息，请参阅[此处](xref:microsoft.quantum.more-information)）。
 
 在可能的情况下，在 prelude 中定义的操作（作用于 qubits）允许应用 `Controlled` 变体，以便目标计算机将执行相应的分解。
 
@@ -101,12 +101,12 @@ Hadamard 入口特别重要，因为它可用于创建 $ \ket{0}$ 和 $ \ket{1}$
 除了上面的 Pauli 和 Clifford 操作，Q # prelude 还提供了多种表达旋转方式的方法。
 如[qubit 操作](xref:microsoft.quantum.concepts.qubit#single-qubit-operations)中所述，旋转能力对于量子算法至关重要。
 
-首先，我们可以使用 $H $ 和 $T $ 入口（其中 $H $ 是 Hadamard 操作，其中 \begin{equation} T \mathrel{： =} \begin{bmatrix} 1 & 0 \\\\% FIXME：这当前使用四whack 黑客。
+首先，我们将介绍可以使用 $H $ 和 $T $ 入口（其中 $H $ 为 Hadamard 操作），其中 \begin{equation} T \mathrel{： =} \begin{bmatrix} 1 & 0 \\\\% FIXME：这当前使用了故障回复 whack 黑客。
 0 & e ^ {i \pi/4} \end{bmatrix} \end{equation} 这是 <xref:microsoft.quantum.intrinsic.s> 操作的平方根，$T ^ 2 = S $。
 $T $ 入口反过来又由 <xref:microsoft.quantum.intrinsic.t> 操作实现，并具有签名 `(Qubit => Unit is Adj + Ctl)`，这表示它是对 qubit 的单一操作。
 
 尽管这是足以描述任意单一 qubit 操作的原则，但不同的目标计算机可能具有更有效的方法来旋转 Pauli 运算符，因此 prelude 包括多种方法来 convienently表达此类旋转。
-其中最基本的方法是 <xref:microsoft.quantum.intrinsic.r> 操作，该操作实现绕指定的 Pauli 轴、\begin{equation} R （\sigma、\phi） \mathrel{： =} \exp （-i \phi \sigma/2）、\end{equation} （其中 $ \sigma $ 为 Pauli 运算符，$ \phi $ 为角度，其中 $\exp $ 表示矩阵指数。
+其中最基本的方法是 <xref:microsoft.quantum.intrinsic.r> 操作，该操作实现绕指定的 Pauli 轴、\begin{equation} R （\sigma、\phi） \mathrel{： =} \exp （-i \phi \sigma/2）、\end{equation} （其中 $ \sigma $ 为 Pauli 运算符，$ \phi $ 为角度，其中 $ \exp $ 表示矩阵指数）的旋转。
 它具有签名 `((Pauli, Double, Qubit) => Unit is Adj + Ctl)`，其中，输入的前两个部分表示 $R （\sigma，\phi） $ 指定单一运算符所需的传统参数 $ \sigma $ 和 $ \phi $。
 可以部分应用 $ \sigma $ 和 $ \phi $，以获取其类型为单一 qubit 单一的操作。
 例如，`R(PauliZ, PI() / 4, _)` 的类型 `(Qubit => Unit is Adj + Ctl)`。
@@ -155,7 +155,7 @@ $T $ 入口反过来又由 <xref:microsoft.quantum.intrinsic.t> 操作实现，�
 
 除了上面的单一 qubit 操作外，prelude 还定义了多个多 qubit 操作。
 
-首先，<xref:microsoft.quantum.intrinsic.cnot> 操作执行标准受控`NOT` 门，\begin{equation} \operatorname{CNOT} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & 1\\\\ 0 & 0 & 1 & 0 \end{bmatrix}。
+首先，<xref:microsoft.quantum.intrinsic.cnot> 操作执行标准受控-`NOT` 门，\begin{equation} \operatorname{CNOT} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & \\\\ & 0 & 0 & 1 \\\\
 \end{equation} 它具有 `((Qubit, Qubit) => Unit is Adj + Ctl)`的签名，表示 $ \operatorname{CNOT} $ act unitarily 两个单独的 qubits。
 `CNOT(q1, q2)` 与 `(Controlled X)([q1], q2)`相同。
 由于 `Controlled` 函子允许对寄存器进行控制，因此，我们使用数组文本 `[q1]` 指示只需要一个控件。
@@ -165,7 +165,7 @@ $T $ 入口反过来又由 <xref:microsoft.quantum.intrinsic.t> 操作实现，�
 `CCNOT(q1, q2, q3)` 与 `(Controlled X)([q1, q2], q3)`相同。
 
 <xref:microsoft.quantum.intrinsic.swap> 操作将交换两个 qubits 的量程状态。
-也就是说，它实现了单一矩阵 \begin{equation} \operatorname{SWAP} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 1 & 0 & \\\\ &0 & 0 & 1 \end{bmatrix}。
+也就是说，它实现了单一矩阵 \begin{equation} \operatorname{SWAP} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 1 & 0 &\\\\
 \end{equation} 签名 `((Qubit, Qubit) => Unit is Adj + Ctl)`。
 `SWAP(q1,q2)` 等效于 `CNOT(q1, q2)` 后跟 `CNOT(q2, q1)`，然后 `CNOT(q1, q2)`。
 
@@ -176,7 +176,7 @@ $T $ 入口反过来又由 <xref:microsoft.quantum.intrinsic.t> 操作实现，�
 > 受控交换门（也称为 Fredkin 入口）的强大功能足以包含所有传统计算。
 
 最后，prelude 提供两个用于表示多 qubit Pauli 运算符的指数的操作。
-<xref:microsoft.quantum.intrinsic.exp> 操作基于 Pauli 矩阵的 tensor 产品执行旋转，如多 qubit 单一 \begin{equation} \operatorname{Exp} （\vec{\sigma}，\phi） \mathrel{： =} \exp\left （i \phi \sigma_0 \otimes \sigma_1 \otimes \cdots \otimes \sigma_n \right）、\end{equation} （其中 $ \vec{\sigma} = （\sigma_0，\sigma_1，\dots ..，\sigma_n） $ 是一系列单 qubit Pauli 运算符，其中 $ \phi $ 为角度。
+<xref:microsoft.quantum.intrinsic.exp> 操作基于 Pauli 矩阵的 tensor 产品执行旋转，由多 qubit 单一 \begin{equation} \operatorname{Exp} （\vec{\sigma}，\phi） \mathrel{： =} \exp\left （i \phi \ sigma_0 \otimes \ sigma_1 \otimes \cdots \otimes \ sigma_n \right）、\end{equation} （其中 $ \vec{\sigma} = （\ sigma_0，\ sigma_1，\dots ..，\ sigma_n） $ 为一系列单 qubit Pauli 运算符，其中 $ \phi $ 为角度。
 `Exp` 旋转将 $ \vec{\sigma} $ 表示为 `Pauli` 元素的数组，使其具有签名 `((Pauli[], Double, Qubit[]) => Unit is Adj + Ctl)`。
 
 <xref:microsoft.quantum.intrinsic.expfrac> 操作使用上述 dyadic 分数表示法执行相同的旋转。
@@ -204,8 +204,8 @@ $T $ 入口反过来又由 <xref:microsoft.quantum.intrinsic.t> 操作实现，�
 请注意，联合度量不同于分别测量每个 qubit。
 例如，请考虑状态 $ \ket{11} = \ket{1} \otimes \ket{1} = X\otimes X \ket{00}$。
 $Z 每个 _0 $ 和分别 _1 $ $Z，得到 $r _0 = $1 和 $r _1 = $1 的结果。
-$Z 度量 Z_1 $，但我们得到了单一结果 $r _ {\textrm{joint}} = $0，表示 $ \ket{11}$ 的 pairity 为正值。
-采用不同的方式： $ （-1） ^ {r_0 + r_1} = （-1） ^ r_ {\textrm{joint}}） $。
+$Z 度量 Z_1 $，则会得到一个结果 $r _ {\textrm{joint}} = $0，表示 ${11}\ket 的 pairity $ 为正值。
+以不同的方式，$ （-1） ^ {r_0 + r_1} = （-1） ^ r_ {\textrm{joint}}） $。
 严重的是，由于我们*只*会从此度量值中了解奇偶校验，因此将保留在 superposition 的 2 2-qubit 状态之间、$ \ket{00}$ 和 $ \ket{11}$ 之间显示的任何量程信息。
 此属性将在以后介绍错误更正。
 
@@ -235,7 +235,7 @@ return rs;
 虽然这对于本地模拟器不存在问题，但在将远程模拟器或实际硬件用作目标计算机时，这可能是一个性能问题。
 也就是说，单个目标计算机可以通过使用对该特定系统更有效的版本替代这些操作来缓解此性能影响。
 
-### <a name="math"></a>符号 ###
+### <a name="math"></a>数学 ###
 
 <xref:microsoft.quantum.extensions.math> 命名空间提供 .NET 基类库[`System.Math` 类](https://docs.microsoft.com/dotnet/api/system.math?view=netframework-4.7.1)中许多有用的函数。
 这些函数的使用方式与任何其他 Q # 函数的使用方式相同：

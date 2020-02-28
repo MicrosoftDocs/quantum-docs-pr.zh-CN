@@ -1,17 +1,17 @@
 ---
-title: Dirac 表示法 |Microsoft Docs
-description: Dirac 表示法
+title: 狄拉克表示法
+description: 了解如何使用 Dirac 表示法来表示量程状态并模拟量程操作。
 author: QuantumWriter
 uid: microsoft.quantum.concepts.dirac
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 33d964d079c94bd947e35d2c09516b29df1bba11
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 204e56cc97fe28f9c52dcfb882aadec7e09bb2dc
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2019
-ms.locfileid: "73184757"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907556"
 ---
 # <a name="dirac-notation"></a>Dirac 表示法
 
@@ -36,7 +36,7 @@ $$
 
 以下表示法通常用于描述通过将 Hadamard 入口应用到 $ \ket{0}$ 和 $ \ket{1}$ （对应于 Bloch 球体上 $ + x $ 和 $-x $ 方向中的单位矢量）而产生的状态：
 
-$ $ \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\\\ 1 \end{bmatrix} = H\ket{0} = \ket{+}，\qquad \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\\\-1 \end{bmatrix} = H\ket{1} = \ket{-} .
+$ $ \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\\\ 1 \end{bmatrix} = H\ket{0} = \ket{+}，\qquad \frac{1}{\sqrt{2}} \begin{bmatrix} 1 \\\\-1 \end{bmatrix} = H\ket{1} = \ket{-}。
 $$
 
 还可以使用 Dirac 表示法将这些状态扩展为 $ \ket{0}$ 和 $ \ket{1}$ 的总和：
@@ -78,7 +78,7 @@ $$
 ### <a name="example-describing-superposition-with-dirac-notation"></a>示例：用 Dirac 表示法描述 superposition
 作为另一个示例，说明如何使用 Dirac 表示法来描述量程状态，请考虑以下等效方法：写入一个量程状态，该状态是 superposition 的每个可能的位字符串（长度为 $n $
 
-$ $ H ^ {\otimes n} \ket{0} = \frac{1}{2 ^ {n/2}} \sum_{j = 0} ^ {2 ^ n-1} \ket{j} = \ket{+} ^ {\otimes n}。
+$ $ H ^ {\otimes n} \ket{0} = \frac{1}{2 ^ {n/2}} \ sum_ {j = 0} ^ {2 ^ n-1} \ket{j} = \ket{+} ^ {\otimes n}。
 $$
 
 在此，你可能会想知道，为什么 sum 从 $0 $ 到 $ 2 ^ {n}-$1 （对于 $n $ bits）。  首先请注意，有 $ 2 ^ {n} $ 个不同的配置，$n $ bits 可以采用此配置。  您可以通过注意到，一个位可以采用 $2 $ 值，但两个位可以接受 $4 $ 值等。 通常，这意味着有 $ 2 ^ n $ 个不同的可能位字符串，但在其中任何一个中编码的最大值为 $ 1 \ cdots 1 = 2 ^ n-$1，因此它是 sum 的上限。
@@ -93,9 +93,9 @@ $ $ （\alpha \ket{\psi} + \beta\ket{\phi}） \otimes （\gamma \ket{\chi} + \de
 
 寄存器向量遵循类似的约定来票证矢量。  例如，向量 $ \bra{\psi}\bra{\phi} $ 等效于状态向量 $ \psi ^ \dagger \otimes \phi ^ \dagger = （\psi\otimes \phi） ^ \dagger $。 如果票证 vector $ \ket{\psi} $ 为 $ \alpha \ket{0} + \beta \ket{1}$，则该矢量的寄存器矢量版本是 $ \bra{\psi} = \ket{\psi} ^ \dagger = （\bra{0}\alpha ^ * + \bra{1}\beta ^ *） $。
 
-例如，假设要计算测量状态 $ \ket{\psi} = \frac{3}的概率： {5} \ket{1} + \frac{4}{5} \ket{0}$ 使用量程程序将状态测量为 $ \ket{+} $ 或 $ \ket{-}$。 然后，设备将输出状态为 $ \ket{-}$ 的概率 
+例如，假设要计算测量状态 $ \ket{\psi} = \frac{3}的概率 {5} \ket{1} + \frac{4}{5} \ket{0}$ 使用量程程序将状态测量为 $ \ket{+} $ 或 $ \ket{-}$。 然后，设备将输出状态为 $ \ket{-}$ 的概率 
 
-$ $ | \braket{-| \psi} | ^ 2 = \left | \frac{1}{\sqrt{2}} （\bra{0}-\bra{1}）（\frac{3}{5} \ket{1} + \frac{4}{5} \ket{0}） \right | ^ 2 = \left |-\frac{3}{5 \ sqrt{2}} + \frac{4}{5 \ sqrt{2}} \right | ^ 2 = \frac{1}{50}$ $
+$ $ | \braket{-| \psi} | ^ 2 = \left | \frac{1}{\sqrt{2}} （\bra{0}-\bra{1}）（\frac{3}{5} \ket{1} + \frac{4}{5} \ket{0}） \right | ^ 2 = \left |-\frac{3}{5 \ sqrt{2}} + \frac{4}{5 \ sqrt{2}} \right | ^ 2 = \frac{1}{50}。 $ $
 
 负号在概率计算中出现的事实是量程干扰的表现形式，这是量程计算与传统计算相比的优点之一。
 
@@ -132,7 +132,7 @@ $$
 
 接下来，我们可以看到，这与使用列矢量表示法的 multiqubit 状态的 likelihoods 的讨论一致：
 
-$ $ P （\text{first qubit = 1}） = \psi ^ \dagger （e\_{10}e\_{10}^ \dagger + e\_{11}e\_{11}^ \dagger） \psi = | e\_{10}^ \dagger \psi | ^ 2 + | e\_{11}^ \剑号 \psi | ^ 2，$ $
+$ $ P （\text{first qubit = 1}） = \psi ^ \dagger （e\_{10}e\_{10}^ \dagger + e\_{11}e\_{11}^ \dagger） \psi = | e\_{10}^ \dagger \psi | ^ 2 + | e\_{11}^ \dagger \psi | ^ 2，$ $
 
 它与多 qubit 度量讨论相匹配。  不过，将此结果通用化为多 qubit 用例，使用 Dirac 表示法比使用列矢量表示法更简单，并且完全等同于先前处理。
 
@@ -146,4 +146,3 @@ $ $ P （\text{first qubit = 1}） = \psi ^ \dagger （e\_{10}e\_{10}^ \dagger +
 
 ## <a name="q-gate-sequences-equivalent-to-quantum-states"></a>Q # 入口序列等效于量程状态
 最后一点值得一提的是量程表示法和 Q # 编程语言：在本文档的开始中，我们提到量程状态是量程计算中信息的基础对象。  但这可能会令人感到吃惊，因为在 Q # 中没有量子状态的概念。  相反，所有状态仅由用于准备它们的操作描述。  上面的示例是对此的一个很好的说明。  我们可以将结果表示为 $H ^ {\otimes n} \ket{0}$，而不是在寄存器中的每个量程位字符串上表示统一的 superposition。  这种状态的更短的简短说明不仅可以经典原因，而且还可以简明地定义要在软件堆栈中传播以实现算法所需的操作。  出于此原因，Q # 旨在发出入口序列而不是量程状态;但理论上，这两个透视是等效的。
-

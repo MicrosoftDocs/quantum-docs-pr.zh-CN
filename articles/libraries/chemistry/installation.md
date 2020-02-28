@@ -1,17 +1,17 @@
 ---
-title: 化学库安装和验证 |Microsoft Docs
-description: 化学库安装和验证
+title: 'Microsoft Q # 化学库安装和验证'
+description: 了解如何安装 Microsoft 量程化学库，并将其与 NWChem 计算化学平台配合使用。
 author: guanghaolow
 ms.author: gulow
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.chemistry.concepts.installation
-ms.openlocfilehash: de13d1814821c612ed74a347dc8ffb5881063576
-ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
+ms.openlocfilehash: 48bf7bc980e238e622053f5c2bdd09604c572596
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036468"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907352"
 ---
 # <a name="chemistry-library-installation-and-validation"></a>化学库安装和验证
 
@@ -21,25 +21,25 @@ ms.locfileid: "77036468"
 **Visual Studio 2019：** 如果使用的是 Visual Studio 2019，则可以使用 NuGet 包管理器添加量程化学包。
 若要打开程序包管理器，请右键单击要向其添加化学库的项目，然后选择 "管理 NuGet 包 ..."，如下面的屏幕截图所示。
 
-![](~/media/vs2017-nuget-manage-packages.png)
+![在 Visual Studio 2019 中使用 NuGet 包管理器](~/media/vs2017-nuget-manage-packages.png)
 
 从 "浏览" 选项卡中，搜索包名称 ""。
 
 > [!NOTE]
 > 请确保 "包括预发行版"。
 
-![](~/media/vs2017-nuget-package-search.png)
+!["包括预发行版" 复选框](~/media/vs2017-nuget-package-search.png)
 
 这将列出可供下载的包。
 单击左侧窗格中的 ""，然后在右侧窗格中选择最新的预发行版本，然后单击 "安装"：
 
-![](~/media/vs2017-nuget-select-chem.png)
+![安装最新的 Microsoft 量子包](~/media/vs2017-nuget-select-chem.png)
 
 有关更多详细信息，请参阅[包管理器 UI 指南](https://docs.microsoft.com/nuget/tools/package-manager-ui)。
 
 或者，你可以使用包管理器控制台，使用命令行接口将量程化学库添加到你的项目中。
 
-![](~/media/vs2017-nuget-console-menu.png)
+![在命令行中使用程序包管理器控制台](~/media/vs2017-nuget-console-menu.png)
 
 从包管理器控制台中，运行以下内容：
 

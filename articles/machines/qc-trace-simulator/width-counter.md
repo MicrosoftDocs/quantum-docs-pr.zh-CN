@@ -1,17 +1,17 @@
 ---
-title: Width 计数器 |量程计算机跟踪模拟器 |Microsoft Docs
-description: 量子计算机跟踪模拟器的概述
+title: Width 计数器
+description: 了解 Microsoft QDK Width 计数器，该计数器计算量程程序中每个操作所分配和借用的 qubits 数量。
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.width-counter
-ms.openlocfilehash: 9c3601e74eec17bd6b463e90f8f3085c959d6f95
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: a76292222950310acc90dded02980e4a5b792e76
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820362"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907080"
 ---
 # <a name="width-counter"></a>Width 计数器
 

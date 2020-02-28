@@ -1,17 +1,17 @@
 ---
-title: Distinct 输入检查器 |量程计算机跟踪模拟器 |Microsoft Docs
-description: 量子计算机跟踪模拟器的概述
+title: Distinct 输入检查器
+description: '了解 Microsoft QDK Distinct 输入检查器，该检查器将检查您的 Q # 代码，以了解与共享 qubits 的潜在冲突。'
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.distinct-inputs
-ms.openlocfilehash: 3c21a54f5da83bf1ea0792e79cc773be5fba71e8
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 11a0573242c8afb12f242aa3be5f9cff18290452
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820957"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907097"
 ---
 # <a name="distinct-inputs-checker"></a>Distinct 输入检查器
 

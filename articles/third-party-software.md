@@ -1,18 +1,18 @@
 ---
-title: Microsoft Quantum Development Kit 第三方软件 |Microsoft Docs
-description: Microsoft Quantum Development Kit 第三方软件
+title: Microsoft Quantum Development Kit 第三方软件
+description: Microsoft Quantum Development Kit 第三方软件通知和信息。
 services: service-name-with-dashes-AZURE-ONLY
 keywords: 未咨询 SEO 专家的情况下，请不要添加或编辑关键字。
 author: QuantumWriter
 ms.author: MSFT-alias-person-or-DL
 ms.date: 10/09/2017
 ms.topic: article-type-from-white-list
-ms.openlocfilehash: 85bade791c0744d6636d60fe4f7c9b8f7749c7c6
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 84d83bf65b3c01a630d98210a5ac3fe322fa501f
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73184366"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906808"
 ---
 # <a name="third-party-software-notices-and-information"></a>第三方软件通知和信息
 
@@ -20,7 +20,7 @@ ms.locfileid: "73184366"
 
 1. YamlDotNet 版本4.2.2 （ https://www.nuget.org/packages/YamlDotNet.Signed/4.2.2)
 2. xunit visualstudio 2.3.1 （ https://www.nuget.org/packages/xunit.runner.visualstudio/2.3.1)
-3. xunit 2.3.1 （ https://www.nuget.org/packages/xunit.runner.console/2.3.1 ）
+3. xunit 2.3.1 （ https://www.nuget.org/packages/xunit.runner.console/2.3.1）
 4. xunit 2.3.1 （ https://www.nuget.org/packages/xunit.extensibility.execution/2.3.1)
 5. xunit 2.3.1 （ https://www.nuget.org/packages/xunit.extensibility.core/2.3.1)
 6. xunit 2.3.1 （ https://www.nuget.org/packages/xunit.core/2.3.1)
@@ -39,7 +39,7 @@ ms.locfileid: "73184366"
 ---------------------------------------
 版权所有（c）2008、2009、2010、2011、2012、2013、2014 Antoine Aubry 和参与者
 
-向任何获取此软件和相关文档文件（"软件"）的副本的人员特此授予权限，以在不受限制的情况下处理软件，包括但不限于使用、复制、修改、合并、发布、分发、从属软件和/或销售软件副本，并允许软件为其提供的人员执行此操作，但要遵守以下条件：
+权限是免费授予的，对于任何获取此软件和相关文档文件（"软件"）的副本的人员，若要在不受限制的情况下处理软件（包括但不限于使用、复制、修改、合并、发布、分发、更改、合并、发布、分发、发放和/或销售软件副本），并允许软件为其提供的人员执行此操作，请遵循以下条件
 
 上述版权声明和本许可声明应包含在软件的所有副本或重要部分中。
 
@@ -52,7 +52,7 @@ ms.locfileid: "73184366"
 版权所有（c） .NET Foundation 和参与者保留所有权利
 
 在 Apache 许可证下许可，版本2.0 （"许可证"）;不能使用此文件，除非符合许可证。
-你可能会在
+你可以获得一份许可证副本，网址是：
 
  [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
@@ -66,7 +66,7 @@ ms.locfileid: "73184366"
 版权所有（c） .NET Foundation 和参与者保留所有权利
 
 在 Apache 许可证下许可，版本2.0 （"许可证"）;不能使用此文件，除非符合许可证。
-你可能会在
+你可以获得一份许可证副本，网址是：
 
   [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
@@ -80,7 +80,7 @@ ms.locfileid: "73184366"
 版权所有（c） .NET Foundation 和参与者保留所有权利
 
 在 Apache 许可证下许可，版本2.0 （"许可证"）;不能使用此文件，除非符合许可证。
-你可能会在
+你可以获得一份许可证副本，网址是：
 
   [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
@@ -93,7 +93,7 @@ ms.locfileid: "73184366"
 版权所有（c） .NET Foundation 和参与者保留所有权利
 
 在 Apache 许可证下许可，版本2.0 （"许可证"）;不能使用此文件，除非符合许可证。
-你可能会在
+你可以获得一份许可证副本，网址是：
 
   [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
@@ -105,7 +105,7 @@ ms.locfileid: "73184366"
 版权所有（c） .NET Foundation 和参与者保留所有权利
 
 在 Apache 许可证下许可，版本2.0 （"许可证"）;不能使用此文件，除非符合许可证。
-你可能会在
+你可以获得一份许可证副本，网址是：
 
   [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
@@ -117,7 +117,7 @@ ms.locfileid: "73184366"
 版权所有（c） .NET Foundation 和参与者保留所有权利
 
 在 Apache 许可证下许可，版本2.0 （"许可证"）;不能使用此文件，除非符合许可证。
-你可能会在
+你可以获得一份许可证副本，网址是：
 
   [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
@@ -129,7 +129,7 @@ ms.locfileid: "73184366"
 版权所有（c） .NET Foundation 和参与者保留所有权利
 
 在 Apache 许可证下许可，版本2.0 （"许可证"）;不能使用此文件，除非符合许可证。
-你可能会在
+你可以获得一份许可证副本，网址是：
 
   [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
@@ -141,7 +141,7 @@ ms.locfileid: "73184366"
 版权所有（c） .NET Foundation 和参与者保留所有权利
 
 在 Apache 许可证下许可，版本2.0 （"许可证"）;不能使用此文件，除非符合许可证。
-你可能会在
+你可以获得一份许可证副本，网址是：
 
   [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
@@ -153,7 +153,7 @@ ms.locfileid: "73184366"
 版权所有（c） .NET Foundation 和参与者保留所有权利
 
 在 Apache 许可证下许可，版本2.0 （"许可证"）;不能使用此文件，除非符合许可证。
-你可能会在
+你可以获得一份许可证副本，网址是：
 
   [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
@@ -180,7 +180,7 @@ Microsoft 公共许可证（Ms 损益）
 
 （A）版权授予-根据本许可证的条款，包括第3部分中的许可条件和限制，每个参与者都向你授予一个非独占、全球、免版税的版权许可证，以便重现其作品，准备导数它的工作原理，以及你创建的任何派生作品。
 
-（B）专利授予-根据本许可证的条款，包括第3部分中的许可条件和限制，每个参与者都可以在其许可专利下授予您非独占、全球、免版税的许可，使其成为销售、导入和/或以其他方式处置软件中的内容，或以其他方式处理软件中所发布的内容。
+（B）专利授予-根据本许可证的条款，包括第3节中的许可条件和限制，每个参与者均可在其许可专利下向您授予非独占、全球、免版税的许可，使其成为本软件中所发布的软件或衍生作品的软件或衍生作品的产品/服务或其他内容。
 
 3. 条件和限制
 
@@ -192,16 +192,16 @@ Microsoft 公共许可证（Ms 损益）
 
 （D）如果你在源代码窗体中分发软件的任何部分，则仅在此许可证下通过将此许可证的完整副本包含在你的分发中来完成此操作。 如果您以编译或对象代码形式分发软件的任何部分，则只能使用符合此许可证的许可证。
 
-（E）软件按 "原样" 授予许可。 使用该软件的风险需要自己承担。 参与者没有任何明示的担保、保证或条件。 根据你当地的法律，您可能拥有本许可证无法更改的其他消费者权利。 在您当地法律允许的范围内，参与者排除适销性、针对特定目的的适用性和不侵权的默示担保。
+（E）软件按 "原样" 授予许可。 使用该文档的风险需要你自己承担。 参与者没有任何明示的担保、保证或条件。 根据你当地的法律，您可能拥有本许可证无法更改的其他消费者权利。 在您当地法律允许的范围内，参与者排除适销性、针对特定目的的适用性和不侵权的默示担保。
 
 ## <a name="fsharpcore-notices-and-information"></a>Fsharp.core 通知和信息
 ---------------------------------------
 MIT 许可证（MIT）
 
-版权所有 (c) Microsoft Corporation。
+Copyright (c) Microsoft Corporation。
 保留所有权利。
 
-向任何获取此软件和相关文档文件（"软件"）的副本的人员特此授予权限，以在不受限制的情况下处理软件，包括但不限于使用、复制、修改、合并、发布、分发、从属软件和/或销售软件副本，并允许软件为其提供的人员执行此操作，但要遵守以下条件：
+权限是免费授予的，对于任何获取此软件和相关文档文件（"软件"）的副本的人员，若要在不受限制的情况下处理软件（包括但不限于使用、复制、修改、合并、发布、分发、更改、合并、发布、分发、发放和/或销售软件副本），并允许软件为其提供的人员执行此操作，请遵循以下条件
 
 上述版权声明和本许可声明应包含在软件的所有副本或重要部分中。
 
@@ -213,7 +213,7 @@ MIT 许可证（MIT）
 
 版权所有（c） 2013 Tomas Petricek
 
-向任何获取此软件和相关文档文件（"软件"）的副本的人员特此授予权限，以在不受限制的情况下处理软件，包括但不限于使用、复制、修改、合并、发布、分发、从属软件和/或销售软件副本，并允许软件为其提供的人员执行此操作，但要遵守以下条件：
+权限是免费授予的，对于任何获取此软件和相关文档文件（"软件"）的副本的人员，若要在不受限制的情况下处理软件（包括但不限于使用、复制、修改、合并、发布、分发、更改、合并、发布、分发、发放和/或销售软件副本），并允许软件为其提供的人员执行此操作，请遵循以下条件
 
 上述版权声明和本许可声明应包含在软件的所有副本或重要部分中。
 
@@ -226,7 +226,7 @@ MIT 许可证（MIT）
 
 版权所有（c） 2012 Oystein Bjorke
 
-向任何获取此软件和相关文档文件（"软件"）的副本的人员特此授予权限，以在不受限制的情况下处理软件，包括但不限于使用、复制、修改、合并、发布、分发、从属软件和/或销售软件副本，并允许软件为其提供的人员执行此操作，但要遵守以下条件：
+权限是免费授予的，对于任何获取此软件和相关文档文件（"软件"）的副本的人员，若要在不受限制的情况下处理软件（包括但不限于使用、复制、修改、合并、发布、分发、更改、合并、发布、分发、发放和/或销售软件副本），并允许软件为其提供的人员执行此操作，请遵循以下条件
 
 上述版权声明和本许可声明应包含在软件的所有副本或重要部分中。
 
@@ -244,7 +244,7 @@ MIT 许可证（MIT）
 * 以二进制形式重新分发时，必须在与分发一起提供的文档和/或其他材料中复制以上版权声明、本条款列表及以下免责声明。
 * 未经事先明确书面许可，不得使用 FsCheck 名称和其参与者的名称来签署或促销从此软件派生的产品。
 
-此软件由版权所有者和撰稿人 "按原样" 提供，以及任何明示或默示保证，包括但不限于适销性和特定用途适用性的默示保证。 在任何情况下，版权所有者或撰稿人都不会对任何直接、间接、偶然、特殊、最佳典范或后果性损失负责（包括但不限于购买替代货物或服务）;丢失使用情况、数据或利润;但业务中断）是由任何责任理论引起的，无论是出于合同、严格责任还是侵权行为（包括疏忽或其他方式）引起的，即使有可能导致此类损坏，也是如此。
+本软件由版权所有者和参与者按“原样”提供，不提供任何明式或暗式的担保，包括但不限于适销性和特定用途适用性的暗示担保。 在任何情况下，版权所有者或撰稿人都不会对任何直接、间接、偶然、特殊、最佳典范或后果性损失负责（包括但不限于购买替代货物或服务）;丢失使用情况、数据或利润;但业务中断）是由任何责任理论引起的，无论是出于合同、严格责任还是侵权行为（包括疏忽或其他方式）引起的，即使有可能导致此类损坏，也是如此。
 
 ## <a name="argu-notices-and-information"></a>Argu 通知和信息
 ---------------------------------------
@@ -252,7 +252,7 @@ MIT 许可证（MIT）
 
 版权所有（c） 2016 Eirik Tsarpalis
 
-向任何获取此软件和相关文档文件（"软件"）的副本的人员特此授予权限，以在不受限制的情况下处理软件，包括但不限于使用、复制、修改、合并、发布、分发、从属软件和/或销售软件副本，并允许软件为其提供的人员执行此操作，但要遵守以下条件：
+权限是免费授予的，对于任何获取此软件和相关文档文件（"软件"）的副本的人员，若要在不受限制的情况下处理软件（包括但不限于使用、复制、修改、合并、发布、分发、更改、合并、发布、分发、发放和/或销售软件副本），并允许软件为其提供的人员执行此操作，请遵循以下条件
 
 上述版权声明和本许可声明应包含在软件的所有副本或重要部分中。
 

@@ -1,17 +1,17 @@
 ---
-title: 量程开发工具包完整状态模拟器 |Microsoft Docs
-description: Microsoft 的量程开发工具包完整状态模拟器概述
+title: 完整状态模拟器
+description: '了解如何在 Microsoft Quantum Development Kit 完全状态模拟器上运行 Q # 程序。'
 author: anpaz-msft
 ms.author: anpaz@microsoft.com
 ms.date: 12/7/2017
 ms.topic: article
 uid: microsoft.quantum.machines.full-state-simulator
-ms.openlocfilehash: ab0e65765d27e301a59948d7c02105a523022e68
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: f73abbc4366b003e4b22366ed83ca9c897737307
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73184672"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906111"
 ---
 # <a name="quantum-development-kit-full-state-simulator"></a>量程开发工具包完整状态模拟器
 
@@ -32,7 +32,7 @@ ms.locfileid: "73184672"
 
 `QuantumSimulator` 类实现 <xref:System.IDisposable>，因此，在不再使用模拟器的实例后，应调用 `Dispose` 方法。 实现此目的的最佳方式是在 `using` 语句中包装模拟器，如以上示例中所示。
 
-## <a name="seed"></a>种子
+## <a name="seed"></a>Seed
 
 `QuantumSimulator` 使用随机数生成器来模拟量子随机性。 出于测试目的，具有确定性的结果有时会很有用。 为此，可以通过 `randomNumberGeneratorSeed` 参数在 `QuantumSimulator`的构造函数中提供随机数生成器的种子：
 
@@ -44,7 +44,7 @@ ms.locfileid: "73184672"
     }
 ```
 
-## <a name="threads"></a>线程数
+## <a name="threads"></a>线程
 
-`QuantumSimulator` 使用[OpenMP](http://www.openmp.org/)对所需的线性代数进行并行化。 默认情况下，OpenMP 使用所有可用的硬件线程，这意味着具有少量 qubits 的程序通常会运行缓慢，因为所需协调将 dwarf 实际工作。 为此，可以将环境变量 `OMP_NUM_THREADS` 设置为一个较小的数字。 由于经验非常粗略，1个线程非常适合最多4个 qubits，而每个 qubit 的另一个线程非常好，不过，这一点非常依赖于你的算法。
+`QuantumSimulator` 使用[OpenMP](http://www.openmp.org/)对所需的线性代数进行并行化。 OpenMP 默认使用所有可用的硬件线程，这意味着具有少量的量子位的程序通常运行缓慢，因为所需的协调远多于实际工作。 为此，可以将环境变量 `OMP_NUM_THREADS` 设置为一个较小的数字。 作为非常粗略的经验法则，1 个线程最多可以容纳约 4 个量子位，然后每个量子位最好增加一个线程，但这在很大程度上取决于你的算法。
 

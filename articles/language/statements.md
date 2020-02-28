@@ -1,17 +1,17 @@
 ---
-title: 'Q # 语句 |Microsoft Docs'
-description: 'Q # 语句'
+title: 'Q # 语句'
+description: '了解如何正确使用 Q # 中的语句，包括函数和操作声明、变量声明和赋值以及操作调用。'
 author: QuantumWriter
 uid: microsoft.quantum.language.statements
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 9a6f5d53ec21090d0c13f4369e0270d264cd1e9b
-ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
+ms.openlocfilehash: e801a5fdd24b973f47d23d2aca6f11bbebf333d4
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036485"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904666"
 ---
 # <a name="statements-and-other-constructs"></a>语句和其他构造
 

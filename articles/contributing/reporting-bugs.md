@@ -1,17 +1,17 @@
 ---
-title: 报告 bug |Microsoft Docs
-description: 报告 bug
+title: 报告 bug
+description: 了解如何报告 Microsoft Quantum Development Kit 的 bug 或问题（QDK）。
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.reporting
-ms.openlocfilehash: bc2a877448f545a3142217331af3e6711ad45329
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 510f842a068a61502d150ccf5e3b2b5742984f3a
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183652"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77904785"
 ---
 # <a name="reporting-bugs"></a>报告 Bug #
 

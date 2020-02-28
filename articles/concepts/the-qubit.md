@@ -1,17 +1,17 @@
 ---
-title: Qubit |Microsoft Docs
-description: 量子位
+title: 量程计算中的 qubit
+description: 了解 qubits，这是量程计算中信息的基本单位。
 author: QuantumWriter
 uid: microsoft.quantum.concepts.qubit
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: f29319c3ec19fecc45f5a9f7c16061b9aa9f71ec
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 770b739d95f5c1512234f6f7d2ca4544f1d80e64
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183635"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907522"
 ---
 # <a name="the-qubit"></a>Qubit
 
@@ -25,7 +25,7 @@ ms.locfileid: "73183635"
 
 具有标准 $1 $ 的实或复数的任意二维列向量表示 qubit 持有的可能的量程状态。 因此，如果 $ qubit $ 和 $ \alpha $ 是满足 $ | \beta | ^ 2 + | \alpha | ^ 2 = $1 的复数，$ \begin{bmatrix} \alpha \\\\ \beta \end{bmatrix} $ 表示 \beta 状态。 表示 qubits 的有效量程状态向量的一些示例包括
 
-$ $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix}、\begin{bmatrix} 0 \\\\ 1 \end{bmatrix}、\begin{bmatrix} \frac{1}{\sqrt{2}} \\\\ \frac{1}{\sqrt{2}} \end{bmatrix}，\begin{bmatrix} \frac{1}{\sqrt{2}} \\\\ \frac{-1}{\sqrt{2}} \end{bmatrix}，\text{and} \begin{bmatrix} \frac{1}{\sqrt{2}} \\\\ \frac{i}{\sqrt{2}} \end{bmatrix}. $ $
+$ $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix}，\begin{bmatrix} 0 \\\\ 1 \end{bmatrix}，\begin{bmatrix} \frac{1}{\sqrt{2}} \\\\ \frac{1}{\sqrt{2}} \end{bmatrix}，\begin{bmatrix} \frac{1}{\sqrt{2}} \\\\ \frac{-1}{\sqrt{2}} \end{bmatrix}，\text{and} \begin{bmatrix} \frac{1}{\sqrt{2}} \\\\ \frac{i}{\sqrt{2}} \end{bmatrix}. $ $
 
 量程状态向量 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ 和 $ \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $ 采取特殊的角色。 这两个向量构成了用于说明 qubit 状态的矢量空间的基础。 这意味着，可以将任何量程状态向量编写为这些基础向量的总和。 具体而言，矢量 $ \begin{bmatrix} x \\\\ y \end{bmatrix} $ 可以编写为 $x \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} + y \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $。 尽管这些矢量的任何旋转都将作为 qubit 的完全有效基础，但我们选择使用*计算*来处理此类矢量。
 
@@ -37,11 +37,11 @@ $ $ 0 \ http-equiv \begin{bmatrix} 1 \\\\ 0 \end{bmatrix}，\qquad 1 \equiv \beg
 
 ## <a name="measuring-a-qubit"></a>测量 Qubit
 
-现在，我们知道了如何表示 qubit，我们可以通过讨论[*度量*](https://en.wikipedia.org/wiki/Measurement_in_quantum_mechanics)概念来获取这些状态所表示内容的一些直觉。 度量值对应于 "查找" qubit 的非正式构想，这种方法会立即将量程状态折叠为两个经典状态 $ \begin{bmatrix} 1 \\中的一个，\\ 0 \end{bmatrix} $ 或 $ \begin{bmatrix} 0 \\\\ 1 个 \end{bmatrix} $。 当计量状态向量 $ \begin{bmatrix} \alpha \\给定的 qubit \\ \beta \end{bmatrix} $ 进行度量时，我们将获得结果 $0 $ with probability $ | \alpha | ^ 2 $ 和结果 $1 $ with probability $ | \beta | ^ 2 $。 在结果 $0 $ 中，qubit 的新状态为 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $;在结果 $1 $ 其状态为 $ \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $。 请注意，由于规范化条件 $ | \alpha | ^ 2 + | \beta | ^ 2 = $1，这些概率的总和最高为 $1 $。
+现在，我们知道了如何表示 qubit，我们可以通过讨论[*度量*](https://en.wikipedia.org/wiki/Measurement_in_quantum_mechanics)概念来获取这些状态所表示内容的一些直觉。 度量值对应于 "查找" qubit 的非正式构想，这种方法会立即将量程状态折叠为两个经典状态 $ \begin{bmatrix} 1 \\中的一个，\\ 0 \end{bmatrix} $ 或 $ \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $。 当计量状态向量 $ \begin{bmatrix} \alpha \\给定的 qubit \\ \beta \end{bmatrix} $ 进行度量时，我们将获得结果 $0 $ with probability $ | \alpha | ^ 2 $ 和结果 $1 $ with probability $ | \beta | ^ 2 $。 在结果 $0 $ 中，qubit 的新状态为 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $;在结果 $1 $ 其状态为 $ \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $。 请注意，由于规范化条件 $ | \alpha | ^ 2 + | \beta | ^ 2 = $1，这些概率的总和最高为 $1 $。
 
 度量值的属性也表示量程状态向量的整体符号是不相关的。 取消矢量等效于 $ \alpha \rightarrow-\alpha $ 和 $ \beta \rightarrow-\beta $。 由于度量值 $0 $ 和 $1 $ 的概率取决于术语的大小平方，因此插入此类符号不会改变概率。 此类阶段通常称为[``*全局阶段*""](https://en.wikipedia.org/wiki/Phase_factor) ，更常见的形式为 $e ^ {i \phi} $ 而不只是 $ \pm $1。
 
-度量值的最后一个重要属性是它不一定损坏所有的量程状态向量。 如果我们以状态 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ （对应于古典状态 $0 $）开始，则测量此状态将始终产生结果 $0 $，并使量程状态保持不变。 在这种情况下，如果只有传统位（即，qubits 为 $ \begin{bmatrix}1 \\\\ 0 \end{bmatrix} $ 或 $ \begin{bmatrix}0 \\\\ 1 \end{bmatrix} $），则测量不会损坏系统。 这意味着，我们可以复制传统数据并在量程计算机上对其进行操作，就像在传统计算机上操作一样。 不过，同时将信息同时存储在这两个状态中的能力，就是将量程计算作为可能的经典以及进一步剥夺的量程计算能力，从而无法以无顺序复制量程数据，另请参阅[无克隆定理](https://en.wikipedia.org/wiki/No-cloning_theorem).
+度量值的最后一个重要属性是它不一定损坏所有的量程状态向量。 如果我们以状态 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ （对应于古典状态 $0 $）开始，则测量此状态将始终产生结果 $0 $，并使量程状态保持不变。 在这种情况下，如果只有传统位（即，qubits 为 $ \begin{bmatrix}1 \\\\ 0 \end{bmatrix} $ 或 $ \begin{bmatrix}0 \\\\ 1 \end{bmatrix} $），则测量不会损坏系统。 这意味着，我们可以复制传统数据并在量程计算机上对其进行操作，就像在传统计算机上操作一样。 不过，同时将信息同时存储在这两个状态中的能力，就是将量程计算作为可能的经典以及进一步剥夺的量程计算能力，从而无法以无顺序复制量程数据，另请参阅[无克隆定理](https://en.wikipedia.org/wiki/No-cloning_theorem)。
 
 ## <a name="visualizing-qubits-and-transformations-using-the-bloch-sphere"></a>使用 Bloch 球可视化 Qubits 和转换
 
@@ -73,11 +73,11 @@ is Adj { // Auto-generate the adjoint of the operation
 
 传统计算机上只有四个可将一个位映射到一位的函数。 与此相反，在一个量程计算机上的单个 qubit 上存在无限数量的单一转换。 因此，一组有限的基元量程操作（称为[*入口*](https://en.wikipedia.org/wiki/Quantum_logic_gate)）可以精确地复制量子计算中允许的无限单一转换集。 这意味着，与传统计算不同，量程计算机可能会完全使用有限数量的入口来实现每个可能的量程计划。 因此，在传统计算机上，量程计算机不能是通用的。 因此，当我们说一组入口对量程计算是*通用*的时，我们实际上意味着比传统计算略有不同。
 对于通用性，我们要求量程计算机仅在使用有限长度入口序列的有限错误内*估算*每个单一矩阵。
-换句话说，如果任何单一转换都可以大致作为此集的入口产品写入，则可以使用一组入口。 对于任何规定的错误，我们都需要，入口集中存在 $G _{1}、G_{2}、\ldots、G_N $
+换句话说，如果任何单一转换都可以大致作为此集的入口产品写入，则可以使用一组入口。 对于任何规定的错误，我们都需要这样的入口集 $G _{1}、G_{2}、\ldots、G_N $
 
 $ $ G_N G_ {N-1} \cdots G_2 G_1 \approx U. $ $
 
-请注意，由于矩阵乘法的约定是从右到左进行相乘，因此 $G _N $，实际上是最后一个应用于量程状态向量的操作。 更正式地说，如果对于每个容错 $ \epsilon > 0 $ $G，则这一门集是通用的，它存在 _1、\ldots、G_N $，以便 $G _N \ ldots G_1 $ 和 $U $ 之间的距离最多可为 $ \epsilon $。 理想情况下，若要达到 $ \epsilon $ 的这一距离，需要的值 $N $ 应缩放 poly-对数 $ 1/\ epsilon $。
+请注意，因为矩阵乘法的约定是从右到左进行相乘，所以 $G _N $，实际上是最后一个应用于量程状态向量的操作。 更正式地说，如果对于每个容错 $ \epsilon > 0 $ $G，则这一门集是通用的： _1，\ldots，G_N $，则 $G _N G_1 $ 和 $U $ 之间的距离最多可为 $ \epsilon $。 理想情况下，若要达到 $ \epsilon $ 的这一距离，需要的值 $N $ 应缩放 poly-对数 $ 1/\ epsilon $。
 
 这种通用的入口集在实践中是什么样子？  最简单的 qubit 入口集通用入口集仅包含两个入口： Hadamard 门 $H $ 和所谓的 $T $-入口（也称为 $ \ pi/8 $ 门）：
 
@@ -98,12 +98,12 @@ $$
 
 有关这些操作的详细信息，请参阅其 Bloch 球表示和 Q # 实现，请参阅[内部操作和函数](xref:microsoft.quantum.libraries.standard.prelude#intrinsic-operations-and-functions)。
 
-作为从这些基元构建单一转换的示例，上面 Bloch 球中所示的三个变换对应于入口序列 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} \mapsto HZH \begin{bmatrix} 1\\\\ 0 \end{bmatrix} = \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $。
+作为从这些基元构建单一转换的示例，上面的 Bloch 球体中所示的三个转换对应于入口序列 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} \mapsto HZH \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} = \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $。
 
 虽然上一个构成了用于在堆栈的逻辑级别上描述操作的最常用的基元入口（将逻辑级别看作是量程算法的级别），但在算法中考虑不太基本的操作通常很方便级别，例如更接近函数说明级别的操作。 幸运的是，Q # 还提供了可用于实现更高级别的 unitaries 的方法，这进而允许实现高级算法，而无需将所有内容明确分解到 Clifford 并 $T $-入口。
 
-最简单的此类基元是单个 qubit 旋转。 通常会考虑三种单 qubit 旋转： $R _x $、$R _y $ 和 $R _z $。 例如，若要可视化旋转 $R _x （\theta） $ 的操作，请在 Bloch 球体的 $x $ 轴方向上按下向右的拇指，并通过 $ \ theta/2 $ 弧度的角度旋转矢量。 这是 $2 $ 的令人困惑的因素，这是因为正如在 Bloch 球上绘制时，正向矢量 \circ $ 对应的单一矩阵包括：
+最简单的此类基元是单个 qubit 旋转。 通常会考虑三种单 qubit 旋转： $R _x $、$R _y $ 和 $R _z $。 例如，若要可视化旋转 $R _x （\theta） $ 的操作，请在 Bloch 球的 $x $ 轴方向上按下向右的拇指，并通过 $ \ theta/2 $ 弧度角度旋转矢量。 这是 $2 $ 的令人困惑的因素，这是因为正如在 Bloch 球上绘制时，正向矢量 \circ $ 对应的单一矩阵包括：
 
-\begin{align *} & R_z （\theta） = e ^ {-I\theta z/2} = \begin{bmatrix} e ^ {-i \ theta/2} & 0\\\\ 0 & e ^ {i \ theta/2} \end{bmatrix}，\\\\ & R_x （\theta） = e ^ {-I\theta x/2} = HR_z （\theta） H = \begin{bmatrix} \cos （\theta/2） &-i\sin （\ theta/2）\\\\-i\sin （\ & theta/2） \cos （\end{bmatrix}/2），\\\\ & R_y （\theta） = e ^ {-i\theta Y/2} = SHR_z （\theta） HS ^ \dagger = \begin{bmatrix} （\cos） HS ^ \sin = （\ theta/2） &t_9_ \\ \sin （\ theta/2） & \cos （\ theta/2） \end{bmatrix}。\end{align*}
+\begin{align *} & R_z （\theta） = e ^ {-I\theta z/2} = \begin{bmatrix} e ^ {-i \ theta/2} & 0\\\\ 0 & e ^ {i \ theta/2} \end{bmatrix}，\\\\ & R_x （\theta） = e ^ {-I\theta x/2} = HR_z （\theta） H = \begin{bmatrix} \cos （\ theta/2） &-i\sin （\ theta/2）\\\\ i\sin （\ theta/2） \cos，\\\\ & R_y （\theta） = e ^ {-I\theta y/2} = SHR_z （\theta） HS ^ \dagger = \begin{bmatrix} \cos （\ theta/2） &-\sin （\ theta/2）\\\\ \sin （\ theta/2） & \cos （\ theta/2） \end{bmatrix}。\end{align*}
 
-正如可以将任何三个旋转组合在一起以在三个维度中执行任意旋转一样，可以从 Bloch 的球表示来看，可以将任何单一的矩阵作为三个旋转序列来编写。 具体而言，对于每个单一矩阵 $U $ 均存在 $ \alpha、\beta、\gamma、\delta $，$U = e ^ {i\alpha} R_x （\beta） R_z （\gamma） R_x （\delta） $。 因此 $R _z （\theta） $ 和 $H $ 还会形成一个通用的入口集，尽管它不是离散集，因为 $ \theta $ 可以采用任何值。 出于此原因，和由于量程模拟中的应用程序，此类连续入口对量程计算至关重要，尤其是在量程算法设计级别。 为了实现容错硬件实现，最终将其编译为与这些旋转紧密相关的离散入口序列。
+正如可以将任何三个旋转组合在一起以在三个维度中执行任意旋转一样，可以从 Bloch 的球表示来看，可以将任何单一的矩阵作为三个旋转序列来编写。 具体而言，对于每个单一矩阵 $U $ 存在 $ \alpha、\beta、\gamma、\delta $，$U = e ^ {i\alpha} R_x （\beta） R_z （\gamma） R_x （\delta） $。 因此 $R _z （\theta） $ 和 $H $ 也形成通用的入口集，尽管 $ \theta $ 可以采用任何值，但它不是离散集。 出于此原因，和由于量程模拟中的应用程序，此类连续入口对量程计算至关重要，尤其是在量程算法设计级别。 为了实现容错硬件实现，最终将其编译为与这些旋转紧密相关的离散入口序列。

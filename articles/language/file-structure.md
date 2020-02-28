@@ -1,17 +1,17 @@
 ---
-title: 文件结构 |Microsoft Docs
-description: 'Q # 文件结构'
+title: 'Q # 文件结构'
+description: '了解如何在 Q # 程序和库中构造命名空间、操作、函数和用户定义类型声明。'
 author: QuantumWriter
 uid: microsoft.quantum.language.file-structure
 ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 364d353c55bda38f227456909755d13dc7e67080
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: b4bb7d4d70677dbd5d921a9f68313760499a56a1
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76821076"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907386"
 ---
 # <a name="file-structure"></a>文件结构
 
@@ -90,7 +90,7 @@ newtype PairOfInts = (Int, Int);
 如果只需显式指定默认的正文专用化的实现，则可以在声明中直接指定默认实现。
 在这种情况下，声明中具有操作特征的批注非常有用，可确保编译器根据默认实现自动生成其他专用化。 
 
-例如： 
+例如 
 
 ```qsharp
 operation PrepareEntangledPair(here : Qubit, there : Qubit) : Unit 

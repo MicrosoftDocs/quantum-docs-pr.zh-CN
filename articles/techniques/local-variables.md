@@ -1,22 +1,22 @@
 ---
-title: '局部变量-Q # 技术 |Microsoft Docs'
-description: '局部变量-Q # 技术'
+title: '局部变量-Q # 技术'
+description: '了解如何在 Q # 中定义和使用局部变量。'
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.techniques.local-variables
-ms.openlocfilehash: 8b1de5c096210fb36a81c127a8bbbe1b39522741
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: cb6c662137c31a13c3dd6e9ca3f67879c469f788
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820175"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906859"
 ---
 # <a name="local-variables"></a>局部变量 #
 
 可以通过使用 `let` 关键字，将 Q # 中任何类型的值分配给变量以便在操作或函数中重复使用。
-对于实例：
+例如：
 
 ```qsharp
 let measurementOperator = [PauliX, PauliZ, PauliZ, PauliX, PauliI];

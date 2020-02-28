@@ -1,21 +1,21 @@
 ---
-title: 'Q # 标准库-错误更正 |Microsoft Docs'
-description: 'Q # 标准库-错误更正'
+title: 'Q # 标准库中的纠错'
+description: '了解如何在你的 Q # 程序中使用纠错代码，同时保护 qubits 的状态。'
 author: QuantumWriter
 uid: microsoft.quantum.libraries.error-correction
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: e1b78cf94ae0a043ad275d4cb06b230eafd7fc85
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: 514fe68f603b9a3a0b4607390719b08a43fe4967
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74863191"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907760"
 ---
 # <a name="error-correction"></a>错误更正 #
 
-## <a name="introduction"></a>简介 ##
+## <a name="introduction"></a>介绍 ##
 
 在传统计算中，如果有一位要防范错误，通常可以通过重复数据位来用*逻辑位*来表示该位。
 例如，让 $ \overline{0} = $0 是数据位0的编码，其中使用标签0上面的一行来指示它是0状态中位的编码。
@@ -28,7 +28,7 @@ ms.locfileid: "74863191"
 这样做有助于了解我们如何将错误更正通用化到量程情况。
 因此，让 $ \ket{\overline{0}} = \ket{000} = \ket{0} \otimes \ket{0} \otimes \ket{0}$，并让 $ \ket{\overline{1}} = \ket{111}$。
 然后，按线性，为所有输入定义重复代码;例如，$ \ket{\overline{+}} = （\ket{\overline{0}} + \ket{\overline{1}}）/\sqrt{2} = （\ket{000} + \ket{111}）/\sqrt{2}$。
-特别是，如果在中间 qubit 上使用 _1 $ act $X，则会看到两个分支中所需的更正都精确地 $X _1 $： $ $ \begin{align} X_1 \ket{\overline{+}} & = \frac{1}{\sqrt{2}} \left （X_1 \ket{000} + X_1 \ket{111} \right
+特别是，如果在中间 qubit 上使用 _1 $ act $X，则会看到两个分支中所需的更正都精确地 $X _1 $： $ $ \begin{align} X_1 \ket{\overline{+}} & = \frac{1}{\sqrt{2}} \left （X_1 \ket{000} + X_1 \ket{111} \right\\\\{1}{2}{010}{101}
 \end{align} $ $
 
 若要查看我们如何确定这种情况，而无需测量我们尝试保护的状态，可以记下每个不同的位翻转错误对逻辑状态的操作：
@@ -36,9 +36,9 @@ ms.locfileid: "74863191"
 | 错误 $E $ | $E \ket{\overline{0}} $ | $E \ket{\overline{1}} $ |
 | --- | --- | --- |
 | $ \boldone $ | $ \ket{000}$ | $ \ket{111}$ |
-| $X_0$ | $ \ket{100}$ | $ \ket{011}$ |
-| $X_1$ | $ \ket{010}$ | $ \ket{101}$ |
-| $X_2$ | $ \ket{001}$ | $ \ket{110}$ |
+| $X _0 $ | $ \ket{100}$ | $ \ket{011}$ |
+| $X _1 $ | $ \ket{010}$ | $ \ket{101}$ |
+| $X _2 $ | $ \ket{001}$ | $ \ket{110}$ |
 
 为了保护我们所编码的状态，我们需要能够区分三个错误，并将其从标识 $ \boldone $ 区分开来，而不区分 $ \ket{\overline{0}} $ 和 $ \ket{\overline{1}} $。
 例如，如果度量 $Z _0 $，则在无错误情况下，我们将为 $ \ket{\overline{0}} $ 和 $ \ket{\overline{1}} $ 获取不同的结果，以便折叠已编码状态。
@@ -53,9 +53,9 @@ ms.locfileid: "74863191"
 | 错误 $E $ | $E \ket{\overline{0}} $ | $E \ket{\overline{1}} $ | $Z _0 的结果 Z_1 $ | $Z _1 Z_2 $ 的结果 |
 | --- | --- | --- | --- | --- |
 | $ \boldone $ | $ \ket{000}$ | $ \ket{111}$ | $+$ | $+$ |
-| $X_0$ | $ \ket{100}$ | $ \ket{011}$ | $-$ | $+$ |
-| $X_1$ | $ \ket{010}$ | $ \ket{101}$ | $-$ | $-$ |
-| $X_2$ | $ \ket{001}$ | $ \ket{110}$ | $+$ | $-$ |
+| $X _0 $ | $ \ket{100}$ | $ \ket{011}$ | $-$ | $+$ |
+| $X _1 $ | $ \ket{010}$ | $ \ket{101}$ | $-$ | $-$ |
+| $X _2 $ | $ \ket{001}$ | $ \ket{110}$ | $+$ | $-$ |
 
 因此，两个度量值的结果可唯一确定发生了哪个位翻转错误，但不会泄漏有关所编码的状态的任何信息。
 我们将这些结果称为 "不*症状*"，并参阅将一个症状映射回导致其*恢复*的错误的过程。

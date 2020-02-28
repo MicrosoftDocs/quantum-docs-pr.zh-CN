@@ -1,17 +1,17 @@
 ---
-title: '测试和调试-Q # 技术 |Microsoft Docs'
-description: '测试和调试-Q # 技术'
+title: '测试和调试 Q # 计划'
+description: 了解如何使用单元测试、事实和断言以及转储函数来测试和调试量程程序。
 author: tcNickolas
 ms.author: mamykhai@microsoft.com
 uid: microsoft.quantum.techniques.testing-and-debugging
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: cfc71f08be0f190d9f5f4a48796e3d0ad06d6107
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 3df8df8defabcc9cc87d59f543f425c882b001e0
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820107"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907675"
 ---
 # <a name="testing-and-debugging"></a>测试和调试
 
@@ -27,12 +27,12 @@ Q # 支持为量程程序创建单元测试，可在[xUnit](https://xunit.github
 
 ### <a name="creating-a-test-project"></a>创建测试项目
 
-#### <a name="visual-studio-2019tabtabid-vs2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
 打开 Visual Studio 2019。 请在 "`File`" 菜单中选择 "`New` > " `Project...`"。
 在右上角，搜索 "`Q#`"，然后选择 `Q# Test Project` 模板。
 
-#### <a name="command-line--visual-studio-codetabtabid-vscode"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
+#### <a name="command-line--visual-studio-code"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
 
 从你喜欢的命令行运行以下命令：
 ```bash
@@ -71,7 +71,7 @@ Q # 编译器可识别内置目标 "QuantumSimulator"、"ToffoliSimulator" 和 "
 
 ### <a name="running-q-unit-tests"></a>运行 Q # 单元测试
 
-#### <a name="visual-studio-2019tabtabid-vs2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
 作为一次性的每个解决方案设置，请前往 `Test` "菜单，并选择" `Test Settings` > `Default Processor Architecture` > `X64`"。
 
@@ -81,7 +81,7 @@ Q # 编译器可识别内置目标 "QuantumSimulator"、"ToffoliSimulator" 和 "
 
 生成项目，请在 "`Test`" 菜单中，选择 "`Windows` > " `Test Explorer`"。 `AllocateQubit` 将显示在 `Not Run Tests` 组中的测试列表中。 选择 `Run All` 或运行此单个测试，它应通过！
 
-#### <a name="command-line--visual-studio-codetabtabid-vscode"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
+#### <a name="command-line--visual-studio-code"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
 
 若要运行测试，请导航到项目文件夹（包含 `Tests.csproj`的文件夹），然后执行以下命令：
 
@@ -123,29 +123,29 @@ $ dotnet test --filter "Name=AllocateQubit"
 
 内部函数 <xref:microsoft.quantum.intrinsic.message> 具有类型 `(String -> Unit)` 并支持创建诊断消息。
 
-#### <a name="visual-studio-2019tabtabid-vs2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
 在测试资源管理器中执行测试并单击测试后，将显示一个面板，其中包含有关测试执行：已通过/失败状态、已用时间和 "输出" 链接的信息。 如果单击 "输出" 链接，则会在新窗口中打开 "测试输出"。
 
 ![测试输出](~/media/unit-test-output.png)
 
-#### <a name="command-line--visual-studio-codetabtabid-vscode"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
+#### <a name="command-line--visual-studio-code"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
 
 通过 `dotnet test`将每个测试的通过/失败状态打印到控制台。
 对于失败的测试，还会将输出输出到控制台，以帮助诊断故障。
 
 ***
 
-## <a name="assertions"></a>断言
+## <a name="facts-and-assertions"></a>事实和断言
 
 由于 Q # 中的函数没有_逻辑_副作用，因此执行其输出类型为空元组的函数的任何_其他类型_的影响将永远不会从 Q # 程序中观察到 `()`。
 也就是说，目标计算机可以选择不执行任何返回 `()` 的函数，保证此省略不会修改任何以下 Q # 代码的行为。
-这使函数返回 `()` 一个有用的工具，用于将断言和调试逻辑嵌入到 Q # 程序中。 
+这使函数返回 `()` （即 `Unit`）将断言和调试逻辑嵌入到 Q # 程序中的有用工具。 
 
-可以应用相同的逻辑来实现断言。 我们来看一个简单的示例：
+我们来看一个简单的示例：
 
 ```qsharp
-function AssertPositive(value : Double) : Unit 
+function PositivityFact(value : Double) : Unit 
 {
     if (value <= 0) 
     {
@@ -156,11 +156,31 @@ function AssertPositive(value : Double) : Unit
 
 此处，关键字 `fail` 指示不应继续计算，而是在运行 Q # 程序的目标计算机上引发异常。
 按照定义，不能从 Q # 内观察到此类失败，因为在达到 `fail` 语句后，不会再运行 Q # 代码。
-因此，如果我们继续执行对 `AssertPositive`的调用，则可以确保其输入为正值。
+因此，如果我们继续执行对 `PositivityFact`的调用，则可以确保其输入为正值。
+
+请注意，我们可以使用 <xref:microsoft.quantum.diagnostics> 命名空间中的[`Fact`](xref:microsoft.quantum.diagnostics.fact)函数实现与 `PositivityFact` 相同的行为：
+
+```qsharp
+    Fact(value <= 0, "Expected a positive number.");
+```
+
+另一方面，*断言*的使用方式类似于事实，但可能依赖于目标计算机的状态。 相应地，它们定义为操作，而事实定义为函数（如上所示）。
+若要理解这一区别，请考虑在断言内使用以下事实：
+
+```qsharp
+operation AssertQubitsAreAvailable() : Unit
+{
+     Fact(GetQubitsAvailableToUse() > 0, "No qubits were actually available");
+}
+```
+
+此处，我们使用操作 <xref:microsoft.quantum.environment.getqubitsavailabletouse> 返回可供使用的 qubits 数。
+因为这显然依赖于程序及其执行环境的全局状态，所以，`AssertQubitsAreAvailable` 的定义也必须是操作。
+但是，我们可以使用该全局状态生成简单 `Bool` 值作为 `Fact` 函数的输入。
 
 根据这些想法， [prelude](xref:microsoft.quantum.libraries.standard.prelude)提供两个特别有用的断言，<xref:microsoft.quantum.intrinsic.assert> 和 <xref:microsoft.quantum.intrinsic.assertprob> 建模为操作的 `()`。 这些断言每个都采用一个 Pauli 运算符，该运算符描述特定的感兴趣的度量、要对其执行度量的量程注册，以及一个假设结果。
 在使用模拟的目标计算机上，我们不受非[克隆定理](https://en.wikipedia.org/wiki/No-cloning_theorem)的限制，并且可以在不干扰传递到此类断言的寄存器的情况下执行此类测量。
-然后，模拟器可以类似于上面的 `AssertPositive` 函数，如果不在实践中观察到假设结果，则中止计算：
+然后，模拟器可以类似于上面的 `PositivityFact` 函数，如果不在实践中观察到假设结果，则中止计算：
 
 ```qsharp
 using (register = Qubit()) 
@@ -265,7 +285,7 @@ using (register = Qubit())
   > Qubit 的 id 在运行时分配，不一定与 qubit 的分配顺序或其在 qubit 寄存器中的位置一致。
 
 
-#### <a name="visual-studio-2019tabtabid-vs2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+#### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
   > [!TIP]
   > 可以通过在代码中放置一个断点并检查 qubit 变量的值，来找出 Visual Studio 中的 qubit id，例如：
@@ -274,7 +294,7 @@ using (register = Qubit())
   >
   > `register2` 的索引 `0` 的 qubit 具有 id =`3`，索引 `1` 为的 qubit 的 id 为`2`。
 
-#### <a name="command-line--visual-studio-codetabtabid-vscode"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
+#### <a name="command-line--visual-studio-code"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
 
   > [!TIP]
   > 可以通过使用 <xref:microsoft.quantum.intrinsic.message> 函数并在消息中传递 qubit 变量来找出 qubit id，例如：

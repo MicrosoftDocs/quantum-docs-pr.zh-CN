@@ -1,23 +1,23 @@
 ---
-title: 具有 NWChem 的端到端 |Microsoft Docs
-description: NWChem 文档的端到端
+title: 示例 NWChem 量程计划
+description: 使用 NWChem 输入纸牌，演练一个示例，了解如何获取量程化学模拟的入口计数。
 author: cgranade
 ms.author: chgranad@microsoft.com
 ms.date: 10/23/2018
 uid: microsoft.quantum.chemistry.examples.endtoend
-ms.openlocfilehash: 8f727ea4599e06b41ced561c624c4e773b9887d9
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 545ade99859f2a9939477fb18604921f70a5d9aa
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2019
-ms.locfileid: "73185811"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906502"
 ---
-# <a name="end-to-end-with-nwchem"></a>NWChem 的端到端 #
+# <a name="end-to-end-with-nwchem"></a>NWChem 端到端 #
 
 在本页面中，我们将逐步介绍如何从[NWChem](http://www.nwchem-sw.org/index.php/Main_Page)的输入牌中获取量程化学模拟的入口计数。
 在继续此示例之前，请确保已按照[安装和验证指南](xref:microsoft.quantum.chemistry.concepts.installation)安装了 Docker。
 
-有关详细信息：
+更多相关信息：
 - [NWChem 输入卡座的结构](https://github.com/nwchemgit/nwchem/wiki/Getting-Started#input-file-structure)
     - [用于量程开发工具包的输入纸牌命令](https://github.com/nwchemgit/nwchem/tree/master/contrib/quasar)
 - [安装化学库和依赖项](xref:microsoft.quantum.chemistry.concepts.installation)
@@ -25,7 +25,7 @@ ms.locfileid: "73185811"
 
 > [!NOTE]
 > 此示例需要运行 Windows PowerShell Core。
-> https://github.com/PowerShell/PowerShell 下载适用于 Windows、macOS 或 Linux 的 PowerShell Core。
+> https://github.com/PowerShell/PowerShell下载适用于 Windows、macOS 或 Linux 的 PowerShell Core。
 
 ## <a name="importing-required-powershell-modules"></a>导入所需的 PowerShell 模块 ##
 

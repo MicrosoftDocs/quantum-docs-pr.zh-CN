@@ -1,17 +1,17 @@
 ---
-title: '将其全部放在一起-Q # 技术 |Microsoft Docs'
-description: '将其全部放在一起-Q # 技术'
+title: 'Q # 技巧-将其全部放在一起'
+description: '演练说明量程 teleportation 的基本 Q # 程序。'
 uid: microsoft.quantum.techniques.puttingittogether
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 3605826da159757d4b321dbf4ec6acd7f4e6be05
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 6c988f77ef6e433945dbf21dfb41204c74bdda3e
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820158"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906825"
 ---
 # <a name="putting-it-all-together-teleportation"></a>全部放在一起： Teleportation #
 让我们返回到在[量程线路](xref:microsoft.quantum.concepts.circuits)中定义的 teleportation 线路的示例。 我们将使用它来说明我们目前了解到的概念。 下面为不熟悉理论的用户提供了对量程 teleportation 的说明，后面是 Q # 中代码实现的演练。 
@@ -41,7 +41,7 @@ $ $ \ket{\psi}\ket{\phi ^ +} = \frac{\alpha}{\sqrt{2}} \ket{000} + \frac{\alpha}
 
 作为提醒，当 control qubit 为1时，CNOT-CONTAINS 入口将翻转目标 qubit。 例如，$ \ket{000}$ 的输入将导致第一个 qubit （控件）为0时不会发生任何更改。 但是，在第一个 qubit 为1的情况下，例如，$ \ket{100}$ 的输入。 在此实例中，输出为 $ \ket{110}$，因为第二个 qubit （目标）由 CNOT-CONTAINS 入口翻转。
 
-现在，让我们在 CNOT-CONTAINS 入口对以上输入进行操作后，立即考虑输出。 结果为：
+现在，让我们在 CNOT-CONTAINS 入口对以上输入进行操作后，立即考虑输出。 结果是：
 
 $ $ \frac{\alpha}{\sqrt{2}} \ket{000} + \frac{\alpha}{\sqrt{2}} \ket{011} + \frac{\beta}{\sqrt{2}} \ket{110} + \frac{\beta}{\sqrt{2}} \ket{101} $ $
 
@@ -49,14 +49,14 @@ $ $ \frac{\alpha}{\sqrt{2}} \ket{000} + \frac{\alpha}{\sqrt{2}} \ket{011} + \fra
 
 作为提醒，Hadamard 入口会执行以下操作：
 
-输入 | 输出
+输入 | Output
 ---------------------------| ---------------------------------------------------------------
 $ \ket{0}$  | $ \frac{1}{\sqrt{2}} （\ket{0} + \ket{1}） $
 $ \ket{1}$  | $ \frac{1}{\sqrt{2}} （\ket{0}-\ket{1}） $
 
 如果我们将 Hadamard 入口应用于上述输出每个术语的第一个 qubit，则会得到以下结果：
 
-$ $ \frac{\alpha}{\sqrt{2}} （\frac{1}{\sqrt{2}} （\ket{0} + \ket{1}）） \ket{00} + \frac{\alpha}{\sqrt{2}} （\frac{1}{\sqrt{2}} （\ket{0} + \ket{1}）） \ket{11} + \frac{\beta}{\sqrt{2}} （\frac{1}{\sqrt{2}} （\ket{0}-\ket{1}）） \ket{10} + \frac{\beta}{\sqrt{2}} （\frac{1}{2}{0}）） \sqrt{1}$ $
+$ $ \frac{\alpha}{\sqrt{2}} （\frac{1}{\sqrt{2}} （\ket{0} + \ket{1}）） \ket{00} + \frac{\alpha}{\sqrt{2}} （\frac{1}{\sqrt{2}} （\ket{0} + \ket{1}）） \ket{11} + \frac{\beta}{\sqrt{2}} （\frac{1}{\sqrt{2}} （\ket{0}-\ket{1}）） \ket{10} + \frac{\beta}{\sqrt{2}} （\frac{1}{2}{0}）） \sqrt{1}$ ${01}
 
 请注意，每个术语都有 $2 \frac{1}{\sqrt{2}} $ 系数。 我们可以将这些结果相乘，结果如下：
 
@@ -64,7 +64,7 @@ $ $ \frac{\alpha}{2}（\ket{0} + \ket{1}） \ket{00} + \frac{\alpha}{2}（\ket{0
 
 $ \Frac{1}{2}$ 系数对于每个术语都是通用的，因此我们现在可以将其移到方括号以外：
 
-$ $ \frac{1}{2}\big [\alpha （\ket{0} + \ket{1}） \ket{00} + \alpha （\ket{0} + \ket{1}） \ket{11} + \beta （\ket{0}-\ket{1}） \ket{10} \beta] $ $
+$ $ \frac{1}{2}\big [\alpha （\ket{0} + \ket{1}） \ket{00} + \alpha （\ket{0} + \ket{1}） \ket{11} + \beta （\ket{0}-\ket{1}） \ket{10} \beta] $ ${0}{1}{01}
 
 然后，可以将每个术语的方括号相乘，提供：
 

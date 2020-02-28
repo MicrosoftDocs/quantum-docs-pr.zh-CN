@@ -1,17 +1,17 @@
 ---
-title: 用于创作的受支持的 latex 宏
-description: 受支持的 latex 宏的列表
+title: 用于创作的受支持的 LaTeX 宏
+description: Microsoft Quantum Development Kit 文档的受支持的 LaTeX 宏的列表。
 author: natke
 ms.author: nakersha
 ms.date: 09/04/2019
 ms.topic: article
 uid: microsoft.quantum.contribute.macros
-ms.openlocfilehash: 7a86cd5c24af50981e37fc7c8ecde414b746d277
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 2866ae3de43280914ffe51739d76ac10d28e9124
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73183414"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906910"
 ---
 # <a name="supported-macros"></a>支持的宏
 
@@ -23,5 +23,5 @@ ms.locfileid: "73183414"
 <tr><td>id</td><td>\id</td><td>$ \id $</td></tr>
 <tr><td>boldone</td><td>\boldone</td><td>$ \boldone $</td></tr>
 <tr><td>发生</td><td>\expect</td><td>$ \expect $</td></tr>
-<tr><td>variance</td><td>\variance （x）</td><td>$ \variance （x） $</td></tr>
+<tr><td>变化</td><td>\variance （x）</td><td>$ \variance （x） $</td></tr>
 </table>

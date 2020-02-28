@@ -1,17 +1,17 @@
 ---
-title: 'Q # 标准库-应用程序 |Microsoft Docs'
-description: Q# 标准库
+title: 'Q # 标准库中的应用程序'
+description: 了解以下两个基本应用程序：量子计算-Hamiltonian 模拟和选定的搜索算法。
 author: QuantumWriter
 uid: microsoft.quantum.libraries.applications
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 3e629e095bd2ee492496066710ef6fd4e578a543
-ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+ms.openlocfilehash: b7c46b634c6d691c067c0dd995301395408c85ca
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76868962"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907216"
 ---
 # <a name="applications"></a>应用程序 #
 
@@ -45,7 +45,7 @@ Hamiltonian 模拟是许多其他量子模拟问题的主要组成部分，而 H
 
 量程模拟算法将 Hamiltonian 的给定描述转换为一系列基元量子入口，作为一个整体，这是一项 Hamiltonian 的大致时间演变。
 
-在 Hamiltonian 分解为 Hermitian 部分求和的特殊情况下，Trotter-Suzuki 分解是一个特别简单且直观的算法，用于模拟将分解为 Hamiltonians 组件的总和的 Hermitian。 例如，此系列的第一个订单集成器约为 $ $ \begin{align} U （t） & = \left （e ^ {-iH\_0 t/r} e ^ {-iH\_1 t/r} \cdots e ^ {-iH\_{d-1} t/r} max_j \rightH\_j\\| ^ 2 t ^ 2/r），\end{align} $ $ 使用 $r d $ 条款的产品。 
+在 Hamiltonian 分解为 Hermitian 部分求和的特殊情况下，Trotter-Suzuki 分解是一个特别简单且直观的算法，用于模拟将分解为 Hamiltonians 组件的总和的 Hermitian。 例如，此系列的第一个订单集成器约为 $ $ \begin{align} U （t） & = \left （e ^ {-iH\_0 t/r} e ^ {-iH\_1 t/r} \cdots e ^ {-iH\_{d-1} t/r} max_j \rightH\_j\\| ^ 2 t ^ 2/r），\end{align} $ $ 使用 $r d $ 条款的产品。\\ 
 
 > [!TIP]
 > 示例中介绍了 Trotter-Suzuki 模拟算法的应用程序。
@@ -133,7 +133,7 @@ operation EstimateAdiabaticStateEnergy(
 > 有关 Ising 模型中的阶段估算和 adiabatic 状态准备，请参阅[ **IsingPhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/phase-estimation)。
 
 > [!TIP]
-> [分子 Hydrogen 的模拟](https://github.com/microsoft/Quantum/tree/master/samples/simulation/h2/command-line)是一个有趣且简单的示例。 [O'Malley et](https://arxiv.org/abs/1512.06860)中报告的模型和实验性结果。 仅要求使用 Pauli 矩阵，并采用 "$ \hat H = g\_" 形式 {0}I\_0 I\_1 + g\_1 {Z\_{Z\_0} {Z\_1} + g\_4 {Y\_0} {Y\_1} + g\_5 {X\_0} {X\_1} $。 这是一个有效的 Hamiltonian，只需要2个 qubits，在这种情况下，将根据两个 Hydrogen 原子之间的距离 $R $ 计算 $g $ 的常量。 使用 canon 函数，Paulis 转换为 unitaries，然后使用 Trotter-Suzuki 分解在短时间段内演变。 可以在不使用 adiabatic 状态准备的情况下创建 $H _2 $ 地面状态的良好近似值，因此，可以通过利用 canon 中的阶段估算直接找到地面状态。
+> [分子 Hydrogen 的模拟](https://github.com/microsoft/Quantum/tree/master/samples/simulation/h2/command-line)是一个有趣且简单的示例。 [O'Malley et](https://arxiv.org/abs/1512.06860)中报告的模型和实验性结果。 仅要求使用 Pauli 矩阵，并采用 "$ \hat H = g\_" 形式 {0}I\_0 I\_1 + g\_1 {Z\_{Z\_0} {Z\_1} + g\_4 {Y\_0} {Y\_1} + g\_5 {X\_0} {X\_1} $。\_\_\_ 这是一个有效的 Hamiltonian，只需要2个 qubits，在这种情况下，将根据两个 Hydrogen 原子之间的距离 $R $ 计算 $g $ 的常量。 使用 canon 函数，Paulis 转换为 unitaries，然后使用 Trotter-Suzuki 分解在短时间段内演变。 可以在不使用 adiabatic 状态准备的情况下创建 $H _2 $ 地面状态的良好近似值，因此，可以通过利用 canon 中的阶段估算直接找到地面状态。
 
 ## <a name="shors-algorithm"></a>秀尔算法 ##
 选定的算法仍是量程计算中最重要的开发，因为它显示了量程计算机可以用于解决重要的当前经典棘手问题。
@@ -159,7 +159,7 @@ $U _a $ 的本征值是 $ $ U\_\ket{x\_s} = e ^ {2 \ pi i s/r} \ket{x\_s}。 $$
 
 量程期间查找的线路关系图为：
 
-![](./../../media/QPE.svg)
+![量程期间查找的线路关系图](./../../media/QPE.svg)
 
 此处，$ 2n $ qubits 初始化为 $ \ket{0}$，$n $ qubits 初始化为 $ \ket{1}$。
 读者可能会想知道，将 eigenstates 的量程寄存器初始化为 $ \ket{1}$ 的原因。

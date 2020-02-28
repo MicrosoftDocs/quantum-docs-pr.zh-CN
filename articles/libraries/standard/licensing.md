@@ -1,22 +1,22 @@
 ---
-title: OSS 许可
-description: 'Q # 标准库-许可和参与'
+title: QDK 的开放源代码许可
+description: '了解使用和参与 Microsoft Q # 标准库的许可-许可和参与。'
 author: martinro
 ms.author: martinro@microsoft.com
 ms.date: 2/16/2018
 ms.topic: article
 uid: microsoft.quantum.libraries.licensing
-ms.openlocfilehash: 35e55f6741e5dcc79724f80f31d89937696d8554
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 4bc0fb7fbeb4a71b891619218905d509e50911c9
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/26/2019
-ms.locfileid: "73184383"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906196"
 ---
 # <a name="licensing"></a>许可 #
 
 量程开发工具包提供了一系列广泛的开源函数和操作，并在[MIT 许可证](https://github.com/Microsoft/Quantum/blob/master/LICENSE.txt)下获得许可。
-可在 GitHub 上的[Microsoft/QuantumLibraries](https://github.com/Microsoft/QuantumLibraries)存储库中获取可在目标计算机上移植的标准库部分，还可以从其他库（如和其他库，如[量程化学库）获取](xref:microsoft.quantum.chemistry.concepts.intro).
+可以在 GitHub 上的[Microsoft/QuantumLibraries](https://github.com/Microsoft/QuantumLibraries)存储库中从 GitHub 上的 Microsoft/存储库中获取可在目标计算机上移植的标准库部分，还可以从其他库（如和其他库，如[量程化学库](xref:microsoft.quantum.chemistry.concepts.intro)）获得。
 
 Microsoft 的量子开发工具包还提供了在[Microsoft Research 许可证](https://github.com/Microsoft/Quantum-NC/blob/master/LICENSE)下授权的专用库功能和操作。
 可以从 GitHub 上的[Microsoft/量子-NC](https://github.com/microsoft/quantum-nc)存储库中获取这些。
@@ -32,5 +32,5 @@ Microsoft 的量子开发工具包还提供了在[Microsoft Research 许可证](
 
 提交拉取请求时，CLA 会自动确定是否需要提供 CLA 并适当地装饰 PR （例如，标签、注释）。 只需按照机器人提供的说明操作即可。 只需使用我们的 CLA 在所有存储库上执行此操作一次。
 
-本项目采用 [Microsoft 开源行为准则](https://opensource.microsoft.com/codeofconduct/)。
-有关详细信息，请参阅[行为准则常见问题](https://opensource.microsoft.com/codeofconduct/faq/)；若要其他任何问题或意见，请联系 [opencode@microsoft.com](mailto:opencode@microsoft.com)。
+此项目采用了 [Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。
+有关详细信息，请参阅[行为准则常见问题](https://opensource.microsoft.com/codeofconduct/faq/)，或如果有任何其他问题或意见，请与 [opencode@microsoft.com](mailto:opencode@microsoft.com) 联系。

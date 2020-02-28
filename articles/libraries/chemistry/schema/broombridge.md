@@ -1,16 +1,17 @@
 ---
 title: Broombridge-量程化学架构
+description: Broombridge 量程化学架构概述，用于建模 Microsoft Quantum Development Kit 的实际化学问题。
 author: martinro
 ms.author: martinro@microsoft.com
 ms.date: 10/17/2018
 ms.topic: article
 uid: microsoft.quantum.libraries.chemistry.schema.broombridge
-ms.openlocfilehash: c2a7636d0b3f07419e3312e04da5d811229ad854
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: a746b63055bb1b2c1168b89993a7459ca9597f86
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73185318"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907811"
 ---
 # <a name="broombridge-quantum-chemistry-schema"></a>Broombridge 量程化学架构 # 
 
@@ -23,9 +24,8 @@ Broombridge 是 YAML 的，它是一种用于表示电子结构问题的可人�
 - 使用创建序列可展示地面和兴奋状态。
 - 可以指定能源水平的上限和下限。
 
-可以轻松地从 NWChem 生成数据格式：可以使用各种方法，这些方法包括从完全安装的 NWChem 到运行化学标签，例如在[此处](https://github.com/nwchemgit/nwchem/tree/master/QA/chem_library_tests)提供的板，以及在运行时通过 Docker 输出 Broombridge。NWchem 的图像，还可用于从化学卡座生成 Broombridge。 最后，无需安装任何化学软件即可快速开始使用计算化学的可视化方法， [EMSL 箭头](https://arrows.emsl.pnnl.gov/api/qsharp_chem)接口会将其提供给 NWChem。 
+可以轻松地从 NWChem 生成数据格式：可以使用各种方法，这些方法包括完全安装的 NWChem （例如在[此处](https://github.com/nwchemgit/nwchem/tree/master/QA/chem_library_tests)提供的），并在运行时将 Broombridge 作为运行的一部分输出，通过 NWChem 的 docker 映像，还可用于从化学标签生成 Broombridge。 最后，无需安装任何化学软件即可快速开始使用计算化学的可视化方法， [EMSL 箭头](https://arrows.emsl.pnnl.gov/api/qsharp_chem)接口会将其提供给 NWChem。 
 
-从较高层次来看，NWChem 与 Microsoft Quantum Development Kit 之间的相互作用可以按如下所示进行可视化： ![化学堆栈](~/media/broombridge.png) 蓝色阴影框表示 Broombridge 架构，不同灰色阴影框表示其他内部选择用来表示和处理计算化学的量程算法的数据表示形式（基于实际化学问题）。 
+在高级别上，可以按如下所示对 NWChem 和 Microsoft Quantum Development Kit 之间的相互作用进行可视化： ![化学堆栈](~/media/broombridge.png) 蓝色阴影框表示 Broombridge 架构，则各种灰显的框表示选择用于表示和处理计算化学的量程算法的其他内部数据表示形式。 
 
 [此处](https://github.com/microsoft/Quantum/tree/master/Chemistry/IntegralData/YAML)提供了使用 Broombridge 架构定义的多个化学表示形式。
-

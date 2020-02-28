@@ -1,17 +1,17 @@
 ---
-title: 数字库安装和验证 |Microsoft Docs
-description: 数字库安装和验证
+title: Microsoft 量程数字库-安装和验证
+description: 了解如何向 Visual Studio 2019 或更高版本安装添加 Microsoft 量程数字库。
 author: thomashaener
 ms.author: thhaner
 ms.date: 05/14/2019
 ms.topic: article
 uid: microsoft.quantum.numerics.installation
-ms.openlocfilehash: c41bb73ea484271689eea2ca1b59ce6639dc15a7
-ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
+ms.openlocfilehash: cb0d00a509b3986b605dd7f15f9bccc0661bb894
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036451"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906332"
 ---
 # <a name="numerics-library-installation-and-validation"></a>数字库安装和验证
 
@@ -33,7 +33,7 @@ ms.locfileid: "77036451"
 
 或者，你可以使用包管理器控制台通过命令行接口将数字库添加到你的项目。
 
-![](../../media/vs2017-nuget-console-menu.png)
+![在命令行中使用程序包管理器控制台](../../media/vs2017-nuget-console-menu.png)
 
 从包管理器控制台中，运行以下内容：
 

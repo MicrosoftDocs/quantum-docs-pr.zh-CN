@@ -1,16 +1,17 @@
 ---
-title: Broombridge 架构规范
+title: Broombridge 架构规范（版本0.2）
+description: 详细说明了适用于 Microsoft 量程化学库的 Broombridge 量程化学架构 v1.0。
 author: guanghaolow
 ms.author: gulow@microsoft.com
 ms.date: 05/28/2019
 ms.topic: article
 uid: microsoft.quantum.libraries.chemistry.schema.spec_v_0_2
-ms.openlocfilehash: 2f4be96bc6f1e8e6fe21b93bc0d9ab2aa367fd53
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: df7e651b7d32e672c6e83346ff603132bd55c1a2
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73185301"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907267"
 ---
 # <a name="broombridge-specification-v02"></a>Broombridge 规范 v 0。2 #
 
@@ -18,7 +19,7 @@ ms.locfileid: "73185301"
 
 标题为 "NOTE"、"信息" 或 "警告" 的任何边栏都是信息性的。
 
-## <a name="introduction"></a>简介 ##
+## <a name="introduction"></a>介绍 ##
 
 本部分介绍信息。
 
@@ -35,7 +36,7 @@ Broombridge 文档必须序列化为表示 JSON 对象的[YAML 1.2 文档](http:
 
 除非明确说明，否则对象不能具有本文档明确指定范围以外的其他属性。
 
-## <a name="additional-definitions"></a>附加定义 ##
+## <a name="additional-definitions"></a>其他定义 ##
 
 本部分进行了规范。
 
@@ -136,17 +137,17 @@ Broombridge 对象必须具有属性 `problem_description` 其值为 JSON 数组
 每个问题说明对象的 `hamiltonian` 属性介绍了特定量程化学问题的 Hamiltonian，方法是将其一个和两个正文术语作为实数组的稀疏数组列出。
 每个问题说明对象所描述的 Hamiltonian 运算符都采用窗体
 
-$ $ H = \sum\_\{i，j\}\sum\_{\sigma\in\\{\uparrow，\downarrow\\}} H\_\{ij\} ^\{\dagger\}\_，\sigma} a\_{j，\sigma} + \frac{1}{2}\sum\_\{i，j，k，l\}\sum\_{\sigma，\rho\in\\{\uparrow，\downarrow\\}} h\_{ijkl} a ^ \dagger\_{i，\sigma} 为 ^ \dagger\_{k，\rho}\_{l，\rho} a\_{j，\sigma}，$ $
+$ $ H = \sum\_\{i，j\}\sum\_{\sigma\in\\{\uparrow，\downarrow\\}} H\_\{ij\} ^\{\dagger\}\_{i，\sigma} a\_{j，\sigma} + \frac{1}{2}\sum\_\{i，j，k，l\}\sum\_{\sigma，\rho\in\\{\uparrow} a ^ \downarrow\\{i，\sigma} 为 ^ \dagger\_{k，\rho}\_{l，\rho} a\_{j，\sigma}，$ $\_\_
 
 此处 $h _ {ijkl} = （ij | kl） $ in Mulliken 约定。
 
 为清楚起见，electron 术语是
 
-$ $ h_ {ij} = \int {\mathrm d} x \psi ^ *\_i （x） \left （\frac{1}{2}\nabla ^ 2 + \sum\_{A} \frac{Z\_\right） \psi\_j （x），$ $
+$ $ h_ {ij} = \int {\mathrm d} x \psi ^ *\_i （x） \left （\frac{1}{2}\nabla ^ 2 + \sum\_{A} \frac{Z\_\right） \psi\_j （x），$ $\_
 
 electron 术语是
 
-$ $ h\_\{ijkl\} = \iint \{\mathrm d\}x ^ 2 \psi ^\{\*\}\_i （x\_1） \psi\_j （x\_1） \frac\{1\}\{\|x\_1-x\_\|\}\_\psi\{k ^ \*\}\_（x\_2） \psi\_l （x 2）。
+$ $ h\_\{ijkl\} = \iint \{\mathrm d\}x ^ 2 \psi ^\{\*\}\_i （x\_1） \psi\_x\_\{\}x \{1-x \|\_\_\|\frac \}\_\{\*\}（x\_2） \psi\_l （x\_2）。
 $$
 
 如我们在 `integral_sets` 属性的每个元素的[`basis_set` 属性](#basis-set-object)说明中所述，我们会进一步明确假设所使用的基本函数是真实的。
@@ -174,14 +175,14 @@ $$
 Hamiltonian 对象的 `one_electron_integrals` 属性必须是一个稀疏数组数量，其索引为两个整数，其值为数值。
 每个术语的索引 `[i, j]` 都必须是 `i >= j`。
 
-> 纪录这反映了 $h _ {ij} = h_ {ji} $ 这一事实的对称，这是 Hamiltonian Hermitian 的结果。
+> 纪录这反映了 $h _ {ij} = h_ {ji} $ 的对称，这是 Hamiltonian 是 Hermitian 的一种后果。
 
 
 ###### <a name="example"></a>示例 ######
 
 本部分介绍信息。
 
-以下稀疏数组数量表示 Hamiltonian $ $ H = \left （-5.0 （a ^\{\dagger\}\_{1，\uparrow} a\_{1，\uparrow} + a ^\{\dagger\}\_{1，\downarrow}\_{1，\downarrow}） + 0.17 （a ^\{\dagger\}\_{2，\uparrow}\_{1，\uparrow} + a ^\{\dagger\}\_{1，\uparrow} a\_{2，\uparrow} + a ^\{\dagger\}\_{2，\downarrow} a\_{1，\downarrow} + a ^\{\dagger\}\_{1，\downarrow} a\_{2，\downarrow}） \right）\\，\mathrm{Ha}。
+以下稀疏数组数量表示 Hamiltonian $ $ H = \left （-5.0 （a ^\{\dagger\}\_{1，\uparrow} a\_{1，\uparrow} + a ^\{\dagger\}\_{1，\downarrow} a\_{1，\downarrow}） + 0.17 （a ^\{\dagger\}\_{2，\uparrow} a\_{1，\uparrow} + a ^\{\dagger\}\_{1，\uparrow} a\_{2，\uparrow} + a ^\{\dagger\}\_{2，\downarrow} a\_{1，\downarrow} + a ^\{\dagger\}\_{1，\downarrow} a\_{2，\downarrow}） \right）\\，\mathrm{Ha}。
 $$
 
 ```yaml
@@ -206,7 +207,7 @@ Hamiltonian 对象的 `two_electron_integrals` 属性必须是具有一个名为
 
 每个 `two_electron_integrals` 属性都必须具有 `index_convention` 属性。
 `index_convention` 属性的值必须是表1中列出的允许值之一。
-如果 `mulliken``index_convention` 的值，则对于 `two_electron_integrals` 稀疏数组数量的每个元素，加载 Broombridge 文档的分析器必须实例化一个 Hamiltonian 术语，使其等于双 electron 运算符 $h _ {i，j，k，l} a ^ \dagger_i a ^ \dagger_j a_k $，其中 $i $、$j $、$k $ 和 $l $ 必须是至少为1的值的整数，其中 $h _ {i，j，k，l} $ 是稀疏数组数量的元素 `[i, j, k, l, h(i, j, k, l)]`。
+如果 `mulliken``index_convention` 的值，则对于 `two_electron_integrals` 稀疏数组数量的每个元素，加载 Broombridge 文档的分析器必须实例化 Hamiltonian 术语，使其等于 electron 运算符 $h _ {i，j，k，l} a ^ \ dagger_i ^ \ dagger_j a_k a_l $，其中 $i $、$j $、$k $ 和 $l $ 必须是至少为1的值的整数，其中 $h _ {i，j，k，l} $ 是稀疏数组数量的元素 `[i, j, k, l, h(i, j, k, l)]`。
 
 ###### <a name="symmetries"></a>Symmetries ######
 
@@ -234,7 +235,7 @@ Hamiltonian 对象的 `two_electron_integrals` 属性必须是具有一个名为
 
 以下对象指定 Hamiltonian
 
-$ $ H = \frac12 \sum\_{\sigma，\rho\in\\{\uparrow，\downarrow\\}} \Biggr （1.6 a ^ {\dagger}\_{1，\sigma} a ^ {\dagger}\_{1，\rho} a\_{1，\rho} a\_{1，\sigma}-0.1 a ^ {\dagger}\_{6，\sigma} 为 ^ {\dagger}\_{1，\rho} a\_{3，\rho} a\_{2，\sigma}-0.1 a ^ {\dagger}\_{6，\sigma} a ^ {\dagger}\_{1，\rho} a\_{2，\rho}\_，\sigma}-0.1 a ^ {\dagger}\_{1，\sigma}，^ {\dagger}\_{6，\rho} a\_{3，\rho} a\_{2，\sigma}-0.1 a ^ {\dagger}\_{1，\sigma} a ^ {\dagger}\_{6，\rho} a\_{2，\rho} a\_{3，\sigma} $ $ $-0.1 a ^ {\dagger}\_{3，\sigma} a ^ {\dagger}\_{2，\rho} a\_{6，\rho} a\_{1，\sigma}-0.1 a ^ {\dagger}\_{2，\rho} a\_{1，\rho} a\_{6，\sigma}-0.1 a ^ {\dagger}\_{2，\sigma} a ^ {\dagger}\_{3，\rho} a\_{6，\rho} a\_{1，\sigma}-0.1 a ^ {\dagger}\_{2，\sigma} 为 ^ {\dagger}\_{3，\rho} a\_{1，\rho} a\_{6，\sigma}\Biggr）\\，\textrm{Ha}。
+$ $ H = \frac12 \sum\_{\sigma，\rho\in\\{\uparrow，\downarrow\\}} \Biggr （1.6 a ^ {\dagger}\_{1，\sigma} ^ {\dagger}\_{1，\rho} a\_{1，\rho} a\_{1，\sigma}-0.1 a ^ {\dagger}\_{6，\sigma} a ^ {\dagger}\_{1，\rho} a\_{3，\rho} a\_{2，\sigma}-0.1 a ^ {\dagger}\_{6，\sigma}，\rho} a\_{3，\sigma}-0.1 a ^ {\dagger}\_{1，\sigma} a ^ {\dagger}\_{6，\rho} a\_{3，\rho} a\_{2，\sigma}-0.1 a ^ {\dagger}\_{1，\sigma} a ^ {\dagger}\_{6，\rho} a\_{2，\rho} a\_{3，\sigma} $ $ $-0.1 a ^ {\dagger}\_{3，\sigma} a ^ {\dagger}\_{2，\rho} a\_{6，\rho} \sigma}-\_{3 0。1，\sigma} 为 ^ {\dagger}\_{2，\rho}\_{1，\rho} a\_{6，\sigma}-0.1 a ^ {\dagger}\_{2，\sigma} a ^ {\dagger}\_{3，\rho} a\_{6，\rho} a\_{1，\sigma}-0.1 a ^ {\dagger}\_{2，\sigma} a ^ {\dagger}\_{3，\rho} a \rho}\_，\sigma}\Biggr\_\_\_\_\\
 $$
 
 ```yaml
@@ -263,7 +264,7 @@ two_electron_integrals:
 
 如果 `sparse_multi_configurational``method` 属性的值，则状态对象必须具有一个 `superposition` 属性，该属性包含一个基本状态数组及其非规范化 amplitudes。
 
-例如，初始状态 $ $ \ket{G0} = \ket{G1} = \ket{G2} = （^ {\dagger}\_{1，\uparrow}a ^ {\dagger}\_{2，\uparrow}a ^ {\dagger}\_{2，\downarrow}） \ket{0} $ $ $ $ \ket{E} = \frac{0.1 （^ {\dagger}\_{1，\uparrow}a ^ {\dagger}\_{2，\uparrow}a ^ {\dagger}\_{2，\downarrow}） + 0.2 （a ^ {\dagger}\_{1，\uparrow}a ^ {\_\dagger}\_{2，\uparrow}a）} {\dagger} | 0.1 | ^ 2 + | 0.2 | ^ 2}} \downarrow}{0}，$ $ 其中 $ \ket{E} $ 具有能量 $0.987 \textrm{Ha} $，由表示
+例如，初始状态 $ $ \ket{G0} = \ket{G1} = \ket{G2} = （^ {\dagger}\_{1，\uparrow}a ^ {\dagger}\_{2，\uparrow}a ^ {\dagger}\_{2，\downarrow}） \ket{0} $ $ $ $ \ket{E} = \frac{0.1 （^ {\dagger}\_{1，\uparrow}a ^ {\dagger}\_{2，\uparrow}a ^ {\dagger}\_{2，\downarrow}） + 0.2 （a ^ {\dagger}\_{1，\uparrow}a ^ {\dagger}\_{2，\uparrow}a）} {\dagger} | 0.1 | ^ 2 + | 0.2 | ^ 2}} \downarrow}{0}\_，$ $ 其中 $ \ket{E} $ 具有能量 $0.987 \textrm{Ha} $，由表示
 ```yaml
 initial_state_suggestions: # optional. If not provided, spin-orbitals will be filled to minimize one-body diagonal term energies.
   - label: "|G0>"
@@ -296,7 +297,7 @@ JSON 对象可能有一个 `two_body_amplitudes` 属性，其值为两主体群�
 
 $ $ \ket{\text{UCCSD}} = e ^ {T-T ^ \dagger}\ket{\text{reference}}，$ $
 
-$ $ T = 0.1 ^ {\dagger}\_{3，\uparrow}a\_{2，\downarrow} + 0.2 a ^ {\dagger}\_{2，\uparrow}a\_{2，\downarrow}-0.3 a ^ {\dagger}\_{1，\uparrow}a ^ {\dagger}\_{3，\downarrow}a\_{3，\uparrow}a\_{2，\downarrow} $ $ 由表示
+$ $ T = 0.1 ^ {\dagger}\_{3，\uparrow}a\_{2，\downarrow} + 0.2 a ^ {\dagger}\_{2，\uparrow}a\_{2，\downarrow}-0.3 a ^ {\dagger}\_{1，\uparrow}a ^ {\dagger}\_{2，\downarrow}a $ $ 由表示\_\_
 ```yaml
 initial_state_suggestions: # optional. If not provided, spin-orbitals will be filled to minimize one-body diagonal term energies.
   - label: "UCCSD"
@@ -325,7 +326,7 @@ initial_state_suggestions: # optional. If not provided, spin-orbitals will be fi
 
 ## <a name="tables-and-lists"></a>表和列表 ##
 
-### <a name="table-1-allowed-physical-units"></a>表 1. 允许的物理单元 ###
+### <a name="table-1-allowed-physical-units"></a>表 1。 允许的物理单元 ###
 
 本部分进行了规范。
 
@@ -341,7 +342,7 @@ initial_state_suggestions: # optional. If not provided, spin-orbitals will be fi
 - {"units": "ev", "value": 27.2113831301723}
 ```
 
-### <a name="table-2-allowed-index-conventions"></a>表2： 允许的索引约定 ###
+### <a name="table-2-allowed-index-conventions"></a>表 2. 允许的索引约定 ###
 
 本部分进行了规范。
 

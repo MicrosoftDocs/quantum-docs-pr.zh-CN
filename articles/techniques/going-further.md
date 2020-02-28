@@ -1,17 +1,17 @@
 ---
-title: '进一步-Q # 技术 |Microsoft Docs'
-description: '进一步-Q # 技术'
+title: '进一步了解 Q # 技术'
+description: '浏览 Q # 中的高级主题，例如创建泛型函数并借用 qubits。'
 author: QuantumWriter
 ms.author: Christopher.Granade@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.techniques.going-further
-ms.openlocfilehash: 41713827a93d2cc97e198fa4ad377012c846cf8b
-ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
+ms.openlocfilehash: 46ebf544c1d6e56f152a06d06151305fa972011a
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036230"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906893"
 ---
 # <a name="going-further"></a>进一步 #
 

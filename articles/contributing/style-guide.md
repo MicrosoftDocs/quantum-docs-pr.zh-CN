@@ -1,17 +1,17 @@
 ---
-title: 'Q # 样式指南 |Microsoft Docs'
-description: 'Q # 样式指南'
+title: 'Microsoft Q # 样式指南'
+description: '了解 Q # 程序和库的命名、输入、文档和格式设置约定。'
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.style
-ms.openlocfilehash: 4050e2ee9e516aed7a8ba1398792562926808ee0
-ms.sourcegitcommit: c93fea5980d1d46fbda1e7c7153831b9337134bf
+ms.openlocfilehash: 3c8e432378ec563a197a5b87000c3e90cadb8e18
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73463321"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907437"
 ---
 # <a name="q-style-guide"></a>Q # 样式指南 #
 ## <a name="general-conventions"></a>一般约定 ##
@@ -64,9 +64,9 @@ ms.locfileid: "73463321"
 | ---- | ------ |
 | 应用 | 作为输入提供的操作称为 |
 | Assert | 模拟器检查可能的量程度量结果的假设 |
-| 估 | 返回一个传统值，表示从一个或多个度量值中提取的估计值 |
-| 度量 | 将执行量程度量，并将其结果返回给用户 |
-| 准备 | 给定的 qubits 寄存器初始化为特定状态 |
+| 估计 | 返回一个传统值，表示从一个或多个度量值中提取的估计值 |
+| Measure（度量值） | 将执行量程度量，并将其结果返回给用户 |
+| Prepare | 给定的 qubits 寄存器初始化为特定状态 |
 | 示例 | 从某一分布中随机返回一个传统值 |
 
 对于函数，我们建议避免使用谓词来取代常用名词（请参阅下面正确名词的指导）或形容词：
@@ -80,7 +80,7 @@ ms.locfileid: "73463321"
 此名称具有与内置 `Controlled` 函子的语义相匹配的额外权益，如下面的进一步所述。
 同样，可以使用_代理名词_从操作名称构造函数和 UDT 名称，就像在与 `Encode`强烈关联的 UDT 的名称 `Encoder`。
 
-# <a name="guidancetabguidance"></a>[指南](#tab/guidance)
+# <a name="guidance"></a>[指南](#tab/guidance)
 
 建议：
 
@@ -91,9 +91,9 @@ ms.locfileid: "73463321"
 - 对于所有局部变量，请使用 `pascalCase` 强优先于 `CamelCase`、`snake_case`或 `ANGRY_CASE`。 具体而言，请确保本地变量以小写字母开头。
 - 避免在函数和操作名称中使用下划线 `_`;如果需要其他级别的层次结构，请使用命名空间和命名空间别名。
 
-# <a name="examplestabexamples"></a>[示例](#tab/examples)
+# <a name="examples"></a>[示例](#tab/examples)
 
-|   | 名称 | 描述 |
+|   | 名称 | 说明 |
 |---|------|-------------|
 | ☑ | `operation ReflectAboutStart` | 清除动词的使用（"反射"）以指示操作的效果。 |
 | ☒ | <s>`operation XRotation`</s> | 使用名词短语建议函数，而不是操作。 |
@@ -132,7 +132,7 @@ is Adj + Ctl {
 }
 ```
 
-# <a name="guidancetabguidance"></a>[指南](#tab/guidance)
+# <a name="guidance"></a>[指南](#tab/guidance)
 
 建议：
 
@@ -141,9 +141,9 @@ is Adj + Ctl {
 - 将大写字母用于短（两字母）首字母缩写词和缩略词。
 - 将 `CamelCase` 用于更长（三个或更多字母）的首字母缩写和缩略词。
 
-# <a name="examplestabexamples"></a>[示例](#tab/examples)
+# <a name="examples"></a>[示例](#tab/examples)
 
-|   | 名称 | 描述 |
+|   | 名称 | 说明 |
 |---|------|-------------|
 | ☑ | `X` | "应用 $X $ 转换" 的公认简写 |
 | ☑ | `CNOT` | "受控-非" 的理解简写 |
@@ -168,17 +168,17 @@ While we must maintain the history and intellectual provenance of concepts in qu
 例如，单独控制的交换和双向受控 NOT 操作通常称为学术文学中的 "Fredkin" 和 "Toffoli" 操作，但在 Q # 中标识为 `CSWAP` 和 `CCNOT`。
 在这两种情况下，API 文档注释都提供基于正确名词的同义词名称以及所有合适的引文。
 
-如果始终需要使用正确名词的某些使用方式，则此首选项特别重要，例如，Q # 遵循许多传统语言所设置的传统语言，并引用对布尔逻辑的引用 `Bool`George Boole。
+如果始终需要使用正确名词的某些使用方式，则此首选项非常重要，例如，Q # 遵循许多传统语言所设置的传统语言（例如），并引用对布尔值逻辑的引用中的 `Bool` 类型，这反过来又称为 George Boole。
 与此类似，几个量程概念的命名方式类似，其中包含了在 Q # 语言中内置的 `Pauli` 类型。
 通过最大限度地减少使用正确名词的情况并不是很重要，我们将减少不能合理避免正确名词的影响。
 
-# <a name="guidancetabguidance"></a>[指南](#tab/guidance) 
+# <a name="guidance"></a>[指南](#tab/guidance) 
 
 建议：
 
 - 不要在名称中使用正确名词。
 
-# <a name="examplestabexamples"></a>[示例](#tab/examples)
+# <a name="examples"></a>[示例](#tab/examples)
 
 ***
 
@@ -188,19 +188,19 @@ While we must maintain the history and intellectual provenance of concepts in qu
 这与允许值隐式更改类型（例如，类型提升）或通过强制转换的语言不同。
 因此，类型转换函数在 Q # 库开发中扮演着重要的角色，并且包含有关命名的一个更常见的决策。
 但请注意，由于类型转换始终是_确定性_的，因此可以将它们作为函数编写，因而会在上述建议的范围之内。
-具体而言，我们建议不要将类型转换函数命名为谓词（例如： `ConvertToX`）或副词 prepositional 短语（`ToX`），但应将其命名为形容词 prepositional 短语，指示源类型和目标类型（`XAsY`).
+具体而言，我们建议不要将类型转换函数命名为谓词（例如： `ConvertToX`）或副词 prepositional 短语（`ToX`），但应将其命名为形容词 prepositional 短语，指示源类型和目标类型（`XAsY`）。
 在类型转换函数名称中列出数组类型时，建议将速记 `Arr`。
 避免异常情况，我们建议使用 `As` 命名所有类型转换函数，以便可以快速识别它们。
 
-# <a name="guidancetabguidance"></a>[指南](#tab/guidance)
+# <a name="guidance"></a>[指南](#tab/guidance)
 
 建议：
 
 - 如果函数将类型 `X` 的值转换为 `Y`类型的值，请使用 `AsY` 或 `XAsY`名称。
 
-# <a name="examplestabexamples"></a>[示例](#tab/examples)
+# <a name="examples"></a>[示例](#tab/examples)
 
-|   | 名称 | 描述 |
+|   | 名称 | 说明 |
 |---|------|-------------|
 | ☒ | <s>`ToDouble`</s> | 介词 "to" 会生成谓词短语，指示操作而不是函数。 |
 | ☒ | <s>`AsDouble`</s> | 函数名称中不明确输入类型。 |
@@ -215,27 +215,27 @@ While we must maintain the history and intellectual provenance of concepts in qu
 清楚地表明，在命名函数和操作时，这种情况很有帮助，使得对仅限内部的代码的意外依赖关系变得显而易见。
 如果操作或函数不能直接使用，而是应由部分应用程序操作的匹配可调用的使用，请考虑使用以 `_` 开头的名称作为部分应用的可调用。
 
-# <a name="guidancetabguidance"></a>[指南](#tab/guidance)
+# <a name="guidance"></a>[指南](#tab/guidance)
 
 建议：
 
 - 当函数、操作或用户定义类型不是 Q # 库或程序的公共 API 的一部分时，请确保其名称以前导下划线（`_`）开头。
 
-# <a name="examplestabexamples"></a>[示例](#tab/examples)
+# <a name="examples"></a>[示例](#tab/examples)
 
-|   | 名称 | 描述 |
+|   | 名称 | 说明 |
 |---|------|-------------|
 | ☒ | <s>`ApplyDecomposedOperation_`</s> | 下划线 `_` 不应显示在名称的末尾。 |
 | ☑ | `_ApplyDecomposedOperation` | 开头的下划线 `_` 清楚地表明，此操作仅供内部使用。 |
 
 ***
 
-### <a name="variants"></a>款式 ###
+### <a name="variants"></a>版本 ###
 
 尽管此限制可能不会在 Q # 的未来版本中保持不变，但目前这种情况下，通常会有一组相关的操作或函数，这些操作或函数可由函子它们的输入支持，或其参数的具体类型区分开来。
 可以通过使用相同的根名称，后跟一个或两个指示其变体的字母来区分这些组。
 
-| 后缀 | 含义 |
+| Suffix | 含义 |
 |--------|---------|
 | `A` | 应输入支持 `Adjoint` |
 | `C` | 应输入支持 `Controlled` |
@@ -244,14 +244,14 @@ While we must maintain the history and intellectual provenance of concepts in qu
 | `D` | 输入或输入的类型为 `Double` |
 | `L` | 输入或输入的类型为 `BigInt` |
 
-# <a name="guidancetabguidance"></a>[指南](#tab/guidance)
+# <a name="guidance"></a>[指南](#tab/guidance)
 
 建议：
 
 - 如果函数或操作不与任何类似的函数或操作（由类型和函子支持的输入）相关联，请不要使用后缀。
 - 如果函数或操作由类型和函子对其输入的支持相关联，则可使用上表中所示的后缀来区分变体。
 
-# <a name="examplestabexamples"></a>[示例](#tab/examples)
+# <a name="examples"></a>[示例](#tab/examples)
 
 ***
 
@@ -261,7 +261,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 同样，输入和类型参数的名称应传达函数或自变量在提供后的使用方式。
 
 
-# <a name="guidancetabguidance"></a>[指南](#tab/guidance)
+# <a name="guidance"></a>[指南](#tab/guidance)
 
 建议：
 
@@ -276,7 +276,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
   具体而言，请特别避免使用单字母变量名作为索引;请考虑至少使用 `idx`。
 - 用于保存数组长度的变量应以 `n` 开头，应为复数（例如： `nThings`）。
 
-# <a name="examplestabexamples"></a>[示例](#tab/examples)
+# <a name="examples"></a>[示例](#tab/examples)
 
 ***
 
@@ -285,7 +285,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 用户定义类型中的命名项应命名为 `CamelCase`，即使在 UDT 构造函数的输入中也是如此。
 使用访问器表示法（例如： `callable::Apply`）或复制和更新表示法（`set arr w/= Data <- newData`）时，这有助于清晰地将命名项与对本地范围变量的引用区分开来。
 
-# <a name="guidancetabguidance"></a>[指南](#tab/guidance)
+# <a name="guidance"></a>[指南](#tab/guidance)
 
 建议：
 
@@ -294,9 +294,9 @@ While we must maintain the history and intellectual provenance of concepts in qu
 - 不解析为操作的已命名项应命名为名词短语。
 - 对于包装操作的 Udt，应定义名为 `Apply` 的单个名为的项。
 
-# <a name="examplestabexamples"></a>[示例](#tab/examples)
+# <a name="examples"></a>[示例](#tab/examples)
 
-|   | 片段 | 描述 |
+|   | 片段 | 说明 |
 |---|---------|-------------|
 | ☑ | `newtype Oracle = (Apply : Qubit[] => Unit is Adj + Ctl)` | 名称 `Apply` 是 `CamelCase`格式的谓词短语，建议指定的项是操作。 |
 | ☒ | <s>`newtype Oracle = (apply : Qubit[] => Unit is Adj + Ctl) `</s> | 命名项的开头应为大写字母。 |
@@ -342,7 +342,7 @@ operation ApplyPhaseEstimationIteration(
 例如，`ControlledOnInt<'T>` 具有类型 `(Int, ('T => Unit is Adj + Ctl)) => ((Qubit[], 'T) => Unit is Adj + Ctl)`，因此 `ControlledOnInt<Qubit[]>(5, _)` 的行为类似于 `Controlled` 函子，但在控件寄存器表示状态 $ \ket{5} = \ket{101}$ 的情况下。
 因此，开发人员希望 `ControlledOnInt` 的输入会将正在转换的可调用置于最后，并将生成的操作作为其输入 `(Qubit[], 'T)`---与后跟 `Controlled` 函子的输出的顺序相同。
 
-# <a name="guidancetabguidance"></a>[指南](#tab/guidance)
+# <a name="guidance"></a>[指南](#tab/guidance)
 
 建议：
 
@@ -350,7 +350,7 @@ operation ApplyPhaseEstimationIteration(
 - 使用与内置函子一致的输入排序。
 - 将所有经典输入置于任何量子输入之前。
 
-# <a name="examplestabexamples"></a>[示例](#tab/examples)
+# <a name="examples"></a>[示例](#tab/examples)
 
 ***
 
@@ -358,7 +358,7 @@ operation ApplyPhaseEstimationIteration(
 
 使用 Q # 语言，可以通过使用特殊格式的文档注释，将文档附加到操作、函数和用户定义的类型。
 这些文档注释由三斜杠（`///`）表示，可用于描述每个操作、函数和用户定义类型的用途、每个所需的输入等的[风格 Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)文档。
-使用量子开发工具包提供的编译器可提取这些注释，并使用它们来帮助录入文档，这与 https://docs.microsoft.com/quantum 中的文档类似。
+使用量子开发工具包提供的编译器可提取这些注释，并使用它们来帮助录入文档，这与 https://docs.microsoft.com/quantum中的文档类似。
 同样，随量子开发工具包一起提供的语言服务器使用这些注释在用户将鼠标悬停在其 Q # 代码中的符号上方时向用户提供帮助。
 利用文档注释，可以通过提供有用的参考来帮助用户理解代码，这是使用本文档中的其他约定不容易表达的详细信息。
 
@@ -368,13 +368,13 @@ operation ApplyPhaseEstimationIteration(
 
 为了有效地使用此功能来帮助用户，我们建议你在编写文档注释时，记住几个事项。
 
-# <a name="guidancetabguidance"></a>[指南](#tab/guidance)
+# <a name="guidance"></a>[指南](#tab/guidance)
 
 建议：
 
 - 每个公共函数、操作和用户定义的类型后面都应跟有文档注释。
 - 每个文档注释至少应包含以下部分：
-    - 总结
+    - 摘要
     - 输入
     - 输出（如果适用）
 - 确保所有摘要都是两个句子或更少。 如果需要更多空间，请立即提供 `# Summary` 的 `# Description` 部分，并提供完整的详细信息。
@@ -388,7 +388,7 @@ operation ApplyPhaseEstimationIteration(
 - 当操作或函数通过函子变体与其他操作或函数相关时，请将其他变体作为 `# See Also` 节中的项目符号列出。
 - 在第1级（`/// #`）节之间留空注释行，但不要在2级（`/// ##`）节之间留有空行。
 
-# <a name="examplestabexamples"></a>[示例](#tab/examples)
+# <a name="examples"></a>[示例](#tab/examples)
 
 #### <a name=""></a>☑ ####
 
@@ -434,7 +434,7 @@ is Adj + Ctl {
 尽管如此，我们建议在一组协作者内维护一组一致的格式设置约定，特别是对于较大的 Q # 项目（如量子开发工具包本身）。
 可以通过使用与 Q # 编译器集成的格式设置工具来自动应用这些规则。
 
-# <a name="guidancetabguidance"></a>[指南](#tab/guidance) 
+# <a name="guidance"></a>[指南](#tab/guidance) 
 
 建议：
 
@@ -451,9 +451,9 @@ is Adj + Ctl {
 - 在函数、操作或 UDT 名称后，或在属性声明中 `@` 后，不要使用空格。
 - 每个属性声明都应在自己的行上。
 
-# <a name="examplestabexamples"></a>[示例](#tab/examples)
+# <a name="examples"></a>[示例](#tab/examples)
 
-|   | 片段 | 描述 |
+|   | 片段 | 说明 |
 |---|---------|-------------|
 | ☒ | <s>`2+3`</s> | 在二元运算符周围使用空格。 |
 | ☒ | <s>`target:Qubit`</s> | 在类型批注冒号前后使用空格。 |

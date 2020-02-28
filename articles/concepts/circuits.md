@@ -1,17 +1,17 @@
 ---
-title: 量程线路 |Microsoft Docs
-description: 量子线路
+title: 量子线路
+description: 了解如何以视觉方式表示简单和复杂的量程操作和量子线路关系图。
 author: QuantumWriter
 uid: microsoft.quantum.concepts.circuits
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: fe845aa0dde7c780ea6721dfe2559119e90b4aa5
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 8ba4648f1837065d15957a01ab4ca8dd2d490a42
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820787"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77905142"
 ---
 # <a name="quantum-circuits"></a>量程线路
 请考虑一下单一转换 $ \text{CNOT-CONTAINS} _{01}（H\otimes 1） $。
@@ -24,7 +24,7 @@ $ $ \mathrm{CNOT}_{01}（H\otimes 1） \ket{00} = \frac{1}{\sqrt{2}} \left （\k
 
 <!--- ![](.\media\1.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-![](~/media/Concepts1.png)
+最大化放大两 qubit 状态的 ![线路图](~/media/Concepts1.png)
 
 ## <a name="quantum-circuit-diagram-conventions"></a>量程线路约定
 当你了解表示量子线路的约定后，这种适用于量程操作的视觉语言比写下其等效矩阵更容易理解。
@@ -37,9 +37,9 @@ $ $ \mathrm{CNOT}_{01}（H\otimes 1） \ket{00} = \frac{1}{\sqrt{2}} \left （\k
 
 <!--- ![](.\media\2.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-![](~/media/concepts_2.png)
+对 qubit 注册操作的 Hadamard 操作 ![符号](~/media/concepts_2.png)
 
-是对 qubit 寄存器使用的[Hadamard](xref:microsoft.quantum.intrinsic.h)入口。
+是对 qubit 寄存器进行的[Hadamard](xref:microsoft.quantum.intrinsic.h)操作。
 
 量程入口按时间顺序排列，并将最左侧的入口排列为第一个应用到 qubits 的入口。
 换而言之，如果将电缆画为包含量程状态，则电缆会从左到右从图中的每个入口开始显示量程状态。
@@ -47,7 +47,7 @@ $ $ \mathrm{CNOT}_{01}（H\otimes 1） \ket{00} = \frac{1}{\sqrt{2}} \left （\k
 
 <!--- ![](.\media\3.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-![](~/media/concepts_3.png)
+![从左到右应用的量程入口图](~/media/concepts_3.png)
 
 是单一矩阵 $CBA $。
 矩阵相乘服从相反的约定：首先应用最右侧的矩阵。 但在量程电路关系图中，首先应用最左侧的入口。
@@ -65,7 +65,7 @@ $ $ \mathrm{CNOT}_{01}（H\otimes 1） \ket{00} = \frac{1}{\sqrt{2}} \left （\k
 
 <!--- ![](.\media\4.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-![](~/media/concepts_4.png)
+qubit 单一操作的 ![线路图](~/media/concepts_4.png)
 
 我们还可以查看 $B $，以在单个 qubit 注册上执行操作，而不 2 1 是 qubit 寄存器上的操作，具体取决于使用该线路的上下文。 此类抽象线路的最有用的属性可能是，它们允许在较高级别对复杂的量程算法进行描述，而不必将它们编译为基本入口。
 这意味着，你可以获取有关大型量程算法的数据流的直觉，而无需了解算法中每个子例程的工作方式的所有详细信息。
@@ -78,14 +78,14 @@ $ $ \mathrm{CNOT}_{01}（H\otimes 1） \ket{00} = \frac{1}{\sqrt{2}} \left （\k
 
 <!--- ![](.\media\5.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-![](~/media/concepts_5.png)
+单个受控入口的 ![线路图](~/media/concepts_5.png)
 
 此时，黑色圆圈表示控制门的量程位，垂直线路表示在控件 qubit 采用值 $1 $ 时应用的单一。
 对于 $G = X $ 和 $G = Z $ 的特殊情况，我们引入了以下表示法来描述控制的入口版本（请注意，受控-X 门是[$CNOT $ 门](xref:microsoft.quantum.intrinsic.cnot)）：
 
 <!--- ![](.\media\6.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-![](~/media/concepts_6.png)
+控制入口的特殊案例 ![电路图](~/media/concepts_6.png)
 
 Q # 提供自动生成控制版本的操作的方法，此操作使程序员不必为这些操作编写代码。 下面显示了一个示例：
 
@@ -104,7 +104,7 @@ is Ctl { // Auto-generate the controlled specialization of the operation
 
 <!--- ![](.\media\7.svg) ---->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-![度量线路](~/media/concepts_7.png)
+表示度量操作的 ![符号](~/media/concepts_7.png)
 
 Q # 为此目的实现了[度量运算符](xref:microsoft.quantum.intrinsic.measure)。
 有关详细信息，请参阅[有关度量值的部分](xref:microsoft.quantum.libraries.standard.prelude#measurements)。
@@ -113,7 +113,7 @@ Q # 为此目的实现了[度量运算符](xref:microsoft.quantum.intrinsic.meas
 
 <!--- ![](.\media\8.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-![](~/media/concepts_8.png)
+表示受控操作的 ![线路图](~/media/concepts_8.png)
 
 提供一个经典控制的入口，其中 $G $ 在传统控制位上应用为值 $1 $。
 
@@ -125,4 +125,4 @@ Q # 为此目的实现了[度量运算符](xref:microsoft.quantum.intrinsic.meas
 下面给出了量子 teleportation 线路;我们还提供了一条带批注的线路，用于说明如何读取量程线路。
 
 <!--- ![](.\media\tp2.svg){ width=50% } --->
-![](~/media/concepts_tp2.png)
+![量子 teleportation 线路](~/media/concepts_tp2.png)

@@ -1,17 +1,17 @@
 ---
-title: 多个 qubits |Microsoft Docs
-description: 多个量子位
+title: 多个量子位
+description: 了解如何在两个或多个 qubits 上执行操作。
 author: QuantumWriter
 uid: microsoft.quantum.concepts.multiple-qubits
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: e9c043f4ee41a878b9544a27d5ea052fce29f06e
-ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+ms.openlocfilehash: 2fa227c823cd87df9c799c043c699e4ce818b8e3
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/05/2019
-ms.locfileid: "74863210"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907539"
 ---
 # <a name="multiple-qubits"></a>多个 Qubits
 
@@ -59,7 +59,7 @@ $$
 
 还可以只测量一个 qubit 为两 qubit 的量程状态。 在仅测量其中一个 qubits 的情况下，度量值的影响将稍有不同，因为整个状态不会折叠为计算基础状态，而只是折叠为一个子系统。  换句话说，在这种情况下，只测量一个 qubit 只会折叠其中一个子系统，而不是全部。  
 
-若要查看这一点，请考虑测量以下状态的第一个 qubit，这是通过对两个 qubits 上 $H 的 $ $ 初始设置为 "0" 状态而形成的： $ $ H ^ {\otimes 2} \left （\begin{bmatrix}1 \\\\ 0 \end{bmatrix}\otimes \begin{bmatrix}1 \\\\ 0 \end{bmatrix} \right） = \frac{1}{2}\begin{bmatrix}1 & 1 & 1 & 1 \\\\ 1 & 1 & 1 & \\\\ 1 & 1 &1 &-1 & 1 \end{bmatrix}\begin{bmatrix}1\\\\ 0\\\\ 0\\\\ 0 \ 结束 {bmatrix} = \frac{1}{2}\\\\\\1 \\\\1 \\ & 1 \ 结束 {bmatrix} \mapsto \begin{cases}\text{outcome} = 0{1}\frac{2}{\sqrt\\} \begin{bmatrix}1 \\\\1 \\\\0 \\\\0 \end{bmatrix}\\ \text{outcome} = 1 & \frac{1}{\sqrt{2}} \begin{bmatrix}0\\\\\\\\\\1 \\\\1 \end{bmatrix} \\ \end{cases}。
+若要查看这一点，请考虑测量以下状态的第一个 qubit，这是通过对两个 qubits 上 $H 的 $ $ 初始设置为 "0" 状态而形成的： $ $ H ^ {\otimes 2} \left （\begin{bmatrix}1 \\\\ 0 \end{bmatrix}\otimes \begin{bmatrix}1 \\\\ 0 \end{bmatrix} \right） = \frac{1}{2}\begin{bmatrix}1 & 1 & 1 & 1 \\\\ 1 & 1 & 1 & \\\\ 1 & 1 &1 &-1 & 1 \end{bmatrix}\begin{bmatrix}1\\\\ 0\\\\ 0\\\\ 0 \ 结束 {bmatrix} = \frac{1}{2}\\\\\\1 \\\\1 \\ & 1 \ 结束 {bmatrix} \mapsto \begin{cases}\text{outcome} = 0{1}\frac{2}{\sqrt\\} \begin{bmatrix}1 \\\\1 \\\\0 \\\\0 \end{bmatrix}\\ \text{outcome} = 1 & \frac{1}{\sqrt{2}} \begin{bmatrix}0\\\\\\\\\\1 \\\\1 \end{bmatrix} \\ \end{cases}。\\\\
 $ $ 这两个结果的发生率均为50%。  这两者的结果50% 的概率可能是 intuited 的，这是因为初始量程状态向量在第一个 qubit 上的交换 $0 $1 $ 下是固定的。
 
 用于度量第一个或第二个 qubit 的数学规则非常简单。  如果我们允许 $e _k $ 是 $k ^ {\rm th} $ 计算基础向量，并允许 $S $ 为所有 $e $ 的集合，以使 qubit 的值为 _k $ 的值 $1 $。  例如，如果对度量第一个 qubit 感兴趣，则 $ $S $ 将包含 $e _2 \ http-equiv $10 和 $e _3 \ http-equiv $11。  同样，如果我们对第二个 qubit 感兴趣 $S $ 将包含 $e _1 \ http-equiv $1 和 $e _3 \equiv $11。  那么，将所选 qubit 测量为 $1 $ 的概率为状态向量 $ \psi $
@@ -97,7 +97,7 @@ $ $ \frac{\frac{e_2}{2}+ \frac{e_3}{2}} {\sqrt{\frac{1}{2}}} = \frac{1}{\sqrt{2}
 ## <a name="two-qubit-operations"></a>Qubit 操作
 与 qubit 情况一样，任何单一转换都是对 qubits 的有效操作。 通常，$n $ qubits 上的单一转换是一个大小为 $ 2 ^ n \times 2 ^ n $ 的矩阵 $U $ （因此它作用于大小为 $ 2 ^ n $ 的矢量），以便 $U ^{-1} = U ^ \dagger $。 例如，CNOT-CONTAINS （受控-NOT）门是一种常用的 qubit 门，由以下单一矩阵表示：
 
-$ $ \operatorname{CNOT} = \begin{bmatrix} 1 \ 0 \ 0 0 \ 0 \\\\ 0 \ 1 \ 0 \ 0 \\\\ 0 \ 0 \ 0 \\\ 0 \end{bmatrix} $ $
+$ $ \operatorname{CNOT} = \begin{bmatrix} 1 \ 0 \ 0 0 \ 0 \\\\ 0 \ 1 \ 0 \ 0 \\\\ 0 \ 0 \ 0 \\\ 0 \end{bmatrix} $ $\\
 
 我们还可以通过在两个 qubits 上应用 qubit 入口来形成两 qubit 入口。 例如，如果我们应用入口 
 
@@ -107,7 +107,7 @@ and
 
 $ $ \begin{bmatrix} e \ f\\\\ g \ h \end{bmatrix} $ $
 
-对于第一个和第二个 qubits，这相当于应用其 tensor 产品指定的 qubit 单一项： $ $ \begin{bmatrix} a \ b\\\\ c \ d \end{bmatrix} \otimes \begin{bmatrix} e \ f\\\\ g \ h \end{bmatrix} = \begin{bmatrix} ae \ bf \ bh \\\\ ce \ cf \ de \ df \\\\ cg \ ch \ dg \ dh \end{bmatrix}. $ $，所以我们可以通过采用一些已知的 qubit 入口的 tensor 产品来形成两 qubit 入口。 Qubit 入口的一些示例包括 $H \otimes H $、$X \otimes \boldone $ 和 $X \otimes Z $。
+对于第一个和第二个 qubits，这相当于应用其 tensor 产品指定的 qubit 单一项： $ $ \begin{bmatrix} a \ b\\\\ c \ d \end{bmatrix} \otimes \begin{bmatrix} e \ f\\\\ g \ h \end{bmatrix} = \begin{bmatrix} ae \ bf \ bh \\\\ ce \ cf \ de \ df \\\\ cg \ ch \ dg \ dh \end{bmatrix}. $ $，所以我们可以通过采用一些已知的 qubit 入口的 tensor 产品来形成两 qubit 入口。\\\\ Qubit 入口的一些示例包括 $H \otimes H $、$X \otimes \boldone $ 和 $X \otimes Z $。
 
 请注意，尽管任意两个 qubit 入口通过 tensor 产品来定义两 qubit 入口，但反之并不成立。 并非所有 qubit 入口都可以编写为 qubit 入口的 tensor 产品。  此类入口称为*entangling*入口。 Entangling 入口的一个示例是 CNOT-CONTAINS 入口。
 

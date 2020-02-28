@@ -1,17 +1,17 @@
 ---
 title: Microsoft Quantum Development Kit 许可证
-description: Microsoft Quantum Development Kit 许可证
+description: Microsoft Quantum Development Kit 的许可条款、免责声明和用户权限。
 author: QuantumWriter
 ms.author: cpalmer
 ms.date: 11/04/2019
-ms.openlocfilehash: d864c3e4ecefa6f998b9a893ecc4a3995d67dac4
-ms.sourcegitcommit: c93fea5980d1d46fbda1e7c7153831b9337134bf
+ms.openlocfilehash: 0d3aa9ae9e4f232ba2403512ff6e2394ecedeb22
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73463372"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907114"
 ---
-# <a name="microsoft-software-license-terms"></a>Microsoft 软件许可条款 
+# <a name="microsoft-software-license-terms"></a>MICROSOFT 软件许可条款 
 ## <a name="microsoft-quantum-development-kit-preview"></a>MICROSOFT 量程开发工具包（预览版）
 
 
@@ -23,17 +23,17 @@ ms.locfileid: "73463372"
 
 这些许可条款是您与 Microsoft Corporation（或其附属机构之一）之间达成的协议。 它们适用于上面提到的预发行软件和任何 Microsoft 服务或软件更新（此类服务或更新的范围附带了新的或其他条款，在这种情况下，这些不同的条款适用于潜在，不会改变或 Microsoft 与预更新的软件或服务相关的权利）。
 
-如果遵守这些许可条款，将拥有以下权利。 使用该软件即表示接受这些条款。
+如果遵守这些许可条款，将拥有以下权利。 使用该软件即表示您接受这些条款。
 
 1. **安装和使用权利。**
 
-     a.在“解决方案资源管理器”中，右键单击项目文件夹下的“引用”文件夹，并单击“添加引用”。 **一般**。 您只能使用 Microsoft Quantum Development Kit （预览版）软件来帮助您开发和测试您的应用程序。
+     a. **一般**。 您只能使用 Microsoft Quantum Development Kit （预览版）软件来帮助您开发和测试您的应用程序。
 
      b. **第三方软件**。 本软件可能包含根据本协议或相关条款向您许可的第三方应用程序。 第三方应用程序的许可条款、声明和确认（如果有）可以在[第三方通知](https://3rdpartysource.microsoft.com/)或随附的通知文件中联机访问。 即使此类应用程序受其他协议的管制，但以下免责声明、限制和豁免项在适用法律的允许范围内同样适用。 由 ETH 苏黎世（瑞士）、Troyer 组开发的内核。
  
 2. **区分时间的软件。**
 
-     a.在“解决方案资源管理器”中，右键单击项目文件夹下的“引用”文件夹，并单击“添加引用”。 **Period**。 该软件的时间是敏感的，可能会在软件中定义的日期停止运行。
+     a. **Period**。 该软件的时间是敏感的，可能会在软件中定义的日期停止运行。
 
      b. **请注意**。 你可能会通过软件收到此日期的定期提醒通知。
 
@@ -42,13 +42,13 @@ ms.locfileid: "73463372"
 1. **预发行软件**。 本软件是预发行版。 它可能无法正常工作。 它可能与商业发行版本不同。
 
 
-1. **反馈**。 如果您向 Microsoft 提供有关本软件的反馈，即表示您免费向 Microsoft 提供以任何方式出于任何目的使用、共享和商业化您的反馈的权利。 您不会提供受许可证约束的反馈，许可证要求 Microsoft 将其软件或文档的许可发放给第三方，因为 Microsoft 会在其中包含您的反馈。 此类权利在本协议中继续有效。
+1. **反馈**。 如果您向 Microsoft 提供有关该软件的反馈，则表示您免费授予 Microsoft 以任何方式和出于任何目的使用、共享和商业化您的反馈的权利。 您不会提供受许可证约束的反馈，许可证要求 Microsoft 将其软件或文档的许可发放给第三方，因为 Microsoft 会在其中包含您的反馈。 这些权利在本协议仍然有效。
 
 1. **数据收集**。 软件可能收集有关您及您对软件使用的信息，并将该信息发送给 Microsoft。 Microsoft 可能使用此信息提供服务并改进 Microsoft 的产品和服务。 选择退出的权利（如有）在产品文档中描述。 软件的某些功能可能允许从您的访问或使用该软件的应用程序中收集用户数据。 如果使用这些功能在应用程序中启用数据收集，则必须遵守适用法律，包括获得任何必需的用户同意，并维护重要的隐私策略，以准确地通知用户您使用、收集和共享其数据的方式。 可在 https://go.microsoft.com/fwlink/?LinkId=521839 中查阅产品文档和 Microsoft 隐私声明，详细了解有关 Microsoft 数据收集和使用的信息。 您需同意遵守 Microsoft 隐私声明的所有适用条款。
 
 1. **许可证范围**该软件已获得许可，而非出售。 Microsoft 保留所有其他权利。 尽管存在这一限制，但适用法律可赋予您更多权利，否则您不能（且没有权利）：
 
-    a.在“解决方案资源管理器”中，右键单击项目文件夹下的“引用”文件夹，并单击“添加引用”。 解决软件中的任何技术限制，这些限制只允许你以特定方式使用该软件;
+    a. 解决软件中的任何技术限制，这些限制只允许你以特定方式使用该软件;
 
     b. 反向工程、反编译或反汇编该软件;
 
@@ -72,7 +72,7 @@ ms.locfileid: "73463372"
 
 1. **使用者权限;区域变体**。 本协议规定了某些合法权利。 根据所在州、省或国家/地区的法律，您可能享有包括消费者权利在内的其他权利。 除与 Microsoft 的关系之外，您还可能享有与软件卖方相关的权利。 如果您所在州、省或国家/地区的法律不允许本协议更改这些其他权利，则本协议将不会更改。 例如，如果您在以下地区之一购买的该软件，或强制性国家/地区法律适用，则以下条款将适用：
 
-    a.在“解决方案资源管理器”中，右键单击项目文件夹下的“引用”文件夹，并单击“添加引用”。 **澳大利亚**。 根据澳大利亚消费者法，您享有法定保障。本协议中的内容无意冒犯这些权利。
+    a. **澳大利亚**。 根据澳大利亚消费者法，您享有法定保障。本协议中的内容无意冒犯这些权利。
 
     b. **加拿大**。 如果您在加拿大购买的此软件，则可通过关闭自动更新功能、断开设备与 Internet 的连接或卸载软件来停止接收更新（但是，如果重新连接到 Internet，该软件将恢复检查更新并安装更新）。 产品文档（如有）也可能指定如何关闭特定设备或软件的更新。
 
@@ -100,7 +100,7 @@ ms.locfileid: "73463372"
 **限制 DES DOMMAGES-INTÉRÊTS ET RESPONSABILITÉ浇筑 LES DOMMAGES。Vous pouvez obtenir de Microsoft et de se fournisseurs une indemnisation，ca de dommages 指引 uniquement à hauteur de 5，00 $ US。Vous ne pouvez prétendre à aucune indemnisation 浇筑 les autres dommages，y compris les dommages spéciaux，indirects ou accessoires et pertes de bénéfices**。
 
 **Cette 限制 concerne**：
-- **tout ce qui est relié au logiciel, aux services ou au contenu (y compris le code) figurant sur des sites Internet tiers ou dans des programmes tiers; et**
+- **图文并茂 ce qui est relié au logiciel，aux 服务 ou au contenu （y compris le code） figurant .sur des 站点 Internet 分层 ou dans des 服务层;et**
 - **les réclamations au titre 消除违反 contrat ou de garantie，ou au titre de responsabilité stricte，de négligence ou d'une autre faute dans la limite autorisée par la loi en vigueur**。
 
 **Elle s'applique également，même Si Microsoft connaissait ou devrait connaître l'éventualité d'un 电话 dommage。Si votre 支付 n'autorise 的 pas l'exclusion ou la 限制 de responsabilité浇筑 les dommages indirects，accessoires ou de quelque 本质查询 ce soit，il se peut 查询 la 限制 ou l'exclusion ci-dessus ne s'appliquera pas： votre égard**。
