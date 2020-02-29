@@ -1,17 +1,17 @@
 ---
 title: 量子开发工具包预览版发行说明
-description: 量子开发工具包预览版发行说明
+description: 了解 Microsoft Quantum 开发工具包预览版的最新更新。
 author: natke
 ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: be1eff8127be9fb024a1dc2de3ec82952ac2dc2b
-ms.sourcegitcommit: b7e205aaa7fa1ca9f0daa163e46154945f4bc965
+ms.openlocfilehash: f4bc69e5b14833dea0d61106a9eb368d7d7f5663
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/18/2020
-ms.locfileid: "77441036"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906927"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -22,18 +22,32 @@ ms.locfileid: "77441036"
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
 
 
+## <a name="version-01020022610"></a>版本 0.10.2002.2610
+
+发行日期：  2020 年 2 月 27 日
+
+此版本包含以下各项：
+
+- 新的量子机器学习库。有关详细信息，请参阅我们的 [QML 文档页](https://docs.microsoft.com/quantum/libraries/machine-learning/?view=qsharp-preview)
+- IQ# Bug 修复。在加载 NuGet 包时，性能最多可提高 10-20 倍
+
+有关[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed)、[编译器](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed)、[运行时](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed)、[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed)和 [Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed) 的信息，请参阅已结束的 PR 的完整列表。  
+
 ## <a name="version-01020012831"></a>版本 0.10.2001.2831
 
 发行日期：  2020 年 1 月 29 日
 
 此版本包含以下各项：
 
-- 新的 Microsoft.Quantum.SDK NuGet 包
+- 新的 Microsoft.Quantum.SDK NuGet 包。在创建新项目时，它将替换 Microsoft.Quantum.Development.Kit 包。 现有项目会继续支持 Microsoft.Quantum.Development.Kit NuGet 包。 
+- 支持 Q# 编译器扩展，这些扩展由新的 Microsoft.Quantum.SDK NuGet 包提供支持。有关详细信息，请参阅 [GitHub 上的文档](https://github.com/microsoft/qsharp-compiler/tree/master/src/QuantumSdk#extending-the-q-compiler)、[编译器扩展示例](https://github.com/microsoft/qsharp-compiler/tree/master/examples/CompilerExtensions)和 [Q# 开发博客](https://devblogs.microsoft.com/qsharp/extending-the-q-compiler/)
 - 添加了对 .NET Core 3.1 的支持。强烈建议安装版本 3.1.100，因为使用旧 .NET Core SDK 版本进行生成可能会导致问题
 - Microsoft.Quantum.QsCompiler.Experimental 下提供新的编译器转换
 - 在 IQ# 中将输出状态矢量作为 HTML 公开的新功能
 - 针对 Hadamard 和 SWAP 测试向 Microsoft.Quantum.Characterization 添加了对 EstimateFrequencyA 的支持
 - AmplitudeAmplification 命名空间现在使用 Q# 样式指南
+
+有关[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed)、[编译器](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed)、[运行时](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed)、[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed)和 [Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed) 的信息，请参阅已结束的 PR 的完整列表。  
 
 ## <a name="version-01019120501"></a>版本 0.10.1912.0501
 

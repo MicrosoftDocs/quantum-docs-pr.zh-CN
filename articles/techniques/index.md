@@ -1,18 +1,18 @@
 ---
-title: 量子开发技术 | Microsoft Docs
-description: 量子开发技术
+title: 量子开发技术
+description: 了解 Q# 程序开发的基础知识，使用操作、函数、变量和量子位，并创建一个简单的量子程序。
 keywords: 未咨询 SEO 专家的情况下，请不要添加或编辑关键字。
 author: QuantumWriter
 ms.author: MSFT-alias-person-or-DL
 ms.date: 9/20/2019
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.techniques.intro
-ms.openlocfilehash: c1263edb75f903702ab3c16cec0443857150b662
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: e5b7fbde18afbc0333d89f70c5e4596848e30f4f
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820804"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907709"
 ---
 # <a name="quantum-development-techniques"></a>量子开发技术
 
