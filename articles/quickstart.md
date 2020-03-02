@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 10/07/2019
 ms.topic: tutorial
 uid: microsoft.quantum.write-program
-ms.openlocfilehash: 30135fa8a123e52a92b7187218f9980ba3cdbd2d
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.openlocfilehash: 8d3b2d7c8da39a961f4eedcc5989ad3a1e134ade
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
-ms.locfileid: "73442198"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906723"
 ---
 # <a name="quantum-basics-with-q"></a>Q# 的量子基础知识
 
@@ -30,7 +30,7 @@ ms.locfileid: "73442198"
 
 ## <a name="demonstrating-qubit-behavior-with-q"></a>使用 Q# 演示量子位行为
 
-回想一下简单的[量子位定义](xref:microsoft.quantum.overview.what#the-qubit)。  经典位保存单个二进制值（如 0 或 1），而量子位的状态则可以是 0 和 1 的同时**叠加**。  从概念上讲，可以将量子位视为空间中的方向（也称为矢量）。  量子位可以是任何可能的方向。 两个**经典状态**是两个方向，一个方向表示度量结果为 0 的可能性为 100%，另一个方向表示度量结果为 1 的可能性为 100%。  这种表示方式也可通过 [Bloch 球](/quantum/concepts/the-qubit?view=qsharp-preview#visualizing-qubits-and-transformations-using-the-bloch-sphere)更正式地可视化。
+回想一下简单的[量子位定义](xref:microsoft.quantum.overview.what#the-qubit)。  经典位保存单个二进制值（如 0 或 1），而量子位的状态则可以是 0 和 1 的同时**叠加**。  从概念上讲，可以将量子位视为空间中的方向（也称为矢量）。  量子位可以是任何可能的方向。 两个**经典状态**是两个方向，一个方向表示度量结果为 0 的可能性为 100%，另一个方向表示度量结果为 1 的可能性为 100%。  这种表示方式也可通过 [Bloch 球](/quantum/concepts/the-qubit#visualizing-qubits-and-transformations-using-the-bloch-sphere)更正式地可视化。
 
 
 度量行为会生成二进制结果并改变量子位状态。 度量会生成一个二进制值（0 或 1）。  量子位从叠加态（任何方向）变为经典状态之一。  随后，在没有任何干预操作的情况下重复进行相同的度量会生成相同的二进制结果。  
@@ -46,7 +46,7 @@ ms.locfileid: "73442198"
 1. 使用 Q# 量子编程语言实现的一个或多个量子算法。
 1. 使用 C# 或 Python 等编程语言实现且充当主入口点并调用 Q# 运算来执行量子算法的主机程序。
 
-#### <a name="pythontabtabid-python"></a>[Python](#tab/tabid-python)
+#### <a name="python"></a>[Python](#tab/tabid-python)
 
 1. 为应用程序选择一个位置
 
@@ -54,7 +54,7 @@ ms.locfileid: "73442198"
 
 1. 创建名为 `host.py` 的文件。 此文件将包含你的 Python 主机代码。
 
-#### <a name="c-command-linetabtabid-csharp"></a>[C# 命令行](#tab/tabid-csharp)
+#### <a name="c-command-line"></a>[C# 命令行](#tab/tabid-csharp)
 
 1. 创建新的 Q# 项目：
 
@@ -71,7 +71,7 @@ ms.locfileid: "73442198"
     mv Operation.qs Bell.qs
     ```
 
-#### <a name="visual-studiotabtabid-vs2019"></a>[Visual Studio](#tab/tabid-vs2019)
+#### <a name="visual-studio"></a>[Visual Studio](#tab/tabid-vs2019)
 
 1. 创建新项目
 
@@ -177,7 +177,7 @@ Q# 中的 `using` 语句也很特殊。 它用于分配要在代码块中使用�
 
 ## <a name="create-the-host-application-code"></a>创建主机应用程序代码
 
-#### <a name="pythontabtabid-python"></a>[Python](#tab/tabid-python)
+#### <a name="python"></a>[Python](#tab/tabid-python)
 
 1. 打开 `host.py` 文件，并添加以下代码：
 
@@ -195,7 +195,7 @@ Q# 中的 `using` 语句也很特殊。 它用于分配要在代码块中使用�
       print(f'Init:{i: <4} 0s={num_zeros: <4} 1s={num_ones: <4}')
     ```
 
-#### <a name="ctabtabid-csharp"></a>[C#](#tab/tabid-csharp)
+#### <a name="c"></a>[C#](#tab/tabid-csharp)
 
 1. 将 `Driver.cs` 文件的内容替换为以下代码：
 
@@ -237,7 +237,7 @@ Q# 中的 `using` 语句也很特殊。 它用于分配要在代码块中使用�
 
 ### <a name="about-the-host-application-code"></a>关于主机应用程序代码
 
-#### <a name="pythontabtabid-python"></a>[Python](#tab/tabid-python)
+#### <a name="python"></a>[Python](#tab/tabid-python)
 
 Python 主机应用程序包含三个部分：
 
@@ -245,7 +245,7 @@ Python 主机应用程序包含三个部分：
 * 通过调用所导入 Q# 运算的 `simulate()` 方法来运行量子算法。
 * 处理运算结果。 在示例中，`res` 接收运算的结果。 此结果是模拟器所度量 0 的个数 (`num_zeros`) 和 1 的个数 (`num_ones`) 的元组。 我们通过析构元组来获取两个字段，然后打印结果。
 
-#### <a name="ctabtabid-csharp"></a>[C#](#tab/tabid-csharp)
+#### <a name="c"></a>[C#](#tab/tabid-csharp)
 
 C# 主机应用程序包含四个部分：
 
@@ -260,7 +260,7 @@ C# 主机应用程序包含四个部分：
 
 ## <a name="build-and-run"></a>生成并运行
 
-#### <a name="pythontabtabid-python"></a>[Python](#tab/tabid-python)
+#### <a name="python"></a>[Python](#tab/tabid-python)
 
 1. 在终端运行以下命令：
 
@@ -277,7 +277,7 @@ Init:0    0s=1000 1s=0
 Init:1    0s=0    1s=1000
 ```
 
-#### <a name="command-line--visual-studio-codetabtabid-csharp"></a>[命令行/Visual Studio Code](#tab/tabid-csharp)
+#### <a name="command-line--visual-studio-code"></a>[命令行/Visual Studio Code](#tab/tabid-csharp)
 
 1. 在终端运行以下命令：
 
@@ -299,7 +299,7 @@ Init:One  0s=0    1s=1000
 Press any key to continue...
 ```
 
-#### <a name="visual-studiotabtabid-vs2019"></a>[Visual Studio](#tab/tabid-vs2019)
+#### <a name="visual-studio"></a>[Visual Studio](#tab/tabid-vs2019)
 
 1. 只需点击 `F5`，便可生成并运行程序！
 
@@ -445,7 +445,7 @@ Set(Zero, q1);
 
 新的返回值 (`agree`) 会跟踪第一个量子位的度量值与第二个量子位的度量值相同的次数。 我们还需要相应地更新主机应用程序：
 
-#### <a name="pythontabtabid-python"></a>[Python](#tab/tabid-python)
+#### <a name="python"></a>[Python](#tab/tabid-python)
 
 ```python
 import qsharp
@@ -461,7 +461,7 @@ for i in initials:
     print(f'Init:{i: <4} 0s={num_zeros: <4} 1s={num_ones: <4} agree={agree: <4}')
 ```
 
-#### <a name="ctabtabid-csharp"></a>[C#](#tab/tabid-csharp)
+#### <a name="c"></a>[C#](#tab/tabid-csharp)
 
 ```csharp
             using (var qsim = new QuantumSimulator())
@@ -496,7 +496,7 @@ Init:One  0s=490  1s=510  agree=1000
 
 恭喜，你已经编写了第一个量子程序！
 
-## <a name="whats-next"></a>后续步骤
+## <a name="whats-next"></a>下一步是什么？
 
 [Grover 搜索](xref:microsoft.quantum.quickstarts.search)快速入门介绍了如何生成并运行 Grover 搜索（最常用的量子计算算法之一），并通过一个很好的 Q# 程序示例演示了如何使用量子计算来解决实际问题。  
 

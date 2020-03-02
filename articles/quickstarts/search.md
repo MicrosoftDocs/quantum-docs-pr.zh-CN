@@ -6,12 +6,12 @@ ms.author: chgranad@microsoft.com
 ms.date: 10/19/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.search
-ms.openlocfilehash: c1fd578fdb3d56a7b48972e6ccc9b1605047fe36
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: 0e64fcd56929fa33397c45bf1b2e99bf687eca6f
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76820345"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906944"
 ---
 # <a name="quickstart-implement-grovers-search-algorithm-in-q"></a>快速入门：在 Q# 中实现 Grover 搜索算法
 
@@ -23,7 +23,7 @@ Grover 算法在非结构化数据列表中搜索特定项。 例如，它可以
 
 只需几行代码，就能生成 Grover 搜索算法。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 - Microsoft [Quantum 开发工具包][install]。
 
@@ -43,7 +43,7 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
 1. 在新项目中，将以下代码添加到 `Operations.qs` 文件中：
 
-    :::code language="qsharp" source="~/quantum/samples/algorithms/simple-grover/SimpleGrover.qs" range="4-23" highlight="5,27":::
+    :::code language="qsharp" source="~/quantum/samples/algorithms/simple-grover/SimpleGrover.qs" range="4-40":::
 
 1. 要定义搜索列表，请创建一个新文件 `Reflections.qs`，并粘贴以下代码：
 
@@ -53,7 +53,7 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
 1. 接下来，运行你的新 Q# 程序，以查找 `ReflectAboutMarked` 标记的项。
 
-    ### <a name="python-with-visual-studio-code-or-the-command-linetabtabid-python"></a>[在 Visual Studio Code 或命令行中使用 Python](#tab/tabid-python)
+    ### <a name="python-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 Python](#tab/tabid-python)
 
     要从 Python 运行你的新 Q# 程序，请将以下代码另存为 `host.py`：
 
@@ -71,7 +71,7 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
     [0, 1, 0, 1, 0]
     ```
 
-    ### <a name="c-with-visual-studio-code-or-the-command-linetabtabid-csharp"></a>[在 Visual Studio Code 或命令行中使用 C#](#tab/tabid-csharp)
+    ### <a name="c-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 C#](#tab/tabid-csharp)
 
     要从 C# 运行你的新 Q# 程序，请修改 `Driver.cs` 以包含以下 C# 代码：
 
@@ -90,7 +90,7 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
     Press any key to continue...
     ```
 
-    ### <a name="c-with-visual-studio-2019tabtabid-vs2019"></a>[在 Visual Studio 2019 中使用 C#](#tab/tabid-vs2019)
+    ### <a name="c-with-visual-studio-2019"></a>[在 Visual Studio 2019 中使用 C#](#tab/tabid-vs2019)
 
     在 Visual Studio 中，若要通过 C# 运行新的 Q# 程序，请修改 `Driver.cs`，使之包含以下 C# 代码：
 
