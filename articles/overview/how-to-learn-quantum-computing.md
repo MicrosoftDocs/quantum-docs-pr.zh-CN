@@ -1,19 +1,19 @@
 ---
 title: 如何使用 Q# 学习量子计算？
-description: ''
+description: 有关基本数学和物理学知识的资源，用于帮助你着手量子计算。
 author: natke
 ms.author: nakersha
 ms.date: 10/23/2019
 ms.topic: article
 uid: microsoft.quantum.overview.learn
-ms.openlocfilehash: 53682ae8ab9cb31fa0de68832cb3574aa4e30216
-ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+ms.openlocfilehash: 17fc4e7a73f93a86d981996bf8b59309bccb6e67
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73529959"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77907743"
 ---
-# <a name="how-to-learn-quantum-computing"></a>如何学习量子计算？
+# <a name="how-to-learn-about-quantum-computing"></a>如何了解量子计算？
 
 获取有关学习量子计算和编写第一个程序的指导。 本指南不全面，但却是一个不错的开端。
 

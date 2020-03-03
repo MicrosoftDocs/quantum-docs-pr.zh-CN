@@ -1,17 +1,17 @@
 ---
 title: 什么是量子计算？
-description: 了解什么是量子计算，以及量子计算机可以做些什么
+description: 量子计算功能、算法和硬件以及 Microsoft Quantum 开发工具包 (QDK) 的简介。
 author: natke
 ms.author: nakersha
 ms.date: 10/22/2019
 ms.topic: article
 uid: microsoft.quantum.overview.what
-ms.openlocfilehash: 2f3b64b00a0a9552e52e34cb1e3652810b266eab
-ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+ms.openlocfilehash: 668df50882272bfa56541f178e2f4d5fb35efcf5
+ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
-ms.locfileid: "73529931"
+ms.lasthandoff: 02/28/2020
+ms.locfileid: "77906774"
 ---
 # <a name="what-is-quantum-computing"></a>什么是量子计算？
 
