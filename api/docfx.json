@@ -41,6 +41,7 @@
     "globalMetadata": {
       "show_latex": true,
       "ms.prod": "quantum",
+      "bilingual_type": "hover over",
       "ms.topic": "managed-reference",
       "ms.devlang":"qsharp",
       "searchScope": ["quantum", "q#", "qsharp"],
