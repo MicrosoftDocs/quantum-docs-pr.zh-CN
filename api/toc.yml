@@ -1,9 +1,14 @@
 - name: API 参考
   items:
+    - name: API 参考
+      href: index.md
     - name: 'Q# 库'
+      topicHref: qsharp/index.md
       href: qsharp/toc.yml
     - name: .NET 库
       items:
+        - name: .NET 库
+          href: dot-net-libraries.md
         - name: 跟踪模拟器
           href: 'https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators'
         - name: 量子化学
