@@ -5,16 +5,16 @@ author: cgranade
 ms.author: chgranad@microsoft.com
 ms.date: 10/23/2018
 uid: microsoft.quantum.chemistry.examples.endtoend
-ms.openlocfilehash: 545ade99859f2a9939477fb18604921f70a5d9aa
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 7605676e05ee352e47791657eeaafceef5dbb493
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77906502"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79022493"
 ---
 # <a name="end-to-end-with-nwchem"></a>NWChem 端到端 #
 
-在本页面中，我们将逐步介绍如何从[NWChem](http://www.nwchem-sw.org/index.php/Main_Page)的输入牌中获取量程化学模拟的入口计数。
+在本文中，你将逐步了解如何从[NWChem](http://www.nwchem-sw.org/index.php/Main_Page)的输入牌中获取量程化学模拟的入口计数。
 在继续此示例之前，请确保已按照[安装和验证指南](xref:microsoft.quantum.chemistry.concepts.installation)安装了 Docker。
 
 更多相关信息：
@@ -62,7 +62,7 @@ Get-Command -Module InvokeNWChem
 ```
 
 接下来，我们将导入**GetGateCount**示例附带的 `Get-GateCount` 命令。
-有关完整的详细信息，请参阅[示例中提供的说明](https://github.com/Microsoft/Quantum/tree/master/Chemistry/GetGateCount)。
+有关完整的详细信息，请参阅[示例中提供的说明](https://github.com/Microsoft/Quantum/tree/master/samples/chemistry/GetGateCount)。
 接下来，运行以下操作，将 `<runtime>` 替换为 `win10-x64`、`osx-x64`或 `linux-x64`，具体取决于你的操作系统：
 
 ```powershell
@@ -112,7 +112,7 @@ set tce:qelb  9
 
 ## <a name="producing-and-consuming-broombridge-output-from-nwchem"></a>生成和使用 NWChem 的 Broombridge 输出 ##
 
-现在我们已经有了生成和使用 Broombridge 文档所需的一切。
+你现在拥有生成和使用 Broombridge 文档所需的一切内容。
 若要运行 NWChem 并为 `h4_sto6g_0.000.nw` 输入幻灯片生成 Broombridge 文档，请运行 `Convert-NWChemToBroombridge`：
 
 > [!NOTE]
@@ -123,7 +123,7 @@ set tce:qelb  9
 Convert-NWChemToBroombridge h4_sto6g_0.000.nw 
 ```
 
-这将生成一个名为 `h4_sto6g_0.000.yaml` 的 Broombridge 文档，可用于 `Get-GateCount`：
+这会生成一个名为 `h4_sto6g_0.000.yaml` 的 Broombridge 文档，你可以将其用于 `Get-GateCount`：
 
 ```powershell
 Get-GateCount -Format YAML h4_sto6g_0.000.yaml
@@ -164,7 +164,7 @@ ElapsedMilliseconds : 721
 - 尝试不同的预定义输入纸牌，例如，通过改变 `h4_sto6g_alpha.nw`中的参数 `alpha`。 
 - 尝试通过直接编辑 NWChem 卡片进行修改，例如，探索用于不同选项 n 的 `STO-nG` 模型， 
 - 尝试 `nwchem/qa/chem_library_tests`提供的其他预定义的 NWChem 输入卡座，
-- 尝试从 NWChem 生成的一系列预定义的 Broombridge YAML 基准，并将其作为[Microsoft/量子存储库](https://github.com/Microsoft/Quantum/tree/master/Chemistry/IntegralData/YAML)的一部分提供。 这些基准包括： 
+- 尝试从 NWChem 生成的一系列预定义的 Broombridge YAML 基准，并将其作为[Microsoft/量子存储库](https://github.com/Microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML)的一部分提供。 这些基准包括： 
     - small 分子，例如分子 hydrogen （H2）、Beryllium （）、锂 hydride （LiH）、
     - 更大的分子，例如臭氧（O3）、carotene、cytosine 等。 
 - 尝试使用具有 Microsoft Quantum Development Kit 的接口的图形前端[EMSL 箭头](https://arrows.emsl.pnnl.gov/api/qsharp_chem)。 

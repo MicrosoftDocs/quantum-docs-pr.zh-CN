@@ -6,12 +6,12 @@ ms.author: mamykhai@microsoft.com
 uid: microsoft.quantum.techniques.testing-and-debugging
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 3df8df8defabcc9cc87d59f543f425c882b001e0
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 8131c2ec9320b5075c37370e12ad39a4df5bd3d5
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907675"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79022855"
 ---
 # <a name="testing-and-debugging"></a>测试和调试
 
@@ -384,4 +384,4 @@ namespace app
 
 在 `Assert` 和 `Dump` 函数和操作的基础上，Q # 支持标准 Visual Studio 调试功能的子集：[设置行断点](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints)、[使用 F10 逐句通过代码](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger)和[检查典型变量的值](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows)在模拟器上的代码执行过程中都可能。
 
-在 Visual Studio Code 中进行调试利用了C#由 OmniSharp 提供的 Visual Studio Code 的调试功能，并需要安装[最新版本](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)。 
+在 Visual Studio Code 中进行调试利用了C#由 OmniSharp 提供的 Visual Studio Code 的调试功能，并需要安装[最新版本](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)。 

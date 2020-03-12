@@ -6,14 +6,14 @@ ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.docs
-ms.openlocfilehash: d244a7841b4093031d6225230a6cbefb22cc6a39
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: ed5ab5df9de5d71ccd922cd430cf15779806dd6a
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77904887"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79022634"
 ---
-# <a name="improving-documentation"></a>改进文档 #
+# <a name="improving-documentation"></a>改进文档
 
 量程开发工具包的文档采用多种不同的形式，以使该信息可供量子开发人员使用。
 
@@ -28,7 +28,7 @@ ms.locfileid: "77904887"
 - **API 参考**是为每个 Q # 函数、操作和用户定义类型发布到 https://docs.microsoft.com/qsharp/api/的一组页。 这些页面记录每个可调用的输入和操作，以及示例和指向详细信息的链接。 在每个版本中，将从 Q # 源代码中的小型 DFM 文档自动提取 API 引用。
 - 每个示例和 kata 中包含的**自述文件<!---->** 的文件介绍了如何使用该示例或 kata、它所涵盖的内容以及它如何与量程开发工具包的其余部分相关。 这些文件是使用[GitHub 风格 Markdown （GFM）](https://github.github.com/gfm/)编写的，它是一种更轻量的替代方法，用于将文档直接附加到代码存储库。
 
-## <a name="contributing-to-the-conceptual-documentation"></a>参与概念文档 ##
+## <a name="contributing-to-the-conceptual-documentation"></a>参与概念文档
 
 若要为概念文档或自述文档提供改进，请从拉取请求开始到[**MicrosoftDocs/量子**](https://github.com/MicrosoftDocs/quantum-docs-pr/
 )、 [**microsoft/量子**](https://github.com/Microsoft/Quantum)或[**microsoft/QuantumKatas**](https://github.com/Microsoft/QuantumKatas)（适用时）。
@@ -41,7 +41,18 @@ ms.locfileid: "77904887"
 - 量程编程社区的许多成员都是学术研究人员，主要通过向社区发布内容的引文来识别。 除了帮助读者查找其他资料外，还请确保正确引用学术输出（如论文、讨论、博客文章和软件工具），以帮助学术撰稿人继续提高社区的工作效果。
 - 量程编程社区是广泛且 wonderfully 多样的社区。 在第三人示例中使用 gendered 代词（例如： "如果用户 ...，他将 ..."）可以避免排除，而不是包括在内。 如果要在引文和链接中 cognizant 人们的姓名，并正确包含非 ASCII 字符，则可以通过显示其成员来为社区的多样性提供服务。 同样，英语中的许多词语通常以 hateful 的方式使用，因此，它们在技术文档中的使用可能会对单个读者和大型团体造成损害。
 
-## <a name="contributing-to-the-api-references"></a>参与 API 参考 ##
+### <a name="referencing-sample-code-from-conceptual-articles"></a>从概念文章中引用示例代码
+
+如果要将代码包含在[示例存储库](https://github.com/Microsoft/Quantum)中，可以使用特殊的 DocFX-风格 Markdown 命令来执行此操作：
+
+```markdown
+:::code language="qsharp" source="~/quantum/samples/algorithms/chsh-game/Game.qs" range="4-8":::
+```
+
+此命令将[从 `chsh-game` 示例中导入`Game.qs` 文件中](https://github.com/microsoft/Quantum/blob/master/samples/algorithms/chsh-game/Game.qs)的第4行，并将它们标记为 Q # 代码以进行语法突出显示。
+使用此命令，您可以避免在概念项目和示例存储库之间复制代码，以便文档中的示例代码始终尽可能地保持最新。
+
+## <a name="contributing-to-the-api-references"></a>参与 API 参考
 
 若要对 API 引用做出改进，最有帮助的方法是直接在所记录的代码上打开拉取请求。
 每个函数、操作或用户定义的类型都支持文档注释（用 `///` 而不是 `//`表示）。
@@ -123,6 +134,7 @@ ms.locfileid: "77904887"
      return ControlledOnBitStringImpl(bits, oracle, _, _);
  }
 ```
+
 可以在[`ControlledOnBitString` 函数的 API 文档](xref:microsoft.quantum.canon.controlledonbitstring)中查看上述代码的呈现版本。
 
 除了文档编写的一般做法之外，在编写 API 文档注释中，这有助于保持几个要点：

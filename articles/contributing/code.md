@@ -6,27 +6,27 @@ ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.code
-ms.openlocfilehash: 1882e640dacf3987745ed225fef18636726f70a8
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: edc52dc4434e91258bece28812fd76b66329c6f9
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907471"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79022454"
 ---
-# <a name="contributing-code"></a>贡献代码 #
+# <a name="contributing-code"></a>贡献代码
 
 除了报告问题和改进文档外，对量子开发工具包编写代码也是一种非常直接的方式，可帮助您在量子编程社区中进行同行。
 通过编写代码，你可以帮助解决问题、提供新示例、使现有库更易于使用，甚至添加全新的功能。
 
 在本指南中，我们将详细介绍我们查看拉取请求以帮助你的内容最好的情况。
 
-## <a name="what-we-look-for"></a>我们要查找的内容 ##
+## <a name="what-we-look-for"></a>我们要查找的内容
 
 理想的代码依赖项在量程开发工具包存储库中的现有工作基础上构建，以解决问题、扩展现有功能或添加存储库范围内的新功能。
 当我们接受代码贡献时，它将成为量子开发工具包本身的一部分，这样，将以与量程开发工具包的其余部分相同的方式发布、维护和开发新功能。
 因此，当内容添加的功能经过充分测试并记录在文档中时，这会很有帮助。
 
-### <a name="unit-tests"></a>单元测试 ###
+### <a name="unit-tests"></a>单元测试
 
 构成库（如 canon）的 Q # 函数、操作和用户定义类型在[**Microsoft/QuantumLibraries**](https://github.com/Microsoft/QuantumLibraries/)存储库中作为开发的一部分自动进行测试。
 例如，当打开一个新的拉取请求时， [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/)配置将检查拉取请求中的更改是否不会破坏该量程编程社区依赖的任何现有功能。
@@ -56,7 +56,7 @@ function PairTest () : Unit {
 使用标准库指南的 "[测试" 部分](xref:microsoft.quantum.libraries.diagnostics)中的技术可以检查更复杂的条件。
 例如，下面的测试检查 <xref:microsoft.quantum.canon.applywith> 调用的 `H(q); X(q); H(q);` 与 `Z(q)`执行的操作相同。
 
-```qsharp
+```Q#
 @Test("QuantumSimulator")
 operation TestApplyWith() : Unit {
     let actual = ApplyWith(H, X, _);
@@ -79,7 +79,8 @@ operation TestApplyWith() : Unit {
 
 ### Citations and References ### -->
 
-## <a name="when-well-reject-a-pull-request"></a>当我们拒绝拉取请求时 ##
+
+## <a name="when-well-reject-a-pull-request"></a>当我们拒绝拉取请求时
 
 有时，我们将拒绝对发布内容的拉取请求。
 如果发生这种情况，这并不意味着这一点很糟糕，因为有许多原因导致我们无法接受特定的内容。
@@ -98,10 +99,15 @@ operation TestApplyWith() : Unit {
 我们想要确保贡献为整个量子计算社区提供服务，这两者都在其当前的日益多元化，在未来越来越多的情况下都是如此。
 我们非常感谢您的帮助。
 
-## <a name="next-steps"></a>后续步骤 ##
+## <a name="next-steps"></a>后续步骤
 
 感谢帮助您为整个量程编程社区提供很大的资源。
 若要了解详细信息，请继续阅读有关 Q # 样式的以下指南。
 
 > [!div class="nextstepaction"]
 > [了解 Q # 样式准则](xref:microsoft.quantum.contributing.style)
+
+根据你所提供的代码的类型，可能会有其他一些需要记住的事项，可帮助你使你的参与对社区的处理方式尽可能好。
+
+> [!div class="nextstepaction"]
+> [了解相关示例](xref:microsoft.quantum.contributing.samples)
