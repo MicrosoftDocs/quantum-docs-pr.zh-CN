@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: f4bc69e5b14833dea0d61106a9eb368d7d7f5663
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 53b7d226f0f9b12f47460964944f1ddb6160c357
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77906927"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79022834"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -57,7 +57,7 @@ ms.locfileid: "77906927"
 
 - 用于 Q# 单元测试的新测试属性，请在[此处](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.test)参阅已更新 API 文档，并在[此处](xref:microsoft.quantum.techniques.testing-and-debugging)参阅已更新的测试与调试指南
 - 添加了在出现 Q # 程序执行错误时使用的堆栈跟踪
-- 对 Visual Studio Code 中的断点的支持（由于 [OmniSharp C# Visual Studio Code 扩展](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)中的更新）
+- 对 Visual Studio Code 中的断点的支持（由于 [OmniSharp C# Visual Studio Code 扩展](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)中的更新）
 
 有关[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed)、[编译器](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed)、[运行时](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed)、[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed)和 [Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed) 的信息，请参阅已结束的 PR 的完整列表。  
 

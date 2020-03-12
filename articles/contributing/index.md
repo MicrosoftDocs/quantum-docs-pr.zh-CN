@@ -6,14 +6,14 @@ ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing
-ms.openlocfilehash: 63c6f90a511c7bd14435b2e593af0d8615c18519
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: cf913a09395f0694a51645ec8f91171e5b1555c3
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77904870"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79022477"
 ---
-# <a name="contributing-to-the-quantum-development-kit"></a>对量子开发工具包做出贡献 #
+# <a name="contributing-to-the-quantum-development-kit"></a>对量子开发工具包做出贡献
 
 量子开发工具包不仅是一组用于编写量子程序的工具。
 它属于广泛的用户社区，可发现量子计算，对量子算法进行研究，为量子设备开发新应用程序，并致力于充分利用量子编程。
@@ -23,7 +23,7 @@ ms.locfileid: "77904870"
 
 在本指南中，我们将提供有关如何使你的贡献尽可能适用于更广泛的量子编程社区的一些建议。
 
-## <a name="building-community"></a>构建社区 ##
+## <a name="building-community"></a>构建社区
 
 有关做出贡献的第一件事就是始终记住对其做出贡献的社区。
 通过在量子编程社区中对合作伙伴做出恭敬且专业的行为，可以帮助确保构建最受欢迎的社区。
@@ -31,7 +31,7 @@ ms.locfileid: "77904870"
 在这一过程中，所有量子开发工具包项目都采用了 [Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)。
 有关详细信息，请参阅[行为准则常见问题解答](https://opensource.microsoft.com/codeofconduct/faq/)；若有其他任何问题或意见，请联系 [opencode@microsoft.com](mailto:opencode@microsoft.com)。
 
-## <a name="what-kinds-of-contributions-help-the-community"></a>哪些类型的贡献可以帮助社区？ ##
+## <a name="what-kinds-of-contributions-help-the-community"></a>哪些类型的贡献可以帮助社区？
 
 通过你的贡献来帮助量子编程社区有多种不同的方法。
 在本指南中，我们将重点介绍与量子开发工具包密切相关的三种方法。
@@ -45,7 +45,7 @@ ms.locfileid: "77904870"
 这些不同类型的贡献都非常宝贵，非常感谢。
 在本指南的其余部分，我们将提供有关如何做出各种贡献的建议。
 
-## <a name="where-do-contributions-go"></a>贡献的目标位置在哪里？ ##
+## <a name="where-do-contributions-go"></a>贡献的目标位置在哪里？
 
 量子开发工具包包含许多不同的部分，它们组合在一起来实现用于编写量子程序的平台。
 其中每个不同部分都在不同的存储库中找到它的位置，因此，要进行排序的早期位置之一是每个贡献最适合的目标位置。
@@ -66,7 +66,7 @@ ms.locfileid: "77904870"
 - [**msr-quarc/qsharp.sty**](https://github.com/msr-quarc/qsharp.sty)：格式化对 Q# 语法的支持的 LaTeX。
 - [**msr-quarc/intern-workshop-2019**](https://github.com/msr-quarc/intern-workshop-2019)：2019 年实习生研讨会上提供的 IQ# Notebook for Deutsch–Jozsa 教程。
 
-## <a name="next-steps"></a>后续步骤 ##
+## <a name="next-steps"></a>后续步骤
 
 感谢你成为量子开发工具包社区的一员，我们很高应你做出了贡献！
 如果你想要了解有关贡献的详细信息，请继续阅读以下指南之一。
