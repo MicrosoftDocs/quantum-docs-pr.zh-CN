@@ -1,25 +1,24 @@
 ---
 uid: microsoft.quantum.standardlibsintro
-title: 'Microsoft Quantum 的 Q # 标准库'
-description: 'Microsoft Quantum 的 Q # 标准库的参考文档'
+title: Microsoft Quantum 的 Q# 标准库
+description: Microsoft Quantum 的 Q# 标准库的参考文档
 author: natke
 ms.author: nakersha
 ms.date: 09/04/2019
 ms.topic: landing-page
-ms.openlocfilehash: 25a53e1cb8577761ef89cdcf2cfcddc509093f86
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 5975b0caf0fc73ad18fbd8a1e7c82a2333161da2
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73056965"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79022514"
 ---
-# <a name="q-standard-libraries"></a><span data-ttu-id="9f585-103">Q# 标准库</span><span class="sxs-lookup"><span data-stu-id="9f585-103">Q# standard libraries</span></span> #
+# <a name="q-api-reference"></a><span data-ttu-id="40633-103">Q# API 参考</span><span class="sxs-lookup"><span data-stu-id="40633-103">Q# API reference</span></span> #
 
-<span data-ttu-id="9f585-104">Q# 由包含 Q # 标准库的各种不同的有用操作、函数和用户定义的类型支持  。</span><span class="sxs-lookup"><span data-stu-id="9f585-104">Q# is supported by a range of different useful operations, functions, and user-defined types that comprise the Q# *standard library*.</span></span>
-<span data-ttu-id="9f585-105">Q# 标准库分为两个主要部分：</span><span class="sxs-lookup"><span data-stu-id="9f585-105">The Q# standard library is split into two main parts:</span></span>
+<span data-ttu-id="40633-104">此 API 参考包括了 Q# 标准库以及在该标准库之上构建的三个库- 化学库、数字库和机器学习库。</span><span class="sxs-lookup"><span data-stu-id="40633-104">This API reference includes the Q# standard library and the three libraries built on top of it - the chemistry, numerics, and machine learning libraries.</span></span> <span data-ttu-id="40633-105">还有可用于 Q# 的 .NET 库和 Python 库。</span><span class="sxs-lookup"><span data-stu-id="40633-105">There are also .NET and Python libraries available for Q#.</span></span>
 
-- <span data-ttu-id="9f585-106">**prelude**：定义为目标计算机和编译器的一部分的操作和函数，通常采用传统的本机 .NET 代码。</span><span class="sxs-lookup"><span data-stu-id="9f585-106">**The prelude**: operations and functions defined as a part of the target machine and compiler, typically in classical native .NET code.</span></span>
-  <span data-ttu-id="9f585-107">通常，不同的目标计算机可能具有适用于每个系统的 prelude 的不同实现。</span><span class="sxs-lookup"><span data-stu-id="9f585-107">In general, different target machines may have different implementations of the prelude appropriate to each system.</span></span>
-- <span data-ttu-id="9f585-108">**canon**：Q# 中定义的操作和函数，在 prelude 中定义的逻辑上生成。</span><span class="sxs-lookup"><span data-stu-id="9f585-108">**The canon**: operations and functions defined in Q# building on the logic defined in the prelude.</span></span>
-  <span data-ttu-id="9f585-109">canon 实现是目标计算机不可知的。</span><span class="sxs-lookup"><span data-stu-id="9f585-109">The canon implementation is agnostic with respect to target machines.</span></span>
-<span data-ttu-id="9f585-110">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="sxs-lookup"><span data-stu-id="9f585-110">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span></span>
+- [<span data-ttu-id="40633-106">Q# 库</span><span class="sxs-lookup"><span data-stu-id="40633-106">Q# libraries</span></span>](xref:microsoft.quantum.qsharplibintro)
+- [<span data-ttu-id="40633-107">.NET 库</span><span class="sxs-lookup"><span data-stu-id="40633-107">.NET libraries</span></span>](xref:microsoft.quantum.dotnetlibsintro)
+- [<span data-ttu-id="40633-108">Python 库</span><span class="sxs-lookup"><span data-stu-id="40633-108">Python libraries</span></span>](https://docs.microsoft.com/python/qsharp)
+
+<span data-ttu-id="40633-109">有关 Q# 库的详细信息，请参阅 <xref:microsoft.quantum.libraries>。</span><span class="sxs-lookup"><span data-stu-id="40633-109">For more information about the Q# libraries, see <xref:microsoft.quantum.libraries>.</span></span>
