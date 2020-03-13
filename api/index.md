@@ -1,25 +1,24 @@
 ---
 uid: microsoft.quantum.standardlibsintro
-title: 'Microsoft Quantum 的 Q # 标准库'
-description: 'Microsoft Quantum 的 Q # 标准库的参考文档'
+title: Microsoft Quantum 的 Q# 标准库
+description: Microsoft Quantum 的 Q# 标准库的参考文档
 author: natke
 ms.author: nakersha
 ms.date: 09/04/2019
 ms.topic: landing-page
-ms.openlocfilehash: 25a53e1cb8577761ef89cdcf2cfcddc509093f86
-ms.sourcegitcommit: 8becfb03eb60ba205c670a634ff4daa8071bcd06
+ms.openlocfilehash: 5975b0caf0fc73ad18fbd8a1e7c82a2333161da2
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2019
-ms.locfileid: "73056965"
+ms.lasthandoff: 03/10/2020
+ms.locfileid: "79022514"
 ---
-# <a name="q-standard-libraries"></a>Q# 标准库 #
+# <a name="q-api-reference"></a>Q# API 参考 #
 
-Q# 由包含 Q # 标准库的各种不同的有用操作、函数和用户定义的类型支持  。
-Q# 标准库分为两个主要部分：
+此 API 参考包括了 Q# 标准库以及在该标准库之上构建的三个库- 化学库、数字库和机器学习库。 还有可用于 Q# 的 .NET 库和 Python 库。
 
-- **prelude**：定义为目标计算机和编译器的一部分的操作和函数，通常采用传统的本机 .NET 代码。
-  通常，不同的目标计算机可能具有适用于每个系统的 prelude 的不同实现。
-- **canon**：Q# 中定义的操作和函数，在 prelude 中定义的逻辑上生成。
-  canon 实现是目标计算机不可知的。
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+- [Q# 库](xref:microsoft.quantum.qsharplibintro)
+- [.NET 库](xref:microsoft.quantum.dotnetlibsintro)
+- [Python 库](https://docs.microsoft.com/python/qsharp)
+
+有关 Q# 库的详细信息，请参阅 <xref:microsoft.quantum.libraries>。

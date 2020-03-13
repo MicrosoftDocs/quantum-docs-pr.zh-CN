@@ -6,5 +6,9 @@
   href: pull-requests.md
 - name: 贡献代码
   href: code.md
+- name: 贡献示例
+  href: samples.md
 - name: 样式指南
   href: style-guide.md
+- name: API 设计原则
+  href: api-design-principles.md
