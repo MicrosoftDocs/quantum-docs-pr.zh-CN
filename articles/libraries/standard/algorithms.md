@@ -6,12 +6,12 @@ ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.libraries.standard.algorithms
-ms.openlocfilehash: aaa9ddf47e5ea35e7e57b9828db082889d0e6adf
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 8b8a9019e8bc419f42b0c6f7558354d19a157917
+ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907233"
+ms.lasthandoff: 03/15/2020
+ms.locfileid: "79402844"
 ---
 # <a name="quantum-algorithms"></a>量程算法 #
 
@@ -77,9 +77,9 @@ $ $ 如果我们定义 $ $ \ket{\phi\_k （a）} = \frac{1}{\sqrt{2}} \left （\
 $ $ 要执行转换程序的路径在观察到输入的总和可以写为 $ $ \ket{a + b} = \operatorname{QFT} ^{-1}\ket{\phi\_1 （a + b）} \otimes \cdots \otimes \ket{\phi\_n （a + b）} 后，就变得清楚。
 $ $ $B $ 和 $a $ 的整数，则可以通过使用 $b $ 的位作为控件，在分解中的每个 qubits 上执行受控制的阶段旋转。
 
-请注意，对于任何整数 $j $ 和实数 $x $，$e ^ {i2\pi （x + j）} = e ^ {i2\pi x} $，可以进一步简化此扩展。  这是因为，如果在圆圈中旋转 $ 360 ^ {\circ} $ 度数（$ 2 \ pi $ 弧度），则最终会精确到开始处。  因此 $e ^ {i2\pi x} $ $x $ 的唯一重要部分是 $x $ 的小数部分。  具体而言，如果我们的二进制扩展形式 $x = y +0\_0x\_2 \ ldots x\_n $，则 $e ^ {i2\pi x} = e ^ {i2\pi （0）。 x\_0x\_2 \ ldots x\_{n-1}）} $，因此 $ $ \ket{\phi\_k （a + b）} = \frac{1}{\sqrt{2}} \left （\ket{0} + e ^ {i2\pi [a/2 ^ k +0\_k\ldots b\_1]} \ket{1} \right）。 $ $ 这意味着，如果通过递增每个tensor $ \ket{a} $ 的傅立叶变换扩展后，旋转的数量就会收缩，因为 $k $ 减小。  这极大地减少了增加插件所需的量程入口数。  我们指出了傅立叶变换、相位加法和反傅立叶变换步骤，这些步骤包含 Draper 添加程序作为 $ \operatorname{QFT} ^{-1} \left （\phi\\\!\operatorname{ADD}\right） \operatorname{QFT} $。 下面显示了使用这种简化实现整个过程的量程线路。
+请注意，对于任何整数 $j $ 和实数 $x $，$e ^ {i2\pi （x + j）} = e ^ {i2\pi x} $，可以进一步简化此扩展。  这是因为，如果在圆圈中旋转 $ 360 ^ {\circ} $ 度数（$ 2 \ pi $ 弧度），则最终会精确到开始处。  因此 $e ^ {i2\pi x} $ $x $ 的唯一重要部分是 $x $ 的小数部分。  具体而言，如果我们的二进制扩展形式 $x = y +0\_0x\_2 \ ldots x\_n $，则 $e ^ {i2\pi x} = e ^ {i2\pi （0）。 x\_0x\_2 \ ldots x\_{n-1}）} $，因此 $ $ \ket{\phi\_k （a + b）} = \frac{1}{\sqrt{2}} \left （\ket{0} + e ^ {i2\pi [a/2 ^ k +0\_k\ldots b\_1]} \ket{1} \right）。 $ $ 这意味着，如果通过增加 $ tensor $ 的傅立叶转换的扩展中的每个 \ket{a} 因素来执行加法运算，随着 $k $ 减小，旋转收缩的数目。  这极大地减少了增加插件所需的量程入口数。  我们指出了傅立叶变换、相位加法和反傅立叶变换步骤，这些步骤包含 Draper 添加程序作为 $ \operatorname{QFT} ^{-1} \left （\phi\\\!\operatorname{ADD}\right） \operatorname{QFT} $。 下面显示了使用这种简化实现整个过程的量程线路。
 
-![显示为线路关系图的 Draper](~/media/draper.png)
+![显示为线路关系图的 Draper](~/media/draper.svg)
 
 线路中的每个受控 $e ^ {i2 \ pi/k} $ 入口都指受控的阶段入口。  此类入口的属性在其作用的 qubits 对上，$ \ket{00}\mapsto \ket{00}$ 但 $ \ket{11}\mapsto e ^ {i2 \ pi/k} \ 票证{11}$。  利用此线路，我们可以使用除存储输入和输出所需的其他 qubits 以外的其他任何功能来执行添加。
 
@@ -92,7 +92,7 @@ $$
 
 Beauregard 添加使用 Draper 添加，或更具体的 $ \phi\\\!\operatorname{ADD} $，以在阶段中添加 $a $ 和 $b $。  然后，它将使用相同的操作来确定是否 $a + b < N $，方法是在 $a + b-N < 0 $ 减 $N $ 和测试。  线路将此信息存储在辅助 qubit 中，然后在 $a + b < N $ 时，将 $N $ 返回寄存器。  然后，它会通过 uncomputing 此辅助位来结束（需要此步骤以确保在调用此项补充后可以取消分配 ancilla）。  下面给出了 Beauregard 提供程序的线路。
 
-![显示为线路关系图的 Beauregard](~/media/beau.png)
+![显示为线路关系图的 Beauregard](~/media/beau.svg)
 
 此处的入口 $ \Phi\\\!\operatorname{ADD} $ 采用与 $ \Phi\\\!\operatorname{ADD} $ 相同的格式，但在此上下文中，输入为经典而不是量程。  这允许将 $ \Phi 中的受控阶段\\\!\operatorname{ADD} $ 替换为阶段入口，然后可以将该入口编译成更少的操作，减少了执行程序所需的 qubits 数量和入口数。
 
@@ -111,7 +111,7 @@ Beauregard 添加使用 Draper 添加，或更具体的 $ \phi\\\!\operatorname{
 因此，对于本文的其余部分，我们将根据 $R _1 （\phi） $ （通过使用所谓的*阶段 kickback*来实现）讨论阶段估算。
 
 由于在此过程后，控件和目标注册仍处于 untangled 状态，因此，我们可以将 $ \ket{\phi} $ 作为 $U ^ $2 的受控应用程序的目标，以便在州 $R _1 （2 \phi） \ket{+} $ 中准备第二个控制 qubit。
-继续以这种方式，我们可以获取形式为 \begin{align} \ket{\psi} & = \ sum_ {j = 0} ^ n R_1 （2 ^ j \phi） \ket{+} \\\\ & \propto \ bigotimes_ {j = 0} ^ {n} \left （\ket{0} + \exp （i 2 ^ {j} \phi） \ket{1}\right） \\\\ & \propto \ sum_ {k = 0} ^ {2 ^ n-1} \exp （i \phi k） \ket{k} \end{align}，其中 $n $ 是我们需要的精度位数。而且，我们已使用 ${} \propto $ {}$ 来表明我们抑制了 $1/\sqrt{2 ^ n} $。
+继续以这种方式，我们可以获取形式为 \begin{align} \ket{\psi} & = \ sum_ {j = 0} ^ n R_1 （2 ^ j \phi） \ket{+} \\\\ & \propto \ bigotimes_ {j = 0} ^ {n} \left （\ket{0} + \exp （i 2 ^ {j} \phi） \ket{1}\right） \\\\ & \propto \ sum_ {k = 0} ^ {2 ^ n-1} \exp （i \phi k） \ket{k} \end{align}，其中 $n $ 是我们需要的精度位数。并且，我们已使用 ${} \propto $ {}$ 来指示我们抑制了 $1/\sqrt 的规范化系数{2 ^ n} $。
 
 如果我们假设 $ \phi = 2 \pi p/2 ^ k $ 用于整数 $p $，则我们会将其识别为 $ \ket{\psi} = \operatorname{QFT} \ket{p_0 p_1 \dots . p_n} $，其中 $p _j $ 是 $2 \textrm{th}} \pi $ 的 $j ^ {\phi $ 位。
 通过应用 "量程傅立叶转换" 的 adjoint，我们将获得编码为量程状态的阶段的二进制表示形式。
