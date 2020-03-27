@@ -5,6 +5,29 @@ type: function
 namespace: Microsoft.Quantum.Arrays
 summary: 给定为数组元素定义的数组和谓词后，将返回一个数组，其中包含满足谓词的元素。
 remarks: 函数是为泛型类型定义的，也就是说，只要有数组 `'T[]` 和谓词 `'T -> Bool` 我们就可以筛选元素。
+examples: >-
+  下面的代码演示 "筛选的" 函数。
+
+  使用 @"microsoft.quantum.logical.greaterthani" 函数定义谓词：
+
+
+  ```qsharp
+
+  open Microsoft.Quantum.Arrays;
+
+  open Microsoft.Quantum.Logical;
+
+
+  function FilteredDemo() : Unit {
+     let predicate = GreaterThanI(_, 5);
+     let filteredArray = Filtered(predicate, [2, 5, 9, 1, 8]);
+     Message($"{filteredArray}");
+  }
+
+  ```
+
+
+  此示例应有的结果是一个大于5的数字数组。
 syntax: "function Filtered (predicate : ('T -> Bool), array : 'T[]) : 'T[]"
 input:
   content: "(predicate : ('T -> Bool), array : 'T[])"
@@ -36,9 +59,9 @@ typeParameters:
 - uid: "'T"
   summary: '`array` 元素的类型。'
 metadata:
-  ms.openlocfilehash: f2749f204c6276a0a43ac67bdee9c4cda0de049e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 8ce7f84c2243a5194b5a2223884fb68304767dbf
+  ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218356"
+  ms.lasthandoff: 03/26/2020
+  ms.locfileid: "80320755"
