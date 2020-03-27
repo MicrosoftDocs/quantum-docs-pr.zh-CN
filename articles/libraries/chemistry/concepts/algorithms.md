@@ -6,12 +6,12 @@ ms.author: nawiebe@microsoft.com
 ms.date: 10/09/2017
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.concepts.simulationalgorithms
-ms.openlocfilehash: e3ce76f5ddcca497adb519eece959c9dd5dec92f
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 5dad4e4a77eea99e72eb2efac52eec61ebbdb21c
+ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77904632"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80320709"
 ---
 # <a name="simulating-hamiltonian-dynamics"></a>模拟 Hamiltonian Dynamics
 
@@ -28,14 +28,14 @@ Trotter – Suzuki 公式背后的理念非常简单：将 Hamiltonian 表达为
 之所以发生此错误，是因为 $e ^ {-iHt} $ 是运算符指数，因此，使用此公式时出现错误，因为 $H _j $ 术语不进行上下班（*即*$H _j H_k H_k H_j $）。
 
 如果 $t $ 是大的，则仍可以使用 Trotter – Suzuki 公式来准确模拟动态，方法是将其分解为一系列简短的时间。
-让 $r $ 是在时间演进中执行的步骤数。
-接下来，我们将使用 $ $ e ^ {-i \ sum_ {j = 1} ^ m H_j t} = \left （\ prod_ {j = 1} ^ m e ^ {-iH_j t/r} \ right） ^ r + O （m ^ 2 t ^ 2/r），$ $ 这意味着如果 $r $ 缩放为 $m ^ 2 t ^ 2/\ epsilon $，则对于任何 $ \epsilon > 0 $，该错误最多可为 $ \epsilon $。
+让 $r $ 是在时间演化过程中执行的步骤数，因此每次运行的时间 $t/r $。 接下来，我们将使用 $ $ e ^ {-i \ sum_ {j = 1} ^ m H_j t} = \left （\ prod_ {j = 1} ^ m e ^ {-iH_j t/r} \ right） ^ r + O （m ^ 2 t ^ 2/r），$ $ 这意味着如果 $r $ 缩放为 $m ^ 2 t ^ 2/\ epsilon $，则对于任何 $ \epsilon > 0 $，该错误最多可为 $ \epsilon $。
 
 通过构造运算符指数的序列来生成更准确的近似值，使错误词取消。
-最简单的这样的公式（即对称 Trotter 公式或 Strang 拆分）采用的格式为 $ $ U_1 （t） = \ prod_ {j = 1} ^ m e ^ {iH_j t/2} \ prod_ {j = m} ^ 1 e ^ {-iH_j t} = e ^ {-iHt} + O （m ^ 3 t ^ 3），通过选择 $r $ 扩展为 $m ^ {3/2} t ^ {3/2}/\sqrt {\ epsilon} $，可使任何 $ \epsilon > 的 $ $ 的 $ $。
+最简单的此类公式，第二个 order Trotter-Suzuki 公式，采用格式 $ $ U_2 （t） = \left （\ prod_ {j = 1} ^ {m} e ^ {-iH_j t/2r} \ prod_ {j = m} ^ 1 e ^ {-iH_j t/2r} \ 右） ^ r = e ^ {-iHt} + O （m ^ 3 t ^ 3/r ^ 2），$ $ $r $ 扩展为 $m ^ {3/2} t ^ {3/2}/\sqrt {\ epsilon} $，可以为任何 $ \epsilon > 0 $ 提供小于 $ \epsilon $ 的错误。
 
-甚至可以基于 $U _1 $ 来构建高阶 Trotter 公式。
-最简单的顺序公式如下所示：最初由 Suzuki： $ $ U_2 （t） = U_1 ^ 2 （s_1t） U_1 （[1-4s_1] t） U_1 ^ 2 （s_1 t） = e ^ {-iHt} + O （m ^ 5t ^ 5），$ $，其中 $s _1 = （4-4 ^ {1/3}） ^{-1}$。
+可以递归构造 $k > 0 $ 的高阶公式，甚至是更高顺序的公式： $ $ U_ {2k} （t） = [U_ {2k-2} （s_k\~ t）] ^ 2 U_ {2k-2} （[1-4s_k] t） [U_ {2k-2} （s_k\~ t）] ^ 2 = e ^ {-iHt} + O （（m t） ^ {2k + 1}/r ^ {2k}），$ $ where $s _k = （4-4 ^ {1/（2k-1）}） ^{-1}$。
+
+最简单的第四个顺序（$k = $2）公式最初由 Suzuki： $ $ U_4 （t） = [U_2 （s_2\~ t）] ^ 2 U_2 （[1-4s_2] t） [U_2 （s_2\~ t）] ^ 2 = e ^ {-iHt} + O （m ^ 5t ^ 5/r ^ 4），$ $ where $s _2 = （4-4 ^ {1/3}） ^{-1}$。
 通常，可以按类似方式构造任意高阶公式;然而，使用更复杂的集成商时所产生的成本通常会超出大多数实际问题的第四个订单的权益。
 
 为了使以上策略正常工作，我们需要使用一种方法来模拟 $e ^ {iH_j t} $ 的各种类。

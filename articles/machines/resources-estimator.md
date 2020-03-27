@@ -6,17 +6,17 @@ ms.author: anpaz@microsoft.com
 ms.date: 1/22/2019
 ms.topic: article
 uid: microsoft.quantum.machines.resources-estimator
-ms.openlocfilehash: 37c901e5a861f0e8a10cdc911ad1d84ddd3e6e00
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 51186134e9279727fec212cdce84f69493aaa656
+ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907046"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80320812"
 ---
 # <a name="the-resourcesestimator-target-machine"></a>ResourcesEstimator 目标计算机
 
 顾名思义，`ResourcesEstimator` 估算在量程计算机上运行 Q # 操作的给定实例所需的资源。
-它通过执行量程操作来实现此操作，而无需实际模拟量子计算机的状态;出于此原因，它可以估计使用上千个 qubits 的 Q # 操作的资源。
+它通过执行量程操作来实现此操作，而无需实际模拟量子计算机的状态;出于此原因，如果代码的传统部分可以在合理的时间内运行，则它可以估计使用上千个 qubits 的 Q # 操作的资源。
 
 ## <a name="usage"></a>用法
 

@@ -6,12 +6,12 @@ uid: microsoft.quantum.concepts.pauli
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: fcd30c171859f96c3f9cc74664ecba8df0a02855
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 08babbcb0d6c6c4d83622489bc4ecc811e64829a
+ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907505"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80320873"
 ---
 # <a name="pauli-measurements"></a>Pauli 度量值
 
@@ -61,7 +61,7 @@ Pauli 度量值的表示法通过将 $X、Y、Z $ 度量值识别为可从 qubit
 $ $ \begin{align} S = \begin{bmatrix} 1 & 0 \\\\ 0 & i \end{bmatrix}。
 \end{align} $ $
 
-它还等效于将 $HS ^ \dagger $ 应用于量程状态向量，然后测量 $ $Z $，以便以下操作等效于 `Measure([PauliY], [q]])`：
+它还等效于将 $HS ^ \dagger $ 应用于量程状态向量，然后测量 $ $Z $，以便以下操作等效于 `Measure([PauliY], [q])`：
 
 ```Q#
 operation MeasureY(qubit : Qubit) : Result {

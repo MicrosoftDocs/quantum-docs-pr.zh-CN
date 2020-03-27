@@ -6,12 +6,12 @@ uid: microsoft.quantum.concepts.multiple-qubits
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 2fa227c823cd87df9c799c043c699e4ce818b8e3
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 239073b7e7edafc49bc65cb60c9f45cf0af83dbe
+ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907539"
+ms.lasthandoff: 03/26/2020
+ms.locfileid: "80320889"
 ---
 # <a name="multiple-qubits"></a>多个 Qubits
 
@@ -27,7 +27,7 @@ ms.locfileid: "77907539"
 
 ## <a name="representing-two-qubits"></a>表示两个 Qubits
 Qubit 状态之间的主要区别在于两 qubit 状态为四维，而不是二维。
-这是因为，qubit 状态的计算基础由一 qubit 状态的 tensor 产品构成。  例如，我们有 \begin{align} 00 \equiv \begin{bmatrix}1 \\\\ 0 \end{bmatrix}\otimes \begin{bmatrix}1 \\\\ 0 \end{bmatrix} & = \begin{bmatrix}1 \\\\ 0\\\\ 0\\\\ 0 \end{bmatrix}，\qquad 01 \equiv \begin{bmatrix}1 \\\\ 0 \end{bmatrix}\otimes \begin{bmatrix}0 \\\\ 1 \end{bmatrix} = \begin{bmatrix}0 \\\\ 1\\\\\\\\ 0 \end{bmatrix}，\\\\ 10 \equiv \begin{bmatrix}0 \\\\ 1 \end{bmatrix}\otimes \begin{bmatrix}1 \\\\ 0 \end{bmatrix} & = \begin{bmatrix}0 \\\\ 0\\\\ 1\\\\ 0 \end{bmatrix}，\qquad 11 \equiv \begin{bmatrix}0 \\\\ 1 \end{bmatrix}\otimes \begin{bmatrix}0 \\\\ 1 \end{bmatrix} = \begin{bmatrix}0 \\\\ 0\\\\ 0\\\\ 1 \end{bmatrix}。
+这是因为，qubit 状态的计算基础由一 qubit 状态的 tensor 产品构成。  例如，我们有 \begin{align} 00 \equiv \begin{bmatrix}1 \\\\ 0 \end{bmatrix}\otimes \begin{bmatrix}1 \\\\ 0 \end{bmatrix} & = \begin{bmatrix}1 \\\\ 0\\\\ 0\\\\ 0 \end{bmatrix}，\qquad 01 \equiv \begin{bmatrix}1 \\\\ 0 \end{bmatrix}\otimes \begin{bmatrix}0 \\\\ 1 \end{bmatrix} = \begin{bmatrix}0 \\\\ 1\\\\ 0\\\\ 0 \end{bmatrix}，\\\\ \equiv \begin{bmatrix}0 \\\\ 1 \end{bmatrix}\otimes \begin{bmatrix}1 \\\\ 0 \end{bmatrix} & = \begin{bmatrix}0 \\\\ 0\\\\ 1\\\\ 0 \end{bmatrix}，\qquad 11 \equiv \begin{bmatrix}0 \\\\ 1 \end{bmatrix}\otimes \begin{bmatrix}0 \\\\ 1 \end{bmatrix} = \begin{bmatrix}0 \\\\ 0\\\\ 1\\\\ 1 \end{bmatrix}。
 \end{align}
 
 更常见的情况是，使用此构造，可以很容易看到 $n $ qubits 的量程状态由维度 $ 2 ^ n $ 的单位向量表示。  矢量
@@ -59,13 +59,16 @@ $$
 
 还可以只测量一个 qubit 为两 qubit 的量程状态。 在仅测量其中一个 qubits 的情况下，度量值的影响将稍有不同，因为整个状态不会折叠为计算基础状态，而只是折叠为一个子系统。  换句话说，在这种情况下，只测量一个 qubit 只会折叠其中一个子系统，而不是全部。  
 
-若要查看这一点，请考虑测量以下状态的第一个 qubit，这是通过对两个 qubits 上 $H 的 $ $ 初始设置为 "0" 状态而形成的： $ $ H ^ {\otimes 2} \left （\begin{bmatrix}1 \\\\ 0 \end{bmatrix}\otimes \begin{bmatrix}1 \\\\ 0 \end{bmatrix} \right） = \frac{1}{2}\begin{bmatrix}1 & 1 & 1 & 1 \\\\ 1 & 1 & 1 & \\\\ 1 & 1 &1 &-1 & 1 \end{bmatrix}\begin{bmatrix}1\\\\ 0\\\\ 0\\\\ 0 \ 结束 {bmatrix} = \frac{1}{2}\\\\\\1 \\\\1 \\ & 1 \ 结束 {bmatrix} \mapsto \begin{cases}\text{outcome} = 0{1}\frac{2}{\sqrt\\} \begin{bmatrix}1 \\\\1 \\\\0 \\\\0 \end{bmatrix}\\ \text{outcome} = 1 & \frac{1}{\sqrt{2}} \begin{bmatrix}0\\\\\\\\\\1 \\\\1 \end{bmatrix} \\ \end{cases}。\\\\
+若要查看这一点，请考虑测量以下状态的第一个 qubit，这是通过对两个 qubits 上 $H 的 $ $ 初始设置为 "0" 状态而形成的： $ $ H ^ {\otimes 2} \left （\begin{bmatrix}1 \\\\ 0 \end{bmatrix}\otimes \begin{bmatrix}1 \\\\ 0 \end{bmatrix} \right） = \frac{1}{2}\begin{bmatrix}1 & 1 & 1 & 1 \\\\ 1 & 1 & 1 & 1 \\\\ 1 & 1 & 1 & \\1结束 {bmatrix} \begin{bmatrix}1\\\\ 0\\\\ 0\\\\ 0 \ 结束 {bmatrix} = \frac{1}{2}\begin{bmatrix}1\\\\ 1\\\\ 1\\\\ 1 \ 结束 {bmatrix} \mapsto \begin{cases}\text{outcome} = 0 &{1}{2}\\\\\\\\\\\\\\\\ &{1}\frac{2}} \begin{bmatrix}0\\\\ 0\\\\ 1\\\\ 1 \end{bmatrix}\\\\ \end{cases}。\\
 $ $ 这两个结果的发生率均为50%。  这两者的结果50% 的概率可能是 intuited 的，这是因为初始量程状态向量在第一个 qubit 上的交换 $0 $1 $ 下是固定的。
 
-用于度量第一个或第二个 qubit 的数学规则非常简单。  如果我们允许 $e _k $ 是 $k ^ {\rm th} $ 计算基础向量，并允许 $S $ 为所有 $e $ 的集合，以使 qubit 的值为 _k $ 的值 $1 $。  例如，如果对度量第一个 qubit 感兴趣，则 $ $S $ 将包含 $e _2 \ http-equiv $10 和 $e _3 \ http-equiv $11。  同样，如果我们对第二个 qubit 感兴趣 $S $ 将包含 $e _1 \ http-equiv $1 和 $e _3 \equiv $11。  那么，将所选 qubit 测量为 $1 $ 的概率为状态向量 $ \psi $
+用于度量第一个或第二个 qubit 的数学规则非常简单。  如果我们允许 $e _k $ 是 $k ^ {\rm th} $ 计算基础向量，并允许 $S $ 为所有 $e $ 的集合，以使 qubit 的值为 _k $ 的值 $1 $。  例如，如果对度量第一个 qubit 感兴趣，则 $ $S $ 将包含 $e _1 \ http-equiv $10 和 $e _3 \ http-equiv $11。  同样，如果我们对第二个 qubit 感兴趣 $S $ 将包含 $e _2 \ http-equiv $1 和 $e _3 \equiv $11。  那么，将所选 qubit 测量为 $1 $ 的概率为状态向量 $ \psi $
 
 $ $ P （\text{outcome} = 1） = \ sum_ {e_k 集} S} \psi ^ \dagger e_k e_k ^ \dagger \psi。
 $$
+
+> [!NOTE]
+> 在本文档中，我们使用的是小字节序格式来标记计算基础。 在 little endian 格式中，最小的有效位数首先是。 例如，以小字节序格式表示的四个数字由 bits 001 的字符串表示。
 
 由于每个 qubit 度量仅可产生 $0 $ 或 $1 $，因此 $0 度量值为的概率只是 $1-P （\text{outcome} = 1） $。  这就是我们只为衡量 $1 $ 的概率显式提供公式的原因。
 
@@ -79,7 +82,7 @@ $$
 
 如果将 $ \psi $ 指定为上面给定的统一状态向量，并对度量第一个 qubit 感兴趣，则 
 
-$ $ P （第一个 qubit 的 \text{measurement} = 1） = （\psi ^ \dagger e_2）（e_2 ^ \dagger \psi） + （\psi ^ \dagger e_3）（e_3 ^ \dagger \psi） = | e_2 ^ \dagger \psi | ^ 2 + | e_3 ^ \dagger \psi | ^ 2。
+$ $ P （第一个 qubit 的 \text{measurement} = 1） = （\psi ^ \dagger e_1）（e_1 ^ \dagger \psi） + （\psi ^ \dagger e_3）（e_3 ^ \dagger \psi） = | e_1 ^ \dagger \psi | ^ 2 + | e_3 ^ \dagger \psi | ^ 2。
 $$
 
 请注意，这只是测量结果的两个概率的总和，$10 $ 和 $11 $ 就是要测量的所有 qubits。
@@ -90,12 +93,13 @@ $$
 
 这完全匹配了我们的直觉告诉我们的概率。  同样，可以将状态编写为
 
-$ $ \frac{\frac{e_2}{2}+ \frac{e_3}{2}} {\sqrt{\frac{1}{2}}} = \frac{1}{\sqrt{2}} \begin{bmatrix} 0\\\\ 0\\\\ 1\\\\ 1 \ end {bmatrix} $ $
+$ $ \frac{\frac{e_1}{2}+ \frac{e_3}{2}} {\sqrt{\frac{1}{2}}} = \frac{1}{\sqrt{2}} \begin{bmatrix} 0\\\\ 0\\\\ 1\\\\ 1 \ end {bmatrix} $ $
 
 再次遵循我们的直觉。
 
 ## <a name="two-qubit-operations"></a>Qubit 操作
-与 qubit 情况一样，任何单一转换都是对 qubits 的有效操作。 通常，$n $ qubits 上的单一转换是一个大小为 $ 2 ^ n \times 2 ^ n $ 的矩阵 $U $ （因此它作用于大小为 $ 2 ^ n $ 的矢量），以便 $U ^{-1} = U ^ \dagger $。 例如，CNOT-CONTAINS （受控-NOT）门是一种常用的 qubit 门，由以下单一矩阵表示：
+与 qubit 情况一样，任何单一转换都是对 qubits 的有效操作。 通常，$n $ qubits 上的单一转换是一个大小为 $ 2 ^ n \times 2 ^ n $ 的矩阵 $U $ （因此它作用于大小为 $ 2 ^ n $ 的矢量），以便 $U ^{-1} = U ^ \dagger $。
+例如，CNOT-CONTAINS （受控-NOT）门是一种常用的 qubit 门，由以下单一矩阵表示：
 
 $ $ \operatorname{CNOT} = \begin{bmatrix} 1 \ 0 \ 0 0 \ 0 \\\\ 0 \ 1 \ 0 \ 0 \\\\ 0 \ 0 \ 0 \\\ 0 \end{bmatrix} $ $\\
 
