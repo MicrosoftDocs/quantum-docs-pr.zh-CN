@@ -1,0 +1,76 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.equala
+name: EqualA
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: 给定两个相同类型的数组和为数组元素对定义的谓词，检查数组是否相等。
+remarks: >-
+  此函数是为泛型类型定义的;也就是说，每当有两个数组 `'T[]` 并且函数 `equal: ('T, 'T) -> Bool`时，此函数将返回一个 `Bool` 值，该值指示数组是否相等。
+
+  对于两个要视为相等的数组，它们必须具有相等的长度，并且数组中同一位置的元素必须相等。
+examples: >-
+  下面的代码检查不同的数组对是否相等：
+
+
+  ```qsharp
+
+  open Microsoft.Quantum.Arrays;
+
+  open Microsoft.Quantum.Logical;
+
+
+  function EqualADemo() : Unit {
+      let equalArrays = EqualA(EqualI, [2, 3, 4], [2, 3, 4]);
+      let differentLength = EqualA(EqualD, [2.0, 3.0, 4.0], [2.0, 3.0]);
+      let differentElements = EqualA(EqualR, [One, Zero], [One, One]);
+      Message($"Equal arrays are {equalArrays ? "equal" | "not equal"}");
+      Message($"Arrays of different length are {differentLength ? "equal" | "not equal"}");
+      Message($"Arrays of the same length with different elements are {differentElements ? "equal" | "not equal"}");
+  }
+
+  ```
+syntax: "function EqualA (equal : (('T, 'T) -> Bool), array1 : 'T[], array2 : 'T[]) : Bool"
+input:
+  content: "(equal : (('T, 'T) -> Bool), array1 : 'T[], array2 : 'T[])"
+  types:
+  - name: equal
+    isFunction: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Bool
+  - name: array1
+    summary: 要比较的第一个数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+  - name: array2
+    summary: 要比较的第二个数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Bool
+  types:
+  - summary: >-
+      当且仅当 `array1` 和 `array2` 相等时，值 `true`。
+
+      也就是说，如果两个数组具有相同的长度，并且所有元素都与 `equal`定义的相等。
+    isPrimitive: true
+    uid: Bool
+typeParameters:
+- uid: "'T"
+  summary: 每个数组元素的类型。
+metadata:
+  ms.openlocfilehash: 466078fa243e2f394fa42dff15845ae5f1cd73df
+  ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 03/26/2020
+  ms.locfileid: "80321600"

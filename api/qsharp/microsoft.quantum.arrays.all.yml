@@ -5,6 +5,24 @@ type: function
 namespace: Microsoft.Quantum.Arrays
 summary: 给定为数组元素定义的数组和谓词，并检查数组的所有元素是否都满足该谓词。
 remarks: "函数是为泛型类型定义的，也就是说，只要数组 `'T[]` 和函数 `predicate: 'T -> Bool` 我们就可以生成一个 `Bool` 值，该值指示所有元素是否都满足 `predicate`。"
+examples: >-
+  下面的代码检查数组的所有元素是否都为非零值：
+
+
+  ```qsharp
+
+  open Microsoft.Quantum.Arrays;
+
+  open Microsoft.Quantum.Logical;
+
+
+  function AllDemo() : Unit {
+      let predicate = NotEqualI(_, 0);
+      let isNonZero = All(predicate, [2, 3, 4, 5, 6, 0]);
+      Message($"{isNonZero}");
+  }
+
+  ```
 syntax: "function All (predicate : ('T -> Bool), array : 'T[]) : Bool"
 input:
   content: "(predicate : ('T -> Bool), array : 'T[])"
@@ -35,9 +53,9 @@ typeParameters:
 - uid: "'T"
   summary: '`array` 元素的类型。'
 metadata:
-  ms.openlocfilehash: bb439ae76d0f7644625686cd89f05670051a4c9d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: bc21229d0468adcd41f6c460f5325cad9f09ba5c
+  ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73214446"
+  ms.lasthandoff: 03/26/2020
+  ms.locfileid: "80320773"
