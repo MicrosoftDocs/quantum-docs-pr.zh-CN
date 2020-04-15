@@ -7,10 +7,10 @@ ms.date: 10/22/2019
 ms.topic: landing-page
 uid: microsoft.quantum.overview.index
 ms.openlocfilehash: a033ba09fa6d694f58be30b402503e130c8d3cd4
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 04/13/2020
 ms.locfileid: "77907029"
 ---
 # <a name="five-questions-about-quantum-computing"></a>关于量子计算的五个问题

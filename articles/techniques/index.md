@@ -8,10 +8,10 @@ ms.date: 9/20/2019
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.techniques.intro
 ms.openlocfilehash: e5b7fbde18afbc0333d89f70c5e4596848e30f4f
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 04/13/2020
 ms.locfileid: "77907709"
 ---
 # <a name="quantum-development-techniques"></a>量子开发技术

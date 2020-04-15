@@ -7,10 +7,10 @@ ms.author: bradben
 ms.date: 03/04/2020
 ms.topic: landing-page
 ms.openlocfilehash: ac924a29bf90de67d933d271103ddf7e6078de2a
-ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
+ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/13/2020
 ms.locfileid: "79024111"
 ---
 # <a name="q-libraries"></a>Q# 库 #

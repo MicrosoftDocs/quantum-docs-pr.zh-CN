@@ -1,16 +1,16 @@
 ---
 uid: microsoft.quantum.standardlibsintro
-title: Microsoft Quantum 的 Q# 标准库
-description: Microsoft Quantum 的 Q# 标准库的参考文档
+title: 'Microsoft Quantum 的 Q # 标准库'
+description: 'Microsoft Quantum 的 Q # 标准库的参考文档'
 author: natke
 ms.author: nakersha
 ms.date: 09/04/2019
 ms.topic: landing-page
 ms.openlocfilehash: 5975b0caf0fc73ad18fbd8a1e7c82a2333161da2
-ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
+ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/13/2020
 ms.locfileid: "79022514"
 ---
 # <a name="q-api-reference"></a>Q# API 参考 #

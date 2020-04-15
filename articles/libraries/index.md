@@ -7,10 +7,10 @@ ms.date: 10/17/2018
 ms.topic: article
 uid: microsoft.quantum.libraries
 ms.openlocfilehash: 89612aaa5c11e1a5e0d418256e96366953fdd3fe
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 04/13/2020
 ms.locfileid: "77906400"
 ---
 # <a name="overview-of-q-libraries"></a>Q# 库概述

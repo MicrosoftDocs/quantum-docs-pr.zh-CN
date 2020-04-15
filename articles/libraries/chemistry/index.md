@@ -7,10 +7,10 @@ ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.chemistry.concepts.intro
 ms.openlocfilehash: 4268eafa5e53c0a026d179503ac6db88652a8f90
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 04/13/2020
 ms.locfileid: "77907318"
 ---
 # <a name="introduction-to-the-quantum-chemistry-library"></a>量子化学库简介

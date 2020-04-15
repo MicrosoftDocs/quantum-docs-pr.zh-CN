@@ -7,10 +7,10 @@ ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.libraries.standard.intro
 ms.openlocfilehash: 820ad885e7134aa723116d4c9f853d88210a5514
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 04/13/2020
 ms.locfileid: "77907148"
 ---
 # <a name="introduction-to-the-q-standard-libraries"></a>Q# 标准库简介 #

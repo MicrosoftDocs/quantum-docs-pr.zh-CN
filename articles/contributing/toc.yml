@@ -2,7 +2,7 @@
   href: reporting-bugs.md
 - name: 改进文档
   href: docs.md
-- name: 创建拉取请求
+- name: 打开拉取请求
   href: pull-requests.md
 - name: 贡献代码
   href: code.md

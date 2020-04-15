@@ -7,10 +7,10 @@ ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing
 ms.openlocfilehash: cf913a09395f0694a51645ec8f91171e5b1555c3
-ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
+ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
+ms.lasthandoff: 04/13/2020
 ms.locfileid: "79022477"
 ---
 # <a name="contributing-to-the-quantum-development-kit"></a>对量子开发工具包做出贡献
