@@ -619,7 +619,7 @@
       uid: microsoft.quantum.canon.expmod
     - name: ExtendedGCD
       uid: microsoft.quantum.canon.extendedgcd
-    - name: “筛选器”
+    - name: 筛选器
       uid: microsoft.quantum.canon.filter
     - name: ForAll
       uid: microsoft.quantum.canon.forall
