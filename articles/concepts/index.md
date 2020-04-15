@@ -7,10 +7,10 @@ uid: microsoft.quantum.concepts.intro
 ms.date: 12/11/2017
 ms.topic: article
 ms.openlocfilehash: fb1df9e3460c18d0cdc0ff430fa236192b3aa2fa
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
+ms.lasthandoff: 04/13/2020
 ms.locfileid: "73442306"
 ---
 # <a name="quantum-computing-history-and-background"></a>量子计算历史和背景

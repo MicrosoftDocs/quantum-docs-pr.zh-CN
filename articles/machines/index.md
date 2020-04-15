@@ -7,10 +7,10 @@ ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines
 ms.openlocfilehash: 14aed75ed0ed192f88699b1c7dbacfae23f74642
-ms.sourcegitcommit: aa5e6f4a2deb4271a333d3f1b1eb69b5bb9a7bad
+ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/02/2019
+ms.lasthandoff: 04/13/2020
 ms.locfileid: "73442216"
 ---
 # <a name="quantum-simulators-and-host-applications"></a>量子模拟器和主机应用程序
