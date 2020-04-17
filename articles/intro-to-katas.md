@@ -7,10 +7,10 @@ ms.date: 10/17/2019
 ms.topic: overview
 uid: microsoft.quantum.overview.katas
 ms.openlocfilehash: af54a2260147b8ca07919b241548aac85ed0d8a1
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.sourcegitcommit: 7d350db4b5e766cd243633aee7d0a839b6274bd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "76821093"
 ---
 # <a name="learn-quantum-computing-with-the-quantum-katas"></a>使用 Quantum Katas 学习量子计算

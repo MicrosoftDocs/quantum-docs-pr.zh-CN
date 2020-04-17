@@ -7,10 +7,10 @@ ms.date: 10/19/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.search
 ms.openlocfilehash: 0e64fcd56929fa33397c45bf1b2e99bf687eca6f
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.sourcegitcommit: 7d350db4b5e766cd243633aee7d0a839b6274bd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "77906944"
 ---
 # <a name="quickstart-implement-grovers-search-algorithm-in-q"></a>快速入门：在 Q# 中实现 Grover 搜索算法
