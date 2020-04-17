@@ -7,10 +7,10 @@ ms.date: 10/23/2019
 ms.topic: article
 uid: microsoft.quantum.overview.learn
 ms.openlocfilehash: 17fc4e7a73f93a86d981996bf8b59309bccb6e67
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.sourcegitcommit: 7d350db4b5e766cd243633aee7d0a839b6274bd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "77907743"
 ---
 # <a name="how-to-learn-about-quantum-computing"></a>如何了解量子计算？
