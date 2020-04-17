@@ -7,10 +7,10 @@ ms.date: 10/23/2019
 ms.topic: article
 uid: microsoft.quantum.overview.computers
 ms.openlocfilehash: 9d8ba90a504f298f9465ebf564c43625a4d43168
-ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+ms.sourcegitcommit: 7d350db4b5e766cd243633aee7d0a839b6274bd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/04/2019
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "73529956"
 ---
 # <a name="what-can-a-quantum-computer-do"></a>量子计算机有何用途？
@@ -29,7 +29,7 @@ ms.locfileid: "73529956"
 
 化学分子是量子系统，因此可通过这种方式进行分析。 “固氮酶”就是这样一种特殊的化学物质，通过更好地了解其属性，可以减少当前肥料的能源消耗和温室气体排放  。
 
-## <a name="cryptography"></a>加密
+## <a name="cryptography"></a>Cryptography
 
 也许量子计算机最著名的应用是在加密领域，Peter Shor 在 1994 年证明了一台可缩放的量子计算机可以破解所有广泛使用的加密技术。  经典加密依赖于这样一种信念：很难对大数字进行运算（例如将大数字因式分解为两个质数）。
 
@@ -37,7 +37,7 @@ ms.locfileid: "73529956"
 
 Microsoft 在后量子加密领域有世界领先的团队，在开发抗量子算法方面有足够的安全措施。
 
-## <a name="optimization"></a>优化
+## <a name="optimization"></a>Optimization
 
 优化是指在高维空间进行大型搜索，以便获取解决方案，尽量降低给定成本函数得出的成本。   在量子计算机上，我们可以加快优化算法的速度，找出使用其他方法无法找出的解决方案。 应用包括：运输和物流、医疗保健、诊断以及材料科学。 可能会在提升效率方面对这些行业造成深远影响。
 

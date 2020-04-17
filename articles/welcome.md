@@ -7,10 +7,10 @@ ms.author: nakersha
 ms.date: 10/23/2019
 ms.topic: overview
 ms.openlocfilehash: cea39e47ec5e7e2ad97adbbb39ba586274564967
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.sourcegitcommit: 7d350db4b5e766cd243633aee7d0a839b6274bd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "77907624"
 ---
 # <a name="get-started-with-the-quantum-development-kit-qdk"></a>Quantum 开发工具包 (QDK) 入门

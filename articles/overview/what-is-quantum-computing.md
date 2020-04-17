@@ -7,10 +7,10 @@ ms.date: 10/22/2019
 ms.topic: article
 uid: microsoft.quantum.overview.what
 ms.openlocfilehash: 668df50882272bfa56541f178e2f4d5fb35efcf5
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.sourcegitcommit: 7d350db4b5e766cd243633aee7d0a839b6274bd6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
+ms.lasthandoff: 04/16/2020
 ms.locfileid: "77906774"
 ---
 # <a name="what-is-quantum-computing"></a>什么是量子计算？
