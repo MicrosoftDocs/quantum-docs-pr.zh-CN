@@ -1,40 +1,40 @@
 ---
-title: '测试和调试 Q # 计划'
-description: 了解如何使用单元测试、事实和断言以及转储函数来测试和调试量程程序。
+title: 测试和调试 Q# 程序
+description: 了解如何使用单元测试、事实和断言以及转储函数来测试和调试量子程序。
 author: tcNickolas
 ms.author: mamykhai@microsoft.com
 uid: microsoft.quantum.techniques.testing-and-debugging
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 8131c2ec9320b5075c37370e12ad39a4df5bd3d5
-ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
+ms.openlocfilehash: caf15b7273b7efed1da87a2edd62c06cd4357593
+ms.sourcegitcommit: b6b8459eb654040f1e19f66411b29fc9e48e95c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79022855"
+ms.lasthandoff: 04/22/2020
+ms.locfileid: "82030576"
 ---
 # <a name="testing-and-debugging"></a>测试和调试
 
-与传统编程一样，必须能够检查量子程序是否按预期方式操作，并且能够诊断不正确的量程程序。
-在本部分中，我们介绍了 Q # 提供的用于测试和调试量程程序的工具。
+与经典编程一样，必须能够检查量子程序是否按预期操作，并能够诊断不正确的量子程序。
+在本节中，我们将介绍 Q# 提供的用于测试和调试量子程序的工具。
 
 ## <a name="unit-tests"></a>单元测试
 
-测试传统程序的一种常见方法是编写称为*单元测试*的小程序，这些程序在库中运行代码，并将其输出与某个预期输出进行比较。
-例如，我们可能需要确保 `Square(2)` 返回 `4`，因为我们知道 $ 2 ^ 2 = $4 的*先验*。
+测试经典程序的一种常见方法是编写称为*单元测试*的小程序，这些程序在库中运行代码，并将其输出与一些预期输出进行比较。
+例如，我们可能希望确保`Square(2)`返回`4`，因为我们知道*先验*的 $2⁄2 = 4$。
 
-Q # 支持为量程程序创建单元测试，可在[xUnit](https://xunit.github.io/)单元测试框架中将其作为测试执行。
+Q# 支持为量子程序创建单元测试，可在[xUnit](https://xunit.github.io/)单元测试框架中作为测试执行。
 
 ### <a name="creating-a-test-project"></a>创建测试项目
 
 #### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
-打开 Visual Studio 2019。 请在 "`File`" 菜单中选择 "`New` > " `Project...`"。
-在右上角，搜索 "`Q#`"，然后选择 `Q# Test Project` 模板。
+打开 Visual Studio 2019。 转到菜单并`File`选择`New` > `Project...`。
+在右上角，搜索`Q#`，然后选择`Q# Test Project`模板。
 
 #### <a name="command-line--visual-studio-code"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
 
-从你喜欢的命令行运行以下命令：
+从您最喜爱的命令行中，运行以下命令：
 ```bash
 $ dotnet new xunit -lang Q# -o Tests
 $ cd Tests
@@ -43,8 +43,8 @@ $ code . # To open in Visual Studio Code
 
 ****
 
-你的新项目将具有一个 `Tests.qs`的文件，该文件提供了一个用于定义新的 Q # 单元测试的便利位置。
-最初，此文件包含一个示例单元测试 `AllocateQubit`，它检查新分配的 qubit 是否在 $ \ket{0}$ 状态下并输出一条消息：
+您的新项目将有一个文件`Tests.qs`，这为定义新的 Q# 单元测试提供了一个方便的位置。
+最初，此文件包含一个示例单元`AllocateQubit`测试，该测试检查新分配的 qubit 是否处于{0}$ket $ 状态并打印消息：
 
 ```qsharp
     @Test("QuantumSimulator")
@@ -58,32 +58,32 @@ $ code . # To open in Visual Studio Code
     }
 ```
 
-：新：任何采用类型为 `Unit` 类型参数的 Q # 操作或函数都可以通过 `@Test("...")` 特性将 `Unit` 标记为单元测试。 该属性的参数 `"QuantumSimulator"` 以上，它指定执行测试的目标。 可对多个目标执行单个测试。 例如，`@Test("ResourcesEstimator")` `AllocateQubit`上方添加属性。 
+：new： 任何采用类型`Unit`和返回`Unit`参数的 Q# 操作或函数都可以通过`@Test("...")`属性标记为单元测试。 `"QuantumSimulator"`上面该属性的参数指定执行测试的目标。 可以在多个目标上执行单个测试。 例如，在 上`@Test("ResourcesEstimator")``AllocateQubit`添加一个属性。 
 ```qsharp
     @Test("QuantumSimulator")
     @Test("ResourcesEstimator")
     operation AllocateQubit () : Unit {
         ...
 ```
-保存该文件并执行所有测试。 现在应有两个单元测试，其中一个在 QuantumSimulator 上执行 AllocateQubit，另一个在 ResourceEstimator 中执行。 
+保存文件并执行所有测试。 现在应该有两个单元测试，一个在昆腾模拟器上执行分配Qubit，另一个在资源估计器中执行。 
 
-Q # 编译器可识别内置目标 "QuantumSimulator"、"ToffoliSimulator" 和 "ResourcesEstimator" 作为单元测试的有效执行目标。 还可以指定任何完全限定名称来定义自定义执行目标。 
+Q# 编译器将内置目标"量子模拟器"、"Toffoli仿真器"和"资源估计器"识别为单元测试的有效执行目标。 还可以指定任何完全限定的名称来定义自定义执行目标。 
 
-### <a name="running-q-unit-tests"></a>运行 Q # 单元测试
+### <a name="running-q-unit-tests"></a>运行 Q# 单元测试
 
 #### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
-作为一次性的每个解决方案设置，请前往 `Test` "菜单，并选择" `Test Settings` > `Default Processor Architecture` > `X64`"。
+作为一次性`Test`每个解决方案设置，转到菜单并选择`Test Settings` > `Default Processor Architecture` > `X64`。
 
 > [!TIP]
-> Visual Studio 的默认处理器结构设置存储在每个解决方案的解决方案选项（`.suo`）文件中。
-> 如果删除此文件，则需要再次选择 "`X64`" 作为处理器体系结构。
+> Visual Studio 的默认处理器体系结构设置存储在每个解决方案的解决方案选项`.suo`（ ） 文件中。
+> 如果删除此文件，则需要再次选择`X64`作为处理器体系结构。
 
-生成项目，请在 "`Test`" 菜单中，选择 "`Windows` > " `Test Explorer`"。 `AllocateQubit` 将显示在 `Not Run Tests` 组中的测试列表中。 选择 `Run All` 或运行此单个测试，它应通过！
+生成`Test`项目，转到菜单并选择`Windows` > `Test Explorer`。 `AllocateQubit`将显示在`Not Run Tests`组中的测试列表中。 选择`Run All`或运行此单个测试，并且它应该通过！
 
 #### <a name="command-line--visual-studio-code"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
 
-若要运行测试，请导航到项目文件夹（包含 `Tests.csproj`的文件夹），然后执行以下命令：
+要运行测试，请导航到项目文件夹（包含 的`Tests.csproj`文件夹），并执行以下命令：
 
 ```bash
 $ dotnet restore
@@ -111,7 +111,7 @@ Test Run Successful.
 Test execution time: 1.9607 Seconds
 ```
 
-可根据单元测试的名称和/或执行目标筛选单元测试：
+单元测试可以根据其名称和/或执行目标进行筛选：
 
 ```bash 
 $ dotnet test --filter "Target=QuantumSimulator"
@@ -121,28 +121,28 @@ $ dotnet test --filter "Name=AllocateQubit"
 
 ***
 
-内部函数 <xref:microsoft.quantum.intrinsic.message> 具有类型 `(String -> Unit)` 并支持创建诊断消息。
+内部函数<xref:microsoft.quantum.intrinsic.message>具有类型`(String -> Unit)`，并能够创建诊断消息。
 
 #### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
-在测试资源管理器中执行测试并单击测试后，将显示一个面板，其中包含有关测试执行：已通过/失败状态、已用时间和 "输出" 链接的信息。 如果单击 "输出" 链接，则会在新窗口中打开 "测试输出"。
+在测试资源管理器中执行测试并单击测试后，将显示一个面板，其中将显示有关测试执行的信息：通过/失败状态、已用时间和"输出"链接。 如果单击"输出"链接，测试输出将在新窗口中打开。
 
 ![测试输出](~/media/unit-test-output.png)
 
 #### <a name="command-line--visual-studio-code"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
 
-通过 `dotnet test`将每个测试的通过/失败状态打印到控制台。
-对于失败的测试，还会将输出输出到控制台，以帮助诊断故障。
+每个测试的通过/失败状态由`dotnet test`打印到控制台。
+对于失败的测试，输出也会打印到控制台，以帮助诊断故障。
 
 ***
 
-## <a name="facts-and-assertions"></a>事实和断言
+## <a name="facts-and-assertions"></a>事实与断言
 
-由于 Q # 中的函数没有_逻辑_副作用，因此执行其输出类型为空元组的函数的任何_其他类型_的影响将永远不会从 Q # 程序中观察到 `()`。
-也就是说，目标计算机可以选择不执行任何返回 `()` 的函数，保证此省略不会修改任何以下 Q # 代码的行为。
-这使函数返回 `()` （即 `Unit`）将断言和调试逻辑嵌入到 Q # 程序中的有用工具。 
+由于 Q# 中的函数没有_逻辑_副作用，因此从 Q# 程序中永远无法观察到执行输出类型为空元组`()`的函数的任何其他_效果_。
+也就是说，目标计算机可以选择不执行返回的任何函数`()`，保证此遗漏不会修改以下任何 Q# 代码的行为。
+这使得函数返回`()`（即`Unit`） 成为将断言和调试逻辑嵌入到 Q# 程序中的有用工具。 
 
-我们来看一个简单的示例：
+让我们考虑一个简单的示例：
 
 ```qsharp
 function PositivityFact(value : Double) : Unit 
@@ -154,18 +154,18 @@ function PositivityFact(value : Double) : Unit
 }
 ```
 
-此处，关键字 `fail` 指示不应继续计算，而是在运行 Q # 程序的目标计算机上引发异常。
-按照定义，不能从 Q # 内观察到此类失败，因为在达到 `fail` 语句后，不会再运行 Q # 代码。
-因此，如果我们继续执行对 `PositivityFact`的调用，则可以确保其输入为正值。
+此处，关键字`fail`指示计算不应继续，从而在运行 Q# 程序的目标计算机中引发异常。
+根据定义，无法从 Q# 内部观察到此类故障，因为在到达语句后不会运行进一`fail`步的 Q# 代码。
+因此，如果我们通过调用`PositivityFact`，我们可以放心，它的意见是积极的。
 
-请注意，我们可以使用 <xref:microsoft.quantum.diagnostics> 命名空间中的[`Fact`](xref:microsoft.quantum.diagnostics.fact)函数实现与 `PositivityFact` 相同的行为：
+请注意，我们可以实现与`PositivityFact`使用[`Fact`](xref:microsoft.quantum.diagnostics.fact)<xref:microsoft.quantum.diagnostics>命名空间中的函数相同的行为：
 
 ```qsharp
-    Fact(value <= 0, "Expected a positive number.");
+    Fact(value > 0, "Expected a positive number.");
 ```
 
-另一方面，*断言*的使用方式类似于事实，但可能依赖于目标计算机的状态。 相应地，它们定义为操作，而事实定义为函数（如上所示）。
-若要理解这一区别，请考虑在断言内使用以下事实：
+另一方面，*断言*与事实类似，但可能取决于目标计算机的状态。 相应地，它们定义为操作，而事实定义为函数（如上所述）。
+要理解区别，请考虑以下在断言中使用事实：
 
 ```qsharp
 operation AssertQubitsAreAvailable() : Unit
@@ -174,13 +174,13 @@ operation AssertQubitsAreAvailable() : Unit
 }
 ```
 
-此处，我们使用操作 <xref:microsoft.quantum.environment.getqubitsavailabletouse> 返回可供使用的 qubits 数。
-因为这显然依赖于程序及其执行环境的全局状态，所以，`AssertQubitsAreAvailable` 的定义也必须是操作。
-但是，我们可以使用该全局状态生成简单 `Bool` 值作为 `Fact` 函数的输入。
+在这里，我们使用 该操作<xref:microsoft.quantum.environment.getqubitsavailabletouse>返回可供使用的量子位数。
+由于这显然取决于程序的全局状态及其执行环境，因此我们的定义`AssertQubitsAreAvailable`也必须是操作。
+但是，我们可以使用该全局状态生成一个简单的`Bool`值作为函数的`Fact`输入。
 
-根据这些想法， [prelude](xref:microsoft.quantum.libraries.standard.prelude)提供两个特别有用的断言，<xref:microsoft.quantum.intrinsic.assert> 和 <xref:microsoft.quantum.intrinsic.assertprob> 建模为操作的 `()`。 这些断言每个都采用一个 Pauli 运算符，该运算符描述特定的感兴趣的度量、要对其执行度量的量程注册，以及一个假设结果。
-在使用模拟的目标计算机上，我们不受非[克隆定理](https://en.wikipedia.org/wiki/No-cloning_theorem)的限制，并且可以在不干扰传递到此类断言的寄存器的情况下执行此类测量。
-然后，模拟器可以类似于上面的 `PositivityFact` 函数，如果不在实践中观察到假设结果，则中止计算：
+在这些想法的基础上[，前奏](xref:microsoft.quantum.libraries.standard.prelude)提供了两个特别有用的断言，<xref:microsoft.quantum.intrinsic.assert>两<xref:microsoft.quantum.intrinsic.assertprob>者都模仿到`()`上的操作。 这些断言每个都采用一个 Pauli 运算符来描述特定的兴趣测量、要对其进行测量的量子寄存器以及假设结果。
+在通过模拟工作的目标机器上，我们不受[无克隆定理](https://en.wikipedia.org/wiki/No-cloning_theorem)的约束，可以执行这种测量，而不会干扰传递给此类断言的寄存器。
+然后，如果在实践中无法观察到假设结果`PositivityFact`，模拟器可以中止计算，类似于上面的函数：
 
 ```qsharp
 using (register = Qubit()) 
@@ -193,17 +193,17 @@ using (register = Qubit())
 }
 ```
 
-在物理量程硬件上，无克隆定理可防止对量程状态进行检查，`Assert` 和 `AssertProb` 操作只返回 `()`，不会产生任何影响。
+在物理量子硬件上，无克隆定理阻止量子状态的检查，`Assert`和`AssertProb`操作只是返回`()`，没有其他效果。
 
-<xref:microsoft.quantum.diagnostics> 命名空间提供了 `Assert` 系列的更多功能，使我们可以检查更高级的条件。 
+命名<xref:microsoft.quantum.diagnostics>空间提供了`Assert`多个系列的函数，使我们能够检查更高级的条件。 
 
 ## <a name="dump-functions"></a>转储函数
 
-为了帮助解决量程程序问题，<xref:microsoft.quantum.diagnostics> 命名空间提供了两个函数，可将目标计算机的当前状态转储到文件： <xref:microsoft.quantum.diagnostics.dumpmachine> 和 <xref:microsoft.quantum.diagnostics.dumpregister>。 每个生成的输出依赖于目标计算机。
+为了帮助对量子程序进行故障排除，<xref:microsoft.quantum.diagnostics>命名空间提供了两个函数，可以转储到文件中的目标计算机的当前状态：<xref:microsoft.quantum.diagnostics.dumpmachine>和<xref:microsoft.quantum.diagnostics.dumpregister>。 每个机器的生成输出取决于目标计算机。
 
 ### <a name="dumpmachine"></a>DumpMachine
 
-作为量程开发工具包的一部分分发的全状态量程模拟器会将整个量程系统的[波形函数](https://en.wikipedia.org/wiki/Wave_function)写入文件中，这是一维复数数组，其中每个元素都表示度量计算基础状态 $ \ket{n} $ 的概率的波幅，其中 $ \ket{n} = \ket{b_ {n-1} .。。对于 bits $\{，b_1b_0} $ b_i\}$。 例如，在仅分配了两个 qubits 并在量程状态 $ $ \begin{align} \ket{\psi} = \frac 中的计算机上{1}{\sqrt{2}} \ket{00}-\frac{（1 + i）}{2} \ket{10}，\end{align} $ $ 调用 <xref:microsoft.quantum.diagnostics.dumpmachine> 会生成以下输出：
+作为量子开发工具包的一部分分布的全态量子模拟器将整个量子系统的[波函数](https://en.wikipedia.org/wiki/Wave_function)写入文件，作为一维的复数数组，其中每个元素表示测量计算基础状态 $_ket_n$的概率的振幅，其中 $ket\n} = \ket\n= [ket\b_{n]...b_1b_0_$为位\{$b_i\}$。 例如，在只分配两个量子位且处于量子状态的计算机上，$$_开始\对齐_ket_psi}{1}= _frac [sqrt]{2}\ket{00} - [frac]（1 ={2} i）]\ket，[end]###$${10}调用<xref:microsoft.quantum.diagnostics.dumpmachine>将生成此输出：
 
 ```
 # wave function for qubits with ids (least to most significant): 0;1
@@ -213,18 +213,18 @@ using (register = Qubit())
 ∣3❭:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]                   
 ```
 
-第一行提供了一个注释，其中包含相应 qubits 的 Id。
-其余行说明了度量基准状态向量 $ \ket{n} $ 在笛卡尔和极坐标中的概率幅度。 对于第一行，详细信息：
+第一行按重要顺序提供具有相应量子位的的注释。
+其余行描述以笛卡尔和极性格式测量基础状态向量 $_ket_n_$ 的概率振幅。 详细介绍第一行：
 
-* 此行 **`∣0❭:`** 对应于 `0` 计算基础状态
-* **`0.707107 +  0.000000 i`** ：以笛卡尔格式的概率幅度。
-* **` == `** ： `equal` sign seperates 等效的表示形式。
-* **`**********  `** ：量的图形化表示形式，则 `*` 数与度量此状态向量的概率成正比。
-* **`[ 0.500000 ]`** ：量值的数值
-* **`    ---`** ：振幅阶段的图形化表示形式（见下文）。
-* **`[ 0.0000 rad ]`** ：阶段的数值（以弧度为单位）。
+* **`∣0❭:`** 此行对应于`0`计算基础状态
+* **`0.707107 +  0.000000 i`**：以笛卡尔格式表示的概率振幅。
+* **` == `**：符号`equal`分离两个等效表示形式。
+* **`**********  `**： 震级的图形表示，数量`*`与测量此状态矢量的概率成正比。
+* **`[ 0.500000 ]`**：震级的数值
+* **`    ---`**： 振幅相的图形表示（见下文）。
+* **`[ 0.0000 rad ]`**：相位的数值（以弧度表示）。
 
-大小和阶段都以图形表示形式显示。 大小表示形式是一种直截了当的：它显示一条 `*`，这是条形图越大的概率。 对于阶段，我们将显示以下符号，以表示基于范围的角度：
+大小和相位都显示图形表示。 幅度表示是直截了当的：它显示一个柱线`*`，柱值的概率越大。 对于相位，我们显示以下符号以表示基于范围的角度：
 
 ```
 [ -π/16,   π/16)       ---
@@ -246,7 +246,7 @@ using (register = Qubit())
 [31π/16,   π/16)       ---
 ```
 
-下面的示例演示一些常见状态 `DumpMachine`：
+以下示例显示了`DumpMachine`某些常见状态：
 
 ### `∣0❭`
 
@@ -282,37 +282,37 @@ using (register = Qubit())
 
 
   > [!NOTE]
-  > Qubit 的 id 在运行时分配，不一定与 qubit 的分配顺序或其在 qubit 寄存器中的位置一致。
+  > qubit 的 ID 在运行时分配，它不一定与分配 qubit 的顺序或其在 qubit 寄存器中的位置保持一致。
 
 
 #### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
   > [!TIP]
-  > 可以通过在代码中放置一个断点并检查 qubit 变量的值，来找出 Visual Studio 中的 qubit id，例如：
+  > 您可以通过在代码中放置断点并检查 qubit 变量的值来在 Visual Studio 中找出 qubit ID，例如：
   > 
-  > ![在 Visual Studio 中显示 qubit id](~/media/qubit_id.png)
+  > ![在视觉工作室中显示 qubit ID](~/media/qubit_id.png)
   >
-  > `register2` 的索引 `0` 的 qubit 具有 id =`3`，索引 `1` 为的 qubit 的 id 为`2`。
+  > `0`索引上的`register2`qubit 具有 id=，`3`索引的 qubit`1`具有`2`id= 。
 
 #### <a name="command-line--visual-studio-code"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
 
   > [!TIP]
-  > 可以通过使用 <xref:microsoft.quantum.intrinsic.message> 函数并在消息中传递 qubit 变量来找出 qubit id，例如：
+  > 您可以通过使用<xref:microsoft.quantum.intrinsic.message>函数并传递消息中的 qubit 变量来找出 qubit ID，例如：
   >
   > ```qsharp
   > Message($"0={register2[0]}; 1={register2[1]}");
   > ```
   > 
-  > 这可能会生成以下输出：
+  > 可以生成此输出：
   >```
   > 0=q:3; 1=q:2
   >```
-  > 这意味着 `register2` 上索引 `0` 的 qubit 的 id =`3`，索引 `1` 的 qubit 的 id =`2`。
+  > 这意味着`0``register2`索引上的 qubit 具有 id_，`3`索引的 qubit`1`具有 id=`2`。
 
 
 ***
 
-<xref:microsoft.quantum.diagnostics.dumpmachine> 是 <xref:microsoft.quantum.diagnostics> 命名空间的一部分，因此，若要使用它，必须添加 `open` 语句：
+<xref:microsoft.quantum.diagnostics.dumpmachine>是命名空间的<xref:microsoft.quantum.diagnostics>一部分，因此为了使用它，您必须添加一个`open`语句：
 
 ```qsharp
 namespace Samples {
@@ -331,9 +331,9 @@ namespace Samples {
 
 ### <a name="dumpregister"></a>DumpRegister
 
-<xref:microsoft.quantum.diagnostics.dumpregister> 的工作方式类似于 <xref:microsoft.quantum.diagnostics.dumpmachine>，只不过它还采用 qubits 数组，以将信息量限制为仅与对应 qubits 相关。
+<xref:microsoft.quantum.diagnostics.dumpregister>工作方式<xref:microsoft.quantum.diagnostics.dumpmachine>如下，只不过还需要一个量子位数组来将信息量限制为仅与相应量子位相关的信息量。
 
-与 <xref:microsoft.quantum.diagnostics.dumpmachine>一样，<xref:microsoft.quantum.diagnostics.dumpregister> 生成的信息取决于目标计算机。 对于全状态量程模拟器，它会将波形函数写入文件中，由提供的 qubits 生成的量程子系统的全局阶段，格式与 <xref:microsoft.quantum.diagnostics.dumpmachine>相同。  例如，将只分配了两个 qubits 的计算机，并在量程状态 $ $ \begin{align} \ket{\psi} = \frac{1}{\sqrt{2}} \ket{00}-\frac{（1 + i）}{2} \ket{10} =-e ^ {-i \ pi/4} （（\frac{1}{\sqrt{2}} \ket{0}-\frac{（1 + i）}{2} \ket{1}） \otimes \frac{-（1 + i）} {\sqrt{2}} \ket{0}），\end{align} $ $ 调用 `qubit[0]` <xref:microsoft.quantum.diagnostics.dumpregister> 会生成此输出:
+与<xref:microsoft.quantum.diagnostics.dumpmachine>，生成<xref:microsoft.quantum.diagnostics.dumpregister>的信息取决于目标计算机。 对于全态量子模拟器，它将波函数写入到量子子系统的全局阶段<xref:microsoft.quantum.diagnostics.dumpmachine>，该子系统由提供的量子位以与 的格式相同。  例如， 再次拍摄一台只分配两个量子位且处于量子状态的机器 $$开始 \ket_psi} = _frac{1}_sqrt{2}={00} ket - [frac[1 ={2} i]\ket{10} = - e_-i_pi/4{1}* （{2}[frac{0} ]sqrt = \ket -{2} [frac]（1 ={1} i）] \ket） \fc_-（1 = i）][sqrt]{2}\ket），[{0}结束]\align= $$$$$s 调用<xref:microsoft.quantum.diagnostics.dumpregister>生成`qubit[0]`此输出：
 
 ```
 # wave function for qubits with ids (least to most significant): 0
@@ -341,7 +341,7 @@ namespace Samples {
 ∣1❭:     0.000000 +  0.000000 i  ==                          [ 0.000000 ]                   
 ```
 
-为 `qubit[1]` 调用 <xref:microsoft.quantum.diagnostics.dumpregister> 将生成以下输出：
+并调用<xref:microsoft.quantum.diagnostics.dumpregister>`qubit[1]`生成此输出：
 
 ```
 # wave function for qubits with ids (least to most significant): 1
@@ -349,13 +349,13 @@ namespace Samples {
 ∣1❭:    -0.500000 + -0.500000 i  ==     ***********          [ 0.500000 ]  /      [ -2.35619 rad ]
 ```
 
-通常，与另一寄存器放大的寄存器的状态为混合状态，而不是纯状态。 在这种情况下，<xref:microsoft.quantum.diagnostics.dumpregister> 输出以下消息：
+通常，与另一个寄存器纠缠的寄存器状态是混合状态，而不是纯状态。 在这种情况下，<xref:microsoft.quantum.diagnostics.dumpregister>输出以下消息：
 
 ```
 Qubits provided (0;) are entangled with some other qubit.
 ```
 
-下面的示例演示如何在 Q # 代码中使用 <xref:microsoft.quantum.diagnostics.dumpregister> 和 <xref:microsoft.quantum.diagnostics.dumpmachine>：
+下面的示例演示如何在 Q# 代码中使用<xref:microsoft.quantum.diagnostics.dumpregister>两<xref:microsoft.quantum.diagnostics.dumpmachine>者：
 
 ```qsharp
 namespace app
@@ -382,6 +382,6 @@ namespace app
 
 ## <a name="debugging"></a>调试
 
-在 `Assert` 和 `Dump` 函数和操作的基础上，Q # 支持标准 Visual Studio 调试功能的子集：[设置行断点](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints)、[使用 F10 逐句通过代码](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger)和[检查典型变量的值](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows)在模拟器上的代码执行过程中都可能。
+除了函数和`Assert``Dump`操作，Q# 还支持标准 Visual Studio 调试功能的子集：在模拟器上的代码执行期间，可以使用 F10[设置线断点](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints)、[单步执行代码](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger)以及[检查经典变量的值](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows)。
 
-在 Visual Studio Code 中进行调试利用了C#由 OmniSharp 提供的 Visual Studio Code 的调试功能，并需要安装[最新版本](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)。 
+在 Visual Studio 代码中的调试利用了由 OmniSharp 提供支持的 Visual Studio 代码扩展 C# 提供的调试功能，并且需要安装[最新版本](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)。 
