@@ -23,9 +23,9 @@ functors:
 seeAlso:
 - assertqubit
 metadata:
-  ms.openlocfilehash: a157843372839477e40b7fb00c7415e44a06326f
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 762ffb43ac448bc2e592b9a4c7fbe46eed6021c1
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228284"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82657170"
