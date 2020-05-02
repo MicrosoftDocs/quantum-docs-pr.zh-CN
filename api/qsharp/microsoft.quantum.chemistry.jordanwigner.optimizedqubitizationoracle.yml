@@ -9,7 +9,7 @@ input:
   content: '(qSharpData : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerEncodingData, targetError : Double)'
   types:
   - name: qSharpData
-    summary: '`JordanWignerEncodingData` 格式描述的 Hamiltonian。'
+    summary: 格式描述的`JordanWignerEncodingData` Hamiltonian。
     uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerencodingdata
   - name: targetError
     summary: 辅助状态准备步骤出错。
@@ -18,7 +18,7 @@ input:
 output:
   content: (Int, (Double, (Qubit[] => Unit is Adj + Ctl)))
   types:
-  - summary: 一个元组，其中： `Int` 是分配的 qubits 的数量，`Double` 是 Hamiltonian 系数的一种标准，操作是 Qubitization 创建的量程审核。
+  - summary: 元组，其中`Int` ：是已分配的 qubits 数`Double` ，是 Hamiltonian 系数的一种标准，操作是 Qubitization 创建的量程审核。
     types:
     - isPrimitive: true
       uid: Int
@@ -39,9 +39,9 @@ output:
         - Adjoint
         - Controlled
 metadata:
-  ms.openlocfilehash: 541d4f2196bc9ba06d02b83c500d539932b62463
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b6dff5ce49e6f0d106df31040c2e539fc1a24029
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73231888"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82665104"

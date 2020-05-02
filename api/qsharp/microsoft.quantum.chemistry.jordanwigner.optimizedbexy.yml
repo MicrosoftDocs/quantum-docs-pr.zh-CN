@@ -3,14 +3,14 @@ uid: microsoft.quantum.chemistry.jordanwigner.optimizedbexy
 name: OptimizedBEXY
 type: operation
 namespace: Microsoft.Quantum.Chemistry.JordanWigner
-summary: 一个单一 $U $，它在 $ （X ^ {z + 1}\_pY ^ {z}\_p） Z\_{p-1} 上应用 Pauli 字符串 .。。Z_0 $ on qubits $ 0 ... p $\}索引 $z \in\{0，1 $，$p $。 也就是说，$ $ \begin{align} U\ket {z} \ 票证 {p} \ 票证 {\ psi} = \ket{z}\ket{p} （X ^ {z + 1}\_pY ^ {z}\_p） Z\_{p-1} .。。Z_0\ket {\ psi} \end{align} $ $
+summary: 一个单一 $U $，它对 $ （X ^ {z + 1}\_pY ^ {z}\_p） z\_{p-1} 应用 Pauli 字符串 .。。在索引 $z \in\{0、1\}$ 和 $p $ 上 Z_0 $ $。 也就是说，$ $ \begin{align} U\ket {z} \ 票证 {p} \ 票证 {\ psi} = \ket{z}\ket{p} （X ^ {z + 1}\_pY ^ {z}\_p） z\_{p-1} .。。Z_0 \ket{\psi} \end{align} $ $
 syntax: 'operation OptimizedBEXY (pauliBasis : Qubit, indexRegister : Microsoft.Quantum.Arithmetic.LittleEndian, targetRegister : Qubit[]) : Unit'
-references: '- 在带有线性 T 复杂性的 Spectra （Ryan Babbush、Craig Gidney、Dominic Berry、Nathan Wiebe、Jarrod McClean、Alexandru 暗、奥斯汀 Fowler、Hartmut Neven https://arxiv.org/abs/1805.03662'
+references: '- 通过线性线路编码的电子 Spectra，Ryan Babbush、Craig Gidney、Dominic Berry、Nathan Wiebe、Jarrod McClean、Alexandru 暗、奥斯汀 Fowler、Hartmut Nevenhttps://arxiv.org/abs/1805.03662'
 input:
   content: '(pauliBasis : Qubit, indexRegister : Microsoft.Quantum.Arithmetic.LittleEndian, targetRegister : Qubit[])'
   types:
   - name: pauliBasis
-    summary: 如果此 qubit 处于状态 $ \ket{0}$，则应用 $X $。 当它处于状态 $ \ket{1}$ 时，将应用 $Y $。
+    summary: 如果此 qubit 处于状态 $ \ket{0}$，则应用 $X $。 当它处于状态 $ \ket{1}$ 时，应用 $Y $。
     isPrimitive: true
     uid: Qubit
   - name: indexRegister
@@ -30,9 +30,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: e0ac3f2f050ed584053f7da7a310f1855e992141
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 2208efefe094c472d4f179e3a75dae721c4ff211
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228454"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82665298"

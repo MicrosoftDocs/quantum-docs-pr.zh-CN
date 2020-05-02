@@ -6,9 +6,9 @@ namespace: Microsoft.Quantum.Chemistry.JordanWigner
 summary: 优化的块编码算法中的术语数据。
 syntax: newtype OptimizedBETermIndex = (Double, Bool, Bool[], Bool[], Int[], Int[]);
 metadata:
-  ms.openlocfilehash: c14603f1a9202d84e23608c6e08bd3dbf5c01f7b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 2213d1d4034559467a50b3542853fab2d70367b3
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066942"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82665577"
