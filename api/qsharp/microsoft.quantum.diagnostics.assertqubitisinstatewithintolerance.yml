@@ -7,7 +7,7 @@ summary: >-
   断言处于预期状态的 qubit。
 
 
-  `expected` 表示复杂矢量，$ \ket{\psi} = \begin{bmatrix}a & b\end {bmatrix} ^ {\mathrm{T}} $。
+  `expected`表示复杂向量，$ \ket{\psi} = \begin{bmatrix}a & b\end {bmatrix} ^ {\mathrm{T}} $。
 
   元组的第一个元素表示每个 $a $，$b $ 是复数的实部，第二个元素是复数的实部。
 
@@ -37,7 +37,7 @@ remarks: >-
   ```
 
 
-  容差是指3维实向量（x ₂，x ₃，x ₄）定义的 $L\_{\infty} $ 距离，由 $ \langle\psi | \psi\rangle = x\_1 I + x\_2 X + x\_3 Y + x\_4 Z $ 和 real 向量（Y ₂，y ₃，y ₄）由复数 = y ₁ I + y ₂ X + y ₃ Y + y ₄ Z 定义，其中复数是与寄存器状态相对应的密度矩阵。
+  容差 $L\_是三维实向量（x ₂，x ₃，x ₄）由 $ \langle\psi | \psi\rangle = x\_1 I + x\_2 x + x\_3 Y + x\_4 Z $ 和实向量（y ₂，y ₃）定义，₄ = Y 复数 I + y ₁ x + y ₂ y + y ₃ Z，其中₄是与寄存器状态相对应的密度矩阵。
 
   这仅在以下假定： Tr （复数）和 Tr （| ψ⟩⟨ψ |）均为1（例如 x ₁ = 1/2、y ₁ = 1/2）时才是如此。
 
@@ -60,7 +60,7 @@ input:
   content: '(expected : (Microsoft.Quantum.Math.Complex, Microsoft.Quantum.Math.Complex), register : Qubit, tolerance : Double)'
   types:
   - name: expected
-    summary: 需要分别为 $ \ket{0}$ 和 $ \ket{1}$ 的复杂的 amplitudes。
+    summary: 需要分别为 $ \ket{0}$ 和 $ \ket{1}$ 的复杂 amplitudes。
     types:
     - uid: microsoft.quantum.math.complex
     - uid: microsoft.quantum.math.complex
@@ -81,9 +81,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 8b43bac19173c5ae5a11ff6879a03209c32e7c76
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 77d28c122a44f39924242dedb6bd6163974e18c1
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73227111"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82656602"
