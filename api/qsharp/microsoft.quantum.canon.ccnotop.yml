@@ -6,9 +6,9 @@ namespace: Microsoft.Quantum.Canon
 summary: CCNOT 入口的签名类型。
 syntax: newtype CCNOTop = ((Qubit, Qubit, Qubit) => Unit is Adj);
 metadata:
-  ms.openlocfilehash: 5e219ba46e8f281f26be9dbd4a4aaa9452aeffef
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5fd119340e9ae510c8e9b46580f4d3e366d98737
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73068132"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675933"

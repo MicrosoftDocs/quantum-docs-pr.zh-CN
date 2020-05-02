@@ -55,9 +55,9 @@ typeParameters:
 - uid: "'V"
   summary: 要应用的第二个函数的输出类型。
 metadata:
-  ms.openlocfilehash: 44296db92d6261fc8aba843346700bf8e22663bb
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 77037411aace0f69850b62322f3e63d6a34358ed
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871543"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675813"

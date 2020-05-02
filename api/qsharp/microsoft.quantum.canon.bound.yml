@@ -62,9 +62,9 @@ seeAlso:
 - microsoft.quantum.canon.bounda
 - microsoft.quantum.canon.boundca
 metadata:
-  ms.openlocfilehash: 67cb4cb93c5d306491bfce83caf1c112194991be
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 3b588e1481ff35c06aef5a381ca3a8fb67054ebd
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220634"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676019"

@@ -6,7 +6,7 @@ namespace: Microsoft.Quantum.Canon
 summary: >-
   给定针对单个输入的操作数组时，将生成一个按顺序执行每个给定操作的新操作。
 
-  修饰符 `C` 指示数组中的所有操作都可控制。
+  修饰符`C`指示数组中的所有操作都可控制。
 examples: >-
   以下项是等效的：
 
@@ -67,9 +67,9 @@ typeParameters:
 seeAlso:
 - microsoft.quantum.canon.bound
 metadata:
-  ms.openlocfilehash: 46a82065b3a236ad0e0a02894d6b1b3e2a1ceba1
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 50129f54048e9b6b9e50970d581a0b72935a697e
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73068166"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675965"

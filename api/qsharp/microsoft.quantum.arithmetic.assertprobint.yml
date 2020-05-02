@@ -7,11 +7,11 @@ summary: >-
   断言量程寄存器的特定状态的概率具有预期值。
 
 
-  给定 $n $-qubit 量程状态 $ \ket{\psi} = \sum ^ {2 ^ n-1} _ {j = 0} \alpha_j \ket{j} $，断言 $j $ 索引的状态 $ \alpha_j $ 的概率 $ | \ket{j} | ^ 2 $ 具有预期值。
+  如果给定 $n $-qubit 量程状态 $ \ket{\psi} = \sum ^ {2 ^ n-1} _ {j = 0} \ alpha_j \ket{j} $，则断言 $ $j 索引的状态 $ \ket{j} $ 的概率 $ | \ alpha_j | ^ 2 $ 具有预期值。
 examples: >-
-  假定 `qubits` register 对3个 qubit 的量程状态 $ \ket{\psi} = \ sqrt {1/8} \ 票证{0}+ \ sqrt {7/8} \ 票证{6}$ in 小字节序格式进行编码。
+  假设`qubits`注册将 qubit 的量程状态 $ \ket{\psi} = \ sqrt {1/8} \ 票证{0}+ \ sqrt {7/8} \ 票证{6}$ 编码为小 endian 格式。
 
-  这意味着数字状态 $ \ket{0}\equiv\ket{0}\ket{0}\ket{0}$ 和 $ \ket{6}\equiv\ket{0}\ket{1}\ket{1}$。 以下断言成功：
+  这意味着数字{0}状态 $ \ket \equiv\ket{0}\ket{0}\ket{0}$ 和 $ \ket{6}\equiv\ket{0}\ket{1}\ket{1}$。 以下断言成功：
 
 
   - `AssertProbInt(0,0.125,qubits,10e-10);`
@@ -22,11 +22,11 @@ input:
   content: '(stateIndex : Int, expected : Double, qubits : Microsoft.Quantum.Arithmetic.LittleEndian, tolerance : Double)'
   types:
   - name: stateIndex
-    summary: 索引 $j $ `LittleEndian` register 表示的状态 $ \ket{j} $。
+    summary: 由`LittleEndian`寄存器表示的状态 $ \ket{j} $ 的索引 $j $。
     isPrimitive: true
     uid: Int
   - name: expected
-    summary: $ | \Alpha_j | ^ 2 $ 的预期值。
+    summary: $ | \ Alpha_j | ^ 2 $ 的预期值。
     isPrimitive: true
     uid: Double
   - name: qubits
@@ -42,9 +42,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 183f1252ba555c10e7011eea98a5cc98fae4495a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 247dcb78921bfe5df96c56b74e251d0413cfab3d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221433"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675257"

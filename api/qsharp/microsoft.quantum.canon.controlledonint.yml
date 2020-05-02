@@ -29,7 +29,7 @@ input:
 output:
   content: ((Qubit[], 'T) => Unit is Adj + Ctl)
   types:
-  - summary: 当控件注册状态对应于数字状态 `numberState`时，将在目标寄存器上应用 `oracle` 的单一运算符。
+  - summary: 当控件注册状态对应`oracle`于数字状态`numberState`时，应用于目标寄存器的单一运算符。
     isOperation: true
     input:
       types:
@@ -46,9 +46,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: 2d1951df7eca0d48246ac93518594f522221d882
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 544b96c809af69ce1cc33aad2d42b012f93d4b3c
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226176"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675705"

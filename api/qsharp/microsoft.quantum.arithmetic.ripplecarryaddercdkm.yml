@@ -7,7 +7,7 @@ summary: >-
   可逆的就地波纹-包含两个整数。
 
 
-  给定两个 $n 在 LittleEndian 中编码的 $ 位整数 `xs` 和 `ys`，而 qubit 包含，则操作将计算两个整数的总和，$n 其中，结果的最小有效位保留在 `ys` 中，而执行 xored 到 qubit `carry`。
+  假设在 LittleEndian 中编码的两个 $n $ 位`xs`整数`ys`和一个 qubit，则该操作将计算两个整数的总和，其中包含结果的 $n $ 最低有效位`ys` ，而执行位被 xored 到 qubit。 `carry`
 remarks: 此操作具有与 RippleCarryAdderD 相同的功能，但仅使用一个 ancilla qubit，而不是 $n $。
 syntax: 'operation RippleCarryAdderCDKM (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, carry : Qubit) : Unit'
 references: >-
@@ -35,9 +35,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: bc5a7af8534741cab8e7b18a404b1745454a20c4
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: d75313cbc70643bc9cb96967c1b2eb928296f8d7
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871356"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675137"

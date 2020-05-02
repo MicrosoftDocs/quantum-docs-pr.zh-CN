@@ -31,7 +31,7 @@ input:
 output:
   content: ('T, 'U)[]
   types:
-  - summary: 一个数组，其中包含对每个 `idx`的形式 `(left[idx], right[idx])`。 如果两个数组的长度不相等，则输出将与输入的较短内容相同。
+  - summary: 一个数组，其中包含每个`(left[idx], right[idx])` `idx`的形式对。 如果两个数组的长度不相等，则输出将与输入的较短内容相同。
     isArray: true
     types:
     - uid: "'T"
@@ -47,9 +47,9 @@ seeAlso:
 - zip3
 - zip4
 metadata:
-  ms.openlocfilehash: 9af79a617722ead8102ea4631d96934bf253beda
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ae3a66ee226cdc0e26ec0cc0e87b1822bad45579
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73217812"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675085"

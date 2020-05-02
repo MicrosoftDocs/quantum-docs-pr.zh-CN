@@ -23,13 +23,13 @@ input:
     - Adjoint
     - Controlled
   - name: arg
-    summary: 要应用操作 `op` 的输入。
+    summary: 将操作`op`应用到的输入。
     uid: "'T"
     isLocal: true
 output:
   content: (Unit => Unit is Ctl + Adj)
   types:
-  - summary: 使用输入 `arg` 应用 `op` 的新操作
+  - summary: 适用于`op`输入的新操作`arg`
     isOperation: true
     input:
       types:
@@ -49,9 +49,9 @@ seeAlso:
 - microsoft.quantum.canon.delayed
 - microsoft.quantum.canon.delay
 metadata:
-  ms.openlocfilehash: 4aafc97415ab5038a3bac11d1f976570fd3c5949
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 49f8d45df6b59fa1dec9f0ba42f54f43a48f0ed5
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219427"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675616"
