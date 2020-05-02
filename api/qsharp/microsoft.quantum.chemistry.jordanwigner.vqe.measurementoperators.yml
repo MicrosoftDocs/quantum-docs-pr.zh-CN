@@ -31,9 +31,9 @@ output:
       isPrimitive: true
       uid: Pauli
 metadata:
-  ms.openlocfilehash: e22af035b43d8b3ebeea22c8c4bfa0f7289ab82c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: cae0c641ca24e81d6c5ce4c3293e33ba0adb8f22
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73227519"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82662246"
