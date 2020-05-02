@@ -3,12 +3,12 @@ uid: microsoft.quantum.chemistry.jordanwigner.optimizedbegeneratorsystem
 name: OptimizedBEGeneratorSystem
 type: newtype
 namespace: Microsoft.Quantum.Chemistry.JordanWigner
-summary: 给定整数 `n`，返回术语 `n` `OptimizedBETermIndex` 数据的函数，以及第一个 `Int` 中的字词数以及 `Double`中所有条款系数的绝对值之和。
+summary: 一个`Int`函数， `OptimizedBETermIndex`它返回给定`n`整数`n`的术语的数据，以及中的字词数和中所有字词系数的绝对值之和`Double`。
 syntax: newtype OptimizedBEGeneratorSystem = (Int, Double, (Int -> Microsoft.Quantum.Chemistry.JordanWigner.OptimizedBETermIndex));
 metadata:
-  ms.openlocfilehash: 4f3375a952bbd72331742d77c3a6e2a56b1814c8
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 76e4e810dc31779efcd281c9c132e7f4b97556b9
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228471"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82665979"

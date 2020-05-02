@@ -3,12 +3,12 @@ uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerinputstate
 name: JordanWignerInputState
 type: newtype
 namespace: Microsoft.Quantum.Chemistry.JordanWigner
-summary: '从C#传递到 Q # 以表示初始状态的准备的数据的格式由所表示的数据的含义决定。'
+summary: '从 c # 传递到 Q # 以表示初始状态准备的数据的格式由所表示的数据的含义决定。'
 syntax: newtype JordanWignerInputState = ((Double, Double), Int[]);
 metadata:
-  ms.openlocfilehash: a4c234749d85c544dedce0feb4e9b7a4e468a120
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 20600484ace1b378a0fe36f4f5f2ac0b3709fc61
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228556"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82666242"
