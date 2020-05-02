@@ -5,7 +5,7 @@ type: function
 namespace: Microsoft.Quantum.Arrays
 summary: 给定一个数组，返回一个新数组，其中包含原始数组的元素以及每个元素的索引。
 examples: >-
-  以下 `for` 循环是等效的：
+  以下`for`循环是等效的：
 
 
   ```Q#
@@ -41,9 +41,9 @@ typeParameters:
 - uid: "'TElement"
   summary: 数组元素的类型。
 metadata:
-  ms.openlocfilehash: 471b62b28ef2014584de637d41158fb8ac7c629d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 9cfb5a48974128f865ada49df3aa3152bf0f33ed
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220957"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676507"

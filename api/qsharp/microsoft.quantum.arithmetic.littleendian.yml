@@ -3,13 +3,13 @@ uid: microsoft.quantum.arithmetic.littleendian
 name: LittleEndian
 type: newtype
 namespace: Microsoft.Quantum.Arithmetic
-summary: 注册以小字节序顺序编码无符号整数。 带有索引 `0` 的 qubit 对无符号整数的最低位进行编码。
-remarks: 我们将在文档中将 `LittleEndian` 缩写为 `LE`。
+summary: 注册以小字节序顺序编码无符号整数。 带有索引`0`的 qubit 对无符号整数的最小位进行编码。
+remarks: 与文档`LittleEndian`中`LE`的缩写相同。
 syntax: newtype LittleEndian = Qubit[];
 metadata:
-  ms.openlocfilehash: 6431500dfe67b46cab590f0fc31953d9fb80f9af
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: de24c79091da80c2f5e9cbeecc8fe9e4bfb9cb89
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218815"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676840"

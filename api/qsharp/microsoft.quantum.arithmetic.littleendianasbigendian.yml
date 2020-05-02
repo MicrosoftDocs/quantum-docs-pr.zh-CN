@@ -3,23 +3,23 @@ uid: microsoft.quantum.arithmetic.littleendianasbigendian
 name: LittleEndianAsBigEndian
 type: function
 namespace: Microsoft.Quantum.Arithmetic
-summary: 通过反转 qubit 排序将 `LittleEndian` qubit 注册转换为 `BigEndian` 的 qubit 寄存器。
+summary: 通过反转`LittleEndian` qubit 排序将 qubit `BigEndian`寄存器转换为 qubit 寄存器。
 syntax: 'function LittleEndianAsBigEndian (input : Microsoft.Quantum.Arithmetic.LittleEndian) : Microsoft.Quantum.Arithmetic.BigEndian'
 input:
   content: '(input : Microsoft.Quantum.Arithmetic.LittleEndian)'
   types:
   - name: input
-    summary: Qubit 注册 `LittleEndian` 格式。
+    summary: Qubit 寄存器`LittleEndian` 。
     uid: microsoft.quantum.arithmetic.littleendian
 output:
   content: Microsoft.Quantum.Arithmetic.BigEndian
   types:
-  - summary: Qubit 注册 `BigEndian` 格式。
+  - summary: Qubit 寄存器`BigEndian` 。
     uid: microsoft.quantum.arithmetic.bigendian
 metadata:
-  ms.openlocfilehash: 7f87c2a65bede0f77c2dbf360be0f052cc504eea
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 179ed8c442a92cee65cab540b83921a4dfb99002
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218781"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676824"

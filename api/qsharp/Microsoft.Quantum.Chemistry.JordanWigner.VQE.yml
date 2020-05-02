@@ -12,9 +12,9 @@ operations:
 - uid: microsoft.quantum.chemistry.jordanwigner.vqe.estimatetermexpectation
   summary: 计算与给定约旦 Wigner Hamiltonian 术语关联的能量
 metadata:
-  ms.openlocfilehash: 5c56599c1926f2a11631c74cc03545c43a724eeb
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 60becf06fdae7f096eee7d2752e2f606b98e2890
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73057265"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677075"

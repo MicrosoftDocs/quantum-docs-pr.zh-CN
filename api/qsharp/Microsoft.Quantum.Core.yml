@@ -23,9 +23,9 @@ newtypes:
 - uid: microsoft.quantum.core.entrypoint
   summary: 编译器可识别的属性，用于标记可执行文件的入口点。
 metadata:
-  ms.openlocfilehash: 6391521907deddbf4425b927b1dec12e73f0ee5d
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: c9125849d8ed04613c92b66823917e468725981c
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74858575"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676990"

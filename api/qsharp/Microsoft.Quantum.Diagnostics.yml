@@ -36,19 +36,19 @@ operations:
 - uid: microsoft.quantum.diagnostics.assertallzero
   summary: 断言给定的 qubits 都处于 $ \ket{0}$ 状态。
 - uid: microsoft.quantum.diagnostics.assertallzerowithintolerance
-  summary: 断言给定的 qubits 都是 $ \ket{0}$ 状态，直到达到给定的容差。
+  summary: 断言给定的 qubits 都处于 $ \ket{0}$ 状态，直到达到给定的容差。
 - uid: microsoft.quantum.diagnostics.assertoperationsequalinplace
   summary: >-
     假设有两个运算，则断言它们对于所有输入状态都是相同的。
 
 
-    此断言是通过以下方式实现的：检查对窗体的所有状态的操作的操作： $V _0 \otimes ... \otimes V_ {n-1} $，其中 $V _k $ 是状态 $ \ket{0}$，$ \ket{1}$，$ \ket{+} $，$ \ket{i} $ （+ 1 eigenstate of Pauli Y 运算符）。
+    此断言是通过以下方式实现的：检查所有状态的操作的操作： $V _0 \otimes ... \otimes V_ {n-1} $，其中 $V _k $ 是状态 $ \ket{0}$，$ \ket{1}$，$ \ket{+} $，$ \ket{i} $ （+ 1 eigenstate of Pauli Y 运算符）。
 
 
     此断言使用 $n $ qubits，需要对要比较的操作进行多次调用。
 - uid: microsoft.quantum.diagnostics.assertoperationsequalinplacecompbasis
   summary: >-
-    通过从计算基础上检查矢量上操作的操作，检查 `givenU` 是否等于给定输入大小的操作 `expectedU`。
+    通过从计算基础`givenU`上检查矢量上操作`expectedU`的操作，检查操作是否等于给定输入大小的操作。
 
     这对于两个 unitaries 的相等性是必需的，但并不足够。
 - uid: microsoft.quantum.diagnostics.assertoperationsequalreferenced
@@ -62,27 +62,29 @@ operations:
 
     例如，可以使用这种断言来确保操作的优化版本与其简单的实现完全相同，或者对非量程输入进行操作的操作与已知情况有关。
 - uid: microsoft.quantum.diagnostics.assertqubit
-  summary: 断言 qubit `q` 处于 Pauli Z 运算符所需的 eigenstate 中。
+  summary: 断言 qubit `q`位于 Pauli Z 运算符所需的 eigenstate 中。
 - uid: microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance
   summary: >-
     断言处于预期状态的 qubit。
 
 
-    `expected` 表示复杂矢量，$ \ket{\psi} = \begin{bmatrix}a & b\end {bmatrix} ^ {\mathrm{T}} $。
+    `expected`表示复杂向量，$ \ket{\psi} = \begin{bmatrix}a & b\end {bmatrix} ^ {\mathrm{T}} $。
 
     元组的第一个元素表示每个 $a $，$b $ 是复数的实部，第二个元素是复数的实部。
 
     最后一个参数定义进行断言的公差。
 - uid: microsoft.quantum.diagnostics.assertqubitwithintolerance
-  summary: 断言 qubit `q` 处于 Pauli Z 运算符所需的 eigenstate 中，直到达到给定的容差。
+  summary: 断言 qubit `q`位于 Pauli Z 运算符的预期 eigenstate 中，直到达到给定的容差。
 newtypes:
+- uid: microsoft.quantum.diagnostics.enabletestingvianame
+  summary: 编译器可识别的属性，可通过该属性定义可在加载类型时使用的可选名称，或可调用以用于测试目的。
 - uid: microsoft.quantum.diagnostics.test
   summary: 编译器可识别的属性，用于标记单元测试。
-summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含可用于诊断目的的函数和操作，包括断言操作和声明函数。"
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含可用于诊断目的的函数和操作，包括断言操作和声明函数。"
 metadata:
-  ms.openlocfilehash: 353750a6714b1cdd54ff866657a39bb825e34425
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 5e580bb50983d5c0e65d3284408bae04a5e92756
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77905907"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676977"

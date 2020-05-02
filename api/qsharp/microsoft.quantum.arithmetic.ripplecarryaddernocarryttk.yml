@@ -7,7 +7,7 @@ summary: >-
   可逆的就地波纹，无需执行即可额外添加两个整数。
 
 
-  给定两 $n 在 LittleEndian 中编码的 $ bit 整数 `xs` 和 `ys`，该操作计算两个整数的和，取模 $ 2 ^ n $，其中 $n $ 是输入 `xs` 和 `ys`的位大小。 它不计算执行位。
+  给定两 $n 个在 LittleEndian `xs`注册和`ys`中编码的 $ bit 整数，操作将计算两个整数的总和： $ 2 ^ n $，其中 $n $ 是输入`xs`和`ys`的位大小。 它不计算执行位。
 remarks: 此操作具有与 RippleCarryAdderTTK 相同的功能，但不会返回带有位。
 syntax: 'operation RippleCarryAdderNoCarryTTK (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 references: >-
@@ -31,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 5147d6d78582ad3f45587938f1b4cf3f8a2dd506
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: cf6855325edc354d22b0324f5949a435a11ce8bb
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871050"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676684"

@@ -4,7 +4,7 @@ name: ZBits
 type: function
 namespace: Microsoft.Quantum.Bitwise
 summary: 返回一个整数，该整数表示 Pauli 运算符数组的 Z 位。
-remarks: 如果 `paulis` 数组的长度大于63，则函数将引发。
+remarks: 如果`paulis`数组的长度大于63，则函数将引发。
 syntax: 'function ZBits (paulis : Pauli[]) : Int'
 input:
   content: '(paulis : Pauli[])'
@@ -17,15 +17,15 @@ input:
 output:
   content: Int
   types:
-  - summary: 一个整数 $x $，其二进制表示法 $ （p_{62}\,p_{61}\,\dots ..\,p_0） $，其中 $p _i = $0 如果 `paulis[i]` 为 `PauliI` 或 `PauliX`，其中 $p _i = $1 （如果 `paulis[i]` 为 `PauliY`或 `PauliZ`。
+  - summary: 一个整数 $x $，其中二进制表示 $ （{62}\,p_{61}\,p_\,\dots .. p_0） $，其中 $p _i = $0 `paulis[i]`如果`PauliI`为`PauliX` or，其中 $p _i = $1 `paulis[i]` （ `PauliY`如果`PauliZ`为或）。
     isPrimitive: true
     uid: Int
 seeAlso:
 - xbits
 metadata:
-  ms.openlocfilehash: 21d3da075cb4b98e5604f72b8432536bb9d51753
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d7605a48451292792a97e9049125674c6716780f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73217693"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676429"
