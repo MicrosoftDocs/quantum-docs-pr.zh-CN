@@ -4,7 +4,7 @@ name: RandomInt
 type: operation
 namespace: Microsoft.Quantum.Math
 summary: 生成一个大于或等于零且小于的所提供的上边界的样本随机整数。
-remarks: 此函数调用 <xref:microsoft.quantum.intrinsic.random>，因此其随机性取决于 `Random`的实现。
+remarks: 此函数调用<xref:microsoft.quantum.intrinsic.random>，因此其随机性依赖于的实现`Random`。
 syntax: 'operation RandomInt (maxInt : Int) : Int'
 input:
   content: '(maxInt : Int)'
@@ -20,9 +20,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 83db1cc0e58cfbf2e3da4af4c72f59ccde4fedf9
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 578761c1710484913122227fb3b37330702ea038
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220022"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682754"

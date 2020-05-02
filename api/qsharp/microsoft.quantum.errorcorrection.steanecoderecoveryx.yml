@@ -16,7 +16,7 @@ input:
 output:
   content: Pauli[]
   types:
-  - summary: Pauli 操作的数组，当应用于编码的量程系统时，将纠正与 `syndrome`相对应的错误。
+  - summary: 一组 Pauli 操作，当应用于已编码的量程系统时，它会更正对应`syndrome`于的错误。
     isArray: true
     isPrimitive: true
     uid: Pauli
@@ -24,9 +24,9 @@ seeAlso:
 - steanecoderecoveryx
 - steanecoderecoveryfns
 metadata:
-  ms.openlocfilehash: 7805284f29bfcbb6d4ba56f616f492b2f2126f7b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 7b644842eb7ddfe9d44d5288ee5e34e097c00f7b
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73232279"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682976"

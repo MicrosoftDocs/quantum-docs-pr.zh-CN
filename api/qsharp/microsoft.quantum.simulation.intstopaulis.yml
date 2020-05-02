@@ -9,21 +9,21 @@ input:
   content: '(ints : Int[])'
   types:
   - name: ints
-    summary: 要转换为 Pauli 运算符 `0..3` 范围内的整数数组。
+    summary: 要转换为 Pauli 运算符的`0..3`范围内的整数数组。
     isArray: true
     isPrimitive: true
     uid: Int
 output:
   content: Pauli[]
   types:
-  - summary: Pauli 运算符的数组 `paulis` 的长度 `Pauli[]` 与 `ints` 的长度相同，因此 `paulis[idxPauli]` 等于 `[PauliI, PauliX, PauliY, PauliZ]` 给定的 `ints[idxPauli]`的元素。
+  - summary: Pauli 运算符`paulis` `Pauli[]` `ints`的数组，其长度`paulis[idxPauli]`与`[PauliI, PauliX, PauliY, PauliZ]`给定的的元素相等。 `ints[idxPauli]`
     isArray: true
     isPrimitive: true
     uid: Pauli
 metadata:
-  ms.openlocfilehash: 407ad1481c220f390fffb5f1b59f0968d6d6570c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 1159e3db02663b0588d12ea9d297e055be84ac4a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066976"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682615"
