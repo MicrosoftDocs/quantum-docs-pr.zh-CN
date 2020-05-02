@@ -4,14 +4,14 @@ name: JordanWignerEncodingData
 type: newtype
 namespace: Microsoft.Quantum.Chemistry.JordanWigner
 summary: >-
-  传递C#给 Q # 的数据格式，用于表示 Hamiltonian 模拟的所有信息。
+  从 c # 传递到 Q # 以表示 Hamiltonian 模拟的所有信息的数据格式。
 
   表示的数据的含义取决于接收数据的算法。
 syntax: newtype JordanWignerEncodingData = (Int, Microsoft.Quantum.Chemistry.JordanWigner.JWOptimizedHTerms, (Int, Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerInputState[]), Double);
 metadata:
-  ms.openlocfilehash: 9e0dd700be01f80b2e0414c7a67b5a72836e5ba5
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ab47c3c5075b884576c0c5d0f18c252f94c472e2
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228709"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82667494"

@@ -3,24 +3,24 @@ uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerclusteroperatorgenerat
 name: JordanWignerClusterOperatorGeneratorSystem
 type: function
 namespace: Microsoft.Quantum.Chemistry.JordanWigner
-summary: 将 `JWOptimizedHTerms` 描述的 Hamiltonian 转换为 `GeneratorSystem` 在此文件中定义的 `GeneratorIndex` 约定。
+summary: 将描述的 Hamiltonian 转换`JWOptimizedHTerms`为用`GeneratorSystem`此文件中定义的`GeneratorIndex`约定表示的。
 syntax: 'function JordanWignerClusterOperatorGeneratorSystem (data : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerInputState[]) : Microsoft.Quantum.Simulation.GeneratorSystem'
 input:
   content: '(data : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerInputState[])'
   types:
   - name: data
-    summary: '`JWOptimizedHTerms` 格式的 Hamiltonian 说明。'
+    summary: '`JWOptimizedHTerms`格式的 Hamiltonian 说明。'
     isArray: true
     uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerinputstate
 output:
   content: Microsoft.Quantum.Simulation.GeneratorSystem
   types:
-  - summary: Hamiltonian 的表示形式 `GeneratorSystem`。
+  - summary: Hamiltonian 的表示形式`GeneratorSystem`。
     uid: microsoft.quantum.simulation.generatorsystem
 metadata:
-  ms.openlocfilehash: d1521bfa75ed2383ca13dca1bfeae78c59ebf0b9
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: f9e635e746efda5aaaacc563a645ab494df33171
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228760"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82667522"
