@@ -5,7 +5,7 @@ type: function
 namespace: Microsoft.Quantum.Arrays
 summary: 给定一个数组，返回该数组的索引范围，该范围适用于在 for 循环中使用。
 examples: >-
-  以下 `for` 循环是等效的：
+  以下`for`循环是等效的：
 
 
   ```Q#
@@ -34,9 +34,9 @@ typeParameters:
 - uid: "'TElement"
   summary: 数组元素的类型。
 metadata:
-  ms.openlocfilehash: a70935980fc49a3f8c155fe1901b13da923caaee
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6c3135e07c65ddf6b7c61a4b9f412f5156e48e73
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218152"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672791"

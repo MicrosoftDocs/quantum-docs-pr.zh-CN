@@ -7,7 +7,7 @@ summary: >-
   当且仅当两个 control qubits 都处于1状态时，使用 qubit 执行 adjoint 操作时，使用度量来反转给定目标。
 
 
-  如果且仅当这两个控件都为1，但假定 `target` 处于状态0，则反转 `target`。  此操作的 T 计数为4，T 深度为1，需要一个 helper qubit，因此，如果已知 `target` 为0，则可能更适合 CCNOT 操作。  此操作的 adjoint 是基于度量的，不需要任何 T 入口，也不需要 helper qubit。
+  当`target`且仅当这两个控件都为1，但`target`假定处于状态0时，则反转。  操作具有 T 计数4、T 深度1和需要一个 helper qubit，因此，如果`target`已知为0，则可能更适合 CCNOT 操作。  此操作的 adjoint 是基于度量的，不需要任何 T 入口，也不需要 helper qubit。
 syntax: 'operation ApplyLowDepthAnd (control1 : Qubit, control2 : Qubit, target : Qubit) : Unit'
 references: >-
   - Cody： "容错 Toffoli 入口的 Novel 构造"，Phys. A 87，022328，2013 [arXiv： 1212.5069](https://arxiv.org/abs/1212.5069) doi>10.1145： 10.1103/PhysRevA 87.022328
@@ -37,9 +37,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 060a4b2241f231a9d164bdcce2beb2a3315d96f9
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 14f70cf11cad542f137cee99d5d2a62cedeb4e72
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76872931"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672570"

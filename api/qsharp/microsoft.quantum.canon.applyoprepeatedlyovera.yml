@@ -44,9 +44,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applyseriesofops
 metadata:
-  ms.openlocfilehash: 0062e16181b1225d0ae82181f675e226159bca02
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 3d3ad2cd2e3fb1288f4497433aa1b00936b32a5a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74866693"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672498"

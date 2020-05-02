@@ -4,10 +4,10 @@ name: TargetStateReflectionOracle
 type: function
 namespace: Microsoft.Quantum.AmplitudeAmplification
 summary: >-
-  构造 qubit 标志唯一标记的目标状态的 `ReflectionOracle`。
+  `ReflectionOracle`构造 qubit 标志唯一标记的目标状态。
 
 
-  目标状态的单个 qubit 设置为1，所有其他0： $ \ket{1}_f $。
+  目标状态的单个 qubit 设置为1，其他所有0： $ \ket{1}_f $。
 syntax: 'function TargetStateReflectionOracle (idxFlagQubit : Int) : Microsoft.Quantum.Oracles.ReflectionOracle'
 input:
   content: '(idxFlagQubit : Int)'
@@ -19,14 +19,14 @@ input:
 output:
   content: Microsoft.Quantum.Oracles.ReflectionOracle
   types:
-  - summary: 反映 $ \ket{1}_f $ 标记的状态的 `ReflectionOracle`。
+  - summary: '`ReflectionOracle` ，它反映 $ \ket{1}_f $ 标记的状态。'
     uid: microsoft.quantum.oracles.reflectionoracle
 seeAlso:
 - microsoft.quantum.canon.reflectionoracle
 metadata:
-  ms.openlocfilehash: c86011664da3f59bc978641b0aefcca5a50d3b1a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6f398f2c9122769dd6f83fd002d311c0b55db158
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73215432"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672926"

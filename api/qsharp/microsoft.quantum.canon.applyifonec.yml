@@ -7,9 +7,9 @@ summary: >-
   应用以传统结果值为一的可控操作。
 
 
-  给定一个操作 `op` 并且结果值 `result`，如果 `result` `One`，则将 `op` 应用于 `target`。 如果 `Zero`，则 `target`不会执行任何操作。
+  给定一个操作`op`和一个结果值`result`时， `op` `target`如果`result`为`One`，则应用于。 如果`Zero`为，则不会`target`发生任何事情。
 
-  后缀 `C` 指示要应用的操作可控制。
+  后缀`C`指示要应用的操作可控制。
 syntax: "operation ApplyIfOneC (result : Result, (op : ('T => Unit is Ctl), target : 'T)) : Unit"
 input:
   content: "(result : Result, (op : ('T => Unit is Ctl), target : 'T))"
@@ -50,9 +50,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifonea
 - microsoft.quantum.canon.applyifoneca
 metadata:
-  ms.openlocfilehash: 51388c63a15b9f8244b49cc145297faef11bf5cc
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: e42bb11c3f3f8cf740bbd619b4388f23c77ed8a5
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220770"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672660"
