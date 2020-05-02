@@ -7,15 +7,15 @@ summary: >-
   表示从左上方的块对任意相关运算符进行编码的单一项。
 
 
-  也就是说，`BlockEncoding` 是一个单一的 $U $，其中对系统注册 `s` 使用的任意运算符 $H，在与辅助状态 $ \ket{0}_a $ 对应的左上块中进行编码。 那是
+  也就是说， `BlockEncoding`是一个单一 $U $，其中对系统寄存器`s`操作的任意运算符 $H $ 是在与辅助状态 $ \ket{0}_a $ 对应的左上块中进行编码。 即：
 
 
-  $ $ \begin{align} （\bra{0}_a \ otimes I_s） U （\ket{0}_a \ otimes I_s） = H \end{align} $ $。
+  $ $ \begin{align} （\bra{0}_a \otimes I_s） U （\ket{0}_a \Otimes I_s） = H \end{align} $ $。
 syntax: newtype BlockEncoding = ((Qubit[], Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: 0991b1b54cdd8e908f60fc104edf588ae08e12e7
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 400173be551747127198f8cee52390a2694dbfe4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066024"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681100"

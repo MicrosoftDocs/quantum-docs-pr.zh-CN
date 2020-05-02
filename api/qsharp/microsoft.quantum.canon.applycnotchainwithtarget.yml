@@ -19,7 +19,7 @@ remarks: >-
   ```
 
 
-  和
+  and
 
 
   ```qsharp
@@ -49,9 +49,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: ec55fd89e8ef836439b58c8dc0cf4fa21b12ef23
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 631ef98fe43c0c3ca6b5e17ac67e9c9c717dc6d4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76873050"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680511"

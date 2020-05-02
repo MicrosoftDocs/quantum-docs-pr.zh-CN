@@ -24,19 +24,19 @@ input:
     isPrimitive: true
     uid: BigInt
   - name: amount
-    summary: '`value` 要向左移动的位数。'
+    summary: 要向左移动的位数`value` 。
     isPrimitive: true
     uid: Int
 output:
   content: BigInt
   types:
-  - summary: '`value`的值，由 `amount` 位向左移动。'
+  - summary: 的值`value`，按`amount`位向左移动。
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: cffab4695cc4bef50975206d2f1eb81554e14ffb
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 61ae04f5085513742058c0208e8add0af8fd463b
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73217795"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680682"

@@ -1,147 +1,101 @@
 ---
-title: '用 Q # + 开发C#'
+title: 使用 Q# + C# 进行开发
 author: natke
 ms.author: nakersha
 ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.cs
-ms.openlocfilehash: 7803846279f230f5fc0ee8424bd39be735a650ca
-ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
+ms.openlocfilehash: 5bcb036b0b32e64d43f90e9a068d9dcc237890ba
+ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036281"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "82680168"
 ---
-# <a name="develop-with-q--c"></a><span data-ttu-id="6e831-102">用 Q # + 开发C#</span><span class="sxs-lookup"><span data-stu-id="6e831-102">Develop with Q# + C#</span></span>
+# <a name="using-q-with-c-and-f"></a><span data-ttu-id="5421b-102">对 C\#和 F 使用 Q #\#</span><span class="sxs-lookup"><span data-stu-id="5421b-102">Using Q# with C\# and F\#</span></span>
 
-<span data-ttu-id="6e831-103">安装 QDK 以开发C#主机程序以调用 Q # 操作。</span><span class="sxs-lookup"><span data-stu-id="6e831-103">Install the QDK to develop C# host programs to call Q# operations.</span></span>
+<span data-ttu-id="5421b-103">Q # 旨在与 .NET 语言（如 c # 和 F #）一起正常运行。</span><span class="sxs-lookup"><span data-stu-id="5421b-103">Q# is built to play well with .NET languages such as C# and F#.</span></span>
+<span data-ttu-id="5421b-104">在本指南中，我们将演示如何将 Q # 与用 .NET 语言编写的主机程序结合使用。</span><span class="sxs-lookup"><span data-stu-id="5421b-104">In this guide, we'll demonstrate how to use Q# with a host program written in a .NET language.</span></span>
 
-<span data-ttu-id="6e831-104">Q # 构建为适用于 .NET 语言（特别是C#）。</span><span class="sxs-lookup"><span data-stu-id="6e831-104">Q# is built to play well with .NET languages--specifically C#.</span></span> <span data-ttu-id="6e831-105">可以在不同的开发环境中使用此配对：</span><span class="sxs-lookup"><span data-stu-id="6e831-105">You can work with this pairing inside different development environments:</span></span>
+## <a name="prerequisites"></a><span data-ttu-id="5421b-105">先决条件</span><span class="sxs-lookup"><span data-stu-id="5421b-105">Prerequisites</span></span>
 
-- [<span data-ttu-id="6e831-106">使用 Visual Studio C#的 Q # + （Windows）</span><span class="sxs-lookup"><span data-stu-id="6e831-106">Q# + C# using Visual Studio (Windows)</span></span>](#VS)
-- [<span data-ttu-id="6e831-107">使用 Visual Studio Code 的C# Q # + （Windows、Linux 和 Mac）</span><span class="sxs-lookup"><span data-stu-id="6e831-107">Q# + C# using Visual Studio Code (Windows, Linux and Mac)</span></span>](#VSC)
-- [<span data-ttu-id="6e831-108">使用 `dotnet` 命令C#行工具的 Q # +</span><span class="sxs-lookup"><span data-stu-id="6e831-108">Q# + C# using the `dotnet` command-line tool</span></span>](#command)
+- <span data-ttu-id="5421b-106">安装用于[Q # 命令行项目](xref:microsoft.quantum.install.standalone)的量程开发工具包。</span><span class="sxs-lookup"><span data-stu-id="5421b-106">Install the Quantum Development Kit [for use with Q# command-line projects](xref:microsoft.quantum.install.standalone).</span></span>
 
-## <span data-ttu-id="6e831-109">使用 Visual Studio 通过 Q C# # + 进行开发 <a name="VS"></a></span><span class="sxs-lookup"><span data-stu-id="6e831-109">Develop with Q# + C# using Visual Studio <a name="VS"></a></span></span>
+## <a name="creating-a-q-library-and-a-net-host"></a><span data-ttu-id="5421b-107">创建 Q # 库和 .NET 主机</span><span class="sxs-lookup"><span data-stu-id="5421b-107">Creating a Q# library and a .NET host</span></span>
 
-<span data-ttu-id="6e831-110">Visual Studio 提供了一个用于开发 Q # 程序的丰富环境。</span><span class="sxs-lookup"><span data-stu-id="6e831-110">Visual Studio offers a rich environment for developing Q# programs.</span></span> <span data-ttu-id="6e831-111">Q # Visual Studio 扩展包含用于 Q # 文件和项目的模板，以及语法突出显示、代码完成和 IntelliSense 支持。</span><span class="sxs-lookup"><span data-stu-id="6e831-111">The Q# Visual Studio extension contains templates for Q# files and projects as well as syntax highlighting, code completion and IntelliSense support.</span></span>
+<span data-ttu-id="5421b-108">第一步是为你的 Q # 库创建项目，并为将调用到你的 Q # 库中定义的操作和函数的 .NET 主机创建项目。</span><span class="sxs-lookup"><span data-stu-id="5421b-108">The first step is to create projects for your Q# library, and for the .NET host that will call into the operations and functions defined in your Q# library.</span></span>
 
+### <a name="visual-studio-2019"></a>[<span data-ttu-id="5421b-109">Visual Studio 2019</span><span class="sxs-lookup"><span data-stu-id="5421b-109">Visual Studio 2019</span></span>](#tab/tabid-vs2019)
 
-1. <span data-ttu-id="6e831-112">先决条件</span><span class="sxs-lookup"><span data-stu-id="6e831-112">Pre-requisites</span></span>
+- <span data-ttu-id="5421b-110">创建新的 Q # 库</span><span class="sxs-lookup"><span data-stu-id="5421b-110">Create a new Q# library</span></span>
+  - <span data-ttu-id="5421b-111">中转到 "**文件** -> " "**新建** -> **项目**"</span><span class="sxs-lookup"><span data-stu-id="5421b-111">Go to **File** -> **New** -> **Project**</span></span>
+  - <span data-ttu-id="5421b-112">在搜索框中键入 "Q #"</span><span class="sxs-lookup"><span data-stu-id="5421b-112">Type "Q#" in the search box</span></span>
+  - <span data-ttu-id="5421b-113">选择**Q # 库**</span><span class="sxs-lookup"><span data-stu-id="5421b-113">Select **Q# Library**</span></span>
+  - <span data-ttu-id="5421b-114">选择 **“下一步”**。</span><span class="sxs-lookup"><span data-stu-id="5421b-114">Select **Next**</span></span>
+  - <span data-ttu-id="5421b-115">选择库的名称和位置</span><span class="sxs-lookup"><span data-stu-id="5421b-115">Choose a name and location for your library</span></span>
+  - <span data-ttu-id="5421b-116">请确保未**选中**"将项目和解决方案放在同一目录中"</span><span class="sxs-lookup"><span data-stu-id="5421b-116">Make sure that "place project and solution in same directory" is **unchecked**</span></span>
+  - <span data-ttu-id="5421b-117">选择**创建**</span><span class="sxs-lookup"><span data-stu-id="5421b-117">Select **Create**</span></span>
+- <span data-ttu-id="5421b-118">创建新的 c # 或 F # 宿主程序</span><span class="sxs-lookup"><span data-stu-id="5421b-118">Create a new C# or F# host program</span></span>
+  - <span data-ttu-id="5421b-119">中转到**文件**→**新建**→**项目**</span><span class="sxs-lookup"><span data-stu-id="5421b-119">Go to **File** → **New** → **Project**</span></span>
+  - <span data-ttu-id="5421b-120">为 c # 或 F 选择 "控制台应用（.NET Core"） "#</span><span class="sxs-lookup"><span data-stu-id="5421b-120">Select "Console App (.NET Core")" for either C# or F#</span></span>
+  - <span data-ttu-id="5421b-121">选择 **“下一步”**。</span><span class="sxs-lookup"><span data-stu-id="5421b-121">Select **Next**</span></span>
+  - <span data-ttu-id="5421b-122">在 "*解决方案*" 下，选择 "添加到解决方案"</span><span class="sxs-lookup"><span data-stu-id="5421b-122">Under *solution*, select "add to solution"</span></span>
+  - <span data-ttu-id="5421b-123">选择主机程序的名称</span><span class="sxs-lookup"><span data-stu-id="5421b-123">Choose a name for your host program</span></span>
+  - <span data-ttu-id="5421b-124">选择**创建**</span><span class="sxs-lookup"><span data-stu-id="5421b-124">Select **Create**</span></span>
 
-    - <span data-ttu-id="6e831-113">[Visual Studio](https://visualstudio.microsoft.com/downloads/) 16.3，启用了 .NET Core 跨平台开发工作负载。</span><span class="sxs-lookup"><span data-stu-id="6e831-113">[Visual Studio](https://visualstudio.microsoft.com/downloads/) 16.3, with the .NET Core cross-platform development workload enabled</span></span>
+### <a name="visual-studio-code-or-command-line"></a>[<span data-ttu-id="5421b-125">Visual Studio Code 或命令行</span><span class="sxs-lookup"><span data-stu-id="5421b-125">Visual Studio Code or Command Line</span></span>](#tab/tabid-cmdline)
 
-1. <span data-ttu-id="6e831-114">安装 Q# Visual Studio 扩展</span><span class="sxs-lookup"><span data-stu-id="6e831-114">Install the Q# Visual Studio extension</span></span>
+- <span data-ttu-id="5421b-126">创建新的 Q # 库</span><span class="sxs-lookup"><span data-stu-id="5421b-126">Create a new Q# library</span></span>
 
-    - <span data-ttu-id="6e831-115">下载并安装[Visual Studio 扩展](https://marketplace.visualstudio.com/items?itemName=quantum.DevKit)</span><span class="sxs-lookup"><span data-stu-id="6e831-115">Download and install the [Visual Studio extension](https://marketplace.visualstudio.com/items?itemName=quantum.DevKit)</span></span>
+  ```dotnetcli
+  dotnet new classlib -lang Q# -o quantum
+  ```
 
-1. <span data-ttu-id="6e831-116">通过创建 `Hello World` 应用程序来验证安装</span><span class="sxs-lookup"><span data-stu-id="6e831-116">Verify the installation by creating a `Hello World` application</span></span>
+- <span data-ttu-id="5421b-127">创建新的 c # 或 F # 控制台项目</span><span class="sxs-lookup"><span data-stu-id="5421b-127">Create a new C# or F# console project</span></span>
 
-    - <span data-ttu-id="6e831-117">创建新的 Q# 应用程序</span><span class="sxs-lookup"><span data-stu-id="6e831-117">Create a new Q# application</span></span>
+  ```dotnetcli
+  dotnet new console -lang C# -o host  
+  ```
 
-        - <span data-ttu-id="6e831-118">转到“文件” **“新建”** “项目” ->  -> </span><span class="sxs-lookup"><span data-stu-id="6e831-118">Go to **File** -> **New** -> **Project**</span></span>
-        - <span data-ttu-id="6e831-119">在搜索框中键入 `Q#`</span><span class="sxs-lookup"><span data-stu-id="6e831-119">Type `Q#` in the search box</span></span>
-        - <span data-ttu-id="6e831-120">选择“Q# 应用程序”</span><span class="sxs-lookup"><span data-stu-id="6e831-120">Select **Q# Application**</span></span>
-        - <span data-ttu-id="6e831-121">选择 **“下一步”** 。</span><span class="sxs-lookup"><span data-stu-id="6e831-121">Select **Next**</span></span>
-        - <span data-ttu-id="6e831-122">为应用程序选择名称和位置</span><span class="sxs-lookup"><span data-stu-id="6e831-122">Choose a name and location for your application</span></span>
-        - <span data-ttu-id="6e831-123">选择“创建”</span><span class="sxs-lookup"><span data-stu-id="6e831-123">Select **Create**</span></span>
+- <span data-ttu-id="5421b-128">添加你的 Q # 库作为主机程序的引用</span><span class="sxs-lookup"><span data-stu-id="5421b-128">Add your Q# library as a reference from your host program</span></span>
 
-    - <span data-ttu-id="6e831-124">检查项目</span><span class="sxs-lookup"><span data-stu-id="6e831-124">Inspect the project</span></span>
+  ```dotnetcli
+  cd host
+  dotnet add reference ../quantum/quantum.csproj
+  ```
 
-        <span data-ttu-id="6e831-125">应该会看到已创建两个文件：`Driver.cs`，它是 C# 主机应用程序；以及 `Operation.qs`，它是定义将消息打印到控制台的简单操作的 Q# 程序。</span><span class="sxs-lookup"><span data-stu-id="6e831-125">You should see that two files have been created: `Driver.cs`, which is the C# host application; and `Operation.qs`, which is a Q# program that defines a simple operation to print a message to the console.</span></span>
+- <span data-ttu-id="5421b-129">可有可无为这两个项目创建解决方案</span><span class="sxs-lookup"><span data-stu-id="5421b-129">[Optional] Create a solution for both projects</span></span>
 
-    - <span data-ttu-id="6e831-126">运行应用程序</span><span class="sxs-lookup"><span data-stu-id="6e831-126">Run the application</span></span>
+  ```dotnetcli
+  dotnet new sln -n quantum-dotnet
+  dotnet sln quantum-dotnet.sln add ./quantum/quantum.csproj
+  dotnet sln quantum-dotnet.sln add ./host/host.csproj
+  ```
 
-        - <span data-ttu-id="6e831-127">选择“调试” -> “在不调试的情况下启动”</span><span class="sxs-lookup"><span data-stu-id="6e831-127">Select **Debug** -> **Start Without Debugging**</span></span>
-        - <span data-ttu-id="6e831-128">应该会看到打印到控制台窗口的文本 `Hello quantum world!`。</span><span class="sxs-lookup"><span data-stu-id="6e831-128">You should see the text `Hello quantum world!` printed to a console window.</span></span>
+***
 
-> [!NOTE]
-> * <span data-ttu-id="6e831-129">如果一个 Visual Studio 解决方案中具有多个项目，解决方案中包含的所有项目都需要位于解决方案所在的同一文件夹中，或位于其中一个子文件夹中。</span><span class="sxs-lookup"><span data-stu-id="6e831-129">If you have multiple projects within one Visual Studio solution, all projects contained in the solution need to be in the same folder as the solution, or in one of its subfolders.</span></span>  
+## <a name="calling-into-q-from-net"></a><span data-ttu-id="5421b-130">从 .NET 调入 Q #</span><span class="sxs-lookup"><span data-stu-id="5421b-130">Calling into Q# from .NET</span></span>
 
-## <span data-ttu-id="6e831-130">使用 Q # + C#进行开发 Visual Studio Code <a name="VSC"></a></span><span class="sxs-lookup"><span data-stu-id="6e831-130">Develop with Q# + C# using Visual Studio Code <a name="VSC"></a></span></span>
+<span data-ttu-id="5421b-131">按照上述说明设置项目后，可以从 .NET 控制台应用程序调入 Q #。</span><span class="sxs-lookup"><span data-stu-id="5421b-131">Once you have your projects set up following the above instructions, you can call into Q# from your .NET console application.</span></span>
+<span data-ttu-id="5421b-132">Q # 编译器将为每个 Q # 操作和函数创建 .NET 类，使你能够在模拟器上运行量程程序。</span><span class="sxs-lookup"><span data-stu-id="5421b-132">The Q# compiler will create .NET classes for each Q# operation and function that allow you to run your quantum programs on a simulator.</span></span>
 
-<span data-ttu-id="6e831-131">Visual Studio Code （VS Code）提供了一个丰富的环境，用于在 Windows、Linux 和 Mac 上开发 Q # 程序。</span><span class="sxs-lookup"><span data-stu-id="6e831-131">Visual Studio Code (VS Code) offers a rich environment for developing Q# programs on Windows, Linux and Mac.</span></span>  <span data-ttu-id="6e831-132">Q # VS Code 扩展包括对 Q # 语法突出显示、代码完成和 Q # 代码片段的支持。</span><span class="sxs-lookup"><span data-stu-id="6e831-132">The Q# VS Code extension includes support for Q# syntax highlighting, code completion, and Q# code snippets.</span></span>
+<span data-ttu-id="5421b-133">例如， [.net 互操作性示例](https://github.com/microsoft/Quantum/tree/master/samples/interoperability/dotnet)包含以下 Q # 操作的示例：</span><span class="sxs-lookup"><span data-stu-id="5421b-133">For example, the [.NET interoperability sample](https://github.com/microsoft/Quantum/tree/master/samples/interoperability/dotnet) includes the following example of a Q# operation:</span></span>
 
-1. <span data-ttu-id="6e831-133">先决条件</span><span class="sxs-lookup"><span data-stu-id="6e831-133">Pre-requisites</span></span>
+:::code language="qsharp" source="~/quantum/samples/interoperability/dotnet/qsharp/Operations.qs" range="67-75":::
 
-   - [<span data-ttu-id="6e831-134">VS Code</span><span class="sxs-lookup"><span data-stu-id="6e831-134">VS Code</span></span>](https://code.visualstudio.com/download)
-   - [<span data-ttu-id="6e831-135">.NET Core SDK 3.1 或更高版本</span><span class="sxs-lookup"><span data-stu-id="6e831-135">.NET Core SDK 3.1 or later</span></span>](https://www.microsoft.com/net/download)
+<span data-ttu-id="5421b-134">若要在量程模拟器上从 .NET 调用此操作，可以使用由`Run` Q # 编译器`RunAlgorithm`生成的 .net 类的方法：</span><span class="sxs-lookup"><span data-stu-id="5421b-134">To call this operation from .NET on a quantum simulator, you can use the `Run` method of the `RunAlgorithm` .NET class generated by the Q# compiler:</span></span>
 
-1. <span data-ttu-id="6e831-136">安装量子 VS Code 扩展</span><span class="sxs-lookup"><span data-stu-id="6e831-136">Install the Quantum VS Code extension</span></span>
+### <a name="c"></a>[<span data-ttu-id="5421b-135">C#</span><span class="sxs-lookup"><span data-stu-id="5421b-135">C#</span></span>](#tab/tabid-csharp)
 
-    - <span data-ttu-id="6e831-137">安装 [VS Code 扩展](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode)</span><span class="sxs-lookup"><span data-stu-id="6e831-137">Install the [VS Code extension](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode)</span></span>
+:::code language="csharp" source="~/quantum/samples/interoperability/dotnet/csharp/Host.cs" range="4-":::
 
-1. <span data-ttu-id="6e831-138">安装量子项目模板：</span><span class="sxs-lookup"><span data-stu-id="6e831-138">Install the Quantum project templates:</span></span>
+### <a name="f"></a>[<span data-ttu-id="5421b-136">果#</span><span class="sxs-lookup"><span data-stu-id="5421b-136">F#</span></span>](#tab/tabid-fsharp)
 
-   - <span data-ttu-id="6e831-139">转到“视图” **“命令面板”**  -> </span><span class="sxs-lookup"><span data-stu-id="6e831-139">Go to **View** -> **Command Palette**</span></span>
-   - <span data-ttu-id="6e831-140">选择**Q #：安装项目模板**</span><span class="sxs-lookup"><span data-stu-id="6e831-140">Select **Q#: Install project templates**</span></span>
+:::code language="fsharp" source="~/quantum/samples/interoperability/dotnet/fsharp/Host.fs" range="4-":::
 
-    <span data-ttu-id="6e831-141">现已安装量子开发工具包，并且可以在自己的应用程序和库中使用。</span><span class="sxs-lookup"><span data-stu-id="6e831-141">You now have the Quantum Development Kit installed and ready to use in your own applications and libraries.</span></span>
-
-1. <span data-ttu-id="6e831-142">通过创建 `Hello World` 应用程序来验证安装</span><span class="sxs-lookup"><span data-stu-id="6e831-142">Verify the installation by creating a `Hello World` application</span></span>
-
-    - <span data-ttu-id="6e831-143">创建新项目：</span><span class="sxs-lookup"><span data-stu-id="6e831-143">Create a new project:</span></span>
-
-        - <span data-ttu-id="6e831-144">转到“视图” **“命令面板”**  -> </span><span class="sxs-lookup"><span data-stu-id="6e831-144">Go to **View** -> **Command Palette**</span></span>
-        - <span data-ttu-id="6e831-145">选择**Q #：创建新项目**</span><span class="sxs-lookup"><span data-stu-id="6e831-145">Select **Q#: Create New Project**</span></span>
-        - <span data-ttu-id="6e831-146">选择**独立控制台应用程序**</span><span class="sxs-lookup"><span data-stu-id="6e831-146">Select **Standalone console application**</span></span>
-        - <span data-ttu-id="6e831-147">导航到要在其中创建应用程序的文件系统上的位置</span><span class="sxs-lookup"><span data-stu-id="6e831-147">Navigate to the location on the file system where you would like to create the application</span></span>
-        - <span data-ttu-id="6e831-148">创建项目后，单击“打开新项目...”按钮</span><span class="sxs-lookup"><span data-stu-id="6e831-148">Click on the **Open new project...** button, once the project has been created</span></span>
-
-    - <span data-ttu-id="6e831-149">如果尚未安装 VS Code 的C#扩展，将显示一个弹出窗口。</span><span class="sxs-lookup"><span data-stu-id="6e831-149">If you don't already have the C# extension for VS Code installed, a pop-up will appear.</span></span> <span data-ttu-id="6e831-150">安装扩展。</span><span class="sxs-lookup"><span data-stu-id="6e831-150">Install the extension.</span></span> 
-
-    - <span data-ttu-id="6e831-151">运行应用程序：</span><span class="sxs-lookup"><span data-stu-id="6e831-151">Run the application:</span></span>
-
-        - <span data-ttu-id="6e831-152">中转到**终端** -> **新终端**</span><span class="sxs-lookup"><span data-stu-id="6e831-152">Go to **Terminal** -> **New Terminal**</span></span>
-        - <span data-ttu-id="6e831-153">输入 `dotnet run`</span><span class="sxs-lookup"><span data-stu-id="6e831-153">Enter `dotnet run`</span></span>
-        - <span data-ttu-id="6e831-154">应在输出窗口 `Hello quantum world!` 中看到以下文本</span><span class="sxs-lookup"><span data-stu-id="6e831-154">You should see the following text in the output window `Hello quantum world!`</span></span>
-
-
-> [!NOTE]
-> * <span data-ttu-id="6e831-155">Visual Studio Code 扩展当前不支持具有多个根文件夹的工作区。</span><span class="sxs-lookup"><span data-stu-id="6e831-155">Workspaces with multiple root folders are not currently supported by the Visual Studio Code extension.</span></span> <span data-ttu-id="6e831-156">如果一个 VS Code 工作区中具有多个项目，则所有项目都必须包含在同一个根文件夹中。</span><span class="sxs-lookup"><span data-stu-id="6e831-156">If you have multiple projects within one VS Code workspace, all projects need to be contained within the same root folder.</span></span>
-
-## <span data-ttu-id="6e831-157">使用 `dotnet` 命令行工具C#通过 Q # + 进行开发<a name="command"></a></span><span class="sxs-lookup"><span data-stu-id="6e831-157">Develop with Q# + C# using the `dotnet` command-line tool <a name="command"></a></span></span>
-
-<span data-ttu-id="6e831-158">当然，只需安装 .NET Core SDK 和 QDK 项目模板，就可以从命令行生成和运行 Q# 程序。</span><span class="sxs-lookup"><span data-stu-id="6e831-158">Of course, you can also build and run Q# programs from the command line by simply installing the .NET Core SDK and the QDK project templates.</span></span> 
-
-1. <span data-ttu-id="6e831-159">先决条件</span><span class="sxs-lookup"><span data-stu-id="6e831-159">Pre-requisites</span></span>
-
-    - [<span data-ttu-id="6e831-160">.NET Core SDK 3.1 或更高版本</span><span class="sxs-lookup"><span data-stu-id="6e831-160">.NET Core SDK 3.1 or later</span></span>](https://www.microsoft.com/net/download)
-
-1. <span data-ttu-id="6e831-161">安装适用于 .NET 的量子项目模板</span><span class="sxs-lookup"><span data-stu-id="6e831-161">Install the Quantum project templates for .NET</span></span>
-
-    ```dotnetcli
-    dotnet new -i Microsoft.Quantum.ProjectTemplates
-    ```
-
-    <span data-ttu-id="6e831-162">现已安装量子开发工具包，并且可以在自己的应用程序和库中使用。</span><span class="sxs-lookup"><span data-stu-id="6e831-162">You now have the Quantum Development Kit installed and ready to use in your own applications and libraries.</span></span>
-
-1. <span data-ttu-id="6e831-163">通过创建 `Hello World` 应用程序来验证安装</span><span class="sxs-lookup"><span data-stu-id="6e831-163">Verify the installation by creating a `Hello World` application</span></span>
-
-    - <span data-ttu-id="6e831-164">创建新应用程序</span><span class="sxs-lookup"><span data-stu-id="6e831-164">Create a new application</span></span>
-
-       ```dotnetcli
-       dotnet new console -lang "Q#" -o runSayHello
-       ```
-
-    - <span data-ttu-id="6e831-165">导航到新的应用程序目录</span><span class="sxs-lookup"><span data-stu-id="6e831-165">Navigate to the new application directory</span></span>
-
-       ```bash
-       cd runSayHello
-       ```
-
-    <span data-ttu-id="6e831-166">应该会看到已创建两个文件，以及应用程序的项目文件：Q# 文件 (`Operation.qs`) 和 C# 主机文件 (`Driver.cs`)。</span><span class="sxs-lookup"><span data-stu-id="6e831-166">You should see that two files have been created, along with the project files of the application: a Q# file (`Operation.qs`) and a C# host file (`Driver.cs`).</span></span>
-
-    - <span data-ttu-id="6e831-167">运行应用程序</span><span class="sxs-lookup"><span data-stu-id="6e831-167">Run the application</span></span>
-
-        ```dotnetcli
-        dotnet run
-        ```
-
-        <span data-ttu-id="6e831-168">应该会看到以下输出：`Hello quantum world!`</span><span class="sxs-lookup"><span data-stu-id="6e831-168">You should see the following output: `Hello quantum world!`</span></span>
-
+***
     
-## <a name="whats-next"></a><span data-ttu-id="6e831-169">后续步骤</span><span class="sxs-lookup"><span data-stu-id="6e831-169">What's next?</span></span>
+## <a name="whats-next"></a><span data-ttu-id="5421b-137">后续步骤</span><span class="sxs-lookup"><span data-stu-id="5421b-137">What's next?</span></span>
 
-<span data-ttu-id="6e831-170">在首选环境中安装量子开发工具包后，可以编写并运行[第一个量子程序](xref:microsoft.quantum.write-program)。</span><span class="sxs-lookup"><span data-stu-id="6e831-170">Now that you have installed the Quantum Development Kit in your preferred environment, you can write and run [your first quantum program](xref:microsoft.quantum.write-program).</span></span>
+<span data-ttu-id="5421b-138">现在，你已为 Q # 命令行程序设置了量子开发工具包，并且为了与 .NET 互操作，你可以编写并运行[第一个量程程序](xref:microsoft.quantum.write-program)。</span><span class="sxs-lookup"><span data-stu-id="5421b-138">Now that you have Quantum Development Kit set up for both Q# command-line programs, and for interoperability with .NET, you can write and run [your first quantum program](xref:microsoft.quantum.write-program).</span></span>

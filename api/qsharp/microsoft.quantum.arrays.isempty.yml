@@ -16,13 +16,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: 当且仅当数组为空（长度为0）时 `true`。
+  - summary: '`true`当且仅当数组为空时（长度为0）。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 5357baa2e8d4a1922932c087cb71e93beeda9417
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 47f38759dd72a014ac0bb1de552b94ae1821e0d1
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77908083"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680975"

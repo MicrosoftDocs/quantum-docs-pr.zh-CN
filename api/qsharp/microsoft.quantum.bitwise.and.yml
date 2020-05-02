@@ -6,8 +6,8 @@ namespace: Microsoft.Quantum.Bitwise
 summary: >-
   返回两个整数的按位 "与"。
 
-  这会执行与内置 `&&&` 运算符相同的计算。
-remarks: 有关更多详细信息，请参阅[ C# &amp; 运算符](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/and-operator)（二进制）。
+  这会执行与内置`&&&`运算符相同的计算。
+remarks: '有关更多详细信息，请参阅[c # &amp;运算符](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/and-operator)（二进制）。'
 examples: >-
   ```qsharp
 
@@ -34,9 +34,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 4565a281e8d33e266beda5a8bb34c669988f9cb6
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 502101daebe79aeb14732f6e484f96e45e65d089
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73214140"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680711"

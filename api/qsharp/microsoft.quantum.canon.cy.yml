@@ -7,7 +7,7 @@ summary: >-
   将受控 Y （CY）入口应用于一对 qubits。
 
 
-  $ $ \begin{align} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & & \\\\ & & 0 & 0 0 \end{align}，$ $，其中的行和列按 "量程概念" 指南进行组织。
+  $ $ \begin{align} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 &-i \\ \\ 0 & 0 & & 0 \end{align}，$ $，其中的行和列按 "量程概念" 指南进行组织。
 remarks: >-
   等效于：
 
@@ -38,9 +38,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: d5ea0bcf4697024eeb19b12300a442fffe3d5f56
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: c7d7d0fb5413051ec7a654c04e01b6ffc02903e6
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73227332"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680287"

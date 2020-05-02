@@ -9,7 +9,7 @@ input:
   content: "(predicate : ('T -> Bool), array : 'T[])"
   types:
   - name: predicate
-    summary: 一个函数，从 `'T` 到用于筛选元素的布尔值。
+    summary: 从`'T`到用于筛选元素的布尔值的函数。
     isFunction: true
     input:
       types:
@@ -20,24 +20,24 @@ input:
       - isPrimitive: true
         uid: Bool
   - name: array
-    summary: "`'T`上的元素的数组。"
+    summary: 上`'T`的元素的数组。
     isArray: true
     uid: "'T"
     isLocal: true
 output:
   content: Int[]
   types:
-  - summary: 一个索引数组，其中 `predicate` 为 true。
+  - summary: 一个索引数组，其中`predicate`为 true。
     isArray: true
     isPrimitive: true
     uid: Int
 typeParameters:
 - uid: "'T"
-  summary: '`array` 元素的类型。'
+  summary: '`array`元素的类型。'
 metadata:
-  ms.openlocfilehash: 89d6a279da57fc0b94f55a3f9f16486fee1c6064
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 2d62fcf97bcd72d2327aeb13db3600324ce6661f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77908117"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680768"

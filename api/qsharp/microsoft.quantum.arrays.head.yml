@@ -23,9 +23,9 @@ typeParameters:
 - uid: "'A"
   summary: 数组元素的类型。
 metadata:
-  ms.openlocfilehash: 62909924e6c2d303fd52528f9910341b2224e31f
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5fd4fbcc82cb685490fab3d2b88da0d087678ab9
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73214259"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681021"
