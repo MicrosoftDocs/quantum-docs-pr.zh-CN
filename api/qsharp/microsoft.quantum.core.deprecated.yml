@@ -6,9 +6,9 @@ namespace: Microsoft.Quantum.Core
 summary: 编译器可识别的属性，用于将类型或可调用标记为已弃用。
 syntax: newtype Deprecated = String;
 metadata:
-  ms.openlocfilehash: d387e270635a74a216ac5289b34f3d694343e247
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 397ca9a4223db808dff2d38efb08c3e9f72e7674
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74866761"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82658757"
