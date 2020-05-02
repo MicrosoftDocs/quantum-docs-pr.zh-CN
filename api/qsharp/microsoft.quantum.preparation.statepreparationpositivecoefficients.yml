@@ -13,9 +13,9 @@ summary: >-
   新分配的寄存器上的 U 操作是由 $ $ \begin{align} U \ket{0\cdots 0} = \ket{\psi} = \frac{\ sum_ {j = 0} ^ {2 ^ n-1} \ alpha_j \ket{j}}{\sqrt{\ sum_ {j = 0} ^ {2 ^ n-1} | \ alpha_j | ^ 2}}。
 
   \end{align} $ $
-remarks: 负输入系数 $ \ alpha_j < $0 将被视为具有值 $ | \ alpha_j | $ 的正值。 如果指定了小于 $ 2 ^ n $ 的元素，则将用 $ \ alpha_j = $0.0 填充 `coefficients`。
+remarks: 负输入系数 $ \ alpha_j < $0 将被视为具有值 $ | \ alpha_j | $ 的正值。 `coefficients`如果指定少于 $ 2 ^ n $，则将用元素 $ \ alpha_j = $0.0 填充。
 examples: >-
-  以下代码片段在 qubit register `qubitsLE`中准备好量程状态 $ \ket{\psi} = \ sqrt {1/8} \ 票证{0}+ \ sqrt {7/8} \ 票证{2}$。
+  以下代码片段在 qubit 注册{0}{2} `qubitsLE`中准备好量程状态 $ \ket{\psi} = \ sqrt {1/8} \ 票证 + \ sqrt {7/8} \ 票证 $。
 
 
   ```qsharp
@@ -55,9 +55,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: 2a31449781d4b3bab1f2af40083df78bf6cc2083
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d419fd88ed037001cc51dbd354b5c89dbe334246
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226363"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82686462"

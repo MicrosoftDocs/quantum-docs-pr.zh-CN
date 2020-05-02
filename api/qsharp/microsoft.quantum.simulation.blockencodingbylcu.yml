@@ -4,11 +4,11 @@ name: BlockEncodingByLCU
 type: function
 namespace: Microsoft.Quantum.Simulation
 summary: >-
-  将感兴趣的运算符编码为 `BlockEncoding`。
+  将`BlockEncoding`感兴趣的运算符编码为。
 
 
-  这将构造一个 `BlockEncoding` 单一 $U = P\cdot V\cdot P ^ \dagger $，对某个运算符进行编码，$H = \sum_{j} | \alpha_j |U_j，这是 unitaries 的线性组合。 通常，$P $ 是一种状态准备，因此 $P \ket{0}\_a = \ sum_j\sqrt {\ alpha_j/\|\vec\alpha\|\_2} \ket{j}\_$，$V = \sum_{j}\ket{j}\bra{j}\_a\otimes U_j $。
-remarks: 此 `BlockEncoding` 实现为其提供了 `BlockEncodingReflection`的属性。
+  这将构造`BlockEncoding`一个单一 $U = P\cdot V\cdot P ^ \dagger $，用于对一些运算符进行编码 $H = \ sum_ {j} | \ alpha_j |U_j 是 unitaries 的线性组合。 通常，$P $ 是一种状态准备，因此 $P \ket{0}\_a = \ sum_j \sqrt{\ alpha_j/\|\vec\alpha\|\_2} \ket{j}\_$，$V = \ sum_ {j} \ket{j}\bra{j}\_a\otimes U_j $。
+remarks: 此`BlockEncoding`实现为它提供了`BlockEncodingReflection`的属性。
 syntax: "function BlockEncodingByLCU (statePreparation : ('T => Unit is Adj + Ctl), selector : (('T, 'S) => Unit is Adj + Ctl)) : (('T, 'S) => Unit is Adj + Ctl)"
 input:
   content: "(statePreparation : ('T => Unit is Adj + Ctl), selector : (('T, 'S) => Unit is Adj + Ctl))"
@@ -46,7 +46,7 @@ input:
 output:
   content: (('T, 'S) => Unit is Adj + Ctl)
   types:
-  - summary: 单一 $U $ 用于对寄存器 `a` 和 `s` 进行阻止编码 $H $，并满足 $U ^ \dagger = U $。
+  - summary: 单一 $U $ 对寄存器`a`进行操作并`s`对其进行块编码 $H $，并满足 $U ^ \dagger = U $。
     isOperation: true
     input:
       types:
@@ -65,9 +65,9 @@ seeAlso:
 - microsoft.quantum.canon.blockencoding
 - microsoft.quantum.canon.blockencodingreflection
 metadata:
-  ms.openlocfilehash: b2a107a8497e6fdd24f5d6511d61541ce932ec6c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 581170f33001b0fef6606a39085b36c7f9559ac0
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73227859"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82686891"

@@ -6,12 +6,12 @@ ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.pulls
-ms.openlocfilehash: a4373a65688893c95e0475356c8f6fca0912f8c5
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: 82af3b5123588cc06882f746ffcb0402ad3f0f2e
+ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907454"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "82686856"
 ---
 # <a name="opening-pull-requests"></a>打开拉取请求 #
 
@@ -39,7 +39,7 @@ ms.locfileid: "77907454"
 使用 Git 时，任何更改都表示为_提交_，这些更改描述了这些更改在发生更改之前如何与存储库的状态相关。
 我们经常会绘制一个图表，其中的提交以包含上一次提交的箭头的圆圈形式绘制。
 
-假设已在_分支_中启动了一个名为 `feature`的内容。
+假设已在_分支_中启动了一个名`feature`为的发布。
 那么， **Microsoft/量子**的分叉可能如下所示：
 
 ![GitHub 中的工作分支](~/media/git-workflow-step0.png)
@@ -60,9 +60,9 @@ ms.locfileid: "77907454"
 
 ## <a name="how-to-make-a-pull-request"></a>如何发出拉取请求 ##
 
-可以通过两种主要方法来生成拉取请求。
-对于仅影响单个文件的小更改，可以使用 GitHub web 界面来完全联机请求拉取请求。
-对于更复杂的发布，使用本地计算机首先准备拉取请求通常更容易。
+可以通过两种主要方法来生成拉取请求。  
+对于仅影响单个文件的小更改，可以使用 GitHub web 界面来完全联机请求拉取请求。 只需导航到要编辑的文件，然后使用编辑图标。  
+对于更复杂的发布，通常会将存储库克隆到本地计算机，以便首先准备拉取请求。
 
 <!--
 ### Using the Web Interface ###

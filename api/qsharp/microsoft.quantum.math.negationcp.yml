@@ -14,12 +14,12 @@ input:
 output:
   content: Microsoft.Quantum.Math.ComplexPolar
   types:
-  - summary: '`input`的一元求反。'
+  - summary: 的一元求反`input`。
     uid: microsoft.quantum.math.complexpolar
 metadata:
-  ms.openlocfilehash: 62c886936be80cb1694227d5e535327880d60041
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d67ba08e2f370c2f51d66d4ba86889c36eca95d9
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73211505"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82686591"

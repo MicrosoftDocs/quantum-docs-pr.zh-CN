@@ -14,12 +14,12 @@ input:
 output:
   content: Microsoft.Quantum.Math.Complex
   types:
-  - summary: '`input`的一元求反。'
+  - summary: 的一元求反`input`。
     uid: microsoft.quantum.math.complex
 metadata:
-  ms.openlocfilehash: 29907f747d5973ca191cb4aa55458e5d15d5de61
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 4a8fff92778578483db7c8bfa579c66549da5670
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73232432"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82686606"

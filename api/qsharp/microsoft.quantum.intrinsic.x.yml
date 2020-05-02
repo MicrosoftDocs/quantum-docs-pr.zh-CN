@@ -7,7 +7,7 @@ summary: >-
   将 Pauli $X $ 入口。
 
 
-  \begin{align} \ sigma_x \mathrel{： =} \begin{bmatrix} 0 & 1 \\\\ 1 & 0 \end{bmatrix}。
+  \begin{align} \ sigma_x \mathrel{： =} \begin{bmatrix} 0 & 1 \\ \\ 1 & 0 \end{bmatrix}。
 
   \end{align}
 syntax: 'operation X (qubit : Qubit) : Unit'
@@ -27,9 +27,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 740541d3126bc3e1b245f4a09c951e78cde802c7
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 73fcf60bf676d9c25f09009fcaf13dda4237f01b
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216316"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82686804"

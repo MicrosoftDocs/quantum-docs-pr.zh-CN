@@ -4,7 +4,7 @@ name: Random
 type: operation
 namespace: Microsoft.Quantum.Intrinsic
 summary: >-
-  随机操作采用双精度数组作为输入，并将随机选择的索引作为 `Int`返回到数组中。
+  随机操作采用双精度数组作为输入，并将随机选择的索引作为返回到数组中`Int`。
 
   选择特定索引的概率与该索引处数组元素的值成正比。
 
@@ -21,13 +21,13 @@ input:
 output:
   content: Int
   types:
-  - summary: 一个整数 $i $ with probability $ \Pr （i） = p_i/\ sum_i p_i $，其中 $p _i $ 是 $i `probs`$ th 元素。
+  - summary: 一个整数 $i $ with probability $ \Pr （i） = p_i/\ sum_i p_i $，其中 $p _i $ 是的 $i $ th 元素`probs`。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: b2a5f6a0b1d2584e385bfa4de2b2c43fc1cf6509
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b269b780b5e8ad048d1563e3dca98524a5ed63d2
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73233928"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82686806"
