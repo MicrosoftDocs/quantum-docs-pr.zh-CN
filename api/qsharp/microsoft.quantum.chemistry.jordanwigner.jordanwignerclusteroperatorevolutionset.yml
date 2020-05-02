@@ -11,12 +11,12 @@ input:
 output:
   content: Microsoft.Quantum.Simulation.EvolutionSet
   types:
-  - summary: '`EvolutionSet`，它将 JordanWigner 基础的 `GeneratorIndex` 映射到 "EvolutionUnitary"。'
+  - summary: 一个`EvolutionSet` ，它将`GeneratorIndex` JordanWigner 基础的映射到 "EvolutionUnitary"。
     uid: microsoft.quantum.simulation.evolutionset
 metadata:
-  ms.openlocfilehash: be163f4232684b6d0c93aef7fb2d6fed71c5d98c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 4c2a23eb817a46b1b6c633d74f7e0428331fbdf3
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228777"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82667816"
