@@ -36,9 +36,9 @@ output:
     functors:
     - Controlled
 metadata:
-  ms.openlocfilehash: d4586e15c5df5dfc94ab15be2b21f014b5734ade
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 027f275f1d4458ad2c1b512a8e18f7e6e7fb42d5
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74861031"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676124"

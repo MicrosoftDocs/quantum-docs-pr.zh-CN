@@ -40,34 +40,34 @@ functions:
   summary: >-
     给定针对单个输入的操作数组时，将生成一个按顺序执行每个给定操作的新操作。
 
-    修饰符 `A` 指示数组中的所有操作都是 adjointable 的。
+    修饰符`A`指示数组中的所有操作都是 adjointable。
 - uid: microsoft.quantum.canon.boundc
   summary: >-
     给定针对单个输入的操作数组时，将生成一个按顺序执行每个给定操作的新操作。
 
-    修饰符 `C` 指示数组中的所有操作都可控制。
+    修饰符`C`指示数组中的所有操作都可控制。
 - uid: microsoft.quantum.canon.boundca
   summary: >-
     给定针对单个输入的操作数组时，将生成一个按顺序执行每个给定操作的新操作。
 
-    修饰符 `CA` 指示数组中的所有操作都是 adjointable 的，并且可控。
+    修饰符`CA`指示数组中的所有操作都是 adjointable 且可控制的。
 - uid: microsoft.quantum.canon.ccontrolled
-  summary: 给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果 `false`，则不会执行任何操作。
+  summary: 给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果`false`为，则不执行任何操作。
 - uid: microsoft.quantum.canon.ccontrolleda
   summary: >-
-    给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果 `false`，则不会执行任何操作。
+    给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果`false`为，则不执行任何操作。
 
-    修饰符 `A` 指示操作为 adjointable。
+    修饰符`A`指示操作为 adjointable。
 - uid: microsoft.quantum.canon.ccontrolledc
   summary: >-
-    给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果 `false`，则不会执行任何操作。
+    给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果`false`为，则不执行任何操作。
 
-    修饰符 `C` 指示操作可控制。
+    修饰符`C`指示操作可控制。
 - uid: microsoft.quantum.canon.ccontrolledca
   summary: >-
-    给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果 `false`，则不会执行任何操作。
+    给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果`false`为，则不执行任何操作。
 
-    修饰符 `CA` 指示操作可控制和 adjointable。
+    修饰符`CA`指示该操作是可控制的且 adjointable。
 - uid: microsoft.quantum.canon.compose
   summary: 返回两个函数的组合。
 - uid: microsoft.quantum.canon.conjugatedby
@@ -105,7 +105,7 @@ functions:
 - uid: microsoft.quantum.canon.delayedca
   summary: 返回应用给定自变量的给定操作的操作。
 - uid: microsoft.quantum.canon.embedpauli
-  summary: 给定 qubit Pauli 运算符和 qubit 的索引后，将返回一个多 qubit Pauli 运算符，该运算符具有该索引处给定的单 qubit 运算符，并在每个其他索引处 `PauliI`。
+  summary: 给定 qubit Pauli 运算符和 qubit 的索引后，将返回一个多 qubit Pauli 运算符，该运算符具有给定的单一 qubit 运算符，位于该索引处和`PauliI`其他每个索引处。
 - uid: microsoft.quantum.canon.expmod
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nExpMod 已被弃用。 请改用 @\"microsoft.quantum.math.expmodi\"。\n请使用 @\"microsoft.quantum.math.expmodi\"。"
 - uid: microsoft.quantum.canon.extendedgcd
@@ -133,9 +133,9 @@ functions:
 - uid: microsoft.quantum.canon.iscoprime
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nIsCoprime 已被弃用。 请改用 @\"microsoft.quantum.math.iscoprimei\"。\n请使用 @\"microsoft.quantum.math.greatestcommondivisori\"。"
 - uid: microsoft.quantum.canon.isresultone
-  summary: 测试给定的结果值是否等于 `One`。
+  summary: 测试给定结果值是否等于`One`。
 - uid: microsoft.quantum.canon.isresultzero
-  summary: 测试给定的结果值是否等于 `Zero`。
+  summary: 测试给定结果值是否等于`Zero`。
 - uid: microsoft.quantum.canon.littleendiantobigendian
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nLittleEndianToBigEndian 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.littleendianasbigendian\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian\"。"
 - uid: microsoft.quantum.canon.map
@@ -168,7 +168,7 @@ functions:
   summary: >-
     引发幂运算。
 
-    修饰符 `A` 指示操作为 adjointable。
+    修饰符`A`指示操作为 adjointable。
 
 
     也就是说，在给定一个表示入口 $U $ 的操作的情况下，将为 power $m $ $U ^ m $ 返回一个新操作。
@@ -176,7 +176,7 @@ functions:
   summary: >-
     引发幂运算。
 
-    修饰符 `C` 指示操作可控制。
+    修饰符`C`指示操作可控制。
 
 
     也就是说，在给定一个表示入口 $U $ 的操作的情况下，将为 power $m $ $U ^ m $ 返回一个新操作。
@@ -184,7 +184,7 @@ functions:
   summary: >-
     引发幂运算。
 
-    修饰符 `A` 指示操作可控制和 adjointable。
+    修饰符`A`指示该操作是可控制的且 adjointable。
 
 
     也就是说，在给定一个表示入口 $U $ 的操作的情况下，将为 power $m $ $U ^ m $ 返回一个新操作。
@@ -204,17 +204,17 @@ functions:
   summary: >-
     将操作限制为寄存器的索引数组，即，subregister。
 
-    修饰符 `A` 指示操作为 adjointable。
+    修饰符`A`指示操作为 adjointable。
 - uid: microsoft.quantum.canon.restrictedtosubregisterc
   summary: >-
     将操作限制为寄存器的索引数组，即，subregister。
 
-    修饰符 `C` 指示操作可控制。
+    修饰符`C`指示操作可控制。
 - uid: microsoft.quantum.canon.restrictedtosubregisterca
   summary: >-
     将操作限制为寄存器的索引数组，即，subregister。
 
-    修饰符 `CA` 指示操作可控制和 adjointable。
+    修饰符`CA`指示该操作是可控制的且 adjointable。
 - uid: microsoft.quantum.canon.restricttosubregister
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nRestrictToSubregister 已被弃用。 请改用 @\"microsoft.quantum.canon.restrictedtosubregister\"。\n请使用 @\"microsoft.quantum.canon.restrictedtosubregister\"。"
 - uid: microsoft.quantum.canon.restricttosubregistera
@@ -263,17 +263,17 @@ functions:
   summary: >-
     给定一个返回操作的函数，返回一个将两个输入作为元组的新操作。
 
-    修饰符 `A` 指示操作是 adjointable 的。
+    修饰符`A`指示操作是 adjointable 的。
 - uid: microsoft.quantum.canon.uncurriedopc
   summary: >-
     给定一个返回操作的函数，返回一个将两个输入作为元组的新操作。
 
-    修饰符 `C` 指示操作可控制。
+    修饰符`C`指示操作可以控制。
 - uid: microsoft.quantum.canon.uncurriedopca
   summary: >-
     给定一个返回操作的函数，返回一个将两个输入作为元组的新操作。
 
-    修饰符 `CA` 指示操作可以控制和 adjointable。
+    修饰符`CA`指示操作可以控制和 adjointable。
 - uid: microsoft.quantum.canon.uncurryop
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nUncurryOp 已被弃用。 请改用 @\"microsoft.quantum.canon.uncurriedop\"。\n请使用 @\"microsoft.quantum.canon.uncurriedop\"。"
 - uid: microsoft.quantum.canon.uncurryopa
@@ -347,12 +347,12 @@ operations:
   summary: >-
     应用单个受控操作的多重控制版本。
 
-    修饰符 `C` 指示 qubit 操作可控制。
+    修饰符`C`指示 qubit 操作可控制。
 - uid: microsoft.quantum.canon.applymulticontrolledca
   summary: >-
     应用单个受控操作的多重控制版本。
 
-    修饰符 `CA` 指示 qubit 操作可控制和 adjointable。
+    修饰符`CA`指示 qubit 操作可控制和 adjointable。
 - uid: microsoft.quantum.canon.applyoprepeatedlyover
   summary: 多次对 qubit 寄存器应用相同的操作。
 - uid: microsoft.quantum.canon.applyoprepeatedlyovera
@@ -405,34 +405,34 @@ operations:
   summary: >-
     对寄存器中的每个元素应用 qubit 操作。
 
-    修饰符 `A` 指示 qubit 操作是 adjointable。
+    修饰符`A`指示 qubit 操作是 adjointable。
 - uid: microsoft.quantum.canon.applytoeachc
   summary: >-
     对寄存器中的每个元素应用 qubit 操作。
 
-    修饰符 `C` 指示 qubit 操作可控制。
+    修饰符`C`指示 qubit 操作可控制。
 - uid: microsoft.quantum.canon.applytoeachca
   summary: >-
     对寄存器中的每个元素应用 qubit 操作。
 
-    修饰符 `CA` 指示 qubit 操作可控制和 adjointable。
+    修饰符`CA`指示 qubit 操作可控制和 adjointable。
 - uid: microsoft.quantum.canon.applytoeachindex
   summary: 将单 qubit 操作应用于寄存器中的每个索引元素。
 - uid: microsoft.quantum.canon.applytoeachindexa
   summary: >-
     将单 qubit 操作应用于寄存器中的每个索引元素。
 
-    修饰符 `A` 指示 qubit 操作是 adjointable。
+    修饰符`A`指示 qubit 操作是 adjointable。
 - uid: microsoft.quantum.canon.applytoeachindexc
   summary: >-
     将单 qubit 操作应用于寄存器中的每个索引元素。
 
-    修饰符 `C` 指示 qubit 操作可控制。
+    修饰符`C`指示 qubit 操作可控制。
 - uid: microsoft.quantum.canon.applytoeachindexca
   summary: >-
     将单 qubit 操作应用于寄存器中的每个索引元素。
 
-    修饰符 `CA` 指示 qubit 操作 adjointable 且可控。
+    修饰符`CA`指示 qubit 操作是 adjointable 和可控制的。
 - uid: microsoft.quantum.canon.applytoelement
   summary: 将操作应用到数组的给定元素。
 - uid: microsoft.quantum.canon.applytoelementa
@@ -447,85 +447,85 @@ operations:
   summary: >-
     将操作应用于寄存器中的第一个 qubit。
 
-    修饰符 `A` 指示操作为 adjointable。
+    修饰符`A`指示操作为 adjointable。
 - uid: microsoft.quantum.canon.applytofirstqubitc
   summary: >-
     将操作 op 应用于寄存器中的第一个 qubit。
 
-    修饰符 `C` 指示操作可控制。
+    修饰符`C`指示操作可控制。
 - uid: microsoft.quantum.canon.applytofirstqubitca
   summary: >-
     将操作 op 应用于寄存器中的第一个 qubit。
 
-    修饰符 `CA` 指示操作可控制和 adjointable。
+    修饰符`CA`指示该操作是可控制的且 adjointable。
 - uid: microsoft.quantum.canon.applytofirstthreequbits
   summary: 将操作应用于寄存器中的前三个 qubits。
 - uid: microsoft.quantum.canon.applytofirstthreequbitsa
   summary: >-
     将操作应用于寄存器中的前三个 qubits。
 
-    修饰符 `A` 指示操作为 adjointable。
+    修饰符`A`指示操作为 adjointable。
 - uid: microsoft.quantum.canon.applytofirstthreequbitsc
   summary: >-
     将操作应用于寄存器中的前三个 qubits。
 
-    修饰符 `C` 指示操作可控制。
+    修饰符`C`指示操作可控制。
 - uid: microsoft.quantum.canon.applytofirstthreequbitsca
   summary: >-
     将操作应用于寄存器中的前三个 qubits。
 
-    修饰符 `CA` 指示操作可控制和 adjointable。
+    修饰符`CA`指示该操作是可控制的且 adjointable。
 - uid: microsoft.quantum.canon.applytofirsttwoqubits
   summary: 将操作应用于寄存器中的前两个 qubits。
 - uid: microsoft.quantum.canon.applytofirsttwoqubitsa
   summary: >-
     将操作应用于寄存器中的前两个 qubits。
 
-    修饰符 `A` 指示操作为 adjointable。
+    修饰符`A`指示操作为 adjointable。
 - uid: microsoft.quantum.canon.applytofirsttwoqubitsc
   summary: >-
     将操作应用于寄存器中的前两个 qubits。
 
-    修饰符 `C` 指示操作可控制。
+    修饰符`C`指示操作可控制。
 - uid: microsoft.quantum.canon.applytofirsttwoqubitsca
   summary: >-
     将操作应用于寄存器中的前两个 qubits。
 
-    修饰符 `CA` 指示操作可控制和 adjointable。
+    修饰符`CA`指示该操作是可控制的且 adjointable。
 - uid: microsoft.quantum.canon.applytopartition
   summary: 将一对操作应用于寄存器的给定分区分为两部分。
 - uid: microsoft.quantum.canon.applytopartitiona
   summary: >-
     将一对操作应用于寄存器的给定分区分为两部分。
 
-    修饰符 `A` 指示操作为 adjointable。
+    修饰符`A`指示操作为 adjointable。
 - uid: microsoft.quantum.canon.applytopartitionc
   summary: >-
     将一对操作应用于寄存器的给定分区分为两部分。
 
-    修饰符 `C` 指示操作可控制。
+    修饰符`C`指示操作可控制。
 - uid: microsoft.quantum.canon.applytopartitionca
   summary: >-
     将一对操作应用于寄存器的给定分区分为两部分。
 
-    修饰符 `CA` 指示操作可控制和 adjointable。
+    修饰符`CA`指示该操作是可控制的且 adjointable。
 - uid: microsoft.quantum.canon.applytosubregister
   summary: 将操作应用于寄存器的 subregister，其 qubits 由其索引数组指定。
 - uid: microsoft.quantum.canon.applytosubregistera
   summary: >-
     将操作应用于寄存器的 subregister，其 qubits 由其索引数组指定。
 
-    修饰符 `A` 指示操作为 adjointable。
+    修饰符`A`指示操作为 adjointable。
 - uid: microsoft.quantum.canon.applytosubregisterc
   summary: >-
     将操作应用于寄存器的 subregister，其 qubits 由其索引数组指定。
 
-    修饰符 `C` 指示操作可控制。
+    修饰符`C`指示操作可控制。
 - uid: microsoft.quantum.canon.applytosubregisterca
   summary: >-
     将操作应用于寄存器的 subregister，其 qubits 由其索引数组指定。
 
-    修饰符 `CA` 指示操作可控制和 adjointable。
+    修饰符`CA`指示该操作是可控制的且 adjointable。
 - uid: microsoft.quantum.canon.applywith
   summary: 给定两个操作，将一个操作应用到另一个运算。
 - uid: microsoft.quantum.canon.applywitha
@@ -559,7 +559,7 @@ operations:
     断言 superposition 状态相同的阶段具有预期值。
 
 
-    具体而言，断言某些任意实数的 "\phi $" 的量程状态（可能表示为 $ \frac{e ^ {i t}} {\sqrt{2}} （e ^ {i\phi} \ 票证{0} + e ^ {-i\phi} \ 票证{1}） $）为所需的值。
+    特别要注意的是，对于某些任意实数，可以将其表示为 $ \frac{e ^ {i t}} {\sqrt{2}} （e ^ {i\phi} \ 票证{0} + e ^ {-i\phi} \ 票证{1}） $ 的阶段 $ \phi $ 视为预期值。
 - uid: microsoft.quantum.canon.assertprobintbe
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nAssertProbIntBE 已被弃用。 请改用 @ \"assertprobint （stateindex，prob，bigendianaslittleendian （qubits），容忍）\"。\n此操作已被删除。"
 - uid: microsoft.quantum.canon.cascadecnot
@@ -575,19 +575,19 @@ operations:
     将受控的 X （CX）入口应用于一对 qubits。
 
 
-    $ $ \begin{align} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & \\\\ & 0 & 0 & 1 \\0 \end{align}，$ $，其中的行和列组织为 "量程概念" 指南。\\
+    $ $ \begin{align} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \end{align}，$ $，其中的行和列组织为 "量程概念" 指南。
 - uid: microsoft.quantum.canon.cy
   summary: >-
     将受控 Y （CY）入口应用于一对 qubits。
 
 
-    $ $ \begin{align} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & & \\\\ & & 0 & 0 0 \end{align}，$ $，其中的行和列按 "量程概念" 指南进行组织。
+    $ $ \begin{align} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 &-i \\ \\ 0 & 0 & & 0 \end{align}，$ $，其中的行和列按 "量程概念" 指南进行组织。
 - uid: microsoft.quantum.canon.cz
   summary: >-
     将受控-Z （CZ）入口应用于一对 qubits。
 
 
-    $ $ \begin{align} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 &-1 \end{align}，$ $，其中的行和列按 "量程概念" 指南进行组织。
+    $ $ \begin{align} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 0 & 0 &-1 \end{align}，$ $，其中的行和列组织为 "量程概念" 指南。
 - uid: microsoft.quantum.canon.delay
   summary: 应用给定操作，延迟。
 - uid: microsoft.quantum.canon.delaya
@@ -604,7 +604,7 @@ operations:
     单个 qubit 上的 Y Hadamard 转换 $H _Y = S H $ 为：
 
 
-    \begin{align} H_Y \mathrel{： =} \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\\\ &-i \end{bmatrix}。
+    \begin{align} H_Y \mathrel{： =} \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ \\ i &-i \end{bmatrix}。
 
     \end{align}
 - uid: microsoft.quantum.canon.inplacemajority
@@ -694,9 +694,9 @@ newtypes:
 - uid: microsoft.quantum.canon.resultstack
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nResultStack 已被弃用。"
 metadata:
-  ms.openlocfilehash: db3466b0e6fe493393f75bea85f9c91e2f56ec67
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: a38f0267c2caefba7acc63e8e36d96a1b8c08d91
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77905618"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677057"

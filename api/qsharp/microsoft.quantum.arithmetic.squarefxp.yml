@@ -12,7 +12,7 @@ input:
     summary: 固定点数字。
     uid: microsoft.quantum.arithmetic.fixedpoint
   - name: result
-    summary: 结果固定点数字必须处于 $ \ket{0}$ 起初状态。
+    summary: 结果固定点数字，最初必须处于状态 $ \ket{0}$。
     uid: microsoft.quantum.arithmetic.fixedpoint
 output:
   content: Unit
@@ -23,9 +23,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 7f43b6ec6a001f9c0c26d0c61f7df0e73431cede
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 872599fb948f3f9bcfdede64ddeb5d8bb58debab
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218441"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676628"

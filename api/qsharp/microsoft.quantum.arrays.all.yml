@@ -4,7 +4,7 @@ name: All
 type: function
 namespace: Microsoft.Quantum.Arrays
 summary: 给定为数组元素定义的数组和谓词，并检查数组的所有元素是否都满足该谓词。
-remarks: "函数是为泛型类型定义的，也就是说，只要数组 `'T[]` 和函数 `predicate: 'T -> Bool` 我们就可以生成一个 `Bool` 值，该值指示所有元素是否都满足 `predicate`。"
+remarks: "函数是为泛型类型定义的，也就是说，只要`'T[]`有一个数组和一个函数`predicate: 'T -> Bool` ，我们就可以生成一个`Bool`值，该值指示所有元素是否`predicate`满足。"
 examples: >-
   下面的代码检查数组的所有元素是否都为非零值：
 
@@ -28,7 +28,7 @@ input:
   content: "(predicate : ('T -> Bool), array : 'T[])"
   types:
   - name: predicate
-    summary: 从 `'T` 到用于检查元素的 `Bool` 的函数。
+    summary: 用于检查元素`'T` `Bool`的的函数。
     isFunction: true
     input:
       types:
@@ -39,23 +39,23 @@ input:
       - isPrimitive: true
         uid: Bool
   - name: array
-    summary: "`'T`上的元素的数组。"
+    summary: 上`'T`的元素的数组。
     isArray: true
     uid: "'T"
     isLocal: true
 output:
   content: Bool
   types:
-  - summary: 应用于所有元素的谓词的和函数的 `Bool` 值。
+  - summary: 应用`Bool`于所有元素的谓词的和函数的值。
     isPrimitive: true
     uid: Bool
 typeParameters:
 - uid: "'T"
-  summary: '`array` 元素的类型。'
+  summary: '`array`元素的类型。'
 metadata:
-  ms.openlocfilehash: bc21229d0468adcd41f6c460f5325cad9f09ba5c
-  ms.sourcegitcommit: a0e50c5f07841b99204c068cf5b5ec8ed087ffea
+  ms.openlocfilehash: 116a2a537c4712c968187785873c0546ec236762
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/26/2020
-  ms.locfileid: "80320773"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676586"

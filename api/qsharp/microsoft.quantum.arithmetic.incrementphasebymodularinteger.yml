@@ -7,11 +7,11 @@ summary: >-
   按整数常量执行 qubit 寄存器的模块化增量。
 
 
-  让我们通过 `target` $ $y $ $a $、`modulus` $N $ 和整数编码来表示 `increment`。
+  通过 $y $ `increment` $N $ 和在`modulus`中编码的整数，让我们`target`以 $a $ 表示。
 
   然后，该操作将执行以下转换： \begin{align} \ket{y} \mapsto \ket{（y + a） \operatorname{mod} N} \end{align} 将以小字节序格式编码。
 remarks: >-
-  假定 `target` 的最大位设置为0。
+  `target`假定将最高位设置为0。
 
   还假定目标值小于 $N $。
 
@@ -30,7 +30,7 @@ input:
     isPrimitive: true
     uid: Int
   - name: target
-    summary: '`increment` $a $ 添加到的、阶段编码的小字节序格式的整数 $y $。'
+    summary: $A $ 添加到的、阶段编码的小字节序`increment`格式的整数 $y $。
     uid: microsoft.quantum.arithmetic.phaselittleendian
 output:
   content: Unit
@@ -43,9 +43,9 @@ functors:
 seeAlso:
 - microsoft.quantum.arithmetic.incrementbymodularinteger
 metadata:
-  ms.openlocfilehash: 69240c9ecac0917f8f2a6d1f6a3554cc93269cbd
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: e97f88d64d9188d18b10ed7f67adc0225167c466
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871407"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676851"

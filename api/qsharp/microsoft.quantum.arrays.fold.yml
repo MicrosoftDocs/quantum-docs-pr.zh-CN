@@ -3,7 +3,7 @@ uid: microsoft.quantum.arrays.fold
 name: Fold
 type: function
 namespace: Microsoft.Quantum.Arrays
-summary: 通过数组 `array`循环访问函数 `f`，并返回 `f(f(f(initialState, array[0]), array[1]), ...)`。
+summary: 通过数组`f` `array`循环访问函数，返回`f(f(f(initialState, array[0]), array[1]), ...)`。
 examples: >-
   ```qsharp
 
@@ -45,18 +45,18 @@ input:
 output:
   content: "'State"
   types:
-  - summary: 遍历 `array`的所有元素后，文件夹返回的最终状态。
+  - summary: 遍历的所有元素后，文件夹返回的最终状态`array`。
     uid: "'State"
     isLocal: true
 typeParameters:
 - uid: "'State"
-  summary: '`folder` 函数操作的状态的类型，即接受作为其第一个参数，并返回。'
+  summary: '`folder`函数操作的状态的类型，即接受作为其第一个参数，并返回。'
 - uid: "'T"
-  summary: '`array` 元素的类型。'
+  summary: '`array`元素的类型。'
 metadata:
-  ms.openlocfilehash: 4be4752029b10351cfb3fe0fa6aa61b84b157510
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d02d20c049e8b8d21214028efcd6a647067bf71f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73214344"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676445"

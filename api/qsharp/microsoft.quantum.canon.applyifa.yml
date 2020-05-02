@@ -7,11 +7,11 @@ summary: >-
   应用以传统位为依据的 adjointable 操作。
 
 
-  给定一个操作 `op` 并且位值 `bit`，如果 `bit` `true`，则将 `op` 应用于 `target`。 如果 `false`，则 `target`不会执行任何操作。
+  给定一个操作`op`和一个位值`bit`后， `op` `target`如果`bit`为`true`，则应用于。 如果`false`为，则不会`target`发生任何事情。
 
-  后缀 `A` 指示要应用的操作是 adjointable。
+  后缀`A`指示要应用的操作是 adjointable。
 examples: >-
-  下面的内容将 qubits 注册为一个计算基础状态，该状态由给定作为 `Bool` 值数组的传统位字符串表示：
+  下面的 qubits 将注册为一个计算基础状态，该状态由给定为值数组的`Bool`传统位字符串表示：
 
 
   ```Q#
@@ -65,9 +65,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifa
 - microsoft.quantum.canon.applyifca
 metadata:
-  ms.openlocfilehash: 2c62617251d7795f19fa67f7de01859679c94313
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: fca10f4a39c8cdc3941d9a7d06e47e1c6dfefa74
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73213868"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676344"

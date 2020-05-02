@@ -7,9 +7,9 @@ summary: >-
   应用可在传统上使用的操作。
 
 
-  给定一个操作 `op` 并且位值 `bit`，如果 `bit` `true`，则将 `op` 应用于 `target`。 如果 `false`，则 `target`不会执行任何操作。
+  给定一个操作`op`和一个位值`bit`后， `op` `target`如果`bit`为`true`，则应用于。 如果`false`为，则不会`target`发生任何事情。
 examples: >-
-  下面的内容将 qubits 注册为一个计算基础状态，该状态由给定作为 `Bool` 值数组的传统位字符串表示：
+  下面的 qubits 将注册为一个计算基础状态，该状态由给定为值数组的`Bool`传统位字符串表示：
 
 
   ```Q#
@@ -59,9 +59,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifa
 - microsoft.quantum.canon.applyifca
 metadata:
-  ms.openlocfilehash: 8493200e8c87fc423bee6754f50f0f5c6b7cdd5c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b3a573c55d461eb3c1a2af0cb7bacd0a4cfecbe5
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73217642"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676365"

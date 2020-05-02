@@ -19,9 +19,9 @@ output:
   - summary: 用于实现指定为部分反射的阶段的操作
     uid: microsoft.quantum.amplitudeamplification.reflectionphases
 metadata:
-  ms.openlocfilehash: d2a3a7cd8858dea6c8876ee35214275200d70f46
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: bbe128a674348d09cec2b1583bcdf60e1d7d8418
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76872744"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82676910"
