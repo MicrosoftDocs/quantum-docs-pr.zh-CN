@@ -4,18 +4,18 @@ name: GeneratorSystem
 type: newtype
 namespace: Microsoft.Quantum.Simulation
 summary: >-
-  表示 `GeneratorIndex`es 的集合。
+  表示 es 的`GeneratorIndex`集合。
 
 
   我们使用单个索引的整数来循环访问此集合，并假定集合的大小是已知的。
-remarks: 使用 <xref:microsoft.quantum.arrays.lookupfunction> 函数可以轻松定义 `GeneratorSystem` 的实例。
+remarks: 可以使用`GeneratorSystem` <xref:microsoft.quantum.arrays.lookupfunction>函数轻松定义的实例。
 syntax: newtype GeneratorSystem = (Int, (Int -> Microsoft.Quantum.Simulation.GeneratorIndex));
 seeAlso:
 - microsoft.quantum.canon.lookupfunction
 metadata:
-  ms.openlocfilehash: 61312eb42da1e9bb67b5d2a79350c39e23aa0dac
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: eaa4d1d30f34cc987857e2cec7f11ef313266cac
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067010"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82655051"

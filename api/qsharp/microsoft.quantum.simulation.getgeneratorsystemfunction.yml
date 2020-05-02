@@ -3,18 +3,18 @@ uid: microsoft.quantum.simulation.getgeneratorsystemfunction
 name: GetGeneratorSystemFunction
 type: function
 namespace: Microsoft.Quantum.Simulation
-summary: 检索 `GeneratorSystem`中的 `GeneratorIndex` 函数。
+summary: 检索中`GeneratorIndex`的函数`GeneratorSystem`。
 syntax: 'function GetGeneratorSystemFunction (generatorSystem : Microsoft.Quantum.Simulation.GeneratorSystem) : (Int -> Microsoft.Quantum.Simulation.GeneratorIndex)'
 input:
   content: '(generatorSystem : Microsoft.Quantum.Simulation.GeneratorSystem)'
   types:
   - name: generatorSystem
-    summary: 相关的 `GeneratorSystem`。
+    summary: 有关的 `GeneratorSystem`。
     uid: microsoft.quantum.simulation.generatorsystem
 output:
   content: (Int -> Microsoft.Quantum.Simulation.GeneratorIndex)
   types:
-  - summary: 用于对 Hamiltonian 中的每个 `GeneratorIndex` 字词进行索引的函数。
+  - summary: 用于对 Hamiltonian 中的`GeneratorIndex`每个字词进行索引的函数。
     isFunction: true
     input:
       types:
@@ -27,9 +27,9 @@ seeAlso:
 - microsoft.quantum.canon.generatorindex
 - microsoft.quantum.canon.generatorsystem
 metadata:
-  ms.openlocfilehash: e70e8f59916bf997761583a6340f1a510b6f1b01
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: c33279150c3beb8736eac82a745e5bf4c69f87ec
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219903"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82654986"
