@@ -7,7 +7,7 @@ summary: >-
   将给定的大整数转换为布尔数组。
 
   数组的0元素是大整数的最小有效位。
-remarks: 有关更多详细信息，请参阅[ C# BigInteger 构造函数](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.-ctor?view=netframework-4.7.2#System_Numerics_BigInteger__ctor_System_Int64_)。
+remarks: '有关更多详细信息，请参阅[c # BigInteger 构造函数](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.-ctor?view=netframework-4.7.2#System_Numerics_BigInteger__ctor_System_Int64_)。'
 syntax: 'function BigIntAsBoolArray (a : BigInt) : Bool[]'
 input:
   content: '(a : BigInt)'
@@ -22,9 +22,9 @@ output:
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 7c35af1d65419d7b6d7e7866ef1b82f70f846fdd
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6375f10b22d555b834a147d2b9efcb6b323642b2
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73227485"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82661996"
