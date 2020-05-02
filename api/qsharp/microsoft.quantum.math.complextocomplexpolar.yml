@@ -15,9 +15,9 @@ output:
   types:
   - uid: microsoft.quantum.math.complexpolar
 metadata:
-  ms.openlocfilehash: fc329c328b6f30f986150dc504d66a70f6b3ca2b
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 37d312dd8669fe27d90bfea4d6a7950fdd45ce76
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74863261"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685749"

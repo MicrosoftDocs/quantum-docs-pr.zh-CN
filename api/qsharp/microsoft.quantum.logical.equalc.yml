@@ -17,13 +17,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: 当且仅当 `a` 等于 `b`时，`true`。
+  - summary: '`true`当且仅当`a`等于时`b`。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 73d36b39c05fc459371be744e043422e3e324d94
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 586dc4b3e30ba8083f090b9515d1f4e0ed851092
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73233248"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685960"
