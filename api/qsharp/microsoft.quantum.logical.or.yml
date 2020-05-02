@@ -5,7 +5,7 @@ type: function
 namespace: Microsoft.Quantum.Logical
 summary: 返回两个值的布尔析取。
 remarks: >-
-  与 `or` 运算符不同，此函数不会短路，因此这两个输入都是完全计算的。
+  与`or`运算符不同，此函数不会进行短路，因此，这两个输入都是完全计算的。
 
 
   最多短路行为，如下所示：
@@ -33,13 +33,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: 当且仅当 `a` 或 `b` `true`时，`true`。
+  - summary: '`true`当且仅当`a`或`b`为`true`时。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 7324679482e300b868902e9bf1c17cc9cc0da10d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: fb3d62473ec3fd7c40b44bfa919b69d54c5d0218
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73235152"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683563"

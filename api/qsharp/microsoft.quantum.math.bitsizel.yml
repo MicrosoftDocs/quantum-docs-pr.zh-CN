@@ -4,7 +4,7 @@ name: BitSizeL
 type: function
 namespace: Microsoft.Quantum.Math
 summary: >-
-  对于非负整数 `a`，返回表示 `a`所需的位数。
+  对于非负整数`a`，返回表示`a`所需的位数。
 
 
   即，返回 < 2 ^ n $ $a 的最小 $n $。
@@ -19,13 +19,13 @@ input:
 output:
   content: Int
   types:
-  - summary: '`a`的位大小。'
+  - summary: 的位大小`a`。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 09d5cfb994584bc2f411ea70dc57acf0338b93c3
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 70293cfdf4beb784e379632d2e7dc193300d4b52
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73230154"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683400"

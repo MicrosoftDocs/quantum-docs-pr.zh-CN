@@ -3,7 +3,7 @@ uid: microsoft.quantum.math.arctan2
 name: ArcTan2
 type: function
 namespace: Microsoft.Quantum.Math
-summary: 返回其正切为两个指定数字的商的角度。
+summary: 返回正切值为两个指定数字的商的角度。
 remarks: 有关更多详细信息，请参阅[Atan2](https://docs.microsoft.com/dotnet/api/system.math.atan2) 。
 syntax: 'function ArcTan2 (y : Double, x : Double) : Double'
 input:
@@ -21,9 +21,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 28e6a8df0056b1e8f81ac97c59deba1e76d5b089
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d4db894c5e4bfaa3fc0fd130be9986264b512a3b
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221858"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683431"

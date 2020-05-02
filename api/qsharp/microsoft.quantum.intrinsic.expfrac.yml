@@ -7,7 +7,7 @@ summary: >-
   使用由 dyadic 分式给定的自变量对 qubit Pauli 运算符应用指数。
 
 
-  \begin{align} e ^ {i \pi k [P_0 \otimes P_1 \cdots P_ {N-1}]/2 ^ N}，\end{align} 其中 $P _i $ 是 $i `paulis`$ th 元素，其中 $N = $`Length(paulis)`。
+  \begin{align} e ^ {i \pi k [P_0 \otimes P_1 \cdots P_ {N-1}]/2 ^ N}，\end{align} 其中 $P _i $ 是的 $i $ th 元素`paulis`，其中 $N = $。`Length(paulis)`
 syntax: 'operation ExpFrac (paulis : Pauli[], numerator : Int, power : Int, qubits : Qubit[]) : Unit'
 input:
   content: '(paulis : Pauli[], numerator : Int, power : Int, qubits : Qubit[])'
@@ -39,9 +39,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: d02f48d695db3dd2d7012df5bbf22718ffe41b74
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 61bd52b3bcce87c6bcbf61ebeb52f720e96fe0f0
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73223762"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683811"

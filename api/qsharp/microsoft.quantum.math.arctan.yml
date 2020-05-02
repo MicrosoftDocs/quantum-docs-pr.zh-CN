@@ -3,7 +3,7 @@ uid: microsoft.quantum.math.arctan
 name: ArcTan
 type: function
 namespace: Microsoft.Quantum.Math
-summary: 返回其正切为指定数字的角度。
+summary: 返回正切值为指定数字的角度。
 remarks: 有关更多详细信息，请参阅[Atan](https://docs.microsoft.com/dotnet/api/system.math.atan) 。
 syntax: 'function ArcTan (d : Double) : Double'
 input:
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 024a48f24911139670072ae2b3bf097f43e0ea09
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: bcc20a090b7ee58d0c5ee2ba6fcf85d05971dc5a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221909"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683453"

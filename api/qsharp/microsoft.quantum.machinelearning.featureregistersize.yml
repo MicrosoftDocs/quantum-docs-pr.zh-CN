@@ -16,13 +16,13 @@ input:
 output:
   content: Int
   types:
-  - summary: 将 `sample` 编码为 qubit 寄存器所需的大小，以 qubits 数表示。
+  - summary: 编码`sample`为 qubit 寄存器所需的大小，以 qubits 数表示。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 780a7d4aa75a8bd3a4d58879339506451ddb3664
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 6df78574a5385482223d53e19f56e453b7ee3aa4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77909324"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683531"

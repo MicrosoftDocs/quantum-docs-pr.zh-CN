@@ -20,9 +20,9 @@ output:
   - summary: Sum $a + b $。
     uid: microsoft.quantum.math.complex
 metadata:
-  ms.openlocfilehash: 1478e0fb13939c3e266616c8accd564edb64c708
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6eb9adbd4b1ee255572a391b707f7a01e3e69e0d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73211352"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684129"

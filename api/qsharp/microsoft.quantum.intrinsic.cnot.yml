@@ -7,7 +7,7 @@ summary: >-
   将受控-NOT （CNOT-CONTAINS）入口应用于一对 qubits。
 
 
-  \begin{align} \operatorname{CNOT} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 &, \end{align}
+  \begin{align} \operatorname{CNOT} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & \\ \\ 0 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \end{bmatrix}，\end{align}
 
 
   行和列的排序顺序，如量程概念指南中所示。
@@ -41,9 +41,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: b0173ad04caa8f3c5830f856d5dc805c896eecff
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: a690d324f8449a953f59eded299547b354da6417
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219274"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683838"

@@ -3,7 +3,7 @@ uid: microsoft.quantum.math.complexascomplexpolar
 name: ComplexAsComplexPolar
 type: function
 namespace: Microsoft.Quantum.Math
-summary: 将 `Complex` 类型的复数转换为 `ComplexPolar`类型的复数。
+summary: 将类型`Complex`的复杂数字转换为类型`ComplexPolar`的复数。
 syntax: 'function ComplexAsComplexPolar (input : Microsoft.Quantum.Math.Complex) : Microsoft.Quantum.Math.ComplexPolar'
 input:
   content: '(input : Microsoft.Quantum.Math.Complex)'
@@ -17,9 +17,9 @@ output:
   - summary: 复数 $c = r e ^ {i t} $。
     uid: microsoft.quantum.math.complexpolar
 metadata:
-  ms.openlocfilehash: ec75e8c315f3b880cead8bad8fcfd99f6c2c67b3
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 404b808c6542a20b2e02744bee4219a0fdf093ad
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73230086"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683347"

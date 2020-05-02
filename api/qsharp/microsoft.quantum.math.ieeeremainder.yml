@@ -3,7 +3,7 @@ uid: microsoft.quantum.math.ieeeremainder
 name: IEEERemainder
 type: function
 namespace: Microsoft.Quantum.Math
-summary: 返回由指定数值相除后所得的余数。
+summary: 返回一指定数字被另一指定数字相除的余数。
 remarks: 有关更多详细信息，请参阅[IEEERemainder](https://docs.microsoft.com/dotnet/api/system.math.ieeeremainder) 。
 syntax: 'function IEEERemainder (x : Double, y : Double) : Double'
 input:
@@ -21,9 +21,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 6f420d104fb34cdb95a92f878754908aa3c699de
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ff9ba7311206591673b3aee36fa228e188057cbb
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73232789"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684199"

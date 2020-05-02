@@ -15,13 +15,13 @@ input:
 output:
   content: BigInt
   types:
-  - summary: '`input`的一元求反。'
+  - summary: 的一元求反`input`。
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: 40c63c0a5aeaa6c6fb0e9bc0dc1492d6e1d8574a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 89ed30d46691a593f7ac8487df78d64f8885a601
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73211403"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684171"

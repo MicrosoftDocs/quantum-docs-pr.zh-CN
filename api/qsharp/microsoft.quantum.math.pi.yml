@@ -3,7 +3,7 @@ uid: microsoft.quantum.math.pi
 name: PI
 type: function
 namespace: Microsoft.Quantum.Math
-summary: 表示圆的周长与其直径的比值，该比值由常量π指定。
+summary: 表示圆的周长与其直径的比值，由常数 π 指定。
 remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.pi) 。
 syntax: 'function PI () : Double'
 input:
@@ -15,9 +15,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: c7b0985cfe132351f9bee9e70d1fcfafd40b757d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 692fd1dc9f4801098ab2e2c97362af9fa24603ec
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73211369"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684169"
