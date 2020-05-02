@@ -7,10 +7,10 @@ summary: 转储当前目标计算机的状态。
 remarks: >-
   此方法允许您将有关目标计算机的当前状态的信息转储到文件或其他位置。
 
-  生成的实际信息和 `location` 的语义特定于每个目标计算机。 但是，将空元组作为位置（`()`）提供或仅省略 `location` 参数通常意味着将输出生成到控制台。
+  生成的实际信息和的语义`location`特定于每个目标计算机。 但是，提供空元组作为位置（`()`）或仅省略`location`参数通常意味着将输出生成到控制台。
 
 
-  对于作为量程开发工具包的一部分分发的本地完整状态模拟器，此方法需要一个带有文件路径的字符串，它将波形函数编写为一维复数数组，其中每个元素表示测量相应状态的概率的 amplitudes。
+  对于作为量程开发工具包的一部分分发的本地完整状态模拟器，此方法需要一个带有文件路径的字符串，它将波形函数编写为一维复数数组，其中每个元素都表示测量相应状态的概率的 amplitudes。
 syntax: "function DumpMachine (location : 'T) : Unit"
 input:
   content: "(location : 'T)"
@@ -26,9 +26,9 @@ output:
     isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 7d268127c56dc5554e7c99494ae90b2bc14b336c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 7511e0bdded689c84cb90794860dd79e48950414
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73227060"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82656559"
