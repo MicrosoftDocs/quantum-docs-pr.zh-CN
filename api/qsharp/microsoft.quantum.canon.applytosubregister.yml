@@ -5,7 +5,7 @@ type: operation
 namespace: Microsoft.Quantum.Canon
 summary: 将操作应用于寄存器的 subregister，其 qubits 由其索引数组指定。
 examples: >-
-  Create 三个 qubit state $ \frac{1}{\sqrt{2}} \ket{0}\_2 （\ket{0}\_1 \ 票证{0}_3 + \ket{1}\_1 \ 票证{1}_3） $：
+  Create 三个 qubit state ${1}\frac {{2}\sqrt}{0}\_\ket 2 （{0}\_\ket 1 \{0}票证 _3 +{1}\_\ket 1 \{1}票证 _3） $：
 
 
   ```qsharp
@@ -49,9 +49,9 @@ seeAlso:
 - applytosubregisterc
 - applytosubregisterca
 metadata:
-  ms.openlocfilehash: e4f6e6bb2cc0e13b1edcea07ad2af32b10b31f48
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 89c488fd593e6f81a1c811e0b507a69a9f891be9
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73213052"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674569"

@@ -7,17 +7,17 @@ summary: >-
   应用两个可控操作之一，具体取决于传统位的值。
 
 
-  给定一个位 `bit`，当 `bit` 为 `true`时，应用 `trueInput` 作为其输入的操作 `trueOp`，并在 `falseOp(falseInput)` `bit` 时应用 `false`。
+  给定一个位`bit`，在为时`trueOp`应用`trueInput`该操作，并`bit`在`true`为时应用`falseOp(falseInput)` `bit`该操作`false`。
 syntax: "operation ApplyIfElseBC (bit : Bool, (trueOp : ('T => Unit is Ctl), trueInput : 'T), (falseOp : ('U => Unit is Ctl), falseInput : 'U)) : Unit"
 input:
   content: "(bit : Bool, (trueOp : ('T => Unit is Ctl), trueInput : 'T), (falseOp : ('U => Unit is Ctl), falseInput : 'U))"
   types:
   - name: bit
-    summary: 用于确定是否应用 `trueOp` 或 `falseOp` 的布尔值。
+    summary: 用于确定是否`trueOp`应用或`falseOp`的布尔值。
     isPrimitive: true
     uid: Bool
   - name: trueOp
-    summary: '`true``bit` 时要应用的可控操作。'
+    summary: 在为`bit` `true`时要应用的可控操作。
     isOperation: true
     input:
       types:
@@ -30,11 +30,11 @@ input:
     functors:
     - Controlled
   - name: trueInput
-    summary: 当 `bit` `true`时，提供给 `trueOp` 的输入。
+    summary: 当为`trueOp` `bit` `true`时要向其提供的输入。
     uid: "'T"
     isLocal: true
   - name: falseOp
-    summary: '`false``bit` 时要应用的可控操作。'
+    summary: 在为`bit` `false`时要应用的可控操作。
     isOperation: true
     input:
       types:
@@ -47,7 +47,7 @@ input:
     functors:
     - Controlled
   - name: falseInput
-    summary: 当 `bit` `false`时，提供给 `falseOp` 的输入。
+    summary: 当为`falseOp` `bit` `false`时要向其提供的输入。
     uid: "'U"
     isLocal: true
 output:
@@ -57,9 +57,9 @@ output:
     uid: Unit
 typeParameters:
 - uid: "'T"
-  summary: 要有条件地应用 `trueOp` 操作的输入类型。
+  summary: 要有条件地应用的`trueOp`操作的输入类型。
 - uid: "'U"
-  summary: 要有条件地应用 `falseOp` 操作的输入类型。
+  summary: 要有条件地应用的`falseOp`操作的输入类型。
 functors:
 - Controlled
 seeAlso:
@@ -69,9 +69,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifelsera
 - microsoft.quantum.canon.applyifelserca
 metadata:
-  ms.openlocfilehash: b28d861971d834f4251f5a4746a17d0cbbf2158a
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: c1d7c1fdf83b5ec87b8d5e8b22c45bb00072f69a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870982"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675005"

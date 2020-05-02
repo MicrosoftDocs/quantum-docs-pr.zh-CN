@@ -6,7 +6,7 @@ namespace: Microsoft.Quantum.Canon
 summary: >-
   将操作应用于寄存器中的前三个 qubits。
 
-  修饰符 `CA` 指示操作可控制和 adjointable。
+  修饰符`CA`指示该操作是可控制的且 adjointable。
 remarks: >-
   这等效于：
 
@@ -54,9 +54,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applytofirstthreequbits
 metadata:
-  ms.openlocfilehash: ae0edbaa02caaa72396f73edb66faf31db29e311
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: c0800e1cc6efbe43448d3792140497ac50ec1c33
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73213307"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674729"

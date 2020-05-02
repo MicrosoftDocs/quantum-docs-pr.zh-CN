@@ -11,7 +11,7 @@ input:
 output:
   content: (Microsoft.Quantum.ErrorCorrection.RecoveryFn, Microsoft.Quantum.ErrorCorrection.RecoveryFn)
   types:
-  - summary: '`RecoveryFn` 的 `Result[]` 类型的函数的元组，该元组并返回更正检测到的错误的 `Pauli[]` 操作。'
+  - summary: 类型`RecoveryFn`为的函数的元组，它采用`Result[]`一个症状度量`Pauli[]` ，并返回纠正检测到的错误的操作。
     types:
     - uid: microsoft.quantum.errorcorrection.recoveryfn
     - uid: microsoft.quantum.errorcorrection.recoveryfn
@@ -19,9 +19,9 @@ seeAlso:
 - steanecoderecoveryx
 - steanecoderecoveryz
 metadata:
-  ms.openlocfilehash: 9dd537688434c4729e6121b4ba230415504eb309
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 15d089219fa733582a4663f3c95aa65f9b39cf68
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228420"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674227"

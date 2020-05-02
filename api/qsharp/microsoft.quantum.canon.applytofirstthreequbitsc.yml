@@ -6,7 +6,7 @@ namespace: Microsoft.Quantum.Canon
 summary: >-
   将操作应用于寄存器中的前三个 qubits。
 
-  修饰符 `C` 指示操作可控制。
+  修饰符`C`指示操作可控制。
 remarks: >-
   这等效于：
 
@@ -52,9 +52,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applytofirstthreequbits
 metadata:
-  ms.openlocfilehash: f71af17fefb874c14b4ae7a068c0bea5a9e49e60
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 16aad67536bb67d14826b9b57d80362de00ba0b0
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73213341"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674783"

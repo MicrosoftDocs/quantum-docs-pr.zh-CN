@@ -7,21 +7,21 @@ summary: >-
   断言 superposition 状态相同的阶段具有预期值。
 
 
-  具体而言，断言某些任意实数的 "\phi $" 的量程状态（可能表示为 $ \frac{e ^ {i t}} {\sqrt{2}} （e ^ {i\phi} \ 票证{0} + e ^ {-i\phi} \ 票证{1}） $）为所需的值。
+  特别要注意的是，对于某些任意实数，可以将其表示为 $ \frac{e ^ {i t}} {\sqrt{2}} （e ^ {i\phi} \ 票证{0} + e ^ {-i\phi} \ 票证{1}） $ 的阶段 $ \phi $ 视为预期值。
 examples: >-
-  以下断言成功： `qubit` 处于状态 $ \ket{\psi} = e ^ {i 0.5} \ sqrt {1/2} \ 票证{0}+ e ^ {i 0.5} \ sqrt {1/2} \ 票证{1}$;
+  以下断言成功： `qubit`处于状态 $ \ket{\psi} = e ^ {i 0.5} \ sqrt {1/2} \ 票证{0}+ e ^ {i 0.5} \ sqrt {1/2} \ 票证{1}$;
 
 
   - `AssertPhase(0.0,qubit,10e-10);`
 
 
-  `qubit` 处于状态 $ \ket{\psi} = e ^ {i 0.5} \ sqrt {1/2} \ 票证{0}+ e ^ {-i 0.5} \ sqrt {1/2} \ 票证{1}$;
+  `qubit`处于状态 $ \ket{\psi} = e ^ {i 0.5} \ sqrt {1/2} \ 票证{0}+ e ^ {-i 0.5} \ sqrt {1/2} \ 票证{1}$;
 
 
   - `AssertPhase(0.5,qubit,10e-10);`
 
 
-  `qubit` 处于状态 $ \ket{\psi} = e ^ {-i 2.2} \ sqrt {1/2} \ 票证{0}+ e ^ {i 0.2} \ sqrt {1/2} \ 票证{1}$;
+  `qubit`处于状态 $ \ket{\psi} = e ^ {-i 2.2} \ sqrt {1/2} \ 票证{0}+ e ^ {i 0.2} \ sqrt {1/2} \ 票证{1}$;
 
 
   - `AssertPhase(-1.2,qubit,10e-10);`
@@ -47,9 +47,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 2eaeb042f68a2a5c0cff65918653c37f26ab8d4b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ecfc39806fb1ffe504c76889fb36949b4fee2ed4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73212236"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674322"

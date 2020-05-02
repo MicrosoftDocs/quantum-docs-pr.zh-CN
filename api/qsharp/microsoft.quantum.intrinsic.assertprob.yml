@@ -30,7 +30,7 @@ input:
     isPrimitive: true
     uid: Qubit
   - name: result
-    summary: 预期的 `Measure(bases, qubits)`结果。
+    summary: 的预期结果`Measure(bases, qubits)`。
     isPrimitive: true
     uid: Result
   - name: prob
@@ -55,9 +55,9 @@ functors:
 seeAlso:
 - assert
 metadata:
-  ms.openlocfilehash: 74260a7e80199049e2854a5cdb7988e5321adf83
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6317476e89feb3a5fecac15afd52541859fc2f21
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216639"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674161"

@@ -22,7 +22,7 @@ input:
       确定 QFT 线路中发生的受控 Z 旋转在哪个级别上被修剪的近似值参数。
 
 
-      近似值参数 a 确定 Z 旋转的修剪级别，即∈ {0 ... n} 和所有 Z 旋转 2π/2k，其中 k > 从 QFT 线路中删除。 知道，对于 k > = log ₂（n） + log ₂（1/ε） + 3 个可绑定 | |QFT-AQFT | |< ε。
+      近似值参数 a 确定 Z 旋转的修剪级别，即∈ {0 ... n} 和所有 Z 旋转 2π/2k，其中 k>从 QFT 线路中删除。 知道，对于 k >= log ₂（n） + log ₂（1/ε） + 3 个可绑定 | |QFT-AQFT | |<ε。
     isPrimitive: true
     uid: Int
   - name: qs
@@ -37,9 +37,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 6d650d4c1d80e747df7560c630543189513d252a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 44d6a5937924f13cab04137bd3d0eb81396824c9
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73212525"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674395"

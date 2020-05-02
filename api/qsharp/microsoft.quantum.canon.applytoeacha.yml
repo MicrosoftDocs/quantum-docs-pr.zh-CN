@@ -6,7 +6,7 @@ namespace: Microsoft.Quantum.Canon
 summary: >-
   对寄存器中的每个元素应用 qubit 操作。
 
-  修饰符 `A` 指示 qubit 操作是 adjointable。
+  修饰符`A`指示 qubit 操作是 adjointable。
 examples: >-
   准备 qubit $ \ket{+} $ 状态：
 
@@ -53,9 +53,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applytoeach
 metadata:
-  ms.openlocfilehash: d440958aac7e8cd36351d4ace7e744b02c28d7bf
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 8638734df992bc0ae76b8d19e46c65a1ffd57981
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73210308"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674916"
