@@ -4,7 +4,7 @@ name: IntAsStringWithFormat
 type: function
 namespace: Microsoft.Quantum.Convert
 summary: 使用给定的格式将给定整数转换为等效的字符串表示形式。
-remarks: 有关更多详细信息，请参阅[ C# Int64](https://docs.microsoft.com/dotnet/api/system.int64.tostring?view=netframework-4.7.1#System_Int64_ToString_System_String_) 。
+remarks: '有关更多详细信息，请参阅[c # Int64。](https://docs.microsoft.com/dotnet/api/system.int64.tostring?view=netframework-4.7.1#System_Int64_ToString_System_String_)'
 syntax: 'function IntAsStringWithFormat (a : Int, fmt : String) : String'
 input:
   content: '(a : Int, fmt : String)'
@@ -21,9 +21,9 @@ output:
   - isPrimitive: true
     uid: String
 metadata:
-  ms.openlocfilehash: b7ee39b77cac69f5a461d39956f364433084de70
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 138eea4609ff77dfe9b64f75d2a767ddccc3786b
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73233452"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677430"

@@ -5,7 +5,7 @@ type: function
 namespace: Microsoft.Quantum.Canon
 summary: 给定一个函数和一个操作，返回一个新的操作，其输入由给定函数转换。
 examples: >-
-  以下调用使用 @"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian" 将为 @"Microsoft.Quantum.Arithmetic.BigEndian" 输入设计的操作转换为接受类型 @"Microsoft.Quantum.Arithmetic.LittleEndian"的输入的操作：
+  以下调用使用@"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian"将为输入设计的@"Microsoft.Quantum.Arithmetic.BigEndian"操作转换为接受类型@"Microsoft.Quantum.Arithmetic.LittleEndian"为的输入的操作：
 
 
   ```qsharp
@@ -44,7 +44,7 @@ input:
 output:
   content: ('U => Unit is Ctl)
   types:
-  - summary: 新操作 tbat 通过其输入调用 `fn`，然后将得到的输出传递到 `op`。
+  - summary: 新操作 tbat 的输入`fn`调用，然后将结果输出传递给`op`。
     isOperation: true
     input:
       types:
@@ -63,9 +63,9 @@ seeAlso:
 - applywithinputtransformation
 - compose
 metadata:
-  ms.openlocfilehash: 315c9aa76018490a58fcf9bbf93d4ef0e8410616
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 7f71aa5549ee813d0e53ed5b043479a7e7f3ffb6
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73217047"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678041"

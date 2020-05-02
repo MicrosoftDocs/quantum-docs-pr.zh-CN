@@ -32,15 +32,15 @@ output:
   content: Result
   types:
   - summary: >-
-      结果 `Zero`，概率为 $ $ \begin{align} \Pr （\texttt{Zero} | \Lambda;P，Q） = \operatorname{Tr}\left （\frac{\boldone + Q}{2} \Lambda\left [\frac{\boldone + P}{2} \right] \right）。
+      带有概率`Zero` $ $ \begin{align} \Pr （\Texttt{Zero} | \Lambda; 的结果P，Q） = \operatorname{Tr}\left （\frac{\boldone + Q}{2} \Lambda\left [\Frac{\boldone + P}{2} \right] \right）。
 
       \end{align} $ $
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 48da4cd4d16a3466591c0c93710eed6b27a68fab
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: f554910a414666c6d61a96932a932b9320426360
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73229015"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677582"

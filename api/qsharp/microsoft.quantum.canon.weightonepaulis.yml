@@ -15,16 +15,16 @@ input:
 output:
   content: Pauli[][]
   types:
-  - summary: 多 qubit Pauli 运算符的数组，其中每个运算符都表示为长度为 `nQubits`的数组。
+  - summary: 多 qubit Pauli 运算符的数组，其中每个运算符都表示为长度`nQubits`为的数组。
     isArray: true
     types:
     - isArray: true
       isPrimitive: true
       uid: Pauli
 metadata:
-  ms.openlocfilehash: 80c17b0c895f39c1548d3fd0535d6e731c6f9615
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 9e502178d60b75a312f6e5a7b80105c15741b7aa
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216690"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677868"

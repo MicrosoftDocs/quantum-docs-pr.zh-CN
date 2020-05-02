@@ -6,7 +6,7 @@ namespace: Microsoft.Quantum.Canon
 summary: >-
   给定一个返回操作的函数，返回一个将两个输入作为元组的新操作。
 
-  修饰符 `A` 指示操作是 adjointable 的。
+  修饰符`A`指示操作是 adjointable 的。
 syntax: "function UncurriedOpA (curriedOp : ('T -> ('U => Unit is Adj))) : (('T, 'U) => Unit is Adj)"
 input:
   content: "(curriedOp : ('T -> ('U => Unit is Adj)))"
@@ -34,7 +34,7 @@ input:
 output:
   content: (('T, 'U) => Unit is Adj)
   types:
-  - summary: '`op(t, u)` 等效于 `(curriedOp(t))(u)`的新操作 `op`。'
+  - summary: 与等效的`op` `op(t, u)`新操作`(curriedOp(t))(u)`。
     isOperation: true
     input:
       types:
@@ -56,9 +56,9 @@ typeParameters:
 seeAlso:
 - microsoft.quantum.canon.uncurryop
 metadata:
-  ms.openlocfilehash: 305f90bd71f2dc6e790e470df649e5a2a5afb9ad
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 92ec8c1ae333bcd319c7d63f89fb8614f0793d79
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216979"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677983"

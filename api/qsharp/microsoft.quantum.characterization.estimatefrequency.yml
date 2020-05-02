@@ -3,7 +3,7 @@ uid: microsoft.quantum.characterization.estimatefrequency
 name: EstimateFrequency
 type: operation
 namespace: Microsoft.Quantum.Characterization
-summary: 考虑到准备和度量，通过执行给定数量的试验来估算度量成功（返回 `Zero`）的频率。
+summary: 考虑到准备和度量，通过执行给定数量的试验来估算度量成功`Zero`（返回）的频率。
 syntax: 'operation EstimateFrequency (preparation : (Qubit[] => Unit), measurement : (Qubit[] => Result), nQubits : Int, nMeasurements : Int) : Double'
 input:
   content: '(preparation : (Qubit[] => Unit), measurement : (Qubit[] => Result), nQubits : Int, nMeasurements : Int)'
@@ -44,16 +44,16 @@ output:
   content: Double
   types:
   - summary: >-
-      估计 $ \hat{p} $ of $M （P （\ket{00 \cdots 0} \bra{00 \cdots 0}）） $ 返回 `Zero`，使用无偏差二项式估计器 $ \hat{p} = n\_{\uparrow}/n\_{\text{measurements}} $，其中 $n\_{\uparrow} $ 是观察到的 `Zero` 结果数。
+      估计 $ \hat{p} $ of $M （P （\ket{00 \cdots 0} \bra{00 \cdots 0}）） $ `Zero`返回的频率，使用非偏置二项式估计器 $ \hat{p} = n\_{\uparrow}\_$ \text{measurements}}，其中 $n\_{\uparrow} $ 是观察到的`Zero`结果数。
 
 
       这对于遵守物理限制的目标计算机尤其重要，因此无法衡量概率。
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 1c27d38983f9fa9c1a1dc5c80548e307b7c36ffe
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 973ab328d11410fee400659f18a99d50c1883156
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73229185"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677738"
