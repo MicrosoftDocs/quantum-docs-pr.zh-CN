@@ -3,66 +3,66 @@ uid: microsoft.quantum.primitive
 name: Microsoft.Quantum.Primitive
 functions:
 - uid: microsoft.quantum.primitive.message
-  summary: "\n> [!WARNING]\n> 已放弃\n\n消息已被弃用。 请改用 @\"microsoft.quantum.intrinsic.message\"。\n请使用 @\"microsoft.quantum.intrinsic.message\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\n消息已被弃用。 请改用 @\"microsoft.quantum.intrinsic.message\"。\n请使用 @\"microsoft.quantum.intrinsic.message\"。"
 operations:
 - uid: microsoft.quantum.primitive.assert
-  summary: "\n> [!WARNING]\n> 已放弃\n\n已弃用断言。 请改用 @\"microsoft.quantum.intrinsic.assert\"。\n请使用 @\"microsoft.quantum.intrinsic.assert\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\n已弃用断言。 请改用 @\"microsoft.quantum.intrinsic.assert\"。\n请使用 @\"microsoft.quantum.intrinsic.assert\"。"
 - uid: microsoft.quantum.primitive.assertprob
-  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertProb 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.assertprob\"。\n请使用 @\"microsoft.quantum.intrinsic.assertprob\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nAssertProb 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.assertprob\"。\n请使用 @\"microsoft.quantum.intrinsic.assertprob\"。"
 - uid: microsoft.quantum.primitive.ccnot
-  summary: "\n> [!WARNING]\n> 已放弃\n\nCCNOT 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.ccnot\"。\n请使用 @\"microsoft.quantum.intrinsic.ccnot\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nCCNOT 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.ccnot\"。\n请使用 @\"microsoft.quantum.intrinsic.ccnot\"。"
 - uid: microsoft.quantum.primitive.cnot
-  summary: "\n> [!WARNING]\n> 已放弃\n\nCNOT-CONTAINS 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.cnot\"。\n请使用 @\"microsoft.quantum.intrinsic.cnot\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nCNOT-CONTAINS 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.cnot\"。\n请使用 @\"microsoft.quantum.intrinsic.cnot\"。"
 - uid: microsoft.quantum.primitive.exp
-  summary: "\n> [!WARNING]\n> 已放弃\n\nExp 已弃用。 请改用 @\"microsoft.quantum.intrinsic.exp\"。\n请使用 @\"microsoft.quantum.intrinsic.exp\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nExp 已弃用。 请改用 @\"microsoft.quantum.intrinsic.exp\"。\n请使用 @\"microsoft.quantum.intrinsic.exp\"。"
 - uid: microsoft.quantum.primitive.expfrac
-  summary: "\n> [!WARNING]\n> 已放弃\n\nExpFrac 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.expfrac\"。\n请使用 @\"microsoft.quantum.intrinsic.expfrac\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nExpFrac 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.expfrac\"。\n请使用 @\"microsoft.quantum.intrinsic.expfrac\"。"
 - uid: microsoft.quantum.primitive.h
-  summary: "\n> [!WARNING]\n> 已放弃\n\n已弃用 H。 请改用 @\"microsoft.quantum.intrinsic.h\"。\n请使用 @\"microsoft.quantum.intrinsic.h\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\n已弃用 H。 请改用 @\"microsoft.quantum.intrinsic.h\"。\n请使用 @\"microsoft.quantum.intrinsic.h\"。"
 - uid: microsoft.quantum.primitive.i
-  summary: "\n> [!WARNING]\n> 已放弃\n\n我已不推荐使用。 请改用 @\"microsoft.quantum.intrinsic.i\"。\n请使用 @\"microsoft.quantum.intrinsic.i\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\n我已不推荐使用。 请改用 @\"microsoft.quantum.intrinsic.i\"。\n请使用 @\"microsoft.quantum.intrinsic.i\"。"
 - uid: microsoft.quantum.primitive.m
-  summary: "\n> [!WARNING]\n> 已放弃\n\nM 已弃用。 请改用 @\"microsoft.quantum.intrinsic.m\"。\n请使用 @\"microsoft.quantum.intrinsic.m\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nM 已弃用。 请改用 @\"microsoft.quantum.intrinsic.m\"。\n请使用 @\"microsoft.quantum.intrinsic.m\"。"
 - uid: microsoft.quantum.primitive.measure
-  summary: "\n> [!WARNING]\n> 已放弃\n\n度量值已弃用。 请改用 @\"microsoft.quantum.intrinsic.measure\"。\n请使用 @\"microsoft.quantum.intrinsic.measure\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\n度量值已弃用。 请改用 @\"microsoft.quantum.intrinsic.measure\"。\n请使用 @\"microsoft.quantum.intrinsic.measure\"。"
 - uid: microsoft.quantum.primitive.multix
-  summary: "\n> [!WARNING]\n> 已放弃\n\nMultiX 已被弃用。 请改用 @ \"applytoeachca （x，_）\"。\n请使用 @\"microsoft.quantum.canon.applytoeachca\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nMultiX 已被弃用。 请改用 @ \"applytoeachca （x，_）\"。\n请使用 @\"microsoft.quantum.canon.applytoeachca\"。"
 - uid: microsoft.quantum.primitive.r
-  summary: "\n> [!WARNING]\n> 已放弃\n\nR 已弃用。 请改用 @\"microsoft.quantum.intrinsic.r\"。\n请使用 @\"microsoft.quantum.intrinsic.r\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nR 已弃用。 请改用 @\"microsoft.quantum.intrinsic.r\"。\n请使用 @\"microsoft.quantum.intrinsic.r\"。"
 - uid: microsoft.quantum.primitive.r1
-  summary: "\n> [!WARNING]\n> 已放弃\n\nR1 已弃用。 请改用 @\"microsoft.quantum.intrinsic.r1\"。\n请使用 @\"microsoft.quantum.intrinsic.r1\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nR1 已弃用。 请改用 @\"microsoft.quantum.intrinsic.r1\"。\n请使用 @\"microsoft.quantum.intrinsic.r1\"。"
 - uid: microsoft.quantum.primitive.r1frac
-  summary: "\n> [!WARNING]\n> 已放弃\n\nR1Frac 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.r1frac\"。\n请使用 @\"microsoft.quantum.intrinsic.r1frac\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nR1Frac 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.r1frac\"。\n请使用 @\"microsoft.quantum.intrinsic.r1frac\"。"
 - uid: microsoft.quantum.primitive.random
-  summary: "\n> [!WARNING]\n> 已放弃\n\n已不推荐使用随机。 请改用 @\"microsoft.quantum.intrinsic.random\"。\n请使用 @\"microsoft.quantum.intrinsic.random\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\n已不推荐使用随机。 请改用 @\"microsoft.quantum.intrinsic.random\"。\n请使用 @\"microsoft.quantum.intrinsic.random\"。"
 - uid: microsoft.quantum.primitive.reset
-  summary: "\n> [!WARNING]\n> 已放弃\n\n重置已弃用。 请改用 @\"microsoft.quantum.intrinsic.reset\"。\n请使用 @\"microsoft.quantum.intrinsic.reset\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\n重置已弃用。 请改用 @\"microsoft.quantum.intrinsic.reset\"。\n请使用 @\"microsoft.quantum.intrinsic.reset\"。"
 - uid: microsoft.quantum.primitive.resetall
-  summary: "\n> [!WARNING]\n> 已放弃\n\nResetAll 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.resetall\"。\n请使用 @\"microsoft.quantum.intrinsic.resetall\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nResetAll 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.resetall\"。\n请使用 @\"microsoft.quantum.intrinsic.resetall\"。"
 - uid: microsoft.quantum.primitive.rfrac
-  summary: "\n> [!WARNING]\n> 已放弃\n\nRFrac 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.rfrac\"。\n请使用 @\"microsoft.quantum.intrinsic.rfrac\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nRFrac 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.rfrac\"。\n请使用 @\"microsoft.quantum.intrinsic.rfrac\"。"
 - uid: microsoft.quantum.primitive.rx
-  summary: "\n> [!WARNING]\n> 已放弃\n\nRx 已弃用。 请改用 @\"microsoft.quantum.intrinsic.rx\"。\n请使用 @\"microsoft.quantum.intrinsic.rx\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nRx 已弃用。 请改用 @\"microsoft.quantum.intrinsic.rx\"。\n请使用 @\"microsoft.quantum.intrinsic.rx\"。"
 - uid: microsoft.quantum.primitive.ry
-  summary: "\n> [!WARNING]\n> 已放弃\n\nR 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.ry\"。\n请使用 @\"microsoft.quantum.intrinsic.ry\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nR 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.ry\"。\n请使用 @\"microsoft.quantum.intrinsic.ry\"。"
 - uid: microsoft.quantum.primitive.rz
-  summary: "\n> [!WARNING]\n> 已放弃\n\nVny-rz-j42 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.rz\"。\n请使用 @\"microsoft.quantum.intrinsic.rz\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nVny-rz-j42 已被弃用。 请改用 @\"microsoft.quantum.intrinsic.rz\"。\n请使用 @\"microsoft.quantum.intrinsic.rz\"。"
 - uid: microsoft.quantum.primitive.s
-  summary: "\n> [!WARNING]\n> 已放弃\n\n已弃用。 请改用 @\"microsoft.quantum.intrinsic.s\"。\n请使用 @\"microsoft.quantum.intrinsic.s\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\n已弃用。 请改用 @\"microsoft.quantum.intrinsic.s\"。\n请使用 @\"microsoft.quantum.intrinsic.s\"。"
 - uid: microsoft.quantum.primitive.swap
-  summary: "\n> [!WARNING]\n> 已放弃\n\n交换已弃用。 请改用 @\"microsoft.quantum.intrinsic.swap\"。\n请使用 @\"microsoft.quantum.intrinsic.swap\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\n交换已弃用。 请改用 @\"microsoft.quantum.intrinsic.swap\"。\n请使用 @\"microsoft.quantum.intrinsic.swap\"。"
 - uid: microsoft.quantum.primitive.t
-  summary: "\n> [!WARNING]\n> 已放弃\n\nT 已弃用。 请改用 @\"microsoft.quantum.intrinsic.t\"。\n请使用 @\"microsoft.quantum.intrinsic.t\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nT 已弃用。 请改用 @\"microsoft.quantum.intrinsic.t\"。\n请使用 @\"microsoft.quantum.intrinsic.t\"。"
 - uid: microsoft.quantum.primitive.x
-  summary: "\n> [!WARNING]\n> 已放弃\n\nX 已弃用。 请改用 @\"microsoft.quantum.intrinsic.x\"。\n请使用 @\"microsoft.quantum.intrinsic.x\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nX 已弃用。 请改用 @\"microsoft.quantum.intrinsic.x\"。\n请使用 @\"microsoft.quantum.intrinsic.x\"。"
 - uid: microsoft.quantum.primitive.y
-  summary: "\n> [!WARNING]\n> 已放弃\n\nY 已弃用。 请改用 @\"microsoft.quantum.intrinsic.y\"。\n请使用 @\"microsoft.quantum.intrinsic.y\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nY 已弃用。 请改用 @\"microsoft.quantum.intrinsic.y\"。\n请使用 @\"microsoft.quantum.intrinsic.y\"。"
 - uid: microsoft.quantum.primitive.z
-  summary: "\n> [!WARNING]\n> 已放弃\n\nZ 已弃用。 请改用 @\"microsoft.quantum.intrinsic.z\"。\n请使用 @\"microsoft.quantum.intrinsic.z\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nZ 已弃用。 请改用 @\"microsoft.quantum.intrinsic.z\"。\n请使用 @\"microsoft.quantum.intrinsic.z\"。"
 metadata:
-  ms.openlocfilehash: d3eef5b065a00cee2b31ea1a99e8814b5ca11ae0
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 541a5ef9f6c87e18526a3883b6c4570666c8eb0d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74858235"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673077"

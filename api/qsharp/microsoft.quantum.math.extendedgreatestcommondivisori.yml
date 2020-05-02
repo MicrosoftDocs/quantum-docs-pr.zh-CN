@@ -5,7 +5,7 @@ type: function
 namespace: Microsoft.Quantum.Math
 summary: 计算元组 $ （u，v） $，以便 $u \cdot a + v \cdot b = \operatorname{GCD} （a，b） $，其中 $ \operatorname{GCD} $ $a $ 最大公因数 $a $ 和 $b $。 GCD 始终为正值。
 syntax: 'function ExtendedGreatestCommonDivisorI (a : Int, b : Int) : (Int, Int)'
-references: '- 此实现根据 https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm'
+references: '- 此实现取决于https://en.wikipedia.org/wiki/Extended_Euclidean_algorithm'
 input:
   content: '(a : Int, b : Int)'
   types:
@@ -27,9 +27,9 @@ output:
     - isPrimitive: true
       uid: Int
 metadata:
-  ms.openlocfilehash: 7bcafd5d62bb6daf9a17e12c06d0d01214a724b2
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: f14516b0dc0a6832250df5a9d107514f9345b6db
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73233027"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673863"

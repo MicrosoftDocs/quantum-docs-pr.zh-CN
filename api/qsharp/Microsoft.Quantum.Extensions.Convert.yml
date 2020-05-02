@@ -4,29 +4,29 @@ name: Microsoft.Quantum.Extensions.Convert
 summary: " # <a name=\"summary\"></a>总结\n 这些是 \"系统\" 中的 \"转换\" .NET CLR 的命名空间中的一些函数。\n\n # <a name=\"remarks\"></a>备注\n 如果有多个版本的函数适用于 Bool、Int 和 Double 类型，则对应的函数具有后缀 B、I 和 D。"
 functions:
 - uid: microsoft.quantum.extensions.convert.biginttobools
-  summary: "\n> [!WARNING]\n> 已放弃\n\nBigIntToBools 已被弃用。 请改用 @\"microsoft.quantum.convert.bigintasboolarray\"。\n请使用 @\"microsoft.quantum.convert.bigintasboolarray\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nBigIntToBools 已被弃用。 请改用 @\"microsoft.quantum.convert.bigintasboolarray\"。\n请使用 @\"microsoft.quantum.convert.bigintasboolarray\"。"
 - uid: microsoft.quantum.extensions.convert.boolstobigint
-  summary: "\n> [!WARNING]\n> 已放弃\n\nBoolsToBigInt 已被弃用。 请改用 @\"microsoft.quantum.convert.boolarrayasbigint\"。\n请使用 @\"microsoft.quantum.convert.boolarrayasbigint\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nBoolsToBigInt 已被弃用。 请改用 @\"microsoft.quantum.convert.boolarrayasbigint\"。\n请使用 @\"microsoft.quantum.convert.boolarrayasbigint\"。"
 - uid: microsoft.quantum.extensions.convert.pauliarraytoint
-  summary: "\n> [!WARNING]\n> 已放弃\n\nPauliArrayToInt 已被弃用。 请改用 @\"microsoft.quantum.convert.pauliarrayasint\"。\n请使用 @\"microsoft.quantum.convert.pauliarrayasint\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nPauliArrayToInt 已被弃用。 请改用 @\"microsoft.quantum.convert.pauliarrayasint\"。\n请使用 @\"microsoft.quantum.convert.pauliarrayasint\"。"
 - uid: microsoft.quantum.extensions.convert.tobigint
-  summary: "\n> [!WARNING]\n> 已放弃\n\nToBigInt 已被弃用。 请改用 @\"microsoft.quantum.convert.intasbigint\"。\n请使用 @\"microsoft.quantum.convert.intasbigint\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nToBigInt 已被弃用。 请改用 @\"microsoft.quantum.convert.intasbigint\"。\n请使用 @\"microsoft.quantum.convert.intasbigint\"。"
 - uid: microsoft.quantum.extensions.convert.todouble
-  summary: "\n> [!WARNING]\n> 已放弃\n\nToDouble 已被弃用。 请改用 @\"microsoft.quantum.convert.intasdouble\"。\n请使用 @\"microsoft.quantum.convert.intasdouble\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nToDouble 已被弃用。 请改用 @\"microsoft.quantum.convert.intasdouble\"。\n请使用 @\"microsoft.quantum.convert.intasdouble\"。"
 - uid: microsoft.quantum.extensions.convert.tostringb
-  summary: "\n> [!WARNING]\n> 已放弃\n\nToStringB 已被弃用。 请改用 @\"microsoft.quantum.convert.boolasstring\"。\n请使用 @\"microsoft.quantum.convert.boolasstring\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nToStringB 已被弃用。 请改用 @\"microsoft.quantum.convert.boolasstring\"。\n请使用 @\"microsoft.quantum.convert.boolasstring\"。"
 - uid: microsoft.quantum.extensions.convert.tostringd
-  summary: "\n> [!WARNING]\n> 已放弃\n\nToStringD 已被弃用。 请改用 @\"microsoft.quantum.convert.doubleasstring\"。\n请使用 @\"microsoft.quantum.convert.doubleasstring\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nToStringD 已被弃用。 请改用 @\"microsoft.quantum.convert.doubleasstring\"。\n请使用 @\"microsoft.quantum.convert.doubleasstring\"。"
 - uid: microsoft.quantum.extensions.convert.tostringdformat
-  summary: "\n> [!WARNING]\n> 已放弃\n\nToStringDFormat 已被弃用。 请改用 @\"microsoft.quantum.convert.doubleasstringwithformat\"。\n请使用 @\"microsoft.quantum.convert.doubleasstringwithformat\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nToStringDFormat 已被弃用。 请改用 @\"microsoft.quantum.convert.doubleasstringwithformat\"。\n请使用 @\"microsoft.quantum.convert.doubleasstringwithformat\"。"
 - uid: microsoft.quantum.extensions.convert.tostringi
-  summary: "\n> [!WARNING]\n> 已放弃\n\nToStringI 已被弃用。 请改用 @\"microsoft.quantum.convert.intasstring\"。\n请使用 @\"microsoft.quantum.convert.intasstring\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nToStringI 已被弃用。 请改用 @\"microsoft.quantum.convert.intasstring\"。\n请使用 @\"microsoft.quantum.convert.intasstring\"。"
 - uid: microsoft.quantum.extensions.convert.tostringiformat
-  summary: "\n> [!WARNING]\n> 已放弃\n\nToStringIFormat 已被弃用。 请改用 @\"microsoft.quantum.convert.intasstringwithformat\"。\n请使用 @\"microsoft.quantum.convert.intasstringwithformat\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nToStringIFormat 已被弃用。 请改用 @\"microsoft.quantum.convert.intasstringwithformat\"。\n请使用 @\"microsoft.quantum.convert.intasstringwithformat\"。"
 metadata:
-  ms.openlocfilehash: 372c58096cab091560ae6d3bebc165f09e201b9c
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 8196882d8f7edf417f65bcd1651ecb770c4286f4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74858303"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673293"

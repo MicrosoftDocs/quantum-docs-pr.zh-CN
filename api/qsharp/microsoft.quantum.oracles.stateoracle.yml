@@ -14,14 +14,14 @@ summary: >-
 
   - 系统注册 $s $，将存储所需的量程状态 $ \ket{\psi}\_s $。
 remarks: >-
-  此 oracle 定义者： $ $ O\ket{0}\_{f} \ket{0}\_s = \lambda\ket{1}\_f\ket {\ psi}\_s + \sqrt{1-| \lambda | ^ 2} \ket{0}\_f\cdots，$ $ 作用于 on 计算基础状态 $ \ket{0}\_{f} \ket{0}\_s $ 来创建目标状态 $ \ket{\psi}\_s $，其中是 $ \ket{1}\_f $ 标记的基数 $ \lambda $。
+  此 oracle 定义者： $ ${0}\_O\ket {f}{0}\_\ket s ={1}\_\lambda\ket f\ket {\ psi\_} s + \sqrt{1-| \lambda | ^ 2}{0}\_\ket f\cdots，$ $ 作用于 on 计算基础状态 $ \ket{0}\_{f} \ket{0}\_s $，以在 $ \ket{\psi}\_{1}\_f $ 标志的基础上创建包含波幅 $ \lambda $ 的目标状态 $ \ket s $。
 
-  第一个参数是 $ \ket{0}的 qubit 寄存器的索引 \_f $。 第二个参数包含两个寄存器。
+  第一个参数是 $ \ket{0}\_f $ 的 qubit 寄存器的索引。 第二个参数包含两个寄存器。
 syntax: newtype StateOracle = ((Int, Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: 1faa47c21e43355ed036498adf4e823ff3f8a0e4
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: fe7ced83927d709bcc6fe82d8866b221446c7d73
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067214"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673485"

@@ -15,13 +15,13 @@ input:
 output:
   content: Int
   types:
-  - summary: '`values`的最小元素。'
+  - summary: 的`values`最小元素。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: c38922857fc7530f9ef7b413f75498713bb4d89a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: fd977b250a9856bf22c1bbfe7b0abc20680aa123
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73234863"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673674"

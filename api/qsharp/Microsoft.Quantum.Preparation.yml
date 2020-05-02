@@ -1,24 +1,24 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.preparation
 name: Microsoft.Quantum.Preparation
-summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含用于将 qubits 准备入任意初始状态的函数和操作。"
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于将 qubits 准备入任意初始状态的函数和操作。"
 functions:
 - uid: microsoft.quantum.preparation.blochspherecoordinates
   summary: >-
     计算单一 qubit 状态的 Bloch 球体坐标。
 
 
-    假设有两个复数 $a 0，a1 $，表示 qubit 状态，计算 Bloch 球上的坐标，使 $a 0 \ket{0} + a1 \ket{1} = r e ^ {it} （e ^ {-i \phi/2}\cos{（\ theta/2）} \ket{0}+ e ^ {i \phi/2}\sin{（\ theta/2）} \ket{1}） $。
+    假设有两个复数 $a 0，a1 $，表示 qubit 状态，计算 Bloch 球上的坐标，使其 $a 0{0} \ket + a1{1} \ket = r e ^ {it} （e ^ {-i \phi/2}\cos{（\ theta/2）}{0}\ket + e ^ {i \phi/2}\sin{（\ theta/2）}{1}\ket） $。
 - uid: microsoft.quantum.preparation.quantumrom
   summary: >-
     使用量程 ROM 技术来表示给定的密度矩阵。
 
 
-    给定一个 $N $ 系数 $ \ alpha_j $ 的列表，这将返回一个单一 $U $，该类型使用量程方法来准备近似值 x $ \rho = \ p_j {j = 0} ^ {N-1} \frac{的 purification 的近似值 $ \tilde\rho\ sum_ {j = 0} ^ {N-1} sum_ \ket{j}\bra{j} $alpha_j |}{\ sum_k | \ alpha_k |}\ket{j}\bra{j} $。 在此近似中，错误 $ \epsilon $ 是： $ | p_j-\frac{| alpha_j |}{\ sum_k | \ alpha_k |} |\le \epsilon/N $ 和 $\|\tilde\rho-\rho\| \le \epsilon $。 换句话说，$ $ \begin{align} U\ket{0}^ {\lceil\ log_2 N\rceil} \ 票证{0}^ {m} = \ sum_ {j = 0} ^ {N-1} \sqrt{p_j} \ket{j}\ket{\text{garbage} _j}。
+    给定一个 $N $ 系数 $ \ alpha_j $ 的列表，这将返回一个单一 $U $，该类型使用量程方法为密度矩阵 $ \rho = \ p_j {j = 0} ^ {N-1} \frac{的 purification {j = 0} ^ {sum_ \tilde\rho\} sum_ \ket{j}\bra{j} ${\ sum_k | \ alpha_k |}\ket{j}\bra{j} $。 在此近似中，错误 $ \epsilon $ 是： $ | p_j-\frac{| alpha_j |}{\ sum_k | \ alpha_k |} |\le \epsilon/N $ 和 $\|\tilde\rho-\rho\| \le \epsilon $。 换句话说，$ $ \begin{align} U\ket{0}^ {\Lceil\ log_2 N\rceil} \ 票证{0}^ {m} = \ sum_ {j = 0} ^ {N-1} \sqrt{p_j} \ket{j}\ket{\text{garbage} _j}。
 
     \end{align} $ $
 - uid: microsoft.quantum.preparation.quantumromqubitcount
-  summary: 返回必须分配给 `QuantumROM`返回的操作的 qubits 的总数。
+  summary: 返回必须分配给返回的操作的 qubits 的总数`QuantumROM`。
 - uid: microsoft.quantum.preparation.statepreparationcomplexcoefficients
   summary: >-
     返回准备特定量程状态的操作。
@@ -59,7 +59,7 @@ operations:
     成对 entangles 两个 qubit 寄存器。
 
 
-    也就是说，给定两个寄存器，在各自寄存器上的每对 \left 之间准备最大化放大 state $ \frac{1}{\sqrt{2}} \ket （\ket{00} + \right{11} qubits） $，假设每个注册都以 $ \ket{0\cdots 0} $ 状态启动。
+    也就是说，给定两个寄存器，在各自的寄存器上的每{1}对 \left{2}之间准备最大化放大{00} state ${11} \frac {\sqrt} \ket （\ket + \right qubits） $，假设每个注册都以 $ \ket{0\cdots 0} $ 状态启动。
 - uid: microsoft.quantum.preparation.prepareidentity
   summary: >-
     在给定寄存器的情况下，准备在最大化 mixed 状态下进行注册。
@@ -73,28 +73,28 @@ operations:
     如果给定标识运算符，则 qubit 在最大化混合状态下准备就绪。
 
 
-    如果 qubit 最初处于 $ \ket{0}$ 状态，则此操作将在给定 Pauli 运算符的 $ + $1 eigenstate 中准备 qubit，或者，对于 `PauliI`，则为最大化混合状态下的（请参阅 <xref:microsoft.quantum.preparation.preparesinglequbitidentity>）。
+    如果 qubit 最初处于 $ \ket{0}$ 状态，则此操作将在给定 Pauli 运算符的 $ + $1 eigenstate 中准备 qubit，或在最大化混合状态下`PauliI`为（请参见<xref:microsoft.quantum.preparation.preparesinglequbitidentity>）。
 
 
-    如果 qubit 的状态不是 $ \ket{0}$，则此操作将应用以下入口： $H $ 用于 `PauliX`，$HS $ for `PauliY`，$I $ 表示 `PauliZ`，<xref:microsoft.quantum.preparation.preparesinglequbitidentity> `PauliI`。
+    如果 qubit 的状态不是 $ \ket{0}$，此操作将应用以下入口： $H $ for `PauliX`、$HS $ for `PauliY`、$I $ for `PauliZ`和。 <xref:microsoft.quantum.preparation.preparesinglequbitidentity> `PauliI`
 - uid: microsoft.quantum.preparation.preparesinglequbitidentity
   summary: >-
     准备处于最大化混合状态的 qubit。
 
 
-    它通过应用 depolarizing 通道 $ $ \begin{align} \Omega （\rho） \mathrel{，在 $ \boldone/$2 状态中准备给定的 qubit： =} \frac{1}{4} \ sum_ {\mu \in \{0，1，2，3\}} \sigma\_{\mu} \rho \sigma\_{\mu} ^ {\dagger}，\end{align} $ $，其中 $ \sigma\_i $ 是 $i $ th Pauli 运算符，其中 $ \rho $ 是表示混合状态的密度运算符。
+    它通过应用 depolarizing 通道 $ $ \begin{align} \Omega （\rho） \mathrel{，在 $ \boldone/$2 状态中准备给定的 qubit： =} \frac{1} {4} \ sum_ {\mu \in \{0，1，2，3\}} \sigma\_{\mu} \rho \sigma\_{\mu} ^ {\dagger}，\end{align} $ $，其中 $\_\sigma i $ 是 $i $ th Pauli 运算符，其中 $ \rho $ 是表示混合状态的密度运算符。
 - uid: microsoft.quantum.preparation.prepareuniformsuperposition
   summary: >-
-    创建对 superposition 进行编码0到 `nIndices`的统一。
+    创建对 superposition 进行编码的状态为0的`nIndices`统一。
 
 
-    也就是说，在给定输入状态 $ \ket{0\cdots 0} $ 的情况下，此单一 $U $ 将在所有数字状态 $0 $ 到 $M-$1 上创建一个统一的 superposition。 换句话说，$ $ \begin{align} U\ket{0}= \frac{1}{\sqrt{M}}\ sum_ {j = 0} ^ {M-1} \ket{j}。
+    也就是说，在给定输入状态 $ \ket{0\cdots 0} $ 的情况下，此单一 $U $ 将在所有数字状态 $0 $ 到 $M-$1 上创建一个统一的 superposition。 换句话说，$ $ \begin{align} U\ket{0}= \Frac{1}{\sqrt{m}}\ sum_ {j = 0} ^ {M-1} \ket{j}。
 
     \end{align} $ $。
 metadata:
-  ms.openlocfilehash: dd28a9a066fabd5afab7114d78cc2aca79254e18
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 25ebe80b64af0cfd50e5a32c1ef91f8a299cef04
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77905669"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673091"

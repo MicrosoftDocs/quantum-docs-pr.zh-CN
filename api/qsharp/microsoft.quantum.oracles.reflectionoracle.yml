@@ -16,9 +16,9 @@ summary: >-
 remarks: 此 oracle $O = \boldone-（1-e ^ {i \phi}） \ket{\psi}\bra{\psi} $ 通过一个单纯状态 $ \ket{\psi} $ 的阶段 $ \phi $ 执行部分反射。
 syntax: newtype ReflectionOracle = ((Double, Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: 7ca6551a83ae279c5a937556d7c2c9dde98e4522
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b75683aa7178248510c5f336e3dcda28623606af
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73230851"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673517"

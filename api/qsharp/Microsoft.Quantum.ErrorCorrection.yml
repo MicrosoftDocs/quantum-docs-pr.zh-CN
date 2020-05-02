@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.errorcorrection
 name: Microsoft.Quantum.ErrorCorrection
-summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含用于量程错误更正的函数、操作和用户定义类型。"
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于量程错误更正的函数、操作和用户定义类型。"
 functions:
 - uid: microsoft.quantum.errorcorrection.bitflipcode
   summary: 返回一个 QECC 值，该值表示⟦3，1，1⟧位翻转代码编码器和解码器，并使用就地症状度量。
@@ -20,12 +20,12 @@ functions:
 - uid: microsoft.quantum.errorcorrection.steanecoderecoveryz
   summary: ⟦7，1，3⟧ Steane 量程代码的 "稳定" 组 Z 部分的解码器。
 - uid: microsoft.quantum.errorcorrection.tablelookuprecovery
-  summary: 对于给定的 qubits 寄存器上的 Pauli 操作表，此函数返回 `RecoveryFn` 类型的对象，该对象包含对给定的 Pauli 操作数组执行表查找解码所需的所有信息。
+  summary: 对于给定的 qubits 寄存器上的 Pauli 操作表，此函数返回一个类型`RecoveryFn`为的对象，该对象包含对给定的 Pauli 操作数组执行表查找解码所需的所有信息。
 operations:
 - uid: microsoft.quantum.errorcorrection.bitflipdecoder
-  summary: "\n> [!WARNING]\n> 已放弃\n\nBitFlipDecoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.decodefrombitflipcode\"。\n请使用 @\"microsoft.quantum.errorcorrection.encodeintobitflipcode\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nBitFlipDecoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.decodefrombitflipcode\"。\n请使用 @\"microsoft.quantum.errorcorrection.encodeintobitflipcode\"。"
 - uid: microsoft.quantum.errorcorrection.bitflipencoder
-  summary: "\n> [!WARNING]\n> 已放弃\n\nBitFlipEncoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.encodeintobitflipcode\"。\n请使用 @\"microsoft.quantum.errorcorrection.encodeintobitflipcode\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nBitFlipEncoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.encodeintobitflipcode\"。\n请使用 @\"microsoft.quantum.errorcorrection.encodeintobitflipcode\"。"
 - uid: microsoft.quantum.errorcorrection.decodefrombitflipcode
   summary: 从 [3，1，3]/⟦3，1，1⟧位翻转代码进行解码。
 - uid: microsoft.quantum.errorcorrection.decodefromfivequbitcode
@@ -39,9 +39,9 @@ operations:
 - uid: microsoft.quantum.errorcorrection.encodeintosteanecode
   summary: 一种编码操作，用于将未编码的量程寄存器映射到⟦7，1，3⟧ Steane 量程代码下的编码的量程寄存器。
 - uid: microsoft.quantum.errorcorrection.fivequbitcodedecoder
-  summary: "\n> [!WARNING]\n> 已放弃\n\nFiveQubitCodeDecoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.decodefromfivequbitcode\"。\n请使用 @\"microsoft.quantum.errorcorrection.decodefromfivequbitcode\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nFiveQubitCodeDecoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.decodefromfivequbitcode\"。\n请使用 @\"microsoft.quantum.errorcorrection.decodefromfivequbitcode\"。"
 - uid: microsoft.quantum.errorcorrection.fivequbitcodeencoder
-  summary: "\n> [!WARNING]\n> 已放弃\n\nFiveQubitCodeEncoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.encodeintofivequbitcode\"。\n请使用 @\"microsoft.quantum.errorcorrection.encodeintofivequbitcode\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nFiveQubitCodeEncoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.encodeintofivequbitcode\"。\n请使用 @\"microsoft.quantum.errorcorrection.encodeintofivequbitcode\"。"
 - uid: microsoft.quantum.errorcorrection.injectpi4yrotation
   summary: 围绕 Y 轴旋转单个 qubit 乘以π/4。
 - uid: microsoft.quantum.errorcorrection.knilldistill
@@ -49,16 +49,16 @@ operations:
 - uid: microsoft.quantum.errorcorrection.measurestabilizergenerators
   summary: 度量稳定组的给定生成器集。
 - uid: microsoft.quantum.errorcorrection.recover
-  summary: 按照 `QECC` 类型描述的量程代码执行一轮错误更正。
+  summary: 按`QECC`类型描述的量程代码执行一轮错误更正。
 - uid: microsoft.quantum.errorcorrection.recovercss
-  summary: 按照 `CSS` 类型描述的量程代码执行一轮错误更正。
+  summary: 按`CSS`类型描述的量程代码执行一轮错误更正。
 - uid: microsoft.quantum.errorcorrection.steanecodedecoder
-  summary: "\n> [!WARNING]\n> 已放弃\n\nSteaneCodeDecoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.decodefromsteanecode\"。\n请使用 @\"microsoft.quantum.errorcorrection.decodefromfivequbitcode\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nSteaneCodeDecoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.decodefromsteanecode\"。\n请使用 @\"microsoft.quantum.errorcorrection.decodefromfivequbitcode\"。"
 - uid: microsoft.quantum.errorcorrection.steanecodeencoder
-  summary: "\n> [!WARNING]\n> 已放弃\n\nSteaneCodeEncoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.encodeintosteanecode\"。\n请使用 @\"microsoft.quantum.errorcorrection.decodefromfivequbitcode\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nSteaneCodeEncoder 已被弃用。 请改用 @\"microsoft.quantum.errorcorrection.encodeintosteanecode\"。\n请使用 @\"microsoft.quantum.errorcorrection.decodefromfivequbitcode\"。"
 newtypes:
 - uid: microsoft.quantum.errorcorrection.css
-  summary: 表示 Calderbank –选定– Steane （CSS）代码，该代码由其编码器、解码器及其每个 `X` 和 `Z` 错误的症状度量过程分别定义。
+  summary: 表示 Calderbank –选定– Steane （CSS）代码，该代码由其编码器、解码器定义，并分别表示`X`和`Z`错误的症状度量过程。
 - uid: microsoft.quantum.errorcorrection.decodeop
   summary: >-
     表示一个操作，该操作将编码的寄存器解码为物理寄存器，并使用 qubits 来记录一个症状。
@@ -72,19 +72,19 @@ newtypes:
 
     第一个参数被视为将进行编码的物理寄存器，而第二个参数被视为将使用的暂存寄存器。
 - uid: microsoft.quantum.errorcorrection.logicalregister
-  summary: 用于注册逻辑 qubits 的物理 qubits `Qubit[]` 的类型。
+  summary: 用于注册逻辑 qubits 的物理`Qubit[]` qubits 的类型。
 - uid: microsoft.quantum.errorcorrection.qecc
   summary: 表示由其编码器、解码器和症状度量过程定义的纠错码。
 - uid: microsoft.quantum.errorcorrection.recoveryfn
-  summary: 函数的类型，它将错误症状映射到更正检测到的错误的 `Pauli[]` 操作序列。
+  summary: 用于将错误症状映射到一系列可更正检测到`Pauli[]`的错误的操作的类型。
 - uid: microsoft.quantum.errorcorrection.syndrome
-  summary: 度量值的类型 `Result[]` 指定量程代码的错误症状。
+  summary: 指定量程代码的`Result[]`错误症状的度量结果的类型。
 - uid: microsoft.quantum.errorcorrection.syndromemeasop
   summary: 表示一个操作，该操作用于测量纠错代码块的症状。
 metadata:
-  ms.openlocfilehash: 0a149810314453e816c7754dd535b2f3bb7d8e58
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: b4d7aaa55fee7e99b9c96ebf3cecb36706a66062
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870782"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673326"

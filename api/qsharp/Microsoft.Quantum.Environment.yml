@@ -7,13 +7,13 @@ operations:
   summary: >-
     返回当前可用于借用的 qubits 的数目。
 
-    这包括未使用的 qubits;也就是说，这包括 `GetQubitsAvailableToUse`返回的 qubits。
+    这包括未使用的 qubits;也就是说，这包括由`GetQubitsAvailableToUse`返回的 qubits。
 - uid: microsoft.quantum.environment.getqubitsavailabletouse
   summary: 返回当前可供使用的 qubits 的数目。
 metadata:
-  ms.openlocfilehash: 50e5cfb7c1b9a4075c25b2705d00b435a09e159e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: bd6d442aabb179f4c5fea0a0f48efaa472ec00cf
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73056834"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673352"

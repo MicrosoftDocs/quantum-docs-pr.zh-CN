@@ -20,9 +20,9 @@ output:
   - summary: 差异 $a-b $。
     uid: microsoft.quantum.math.complex
 metadata:
-  ms.openlocfilehash: 4a05dd0a4cb52b4d390126147d21110e1e73d17e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: f40fc51f45c93bf91ead82d138247b76bbe44ad2
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73233911"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673599"
