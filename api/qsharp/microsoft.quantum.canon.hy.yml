@@ -10,7 +10,7 @@ summary: >-
   单个 qubit 上的 Y Hadamard 转换 $H _Y = S H $ 为：
 
 
-  \begin{align} H_Y \mathrel{： =} \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\\\ &-i \end{bmatrix}。
+  \begin{align} H_Y \mathrel{： =} \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ \\ i &-i \end{bmatrix}。
 
   \end{align}
 syntax: 'operation HY (target : Qubit) : Unit'
@@ -30,9 +30,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: db8d7ba2e357869e02679389c113e9dace840370
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: ec108cdc5a9d23e6afeba547acb9a8171f65650d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871560"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679305"

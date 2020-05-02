@@ -7,10 +7,10 @@ summary: >-
   在传统整数和由 qubits 的寄存器表示的整数之间应用按位 "异或" 运算。
 
 
-  将 `X` 操作应用到基于整数中的1位的小 endian 寄存器中的 qubits。
+  将`X`操作应用到基于整数中的1位的小 endian 寄存器中的 qubits。
 
 
-  让我们表示 `value`，并使 y 成为在 `target`中编码的无符号整数，然后 `InPlaceXorLE` 执行以下映射指定的操作： $ \ket{y}\rightarrow \ket{y\oplus a} $，其中 $ \oplus $ 为按位 "异或" 运算符。
+  让我们表示`value` ，并使 y 成为编码的`target`无符号整数，然后`InPlaceXorLE`执行以下映射指定的操作： $ \ket{y}\rightarrow \ket{y\oplus a} $，其中 $ \oplus $ 为按位 "异或" 运算符。
 syntax: 'operation ApplyXorInPlace (value : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
   content: '(value : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian)'
@@ -20,7 +20,7 @@ input:
     isPrimitive: true
     uid: Int
   - name: target
-    summary: 用于存储小字节序编码 `value` 的量程寄存器。
+    summary: 用于存储`value`小字节序编码的量程寄存器。
     uid: microsoft.quantum.arithmetic.littleendian
 output:
   content: Unit
@@ -31,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 9d3d837d92537cc5d51a80e8e1c83c230b7acc28
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 27568274d343242f3b3bd0eef8de6e48d546de1f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871169"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679916"

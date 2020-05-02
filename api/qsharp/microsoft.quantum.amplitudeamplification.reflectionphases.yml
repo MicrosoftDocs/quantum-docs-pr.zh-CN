@@ -10,9 +10,9 @@ remarks: >-
   这两个数组的长度必须相等。 请注意，在许多情况下，有关目标状态的开始状态和最后一阶段的第一阶段会引入全局阶段转换，并可能设置为 $0 $。
 syntax: newtype ReflectionPhases = (Double[], Double[]);
 metadata:
-  ms.openlocfilehash: 50929412161e7a8686c4d58f4840cfe506fcb3f3
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 84d2c006997f8a2a3c9b121581b5dd58804a806d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870863"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680112"

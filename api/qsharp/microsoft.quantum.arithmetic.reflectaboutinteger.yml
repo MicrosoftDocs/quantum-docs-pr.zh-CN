@@ -7,7 +7,7 @@ summary: >-
   反映给定的传统整数的量程寄存器。
 
 
-  给定一个量程寄存器，最初处于状态 $ \ sum_i \ alpha_i \ket{i} $，其中每个 $ \ket{i} $ 是表示整数 $i $ 的基本状态，它反映了给定整数 $ \ket{j} $、$ $ \ sum_i （-1） ^ {\ delta_ {ij}} \alpha 的基本状态的寄存器状态。_i \ket{i} $ $
+  给定一个量程寄存器，最初处于状态 $ \ sum_i \ alpha_i \ket{i} $，其中每个 $ \ket{i} $ 是表示整数 $i $ 的基本状态，它反映了给定整数 $ \ket{j} $、$ $ \ sum_i （-1） ^ {\ delta_ {ij}} \ alpha_i \ket{i} $ $ 的基本状态的寄存器状态
 remarks: 此操作就地实现，无需显式分配额外的辅助 qubits。
 syntax: 'operation ReflectAboutInteger (index : Int, reg : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
@@ -28,9 +28,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 4a76b08b8d8b7b70a63a615f8e69e26cd4df7129
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 656a2d30b7895e8482e113ac792fac0012b07445
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77908253"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679405"

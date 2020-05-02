@@ -6,7 +6,7 @@ namespace: Microsoft.Quantum.Arithmetic
 summary: >-
   实现控制在两个 qubit 寄存器的相应位上控制的 CCNOT 入口的层叠，这是在其中一个寄存器的下一个 qubit 上进行的。
 
-  从两个寄存器中的位置0开始，将 CCNOT 应用于目标寄存器的位置1处的 qubit，然后由 qubits 在目标寄存器中的位置2进行控制，在 qubits 位置处的位置2处，以目标 qubit 上的操作结束，并 `Length(nQubits)-1`。
+  从两个寄存器中的位置0开始，将 CCNOT 应用于目标寄存器的位置1处的 qubit，然后由 qubits 在目标寄存器中的位置2进行控制，在目标 qubits 的位置2处进行控制，以目标 qubit 上的操作结束`Length(nQubits)-1`。
 remarks: 目标 qubit 注册必须有一个以上的 qubit。
 syntax: 'operation CascadeCCNOT (register : Qubit[], targets : Qubit[]) : Unit'
 input:
@@ -31,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 8f4672018f8bc521536c37fe6900979b196bfce6
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: e6d1da74e43138742c486f3bcf515dd29088e04c
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870748"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679826"

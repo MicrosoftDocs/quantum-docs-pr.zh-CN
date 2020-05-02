@@ -9,7 +9,7 @@ input:
   content: '(coefficients : Double[], fpx : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint)'
   types:
   - name: coefficients
-    summary: 作为 double 数组的偶数的系数（即，数组 $ [a_0，a_1，...，a_k] $），用于偶多项式 $P （x） = a_0 + a_1 x ^ 2 + \cdots + a_k x ^ {2k} $。
+    summary: 作为 double 数组的偶数的系数，即数组 $ [a_0，a_1，...，a_k] $ 用于偶多项式 $P （x） = a_0 + a_1 x ^ 2 + \cdots + a_k x ^ {2k} $。
     isArray: true
     isPrimitive: true
     uid: Double
@@ -17,7 +17,7 @@ input:
     summary: 为其计算多项式的定点数。
     uid: microsoft.quantum.arithmetic.fixedpoint
   - name: result
-    summary: 输出固定点数，其中包含 $P （x） $。 必须处于 $ \ket{0}$ 初始状态。
+    summary: 输出固定点数，其中包含 $P （x） $。 最初必须处于 $ \ket{0}$ 状态。
     uid: microsoft.quantum.arithmetic.fixedpoint
 output:
   content: Unit
@@ -28,9 +28,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 4b0979dd2a0758bbefbb4b0456051a38e040ab5a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: dca40d385ca3f63d40e68db4e5cc8b4031990b9a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221025"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679669"

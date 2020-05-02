@@ -14,7 +14,7 @@ references: >-
   - Steven Cuccaro、Thomas Draper、Samuel Kutin、David Petrie Moulton： "A 新的量程波纹-携带加法线路"，2004。
     https://arxiv.org/abs/quant-ph/0410184v1
 
-  - Thomas Haener，圣马丁 Roetteler，Krysta Svore： "使用 2n + 2 qubits 和基于 Toffoli 的模块乘法进行因式分解"，2016 https://arxiv.org/abs/1611.07995
+  - Thomas Haener，圣马丁 Roetteler，Krysta Svore： "使用 2n + 2 qubits 和基于 Toffoli 的模块乘法进行因式分解"，2016https://arxiv.org/abs/1611.07995
 input:
   content: '(xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, result : Qubit)'
   types:
@@ -37,9 +37,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 062d892ad66b8ab41e8ad0bbd2fce6e1eaff0baa
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 64c96858ea4bf1449a5ddd18f0f7cca45d09fb17
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870846"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679602"

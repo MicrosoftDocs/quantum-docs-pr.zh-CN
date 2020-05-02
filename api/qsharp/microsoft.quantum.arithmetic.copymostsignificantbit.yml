@@ -3,7 +3,7 @@ uid: microsoft.quantum.arithmetic.copymostsignificantbit
 name: CopyMostSignificantBit
 type: operation
 namespace: Microsoft.Quantum.Arithmetic
-summary: 将表示无符号整数的 qubit `from` 寄存器的最高有效位复制到 qubit `target`中。
+summary: 将表示无符号整数的 qubit 寄存器`from`的最高有效位复制到 qubit `target`中。
 syntax: 'operation CopyMostSignificantBit (from : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit'
 input:
   content: '(from : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit)'
@@ -28,9 +28,9 @@ functors:
 seeAlso:
 - littleendian
 metadata:
-  ms.openlocfilehash: d397bd580600545c2a6f1c6ce0112b82087d99b4
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 55fba67f6f86f8b0b361c3b189d2b9d408010886
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219121"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679706"

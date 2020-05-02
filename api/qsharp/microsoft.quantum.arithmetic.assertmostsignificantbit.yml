@@ -27,9 +27,9 @@ functors:
 seeAlso:
 - microsoft.quantum.intrinsic.assert
 metadata:
-  ms.openlocfilehash: 594ecbb7ba3ccc657c4e55f964714b86e575a6ce
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 01a69b7f9af1fdc32c565b72aaec4c00bc290fc0
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221603"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679898"

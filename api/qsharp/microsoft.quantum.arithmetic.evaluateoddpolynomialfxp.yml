@@ -9,7 +9,7 @@ input:
   content: '(coefficients : Double[], fpx : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint)'
   types:
   - name: coefficients
-    summary: 奇多项式的系数为 double 数组，即，奇多项式 $P （x） = a_0 x + a_1 x ^ 3 + \cdots + a_k x ^ {2k + 1} $ 的数组 $ [a_0，a_1，...，a_k] $。
+    summary: 奇多项式系数为 double 数组的系数，即数组 $ [a_0，a_1，...，a_k] $ 表示奇多项式 $P （x） = a_0 x + a_1 x ^ 3 + \cdots + a_k x ^ {2k + 1} $。
     isArray: true
     isPrimitive: true
     uid: Double
@@ -17,7 +17,7 @@ input:
     summary: 为其计算多项式的定点数。
     uid: microsoft.quantum.arithmetic.fixedpoint
   - name: result
-    summary: 用来存放 P （x）的固定点数。 必须处于 $ \ket{0}$ 初始状态。
+    summary: 用来存放 P （x）的固定点数。 最初必须处于 $ \ket{0}$ 状态。
     uid: microsoft.quantum.arithmetic.fixedpoint
 output:
   content: Unit
@@ -28,9 +28,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 3ae6ab137b2c257a98b0ec777c19212d8732f619
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ae149fe3ef12b5384bd08b62daabd6368e130399
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219104"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679657"

@@ -8,15 +8,15 @@ summary: >-
 
 
   例如，如果 $ \ket{x} $ 为计算基础中的整数 $x $ 的小 endian 编码，则 $ \operatorname{QFTLE} \ket{x} $ 是 QFT 中 $x $ 的编码。
-remarks: 我们将在文档中将 `PhaseLittleEndian` 缩写为 `PhaseLE`。
+remarks: 与文档`PhaseLittleEndian`中`PhaseLE`的缩写相同。
 syntax: newtype PhaseLittleEndian = Qubit[];
 seeAlso:
 - qft
 - qftle
 metadata:
-  ms.openlocfilehash: 8efb8b58ff7ee5c0530abfb81792366f6990997e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: a4c547a88ef49de180f68534f4f61fb1062a4764
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218713"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679429"

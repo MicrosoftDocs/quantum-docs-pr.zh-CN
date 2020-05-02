@@ -11,14 +11,14 @@ input:
 output:
   content: Microsoft.Quantum.Oracles.ReflectionOracle
   types:
-  - summary: 反映状态 $ \ket{0\cdots 0} $ 的 `ReflectionOracle`。
+  - summary: 一个`ReflectionOracle` ，反映状态 $ \ket{0\cdots 0} $。
     uid: microsoft.quantum.oracles.reflectionoracle
 seeAlso:
 - microsoft.quantum.canon.reflectionoracle
 metadata:
-  ms.openlocfilehash: 6598a01c19f25ee444f785a6688738f382fc94e6
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ab686a67cd7cd46b7651b4ca79ec79fff664116d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73215483"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680099"
