@@ -3,25 +3,25 @@ uid: microsoft.quantum.convert.resultasbool
 name: ResultAsBool
 type: function
 namespace: Microsoft.Quantum.Convert
-summary: 将 `Result` 类型转换为 `Bool` 类型，其中 `One` 映射到 `true`，`Zero` 映射到 `false`。
+summary: '`Result`将`Bool`类型转换为类型，其中`One`映射到`true`并`Zero`映射到。 `false`'
 syntax: 'function ResultAsBool (input : Result) : Bool'
 input:
   content: '(input : Result)'
   types:
   - name: input
-    summary: 要转换的 `Result`。
+    summary: '`Result`要转换的。'
     isPrimitive: true
     uid: Result
 output:
   content: Bool
   types:
-  - summary: 表示 `input`的 `Bool`。
+  - summary: 表示 `input` 的 `Bool`。
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 2e6db6cf91e3ded2ec3a1ad73d0d6f7203058d03
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 460a7a8e2a6fc4433575f231978b5b3df51f7aaf
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067588"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82658964"

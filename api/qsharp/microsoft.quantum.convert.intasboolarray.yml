@@ -5,9 +5,9 @@ type: function
 namespace: Microsoft.Quantum.Convert
 summary: 使用返回的数组的小字节序表示形式，生成正整数的二进制表示形式。
 remarks: >-
-  输入 `bits` 必须介于0到63之间。
+  输入`bits`必须介于0到63之间。
 
-  输入 `number` 必须介于0到 $ 2 ^ {\texttt{bits}}-$1 之间。
+  输入`number`必须介于0到 $ 2 ^ {\texttt{bits}}-$1 之间。
 syntax: 'function IntAsBoolArray (number : Int, bits : Int) : Bool[]'
 input:
   content: '(number : Int, bits : Int)'
@@ -17,20 +17,20 @@ input:
     isPrimitive: true
     uid: Int
   - name: bits
-    summary: '`number`的二进制表示形式中的位数。'
+    summary: 的二进制表示形式的位数`number`。
     isPrimitive: true
     uid: Int
 output:
   content: Bool[]
   types:
-  - summary: 表示 `number`的布尔值数组。
+  - summary: 表示`number`的布尔值数组。
     isArray: true
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: e75eede507f04178755e886258e7eb73a6cc3dce
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: f14af582713f5d08e29b54a1e1758b4efbeea094
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74858983"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82659190"
