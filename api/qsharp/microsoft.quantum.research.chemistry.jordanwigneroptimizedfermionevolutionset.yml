@@ -15,12 +15,12 @@ input:
 output:
   content: Microsoft.Quantum.Simulation.EvolutionSet
   types:
-  - summary: '`EvolutionSet`，它将 JWOptimized 基础的 `GeneratorIndex` 映射到 "EvolutionUnitary"。'
+  - summary: 一个`EvolutionSet` ，它将`GeneratorIndex` JWOptimized 基础的映射到 "EvolutionUnitary"。
     uid: microsoft.quantum.simulation.evolutionset
 metadata:
-  ms.openlocfilehash: 7d39228c91995e38423e2b3b5894952ab3bfa533
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: fe39873929fa625aa97bb882f78933ed4309450f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066194"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673437"

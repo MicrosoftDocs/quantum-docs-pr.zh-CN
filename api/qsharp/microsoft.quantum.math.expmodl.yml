@@ -13,7 +13,7 @@ summary: >-
 
 
   假定 $N $，$x $ 为正，且 power 为非负数。
-remarks: 与 `power`中的位数（而非 `power` 本身）的时间成正比。
+remarks: 与中`power`的位数成正比，而不是`power`本身。
 syntax: 'function ExpModL (expBase : BigInt, power : BigInt, modulus : BigInt) : BigInt'
 input:
   content: '(expBase : BigInt, power : BigInt, modulus : BigInt)'
@@ -33,9 +33,9 @@ output:
   - isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: c314b3b34a1abf253dd9af205f766fad14abea49
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: f694fa792e8aee5846ce6ec2393287eb64aca44d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73233044"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673868"

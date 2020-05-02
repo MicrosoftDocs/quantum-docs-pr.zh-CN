@@ -20,13 +20,13 @@ input:
 output:
   content: Double
   types:
-  - summary: '`array`的平方2标准。'
+  - summary: 的2平方标准`array`。
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: b0b8a4c81a07e24ca5559adfff0d0f5cf8febc6c
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: e370d6d5f21d459bbe37e969776e3722bf14bd9e
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77908984"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673571"

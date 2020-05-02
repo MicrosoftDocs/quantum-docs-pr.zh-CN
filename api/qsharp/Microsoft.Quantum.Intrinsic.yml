@@ -3,7 +3,7 @@ uid: microsoft.quantum.intrinsic
 name: Microsoft.Quantum.Intrinsic
 functions:
 - uid: microsoft.quantum.intrinsic.message
-  summary: 记录消息。
+  summary: 在日志中记录消息。
 operations:
 - uid: microsoft.quantum.intrinsic.assert
   summary: 度量给定 Pauli 基础中给定 qubits 的断言将始终具有给定的结果。
@@ -16,7 +16,7 @@ operations:
     将受控-NOT （CNOT-CONTAINS）入口应用于一对 qubits。
 
 
-    \begin{align} \operatorname{CNOT} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 &, \end{align}
+    \begin{align} \operatorname{CNOT} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & \\ \\ 0 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \end{bmatrix}，\end{align}
 
 
     行和列的排序顺序，如量程概念指南中所示。
@@ -25,19 +25,19 @@ operations:
     应用多 qubit Pauli 运算符的幂。
 
 
-    \begin{align} e ^ {i \theta [P_0 \otimes P_1 \cdots P_ {N-1}]}，\end{align}，其中 $P _i $ 是 `paulis`的 $i $ th 元素，其中 $N = $`Length(paulis)`。
+    \begin{align} e ^ {i \theta [P_0 \otimes P_1 \cdots P_ {N-1}]}，\end{align}，其中 $P _i $ 是的 $i $ th 元素`paulis`，其中 $N = $`Length(paulis)`。
 - uid: microsoft.quantum.intrinsic.expfrac
   summary: >-
     使用由 dyadic 分式给定的自变量对 qubit Pauli 运算符应用指数。
 
 
-    \begin{align} e ^ {i \pi k [P_0 \otimes P_1 \cdots P_ {N-1}]/2 ^ N}，\end{align} 其中 $P _i $ 是 `paulis`的 $i $ th 元素，其中 $N = $`Length(paulis)`。
+    \begin{align} e ^ {i \pi k [P_0 \otimes P_1 \cdots P_ {N-1}]/2 ^ N}，\end{align} 其中 $P _i $ 是的 $i $ th 元素`paulis`，其中 $N = $。`Length(paulis)`
 - uid: microsoft.quantum.intrinsic.h
   summary: >-
     将 Hadamard 转换应用于单个 qubit。
 
 
-    \begin{align} H \mathrel{： =} \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\\\ 1 &-1 \end{bmatrix}。
+    \begin{align} H \mathrel{： =} \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ \\ 1 &-1 \end{bmatrix}。
 
     \end{align}
 - uid: microsoft.quantum.intrinsic.i
@@ -55,15 +55,15 @@ operations:
     对指定的 Pauli 中的一个或多个 qubits 执行联合度量。
 
 
-    以下分发提供了输出结果： \begin{align} \Pr （\texttt{Zero} | \ket{\psi}） = \frac12 \braket{\psi \mid | \left （\boldone + P_0 \otimes P_1 \otimes \cdots \otimes P_ {N-1} \right） \mid | \psi}，\end{align}，其中 $P _i $ 是 @no__ 的 $i $ th 元素t_0_，其中 $N = \texttt{Length} （\texttt{bases}） $。
+    此分发提供的输出结果为： \begin{align} \Pr （\texttt{Zero} | \ket{\psi}） = \frac12 \braket{\psi \mid | \left （\boldone + P_0 \otimes P_1 \otimes \cdots \otimes P_ {N-1} \right） \mid | \psi}，\end{align}，其中 $P _i $ 是的 $i $ th 元素`bases`，其中 $N = \texttt{Length} （\texttt{bases}） $。
 
-    也就是说，度量值返回一个 `Result` $d $，以使观察到的度量值的 eigenvalue 为 $ （-1） ^ d $。
+    也就是说，度量返回`Result` $d $，以使观察到的度量值的 eigenvalue 为 $ （-1） ^ d $。
 - uid: microsoft.quantum.intrinsic.r
   summary: >-
     应用围绕给定 Pauli 轴的旋转。
 
 
-    \begin{align} R_ {\mu} （\theta） \mathrel{： =} e ^ {-i \theta \sigma_{\mu}/2}，\end{align}，其中，$ \mu \in \{I，X，Y，Z\}$。
+    \begin{align} R_ {\mu} （\theta） \mathrel{： =} e ^ {-i \theta \ sigma_ {\mu}/2}，\end{align}，其中，$ \{\Mu \in i，X，Y\}，Z $。
 - uid: microsoft.quantum.intrinsic.r1
   summary: >-
     按给定角度对 $ \ket{1}$ 状态应用旋转。
@@ -74,7 +74,7 @@ operations:
     \end{align}
 - uid: microsoft.quantum.intrinsic.r1frac
   summary: >-
-    通过指定为 dyadic 分数的角度，对 $ \ket{1}$ 状态进行旋转。
+    通过指定为 dyadic 分数的角度{1}，将关于 $ \ket $ 状态的旋转。
 
 
     \begin{align} R_1 （n，k） \mathrel{： =} \operatorname{diag} （1，e ^ {i \pi k/2 ^ n}）。
@@ -84,10 +84,10 @@ operations:
 
     > [!WARNING]
 
-    > 此操作使用与 @"microsoft.quantum.intrinsic.r"**相反**的符号约定，不包括 @"microsoft.quantum.intrinsic.r1"包含 $ 1/2 $ 的因子。
+    > 此操作使用**相反**的符号约定@"microsoft.quantum.intrinsic.r"，不包括中的 $ 1/2 $ 的因子。 @"microsoft.quantum.intrinsic.r1"
 - uid: microsoft.quantum.intrinsic.random
   summary: >-
-    随机操作采用双精度数组作为输入，并将随机选择的索引作为 `Int`返回到数组中。
+    随机操作采用双精度数组作为输入，并将随机选择的索引作为返回到数组中`Int`。
 
     选择特定索引的概率与该索引处数组元素的值成正比。
 
@@ -101,34 +101,22 @@ operations:
     通过指定为 dyadic 分数的角度，对给定 Pauli 轴进行旋转。
 
 
-    \begin{align} R_ {\mu} （n，k） \mathrel{： =} e ^ {i \pi n \sigma_{\mu}/2 ^ k}，\end{align} 其中，$ \mu \in \{I，X，Y，Z\}$。
+    \begin{align} R_ {\mu} （n，k） \mathrel{： =} e ^ {i \pi n \ sigma_ {\mu}/2 ^ k}，\end{align} 其中，$ \mu \{\in i，X，Y，\}Z $。
 
 
     > [!WARNING]
 
-    > 此操作使用与 @"microsoft.quantum.intrinsic.r"**相反**的符号约定。
+    > 此操作使用中**opposite** @"microsoft.quantum.intrinsic.r"的相反符号约定。
 - uid: microsoft.quantum.intrinsic.rx
-  summary: >-
-    按给定角度向 $x $ 轴旋转。
-
-
-    \begin{align} R_x （\theta） \mathrel{： =} e ^ {-i \theta \sigma_x/2} = \begin{bmatrix} \cos \frac{\theta}{2} &-i\sin \frac{\theta}{2}\\\\-i\sin \frac{\theta}{2} & \cos \frac{\theta}{2} \end{bmatrix}。
-
-    \end{align}
+  summary: "按给定角度向 $x $ 轴旋转。\n\n\\begin{align} R_x （\\theta） \\mathrel{： =} e ^ {-i \\theta \\ sigma_x/2} = \\begin{bmatrix} \\cos \\frac{\\theta}{2} &-i\\sin \\frac{\\theta}{2} \\\\ \\\\ -i\\sin \\frac{\\theta}{2} & \\cos \\frac{\\theta}{2} \\end{bmatrix}。  \n\\end{align}"
 - uid: microsoft.quantum.intrinsic.ry
-  summary: >-
-    按给定角度向 $y $ 轴旋转。
-
-
-    \begin{align} R_y （\theta） \mathrel{： =} e ^ {-i \theta \sigma_y/2} = \begin{bmatrix} \cos \frac{\theta}{2} &-\sin \frac{\theta}{2}\\\\{2} \sin &{2} \frac{\theta} \cos \frac{\theta}
-
-    \end{align}
+  summary: "按给定角度向 $y $ 轴旋转。\n\n\\begin{align} R_y （\\theta） \\mathrel{： =} e ^ {-i \\theta \\ sigma_y/2} = \\begin{bmatrix} \\cos \\frac{\\theta}{2} &-\\sin \\frac{\\theta}{2} \\\\ \\\\ \\sin \\frac{\\theta}{2} & \\cos \\frac{\\theta}{2} \\end{bmatrix}。  \n\\end{align}"
 - uid: microsoft.quantum.intrinsic.rz
   summary: >-
     按给定角度向 $z $ 轴旋转。
 
 
-    \begin{align} R_z （\theta） \mathrel{： =} e ^ {-i \theta \sigma_z/2} = \begin{bmatrix} e ^ {-i \theta/2} & 0 \\\\ 0 & e ^ {i \theta/2} \end{bmatrix}。
+    \begin{align} R_z （\theta） \mathrel{： =} e ^ {-i \theta \ sigma_z/2} = \begin{bmatrix} e ^ {-i \theta/2} & 0 \\ \\ 0 & e ^ {i \theta/2} \end{bmatrix}。
 
     \end{align}
 - uid: microsoft.quantum.intrinsic.s
@@ -136,7 +124,7 @@ operations:
     将π/4 阶段入口应用于单个 qubit。
 
 
-    \begin{align} S \mathrel{： =} \begin{bmatrix} 1 & 0 \\\\ 0 & i \end{bmatrix}。
+    \begin{align} S \mathrel{： =} \begin{bmatrix} 1 & 0 \\ \\ 0 & i \end{bmatrix}。
 
     \end{align}
 - uid: microsoft.quantum.intrinsic.swap
@@ -144,7 +132,7 @@ operations:
     将交换入口应用于一对 qubits。
 
 
-    \begin{align} \operatorname{SWAP} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 1 & 0 & \\\\ & 0 & 0 & 1 \end{bmatrix}, \end{align}
+    \begin{align} \operatorname{SWAP} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \end{bmatrix}，\end{align}
 
 
     行和列的排序顺序，如量程概念指南中所示。
@@ -153,7 +141,7 @@ operations:
     将π/8 门应用于单个 qubit。
 
 
-    \begin{align} T \mathrel{： =} \begin{bmatrix} 1 & 0 \\\\ 0 & e ^ {i \pi/4} \end{bmatrix}。
+    \begin{align} T \mathrel{： =} \begin{bmatrix} 1 & 0 \\ \\ 0 & e ^ {i \pi/4} \end{bmatrix}。
 
     \end{align}
 - uid: microsoft.quantum.intrinsic.x
@@ -161,7 +149,7 @@ operations:
     将 Pauli $X $ 入口。
 
 
-    \begin{align} \sigma_x \mathrel{： =} \begin{bmatrix} 0 & 1 \\\\ 1 & 0 \end{bmatrix}。
+    \begin{align} \ sigma_x \mathrel{： =} \begin{bmatrix} 0 & 1 \\ \\ 1 & 0 \end{bmatrix}。
 
     \end{align}
 - uid: microsoft.quantum.intrinsic.y
@@ -169,7 +157,7 @@ operations:
     将 Pauli $Y $ 入口。
 
 
-    \begin{align} \sigma_y \mathrel{： =} \begin{bmatrix} 0 &-i \\\\ & 0 \end{bmatrix}。
+    \begin{align} \ sigma_y \mathrel{： =} \begin{bmatrix} 0 &-i \\ \\ & 0 \end{bmatrix}。
 
     \end{align}
 - uid: microsoft.quantum.intrinsic.z
@@ -177,13 +165,13 @@ operations:
     将 Pauli $Z $ 入口。
 
 
-    \begin{align} \sigma_z \mathrel{： =} \begin{bmatrix} 1 & 0 \\\\ 0 &-1 \end{bmatrix}。
+    \begin{align} \ sigma_z \mathrel{： =} \begin{bmatrix} 1 & 0 \\ \\ 0 &-1 \end{bmatrix}。
 
     \end{align}
 metadata:
-  ms.openlocfilehash: a2f80ca98d86e5a1457efb6dad34c60d6ef75a2e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 303e6d0376841672b9c8dbd3d8bd47ff7b24916a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73056352"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673227"

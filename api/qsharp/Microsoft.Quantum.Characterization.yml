@@ -1,16 +1,16 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.characterization
 name: Microsoft.Quantum.Characterization
-summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含用于了解量程状态和进程的属性的函数和操作，包括 tomography 和阶段估算。"
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于了解量程状态和进程的属性的函数和操作，包括 tomography 和阶段估算。"
 operations:
 - uid: microsoft.quantum.characterization.continuousphaseestimationiteration
   summary: 使用单一 oracle 的任意实际幂，执行迭代（经典控制）阶段估算算法的单个迭代。
 - uid: microsoft.quantum.characterization.discretephaseestimationiteration
   summary: 使用单一 oracle 的整数幂，执行迭代（经典控制）阶段估算算法的单个迭代。
 - uid: microsoft.quantum.characterization.estimatefrequency
-  summary: 考虑到准备和度量，通过执行给定数量的试验来估算度量成功（返回 `Zero`）的频率。
+  summary: 考虑到准备和度量，通过执行给定数量的试验来估算度量成功`Zero`（返回）的频率。
 - uid: microsoft.quantum.characterization.estimatefrequencya
-  summary: 对于 adjointable 和度量值的准备，通过执行给定数量的试验来估算度量成功（返回 `Zero`）的频率。
+  summary: 对于 adjointable 和度量值的准备，通过执行给定数量的试验来估算度量成功（ `Zero`返回）的频率。
 - uid: microsoft.quantum.characterization.estimateimagoverlapbetweenstates
   summary: 假设每个操作都准备好状态的副本，并估计每个操作准备的状态之间重叠部分的虚部。
 - uid: microsoft.quantum.characterization.estimateoverlapbetweenstates
@@ -18,19 +18,19 @@ operations:
 - uid: microsoft.quantum.characterization.estimaterealoverlapbetweenstates
   summary: 假设每个操作都准备好状态的副本，并对每个操作准备的状态之间的重叠部分进行估计。
 - uid: microsoft.quantum.characterization.measureallz
-  summary: "\n> [!WARNING]\n> 已放弃\n\nMeasureAllZ 已被弃用。 请改用 @\"microsoft.quantum.measurement.measureallz\"。\n请使用 @\"microsoft.quantum.measurement.measureAllZ\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nMeasureAllZ 已被弃用。 请改用 @\"microsoft.quantum.measurement.measureallz\"。\n请使用 @\"microsoft.quantum.measurement.measureAllZ\"。"
 - uid: microsoft.quantum.characterization.measureidentity
   summary: 测量 qubits 的寄存器上的标识运算符。
 - uid: microsoft.quantum.characterization.quantumphaseestimation
-  summary: 为给定的 oracle `U` 和 `targetState`执行量程阶段估算算法，并将阶段读入大字节序量程寄存器。
+  summary: 执行给定 oracle `U`和的量程阶段估算算法，并`targetState`将该阶段读入大字节序量程寄存器。
 - uid: microsoft.quantum.characterization.robustphaseestimation
-  summary: 为给定的 oracle `U` 和 eigenstate 执行强健的非迭代量程阶段估算算法，并提供海森堡限制下的变化缩放阶段的单一真实估算。
+  summary: 为给定的 oracle `U`和 eigenstate 执行强健的非迭代量程阶段估算算法，并提供针对海森堡限制处的变化缩放阶段的单个实际值估算。
 - uid: microsoft.quantum.characterization.singlequbitprocesstomographymeasurement
   summary: 根据感兴趣的特定通道，在 Pauli 基础上执行 qubit 进程 tomography 度量。
 metadata:
-  ms.openlocfilehash: ff2bee3d5885c4b83a7ba17eeaf578c226dbbf20
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 2ae4ee28cf6e87a3fde1f8107194760c388b462c
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870675"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673362"

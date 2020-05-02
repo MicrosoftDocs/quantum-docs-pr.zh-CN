@@ -3,63 +3,63 @@ uid: microsoft.quantum.math
 name: Microsoft.Quantum.Math
 functions:
 - uid: microsoft.quantum.math.abscomplex
-  summary: 返回 `Complex`类型的复数的绝对值。
+  summary: 返回类型`Complex`的复数的绝对值。
 - uid: microsoft.quantum.math.abscomplexpolar
-  summary: 返回 `ComplexPolar`类型的复数的绝对值。
+  summary: 返回类型`ComplexPolar`的复数的绝对值。
 - uid: microsoft.quantum.math.absd
-  summary: 返回双精度浮点数的绝对值。
+  summary: 返回双精度浮点数字的绝对值。
 - uid: microsoft.quantum.math.absi
   summary: 返回整数的绝对值。
 - uid: microsoft.quantum.math.absl
   summary: 返回大整数的绝对值。
 - uid: microsoft.quantum.math.abssquaredcomplex
-  summary: 返回 `Complex`类型的复数的平方绝对值。
+  summary: 返回类型`Complex`的复数的平方绝对值。
 - uid: microsoft.quantum.math.abssquaredcomplexpolar
-  summary: 返回 `ComplexPolar`类型的复数的平方绝对值。
+  summary: 返回类型`ComplexPolar`的复数的平方绝对值。
 - uid: microsoft.quantum.math.arccos
-  summary: 返回其余弦为指定数字的角度。
+  summary: 返回余弦值为指定数字的角度。
 - uid: microsoft.quantum.math.arccosh
   summary: 计算数字的反双曲余弦值。
 - uid: microsoft.quantum.math.arcsin
-  summary: 返回其正弦为指定数字的角度。
+  summary: 返回正弦值为指定数字的角度。
 - uid: microsoft.quantum.math.arcsinh
   summary: 计算数字的反双曲正弦值。
 - uid: microsoft.quantum.math.arctan
-  summary: 返回其正切为指定数字的角度。
+  summary: 返回正切值为指定数字的角度。
 - uid: microsoft.quantum.math.arctan2
-  summary: 返回其正切为两个指定数字的商的角度。
+  summary: 返回正切值为两个指定数字的商的角度。
 - uid: microsoft.quantum.math.arctanh
   summary: 计算数字的反双曲正切值。
 - uid: microsoft.quantum.math.argcomplex
-  summary: 返回 `Complex`类型的复数的相位。
+  summary: 返回类型`Complex`为的复数的相位。
 - uid: microsoft.quantum.math.argcomplexpolar
-  summary: 返回 `ComplexPolar`类型的复数的相位。
+  summary: 返回类型`ComplexPolar`为的复数的相位。
 - uid: microsoft.quantum.math.bitsizei
   summary: >-
-    对于非负整数 `a`，返回表示 `a`所需的位数。
+    对于非负整数`a`，返回表示`a`所需的位数。
 
 
     即，返回 < 2 ^ n $ $a 的最小 $n $。
 - uid: microsoft.quantum.math.bitsizel
   summary: >-
-    对于非负整数 `a`，返回表示 `a`所需的位数。
+    对于非负整数`a`，返回表示`a`所需的位数。
 
 
     即，返回 < 2 ^ n $ $a 的最小 $n $。
 - uid: microsoft.quantum.math.ceiling
   summary: 返回大于或等于指定数字的最小整数。
 - uid: microsoft.quantum.math.complexascomplexpolar
-  summary: 将 `Complex` 类型的复数转换为 `ComplexPolar`类型的复数。
+  summary: 将类型`Complex`的复杂数字转换为类型`ComplexPolar`的复数。
 - uid: microsoft.quantum.math.complexpolarascomplex
-  summary: 将 `ComplexPolar` 类型的复数转换为 `Complex`类型的复数。
+  summary: 将类型`ComplexPolar`的复杂数字转换为类型`Complex`的复数。
 - uid: microsoft.quantum.math.complexpolartocomplex
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nComplexPolarToComplex 已被弃用。 请改用 @\"microsoft.quantum.math.complexpolarascomplex\"。"
 - uid: microsoft.quantum.math.complextocomplexpolar
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nComplexToComplexPolar 已被弃用。 请改用 @\"microsoft.quantum.math.complexascomplexpolar\"。"
 - uid: microsoft.quantum.math.continuedfractionconvergenti
-  summary: 查找最接近 `fraction` 且分母小于或等于 `denominatorBound` 的连续分数收敛性
+  summary: 查找最接近于`fraction`分母小于或等于的连续分数收敛性`denominatorBound`
 - uid: microsoft.quantum.math.continuedfractionconvergentl
-  summary: 查找最接近 `fraction` 且分母小于或等于 `denominatorBound` 的连续分数收敛性
+  summary: 查找最接近于`fraction`分母小于或等于的连续分数收敛性`denominatorBound`
 - uid: microsoft.quantum.math.cos
   summary: 返回指定角度的余弦值。
 - uid: microsoft.quantum.math.cosh
@@ -109,7 +109,7 @@ functions:
 - uid: microsoft.quantum.math.log
   summary: 返回指定数字的自然对数（底 $e $）。
 - uid: microsoft.quantum.math.log10
-  summary: 返回指定数字以10为底的对数。
+  summary: 返回指定数字以 10 为底的对数。
 - uid: microsoft.quantum.math.logof2
   summary: 返回2的自然对数。
 - uid: microsoft.quantum.math.max
@@ -145,9 +145,9 @@ functions:
 - uid: microsoft.quantum.math.modpowl
   summary: 对某个数字进行模块化除法运算，使另一个数字的幂。
 - uid: microsoft.quantum.math.modulusi
-  summary: 计算 `value` 取模 `modulus`的规范 residue。
+  summary: 计算`value`模`modulus`的规范 residue。
 - uid: microsoft.quantum.math.modulusl
-  summary: 计算 `value` 取模 `modulus`的规范 residue。
+  summary: 计算`value`模`modulus`的规范 residue。
 - uid: microsoft.quantum.math.negationc
   summary: 返回输入的一元求反。
 - uid: microsoft.quantum.math.negationcp
@@ -159,7 +159,7 @@ functions:
 - uid: microsoft.quantum.math.negationl
   summary: 返回输入的一元求反。
 - uid: microsoft.quantum.math.pi
-  summary: 表示圆的周长与其直径的比值，该比值由常量π指定。
+  summary: 表示圆的周长与其直径的比值，由常数 π 指定。
 - uid: microsoft.quantum.math.plusa
   summary: 返回两个输入的总和（串联）。
 - uid: microsoft.quantum.math.plusc
@@ -174,16 +174,16 @@ functions:
   summary: 返回两个输入之和。
 - uid: microsoft.quantum.math.pnorm
   summary: >-
-    返回 `Double`的向量 `L(p)` 的标准。
+    返回向量`L(p)`的`Double`标准。
 
 
-    也就是说，假设数组的类型 $x $ `Double[]`，这会返回 $p $-标准 $\|x\|\_p = （\ sum_ {j} | x_j | ^ {p}） ^ {1/p} $。
+    也就是说，给定`Double[]`类型的数组 $x $，这将返回 $p $-标准 $\|x\|\_p = （\ sum_ {j} | x_j | ^ {p}） ^ {1/p} $。
 - uid: microsoft.quantum.math.pnormalized
   summary: >-
-    规范化 `L(p)` 标准中的 `Double`向量。
+    规范化中`L(p)`的向量`Double`。
 
 
-    也就是说，假设数组的类型 $x $ `Double[]`，这将返回一个数组，其中所有元素均除以 $p $-标准 $\|x\|$。
+    也就是说，给定类型`Double[]`的数组 $x $，这将返回一个数组，其中所有元素均除以 $p $-标准 $\|x\|_p $。
 - uid: microsoft.quantum.math.powc
   summary: 返回一个数的指定幂。
 - uid: microsoft.quantum.math.powcp
@@ -230,7 +230,7 @@ functions:
   summary: 计算一个数字的整数部分。
 newtypes:
 - uid: microsoft.quantum.math.bigfraction
-  summary: 表示 `p/q`形式的有理数。 整数 `p` 是元组的第一个元素，`q` 是元组的第二个元素。
+  summary: 表示形式`p/q`的有理数。 整数`p`是元组的第一个元素， `q`是元组的第二个元素。
 - uid: microsoft.quantum.math.complex
   summary: >-
     表示复数的实部和虚部。
@@ -243,8 +243,8 @@ newtypes:
 
     复数的极坐标表示形式为 $c = r e ^ {i t} $。
 - uid: microsoft.quantum.math.fraction
-  summary: 表示 `p/q`形式的有理数。 整数 `p` 是元组的第一个元素，`q` 是元组的第二个元素。
-summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含传统数学函数和数据类型。"
+  summary: 表示形式`p/q`的有理数。 整数`p`是元组的第一个元素， `q`是元组的第二个元素。
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含传统数学函数和数据类型。"
 operations:
 - uid: microsoft.quantum.math.randomint
   summary: 生成一个大于或等于零且小于的所提供的上边界的样本随机整数。
@@ -255,9 +255,9 @@ operations:
 - uid: microsoft.quantum.math.randomsinglequbitpauli
   summary: 随机返回一个 qubit Pauli 运算符。
 metadata:
-  ms.openlocfilehash: 03a0eba2101d3a20b393b7f685ac463b1abcd727
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 2ad787a0d29e98e25c733d1fdcf0a79fcc8c2803
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77905822"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673161"

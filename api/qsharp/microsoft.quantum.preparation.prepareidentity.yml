@@ -25,9 +25,9 @@ output:
 seeAlso:
 - microsoft.quantum.canon.preparesinglequbitidentity
 metadata:
-  ms.openlocfilehash: 3242bb0249f26e78ac33f0d16eb7b7c9dcd86ee8
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d6ff10bb6251b96e7a6ba58d1afa1e4ab8eaab0a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226601"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673467"

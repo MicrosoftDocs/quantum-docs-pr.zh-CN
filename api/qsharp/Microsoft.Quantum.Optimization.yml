@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.optimization
 name: Microsoft.Quantum.Optimization
-summary: " # <a name=\"summary\"></a>摘要\n 包含用于查找最小值的函数和优化。"
+summary: " # <a name=\"summary\"></a>总结\n 包含用于查找最小值的函数和优化。"
 functions:
 - uid: microsoft.quantum.optimization.localunivariateminimum
   summary: 使用黄金间隔搜索，返回单变量函数在限定间隔内的本地最小值。
@@ -9,9 +9,9 @@ newtypes:
 - uid: microsoft.quantum.optimization.univariateoptimizationresult
   summary: 表示优化单变量函数的结果。
 metadata:
-  ms.openlocfilehash: 4cbb867e974056e311725f161c445cfb06bf5c4c
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: a1321c46bf078bd1f1b82ef9b001db3bbdb6b69d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77908270"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673120"

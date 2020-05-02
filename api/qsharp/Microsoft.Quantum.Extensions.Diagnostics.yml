@@ -3,13 +3,13 @@ uid: microsoft.quantum.extensions.diagnostics
 name: Microsoft.Quantum.Extensions.Diagnostics
 functions:
 - uid: microsoft.quantum.extensions.diagnostics.dumpmachine
-  summary: "\n> [!WARNING]\n> 已放弃\n\nDumpMachine 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.dumpmachine\"。\n请使用 @\"microsoft.quantum.diagnostics.dumpmachine\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nDumpMachine 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.dumpmachine\"。\n请使用 @\"microsoft.quantum.diagnostics.dumpmachine\"。"
 - uid: microsoft.quantum.extensions.diagnostics.dumpregister
-  summary: "\n> [!WARNING]\n> 已放弃\n\nDumpRegister 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.dumpregister\"。\n请使用 @\"microsoft.quantum.diagnostics.dumpregister\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nDumpRegister 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.dumpregister\"。\n请使用 @\"microsoft.quantum.diagnostics.dumpregister\"。"
 metadata:
-  ms.openlocfilehash: 71f997adf7dbca7e45250652032237c07f1354e5
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: dcd10bf143cd50e937cb6ad0d81f15247401c2b8
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74858286"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673270"

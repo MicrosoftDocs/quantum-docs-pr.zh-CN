@@ -6,7 +6,7 @@ functions:
   summary: >-
     返回两个整数的按位 "与"。
 
-    这会执行与内置 `&&&` 运算符相同的计算。
+    这会执行与内置`&&&`运算符相同的计算。
 - uid: microsoft.quantum.bitwise.leftshiftedi
   summary: 将数字的按位表示形式向左移动给定的位数。
 - uid: microsoft.quantum.bitwise.leftshiftedl
@@ -15,12 +15,12 @@ functions:
   summary: >-
     返回整数的按位 "非"。
 
-    这会执行与内置 `~~~` 运算符相同的计算。
+    这会执行与内置`~~~`运算符相同的计算。
 - uid: microsoft.quantum.bitwise.or
   summary: >-
     返回两个整数的按位 "或"。
 
-    这会执行与内置 `|||` 运算符相同的计算。
+    这会执行与内置`|||`运算符相同的计算。
 - uid: microsoft.quantum.bitwise.parity
   summary: 返回整数的按位奇偶校验（如果其二进制表示形式包含奇数个值，则为 1; 否则为0）。
 - uid: microsoft.quantum.bitwise.rightshiftedi
@@ -33,14 +33,14 @@ functions:
   summary: >-
     返回两个整数的按位 "异或" （XOR）。
 
-    这会执行与内置 `^^^` 运算符相同的计算。
+    这会执行与内置`^^^`运算符相同的计算。
 - uid: microsoft.quantum.bitwise.zbits
   summary: 返回一个整数，该整数表示 Pauli 运算符数组的 Z 位。
 summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于对传统数据类型的按位表示形式进行操作的函数。"
 metadata:
-  ms.openlocfilehash: c474d92e7a40f5491b21d80e00294fbdff96a62a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: fb52d02d38d31b96b46dfc469ee07ee62e29a9d4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73210944"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82673384"
