@@ -41,9 +41,9 @@ output:
 seeAlso:
 - microsoft.quantum.canon.applyoprepeatedlyover
 metadata:
-  ms.openlocfilehash: ce758e52e510397f780e6d69cc7c15e4d13878ae
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 62c4494fb60a69eb52eca2d3fa97b41eb9b7f020
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74866642"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82671157"
