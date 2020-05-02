@@ -7,7 +7,7 @@ summary: >-
   将操作应用到数组的给定元素。
 
 
-  给定一个操作 `op`，索引 `index`和 `targets`目标的数组，将应用 `op(targets[index])`。
+  给定一个操作`op`、一个索引`index`和一个目标`targets`数组，适用于`op(targets[index])`。
 syntax: "operation ApplyToElementC (op : ('T => Unit is Ctl), index : Int, targets : 'T[]) : Unit"
 input:
   content: "(op : ('T => Unit is Ctl), index : Int, targets : 'T[])"
@@ -48,9 +48,9 @@ seeAlso:
 - microsoft.quantum.canon.applytoelementa
 - microsoft.quantum.canon.applytoelementca
 metadata:
-  ms.openlocfilehash: d4e8520476218cd5892c98d55dea1b1543d3c58c
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 40d608d8dd7def5027ade690a7602c25bb287055
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77908032"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82670013"
