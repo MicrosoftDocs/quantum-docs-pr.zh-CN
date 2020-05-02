@@ -7,7 +7,7 @@ summary: >-
   实现 Knill 幻状态升华算法。
 
 
-  给定15个近似状态 $ $ \begin{align} \cos\frac{\pi}{8} \ket{0} + \sin \frac{\pi}{8} \ket{1} \end{align}，$ $ 会生成一个较高质量的副本。
+  给定15个近似状态 $ $ \begin{align}{8} \cos\frac{\pi} \ket{0} + \sin \frac{\pi}{8} \ket{1} \end{align} 的副本，$ $ 会生成一个较高质量的副本。
 remarks: >-
   我们采用 Knill 的算法。
 
@@ -20,20 +20,20 @@ input:
   content: '(roughMagic : Qubit[])'
   types:
   - name: roughMagic
-    summary: 包含神奇状态近似副本的十五个 qubits 寄存器。 此升华过程的以下应用程序 `roughMagic[0]` 将包含一个较高质量的副本，并且寄存器的其余部分将重置为 $ \ket{00\cdots 0} $ 状态。
+    summary: 包含神奇状态近似副本的十五个 qubits 寄存器。 此升华过程的以下应用程序`roughMagic[0]`将包含一个较高质量的副本，并且寄存器的其余部分将重置为 $ \ket{00\cdots 0} $ 状态。
     isArray: true
     isPrimitive: true
     uid: Qubit
 output:
   content: Bool
   types:
-  - summary: 如果 `true`，则过程成功，应接受更高质量的副本。 如果 `false`，则过程失败，并且应将寄存器的状态视为未定义。
+  - summary: 如果`true`为，则过程成功并且应接受更高质量的副本。 如果`false`为，则过程失败，并且应将寄存器的状态视为未定义。
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 81d87b3dcd6f669a63847e331865b1f2c389f3ce
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5a8e4c43ff21491b35efedb8f60717979e44f0ed
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226720"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682365"

@@ -3,7 +3,7 @@ uid: microsoft.quantum.math.absd
 name: AbsD
 type: function
 namespace: Microsoft.Quantum.Math
-summary: 返回双精度浮点数的绝对值。
+summary: 返回双精度浮点数字的绝对值。
 remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.abs) 。
 syntax: 'function AbsD (a : Double) : Double'
 input:
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 7617ebd1c6898794bfcc66beec4b1b9233ea898e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 63e889751e7b907e0ecae3391fec4fca32e25aef
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73235033"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682816"

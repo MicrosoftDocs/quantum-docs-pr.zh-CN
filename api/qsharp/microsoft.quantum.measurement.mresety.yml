@@ -15,13 +15,13 @@ input:
 output:
   content: Result
   types:
-  - summary: Pauli 中测量 `target` 的结果 $Y $ basis。
+  - summary: Pauli 中测量`target`的结果 $Y $ basis。
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: e63202da4d72e6e1403319914d078ee51092f9b3
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 2c06d14133399c5afd7d09b67deaa6e63953f1c0
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73231191"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682699"

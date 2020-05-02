@@ -3,19 +3,19 @@ uid: microsoft.quantum.errorcorrection.recovercss
 name: RecoverCSS
 type: operation
 namespace: Microsoft.Quantum.ErrorCorrection
-summary: 按照 `CSS` 类型描述的量程代码执行一轮错误更正。
+summary: 按`CSS`类型描述的量程代码执行一轮错误更正。
 syntax: 'operation RecoverCSS (code : Microsoft.Quantum.ErrorCorrection.CSS, fnX : Microsoft.Quantum.ErrorCorrection.RecoveryFn, fnZ : Microsoft.Quantum.ErrorCorrection.RecoveryFn, logicalRegister : Microsoft.Quantum.ErrorCorrection.LogicalRegister) : Unit'
 input:
   content: '(code : Microsoft.Quantum.ErrorCorrection.CSS, fnX : Microsoft.Quantum.ErrorCorrection.RecoveryFn, fnZ : Microsoft.Quantum.ErrorCorrection.RecoveryFn, logicalRegister : Microsoft.Quantum.ErrorCorrection.LogicalRegister)'
   types:
   - name: code
-    summary: 作为 `CSS` 类型打包的量程 CSS 错误更正代码描述了量程数据的编码和解码，以及如何测量 syndromes 错误。
+    summary: 封装为`CSS`类型的量程 CSS 错误更正代码描述了量程数据的编码和解码，以及如何测量 syndromes 错误。
     uid: microsoft.quantum.errorcorrection.css
   - name: fnX
-    summary: '`RecoveryFn`，它将每个 $X $ 错误症状映射到更正检测到的错误的 `Pauli[]` 操作。'
+    summary: 一个`RecoveryFn` ，它将每个 $X $ 错误症状`Pauli[]`映射到更正检测到的错误的操作。
     uid: microsoft.quantum.errorcorrection.recoveryfn
   - name: fnZ
-    summary: '`RecoveryFn`，它将每个 $Z $ 错误症状映射到更正检测到的错误的 `Pauli[]` 操作。'
+    summary: 一个`RecoveryFn` ，它将每个 $Z $ 错误症状`Pauli[]`映射到更正检测到的错误的操作。
     uid: microsoft.quantum.errorcorrection.recoveryfn
   - name: logicalRegister
     summary: 定义了稳定程序代码的 qubits 的数组。
@@ -30,9 +30,9 @@ seeAlso:
 - microsoft.quantum.canon.recoveryfn
 - microsoft.quantum.canon.logicalregister
 metadata:
-  ms.openlocfilehash: 4e07e66816c347aa9a7e1f06ebe88f65b2d040ce
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 8c9504e985b224421d3eb66b0d7e9bc0ef8f2e96
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220260"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682267"

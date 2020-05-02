@@ -16,7 +16,7 @@ input:
     summary: >-
       Multiqubit Pauli 运算符的数组。
 
-      例如，`stabilizerGroup[0]` 是 qubit Pauli 系列的列表，其中的 tensor 产品是一个稳定的生成器。
+      例如， `stabilizerGroup[0]`是一个 qubit Pauli 矩阵列表，其中的 tensor 产品是一个稳定的生成器。
     isArray: true
     types:
     - isArray: true
@@ -46,9 +46,9 @@ output:
   - summary: 度量值的结果。
     uid: microsoft.quantum.errorcorrection.syndrome
 metadata:
-  ms.openlocfilehash: 1ebc1613c471e11a3d06878bc9ca48cf2d5be505
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d89455e8341d053053e110a6cfccd19e206d38d8
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226754"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682317"

@@ -9,7 +9,7 @@ input:
   content: '(qSharpData : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerEncodingData, trotterStepSize : Double, trotterOrder : Int)'
   types:
   - name: qSharpData
-    summary: '`JordanWignerEncodingData` 格式描述的 Hamiltonian。'
+    summary: 格式描述的`JordanWignerEncodingData` Hamiltonian。
     uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerencodingdata
   - name: trotterStepSize
     summary: Trotter 集成器的步长大小。
@@ -22,7 +22,7 @@ input:
 output:
   content: (Int, (Double, (Qubit[] => Unit is Adj + Ctl)))
   types:
-  - summary: 一个元组，其中： `Int` 是分配的 qubits 数，`Double` 为 `1.0/trotterStepSize`，操作为 Trotter 步骤。
+  - summary: 元组，其中`Int` ：是已分配的 qubits 的`Double`数目`1.0/trotterStepSize`，是，操作是 Trotter 步骤。
     types:
     - isPrimitive: true
       uid: Int
@@ -43,9 +43,9 @@ output:
         - Adjoint
         - Controlled
 metadata:
-  ms.openlocfilehash: f8fe25db9eac627649601b1526e4c81eb13d9b99
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: defa30f488d64991bea7e005d18b9eafeb99f05a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066126"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683103"

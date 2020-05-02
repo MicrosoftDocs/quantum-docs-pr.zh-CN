@@ -8,13 +8,13 @@ summary: >-
 
 
   Hamiltonian $H = \ sum_ {j} \ alpha_j P_j $ 由 $P $ _j $ 的 Pauli 术语的总和进行描述，每个术语都包含实系数 $ \ alpha_j $。
-remarks: 这是通过以下方法获取的：准备并 unpreparing 状态 $ \ sum_ {j} \sqrt{\ alpha_j/\alpha}\ket{j} $，并构造一个按乘法控制的单一 <xref:microsoft.quantum.preparation.statepreparationpositivecoefficients> 和 <xref:microsoft.quantum.canon.multiplexoperationsfromgenerator>。
+remarks: 这是通过以下方法获取的：准备并 unpreparing 状态 $ \ sum_ {j} \sqrt{\ alpha_j/\alpha}\ket{j} $，并构造一个按<xref:microsoft.quantum.preparation.statepreparationpositivecoefficients>乘法<xref:microsoft.quantum.canon.multiplexoperationsfromgenerator>控制的单一和。
 syntax: 'function PauliBlockEncoding (generatorSystem : Microsoft.Quantum.Simulation.GeneratorSystem) : (Double, Microsoft.Quantum.Simulation.BlockEncodingReflection)'
 input:
   content: '(generatorSystem : Microsoft.Quantum.Simulation.GeneratorSystem)'
   types:
   - name: generatorSystem
-    summary: 一个 `GeneratorSystem`，它将 $H $ 作为 Pauli 条款的总和进行描述
+    summary: 一个`GeneratorSystem` ，它描述 $H $ 作为 Pauli 条款的总和
     uid: microsoft.quantum.simulation.generatorsystem
 output:
   content: (Double, Microsoft.Quantum.Simulation.BlockEncodingReflection)
@@ -29,15 +29,15 @@ output:
       ## <a name="second-parameter"></a>第二个参数
 
 
-      `BlockEncodingReflection` 单一 $U $ Hamiltonian $H $。 由于这个单一的 $U ^ 2 = I $，它也是一个反射。
+      Hamiltonian `BlockEncodingReflection`的单一 $U $ $H $。 由于这个单一的 $U ^ 2 = I $，它也是一个反射。
     types:
     - isPrimitive: true
       uid: Double
     - uid: microsoft.quantum.simulation.blockencodingreflection
 metadata:
-  ms.openlocfilehash: 352ab71457601c38b22e93f706cb59f50bf24151
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 75b614fa23f2e00a3a960224d79905106fb06070
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216129"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682547"

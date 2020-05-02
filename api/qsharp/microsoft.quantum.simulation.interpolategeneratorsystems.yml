@@ -3,29 +3,29 @@ uid: microsoft.quantum.simulation.interpolategeneratorsystems
 name: InterpolateGeneratorSystems
 type: function
 namespace: Microsoft.Quantum.Simulation
-summary: 返回表示两个 `GeneratorSystem`之间的线性内插的 `TimeDependentGeneratorSystem`。
+summary: 返回一个`TimeDependentGeneratorSystem` ，它表示两个`GeneratorSystem`之间的线性内插。
 syntax: 'function InterpolateGeneratorSystems (generatorSystemStart : Microsoft.Quantum.Simulation.GeneratorSystem, generatorSystemEnd : Microsoft.Quantum.Simulation.GeneratorSystem) : Microsoft.Quantum.Simulation.TimeDependentGeneratorSystem'
 input:
   content: '(generatorSystemStart : Microsoft.Quantum.Simulation.GeneratorSystem, generatorSystemEnd : Microsoft.Quantum.Simulation.GeneratorSystem)'
   types:
   - name: generatorSystemStart
-    summary: 开始 `GeneratorSystem`。
+    summary: 开始`GeneratorSystem`。
     uid: microsoft.quantum.simulation.generatorsystem
   - name: generatorSystemEnd
-    summary: 结束 `GeneratorSystem`。
+    summary: 结束`GeneratorSystem`。
     uid: microsoft.quantum.simulation.generatorsystem
 output:
   content: Microsoft.Quantum.Simulation.TimeDependentGeneratorSystem
   types:
-  - summary: 一个 `TimeDependentGeneratorSystem`，它表示一个系统，该系统是输入生成器系统的总和，其权重 $ （1-s） $ on `generatorSystemStart`，权重 $s $ on `generatorSystemEnd`。
+  - summary: 一个`TimeDependentGeneratorSystem` ，它表示一个系统，该系统是输入生成器系统的总和，权重 $ （1-s） $ `generatorSystemStart` on，权重 $s $ `generatorSystemEnd`on。
     uid: microsoft.quantum.simulation.timedependentgeneratorsystem
 seeAlso:
 - microsoft.quantum.canon.generatorsystem
 - microsoft.quantum.canon.timedependentgeneratorsystem
 metadata:
-  ms.openlocfilehash: ac01ddee211ddf2ad741b611707aa6e5e6ea70f9
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ba7fdf0d9c2a08e8a330700fcab7b54f9347e9cb
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73065514"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82682634"
