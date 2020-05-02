@@ -18,9 +18,9 @@ output:
   types:
   - uid: microsoft.quantum.math.fraction
 metadata:
-  ms.openlocfilehash: e21f2076d9e260a9cad883d26e4c7490f85ac97c
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 857f3420564d721c2c78b8fd407393e71fb9f50f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74860606"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675753"

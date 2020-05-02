@@ -67,9 +67,9 @@ typeParameters:
 - uid: "'U"
   summary: 成对定义的函数的第二个分量的类型。
 metadata:
-  ms.openlocfilehash: 788648d24ba536926504caba92e768ecb34e001a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b89dbef2ff8d28656cae7f527fb3d94d869381f0
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067894"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675703"

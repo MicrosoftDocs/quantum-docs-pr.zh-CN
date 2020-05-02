@@ -4,9 +4,9 @@ name: CControlledA
 type: function
 namespace: Microsoft.Quantum.Canon
 summary: >-
-  给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果 `false`，则不会执行任何操作。
+  给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果`false`为，则不执行任何操作。
 
-  修饰符 `A` 指示操作为 adjointable。
+  修饰符`A`指示操作为 adjointable。
 syntax: "function CControlledA (op : ('T => Unit is Adj)) : ((Bool, 'T) => Unit is Adj)"
 input:
   content: "(op : ('T => Unit is Adj))"
@@ -47,9 +47,9 @@ typeParameters:
 seeAlso:
 - microsoft.quantum.canon.ccontrolled
 metadata:
-  ms.openlocfilehash: e02446273f93b51a228679d3eb75bf16a2526e8a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 12349ee5fe56d0209f510900f47cf255a7adc4d9
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73068098"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675897"

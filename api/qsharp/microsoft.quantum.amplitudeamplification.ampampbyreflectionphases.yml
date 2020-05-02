@@ -31,9 +31,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: dfcbc5f24364f061e426d355e964be4318d39292
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 1a65d26bf014e322c09bff4a91f8f78ba48df64d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76872353"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675399"

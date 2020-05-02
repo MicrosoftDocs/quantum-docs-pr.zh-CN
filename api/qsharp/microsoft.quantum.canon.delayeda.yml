@@ -22,13 +22,13 @@ input:
     functors:
     - Adjoint
   - name: arg
-    summary: 要应用操作 `op` 的输入。
+    summary: 将操作`op`应用到的输入。
     uid: "'T"
     isLocal: true
 output:
   content: (Unit => Unit is Adj)
   types:
-  - summary: 使用输入 `arg` 应用 `op` 的新操作
+  - summary: 适用于`op`输入的新操作`arg`
     isOperation: true
     input:
       types:
@@ -47,9 +47,9 @@ seeAlso:
 - microsoft.quantum.canon.delayed
 - microsoft.quantum.canon.delay
 metadata:
-  ms.openlocfilehash: b1ac535cf5d46e1dbde7c9e9fb33a0f9cc33c24d
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ee329ba4febb8b8bf9a0748a42d5c6522aa91be1
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219478"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675645"

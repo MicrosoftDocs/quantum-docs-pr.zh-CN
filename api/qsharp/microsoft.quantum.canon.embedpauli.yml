@@ -3,9 +3,9 @@ uid: microsoft.quantum.canon.embedpauli
 name: EmbedPauli
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: 给定 qubit Pauli 运算符和 qubit 的索引后，将返回一个多 qubit Pauli 运算符，该运算符具有该索引处给定的单 qubit 运算符，并在每个其他索引处 `PauliI`。
+summary: 给定 qubit Pauli 运算符和 qubit 的索引后，将返回一个多 qubit Pauli 运算符，该运算符具有给定的单一 qubit 运算符，位于该索引处和`PauliI`其他每个索引处。
 examples: >-
-  若要获取阵列 `[PauliI, PauliI, PauliX, PauliI]`：
+  获取阵列`[PauliI, PauliI, PauliX, PauliI]`：
 
 
   ```qsharp
@@ -22,7 +22,7 @@ input:
     isPrimitive: true
     uid: Pauli
   - name: location
-    summary: '`output[location] == pauli`的索引，其中 `output` 是此函数的输出。'
+    summary: 一个索引`output[location] == pauli`，其中`output` ，是此函数的输出。
     isPrimitive: true
     uid: Int
   - name: n
@@ -36,9 +36,9 @@ output:
     isPrimitive: true
     uid: Pauli
 metadata:
-  ms.openlocfilehash: 1e852781f6dd85e5432f5613184f028db0e84b87
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: df9cff23b6a7255ec57e944fd1bed140ff18560a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219376"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675590"

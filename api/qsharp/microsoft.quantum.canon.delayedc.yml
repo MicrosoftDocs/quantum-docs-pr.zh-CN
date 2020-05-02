@@ -22,13 +22,13 @@ input:
     functors:
     - Controlled
   - name: arg
-    summary: 要应用操作 `op` 的输入。
+    summary: 将操作`op`应用到的输入。
     uid: "'T"
     isLocal: true
 output:
   content: (Unit => Unit is Ctl)
   types:
-  - summary: 使用输入 `arg` 应用 `op` 的新操作
+  - summary: 适用于`op`输入的新操作`arg`
     isOperation: true
     input:
       types:
@@ -47,9 +47,9 @@ seeAlso:
 - microsoft.quantum.canon.delayed
 - microsoft.quantum.canon.delay
 metadata:
-  ms.openlocfilehash: 99a85abc78a28a939f67278458069b46a8c36324
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 909d645e2567e92ca8943188c580e6d942cefcda
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219410"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675634"
