@@ -4,7 +4,7 @@ name: RangeReverse
 type: function
 namespace: Microsoft.Quantum.Core
 summary: 返回一个新范围，该范围是输入范围的反向。
-remarks: 请注意，范围的反向不只是 `end`。`-step`.。`start`，因为范围的实际最后一个元素可能与 `end`不同。
+remarks: 请注意，范围的反向不只`end`是。`-step`..`start`，因为范围的实际最后一个元素可能与不相同`end`。
 syntax: 'function RangeReverse (r : Range) : Range'
 input:
   content: '(r : Range)'
@@ -20,9 +20,9 @@ output:
     isPrimitive: true
     uid: Range
 metadata:
-  ms.openlocfilehash: 978a476556d01f48533540333b5951f83da3d6dc
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d6fbf120ecb9bff176857cf8d3c48d6f08da0bde
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066619"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82657389"
