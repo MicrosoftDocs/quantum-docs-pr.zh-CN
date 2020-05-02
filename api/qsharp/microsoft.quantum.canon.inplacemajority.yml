@@ -24,9 +24,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 78d70a08b276bfd1f34eb7e79e3954627286c159
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 5caf7bd2667702aef1c1c84f73e02dda37fc4b40
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76873033"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679267"

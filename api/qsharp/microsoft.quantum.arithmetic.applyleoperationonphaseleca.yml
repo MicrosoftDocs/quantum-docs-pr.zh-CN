@@ -3,8 +3,8 @@ uid: microsoft.quantum.arithmetic.applyleoperationonphaseleca
 name: ApplyLEOperationOnPhaseLECA
 type: operation
 namespace: Microsoft.Quantum.Arithmetic
-summary: 应用一个操作，该操作采用 <xref:microsoft.quantum.arithmetic.phaselittleendian> 在 <xref:microsoft.quantum.arithmetic.littleendian>类型的目标寄存器上注册为输入。
-remarks: 注册通过使用 <xref:microsoft.quantum.canon.qftle> 转换为 `LittleEndian`，然后在应用 `op`后返回到其原始表示形式。
+summary: 应用一个在类型<xref:microsoft.quantum.arithmetic.phaselittleendian> <xref:microsoft.quantum.arithmetic.littleendian>为的目标寄存器上采用注册为输入的操作。
+remarks: 通过使用将寄存器转换`LittleEndian`为<xref:microsoft.quantum.canon.qftle> ，然后在应用后将其返回到其原始表示形式`op`。
 syntax: 'operation ApplyLEOperationOnPhaseLECA (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj + Ctl), target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
 input:
   content: '(op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj + Ctl), target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
@@ -38,9 +38,9 @@ seeAlso:
 - microsoft.quantum.canon.applyleoperationonphaselea
 - microsoft.quantum.canon.applyleoperationonphaselec
 metadata:
-  ms.openlocfilehash: 199458274bd1238211058e7ed993a9d497af9d80
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 05427396f848433d90b744dc5308f71323198861
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871135"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680027"

@@ -3,7 +3,7 @@ uid: microsoft.quantum.arithmetic.multiplysi
 name: MultiplySI
 type: operation
 namespace: Microsoft.Quantum.Arithmetic
-summary: 将有符号整数与有符号整数相乘 `xs` `ys` 并将结果存储在 `result`中，这必须最初为零。
+summary: 将带符号`xs`整数`ys`与有符号整数相乘并将`result`结果存储在中，后者最初必须为零。
 syntax: 'operation MultiplySI (xs : Microsoft.Quantum.Arithmetic.SignedLittleEndian, ys : Microsoft.Quantum.Arithmetic.SignedLittleEndian, result : Microsoft.Quantum.Arithmetic.SignedLittleEndian) : Unit'
 input:
   content: '(xs : Microsoft.Quantum.Arithmetic.SignedLittleEndian, ys : Microsoft.Quantum.Arithmetic.SignedLittleEndian, result : Microsoft.Quantum.Arithmetic.SignedLittleEndian)'
@@ -26,9 +26,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 154e870416e47547a115fcc5533d187b3ed67213
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b8710ecce1986b43e50a8b0567ae4746bda1589e
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73214803"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679456"

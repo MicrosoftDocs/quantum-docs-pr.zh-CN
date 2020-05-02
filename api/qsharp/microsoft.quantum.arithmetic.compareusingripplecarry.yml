@@ -7,24 +7,24 @@ summary: >-
   此操作测试由 qubits 的寄存器表示的整数是否大于另一个整数，并将结果 XOR 应用到输出 qubit。
 
 
-  给定两个整数 `x` 和 `y` 存储在大小相等的 qubit 寄存器中，此操作检查它们是否满足 `x > y`。 如果为 true，则将 1 XORed 到输出 qubit。 否则，0将 XORed 到输出 qubit 中。
+  给定两个`x`整数`y`并存储在大小相等的 qubit 寄存器中，此操作将检查`x > y`它们是否满足。 如果为 true，则将 1 XORed 到输出 qubit。 否则，0将 XORed 到输出 qubit 中。
 
-  换句话说，此操作可由单一 $ $ \begin{align} U\ket {x} \ 票证 {y} \ 票证 {z} = \ket{x}\ket{y}\ket{z\oplus （x > y）} 表示。
+  换句话说，此操作可由单一 $ $ \begin{align} U\ket {x} \ 票证 {y} \ 票证 {z} = \ket{x}\ket{y}\ket{z\oplus （x>y）} 表示。
 
   \end{align} $ $
 syntax: 'operation CompareUsingRippleCarry (x : Microsoft.Quantum.Arithmetic.LittleEndian, y : Microsoft.Quantum.Arithmetic.LittleEndian, output : Qubit) : Unit'
-references: '- 新的量程波纹-携带加法线路 Steven Cuccaro、Thomas Draper、Samuel Kutin、David Petrie Moulton https://arxiv.org/abs/quant-ph/0410184'
+references: '- 新的量程波纹-携带加法线路 Steven Cuccaro、Thomas Draper、Samuel Kutin、David Petrie Moultonhttps://arxiv.org/abs/quant-ph/0410184'
 input:
   content: '(x : Microsoft.Quantum.Arithmetic.LittleEndian, y : Microsoft.Quantum.Arithmetic.LittleEndian, output : Qubit)'
   types:
   - name: x
-    summary: 要进行比较的第一个数字以 `LittleEndian` 格式存储在 qubit 寄存器中。
+    summary: 要进行比较的第一个数字`LittleEndian`以 qubit 寄存器格式存储。
     uid: microsoft.quantum.arithmetic.littleendian
   - name: y
-    summary: 要进行比较的第二个数字，在 qubit 寄存器中以 `LittleEndian` 格式进行比较。
+    summary: 要进行比较的第二个`LittleEndian`数字，以 qubit 寄存器格式存储。
     uid: microsoft.quantum.arithmetic.littleendian
   - name: output
-    summary: Qubit，用于存储比较 $x > y $ 的结果。
+    summary: Qubit，用于存储比较 $x>y $ 的结果。
     isPrimitive: true
     uid: Qubit
 output:
@@ -36,9 +36,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 1ef346a9fd33859abffe9c30b14b5ea95068169d
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 08cff4d874060fce0b461c7eeadfdcadf6fa1453
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871118"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679764"

@@ -3,13 +3,13 @@ uid: microsoft.quantum.arithmetic.bigendian
 name: BigEndian
 type: newtype
 namespace: Microsoft.Quantum.Arithmetic
-summary: 注册以大字节序顺序编码无符号整数。 带有索引 `0` 的 qubit 对无符号整数的最高位进行编码。
-remarks: 我们将在文档中将 `BigEndian` 缩写为 `BE`。
+summary: 注册以大字节序顺序编码无符号整数。 带有索引`0`的 qubit 对无符号整数的最高位进行编码。
+remarks: 与文档`BigEndian`中`BE`的缩写相同。
 syntax: newtype BigEndian = Qubit[];
 metadata:
-  ms.openlocfilehash: a4d96ab9299d983583949de5ae8eebba64a189a4
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 9c59021955710a182a2315d4e848016f8d13d6fa
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221348"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679860"

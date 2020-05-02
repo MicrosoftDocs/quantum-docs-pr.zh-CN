@@ -7,7 +7,7 @@ summary: >-
   使用阶段旋转，将未签名的量程寄存器增加一个传统整数。
 
 
-  假定 `target` 用小字节序编码将无符号整数编码 $x $，并且 `increment` 等于 $a $。
+  假定将`target`无符号整数编码 $x $ in 小字节序编码，并且`increment`等于 $a $。
 
   然后，此操作实现一个单一 $ \ket{x} \mapsto \ket{x + a} $，其中添加操作执行取模 $ 2 ^ n $，其中 $n = \texttt{Length （target！）}$.
 syntax: 'operation IncrementByInteger (increment : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
@@ -15,7 +15,7 @@ input:
   content: '(increment : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian)'
   types:
   - name: increment
-    summary: 用来递增 `target` 的整数。
+    summary: 的整数，该`target`整数用于递增。
     isPrimitive: true
     uid: Int
   - name: target
@@ -30,9 +30,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: d05ed867e62f4f7474319ffe23dcd23aa34675c5
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: c07015f69d9cab08b287c383230fe79b5d67d6a0
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871152"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679558"

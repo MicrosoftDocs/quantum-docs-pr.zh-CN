@@ -7,12 +7,12 @@ summary: 振幅放大中 qubit 旋转序列的各个阶段。
 remarks: >-
   第一个参数是一个用于反射的阶段数组，表示为一个 qubit 旋转的积。
 
-  [ G.H. 低，I. L。 语，https://arxiv.org/abs/1707.05391]。
+  [ G.H. 低，I. L。 语， https://arxiv.org/abs/1707.05391]。
 syntax: newtype RotationPhases = Double[];
 metadata:
-  ms.openlocfilehash: 1ad6a80a10cc3880122303a7bbd708087976f906
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: bcf8502387a5f4479730bcbb41eaf03fa7925f87
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73215449"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680078"

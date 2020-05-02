@@ -7,13 +7,13 @@ summary: >-
   按整数常量执行 qubit 寄存器的模块化增量。
 
 
-  让我们通过 `target` $ $y $ $a $、`modulus` $N $ 和整数编码来表示 `increment`。
+  通过 $y $ `increment` $N $ 和在`modulus`中编码的整数，让我们`target`以 $a $ 表示。
 
   然后，操作执行以下转换： \begin{align} \ket{y} \mapsto \ket{（y + a） \operatorname{mod} N} \end{align} 整数以小 endian 格式编码。
 remarks: >-
   假定目标的初始值小于 $N $，并且 $a $ $N 增量小于 $。
 
-  请注意，<xref:microsoft.quantum.arithmetic.incrementphasebymodularinteger> 以 `PhaseLittleEndian` 为基础实现相同的操作。
+  请注意<xref:microsoft.quantum.arithmetic.incrementphasebymodularinteger> ，在`PhaseLittleEndian`基础上实现相同的操作。
 syntax: 'operation IncrementByModularInteger (increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
   content: '(increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.LittleEndian)'
@@ -27,7 +27,7 @@ input:
     isPrimitive: true
     uid: Int
   - name: target
-    summary: '`increment` $a $ 添加到的 `LittleEndian` 格式的整数 $y $。'
+    summary: $A $ 添加到`LittleEndian`的格式`increment`中的整数 $y $。
     uid: microsoft.quantum.arithmetic.littleendian
 output:
   content: Unit
@@ -40,9 +40,9 @@ functors:
 seeAlso:
 - microsoft.quantum.arithmetic.incrementphasebymodularinteger
 metadata:
-  ms.openlocfilehash: 975d4548eadbc61f8174b6719d067ffed32797dd
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 53faa65d67629d0e4c73efc03724cb4b4b30675d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871594"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679543"
