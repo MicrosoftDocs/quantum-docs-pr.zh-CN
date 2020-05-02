@@ -10,9 +10,9 @@ summary: >-
   字词数的最后一个参数。
 syntax: newtype EvolutionGenerator = (Microsoft.Quantum.Simulation.EvolutionSet, Microsoft.Quantum.Simulation.GeneratorSystem);
 metadata:
-  ms.openlocfilehash: fd749a401510bc32d4628d65b56c387d0b178ef6
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 83d2c39d50ce84510ecca7276074287789e1aa8d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067112"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82686869"

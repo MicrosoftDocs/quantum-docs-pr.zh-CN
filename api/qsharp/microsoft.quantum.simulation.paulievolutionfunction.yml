@@ -14,12 +14,12 @@ input:
 output:
   content: Microsoft.Quantum.Simulation.EvolutionUnitary
   types:
-  - summary: 一个 `EvolutionUnitary`，它表示 "generatorIndex" 中引用的术语的时间演变。
+  - summary: ， `EvolutionUnitary`它表示 "generatorIndex" 中引用的术语的时间演变。
     uid: microsoft.quantum.simulation.evolutionunitary
 metadata:
-  ms.openlocfilehash: 87434cc1cd78747e68c9ada990ef8173734641e8
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 3a5b01f86a29006e0f257250e6708f50bdf6b984
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216180"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82686979"

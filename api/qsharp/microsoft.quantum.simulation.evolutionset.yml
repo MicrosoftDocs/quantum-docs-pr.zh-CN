@@ -7,12 +7,12 @@ summary: >-
   表示一组可随时实现和用于实现模拟算法的入口。
 
 
-  集合中的元素由 <xref:microsoft.quantum.simulation.generatorindex>编制索引，每个集由从 `GeneratorIndex` 到 <xref:microsoft.quantum.simulation.evolutionunitary>的函数描述，这些操作由表示时间的实数参数化
+  集中的元素由进行索引<xref:microsoft.quantum.simulation.generatorindex>，每个集由`GeneratorIndex`到<xref:microsoft.quantum.simulation.evolutionunitary>的函数描述，这些操作由表示时间的实数参数化
 syntax: newtype EvolutionSet = (Microsoft.Quantum.Simulation.GeneratorIndex -> Microsoft.Quantum.Simulation.EvolutionUnitary);
 metadata:
-  ms.openlocfilehash: 2e3e717ca219f5e575f750a32f640215142b170c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 0db782c1909c6121078f251f34bbffd5b49a4d8e
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73211080"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82687004"

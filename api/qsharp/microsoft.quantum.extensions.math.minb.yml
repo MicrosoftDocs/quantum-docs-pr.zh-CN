@@ -20,9 +20,9 @@ output:
   - isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: 51091ba814fa08718e462f4902531555712d030b
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: c2f6bb3b7d4569153e1cb02103bf69918a193c5c
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74865250"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82686225"

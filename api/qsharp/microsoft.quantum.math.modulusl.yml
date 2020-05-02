@@ -3,8 +3,8 @@ uid: microsoft.quantum.math.modulusl
 name: ModulusL
 type: function
 namespace: Microsoft.Quantum.Math
-summary: 计算 `value` 取模 `modulus`的规范 residue。
-remarks: '此函数的行为与 `%` 运算符在和 Q # C#中的行为方式的行为不同，结果中始终为介于0到 `modulus - 1`之间的正整数，即使值为负。'
+summary: 计算`value`模`modulus`的规范 residue。
+remarks: '此函数的行为方式与运算符`%`在 c # 和 Q # 中的行为方式相同，因为结果中始终是一个介于`modulus - 1`0 到之间的正整数，即使值为负。'
 syntax: 'function ModulusL (value : BigInt, modulus : BigInt) : BigInt'
 input:
   content: '(value : BigInt, modulus : BigInt)'
@@ -20,13 +20,13 @@ input:
 output:
   content: BigInt
   types:
-  - summary: 0到 `value - r` `modulus - 1` 之间的整数 $r
+  - summary: 0之间的`value - r`整数 $r $ `modulus - 1` ，这可被模数整除
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: 14ef3669e4c59912129c9ffac6ecbf1a2ed25534
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: c4a9403cc5c2bf62e43b5cc248fb9502f15818e8
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73232449"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82686631"

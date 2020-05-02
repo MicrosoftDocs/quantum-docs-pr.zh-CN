@@ -15,13 +15,13 @@ input:
 output:
   content: Double
   types:
-  - summary: '`input`的一元求反。'
+  - summary: 的一元求反`input`。
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: e20bae5e2d482f5bad346764ccfecc8a1d77ca7b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b33d8c03e7ee4012220a616b3fd14e23ff1a85f4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73232381"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82686568"
