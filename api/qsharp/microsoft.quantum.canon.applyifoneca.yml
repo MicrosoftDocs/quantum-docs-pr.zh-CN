@@ -7,9 +7,9 @@ summary: >-
   将一个条件为的单一操作应用于传统结果值为1的值。
 
 
-  给定一个操作 `op` 并且结果值 `result`，如果 `result` `One`，则将 `op` 应用于 `target`。 如果 `Zero`，则 `target`不会执行任何操作。
+  给定一个操作`op`和一个结果值`result`时， `op` `target`如果`result`为`One`，则应用于。 如果`Zero`为，则不会`target`发生任何事情。
 
-  后缀 `CA` 指示要应用的操作为单一（可控和 adjointable）。
+  后缀`CA`指示要应用的操作为单一操作（可控和 adjointable）。
 syntax: "operation ApplyIfOneCA (result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T)) : Unit"
 input:
   content: "(result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T))"
@@ -52,9 +52,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifonea
 - microsoft.quantum.canon.applyifoneca
 metadata:
-  ms.openlocfilehash: 9756dcc29853d41e1d2a9fee5816254afa5e5d73
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: f8837e549ec1fc70b76e8151a211c4bf9f71168e
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73217387"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672653"

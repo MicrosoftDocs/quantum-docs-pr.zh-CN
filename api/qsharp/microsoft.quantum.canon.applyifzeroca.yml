@@ -7,9 +7,9 @@ summary: >-
   应用在传统结果值为零的条件运算。
 
 
-  给定一个操作 `op` 并且结果值 `result`，如果 `result` `Zero`，则将 `op` 应用于 `target`。 如果 `One`，则 `target`不会执行任何操作。
+  给定一个操作`op`和一个结果值`result`时， `op` `target`如果`result`为`Zero`，则应用于。 如果`One`为，则不会`target`发生任何事情。
 
-  后缀 `CA` 指示要应用的操作为单一（可控和 adjointable）。
+  后缀`CA`指示要应用的操作为单一操作（可控和 adjointable）。
 syntax: "operation ApplyIfZeroCA (result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T)) : Unit"
 input:
   content: "(result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T))"
@@ -52,9 +52,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifzeroa
 - microsoft.quantum.canon.applyifzeroca
 metadata:
-  ms.openlocfilehash: 9ec05f688c3895b2d68fc3f4717401e127fbe641
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 64e35b2fc198e7c3df862681e8c16870399f58c7
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73213596"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672572"

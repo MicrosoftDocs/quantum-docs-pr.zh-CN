@@ -11,7 +11,7 @@ references: >-
 
   - [YoderLowChuang2014](https://arxiv.org/abs/1409.3305)另请参阅 "复合量程入口方法"
 
-  - `RotationPhases` 格式的阶段的[LowYoderChuang2016](https://arxiv.org/abs/1603.03996) 。
+  - [LowYoderChuang2016](https://arxiv.org/abs/1603.03996)的`RotationPhases`格式为。
 input:
   content: '(nQueries : Int, successMin : Double)'
   types:
@@ -29,9 +29,9 @@ output:
   - summary: 可在定点波幅放大量程算法实现中使用的阶段数组。
     uid: microsoft.quantum.amplitudeamplification.reflectionphases
 metadata:
-  ms.openlocfilehash: b275f3d3146366ba15f2d3f99c9846f8e808f2d6
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: f1484b1f3bad5e5c6213919f0b95adcbc62f25c1
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76872404"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672992"

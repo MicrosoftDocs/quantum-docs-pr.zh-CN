@@ -7,7 +7,7 @@ summary: >-
   应用对经典结果值为1的操作。
 
 
-  给定一个操作 `op` 并且结果值 `result`，如果 `result` `One`，则将 `op` 应用于 `target`。 如果 `Zero`，则 `target`不会执行任何操作。
+  给定一个操作`op`和一个结果值`result`时， `op` `target`如果`result`为`One`，则应用于。 如果`Zero`为，则不会`target`发生任何事情。
 syntax: "operation ApplyIfOne (result : Result, (op : ('T => Unit), target : 'T)) : Unit"
 input:
   content: "(result : Result, (op : ('T => Unit), target : 'T))"
@@ -44,9 +44,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifonea
 - microsoft.quantum.canon.applyifoneca
 metadata:
-  ms.openlocfilehash: 5609226c113fd6b9660fdad2f05d154a7abde5a3
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 1cf549dce4e903810d4c59f8020afb4689c26888
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220906"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672704"

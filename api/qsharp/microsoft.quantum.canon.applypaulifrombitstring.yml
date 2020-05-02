@@ -10,7 +10,7 @@ input:
   content: '(pauli : Pauli, bitApply : Bool, bits : Bool[], qubits : Qubit[])'
   types:
   - name: pauli
-    summary: 要应用于 `qubits[idx]` 的 Pauli 运算符 `bitsApply == bits[idx]`
+    summary: 要应用于`qubits[idx]` where 的 Pauli 运算符`bitsApply == bits[idx]`
     isPrimitive: true
     uid: Pauli
   - name: bitApply
@@ -18,7 +18,7 @@ input:
     isPrimitive: true
     uid: Bool
   - name: bits
-    summary: 指定 `qubits` 应操作的相应 qubit 的布尔型寄存器
+    summary: 指定`qubits`应操作的相应 qubit 的布尔型寄存器
     isArray: true
     isPrimitive: true
     uid: Bool
@@ -36,9 +36,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: a39d19c11a0ce48b2901097ac497c2ad9c707bba
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5a65ec2aae17a1469e820e8cd14a0d50d0639015
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220668"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672432"

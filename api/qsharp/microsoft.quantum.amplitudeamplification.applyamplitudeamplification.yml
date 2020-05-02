@@ -9,7 +9,7 @@ input:
   content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, target : Qubit[])'
   types:
   - name: phases
-    summary: 描述振幅放大算法的每个步骤中的部分反射的一组阶段。 有关示例，请参阅 @"microsoft.quantum.amplitudeamplification.standardreflectionphases"。
+    summary: 描述振幅放大算法的每个步骤中的部分反射的一组阶段。 有关示例，请参见 @"microsoft.quantum.amplitudeamplification.standardreflectionphases"。
     uid: microsoft.quantum.amplitudeamplification.reflectionphases
   - name: startStateReflection
     summary: 反映初始状态的 oracle。
@@ -31,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 36b58c7b553c225c022e44d6c7257ab92a280807
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: d9381587b10f24411e9b712559e15345784e36e1
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76872472"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672974"

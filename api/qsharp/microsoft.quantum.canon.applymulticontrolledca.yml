@@ -6,7 +6,7 @@ namespace: Microsoft.Quantum.Canon
 summary: >-
   应用单个受控操作的多重控制版本。
 
-  修饰符 `CA` 指示 qubit 操作可控制和 adjointable。
+  修饰符`CA`指示 qubit 操作可控制和 adjointable。
 remarks: >-
   此操作仅使用 clean ancilla qubits。
 
@@ -23,7 +23,7 @@ input:
 
       操作的参数中的第一个 qubit 假定为控件，而其余的则假定为目标 qubits。
 
-      `ApplyMultiControlled` 始终调用长度至少为1的参数 `singlyControlledOp`。
+      `ApplyMultiControlled`始终使用`singlyControlledOp`长度至少为1的参数调用。
     isOperation: true
     input:
       types:
@@ -41,14 +41,14 @@ input:
     uid: microsoft.quantum.canon.ccnotop
   - name: controls
     summary: >-
-      `singlyControlledOp` 要控制的 qubits。
+      要对其`singlyControlledOp`进行控制的 qubits。
 
-      `controls` 的长度必须至少为1。
+      的`controls`长度必须至少为1。
     isArray: true
     isPrimitive: true
     uid: Qubit
   - name: targets
-    summary: '`singlyControlledOp` 作用于的目标 qubits。'
+    summary: '`singlyControlledOp`作用于的目标 qubits。'
     isArray: true
     isPrimitive: true
     uid: Qubit
@@ -63,9 +63,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applymulticontrolledc
 metadata:
-  ms.openlocfilehash: d9b0f2b18d025d0ce60bbb02a9559546539eaecd
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 1cb239c8c49ff4f4f8f991d6ad81374f0dd23f7f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220702"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82672531"
