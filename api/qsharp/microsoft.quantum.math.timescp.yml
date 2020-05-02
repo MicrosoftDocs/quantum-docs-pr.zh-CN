@@ -20,9 +20,9 @@ output:
   - summary: Product $a \times b $。
     uid: microsoft.quantum.math.complexpolar
 metadata:
-  ms.openlocfilehash: 49cbf8765b04fa3eb1a2cc708f9e3f5e7e6433c7
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6ada5bfe0155332a3dc4da12f0e88d4bcf76277e
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73231446"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685264"

@@ -3,7 +3,7 @@ uid: microsoft.quantum.math.argcomplex
 name: ArgComplex
 type: function
 namespace: Microsoft.Quantum.Math
-summary: 返回 `Complex`类型的复数的相位。
+summary: 返回类型`Complex`为的复数的相位。
 syntax: 'function ArgComplex (input : Microsoft.Quantum.Math.Complex) : Double'
 input:
   content: '(input : Microsoft.Quantum.Math.Complex)'
@@ -18,9 +18,9 @@ output:
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 4c05c008eb1ae0728b00b9dd573e08be2c237d74
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 25ebc6a41fbffd8bae3d4d06b5db5b9d68a4da90
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221739"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685812"

@@ -5,7 +5,7 @@ type: function
 namespace: Microsoft.Quantum.MachineLearning
 summary: 返回用于定型分类器的一组默认选项。
 examples: >-
-  若要使用默认选项，但对于其他度量值，请使用 `w/` 运算符：
+  若要使用默认选项，但使用其他度量值，请`w/`使用运算符：
 
 
   ```Q#
@@ -23,9 +23,9 @@ output:
   - summary: 训练分类器时使用的一组合理的默认定型选项。
     uid: microsoft.quantum.machinelearning.trainingoptions
 metadata:
-  ms.openlocfilehash: 6013d4f7268cfc422eedbe7d2070adbb167ad4ea
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 87f056e336ca78881421e669b3d282af8e679353
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77909460"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685437"

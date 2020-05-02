@@ -3,7 +3,7 @@ uid: microsoft.quantum.math.continuedfractionconvergenti
 name: ContinuedFractionConvergentI
 type: function
 namespace: Microsoft.Quantum.Math
-summary: 查找最接近 `fraction` 且分母小于或等于 `denominatorBound` 的连续分数收敛性
+summary: 查找最接近于`fraction`分母小于或等于的连续分数收敛性`denominatorBound`
 syntax: 'function ContinuedFractionConvergentI (fraction : Microsoft.Quantum.Math.Fraction, denominatorBound : Int) : Microsoft.Quantum.Math.Fraction'
 input:
   content: '(fraction : Microsoft.Quantum.Math.Fraction, denominatorBound : Int)'
@@ -16,12 +16,12 @@ input:
 output:
   content: Microsoft.Quantum.Math.Fraction
   types:
-  - summary: 与分母小于或等于 `fraction` 的持续分数最接近 `denominatorBound`
+  - summary: 最接近`fraction`的分数，分母小于或等于`denominatorBound`
     uid: microsoft.quantum.math.fraction
 metadata:
-  ms.openlocfilehash: 9599ec6bee680274547d5d4d505cace554de83e2
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 4134f4b1f53403eee1c2c87c7442b05931c40026
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73229848"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685721"
