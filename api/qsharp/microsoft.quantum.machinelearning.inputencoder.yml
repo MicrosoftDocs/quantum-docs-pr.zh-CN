@@ -19,9 +19,9 @@ output:
   - summary: 准备将给定的系数作为给定寄存器上的输入状态的状态准备操作。
     uid: microsoft.quantum.machinelearning.stategenerator
 metadata:
-  ms.openlocfilehash: 736c2495ec96981d2ca3dc81f7053e6bfb9aa48a
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: b1a45c2ce026ab15f1134167355fb131d9b0022e
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77909256"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684514"

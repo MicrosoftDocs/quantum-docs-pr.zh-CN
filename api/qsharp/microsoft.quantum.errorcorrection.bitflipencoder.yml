@@ -21,9 +21,9 @@ output:
   types:
   - uid: microsoft.quantum.errorcorrection.logicalregister
 metadata:
-  ms.openlocfilehash: 82b7b39f0617e54f1626f13ba2f49455cfbdf2d0
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: f7476f23c25d0e65426a05f648f39aec37d1e102
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74865913"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685080"

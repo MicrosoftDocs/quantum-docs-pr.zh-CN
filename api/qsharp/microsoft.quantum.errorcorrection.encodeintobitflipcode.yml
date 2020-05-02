@@ -14,7 +14,7 @@ input:
     isPrimitive: true
     uid: Qubit
   - name: auxQubits
-    summary: 首先在 $ \ket{00}$ 状态中注册辅助 qubits，用于对要保护的数据进行编码。
+    summary: 最初在 $ \ket{00}$ 状态中注册辅助 qubits，用于对要保护的数据进行编码。
     isArray: true
     isPrimitive: true
     uid: Qubit
@@ -26,9 +26,9 @@ output:
 seeAlso:
 - logicalregister
 metadata:
-  ms.openlocfilehash: 3890f4eebb70ea38fd23ffbe2b7b7eadf9e41d7b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 7a902bc056b9eb39bf12125a1078329f56712ac9
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73234574"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685013"

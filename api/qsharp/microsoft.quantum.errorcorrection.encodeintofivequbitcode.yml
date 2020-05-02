@@ -9,7 +9,7 @@ input:
   content: '(physRegister : Qubit[], auxQubits : Qubit[])'
   types:
   - name: physRegister
-    summary: 表示未编码状态的 qubit。 此数组 `Qubit[]` 的长度为1。
+    summary: 表示未编码状态的 qubit。 此数组`Qubit[]`的长度为1。
     isArray: true
     isPrimitive: true
     uid: Qubit
@@ -21,14 +21,14 @@ input:
 output:
   content: Microsoft.Quantum.ErrorCorrection.LogicalRegister
   types:
-  - summary: 存储编码状态 `LogicalRegister` 类型的物理 qubits 的数组。
+  - summary: 存储编码状态的类型`LogicalRegister`的物理 qubits 数组。
     uid: microsoft.quantum.errorcorrection.logicalregister
 seeAlso:
 - logicalregister
 metadata:
-  ms.openlocfilehash: 6147098742759d72dba9c8eee0218d973320793b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: f2f8c3aef8ea85691270958cf3274daa22f3ac03
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73234557"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685000"

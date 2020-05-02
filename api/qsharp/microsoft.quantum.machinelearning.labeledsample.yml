@@ -6,9 +6,9 @@ namespace: Microsoft.Quantum.MachineLearning
 summary: 一个示例，使用该示例所属的类进行标记。
 syntax: newtype LabeledSample = (Double[], Int);
 metadata:
-  ms.openlocfilehash: 8edfdf718a2b35310be8746ef8d0fadf79615984
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 8930a7baffd2199695e32e851bb72f65e0af4c43
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77909239"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684510"

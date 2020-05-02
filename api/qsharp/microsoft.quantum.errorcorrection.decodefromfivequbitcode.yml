@@ -26,9 +26,9 @@ seeAlso:
 - fivequbitcodeencoder
 - logicalregister
 metadata:
-  ms.openlocfilehash: 803d922dac0315357507fa52a25c7bcedc9449a7
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 46beb45bdd73c206208f62a8b0890fb98f368245
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73234676"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685066"
