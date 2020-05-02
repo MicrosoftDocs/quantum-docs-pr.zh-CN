@@ -18,9 +18,9 @@ typeParameters:
 - uid: "'T"
   summary: 要返回的默认值的类型。
 metadata:
-  ms.openlocfilehash: fb84a7a73d1f1be28734db8e5f4be9e862bb2c1f
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: e7e2177965f247b66cb13a0a033208ad1a4700e9
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74866812"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82658815"
