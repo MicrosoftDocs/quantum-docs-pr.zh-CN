@@ -38,14 +38,14 @@ input:
 output:
   content: Result[]
   types:
-  - summary: 通过测量 `target`上的 `paulis` 的每个元素获得的结果的数组。
+  - summary: 从测量上`paulis` `target`的每个元素获得的结果的数组。
     isArray: true
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 97ad0beb222a6a6d11394499e0039c405a3be9e8
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: de1f100a19cda847cfb253fe1dfa01079b9ba676
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73231395"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685182"

@@ -5,7 +5,7 @@ type: newtype
 namespace: Microsoft.Quantum.MachineLearning
 summary: 用于训练量子分类器的选项的集合。
 remarks: >-
-  不应直接创建此 UDT，而应通过调用 @"microsoft.quantum.machinelearning.defaulttrainingoptions" 然后使用 `w/` 运算符来重写不同的默认值来指定它。
+  不应直接创建此 UDT，而应通过调用@"microsoft.quantum.machinelearning.defaulttrainingoptions"并使用`w/`运算符重写不同的默认值来指定它。
 
 
   例如，若要使用100000度量值和最多8个定型时期：
@@ -20,9 +20,9 @@ remarks: >-
 syntax: newtype TrainingOptions = (Double, Double, Int, Int, Int, Int, Double, Int, (String -> Unit));
 references: '- [arXiv:1804.00633](https://arxiv.org/abs/1804.00633)'
 metadata:
-  ms.openlocfilehash: adc7056880a32c369a0fc594b68f5f2d9f4015f5
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: b8a24b0a9e036c0a6c1eea229ca76d62e400fde8
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77909018"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684334"

@@ -27,13 +27,13 @@ input:
 output:
   content: Int
   types:
-  - summary: '`inferredLabels[idx] != actualLabels[idx]``idx` 的索引数。'
+  - summary: 索引`idx`的数目`inferredLabels[idx] != actualLabels[idx]`。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: ba2156db41a1b1778a50b82bdb1ec18559bd7941
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 0fb65949c86d41412148ae9fc8cda993c518e9e9
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77908746"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684452"

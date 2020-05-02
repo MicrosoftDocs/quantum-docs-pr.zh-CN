@@ -31,9 +31,9 @@ output:
   types:
   - uid: microsoft.quantum.machinelearning.validationresults
 metadata:
-  ms.openlocfilehash: 211f5110f11a1128da4c73edbdfc948bc87e7959
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: d43cb6e30a193a2fbae65567a15f2e9e9fab57dc
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77908474"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684294"

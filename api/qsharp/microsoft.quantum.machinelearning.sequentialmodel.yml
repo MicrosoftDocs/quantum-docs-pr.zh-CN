@@ -7,9 +7,9 @@ summary: 描述一种量程分类器模型，该模型由一系列参数化和�
 syntax: newtype SequentialModel = (Microsoft.Quantum.MachineLearning.ControlledRotation[], Double[], Double);
 references: '- [arXiv:1804.00633](https://arxiv.org/abs/1804.00633)'
 metadata:
-  ms.openlocfilehash: 90e54e3eb5a23acdfde262f72ef3d6ccac1ff6c4
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: f653687ef29ac55704e6a7a8746de9e964bf5947
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77909052"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684373"

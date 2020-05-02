@@ -21,13 +21,13 @@ input:
 output:
   content: Result
   types:
-  - summary: 对 `target` register 度量给定的 Pauli 运算符的结果。
+  - summary: 在`target`收银机上测量给定 Pauli 运算符的结果。
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 4b302c21dac11fbf33138555371ded2c7f43a409
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 1ef0f8d0c9d52c9ec6fe6976dc10733930c31f6e
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73231344"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82685168"

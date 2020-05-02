@@ -5,7 +5,7 @@ type: newtype
 namespace: Microsoft.Quantum.ErrorCorrection
 summary: 表示一个操作，该操作用于测量纠错代码块的症状。
 remarks: >-
-  签名 `(LogicalRegister => Syndrome)` 表示一项操作，该操作将与 `LogicalRegister` 中的 qubits 联合，一些辅助 qubits 后跟辅助 qubits 的度量，以提取表示这些度量的 `Result[]` 的 `Syndrome` 值。
+  签名`(LogicalRegister => Syndrome)`表示一项操作，该操作与中`LogicalRegister`的 qubits 联合，一些辅助 qubits 后跟辅助 qubits 的度量，以提取表示`Syndrome` `Result[]`这些度量值的值。
 
 
   ### <a name="examples"></a>示例
@@ -24,9 +24,9 @@ seeAlso:
 - logicalregister
 - syndrome
 metadata:
-  ms.openlocfilehash: 75f0fee569475e887b97d9969c9e92285809f1cb
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: aa324e8e149ba9418082145ed982236c473c1a4d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73232228"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684827"

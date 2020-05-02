@@ -3,7 +3,7 @@ uid: microsoft.quantum.math.argcomplexpolar
 name: ArgComplexPolar
 type: function
 namespace: Microsoft.Quantum.Math
-summary: 返回 `ComplexPolar`类型的复数的相位。
+summary: 返回类型`ComplexPolar`为的复数的相位。
 syntax: 'function ArgComplexPolar (input : Microsoft.Quantum.Math.ComplexPolar) : Double'
 input:
   content: '(input : Microsoft.Quantum.Math.ComplexPolar)'
@@ -18,9 +18,9 @@ output:
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 4988eccbf920b766a4cfc4304015749eeb19dc84
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 2131a331a81531e6e95d5b146276dd637bee8b3a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73067486"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82684250"
