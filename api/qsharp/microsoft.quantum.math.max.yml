@@ -16,13 +16,13 @@ input:
 output:
   content: Int
   types:
-  - summary: '`values`的最大元素。'
+  - summary: 的最大元素`values`。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 2e5a33b9b476e0428d5afc80957bb2524cc3dd6a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ef6ae2738eac5c0422038a1f6bfa08ef6f503d4e
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73066500"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683284"

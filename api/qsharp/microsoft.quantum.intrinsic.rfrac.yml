@@ -7,12 +7,12 @@ summary: >-
   通过指定为 dyadic 分数的角度，对给定 Pauli 轴进行旋转。
 
 
-  \begin{align} R_ {\mu} （n，k） \mathrel{： =} e ^ {i \pi n \sigma_{\mu}/2 ^ k}，\end{align} 其中，$ \mu \in \{I，X，Y，Z\}$。
+  \begin{align} R_ {\mu} （n，k） \mathrel{： =} e ^ {i \pi n \ sigma_ {\mu}/2 ^ k}，\end{align} 其中，$ \mu \{\in i，X，Y，\}Z $。
 
 
   > [!WARNING]
 
-  > 此操作使用与 @"microsoft.quantum.intrinsic.r"**相反**的符号约定。
+  > 此操作使用中**opposite** @"microsoft.quantum.intrinsic.r"的相反符号约定。
 remarks: >-
   等效于：
 
@@ -53,9 +53,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 10795932b7057ccf58d2219208af2750eff0e363
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: dc9f0ca68e1528ee7a36ef1503785cf60c08567c
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216486"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683688"

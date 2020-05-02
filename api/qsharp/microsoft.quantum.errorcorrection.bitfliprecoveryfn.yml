@@ -11,14 +11,14 @@ input:
 output:
   content: Microsoft.Quantum.ErrorCorrection.RecoveryFn
   types:
-  - summary: 使用 `Result[]` 的 `RecoveryFn` 的类型的函数，并返回更正检测到的错误的 `Pauli[]` 操作。
+  - summary: 采用症状度量`RecoveryFn` `Result[]`并返回更正检测到的错误的`Pauli[]`操作的类型的函数。
     uid: microsoft.quantum.errorcorrection.recoveryfn
 seeAlso:
 - microsoft.quantum.canon.recoveryfn
 metadata:
-  ms.openlocfilehash: 6b9446f55e47cc96fe0af194b956c51282ae0f1b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: aeb20fcef86b26fd61f3bbe2594547f1ae212b4c
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73233588"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683890"

@@ -21,9 +21,9 @@ output:
       isPrimitive: true
       uid: Qubit
 metadata:
-  ms.openlocfilehash: 70d6afc311f7eb81c4c6eb736665f571c553bfed
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 68358aa7fff713edc39b6f210a7568383dc6a090
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74865896"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82683914"
