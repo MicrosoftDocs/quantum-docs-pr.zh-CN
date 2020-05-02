@@ -10,7 +10,7 @@ input:
   content: '(op : (Qubit[] => Unit), reference : Qubit[], target : Qubit[])'
   types:
   - name: op
-    summary: 操作 $ \Lambda $，其 Choi – Jamiłkowski 状态 $J （\Lambda）/2 ^ N $ 准备好，其中 $N $ 是 `op` 作用于的 qubits 的数目。
+    summary: 操作 $ \Lambda $，其 Choi – Jamiłkowski 状态 $J （\Lambda）/2 ^ N $ 准备好，其中 $N $ 是其`op`作用的 qubits 的数目。
     isOperation: true
     input:
       types:
@@ -22,12 +22,12 @@ input:
       - isPrimitive: true
         uid: Unit
   - name: reference
-    summary: 以 $ \ket{00\cdots 0} $ 状态开头的 qubits 的寄存器，用作 `op`操作的参考。
+    summary: 以 $ \ket{00\cdots 0} $ 状态开头的 qubits 的寄存器，将用作操作的`op`引用。
     isArray: true
     isPrimitive: true
     uid: Qubit
   - name: target
-    summary: 最初在 $ \ket{00\cdots 0} $ 状态的 qubits 的寄存器，将在其上应用 `op`。
+    summary: 最初在 $ \ket{00\cdots 0} $ 状态的 qubits 的寄存器，将应用`op`该状态。
     isArray: true
     isPrimitive: true
     uid: Qubit
@@ -41,9 +41,9 @@ seeAlso:
 - preparechoistatec
 - preparechoistateca
 metadata:
-  ms.openlocfilehash: f1f0ea6233d13ce1850b3b8dfb210ab6b0e378f8
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: c23954131c9ef7c609089e3f58b3577151409993
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73228114"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681176"

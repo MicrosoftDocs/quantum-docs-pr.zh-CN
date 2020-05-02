@@ -10,9 +10,9 @@ summary: >-
   这是一种 oracle，它实现 $U （\delta t）： \ket{\psi （t）} \mapsto \ket{\psi （t + \delta t）} $ $t $，其中 $U $ 是一个固定操作，其中 $ \delta t $ 是非负数实数。
 syntax: newtype ContinuousOracle = ((Double, Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: b412c93583a68f71c232d2f7e11fd3d506e5f817
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 9c5776dfa2ec4cfbd128a6e20158f1be23680f11
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73231157"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681325"

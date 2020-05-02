@@ -10,16 +10,16 @@ summary: >-
   Oracle $O $ 的输入为：
 
 
-  - 将存储所需量程状态 $ \ket{\psi} 的寄存器\_s $。
+  - 将存储所需的量程状态 $ \ket{\psi}\_s $ 的寄存器。
 remarks: >-
-  此 oracle 定义的 $O \ket{0}= \ket{\psi} $ 作用于 on 计算基础状态 $ \ket{0}$，以创建状态 $ \ket{\psi} $。
+  此 oracle 定义的 $O \ket{0}= \ket{\psi} $ 对计算基础状态 $ \ket{0}$ 采取操作，以创建状态 $ \ket{\psi} $。
 
   第一个参数是 $ \ket{\psi} $ 的 qubit 寄存器。
 syntax: newtype DeterministicStateOracle = (Qubit[] => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: bc10b84502866d1f5e19b28e77e54c1b10d01b28
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 35d4b0243fac954c483a81ae1cccb46b44759ca0
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73231123"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681312"

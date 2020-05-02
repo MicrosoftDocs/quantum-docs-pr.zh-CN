@@ -7,7 +7,7 @@ summary: 计算两个实数之间的模数。
 remarks: >-
   此函数通过包装关于单位圆的实际行，然后查找与输入对应的单位圆上的角度来计算实际的模数。
 
-  然后，`minValue` 输入会有效地指定要将单位圆剪切到何处。
+  然后`minValue` ，输入有效地指定要将单位圆剪切到何处。
 examples: >-
   ```qsharp
       // Returns 3 π / 2.
@@ -38,9 +38,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 9430ce172fec2bf10d64aa111d5a788c574a9566
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 0a35628198ae5d496b093b98542daeac16aced9b
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73232364"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681497"

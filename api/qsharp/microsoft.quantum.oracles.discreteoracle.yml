@@ -10,9 +10,9 @@ summary: >-
   这是一种 oracle，它实现 $U ^ m $ $U $ 的固定操作和非负 $m 整数。
 syntax: newtype DiscreteOracle = ((Int, Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: 82ed7bf79d67411c03a89c9ddcb4aa311d8c04b2
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ef4b696816b6906f4d0858957a9ca10d06e4878f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73231072"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681267"

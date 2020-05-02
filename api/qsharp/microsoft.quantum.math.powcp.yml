@@ -19,9 +19,9 @@ output:
   - summary: Power $a ^ b $
     uid: microsoft.quantum.math.complexpolar
 metadata:
-  ms.openlocfilehash: 0db0568ede6bf3de8c8086a03b80065499085738
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: eaed2cd971f0f4e66c02350bf8191bf7a77db92b
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73221705"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681572"
