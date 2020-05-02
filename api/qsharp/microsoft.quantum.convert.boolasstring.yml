@@ -4,7 +4,7 @@ name: BoolAsString
 type: function
 namespace: Microsoft.Quantum.Convert
 summary: 将给定的布尔值转换为等效的字符串表示形式。
-remarks: 有关更多详细信息，请参阅[ C# Convert。](https://docs.microsoft.com/dotnet/api/system.convert.tostring?view=netframework-4.7.1#System_Convert_ToString_System_Boolean_)
+remarks: '有关更多详细信息，请参阅[c # Convert。](https://docs.microsoft.com/dotnet/api/system.convert.tostring?view=netframework-4.7.1#System_Convert_ToString_System_Boolean_)'
 syntax: 'function BoolAsString (a : Bool) : String'
 input:
   content: '(a : Bool)'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: String
 metadata:
-  ms.openlocfilehash: edcc398ab30909ed7965fbb484ebd4f6917a9053
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d315f5a20820f722afdc5a01b6a4724d355d2b55
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73232347"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82660686"
