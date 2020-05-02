@@ -1,147 +1,101 @@
 ---
-title: '用 Q # + 开发C#'
+title: 使用 Q# + C# 进行开发
 author: natke
 ms.author: nakersha
 ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.cs
-ms.openlocfilehash: 7803846279f230f5fc0ee8424bd39be735a650ca
-ms.sourcegitcommit: 5094c0a60cbafdee669c8728b92df281071259b9
+ms.openlocfilehash: 5bcb036b0b32e64d43f90e9a068d9dcc237890ba
+ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/06/2020
-ms.locfileid: "77036281"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "82680168"
 ---
-# <a name="develop-with-q--c"></a>用 Q # + 开发C#
+# <a name="using-q-with-c-and-f"></a>对 C\#和 F 使用 Q #\#
 
-安装 QDK 以开发C#主机程序以调用 Q # 操作。
+Q # 旨在与 .NET 语言（如 c # 和 F #）一起正常运行。
+在本指南中，我们将演示如何将 Q # 与用 .NET 语言编写的主机程序结合使用。
 
-Q # 构建为适用于 .NET 语言（特别是C#）。 可以在不同的开发环境中使用此配对：
+## <a name="prerequisites"></a>先决条件
 
-- [使用 Visual Studio C#的 Q # + （Windows）](#VS)
-- [使用 Visual Studio Code 的C# Q # + （Windows、Linux 和 Mac）](#VSC)
-- [使用 `dotnet` 命令C#行工具的 Q # +](#command)
+- 安装用于[Q # 命令行项目](xref:microsoft.quantum.install.standalone)的量程开发工具包。
 
-## 使用 Visual Studio 通过 Q C# # + 进行开发 <a name="VS"></a>
+## <a name="creating-a-q-library-and-a-net-host"></a>创建 Q # 库和 .NET 主机
 
-Visual Studio 提供了一个用于开发 Q # 程序的丰富环境。 Q # Visual Studio 扩展包含用于 Q # 文件和项目的模板，以及语法突出显示、代码完成和 IntelliSense 支持。
+第一步是为你的 Q # 库创建项目，并为将调用到你的 Q # 库中定义的操作和函数的 .NET 主机创建项目。
 
+### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
-1. 先决条件
+- 创建新的 Q # 库
+  - 中转到 "**文件** -> " "**新建** -> **项目**"
+  - 在搜索框中键入 "Q #"
+  - 选择**Q # 库**
+  - 选择 **“下一步”**。
+  - 选择库的名称和位置
+  - 请确保未**选中**"将项目和解决方案放在同一目录中"
+  - 选择**创建**
+- 创建新的 c # 或 F # 宿主程序
+  - 中转到**文件**→**新建**→**项目**
+  - 为 c # 或 F 选择 "控制台应用（.NET Core"） "#
+  - 选择 **“下一步”**。
+  - 在 "*解决方案*" 下，选择 "添加到解决方案"
+  - 选择主机程序的名称
+  - 选择**创建**
 
-    - [Visual Studio](https://visualstudio.microsoft.com/downloads/) 16.3，启用了 .NET Core 跨平台开发工作负载。
+### <a name="visual-studio-code-or-command-line"></a>[Visual Studio Code 或命令行](#tab/tabid-cmdline)
 
-1. 安装 Q# Visual Studio 扩展
+- 创建新的 Q # 库
 
-    - 下载并安装[Visual Studio 扩展](https://marketplace.visualstudio.com/items?itemName=quantum.DevKit)
+  ```dotnetcli
+  dotnet new classlib -lang Q# -o quantum
+  ```
 
-1. 通过创建 `Hello World` 应用程序来验证安装
+- 创建新的 c # 或 F # 控制台项目
 
-    - 创建新的 Q# 应用程序
+  ```dotnetcli
+  dotnet new console -lang C# -o host  
+  ```
 
-        - 转到“文件” **“新建”** “项目” ->  -> 
-        - 在搜索框中键入 `Q#`
-        - 选择“Q# 应用程序”
-        - 选择 **“下一步”** 。
-        - 为应用程序选择名称和位置
-        - 选择“创建”
+- 添加你的 Q # 库作为主机程序的引用
 
-    - 检查项目
+  ```dotnetcli
+  cd host
+  dotnet add reference ../quantum/quantum.csproj
+  ```
 
-        应该会看到已创建两个文件：`Driver.cs`，它是 C# 主机应用程序；以及 `Operation.qs`，它是定义将消息打印到控制台的简单操作的 Q# 程序。
+- 可有可无为这两个项目创建解决方案
 
-    - 运行应用程序
+  ```dotnetcli
+  dotnet new sln -n quantum-dotnet
+  dotnet sln quantum-dotnet.sln add ./quantum/quantum.csproj
+  dotnet sln quantum-dotnet.sln add ./host/host.csproj
+  ```
 
-        - 选择“调试” -> “在不调试的情况下启动”
-        - 应该会看到打印到控制台窗口的文本 `Hello quantum world!`。
+***
 
-> [!NOTE]
-> * 如果一个 Visual Studio 解决方案中具有多个项目，解决方案中包含的所有项目都需要位于解决方案所在的同一文件夹中，或位于其中一个子文件夹中。  
+## <a name="calling-into-q-from-net"></a>从 .NET 调入 Q #
 
-## 使用 Q # + C#进行开发 Visual Studio Code <a name="VSC"></a>
+按照上述说明设置项目后，可以从 .NET 控制台应用程序调入 Q #。
+Q # 编译器将为每个 Q # 操作和函数创建 .NET 类，使你能够在模拟器上运行量程程序。
 
-Visual Studio Code （VS Code）提供了一个丰富的环境，用于在 Windows、Linux 和 Mac 上开发 Q # 程序。  Q # VS Code 扩展包括对 Q # 语法突出显示、代码完成和 Q # 代码片段的支持。
+例如， [.net 互操作性示例](https://github.com/microsoft/Quantum/tree/master/samples/interoperability/dotnet)包含以下 Q # 操作的示例：
 
-1. 先决条件
+:::code language="qsharp" source="~/quantum/samples/interoperability/dotnet/qsharp/Operations.qs" range="67-75":::
 
-   - [VS Code](https://code.visualstudio.com/download)
-   - [.NET Core SDK 3.1 或更高版本](https://www.microsoft.com/net/download)
+若要在量程模拟器上从 .NET 调用此操作，可以使用由`Run` Q # 编译器`RunAlgorithm`生成的 .net 类的方法：
 
-1. 安装量子 VS Code 扩展
+### <a name="c"></a>[C#](#tab/tabid-csharp)
 
-    - 安装 [VS Code 扩展](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode)
+:::code language="csharp" source="~/quantum/samples/interoperability/dotnet/csharp/Host.cs" range="4-":::
 
-1. 安装量子项目模板：
+### <a name="f"></a>[果#](#tab/tabid-fsharp)
 
-   - 转到“视图” **“命令面板”**  -> 
-   - 选择**Q #：安装项目模板**
+:::code language="fsharp" source="~/quantum/samples/interoperability/dotnet/fsharp/Host.fs" range="4-":::
 
-    现已安装量子开发工具包，并且可以在自己的应用程序和库中使用。
-
-1. 通过创建 `Hello World` 应用程序来验证安装
-
-    - 创建新项目：
-
-        - 转到“视图” **“命令面板”**  -> 
-        - 选择**Q #：创建新项目**
-        - 选择**独立控制台应用程序**
-        - 导航到要在其中创建应用程序的文件系统上的位置
-        - 创建项目后，单击“打开新项目...”按钮
-
-    - 如果尚未安装 VS Code 的C#扩展，将显示一个弹出窗口。 安装扩展。 
-
-    - 运行应用程序：
-
-        - 中转到**终端** -> **新终端**
-        - 输入 `dotnet run`
-        - 应在输出窗口 `Hello quantum world!` 中看到以下文本
-
-
-> [!NOTE]
-> * Visual Studio Code 扩展当前不支持具有多个根文件夹的工作区。 如果一个 VS Code 工作区中具有多个项目，则所有项目都必须包含在同一个根文件夹中。
-
-## 使用 `dotnet` 命令行工具C#通过 Q # + 进行开发<a name="command"></a>
-
-当然，只需安装 .NET Core SDK 和 QDK 项目模板，就可以从命令行生成和运行 Q# 程序。 
-
-1. 先决条件
-
-    - [.NET Core SDK 3.1 或更高版本](https://www.microsoft.com/net/download)
-
-1. 安装适用于 .NET 的量子项目模板
-
-    ```dotnetcli
-    dotnet new -i Microsoft.Quantum.ProjectTemplates
-    ```
-
-    现已安装量子开发工具包，并且可以在自己的应用程序和库中使用。
-
-1. 通过创建 `Hello World` 应用程序来验证安装
-
-    - 创建新应用程序
-
-       ```dotnetcli
-       dotnet new console -lang "Q#" -o runSayHello
-       ```
-
-    - 导航到新的应用程序目录
-
-       ```bash
-       cd runSayHello
-       ```
-
-    应该会看到已创建两个文件，以及应用程序的项目文件：Q# 文件 (`Operation.qs`) 和 C# 主机文件 (`Driver.cs`)。
-
-    - 运行应用程序
-
-        ```dotnetcli
-        dotnet run
-        ```
-
-        应该会看到以下输出：`Hello quantum world!`
-
+***
     
 ## <a name="whats-next"></a>后续步骤
 
-在首选环境中安装量子开发工具包后，可以编写并运行[第一个量子程序](xref:microsoft.quantum.write-program)。
+现在，你已为 Q # 命令行程序设置了量子开发工具包，并且为了与 .NET 互操作，你可以编写并运行[第一个量程程序](xref:microsoft.quantum.write-program)。

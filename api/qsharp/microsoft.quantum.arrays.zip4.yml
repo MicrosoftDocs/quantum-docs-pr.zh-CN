@@ -31,7 +31,7 @@ input:
 output:
   content: ('T1, 'T2, 'T3, 'T4)[]
   types:
-  - summary: 一个数组，其中包含每个 `idx`的窗体 `(first[idx], second[idx], third[idx], fourth[idx])` 的4元组。 如果四个数组的长度不相等，则输出将与输入的较短内容相同。
+  - summary: 一个数组，其中包含每个`(first[idx], second[idx], third[idx], fourth[idx])` `idx`的窗体的4元组。 如果四个数组的长度不相等，则输出将与输入的较短内容相同。
     isArray: true
     types:
     - uid: "'T1"
@@ -55,9 +55,9 @@ seeAlso:
 - zip
 - zip3
 metadata:
-  ms.openlocfilehash: 797258d6f178724007baa765be20b639c32f84fd
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5e099a24bdcad341d018cf7c5becec8a4d558631
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73214157"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680727"

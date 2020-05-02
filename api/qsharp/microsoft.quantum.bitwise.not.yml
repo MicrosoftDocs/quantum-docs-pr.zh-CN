@@ -6,8 +6,8 @@ namespace: Microsoft.Quantum.Bitwise
 summary: >-
   返回整数的按位 "非"。
 
-  这会执行与内置 `~~~` 运算符相同的计算。
-remarks: 有关更多详细信息，请参阅[ C# ~ 运算符](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/bitwise-complement-operator)。
+  这会执行与内置`~~~`运算符相同的计算。
+remarks: '有关更多详细信息，请参阅[c # ~ 运算符](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/bitwise-complement-operator)。'
 examples: >-
   ```qsharp
 
@@ -29,9 +29,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: f06b4d6b5cd7e030936ac4f6018665bc5636f04a
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 3de6cbe072ab770fba893c41112df3bb686c3e79
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73213987"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680654"

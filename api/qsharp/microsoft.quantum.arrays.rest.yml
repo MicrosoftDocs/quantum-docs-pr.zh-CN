@@ -16,7 +16,7 @@ input:
 output:
   content: "'T[]"
   types:
-  - summary: 包含 `array[1..Length(array) - 1]`的元素的数组。
+  - summary: 包含元素`array[1..Length(array) - 1]`的数组。
     isArray: true
     uid: "'T"
     isLocal: true
@@ -24,9 +24,9 @@ typeParameters:
 - uid: "'T"
   summary: 数组元素的类型。
 metadata:
-  ms.openlocfilehash: 96779f32f93d2d045502b5e7264de1af39affd9f
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 045480f59b03523e39f8feaddacc17b9e6a20c8a
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218033"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680863"

@@ -23,7 +23,7 @@ input:
   content: "(nElementsTotal : Int, defaultElement : 'T, inputArray : 'T[])"
   types:
   - name: nElementsTotal
-    summary: 填充的数组的长度。 如果这是正的，`inputArray` 将在头中填充。 如果此为负数，则在结尾处填充 `inputArray`。
+    summary: 填充的数组的长度。 如果为正， `inputArray`则在头中填充。 如果此为负， `inputArray`则在结尾处填充。
     isPrimitive: true
     uid: Int
   - name: defaultElement
@@ -38,7 +38,7 @@ input:
 output:
   content: "'T[]"
   types:
-  - summary: 一个数组 `output`，该数组在 `defaultElement`s 的开头填充 `inputArray`，直到 `output` 长度为 `nElementsTotal`
+  - summary: 一个数组`output` ，它是`inputArray`在头`defaultElement`中填充的，直到`output`长度为`nElementsTotal`
     isArray: true
     uid: "'T"
     isLocal: true
@@ -46,9 +46,9 @@ typeParameters:
 - uid: "'T"
   summary: 数组元素的类型。
 metadata:
-  ms.openlocfilehash: 3fb999af73e68de9143ddc051b8a43247f5282f0
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 6fafc015026ca9b369e23fda702af172867444ca
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218050"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680893"

@@ -28,7 +28,7 @@ input:
   content: "(mapper : ((Int, 'T) -> 'U), array : 'T[])"
   types:
   - name: mapper
-    summary: 从 `(Int, 'T)` 到用于映射元素及其索引的 `'U` 的函数。
+    summary: 用于映射元素`(Int, 'T)`及其`'U`索引的的函数。
     isFunction: true
     input:
       types:
@@ -41,28 +41,28 @@ input:
       - uid: "'U"
         isLocal: true
   - name: array
-    summary: "`'T`上的元素的数组。"
+    summary: 上`'T`的元素的数组。
     isArray: true
     uid: "'T"
     isLocal: true
 output:
   content: "'U[]"
   types:
-  - summary: 由 `mapper` 函数映射的元素 `'U[]` 数组。
+  - summary: 由`mapper`函数`'U[]`映射的元素的数组。
     isArray: true
     uid: "'U"
     isLocal: true
 typeParameters:
 - uid: "'T"
-  summary: '`array` 元素的类型。'
+  summary: '`array`元素的类型。'
 - uid: "'U"
-  summary: '`mapper` 函数的结果类型。'
+  summary: '`mapper`函数的结果类型。'
 seeAlso:
 - mapped
 metadata:
-  ms.openlocfilehash: 08dacd9b53b151d5cadcef16db8b460d4326d746
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 64741df4a3d7b7937f13614ffc9c7c7ec1aa3f7b
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73214276"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680938"

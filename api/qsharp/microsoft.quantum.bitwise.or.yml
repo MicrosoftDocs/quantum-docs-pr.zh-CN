@@ -6,8 +6,8 @@ namespace: Microsoft.Quantum.Bitwise
 summary: >-
   返回两个整数的按位 "或"。
 
-  这会执行与内置 `|||` 运算符相同的计算。
-remarks: 请参阅[ C# |运算符](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/or-operator)了解更多详细信息。
+  这会执行与内置`|||`运算符相同的计算。
+remarks: '请参阅[c # |运算符](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/or-operator)了解更多详细信息。'
 examples: >-
   ```qsharp
 
@@ -34,9 +34,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 494af7ad852a6e88a3a3a521030e21f4f866bee1
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: c55c5e8aa8917392e7be290e56621f42ea5f8a7d
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73217761"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680651"

@@ -1,36 +1,36 @@
 ---
-title: '用 Q # + Python 进行开发'
+title: 使用 Q# + Python 进行开发
 author: natke
 ms.author: nakersha
 ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.python
-ms.openlocfilehash: 1e40c2dddeaf4fad41693c976493f10fffffa139
-ms.sourcegitcommit: f8d6d32d16c3e758046337fb4b16a8c42fb04c39
+ms.openlocfilehash: e1b8a0c68b3ac0c059c6de6e478593321764ff88
+ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/29/2020
-ms.locfileid: "76830995"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "82680151"
 ---
-# <a name="develop-with-q--python"></a>用 Q # + Python 进行开发
+# <a name="develop-with-q--python"></a>使用 Q# + Python 进行开发
 
 安装 QDK 以开发 Python 主机程序以调用 Q # 操作。
 
-1. 必备组件
+1. 先决条件
 
     - [Python](https://www.python.org/downloads/) 3.6 或更高版本
     - [PIP](https://pip.pypa.io/en/stable/installing) Python 包管理器
     - [.NET Core SDK 3.1 或更高版本](https://www.microsoft.com/net/download)
 
 
-1. 安装 `qsharp` 包，这是一个允许在 Q # 和 Python 之间互操作的 Python 包。
+1. 安装`qsharp`包，这是启用 Q # 和 Python 之间的互操作的 python 包。
 
     ```bash
     pip install qsharp
     ```
 
-1. 安装 `iqsharp`，Jupyter 和 Python 使用的内核，提供用于编译和执行 Q # 操作的核心功能。
+1. 安装 IQ #，Jupyter 和 Python 使用的内核，提供用于编译和执行 Q # 操作的核心功能。
 
     ```bash
     dotnet tool install -g Microsoft.Quantum.IQSharp
@@ -83,6 +83,6 @@ ms.locfileid: "76830995"
 > [!NOTE]
 > * 你还可以使用 Python Jupyter 笔记本编写传统的 Python 程序并从单元格中调用 Q # 操作。 Python 代码只是一个普通的 Python 计划。
 
-## <a name="whats-next"></a>还有什么？
+## <a name="whats-next"></a>后续步骤
 
 在首选环境中安装量子开发工具包后，可以编写并运行[第一个量子程序](xref:microsoft.quantum.write-program)。

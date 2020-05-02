@@ -4,13 +4,13 @@ name: Mapped
 type: function
 namespace: Microsoft.Quantum.Arrays
 summary: 给定数组和为数组元素定义的函数后，将返回一个新数组，该数组由函数下的原始数组的图像组成。
-remarks: "函数是为泛型类型定义的，也就是说，只要有一个数组 `'T[]` 和一个函数 `mapper: 'T -> 'U` 我们就可以映射数组的元素，并生成一个类型 `'U[]`的新数组。"
+remarks: "函数是为泛型类型定义的，也就是说，只要有一个数组`'T[]`和一个函数`mapper: 'T -> 'U` ，我们就可以映射数组的元素，并生成一个类型`'U[]`为的新数组。"
 syntax: "function Mapped (mapper : ('T -> 'U), array : 'T[]) : 'U[]"
 input:
   content: "(mapper : ('T -> 'U), array : 'T[])"
   types:
   - name: mapper
-    summary: 从 `'T` 到用于映射元素的 `'U` 的函数。
+    summary: 用于映射元素`'T`的`'U`的函数。
     isFunction: true
     input:
       types:
@@ -21,26 +21,26 @@ input:
       - uid: "'U"
         isLocal: true
   - name: array
-    summary: "`'T`上的元素的数组。"
+    summary: 上`'T`的元素的数组。
     isArray: true
     uid: "'T"
     isLocal: true
 output:
   content: "'U[]"
   types:
-  - summary: 由 `mapper` 函数映射的元素 `'U[]` 数组。
+  - summary: 由`mapper`函数`'U[]`映射的元素的数组。
     isArray: true
     uid: "'U"
     isLocal: true
 typeParameters:
 - uid: "'T"
-  summary: '`array` 元素的类型。'
+  summary: '`array`元素的类型。'
 - uid: "'U"
-  summary: '`mapper` 函数的结果类型。'
+  summary: '`mapper`函数的结果类型。'
 metadata:
-  ms.openlocfilehash: 3e9262d3d2b294ccfafac24b2b080b124c9e319c
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 877899dad82374281090e189c727c2a662f12b7b
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73218118"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680953"

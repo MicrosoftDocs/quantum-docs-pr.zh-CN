@@ -9,9 +9,9 @@ summary: >-
 
   给定一个操作和一个对该操作的输入时，只要提供附加输入，就会应用该操作。
 
-  具体而言，表达式 `Delay(op, arg, _)` 是在调用时将 `op` 应用于 `arg` 的操作。
+  具体而言，表达式`Delay(op, arg, _)`是`op` `arg`在调用时应用于的操作。
 
-  Expression `Delay(op,arg,_)` 允许延迟 `op`的应用程序。
+  表达式`Delay(op,arg,_)`允许延迟的应用程序`op`。
 syntax: "operation Delay (op : ('T => 'U), arg : 'T, aux : Unit) : 'U"
 input:
   content: "(op : ('T => 'U), arg : 'T, aux : Unit)"
@@ -51,9 +51,9 @@ seeAlso:
 - microsoft.quantum.canon.delayca
 - microsoft.quantum.canon.delayed
 metadata:
-  ms.openlocfilehash: 1759670182cff1153859c62e9c95d1be1f998674
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d6e9c821bdb21714ee914bc908f6f93222b5c3b6
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226108"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680202"

@@ -6,8 +6,8 @@ namespace: Microsoft.Quantum.Bitwise
 summary: >-
   返回两个整数的按位 "异或" （XOR）。
 
-  这会执行与内置 `^^^` 运算符相同的计算。
-remarks: 有关更多详细信息，请参阅[ C# ^ 运算符](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/xor-operator)。
+  这会执行与内置`^^^`运算符相同的计算。
+remarks: '有关更多详细信息，请参阅[c # ^ 运算符](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/xor-operator)。'
 examples: >-
   ```qsharp
 
@@ -34,9 +34,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 5521b9fa4838261e44554de39704c0adbb45f8ed
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 8b7da5a00592a071617d775d71fb7f07931cf299
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73213834"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680560"

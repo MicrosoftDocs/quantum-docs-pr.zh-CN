@@ -4,7 +4,7 @@ name: SequenceL
 type: function
 namespace: Microsoft.Quantum.Arrays
 summary: 获取给定时间间隔内的整数数组。
-remarks: '`from` 和 `to` 之间的差异必须适合 `Int` 值。'
+remarks: 与`from` `to`之间的差异必须符合某个`Int`值。
 examples: >-
   ```qsharp
 
@@ -24,20 +24,20 @@ input:
     isPrimitive: true
     uid: BigInt
   - name: to
-    summary: 间隔不小于 `from`的非独占结束索引。
+    summary: 不小于的间隔的非独占结束索引`from`。
     isPrimitive: true
     uid: BigInt
 output:
   content: BigInt[]
   types:
-  - summary: 一个数组，其中包含数字序列 `from`、`from + 1`、... `to`。
+  - summary: 一个包含数字`from`序列的数组， `from + 1`，...，。 `to`
     isArray: true
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: 09d5798b0311285e671bc5ed1f9358c557a74946
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 7271856286009cfd1651f19f69f932e79d79c2bf
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73217982"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82680815"

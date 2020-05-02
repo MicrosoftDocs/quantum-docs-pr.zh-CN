@@ -9,10 +9,10 @@ summary: >-
   如果给定标识运算符，则 qubit 在最大化混合状态下准备就绪。
 
 
-  如果 qubit 最初处于 $ \ket{0}$ 状态，则此操作将在给定 Pauli 运算符的 $ + $1 eigenstate 中准备 qubit，或者，对于 `PauliI`，则为最大化混合状态下的（请参阅 <xref:microsoft.quantum.preparation.preparesinglequbitidentity>）。
+  如果 qubit 最初处于 $ \ket{0}$ 状态，则此操作将在给定 Pauli 运算符的 $ + $1 eigenstate 中准备 qubit，或在最大化混合状态下`PauliI`为（请参见<xref:microsoft.quantum.preparation.preparesinglequbitidentity>）。
 
 
-  如果 qubit 的状态不是 $ \ket{0}$，则此操作将应用以下入口： $H $ 用于 `PauliX`，$HS $ for `PauliY`，$I $ 表示 `PauliZ`，<xref:microsoft.quantum.preparation.preparesinglequbitidentity> `PauliI`。
+  如果 qubit 的状态不是 $ \ket{0}$，此操作将应用以下入口： $H $ for `PauliX`、$HS $ for `PauliY`、$I $ for `PauliZ`和。 <xref:microsoft.quantum.preparation.preparesinglequbitidentity> `PauliI`
 syntax: 'operation PrepareQubit (basis : Pauli, qubit : Qubit) : Unit'
 input:
   content: '(basis : Pauli, qubit : Qubit)'
@@ -31,9 +31,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: be4eb730bebd00531aaa49302578b23f4a52237b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 70032bd9174bb987206e2084e2788e5ac7169ae7
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73226533"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681122"
