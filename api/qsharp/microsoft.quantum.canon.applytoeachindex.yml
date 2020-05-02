@@ -40,9 +40,9 @@ seeAlso:
 - microsoft.quantum.canon.applytoeachindexc
 - microsoft.quantum.canon.applytoeachindexca
 metadata:
-  ms.openlocfilehash: 1cbe6b342dc3d821c082a959bebbdaaada1f9763
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 9458058939e4d01feea2f89f3f4ca2b1be56f666
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73068506"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674871"

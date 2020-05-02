@@ -7,17 +7,17 @@ summary: >-
   应用两个操作之一，具体取决于传统位的值。
 
 
-  给定一个位 `bit`，当 `bit` 为 `true`时，应用 `trueInput` 作为其输入的操作 `trueOp`，并在 `falseOp(falseInput)` `bit` 时应用 `false`。
+  给定一个位`bit`，在为时`trueOp`应用`trueInput`该操作，并`bit`在`true`为时应用`falseOp(falseInput)` `bit`该操作`false`。
 syntax: "operation ApplyIfElseB (bit : Bool, (trueOp : ('T => Unit), trueInput : 'T), (falseOp : ('U => Unit), falseInput : 'U)) : Unit"
 input:
   content: "(bit : Bool, (trueOp : ('T => Unit), trueInput : 'T), (falseOp : ('U => Unit), falseInput : 'U))"
   types:
   - name: bit
-    summary: 用于确定是否应用 `trueOp` 或 `falseOp` 的布尔值。
+    summary: 用于确定是否`trueOp`应用或`falseOp`的布尔值。
     isPrimitive: true
     uid: Bool
   - name: trueOp
-    summary: '`true``bit` 时要应用的操作。'
+    summary: 在为`bit` `true`时要应用的操作。
     isOperation: true
     input:
       types:
@@ -28,11 +28,11 @@ input:
       - isPrimitive: true
         uid: Unit
   - name: trueInput
-    summary: 当 `bit` `true`时，提供给 `trueOp` 的输入。
+    summary: 当为`trueOp` `bit` `true`时要向其提供的输入。
     uid: "'T"
     isLocal: true
   - name: falseOp
-    summary: '`false``bit` 时要应用的操作。'
+    summary: 在为`bit` `false`时要应用的操作。
     isOperation: true
     input:
       types:
@@ -43,7 +43,7 @@ input:
       - isPrimitive: true
         uid: Unit
   - name: falseInput
-    summary: 当 `bit` `false`时，提供给 `falseOp` 的输入。
+    summary: 当为`falseOp` `bit` `false`时要向其提供的输入。
     uid: "'U"
     isLocal: true
 output:
@@ -53,9 +53,9 @@ output:
     uid: Unit
 typeParameters:
 - uid: "'T"
-  summary: 要有条件地应用 `trueOp` 操作的输入类型。
+  summary: 要有条件地应用的`trueOp`操作的输入类型。
 - uid: "'U"
-  summary: 要有条件地应用 `falseOp` 操作的输入类型。
+  summary: 要有条件地应用的`falseOp`操作的输入类型。
 seeAlso:
 - microsoft.quantum.canon.applyifzero
 - microsoft.quantum.canon.applyifone
@@ -63,9 +63,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifelsera
 - microsoft.quantum.canon.applyifelserca
 metadata:
-  ms.openlocfilehash: bdec84c4a9bb341bea919f26836306e200c17a7b
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: cce5dba2473874f5af7c8cbb41a69ed6ba62e7c7
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76870999"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82675034"

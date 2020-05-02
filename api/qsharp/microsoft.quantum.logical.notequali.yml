@@ -30,13 +30,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: 当且仅当 `a` 不等于 `b`时，`true`。
+  - summary: '`true`当且仅当`a`不等于时`b`。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 2aea02b6434ab1fa55b3b39146990a6c4bf4deba
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 91de33dc22bbc74ed61485e463644eeabd36f115
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73235254"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82674057"
