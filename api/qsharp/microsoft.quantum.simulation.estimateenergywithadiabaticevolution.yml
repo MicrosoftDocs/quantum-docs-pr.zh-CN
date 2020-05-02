@@ -3,7 +3,7 @@ uid: microsoft.quantum.simulation.estimateenergywithadiabaticevolution
 name: EstimateEnergyWithAdiabaticEvolution
 type: operation
 namespace: Microsoft.Quantum.Simulation
-summary: 通过对自动分配的输入状态应用 `statePrepUnitary`，然后使用 `adiabaticUnitary`进行 adiabatic 状态准备，并最终使用 `phaseEstAlgorithm`在生成的状态上 `qpeUnitary`，来执行状态准备。
+summary: 执行状态准备，方法是`statePrepUnitary`对自动分配的输入状态应用，然后使用 adiabatic 状态准备`adiabaticUnitary`，并最终使用相对`qpeUnitary`于产生状态的阶段估算。 `phaseEstAlgorithm`
 syntax: 'operation EstimateEnergyWithAdiabaticEvolution (nQubits : Int, statePrepUnitary : (Qubit[] => Unit), adiabaticUnitary : (Qubit[] => Unit), qpeUnitary : (Qubit[] => Unit is Adj + Ctl), phaseEstAlgorithm : ((Microsoft.Quantum.Oracles.DiscreteOracle, Qubit[]) => Double)) : Double'
 input:
   content: '(nQubits : Int, statePrepUnitary : (Qubit[] => Unit), adiabaticUnitary : (Qubit[] => Unit), qpeUnitary : (Qubit[] => Unit is Adj + Ctl), phaseEstAlgorithm : ((Microsoft.Quantum.Oracles.DiscreteOracle, Qubit[]) => Double))'
@@ -37,7 +37,7 @@ input:
       - isPrimitive: true
         uid: Unit
   - name: qpeUnitary
-    summary: Oracle 表示单一操作员 $U $，表示 dynamical 发电机下的时间 $ \ket{\phi} $ 和接地状态能量 $E = \phi\\，\delta t $。
+    summary: 一种 oracle，表示单一操作员 $U $，表示 dynamical 发电机下的时间 $ \ket{\phi} $ 和接地状态 $E\\能量为的演变。
     isOperation: true
     input:
       types:
@@ -74,9 +74,9 @@ output:
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: a5c97bb34307c5216720f82c5cf91ca21cf90739
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ffab30daf3028c12768d9c9f4cd16a8011a7931f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73223286"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82655186"
