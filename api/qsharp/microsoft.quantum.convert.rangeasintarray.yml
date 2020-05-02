@@ -3,7 +3,7 @@ uid: microsoft.quantum.convert.rangeasintarray
 name: RangeAsIntArray
 type: function
 namespace: Microsoft.Quantum.Convert
-summary: 创建一个数组，`arr` 由 start. 枚举的整数。步骤 .。。端面.
+summary: 创建一个由`arr` start. 枚举的整数数组。步骤 .。。端面.
 examples: >-
   ```qsharp
 
@@ -17,20 +17,20 @@ input:
   content: '(range : Range)'
   types:
   - name: range
-    summary: '`start..step..end` 要转换为数组的值的 `Range`。'
+    summary: 要`Range`转换为`start..step..end`数组的值的。
     isPrimitive: true
     uid: Range
 output:
   content: Int[]
   types:
-  - summary: 一个新的整数数组，对应于通过 `range`循环访问的值。
+  - summary: 一个新的整数数组，对应于通过循环访问`range`的值。
     isArray: true
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: a6765698daf8838312c1501e8bbf1e43f609b068
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: f909319a624459b2453db2ac73d3ceaec38f6911
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73232330"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677375"

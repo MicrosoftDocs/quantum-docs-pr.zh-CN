@@ -29,7 +29,7 @@ input:
 output:
   content: (('T, 'U) => Unit)
   types:
-  - summary: '`op(t, u)` 等效于 `(curriedOp(t))(u)`的新操作 `op`。'
+  - summary: 与等效的`op` `op(t, u)`新操作`(curriedOp(t))(u)`。
     isOperation: true
     input:
       types:
@@ -51,9 +51,9 @@ seeAlso:
 - microsoft.quantum.canon.uncurryopa
 - microsoft.quantum.canon.uncurryopca
 metadata:
-  ms.openlocfilehash: ebd2c277eee73f8920804ae79815c3b482a3d39b
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ed25e2dd4f1d60d15e560209688d3054089233c2
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216996"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678013"

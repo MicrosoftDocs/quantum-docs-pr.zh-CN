@@ -3,10 +3,10 @@ uid: microsoft.quantum.characterization.robustphaseestimation
 name: RobustPhaseEstimation
 type: operation
 namespace: Microsoft.Quantum.Characterization
-summary: 为给定的 oracle `U` 和 eigenstate 执行强健的非迭代量程阶段估算算法，并提供海森堡限制下的变化缩放阶段的单一真实估算。
+summary: 为给定的 oracle `U`和 eigenstate 执行强健的非迭代量程阶段估算算法，并提供针对海森堡限制处的变化缩放阶段的单个实际值估算。
 remarks: 在大量查询的限制中，Cramer-Rao 下限： $ \phi $ 满足 $ \sigma \ge 2 \pi/\text{# of 查询} $。
 syntax: 'operation RobustPhaseEstimation (bitsPrecision : Int, oracle : Microsoft.Quantum.Oracles.DiscreteOracle, targetState : Qubit[]) : Double'
-references: '- 通过强健的阶段对通用单一 Qubit 入口集进行强健的校准： Shelby Kimmel、Guang 脱离 Hao Low、Theodore Yoder https://arxiv.org/abs/1502.02677'
+references: '- 通过强健的阶段对通用单一 Qubit 入口集进行强健的校准： Shelby Kimmel、Guang 脱离 Hao Low、Theodore J Yoderhttps://arxiv.org/abs/1502.02677'
 input:
   content: '(bitsPrecision : Int, oracle : Microsoft.Quantum.Oracles.DiscreteOracle, targetState : Qubit[])'
   types:
@@ -28,9 +28,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 169a828036fbe84f49e5d87399319d14a9584051
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 5fa87e4da621871685501d58fa4a70b172f973b7
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73229049"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82677605"
