@@ -4,7 +4,7 @@ name: RandomIntPow2
 type: operation
 namespace: Microsoft.Quantum.Math
 summary: 生成一个随机采样的随机整数，该整数可按给定的位数表示的所有整数进行统一采样。
-remarks: 此函数调用 <xref:microsoft.quantum.intrinsic.random>，因此其随机性取决于 `Random`的实现。
+remarks: 此函数调用<xref:microsoft.quantum.intrinsic.random>，因此其随机性依赖于的实现`Random`。
 syntax: 'operation RandomIntPow2 (maxBits : Int) : Int'
 input:
   content: '(maxBits : Int)'
@@ -20,9 +20,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: e690509a7dcd2b1ec51bdde85da6439a688e75e7
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: dec46f725da2f805839f7c03306853c851700027
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219971"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681541"

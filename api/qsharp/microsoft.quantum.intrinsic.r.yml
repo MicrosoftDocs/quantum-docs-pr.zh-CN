@@ -7,8 +7,8 @@ summary: >-
   应用围绕给定 Pauli 轴的旋转。
 
 
-  \begin{align} R_ {\mu} （\theta） \mathrel{： =} e ^ {-i \theta \sigma_{\mu}/2}，\end{align}，其中，$ \mu \in \{I，X，Y，Z\}$。
-remarks: 使用 `pauli = PauliI`调用时，此操作将应用*全局阶段*。 与 `Controlled` 函子一起使用时，此阶段可能很重要。
+  \begin{align} R_ {\mu} （\theta） \mathrel{： =} e ^ {-i \theta \ sigma_ {\mu}/2}，\end{align}，其中，$ \{\Mu \in i，X，Y\}，Z $。
+remarks: 使用`pauli = PauliI`调用时，此操作将应用*全局阶段*。 与`Controlled`函子一起使用时，此阶段可能很重要。
 syntax: 'operation R (pauli : Pauli, theta : Double, qubit : Qubit) : Unit'
 input:
   content: '(pauli : Pauli, theta : Double, qubit : Qubit)'
@@ -34,9 +34,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: cb7cf0c4c2a758b1abaa80d6fe3c265fc9feabb2
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d6655f674d7bd6b92cfb0e81e588bdcd48380bf4
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73234013"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681784"

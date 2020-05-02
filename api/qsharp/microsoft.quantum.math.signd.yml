@@ -3,7 +3,7 @@ uid: microsoft.quantum.math.signd
 name: SignD
 type: function
 namespace: Microsoft.Quantum.Math
-summary: 返回一个整数，该整数指示数字的符号。
+summary: 返回指示数字符号的整数。
 remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.sign) 。
 syntax: 'function SignD (a : Double) : Int'
 input:
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 9158cf41b3e1790a77f5e5f34ee6e7f8741659fd
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: d89cf48fd68e907a94d408b871e5f33dac1d8bfd
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73232058"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681459"

@@ -4,7 +4,7 @@ name: RandomReal
 type: operation
 namespace: Microsoft.Quantum.Math
 summary: 返回大于或等于0且小于1的间隔中的随机实数。
-remarks: 此函数调用 <xref:microsoft.quantum.intrinsic.random>，因此其随机性取决于 `Random`的实现。
+remarks: 此函数调用<xref:microsoft.quantum.intrinsic.random>，因此其随机性依赖于的实现`Random`。
 syntax: 'operation RandomReal (bitsRandom : Int) : Double'
 input:
   content: '(bitsRandom : Int)'
@@ -24,9 +24,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: c0780e0b8771c74a04145d5dce70d47dfefafa0e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b3974f5b12f8d49cc7920021caad98f6e2f3a60c
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73219954"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681529"

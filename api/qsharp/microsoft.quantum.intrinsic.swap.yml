@@ -7,7 +7,7 @@ summary: >-
   将交换入口应用于一对 qubits。
 
 
-  \begin{align} \operatorname{SWAP} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 1 & 0 & \\\\ & 0 & 0 & 1 \end{bmatrix}, \end{align}
+  \begin{align} \operatorname{SWAP} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \end{bmatrix}，\end{align}
 
 
   行和列的排序顺序，如量程概念指南中所示。
@@ -45,9 +45,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 32a379b784d0be0084b00a80edf8607ccf760f9e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: e8e2681cef50354ac0e6807304912fcddcc0361b
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73216350"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82681770"
