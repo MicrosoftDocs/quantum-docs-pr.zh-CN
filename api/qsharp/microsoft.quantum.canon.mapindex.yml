@@ -31,9 +31,9 @@ output:
     uid: "'U"
     isLocal: true
 metadata:
-  ms.openlocfilehash: 0abc5a41f097801c1fc3a5bd0228b732c61837d7
-  ms.sourcegitcommit: 27c9bf1aae923527aa5adeaee073cb27d35c0ca1
+  ms.openlocfilehash: 785671556bce33cedfb29c0e36513971578f3d3c
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 12/05/2019
-  ms.locfileid: "74859887"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678996"

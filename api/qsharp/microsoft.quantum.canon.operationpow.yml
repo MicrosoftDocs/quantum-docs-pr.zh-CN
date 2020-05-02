@@ -48,9 +48,9 @@ seeAlso:
 - microsoft.quantum.canon.operationpowa
 - microsoft.quantum.canon.operationpowca
 metadata:
-  ms.openlocfilehash: 4fe178266904627abd7d03366d5107154733dbbd
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 3f89dedcfb83e01a8a797cfd143fa7036b3086df
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871220"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678710"

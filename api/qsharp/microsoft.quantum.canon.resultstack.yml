@@ -6,9 +6,9 @@ namespace: Microsoft.Quantum.Canon
 summary: ResultStack 已被弃用。
 syntax: newtype ResultStack = (Int, Int, Result[]);
 metadata:
-  ms.openlocfilehash: 98349f4136aa8780e6d51e1dc2f2a15ddb238dcd
-  ms.sourcegitcommit: ca5015fed409eaf0395a89c2e4bc6a890c360aa2
+  ms.openlocfilehash: 316d2a86d289feda66a586cbf70fa8c5389fae36
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 01/29/2020
-  ms.locfileid: "76871492"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678281"

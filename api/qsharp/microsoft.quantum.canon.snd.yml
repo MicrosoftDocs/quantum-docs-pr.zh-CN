@@ -18,7 +18,7 @@ input:
 output:
   content: "'U"
   types:
-  - summary: '`pair`的第二个元素。'
+  - summary: 的`pair`第二个元素。
     uid: "'U"
     isLocal: true
 typeParameters:
@@ -27,9 +27,9 @@ typeParameters:
 - uid: "'U"
   summary: 对的第二个成员的类型。
 metadata:
-  ms.openlocfilehash: c9a7d38a389411b374fbe2b154ce22a6bed5943e
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b9caf08e6640eadabe0c9606a173dc30040281b0
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73222300"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678248"

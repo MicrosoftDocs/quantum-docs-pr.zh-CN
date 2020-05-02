@@ -32,9 +32,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.rall1
 metadata:
-  ms.openlocfilehash: d9ccee04eadcd8b2a3514eaa173ea40cc56d5c44
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: ccb15f15469589cf989d1b0fd7d4135a608d6b7c
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73227689"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678503"

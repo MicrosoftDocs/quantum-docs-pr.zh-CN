@@ -6,7 +6,7 @@ namespace: Microsoft.Quantum.Canon
 summary: >-
   将操作限制为寄存器的索引数组，即，subregister。
 
-  修饰符 `C` 指示操作可控制。
+  修饰符`C`指示操作可控制。
 syntax: 'function RestrictedToSubregisterC (op : (Qubit[] => Unit is Ctl), idxs : Int[]) : (Qubit[] => Unit is Ctl)'
 input:
   content: '(op : (Qubit[] => Unit is Ctl), idxs : Int[])'
@@ -48,9 +48,9 @@ output:
 seeAlso:
 - microsoft.quantum.canon.restrictedtosubregister
 metadata:
-  ms.openlocfilehash: a844fd6b192d0f008c82883b040e0ffaea2f5a98
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 045086047c80677c2ff5ab5f670c6b0107d1ef7f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73220447"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678437"

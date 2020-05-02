@@ -6,7 +6,7 @@ namespace: Microsoft.Quantum.Canon
 summary: >-
   将操作限制为寄存器的索引数组，即，subregister。
 
-  修饰符 `A` 指示操作为 adjointable。
+  修饰符`A`指示操作为 adjointable。
 syntax: 'function RestrictedToSubregisterA (op : (Qubit[] => Unit is Adj), idxs : Int[]) : (Qubit[] => Unit is Adj)'
 input:
   content: '(op : (Qubit[] => Unit is Adj), idxs : Int[])'
@@ -48,9 +48,9 @@ output:
 seeAlso:
 - restrictedtosubregister
 metadata:
-  ms.openlocfilehash: ad70598557bf70eb456744a53fbda3bd0c67acb7
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: b15c1beb258e9cd0d36b4fa8479bac1a211f9334
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73211675"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678449"
