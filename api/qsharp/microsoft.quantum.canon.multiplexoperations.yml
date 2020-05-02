@@ -11,9 +11,9 @@ summary: >-
 
 
   $U = \sum ^ {2 ^ n-1} _ {j = 0} \ket{j}\bra{j}\otimes V_j $。
-remarks: 如果指定的 `coefficients` 小于 $ 2 ^ n $，则将用标识元素填充。 此实现使用 $n-$1 辅助 qubits。
+remarks: '`coefficients`如果指定少于 $ 2 ^ n $，则将用标识元素填充。 此实现使用 $n-$1 辅助 qubits。'
 syntax: "operation MultiplexOperations (unitaries : ('T => Unit is Adj + Ctl)[], index : Microsoft.Quantum.Arithmetic.LittleEndian, target : 'T) : Unit"
-references: '- 对于具有量程加速的第一个量子模拟，Andrew Childs，Dmitri Maslov，Yunseong，Neil Ross，人民币元 Su https://arxiv.org/abs/1711.10980'
+references: '- 对于具有量程加速的第一个量子模拟，Andrew Childs，Dmitri Maslov，Yunseong，Neil，Ross，人民币元 Suhttps://arxiv.org/abs/1711.10980'
 input:
   content: "(unitaries : ('T => Unit is Adj + Ctl)[], index : Microsoft.Quantum.Arithmetic.LittleEndian, target : 'T)"
   types:
@@ -48,9 +48,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 93fa7ef1f5a7374f970098eb5fa865e02854d1ff
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 97ecc07d8d6b9f7c9cdfa5dbe02b354d3d0a7aee
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77906706"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678821"

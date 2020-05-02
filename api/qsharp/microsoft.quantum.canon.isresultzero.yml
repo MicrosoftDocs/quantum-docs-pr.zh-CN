@@ -3,25 +3,25 @@ uid: microsoft.quantum.canon.isresultzero
 name: IsResultZero
 type: function
 namespace: Microsoft.Quantum.Canon
-summary: 测试给定的结果值是否等于 `Zero`。
+summary: 测试给定结果值是否等于`Zero`。
 syntax: 'function IsResultZero (input : Result) : Bool'
 input:
   content: '(input : Result)'
   types:
   - name: input
-    summary: 要测试 `Result` 值。
+    summary: '`Result`要测试的值。'
     isPrimitive: true
     uid: Result
 output:
   content: Bool
   types:
-  - summary: 如果 `input` 等于 `Zero`，则返回 `true`。
+  - summary: 如果`true` `input`等于，则返回`Zero`。
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 8a7d10424bebb7abc65722d738cfd1945ddf0901
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: eec7a18daccb41bd29fcd00d139914574488f60f
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73225258"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82679081"

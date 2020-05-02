@@ -18,7 +18,7 @@ summary: >-
 
 
   ##
-remarks: 如果指定了小于 $ 2 ^ n $ 的元素，则将用 $ \ theta_j = $0.0 填充 `coefficients`。
+remarks: '`coefficients`如果指定少于 $ 2 ^ n $，则将用元素 $ \ theta_j = $0.0 填充。'
 syntax: 'operation MultiplexPauli (coefficients : Double[], pauli : Pauli, control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit'
 input:
   content: '(coefficients : Double[], pauli : Pauli, control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit)'
@@ -50,9 +50,9 @@ functors:
 seeAlso:
 - approximatelymultiplexpauli
 metadata:
-  ms.openlocfilehash: 7c30159a7774b407d7574018028b53e8c72f8d0a
-  ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+  ms.openlocfilehash: 202a1caec428d83027de127b08f05a8e07a63caa
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 02/28/2020
-  ms.locfileid: "77906570"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678767"

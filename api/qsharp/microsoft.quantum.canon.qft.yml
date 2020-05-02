@@ -23,9 +23,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applyquantumfouriertransformbe
 metadata:
-  ms.openlocfilehash: 9791cc9812ee7709e17e0a32e0b98bd2ca85fbb8
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: 373adfd726324656934a4a98a9c9e53ddb5940e3
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73222606"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82678543"
