@@ -1,0 +1,14 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.enabletestingvianame
+name: EnableTestingViaName
+type: newtype
+namespace: Microsoft.Quantum.Diagnostics
+summary: 编译器可识别的属性，可通过该属性定义可在加载类型时使用的可选名称，或可调用以用于测试目的。
+syntax: newtype EnableTestingViaName = String;
+metadata:
+  ms.openlocfilehash: 7887df093b51d9e525adda1860361ea649106cb2
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82706663"
