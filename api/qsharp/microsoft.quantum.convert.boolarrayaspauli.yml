@@ -10,7 +10,7 @@ input:
   content: '(pauli : Pauli, bitApply : Bool, bits : Bool[])'
   types:
   - name: pauli
-    summary: 要应用于 qubits 的 Pauli 运算符，其中 `bitsApply == bits[idx]`。
+    summary: 要应用于 qubits 的`bitsApply == bits[idx]`Pauli 运算符。
     isPrimitive: true
     uid: Pauli
   - name: bitApply
@@ -29,9 +29,9 @@ output:
     isPrimitive: true
     uid: Pauli
 metadata:
-  ms.openlocfilehash: 3d251215e7f7bc136092caf7bafd677ecb1c05bd
-  ms.sourcegitcommit: edcf15044d7bdf4f8b21fb8f6af4bde475eb13a0
+  ms.openlocfilehash: c4f43eb0a30e42b6deb28c9910b1c95454b827c8
+  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/05/2019
-  ms.locfileid: "73227179"
+  ms.lasthandoff: 05/01/2020
+  ms.locfileid: "82661358"
