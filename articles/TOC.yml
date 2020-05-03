@@ -17,15 +17,7 @@
     - name: QDK 入门
       href: welcome.md
     - name: 安装 QDK
-      items:
-        - name: 安装概述
-          href: install-guide/index.md
-        - name: 'Q# + C#'
-          href: install-guide/csinstall.md
-        - name: 'Q# + Python'
-          href: install-guide/pyinstall.md
-        - name: 'Q# Jupyter 笔记本'
-          href: install-guide/qjupyter.md
+      href: install-guide/toc.yml
     - name: 更新 QDK
       href: install-guide/update.md
     - name: '如何创建 Q# 项目'
