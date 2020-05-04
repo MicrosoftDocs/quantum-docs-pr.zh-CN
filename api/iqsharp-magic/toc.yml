@@ -1,0 +1,28 @@
+- href: chemistry.broombridge.md
+  name: '%chemistry.broombridge magic 命令'
+- href: chemistry.encode.md
+  name: '%chemistry.encode magic 命令'
+- href: chemistry.fh.add_terms.md
+  name: '%chemistry.fh.add_terms magic 命令'
+- href: chemistry.fh.load.md
+  name: '%chemistry.fh.load magic 命令'
+- href: chemistry.inputstate.load.md
+  name: '%chemistry.inputstate.load magic 命令'
+- href: config.md
+  name: '%config magic 命令'
+- href: estimate.md
+  name: '%estimate magic 命令'
+- href: lsmagic.md
+  name: '%lsmagic magic 命令'
+- href: package.md
+  name: '%package magic 命令'
+- href: performance.md
+  name: '%performance magic 命令'
+- href: simulate.md
+  name: '%simulate magic 命令'
+- href: toffoli.md
+  name: '%toffoli magic 命令'
+- href: who.md
+  name: '%who magic 命令'
+- href: workspace.md
+  name: '%workspace magic 命令'
