@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: 84e5db17ab8d963a75c72da38d3e4487b89abc9d
-ms.sourcegitcommit: b6b8459eb654040f1e19f66411b29fc9e48e95c9
+ms.openlocfilehash: 91f12ef6bd15e27c8920471442c66ff3b1e71122
+ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2020
-ms.locfileid: "82030593"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "82677091"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -20,6 +20,21 @@ ms.locfileid: "82030593"
 有关安装说明，请参阅[安装指南](xref:microsoft.quantum.install)。
 
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
+
+## <a name="version-01120042825"></a>版本 0.11.2004.2825
+
+发行日期：*2020 年 4 月 30 日*
+
+此版本包含以下各项：
+
+- 对 Q# 命令行应用程序的新支持，这些应用程序不再需要 C# 或 Python 主机文件。 有关 Q# 命令行应用程序入门的详细信息，请参阅[此处](xref:microsoft.quantum.install.standalone)。
+- 更新了量子随机数生成器快速入门，从而不再需要 C# 或 Python 主机文件。 参阅更新的[快速入门](xref:microsoft.quantum.quickstarts.qrng)
+- IQ# Docker 映像的性能改进
+
+> [!NOTE]
+> 使用新的 [`@EntryPoint()`](xref:microsoft.quantum.core.entrypoint) 特性的 Q# 命令行应用程序当前无法从 Python 或 .NET 主机程序调用。
+> 有关详细信息，请参阅 [Python](xref:microsoft.quantum.install.python) 和 [.NET 互操作性](xref:microsoft.quantum.install.cs)指南。
+
 
 ## <a name="version-01120033107"></a>版本 0.11.2003.3107
 
