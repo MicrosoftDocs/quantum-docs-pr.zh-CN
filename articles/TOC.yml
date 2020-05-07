@@ -1,6 +1,6 @@
 - name: Microsoft Quantum 文档
   href: index.yml
-- name: 量子计算入门
+- name: 概述
   items:
     - name: 什么是量子计算？
       href: overview/what-is-quantum-computing.md
@@ -12,7 +12,7 @@
       href: overview/what-is-qsharp.md
     - name: 如何了解详细信息？
       href: overview/how-to-learn-quantum-computing.md
-- name: 获取 Quantum 开发工具包
+- name: 快速入门
   items:
     - name: QDK 入门
       href: welcome.md
@@ -22,21 +22,19 @@
       href: install-guide/update.md
     - name: '如何创建 Q# 项目'
       href: how-to-guides/create-qsharp-project.md
-- name: 'Q# 学习资源'
+- name: 教程
   items:
-    - name: 快速入门
-      items:
-        - name: 量子随机数生成器
-          href: quickstarts/qrng.md
-        - name: '通过 Q# 探索纠缠'
-          href: quickstart.md
-        - name: 实现 Grover 的搜索算法
-          href: quickstarts/search.md
+    - name: 量子随机数生成器
+      href: quickstarts/qrng.md
+    - name: '通过 Q# 探索纠缠'
+      href: quickstart.md
+    - name: 实现 Grover 的搜索算法
+      href: quickstarts/search.md
     - name: '通过 Quantum Katas 学习 Q#'
       href: intro-to-katas.md
     - name: 'Q# 代码示例'
       href: 'https://docs.microsoft.com/en-us/samples/browse/?languages=qsharp'
-- name: 深入探讨 QDK
+- name: 'Q# 用户指南'
   items:
     - name: 量子开发技术
       topicHref: techniques/index.md
@@ -46,15 +44,21 @@
       href: language/toc.yml
     - name: 量子模拟器和资源估算器
       href: machines/toc.yml
-- name: 'Q# 库'
-  href: libraries/toc.yml
-- name: 量子计算概念
-  href: concepts/toc.yml
-- name: 进一步阅读
-  href: for-more-info.md
-- name: 参与编写 QDK
-  href: contributing/toc.yml
-  topicHref: contributing/index.md
-- name: QDK 发行说明
-  topicHref: relnotes/index.md
-  href: relnotes/toc.yml
+- name: 概念
+  items:
+    - name: 量子计算概念
+      href: concepts/toc.yml
+    - name: 'Q# 库'
+      href: libraries/toc.yml
+- name: 资源
+  items:
+    - name: 术语表
+      href: concepts/Glossary.md
+    - name: 参与编写 QDK
+      href: contributing/toc.yml
+      topicHref: contributing/index.md
+    - name: QDK 发行说明
+      topicHref: relnotes/index.md
+      href: relnotes/toc.yml
+    - name: 进一步阅读
+      href: for-more-info.md
