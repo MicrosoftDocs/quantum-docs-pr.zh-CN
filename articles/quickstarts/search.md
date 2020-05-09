@@ -1,19 +1,19 @@
 ---
-title: 在 Q# 中运行 Grover 搜索算法 - Quantum 开发工具
+title: 使用 Q# 运行 Grover 搜索算法 - Quantum 开发工具
 description: 生成一个 Q# 项目，以展示 Grover 搜索这种经典的量子算法。
 author: cgranade
 ms.author: chgranad@microsoft.com
 ms.date: 10/19/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.search
-ms.openlocfilehash: 0e64fcd56929fa33397c45bf1b2e99bf687eca6f
-ms.sourcegitcommit: 7d350db4b5e766cd243633aee7d0a839b6274bd6
+ms.openlocfilehash: c67ccd16957ceef694552bdd9c073ba5a35d8aaf
+ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77906944"
+ms.lasthandoff: 05/01/2020
+ms.locfileid: "82686830"
 ---
-# <a name="quickstart-implement-grovers-search-algorithm-in-q"></a>快速入门：在 Q# 中实现 Grover 搜索算法
+# <a name="quickstart-implement-grovers-search-algorithm-in-q"></a>快速入门：使用 Q\# 实现 Grover 搜索算法
 
 本快速入门介绍如何构建并运行 Grover 搜索，以便加快非结构化数据的搜索速度。  Grover 搜索是最常用量子计算算法之一。这个相对较小的 Q# 实现可以让你感受一下使用高级 Q# 量子编程语言进行量子解决方案编程（用于表达量子算法）的部分优势。  在指南末尾，我们会看到模拟输出。该输出表明我们已经在未排序条目的列表中成功找到一个特定的字符串，所花时间远远少于在经典计算机上搜索整个列表所花的时间。
 
@@ -41,9 +41,9 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
 1. 使用 Quantum 开发工具包在你选择的开发坏境中[创建一个新的 Q# 项目](xref:microsoft.quantum.howto.createproject)，并将其命名为 `Grover`。
 
-1. 在新项目中，将以下代码添加到 `Operations.qs` 文件中：
+1. 在新项目中，将以下代码添加到 `Program.qs` 文件中：
 
-    :::code language="qsharp" source="~/quantum/samples/algorithms/simple-grover/SimpleGrover.qs" range="4-40":::
+    :::code language="qsharp" source="~/quantum/samples/algorithms/simple-grover/SimpleGrover.qs" range="4-41":::
 
 1. 要定义搜索列表，请创建一个新文件 `Reflections.qs`，并粘贴以下代码：
 
@@ -53,64 +53,54 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
 1. 接下来，运行你的新 Q# 程序，以查找 `ReflectAboutMarked` 标记的项。
 
-    ### <a name="python-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 Python](#tab/tabid-python)
+### <a name="q-command-line-applications-with-visual-studio-or-visual-studio-code"></a>Q# 命令行应用程序与 Visual Studio 或 Visual Studio Code
 
-    要从 Python 运行你的新 Q# 程序，请将以下代码另存为 `host.py`：
+可执行文件将在仿真器或资源估计器上运行使用 `@EntryPoint()` 特性标记的操作或函数，具体取决于项目配置和命令行选项。
 
-    :::code language="python" source="~/quantum/samples/algorithms/simple-grover/host.py" range="9-14":::
+在 Visual Studio 中，只需按 Ctrl + F5 即可执行该脚本。
 
-    然后便可以从命令行运行 Python 主机程序：
+在 VS Code 中，通过在终端中键入以下内容来首次生成 `Program.qs`：
 
-    ```bash
-    $ python host.py
-    Preparing Q# environment...
-    Reflecting about marked state...
-    Reflecting about marked state...
-    Reflecting about marked state...
-    Reflecting about marked state...
-    [0, 1, 0, 1, 0]
-    ```
+```Command line
+dotnet build
+```
 
-    ### <a name="c-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 C#](#tab/tabid-csharp)
+对于后续运行，则无需重新生成它。 若要运行它，请键入以下命令并按 Enter：
 
-    要从 C# 运行你的新 Q# 程序，请修改 `Driver.cs` 以包含以下 C# 代码：
+```Command line
+dotnet run --no-build
+```
 
-    :::code language="csharp" source="~/quantum/samples/algorithms/simple-grover/Host.cs" range="4-23":::
+应当会看到终端中显示了以下消息：
 
-    然后便可以从命令行运行 C# 主机程序：
+```
+operations.qs:
+This operation applies Grover's algorithm to search all possible inputs to an operation to find a particular marked state.
+Usage:
+operations.qs [options] [command]
 
-    ```bash
-    $ dotnet run
-    Reflecting about marked state...
-    Reflecting about marked state...
-    Reflecting about marked state...
-    Reflecting about marked state...
-    Result: [Zero,One,Zero,One,Zero]
+--n-qubits <n-qubits> (REQUIRED)
+-s, --simulator <simulator>         The name of the simulator to use.
+--version                           Show version information
+-?, -h, --help                      Show help and usage information
+Commands:
+```
 
-    Press any key to continue...
-    ```
+这是因为你未指定想要使用的量子位的数目，因此终端显示了可用于该可执行文件的命令。 如果想要使用 5 个量子位，应键入：
 
-    ### <a name="c-with-visual-studio-2019"></a>[在 Visual Studio 2019 中使用 C#](#tab/tabid-vs2019)
+```Command line
+dotnet run --n-qubits 5
+```
 
-    在 Visual Studio 中，若要通过 C# 运行新的 Q# 程序，请修改 `Driver.cs`，使之包含以下 C# 代码：
+按 Enter 后应该会看到以下输出：
 
-    :::code language="csharp" source="~/quantum/samples/algorithms/simple-grover/Host.cs" range="4-23":::
-
-    然后按 F5，此时系统就会开始执行程序并弹出一个新窗口，其中包含以下结果： 
-
-    ```bash
-    $ dotnet run
-    Reflecting about marked state...
-    Reflecting about marked state...
-    Reflecting about marked state...
-    Reflecting about marked state...
-    Result: [Zero,One,Zero,One,Zero]
-
-    Press any key to continue...
-    ```
-    ***
-
-    `ReflectAboutMarked` 运算仅调用四次，但是 Q# 程序能够在 $2^{5} = 32$ 个可能的输入中找到“01010”输入！
+```
+Reflecting about marked state...
+Reflecting about marked state...
+Reflecting about marked state...
+Reflecting about marked state...
+[Zero,One,Zero,One,Zero]
+```
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -119,10 +109,11 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 - [回到 QDK 入门指南](xref:microsoft.quantum.welcome)
 - 尝试使用更多常用 Grover 搜索算法[示例](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/database-search)
 - [详细了解 Quantum Katas 的 Grover 搜索](xref:microsoft.quantum.overview.katas)
-- 详细了解[振幅放大](xref:microsoft.quantum.libraries.standard.algorithms#amplitude-amplification)：支持 Grover 搜索算法的量子计算技术
+- 详细了解[振幅放大][amplitude-amplification]：支持 Grover 搜索算法的量子计算技术
 - [量子计算概念](xref:microsoft.quantum.concepts.intro)
 - [Quantum 开发工具包示例](https://docs.microsoft.com/samples/browse/?products=qdk)
 
 <!-- LINKS -->
 
 [install]: xref:microsoft.quantum.install
+[amplitude-amplification]: xref:microsoft.quantum.libraries.standard.algorithms#amplitude-amplification
