@@ -1,19 +1,19 @@
 ---
-title: '执行无驱动程序和主机语言的 Q # 程序'
+title: '用 Q # 命令行应用程序进行开发'
 author: KittyYeungQ
 ms.author: kitty
 ms.date: 4/24/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.standalone
-ms.openlocfilehash: e83acaf10af952da06abf4737ad2ec91f1cf1b8e
-ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+ms.openlocfilehash: e829862521951c50cb42eebf261c803071a95275
+ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "82706795"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83426436"
 ---
-# <a name="q-command-line-applications"></a>Q # 命令行应用程序
+# <a name="develop-with-q-command-line-applications"></a>用 Q # 命令行应用程序进行开发
 
 Q # 程序可以自行执行，而不能在 c #、F # 或 Python 等主机语言中使用驱动程序。
 
@@ -23,64 +23,67 @@ Q # 程序可以自行执行，而不能在 c #、F # 或 Python 等主机语言
 
 ## <a name="installation"></a>安装
 
-尽管可以在任何 IDE 中生成 Q # 命令行应用程序，但我们强烈建议对 Q # 应用程序使用 Visual Studio Code （VS Code）或 Visual Studio IDE。 通过使用 VS Code 或 Visual Studio 和 QDK Visual Studio Code 扩展，你可以访问更丰富的功能。
+尽管可以在任何 IDE 中生成 Q # 命令行应用程序，但我们还是建议为 Q # 应用程序使用 Visual Studio Code （VS Code）或 Visual Studio IDE。 使用这些工具进行开发可提供对丰富功能的访问权限。
 
-- 安装[VS Code](https://code.visualstudio.com/download) （Windows、Linux 和 Mac）
-- [为 VS Code 或安装 QDK 扩展](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode)
-- [Visual Studio](https://visualstudio.microsoft.com/downloads/) 16.3，启用了 .NET Core 跨平台开发工作负载。
-- 下载并安装[Visual Studio 扩展](https://marketplace.visualstudio.com/items?itemName=quantum.DevKit)
+配置 VS Code：
+
+1. 下载并安装[VS Code](https://code.visualstudio.com/download) （Windows、Linux 和 Mac）。
+2. 安装[MICROSOFT QDK for VS Code](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode)。
+
+若要配置 Visual Studio：
+
+1. 下载并安装[Visual Studio](https://visualstudio.microsoft.com/downloads/) 16.3 或更高版本，并启用 .net Core 跨平台开发工作负荷。
+2. 下载并安装[MICROSOFT QDK](https://marketplace.visualstudio.com/items?itemName=quantum.DevKit)。
 
 
 ## <a name="develop-with-q-using-vs-code"></a>使用 VS Code 与 Q # 进行开发
 
-安装量子项目模板：
+安装 Q # 项目模板：
 
-- 中转到 "**视图** -> "**命令面板**
-- 选择**Q #：安装项目模板**
+1. 打开 VS Code。
+2. 单击 "**查看**" "  ->  **命令面板**"。
+3. 选择 " **Q #：安装项目模板**"。
 
-现已安装量子开发工具包，并且可以在自己的应用程序和库中使用。
-- 创建新项目：
-  - 中转到 "**视图** -> "**命令面板**
-  - 选择**Q #：创建新项目**
-  - 选择**独立控制台应用程序**
-  - 导航到要在其中创建应用程序的文件系统上的位置
-  - 创建项目后，单击“打开新项目...”**** 按钮
+如果已**成功安装项目模板**，则可以将 QDK 用于自己的应用程序和库。
+
+创建新项目：
+
+1. 单击 "**查看**" "  ->  **命令面板**"，然后选择 " **Q #：创建新项目**"。
+2. 单击 "**独立控制台应用程序**"。
+3. 导航到要保存项目的位置，然后单击 "**创建项目**"。
+4. 成功创建项目后，单击右下方的 "**打开新项目 ...** "。
         
-- 检查项目
-  - 应会看到名`Program.qs`为 "创建" 的文件，该文件是一个 Q # 程序，用于定义将消息打印到控制台的简单操作。
+检查项目。 应该会看到一个名为的源文件，该文件 `Program.qs` 是一个 Q # 程序，用于定义将消息打印到控制台的简单操作。
 
-- 运行应用程序：
-  - 中转到**终端** -> **新终端**
-  - 输入 `dotnet run`
-  - 应在输出窗口 `Hello quantum world!` 中看到以下文本
+运行应用程序：
+1. 单击 "**终端**  ->  **新终端**"。
+2. 在终端提示符下，输入 `dotnet run` 。
+3. 应在输出窗口 `Hello quantum world!` 中看到以下文本
 
 
 > [!NOTE]
-> * Visual Studio Code 扩展当前不支持具有多个根文件夹的工作区。 如果一个 VS Code 工作区中具有多个项目，则所有项目都必须包含在同一个根文件夹中。
+> VS Code Q # 扩展当前不支持具有多个根文件夹的工作区。 如果一个 VS Code 工作区中具有多个项目，则所有项目都必须包含在同一个根文件夹中。
 
 ## <a name="develop-with-q-using-visual-studio"></a>使用 Visual Studio 通过 Q # 进行开发
 
-通过创建 `Hello World` 应用程序来验证安装
+通过创建 Q # 应用程序来验证你的 Visual Studio 安装 `Hello World` 。
 
-- 创建新的 Q# 应用程序
-  - 中转到 "**文件** -> " "**新建** -> **项目**"
-  - 在搜索框中键入 `Q#`
-  - 选择“Q# 应用程序”****
-  - 选择 **“下一步”**。
-  - 为应用程序选择名称和位置
-  - 选择**创建**
+若要创建新的 Q # 应用程序：
+1. 打开 Visual Studio，然后单击 "**文件**" "  ->  **新建**  ->  **项目**"。
+2. `Q#`在搜索框中键入，选择 " **Q # 应用程序**"，然后单击 "**下一步**"。
+3. 输入应用程序的名称和位置，然后单击 "**创建**"。
 
-- 检查项目
-  - 应会看到已创建一个名`Program.qs`为的文件，这是一个 Q # 程序，用于定义将消息打印到控制台的简单操作。
 
-- 运行应用程序
-  - 选择 "**调试** -> **开始" （不调试**）
-  - 应该会看到打印到控制台窗口的文本 `Hello quantum world!`。
+检查项目。 应该会看到一个名为的源文件，该文件 `Program.qs` 是一个 Q # 程序，用于定义将消息打印到控制台的简单操作。
+
+运行应用程序：
+1. 选择 "**调试**开始" （  ->  **不调试**）。
+2. 应该会看到打印到控制台窗口的文本 `Hello quantum world!`。
 
 > [!NOTE]
-> * 如果一个 Visual Studio 解决方案中具有多个项目，解决方案中包含的所有项目都需要位于解决方案所在的同一文件夹中，或位于其中一个子文件夹中。  
+> 如果一个 Visual Studio 解决方案中有多个项目，则解决方案中包含的所有项目都需要位于解决方案所在的同一文件夹中，或位于其某个子文件夹中。  
 
 
-## <a name="whats-next"></a>后续步骤
+## <a name="next-steps"></a>后续步骤
 
-在首选环境中安装量子开发工具包后，可以编写并运行[第一个量子程序](xref:microsoft.quantum.write-program)。
+在首选环境中安装量子开发工具包后，可以编写并运行[第一个量子程序](xref:microsoft.quantum.quickstarts.qrng)。

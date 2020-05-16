@@ -6,25 +6,25 @@ uid: microsoft.quantum.concepts.circuits
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 80d9df00159090768ea442e519c34043a99b050c
-ms.sourcegitcommit: d61b388651351e5abd4bfe7a672e88b84a6697f8
+ms.openlocfilehash: 43f14d67db76dabda34bf881ccbfae0bfd1784ff
+ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2020
-ms.locfileid: "79022771"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83426615"
 ---
 # <a name="quantum-circuits"></a>量程线路
-请考虑一下单一转换 $ \text{CNOT-CONTAINS} _{01}（H\otimes 1） $。
+请考虑一下单一转换 $ \text{CNOT-CONTAINS} _ {01} （H\otimes 1） $。
 此入口序列对量程计算至关重要，因为它创建最大化放大二 qubit 状态：
 
-$ $ \mathrm{CNOT}_{01}（H\otimes 1） \ket{00} = \frac{1}{\sqrt{2}} \left （\ket{00} + \ket{11} \right），$ $
+$ $ \mathrm{CNOT}_ {01} （H\otimes 1） \ket {00} = \frac {1} {\sqrt {2} } \left （\ket {00} + \ket {11} \right），$ $
 
 具有这种或更大复杂性的操作在量程算法和量程错误更正中无处不在，因此它应该会很好地降低，其中有一种简单的方法可以将其可视化称为 "*量程*"。
 准备此最大化放大量程状态的线路关系图为：
 
 <!--- ![](.\media\1.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-最大化放大两 qubit 状态的 ![线路图](~/media/1.svg)
+![最大化放大双 qubit 状态的布线图](~/media/1.svg)
 
 ## <a name="quantum-circuit-diagram-conventions"></a>量程线路约定
 当你了解表示量子线路的约定后，这种适用于量程操作的视觉语言比写下其等效矩阵更容易理解。
@@ -37,7 +37,7 @@ $ $ \mathrm{CNOT}_{01}（H\otimes 1） \ket{00} = \frac{1}{\sqrt{2}} \left （\k
 
 <!--- ![](.\media\2.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-对 qubit 注册操作的 Hadamard 操作 ![符号](~/media/2.svg)
+![对 qubit 寄存器执行的 Hadamard 操作的符号](~/media/2.svg)
 
 是对 qubit 寄存器进行的[Hadamard](xref:microsoft.quantum.intrinsic.h)操作。
 
@@ -47,7 +47,7 @@ $ $ \mathrm{CNOT}_{01}（H\otimes 1） \ket{00} = \frac{1}{\sqrt{2}} \left （\k
 
 <!--- ![](.\media\3.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-![从左到右应用的量程入口图](~/media/3.svg)
+![从左向右应用的量程入口示意图](~/media/3.svg)
 
 是单一矩阵 $CBA $。
 矩阵相乘服从相反的约定：首先应用最右侧的矩阵。 但在量程电路关系图中，首先应用最左侧的入口。
@@ -65,27 +65,27 @@ $ $ \mathrm{CNOT}_{01}（H\otimes 1） \ket{00} = \frac{1}{\sqrt{2}} \left （\k
 
 <!--- ![](.\media\4.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-qubit 单一操作的 ![线路图](~/media/4.svg)
+![Qubit 单一操作的线路关系图](~/media/4.svg)
 
 我们还可以查看 $B $，以在单个 qubit 注册上执行操作，而不 2 1 是 qubit 寄存器上的操作，具体取决于使用该线路的上下文。 此类抽象线路的最有用的属性可能是，它们允许在较高级别对复杂的量程算法进行描述，而不必将它们编译为基本入口。
 这意味着，你可以获取有关大型量程算法的数据流的直觉，而无需了解算法中每个子例程的工作方式的所有详细信息。
 
 ## <a name="controlled-gates"></a>受控入口
 内置于 qubit 量程线路关系图的另一种构造是控件。
-量程单向控制入口的操作（表示 $ \Lambda （G） $，其中单个 qubit 的值控制 $G $ 的应用）可以通过查看以下产品状态输入 $ \Lambda （G）（\alpha \ket{0} + \beta \ket{1}） \ket{\psi} = \alpha \ket{0} \ket{\psi} + \beta \ket{1} G\ket {\ psi} $ 的示例来了解。
+通过查看产品状态输入 $ \Lambda （G）（\alpha \ket {0} + \beta \ket {1} ） \ket{\psi} = \alpha \ket {0} \ket{\psi} + \beta \ket G\ket {1} {\ psi} $ 的以下示例，可以了解单 \Lambda （g） $ 这一单 qubit 值控制 $G $ 的应用程序的单值控制门的操作。
 也就是说，当且仅当控件 qubit 采用值 $1 $ 时，受控的入口才会将 $G $ 应用于包含 $ \psi $ 的寄存器。
 通常，我们会将这些受控操作介绍为
 
 <!--- ![](.\media\5.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-单个受控入口的 ![线路图](~/media/5.svg)
+![单个受控入口的回路图](~/media/5.svg)
 
 此时，黑色圆圈表示控制门的量程位，垂直线路表示在控件 qubit 采用值 $1 $ 时应用的单一。
 对于 $G = X $ 和 $G = Z $ 的特殊情况，我们引入了以下表示法来描述控制的入口版本（请注意，受控-X 门是[$CNOT $ 门](xref:microsoft.quantum.intrinsic.cnot)）：
 
 <!--- ![](.\media\6.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-控制入口的特殊案例 ![电路图](~/media/6.svg)
+![受控入口的特殊情况的电路图](~/media/6.svg)
 
 Q # 提供自动生成控制版本的操作的方法，此操作使程序员不必为这些操作编写代码。 下面显示了一个示例：
 
@@ -104,7 +104,7 @@ is Ctl { // Auto-generate the controlled specialization of the operation
 
 <!--- ![](.\media\7.svg) ---->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-表示度量操作的 ![符号](~/media/7.svg)
+![表示度量操作的符号](~/media/7.svg)
 
 Q # 为此目的实现了[度量运算符](xref:microsoft.quantum.intrinsic.measure)。
 有关详细信息，请参阅[有关度量值的部分](xref:microsoft.quantum.libraries.standard.prelude#measurements)。
@@ -113,16 +113,16 @@ Q # 为此目的实现了[度量运算符](xref:microsoft.quantum.intrinsic.meas
 
 <!--- ![](.\media\8.svg) --->
 <!-- Can't find a way to easily center this... probably an extension needed:  -->
-表示受控操作的 ![线路图](~/media/8.svg)
+![表示受控操作的线路关系图](~/media/8.svg)
 
 提供一个经典控制的入口，其中 $G $ 在传统控制位上应用为值 $1 $。
 
 ## <a name="teleportation-circuit-diagram"></a>Teleportation 线路图
-[量程 teleportation](xref:microsoft.quantum.techniques.puttingittogether)可能是用于阐释这些组件的最佳量程算法。
-量程 teleportation 是一种方法，用于在量程计算机（甚至是在量程网络中的远程量程计算机之间）通过使用牵连和计量来移动数据。
+量程 teleportation 可能是用于阐释这些组件的最佳量程算法。
+你可以使用相应的[量程 Kata](xref:microsoft.quantum.overview.katas)量子 teleportation 来了解如何使用牵连和度量在量程计算机（甚至是在量程网络中的远程量子计算机之间）移动数据。
 有趣的是，实际上可以将给定 qubit 中的值表示为从一个 qubit 移动到另一个，而无需了解 qubit 的值！
 这是协议根据量程机制的法律工作所必需的。
 下面给出了量子 teleportation 线路;我们还提供了一条带批注的线路，用于说明如何读取量程线路。
 
 <!--- ![](.\media\tp2.svg){ width=50% } --->
-![量子 teleportation 线路](~/media/tp2.svg)
+![量程 teleportation 线路](~/media/tp2.svg)

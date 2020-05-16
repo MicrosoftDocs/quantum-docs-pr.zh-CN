@@ -1,19 +1,19 @@
 ---
-title: 使用 Q# + Python 进行开发
+title: '用 Q # 和 Python 进行开发'
 author: natke
 ms.author: nakersha
 ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.python
-ms.openlocfilehash: e1b8a0c68b3ac0c059c6de6e478593321764ff88
-ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+ms.openlocfilehash: a8c5b9c25c069f98ef8eefd6cfbc36bf3376931c
+ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "82680151"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83426365"
 ---
-# <a name="develop-with-q--python"></a>使用 Q# + Python 进行开发
+# <a name="develop-with-q-and-python"></a>用 Q # 和 Python 进行开发
 
 安装 QDK 以开发 Python 主机程序以调用 Q # 操作。
 
@@ -24,7 +24,7 @@ ms.locfileid: "82680151"
     - [.NET Core SDK 3.1 或更高版本](https://www.microsoft.com/net/download)
 
 
-1. 安装`qsharp`包，这是启用 Q # 和 Python 之间的互操作的 python 包。
+1. 安装 `qsharp` 包，这是启用 Q # 和 Python 之间的互操作的 python 包。
 
     ```bash
     pip install qsharp
@@ -83,6 +83,6 @@ ms.locfileid: "82680151"
 > [!NOTE]
 > * 你还可以使用 Python Jupyter 笔记本编写传统的 Python 程序并从单元格中调用 Q # 操作。 Python 代码只是一个普通的 Python 计划。
 
-## <a name="whats-next"></a>后续步骤
+## <a name="next-steps"></a>后续步骤
 
-在首选环境中安装量子开发工具包后，可以编写并运行[第一个量子程序](xref:microsoft.quantum.write-program)。
+在首选环境中安装量子开发工具包后，可以编写并运行[第一个量子程序](xref:microsoft.quantum.quickstarts.qrng)。
