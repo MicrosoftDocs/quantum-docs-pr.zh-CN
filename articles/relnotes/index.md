@@ -1,17 +1,17 @@
 ---
-title: Quantum 开发工具包发行说明
-description: 了解 Microsoft Quantum 开发工具包预览版的最新更新。
+title: 量子开发工具包发行说明
+description: 了解 Microsoft 量子开发工具包预览版的最新更新。
 author: natke
 ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: 91f12ef6bd15e27c8920471442c66ff3b1e71122
-ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+ms.openlocfilehash: f365d471d9af73828b78c4fab8579557310a5288
+ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "82677091"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83426765"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -48,14 +48,14 @@ ms.locfileid: "82677091"
 
 此版本包含以下各项：
 
-- 对 Q# 中的访问修饰符的新支持，有关详细信息，请参阅[文件结构](xref:microsoft.quantum.language.file-structure#internal-declarations)
+- 对 Q# 中的访问修饰符的新支持，有关详细信息，请参阅[文件结构](xref:microsoft.quantum.guide.filestructure)
 - 已更新为 .NET Core SDK 3.1
 
 有关[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed)、[编译器](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed)、[运行时](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed)、[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed)和 [Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed) 的信息，请参阅已结束的 PR 的完整列表。  
 
 ## <a name="version-01020022610"></a>版本 0.10.2002.2610
 
-发行日期：  2020 年 2 月 27 日
+发行日期：2020 年 2 月 27 日
 
 此版本包含以下各项：
 
@@ -66,7 +66,7 @@ ms.locfileid: "82677091"
 
 ## <a name="version-01020012831"></a>版本 0.10.2001.2831
 
-发行日期：  2020 年 1 月 29 日
+发行日期：2020 年 1 月 29 日
 
 此版本包含以下各项：
 
@@ -86,7 +86,7 @@ ms.locfileid: "82677091"
 
 此版本包含以下各项：
 
-- 用于 Q# 单元测试的新测试属性，请在[此处](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.test)参阅已更新 API 文档，并在[此处](xref:microsoft.quantum.techniques.testing-and-debugging)参阅已更新的测试与调试指南
+- 用于 Q# 单元测试的新测试属性，请在[此处](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.test)参阅已更新 API 文档，并在[此处](xref:microsoft.quantum.guide.testingdebugging)参阅已更新的测试与调试指南
 - 添加了在出现 Q # 程序执行错误时使用的堆栈跟踪
 - 对 Visual Studio Code 中的断点的支持（由于 [OmniSharp C# Visual Studio Code 扩展](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)中的更新）
 
@@ -118,7 +118,7 @@ ms.locfileid: "82677091"
 
 ## <a name="version-0919093002"></a>版本 0.9.1909.3002
 
-发行日期：  2019 年 9 月 30 日
+发行日期：2019 年 9 月 30 日
 
 此版本包含以下各项：
 
@@ -127,13 +127,13 @@ ms.locfileid: "82677091"
 
 有关[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed)、[编译器](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed)、[运行时](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed)、[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed)和 [Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed) 的信息，请参阅已结束的 PR 的完整列表。  
 
-## <a name="version-09-packagereference-0919082902"></a>版本 0.9 (PackageReference 0.9.1908.2902) 
+## <a name="version-09-packagereference-0919082902"></a>版本 0.9 (PackageReference 0.9.1908.2902)
 
-发行日期：  2019 年 8 月 29 日
+发行日期：2019 年 8 月 29 日
 
 此版本包含以下各项：
 
-- 对 Q# 中 [conjugation 语句](xref:microsoft.quantum.language.statements#conjugations)的新支持
+- 对 Q# 中 [conjugation 语句](xref:microsoft.quantum.guide.operationsfunctions#conjugations)的新支持
 - 编译器中新的代码操作，例如：“replace with”、“add documentation”和简单数组项更新
 - 已将安装模板和新项目命令添加到 Visual Studio Code 扩展
 - 添加了 ApplyIf 连结符的新变体，例如 [Microsoft.Quantum.Canon.ApplyIfOne](xref:microsoft.quantum.canon.applyifone)
@@ -146,11 +146,11 @@ ms.locfileid: "82677091"
 
 ## <a name="version-08-packagereference-0819071701"></a>版本 0.8 (*PackageReference 0.8.1907.1701*)
 
-发行日期：  2019 年 7 月 12 日
+发行日期：2019 年 7 月 12 日
 
 此版本包含以下各项：
 
-- 用于对数组进行切片的新索引位置，请参阅[语言参考](xref:microsoft.quantum.language.expressions#array-slices)了解详情。
+- 用于对数组进行切片的新索引位置，请参阅[语言参考](xref:microsoft.quantum.guide.expressions#array-slices)了解详情。
 - [Microsoft 容器注册表](https://github.com/microsoft/ContainerRegistry)上托管的附加 Dockerfile，请参阅 [IQ# 存储库](https://github.com/microsoft/iqsharp/blob/master/README.md)了解详情
 - [跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的中断性变更、配置设置更新、名称更改；请参阅 [.NET API 浏览器](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.qctracesimulatorconfiguration)了解更新后的名称。
 
@@ -158,7 +158,7 @@ ms.locfileid: "82677091"
 
 ## <a name="version-07-packagereference-0719053109"></a>版本 0.7 (*PackageReference 0.7.1905.3109*)
 
-发行日期：  2019 年 5 月 31 日
+发行日期：2019 年 5 月 31 日
 
 此版本包含以下各项：
 - Q# 语言的附加内容、 
@@ -171,10 +171,10 @@ ms.locfileid: "82677091"
 
 ### <a name="q-language-syntax"></a>Q# 语言语法
 此版本添加了新的 Q# 语言语法：
-* 添加了[用户定义类型](xref:microsoft.quantum.language.type-model#user-defined-types)的命名项。  
+* 添加了[用户定义类型](xref:microsoft.quantum.guide.types#user-defined-types)的命名项。  
 * 现可将用户定义类型构造函数用作函数。
-* 在用户定义类型中添加了对 [copy-and-update](xref:microsoft.quantum.language.expressions#copy-and-update-expressions) 和 [apply-and-reassign]((xref:microsoft.quantum.language.statements#rebinding-of-mutable-symbols)) 的支持。
-* [repeat-until-success](xref:microsoft.quantum.language.statements#repeat-until-success-loop) 循环的修复块现在是可选项。
+* 在用户定义类型中添加了对 [copy-and-update](xref:microsoft.quantum.guide.expressions#copy-and-update-expressions) 和 [apply-and-reassign](xref:microsoft.quantum.guide.variables#rebinding-of-mutable-symbols) 的支持。
+* [repeat-until-success](xref:microsoft.quantum.guide.controlflow#repeat-until-success-loop) 循环的修复块现在是可选项。
 * 我们现支持在函数中（而不是在操作中）使用 while 循环。
 
 ### <a name="library"></a>库 
@@ -190,7 +190,7 @@ ms.locfileid: "82677091"
 
 ## <a name="version-061905"></a>版本 0.6.1905
 
-发行日期：  2019 年 5 月 3 日
+发行日期：2019 年 5 月 3 日
 
 此版本包含以下各项：
 - 更改 Q# 语言、 
@@ -202,10 +202,10 @@ ms.locfileid: "82677091"
 
 ### <a name="q-language-syntax"></a>Q# 语言语法
 此版本添加了新的 Q# 语言语法：
-* 使用 `+` 运算符添加了[用于表示量子操作专用化的简单方式](xref:microsoft.quantum.language.type-model#functors)（控制和伴随）。  旧语法已弃用。  使用旧语法（例如 `: adjoint`）的程序将继续运行，但会生成编译时警告。  
-* 添加了用于 [copy-and-update](xref:microsoft.quantum.language.expressions#copy-and-update-expressions) 的新运算符 `w/`，它可用于将数组创建表示为现有数组的修改。
-* 添加了常用 [apply-and-upate 语句](xref:microsoft.quantum.language.statements#rebinding-of-mutable-symbols)，如 `+=`、`w/=`。
-* 添加了一种用于在[开放式指令](xref:microsoft.quantum.language.file-structure#open-directives)中指定命名空间短名称的方法。
+* 使用 `+` 运算符添加了[用于表示量子操作专用化的简单方式](xref:microsoft.quantum.guide.operationsfunctions#controlled-and-adjoint-operations)（控制和伴随）。  旧语法已弃用。  使用旧语法（例如 `: adjoint`）的程序将继续运行，但会生成编译时警告。  
+* 添加了用于 [copy-and-update](xref:microsoft.quantum.guide.expressions#copy-and-update-expressions) 的新运算符 `w/`，它可用于将数组创建表示为现有数组的修改。
+* 添加了常用的 [apply-and-update 语句](xref:microsoft.quantum.guide.variables#rebinding-of-mutable-symbols)，例如 `+=` 和 `w/=`。
+* 添加了一种用于在[开放式指令](xref:microsoft.quantum.guide.filestructure#open-directives)中指定命名空间短名称的方法。
 
 在此版本中，我们不再允许在 set 语句的左侧指定数组元素。  这是因为该语法意味着数组在实际上是可变的，操作的结果始终是创建新数组并加以修改。  系统将生成编译器错误，建议使用新新的 copy-and-update 运算符 `w/` 来达到相同的结果。  
 
@@ -231,7 +231,7 @@ ms.locfileid: "82677091"
 
 我们已添加 [Q# 与 F# 驱动程序结合使用的示例](https://github.com/Microsoft/Quantum/pull/164)。  
 
-谢谢你们  ： 在 http://github.com/Microsoft/Quantum 向我们的开放代码库发布内容的以下参与者。 这些内容极大地丰富了 Q# 代码的示例：
+谢谢你们： 在 http://github.com/Microsoft/Quantum 向我们的开放代码库发布内容的以下参与者。 这些内容极大地丰富了 Q# 代码的示例：
 
 * Mathias Soeken ([@msoeken](https://github.com/msoeken))：Oracle 函数合成。 [PR #135](https://github.com/Microsoft/Quantum/pull/135)。
 
@@ -259,18 +259,18 @@ ms.locfileid: "82677091"
 > * 对于0.6 版本，量子开发工具包附带的语言服务器不支持多个工作区。
 > * 若要在 Visual Studio Code 中处理项目，请打开包含项目本身和所有引用项目的根文件夹。   
 > * 若要在 Visual Studio 中处理解决方案，解决方案中包含的所有项目都需要位于解决方案所在的同一文件夹中，或位于其中一个子文件夹中。  
-> * 不支持在迁移到 0.6 和更高版本的项目与使用较低版本的包的项目之间进行引用  。
+> * 不支持在迁移到 0.6 和更高版本的项目与使用较低版本的包的项目之间进行引用。
 
 ## <a name="version-051904"></a>版本 0.5.1904
 
-发行日期：  2019 年 4 月 15 日
+发行日期：2019 年 4 月 15 日
 
 此版本包含 bug 修复。
 
 
 ## <a name="version-051903"></a>版本 0.5.1903
 
-发行日期：  2019 年 3 月 27 日
+发行日期：2019 年 3 月 27 日
 
 此版本包含以下各项：
 
@@ -280,14 +280,14 @@ ms.locfileid: "82677091"
 
 - 针对社区报告的 DumpRegister 问题的 bug 修复 ([#148](https://github.com/Microsoft/Quantum/issues/148))。
 
-- 添加了从 [using 语句](xref:microsoft.quantum.language.statements)中返回的功能。
+- 添加了从 [using 语句](xref:microsoft.quantum.guide.qubits#allocating-qubits)中返回的功能。
 
 - 改版了[入门指南](xref:microsoft.quantum.install)。
 
 
 ## <a name="version-051902"></a>版本 0.5.1902
 
-发行日期：  2019 年 2 月 27 日
+发行日期：2019 年 2 月 27 日
 
 此版本包含以下各项：
 
@@ -299,18 +299,18 @@ ms.locfileid: "82677091"
 
 ## <a name="version-041901"></a>版本 0.4.1901
 
-发行日期：  2019 年 1 月 30 日
+发行日期：2019 年 1 月 30 日
 
 此版本包含以下各项：
 
-- 添加了对新的基元类型 BigInt 的支持，该类型表示任意大小的有符号整数。  了解有关 [BigInt 类型](xref:microsoft.quantum.language.type-model)的详细信息。
+- 添加了对新的基元类型 BigInt 的支持，该类型表示任意大小的有符号整数。  了解有关 [BigInt 类型](xref:microsoft.quantum.guide.types)的详细信息。
 - 添加了新的 Toffoli 模拟器，这是一种特殊用途的快速模拟器，可模拟 X、CNOT 和多方控制 X 量子操作（具有大量的量子位）。  了解有关 [Toffoli 模拟器](xref:microsoft.quantum.machines.toffoli-simulator)的详细信息。
 - 添加了一种简单的资源估计器，用于估计在量子计算机上运行给定的 Q# 操作实例所需的资源。  了解有关[资源估计器](xref:microsoft.quantum.machines.resources-estimator)的详细信息。
 
 
 ## <a name="version-0318112802"></a>版本 0.3.1811.2802
 
-发行日期：  2018 年 11 月 28 日
+发行日期：2018 年 11 月 28 日
 
 尽管 VS Code 扩展未使用它，但在与 `event-stream` NPM 包相关的 [扩展清除](https://code.visualstudio.com/blogs/2018/11/26/event-stream)过程中，它已被标记并从商城中删除。 此版本删除了所有可使扩展触发任何红色标记的运行时依赖项。
 
@@ -319,7 +319,7 @@ ms.locfileid: "82677091"
 
 ## <a name="version-0318111511"></a>版本 0.3.1811.1511
 
-发行日期：  2018 年 11 月 20 日
+发行日期：2018 年 11 月 20 日
 
 此版本修复了阻止某些用户成功加载 Visual Studio 扩展的 bug。
 
@@ -327,7 +327,7 @@ ms.locfileid: "82677091"
 
 ## <a name="version-031811203"></a>版本 0.3.1811.203
 
-发行日期：  2018 年 11 月 2 日
+发行日期：2018 年 11 月 2 日
 
 此版本包含几个 bug 修复，其中包括：
 
@@ -339,7 +339,7 @@ ms.locfileid: "82677091"
 
 ## <a name="version-0318102508"></a>版本 0.3.1810.2508
 
-发行日期：  2018 年 10 月 29 日
+发行日期：2018 年 10 月 29 日
 
 此版本包含新的语言功能和改善的开发者体验：
 
@@ -378,7 +378,7 @@ ms.locfileid: "82677091"
 
 ### <a name="community-contributions"></a>社区贡献
 
-谢谢你们  ： 在 http://github.com/Microsoft/Quantum 向我们的开放代码库发布内容的以下参与者。 这些内容极大地丰富了 Q# 代码的示例：
+谢谢你们： 在 http://github.com/Microsoft/Quantum 向我们的开放代码库发布内容的以下参与者。 这些内容极大地丰富了 Q# 代码的示例：
 
 * Rolf Huisman ([@RolfHuisman](https://github.com/RolfHuisman))：通过创建 QASM 到 Q# 的转换器，改善了 QASM/Q# 开发者的体验。 [PR #58](https://github.com/Microsoft/Quantum/pull/58)。
 
@@ -388,7 +388,7 @@ ms.locfileid: "82677091"
 
 ## <a name="version-021809701"></a>版本 0.2.1809.701
 
-发行日期：  2018 年 9 月 10 日
+发行日期：2018 年 9 月 10 日
 
 此版本包括社区报告的问题对应的 bug 修复。 其中包括：
 
@@ -402,13 +402,13 @@ ms.locfileid: "82677091"
 
 ## <a name="version-0218063001"></a>版本 0.2.1806.3001
 
-发行日期：  2018 年 6 月 30 日
+发行日期：2018 年 6 月 30 日
 
 此版本只是对 [GitHub 上报告的 #48 问题](https://github.com/Microsoft/Quantum/issues/48)的快速修复（如果用户名包含空格，则 Q# 编译失败）。 在相应的新版本 (`0.2.1806.3001-preview`) 中遵循与 `0.2.1806.1503` 相同的更新说明。
 
 ## <a name="version-0218061503"></a>版本 0.2.1806.1503
 
-发行日期：  2018 年 6 月 22 日
+发行日期：2018 年 6 月 22 日
 
 此版本包含多项社区贡献，并改进了调试体验，提高了性能。  具体来说：
 
@@ -425,20 +425,20 @@ ms.locfileid: "82677091"
 此更新添加了新的调试功能：
 * 添加了 @"microsoft.quantum.extensions.diagnostics.dumpmachine" 和 @"microsoft.quantum.extensions.diagnostics.dumpregister" 两个新操作，可在某个时间点输出有关目标量子计算机的波形函数信息。  
 * 在 Visual Studio 中，在单个量子位测量到 $\ket{1}$ 的概率现在会自动显示在 QuantumSimulator 目标计算机的调试窗口中。
-* 在 Visual Studio 中，改进了“自动”和“局部变量”调试窗口中变量属性的显示   。 
+* 在 Visual Studio 中，改进了“自动”和“局部变量”调试窗口中变量属性的显示 。 
 
-了解有关[测试和调试](xref:microsoft.quantum.techniques.testing-and-debugging)的详细信息。
+了解有关[测试和调试](xref:microsoft.quantum.guide.testingdebugging)的详细信息。
 
 ### <a name="community-contributions"></a>社区贡献
 
-Q# 编码员社区正在不断发展，我们非常兴奋地看到第一个用户提供的库和示例已提交到 http://github.com/Microsoft/quantum 的开放代码库中。  非常感谢  ！ 感谢以下参与者：
+Q# 编码员社区正在不断发展，我们非常兴奋地看到第一个用户提供的库和示例已提交到 http://github.com/Microsoft/quantum 的开放代码库中。  非常感谢！ 感谢以下参与者：
 * Mathias Soeken ([@msoeken](https://github.com/msoeken))：提供了一个定义基于转换的逻辑合成方法的示例，该方法可构造用于实现给定排列的 Toffoli 网络。 代码完全使用 Q# 函数和操作编写。  [PR #41](https://github.com/Microsoft/Quantum/pull/41)。
 * RolfHuisman ([@RolfHuisman](https://github.com/RolfHuisman))：Microsoft MVP Rolf Huisman 提供了一个从 Q# 代码生成平面 QASM 代码的示例，用于不具有典型控制流的有限程序类和有限量子操作。 [PR #59](https://github.com/Microsoft/Quantum/pull/59)
 * Sarah Kasier ([@crazy4pi314](https://github.com/crazy4pi314))：通过提交用于受控操作的库函数，帮助改进我们的代码库。 [PR #53](https://github.com/Microsoft/Quantum/pull/53)
 * Jessica Lemieux ([@Lemj3111](https://github.com/Lemj3111))：修复 @"microsoft.quantum.canon.quantumphaseestimation" 并新建单元测试。  [PR #54](https://github.com/Microsoft/Quantum/pull/54)
 * Tama McGlinn ([@TamaHobbit](https://github.com/TamaHobbit))：通过确保释放 QuantumSimulator 实例来清除 Teleportation 示例。 [PR #20](https://github.com/Microsoft/Quantum/pull/20)
 
-此外，非常感谢你们  ： 来自商业工程服务团队的 Microsoft 软件工程师参与者，他们在黑客马拉松期间对文档进行了重要的更改。  他们作出的更改大大改善了我们所有人的清晰度和载入体验：
+此外，非常感谢你们： 来自商业工程服务团队的 Microsoft 软件工程师参与者，他们在黑客马拉松期间对文档进行了重要的更改。  他们作出的更改大大改善了我们所有人的清晰度和载入体验：
 * Sascha Corti
 * Mihaela Curmei
 * John Donnelly
@@ -450,7 +450,7 @@ Q# 编码员社区正在不断发展，我们非常兴奋地看到第一个用�
 
 ### <a name="update-existing-projects"></a>更新现有项目
 
-此版本可完全向后兼容。 只需将项目中的 nuget 包更新为 `0.2.1806.1503-preview` 版本，并执行全部重新生成，即可确保重新生成所有中间文件  。
+此版本可完全向后兼容。 只需将项目中的 nuget 包更新为 `0.2.1806.1503-preview` 版本，并执行全部重新生成，即可确保重新生成所有中间文件。
 
 在 Visual Studio 中，按照有关如何[更新包](https://docs.microsoft.com/nuget/tools/package-manager-ui#updating-a-package)的常规说明进行操作。
 
@@ -490,7 +490,7 @@ dotnet clean
 
 ## <a name="version-0218022202"></a>版本 0.2.1802.2202
 
-发行日期：  2018 年 2 月 26 日
+发行日期：2018 年 2 月 26 日
 
 此版本支持在多个平台上开发、语言互操作和性能增强。 具体来说：
 
@@ -525,7 +525,7 @@ dotnet clean
 
 ## <a name="version-0118011707"></a>版本 0.1.1801.1707
 
-发行日期：  2018 年 1 月 18 日
+发行日期：2018 年 1 月 18 日
 
 此版本修复了社区报告的一些问题。 也就是说，
 
@@ -536,7 +536,7 @@ dotnet clean
 
 ## <a name="version-011712901"></a>版本 0.1.1712.901
 
-发行日期：  2017 年 12 月 11 日
+发行日期：2017 年 12 月 11 日
 
 ### <a name="known-issues"></a>已知问题
 

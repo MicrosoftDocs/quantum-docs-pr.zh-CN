@@ -1,45 +1,43 @@
 ### YamlMime:Landing
 title: Microsoft Quantum 文档
-summary: 了解如何使用 Microsoft Quantum 开发工具包和量子编程语言 Q#。 了解关键概念并编写你的第一个量子程序。 探索 QDK 的丰富工具和库。
+summary: 了解如何使用 Microsoft 量子开发工具包和量子编程语言 Q#。 了解关键概念并编写你的第一个量子程序。 探索 QDK 的丰富工具和库。
 metadata:
   title: Microsoft Quantum 文档和 Q# API 参考
-  description: 了解量子计算的概念，以及如何使用 Microsoft Quantum 开发工具包 (QDK) 和 Q#（一种开源量子编程语言）。
+  description: 了解量子计算的概念，以及如何使用 Microsoft 量子开发工具包 (QDK) 和 Q#（一种开源量子编程语言）。
   ms.prod: quantum
   ms.topic: landing-page
   ms.collection: collection
   author: cjgronlund
   ms.author: cgronlun
-  ms.date: 10/21/2019
-  ms.openlocfilehash: e21b191689c228fa3e7c0590ee2f79f625b3960d
-  ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
+  ms.date: 5/10/2020
+  ms.openlocfilehash: 7c0fdf596c3409f0e1db7773b079a258d14a7d9c
+  ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/13/2020
-  ms.locfileid: "80320835"
+  ms.lasthandoff: 05/15/2020
+  ms.locfileid: "83426897"
 landingContent:
 - title: 量子计算
   linkLists:
   - linkListType: learn
     links:
-    - text: 什么是量子计算？
-      url: overview/what-is-quantum-computing.md
-    - text: 量子计算机有何用途？
-      url: overview/quantum-computers.md
-    - text: 为何学习量子计算？
-      url: overview/why-learn-quantum-computing.md
+    - text: 了解量子计算
+      url: overview/understanding-quantum-computing.md
+    - text: 量子计算机和量子模拟器
+      url: overview/quantum-computers-and-simulators.md
     - text: 什么是 Q# 和 QDK？
-      url: overview/what-is-qsharp.md
-    - text: 如何了解详细信息？
-      url: overview/how-to-learn-quantum-computing.md
+      url: overview/what-is-qsharp-and-qdk.md
+    - text: 用于量子计算的线性代数
+      url: overview/algebra-for-quantum-computing.md
   - linkListType: concept
     links:
     - text: 量子计算概念
       url: concepts/index.md
-- title: 获取 Quantum 开发工具包
+- title: 开始使用量子开发工具包
   linkLists:
-  - linkListType: overview
+  - linkListType: get-started
     links:
-    - text: Quantum 开发工具包
+    - text: 量子开发工具包
       url: welcome.md
   - linkListType: download
     links:
@@ -49,15 +47,13 @@ landingContent:
       url: install-guide/update.md
 - title: Q# 编程语言
   linkLists:
-  - linkListType: overview
+  - linkListType: how-to-guide
     links:
-    - text: Q# 语言介绍
-      url: language/index.md
-    - text: Q# 开发技术
-      url: techniques/index.md
+    - text: Q# 用户指南
+      url: user-guide/index.md
     - text: 量子模拟器和主机应用程序
       url: machines/index.md
-  - linkListType: quickstart
+  - linkListType: tutorial
     links:
     - text: 生成量子随机数生成器
       url: quickstarts/qrng.md

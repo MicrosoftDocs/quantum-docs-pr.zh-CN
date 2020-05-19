@@ -5,9 +5,9 @@ items:
     href: standalone.md
   - name: 'Q# Jupyter 笔记本'
     href: qjupyter.md
-  - name: '将 Q# 与其他语言配合使用'
+  - name: 'Q# 与其他语言结合使用'
     items:
-      - name: '将 Q# 与 Python 配合使用'
+      - name: 'Q# 与 Python 结合使用'
         href: pyinstall.md
-      - name: '将 Q# 与 .NET 配合使用'
+      - name: 'Q# 与 .NET 结合使用'
         href: csinstall.md
