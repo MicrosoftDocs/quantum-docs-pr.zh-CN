@@ -2,17 +2,20 @@
   href: index.yml
 - name: 概述
   items:
-    - name: 什么是量子计算？
-      href: overview/what-is-quantum-computing.md
-    - name: 量子计算机有何用途？
-      href: overview/quantum-computers.md
-    - name: 为何学习量子计算？
-      href: overview/why-learn-quantum-computing.md
-    - name: '什么是 Q# 和 QDK？'
-      href: overview/what-is-qsharp.md
-    - name: 如何了解详细信息？
-      href: overview/how-to-learn-quantum-computing.md
+    - name: 量子计算简介
+      href: overview/overview.md
+    - name: 关键概念
+      items:
+        - name: 了解量子计算
+          href: overview/understanding-quantum-computing.md
+        - name: 量子计算机和模拟器
+          href: overview/quantum-computers-and-simulators.md
+        - name: '什么是 Q# 和 QDK？'
+          href: overview/what-is-qsharp-and-qdk.md
+        - name: 用于量子计算的线性代数
+          href: overview/algebra-for-quantum-computing.md
 - name: 快速入门
+  expanded: true
   items:
     - name: QDK 入门
       href: welcome.md
@@ -33,15 +36,7 @@
     - name: 'Q# 代码示例'
       href: 'https://docs.microsoft.com/en-us/samples/browse/?languages=qsharp'
 - name: 'Q# 用户指南'
-  items:
-    - name: 量子开发技术
-      topicHref: techniques/index.md
-      href: techniques/toc.yml
-    - name: 'Q# 编程语言'
-      topicHref: language/index.md
-      href: language/toc.yml
-    - name: 量子模拟器和资源估算器
-      href: machines/toc.yml
+  href: user-guide/toc.yml
 - name: 概念
   items:
     - name: 量子计算概念
