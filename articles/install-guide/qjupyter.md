@@ -1,19 +1,19 @@
 ---
-title: '用 Q # Jupyter 笔记本进行开发'
+title: 使用 Q# Jupyter Notebooks 进行开发
 author: natke
 ms.author: nakersha
 ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.jupyter
-ms.openlocfilehash: 3302a9bd0652b2dea86b844058bf8303ee7a4a7f
-ms.sourcegitcommit: c85c1b439807ac576d3a11aadca307d57b059673
+ms.openlocfilehash: 0c4dc856c94b0a694fb99607eda64cec4d5c221d
+ms.sourcegitcommit: 328f45a0b64cb6b325fa9d3b3ddb74a6a7a97ee9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/18/2020
-ms.locfileid: "83551033"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83660771"
 ---
-# <a name="develop-with-q-jupyter-notebooks"></a>用 Q # Jupyter 笔记本进行开发
+# <a name="develop-with-q-jupyter-notebooks"></a>使用 Q# Jupyter Notebooks 进行开发
 
 在 Q # Jupyter 笔记本上安装用于开发 Q # 操作的 QDK。
 
@@ -45,9 +45,9 @@ IQ#（发音为 i-q-sharp）是主要由 Jupyter 和 Python 使用的 .NET Core 
         jupyter notebook
         ```
 
-    - 若要打开 Jupyter 笔记本，请复制命令行提供的 URL 并将其粘贴到浏览器中。
+    - 若要打开 Jupyter Notebook，请将命令行提供的 URL 复制并粘贴到浏览器中。
 
-    - 使用 Q# 内核创建 Jupyter Notebook，并将以下代码添加到第一个 Notebook 单元格：
+    - 使用 Q # 内核创建 Jupyter Notebook，并将以下代码添加到第一个笔记本单元：
 
         ```qsharp
         operation SayHello () : Unit {
@@ -57,17 +57,21 @@ IQ#（发音为 i-q-sharp）是主要由 Jupyter 和 Python 使用的 .NET Core 
 
     - 运行以下 Notebook 单元格：
 
-        ![包含 Q# 代码的 Jupyter 笔记本单元格](~/media/install-guide-jupyter.png)
+        ![带有 Q # 代码的单元格 Jupyter Notebook](~/media/install-guide-jupyter.png)
 
-        应在单元格的输出中看到 `SayHello`。 在 Jupyter Notebook 中运行时，将编译 Q# 代码，并且 Notebook 将输出找到的操作的名称。
+        应在单元格的输出中看到 `SayHello`。 在 Jupyter Notebook 中运行时，将编译 Q # 代码，然后笔记本将输出找到的操作的名称。
 
 
     - 在新单元中，使用命令执行你刚刚在模拟器中创建的操作 `%simulate` ：
 
-        ![包含 %simulate magic 的 Jupyter 笔记本单元格](~/media/install-guide-jupyter-simulate.png)
+        ![具有% 模拟幻数的 Jupyter Notebook 单元](~/media/install-guide-jupyter-simulate.png)
 
         应会看到在屏幕上打印的消息以及所调用操作的结果（在这里，我们将看到空元组， `()` 因为我们的操作只返回一个 `Unit` 类型）。
 
 ## <a name="next-steps"></a>后续步骤
 
-在首选环境中安装量子开发工具包后，可以编写并运行[第一个量子程序](xref:microsoft.quantum.quickstarts.qrng)。
+现在，你已安装了用于 Q # Jupyter 笔记本的 QDK，接下来可以通过在 Jupyter Notebook 环境中直接编写 Q # 代码来编写并运行[第一个量程程序](xref:microsoft.quantum.quickstarts.qrng)。
+
+有关使用 Q # Jupyter 笔记本可以执行的操作的更多示例，请参阅：
+- [问题解答到 Q # 和 Jupyter Notebook](https://docs.microsoft.com/samples/microsoft/quantum/intro-to-qsharp-jupyter/)。 在这里，你会看到一个 Q # Jupyter Notebook，其中演示了如何在此环境中使用 Q #。
+- [量子 Katas](xref:microsoft.quantum.overview.katas)，一系列自控进度的教程和编程练习集，采用 Q # Jupyter 笔记本的形式。 [量程 Katas 教程](https://github.com/microsoft/QuantumKatas#tutorial-topics)是一个很好的起点。 量程 Katas 旨在同时为你讲授量程计算和 Q # 编程的元素。 这是可以使用 Q # Jupyter 笔记本创建的内容的一个很好的示例。

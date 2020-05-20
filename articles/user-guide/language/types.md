@@ -1,19 +1,19 @@
 ---
-title: Q 中的类型#
+title: Q# 中的类型
 description: '了解 Q # 编程语言中使用的不同类型。'
 author: gillenhaalb
 ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.types
-ms.openlocfilehash: 58370193bd62e306197a9e07c28f8611f043e55c
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 4a551ee90a0abb6e42953cf04c7f5a8ca3573f26
+ms.sourcegitcommit: 682a4a5f5dd23ca58a4addf62aea4086bb308552
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83431132"
+ms.lasthandoff: 05/19/2020
+ms.locfileid: "83609135"
 ---
-# <a name="types-in-q"></a>Q 中的类型#
+# <a name="types-in-q"></a>Q# 中的类型
 
 此页对 Q # 类型模型进行了布局，并介绍了用于指定和使用类型的语法。
 下一页，[键入表达式](xref:microsoft.quantum.guide.expressions)，详细说明如何创建和操作这些类型的表达式。
@@ -35,7 +35,7 @@ Q # 语言提供若干*基元类型*，可以从这些类型构造其他类型�
    type。
 - `Double`类型表示双精度浮点数，例如： `0.0` 、 `-1.3` 、 `4e-7` 。
 - `Bool`类型表示布尔值，可以是 `true` 或 `false` 。
-- `Range`类型表示由表示的整数序列，其中表示 `start..step..stop` 步骤是选项。 
+- 此 `Range` 类型表示一个由表示的整数序列， `start..step..stop` 其中表示该步骤是可选的。 
    对应于 `start .. stop` `start..1..stop` ，例如， `1..2..7` 表示序列 $ \{ 1、3、5、7 \} $。
 - `String`类型是一系列 Unicode 字符，在用户创建后不透明。
   在发生错误或诊断事件时，此类型用于向传统主机报告消息。
