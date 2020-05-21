@@ -1,21 +1,21 @@
 ### YamlMime:Landing
 title: Microsoft Quantum 文档
-summary: 了解如何使用 Microsoft 量子开发工具包和量子编程语言 Q#。 了解关键概念并编写你的第一个量子程序。 探索 QDK 的丰富工具和库。
+summary: 了解如何使用 Microsoft Quantum 开发工具包和量子编程语言 Q#。 了解关键概念并编写你的第一个量子程序。 探索 QDK 的丰富工具和库。
 metadata:
   title: Microsoft Quantum 文档和 Q# API 参考
-  description: 了解量子计算的概念，以及如何使用 Microsoft 量子开发工具包 (QDK) 和 Q#（一种开源量子编程语言）。
+  description: 了解量子计算的概念，以及如何使用 Microsoft Quantum 开发工具包 (QDK) 和 Q#（一种开源量子编程语言）。
   ms.prod: quantum
   ms.topic: landing-page
   ms.collection: collection
   author: cjgronlund
   ms.author: cgronlun
   ms.date: 5/10/2020
-  ms.openlocfilehash: 7c0fdf596c3409f0e1db7773b079a258d14a7d9c
-  ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+  ms.openlocfilehash: e36a289f17d56a4a8edae71b9a3194a144767dd4
+  ms.sourcegitcommit: 4da99168479f96f408b984279a5a7eabcda752db
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/15/2020
-  ms.locfileid: "83426897"
+  ms.lasthandoff: 05/20/2020
+  ms.locfileid: "83708695"
 landingContent:
 - title: 量子计算
   linkLists:
@@ -29,6 +29,8 @@ landingContent:
       url: overview/what-is-qsharp-and-qdk.md
     - text: 用于量子计算的线性代数
       url: overview/algebra-for-quantum-computing.md
+    - text: 用于量子计算的 Microsoft Learn 模块
+      url: https://docs.microsoft.com/users/buildcollections2020-6557/collections/1o2iogrmn8x4r
   - linkListType: concept
     links:
     - text: 量子计算概念
@@ -37,7 +39,7 @@ landingContent:
   linkLists:
   - linkListType: get-started
     links:
-    - text: 量子开发工具包
+    - text: Quantum 开发工具包
       url: welcome.md
   - linkListType: download
     links:
