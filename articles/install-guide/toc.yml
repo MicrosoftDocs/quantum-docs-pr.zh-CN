@@ -3,7 +3,7 @@ items:
     href: index.md
   - name: 'Q# 命令行应用程序'
     href: standalone.md
-  - name: 'Q# Jupyter 笔记本'
+  - name: 'Q# Jupyter Notebook'
     href: qjupyter.md
   - name: 'Q# 与其他语言结合使用'
     items:
