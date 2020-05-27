@@ -1,23 +1,25 @@
 ---
-title: Q# 的量子基础知识
+title: 通过 Q# 探索纠缠
 description: 了解如何在 Q# 中编写量子程序。 使用 Quantum 开发工具包 (QDK) 开发 Bell 态应用程序
 author: natke
 ms.author: nakersha
 ms.date: 10/07/2019
 ms.topic: tutorial
 uid: microsoft.quantum.write-program
-ms.openlocfilehash: 8d3b2d7c8da39a961f4eedcc5989ad3a1e134ade
-ms.sourcegitcommit: 7d350db4b5e766cd243633aee7d0a839b6274bd6
+ms.openlocfilehash: 7836e39227fa2282c6e2faa039f6e625103d5403
+ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "77906723"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83426845"
 ---
-# <a name="quantum-basics-with-q"></a>Q# 的量子基础知识
+# <a name="tutorial-explore-entanglement-with-q"></a>教程：通过 Q\# 探索纠缠
 
-在本快速入门中，我们演示如何编写一个 Q# 程序，用于操作和度量量子位并演示叠加和纠缠效果。  我们可以据此安装 QDK、生成程序并在量子模拟器上执行该程序。  
+在本教程中，我们演示如何编写一个 Q# 程序，用于操作和测量量子比特并演示叠加和纠缠效果。
+我们可以据此安装 QDK、生成程序并在量子模拟器上执行该程序。  
 
-我们将编写一个用于演示量子纠缠的名为 Bell 的应用程序。  Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，用于表示叠加和量子纠缠的最简单示例。 
+我们将编写一个用于演示量子纠缠的名为 Bell 的应用程序。
+Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，用于表示叠加和量子纠缠的最简单示例。
 
 ## <a name="pre-requisites"></a>先决条件
 
@@ -30,12 +32,12 @@ ms.locfileid: "77906723"
 
 ## <a name="demonstrating-qubit-behavior-with-q"></a>使用 Q# 演示量子位行为
 
-回想一下简单的[量子位定义](xref:microsoft.quantum.overview.what#the-qubit)。  经典位保存单个二进制值（如 0 或 1），而量子位的状态则可以是 0 和 1 的同时**叠加**。  从概念上讲，可以将量子位视为空间中的方向（也称为矢量）。  量子位可以是任何可能的方向。 两个**经典状态**是两个方向，一个方向表示度量结果为 0 的可能性为 100%，另一个方向表示度量结果为 1 的可能性为 100%。  这种表示方式也可通过 [Bloch 球](/quantum/concepts/the-qubit#visualizing-qubits-and-transformations-using-the-bloch-sphere)更正式地可视化。
+回想一下简单的[量子位定义](xref:microsoft.quantum.overview.understanding)。  经典位保存单个二进制值（如 0 或 1），而量子位的状态则可以是 0 和 1 的同时**叠加**。  从概念上讲，可以将量子位视为空间中的方向（也称为矢量）。  量子位可以是任何可能的方向。 两个**经典状态**是两个方向，一个方向表示度量结果为 0 的可能性为 100%，另一个方向表示度量结果为 1 的可能性为 100%。  这种表示方式也可通过 [Bloch 球](/quantum/concepts/the-qubit#visualizing-qubits-and-transformations-using-the-bloch-sphere)更正式地可视化。
 
 
 度量行为会生成二进制结果并改变量子位状态。 度量会生成一个二进制值（0 或 1）。  量子位从叠加态（任何方向）变为经典状态之一。  随后，在没有任何干预操作的情况下重复进行相同的度量会生成相同的二进制结果。  
 
-多个量子位可以“纠缠”在一起。  度量一个纠缠的量子位时，就会知道另一个量子位的状态。
+多个量子位可以“纠缠”在一起。 度量一个纠缠的量子位时，就会知道另一个量子位的状态。
 
 现在，我们可以演示如何通过 Q# 来表达这种行为了。  一开始可以编写并生成一个最简单的程序，用于演示量子叠加和量子纠缠。
 
@@ -76,13 +78,13 @@ ms.locfileid: "77906723"
 1. 创建新项目
 
    * 打开 Visual Studio
-   * 转到“文件”菜单并选择“新建” -> “项目...”   
+   * 转到“文件”菜单并选择“新建” -> “项目...”  
    * 在项目模板资源管理器的搜索字段中键入 `Q#`，然后选择 `Q# Application` 模板
    * 将项目命名为 `Bell`
 
 1. 对 Q# 文件重命名
 
-   * 导航到“解决方案资源管理器” 
+   * 导航到“解决方案资源管理器”
    * 右键单击 `Operations.qs` 文件
    * 将其重命名为 `Bell.qs`
 
@@ -251,7 +253,7 @@ C# 主机应用程序包含四个部分：
 
 * 构造量子模拟器。 在示例中，`qsim` 是模拟器。
 * 计算量子算法所需的任何参数。 在示例中，`count` 固定为 1000，`initial` 是量子位的初始值。
-* 运行量子算法。 每个 Q# 运算都会生成名称相同的 C# 类。 此类具有“异步”执行运算的 `Run` 方法  。 执行是异步的，因为实际硬件上的执行将是异步的。 由于 `Run` 方法是异步的，因此我们提取 `Result` 属性；这会阻止执行，直到任务完成并以同步方式返回结果。
+* 运行量子算法。 每个 Q# 运算都会生成名称相同的 C# 类。 此类具有“异步”执行运算的 `Run` 方法。 执行是异步的，因为实际硬件上的执行将是异步的。 由于 `Run` 方法是异步的，因此我们提取 `Result` 属性；这会阻止执行，直到任务完成并以同步方式返回结果。
 * 处理运算结果。 在示例中，`res` 接收运算的结果。 此结果是模拟器所度量 0 的个数 (`numZeros`) 和 1 的个数 (`numOnes`) 的元组。 在 C# 中这会以 ValueTuple 的形式返回。 我们通过析构元组来获取两个字段，打印结果并等待按键。
 
 #### [](#tab/tabid-vs2019)
@@ -287,7 +289,7 @@ Init:1    0s=0    1s=1000
 
     此命令将自动下载所需的全部包，生成应用程序，然后在命令行中运行该应用程序。
 
-1. 或者，按下 F1 打开命令面板，并选择“调试: 在不调试的情况下启动”   。
+1. 或者，按下 F1 打开命令面板，并选择“调试: 在不调试的情况下启动” 。
 系统可能会提示你创建新的 ``launch.json`` 文件，以描述如何启动程序。
 默认 ``launch.json`` 适用于大多数应用程序。
 
@@ -347,7 +349,7 @@ Init:Zero 0s=484  1s=516
 Init:One  0s=522  1s=478
 ```
 
-每次度量状态时，我们都会请求一个经典值，但量子位的 0 和 1 值各占一半，因此从统计学角度而言，我们得到的 0 和 1 各占一半。 这称为“叠加”，它让我们对量子状态有了一个初步的认识  。
+每次度量状态时，我们都会请求一个经典值，但量子位的 0 和 1 值各占一半，因此从统计学角度而言，我们得到的 0 和 1 各占一半。 这称为“叠加”，它让我们对量子状态有了一个初步的认识。
 
 ## <a name="prepare-entanglement"></a>准备展示纠缠
 
@@ -498,7 +500,7 @@ Init:One  0s=490  1s=510  agree=1000
 
 ## <a name="whats-next"></a>下一步是什么？
 
-[Grover 搜索](xref:microsoft.quantum.quickstarts.search)快速入门介绍了如何生成并运行 Grover 搜索（最常用的量子计算算法之一），并通过一个很好的 Q# 程序示例演示了如何使用量子计算来解决实际问题。  
+[Grover 搜索](xref:microsoft.quantum.quickstarts.search)教程介绍了如何生成并运行 Grover 搜索（最常用的量子计算算法之一），并通过一个很好的 Q# 程序示例演示了如何使用量子计算来解决实际问题。  
 
 [量子开发工具包入门](xref:microsoft.quantum.welcome)建议了更多的学习 Q# 和量子编程的方法。
 

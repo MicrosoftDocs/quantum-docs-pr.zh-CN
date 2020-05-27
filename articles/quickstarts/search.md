@@ -1,23 +1,23 @@
 ---
-title: 使用 Q# 运行 Grover 搜索算法 - Quantum 开发工具
+title: 在 Q# 中运行 Grover 搜索算法 - Quantum 开发工具
 description: 生成一个 Q# 项目，以展示 Grover 搜索这种经典的量子算法。
 author: cgranade
 ms.author: chgranad@microsoft.com
 ms.date: 10/19/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.search
-ms.openlocfilehash: c67ccd16957ceef694552bdd9c073ba5a35d8aaf
-ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+ms.openlocfilehash: 9562e1937a2cac49d682cc0524d8fb29e276d95c
+ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/01/2020
-ms.locfileid: "82686830"
+ms.lasthandoff: 05/15/2020
+ms.locfileid: "83426810"
 ---
-# <a name="quickstart-implement-grovers-search-algorithm-in-q"></a>快速入门：使用 Q\# 实现 Grover 搜索算法
+# <a name="tutorial-implement-grovers-search-algorithm-in-q"></a>教程：使用 Q\# 实现 Grover 搜索算法
 
-本快速入门介绍如何构建并运行 Grover 搜索，以便加快非结构化数据的搜索速度。  Grover 搜索是最常用量子计算算法之一。这个相对较小的 Q# 实现可以让你感受一下使用高级 Q# 量子编程语言进行量子解决方案编程（用于表达量子算法）的部分优势。  在指南末尾，我们会看到模拟输出。该输出表明我们已经在未排序条目的列表中成功找到一个特定的字符串，所花时间远远少于在经典计算机上搜索整个列表所花的时间。
+本教程介绍如何构建并运行 Grover 搜索，以便加快非结构化数据的搜索速度。  Grover 搜索是最常用量子计算算法之一。这个相对较小的 Q# 实现可以让你感受一下使用高级 Q# 量子编程语言进行量子解决方案编程（用于表达量子算法）的部分优势。  在指南末尾，我们会看到模拟输出。该输出表明我们已经在未排序条目的列表中成功找到一个特定的字符串，所花时间远远少于在经典计算机上搜索整个列表所花的时间。
 
-Grover 算法在非结构化数据列表中搜索特定项。 例如，它可以回答如下问题：从一副纸牌中抽出的这张纸牌是红桃 A 吗？ 特定项的标签称为“标记输入”  。
+Grover 算法在非结构化数据列表中搜索特定项。 例如，它可以回答如下问题：从一副纸牌中抽出的这张纸牌是红桃 A 吗？ 特定项的标签称为“标记输入”。
 
 使用 Grover 搜索算法，可以保证量子计算机运行此搜索的步数少于所搜索列表中的项目数，这是经典算法无法做到的。 当从一副纸牌中抽一张纸牌时，提高的速度可以忽略不计，但在包含数百万或数十亿个项的列表中，这种效果是显而易见的。
 
@@ -104,7 +104,7 @@ Reflecting about marked state...
 
 ## <a name="next-steps"></a>后续步骤
 
-如果喜欢本快速入门指南，请查看以下部分资源，详细了解有关使用 Q# 编写自己的量子应用程序：
+如果喜欢本教程，请查看以下部分资源，详细了解有关使用 Q# 编写自己的量子应用程序：
 
 - [回到 QDK 入门指南](xref:microsoft.quantum.welcome)
 - 尝试使用更多常用 Grover 搜索算法[示例](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/database-search)
