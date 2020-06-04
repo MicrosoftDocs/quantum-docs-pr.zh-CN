@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.qubits
-ms.openlocfilehash: e89b9ccfe2a0796e01eedfc99f7ce71038d85f38
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 0deb0729a88c49798f32a22a943b935d383c570b
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83430928"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327537"
 ---
 # <a name="working-with-qubits"></a>使用量子位
 
@@ -30,7 +30,7 @@ ms.locfileid: "83430928"
 绑定遵循与语句相同的模式 `let` ：单个符号或符号元组，后跟一个等号 `=` ，一个值或匹配*项*的匹配元组。
 
 初始值设定项可用于单个 qubit （表示为 `Qubit()` ）或 qubits 的数组， `Qubit[n]` 其中 `n` 是一个 `Int` 表达式。
-例如，应用于对象的
+例如，
 
 ```qsharp
 using (qubit = Qubit()) {
@@ -59,7 +59,7 @@ using ((auxiliary, register) = (Qubit(), Qubit[5])) {
 这通常称为 "脏" qubits，因为它们的状态未知，甚至可以与量程计算机内存的其他部分放大。
 
 绑定与语句中的绑定遵循相同的模式和规则 `using` 。
-例如，应用于对象的
+例如，
 ```qsharp
 borrowing (qubit = Qubit()) {
     // ...
@@ -221,5 +221,6 @@ is Adj + Ctl {
 
 此代码可用于将此代码与另一个 canon 函数进行比较，该函数可实现 `MultiControlledXClean` 按操作控制的操作的相同目标 `X` ，不过，这种方法使用了多个 clean qubits `using` 机制。 
 
-## <a name="whats-next"></a>下一步是什么？
+## <a name="next-steps"></a>后续步骤
+
 了解 Q # 中的[控制流](xref:microsoft.quantum.guide.controlflow)。

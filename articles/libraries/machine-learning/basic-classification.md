@@ -6,12 +6,12 @@ ms.author: v-edsanc@microsoft.com
 ms.date: 02/16/2020
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.basics
-ms.openlocfilehash: f42e3e4492f934d7a8f03d4fec6fa0de765401d7
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+ms.openlocfilehash: ddd889fdfabb505d7118c1eff551a6fbfa757309
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77909919"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327639"
 ---
 # <a name="basic-classification-classify-data-with-the-qdk"></a>基本分类：将数据与 QDK 进行分类
 
@@ -22,7 +22,7 @@ ms.locfileid: "77909919"
 ## <a name="prerequisites"></a>先决条件
 
 - Microsoft [Quantum 开发工具包](xref:microsoft.quantum.install)。
-- [创建 Q# 项目](xref:microsoft.quantum.howto.createproject)
+- 为[Python 主机程序](xref:microsoft.quantum.install.python)或[c # 宿主程序](xref:microsoft.quantum.install.cs)创建 Q # 项目。
 
 ## <a name="host-program"></a>主机程序
 
@@ -34,7 +34,7 @@ ms.locfileid: "77909919"
 
     ### <a name="python-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 Python](#tab/tabid-python)
 
-    若要运行你是 Python 中的 Q # 分类器，请将以下代码保存为 `host.py`。 请记住，还需要在本教程后面部分介绍的 Q # 文件 `Training.qs`。
+    若要运行你是 Python 中的 Q # 分类器，请将以下代码另存为 `host.py` 。 请记住，还需要在 `Training.qs` 本教程后面部分介绍的 Q # 文件。
 
     :::code language="python" source="~/quantum/samples/machine-learning/half-moons/host.py" range="3-42":::
 
@@ -49,7 +49,7 @@ ms.locfileid: "77909919"
 
     ### <a name="c-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 C#](#tab/tabid-csharp)
 
-    若要运行的是中C#的 Q # 分类器，请将以下代码保存为 `Host.cs`。 请记住，还需要在本教程后面部分介绍的 Q # 文件 `Training.qs`。
+    若要运行 c # 中的 Q # 分类器，请将以下代码另存为 `Host.cs` 。 请记住，还需要在 `Training.qs` 本教程后面部分介绍的 Q # 文件。
 
     :::code language="csharp" source="~/quantum/samples/machine-learning/half-moons/Host.cs" range="4-86":::
 
@@ -63,7 +63,7 @@ ms.locfileid: "77909919"
 
     ### <a name="c-with-visual-studio-2019"></a>[在 Visual Studio 2019 中使用 C#](#tab/tabid-vs2019)
 
-    若要从C# Visual Studio 中运行新的 Q # 程序，请修改 `Host.cs` 以包含C#以下代码。 请记住，还需要在本教程后面部分介绍的 Q # 文件 `Training.qs`。
+    若要从 Visual Studio 中的 c # 运行新的 Q # 程序，请修改 `Host.cs` 以包含以下 c # 代码。 请记住，还需要在 `Training.qs` 本教程后面部分介绍的 Q # 文件。
 
     :::code language="csharp" source="~/quantum/samples/machine-learning/half-moons/Host.cs" range="4-86":::
 
@@ -76,17 +76,17 @@ ms.locfileid: "77909919"
     ```
     ***
 
-## <a name="q-classifier-code"></a>Q\# 分类器代码
+## <a name="q-classifier-code"></a>Q \# 分类器代码
 
 现在让我们看看如何在 Q # 中定义主机程序调用的操作。
-我们将以下代码保存在一个名为 `Training.qs`的文件中。
+我们将以下代码保存到名为的文件中 `Training.qs` 。
 
 :::code language="qsharp" source="~/quantum/samples/machine-learning/half-moons/Training.qs" range="4-116":::
 
 在上面的代码中定义的最重要的函数和操作包括：
 
 - `ClassifierStructure() : ControlledRotation[]`：在此函数中，我们通过添加所需的受控入口层来设置线路模型的结构。 此步骤类似于按顺序深入学习模型中的神经元层的声明。
-- `TrainHalfMoonModel() : TrainWineModel() : (Double[], Double)`：此操作是代码的核心部分并定义培训。 在这里，我们将从库中包含的数据集中加载示例，为训练设置了超级参数和初始参数，并通过调用 `TrainSequentialClassifier` 包含在库中的操作开始培训。 它输出参数和确定分类器的偏差。
+- `TrainHalfMoonModel() : TrainWineModel() : (Double[], Double)`：此操作是代码的核心部分并定义培训。 在这里，我们将从库中包含的数据集中加载示例，为训练设置了超级参数和初始参数，并通过调用库中包含的操作开始培训 `TrainSequentialClassifier` 。 它输出参数和确定分类器的偏差。
 - `ValidateHalfMoonModel(parameters : Double[], bias : Double) : Int`：此操作定义用于评估模型的验证过程。 在这里，我们将加载用于验证的示例、每个样本的度量值和容差。 它输出所选的一批样本的 misclassifications 数，用于验证。
 
 ## <a name="next-steps"></a>后续步骤

@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.expressions
-ms.openlocfilehash: 93432cef9711b6780192cd59e92b09647a264b5c
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: c4b2cc0bed44ffdfb191ba522d6526959e7c6708
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83431200"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327299"
 ---
 # <a name="type-expressions-in-q"></a>Q 中的类型表达式#
 
@@ -221,7 +221,6 @@ let g = Foo(arg)!;      // Syntax error
 数组文字是由和括起来的由逗号分隔的一个或多个元素表达式的 `[` 序列 `]` 。
 所有元素都必须兼容同一类型。
 
-
 如果给定两个相同类型的数组，则 `+` 可以使用二元运算符形成一个新数组，该数组是两个数组的串联。
 例如， `[1,2,3] + [4,5,6]` 为 `[1,2,3,4,5,6]` 。
 
@@ -229,6 +228,9 @@ let g = Foo(arg)!;      // Syntax error
 
 给定类型和表达式后 `Int` ，运算符可 `new` 用于分配给定大小的新数组。
 例如， `new Int[i + 1]` 将使用元素分配新 `Int` 数组 `i + 1` 。
+
+不允许空数组文本 `[]` 。
+而是使用 `new ★[0]` ，其中 `★` 作为适当类型的占位符，允许创建长度为零的所需数组。
 
 新数组的元素被初始化为依赖于类型的默认值。
 在大多数情况下，这是零的一些变体。
@@ -373,8 +375,7 @@ for (i in 1..N) {
 - `[Op1, Op3]`是一组 `(Qubit[] => Unit is Adj)` 操作。
 - `[Op2, Op3]`是一组 `(Qubit[] => Unit is Ctl)` 操作。
 
-不允许空数组文本 `[]` 。
-而是使用 `new ★[0]` ，其中 `★` 作为适当类型的占位符，允许创建长度为零的所需数组。
+但是，虽然 `(Qubit[] => Unit is Adj)` 和 `(Qubit[] => Unit is Ctl)` 操作具有通用的基类型 `(Qubit[] => Unit)` ，但请注意，这些运算符*的*数组不共享公共基类型。 例如， `[[Op1], [Op2]]` 当前将引发错误，因为它正尝试创建不兼容的数组类型和的数组 `(Qubit[] => Unit is Adj)[]` `(Qubit[] => Unit is Ctl)[]` 。
 
 
 ## <a name="conditional-expressions"></a>条件表达式
@@ -473,7 +474,7 @@ let combinedOp = Func<(Qubit[] => Unit), (Qubit[] => Unit is Adj)>(Op1, Op2, Op3
 
 按优先顺序排列的运算符，从高到低：
 
-操作员 | 元 | 说明 | 操作数类型
+运算符 | 元 | 描述 | 操作数类型
 ---------|----------|---------|---------------
  加`!` | 一元 | 解包 | 任何用户定义类型
  `-`, `~~~`, `not` | 一元 | 数值负，按位求补，逻辑求反 | `Int`对于，为 `BigInt` 或 `Double` `-` `Int` `BigInt` `~~~` `Bool``not`
@@ -492,5 +493,6 @@ let combinedOp = Func<(Qubit[] => Unit), (Qubit[] => Unit is Adj)>(Op1, Op2, Op3
  `?` `|` | 三元 | 条件逻辑 | `Bool`对于左侧
 `w/` `<-` | 三元 | 复制和更新 | 请参阅[复制和更新表达式](#copy-and-update-expressions)
 
-## <a name="whats-next"></a>下一步是什么？
+## <a name="next-steps"></a>后续步骤
+
 现在你可以使用 Q # 中的表达式，你可以转到[q # 中的操作和函数](xref:microsoft.quantum.guide.operationsfunctions)来了解如何定义和调用操作和函数。

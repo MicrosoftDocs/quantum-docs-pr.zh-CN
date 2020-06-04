@@ -7,7 +7,7 @@ summary: 将数组拆分为多个部分。
 examples: >-
   ```qsharp
 
-  // The following returns [[1,5],[3],[7]];
+  // The following returns [[1, 5], [3], [7]];
 
   let split = Partitioned([2,1], [1,5,3,7]);
 
@@ -29,16 +29,16 @@ input:
 output:
   content: "'T[][]"
   types:
-  - summary: 多个数组，其中第一个数组是`nElements[0]`第`arr`一个数组，第二`nElements[1]`个数组是`arr`等。最后一个数组将包含所有剩余元素。
+  - summary: 多个数组，其中第一个数组是第一个数组 `nElements[0]` `arr` ，第二个数组 `nElements[1]` 是 `arr` 等。最后一个数组将包含所有剩余元素。
     isArray: true
     types:
     - isArray: true
       uid: "'T"
       isLocal: true
 metadata:
-  ms.openlocfilehash: 319147f72f0ef13a942ab5440a51f60d6f2bae1f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 431c62538c9d7c165c570d680c7d4c14974e294c
+  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680881"
+  ms.lasthandoff: 06/03/2020
+  ms.locfileid: "84326517"

@@ -3,7 +3,11 @@ uid: microsoft.quantum.measurement.mresety
 name: MResetY
 type: operation
 namespace: Microsoft.Quantum.Measurement
-summary: 按 Y 度量单个 qubit，并将其重置为标准基础状态 | 0 〉之后的度量。
+summary: >-
+  按 Y 度量单个 qubit，并将其重置为测量后的固定初始状态。
+
+
+  以 $Y $ 基数执行单 qubit 度量，并确保 qubit 返回到 {0} 度量值后的 $ \ket $。
 syntax: 'operation MResetY (target : Qubit) : Result'
 input:
   content: '(target : Qubit)'
@@ -15,13 +19,13 @@ input:
 output:
   content: Result
   types:
-  - summary: Pauli 中测量`target`的结果 $Y $ basis。
+  - summary: Pauli 中测量的结果 `target` $Y $ basis。
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 2c06d14133399c5afd7d09b67deaa6e63953f1c0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2c177d035a949e700023cf8a89ec0b5d25aac645
+  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682699"
+  ms.lasthandoff: 06/03/2020
+  ms.locfileid: "84327418"

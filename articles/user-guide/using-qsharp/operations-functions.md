@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.operationsfunctions
-ms.openlocfilehash: bc9695b85b68807801225ccbc903a4622b450768
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 9e924b973c4f22a59dd862df3f4f0d70278a1b4e
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83431064"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327792"
 ---
 # <a name="operations-and-functions-in-q"></a>问答中的操作和函数#
 
@@ -670,5 +670,6 @@ Q # callables 允许直接或间接递归。
 - 在实际的量程设备上执行时，堆栈空间可能会受到限制，因此深度递归可能导致运行时错误。
   特别是，Q # 编译器和运行时不标识和优化尾递归。
 
-## <a name="whats-next"></a>下一步是什么？
+## <a name="next-steps"></a>后续步骤
+
 了解 Q # 中的[变量](xref:microsoft.quantum.guide.variables)。

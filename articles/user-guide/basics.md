@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 02/28/2020
 ms.topic: article
 uid: microsoft.quantum.guide.basics
-ms.openlocfilehash: fd0ea47f00b1456ec460808ef7d451c8427677cd
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: e77b52d1a6eb7e2f62ab12dedd75d00ac8fec4be
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83431149"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327316"
 ---
 # <a name="q-basics"></a>Q # 基础知识
 
@@ -91,7 +91,7 @@ let count = 5;
 ```
 
 更有趣的例子是 `for` 支持迭代的语句，并包含*语句块*。
-假设 `qubits` 符号绑定到 qubits 的寄存器（技术上的类型 `Qubit[]` ，即类型的数组 `Qubit` ）。 Then
+假设 `qubits` 符号绑定到 qubits 的寄存器（技术上的类型 `Qubit[]` ，即类型的数组 `Qubit` ）。 则
 ```qsharp
 for (qubit in qubits) {
     H(qubit);
@@ -106,8 +106,7 @@ for (qubit in qubits) {
 问答 # 程序的几乎每个方面都是使用语句构建的，因此，任何一个页面都不能包含与它们相关的所有信息。
 但是，其词法结构和格式在 q [# 文件结构](xref:microsoft.quantum.guide.filestructure)页、符号绑定分配和[q # 中的变量](xref:microsoft.quantum.guide.variables)的范围和控制流循环（如 `for` [q # 中的控制流）中](xref:microsoft.quantum.guide.controlflow)进行了介绍。
 
-
-## <a name="whats-next"></a>后续步骤
+## <a name="next-steps"></a>后续步骤
 在本指南的其余部分，我们将向您展示如何使用 Q # 通过操作、函数和类型的基本构建块来构建复杂的量程程序。
 
 若要开始，可以开始了解[Q # 中的类型](xref:microsoft.quantum.guide.types)。

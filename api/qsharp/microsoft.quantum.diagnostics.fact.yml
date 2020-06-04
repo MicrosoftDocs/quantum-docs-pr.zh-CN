@@ -21,10 +21,12 @@ output:
   types:
   - isPrimitive: true
     uid: Unit
+seeAlso:
+- microsoft.quantum.diagnostics.contradiction
 metadata:
-  ms.openlocfilehash: e78fce453fafc9eb616b10853262ab9899bdca77
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3cb098e622438a7a151cd2fb8958adfeade7b69c
+  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677124"
+  ms.lasthandoff: 06/03/2020
+  ms.locfileid: "84327486"

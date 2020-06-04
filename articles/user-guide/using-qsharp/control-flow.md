@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.controlflow
-ms.openlocfilehash: c534e016fcb8b50e66c11ca29c253ba0512acc6e
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 1f1b641563fe35879abeee32b4f0aeeb7001b1a0
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83430945"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84326534"
 ---
 # <a name="control-flow-in-q"></a>Q 中的控制流#
 
@@ -44,7 +44,7 @@ ms.locfileid: "83430945"
 请注意，执行的任何块在其自己的作用域中执行。
 在、或块内部所做的绑定在 `if` `elif` `else` 其结束后将不可见。
 
-例如，应用于对象的
+例如，
 
 ```qsharp
 if (result == One) {
@@ -174,7 +174,7 @@ Return 语句结束操作或函数的执行，并将值返回给调用方。
 操作中不存在最大返回语句数。
 如果语句在块内跟随 return 语句，则编译器可能会发出警告。
 
-例如，应用于对象的
+例如，
 ```qsharp
 return 1;
 ```
@@ -196,7 +196,7 @@ Fail 语句结束操作的执行，并将错误值返回给调用方。
 操作中的 fail 语句数量没有限制。
 如果语句在块中跟随 fail 语句，则编译器可能会发出警告。
 
-例如，应用于对象的
+例如，
 ```qsharp
 fail $"Impossible state reached";
 ```
@@ -329,5 +329,6 @@ operation PrepareStateUsingRUS(target : Qubit) : Unit {
 有关和操作的详细信息，另请参阅[测试和调试](xref:microsoft.quantum.guide.testingdebugging) [`Assert`](xref:microsoft.quantum.intrinsic.assert) [`AssertProb`](xref:microsoft.quantum.intrinsic.assertprob) 。
 
 
-## <a name="whats-next"></a>下一步是什么？
+## <a name="next-steps"></a>后续步骤
+
 了解问题解答 # 中的[测试和调试](xref:microsoft.quantum.guide.testingdebugging)。

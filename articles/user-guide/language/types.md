@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.types
-ms.openlocfilehash: 4a551ee90a0abb6e42953cf04c7f5a8ca3573f26
-ms.sourcegitcommit: 682a4a5f5dd23ca58a4addf62aea4086bb308552
+ms.openlocfilehash: f7a3ac3813966c0ef695068297ce4d9949ead554
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2020
-ms.locfileid: "83609135"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327282"
 ---
 # <a name="types-in-q"></a>Q# 中的类型
 
@@ -63,7 +63,8 @@ Q # 语言提供若干*基元类型*，可以从这些类型构造其他类型�
 Q # 不提供对矩形多维数组的支持。
 
 使用方括号将数组的元素括起来，就可以用 Q # 源代码编写数组值，如中所示 `[PauliI, PauliX, PauliY, PauliZ]` 。
-数组文本的类型由数组中所有项的通用基类型决定。 
+数组文本的类型由数组中所有项的通用基类型决定。 因此，尝试使用没有公共基类型的元素构造数组将引发错误。  
+有关此示例，请参阅[callables 的数组](xref:microsoft.quantum.guide.expressions#arrays-of-callables)。
 
 > [!WARNING]
 > 创建数组后，不能更改数组的元素。
@@ -291,7 +292,8 @@ newtype TypeC = (TypeA, Range);
 
 Q # 不提供约束可能替换为类型参数的可能类型的机制。
 
-## <a name="whats-next"></a>下一步是什么？
+## <a name="next-steps"></a>后续步骤
+
 现在，你已了解了所有类型，这些类型构成了 Q # 语言，你可以转到[q # 中的类型表达式](xref:microsoft.quantum.guide.expressions)，以了解如何创建和操作这些不同类型的表达式。
 
 

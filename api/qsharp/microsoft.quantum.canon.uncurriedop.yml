@@ -29,7 +29,7 @@ input:
 output:
   content: (('T, 'U) => Unit)
   types:
-  - summary: 与等效的`op` `op(t, u)`新操作`(curriedOp(t))(u)`。
+  - summary: 与 `op` 等效的新操作 `op(t, u)` `(curriedOp(t))(u)` 。
     isOperation: true
     input:
       types:
@@ -43,17 +43,17 @@ output:
         uid: Unit
 typeParameters:
 - uid: "'T"
-  summary: 扩充函数第一个参数的类型。
+  summary: 扩充操作的第一个输入的类型。
 - uid: "'U"
-  summary: 扩充函数的第二个参数的类型。
+  summary: 扩充操作的第二个输入的类型。
 seeAlso:
 - microsoft.quantum.canon.uncurryopc
 - microsoft.quantum.canon.uncurryopa
 - microsoft.quantum.canon.uncurryopca
 metadata:
-  ms.openlocfilehash: ed25e2dd4f1d60d15e560209688d3054089233c2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1ffa2f189770165a4da3eced0ee5d435a1f76acc
+  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678013"
+  ms.lasthandoff: 06/03/2020
+  ms.locfileid: "84327469"

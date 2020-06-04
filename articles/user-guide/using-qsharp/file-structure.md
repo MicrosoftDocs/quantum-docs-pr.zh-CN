@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.filestructure
-ms.openlocfilehash: cbee92c6d7e765237a7a42532dd7012b51421708
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: b8c24dae6cc8d8f37ad4f1f74017c05cabe3a4b4
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83430962"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327452"
 ---
 # <a name="q-file-structure"></a>Q # 文件结构
 
@@ -77,7 +77,7 @@ Q # 遵循的规则与其他 .NET 语言相同。
 但是，Q # 不支持对命名空间进行相对引用。
 也就是说，如果 `a.b` 已打开命名空间，则不会将对名为的操作的引用 `c.d` 解析为具有完整名称的*not*操作 `a.b.c.d` 。
 
-## <a name="formatting"></a>格式设置
+## <a name="formatting"></a>格式化
 
 大多数 Q # 语句和指令以终止分号结束 `;` 。
 语句和声明（例如 `for` 和 `operation` ）以语句块结尾（见下文），不需要终止分号。
@@ -152,5 +152,6 @@ operation ApplyTwice<'T>(op : ('T => Unit), target : 'T) : Unit {
 - **另请参阅**：表示相关函数、操作或用户定义类型的完全限定名称的列表。
 - **引用**：要记录的项的引用和引文的列表。
 
-## <a name="whats-next"></a>下一步是什么？
+## <a name="next-steps"></a>后续步骤
+
 了解 Q # 中的[操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。

@@ -6,12 +6,12 @@ ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.glossary
-ms.openlocfilehash: cbc473eb14d8afd255a7072475dc054e18b98e3e
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 042e4e27ef4e42cfc0c24fbb0ae2232cf1bbfe36
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426703"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327605"
 ---
 # <a name="quantum-computing-glossary"></a>量程计算术语表
 
@@ -55,7 +55,7 @@ Q # 语言中的[操作](xref:microsoft.quantum.glossary#operation)或[函数](x
 
 一个向量，其方向与给定的转换保持不变，并且其量的值由与该向量的[eigenvalue](xref:microsoft.quantum.glossary#eigenvalue)相对应的系数更改。 给定正方形 matrix $M $ 和 eigenvalue $c $，然后 $Mv = cv $，其中 $v $ 是矩阵的 eigenvector，可以是任意参数的复数。 有关详细信息，请参阅[高级矩阵概念](xref:microsoft.quantum.concepts.matrix-advanced)。
 
-## <a name="entanglement"></a>牵连
+## <a name="entanglement"></a>纠缠
 
 量程粒子（如[qubits](xref:microsoft.quantum.glossary#qubit)）可以连接或*放大*，以使它们不能彼此独立地进行描述。 即使它们被无限远地分离，它们的度量结果也是相关的。 牵连对于[测量](xref:microsoft.quantum.glossary#measurement)qubit 的[状态](xref:microsoft.quantum.glossary#quantum-state)至关重要。  有关详细信息，请参阅[高级矩阵概念](xref:microsoft.quantum.concepts.matrix-advanced)。
 
@@ -120,7 +120,11 @@ Q # 中的量程执行的基本单位。 它大致等效于 C、c + + 或 Python
 
 ## <a name="quantum-circuit-diagram"></a>量程线路关系图
 
-用于以图形方式表示简单量程程序的[操作](xref:microsoft.quantum.glossary#operation)顺序（或[入口](xref:microsoft.quantum.glossary#gate)）的方法，例如， ![ 示例线路关系图 ](~/media/qpe.png) 。 有关详细信息，请参阅[量子线路](xref:microsoft.quantum.concepts.circuits)。
+用于以图形方式表示简单量程程序的[操作](xref:microsoft.quantum.glossary#operation)（或[入口](xref:microsoft.quantum.glossary#gate)）序列的一种方法，例如 
+
+![示例线路图示](~/media/qpe.png). 
+
+有关详细信息，请参阅[量子线路](xref:microsoft.quantum.concepts.circuits)。
 
 ## <a name="quantum-libraries"></a>量程库
 
@@ -144,7 +148,7 @@ Probabilistic 成功的量程算法。 如果失败，例程将重试，直到�
 
 ## <a name="superposition"></a>Superposition
 
-量程计算中的概念计算， [qubit](xref:microsoft.quantum.glossary#qubit)是两个状态的线性组合： $ \ket{\0} $ 和 $ \ket{\1} $，直到[测量](xref:microsoft.quantum.glossary#measurement)为止。  有关详细信息，请参阅[了解量程计算](xref:microsoft.quantum.overview.understanding)。
+量程计算中的概念计算， [qubit](xref:microsoft.quantum.glossary#qubit)是两个状态的线性组合： $ \ket {0} $ 和 $ \ket {1} $，直到[测量](xref:microsoft.quantum.glossary#measurement)为止。  有关详细信息，请参阅[了解量程计算](xref:microsoft.quantum.overview.understanding)。
 
 ## <a name="target-machine"></a>目标计算机
 

@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.variables
-ms.openlocfilehash: 407b4ff3570816eb7bdc323a5c5b77dac2d951af
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 456c05d4ca66a747e0cc514a30c6bbb33610f481
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83430894"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327775"
 ---
 # <a name="variables-in-q"></a>问答中的变量#
 
@@ -55,7 +55,7 @@ let measurementOperator = [PauliX, PauliZ, PauliZ, PauliX, PauliI];
 
 ### <a name="apply-and-reassign-statements"></a>应用和重新分配语句
 
-`set`如果右侧包含二元运算符的应用程序，并将结果重新绑定到运算符的左侧参数，则我们将一种特定类型的语句称为 "*应用" 和 "重新分配*" 语句。 例如，应用于对象的
+`set`如果右侧包含二元运算符的应用程序，并将结果重新绑定到运算符的左侧参数，则我们将一种特定类型的语句称为 "*应用" 和 "重新分配*" 语句。 例如，
 ```qsharp
 mutable counter = 0;
 for (i in 1 .. 2 .. 10) {
@@ -196,7 +196,7 @@ let n = 8;
 ...                 // n is 8
 ```
 
-和
+and
 
 ```qsharp
 if (a == b) {
@@ -232,5 +232,6 @@ if (a == b) {
 ...
 ```
 
-## <a name="whats-next"></a>下一步是什么？
+## <a name="next-steps"></a>后续步骤
+
 了解如何使用 Q # 中[的 Qubits](xref:microsoft.quantum.guide.qubits) 。
