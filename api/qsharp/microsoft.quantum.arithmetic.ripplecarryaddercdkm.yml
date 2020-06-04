@@ -7,8 +7,8 @@ summary: >-
   可逆的就地波纹-包含两个整数。
 
 
-  假设在 LittleEndian 中编码的两个 $n $ 位`xs`整数`ys`和一个 qubit，则该操作将计算两个整数的总和，其中包含结果的 $n $ 最低有效位`ys` ，而执行位被 xored 到 qubit。 `carry`
-remarks: 此操作具有与 RippleCarryAdderD 相同的功能，但仅使用一个 ancilla qubit，而不是 $n $。
+  假设在 LittleEndian 中编码的两个 $n $ 位整数 `xs` 和 `ys` 一个 qubit，则该操作将计算两个整数的总和，其中包含结果的 $n $ 最低有效位 `ys` ，而执行位被 xored 到 qubit `carry` 。
+remarks: 此操作具有与 RippleCarryAdderD 相同的功能，但仅使用一个辅助 qubit，而不是 $n $。
 syntax: 'operation RippleCarryAdderCDKM (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, carry : Qubit) : Unit'
 references: >-
   - Steven Cuccaro、Thomas Draper、Samuel Kutin、David Petrie Moulton： "A 新的量程波纹-携带加法线路"，2004。
@@ -35,9 +35,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: d75313cbc70643bc9cb96967c1b2eb928296f8d7
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a72b9fe01846bbdb0b3cb6079a681104904747df
+  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675137"
+  ms.lasthandoff: 06/03/2020
+  ms.locfileid: "84326489"

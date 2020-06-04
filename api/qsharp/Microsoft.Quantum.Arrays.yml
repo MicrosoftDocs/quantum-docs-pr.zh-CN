@@ -20,7 +20,7 @@ functions:
 - uid: microsoft.quantum.arrays.filtered
   summary: 给定为数组元素定义的数组和谓词后，将返回一个数组，其中包含满足谓词的元素。
 - uid: microsoft.quantum.arrays.fold
-  summary: 通过数组`f` `array`循环访问函数，返回`f(f(f(initialState, array[0]), array[1]), ...)`。
+  summary: 通过数组循环访问函数 `f` `array` ，返回 `f(f(f(initialState, array[0]), array[1]), ...)` 。
 - uid: microsoft.quantum.arrays.head
   summary: 返回数组的第一个元素。
 - uid: microsoft.quantum.arrays.indexof
@@ -29,6 +29,8 @@ functions:
   summary: 给定一个数组，返回该数组的索引范围，该范围适用于在 for 循环中使用。
 - uid: microsoft.quantum.arrays.isempty
   summary: 当且仅当数组为空时，返回 true。
+- uid: microsoft.quantum.arrays.ispermutation
+  summary: 当且仅当给定数组表示排列时，输出为 true。
 - uid: microsoft.quantum.arrays.lookupfunction
   summary: 给定一个数组，返回返回该数组的元素的函数。
 - uid: microsoft.quantum.arrays.mapped
@@ -69,9 +71,9 @@ operations:
 - uid: microsoft.quantum.arrays.foreach
   summary: 给定为数组元素定义的数组和操作，返回一个新数组，该数组由该操作下的原始数组的图像组成。
 metadata:
-  ms.openlocfilehash: a9088a037953f62ab7193ea525a6e71d43fe2fb2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 92eb956a1387a9765354f45e27eb084c6d73f51b
+  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673388"
+  ms.lasthandoff: 06/03/2020
+  ms.locfileid: "84326704"

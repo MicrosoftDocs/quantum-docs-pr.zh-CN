@@ -1,0 +1,44 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.ispermutation
+name: IsPermutation
+type: function
+namespace: Microsoft.Quantum.Arrays
+summary: >-
+  当且仅当给定数组表示排列时，输出为 true。
+
+
+  给定 `array` 长度的数组 `n` ，当且仅当中的每个整数仅出现一次时，才返回 true， `0` 这样就 `n - 1` `array` `array` 可以解释为元素上的排列方式 `n` 。
+remarks: 长度为零的数组是完全的。
+examples: >-
+  以下 Q # 代码将打印消息 "所有诊断已成功完成"：
+
+
+  ```Q#
+
+  Fact(IsPermutation([2, 0, 1], "");
+
+  Contradiction(IsPermutation([5, 0, 1], "[5, 0, 1] isn't a permutation");
+
+  Message("All diagnostics completed successfully.");
+
+  ```
+syntax: 'function IsPermutation (permuation : Int[]) : Bool'
+input:
+  content: '(permuation : Int[])'
+  types:
+  - name: permuation
+    isArray: true
+    isPrimitive: true
+    uid: Int
+output:
+  content: Bool
+  types:
+  - isPrimitive: true
+    uid: Bool
+metadata:
+  ms.openlocfilehash: 259c7a073a02b8cae196853e66cd30d7fe3a9436
+  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 06/03/2020
+  ms.locfileid: "84328402"

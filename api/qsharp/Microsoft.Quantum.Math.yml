@@ -3,9 +3,9 @@ uid: microsoft.quantum.math
 name: Microsoft.Quantum.Math
 functions:
 - uid: microsoft.quantum.math.abscomplex
-  summary: 返回类型`Complex`的复数的绝对值。
+  summary: 返回类型的复数的绝对值 `Complex` 。
 - uid: microsoft.quantum.math.abscomplexpolar
-  summary: 返回类型`ComplexPolar`的复数的绝对值。
+  summary: 返回类型的复数的绝对值 `ComplexPolar` 。
 - uid: microsoft.quantum.math.absd
   summary: 返回双精度浮点数字的绝对值。
 - uid: microsoft.quantum.math.absi
@@ -13,9 +13,9 @@ functions:
 - uid: microsoft.quantum.math.absl
   summary: 返回大整数的绝对值。
 - uid: microsoft.quantum.math.abssquaredcomplex
-  summary: 返回类型`Complex`的复数的平方绝对值。
+  summary: 返回类型的复数的平方绝对值 `Complex` 。
 - uid: microsoft.quantum.math.abssquaredcomplexpolar
-  summary: 返回类型`ComplexPolar`的复数的平方绝对值。
+  summary: 返回类型的复数的平方绝对值 `ComplexPolar` 。
 - uid: microsoft.quantum.math.arccos
   summary: 返回余弦值为指定数字的角度。
 - uid: microsoft.quantum.math.arccosh
@@ -31,35 +31,31 @@ functions:
 - uid: microsoft.quantum.math.arctanh
   summary: 计算数字的反双曲正切值。
 - uid: microsoft.quantum.math.argcomplex
-  summary: 返回类型`Complex`为的复数的相位。
+  summary: 返回类型为的复数的相位 `Complex` 。
 - uid: microsoft.quantum.math.argcomplexpolar
-  summary: 返回类型`ComplexPolar`为的复数的相位。
+  summary: 返回类型为的复数的相位 `ComplexPolar` 。
 - uid: microsoft.quantum.math.bitsizei
   summary: >-
-    对于非负整数`a`，返回表示`a`所需的位数。
+    对于非负整数 `a` ，返回表示所需的位数 `a` 。
 
 
     即，返回 < 2 ^ n $ $a 的最小 $n $。
 - uid: microsoft.quantum.math.bitsizel
   summary: >-
-    对于非负整数`a`，返回表示`a`所需的位数。
+    对于非负整数 `a` ，返回表示所需的位数 `a` 。
 
 
     即，返回 < 2 ^ n $ $a 的最小 $n $。
 - uid: microsoft.quantum.math.ceiling
   summary: 返回大于或等于指定数字的最小整数。
 - uid: microsoft.quantum.math.complexascomplexpolar
-  summary: 将类型`Complex`的复杂数字转换为类型`ComplexPolar`的复数。
+  summary: 将类型的复杂数字转换 `Complex` 为类型的复数 `ComplexPolar` 。
 - uid: microsoft.quantum.math.complexpolarascomplex
-  summary: 将类型`ComplexPolar`的复杂数字转换为类型`Complex`的复数。
-- uid: microsoft.quantum.math.complexpolartocomplex
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nComplexPolarToComplex 已被弃用。 请改用 @\"microsoft.quantum.math.complexpolarascomplex\"。"
-- uid: microsoft.quantum.math.complextocomplexpolar
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nComplexToComplexPolar 已被弃用。 请改用 @\"microsoft.quantum.math.complexascomplexpolar\"。"
+  summary: 将类型的复杂数字转换 `ComplexPolar` 为类型的复数 `Complex` 。
 - uid: microsoft.quantum.math.continuedfractionconvergenti
-  summary: 查找最接近于`fraction`分母小于或等于的连续分数收敛性`denominatorBound`
+  summary: 查找最接近于 `fraction` 分母小于或等于的连续分数收敛性`denominatorBound`
 - uid: microsoft.quantum.math.continuedfractionconvergentl
-  summary: 查找最接近于`fraction`分母小于或等于的连续分数收敛性`denominatorBound`
+  summary: 查找最接近于 `fraction` 分母小于或等于的连续分数收敛性`denominatorBound`
 - uid: microsoft.quantum.math.cos
   summary: 返回指定角度的余弦值。
 - uid: microsoft.quantum.math.cosh
@@ -145,9 +141,9 @@ functions:
 - uid: microsoft.quantum.math.modpowl
   summary: 对某个数字进行模块化除法运算，使另一个数字的幂。
 - uid: microsoft.quantum.math.modulusi
-  summary: 计算`value`模`modulus`的规范 residue。
+  summary: 计算模的规范 residue `value` `modulus` 。
 - uid: microsoft.quantum.math.modulusl
-  summary: 计算`value`模`modulus`的规范 residue。
+  summary: 计算模的规范 residue `value` `modulus` 。
 - uid: microsoft.quantum.math.negationc
   summary: 返回输入的一元求反。
 - uid: microsoft.quantum.math.negationcp
@@ -174,16 +170,16 @@ functions:
   summary: 返回两个输入之和。
 - uid: microsoft.quantum.math.pnorm
   summary: >-
-    返回向量`L(p)`的`Double`标准。
+    返回 `L(p)` 向量的标准 `Double` 。
 
 
-    也就是说，给定`Double[]`类型的数组 $x $，这将返回 $p $-标准 $\|x\|\_p = （\ sum_ {j} | x_j | ^ {p}） ^ {1/p} $。
+    也就是说，给定类型的数组 $x $ `Double[]` ，这将返回 $p $-标准 $ \| x \| \_ p = （\ sum_ {j} | x_j | ^ {p}） ^ {1/p} $。
 - uid: microsoft.quantum.math.pnormalized
   summary: >-
-    规范化中`L(p)`的向量`Double`。
+    规范化中的向量 `Double` `L(p)` 。
 
 
-    也就是说，给定类型`Double[]`的数组 $x $，这将返回一个数组，其中所有元素均除以 $p $-标准 $\|x\|_p $。
+    也就是说，给定类型的数组 $x $ `Double[]` ，这将返回一个数组，其中所有元素均除以 $p $-标准 $ \| x \| _p $。
 - uid: microsoft.quantum.math.powc
   summary: 返回一个数的指定幂。
 - uid: microsoft.quantum.math.powcp
@@ -230,7 +226,7 @@ functions:
   summary: 计算一个数字的整数部分。
 newtypes:
 - uid: microsoft.quantum.math.bigfraction
-  summary: 表示形式`p/q`的有理数。 整数`p`是元组的第一个元素， `q`是元组的第二个元素。
+  summary: 表示形式的有理数 `p/q` 。 整数 `p` 是元组的第一个元素， `q` 是元组的第二个元素。
 - uid: microsoft.quantum.math.complex
   summary: >-
     表示复数的实部和虚部。
@@ -243,7 +239,7 @@ newtypes:
 
     复数的极坐标表示形式为 $c = r e ^ {i t} $。
 - uid: microsoft.quantum.math.fraction
-  summary: 表示形式`p/q`的有理数。 整数`p`是元组的第一个元素， `q`是元组的第二个元素。
+  summary: 表示形式的有理数 `p/q` 。 整数 `p` 是元组的第一个元素， `q` 是元组的第二个元素。
 summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含传统数学函数和数据类型。"
 operations:
 - uid: microsoft.quantum.math.randomint
@@ -255,9 +251,9 @@ operations:
 - uid: microsoft.quantum.math.randomsinglequbitpauli
   summary: 随机返回一个 qubit Pauli 运算符。
 metadata:
-  ms.openlocfilehash: 2ad787a0d29e98e25c733d1fdcf0a79fcc8c2803
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 03b75e3dbaa8be699e58fcbcd13db4fbf1c82f12
+  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673161"
+  ms.lasthandoff: 06/03/2020
+  ms.locfileid: "84326484"
