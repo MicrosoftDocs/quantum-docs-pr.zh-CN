@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 10/06/2019
 uid: microsoft.quantum.circuit-tutorial
 ms.topic: tutorial
-ms.openlocfilehash: f0b87936c9baf07555e76f295da58c0a6b9ecd17
-ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+ms.openlocfilehash: 05d3292e1c6e3c8c1163c460f2aaa51c591aa1d5
+ms.sourcegitcommit: 8d9d392bf5e114ae223e6f689ba80d25866ff586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84328589"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84422234"
 ---
 # <a name="tutorial-write-and-simulate-qubit-level-programs-in-q"></a>教程：编写并模拟 qubit 中的程序\#
 
@@ -386,7 +386,7 @@ After:
 * **`    ---`**：振幅阶段的图形化表示形式。
 * **`[ 0.0000 rad ]`**：阶段的数值（以弧度为单位）。
 
-大小和阶段都以图形表示形式显示。 大小表示形式非常简单：显示一个的条形 `*` ，并显示更大的概率。 对于阶段，请参阅[此处](xref:microsoft.quantum.techniques.testing-and-debugging#dump-functions)的 DumpMachine 部分，了解基于角度范围的可能符号表示形式。
+大小和阶段都以图形表示形式显示。 大小表示形式非常简单：显示一个的条形 `*` ，并显示更大的概率。 对于阶段，请参阅[测试和调试：](xref:microsoft.quantum.guide.testingdebugging#dump-functions)基于角度范围的可能符号表示形式的转储函数。
 
 
 因此，打印输出说明了我们的程控入口从

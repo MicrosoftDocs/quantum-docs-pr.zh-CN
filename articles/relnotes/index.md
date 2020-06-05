@@ -1,17 +1,17 @@
 ---
-title: 量子开发工具包发行说明
-description: 了解 Microsoft 量子开发工具包预览版的最新更新。
+title: Quantum 开发工具包发行说明
+description: 了解 Microsoft Quantum 开发工具包预览版的最新更新。
 author: natke
 ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: f365d471d9af73828b78c4fab8579557310a5288
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: ec5b3b26102df6ecc19d89b41c7fd8938b34e761
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426765"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327758"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -20,6 +20,19 @@ ms.locfileid: "83426765"
 有关安装说明，请参阅[安装指南](xref:microsoft.quantum.install)。
 
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
+
+## <a name="version-0112006207"></a>版本 0.11.2006.207
+
+发行日期：*2020 年 6 月 3 日*
+
+此版本包含以下各项：
+
+- 当存在 Q# 入口点时，Q# 笔记本和 Python 主机程序将不再失败
+- 更新了[标准库](xref:microsoft.quantum.libraries.standard.intro)以使用访问修饰符
+- 编译器现在允许在内置重写步骤之间插入重写步骤
+- 按照 [API 原则](xref:microsoft.quantum.contributing.api-design)中所述的计划删除了几个弃用的函数和操作。 在版本 0.11.2004.2825 中未出现警告的情况下生成的 Q# 程序和库将继续工作，不会进行修改。
+
+有关[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed)、[编译器](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed)、[运行时](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed)、[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed)、[IQ#](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+is%3Aclosed) 和 [Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed) 的信息，请参阅已结束的 PR 的完整列表。  
 
 ## <a name="version-01120042825"></a>版本 0.11.2004.2825
 
@@ -34,7 +47,6 @@ ms.locfileid: "83426765"
 > [!NOTE]
 > 使用新的 [`@EntryPoint()`](xref:microsoft.quantum.core.entrypoint) 特性的 Q# 命令行应用程序当前无法从 Python 或 .NET 主机程序调用。
 > 有关详细信息，请参阅 [Python](xref:microsoft.quantum.install.python) 和 [.NET 互操作性](xref:microsoft.quantum.install.cs)指南。
-
 
 ## <a name="version-01120033107"></a>版本 0.11.2003.3107
 

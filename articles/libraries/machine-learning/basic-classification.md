@@ -6,12 +6,12 @@ ms.author: v-edsanc@microsoft.com
 ms.date: 02/16/2020
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.basics
-ms.openlocfilehash: ddd889fdfabb505d7118c1eff551a6fbfa757309
-ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+ms.openlocfilehash: 1d2538fd164c4c61c2712978d3b5c57b0eb766e6
+ms.sourcegitcommit: 8d9d392bf5e114ae223e6f689ba80d25866ff586
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84327639"
+ms.lasthandoff: 06/04/2020
+ms.locfileid: "84422166"
 ---
 # <a name="basic-classification-classify-data-with-the-qdk"></a>基本分类：将数据与 QDK 进行分类
 
@@ -86,7 +86,7 @@ ms.locfileid: "84327639"
 在上面的代码中定义的最重要的函数和操作包括：
 
 - `ClassifierStructure() : ControlledRotation[]`：在此函数中，我们通过添加所需的受控入口层来设置线路模型的结构。 此步骤类似于按顺序深入学习模型中的神经元层的声明。
-- `TrainHalfMoonModel() : TrainWineModel() : (Double[], Double)`：此操作是代码的核心部分并定义培训。 在这里，我们将从库中包含的数据集中加载示例，为训练设置了超级参数和初始参数，并通过调用库中包含的操作开始培训 `TrainSequentialClassifier` 。 它输出参数和确定分类器的偏差。
+- `TrainHalfMoonModel() : (Double[], Double)`：此操作是代码的核心部分并定义培训。 在这里，我们将从库中包含的数据集中加载示例，为训练设置了超级参数和初始参数，并通过调用库中包含的操作开始培训 `TrainSequentialClassifier` 。 它输出参数和确定分类器的偏差。
 - `ValidateHalfMoonModel(parameters : Double[], bias : Double) : Int`：此操作定义用于评估模型的验证过程。 在这里，我们将加载用于验证的示例、每个样本的度量值和容差。 它输出所选的一批样本的 misclassifications 数，用于验证。
 
 ## <a name="next-steps"></a>后续步骤
