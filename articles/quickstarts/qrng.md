@@ -6,12 +6,12 @@ ms.author: megbrow@microsoft.com
 ms.date: 10/25/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.qrng
-ms.openlocfilehash: 3e109553adc4d724733834e3660bfe7789052bcf
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 8fafbccfe2a94a824353221b5e7eb8bac16c42f2
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426822"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327350"
 ---
 # <a name="tutorial-implement-a-quantum-random-number-generator-in-q"></a>教程：使用 Q# 实现量子随机数生成器\#
 
@@ -20,7 +20,7 @@ ms.locfileid: "83426822"
 ## <a name="prerequisites"></a>先决条件
 
 - Microsoft [Quantum 开发工具包](xref:microsoft.quantum.install)。
-- [创建 Q# 项目](xref:microsoft.quantum.howto.createproject)
+- [从命令行使用 Q#](xref:microsoft.quantum.install.standalone)，或者使用 [Python 主机程序](xref:microsoft.quantum.install.python)或 [C# 主机程序](xref:microsoft.quantum.install.cs)创建 Q# 项目。
 
 ## <a name="write-a-q-operation"></a>编写 Q# 运算
 

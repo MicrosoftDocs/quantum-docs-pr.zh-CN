@@ -6,12 +6,12 @@ ms.author: chgranad@microsoft.com
 ms.date: 10/19/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.search
-ms.openlocfilehash: 9562e1937a2cac49d682cc0524d8fb29e276d95c
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 9e4c53b4d5159cf07f0654603c1d477ad09eb7c6
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426810"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327401"
 ---
 # <a name="tutorial-implement-grovers-search-algorithm-in-q"></a>教程：使用 Q\# 实现 Grover 搜索算法
 
@@ -39,7 +39,7 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
 ## <a name="write-the-code"></a>编写代码
 
-1. 使用 Quantum 开发工具包在你选择的开发坏境中[创建一个新的 Q# 项目](xref:microsoft.quantum.howto.createproject)，并将其命名为 `Grover`。
+1. 使用量子开发工具包，[为命令行应用程序创建新的 Q# 项目](xref:microsoft.quantum.install.standalone)。 将项目命名为 `Grover`。
 
 1. 在新项目中，将以下代码添加到 `Program.qs` 文件中：
 

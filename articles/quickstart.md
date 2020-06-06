@@ -3,15 +3,15 @@ title: 通过 Q# 探索纠缠
 description: 了解如何在 Q# 中编写量子程序。 使用 Quantum 开发工具包 (QDK) 开发 Bell 态应用程序
 author: natke
 ms.author: nakersha
-ms.date: 10/07/2019
+ms.date: 05/29/2020
 ms.topic: tutorial
 uid: microsoft.quantum.write-program
-ms.openlocfilehash: 7836e39227fa2282c6e2faa039f6e625103d5403
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 989080e7d9979bb87d14b2580d28732bb1092eb1
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426845"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327367"
 ---
 # <a name="tutorial-explore-entanglement-with-q"></a>教程：通过 Q\# 探索纠缠
 
@@ -25,28 +25,27 @@ Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，
 
 如果准备开始编码，请在继续之前按照以下步骤操作： 
 
-* 使用首选语言和开发环境[安装](xref:microsoft.quantum.install) Quantum 开发工具包
+* 安装适用于 [Python](xref:microsoft.quantum.install.python) 或 [.NET](xref:microsoft.quantum.install.cs) 的量子开发工具包。
 * 如果已安装 QDK，请确保将其[更新](xref:microsoft.quantum.update)至最新版本
 
 也可以阅读说明而不安装 QDK，查看 Q# 编程语言的概述和基本的量子计算概念。
 
 ## <a name="demonstrating-qubit-behavior-with-q"></a>使用 Q# 演示量子位行为
 
-回想一下简单的[量子位定义](xref:microsoft.quantum.overview.understanding)。  经典位保存单个二进制值（如 0 或 1），而量子位的状态则可以是 0 和 1 的同时**叠加**。  从概念上讲，可以将量子位视为空间中的方向（也称为矢量）。  量子位可以是任何可能的方向。 两个**经典状态**是两个方向，一个方向表示度量结果为 0 的可能性为 100%，另一个方向表示度量结果为 1 的可能性为 100%。  这种表示方式也可通过 [Bloch 球](/quantum/concepts/the-qubit#visualizing-qubits-and-transformations-using-the-bloch-sphere)更正式地可视化。
-
+回想一下简单的[量子位定义](xref:microsoft.quantum.overview.understanding)。  经典位保存单个二进制值（如 0 或 1），而[量子位](xref:microsoft.quantum.glossary#qubit)的状态则可以是 0 和 1 的**叠加**。  从概念上讲，可以将量子位视为空间中的方向（也称为矢量）。  量子位可以是任何可能的方向。 两个**经典状态**是两个方向，一个方向表示度量结果为 0 的可能性为 100%，另一个方向表示度量结果为 1 的可能性为 100%。  这种表示方式也可通过 [Bloch 球](/quantum/concepts/the-qubit#visualizing-qubits-and-transformations-using-the-bloch-sphere)更正式地可视化。
 
 度量行为会生成二进制结果并改变量子位状态。 度量会生成一个二进制值（0 或 1）。  量子位从叠加态（任何方向）变为经典状态之一。  随后，在没有任何干预操作的情况下重复进行相同的度量会生成相同的二进制结果。  
 
-多个量子位可以“纠缠”在一起。 度量一个纠缠的量子位时，就会知道另一个量子位的状态。
+多个量子位可以[**纠缠**](xref:microsoft.quantum.glossary#entanglement)在一起。 度量一个纠缠的量子位时，就会知道另一个量子位的状态。
 
 现在，我们可以演示如何通过 Q# 来表达这种行为了。  一开始可以编写并生成一个最简单的程序，用于演示量子叠加和量子纠缠。
 
 ## <a name="setup"></a>设置
 
-使用 Microsoft Quantum 开发工具包开发的应用程序由两个部分组成：
+本教程使用一个主机程序，并且由两部分组成：
 
-1. 使用 Q# 量子编程语言实现的一个或多个量子算法。
-1. 使用 C# 或 Python 等编程语言实现且充当主入口点并调用 Q# 运算来执行量子算法的主机程序。
+1. 使用 Q# 量子编程语言实现的一系列量子算法。
+1. 使用 Python 或 C# 实现且充当主入口点并调用 Q# 运算来执行量子算法的主机程序。
 
 #### <a name="python"></a>[Python](#tab/tabid-python)
 
@@ -498,9 +497,8 @@ Init:One  0s=490  1s=510  agree=1000
 
 恭喜，你已经编写了第一个量子程序！
 
-## <a name="whats-next"></a>下一步是什么？
+## <a name="next-steps"></a>后续步骤
 
 [Grover 搜索](xref:microsoft.quantum.quickstarts.search)教程介绍了如何生成并运行 Grover 搜索（最常用的量子计算算法之一），并通过一个很好的 Q# 程序示例演示了如何使用量子计算来解决实际问题。  
 
 [量子开发工具包入门](xref:microsoft.quantum.welcome)建议了更多的学习 Q# 和量子编程的方法。
-

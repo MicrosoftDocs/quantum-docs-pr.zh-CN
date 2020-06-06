@@ -6,12 +6,12 @@ ms.author: bradben
 ms.date: 5/5/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.algebra
-ms.openlocfilehash: 9f156a3cc092e295317061dda5e8aa29e9d5ca1e
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 4750643d16ad8af6240df42c1b93353565561429
+ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83430843"
+ms.lasthandoff: 06/03/2020
+ms.locfileid: "84327588"
 ---
 # <a name="linear-algebra-for-quantum-computing"></a>用于量子计算的线性代数
 
@@ -67,7 +67,7 @@ $$
 
 结果是一个四维矩阵，其中每个元素都代表一个概率。 例如，$ac$ 是两个量子比特坍缩为 0 和 0 的概率，$ad$ 是坍缩为 0 和 1 的概率，依此类推。 
 
-就像单个量子比特的状态 $\begin{bmatrix} a \\\\  b \end{bmatrix}$ 必须满足要求 $|a|^2 + |b|^2 = 1$ 才能表示量子状态一样，两个量子比特的状态 $\begin{bmatrix} ac \\\\  ad \\\\  bc \\\\  bd \end{bmatrix}$ 也必须满足要求 $|a|^2 + |b|^2 + |c|^2+ |d|^2 = 1$。
+就像单个量子比特的状态 $\begin{bmatrix} a \\\\  b \end{bmatrix}$ 必须满足要求 $|a|^2 + |b|^2 = 1$ 才能表示量子状态一样，两个量子比特的状态 $\begin{bmatrix} ac \\\\  ad \\\\  bc \\\\  bd \end{bmatrix}$ 也必须满足要求 $|ac|^2 + |ad|^2 + |bc|^2+ |bd|^2 = 1$。
 
 ## <a name="summary"></a>总结
 
@@ -75,5 +75,4 @@ $$
 
 ## <a name="next-steps"></a>后续步骤
 
-> [!div class="nextstepaction"]
-> [安装 QDK](xref:microsoft.quantum.install)
+[安装 QDK](xref:microsoft.quantum.install)
