@@ -6,12 +6,12 @@ ms.author: vadym@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.intro
-ms.openlocfilehash: 72c259933d2df8f79319e6c0c65ae181a9f9cff3
-ms.sourcegitcommit: 9d1c045cf1a2c3e19030cb38dbc7496dbd24ab58
+ms.openlocfilehash: 4cec688da35951271d87396d9b6a8fed744defc6
+ms.sourcegitcommit: c8ebc5d7d8581444754f5d7bfaca2f25601f1b14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2020
-ms.locfileid: "77906077"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84577659"
 ---
 # <a name="quantum-trace-simulator"></a>量子跟踪模拟器
 
@@ -61,7 +61,7 @@ namespace Quantum.MyProgram
         static void Main(string[] args)
         {
             QCTraceSimulator sim = new QCTraceSimulator();
-            var res = MyQuantumProgram.Run().Result;
+            var res = MyQuantumProgram.Run(sim).Result;
             System.Console.WriteLine("Press any key to continue...");
             System.Console.ReadKey();
         }
