@@ -1,83 +1,221 @@
 ---
-title: 量程计算中的矢量和矩阵
+title: 量子计算中的向量和矩阵
 description: 了解有关如何使用向量和矩阵的基本知识。
 author: QuantumWriter
 uid: microsoft.quantum.concepts.vectors
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 076ab6242b7ae31d4936ae8505034f1f13fa4727
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+no-loc:
+- $
+- $
+- '\cdots'
+- bmatrix
+- '\ddots'
+- '\equiv'
+- '\sum'
+- '\begin'
+- '\end'
+- '\sqrt'
+- '\otimes'
+- '{'
+- '}'
+- '\text'
+- '\phi'
+- '\kappa'
+- '\psi'
+- '\alpha'
+- '\beta'
+- '\gamma'
+- '\delta'
+- '\omega'
+- '\bra'
+- '\ket'
+- '\boldone'
+- '\\\\'
+- '\\'
+- =
+- '\frac'
+- '\text'
+- '\mapsto'
+- '\dagger'
+- '\to'
+- "\begin{cases}"
+- "\end{cases}"
+- '\operatorname'
+- '\braket'
+- '\id'
+- '\expect'
+- '\defeq'
+- '\variance'
+- '\dd'
+- '&'
+- "\begin{align}"
+- "\end{align}"
+- '\Lambda'
+- '\lambda'
+- '\Omega'
+- '\mathrm'
+- '\left'
+- '\right'
+- '\qquad'
+- '\times'
+- '\big'
+- '\langle'
+- '\rangle'
+- '\bigg'
+- '\Big'
+- '|'
+- '\mathbb'
+- '\vec'
+- '\in'
+- '\texttt'
+- '\ne'
+- <
+- '>'
+- '\leq'
+- '\geq'
+- ~~
+- "~"
+ms.openlocfilehash: 6c09531cd8bee8f5efb472c95c575daed04d3040
+ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77904904"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84630207"
 ---
 # <a name="vectors-and-matrices"></a>向量和矩阵
 
 熟悉矢量和矩阵对于了解量程计算至关重要。 我们提供了下面的简要介绍，并建议读者阅读有关线性代数（如*Strang，G （1993））的标准引用。线性代数简介（卷3）。Wellesley、MA： Wellesley-剑桥按下*或联机引用，如[线性代数](http://joshua.smcvt.edu/linearalgebra/)。
 
-列向量（或只是[*向量*](https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics))） $n $ 的维度（或大小） $v $ 是 $n $ 复数 $ （v_1，v_2，\ldots，v_n） $ 排列为一个列的集合：
+[*vector*](https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics)) $ 维度（或大小） $n 的列向量 $v $ 为 $n $ 复数 $ （v_1，v_2，\ldots，v_n） $ （按列排列）的集合：
 
-$ $v = \begin{bmatrix} v_1\\\\ v_2\\\\ \vdots\\\\ v_n \end{bmatrix} $ $
+$ $v = \begin{bmatrix}
+v_1\\\\
+v_2\\\\
+\vdots\\\\
+v_n \end{bmatrix}$$
 
-向量 $v $ 的标准定义为 $ \sqrt{\sum\_i | v\_i | ^ 2} $。 如果向量的标准为 $1 $，则认为向量是单位规范（或者，也称为[*单位矢量*](https://en.wikipedia.org/wiki/Unit_vector)）。 向量 $v $ 的[*adjoint*](https://en.wikipedia.org/wiki/Adjoint_matrix)表示 $v ^ \dagger $，定义为以下行向量，其中 $\*$ 表示复数共轭，
+向量 $v 的标准 $ 定义为 $ \sqrt { \sum \_ i | v \_ i | ^ 2 } $。 如果向量的标准为 $1，则将其视为单位规范（或者，也称为[*单位矢量*](https://en.wikipedia.org/wiki/Unit_vector)） $ 。 向量 $v 的[*adjoint*](https://en.wikipedia.org/wiki/Adjoint_matrix) $ 表示 $v ^ \dagger $ ，并定义为以下行向量，其中 $ \* $ 表示共轭复数，
 
-$ $ \begin{bmatrix} v_1 \\\\ \vdots \\\\ v_n \end{bmatrix} ^ \dagger = \begin{bmatrix} v_1 ^ * & \cdots & v_n ^ * \end{bmatrix} $ $
+$ $ \begin{ bmatrix } v_1 \\ \\ \vdots \\ \\ v_n \end{ bmatrix } ^ \dagger = \begin{ bmatrix } v_1 ^ * & \cdots & v_n ^ * \end{bmatrix}$$
 
-将两个矢量相乘的最常见方法是通过[*内部产品*](https://en.wikipedia.org/wiki/Inner_product_space)（也称为点积）。  内部产品提供了一个向量的投影到另一个向量，这在描述如何将一个向量表达为其他更简单的向量的总和方面非常有用。  $U $ 和 $v $ 之间的内部积（表示 $ \left\langle u，v\right\rangle $）定义为
+将两个矢量相乘的最常见方法是通过[*内部产品*](https://en.wikipedia.org/wiki/Inner_product_space)（也称为点积）。  内部产品提供了一个向量的投影到另一个向量，这在描述如何将一个向量表达为其他更简单的向量的总和方面非常有用。  $U 和 $v 之间的内部积 $ $ ，表示 $ \left \langle u，v \right \rangle $ 定义为
 
-$ $ \langle u，v\rangle = u ^ \dagger v = u\_1 ^ {\*} v_1 + \cdots + u\_n ^ {\*} v\_n。
+$ $ \langle u，v \rangle = u ^ \dagger v = u \_ 1 ^ { \* } v_1 + \cdots + u \_ n ^ { \* } v \_ n。
 $$
 
-此表示法还允许以 $ \sqrt{\langle v，v\rangle} $ 形式写入矢量 $v $ 的标准。
+此表示法还允许将矢量 $v 的标准 $ 编写为 $ \sqrt { \langle v \rangle } $。
 
-我们可以将一个向量与一个数字 $c $ 相乘，以形成一个新向量，其项与 $c $ 相乘。 我们还可以添加两个向量 $u $ 和 $v $，以形成新的向量，其条目是 $u $ 和 $v $ 的条目之和。 这些操作如下所示：
+我们可以将一个向量与一个数字进行相乘 $ ，$c 以构成一个新向量，其项与 $c 相乘 $ 。 还可以添加两个向量 $u $ 和 $v， $ 以形成新的向量，其项是 $u 和 $v 项的总和 $ $ 。 这些操作如下所示：
 
-$ $ \mathrm{If} ~ u = \begin{bmatrix} u_1\\\\ u_2\\\\\\\\ u_n v_1 \end{bmatrix} ~ \mathrm{and} ~ v = \begin{bmatrix}\\\\ v_2\\\\\\\vdots \\ v_n au_1 \end{bmatrix}，~ \mathrm{then} ~ au + bv = \begin{bmatrix} bv_1\\\\ au_2 bv_2 +\\\\\\\vdots \\ au_n bv_n + \end{bmatrix}。
+$ $ \mathrm{If } ~ u = \begin{bmatrix}
+u_1\\\\
+u_2\\\\
+\vdots\\\\
+u_n \end{ bmatrix } ~ \mathrm{and } ~ v = \begin{bmatrix}
+    v_1\\\\
+    v_2\\\\
+    \vdots\\\\
+    v_n \end{ bmatrix } ，~ \mathrm{then } ~ au + bv = \begin{bmatrix}
+au_1 + bv_1\\\\
+au_2 + bv_2\\\\
+\vdots\\\\
+au_n + bv_n \end{ bmatrix } 。
 $$
 
-大小为的[*矩阵*](https://en.wikipedia.org/wiki/Matrix_(mathematics))$m \times n $ 是按 $m $ rows 和 $n $ 列排列的 $mn $ 复数的集合，如下所示：
+大小[*matrix*](https://en.wikipedia.org/wiki/Matrix_(mathematics))为 $m \times n 的矩阵 $ 是 $ 按 $m 行和 $n 列排列的 $mn 复数的集合，如下 $ $ 所示：
 
-$ $M = \begin{bmatrix} M_{11} ~ ~ M_{12} ~ ~ \cdots ~ ~ M_ {1n}\\\\ M_{21} ~ ~ M_{22} ~ ~ \cdots ~ ~ M_ {2n}\\\\\\{m2} ~ ~ \ddots ~ ~ \\ {m2} ~ M_ \cdots $ $\\\\
+$ $M = \begin{bmatrix}
+M_ {11 } ~ ~ M_ {12 } ~ ~ \cdots ~ ~ M_ {1n } \\ \\ M_ {21 } ~ ~ M_ {22 } ~ ~ \cdots ~ ~ M_ {2n } \\ \\ \ddots\\\\
+M_ {m1 } ~ ~ M_ {m2 } ~ ~ \cdots ~ ~ M_ {mn } \\ \\ \end{ bmatrix } . $ $
 
-请注意，维度 $n $ 的矢量只是大小 $n \times $1 的矩阵。 与矢量一样，我们可以将矩阵与数字 $c $ 相乘，以获取一个新矩阵，其中每个条目都与 $c $ 相乘，我们可以添加两个相同大小的矩阵，以生成一个新矩阵，该矩阵的条目是两个矩阵各自条目的总和。 
+请注意，维度 $n 的矢量 $ 只是大小 $n \times 1 的矩阵 $ 。 与矢量一样，我们可以将矩阵与数字 $c 相乘， $ 以获取一个新矩阵，其中每个条目都与 $c 相乘 $ ，可以添加两个相同大小的矩阵以生成一个新矩阵，该矩阵的条目是两个矩阵各自条目的总和。 
 
 ## <a name="matrix-multiplication-and-tensor-products"></a>Matrix 乘法 and Tensor Products
 
-还可以将两个矩阵 $M $ of dimension $m \times n $ 和 $N $ of dimension $n \times p $，以获取一个新的矩阵 $P $ of dimension $m \times p $，如下所示：
+我们还可以将 $ 维度 $m n $M 的两个矩阵 \times $ 与 $ 维度 $n \times p 的 $N 相乘， $ 以获取 $ 维度 $P \times p 的新矩阵 $m， $ 如下所示：
 
-\begin{align} & \begin{bmatrix} M_{11} ~ ~ M_{12} ~ ~ \cdots ~ ~ M_ {1n}\\\\ M_{21} ~ ~ M_{22} M_\\\\ \cdots\\\\ {} ~ ~ M_ {m2} ~ ~ \ddots ~ ~ M_ {\cdots} mn \end{bmatrix} N_{11} ~ ~ N_{12} ~ ~ \cdots ~ ~ N_ {1 p}\\\\ N_{21} ~ ~ N_{22} ~ ~ \cdots ~ ~ N_ {2 p}\\\\ \ddots\\\\ N_ {n1} ~ ~ N_ {np} ~ ~ \cdots ~ ~ N_ {np} \end{bmatrix} = \begin{bmatrix} P_{11} ~ ~ P_{12} ~ ~ \cdots ~ ~ P_ {1 p}\\\\ P_{21} ~ P_{22} P_\\\ddots \\\\\\ {m1} ~ ~ P_ {m2} ~ ~ \cdots ~ ~ P_ {mp} \end{bmatrix} \end{align}
+\begin{align}
+& \begin{bmatrix}
+    M_ {11 } ~ ~ M_ {12 } ~ ~ \cdots ~ ~ M_ {1n } \\ \\ M_ {21 } ~ ~ M_ {22 } ~ ~ \cdots ~ ~ M_ {2n } \\ \\ \ddots\\\\
+    M_ {m1 } ~ ~ M_ {m2 } ~ ~ \cdots ~ ~ M_ {mn}
+端面bmatrix}
+准备bmatrix}
+N_ {11 } ~ ~ N_ {12 } ~ ~ \cdots ~ ~ N_ {1 p } \\ \\ N_ {21 } ~ ~ N_ {22 } ~ ~ \cdots ~ ~ N_ {2 p } \\ \\ \ddots\\\\
+N_ {n1 } ~ ~ N_ {n2 } ~ ~ \cdots ~ ~ N_ {np}
+\end{ bmatrix } = \begin{bmatrix}
+P_ {11 } ~ ~ P_ {12 } ~ ~ \cdots ~ ~ P_ {1 p } \\ \\ P_ {21 } ~ ~ P_ {22 } ~ ~ \cdots ~ ~ P_ {2 p } \\ \\ \ddots\\\\
+P_ {m1 } ~ ~ P_ {m2 } ~ ~ \cdots ~ ~ P_ {mp}
+端面bmatrix}
+\end{align}
 
-其中 $P $ 的条目 $P _ {ik} = \ sum_j M_ {ij} N_ {jk} $。 例如，$P _{11}$ 的条目是 $M $ 的第一行的内部积，其中第一列 $N $。 请注意，由于矢量只是矩阵的一种特殊情况，因此此定义延伸到矩阵向量乘法。 
+其中 $P 的条目 $ $P _ {ik } = \ sum_j M_ {ij} N_ {jk } $。 例如，$P _ {11 $ 的条目 } 是 $N 第一列的 $M 的第一行的内部乘积 $ $ 。 请注意，由于矢量只是矩阵的一种特殊情况，因此此定义延伸到矩阵向量乘法。 
 
-我们考虑的所有矩阵均为方形矩阵，其中的行数和列数相等，或向量仅对应于 $1 $ 列。 一个特殊的正方形矩阵是[*标识矩阵*](https://en.wikipedia.org/wiki/Identity_matrix)，表示 $ \boldone $，其所有对角线元素都等于 $1 $，其余元素等于 $0 $：
+我们考虑的所有矩阵均为方形矩阵，其中的行数和列数相等，或向量仅对应于 $1 $ 列。 一个特殊的正方形矩阵为[*标识矩阵*](https://en.wikipedia.org/wiki/Identity_matrix)，表示 $ \boldone $ ，它的所有对角线元素都等于 $1， $ 其余元素等于 $0 $ ：
 
-$ $ \boldone = \begin{bmatrix} 1 ~ ~ 0 ~ ~ \cdots ~ ~ 0\\\\ 0 ~ ~ 1 ~ ~ \cdots ~ ~ 0\\\\ ~ ~ \ddots\\\\ 0 ~ ~ 0 ~ \cdots ~ ~ 1 \end{bmatrix}. $ $
+$ $ \boldone = \begin{bmatrix}
+1 ~ ~ 0 ~ ~ \cdots ~ ~ 0\\\\
+0 ~ ~ 1 ~ ~ \cdots ~ ~ 0\\\\
+~ ~ \ddots\\\\
+0 ~ ~ 0 ~ ~ \cdots ~ ~ 1 \end{ bmatrix } . $ $
 
-对于正方形矩阵 $A $，我们说，如果 $AB = BA = \boldone $，则 $B $ 是其[*逆*](https://en.wikipedia.org/wiki/Invertible_matrix)矩阵。 矩阵的逆矩阵不需要存在，但如果它存在，则它是唯一的，并将其表示 $A ^{-1}$。 
+对于正方形矩阵 $A $ ， $ 如果 $AB = BA = \boldone，则表示矩阵 $B[*反转*](https://en.wikipedia.org/wiki/Invertible_matrix) $ 。 矩阵的逆矩阵不需要存在，但如果它存在，则它是唯一的，并将其表示 $A ^ {-1 } $。 
 
-对于任何矩阵 $M $，$M $ 的 adjoint 或共轭转置为一个矩阵 $N $，$N _ {ij} = M_ {ji} ^\*$。 $M $ 的 adjoint 通常表示 $M ^ \dagger $。 我们说，如果 $UU ^ \dagger = U ^ \dagger U = \boldone $ 或等效 $U ^{-1} = U ^ \dagger $，矩阵 $U $ 是[*单一*](https://en.wikipedia.org/wiki/Unitary_matrix)的。  单一矩阵的最重要的属性可能是它们保留向量的标准。  出现这种情况的原因是 
+对于任何矩阵 $M $ ，$M 的 adjoint 或共轭转置 $ 为一个矩阵 $N， $ 以便 $N _ {ij } = M_ {ji } ^ \* $。 $M 的 adjoint $ 通常 $M ^ \dagger 表示 $ 。 $如果 $UU ^ \dagger = u [*unitary*](https://en.wikipedia.org/wiki/Unitary_matrix) ^ \dagger U = \boldone $ 或等效项 $U ^ {-1 } = u ^ \dagger，则表示矩阵 $U 为单一矩阵 $ 。  单一矩阵的最重要的属性可能是它们保留向量的标准。  出现这种情况的原因是 
 
-$ $ \langle v，v \rangle = v ^ \dagger v = v ^ \dagger U ^{-1} U v = v ^ \dagger U ^ \dagger U v = \langle U v，U v\rangle. $ $  
+$ $ \langle v，v \rangle = v ^ \dagger v = v ^ \dagger U ^ {-1 } U v = v ^ \Dagger u ^ \Dagger U v = \Langle U v，U v \rangle . $ $  
 
-如果 $M = M ^ \dagger $，矩阵 $M $ 称为[*Hermitian*](https://en.wikipedia.org/wiki/Hermitian_matrix) 。
+$如果 $M = M ^ \dagger，则将矩阵 $M 称为[*Hermitian*](https://en.wikipedia.org/wiki/Hermitian_matrix) $ 。
 
-最后，两个矩阵的[*tensor 产品*](https://en.wikipedia.org/wiki/Tensor_product)（或 Kronecker 产品） $M $ of size $m \times n $ 和 $N $ size $p \times q $ 是一个较大的矩阵 $P = M\otimes n $ of size $mp \times nq $，并按如下所示从 $M $ 和 $N $ 获取：
+最后，两个矩阵的[*tensor 产品*](https://en.wikipedia.org/wiki/Tensor_product)（或 Kronecker 产品） $M 大小为 $ $m \times n $ ，$N $ 大小 $p \times q $ 为大小更大的矩阵 $P \otimes $ \times nq $ ，并 $ 按如下所示从 $mp 和 $M 获取 $ ：
 
-\begin{align} M \otimes N & = \begin{bmatrix} M_{11} ~ ~ \cdots ~ ~ M_ {1n} \\\\ \ddots\\\\ M_ {m1} ~ ~ \cdots ~ ~ M_ {mn} \end{bmatrix} \otimes \begin{bmatrix} N_{11} N_\\\\\\\cdots \\ N_ {p1} ~ ~ \cdots ~ ~ N_ {pq} \end{bmatrix}\\\\ & = \begin{bmatrix} M_{11} \begin{bmatrix} N_{11} ~ ~ \cdots ~ ~ N_ {1q}\\\\ \ddots\\\\ N_ {p1} ~ ~ \cdots ~ ~ N_ {pq} \end{bmatrix}~ ~ \cdots ~ ~ M_ {1n} \begin{bmatrix} N_{11} ~ ~ \cdots ~ ~ N_ {1q}\\\\ \ddots\\\\ N_ {p1} ~ ~ \cdots ~ ~ N_ {pq} \end{bmatrix}\\\\ \ddots\\\\ M_ {m1} \begin{bmatrix} N_{11} ~ ~ \cdots ~ ~ N_ {1q}\\\\ \ddots\\\\ N_ {p1} ~ ~ \cdots ~ ~ N_ {pq} \end{bmatrix} ~ ~ \cdots ~ ~ M_ {mn} \begin{bmatrix} N_{11} ~ ~ \cdots ~ ~ N_ {1q}\\\\ \ddots\\\\ N_ {p1} ~ ~ \cdots ~ ~ N_ {pq} \end{bmatrix} \end{bmatrix}.
+\begin{align}
+    M \otimes N &= \begin{bmatrix}
+        M_ {11 } ~ ~ \cdots ~ ~ M_ {1n } \\ \\ \ddots\\\\
+        M_ {m1 } ~ ~ \cdots ~ ~ M_ {mn}
+    端面bmatrix}
+    \otimes \begin{bmatrix}
+        N_ {11 } ~ ~ \cdots ~ ~ N_ {1q } \\ \\ \ddots\\\\
+        N_ {p1 } ~ ~ \cdots ~ ~ N_ {pq}
+    \end{ bmatrix } \\ \\ &= \begin{bmatrix}
+        M_ {11 } \begin{ bmatrix } N_ {11 } ~ ~ \cdots ~ ~ N_ {1q } \\ \\ \ddots \\\\ N_ {p1 } ~ ~ \cdots ~ ~ N_ {pq } \end{ bmatrix } ~ ~ \cdots ~ ~ M_ {1n } \begin{ bmatrix } N_ {11 } ~ ~ \cdots ~ ~ } \\ \\ \\\\ } 1q ~ ~ N_ {\ddots } \cdots bmatrix } \\ \\ pq\\\\
+        M_ {m1 } \begin{ bmatrix } N_ {11 } ~ ~ \cdots ~ ~ N_ {1q } \\ \\ \ddots \\\\ N_ {p1 } ~ ~ \cdots ~ ~ N_ {pq } \end{ bmatrix } ~ ~ \cdots ~ ~ M_ {mn } \begin{ bmatrix } N_ {11 } ~ ~ \cdots ~ ~ } \\ \\ \\\\ } 1q ~ N_ {\ddots } \cdotsbmatrix}
+    \end{ bmatrix } 。
 \end{align}
 
 下面的示例对此进行了更好的演示：
 
-$ $ \begin{bmatrix} a \\\\ b \end{bmatrix} \otimes \begin{bmatrix} c \\\\ d \\\\ e \end{bmatrix} = \begin{bmatrix} a \begin{bmatrix} c \\\\ d \\\\ e \end{bmatrix} \\\\\\\\ \\\begin{bmatrix} {e\end} bmatrix = \end{bmatrix} a c \\ \\\\ \\e \\ \\\\c \\\\ b d \\\\ be\end {bmatrix} $ $
-
-and
-
-$ $ \begin{bmatrix} a b \\\\ c \ d \end{bmatrix} \otimes \begin{bmatrix} e \ f\\\\g \ h \end{bmatrix} = \begin{bmatrix} a\begin {bmatrix} e \ f\\\\ g \ h \end{bmatrix} b\begin {bmatrix} e \ f\\\\ g \ h \end{bmatrix} \\\\[1em] c\begin {bmatrix} e \ f\\\\ g \ h \end{bmatrix} d\begin {bmatrix} e \ f\\\\ g \ h \end{bmatrix} \end{bmatrix} = \begin{bmatrix} ae \ af \ \ bf \\\\ ag \ ah \ bg \ bh \\\\ ce \ cf \ de \ df \\\\ cg \ ch \ dg \ dh \ \end{bmatrix}。
+$ $ \begin{bmatrix}
+        a \\ \\ b \end{ bmatrix } \otimes \begin{ bmatrix } c \\ \\ d \\ \\ e \end{ bmatrix } = \begin{bmatrix}
+        \begin{ bmatrix } c \\ \\ d \\ \\ e \end{bmatrix}
+        \\\\[1.5 em] b \begin{ bmatrix } c \\ \\ d \\ \\ e \end {bmatrix}
+    端面bmatrix}
+    = \begin{ bmatrix } a c a \\ \\ d \\ \\ a e \\ \\ b c \\ \\ b d \\ \\ 是 \end {bmatrix}
 $$
 
-围绕 tensor 产品的最终有用的符号约定是：对于任何向量 $v $ 或 matrix $M $，$v ^ {\otimes n} $ 或 $M ^ {\otimes n} $ 对于 $n $-折页重复的 tensor 产品而言是一小的。  例如：
+和
 
-\begin{align} & \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} ^ {\otimes 1} = \begin{bmatrix} 1 \\\\ 0 \end{bmatrix}，\qquad\begin{bmatrix} 1 \\\\ 0 \end{bmatrix} ^ {\otimes 2} = \begin{bmatrix} 1 \\\\ 0 \\\\0 \\\\0 \end{bmatrix}，\qquad\begin{bmatrix} 1 \\\\-1 \end{bmatrix} ^ {\otimes 2} = \begin{bmatrix} 1 \\\\ 1 \end{bmatrix}，\\\\ & \begin{bmatrix} 0 & 1 \\\\ 1 & 0 \end{bmatrix} ^ {\otimes 1} = \begin{bmatrix} 0 & 1 \\\\ 1 & 0 \end{bmatrix}，\qquad\begin{bmatrix} 0 & 1 \\\\ 1 & 0 \end{bmatrix} ^ {\otimes 2} = \begin{bmatrix} 0 & 0 & 0 & 1 \\\\ 0 & 0 & 1 & 0 \\\\ & & 1 & 0\\0bmatrix}.\\\\\\\\\\
+$ $ \begin{bmatrix}
+        a b \\ \\ c d \end{bmatrix}
+    \otimes \begin{bmatrix}
+        e \ f \\ \\ g \ h \end{bmatrix}
+     = \begin{bmatrix}
+    \begin{bmatrix}
+    e \ f \\\\ g \ h \end{bmatrix}
+    b \begin {bmatrix}
+    e \ f \\\\ g \ h \end{bmatrix}
+    \\\\[1em] c \begin {bmatrix}
+    e \ f \\\\ g \ h \end{bmatrix}
+    d \begin {bmatrix}
+    e \ f \\\\ g \ h \end{bmatrix}
+    端面bmatrix}
+    = \begin{bmatrix}
+    ae \ af \ \ bf \\ \\ ag \ ah \ bg \ bh \\ \\ ce \ cf \ df \\ \\ cg \ ch \ dg \ dh \ \end{ bmatrix } 。
+$$
+
+围绕 tensor 产品的最终有用的符号约定是：对于任何向量 $v $ 或矩阵 $M $ ，$v ^ {\otimes n } $ 或 $M ^ {\otimes n } $ 对于 $n $ -折页重复的 tensor 产品而言是一种简单的方法。  例如：
+
+\begin{align}
+& \begin{ bmatrix } 1 \\ \\ 0 \end{ bmatrix } ^ {\otimes 1 } = \begin{ bmatrix } 1 \\ \\ 0 \end{ bmatrix } ，\qquad \begin { bmatrix } 1 \\ \\ 0 \end{ bmatrix } ^ {\otimes 2 } = \begin{ bmatrix } 1 \\ \\ 0 \\ \\ 0 0 \\ \\ \end{ bmatrix } ，\qquad \begin { bmatrix } 1 \\ \\ -1 \end{ bmatrix } ^ {\otimes 2 } = \begin{1-1 1 bmatrix } \\ \\ \\ \\ \\ \\ \end{ bmatrix } ， \\ \\ & \begin{ bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ^ {\otimes 1 } = \begin{ bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ，\qquad \begin { bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ^ {\otimes 2 } = \begin{ bmatrix } 0 &0&0&1 0 &0 \\&\\ 1 \\ \\ \\\\ \end bmatrix }&0 &&0 {。
 \end{align}

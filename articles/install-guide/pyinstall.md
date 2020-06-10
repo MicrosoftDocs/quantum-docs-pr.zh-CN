@@ -6,12 +6,12 @@ ms.date: 9/30/2019
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.python
-ms.openlocfilehash: f18d005012dc1c52aab456f1c7b194d182cab786
-ms.sourcegitcommit: c8ebc5d7d8581444754f5d7bfaca2f25601f1b14
+ms.openlocfilehash: 1ae208e7047cb040fb44945a59c3cc6508a09723
+ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 06/09/2020
-ms.locfileid: "84578158"
+ms.locfileid: "84630282"
 ---
 # <a name="develop-with-q-and-python"></a>用 Q # 和 Python 进行开发
 
@@ -36,6 +36,15 @@ ms.locfileid: "84578158"
     dotnet tool install -g Microsoft.Quantum.IQSharp
     dotnet iqsharp install
     ```
+
+    > [!NOTE]
+    > 如果在此步骤中遇到错误 `dotnet iqsharp install` ，请打开新的终端窗口，然后重试。
+    > 如果这仍不起作用，请尝试查找安装的 `dotnet-iqsharp` 工具（在 Windows 上 `dotnet-iqsharp.exe` ）并运行：
+    > ```
+    > /path/to/dotnet-iqsharp install --user --path-to-tool="/path/to/dotnet-iqsharp"
+    > ```
+    > 其中 `/path/to/dotnet-iqsharp` 应替换为 `dotnet-iqsharp` 文件系统中的工具的绝对路径。
+    > 通常，这会在 `.dotnet/tools` 用户配置文件文件夹下。
   
 1. 尽管可以在任何 IDE 中将 Q # 与 Python 一起使用，但我们强烈建议对 Q # + Python 应用程序使用 Visual Studio Code （VS Code） IDE。 通过使用 Visual Studio Code 和 QDK Visual Studio Code 扩展，你可以访问更丰富的功能。
 

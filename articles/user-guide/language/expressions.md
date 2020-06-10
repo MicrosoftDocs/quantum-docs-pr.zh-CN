@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.expressions
-ms.openlocfilehash: c4b2cc0bed44ffdfb191ba522d6526959e7c6708
-ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+ms.openlocfilehash: b32644382bb88fb11da00d0d7d78bbd797a0eaaa
+ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84327299"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84629999"
 ---
 # <a name="type-expressions-in-q"></a>Q 中的类型表达式#
 
@@ -201,7 +201,7 @@ String 内插的 Q # 语法是 c # 语法的子集，但我们在此处汇总了
 在 Q # 中，解包运算符是一个尾随引号 `!` 。
 例如，如果 `IntPair` 是具有基础类型的用户定义类型 `(Int, Int)` ，并且是 `s` 具有值的变量 `IntPair(2, 3)` ，则将 `s!` 为 `(2, 3)` 。
 
-对于根据其他用户定义类型定义的用户定义类型。 可以重复解包运算符;例如， `s!!` 指示的双重解包值 `s` 。
+对于根据其他用户定义类型定义的用户定义类型，可以重复解包运算符;例如， `s!!` 指示的双重解包值 `s` 。
 因此，如果 `WrappedPair` 是具有基础类型的用户定义类型 `IntPair` ，并且 `t` 是具有值的变量 `WrappedPair(IntPair(1,2))` ，则将 `t!!` 为 `(1,2)` 。
 
 运算符的优先级高于除 `!` `[]` 数组索引和切片以外的其他所有运算符。
@@ -474,7 +474,7 @@ let combinedOp = Func<(Qubit[] => Unit), (Qubit[] => Unit is Adj)>(Op1, Op2, Op3
 
 按优先顺序排列的运算符，从高到低：
 
-运算符 | 元 | 描述 | 操作数类型
+运算符 | 元 | 说明 | 操作数类型
 ---------|----------|---------|---------------
  加`!` | 一元 | 解包 | 任何用户定义类型
  `-`, `~~~`, `not` | 一元 | 数值负，按位求补，逻辑求反 | `Int`对于，为 `BigInt` 或 `Double` `-` `Int` `BigInt` `~~~` `Bool``not`

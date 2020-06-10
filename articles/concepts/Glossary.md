@@ -6,18 +6,89 @@ ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.glossary
-ms.openlocfilehash: 042e4e27ef4e42cfc0c24fbb0ae2232cf1bbfe36
-ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+no-loc:
+- $
+- $
+- '\cdots'
+- bmatrix
+- '\ddots'
+- '\equiv'
+- '\sum'
+- '\begin'
+- '\end'
+- '\sqrt'
+- '\otimes'
+- '{'
+- '}'
+- '\text'
+- '\phi'
+- '\kappa'
+- '\psi'
+- '\alpha'
+- '\beta'
+- '\gamma'
+- '\delta'
+- '\omega'
+- '\bra'
+- '\ket'
+- '\boldone'
+- '\\\\'
+- '\\'
+- =
+- '\frac'
+- '\text'
+- '\mapsto'
+- '\dagger'
+- '\to'
+- "\begin{cases}"
+- "\end{cases}"
+- '\operatorname'
+- '\braket'
+- '\id'
+- '\expect'
+- '\defeq'
+- '\variance'
+- '\dd'
+- '&'
+- "\begin{align}"
+- "\end{align}"
+- '\Lambda'
+- '\lambda'
+- '\Omega'
+- '\mathrm'
+- '\left'
+- '\right'
+- '\qquad'
+- '\times'
+- '\big'
+- '\langle'
+- '\rangle'
+- '\bigg'
+- '\Big'
+- '|'
+- '\mathbb'
+- '\vec'
+- '\in'
+- '\texttt'
+- '\ne'
+- <
+- '>'
+- '\leq'
+- '\geq'
+- ~~
+- "~"
+ms.openlocfilehash: 2a3b1fe480b9886d0c11255bb1b1e01402dce4f7
+ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84327605"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84630089"
 ---
 # <a name="quantum-computing-glossary"></a>量程计算术语表
 
 ## <a name="adjoint"></a>Adjoint
 
-[操作](xref:microsoft.quantum.glossary#operation)的复杂共轭转置。 对于实现[单一](xref:microsoft.quantum.glossary#unitary-operator)运算符的操作，adjoint 是操作的反向，由剑号符号指示。 例如，如果操作 `U` 表示单一运算符 $U $，则 `Adjoint U` 表示 $U ^ \dagger $。 有关详细信息，请参阅[Adjoint](xref:microsoft.quantum.guide.operationsfunctions#controlled-and-adjoint-operations)。
+[操作](xref:microsoft.quantum.glossary#operation)的复杂共轭转置。 对于实现[单一](xref:microsoft.quantum.glossary#unitary-operator)运算符的操作，adjoint 是操作的反向，由剑号符号指示。 例如，如果操作 `U` 表示 $U 的单一运算符 $ ，则 `Adjoint U` 表示 $U ^ \dagger $ 。 有关详细信息，请参阅[Adjoint](xref:microsoft.quantum.guide.operationsfunctions#controlled-and-adjoint-operations)。
 
 ## <a name="ancilla"></a>Ancilla
 
@@ -25,7 +96,7 @@ ms.locfileid: "84327605"
 
 ## <a name="bell-state"></a>电铃状态
 
-四个特定最大化[放大](xref:microsoft.quantum.glossary#entanglement)[量程](xref:microsoft.quantum.glossary#quantum-state)中的一种状态，分为两 qubits。 四种状态定义为 $ \ket{\ beta_ {ij}} = （\mathbb{I} \otimes X ^ iZ ^ j）（\ket {00} + \ket {11} ）/\sqrt {2} $。 电铃状态也称为[EPR 对](xref:microsoft.quantum.glossary#epr-pair)。
+四个特定最大化[放大](xref:microsoft.quantum.glossary#entanglement)[量程](xref:microsoft.quantum.glossary#quantum-state)中的一种状态，分为两 qubits。 四种状态定义为 $ \ket { \ beta_ {ij } } = （\Mathbb{I } \Otimes X ^ iZ ^ j）（\ket{00 } + \ket{11 } ）/\sqrt{2 } $。 电铃状态也称为[EPR 对](xref:microsoft.quantum.glossary#epr-pair)。
 
 ## <a name="bloch-sphere"></a>Bloch 球体
 
@@ -37,7 +108,7 @@ Q # 语言中的[操作](xref:microsoft.quantum.glossary#operation)或[函数](x
 
 ## <a name="clifford-group"></a>Clifford 组
 
-一组操作，这些操作占用[Bloch 球](xref:microsoft.quantum.glossary#bloch-sphere)的 octants 并影响[Pauli 运算符](xref:microsoft.quantum.glossary#pauli-operators)的效果。 其中包括操作[$X $](xref:microsoft.quantum.intrinsic.x)、 [$Y $](xref:microsoft.quantum.intrinsic.y)、 [$Z $](xref:microsoft.quantum.intrinsic.z)、 [$H $](xref:microsoft.quantum.intrinsic.h)和[$S $](xref:microsoft.quantum.intrinsic.s)。
+一组操作，这些操作占用[Bloch 球](xref:microsoft.quantum.glossary#bloch-sphere)的 octants 并影响[Pauli 运算符](xref:microsoft.quantum.glossary#pauli-operators)的效果。 其中包括操作[$X $ ](xref:microsoft.quantum.intrinsic.x)、 [$Y $ ](xref:microsoft.quantum.intrinsic.y)、 [$Z $ ](xref:microsoft.quantum.intrinsic.z)、 [$H $ ](xref:microsoft.quantum.intrinsic.h)和[$S $ ](xref:microsoft.quantum.intrinsic.s)。
 
 ## <a name="controlled"></a>操控
 
@@ -45,15 +116,15 @@ Q # 语言中的[操作](xref:microsoft.quantum.glossary#operation)或[函数](x
 
 ## <a name="dirac-notation"></a>Dirac 表示法
 
-简化[量程状态](xref:microsoft.quantum.glossary#quantum-state)表示形式的符号简写，也称为*寄存器-票证*表示法。  *寄存器*部分表示一个行向量，例如 $ \bra{A} = \begin{bmatrix} {_1} & {_2} \end{bmatrix} $，*票证*部分表示列向量，$ \ket{B} = \begin{bmatrix} B {_1} \\ \\ B {_2} \end{bmatrix} $。 有关详细信息，请参阅[Dirac 表示法](xref:microsoft.quantum.concepts.dirac)。
+简化[量程状态](xref:microsoft.quantum.glossary#quantum-state)表示形式的符号简写，也称为*寄存器-票证*表示法。  *寄存器*部分表示一个行向量，例如 $ \bra{A } = \begin{ bmatrix } {_1 } & {_2 } \end{ bmatrix } $，*票证*部分表示一个列向量，$ \ket{B } = \begin{ bmatrix } B {_1 } \\ \\ B {_2 } \end{ bmatrix } $。 有关详细信息，请参阅[Dirac 表示法](xref:microsoft.quantum.concepts.dirac)。
 
 ## <a name="eigenvalue"></a>Eigenvalue
 
-转换应用程序更改给定转换的[eigenvector](xref:microsoft.quantum.glossary#eigenvector)的量的因子。  给定正方形 matrix $M $ 和 eigenvector $v $，然后 $Mv = cv $，其中 $c $ 是 eigenvalue，可以是任意参数的复数。 有关详细信息，请参阅[高级矩阵概念](xref:microsoft.quantum.concepts.matrix-advanced)。
+转换应用程序更改给定转换的[eigenvector](xref:microsoft.quantum.glossary#eigenvector)的量的因子。  给定正方形 matrix $M $ 和 eigenvector $v $ ，然后 $Mv = cv $ ，其中 $c $ 是 eigenvalue，可以是任意参数的复数。 有关详细信息，请参阅[高级矩阵概念](xref:microsoft.quantum.concepts.matrix-advanced)。
 
 ## <a name="eigenvector"></a>Eigenvector
 
-一个向量，其方向与给定的转换保持不变，并且其量的值由与该向量的[eigenvalue](xref:microsoft.quantum.glossary#eigenvalue)相对应的系数更改。 给定正方形 matrix $M $ 和 eigenvalue $c $，然后 $Mv = cv $，其中 $v $ 是矩阵的 eigenvector，可以是任意参数的复数。 有关详细信息，请参阅[高级矩阵概念](xref:microsoft.quantum.concepts.matrix-advanced)。
+一个向量，其方向与给定的转换保持不变，并且其量的值由与该向量的[eigenvalue](xref:microsoft.quantum.glossary#eigenvalue)相对应的系数更改。 给定正方形 matrix $M $ 和 eigenvalue $c $ ，然后 $Mv = cv $ ，其中 $v $ 是矩阵的 eigenvector，可以是任意参数的复数。 有关详细信息，请参阅[高级矩阵概念](xref:microsoft.quantum.concepts.matrix-advanced)。
 
 ## <a name="entanglement"></a>纠缠
 
@@ -61,7 +132,7 @@ Q # 语言中的[操作](xref:microsoft.quantum.glossary#operation)或[函数](x
 
 ## <a name="epr-pair"></a>EPR 对
 
-四个特定最大化放大量程中的一种[状态](xref:microsoft.quantum.glossary#quantum-state)，分为两[qubits](xref:microsoft.quantum.glossary#qubit)。 四种状态定义为 $ \ket{\ beta_ {ij}} = （\mathbb {1} \Otimes X ^ iZ ^ j）（\ket {00} + \ket {11} ）/\sqrt {2} $。 EPR 对也称为[钟形状态](xref:microsoft.quantum.glossary#bell-state)
+四个特定最大化放大量程中的一种[状态](xref:microsoft.quantum.glossary#quantum-state)，分为两[qubits](xref:microsoft.quantum.glossary#qubit)。 四种状态定义为 $ \ket { \ beta_ {ij } } = （\Mathbb{1 } \Otimes X ^ iZ ^ j）（\ket{00 } + \ket{11 } ）/\sqrt{2 } $。 EPR 对也称为[钟形状态](xref:microsoft.quantum.glossary#bell-state)
 
 ## <a name="evolution"></a>演变
 
@@ -76,11 +147,11 @@ Q # 语言中纯传统（非量程）的一种子例程。 当函数在量程算
 
 ## <a name="global-phase"></a>全局阶段
 
-如果两个状态的最大值为 $e ^ {i\phi} $ 的复数的倍数，则这两个[状态](xref:microsoft.quantum.glossary#quantum-state)将与全局阶段不同。 与本地阶段不同，全局阶段不能通过任何[measurment](xref:microsoft.quantum.glossary#measurement)来观察。 有关详细信息，请参阅[Qubit](xref:microsoft.quantum.concepts.qubit)。
+如果两个[状态](xref:microsoft.quantum.glossary#quantum-state)的最大值为 $e ^ {i $ 的复数的倍数 \phi } ，则认为它们在全局阶段中是不同的。 与本地阶段不同，全局阶段不能通过任何[measurment](xref:microsoft.quantum.glossary#measurement)来观察。 有关详细信息，请参阅[Qubit](xref:microsoft.quantum.concepts.qubit)。
 
 ## <a name="hadamard"></a>Hadamard
 
-Hadamard 操作（也称为 Hadamard 入口或转换）作用于单个[qubit](xref:microsoft.quantum.glossary#qubit) ， [superposition](xref:microsoft.quantum.glossary#superposition) {0} {1} 如果 \ket 最初处于 $ \ket $ 状态，则会将其放在 $ qubit $ 或 $ \ket $ 的偶数 superposition 中 {0} 。 在 Q # 中，此操作由预定义的操作应用 [`H`](xref:microsoft.quantum.intrinsic.h) 。
+Hadamard 操作（也称为 Hadamard 入口或转换）作用于单个[qubit](xref:microsoft.quantum.glossary#qubit) ， [superposition](xref:microsoft.quantum.glossary#superposition) } } 如果 \ket{0 最初处于 $ \ket{1 $ 状态，则会将其放在 $ qubit $ 或 $ \ket{0 $ 的偶数 superposition 中 } 。 在 Q # 中，此操作由预定义的操作应用 [`H`](xref:microsoft.quantum.intrinsic.h) 。
 
 ## <a name="immutable"></a>不可变
 
@@ -98,7 +169,7 @@ Hadamard 操作（也称为 Hadamard 入口或转换）作用于单个[qubit](xr
 
 相关名称集合（即[操作](xref:microsoft.quantum.glossary#operation)、[函数](xref:microsoft.quantum.glossary#function)和[用户定义类型](xref:microsoft.quantum.glossary#user-defined-type)）的标签。 例如，命名空间为 ""。[准备](xref:microsoft.quantum.preparation)标签在标准库中定义的所有符号都有助于准备初始状态。
 
-## <a name="operation"></a>操作
+## <a name="operation"></a>Operation
 
 Q # 中的量程执行的基本单位。 它大致等效于 C、c + + 或 Python 中的函数或 c # 或 Java 中的静态方法。 有关详细信息，请参阅[操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。
 
@@ -116,7 +187,7 @@ Q # 中的量程执行的基本单位。 它大致等效于 C、c + + 或 Python
 
 ## <a name="pauli-operators"></a>Pauli 运算符
 
-由三个 2 x 2 个单一矩阵组成的一组 `X` ，称为 `Y` 和一个 `Z` 量程运算。 标识矩阵 $I $ 也通常包含在集中。  $I = \begin{bmatrix} 1 & 0 \\ \\ 0 & 1 \end{bmatrix} $，$X = \begin{bmatrix} 0 & 1 \\ \\ 1 & 0 \end{bmatrix} $，$Y = \begin{bmatrix} 0 &-i \\ \\ & 0 \end{bmatrix} $，$Z = \begin{bmatrix} 1 & 0 \\ \\ 0 &-1 \end{bmatrix} $。   有关详细信息，请参阅[qubit 操作](xref:microsoft.quantum.concepts.qubit#single-qubit-operations)。
+由三个 2 x 2 个单一矩阵组成的一组 `X` ，称为 `Y` 和一个 `Z` 量程运算。 标识矩阵 $I $ 也通常包含在集中。  $I = \begin{ bmatrix } 1 & 0 \\ \\ 0 & 1 \end{ bmatrix } $，$X = \begin{ bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } $，$Y = \begin{ bmatrix } 0 &-i \\ \\ & 0 \end{ bmatrix } $，$Z = \begin{ bmatrix } 1 & 0 \\ \\ 0 &-1 \end{ bmatrix } $。   有关详细信息，请参阅[qubit 操作](xref:microsoft.quantum.concepts.qubit#single-qubit-operations)。
 
 ## <a name="quantum-circuit-diagram"></a>量程线路关系图
 
@@ -148,7 +219,7 @@ Probabilistic 成功的量程算法。 如果失败，例程将重试，直到�
 
 ## <a name="superposition"></a>Superposition
 
-量程计算中的概念计算， [qubit](xref:microsoft.quantum.glossary#qubit)是两个状态的线性组合： $ \ket {0} $ 和 $ \ket {1} $，直到[测量](xref:microsoft.quantum.glossary#measurement)为止。  有关详细信息，请参阅[了解量程计算](xref:microsoft.quantum.overview.understanding)。
+量程计算中的概念计算， [qubit](xref:microsoft.quantum.glossary#qubit)是两个状态的线性组合： $ \ket{0 } $ 和 $ \ket{1 } $，直到[测量](xref:microsoft.quantum.glossary#measurement)为止。  有关详细信息，请参阅[了解量程计算](xref:microsoft.quantum.overview.understanding)。
 
 ## <a name="target-machine"></a>目标计算机
 
@@ -164,7 +235,7 @@ Probabilistic 成功的量程算法。 如果失败，例程将重试，直到�
 
 ## <a name="unitary-operator"></a>单一运算符
 
-一个运算符，其反正等于其[adjoint](xref:microsoft.quantum.glossary#adjoint)，即 $UU ^ {\dagger} = \id $。
+一个运算符，其反正等于其[adjoint](xref:microsoft.quantum.glossary#adjoint)，即 $UU ^ {\dagger } = \id $ 。
 
 ## <a name="user-defined-type"></a>用户定义类型
 

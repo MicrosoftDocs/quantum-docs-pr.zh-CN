@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 09/30/2019
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: 9a54c1d7a4403a98f945181fdad8ba8a7fdb1175
-ms.sourcegitcommit: 8d9d392bf5e114ae223e6f689ba80d25866ff586
+ms.openlocfilehash: 6b24ebe9f0b5fd3318e8adfe1a62bafaf9d1961e
+ms.sourcegitcommit: c8ebc5d7d8581444754f5d7bfaca2f25601f1b14
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2020
-ms.locfileid: "84422217"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84578128"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -25,6 +25,12 @@ ms.locfileid: "84422217"
 
 发行日期：*2020 年 6 月 4 日*
 
+此版本修复了一个影响编译 Q# 项目的 bug。
+
+## <a name="version-0112006207"></a>版本 0.11.2006.207
+
+发行日期：*2020 年 6 月 3 日*
+
 此版本包含以下各项：
 
 - 当存在 Q# 入口点时，Q# 笔记本和 Python 主机程序将不再失败
@@ -33,6 +39,9 @@ ms.locfileid: "84422217"
 - 按照 [API 原则](xref:microsoft.quantum.contributing.api-design)中所述的计划删除了几个弃用的函数和操作。 在版本 0.11.2004.2825 中未出现警告的情况下生成的 Q# 程序和库将继续工作，不会进行修改。
 
 有关[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed)、[编译器](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed)、[运行时](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed)、[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed)、[IQ#](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+is%3Aclosed) 和 [Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed) 的信息，请参阅已结束的 PR 的完整列表。  
+
+> [!NOTE]
+> 此版本包含一个影响编译 Q# 项目的 bug。 建议升级到较新版本。
 
 ## <a name="version-01120042825"></a>版本 0.11.2004.2825
 

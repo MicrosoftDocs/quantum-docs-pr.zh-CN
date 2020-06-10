@@ -6,12 +6,12 @@ ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.style
-ms.openlocfilehash: dfb2b1779e3ddc77fc74697bc4dc2904b1a0c70f
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+ms.openlocfilehash: 948b385948f0b362e7c12500662132883959a798
+ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83426930"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84630233"
 ---
 # <a name="q-style-guide"></a>Q # 样式指南 #
 ## <a name="general-conventions"></a>一般约定 ##
@@ -280,7 +280,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 
 ***
 
-### <a name="user-defined-type-named-items"></a>名为 Items 的用户定义类型 ###
+### <a name="user-defined-type-named-items"></a>用户定义的名为 Items 的类型 ###
 
 用户定义类型中的命名项应命名为 `CamelCase` ，即使是在对 UDT 构造函数的输入中。
 使用访问器表示法（例如： `callable::Apply` ）或复制和更新表示法（）时，这有助于清晰地将命名项与对本地范围变量的引用区分开来 `set arr w/= Data <- newData` 。
@@ -374,7 +374,7 @@ operation ApplyPhaseEstimationIteration(
 
 - 每个公共函数、操作和用户定义的类型后面都应跟有文档注释。
 - 每个文档注释至少应包含以下部分：
-    - 摘要
+    - 总结
     - 输入
     - 输出（如果适用）
 - 确保所有摘要都是两个句子或更少。 如果需要更多空间，请在 `# Description` 后面提供 `# Summary` 完整的详细信息部分。
