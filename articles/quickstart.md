@@ -6,12 +6,12 @@ ms.author: nakersha
 ms.date: 05/29/2020
 ms.topic: tutorial
 uid: microsoft.quantum.write-program
-ms.openlocfilehash: 989080e7d9979bb87d14b2580d28732bb1092eb1
-ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+ms.openlocfilehash: 271eb7f496835f152573be930d0fe24e59f2d15d
+ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84327367"
+ms.lasthandoff: 06/09/2020
+ms.locfileid: "84630076"
 ---
 # <a name="tutorial-explore-entanglement-with-q"></a>教程：通过 Q\# 探索纠缠
 
@@ -21,7 +21,7 @@ ms.locfileid: "84327367"
 我们将编写一个用于演示量子纠缠的名为 Bell 的应用程序。
 Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，用于表示叠加和量子纠缠的最简单示例。
 
-## <a name="pre-requisites"></a>先决条件
+## <a name="prerequisites"></a>先决条件
 
 如果准备开始编码，请在继续之前按照以下步骤操作： 
 
@@ -59,7 +59,7 @@ Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，
 
 1. 创建新的 Q# 项目：
 
-    ```bash
+    ```
     dotnet new console -lang Q# --output Bell
     cd Bell
     ```
@@ -68,7 +68,7 @@ Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，
 
 1. 对 Q# 文件重命名
 
-    ```bash
+    ```
     mv Operation.qs Bell.qs
     ```
 
@@ -282,7 +282,7 @@ Init:1    0s=0    1s=1000
 
 1. 在终端运行以下命令：
 
-    ```bash
+    ```dotnetcli
     dotnet run
     ```
 
