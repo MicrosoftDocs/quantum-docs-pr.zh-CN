@@ -1,0 +1,12 @@
+- name: 量子计算简介
+  href: overview.md
+- name: 关键概念
+  items:
+    - name: 了解量子计算
+      href: understanding-quantum-computing.md
+    - name: 量子计算机和模拟器
+      href: quantum-computers-and-simulators.md
+    - name: 什么是 Q# 和 QDK？
+      href: what-is-qsharp-and-qdk.md
+    - name: 用于量子计算的线性代数
+      href: algebra-for-quantum-computing.md
