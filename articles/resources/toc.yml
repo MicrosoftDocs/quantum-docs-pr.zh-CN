@@ -1,0 +1,9 @@
+- name: 术语表
+  href: glossary.md
+- name: 参与编写 QDK
+  href: contributing/toc.yml
+  topicHref: contributing/index.md
+- name: QDK 发行说明
+  href: relnotes.md
+- name: 进一步阅读
+  href: further-reading.md
