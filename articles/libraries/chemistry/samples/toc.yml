@@ -1,8 +1,0 @@
-- name: 获取能量级别估算
-  href: molecular-hydrogen.md
-- name: 从文件加载 Hamiltonian
-  href: loading-from-file.md
-- name: 获取资源计数
-  href: resource-counts.md
-- name: NWChem 端到端
-  href: end-to-end.md
