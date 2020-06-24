@@ -9,6 +9,10 @@ ms.topic: article
 no-loc:
 - $
 - $
+- $
+- $
+- $
+- $
 - '\cdots'
 - bmatrix
 - '\ddots'
@@ -77,12 +81,15 @@ no-loc:
 - '\geq'
 - ~~
 - "~"
-ms.openlocfilehash: 115c1703e433f24930e4be61b545048c95da28d1
-ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
+- "\begin{bmatrix}"
+- "\end{bmatrix}"
+- '\_'
+ms.openlocfilehash: 7f10c4ad5eb325da97552d60ff47ea89a699f08d
+ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84630300"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85269467"
 ---
 # <a name="pauli-measurements"></a>Pauli 度量值
 
@@ -161,7 +168,7 @@ operation MeasureY(qubit : Qubit) : Result {
 
 多 qubit Pauli 运算符的度量值的定义类似，如下所示：
 
-$ $ Z \otimes z = \begin{ bmatrix } 1 &0 &0&0 \\\\ 0 & -1&0&0 \\\\ 0&0 & -1&0 \\\\ 0&0&0&1 \end { bmatrix } 。
+$ $ Z \otimes z = \begin{ bmatrix } 1 &0 &0&0 \\\\ 0 & -1&0&0 \\\\ 0&0 & -1&0 \\\\ 0&0&0&1 \end{bmatrix} 。
 $$
 
 因此，两个 Pauli $Z 运算符的 tensor 产品构成一个矩阵，其中包含 $ 由 $ + 1 $ 和 $-1 本征值组成的两个空格 $ 。

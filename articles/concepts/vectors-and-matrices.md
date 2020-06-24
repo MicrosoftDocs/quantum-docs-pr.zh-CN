@@ -9,6 +9,10 @@ ms.topic: article
 no-loc:
 - $
 - $
+- $
+- $
+- $
+- $
 - '\cdots'
 - bmatrix
 - '\ddots'
@@ -77,12 +81,15 @@ no-loc:
 - '\geq'
 - ~~
 - "~"
-ms.openlocfilehash: 6c09531cd8bee8f5efb472c95c575daed04d3040
-ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
+- "\begin{bmatrix}"
+- "\end{bmatrix}"
+- '\_'
+ms.openlocfilehash: f9d4e14742b7d06a6e90af0902b31fbdf17aedab
+ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84630207"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85269535"
 ---
 # <a name="vectors-and-matrices"></a>向量和矩阵
 
@@ -189,9 +196,9 @@ $如果 $M = M ^ \dagger，则将矩阵 $M 称为[*Hermitian*](https://en.wikipe
 $ $ \begin{bmatrix}
         a \\ \\ b \end{ bmatrix } \otimes \begin{ bmatrix } c \\ \\ d \\ \\ e \end{ bmatrix } = \begin{bmatrix}
         \begin{ bmatrix } c \\ \\ d \\ \\ e \end{bmatrix}
-        \\\\[1.5 em] b \begin{ bmatrix } c \\ \\ d \\ \\ e \end {bmatrix}
+        \\\\[1.5 em] b \begin{ bmatrix } c \\ \\ d \\ \\ e\end{bmatrix}
     端面bmatrix}
-    = \begin{ bmatrix } a c a \\ \\ d \\ \\ a e \\ \\ b c \\ \\ b d \\ \\ 是 \end {bmatrix}
+    = \begin{ bmatrix } a c a \\ \\ d \\ \\ a e \\ \\ b c \\ \\ b d \\ \\\end{bmatrix}
 $$
 
 和
@@ -201,13 +208,13 @@ $ $ \begin{bmatrix}
     \otimes \begin{bmatrix}
         e \ f \\ \\ g \ h \end{bmatrix}
      = \begin{bmatrix}
-    \begin{bmatrix}
+    的\begin{bmatrix}
     e \ f \\\\ g \ h \end{bmatrix}
-    b \begin {bmatrix}
+    b\begin{bmatrix}
     e \ f \\\\ g \ h \end{bmatrix}
-    \\\\[1em] c \begin {bmatrix}
+    \\\\[1em] c\begin{bmatrix}
     e \ f \\\\ g \ h \end{bmatrix}
-    d \begin {bmatrix}
+    2-d\begin{bmatrix}
     e \ f \\\\ g \ h \end{bmatrix}
     端面bmatrix}
     = \begin{bmatrix}
@@ -217,5 +224,5 @@ $$
 围绕 tensor 产品的最终有用的符号约定是：对于任何向量 $v $ 或矩阵 $M $ ，$v ^ {\otimes n } $ 或 $M ^ {\otimes n } $ 对于 $n $ -折页重复的 tensor 产品而言是一种简单的方法。  例如：
 
 \begin{align}
-& \begin{ bmatrix } 1 \\ \\ 0 \end{ bmatrix } ^ {\otimes 1 } = \begin{ bmatrix } 1 \\ \\ 0 \end{ bmatrix } ，\qquad \begin { bmatrix } 1 \\ \\ 0 \end{ bmatrix } ^ {\otimes 2 } = \begin{ bmatrix } 1 \\ \\ 0 \\ \\ 0 0 \\ \\ \end{ bmatrix } ，\qquad \begin { bmatrix } 1 \\ \\ -1 \end{ bmatrix } ^ {\otimes 2 } = \begin{1-1 1 bmatrix } \\ \\ \\ \\ \\ \\ \end{ bmatrix } ， \\ \\ & \begin{ bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ^ {\otimes 1 } = \begin{ bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ，\qquad \begin { bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ^ {\otimes 2 } = \begin{ bmatrix } 0 &0&0&1 0 &0 \\&\\ 1 \\ \\ \\\\ \end bmatrix }&0 &&0 {。
+& \begin{ bmatrix } 1 \\ \\ 0 \end{ bmatrix } ^ {\otimes 1 } = \begin{ bmatrix } 1 \\ \\ 0 \end{ bmatrix } ，\qquad \begin{bmatrix} 1 \\ \\ 0 \end{ bmatrix } ^ {\otimes 2 } = \begin{ bmatrix } 1 0 0 0 \\ \\ \\ \\ \\ \\ \end{ bmatrix } ，\qquad \begin{bmatrix} 1 \\ \\ -1 \end{ bmatrix } ^ {\otimes 2 } = \begin{ bmatrix } 1 \\ \\ -1 \\ \\ -1 \\ \\ 1 \end{ bmatrix } ， \\ \\ & \begin{ bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ^ {\otimes 1 } = \begin{ bmatrix } 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ，\qquad \begin{bmatrix} 0 & 1 \\ \\ 1 & 0 \end{ bmatrix } ^ {\otimes 2 } = \begin{ bmatrix } 0 &0&0&1 \\ \\ 0 &0&1&0 \\ \\ 0 &1&&0 \\\\ 1 &0&0 \end{bmatrix} 。
 \end{align}

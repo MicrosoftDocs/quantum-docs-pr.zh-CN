@@ -9,6 +9,10 @@ ms.topic: article
 no-loc:
 - $
 - $
+- $
+- $
+- $
+- $
 - '\cdots'
 - bmatrix
 - '\ddots'
@@ -77,12 +81,15 @@ no-loc:
 - '\geq'
 - ~~
 - "~"
-ms.openlocfilehash: 31e43940fc0607b15ccefcfae6be7122227b3d64
-ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
+- "\begin{bmatrix}"
+- "\end{bmatrix}"
+- '\_'
+ms.openlocfilehash: 747c08df110f1f10efe552628d15e3500509b690
+ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84630322"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85269552"
 ---
 # <a name="quantum-oracles"></a>量程 Oracles
 

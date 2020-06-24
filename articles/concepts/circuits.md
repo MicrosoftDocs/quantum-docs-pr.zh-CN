@@ -9,6 +9,10 @@ ms.topic: article
 no-loc:
 - $
 - $
+- $
+- $
+- $
+- $
 - '\cdots'
 - bmatrix
 - '\ddots'
@@ -77,12 +81,15 @@ no-loc:
 - '\geq'
 - ~~
 - "~"
-ms.openlocfilehash: 745f0570bf62c5d98c2896cdc893ec385abd7115
-ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
+- "\begin{bmatrix}"
+- "\end{bmatrix}"
+- '\_'
+ms.openlocfilehash: 59c32928ddc9252009ad101a3cf3ac33f4968e28
+ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84630409"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85269603"
 ---
 # <a name="quantum-circuits"></a>量程线路
 请考虑一下单一转换 $ \text { cnot-contains} _ {01 } （H \otimes 1） $。

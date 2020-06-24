@@ -9,6 +9,13 @@ ms.topic: article
 no-loc:
 - $
 - $
+- $
+- $
+- $
+- $
+- $$
+- $$
+- $$
 - '\cdots'
 - bmatrix
 - '\ddots'
@@ -77,12 +84,15 @@ no-loc:
 - '\geq'
 - ~~
 - "~"
-ms.openlocfilehash: 8d3c646715f13c454e51b9295cbfdabf6a236ffc
-ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
+- "\begin{bmatrix}"
+- "\end{bmatrix}"
+- '\_'
+ms.openlocfilehash: 71923247121eae6a1d4e26d2664d8e547370ba3a
+ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84630152"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85269450"
 ---
 # <a name="advanced-matrix-concepts"></a>高级矩阵概念 #
 
@@ -104,7 +114,7 @@ $$
 
 矢量
 
-$ $ \begin{ bmatrix } 1 \\ \\ 0 \\ \\ 0 \end{ bmatrix } ，\begin{ bmatrix } 0 \\ \\ 1 \\ \\ 0 \end { bmatrix } and \begin{ bmatrix } 0 \\ \\ 0 \\ \\ 1 \end {bmatrix}$$
+$ $ \begin{ bmatrix } 1 \\ \\ 0 \\ \\ 0 \end{ bmatrix } ，\begin{ bmatrix } 0 \\ \\ 1 \\ \\ 0 \end{bmatrix} ，\begin{ bmatrix } 0 \\ \\ 0 \\ \\ 1\end{bmatrix}$$
 
 是此矩阵的本征向量，分别为本征值 $d _1 $ 、$d _2 $ 和 $d _3 $ 。 如果 $d _1 $ 、$d _2 $ 和 $d _3 $ 为非重复数字，则这些矢量（及其序列图）是矩阵 $D 的唯一本征向量 $ 。 通常，对于对角矩阵，可以轻松地将本征值和本征向量读取。 本征值是显示在对角线上的所有数字，其各自的本征向量为单位矢量，其中一项等于 $1 $ ，剩余项等于 $0 $ 。
 

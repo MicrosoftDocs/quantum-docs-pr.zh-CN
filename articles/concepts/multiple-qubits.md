@@ -9,6 +9,10 @@ ms.topic: article
 no-loc:
 - $
 - $
+- $
+- $
+- $
+- $
 - '\cdots'
 - bmatrix
 - '\ddots'
@@ -77,12 +81,15 @@ no-loc:
 - '\geq'
 - ~~
 - "~"
-ms.openlocfilehash: 224bd5165f508f6cd1fdb85fb5c14ba2e23e59ea
-ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
+- "\begin{bmatrix}"
+- "\end{bmatrix}"
+- '\_'
+ms.openlocfilehash: 1ac235bef473efa82b096cae4159e2c724ba7c0e
+ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84630365"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85269484"
 ---
 # <a name="multiple-qubits"></a>多个 Qubits
 
@@ -138,7 +145,7 @@ $$
 
 还可以只测量一个 qubit 为两 qubit 的量程状态。 在仅测量其中一个 qubits 的情况下，度量值的影响将稍有不同，因为整个状态不会折叠为计算基础状态，而只是折叠为一个子系统。  换句话说，在这种情况下，只测量一个 qubit 只会折叠其中一个子系统，而不是全部。  
 
-若要查看这一点，请考虑测量以下状态的第一个 qubit，这是通过在两个 qubits 上将 Hadamard $H 转换应用于 $ 初始设置为 "0" 状态而形成的： $ $ H ^ {\otimes 2 } \left （\begin{ bmatrix } 1 \\ \\ 0 \end{ bmatrix } \otimes \begin{ bmatrix } 1 \\ \\ 0 \end{ bmatrix } \right） = \frac{1 } {2 } \begin{ bmatrix } 1 & 1 & 1 & 1 \\ \\ 1 &-1 & 1 & 1 & 1 & \\ \\ 1 & \\ \\ 1 & 1 \end{ bmatrix } \begin{ bmatrix } 1 \\\\ 0 0 \\\\ \\\\ \end { bmatrix } = \frac{1 } {2 } \begin{ bmatrix } 1 1 1 1 \\\\ \\\\ \\\\ \end { bmatrix } \mapsto \begin{cases \text{outcome } } = 0 & \frac{1 } {\sqrt{2 } } \begin{ bmatrix } 1 \\\\ 1 \\\\ 0 \\\\ 0 \end{ bmatrix } \\ \\ \text{outcome} = 1 & \frac{1 } {\sqrt{2 } } \begin{ bmatrix } 0 \\\\ 0 \\\\ 1 \\\\ \end{ bmatrix } \\ \\ \end{cases } 。
+若要查看这一点，请考虑测量以下状态的第一个 qubit，这是通过在两个 qubits 上将 Hadamard $H 转换应用于 $ 初始设置为 "0" 状态而形成的： $ $ H ^ {\otimes 2 } \left （\begin{ bmatrix } 1 \\ \\ 0 \end{ bmatrix } \otimes \begin{ bmatrix } 1 \\ \\ 0 \end{ bmatrix } \right） = \frac{1 } {2 } \begin{ bmatrix } 1 & 1 & 1 & 1 \\ \\ 1 &-1 & 1 & 1 & 1 & \\ \\ 1 & \\ \\ -1 & 1 \end{ bmatrix } \begin{ bmatrix } 1 \\\\ 0 \\\\ 0 \\\\ 0 \end{bmatrix} = \frac{1 } {2 } \begin{ bmatrix } 1 1 1 1 \\\\ \mapsto \\\\ \begin{cases \\\\ \end{bmatrix} } \text{outcome} = 0 & \frac{1 } {\sqrt{2 } } \begin{ bmatrix } 1 \\\\ 1 \\\\ 0 \\\\ 0 \end{ bmatrix } \\ \\ \text{outcome} = 1 & \frac{1 } {\sqrt{2 } } \begin{ bmatrix } 0 \\\\ 0 \\\\ 1 \\\\ \end{ bmatrix } \\ \\ \end{cases } 。
 $ $ 这两个结果的发生率均为50%。  这两者的结果50% 的概率可能是 intuited 的，因为最初的量程状态向量在 $ $ 第一 qubit 上的交换 $0 和 $1 下是固定的。
 
 用于度量第一个或第二个 qubit 的数学规则非常简单。  如果我们允许 $e _k $ 是 $k ^ {\rm 第一次 } 计算基础向量，并允许 $S $ 是所有 $e 的集合 _k $ 这样，qubit 就会将该值的值 $1 取 $k 的值 $ $ 。  例如，如果对度量第一个 qubit 感兴趣，则 $S $ 将包含 $e _1 \equiv 10 $ 和 $e _3 \equiv 11 $ 。  同样，如果我们对第二个 qubit 的兴趣 $S $ 将包括 $e _2 \equiv 01 $ 和 $e _3 \equiv 11 $ 。  那么，将所选 qubit 测量为 $1 的概率为 $ 状态向量 $ \psi$
@@ -167,12 +174,12 @@ $$
 请注意，这只是度量结果的两个概率的总和 $10 $ ，而 $11 是 $ 所有 qubits。
 对于我们的示例，此值的计算结果为
 
-$ $ \frac{1 } {4 } \left | \begin{ bmatrix } 0&0&1&0 \end { bmatrix } \begin{ bmatrix } 1 \\\\ 1 1 1 \\\\ \\\\ \end { bmatrix } \right | ^ 2 + \frac{1 } {4 } \left | \begin{ bmatrix } 0&0&0&1 \end { bmatrix } \begin{ bmatrix } 1 \\\\ 1 \\\\ 1 \\\\ \end { bmatrix } \right | ^ 2 = \frac{1 } {2 } 。
+$ $ \frac{1 } {4 } \left | \begin{ bmatrix } 0&0&1&0 \end{bmatrix} \begin{ bmatrix } 1 \\\\ 1 1 1 \\\\ \\\\ 1 \end{bmatrix} \right | ^ 2 + \frac{1 } {4 } \left | \begin{ bmatrix } 0&0&0&1 \end{bmatrix} \begin{ bmatrix } 1 1 1 1 \\\\ \\\\ \\\\ \end{bmatrix} \right | ^ 2 = \frac{1 } {2 } 。
 $$
 
 这完全匹配了我们的直觉告诉我们的概率。  同样，可以将状态编写为
 
-$ $ \frac { \frac{e_1 } {2 } + \frac{e_3 } {2 } } {\sqrt { \frac{1 } {2 } }} = \frac{1 } {\sqrt{2 } } \begin{ bmatrix } 0 \\\\ 0 \\\\ 1 \\\\ \end {bmatrix}
+$ $ \frac { \frac{e_1 } {2 } + \frac{e_3 } {2 } } {\sqrt { \frac{1 } {2 } }} = \frac{1 } {\sqrt{2 } } \begin{ bmatrix } 0 \\\\ 0 \\\\ 1 \\\\ 1\end{bmatrix}
 $$
 
 再次遵循我们的直觉。

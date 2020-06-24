@@ -9,6 +9,10 @@ ms.topic: article
 no-loc:
 - $
 - $
+- $
+- $
+- $
+- $
 - '\cdots'
 - bmatrix
 - '\ddots'
@@ -77,12 +81,15 @@ no-loc:
 - '\geq'
 - ~~
 - "~"
-ms.openlocfilehash: 958910452109fc722999acddd70894c458e38357
-ms.sourcegitcommit: e23178d32b316d05784a02ba3cd6166dad177e89
+- "\begin{bmatrix}"
+- "\end{bmatrix}"
+- '\_'
+ms.openlocfilehash: f9dddfa25e9fd1e3d8aaf92b2e3b17c96ed8b72a
+ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2020
-ms.locfileid: "84630384"
+ms.lasthandoff: 06/23/2020
+ms.locfileid: "85269500"
 ---
 # <a name="dirac-notation"></a>Dirac 表示法
 
@@ -123,7 +130,7 @@ $$
 
 作为 Dirac 表示法的示例，请考虑 braket $ \braket{0 | 1 } $，它是 $0 和 $1 之间的内部产品 $ $ 。  它可以编写为 
 
-$ $ \braket{0 | 1 } = \begin{ bmatrix } 1 & 0 \end{ bmatrix } \begin{ bmatrix } 0 \\\\ 1 \end { bmatrix } = 0. $ $
+$ $ \braket{0 | 1 } = \begin{ bmatrix } 1 & 0 \end{ bmatrix } \begin{ bmatrix } 0 \\\\ 1 \end{bmatrix} = 0. $ $
 
 这表明 $ \ket{0 } $ 和 $ \ket{1 } $ 是正交向量，这意味着 $ \braket{0 | 1 } = \braket{1 | 0 } = 0 $ 。  还按定义 $ \braket{0 | 0 } = \braket{1 | 1 } = 1 $ ，这意味着两个计算基础向量也可以被称为*orthonormal*。
 在下面的示例中，这些 orthonormal 属性将非常有用。 如果我们有状态 $ \ket { \psi } = {\frac{3 } {5 } } \ket{1 } + {\frac{4 } {5 } } \ket{0 $， } 则因为 $ \braket{1 | 0 } = 0 $ ，所以衡量 $1 的概率 $  
@@ -173,7 +180,7 @@ $ $ | \braket | { \psi } | ^ 2 = \left | \frac{1 } {\sqrt{2 } } （\bra{0 } -\br
 ## <a name="ketbra-or-outer-product"></a>ketbra 或外部产品
 Dirac 表示法中值得讨论的最后一项是*ketbra*或 outer 积。  外部产品在 Dirac 表示法中表示为 $ \ket { \psi } \bra { \phi } $，有时称为 ketbras，因为 bras 和 kets 的顺序与 brakets 的顺序相反。  { } { } $ 对于量程状态向量 $ \psi $ 和 $ \phi， $ 外部产品通过矩阵相乘定义为 "\ket \psi \bra \phi = \dagger \psi ^ \phi"。  最简单且最常见的是此表示法的示例是
 
-$ $ \ket{0 } \bra{0 } = \begin{ bmatrix } 1 \\\\ 0 \end{ bmatrix } \begin{ bmatrix } 1&0 \end{ bmatrix } = \begin{ bmatrix } 1 &0 \\\\ 0 &0 \end { bmatrix } \qquad \ket{1 } \bra{1 } = \begin{ bmatrix } 0 \\\\ 1 \end{\begin{ bmatrix } bmatrix } 0&1 \end{ bmatrix } = \begin{ bmatrix } 0 &0 \\\\ 0 &1 \end { bmatrix } 。
+$ $ \ket{0 } \bra{0 } = \begin{ bmatrix } 1 \\\\ 0 \end{ bmatrix } \begin{ bmatrix } 1&0 \end{ bmatrix } = \begin{ bmatrix } 1 &0 \\\\ 0 &0 \end{bmatrix} \qquad \ket{1 } \bra{1 } = \begin{ bmatrix } 0 \\\\ 1 \end{ bmatrix } \begin{ bmatrix } 0&1 \end{ bmatrix } = \begin{ bmatrix } 0 &0 \\\\ 0 &1 \end{bmatrix} 。
 $$
 
 Ketbras 通常称为投影机，因为它们将量程状态投影到一个固定值。  由于这些操作并不是单一操作（甚至不会保留矢量的标准），因此，量程计算机不能准确地应用投影仪。  但是，投影仪可以通过一项漂亮的工作来描述度量值对量程状态的操作。  例如，如果我们将状态 $ \ket \psi $ 度量为 $0，则 { } 结果转换为该 $ 测量结果的状态体验是
