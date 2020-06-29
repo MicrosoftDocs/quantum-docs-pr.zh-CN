@@ -6,12 +6,12 @@ ms.author: anpaz@microsoft.com
 ms.date: 1/22/2019
 ms.topic: article
 uid: microsoft.quantum.machines.resources-estimator
-ms.openlocfilehash: b0c800c3946d2e4ba4457127fb9495dc9dcf2934
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: cbb1c274b64738cc4b47869563d7d02eb717afbc
+ms.sourcegitcommit: af10179284967bd7a72a52ae7e1c4da65c7d128d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274391"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85415247"
 ---
 # <a name="the-resources-estimator-target-machine"></a>资源估计器目标计算机
 
@@ -98,8 +98,8 @@ namespace Quantum.MyProgram
 * __度量值__：执行的任何度量值的计数。
 * __R__：执行的任何单个 qubit 循环的计数，不包括 T、Clifford 和 Pauli 入口。
 * __T__： t 入口及其词干的计数（包括 t 入口、T_x = 1xt-hy-ubw）和 T_y = 1xt-hy-ubw，已执行。
-* __深度__：由 Q # 操作执行的量程线路的深度。 默认情况下，在深度中只对 T 个入口计数，有关详细信息，请参阅[深度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)。
-* __Width__：在执行 Q # 操作期间分配的最大 qubits 数。
+* __深度__：由 Q # 操作执行的量程线路深度的下限。 默认情况下，在深度中只对 T 个入口计数，有关详细信息，请参阅[深度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)。
+* __Width__：在执行 Q # 操作期间分配的最大 qubits 数的下限。 可能无法同时实现__深度__和__宽度__下限。
 * __BorrowedWidth__： Q # 操作内借用的最大 qubits 数。
 
 

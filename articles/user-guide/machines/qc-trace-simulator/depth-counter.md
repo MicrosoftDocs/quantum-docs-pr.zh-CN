@@ -6,17 +6,17 @@ ms.author: vadym@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.depth-counter
-ms.openlocfilehash: d532a9f512b8c87d83d62ed26e3bb67e1b6f668b
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: 0029a00e6a3563dc542daeda2afa7cabf42441fb
+ms.sourcegitcommit: af10179284967bd7a72a52ae7e1c4da65c7d128d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274401"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85415249"
 ---
 # <a name="depth-counter"></a>深度计数器
 
 `Depth Counter`是 "量程计算机[跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)" 的一部分。
-它用于收集量程程序中调用的每个操作的深度计数。 中的所有操作 <xref:microsoft.quantum.intrinsic> 都以单个 qubit 旋转、T 入口、单个 Qubit Clifford 门、cnot-contains 入口和度量值表示。 用户可以通过的字段设置每个基元操作的深度 `gateTimes` <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 。
+它用于收集表示在量程程序中调用的每个操作的深度下限的计数。 中的所有操作 <xref:microsoft.quantum.intrinsic> 都以单个 qubit 旋转、T 入口、单个 Qubit Clifford 门、cnot-contains 入口和度量值表示。 用户可以通过的字段设置每个基元操作的深度 `gateTimes` <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 。
 
 默认情况下，除了深度为1的 T 门外，所有操作的深度为0。 这意味着，在默认情况下，只计算 T 操作的 T 深度（通常是必需的）。 收集的统计信息在操作调用关系图的所有边缘上聚合在一起。 
 

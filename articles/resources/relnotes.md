@@ -6,12 +6,12 @@ ms.author: bradben
 ms.date: 5/30/2020
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: e48f4157438fba063877b2b79fbc7629710fc9f3
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: 0fcdec1a304730b593224283421539ea3ca9c913
+ms.sourcegitcommit: af10179284967bd7a72a52ae7e1c4da65c7d128d
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274371"
+ms.lasthandoff: 06/26/2020
+ms.locfileid: "85415444"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -344,8 +344,6 @@ ms.locfileid: "85274371"
 
 此版本修复了阻止某些用户成功加载 Visual Studio 扩展的 bug。
 
-如果要从 0.2 版本的量子开发工具包升级，请了解有关 [Q# 语言更改和迁移 Q# 程序](xref:microsoft.quantum.relnotes.migration-0-3)的详细信息。
-
 ## <a name="version-031811203"></a>版本 0.3.1811.203
 
 发行日期：2018 年 11 月 2 日
@@ -356,8 +354,6 @@ ms.locfileid: "85274371"
 * 删除了使用比 2.1.403 更低的 .NET Core 版本生成项目时的编译警告。
 * 清理文档，特别是将鼠标悬停在 VS Code 或 Visual Studio 时所显示的工具提示。
 
-如果要从 0.2 版本的量子开发工具包升级，请了解有关 [Q# 语言更改和迁移 Q# 程序](xref:microsoft.quantum.relnotes.migration-0-3)的详细信息。
-
 ## <a name="version-0318102508"></a>版本 0.3.1810.2508
 
 发行日期：2018 年 10 月 29 日
@@ -367,8 +363,6 @@ ms.locfileid: "85274371"
 * 此版本包括用于 Q# 的语言服务器，以及用于 Visual Studio 和 Visual Studio Code 的客户端集成。 这会启用一组新的 IntelliSense 功能，以及在键入时以波浪下划线的形式发出错误和警告的实时反馈。 
 * 总体上看，此更新极大地改善了诊断消息，可以轻松地导航到诊断消息的准确范围，并在显示的悬停信息中提供更多详细信息。
 * Q# 语言经扩展后，统一了开发者可以执行常见操作的方式和增强语言功能的方式，从而有效地表达量子计算。  此版本中的 Q# 语言进行了一些的重大更改。   
-
-了解有关 [Q# 语言更改和迁移 Q# 程序](xref:microsoft.quantum.relnotes.migration-0-3)的详细信息。
 
 此版本还包括新的量子化学库：
 
