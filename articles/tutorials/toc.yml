@@ -4,7 +4,7 @@
   href: explore-entanglement.md
 - name: 实现 Grover 的搜索算法
   href: search.md
-- name: 量子位级的编程
+- name: Qubit 级编程
   href: qubit-level.md
 - name: 通过 Quantum Katas 学习 Q#
   href: intro-to-katas.md
