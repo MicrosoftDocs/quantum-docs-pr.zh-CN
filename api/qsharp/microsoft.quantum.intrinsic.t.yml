@@ -4,10 +4,10 @@ name: T
 type: operation
 namespace: Microsoft.Quantum.Intrinsic
 summary: >-
-  将π/8 门应用于单个 qubit。
+  将 T 入口应用于单个 qubit。
 
 
-  \begin{align} T \mathrel{： =} \begin{bmatrix} 1 & 0 \\ \\ 0 & e ^ {i \pi/4} \end{bmatrix}。
+  此操作可由单一矩阵 \begin{align} T \mathrel{： =} \begin{bmatrix} 1 & 0 \\ \\ 0 & e ^ {i \pi/4} \end{bmatrix}. 模拟
 
   \end{align}
 syntax: 'operation T (qubit : Qubit) : Unit'
@@ -27,9 +27,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: f654748925ec76cfececadd9fe2de8698449f6f8
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d149038bea705d10a67197e0eeece33ef98e6c36
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685421"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885686"

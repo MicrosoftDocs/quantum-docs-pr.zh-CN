@@ -13,7 +13,7 @@ input:
     isPrimitive: true
     uid: Double
   - name: probability
-    summary: 特定样本的分类概率，typicaly 是估计其分类频率导致的。
+    summary: 特定示例的分类概率，通常是从估算其分类频率得出的。
     isPrimitive: true
     uid: Double
 output:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: d49c28ae1aab862b89ef64ef3d31d5af956183bd
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ac1fa223c978825e6b79d593b225947869a638ac
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683524"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885202"

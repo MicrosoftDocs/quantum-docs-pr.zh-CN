@@ -1,0 +1,60 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.repeat
+name: Repeat
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: 在给定的次数后重复操作。
+examples: >-
+  以下项是等效的：
+
+
+  ```Q#
+
+  Repeat(U, 17, target);
+
+  (Bound(ConstantArray(17, U)))(target);
+
+  ```
+syntax: "operation Repeat (op : ('TInput => Unit), nTimes : Int, input : 'TInput) : Unit"
+input:
+  content: "(op : ('TInput => Unit), nTimes : Int, input : 'TInput)"
+  types:
+  - name: op
+    summary: 要重复调用的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'TInput"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+  - name: nTimes
+    summary: 要调用的次数 `op` 。
+    isPrimitive: true
+    uid: Int
+  - name: input
+    summary: 要传递到的输入 `op` 。
+    uid: "'TInput"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: TInput
+  summary: 预期的输入类型 `op` 。
+seeAlso:
+- microsoft.quantum.arrays.drawmany
+- microsoft.quantum.canon.repeata
+- microsoft.quantum.canon.repeatc
+- microsoft.quantum.canon.repeatca
+metadata:
+  ms.openlocfilehash: faf0526bd71cfa809bac5fdf06a6b72684ac8bbe
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85886233"

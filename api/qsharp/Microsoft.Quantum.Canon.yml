@@ -198,6 +198,10 @@ operations:
   summary: 计算 qubits 的寄存器的奇偶校验。
 - uid: microsoft.quantum.canon.applycnotchainwithtarget
   summary: 计算 qubits 数组到目标 qubit 的奇偶校验。
+- uid: microsoft.quantum.canon.applycontrolledonbitstring
+  summary: 对目标寄存器应用单一操作，该操作由给定位掩码指定的状态控制。
+- uid: microsoft.quantum.canon.applycontrolledonint
+  summary: 如果控件寄存器状态对应于指定的正整数，则对目标寄存器应用单一操作。
 - uid: microsoft.quantum.canon.applydiagonalunitary
   summary: 将复杂阶段数组应用于 qubits 寄存器的数字基础状态。
 - uid: microsoft.quantum.canon.applyfermionicswap
@@ -565,6 +569,14 @@ operations:
 
 
     $R = \boldone-（1-e ^ {i \phi}） \ket{1\cdots 1} \bra{1\cdots 1} $。
+- uid: microsoft.quantum.canon.repeat
+  summary: 在给定的次数后重复操作。
+- uid: microsoft.quantum.canon.repeata
+  summary: 在给定的次数后重复操作。
+- uid: microsoft.quantum.canon.repeatc
+  summary: 在给定的次数后重复操作。
+- uid: microsoft.quantum.canon.repeatca
+  summary: 在给定的次数后重复操作。
 - uid: microsoft.quantum.canon.swapreverseregister
   summary: 使用交换入口反转寄存器中 qubits 的顺序。
 newtypes:
@@ -573,9 +585,9 @@ newtypes:
 - uid: microsoft.quantum.canon.resultstack
   summary: "\n> [!WARNING]\n> 已放弃\n\nResultStack 已被弃用。"
 metadata:
-  ms.openlocfilehash: 97975236f3824d63c0cc75e5be847c5eef47485b
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: ab6e8a58dd163e4a9b2ea299e544a4e487d61e23
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84326670"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85884678"

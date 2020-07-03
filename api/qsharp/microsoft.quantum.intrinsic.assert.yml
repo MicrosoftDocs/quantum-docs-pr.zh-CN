@@ -3,28 +3,23 @@ uid: microsoft.quantum.intrinsic.assert
 name: Assert
 type: operation
 namespace: Microsoft.Quantum.Intrinsic
-summary: 度量给定 Pauli 基础中给定 qubits 的断言将始终具有给定的结果。
-remarks: 请注意，此操作的 Adjoint 和受控版本将不检查该条件。
+summary: 已弃用断言。 请改用 @"microsoft.quantum.diagnostics.assertmeasurement"。
 syntax: 'operation Assert (bases : Pauli[], qubits : Qubit[], result : Result, msg : String) : Unit'
 input:
   content: '(bases : Pauli[], qubits : Qubit[], result : Result, msg : String)'
   types:
   - name: bases
-    summary: 用于断言概率的度量效果，表示为多 qubit Pauli 运算符。
     isArray: true
     isPrimitive: true
     uid: Pauli
   - name: qubits
-    summary: 要对其进行断言的寄存器。
     isArray: true
     isPrimitive: true
     uid: Qubit
   - name: result
-    summary: 的预期结果`Measure(bases, qubits)`。
     isPrimitive: true
     uid: Result
   - name: msg
-    summary: 断言失败时要报告的消息。
     isPrimitive: true
     uid: String
 output:
@@ -35,12 +30,10 @@ output:
 functors:
 - Adjoint
 - Controlled
-seeAlso:
-- assertprob
 metadata:
-  ms.openlocfilehash: ececd74240ef9340666795142719faeeb0cbef7b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 56e41923bfeaa5ecf10bd47130260c78fbce7970
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674175"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885743"

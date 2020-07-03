@@ -1,0 +1,59 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applycontrolledonint
+name: ApplyControlledOnInt
+type: operation
+namespace: Microsoft.Quantum.Canon
+summary: 如果控件寄存器状态对应于指定的正整数，则对目标寄存器应用单一操作。
+remarks: >-
+  的值 `numberState` 是使用小字节序编码来解释的。
+
+
+  `numberState`最大必须为 $ 2 ^ \texttt{Length （controlRegister）}-$1。
+
+  例如， `numberState = 537` 表示 `oracle` 当且仅当 `controlRegister` 处于状态 $ \ket $ 时应用 {537} 。
+syntax: "operation ApplyControlledOnInt (numberState : Int, oracle : ('T => Unit is Adj + Ctl), controlRegister : Qubit[], targetRegister : 'T) : Unit"
+input:
+  content: "(numberState : Int, oracle : ('T => Unit is Adj + Ctl), controlRegister : Qubit[], targetRegister : 'T)"
+  types:
+  - name: numberState
+    summary: 应在其上控制操作的非负整数 `oracle` 。
+    isPrimitive: true
+    uid: Int
+  - name: oracle
+    summary: 要控制的单一操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+    - Controlled
+  - name: controlRegister
+    summary: 控制应用程序的量程寄存器 `oracle` 。
+    isArray: true
+    isPrimitive: true
+    uid: Qubit
+  - name: targetRegister
+    summary: 要对其应用的寄存器 `oracle` 。
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+metadata:
+  ms.openlocfilehash: 468886684513035d24b3b4881944f2c18fa65e18
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85886143"

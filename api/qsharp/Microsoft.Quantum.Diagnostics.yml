@@ -39,6 +39,10 @@ operations:
   summary: 断言给定的 qubits 都处于 $ \ket {0} $ 状态。
 - uid: microsoft.quantum.diagnostics.assertallzerowithintolerance
   summary: 断言给定的 qubits 都处于 $ \ket {0} $ 状态，直到达到给定的容差。
+- uid: microsoft.quantum.diagnostics.assertmeasurement
+  summary: 度量给定 Pauli 基础中给定 qubits 的断言将始终具有给定的结果。
+- uid: microsoft.quantum.diagnostics.assertmeasurementprobability
+  summary: 在给定 Pauli 基础上测量给定 qubits 的断言在某种程度上具有给定概率的给定结果。
 - uid: microsoft.quantum.diagnostics.assertoperationsequalinplace
   summary: >-
     假设有两个运算，则断言它们对于所有输入状态都是相同的。
@@ -79,14 +83,14 @@ operations:
   summary: 断言 qubit `q` 位于 Pauli Z 运算符的预期 eigenstate 中，直到达到给定的容差。
 newtypes:
 - uid: microsoft.quantum.diagnostics.enabletestingvianame
-  summary: 编译器可识别的属性，可通过该属性定义可在加载类型时使用的可选名称，或可调用以用于测试目的。
+  summary: 编译器可识别的属性，通过该属性可以定义可在加载类型时使用的可选名称，也可以将其用于测试目的。
 - uid: microsoft.quantum.diagnostics.test
   summary: 编译器可识别的属性，用于标记单元测试。
 summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含可用于诊断目的的函数和操作，包括断言操作和声明函数。"
 metadata:
-  ms.openlocfilehash: 2c619ac283653d87f2917d7c780ed9fe6ccfa965
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: c8e1cd7f3458e736a47749dd057174eb4961c31d
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84326585"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85884578"

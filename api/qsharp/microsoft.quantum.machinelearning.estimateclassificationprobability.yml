@@ -21,7 +21,7 @@ input:
     isPrimitive: true
     uid: Double
   - name: nMeasurements
-    summary: 要在估计分类概率时使用的 measusrements 数。
+    summary: 要在估计分类概率时使用的度量值的数量。
     isPrimitive: true
     uid: Int
 output:
@@ -31,9 +31,9 @@ output:
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 5a726a02b3f56168ca6a6f2ad1c980018e0bea3d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e46269c83fb4343918c0154819631df1fde4279f
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685389"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885873"

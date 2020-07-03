@@ -7,7 +7,7 @@ summary: >-
   从 oracle 构造有关给定状态的反射。
 
 
-  假设确定性状态准备由单一矩阵 $O $ 表示，则此函数的结果是一个 oracle，它围绕 oracle $O $ 准备的状态 $ \ket{\psi} $ 应用反射。也就是说，状态 $ \ket{\psi} $，以便 $O \ket{0} = \ket{\psi} $。
+  由于单一矩阵 $O $ 指定了 oracle 确定性状态准备，因此此函数的结果是一个 oracle，它围绕 oracle $O $ 准备的状态 $ \ket{\psi} $ 应用反射。也就是说，状态 $ \ket{\psi} $，以便 $O \ket {0} = \ket{\psi} $。
 syntax: 'function ReflectionOracleFromDeterministicStateOracle (oracle : Microsoft.Quantum.Oracles.DeterministicStateOracle) : Microsoft.Quantum.Oracles.ReflectionOracle'
 input:
   content: '(oracle : Microsoft.Quantum.Oracles.DeterministicStateOracle)'
@@ -24,9 +24,9 @@ seeAlso:
 - microsoft.quantum.oracles.deterministicstateoracle
 - microsoft.quantum.oracles.reflectionoracle
 metadata:
-  ms.openlocfilehash: ecd14c8fbf54c6ba224693ea02f469379f66d1bc
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 580e4f0a38888faf0fbea99f680c82a5172f82a4
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673499"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85884501"

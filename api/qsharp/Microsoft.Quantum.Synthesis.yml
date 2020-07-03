@@ -1,0 +1,24 @@
+### YamlMime:QSharpNamespace
+uid: microsoft.quantum.synthesis
+name: Microsoft.Quantum.Synthesis
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含基于排列和布尔函数的综合量程操作的函数和操作。"
+operations:
+- uid: microsoft.quantum.synthesis.applypermutationusingdecomposition
+  summary: 使用基于分解的合成，Permutes amplitudes 在量程状态中。
+- uid: microsoft.quantum.synthesis.applypermutationusingdecompositionwithvariableorder
+  summary: 使用基于分解的合成，Permutes amplitudes 在量程状态中。
+- uid: microsoft.quantum.synthesis.applypermutationusingtransformation
+  summary: 使用基于转换的合成，将 amplitudes Permutes 为量程状态。
+- uid: microsoft.quantum.synthesis.applytransposition
+  summary: ''
+- uid: microsoft.quantum.synthesis.applyxcontrolledontruthtable
+  summary: '@"microsoft.quantum.intrinsic.x" `target` 如果布尔函数的 `func` 计算结果为 true （对于中的传统分配），则应用操作 `controlRegister` 。'
+- uid: microsoft.quantum.synthesis.applyxcontrolledontruthtablewithcleantarget
+  summary: '@"microsoft.quantum.intrinsic.x" `target` 如果布尔函数的 `func` 计算结果为 true （对于中的传统分配），则应用操作 `controlRegister` 。'
+metadata:
+  ms.openlocfilehash: d12a16656826134cfe8c9fb44a1c577c267a6603
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85886225"

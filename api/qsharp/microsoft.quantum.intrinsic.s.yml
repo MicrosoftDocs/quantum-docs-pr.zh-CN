@@ -4,10 +4,10 @@ name: S
 type: operation
 namespace: Microsoft.Quantum.Intrinsic
 summary: >-
-  将π/4 阶段入口应用于单个 qubit。
+  将 S 入口应用于单个 qubit。
 
 
-  \begin{align} S \mathrel{： =} \begin{bmatrix} 1 & 0 \\ \\ 0 & i \end{bmatrix}。
+  此操作可由单一 matrix matrix \begin{align} S \mathrel{： =} \begin{bmatrix} 1 & 0 0 的模拟， \\ \\ & i \end{bmatrix}。
 
   \end{align}
 syntax: 'operation S (qubit : Qubit) : Unit'
@@ -27,9 +27,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: d5b4cf3d848b4412769d64b4ca5aa3f66f385d8d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1e42056d91daac49fab6a4488bd0ef7c27698027
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683656"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885705"

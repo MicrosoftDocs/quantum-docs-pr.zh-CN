@@ -1,0 +1,56 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.synthesis.applypermutationusingdecompositionwithvariableorder
+name: ApplyPermutationUsingDecompositionWithVariableOrder
+type: operation
+namespace: Microsoft.Quantum.Synthesis
+summary: >-
+  使用基于分解的合成，Permutes amplitudes 在量程状态中。
+
+
+  此操作是 @"microsoft.quantum.synthesis.applypermutationusingdecomposition" 可在其中指定可变顺序的更通用版本。 不同的变量顺序将更改分解序列和用于受控入口的事实数据表 @"microsoft.quantum.intrinsic.x" 。  因此，更改可变顺序会改变用于实现排列的总入口数。
+examples: >-
+  要合成 `SWAP` 操作：
+
+
+  ```Q#
+
+  using (qubits = Qubit[2]) {
+    ApplyPermutationUsingDecompositionWithVariableOrder([0, 2, 1, 3], [1, 0], LittleEndian(qubits));
+  }
+
+  ```
+syntax: 'operation ApplyPermutationUsingDecompositionWithVariableOrder (perm : Int[], variableOrder : Int[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
+input:
+  content: '(perm : Int[], variableOrder : Int[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian)'
+  types:
+  - name: perm
+    summary: 从0开始的 $ 2 ^ n $ 元素的排列。
+    isArray: true
+    isPrimitive: true
+    uid: Int
+  - name: variableOrder
+    summary: 从0开始 $n $ 元素的排列。
+    isArray: true
+    isPrimitive: true
+    uid: Int
+  - name: qubits
+    summary: 将排列应用到的 $n $ qubits 的列表。
+    uid: microsoft.quantum.arithmetic.littleendian
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+- Controlled
+seeAlso:
+- microsoft.quantum.synthesis.applypermutationusingdecomposition
+- microsoft.quantum.synthesis.applypermutationusingtransformation
+metadata:
+  ms.openlocfilehash: ef6b24fa5b9c010f01ade622f470aec7c0a25835
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85886115"

@@ -29,11 +29,12 @@ input:
 output:
   content: Microsoft.Quantum.MachineLearning.ValidationResults
   types:
-  - uid: microsoft.quantum.machinelearning.validationresults
+  - summary: 给定验证的结果。
+    uid: microsoft.quantum.machinelearning.validationresults
 metadata:
-  ms.openlocfilehash: d43cb6e30a193a2fbae65567a15f2e9e9fab57dc
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e031630fd11ae7f230343513d3d5fc8d2b25a9c3
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684294"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885852"
