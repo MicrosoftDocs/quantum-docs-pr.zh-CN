@@ -7,7 +7,6 @@
           "**/*.yml"
         ],
         "src": ".",
-        "version": "qsharp-preview",
         "dest": "api",
         "exclude": [
           "**/obj/**",
@@ -31,17 +30,11 @@
         ]
       }
     ],
-    "versions": {
-      "qsharp-preview": {
-        "dest": "qsharp-preview"
-      }
-    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
       "show_latex": true,
       "ms.prod": "quantum",
-      "bilingual_type": "hover over",
       "ms.topic": "managed-reference",
       "ms.devlang":"qsharp",
       "searchScope": ["quantum", "q#", "qsharp"],
