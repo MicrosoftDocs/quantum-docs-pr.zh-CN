@@ -6,12 +6,12 @@ ms.author: bradben
 ms.date: 5/30/2020
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: 0fcdec1a304730b593224283421539ea3ca9c913
-ms.sourcegitcommit: af10179284967bd7a72a52ae7e1c4da65c7d128d
+ms.openlocfilehash: d10f81a1e49235be8e02661dcd6d3c839485af6e
+ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415444"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85885051"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -20,6 +20,27 @@ ms.locfileid: "85415444"
 有关安装说明，请参阅[安装指南](xref:microsoft.quantum.install)。
 
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
+
+## <a name="version-01220070124"></a>版本0.12.20070124
+
+*发布日期：2020年7月2日*
+
+此版本包含以下各项：
+
+- `qdk-chem`用于将旧电子结构问题序列化格式（例如： FCIDUMP）转换为[Broombridge](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)的新工具
+- 一致[ `Microsoft.Quantum.Synthesis` 命名空间](xref:microsoft.quantum.synthesis)中的新函数和操作使用基于转换和分解的合成算法来应用传统 oracles。
+- IQ # 现在允许参数用于 `%simulate` 、 `%estimate` 和其他幻命令。 有关更多详细信息，请参阅[ `%simulate` 幻命令参考](xref:microsoft.quantum.iqsharp.magic-ref.simulate)。
+- IQ # 中的新阶段显示选项。 有关更多详细信息，请参阅[ `%config` 幻命令参考](xref:microsoft.quantum.iqsharp.magic-ref.config)。
+- IQ # 和 `qsharp` Python 包现在是通过 conda 包（[qsharp](https://anaconda.org/quantum-engineering/qsharp)和[iqsharp](https://anaconda.org/quantum-engineering/iqsharp)）提供的，用于简化在 conda 环境中安装 Q # Jupyter 和 python 功能的过程。 有关更多详细信息，请参阅[q # Jupyter 笔记本](xref:microsoft.quantum.install.jupyter)和包含 Python 安装指南的[q #](xref:microsoft.quantum.install.python) 。
+- 使用模拟器时，qubits 不再需要处于版本 | 0 ⟩状态，如果在释放前立即测量，则可以自动重置。
+- 用于使 IQ # 用户更轻松地使用具有不同 QDK 版本的库包的更新，只要求主要 & 次版本号匹配，而不是完全相同的版本
+- 删除不推荐使用的 `Microsoft.Quantum.Primitive.*` 命名空间
+- 移动操作：
+  - `Microsoft.Quantum.Intrinsic.Assert` 现为 `Microsoft.Quantum.Diagnostics.AssertMeasurement`
+  - `Microsoft.Quantum.Intrinsic.AssertProb` 现为 `Microsoft.Quantum.Diagnostics.AssertMeasurementProbability`
+- Bug 修复 
+
+有关[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed)、[编译器](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed)、[运行时](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed)、[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed)、[IQ#](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+is%3Aclosed) 和 [Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed) 的信息，请参阅已结束的 PR 的完整列表。  
 
 ## <a name="version-0112006403"></a>版本 0.11.2006.403
 
@@ -425,7 +446,7 @@ ms.locfileid: "85415444"
 
 发行日期：2018 年 6 月 22 日
 
-此版本包含多项社区贡献，并改进了调试体验，提高了性能。  具体来说：
+此版本包含多项社区贡献，并改进了调试体验，提高了性能。  具体而言：
 
 * 对 QuantumSimulator 目标计算机的小型和大型模拟进行性能改进。
 * 改进了调试功能。

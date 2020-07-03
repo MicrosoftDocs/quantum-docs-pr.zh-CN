@@ -6,12 +6,12 @@ uid: microsoft.quantum.more-information
 ms.author: nawiebe@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: bcc26f66a4ba3e861800ceca122b38b8d3ef6ad5
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: d3c252c6579e1286aae71a0f18ac7b6b02a5c1ed
+ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274369"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85884142"
 ---
 # <a name="more-quantum-computing-learning-resources"></a>更多量程计算学习资源
 
@@ -24,6 +24,14 @@ ms.locfileid: "85274369"
 + Kitaev，Shen，A.，& Vyalyi，M. N。 （2002）。 传统计算和量程计算（47）。 提供：美国数学社会。
 + Kaye，Laflamme，Mosca &，M. （2007）。 量程计算简介。 Oxford 大学，按。
 + Rieffel、& Polak、W.x.y.z。 (2011). 量程计算：一种非常简单的介绍。 MIT Press。
++ Sarah 皇和 Christopher Granade （Manning 早期访问计划在2020秋季2019年4月发布。 [使用 Python 和问答方法了解量程计算](https://www.manning.com/books/learn-quantum-computing-with-python-and-q-sharp)。
+
+## <a name="online-courses"></a>联机课程 ##
+
++ [MS 了解量程计算模块](https://docs.microsoft.com/users/buildcollections2020-6557/collections/1o2iogrmn8x4r)。 量程计算概念和实践的粘贴教程。 
++ [量程计算-杰出的课程](https://brilliant.org/courses/quantum-computing/)。 了解如何从头开始构建量程算法，以及在浏览器中模拟的量程计算机。
++ [量程计算简介-LinkedIn 学习](https://www.linkedin.com/learning/introduction-to-quantum-computing)。 1h25m 视频简介。 
++ [通过 cloudtweaks 的量程计算](https://hackaday.io/project/168554-introduction-to-quantum-computing)。 星期日每周实践社区类。 
 
 ## <a name="elementary-techniques-for-building-controlled-gates"></a>用于构建受控入口的基本技术 ##
 

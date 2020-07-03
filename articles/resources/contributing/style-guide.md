@@ -6,12 +6,12 @@ ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.style
-ms.openlocfilehash: f8e398b5c9932a5079222fed7ad20e54de814eb8
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: 3ddb5d67b972f69df1774b476a10e74dd16d97b7
+ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274370"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85884191"
 ---
 # <a name="q-style-guide"></a>Q # 样式指南 #
 ## <a name="general-conventions"></a>一般约定 ##
@@ -105,6 +105,31 @@ ms.locfileid: "85274370"
 | ☑ | `newtype GeneratorTerm` | 名词短语的使用显然是指调用 UDT 构造函数的结果。 |
 | ☒ | <s>`@Attribute() newtype RunOnce()`</s> | 使用谓词短语建议 UDT 构造函数为操作。 |
 | ☑ | `@Attribute() newtype Deprecated(Reason : String)` | 使用名词短语会传达属性的使用情况。 |
+
+***
+
+### <a name="entry-points"></a>入口点
+
+在将入口点定义为 Q # 程序时，Q # 编译器会识别该[ `@EntryPoint()` 属性](xref:microsoft.quantum.core.entrypoint)，而无需输入点具有特定的名称（例如： `main` 、 `Main` 或 `__main__` ）。
+也就是说，从 Q # 开发人员的角度来看，入口点是使用批注的普通操作 `@EntryPoint()` 。
+此外，Q # 入口点可能是整个应用程序的入口点（即，在 Q # 独立可执行文件中），或者可能是 Q # 程序与应用程序的主机程序（即：将 Q # 与 Python 或 .NET 一起使用时）之间的一个接口，因此，在应用于 Q # 入口点时，名称 "main" 可能会产生误导。
+
+建议使用命名入口点来反映属性的使用情况， `@EntryPoint()` 方法是使用上面列出的命名操作的一般建议。
+
+
+# <a name="guidance"></a>[指南](#tab/guidance)
+
+建议：
+
+- 不要将入口点操作命名为 "main"。
+- 将入口点操作命名为普通操作。
+
+# <a name="examples"></a>[示例](#tab/examples)
+
+|   | “属性” | 描述 |
+|---|------|-------------|
+| ☑ | `@EntryPoint() operation RunSimulation` | 通过操作名称清楚地传达入口点的用途。 |
+| ☒ | <s>`@EntryPoint() operation Main`</s> | 使用 `Main` 不会清晰地传达入口点的目的，它是属性冗余的 `@EntryPoint()` 。 |
 
 ***
 
@@ -373,7 +398,7 @@ operation ApplyPhaseEstimationIteration(
 
 - 每个公共函数、操作和用户定义的类型后面都应跟有文档注释。
 - 每个文档注释至少应包含以下部分：
-    - 摘要
+    - 总结
     - 输入
     - 输出（如果适用）
 - 确保所有摘要都是两个句子或更少。 如果需要更多空间，请在 `# Description` 后面提供 `# Summary` 完整的详细信息部分。
