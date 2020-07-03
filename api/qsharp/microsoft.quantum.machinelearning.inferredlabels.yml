@@ -13,7 +13,7 @@ input:
     isPrimitive: true
     uid: Double
   - name: probabilities
-    summary: 一组样本的分类概率数组，typicaly 由估计分类频率引起。
+    summary: 一组样本的分类概率数组，通常由估计分类频率引起。
     isArray: true
     isPrimitive: true
     uid: Double
@@ -25,9 +25,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: f2b45d4db7b25aecf6dae470011f2895c9e16ca3
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: f51e41cad897db06297af4ca0e7c0d71ed4cc632
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683505"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885841"

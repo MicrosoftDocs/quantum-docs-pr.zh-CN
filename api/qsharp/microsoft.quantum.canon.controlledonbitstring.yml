@@ -7,22 +7,24 @@ summary: >-
   如果控件注册状态对应于指定的位掩码，则返回在目标寄存器上应用 oracle 的单一操作。
 
 
-  此函数的输出是一个可以由单一转换 $U $ 进行表示的操作，此操作可由 \begin{align} U \ket{b_0 b_1 \cdots b_ {n-1}} \ket{\psi} = \ket{b_0 b_1 \cdots b_ {n-1}} \otimes \begin{cases} V \ket{\psi} & \textrm{if} （b_0 b_1 \cdots b_ {n-1}） = \\ \\ \texttt{bits} \ket{\psi} & \textrm{otherwise} \end{cases}，\end{align}，其中 $V $ 是表示`oracle`操作操作的单一转换。
+  此函数的输出是一个可以由单一转换 $U $ 进行表示的操作，此操作可由 \begin{align} U \ket{b_0 b_1 \cdots b_ {n-1}} \ket{\psi} = \ket{b_0 b_1 \cdots b_ {n-1}} \otimes \begin{cases} V \ket{\psi} & \textrm{if} （b_0 b_1 \cdots b_ {n-1}） = \texttt{bits} \\ \\ \ket{\psi} & \textrm{otherwise} \end{cases}，\end{align}，其中 $V $ 是表示操作操作的单一转换 `oracle` 。
 remarks: >-
-  `bits`和`controlRegister`的长度必须相等。
+  给定的模式 `bits` 可能比更短 `controlRegister` ，在这种情况下，将忽略附加的 qubits （即，不会在 $ \ket {0} $ 和 $ \ket {1} $）上进行控制。
+
+  如果 `bits` 的长度超过 `controlRegister` ，则会引发错误。
 
 
-  给定布尔数组`bits`和单一操作`oracle`，此函数的输出是执行以下步骤的操作：
+  给定布尔数组 `bits` 和单一操作 `oracle` ，此函数的输出是执行以下步骤的操作：
 
 
-  * 将`X`操作应用到控制寄存器的每个 qubit，该控件`false`寄存器对应于`bits`的元素;
+  * 将 `X` 操作应用到控制寄存器的每个 qubit，该控件寄存器对应于 `false` 的元素 `bits` ;
 
-  * 应用`Controlled oracle`于控件和目标寄存器;
+  * 应用于 `Controlled oracle` 控件和目标寄存器;
 
-  * 将`X`操作应用于控件注册的每个 qubit，该控件`false`注册再次对应`bits`于的元素，以将控制寄存器返回到原始状态。
+  * 将操作应用于 `X` 控件注册的每个 qubit，该控件注册再次对应于 `false` 的元素， `bits` 以将控制寄存器返回到原始状态。
 
 
-  `Controlled`函子的输出是的一种特殊情况， `ControlledOnBitString`其中`bits` ，等于`[true, ..., true]`。
+  函子的输出 `Controlled` 是的一种特殊情况， `ControlledOnBitString` 其中， `bits` 等于 `[true, ..., true]` 。
 examples: >-
   以下代码片段是等效的：
 
@@ -48,7 +50,7 @@ examples: >-
   ```
 
 
-  下面的代码准备{1}{2}状态 $ \frac （{00} \ket + \ket{01} + \ket{10} + \ket{11}） $：
+  下面的代码准备状态 $ \frac {1} {2} （\ket {00} {01} + \ket + \ket {10} + \ket {11} ） $：
 
 
   ```qsharp
@@ -85,7 +87,7 @@ input:
 output:
   content: ((Qubit[], 'T) => Unit is Adj + Ctl)
   types:
-  - summary: 当控件注册状态对应`oracle`于位掩码`bits`时，适用于目标寄存器的单一操作。
+  - summary: '`oracle`当控件注册状态对应于位掩码时，适用于目标寄存器的单一操作 `bits` 。'
     isOperation: true
     input:
       types:
@@ -102,9 +104,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: d5a6223c130150f42f83044aec19b1d5a875bb1d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 98bb8a9d5770e34257cd2fbc5456bcf70139af07
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680361"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885521"

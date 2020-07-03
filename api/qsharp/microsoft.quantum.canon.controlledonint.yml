@@ -4,6 +4,7 @@ name: ControlledOnInt
 type: function
 namespace: Microsoft.Quantum.Canon
 summary: 如果控件注册状态对应于指定的正整数，则返回一个单一运算符，该运算符应用目标寄存器上的 oracle。
+remarks: 的值 `numberState` 是使用小字节序编码来解释的。
 syntax: "function ControlledOnInt (numberState : Int, oracle : ('T => Unit is Adj + Ctl)) : ((Qubit[], 'T) => Unit is Adj + Ctl)"
 input:
   content: "(numberState : Int, oracle : ('T => Unit is Adj + Ctl))"
@@ -29,7 +30,7 @@ input:
 output:
   content: ((Qubit[], 'T) => Unit is Adj + Ctl)
   types:
-  - summary: 当控件注册状态对应`oracle`于数字状态`numberState`时，应用于目标寄存器的单一运算符。
+  - summary: '`oracle`当控件注册状态对应于数字状态时，应用于目标寄存器的单一运算符 `numberState` 。'
     isOperation: true
     input:
       types:
@@ -46,9 +47,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: 544b96c809af69ce1cc33aad2d42b012f93d4b3c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 81aeec4086549691d789e02e5a94e86cd75fdf06
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675705"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885483"

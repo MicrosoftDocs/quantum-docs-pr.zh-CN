@@ -7,17 +7,17 @@ summary: >-
   当且仅当两个控件 qubits 都处于1状态时，使用度量来执行 adjoint 操作，以反转给定的目标 qubit。
 
 
-  当`target`且仅当这两个控件都为1，但`target`假定处于状态0时，则反转。  操作具有 T 计数4、T 深度2和不需要 helper qubit，因此，如果`target`已知为0，则可能更适合 CCNOT 操作。  此操作的 adjoint 是基于度量的，不需要任何 T 入口。
+  `target`当且仅当这两个控件都为1，但假定 `target` 处于状态0时，则反转。  操作具有 T 计数4、T 深度2和不需要 helper qubit，因此，如果已知为0，则可能更适合 CCNOT 操作 `target` 。  此操作的 adjoint 是基于度量的，不需要任何 T 入口。
 
 
-  此操作的受控应用程序不需要 helper qubit、 `2^c` `Rz`入口和未进行深度优化，其中`c`是包括`ApplyAnd`操作中两个控件的总体控制 qubits 的数目。  Adjoint 控制的应用程序`2^c - 1` `Rz`需要入口（使用两倍于非 adjoint 操作大小的两倍），无助手 qubit，不能进行深度优化。
+  此操作的受控应用程序不需要 helper qubit、 `2^c` `Rz` 入口和未进行深度优化，其中 `c` 是包括操作中两个控件的总体控制 qubits 的数目 `ApplyAnd` 。  Adjoint 控制的应用程序需要 `2^c - 1` `Rz` 入口（使用两倍于非 adjoint 操作大小的两倍），无助手 qubit，不能进行深度优化。
 syntax: 'operation ApplyAnd (control1 : Qubit, control2 : Qubit, target : Qubit) : Unit'
 references: >-
   - Cody： "容错 Toffoli 入口的 Novel 构造"，Phys. A 87，022328，2013 [arXiv： 1212.5069](https://arxiv.org/abs/1212.5069) doi>10.1145： 10.1103/PhysRevA 87.022328
 
   - Craig Gidney： "一半的量程增加成本"，量子2，page 74，2018 [arXiv： 1709.06648](https://arxiv.org/abs/1709.06648) doi>10.1145： 10.1103/PhysRevA. 85.044302
 
-  - Mathias Soeken： "量子 Oracle 线路和圣诞节树模式"，[来自 Decemer 19，2019的博客文章](https://msoeken.github.io/blog_qac.html)（注意：说明多个受控构造）
+  - Mathias Soeken： "量子 Oracle 线路和圣诞节树模式"，[博客文章2019年12月19日](https://msoeken.github.io/blog_qac.html)
 input:
   content: '(control1 : Qubit, control2 : Qubit, target : Qubit)'
   types:
@@ -42,9 +42,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 973f7f618154720396be0bb4a01b52d763ccdd1c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2f040fd932236547baecaba241d44a8b9842bbe2
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680543"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85884585"

@@ -6,9 +6,9 @@ namespace: Microsoft.Quantum.Core
 summary: 编译器可识别的属性，用于将用户定义的类型标记为属性。
 syntax: newtype Attribute = Unit;
 metadata:
-  ms.openlocfilehash: 9fa1d42ae8951913190fb351445149706f0f9d1f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 914a6931955c5f4afb0c7b751bc7bd3687a9d2a3
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82658840"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885793"

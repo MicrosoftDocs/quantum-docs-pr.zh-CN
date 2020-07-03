@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.machinelearning
 name: Microsoft.Quantum.MachineLearning
-summary: " # <a name=\"summary\"></a>总结\n 此命名空间提供量程机器学习应用程序中使用的函数和操作。\n\n # <a name=\"references\"></a>参考\n - Maria Schuld、Alex Bocharov、Krysta Svore、Nathan Wiebe、\"以线路为中心的量程分类https://arxiv.org/abs/1804.00633器\"。"
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间提供量程机器学习应用程序中使用的函数和操作。\n\n # <a name=\"references\"></a>reference\n - Maria Schuld、Alex Bocharov、Krysta Svore、Nathan Wiebe、\"以线路为中心的量程分类器\" https://arxiv.org/abs/1804.00633 。"
 functions:
 - uid: microsoft.quantum.machinelearning.approximateinputencoder
   summary: 给定一组系数和公差后，将返回状态准备操作，以便将每个系数准备为计算基础状态的相应波幅，直到达到给定的公差。
@@ -64,9 +64,9 @@ newtypes:
 - uid: microsoft.quantum.machinelearning.validationresults
   summary: 根据一组示例验证了分类器后得到的结果。
 metadata:
-  ms.openlocfilehash: 43b40489e34a2483ff9331b34b6cd289e3a7bb56
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 85728552e323a640d5abd78f6a2bada5c37e6919
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673167"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85885251"

@@ -6,9 +6,9 @@ namespace: Microsoft.Quantum.Diagnostics
 summary: 编译器可识别的属性，用于标记单元测试。
 syntax: newtype Test = String;
 metadata:
-  ms.openlocfilehash: 3fc7b25d8d01ee2687ca6af33ca02c059f01d69f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: c859042b4c27b6b11c6aab51232939bd45a9db91
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682431"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85884530"

@@ -1,7 +1,6 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.arrays
 name: Microsoft.Quantum.Arrays
-summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于创建和操作数据数组的函数。"
 functions:
 - uid: microsoft.quantum.arrays.all
   summary: 给定为数组元素定义的数组和谓词，并检查数组的所有元素是否都满足该谓词。
@@ -67,13 +66,16 @@ functions:
   summary: 给定三个数组，返回一个新数组，其中包含3个元组，以便每个第三个元组包含每个原始数组中的一个元素。
 - uid: microsoft.quantum.arrays.zip4
   summary: 给定四个数组，返回一个4元组的新数组，使每个4元组包含每个原始数组中的一个元素。
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于创建和操作数据数组的函数。"
 operations:
+- uid: microsoft.quantum.arrays.drawmany
+  summary: 对给定数量的样本重复操作，并在数组中收集其输出。
 - uid: microsoft.quantum.arrays.foreach
   summary: 给定为数组元素定义的数组和操作，返回一个新数组，该数组由该操作下的原始数组的图像组成。
 metadata:
-  ms.openlocfilehash: 92eb956a1387a9765354f45e27eb084c6d73f51b
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: 32aeecb419739a89792bdf1e9761e3821abcf380
+  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84326704"
+  ms.lasthandoff: 07/02/2020
+  ms.locfileid: "85884687"
