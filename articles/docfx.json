@@ -37,14 +37,19 @@
     "globalMetadata": {
       "show_latex": true,
       "ms.prod": "quantum",
-      "bilingual_type": "hover over",
       "ms.devlang": "qsharp",
       "ms.topic": "conceptual",
-      "searchScope": ["quantum", "q#", "qsharp"],
+      "searchScope": [
+        "quantum",
+        "q#",
+        "qsharp"
+      ],
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/quantum-docs-pr.zh-cn",
       "feedback_product_url": "https://github.com/Microsoft/quantum/issues",
       "titleSuffix": "Microsoft Quantum",
+      "breadcrumb_path": "/quantum/breadcrumb/toc.json",
+      "extendBreadcrumb": true,
       "disable_contribution_on_translation_quality": [
         "MT",
         "MTE75",
@@ -55,9 +60,18 @@
     "fileMetadata": {
       "latex_macros": {
         "**/**.md": {
-          "ket": ["\\left| #1\\right\\rangle", 1],
-          "bra": ["\\left\\langle #1\\right|", 1],
-          "braket": [ "\\left\\langle #1 \\right\\rangle", 1 ],
+          "ket": [
+            "\\left| #1\\right\\rangle",
+            1
+          ],
+          "bra": [
+            "\\left\\langle #1\\right|",
+            1
+          ],
+          "braket": [
+            "\\left\\langle #1 \\right\\rangle",
+            1
+          ],
           "id": "\\mathbb{1}",
           "boldone": "\\mathbf{1}",
           "expect": "\\mathbb{E}",
