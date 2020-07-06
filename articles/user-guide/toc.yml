@@ -2,6 +2,8 @@
   href: index.md
 - name: Q# 基本信息
   href: basics.md
+- name: Q# 程序的运行方式
+  href: host-programs.md
 - name: Q# 语言
   href: language/toc.yml
 - name: 使用 Q#

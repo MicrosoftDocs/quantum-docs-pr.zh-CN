@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide
-ms.openlocfilehash: c5611f3e2907791f2dfc1644be0a45515d50dfd7
-ms.sourcegitcommit: af10179284967bd7a72a52ae7e1c4da65c7d128d
+ms.openlocfilehash: 078d86c808b26c7f0b7b2577020cd9cef9491a9d
+ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415350"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85885002"
 ---
 # <a name="the-q-user-guide"></a>Q# 用户指南
 
@@ -22,6 +22,8 @@ ms.locfileid: "85415350"
 ## <a name="user-guide-contents"></a>用户指南内容
 
 - [Q# 基本信息](xref:microsoft.quantum.guide.basics)：简要概述了 Q# 编程语言的用途和功能。 
+
+- [Q# 程序的运行方式](xref:microsoft.quantum.guide.host-programs)：描述了如何执行 Q# 程序，并简要介绍可用于调用该程序的各种方式：通过命令行、Q# Jupyter Notebooks，或者通过用 Python 或 .NET 语言编写的经典主机程序。
 
 ### <a name="q-language"></a>Q# 语言
 

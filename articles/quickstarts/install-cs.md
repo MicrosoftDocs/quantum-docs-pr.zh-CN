@@ -6,17 +6,19 @@ ms.date: 5/30/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.cs
-ms.openlocfilehash: 2b0b16bdd9fccc3b668036e6df2b20e11b32f8b6
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: 714c15d9589095f0fe395fcd6941672167879dca
+ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274031"
+ms.lasthandoff: 07/02/2020
+ms.locfileid: "85885492"
 ---
 # <a name="develop-with-q-and-net"></a>使用 Q# 和 .NET 进行开发
 
 Q# 能够很好地与 C# 和 F# 等 .NET 语言配合运行。
 在本指南中，我们将演示如何将 Q# 与采用 .NET 语言编写的主机程序结合使用。
+
+首先，我们将创建 Q# 应用程序和 .NET 主机，然后演示如何从主机调用 Q#。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -26,23 +28,8 @@ Q# 能够很好地与 C# 和 F# 等 .NET 语言配合运行。
 
 第一步是为 Q# 库以及将要调入到（Q# 库中定义的）操作和函数的 .NET 主机创建项目。
 
-### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
-
-- 创建新的 Q# 库
-  - 转到“文件” -> “新建” -> “项目”  
-  - 在搜索框中键入“Q#”
-  - 选择 Q# 库
-  - 选择“下一步”
-  - 为库选择名称和位置
-  - 请确保未选中“将项目和解决方案置于同一目录中”
-  - 选择“创建”
-- 创建新的 C# 或 F# 主机程序
-  - 转到“文件”→“新建”→“项目”  
-  - 选择适用于 C# 或 F# 的“控制台应用(.NET Core)”
-  - 选择“下一步”
-  - 在“解决方案”下，选择“添加到解决方案”
-  - 为主机程序选择一个名称
-  - 选择“创建”
+按照你的开发环境所对应的选项卡中的说明操作。
+如果使用的是编辑器而不是 Visual Studio 或 VS Code，只需按照命令行步骤操作即可。
 
 ### <a name="visual-studio-code-or-command-line"></a>[Visual Studio Code 或命令行](#tab/tabid-cmdline)
 
@@ -72,6 +59,24 @@ Q# 能够很好地与 C# 和 F# 等 .NET 语言配合运行。
   dotnet sln quantum-dotnet.sln add ./quantum/quantum.csproj
   dotnet sln quantum-dotnet.sln add ./host/host.csproj
   ```
+
+### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
+
+- 创建新的 Q# 库
+  - 转到“文件” -> “新建” -> “项目”  
+  - 在搜索框中键入“Q#”
+  - 选择 Q# 库
+  - 选择“下一步”
+  - 为库选择名称和位置
+  - 请确保未选中“将项目和解决方案置于同一目录中”
+  - 选择“创建”
+- 创建新的 C# 或 F# 主机程序
+  - 转到“文件”→“新建”→“项目”  
+  - 选择适用于 C# 或 F# 的“控制台应用(.NET Core)”
+  - 选择“下一步”
+  - 在“解决方案”下，选择“添加到解决方案”
+  - 为主机程序选择一个名称
+  - 选择“创建”
 
 ***
 
