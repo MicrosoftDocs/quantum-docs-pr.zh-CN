@@ -6,12 +6,12 @@ ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.style
-ms.openlocfilehash: 3ddb5d67b972f69df1774b476a10e74dd16d97b7
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+ms.openlocfilehash: 26de7d5f639ea1b4df24232127b6f95cee3a041e
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85884191"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871376"
 ---
 # <a name="q-style-guide"></a>Q # 样式指南 #
 ## <a name="general-conventions"></a>一般约定 ##
@@ -64,7 +64,7 @@ ms.locfileid: "85884191"
 | ---- | ------ |
 | 应用 | 作为输入提供的操作称为 |
 | Assert | 模拟器检查可能的量程度量结果的假设 |
-| 估价 | 返回一个传统值，表示从一个或多个度量值中提取的估计值 |
+| 估算 | 返回一个传统值，表示从一个或多个度量值中提取的估计值 |
 | 度量 | 将执行量程度量，并将其结果返回给用户 |
 | 准备 | 给定的 qubits 寄存器初始化为特定状态 |
 | 示例 | 从某一分布中随机返回一个传统值 |
@@ -93,7 +93,7 @@ ms.locfileid: "85884191"
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | “属性” | 描述 |
+|   | 名称 | 说明 |
 |---|------|-------------|
 | ☑ | `operation ReflectAboutStart` | 清除动词的使用（"反射"）以指示操作的效果。 |
 | ☒ | <s>`operation XRotation`</s> | 使用名词短语建议函数，而不是操作。 |
@@ -126,7 +126,7 @@ ms.locfileid: "85884191"
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | “属性” | 描述 |
+|   | 名称 | 说明 |
 |---|------|-------------|
 | ☑ | `@EntryPoint() operation RunSimulation` | 通过操作名称清楚地传达入口点的用途。 |
 | ☒ | <s>`@EntryPoint() operation Main`</s> | 使用 `Main` 不会清晰地传达入口点的目的，它是属性冗余的 `@EntryPoint()` 。 |
@@ -168,7 +168,7 @@ is Adj + Ctl {
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | “属性” | 描述 |
+|   | 名称 | 说明 |
 |---|------|-------------|
 | ☑ | `X` | "应用 $X $ 转换" 的公认简写 |
 | ☑ | `CNOT` | "受控-非" 的理解简写 |
@@ -225,7 +225,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | “属性” | 描述 |
+|   | 名称 | 说明 |
 |---|------|-------------|
 | ☒ | <s>`ToDouble`</s> | 介词 "to" 会生成谓词短语，指示操作而不是函数。 |
 | ☒ | <s>`AsDouble`</s> | 函数名称中不明确输入类型。 |
@@ -248,7 +248,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | “属性” | 描述 |
+|   | 名称 | 说明 |
 |---|------|-------------|
 | ☒ | <s>`operation _ApplyDecomposedOperation`</s> | 不要使用下划线 `_` 指示此操作仅供内部使用。 |
 | ☑ | `internal operation ApplyDecomposedOperation` | `internal`开头的关键字清楚地指示此操作仅供内部使用。 |
@@ -320,7 +320,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | 片段 | 描述 |
+|   | 片段 | 说明 |
 |---|---------|-------------|
 | ☑ | `newtype Oracle = (Apply : Qubit[] => Unit is Adj + Ctl)` | 该名称 `Apply` 是一个 `CamelCase` 格式的谓词短语，建议指定的项是操作。 |
 | ☒ | <s>`newtype Oracle = (apply : Qubit[] => Unit is Adj + Ctl) `</s> | 命名项的开头应为大写字母。 |
@@ -386,9 +386,8 @@ operation ApplyPhaseEstimationIteration(
 同样，随量子开发工具包一起提供的语言服务器使用这些注释在用户将鼠标悬停在其 Q # 代码中的符号上方时向用户提供帮助。
 利用文档注释，可以通过提供有用的参考来帮助用户理解代码，这是使用本文档中的其他约定不容易表达的详细信息。
 
-<div class="nextstepaction">
-    [文档注释语法参考](xref:microsoft.quantum.guide.filestructure#documentation-comments)
-</div>
+> [!div class="nextstepaction"]
+> [文档注释语法参考](xref:microsoft.quantum.guide.filestructure#documentation-comments)。
 
 为了有效地使用此功能来帮助用户，我们建议你在编写文档注释时，记住几个事项。
 
@@ -477,7 +476,7 @@ is Adj + Ctl {
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | 片段 | 描述 |
+|   | 片段 | 说明 |
 |---|---------|-------------|
 | ☒ | <s>`2+3`</s> | 在二元运算符周围使用空格。 |
 | ☒ | <s>`target:Qubit`</s> | 在类型批注冒号前后使用空格。 |

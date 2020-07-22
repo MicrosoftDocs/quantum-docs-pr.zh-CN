@@ -5,12 +5,12 @@ author: cgranade
 uid: microsoft.quantum.libraries.diagnostics
 ms.author: chgranad@microsoft.com
 ms.topic: article
-ms.openlocfilehash: fa5173f710dd9e0b0b2c110e45aa0bf019111aca
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: 324753cfa1b7d940bf5a0bbe7665f19cc6dda82c
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274411"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86870628"
 ---
 # <a name="diagnostics"></a>诊断 #
 
@@ -61,19 +61,19 @@ Q # 标准库提供了若干不同的函数来表示事实，其中包括：
 
 实际上，断言依赖于这一事实，即，对量子机制的传统模拟不需要遵循非[克隆定理](https://arxiv.org/abs/quant-ph/9607018)，因此，我们可以在为目标计算机使用模拟器时进行 unphysical 测量和断言。
 因此，可以在部署硬件之前，在传统模拟器上测试各个操作。
-在不允许评估断言的目标计算机上， <xref:microsoft.quantum.intrinsic.assert> 可以安全地忽略对的调用。
+在不允许评估断言的目标计算机上， <xref:microsoft.quantum.diagnostics.assertmeasurement> 可以安全地忽略对的调用。
 
-更常见的情况是，在 <xref:microsoft.quantum.intrinsic.assert> 给定 Pauli 基础上测量给定 qubits 的操作断言将始终具有给定的结果。
+更常见的情况是，在 <xref:microsoft.quantum.diagnostics.assertmeasurement> 给定 Pauli 基础上测量给定 qubits 的操作断言将始终具有给定的结果。
 如果断言失败，则执行将通过 `fail` 使用给定的消息调用来结束。
 默认情况下，不实现此操作;可支持它的模拟器应该提供执行运行时检查的实现。
-`Assert`具有签名 `((Pauli[], Qubit[], Result, String) -> ())` 。
-由于 `Assert` 是一个带有空元组作为其输出类型的函数，因此，不 `Assert` 会在 Q # 程序中使用具有调用的效果。
+`AssertMeasurement`具有签名 `((Pauli[], Qubit[], Result, String) -> ())` 。
+由于 `AssertMeasurement` 是一个带有空元组作为其输出类型的函数，因此，不 `AssertMeasurement` 会在 Q # 程序中使用具有调用的效果。
 
-在 <xref:microsoft.quantum.intrinsic.assertprob> 给定 Pauli 基础上测量给定 qubits 的操作函数断言在某种程度上具有给定概率的给定结果。
+在 <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> 给定 Pauli 基础上测量给定 qubits 的操作函数断言在某种程度上具有给定概率的给定结果。
 公差为累加性（例如 `abs(expected-actual) < tol` ）。
 如果断言失败，则执行将通过 `fail` 使用给定的消息调用来结束。
 默认情况下，不实现此操作;可支持它的模拟器应该提供执行运行时检查的实现。
-`AssertProb`具有签名 `((Pauli[], Qubit[], Result, Double, String, Double) -> Unit)` 。 第一个 `Double` 参数提供所需的结果概率，第二个参数为容差。
+`AssertMeasurementProbability`具有签名 `((Pauli[], Qubit[], Result, Double, String, Double) -> Unit)` 。 第一个 `Double` 参数提供所需的结果概率，第二个参数为容差。
 
 我们不仅可以使用断言单个度量值，还可以使用模拟器用来表示 qubit 的内部状态的传统信息适合复制，这样我们就不需要实际执行度量来测试断言。
 具体而言，这使我们能够考虑到在实际硬件上无法进行的*不兼容*指标。
@@ -100,7 +100,7 @@ using (register = Qubit()) {
 ```
 
 但是，更常见的情况是，我们无法访问断言与 Pauli 运算符的 eigenstates 不一致的状态。
-例如，$ \ket{\psi} = （\ket {0} + e ^ {i \pi/8} \ket {1} ）/\sqrt {2} $ 不是任何 eigenstate 运算符的 Pauli，因此不能使用 <xref:microsoft.quantum.intrinsic.assertprob> 唯一确定状态 $ \ket{\psi '} $ 等于 $ \ket{\psi} $。
+例如，$ \ket{\psi} = （\ket {0} + e ^ {i \pi/8} \ket {1} ）/\sqrt {2} $ 不是任何 eigenstate 运算符的 Pauli，因此不能使用 <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> 唯一确定状态 $ \ket{\psi '} $ 等于 $ \ket{\psi} $。
 相反，我们必须将断言 $ \ket{\psi '} = \ket{\psi} $ 分解为可使用模拟器支持的基元直接测试的假设。
 为此，请将 $ \ket{\psi} = \alpha \ket {0} + \beta \ket {1} $ 用于复数 $ \alpha = a \_ r + a \_ i i $ 和 $ \beta $。
 请注意，此表达式需要四个实数 $ \{ a \_ r、 \_ i、b \_ r、b \_ i \} $ 来指定，因为每个复数都可以表示为实部和虚部的总和。

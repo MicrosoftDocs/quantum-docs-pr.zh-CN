@@ -1,21 +1,37 @@
 ---
-title: 基元操作计数器
-description: 了解 Microsoft QDK 基元操作计数器，该计数器跟踪量程程序中操作所使用的原始执行数。
+title: 基元操作计数器-量程开发工具包
+description: '了解 Microsoft QDK 基元操作计数器，该计数器使用量程跟踪模拟器跟踪 Q # 程序中操作所使用的基元执行。'
 author: vadym-kl
 ms.author: vadym@microsoft.com
-ms.date: 12/11/2017
+ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.primitive-counter
-ms.openlocfilehash: 8bdb0aed370e72b58b23025f1685ad7ce1a77a43
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: ea022d499354f7cefd60da690466496e0ce7c336
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274392"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871019"
 ---
-# <a name="primitive-operations-counter"></a>基元操作计数器  
+# <a name="quantum-trace-simulator-primitive-operations-counter"></a>量程跟踪模拟器：基元操作计数器
 
-`Primitive Operations Counter`是 "量程计算机[跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)" 的一部分。 它计算在量程程序中调用的每个操作所使用的原始执行数。 中的所有操作 `Microsoft.Quantum.Intrinsic` 都以单个 qubit 旋转、T 入口、单个 Qubit Clifford 门、cnot-contains 入口和度量值表示。 收集的统计信息在操作调用关系图的边缘上聚合。 现在，让我们计算 `T` 实现该操作所需的入口数 `CCNOT` 。 
+基元操作计数器是量程开发工具包[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的一部分。 它计算在量程程序中调用的每个操作所使用的原始执行数。 
+
+所有 <xref:microsoft.quantum.intrinsic> 操作都以单 qubit 循环、T 操作、Qubit Clifford 操作、cnot-contains 操作和多 Qubit Pauli 可观察量的度量来表示。 基元操作计数器聚合并收集操作的[调用关系图](https://en.wikipedia.org/wiki/Call_graph)边缘的统计信息。
+
+## <a name="invoking-the-primitive-operation-counter"></a>调用基元操作计数器
+
+若要使用基元操作计数器运行量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将属性设置 `UsePrimitiveOperationsCounter` 为**true**，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。
+
+```csharp
+var config = new QCTraceSimulatorConfiguration();
+config.UsePrimitiveOperationsCounter = true;
+var sim = new QCTraceSimulator(config);
+```
+
+## <a name="using-the-primitive-operation-counter-in-a-c-host-program"></a>在 c # 宿主程序中使用基元操作计数器
+
+本部分中的 c # 示例 <xref:microsoft.quantum.intrinsic.t> <xref:microsoft.quantum.intrinsic.ccnot> 根据以下 Q # 示例代码，计算实现操作所需的操作数：
 
 ```qsharp
 open Microsoft.Quantum.Intrinsic;
@@ -24,19 +40,17 @@ operation ApplySampleWithCCNOT() : Unit {
     using (qubits = Qubit[3]) {
         CCNOT(qubits[0], qubits[1], qubits[2]);
         T(qubits[0]);
-    } 
+    }
 }
 ```
 
-## <a name="using-the-primitive-operations-counter-within-a-c-program"></a>在 c # 程序中使用基元操作计数器
-
-若要检查 `CCNOT` 确实是否需要 7 `T` 个入口并 `ApplySampleWithCCNOT` 执行8个 `T` 入口，可以使用以下 c # 代码：
+若要检查是否 `CCNOT` 需要七个 `T` 操作并 `ApplySampleWithCCNOT` 运行8个 `T` 操作，请使用以下 c # 代码：
 
 ```csharp 
 // using Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators;
 // using System.Diagnostics;
 var config = new QCTraceSimulatorConfiguration();
-config.usePrimitiveOperationsCounter = true;
+config.UsePrimitiveOperationsCounter = true;
 var sim = new QCTraceSimulator(config);
 var res = ApplySampleWithCCNOT.Run(sim).Result;
 
@@ -44,25 +58,23 @@ double tCountAll = sim.GetMetric<ApplySampleWithCCNOT>(PrimitiveOperationsGroups
 double tCount = sim.GetMetric<Primitive.CCNOT, ApplySampleWithCCNOT>(PrimitiveOperationsGroupsNames.T);
 ```
 
-程序的第一部分执行 `ApplySampleWithCCNOT` 。 在第二部分中，我们将使用方法 `QCTraceSimulator.GetMetric` 来获取所执行的 T 入口数 `ApplySampleWithCCNOT` ： 
+程序的第一部分将运行 `ApplySampleWithCCNOT` 。 第二部分使用 [`QCTraceSimulator.GetMetric`](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.qctracesimulator.getmetric) 方法检索运行的操作的数目 `T` `ApplySampleWithCCNOT` ： 
 
-```csharp
-double tCount = sim.GetMetric<Primitive.CCNOT, ApplySampleWithCCNOT>(PrimitiveOperationsGroupsNames.T);
-double tCountAll = sim.GetMetric<ApplySampleWithCCNOT>(PrimitiveOperationsGroupsNames.T);
-```
+`GetMetric`使用两个类型参数调用时，它将返回与给定的调用图形边缘关联的度量值。 在前面的示例中，程序在 `Primitive.CCNOT` 中调用操作 `ApplySampleWithCCNOT` ，因此调用关系图包含边缘 `<Primitive.CCNOT, ApplySampleWithCCNOT>` 。 
 
-当 `GetMetric` 使用两个类型参数调用时，它将返回与给定的调用图形边缘关联的度量值。 在中，示例操作 `Primitive.CCNOT` 是在中调用的 `ApplySampleWithCCNOT` ，因此调用关系图包含边缘 `<Primitive.CCNOT, ApplySampleWithCCNOT>` 。 
-
-若要获取使用的 `CNOT` 入口数，可以添加以下行：
+若要检索使用的 `CNOT` 操作数，请添加以下行：
 ```csharp
 double cxCount = sim.GetMetric<Primitive.CCNOT, ApplySampleWithCCNOT>(PrimitiveOperationsGroupsNames.CX);
 ```
 
-最后，若要输出按 CSV 格式的入口计数器收集的所有统计信息，我们可以使用以下内容：
+最后，你可以使用以下方法输出使用 CSV 格式的基元操作计数器收集的所有统计信息：
 ```csharp
 string csvSummary = sim.ToCSV()[MetricsCountersNames.primitiveOperationsCounter];
 ```
 
-## <a name="see-also"></a>请参阅 ##
+## <a name="see-also"></a>另请参阅
 
-- 量程计算机[跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)概述。
+- 量程开发工具包[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)概述。
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>API 参考。
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration>API 参考。
+- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.PrimitiveOperationsGroupsNames>API 参考。

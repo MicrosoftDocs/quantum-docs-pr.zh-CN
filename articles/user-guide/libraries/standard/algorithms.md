@@ -6,12 +6,12 @@ ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.libraries.standard.algorithms
-ms.openlocfilehash: 8b8a9019e8bc419f42b0c6f7558354d19a157917
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: 7f4916353c53d6459356243098281ccb16b17278
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274419"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871308"
 ---
 # <a name="quantum-algorithms"></a>量程算法 #
 

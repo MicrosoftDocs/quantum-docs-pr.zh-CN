@@ -6,12 +6,12 @@ ms.author: mamykhai@microsoft.com
 ms.date: 06/01/2020
 ms.topic: article
 uid: microsoft.quantum.guide.testingdebugging
-ms.openlocfilehash: cd619607af9e2b601f3bec1304c5729d84312f35
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+ms.openlocfilehash: db6e49e94e5ceb3b1b0b2d6ab57391618084072b
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85884075"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86870968"
 ---
 # <a name="testing-and-debugging"></a>测试和调试
 
@@ -50,7 +50,7 @@ $ code . # To open in Visual Studio Code
     operation AllocateQubit () : Unit {
 
         using (qubit = Qubit()) {
-            Assert([PauliZ], [qubit], Zero, "Newly allocated qubit must be in the |0⟩ state.");
+            AssertMeasurement([PauliZ], [qubit], Zero, "Newly allocated qubit must be in the |0⟩ state.");
         }
         
         Message("Test passed");
@@ -177,7 +177,7 @@ operation AssertQubitsAreAvailable() : Unit
 这取决于程序及其执行环境的全局状态，的定义 `AssertQubitsAreAvailable` 必须也是操作。
 但是，我们可以使用该全局状态生成简单 `Bool` 值作为函数的输入 `Fact` 。
 
-基于这些观点构建[的 prelude](xref:microsoft.quantum.libraries.standard.prelude)提供两个特别有用的断言， <xref:microsoft.quantum.intrinsic.assert> 并 <xref:microsoft.quantum.intrinsic.assertprob> 作为操作建模 `()` 。 这些断言每个都采用一个 Pauli 运算符，该运算符描述特定的感兴趣的度量、在其上执行度量的量程注册，以及一个假设结果。
+基于这些观点构建[的 prelude](xref:microsoft.quantum.libraries.standard.prelude)提供两个特别有用的断言， <xref:microsoft.quantum.diagnostics.assertmeasurement> 并 <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> 作为操作建模 `()` 。 这些断言每个都采用一个 Pauli 运算符，该运算符描述特定的感兴趣的度量、在其上执行度量的量程注册，以及一个假设结果。
 模拟使用的目标计算机不受非[克隆定理](https://en.wikipedia.org/wiki/No-cloning_theorem)的约束，并且可以在不干扰传递到此类断言的寄存器的情况下执行此类测量。
 然后，模拟器可以类似于 `PositivityFact` previous 函数，如果在实践中未发现假设结果，则停止计算：
 
@@ -185,14 +185,14 @@ operation AssertQubitsAreAvailable() : Unit
 using (register = Qubit()) 
 {
     H(register);
-    Assert([PauliX], [register], Zero);
+    AssertMeasurement([PauliX], [register], Zero);
     // Even though we do not have access to states in Q#,
     // we know by the anthropic principle that the state
     // of register at this point is |+〉.
 }
 ```
 
-在物理量程硬件上，非克隆定理阻止对量程状态的检查， `Assert` 且和 `AssertProb` 操作只返回， `()` 不会产生任何影响。
+在物理量程硬件上，非克隆定理阻止对量程状态的检查， `AssertMeasurement` 且和 `AssertMeasurementProbability` 操作只返回， `()` 不会产生任何影响。
 
 <xref:microsoft.quantum.diagnostics>命名空间提供了更多系列功能 `Assert` ，您可以在其中查看更高级的条件。 
 

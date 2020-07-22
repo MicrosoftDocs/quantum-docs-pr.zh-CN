@@ -6,12 +6,12 @@ ms.author: bradben
 ms.date: 5/30/2020
 ms.topic: article
 uid: microsoft.quantum.relnotes
-ms.openlocfilehash: d10f81a1e49235be8e02661dcd6d3c839485af6e
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+ms.openlocfilehash: 4b5e7b657f0e11fb4a14308c20859f4007729146
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85885051"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871545"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -21,6 +21,17 @@ ms.locfileid: "85885051"
 
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
 
+
+## <a name="version-01220072031"></a>版本0.12.20072031
+
+*发布日期：2020年7月21日*
+
+此版本包含以下各项：
+
+- 在 Q # 笔记本中打开的命名空间现可用于以后的所有单元执行。 例如，这样就可以在笔记本顶部的单元中打开一次命名空间，而无需在每个代码单元格中打开相关的命名空间。 新的 `%lsopen` 幻命令显示当前打开的命名空间的列表。
+
+有关[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed)、[编译器](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed)、[运行时](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed)、[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed)、[IQ#](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+is%3Aclosed) 和 [Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed) 的信息，请参阅已结束的 PR 的完整列表。  
+
 ## <a name="version-01220070124"></a>版本0.12.20070124
 
 *发布日期：2020年7月2日*
@@ -28,7 +39,7 @@ ms.locfileid: "85885051"
 此版本包含以下各项：
 
 - `qdk-chem`用于将旧电子结构问题序列化格式（例如： FCIDUMP）转换为[Broombridge](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)的新工具
-- 一致[ `Microsoft.Quantum.Synthesis` 命名空间](xref:microsoft.quantum.synthesis)中的新函数和操作使用基于转换和分解的合成算法来应用传统 oracles。
+- 一致命名空间中的新函数和操作 [`Microsoft.Quantum.Synthesis`](xref:microsoft.quantum.synthesis) 使用基于转换和分解的合成算法来应用传统 oracles。
 - IQ # 现在允许参数用于 `%simulate` 、 `%estimate` 和其他幻命令。 有关更多详细信息，请参阅[ `%simulate` 幻命令参考](xref:microsoft.quantum.iqsharp.magic-ref.simulate)。
 - IQ # 中的新阶段显示选项。 有关更多详细信息，请参阅[ `%config` 幻命令参考](xref:microsoft.quantum.iqsharp.magic-ref.config)。
 - IQ # 和 `qsharp` Python 包现在是通过 conda 包（[qsharp](https://anaconda.org/quantum-engineering/qsharp)和[iqsharp](https://anaconda.org/quantum-engineering/iqsharp)）提供的，用于简化在 conda 环境中安装 Q # Jupyter 和 python 功能的过程。 有关更多详细信息，请参阅[q # Jupyter 笔记本](xref:microsoft.quantum.install.jupyter)和包含 Python 安装指南的[q #](xref:microsoft.quantum.install.python) 。

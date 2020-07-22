@@ -6,12 +6,12 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.controlflow
-ms.openlocfilehash: 0cf62a128170bd0c28ff77f00fc23414567b1ea4
-ms.sourcegitcommit: af10179284967bd7a72a52ae7e1c4da65c7d128d
+ms.openlocfilehash: b652736168a71b905deaf7c4fdb29a8751b3dfaf
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415297"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86870985"
 ---
 # <a name="control-flow-in-q"></a>Q 中的控制流#
 
@@ -278,9 +278,9 @@ using (qubit = Qubit()) {
 此操作中所示的明显编程功能包括：
 
 * `fixup`循环中涉及量程操作的更为复杂的部分。 
-* 使用 `AssertProb` 语句来确定在程序中的某些指定点测量量程状态的概率。
+* 使用 `AssertMeasurementProbability` 语句来确定在程序中的某些指定点测量量程状态的概率。
 
-有关和操作的详细 [`Assert`](xref:microsoft.quantum.intrinsic.assert) 信息 [`AssertProb`](xref:microsoft.quantum.intrinsic.assertprob) ，请参阅[测试和调试](xref:microsoft.quantum.guide.testingdebugging)。
+有关和操作的详细 [`AssertMeasurement`](xref:microsoft.quantum.diagnostics.assertmeasurement) 信息 [`AssertMeasurementProbability`](xref:microsoft.quantum.diagnostics.assertmeasurementprobability) ，请参阅[测试和调试](xref:microsoft.quantum.guide.testingdebugging)。
 
 ```qsharp
 operation PrepareStateUsingRUS(target : Qubit) : Unit {
@@ -289,10 +289,10 @@ operation PrepareStateUsingRUS(target : Qubit) : Unit {
         repeat {
             // We expect the target and auxiliary qubits to each be in
             // the |+> state.
-            AssertProb(
+            AssertMeasurementProbability(
                 [PauliX], [target], Zero, 1.0,
                 "target qubit should be in the |+> state", 1e-10 );
-            AssertProb(
+            AssertMeasurementProbability(
                 [PauliX], [auxiliary], Zero, 1.0,
                 "auxiliary qubit should be in the |+> state", 1e-10 );
 
@@ -302,7 +302,7 @@ operation PrepareStateUsingRUS(target : Qubit) : Unit {
 
             // The probability of measuring |+> state on the auxiliary qubit
             // is 3/4.
-            AssertProb(
+            AssertMeasurementProbability(
                 [PauliX], [auxiliary], Zero, 3. / 4.,
                 "Error: the probability to measure |+> in the first
                 auxiliary must be 3/4",

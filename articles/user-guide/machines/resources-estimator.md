@@ -1,28 +1,33 @@
 ---
-title: 量程开发工具包资源估计器
-description: '了解资源估计器，这些资源估计在量程计算机上运行 Q # 操作的给定实例所需的资源。'
+title: 量程资源估计器-量程开发工具包
+description: '了解 Microsoft QDK resources 估计器，它估算在量程计算机上运行 Q # 操作的给定实例所需的资源。'
 author: anpaz-msft
 ms.author: anpaz@microsoft.com
-ms.date: 1/22/2019
+ms.date: 06/26/2020
 ms.topic: article
 uid: microsoft.quantum.machines.resources-estimator
-ms.openlocfilehash: cbb1c274b64738cc4b47869563d7d02eb717afbc
-ms.sourcegitcommit: af10179284967bd7a72a52ae7e1c4da65c7d128d
+ms.openlocfilehash: 0909a050e89d6295664e54ab63cfda5d407a8f12
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415247"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86870527"
 ---
-# <a name="the-resources-estimator-target-machine"></a>资源估计器目标计算机
+# <a name="quantum-development-kit-qdk-resources-estimator"></a>量程开发工具包（QDK）资源估计器
 
-顾名思义， `ResourcesEstimator` 估计在量程计算机上运行 Q # 操作的给定实例所需的资源。
-它通过执行量程操作来实现此操作，而无需实际模拟量子计算机的状态;出于此原因，如果代码的传统部分可以在合理的时间内运行，则它可以估计使用上千个 qubits 的 Q # 操作的资源。
+顾名思义，类会估算在 `ResourcesEstimator` 量程计算机上运行 Q # 操作的给定实例所需的资源。 它通过执行量程操作来实现此操作，而无需实际模拟量子计算机的状态;出于此原因，它会估算使用上千个 qubits 的 Q # 操作的资源，前提是代码的传统部分在合理的时间内运行。
 
-## <a name="usage"></a>使用情况
+资源估计器是在[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的基础上构建的，它提供了一组更丰富的指标和工具来帮助调试 Q # 程序。
 
-`ResourcesEstimator`只是另一种类型的目标计算机，因此它可用于运行任何 Q # 操作。 
+## <a name="invoking-and-running-the-resources-estimator"></a>调用和运行资源估计器
 
-作为其他目标计算机，若要在 c # 主机程序上使用该实例，请创建一个实例，并将其作为该操作方法的第一个参数进行传递 `Run` ：
+可以使用资源估计器运行任何 Q # 操作。 有关更多详细信息，请参阅[运行 Q # 程序的方法](xref:microsoft.quantum.guide.host-programs)。
+
+### <a name="invoking-the-resources-estimator-from-c"></a>从 C 调用资源估计器# 
+
+与其他目标计算机一样，首先创建类的一个实例 `ResourceEstimator` ，然后将其作为操作的方法的第一个参数进行传递 `Run` 。
+
+请注意，与类不同的是， `QuantumSimulator` `ResourceEstimator` 类并不实现 <xref:System.IDisposable> 接口，因此不需要将其包含在 `using` 语句中。
 
 ```csharp
 using Microsoft.Quantum.Simulation.Core;
@@ -42,9 +47,9 @@ namespace Quantum.MyProgram
 }
 ```
 
-如示例所示， `ResourcesEstimator` 提供了一个 `ToTSV()` 方法，该方法生成一个包含制表符分隔值（TSV）的表，该表可以保存到文件中或写入控制台进行分析。 上述程序的输出应如下所示：
+如示例所示， `ResourcesEstimator` 提供了 `ToTSV()` 方法，该方法生成一个包含制表符分隔值（TSV）的表。 可以将表保存到文件或将其显示在控制台中进行分析。 下面是前述程序的示例输出：
 
-```Output
+```output
 Metric          Sum
 CNOT            1000
 QubitClifford   1000
@@ -57,15 +62,37 @@ BorrowedWidth   0
 ```
 
 > [!NOTE]
-> `ResourcesEstimator`不会在每次运行时重置其计算，如果使用同一个实例执行其他操作，它将使聚合计数保持在现有结果的顶部。
-> 如果需要在运行之间重置计算，则为每次执行创建一个新的实例。
+> `ResourcesEstimator`实例不会在每次运行时重置其计算。 如果使用同一个实例运行另一个操作，则会将新结果与现有结果聚合在一起。 如果需要在运行之间重置计算，则为每次运行创建一个新的实例。
 
+### <a name="invoking-the-resources-estimator-from-python"></a>从 Python 调用资源估计器
+
+在导入的 Q # 操作中使用 Python 库中的[estimate_resources （）](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable)方法：
+
+```python
+qubit_result = myOperation.estimate_resources()
+```
+
+### <a name="invoking-the-resources-estimator-from-the-command-line"></a>从命令行调用资源估计器
+
+从命令行运行 Q # 程序时，使用 **--模拟器**（或 **-s**快捷方式）参数指定 `ResourcesEstimator` 目标计算机。 以下命令使用资源估计器运行程序： 
+
+```dotnetcli
+dotnet run -s ResourcesEstimator
+```
+
+### <a name="invoking-the-resources-estimator-from-juptyer-notebooks"></a>从 Juptyer 笔记本调用资源估计器
+
+使用 IQ # 幻命令[% 估算](xref:microsoft.quantum.iqsharp.magic-ref.simulate)运行 Q # 操作。
+
+```
+%estimate myOperation
+```
 
 ## <a name="programmatically-retrieving-the-estimated-data"></a>以编程方式检索估计的数据
 
-除了 TSV 表之外，还可以通过的属性以编程方式检索资源估算 `ResourcesEstimator` `Data` 。 `Data`提供一个 `System.DataTable` 具有两列的实例： `Metric` 和 `Sum` ，并按指标名称进行索引。
+除了 TSV 表之外，还可以通过资源估计器的属性以编程方式检索在运行期间估计的资源 `Data` 。 `Data`属性提供一个 `System.DataTable` 具有两列的实例： `Metric` 和 `Sum` ，并按指标的名称编制索引。
 
-下面的代码演示如何检索和打印 `QubitClifford` `T` `CNOT` Q # 操作使用的和入口总数：
+下面的代码演示如何检索和打印 `QubitClifford` `T` `CNOT` Q # 操作使用的和操作的总数：
 
 ```csharp
 using Microsoft.Quantum.Simulation.Core;
@@ -91,46 +118,25 @@ namespace Quantum.MyProgram
 
 ## <a name="metrics-reported"></a>报告的指标
 
-下面是估计的指标列表 `ResourcesEstimator` ：
+资源估计器跟踪以下度量值：
 
-* __Cnot-contains__：已执行的 cnot-contains （也称为受控 Pauli X 入口）入口的计数。
-* __QubitClifford__：执行的任何单个 qubit Clifford 和 Pauli 入口的计数。
-* __度量值__：执行的任何度量值的计数。
-* __R__：执行的任何单个 qubit 循环的计数，不包括 T、Clifford 和 Pauli 入口。
-* __T__： t 入口及其词干的计数（包括 t 入口、T_x = 1xt-hy-ubw）和 T_y = 1xt-hy-ubw，已执行。
-* __深度__：由 Q # 操作执行的量程线路深度的下限。 默认情况下，在深度中只对 T 个入口计数，有关详细信息，请参阅[深度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)。
-* __Width__：在执行 Q # 操作期间分配的最大 qubits 数的下限。 可能无法同时实现__深度__和__宽度__下限。
-* __BorrowedWidth__： Q # 操作内借用的最大 qubits 数。
+|指标|说明|
+|----|----|
+|__CNOT__    |操作的运行计数 `CNOT` （也称为受控 Pauli X 操作）。|
+|__QubitClifford__ |任何单个 qubit Clifford 和 Pauli 操作的运行计数。|
+|度量     |任何度量值的运行计数。  |
+|__R__    |任何单 qubit 循环、不包括 `T` 、Clifford 和 Pauli 操作的运行计数。  |
+|__T__    |操作的运行计数 `T` 及其词干，包括 `T` 操作、T_x = 1xt-hy-ubw 和 T_y = 1Xt-hy-ubw。。  |
+|__Depth__|由 Q # 操作运行的量程线路深度的下限。 默认情况下，深度指标仅计算 `T` 入口。 有关更多详细信息，请参阅[深度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)。   |
+|__Width__    |在运行 Q # 操作期间分配的最大 qubits 数的下限。 可能无法同时实现__深度__和__宽度__下限。  |
+|__BorrowedWidth__    |Q # 操作内借用的最大 qubits 数。  |
 
+## <a name="providing-the-probability-of-measurement-outcomes"></a>提供测量结果的概率
 
-## <a name="providing-the-probability-of-measurement-outcomes"></a>提供度量结果的概率
+您可以使用 <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> <xref:microsoft.quantum.diagnostics> 命名空间中的来提供有关测量操作预期概率的信息。 有关详细信息，请参阅[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)
 
-<xref:microsoft.quantum.intrinsic.assertprob><xref:microsoft.quantum.intrinsic>可以使用命名空间中的信息来提供有关测量结果的信息，以帮助推动 Q # 计划的执行。 以下示例对此进行了说明：
+## <a name="see-also"></a>另请参阅
 
-```qsharp
-operation Teleport(source : Qubit, target : Qubit) : Unit {
-
-    using (qubit = Qubit()) {
-
-        H(q);
-        CNOT(qubit, target);
-
-        CNOT(source, qubit);
-        H(source);
-
-        AssertProb([PauliZ], [source], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
-        AssertProb([PauliZ], [qubit], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
-
-        if (M(source) == One)  { Z(target); X(source); }
-        if (M(qubit) == One) { X(target); X(qubit); }
-    }
-}
-```
-
-当遇到此情况时， `ResourcesEstimator` `AssertProb` 它将记录对的度量， `PauliZ` `source` 并 `q` 应为其给定结果 `Zero` ，其概率为0.5。 当它稍后执行时 `M` ，它将查找结果概率的已记录值，并 `M` 返回 `Zero` `One` 概率为0.5 的或。
-
-
-## <a name="see-also"></a>请参阅
-
-在 `ResourcesEstimator` 量程计算机[跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的基础上构建，它提供了一组更丰富的指标，可以在完整的调用关系图上报告指标，还可以使用[不同的输入检查器](xref:microsoft.quantum.machines.qc-trace-simulator.distinct-inputs)来帮助查找 Q # 计划中的 bug。 有关详细信息，请参阅[跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)文档。
-
+- [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)
+- [量程 Toffoli 模拟器](xref:microsoft.quantum.machines.toffoli-simulator)
+- [量程完全状态模拟器](xref:microsoft.quantum.machines.full-state-simulator) 
