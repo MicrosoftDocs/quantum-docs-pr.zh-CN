@@ -1,22 +1,35 @@
 ---
-title: Width 计数器
-description: 了解 Microsoft QDK Width 计数器，该计数器计算量程程序中每个操作所分配和借用的 qubits 数量。
+title: 宽度计数器-量程开发工具包
+description: '了解 Microsoft QDK width 计数器，该计数器使用量程跟踪模拟器来计算 Q # 程序中由操作分配和借用的 qubits 数。'
 author: vadym-kl
 ms.author: vadym@microsoft.com
-ms.date: 12/11/2017
+ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.width-counter
-ms.openlocfilehash: a76292222950310acc90dded02980e4a5b792e76
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: af8609dc5c05f7a19b8d21755281427feb29b84c
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274393"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871512"
 ---
-# <a name="width-counter"></a><span data-ttu-id="03483-103">Width 计数器</span><span class="sxs-lookup"><span data-stu-id="03483-103">Width Counter</span></span>
+# <a name="quantum-trace-simulator-width-counter"></a><span data-ttu-id="9e365-103">量程跟踪模拟器：宽度计数器</span><span class="sxs-lookup"><span data-stu-id="9e365-103">Quantum trace simulator: width counter</span></span>
 
-<span data-ttu-id="03483-104">`Width Counter`计算每个操作分配和借用的 qubits 的数目。</span><span class="sxs-lookup"><span data-stu-id="03483-104">The `Width Counter` counts the number of qubits allocated and borrowed by each operation.</span></span>
-<span data-ttu-id="03483-105">来自命名空间的所有操作 `Microsoft.Quantum.Intrinsic` 都以单个 qubit 旋转、T 入口、单个 Qubit Clifford 门、cnot-contains 入口和度量标准表示。</span><span class="sxs-lookup"><span data-stu-id="03483-105">All operations from the `Microsoft.Quantum.Intrinsic` namespace are expressed in terms of single qubit rotations, T gates, single qubit Clifford gates, CNOT gates and measurements of multi-qubit Pauli observables.</span></span> <span data-ttu-id="03483-106">一些基元操作可以分配额外的 qubits。</span><span class="sxs-lookup"><span data-stu-id="03483-106">Some of the primitive operations can allocate extra qubits.</span></span> <span data-ttu-id="03483-107">例如，将控制的 `X` 入口或控制的 `T` 入口相乘。</span><span class="sxs-lookup"><span data-stu-id="03483-107">For example, multiply controlled `X` gates or controlled `T` gates.</span></span> <span data-ttu-id="03483-108">让我们计算由多次控制的门的实现所分配的额外 qubits 数 `X` ：</span><span class="sxs-lookup"><span data-stu-id="03483-108">Let us compute the number of extra qubits allocated by the implementation of a multiply controlled `X` gate:</span></span>
+<span data-ttu-id="9e365-104">Width 计数器是量程开发工具包[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的一部分。</span><span class="sxs-lookup"><span data-stu-id="9e365-104">The width counter is a part of the Quantum Development Kit [Quantum trace simulator](xref:microsoft.quantum.machines.qc-trace-simulator.intro).</span></span> <span data-ttu-id="9e365-105">您可以使用它来计算 Q # 程序中每个操作所分配和借用的 qubits 的数目。</span><span class="sxs-lookup"><span data-stu-id="9e365-105">You can use it to count the number of qubits allocated and borrowed by each operation in a Q# program.</span></span> <span data-ttu-id="9e365-106">一些基元操作可以分配额外的 qubits，例如，将受控 `X` 操作或受控 `T` 操作相乘。</span><span class="sxs-lookup"><span data-stu-id="9e365-106">Some primitive operations can allocate extra qubits, for example, multiply controlled `X` operations or controlled `T` operations.</span></span>
+
+## <a name="invoking-the-width-counter"></a><span data-ttu-id="9e365-107">调用 width 计数器</span><span class="sxs-lookup"><span data-stu-id="9e365-107">Invoking the width counter</span></span>
+
+<span data-ttu-id="9e365-108">若要运行具有 width 计数器的量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将 `UseWidthCounter` 属性设置为**true**，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。</span><span class="sxs-lookup"><span data-stu-id="9e365-108">To run the quantum trace simulator with the width counter, you must create a <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> instance, set the `UseWidthCounter` property to **true**, and then create a new <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> instance with the `QCTraceSimulatorConfiguration` as the parameter.</span></span> 
+
+```csharp
+var config = new QCTraceSimulatorConfiguration();
+config.UseWidthCounter = true;
+var sim = new QCTraceSimulator(config);
+```
+
+## <a name="using-the-width-counter-in-a-c-host-program"></a><span data-ttu-id="9e365-109">在 c # 宿主程序中使用 width 计数器</span><span class="sxs-lookup"><span data-stu-id="9e365-109">Using the width counter in a C# host program</span></span>
+
+<span data-ttu-id="9e365-110">本部分中的 c # 示例将根据 <xref:microsoft.quantum.intrinsic.x> 下面的 Q # 示例代码，计算由执行乘法控制的操作所分配的额外 qubits 的数目：</span><span class="sxs-lookup"><span data-stu-id="9e365-110">The C# example that follows in this section computes the number of extra qubits allocated by the implementation of a multiply controlled <xref:microsoft.quantum.intrinsic.x> operation, based on the following Q# sample code:</span></span>
 
 ```qsharp
 open Microsoft.Quantum.Intrinsic;
@@ -28,13 +41,11 @@ operation ApplyMultiControlledX( numberOfQubits : Int ) : Unit {
 }
 ```
 
-## <a name="using-width-counter-within-a-c-program"></a><span data-ttu-id="03483-109">在 c # 程序中使用 Width 计数器</span><span class="sxs-lookup"><span data-stu-id="03483-109">Using Width Counter within a C# Program</span></span>
-
-<span data-ttu-id="03483-110">多次控制 `X` 对总计 5 qubits 的操作将分配2个辅助 qubits，其输入宽度将为5。</span><span class="sxs-lookup"><span data-stu-id="03483-110">Multiply controlled `X` acting on a total of 5 qubits will allocate 2 ancillary qubits and its input width will be 5.</span></span> <span data-ttu-id="03483-111">若要检查是否是这种情况，可以使用以下 c # 程序：</span><span class="sxs-lookup"><span data-stu-id="03483-111">To check that this is the case, we can use the following C# program:</span></span>
+<span data-ttu-id="9e365-111">乘法控制 <xref:microsoft.quantum.intrinsic.x> 运算的作用是总共5个 qubits，分配两个[辅助 qubits](xref:microsoft.quantum.glossary#ancilla)，且输入宽度为**5**。</span><span class="sxs-lookup"><span data-stu-id="9e365-111">The multiply controlled <xref:microsoft.quantum.intrinsic.x> operation acts on a total of five qubits, allocates two [ancillary qubits](xref:microsoft.quantum.glossary#ancilla), and has an input width of **5**.</span></span> <span data-ttu-id="9e365-112">使用以下 c # 程序来验证计数：</span><span class="sxs-lookup"><span data-stu-id="9e365-112">Use the following C# program to verify the counts:</span></span>
 
 ```csharp 
 var config = new QCTraceSimulatorConfiguration();
-config.useWidthCounter = true;
+config.UseWidthCounter = true;
 var sim = new QCTraceSimulator(config);
 int totalNumberOfQubits = 5;
 var res = ApplyMultiControlledX.Run(sim, totalNumberOfQubits).Result;
@@ -50,13 +61,16 @@ double inputWidth =
         functor: OperationFunctor.Controlled);
 ```
 
-<span data-ttu-id="03483-112">程序的第一部分执行 `ApplyMultiControlledX` 。</span><span class="sxs-lookup"><span data-stu-id="03483-112">The first part of the program executes `ApplyMultiControlledX`.</span></span> <span data-ttu-id="03483-113">在第二部分中，我们使用方法 `QCTraceSimulator.GetMetric` 来获取分配的 qubits 数，以及受控接收的 qubits 数 `X` 。</span><span class="sxs-lookup"><span data-stu-id="03483-113">In the second part we use the method `QCTraceSimulator.GetMetric` to get the number of allocated qubits as well as the number of qubits that Controlled `X` received as input.</span></span> 
+<span data-ttu-id="9e365-113">程序的第一个部分运行 `ApplyMultiControlledX` 操作。</span><span class="sxs-lookup"><span data-stu-id="9e365-113">The first part of the program runs the `ApplyMultiControlledX` operation.</span></span> <span data-ttu-id="9e365-114">第二部分使用 [`QCTraceSimulator.GetMetric`](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.qctracesimulator.getmetric) 方法检索已分配的 qubits 的数目，以及操作收到的作为输入的 qubits 数 `Controlled X` 。</span><span class="sxs-lookup"><span data-stu-id="9e365-114">The second part uses the [`QCTraceSimulator.GetMetric`](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.qctracesimulator.getmetric) method to retrieve the number of allocated qubits as well as the number of qubits that the `Controlled X` operation received as input.</span></span> 
 
-<span data-ttu-id="03483-114">最后，若要以 CSV 格式输出 width 计数器收集的所有统计信息，我们可以使用以下内容：</span><span class="sxs-lookup"><span data-stu-id="03483-114">Finally, to output all the statistics collected by width counter in CSV format we can use the following:</span></span>
+<span data-ttu-id="9e365-115">最后，可以使用以下内容输出使用 CSV 格式的 width 计数器收集的所有统计信息：</span><span class="sxs-lookup"><span data-stu-id="9e365-115">Finally, you can output all the statistics collected by the width counter in CSV format using the following:</span></span>
 ```csharp
 string csvSummary = sim.ToCSV()[MetricsCountersNames.widthCounter];
 ```
 
-## <a name="see-also"></a><span data-ttu-id="03483-115">请参阅</span><span class="sxs-lookup"><span data-stu-id="03483-115">See also</span></span> ##
+## <a name="see-also"></a><span data-ttu-id="9e365-116">另请参阅</span><span class="sxs-lookup"><span data-stu-id="9e365-116">See also</span></span>
 
-- <span data-ttu-id="03483-116">量程计算机[跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)概述。</span><span class="sxs-lookup"><span data-stu-id="03483-116">The quantum computer [Trace Simulator](xref:microsoft.quantum.machines.qc-trace-simulator.intro) overview.</span></span>
+- <span data-ttu-id="9e365-117">量程开发工具包[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)概述。</span><span class="sxs-lookup"><span data-stu-id="9e365-117">The Quantum Development Kit [Quantum trace simulator](xref:microsoft.quantum.machines.qc-trace-simulator.intro) overview.</span></span>
+- <span data-ttu-id="9e365-118"><xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>API 参考。</span><span class="sxs-lookup"><span data-stu-id="9e365-118">The <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> API reference.</span></span>
+- <span data-ttu-id="9e365-119"><xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration>API 参考。</span><span class="sxs-lookup"><span data-stu-id="9e365-119">The <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> API reference.</span></span>
+- <span data-ttu-id="9e365-120"><xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.MetricsNames.WidthCounter>API 参考。</span><span class="sxs-lookup"><span data-stu-id="9e365-120">The <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.MetricsNames.WidthCounter> API reference.</span></span>
