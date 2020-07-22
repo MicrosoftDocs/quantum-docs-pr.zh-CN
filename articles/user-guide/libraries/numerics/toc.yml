@@ -1,4 +1,2 @@
-- name: 安装和验证
-  href: installation.md
 - name: 使用数字库
   href: numerics.md
