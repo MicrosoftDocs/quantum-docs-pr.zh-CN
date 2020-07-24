@@ -3,6 +3,8 @@
 - name: 标准库
   topicHref: standard/index.md
   href: standard/toc.yml
+- name: 使用其他 Q# 库
+  href: additional-libraries.md
 - name: 量子化学库
   topicHref: chemistry/index.md
   href: chemistry/toc.yml

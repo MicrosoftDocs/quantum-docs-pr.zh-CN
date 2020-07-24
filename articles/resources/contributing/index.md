@@ -6,12 +6,12 @@ ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing
-ms.openlocfilehash: cf913a09395f0694a51645ec8f91171e5b1555c3
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: 108a50302422e5ae41e14b30ef22169370c2a35a
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85273202"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871410"
 ---
 # <a name="contributing-to-the-quantum-development-kit"></a>对量子开发工具包做出贡献
 
@@ -61,10 +61,9 @@ ms.locfileid: "85273202"
 > [!NOTE]
 > 遗憾的是，我们目前无法接受 [**microsoft/Quantum-NC**](https://github.com/microsoft/Quantum-NC) 存储库上的代码和文档内容，但我们仍非常感谢你提供 bug 报表。
 
-还有其他一些更专门化的存储库，专注于不同的事件，或与 Quantum 开发工具包相关的辅助功能。
+还有其他一些更具专门用途的存储库，专注于与 Quantum 开发工具包相关的辅助功能。
 
 - [**msr-quarc/qsharp.sty**](https://github.com/msr-quarc/qsharp.sty)：格式化对 Q# 语法的支持的 LaTeX。
-- [**msr-quarc/intern-workshop-2019**](https://github.com/msr-quarc/intern-workshop-2019)：2019 年实习生研讨会上提供的 IQ# Notebook for Deutsch–Jozsa 教程。
 
 ## <a name="next-steps"></a>后续步骤
 

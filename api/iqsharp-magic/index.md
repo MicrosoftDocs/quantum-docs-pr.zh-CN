@@ -1,5 +1,18 @@
+---
+title: IQ# Magic 命令
+author: rmshaffer
+uid: microsoft.quantum.iqsharp.magic-ref.index
+ms.author: rmshaffer
+ms.date: 07/21/2020
+ms.topic: article
+ms.openlocfilehash: 971787adae03af35d2e5b408fb88356a8b7df90a
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86870696"
+---
 # <a name="iq-magic-commands"></a>IQ# Magic 命令
-
 | Magic 命令 | 总结 |
 |---------------|---------|
 | [`%azure.connect`](xref:microsoft.quantum.iqsharp.magic-ref.azure.connect) | 连接到 Azure Quantum 工作区或显示当前连接状态。 |
@@ -19,6 +32,7 @@
 | [`%estimate`](xref:microsoft.quantum.iqsharp.magic-ref.estimate) | 在 ResourcesEstimator 目标计算机上运行给定的函数或操作。 |
 | [`%kata`](xref:microsoft.quantum.iqsharp.magic-ref.kata) | 执行单个测试。 |
 | [`%lsmagic`](xref:microsoft.quantum.iqsharp.magic-ref.lsmagic) | 返回所有当前可用的 magic 命令的列表。 |
+| [`%lsopen`](xref:microsoft.quantum.iqsharp.magic-ref.lsopen) | 列出目前已打开的命名空间及其别名。 |
 | [`%package`](xref:microsoft.quantum.iqsharp.magic-ref.package) | 提供加载 NuGet 包的功能。 |
 | [`%performance`](xref:microsoft.quantum.iqsharp.magic-ref.performance) | 报告此内核的当前性能指标。 |
 | [`%simulate`](xref:microsoft.quantum.iqsharp.magic-ref.simulate) | 在 QuantumSimulator 目标计算机上运行给定的函数或操作。 |

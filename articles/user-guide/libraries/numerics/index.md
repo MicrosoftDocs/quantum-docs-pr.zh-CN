@@ -6,12 +6,12 @@ ms.author: thhaner
 ms.date: 5/14/2019
 ms.topic: article
 uid: microsoft.quantum.numerics.intro
-ms.openlocfilehash: efd1a712616534ac281433fc008f0983271881d7
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: 9552f3683e1df8cb10d19d0b3f85223df056f83d
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85273283"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871342"
 ---
 # <a name="introduction-to-the-quantum-numerics-library"></a>量子数字库简介
 
@@ -33,9 +33,10 @@ ms.locfileid: "85273283"
 
 除了到目前为止提到的整数运算，数字库还提供
 
- - 使用一个或两个量子整数作为输入的有/无符号整数功能（乘法、平方、带余除法、反演...）
- - 使用一个或两个量子定点数作为输入的定点功能（加法/减法、乘法、平方、1/x、多项式求值）
+- 使用一个或两个量子整数作为输入的有/无符号整数功能（乘法、平方、带余除法、反演...）
+- 使用一个或两个量子定点数作为输入的定点功能（加法/减法、乘法、平方、1/x、多项式求值）
 
 ## <a name="getting-started"></a>入门
 
-若要开始使用数字库，请查看[安装指南](xref:microsoft.quantum.numerics.installation)以及有关[使用数字库](xref:microsoft.quantum.numerics.usage)的详细信息。
+> [!div class="nextstepaction"]
+> [了解如何使用数字库](xref:microsoft.quantum.numerics.usage)
