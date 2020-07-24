@@ -1,53 +1,32 @@
 ---
-title: 量子计算机跟踪模拟器
-description: 了解如何使用 Microsoft 量子计算机跟踪模拟器来调试经典代码，并估计量子程序的资源要求。
+title: 量子跟踪模拟器 - Quantum 开发工具包
+description: 了解如何使用 Microsoft 量子计算机跟踪模拟器来调试经典代码，并估计 Q# 程序的资源要求。
 author: vadym-kl
 ms.author: vadym@microsoft.com
-ms.date: 12/11/2017
+ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.intro
-ms.openlocfilehash: 4cec688da35951271d87396d9b6a8fed744defc6
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: c01f01973ea08153cbfa35d87a588a4eae46f1b7
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85273244"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871104"
 ---
-# <a name="quantum-trace-simulator"></a><span data-ttu-id="199b4-103">量子跟踪模拟器</span><span class="sxs-lookup"><span data-stu-id="199b4-103">Quantum Trace Simulator</span></span>
+# <a name="microsoft-quantum-development-kit-qdk-quantum-trace-simulator"></a><span data-ttu-id="95f40-103">Microsoft Quantum 开发工具包 (QDK) 量子跟踪模拟器</span><span class="sxs-lookup"><span data-stu-id="95f40-103">Microsoft Quantum Development Kit (QDK) quantum trace simulator</span></span>
 
-<span data-ttu-id="199b4-104">Microsoft 量子计算机跟踪模拟器执行量子程序，而无需实际模拟量子计算机的状态。</span><span class="sxs-lookup"><span data-stu-id="199b4-104">The Microsoft quantum computer trace simulator executes a quantum program without actually simulating the state of a quantum computer.</span></span>  <span data-ttu-id="199b4-105">出于此原因，跟踪模拟器可以执行使用数千个量子位的量子程序。</span><span class="sxs-lookup"><span data-stu-id="199b4-105">For this reason, the trace simulator can execute quantum programs that use thousands of qubits.</span></span>  <span data-ttu-id="199b4-106">它适用于两个主要目的：</span><span class="sxs-lookup"><span data-stu-id="199b4-106">It is useful for two main purposes:</span></span> 
+<span data-ttu-id="95f40-104">QDK <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 类运行量子程序，而无需实际模拟量子计算机的状态。</span><span class="sxs-lookup"><span data-stu-id="95f40-104">The QDK <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> class runs a quantum program without actually simulating the state of a quantum computer.</span></span> <span data-ttu-id="95f40-105">因此，量子跟踪模拟器能够运行使用数千个量子位的量子程序。</span><span class="sxs-lookup"><span data-stu-id="95f40-105">For this reason, the quantum trace simulator is able to run quantum programs that use thousands of qubits.</span></span>  <span data-ttu-id="95f40-106">它适用于两个主要目的：</span><span class="sxs-lookup"><span data-stu-id="95f40-106">It is useful for two main purposes:</span></span> 
 
-* <span data-ttu-id="199b4-107">调试属于量子程序的一部分的典型代码。</span><span class="sxs-lookup"><span data-stu-id="199b4-107">Debugging classical code that is part of a quantum program.</span></span> 
-* <span data-ttu-id="199b4-108">估计在量子计算机上运行量子程序给定实例所需的资源。</span><span class="sxs-lookup"><span data-stu-id="199b4-108">Estimating the resources required to run a given instance of a quantum program on a quantum computer.</span></span>
+* <span data-ttu-id="95f40-107">调试属于量子程序的一部分的典型代码。</span><span class="sxs-lookup"><span data-stu-id="95f40-107">Debugging classical code that is part of a quantum program.</span></span> 
+* <span data-ttu-id="95f40-108">估计在量子计算机上运行量子程序给定实例所需的资源。</span><span class="sxs-lookup"><span data-stu-id="95f40-108">Estimating the resources required to run a given instance of a quantum program on a quantum computer.</span></span> <span data-ttu-id="95f40-109">事实上，[资源估算器](xref:microsoft.quantum.machines.resources-estimator)（提供更加有限的一组指标）是基于跟踪模拟器构建的。</span><span class="sxs-lookup"><span data-stu-id="95f40-109">In fact, the [Resources estimator](xref:microsoft.quantum.machines.resources-estimator), which provides a more limited set of metrics, is built upon the trace simulator.</span></span>
 
-<span data-ttu-id="199b4-109">必须执行度量时，跟踪模拟器依赖于用户提供的其他信息。</span><span class="sxs-lookup"><span data-stu-id="199b4-109">The trace simulator relies on additional information provided by the user when measurements must be performed.</span></span> <span data-ttu-id="199b4-110">有关详细信息，请参阅[提供度量结果的概率](#providing-the-probability-of-measurement-outcomes)部分。</span><span class="sxs-lookup"><span data-stu-id="199b4-110">See Section [Providing the probability of measurement outcomes](#providing-the-probability-of-measurement-outcomes) for more details on this.</span></span> 
+## <a name="invoking-the-quantum-trace-simulator"></a><span data-ttu-id="95f40-110">调用量子跟踪模拟器</span><span class="sxs-lookup"><span data-stu-id="95f40-110">Invoking the quantum trace simulator</span></span>
 
-## <a name="providing-the-probability-of-measurement-outcomes"></a><span data-ttu-id="199b4-111">提供度量结果的概率</span><span class="sxs-lookup"><span data-stu-id="199b4-111">Providing the Probability of Measurement Outcomes</span></span>
+<span data-ttu-id="95f40-111">可以使用量子跟踪模拟器来运行任何 Q# 操作。</span><span class="sxs-lookup"><span data-stu-id="95f40-111">You can use the quantum trace simulator to run any Q# operation.</span></span>
 
-<span data-ttu-id="199b4-112">量子算法中出现两种类型的度量。</span><span class="sxs-lookup"><span data-stu-id="199b4-112">There are two kinds of measurements that appear in quantum algorithms.</span></span> <span data-ttu-id="199b4-113">第一种类型起到辅助作用，用户通常从中了解结果的概率。</span><span class="sxs-lookup"><span data-stu-id="199b4-113">The first kind plays an auxiliary role where the user usually knows the probability of the outcomes.</span></span> <span data-ttu-id="199b4-114">在这种情况下，用户可以编写 <xref:microsoft.quantum.intrinsic> 命名空间中的 <xref:microsoft.quantum.intrinsic.assertprob> 来表达此知识。</span><span class="sxs-lookup"><span data-stu-id="199b4-114">In this case the user can write <xref:microsoft.quantum.intrinsic.assertprob> from the <xref:microsoft.quantum.intrinsic> namespace to express this knowledge.</span></span> <span data-ttu-id="199b4-115">以下示例对此进行了说明：</span><span class="sxs-lookup"><span data-stu-id="199b4-115">The following example illustrates this:</span></span>
+<span data-ttu-id="95f40-112">与使用其他目标计算机一样，你首先创建 `QCTraceSimulator` 类的实例，然后将其作为操作的 `Run` 方法的第一个参数传递。</span><span class="sxs-lookup"><span data-stu-id="95f40-112">As with other target machines, you first create an instance of the `QCTraceSimulator` class and then pass it as the first parameter of an operation's `Run` method.</span></span>
 
-```qsharp
-operation TeleportQubit(source : Qubit, target : Qubit) : Unit {
-    using (qubit = Qubit()) {
-        H(qubit);
-        CNOT(qubit, target);
-        CNOT(source, qubit);
-        H(source);
-
-        AssertProb([PauliZ], [source], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
-        AssertProb([PauliZ], [q], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
-
-        if (M(source) == One)  { Z(target); X(source); }
-        if (M(q) == One) { X(target); X(q); }
-    }
-}
-```
-
-<span data-ttu-id="199b4-116">当跟踪模拟器执行 `AssertProb` 时，它将在 `source` 上记录测量 `PauliZ`，并且应向 `q` 提供 `Zero` 的结果，其概率为 0.5。</span><span class="sxs-lookup"><span data-stu-id="199b4-116">When the trace simulator executes `AssertProb` it will record that measuring `PauliZ` on `source` and `q` should be given an outcome of `Zero` with probability 0.5.</span></span> <span data-ttu-id="199b4-117">当模拟器稍后执行 `M` 时，它将找到结果概率的记录值，并且 `M` 将返回 `Zero` 或 `One`，其概率为 0.5。</span><span class="sxs-lookup"><span data-stu-id="199b4-117">When the simulator executes `M` later, it will find the recorded values of the outcome probabilities and `M` will return `Zero` or `One` with probability 0.5.</span></span> <span data-ttu-id="199b4-118">在跟踪量子状态的模拟器上执行相同的代码时，此类模拟器将检查 `AssertProb` 中提供的概率是否正确。</span><span class="sxs-lookup"><span data-stu-id="199b4-118">When the same code is executed on a simulator that keeps track of the quantum state, such a simulator will check that the provided probabilities in `AssertProb` are correct.</span></span>
-
-## <a name="running-your-program-with-the-quantum-computer-trace-simulator"></a><span data-ttu-id="199b4-119">使用量子计算机跟踪模拟器运行程序</span><span class="sxs-lookup"><span data-stu-id="199b4-119">Running your Program with the Quantum Computer Trace Simulator</span></span> 
-
-<span data-ttu-id="199b4-120">量子计算机跟踪模拟器可以被视为另一台目标计算机。</span><span class="sxs-lookup"><span data-stu-id="199b4-120">The quantum computer trace simulator may be viewed as just another target machine.</span></span> <span data-ttu-id="199b4-121">使用该模拟器的 C# 驱动程序与任何其他量子模拟器的 C# 驱动程序非常相似：</span><span class="sxs-lookup"><span data-stu-id="199b4-121">The C# driver program for using it is very similar to the one for any other quantum Simulator:</span></span> 
+<span data-ttu-id="95f40-113">请注意，与 `QuantumSimulator` 类不同，`QCTraceSimulator` 类不实现 <xref:System.IDisposable> 接口，因此不需要将其放在 `using` 语句中。</span><span class="sxs-lookup"><span data-stu-id="95f40-113">Note that, unlike the `QuantumSimulator` class, the `QCTraceSimulator` class does not implement the <xref:System.IDisposable> interface, and thus you do not need to enclose it within a `using` statement.</span></span>
 
 ```csharp
 using Microsoft.Quantum.Simulation.Core;
@@ -69,18 +48,53 @@ namespace Quantum.MyProgram
 }
 ```
 
-<span data-ttu-id="199b4-122">请注意，如果至少有一个度量未使用 `AssertProb` 进行批注，则模拟器将从 `Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators` 命名空间引发 `UnconstrainedMeasurementException`。</span><span class="sxs-lookup"><span data-stu-id="199b4-122">Note that if there is at least one measurement not annotated using `AssertProb`, the simulator will throw `UnconstrainedMeasurementException` from the `Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators` namespace.</span></span> <span data-ttu-id="199b4-123">请参阅有关 [UnconstrainedMeasurementException](xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.UnconstrainedMeasurementException) 的 API 文档以了解更多详细信息。</span><span class="sxs-lookup"><span data-stu-id="199b4-123">See the API documentation on [UnconstrainedMeasurementException](xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.UnconstrainedMeasurementException) for more details.</span></span>
+## <a name="providing-the-probability-of-measurement-outcomes"></a><span data-ttu-id="95f40-114">提供测量结果的概率</span><span class="sxs-lookup"><span data-stu-id="95f40-114">Providing the probability of measurement outcomes</span></span>
 
-<span data-ttu-id="199b4-124">除了运行量子程序之外，跟踪模拟器还附带了五个用于检测程序中的 bug 和执行量子程序资源估计的组件：</span><span class="sxs-lookup"><span data-stu-id="199b4-124">In addition to running quantum programs, the trace simulator comes with five components for detecting bugs in programs and performing quantum program resource estimates:</span></span> 
+<span data-ttu-id="95f40-115">因为量子跟踪模拟器不模拟实际的量子状态，所以它不能计算某个操作中的测量结果的概率。</span><span class="sxs-lookup"><span data-stu-id="95f40-115">Because the quantum trace simulator does not simulate the actual quantum state, it cannot calculate the probability of measurement outcomes within an operation.</span></span> 
 
-* [<span data-ttu-id="199b4-125">不同输入检查器</span><span class="sxs-lookup"><span data-stu-id="199b4-125">Distinct Inputs Checker</span></span>](xref:microsoft.quantum.machines.qc-trace-simulator.distinct-inputs)
-* [<span data-ttu-id="199b4-126">失效的量子位使用检查器</span><span class="sxs-lookup"><span data-stu-id="199b4-126">Invalidated Qubits Use Checker</span></span>](xref:microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits)
-* [<span data-ttu-id="199b4-127">基元操作计数器</span><span class="sxs-lookup"><span data-stu-id="199b4-127">Primitive Operations Counter</span></span>](xref:microsoft.quantum.machines.qc-trace-simulator.primitive-counter)
-* [<span data-ttu-id="199b4-128">线路深度计数器</span><span class="sxs-lookup"><span data-stu-id="199b4-128">Circuit Depth Counter</span></span>](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)
-* [<span data-ttu-id="199b4-129">线路宽度计数器</span><span class="sxs-lookup"><span data-stu-id="199b4-129">Circuit Width Counter</span></span>](xref:microsoft.quantum.machines.qc-trace-simulator.width-counter)
+<span data-ttu-id="95f40-116">因此，如果某个操作包含测量，你必须使用 <xref:microsoft.quantum.diagnostics> 命名空间中的 <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> 操作显式提供这些概率。</span><span class="sxs-lookup"><span data-stu-id="95f40-116">Therefore, if an operation includes measurements, you must explicitly provide these probabilities using the <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> operation from the <xref:microsoft.quantum.diagnostics> namespace.</span></span> <span data-ttu-id="95f40-117">以下示例对此进行了说明：</span><span class="sxs-lookup"><span data-stu-id="95f40-117">The following example illustrates this:</span></span>
 
-<span data-ttu-id="199b4-130">其中每个组件都可以通过在 `QCTraceSimulatorConfiguration` 中设置相应的标志来启用。</span><span class="sxs-lookup"><span data-stu-id="199b4-130">Each of these components may be enabled by setting appropriate flags in `QCTraceSimulatorConfiguration`.</span></span> <span data-ttu-id="199b4-131">相应的引用文件中提供了有关使用其中每个组件的更多详细信息。</span><span class="sxs-lookup"><span data-stu-id="199b4-131">More details about using each of these components are provided in the corresponding reference files.</span></span> <span data-ttu-id="199b4-132">请参阅有关 [QCTraceSimulatorConfiguration](https://docs.microsoft.com/dotnet/api/Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration) 的 API 文档以了解特定详细信息。</span><span class="sxs-lookup"><span data-stu-id="199b4-132">See the API documentation on [QCTraceSimulatorConfiguration](https://docs.microsoft.com/dotnet/api/Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration) for specific details.</span></span>
+```qsharp
+operation TeleportQubit(source : Qubit, target : Qubit) : Unit {
+    using (qubit = Qubit()) {
+        H(qubit);
+        CNOT(qubit, target);
+        CNOT(source, qubit);
+        H(source);
 
-## <a name="see-also"></a><span data-ttu-id="199b4-133">另请参阅</span><span class="sxs-lookup"><span data-stu-id="199b4-133">See also</span></span>
-<span data-ttu-id="199b4-134">量子计算机[跟踪模拟器](xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator) C# 参考</span><span class="sxs-lookup"><span data-stu-id="199b4-134">The quantum computer [trace simulator](xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator) C# reference</span></span> 
+        AssertMeasurementProbability([PauliZ], [source], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
+        AssertMeasurementProbability([PauliZ], [q], Zero, 0.5, "Outcomes must be equally likely", 1e-5);
 
+        if (M(source) == One)  { Z(target); X(source); }
+        if (M(q) == One) { X(target); X(q); }
+    }
+}
+```
+
+<span data-ttu-id="95f40-118">当量子跟踪模拟器遇到 `AssertMeasurementProbability` 时，它将在 `source` 上记录该测量 `PauliZ`，而 `q` 应提供结果 `Zero`，其概率为 **0.5**。</span><span class="sxs-lookup"><span data-stu-id="95f40-118">When the quantum trace simulator encounters `AssertMeasurementProbability` it records that measuring `PauliZ` on `source` and `q` should give an outcome of `Zero`, with probability **0.5**.</span></span> <span data-ttu-id="95f40-119">当它稍后运行 `M` 操作时，它会找到结果概率的记录值，而 `M` 将返回 `Zero` 或 `One`，其概率为 **0.5**。</span><span class="sxs-lookup"><span data-stu-id="95f40-119">When it runs the `M` operation later, it finds the recorded values of the outcome probabilities, and `M` returns `Zero` or `One`, with probability **0.5**.</span></span> <span data-ttu-id="95f40-120">当相同的代码在跟踪量子状态的模拟器上运行时，该模拟器会检查 `AssertMeasurementProbability` 中提供的概率是否正确。</span><span class="sxs-lookup"><span data-stu-id="95f40-120">When the same code runs on a simulator that keeps track of the quantum state, that simulator checks that the provided probabilities in `AssertMeasurementProbability` are correct.</span></span>
+
+<span data-ttu-id="95f40-121">请注意，如果至少有一个测量操作未使用 `AssertMeasurementProbability` 进行批注，则模拟器会引发 [`UnconstrainedMeasurementException`](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.unconstrainedmeasurementexception)。</span><span class="sxs-lookup"><span data-stu-id="95f40-121">Note that if there is at least one measurement operation that is not annotated using `AssertMeasurementProbability`, the simulator throws an [`UnconstrainedMeasurementException`](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.unconstrainedmeasurementexception).</span></span>
+
+## <a name="quantum-trace-simulator-tools"></a><span data-ttu-id="95f40-122">量子跟踪模拟器工具</span><span class="sxs-lookup"><span data-stu-id="95f40-122">Quantum trace simulator tools</span></span>
+
+<span data-ttu-id="95f40-123">QDK 包括五个工具。你可以将这些工具与量子跟踪模拟器一起使用，以便检测程序中的 bug 以及进行量子程序资源估算：</span><span class="sxs-lookup"><span data-stu-id="95f40-123">The QDK includes five tools that you can use with the quantum trace simulator to detect bugs in your programs and perform quantum program resource estimates:</span></span> 
+
+|<span data-ttu-id="95f40-124">工具</span><span class="sxs-lookup"><span data-stu-id="95f40-124">Tool</span></span> | <span data-ttu-id="95f40-125">说明</span><span class="sxs-lookup"><span data-stu-id="95f40-125">Description</span></span> |
+|-----| -----|
+|[<span data-ttu-id="95f40-126">不同输入检查器</span><span class="sxs-lookup"><span data-stu-id="95f40-126">Distinct inputs checker</span></span>](xref:microsoft.quantum.machines.qc-trace-simulator.distinct-inputs) |<span data-ttu-id="95f40-127">检查是否与共享量子位存在潜在冲突</span><span class="sxs-lookup"><span data-stu-id="95f40-127">Checks for potential conflicts with shared qubits</span></span> |
+|[<span data-ttu-id="95f40-128">失效的量子位使用检查器</span><span class="sxs-lookup"><span data-stu-id="95f40-128">Invalidated qubits use checker</span></span>](xref:microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits)  |<span data-ttu-id="95f40-129">检查程序是否已将操作应用到已释放的量子位</span><span class="sxs-lookup"><span data-stu-id="95f40-129">Checks if the program applies an operation to a qubit that is already released</span></span> |
+|[<span data-ttu-id="95f40-130">基元操作计数器</span><span class="sxs-lookup"><span data-stu-id="95f40-130">Primitive operations counter</span></span>](xref:microsoft.quantum.machines.qc-trace-simulator.primitive-counter)  | <span data-ttu-id="95f40-131">计算在量子程序中调用的每个操作所使用的基元执行的数目</span><span class="sxs-lookup"><span data-stu-id="95f40-131">Counts the number of primitive executions used by every operation invoked in a quantum program</span></span>  |
+|[<span data-ttu-id="95f40-132">深度计数器</span><span class="sxs-lookup"><span data-stu-id="95f40-132">Depth counter</span></span>](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)  |<span data-ttu-id="95f40-133">收集的计数表示在量子程序中调用的每个操作的深度的下限</span><span class="sxs-lookup"><span data-stu-id="95f40-133">Gathers counts that represent the lower bound of the depth of every operation invoked in a quantum program</span></span>   |
+|[<span data-ttu-id="95f40-134">宽度计数器</span><span class="sxs-lookup"><span data-stu-id="95f40-134">Width counter</span></span>](xref:microsoft.quantum.machines.qc-trace-simulator.width-counter)  |<span data-ttu-id="95f40-135">计算量子程序中每个操作所分配和借用的量子位数目</span><span class="sxs-lookup"><span data-stu-id="95f40-135">Counts the number of qubits allocated and borrowed by each operation in a quantum program</span></span> |
+
+<span data-ttu-id="95f40-136">这些工具中的每一个均可通过以下方法启用：先在 `QCTraceSimulatorConfiguration` 中设置相应的标志，然后将配置传递给 `QCTraceSimulator` 声明。</span><span class="sxs-lookup"><span data-stu-id="95f40-136">Each of these tools is enabled by setting appropriate flags in `QCTraceSimulatorConfiguration` and then passing the configuration to the `QCTraceSimulator` declaration.</span></span> <span data-ttu-id="95f40-137">若要了解如何使用这些工具中的每一个，请查看上一列表中的链接。</span><span class="sxs-lookup"><span data-stu-id="95f40-137">For information on using each of these tools, see the links in the preceding list.</span></span> <span data-ttu-id="95f40-138">若要详细了解如何配置 `QCTraceSimulator`，请参阅 [QCTraceSimulatorConfiguration](xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration)。</span><span class="sxs-lookup"><span data-stu-id="95f40-138">For more information about configuring `QCTraceSimulator`, see [QCTraceSimulatorConfiguration](xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration).</span></span>
+
+## <a name="qctracesimulator-methods"></a><span data-ttu-id="95f40-139">QCTraceSimulator 方法</span><span class="sxs-lookup"><span data-stu-id="95f40-139">QCTraceSimulator methods</span></span>
+
+<span data-ttu-id="95f40-140">`QCTraceSimulator` 有多个内置方法，用于检索在量子操作期间跟踪的指标的值。</span><span class="sxs-lookup"><span data-stu-id="95f40-140">`QCTraceSimulator` has several built-in methods to retrieve the values of the metrics tracked during a quantum operation.</span></span> <span data-ttu-id="95f40-141">[QCTraceSimulator.GetMetric](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.qctracesimulator.getmetric) 和 [QCTraceSimulator.ToCSV](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.qctracesimulator.tocsv) 方法的示例可在以下文章中找到：[基元操作计数器](xref:microsoft.quantum.machines.qc-trace-simulator.primitive-counter)、[深度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)和[宽度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.width-counter)。</span><span class="sxs-lookup"><span data-stu-id="95f40-141">Examples of the [QCTraceSimulator.GetMetric](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.qctracesimulator.getmetric) and the [QCTraceSimulator.ToCSV](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.qctracesimulator.tocsv) methods can be found in the [Primitive operations counter](xref:microsoft.quantum.machines.qc-trace-simulator.primitive-counter), [Depth counter](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter), and [Width counter](xref:microsoft.quantum.machines.qc-trace-simulator.width-counter) articles.</span></span> <span data-ttu-id="95f40-142">有关所有可用方法的详细信息，请参阅 Q# API 参考中的 [QCTraceSimulator](xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator)。</span><span class="sxs-lookup"><span data-stu-id="95f40-142">For more information on all available methods, see [QCTraceSimulator](xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator) in the Q# API reference.</span></span>  
+
+## <a name="see-also"></a><span data-ttu-id="95f40-143">另请参阅</span><span class="sxs-lookup"><span data-stu-id="95f40-143">See also</span></span>
+
+- [<span data-ttu-id="95f40-144">量子资源估算器</span><span class="sxs-lookup"><span data-stu-id="95f40-144">Quantum resources estimator</span></span>](xref:microsoft.quantum.machines.resources-estimator)
+- [<span data-ttu-id="95f40-145">量子 Toffoli 模拟器</span><span class="sxs-lookup"><span data-stu-id="95f40-145">Quantum Toffoli simulator</span></span>](xref:microsoft.quantum.machines.toffoli-simulator)
+- [<span data-ttu-id="95f40-146">量子全状态模拟器</span><span class="sxs-lookup"><span data-stu-id="95f40-146">Quantum full state simulator</span></span>](xref:microsoft.quantum.machines.full-state-simulator) 
