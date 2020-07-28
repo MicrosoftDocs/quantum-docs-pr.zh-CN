@@ -7,12 +7,12 @@ ms.date: 5/30/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.update
-ms.openlocfilehash: 457083ea4756d64375834e5a276c2d91031138fe
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+ms.openlocfilehash: 69b83997773896583258a4996a61b6f334edf407
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85885148"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871393"
 ---
 # <a name="update-the-microsoft-quantum-development-kit-qdk"></a>更新 Microsoft Quantum 开发工具包 (QDK)
 
@@ -53,7 +53,7 @@ ms.locfileid: "85885148"
 5. 在每个 .csproj 文件中，将 SDK 设置为 `Microsoft.Quantum.Sdk`，如下面的行所示。 请注意，版本号应为最新的可用版本号，可以查看[发行说明](https://docs.microsoft.com/quantum/relnotes/)进行确认。
 
     ```xml
-    <Project Sdk="Microsoft.Quantum.Sdk/0.11.2006.207">
+    <Project Sdk="Microsoft.Quantum.Sdk/0.12.20072031">
     ```
 
 6. 保存并关闭解决方案中的所有文件。
@@ -93,7 +93,7 @@ ms.locfileid: "85885148"
     dotnet clean [project_name].csproj
     ```
 
-3. 确定 QDK 的当前版本。 若要查找当前版本，可查看[发行说明](https://docs.microsoft.com/quantum/relnotes/)。 版本的格式与 `0.11.2006.207` 类似。
+3. 确定 QDK 的当前版本。 若要查找当前版本，可查看[发行说明](https://docs.microsoft.com/quantum/relnotes/)。 版本的格式与 `0.12.20072031` 类似。
 
 4. 在每个 `.csproj` 文件中，完成以下步骤：
 
@@ -108,7 +108,7 @@ ms.locfileid: "85885148"
     - 替换项目定义中的 SDK 引用。 请确保版本号与步骤 3 中确定的值相符。
 
         ```xml
-        <Project Sdk="Microsoft.Quantum.Sdk/0.11.2006.207">
+        <Project Sdk="Microsoft.Quantum.Sdk/0.12.20072031">
         ```
 
     - 删除对包 `Microsoft.Quantum.Development.Kit` 的引用（如有），该引用在以下条目中指定：
@@ -127,7 +127,7 @@ ms.locfileid: "85885148"
         对包的引用格式如下：
 
         ```xml
-        <PackageReference Include="Microsoft.Quantum.Compiler" Version="0.11.2006.207" />
+        <PackageReference Include="Microsoft.Quantum.Compiler" Version="0.12.20072031" />
         ```
 
     - 保存更新的文件。
@@ -194,7 +194,7 @@ Q# 项目已更新，现请按照下面的说明更新 QDK。
     应该会看到以下输出：
 
     ```
-    iqsharp: 0.12.20070124
+    iqsharp: 0.12.20072031
     Jupyter Core: 1.4.0.0
     ```
 
@@ -216,7 +216,7 @@ Q# 项目已更新，现请按照下面的说明更新 QDK。
 
     ```
     Name: qsharp
-    Version: 0.12.20070124
+    Version: 0.12.2007.2031
     Summary: Python client for Q#, a domain-specific quantum programming language
     ...
     ```
@@ -267,7 +267,7 @@ Q# 项目已更新，现请按照下面的说明更新 QDK。
     输出应类似如下所示：
 
     ```
-    iqsharp: 0.12.20070124
+    iqsharp: 0.12.20072031
     Jupyter Core: 1.4.0.0
     ```
 
@@ -302,16 +302,19 @@ Q# 项目已更新，现请按照下面的说明更新 QDK。
     - 选择适用于 Visual Studio Code 的 Microsoft Quantum 开发工具包扩展
     - 重新加载扩展
 
-2. 更新 Quantum 项目模板：
-
-   - 转到“视图” -> “命令面板” 
-   - 选择“Q#: 安装项目模板”
-   - 几秒钟后，你应该会看到一个显示“项目模板已成功安装”确认消息的弹出窗口
-
 ### <a name="c-using-the-dotnet-command-line-tool"></a>C#，使用 `dotnet` 命令行工具
 
 1. 更新适用于 .NET 的 Quantum 项目模板
 
+    通过命令行：
+
     ```dotnetcli
     dotnet new -i Microsoft.Quantum.ProjectTemplates
     ```
+
+   如果计划使用命令行模板，并且已经安装 VS Code QDK 扩展，可从扩展本身更新项目模板：
+
+   - [更新 QDK 扩展](#update-vs-code-qdk-extension)
+   - 在 VS Code 中，转到“视图” -> “命令面板” 
+   - 选择安装命令行项目模板”
+   - 几秒钟后，你应该会看到一个显示“项目模板已成功安装”确认消息的弹出窗口

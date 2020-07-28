@@ -6,12 +6,12 @@ ms.date: 4/24/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.standalone
-ms.openlocfilehash: 15015d1673f47faf5a13dde516f834916b4319d6
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+ms.openlocfilehash: 3d70838289e72afdd0a48bbdff0bec407428d125
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85884288"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871427"
 ---
 # <a name="develop-with-q-command-line-applications"></a>开发 Q# 命令行应用程序
 
@@ -23,7 +23,7 @@ Q# 程序可以自己执行，而无需采用 C#、F# 或 Python 等主机语言
 
 ## <a name="installation"></a>安装
 
-尽管可以在任何 IDE 中生成 Q# 命令行应用程序，但我们还是建议为 Q# 应用程序使用 Visual Studio Code (VS Code) 或 Visual Studio IDE。 在这些环境中开发涉及到丰富的 QDK 扩展功能，其中包括警告、语法突出显示和项目模板等。
+在任何 IDE 中构建 Q# 命令行应用程序时，建议使用 Visual Studio Code (VS Code) 或 Visual Studio IDE 在本地开发 Q# 应用程序。 若要通过 Web 浏览器在云中开发，建议使用 Visual Studio Codespaces。 在这些环境中开发涉及到丰富的 QDK 扩展功能，其中包括警告、语法突出显示和项目模板等。 
 
 配置 VS Code：
 
@@ -34,6 +34,13 @@ Q# 程序可以自己执行，而无需采用 C#、F# 或 Python 等主机语言
 
 1. 下载并安装 [Visual Studio](https://visualstudio.microsoft.com/downloads/) 16.3 或更高版本，并启用 .NET Core 跨平台开发工作负载。
 2. 下载并安装 [Microsoft QDK](https://marketplace.visualstudio.com/items?itemName=quantum.DevKit)。
+
+若要配置 Visual Studio Codespaces：
+
+1. 创建 [Azure 帐户](https://azure.microsoft.com/free/)。
+2. 创建一个 Codespaces 环境。 请按照[快速入门指南](https://docs.microsoft.com/visualstudio/online/quickstarts/browser)操作。 创建 Codespace 时，建议在“Git 存储库”中输入 `microsoft/Quantum` 来加载 QDK 特定的设置。
+3. 现可启动新环境，通过 [VS Codespaces Cloud IDE](https://online.visualstudio.com/environments) 在浏览器中开始开发。 或者，可使用 VS Code 的本地安装并将 Codespaces 用作[远程环境](https://docs.microsoft.com/visualstudio/online/how-to/vscode)。
+
 
 若要为另一环境安装 QDK，请输入命令行：
 
@@ -46,14 +53,6 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 按照你的环境所对应的选项卡上的说明操作。
 
 ### <a name="vs-code"></a>[VS Code](#tab/tabid-vscode)
-
-安装 Q# 项目模板：
-
-1. 打开 VS Code。
-2. 单击“查看” -> “命令面板” 。
-3. 选择安装项目模板。
-
-如果显示“已成功安装项目模板”，可以为自己的应用程序和库使用 QDK。
 
 创建新项目：
 
@@ -96,24 +95,30 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 
 通过创建 Q# `Hello World` 应用程序来验证安装。
 
+1. 安装项目模板。
+
+    ```dotnetcli
+    dotnet new -i Microsoft.Quantum.ProjectTemplates
+    ```
+
 1. 创建新的应用程序：
     ```dotnetcli
     dotnet new console -lang Q# -o runSayHello
     ```
 
-2. 导航到应用程序目录：
+1. 导航到应用程序目录：
     ```dotnetcli
     cd runSayHello
     ```
 
     该目录现在应该会包含一个 `Program.qs` 文件，它是 Q# 程序，用于定义将消息输出到控制台的简单操作。 你可使用文本编辑器来修改此模板，并用你自己的量子应用程序来覆盖它。 
 
-3. 运行该程序：
+1. 运行该程序：
     ```dotnetcli
     dotnet run
     ```
 
-4. 应会看到以下输出文本：`Hello quantum world!`
+1. 应会看到以下输出文本：`Hello quantum world!`
 
 ***
 

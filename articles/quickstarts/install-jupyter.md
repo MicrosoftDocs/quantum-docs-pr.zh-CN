@@ -6,12 +6,12 @@ ms.date: 5/30/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.jupyter
-ms.openlocfilehash: 8a878e8f930f4b898f4de35751e4a39cc8716cec
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+ms.openlocfilehash: bbd1f58ba7de205e452be7bac72b5fd78e7acd56
+ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85884222"
+ms.lasthandoff: 07/21/2020
+ms.locfileid: "86871444"
 ---
 # <a name="develop-with-q-jupyter-notebooks"></a>使用 Q# Jupyter Notebook 进行开发
 
@@ -28,7 +28,7 @@ IQ#（发音为 i-q-sharp）是主要由 Jupyter 和 Python 使用的 .NET Core 
 
 ### <a name="install-using-conda-recommended"></a>[使用 conda 进行安装（推荐）](#tab/tabid-conda)
 
-1. 安装 [Miniconda](https://docs.conda.io/en/latest/miniconda.html) 或 [Anaconda](https://www.anaconda.com/products/individual#Downloads)。
+1. 安装 [Miniconda](https://docs.conda.io/en/latest/miniconda.html) 或 [Anaconda](https://www.anaconda.com/products/individual#Downloads)。 **注意：** 需要安装 64 位。
 
 1. 打开 Anaconda 提示。
 
