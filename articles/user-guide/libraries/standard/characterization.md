@@ -6,12 +6,12 @@ uid: microsoft.quantum.libraries.characterization
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 7ed92c29020ccf389faa099f5bd80516af525578
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+ms.openlocfilehash: 9d763d11ef9c08cc0941cade217dbb2942ef4bf9
+ms.sourcegitcommit: 2f4c637e194dc2b5d18539469ed37444e2800199
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274418"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87436540"
 ---
 # <a name="quantum-characterization-and-statistics"></a>量程特性和统计信息 #
 
@@ -96,7 +96,7 @@ Bayesian 阶段估算的理念非常简单。
 为此，我们想要了解 $x $ $n $ 位变量。
 之前的分发 $ \Pr （x） $ 支持 $x $ 的 $ 2 ^ n $ 假设值。
 这意味着，如果需要对 $x $ 进行非常准确的估计，Bayesian 阶段估计可能需要内存和处理时间不高。
-对于某些应用程序，如量程模拟，所需的 limitted 准确性不会排除这样的方法。其他应用程序（如选定的算法）在其阶段估算步骤内不能使用精确的 Bayesian 推理。  出于此原因，我们还提供了近似 Bayesian 方法（如[随机审核阶段估算（RWPE））](xref:microsoft.quantum.research.randomwalkphaseestimation.randomwalkphaseestimation)和非 Bayesian 方法（如可靠的[阶段估算](xref:microsoft.quantum.characterization.robustphaseestimation)）的实现。
+对于某些应用程序，如量程模拟，所需的 limitted 准确性不会排除这样的方法。其他应用程序（如选定的算法）在其阶段估算步骤内不能使用精确的 Bayesian 推理。  出于此原因，我们还提供了近似 Bayesian 方法（如[随机审核阶段估算（RWPE））](xref:microsoft.quantum.research.characterization.randomwalkphaseestimation)和非 Bayesian 方法（如可靠的[阶段估算](xref:microsoft.quantum.characterization.robustphaseestimation)）的实现。
 
 ### <a name="robust-phase-estimation"></a>可靠阶段估算 ###
 

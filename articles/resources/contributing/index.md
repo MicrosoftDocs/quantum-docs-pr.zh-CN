@@ -6,12 +6,12 @@ ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing
-ms.openlocfilehash: 108a50302422e5ae41e14b30ef22169370c2a35a
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+ms.openlocfilehash: c5acd6c2b3163488a9b4c6e52e6d34489a8f4056
+ms.sourcegitcommit: 2f4c637e194dc2b5d18539469ed37444e2800199
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871410"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87436568"
 ---
 # <a name="contributing-to-the-quantum-development-kit"></a>对量子开发工具包做出贡献
 
@@ -19,7 +19,7 @@ ms.locfileid: "86871410"
 它属于广泛的用户社区，可发现量子计算，对量子算法进行研究，为量子设备开发新应用程序，并致力于充分利用量子编程。
 作为该社区的成员，量子开发工具包旨在为各种背景的量子开发人员提供所需的功能。
 为量子开发工具包做出贡献有助于实现这一目标，方法是改进其他量子开发人员使用的工具和记录这些工具的方式，甚至创建有助于使整个量子编程社区更适合发现和创建的新特性和功能。
-我们对你做出的贡献以及有机会与你合作来尽可能完善社区表示非常感谢。
+我们对你做出的贡献以及有机会与你合作来尽可能完善社区表示非常感谢。 
 
 在本指南中，我们将提供有关如何使你的贡献尽可能适用于更广泛的量子编程社区的一些建议。
 
