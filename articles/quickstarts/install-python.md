@@ -6,12 +6,12 @@ ms.date: 5/30/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.python
-ms.openlocfilehash: ec5e66e0c85d89888a8ff1e7d6bf18bf89ff44ac
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+ms.openlocfilehash: 4d148435f01d975e690828dd02335758fc71dfe4
+ms.sourcegitcommit: 2f4c637e194dc2b5d18539469ed37444e2800199
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871580"
+ms.lasthandoff: 07/30/2020
+ms.locfileid: "87436545"
 ---
 # <a name="develop-with-q-and-python"></a>使用 Q# 和 Python 进行开发
 
@@ -97,7 +97,7 @@ ms.locfileid: "86871580"
     import qsharp
     from Qrng import SampleQuantumRandomNumberGenerator
 
-    SampleQuantumRandomNumberGenerator.simulate()
+    print(SampleQuantumRandomNumberGenerator.simulate())
     ```
 
 1. 从在安装期间创建的环境（即安装 `qsharp` 的 conda 或 Python 环境），请运行以下程序：
@@ -106,7 +106,7 @@ ms.locfileid: "86871580"
     python host.py
     ```
 
-1. 应会看到所调用的操作的结果。 在本例中，由于操作会生成一个随机结果，因此你将看到屏幕上输出 `Zero` 或 `One`。 如果重复执行该程序，则每个结果显示的时间大约减半。
+1. 应会看到所调用的操作的结果。 在本例中，由于操作会生成一个随机结果，因此你将看到屏幕上输出 `0` 或 `1`。 如果重复执行该程序，则每个结果显示的时间大约减半。
 
 > [!NOTE]
 > * Python 代码只是普通的 Python 程序。 你可使用任何 Python 环境（包括基于 Python 的 Jupyter Notebooks）来编写 Python 程序和调用 Q# 操作。 Python 程序可从 Python 代码本身所在的文件夹中的任意 .qs 文件导入 Q# 操作。
