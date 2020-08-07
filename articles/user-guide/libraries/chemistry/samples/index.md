@@ -6,12 +6,15 @@ ms.author: gulow
 ms.date: 10/23/2018
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples
-ms.openlocfilehash: 5168fc8592d34a32ba67e5a0c4793aa17599fd35
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: a0bc79c7fb41069ee7865dbf2f1cfd7851fda32d
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85273278"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869284"
 ---
 # <a name="quantum-chemistry-examples"></a>量子化学示例
 

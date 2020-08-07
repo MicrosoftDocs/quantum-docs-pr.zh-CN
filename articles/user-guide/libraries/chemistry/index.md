@@ -6,12 +6,15 @@ ms.author: Alan.Geller@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.chemistry.concepts.intro
-ms.openlocfilehash: 4268eafa5e53c0a026d179503ac6db88652a8f90
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: e2ec4173d4f2bdaac7125c13b09708934b758a1d
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85273195"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869403"
 ---
 # <a name="introduction-to-the-quantum-chemistry-library"></a>量子化学库简介
 

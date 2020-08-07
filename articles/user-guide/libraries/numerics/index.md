@@ -6,12 +6,15 @@ ms.author: thhaner
 ms.date: 5/14/2019
 ms.topic: article
 uid: microsoft.quantum.numerics.intro
-ms.openlocfilehash: 9552f3683e1df8cb10d19d0b3f85223df056f83d
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: dc6407d9775ad8a401036912abd0b70033796144
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871342"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868774"
 ---
 # <a name="introduction-to-the-quantum-numerics-library"></a>量子数字库简介
 
