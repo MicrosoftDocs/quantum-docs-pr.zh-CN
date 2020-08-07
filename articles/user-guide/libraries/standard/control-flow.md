@@ -1,22 +1,25 @@
 ---
-title: 'Q # standard libararies 中的流控制'
-description: '了解 Microsoft Q # 标准库中的流控制操作和函数。'
+title: 标准 libararies 中的流控制 Q#
+description: 了解 Microsoft 标准库中的流控制操作和函数 Q# 。
 author: QuantumWriter
 uid: microsoft.quantum.concepts.control-flow
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: b41b3edd7a3e3ac13dbda106a869f4cba8183600
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: a440f1ef2b901b18593816ca27aeadf7ab827104
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274417"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868570"
 ---
 # <a name="higher-order-control-flow"></a>高阶控制流 #
 
 标准库的主要角色之一是，更轻松地将高级算法想法作为[量程程序](https://en.wikipedia.org/wiki/Quantum_programming)进行表达。
-因此，Q # canon 提供各种不同的流控制构造，每个构造使用函数和操作的部分应用程序实现。
+因此， Q# canon 提供了各种不同的流控制构造，每个构造使用函数和操作的部分应用程序实现。
 立即跳转到一个示例，请考虑要在收银机上构造 "CNOT-CONTAINS 阶梯" 的情况：
 
 ```qsharp
@@ -47,7 +50,7 @@ ApplyToEachCA(CNOT, Zip(register[0..nQubits - 2], register[1..nQubits - 1]));
 
 Canon 提供的一项主要抽象是迭代的一部分。
 例如，对于单 qubit 单一 $U $，请考虑窗体的单一窗体 $U \otimes U \otimes \cdots \otimes U $。
-在 Q # 中，我们可能会使用 <xref:microsoft.quantum.arrays.indexrange> 将此表示为 `for` 某个寄存器上的循环：
+在中 Q# ，我们可能会使用 <xref:microsoft.quantum.arrays.indexrange> 将此表示为 `for` 对寄存器的循环：
 
 ```qsharp
 /// # Summary
@@ -88,8 +91,8 @@ ApplyToEachCA(Adjoint U, register);
 > 然后， `ApplyToEach(Recover(code, recoveryFn, _), codeBlocks)` 将错误更正代码 `code` 和恢复函数独立应用于 `recoveryFn` 每个块。
 > 即使对于传统输入，此操作也是如此： `ApplyToEach(R(_, _, qubit), [(PauliX, PI() / 2.0); (PauliY(), PI() / 3.0]))` 将应用 $ \pi/$2 的旋转约 $X $，后跟 $pi/$3 的旋转 $Y $。
 
-Q # canon 还提供对函数编程熟悉的传统枚举模式的支持。
-例如， <xref:microsoft.quantum.arrays.fold> 实现模式 $f （f （f （s \_ {\text{initial}}，x \_ 0），x \_ 1），\dots ..） $，以在列表中减少函数。
+Q#Canon 还支持对函数编程熟悉的传统枚举模式。
+例如， <xref:microsoft.quantum.arrays.fold> 实现模式 $f (f (f (s \_ {\text{initial}}，x \_ 0) ，x \_ 1) ，\dots ..) $，以在列表中减少函数。
 此模式可用于实现 sum、products、最小值、最大值和其他此类函数：
 
 ```qsharp
@@ -100,19 +103,19 @@ function Sum(xs : Int[]) {
 }
 ```
 
-同样，类似于 <xref:microsoft.quantum.arrays.mapped> 和的函数 <xref:microsoft.quantum.arrays.mappedbyindex> 可用于在 Q # 中表达函数编程概念。
+同样，类似于 <xref:microsoft.quantum.arrays.mapped> 和的函数 <xref:microsoft.quantum.arrays.mappedbyindex> 可用于在中表达函数编程概念 Q# 。
 
 ## <a name="composing-operations-and-functions"></a>编写操作和函数 ##
 
 由 canon 提供的控制流构造作为其输入，以便能够将多个操作或函数组合到一个可调用中。
 例如，模式 $UVU ^ {\dagger} $ 在量程编程中非常常见，因此 canon 将操作 <xref:microsoft.quantum.canon.applywith> 作为此模式的抽象提供。
 此抽象还允许更有效地 compliation 线路，因为 `Controlled` 在序列上的 `U(qubit); V(qubit); Adjoint U(qubit);` 操作无需对每个线路执行操作 `U` 。
-为此，请将 $c （U） $ 指定为代表 `Controlled U([control], target)` ，并让 $c （V） $ 按相同方式定义。
-然后针对任意状态 $ \ket{\psi} $，\begin{align} c （u） c （V） c （U） ^ \dagger \ket {1} \otimes \ket{\psi} & = \ket {1} \OTIMES （UVU ^ {\dagger} \ket{\psi}） \\ \\ & = （\boldone \otimes u）（c （V））（\boldone \otimes u ^ \dagger） \ket {1} \otimes \ket{\psi}。
+若要查看此项，请让 $c (U) $ 是表示的单一 `Controlled U([control], target)` 项，并允许 $c 以相同方式定义 (V) $。
+然后针对任意状态 $ \ket{\psi} $、\begin{align} c (U) c (V) c (U) ^ \dagger \ket {1} \otimes \ket{\psi} & = \ket {1} \otimes (UVU ^ {\dagger} \ket{\psi} ) & \\ \\ = ( \boldone \otimes u)  (c (V) # A13 ( \boldone \otimes u ^ \dagger) {1}
 \end{align} 的定义 `Controlled` 。
-另一方面，\begin{align} c （U） c （V） c （U） ^ \dagger \ket {0} \otimes \ket{\psi} & = \ket {0} \otimes \ket{\psi} \\ \\ & = \ket {0} \otimes （UU ^ \dagger \ket{\psi}） \\ \\ & = （\Boldone \otimes u）（c （V））（\boldone \otimes u ^ \dagger） \ket {0} \otimes \ket{\psi}。
+另一方面，\begin{align} c (U) c (V) c (U) ^ \dagger \ket {0} \otimes \ket{\psi} & = \ket {0} \otimes \ket{\psi} \\ \\ & = \ket {0} \otimes (UU ^ \dagger \ket{\psi} ) & \\ \\ = ( \boldone \otimes u)  ({0} ()  () A13 \boldone \otimes
 通过线性 \end{align}，我们可以通过这种方式将对所有输入状态 $U $ out。
-也就是说，$c （UVU ^ \dagger） = U c （V） U ^ \dagger $。
+也就是说，$c (UVU ^ \dagger) = U c (V) U ^ \dagger $。
 由于控制操作的总体开销可能很高，因此使用受控变体（如 `WithC` 和） `WithCA` 可帮助减少需要应用的控件函子的数量。
 
 > [!NOTE]
@@ -146,7 +149,7 @@ ApplyWith(ApplyToEach(Bound([H, X]), _), QFT, _);
 
 更复杂的示例是[Trotter – Suzuki 扩展](https://arxiv.org/abs/math-ph/0506007v1)。
 如[数据结构](xref:microsoft.quantum.libraries.data-structures)的 "Dynamical 生成器表示" 部分所述，Trotter – Suzuki 扩展提供了一种表示矩阵指数的特别有用的方式。
-例如，以最低顺序应用扩展时，会生成任何运算符 $A $ 和 $B $，$A = A ^ \dagger $ 和 $B = B ^ \dagger $，\begin{align} \tag{★} \label{eq： trotter-suzuki-0} \exp （i [A + B] t） = \ lim_ {n\to\infty} \left （\exp （i A t/n） \exp （i B t/n） \right） ^ n。
+例如，以最低顺序应用扩展时，会生成任何运算符 $A $ 和 $B $，$A = A ^ \dagger $ 和 $B = B ^ \dagger $，\begin{align} \tag{★} \label{eq： trotter-suzuki-0} \exp (i [A + B] t) = \ lim_ {n\to\infty} \left ( \exp () \exp () \right) ^ n。
 \end{align} 俗称，这意味着我们可以通过在 $A $ 和 $B $ 单独的情况下进行发展，在 $A + B $ 下提高状态。
 如果我们在 `A : (Double, Qubit[]) => Unit` 应用 $e ^ {i t A} $ 的操作下，通过 $A $ 来表示进化，则在重新排列调用序列方面，Trotter – Suzuki 扩展的表示形式就变得清晰。
 具体而言，在给定操作 `U : ((Int, Double, Qubit[]) => Unit is Adj + Ctl` 的情况下， `A = U(0, _, _)` `B = U(1, _, _)` 我们可以 `U` 通过生成窗体的序列来定义一个新的操作，该操作表示一次 $t $ 的整数
@@ -170,14 +173,14 @@ U(1, time / Float(nSteps), target);
 DecomposeIntoTimeStepsCA((2, U), 1);
 ```
 
-的签名 `DecomposeIntoTimeStepsCA` 遵循 Q # 中的一种常见模式，其中，可以通过数组或动态计算元素进行备份的集合由其第一个元素是指示其长度的值的元组表示 `Int` 。
+的签名 `DecomposeIntoTimeStepsCA` 遵循中的一种常用模式 Q# ，其中的集合可以由数组或动态计算元素所支持的元素来表示，这些集合的第一个元素是 `Int` 指示它们的长度的值。
 
 ## <a name="putting-it-together-controlling-operations"></a>将其放在一起：控制操作 ##
 
 最后，canon 将 `Controlled` 通过提供额外的条件量程运算方法，在函子上构建。
 对于除 $ \ket{0\cdots 0} $ 之外的计算基础状态，通常情况下，尤其是在量程算法中。
 使用上述控制操作和函数，我们可以在单个语句中使用更常见的量程情况。
-接下来，我们来看看它是如何 <xref:microsoft.quantum.canon.controlledonbitstring> （sans 类型参数）的，接下来我们将逐一细分。
+接下来，我们将介绍如何 <xref:microsoft.quantum.canon.controlledonbitstring>)  (sans 类型参数，然后逐个细分各个部分。
 我们需要做的第一件事就是定义一个操作，该操作实际上会在任意计算基础状态上实现控件的负载大幅提升。
 但我们不会直接调用此操作，因此我们将添加 `_` 到名称的开头，以指示它是其他地方构造的实现。
 
@@ -215,7 +218,7 @@ operation _ControlledOnBitString(
 
 此时，我们可以这样做，但我们的新操作并不像应用函子，unsatisfying `Controlled` 。
 因此，我们通过编写一个函数来控制新的控制流概念，该函数将 oracle 控制在一起并返回一个新的操作。
-通过这种方式，我们的新函数的外观和感觉非常类似 `Controlled` ，其中阐释了使用 Q # 和 canon 可以轻松定义功能强大的新控制流构造：
+通过这种方式，我们的新函数的外观和感觉非常类似 `Controlled` ，说明我们可以使用和 canon 来轻松定义功能强大的新控制流构造 Q# ：
 
 ```qsharp
 function ControlledOnBitString(

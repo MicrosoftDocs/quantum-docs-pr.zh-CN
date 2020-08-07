@@ -1,36 +1,39 @@
 ---
-title: '使用附加的 Q # 库'
-description: '了解如何将附加的 Q # 库添加到量程应用程序。'
+title: 使用其他 Q# 库
+description: 了解如何将其他 Q# 库添加到量程应用程序。
 author: cgranade
 ms.author: chgranad
 ms.date: 06/30/2020
 ms.topic: article
 uid: microsoft.quantum.libraries.using
-ms.openlocfilehash: b82113b925870d07c8a28aecd50176e009826062
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: ef88ca765a394a7092eb0a60bf6f3615c082ef6a
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86872607"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869573"
 ---
-# <a name="using-additional-q-libraries"></a>使用附加的 Q # 库
+# <a name="using-additional-no-locq-libraries"></a>使用其他 Q# 库
 
-量程开发工具包通过可添加到 Q # 项目的_NuGet 包_提供额外的特定于域的功能。
+量程开发工具包通过可添加到项目中的_NuGet 包_提供附加的特定于域的功能 Q# 。
 
-| Q # 库  | NuGet 包 | 注释 |
+| Q#类库  | NuGet 程序包 | 说明 |
 |---------|---------|--------|
-| [Q # 标准库](xref:microsoft.quantum.libraries.standard.intro) | [**Microsoft 量子. 标准版**](https://www.nuget.org/packages/Microsoft.Quantum.Standard) | 默认包括 |
+| [Q#标准库](xref:microsoft.quantum.libraries.standard.intro) | [**Microsoft 量子. 标准版**](https://www.nuget.org/packages/Microsoft.Quantum.Standard) | 默认包括 |
 | [量子化学库](xref:microsoft.quantum.chemistry.concepts.intro) | [**Microsoft.Quantum.Chemistry**](https://www.nuget.org/packages/Microsoft.Quantum.Chemistry) | |
 | [量子数字库](xref:microsoft.quantum.numerics.intro) | [**Microsoft. 量子**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics) | |
 | [量子机器学习库](xref:microsoft.quantum.libraries.machine-learning.intro) | [**Microsoft.Quantum.MachineLearning**](https://www.nuget.org/packages/Microsoft.Quantum.MachineLearning) | |
 
-一旦您安装了用于您喜欢的环境和主机语言的量程开发工具包，就可以轻松地将库添加到单个 Q # 项目，而无需进行任何进一步的安装。
+一旦您安装了用于您喜欢的环境和主机语言的量程开发工具包，就可以轻松地将库添加到各个 Q# 项目，而无需进行任何进一步的安装。
 
 > [!NOTE]
-> 某些 Q # 库可以很好地与你的 Q # 程序一起工作或与主机应用程序集成的其他工具一起使用。
+> 某些 Q# 库可以很好地与你的 Q# 程序或与主机应用程序集成的其他工具一起工作。
 > 例如，[化学库安装说明](xref:microsoft.quantum.chemistry.concepts.installation)介绍了如何将 NWChem [ **Microsoft.Quantum.Chemistry**包](https://www.nuget.org/packages/Microsoft.Quantum.Chemistry)与计算化学平台一起使用，以及如何安装 `qdk-chem` 用于处理量程化学数据的命令行工具。
 
-## <a name="q-command-line-applications-or-net-interopability"></a>[Q # 命令行应用程序或 .NET interopability](#tab/tabid-csproj)
+## <a name="no-locq-command-line-applications-or-net-interopability"></a>[Q#命令行应用程序或 .NET interopability](#tab/tabid-csproj)
 
 **命令行或 Visual Studio Code：** 你可以使用命令行自己使用命令行，也可以从 Visual Studio Code 中，使用 `dotnet` 命令将 NuGet 包引用添加到你的项目。
 例如，若要添加[**Microsoft 量子**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics)包，请运行以下命令：
@@ -39,7 +42,7 @@ ms.locfileid: "86872607"
 dotnet add package Microsoft.Quantum.Numerics
 ```
 
-**Visual Studio：** 如果你使用的是 Visual Studio 2019 或更高版本，则可以使用 NuGet 包管理器添加其他 Q # 包。
+**Visual Studio：** 如果你使用的是 Visual Studio 2019 或更高版本，则可以 Q# 使用 NuGet 包管理器添加其他包。
 若要加载包： 
 1. 在 Visual Studio 中打开项目后，从 "**项目**" 菜单中选择 "**管理 NuGet 包 ...** "。
 
@@ -61,17 +64,17 @@ Install-Package Microsoft.Quantum.Numerics
 
 有关更多详细信息，请参阅[包管理器控制台指南](https://docs.microsoft.com/nuget/tools/package-manager-console)。
 
-## <a name="iq-notebooks"></a>[IQ # 笔记本](#tab/tabid-notebook)
+## <a name="ino-locq-notebooks"></a>[我的 Q# 笔记本](#tab/tabid-notebook)
 
-你可以使用[ `%package` 魔棒命令](xref:microsoft.quantum.iqsharp.magic-ref.package)使其他包可用于 IQ # 笔记本。
-例如，若要添加用于 IQ # 笔记本的[**Microsoft 量子**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics)包，请在笔记本单元中运行以下命令：
+你可以 Q# 使用[ `%package` 魔棒命令](xref:microsoft.quantum.iqsharp.magic-ref.package)使其他包可用于我的笔记本。
+例如，若要添加[**Microsoft 量子**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics)包以便在 I 笔记本中使用 Q# ，请在笔记本单元中运行以下命令：
 
 ```
 %package Microsoft.Quantum.Numerics
 ```
 
 在此命令之后，包可用于笔记本中的任何单元。
-若要使包在当前工作区中的 Q # 代码中可用，请在添加包后重新加载工作区：
+若要使包可从 Q# 当前工作区中的代码使用，请在添加包后重新加载工作区：
 
 ```
 %workspace reload
@@ -81,15 +84,15 @@ Install-Package Microsoft.Quantum.Numerics
 
 
 可以通过使用方法，使其他包在 Python 主机程序中可供使用 [`qsharp.packages.add`](https://docs.microsoft.com/python/qsharp/qsharp.packages.packages) 。
-例如，若要添加用于 IQ # 笔记本的[**Microsoft 量子**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics)包，请运行以下 Python 代码：
+例如，若要添加要在 I 笔记本中使用的[**Microsoft 量子**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics)包 Q# ，请运行以下 Python 代码：
 
 ```python
 import qsharp
 qsharp.packages.add("Microsoft.Quantum.Numerics")
 ```
 
-执行此命令后，包将可供使用编译的任何 Q # 代码使用 `qsharp.compile` 。
-若要使包在当前工作区中的 Q # 代码中可用，请在添加包后重新加载工作区：
+执行此命令后，包将可供 Q# 使用编译的任何代码使用 `qsharp.compile` 。
+若要使包可从 Q# 当前工作区中的代码使用，请在添加包后重新加载工作区：
 
 ```python
 qsharp.reload()

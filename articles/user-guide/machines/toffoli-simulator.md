@@ -6,14 +6,17 @@ ms.author: ageller@microsoft.com
 ms.date: 6/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.toffoli-simulator
-ms.openlocfilehash: a6ceee592e628215511ec83475d9e25bf54674f7
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 8a981645703423856e667be7c3dccf5270a5885f
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86870611"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868094"
 ---
-# <a name="quantum-development-kit-qdk-toffoli-simulator"></a>量程开发工具包（QDK） Toffoli 模拟器
+# <a name="quantum-development-kit-qdk-toffoli-simulator"></a>量程开发工具包 (QDK) Toffoli 模拟器
 
 QDK Toffoli 模拟器是一种特殊用途的模拟器，其作用域有限，只支持 `X` 、 `CNOT` 和多受控 `X` 量程操作。 所有传统逻辑和计算都可用。
 
@@ -21,13 +24,13 @@ QDK Toffoli 模拟器是一种特殊用途的模拟器，其作用域有限，�
 
 ## <a name="invoking-the-toffoli-simulator"></a>调用 Toffoli 模拟器
 
-通过类公开 Toffoli 模拟器 `ToffoliSimulator` 。 有关更多详细信息，请参阅[运行 Q # 程序的方法](xref:microsoft.quantum.guide.host-programs)。
+通过类公开 Toffoli 模拟器 `ToffoliSimulator` 。 有关更多详细信息，请参阅[运行 Q# 程序的方法](xref:microsoft.quantum.guide.host-programs)。
 
 ### <a name="invoking-the-toffoli-simulator-from-c"></a>从 C 调用 Toffoli 模拟器#
 
-与其他目标计算机一样，首先创建类的一个实例 `ToffoliSimulator` ，然后将其作为操作的方法的第一个参数进行传递 `Run` 。
+与使用其他目标计算机一样，你首先创建 `ToffoliSimulator` 类的实例，然后将其作为操作的 `Run` 方法的第一个参数传递。
 
-请注意，与类不同的是， `QuantumSimulator` `ToffoliSimulator` 类并不实现 <xref:System.IDisposable> 接口，因此不需要将其包含在 `using` 语句中。
+请注意，与 `QuantumSimulator` 类不同，`ToffoliSimulator` 类不实现 <xref:System.IDisposable> 接口，因此不需要将其放在 `using` 语句中。
 
 ```csharp
     var sim = new ToffoliSimulator();
@@ -37,7 +40,7 @@ QDK Toffoli 模拟器是一种特殊用途的模拟器，其作用域有限，�
 
 ### <a name="invoking-the-toffoli-simulator-from-python"></a>从 Python 调用 Toffoli 模拟器
 
-在导入的 Q # 操作中使用 Python 库中的[toffoli_simulate （）](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable)方法：
+使用导入的操作在 Python 库中使用[toffoli_simulate ( # B1](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable)方法 Q# ：
 
 ```python
 qubit_result = myOperation.toffoli_simulate()
@@ -45,7 +48,7 @@ qubit_result = myOperation.toffoli_simulate()
 
 ### <a name="invoking-the-toffoli-simulator-from-the-command-line"></a>从命令行调用 Toffoli 模拟器
 
-从命令行运行 Q # 程序时，使用 **--模拟器**（或 **-s**快捷方式）参数指定 Toffoli 模拟器目标计算机。 以下命令使用资源估计器运行程序： 
+在 Q# 从命令行运行程序时，使用 **--模拟器** (或 **-s**快捷) 参数来指定 Toffoli 模拟器目标计算机。 以下命令使用资源估计器运行程序： 
 
 ```dotnetcli
 dotnet run -s ToffoliSimulator
@@ -53,7 +56,7 @@ dotnet run -s ToffoliSimulator
 
 ### <a name="invoking-the-toffoli-simulator-from-juptyer-notebooks"></a>从 Juptyer 笔记本调用 Toffoli 模拟器
 
-使用 IQ # 幻命令[% toffoli](xref:microsoft.quantum.iqsharp.magic-ref.toffoli)运行 Q # 操作。
+使用 I Q# 幻命令[% toffoli](xref:microsoft.quantum.iqsharp.magic-ref.toffoli)运行 Q# 操作。
 
 ```
 %toffoli myOperation

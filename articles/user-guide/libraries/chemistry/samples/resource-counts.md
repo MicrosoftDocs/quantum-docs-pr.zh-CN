@@ -6,12 +6,15 @@ ms.author: gulow
 ms.date: 10/23/2018
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.resourcecounts
-ms.openlocfilehash: 14d0a703a20a801dcee9678a113a33404859a1a9
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 35c16e622a390b730ad7385efcc365c212e981fe
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274432"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869318"
 ---
 # <a name="obtaining-resource-counts"></a>获取资源计数
 
@@ -83,7 +86,7 @@ operation RunQubitizationStep (qSharpData: JordanWignerEncodingData) : Double {
 }
 ```
 
-现在，我们配置跟踪模拟器以跟踪我们感兴趣的资源。 在这种情况下，我们通过将标志设置为来计算基元量子运算 `usePrimitiveOperationsCounter` `true` 。 `throwOnUnconstraintMeasurement` `false` 在 Q # 代码未正确断言度量结果的概率的情况下，技术详细信息设置为，以避免异常。
+现在，我们配置跟踪模拟器以跟踪我们感兴趣的资源。 在这种情况下，我们通过将标志设置为来计算基元量子运算 `usePrimitiveOperationsCounter` `true` 。 `throwOnUnconstraintMeasurement` `false` 在 Q# 代码未正确断言度量结果的概率的情况下，技术详细信息设置为，以避免异常。
 
 ```csharp
 private static QCTraceSimulator CreateAndConfigureTraceSim()

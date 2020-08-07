@@ -1,27 +1,30 @@
 ---
 title: Symmetries of 分子积分
-description: '了解如何使用 Q # OrbitalIntegral 类型枚举分子 symmetries。'
+description: 了解如何使用 Q# OrbitalIntegral 类型枚举分子 symmetries。
 author: nathanwiebe2
 ms.author: nawiebe
 ms.date: 10/09/2017
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.concepts.symmetries
-ms.openlocfilehash: b7e7b79af17af544c4a784eff08500498afc9f67
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 1f71c0ac8e2cd2781c0bc7b23d6c9222f3b9d18a
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274281"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869437"
 ---
 # <a name="symmetries-of-molecular-integrals"></a>Symmetries of 分子积分
 
 Coulomb Hamiltonian 的固有对称（这是[针对电子系统的量程模型](xref:microsoft.quantum.chemistry.concepts.quantummodels)中提供的 Hamiltonian，用于描述电子彼此之间相互交互，而与 nuclei 之间的交互）会导致许多 symmetries，可以利用这些来压缩 Hamiltonian 中的条款。
 一般情况下，如果没有对基础函数 $ \ psi_j $ 进行进一步的假设，则我们仅具有 \begin{equation} h_ {pqrs} = h_ {qpsr}，\tag{★} \label{eq： hpqrs} \end{equation}，该通信可立即从[电子系统的量程模型](xref:microsoft.quantum.chemistry.concepts.quantummodels)中的积分中查看，注意，如果 $p、q $ 和 $r，s $ 将与反互换。
 
-如果我们假设 orbitals 是实值（因为它们适用于高斯 orbital），则我们会进一步使 \begin{equation} h_ {pqrs} = h_ {qpsr} = h_ {srqp} = h_ {rspq} = h_ {rqps} = h_ {psrq} h_ {h_} spqr： hpqrsreal} \end{equation} 假设有这样的假设，我们可以使用上面的 symmetries 来减少按 $8 $ 的系数存储 Hamiltonian 的矩阵元素所需的数据。虽然这样做会使导入数据的方式略有挑战性。
+如果我们假设 orbitals 是适用于高斯 orbital) 基础的实值 (，则我们会进一步 \begin{equation} h_ {pqrs} = h_ {qpsr} = h_ {srqp} = h_ {rspq} = h_ {rqps} = h_ {psrq} spqr {h_} qrsp： hpqrsreal} \end{equation} 假设有这样的假设，我们可以使用上面的 symmetries 来减少按 $8 $ 的系数存储 Hamiltonian 的矩阵元素所需的数据。虽然这样做会使导入数据的方式略有挑战性。
 幸运的是，Hamiltonian 模拟库具有可用于从[LIQUI $ | \rangle $](https://www.microsoft.com/en-us/research/project/language-integrated-quantum-operations-liqui/)或从[NWChem](http://www.nwchem-sw.org/index.php/Main_Page)直接导入整型文件的子例程。
 
-分子 orbital （例如 $h \_ {pq} $ 和 $h \_ {pqrs} $ 词条）使用 `OrbitalIntegral` 类型表示，该类型提供了很多有助于表达此对称的有用函数。
+分子 orbital 积分 (即 $h \_ {pq} $ 和 $h \_ {pqrs} $ 条款) 例如，使用类型来表示这些术语 `OrbitalIntegral` ，这提供了很多有助于表达此对称的有用函数。
 ```csharp
     // Load the namespace containing orbital integral objects.
     using Microsoft.Quantum.Chemistry.OrbitalIntegrals;

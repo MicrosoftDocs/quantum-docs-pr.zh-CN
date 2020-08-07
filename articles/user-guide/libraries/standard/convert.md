@@ -1,22 +1,25 @@
 ---
-title: 'Q # 标准库中的类型转换'
-description: '了解 Q # 标准库中的常用和用户定义类型转换函数。'
+title: 标准库中的类型转换 Q#
+description: 了解标准库中的常用和用户定义类型转换函数 Q# 。
 author: cgranade
 uid: microsoft.quantum.libraries.convert
 ms.author: chgranad@microsoft.com
 ms.topic: article
-ms.openlocfilehash: e941d7e3d76459546861410e91a03d7315183867
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 2319bf453f5fbf6bd068859ea65562423d3ff4d0
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274415"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868503"
 ---
 # <a name="type-conversions"></a>类型转换 #
 
-Q # 是一种**强类型**语言。
-特别是，Q # 不会在不同类型之间隐式强制转换。 例如，不是 `1 + 2.0` 有效的 Q # 表达式。
-相反，Q # 提供各种类型转换函数用于构造给定类型的新值。
+Q#是**强类型**语言。
+具体而言，不 Q# 会在不同类型之间隐式强制转换。 例如，不是 `1 + 2.0` 有效的 Q# 表达式。
+而是 Q# 提供各种类型转换函数用于构造给定类型的新值。
 
 例如，的 <xref:microsoft.quantum.core.length> 输出类型为 `Int` ，因此必须先将其输出转换为，然后才能 `Double` 将其用作浮点表达式的一部分。
 可以使用函数执行此 <xref:microsoft.quantum.convert.intasdouble> 操作：
@@ -39,7 +42,7 @@ let indices = Convert.RangeAsIntArray(0..4); // [0, 1, 2, 3, 4]
 
 <xref:microsoft.quantum.convert>命名空间还提供了一些更现的转换，例如 `FunctionAsOperation` ，将函数转换 `'T -> 'U` 为新操作 `'T => 'U` 。
 
-最后，Q # 标准库提供了许多用户定义的类型 <xref:microsoft.quantum.math.complex> ，例如和 <xref:microsoft.quantum.arithmetic.littleendian> 。
+最后， Q# 标准库提供了许多用户定义的类型，例如 <xref:microsoft.quantum.math.complex> 和 <xref:microsoft.quantum.arithmetic.littleendian> 。
 除了这些类型之外，标准库还提供如下功能 <xref:microsoft.quantum.arithmetic.bigendianaslittleendian> ：
 
 ```Q#

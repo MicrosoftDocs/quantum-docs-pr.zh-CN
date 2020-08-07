@@ -6,12 +6,15 @@ ms.author: gulow
 ms.date: 10/23/2018
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.loadhamiltonian
-ms.openlocfilehash: 715dbcefc10ecc5af45f2bdd228890f1cb28886b
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 57e25bf55009797b01695cef0f3d29b94662ccc0
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274280"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869231"
 ---
 # <a name="loading-a-hamiltonian-from-file"></a>从文件加载 Hamiltonian
 以前，我们通过向其中添加单个字词来构造 Hamiltonians。 虽然这对小型示例而言很不错，但大规模的量程化学要求 Hamiltonians 或数十亿。 由化学包（如 NWChem）生成的此类 Hamiltonians 太大，无法手动导入。 在此示例中，我们将演示如何通过 `FermionHamiltonian` [Broombridge 架构](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)表示的分子自动生成实例。 对于引用，可以检查提供的 `LithiumHydrideGUI` 示例或 `RunSimulation` 示例。 有限支持还可用于从 LIQUi 使用的格式导入[|>](https://www.microsoft.com/en-us/research/project/language-integrated-quantum-operations-liqui/)。
@@ -40,7 +43,7 @@ var fermionHamiltonian = orbitalIntegralHamiltonian.ToFermionHamiltonian(IndexCo
 var jordanWignerEncoding = fermionHamiltonian.ToPauliHamiltonian(Pauli.QubitEncoding.JordanWigner);
 ```
 
-Broombridge 架构还包含要准备的初始状态的建议。 `"|G⟩"` `"|E1⟩"` 可以通过检查文件来查看这些状态的标签（例如或）。 若要准备这些初始状态，将 `qSharpData` 获得由 Q # 量程算法使用的，与[上一部分](xref:microsoft.quantum.chemistry.examples.energyestimate)类似，但使用其他参数选择所需的初始状态。 例如，
+Broombridge 架构还包含要准备的初始状态的建议。 `"|G⟩"` `"|E1⟩"` 可以通过检查文件来查看这些状态的标签（例如或）。 若要准备这些初始状态，可 `qSharpData` 获得由量程算法使用的，与 Q# [上一节](xref:microsoft.quantum.chemistry.examples.energyestimate)类似，但使用其他参数选择所需的初始状态。 例如，
 ```csharp
 // The desired initial state, assuming that a description of it is present in the
 // Broombridge schema.

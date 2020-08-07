@@ -6,16 +6,19 @@ ms.author: bradben
 ms.date: 06/02/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.katas
-ms.openlocfilehash: 1c4dfa5c47aa38935cd5936cd256e357b6605371
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: b2a3b25bf90109468f02c98c6c687befb83648bc
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274469"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869675"
 ---
 # <a name="learn-quantum-computing-with-the-quantum-katas"></a>使用 Quantum Katas 学习量子计算
 
-[量程 Katas](https://github.com/Microsoft/QuantumKatas/)是开源、自控进度的教程和编程试验，旨在同时讲授量程计算和 Q # 编程的元素。
+[量程 Katas](https://github.com/Microsoft/QuantumKatas/)是开源、自控进度的教程和编程试验，旨在同时讲授量程计算和编程的元素 Q# 。
 
 ## <a name="learning-by-doing"></a>从实践中学习
 
@@ -42,15 +45,15 @@ ms.locfileid: "85274469"
 |[线性代数](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra)|线性代数用于在量程计算中表示量程状态和操作。 本教程介绍基础知识，包括矩阵和矢量。|
 |[量子位的概念](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/Qubit)|了解 qubits-量程计算的核心概念之一。 |
 |[单量子位量子门](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates)|本教程介绍了 qubit 的量程入口，它充当量子算法的构建块并以各种方式转换量子 qubit 状态。|
-|[多量子位系统](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/MultiQubitSystems)|本教程介绍了多 qubit 系统、其在数学符号和 Q # 代码中的表示形式，以及牵连的概念。|
+|[多量子位系统](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/MultiQubitSystems)|本教程介绍了多 qubit 系统、其在数学符号和代码中的表示形式， Q# 以及牵连的概念。|
 |[多 qubit 量程入口](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/MultiQubitGates)|本教程采用[qubit 量程入口](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/SingleQubitGates)教程，重点介绍如何向多 qubit 系统应用量程入口。|
 
 ### <a name="quantum-computing-fundamentals"></a>量子计算基础知识
 
 | Kata | 描述 |
 |:-----|-------------|
-|[认识量子门](https://github.com/microsoft/QuantumKatas/tree/master/BasicGates)|旨在帮助你熟悉 Q # 中的基本量程入口的一系列练习。 包括基本的 qubit 和多 qubit 入口、adjoint 和控制入口的练习，以及如何使用入口来修改 qubit 的状态。|
-|[创建量子叠加](https://github.com/microsoft/QuantumKatas/tree/master/Superposition)|使用这些练习，熟悉 Q # 中 superposition 和编程的概念。 包括 qubit 和 qubit 入口、superposition 以及 Q # 中的流控制和递归的练习。|
+|[认识量子门](https://github.com/microsoft/QuantumKatas/tree/master/BasicGates)|旨在帮助你熟悉中的基本量程入口的一系列练习 Q# 。 包括基本的 qubit 和多 qubit 入口、adjoint 和控制入口的练习，以及如何使用入口来修改 qubit 的状态。|
+|[创建量子叠加](https://github.com/microsoft/QuantumKatas/tree/master/Superposition)|使用这些练习，熟悉中 superposition 和编程的概念 Q# 。 包括对中基本的 qubit 和多 qubit 入口、superposition 以及 flow 控制和递归的练习 Q# 。|
 |[使用度量来区分量子状态](https://github.com/microsoft/QuantumKatas/tree/master/Measurements)|解决这些练习，同时了解量程测量和正交和非正交状态。 |
 |[联合度量](https://github.com/microsoft/QuantumKatas/tree/master/JointMeasurements)|了解联合奇偶校验度量值，以及如何使用[Measure](xref:microsoft.quantum.intrinsic.measure)运算来区分量程状态。|
 
@@ -61,9 +64,9 @@ ms.locfileid: "85274469"
 |[量子隐形传送](https://github.com/microsoft/QuantumKatas/tree/master/Teleportation)|此 kata 探讨了量子 teleportation-一种协议，该协议允许只使用传统通信和之前共享的量程牵连来传递量程状态。|
 |[超密集编码](https://github.com/microsoft/QuantumKatas/tree/master/SuperdenseCoding)|Superdense 编码是一种协议，它允许通过使用之前共享的量程牵连只发送一个 qubit 来传输传统信息的两位。  |
 |[Deutsch–Jozsa 算法](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringDeutschJozsaAlgorithm)|此算法非常著名，就是一个量程算法的第一个示例，其速度比任何确定性的传统算法的速度都更快。|
-|[探索 Grover 搜索算法的高级属性](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringGroversAlgorithm)|对量程计算中最著名的算法之一进行了简要介绍。 它解决了向生成特定输出的黑框（oracle）查找输入的问题。 |
+|[探索 Grover 搜索算法的高级属性](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ExploringGroversAlgorithm)|对量程计算中最著名的算法之一进行了简要介绍。 它解决了在生成特定输出 (oracle) 中查找黑色框输入的问题。 |
 |[实现 Grover 的搜索算法](https://github.com/microsoft/QuantumKatas/tree/master/GroversAlgorithm)|此 kata 深入更深入地探讨 Grover 的搜索算法，并介绍了如何编写 oracles，执行算法的步骤，最后将其全部放在一起。|
-|[使用 Grover 的算法解决真实问题：周六问题](https://github.com/microsoft/QuantumKatas/tree/master/SolveSATWithGrover)|使用 Grover 的算法解决现实问题的一系列练习，使用[布尔 satisfiability 问题](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem)（周六）作为示例。  |
+|[使用 Grover 的算法解决真实问题：周六问题](https://github.com/microsoft/QuantumKatas/tree/master/SolveSATWithGrover)|使用 Grover 算法解决现实问题的一系列练习，使用[布尔 satisfiability 问题](https://en.wikipedia.org/wiki/Boolean_satisfiability_problem) (周六) 作为示例。  |
 |[使用 Grover 的算法解决真实问题：图形着色问题](https://github.com/microsoft/QuantumKatas/tree/master/GraphColoring)| 此 kata 进一步探讨了 Grover 的算法，这一次是解决[约束满意度问题](https://en.wikipedia.org/wiki/Constraint_satisfaction_problem)，使用图形着色问题作为示例。 |
 
 ### <a name="protocols-and-libraries"></a>协议和库
@@ -71,8 +74,8 @@ ms.locfileid: "85274469"
 | Kata | 描述 |
 |:-----|-------------|
 |[用于量子密钥分发的 BB84 协议](https://github.com/microsoft/QuantumKatas/tree/master/KeyDistribution_BB84)|了解并使用 qubits 交换加密密钥，实现[BB84](https://en.wikipedia.org/wiki/BB84)的量程密钥分发协议。 |
-|[位翻转纠错代码](https://github.com/microsoft/QuantumKatas/tree/master/QEC_BitFlipCode)|通过最简单的量程错误更正（QEC）代码（三 qubit 位翻转代码）浏览量程错误更正。|
-|[相位估计](https://github.com/microsoft/QuantumKatas/blob/master/PhaseEstimation)|阶段估算算法是量程计算的一些最基本的构建基块。 通过这些练习来了解阶段估算，这些练习涵盖了量程阶段估算以及如何在 Q # 中准备和运行阶段估算例程。|
+|[位翻转纠错代码](https://github.com/microsoft/QuantumKatas/tree/master/QEC_BitFlipCode)|利用量程错误更正中最简单的量程错误更正来探索量程错误更正 (QEC) 代码-三 qubit 位翻转代码。|
+|[相位估计](https://github.com/microsoft/QuantumKatas/blob/master/PhaseEstimation)|阶段估算算法是量程计算的一些最基本的构建基块。 通过这些练习来了解阶段估算，这些练习涵盖了量程阶段估算以及如何在中准备和运行阶段估算例程 Q# 。|
 |[量程算法：构建 ripple-携带添加器](https://github.com/microsoft/QuantumKatas/blob/master/RippleCarryAdder)|探讨[波纹](https://en.wikipedia.org/wiki/Adder_(electronics)#Ripple-carry_adder)在量程计算机上添加的深入演练系列。 构建就地量程增加程序，使用不同的算法对其进行扩展，最后构建一个就地量程 subtractor。   |
 
 ### <a name="entanglement-games"></a>纠缠游戏

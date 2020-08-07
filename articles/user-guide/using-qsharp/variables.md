@@ -1,30 +1,33 @@
 ---
-title: 问答中的变量#
+title: 中的变量Q#
 description: 填充说明
 author: gillenhaalb
 ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.variables
-ms.openlocfilehash: 08301f408dcb2211ba25c582a5e5aa43310b714a
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 00af0989cd5a1f9ccc7d9f2545acd0d256bc7eb9
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85885292"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867839"
 ---
-# <a name="variables-in-q"></a>问答中的变量#
+# <a name="variables-in-no-locq"></a>中的变量Q#
 
-Q # 区分可变和不可变的符号，或者绑定/分配给表达式的*变量*。
+Q#区分可变和不可变的符号（或*变量*，它们被绑定/分配到表达式）。
 通常，建议使用不可变符号，因为它允许编译器执行更多优化。
 
 绑定的左侧由一个符号元组和一个表达式的右侧组成。
 
 ## <a name="immutable-variables"></a>不可变变量
 
-可以通过使用关键字，将 Q # 中的任何类型的值分配给变量以便在操作或函数内重复使用 `let` 。 
+您可以通过使用关键字，将中任何类型的值分配 Q# 给变量以便在操作或函数内重复使用 `let` 。 
 
-不可变绑定包含关键字 `let` ，后跟符号或符号元组、等号 `=` 、要将符号绑定到的表达式和终止分号。
+不可变绑定包含关键字 `let` ，后跟符号或符号元组、等号 `=` 、用于将 (符号绑定到) 的表达式以及终止分号。
 
 例如：
 
@@ -32,7 +35,7 @@ Q # 区分可变和不可变的符号，或者绑定/分配给表达式的*变�
 let measurementOperator = [PauliX, PauliZ, PauliZ, PauliX, PauliI];
 ```
 
-这会将一个特定的 Pauli 运算符数组分配给变量名（或 "symbol"） `measurementOperator` 。
+这会将 Pauli 运算符的特定数组分配给变量名 (或 "symbol" ) `measurementOperator` 。
 
 > [!NOTE]
 > 在前面的示例中，无需显式指定新变量的类型，因为语句右侧的表达式 `let` 是明确的，编译器将推断正确的类型。 
@@ -49,13 +52,13 @@ let measurementOperator = [PauliX, PauliZ, PauliZ, PauliX, PauliI];
 ### <a name="rebinding-of-mutable-symbols"></a>重新绑定可变符号
 
 您可以使用语句重新绑定可变变量 `set` 。
-此类重新绑定包含关键字 `set` ，后跟符号或符号元组、等号、将 `=` 符号重新绑定到的表达式和终止分号。
+此类重新绑定包含关键字 `set` ，后跟符号或符号元组、等号 `=` 、用于将符号重新绑定到)  (的表达式和终止分号。
 
 下面是重新绑定语句方法的一些示例。
 
 #### <a name="apply-and-reassign-statements"></a>应用和重新分配语句
 
-`set`如果右侧包含二元运算符的应用程序，则特定类型的语句（即*apply 和重新分配*语句）提供了一种简便的连接方式，并将结果重新绑定到运算符的左侧参数。 例如，
+`set`如果右侧包含二元运算符的应用程序，则特定类型的语句（即*apply 和重新分配*语句）提供了一种简便的连接方式，并将结果重新绑定到运算符的左侧参数。 例如，应用于对象的
 
 ```qsharp
 mutable counter = 0;
@@ -107,7 +110,7 @@ function ComplexSum(reals : Double[], ims : Double[]) : Complex[] {
 }
 ```
 
-对于数组， [`Microsoft.Quantum.Arrays`](xref:microsoft.quantum.arrays) 在 Q # 标准库中，可以为许多常见数组初始化和操作需要提供所需的工具，从而有助于避免第一次更新数组项。 
+对于数组， [`Microsoft.Quantum.Arrays`](xref:microsoft.quantum.arrays) 在标准库中， Q# 可以为许多常见数组初始化和操作需要提供所需的工具，从而有助于避免第一次更新数组项。 
 
 如果需要，更新和重新分配语句提供了一种替代方法：
 
@@ -132,7 +135,7 @@ operation SampleUniformDistrbution(nSamples : Int, nSteps : Int) : Double[] {
 
 ```
 
-例如，使用中提供的数组的库工具， [`Microsoft.Quantum.Arrays`](xref:microsoft.quantum.arrays) 可以轻松地定义一个函数，该函数返回一个类型数组，该数组的 `Pauli` 索引处的元素 `i` 采用给定的 `Pauli` 值，其他所有项均为标识（ `PauliI` ）。
+例如，使用中提供的数组的库工具， [`Microsoft.Quantum.Arrays`](xref:microsoft.quantum.arrays) 可以轻松地定义一个函数，该函数返回一个类型数组，该数组的 `Pauli` 索引处的元素 `i` 采用给定的 `Pauli` 值，其他所有项都是 (`PauliI`) 的标识。
 
 下面是此类函数的两个定义，第二个是利用我们的处理工具。
 
@@ -179,13 +182,13 @@ let (r1, r2) = MeasureTwice(q1, PauliX, q2, PauliY);
 此规则有两种例外情况：
 
 - 循环的循环变量的绑定处于 `for` for 循环的主体的范围内，但不在循环结束后。
-- 循环的所有三个部分 `repeat` / `until` （正文、测试和修正）都充当单个作用域，因此，在主体中绑定的符号可用于测试和修正。
+- 循环的所有三个部分 `repeat` / `until` (主体、测试和修正) 视为单个作用域，因此，在主体中绑定的符号可用于测试中，并提供修正。
 
 对于这两种类型的循环，每次循环都在其自己的作用域中运行，因此更早传递中的绑定在稍后的传递中不可用。
 有关这些循环的详细信息，请参阅[控制流](xref:microsoft.quantum.guide.controlflow)。
 
 内部块从外部块继承符号绑定。
-每个块只能绑定一个符号;定义与作用域中的另一个符号名称相同（无 "隐藏"）的符号是非法的。
+每个块只能绑定一个符号;定义与作用域中的另一个符号名称相同的符号是非法的， (不 ) "隐藏"。
 以下顺序是合法的：
 
 ```qsharp
@@ -198,7 +201,7 @@ let n = 8;
 ...                 // n is 8
 ```
 
-and
+和
 
 ```qsharp
 if (a == b) {
@@ -236,4 +239,4 @@ if (a == b) {
 
 ## <a name="next-steps"></a>后续步骤
 
-了解如何使用 Q # 中[的 Qubits](xref:microsoft.quantum.guide.qubits) 。
+了解如何使用中[的 Qubits](xref:microsoft.quantum.guide.qubits) Q# 。

@@ -1,21 +1,24 @@
 ---
 title: 宽度计数器-量程开发工具包
-description: '了解 Microsoft QDK width 计数器，该计数器使用量程跟踪模拟器来计算 Q # 程序中由操作分配和借用的 qubits 数。'
+description: 了解 Microsoft QDK width 计数器，该计数器使用量程跟踪模拟器来计算程序中由操作分配和借用的 qubits 的数量 Q# 。
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.width-counter
-ms.openlocfilehash: af8609dc5c05f7a19b8d21755281427feb29b84c
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 02f4937aaccf7bf49d6450355c6b42b273071b2e
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871512"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868196"
 ---
 # <a name="quantum-trace-simulator-width-counter"></a>量程跟踪模拟器：宽度计数器
 
-Width 计数器是量程开发工具包[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的一部分。 您可以使用它来计算 Q # 程序中每个操作所分配和借用的 qubits 的数目。 一些基元操作可以分配额外的 qubits，例如，将受控 `X` 操作或受控 `T` 操作相乘。
+Width 计数器是量程开发工具包[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的一部分。 您可以使用它来计算程序中每个操作所分配和借用的 qubits 的数目 Q# 。 一些基元操作可以分配额外的 qubits，例如，将受控 `X` 操作或受控 `T` 操作相乘。
 
 ## <a name="invoking-the-width-counter"></a>调用 width 计数器
 
@@ -29,7 +32,7 @@ var sim = new QCTraceSimulator(config);
 
 ## <a name="using-the-width-counter-in-a-c-host-program"></a>在 c # 宿主程序中使用 width 计数器
 
-本部分中的 c # 示例将根据 <xref:microsoft.quantum.intrinsic.x> 下面的 Q # 示例代码，计算由执行乘法控制的操作所分配的额外 qubits 的数目：
+本部分中的 c # 示例将根据 <xref:microsoft.quantum.intrinsic.x> 下面的示例代码，计算由执行乘法控制的操作所分配的额外 qubits 的数目 Q# ：
 
 ```qsharp
 open Microsoft.Quantum.Intrinsic;

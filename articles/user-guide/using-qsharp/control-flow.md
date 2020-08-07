@@ -1,19 +1,22 @@
 ---
-title: Q 中的控制流#
+title: 控制流Q#
 description: 循环、条件等。
 author: gillenhaalb
 ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.controlflow
-ms.openlocfilehash: b652736168a71b905deaf7c4fdb29a8751b3dfaf
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: fc619d64bfebfc27d7feac6dafb2dd4cf22825d6
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86870985"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867941"
 ---
-# <a name="control-flow-in-q"></a>Q 中的控制流#
+# <a name="control-flow-in-no-locq"></a>控制流Q#
 
 在操作或函数中，每个语句都按顺序运行，类似于其他常见的命令性传统语言。
 但是，可以通过三种不同的方式修改控制流：
@@ -30,9 +33,9 @@ ms.locfileid: "86870985"
 ## <a name="if-else-if-else"></a>如果为，则为; 否则为
 
 `if`语句支持条件执行。
-它包含关键字 `if` 、括号中的布尔表达式和语句块（ _then_块）。
-根据需要，可以遵循任意数量的 else if 子句，其中每个子句都包含关键字 `elif` 、括号中的布尔表达式和语句块（ _else-if_块）。
-最后，语句可以选择使用 else 子句完成，后者由关键字 `else` 后跟另一个语句块（ _else_块）组成。
+它包含关键字 `if` 、括号中的布尔表达式和语句块 (_then_块) 。
+根据需要，可以遵循任意数量的 else if 子句，其中每个子句都包含关键字 `elif` 、括号中的布尔表达式和语句块 (_else （if）_ 块) 。
+最后，语句可以选择使用 else 子句完成，后者由关键字 `else` 后跟另一个语句块 (_else_块) 。
 
 `if`计算条件，如果该条件为*true*，则运行*then*块。
 如果条件为*false*，则计算第一个 else if 条件;如果为 true，则运行*其他-if*块。
@@ -42,7 +45,7 @@ ms.locfileid: "86870985"
 请注意，不管哪个块运行，它都在它自己的作用域内运行。
 `if`块结束后，在、或块内部所做的绑定 `elif` `else` 将不可见。
 
-例如，
+例如，应用于对象的
 
 ```qsharp
 if (result == One) {
@@ -52,7 +55,7 @@ if (result == One) {
 } 
 // n is not bound
 ```
-或
+or
 ```qsharp
 if (i == 1) {
     X(target);
@@ -70,7 +73,7 @@ if (i == 1) {
 `for`语句支持对整数范围或数组进行迭代。
 语句包含关键字 `for` ，后跟符号或符号元组、关键字 `in` 、类型 `Range` 或数组的表达式、所有 in 括号和语句块。
 
-语句块（循环的主体）将重复运行，其中定义的符号（循环变量）绑定到范围或数组中的每个值。
+语句块 (循环的主体) 重复运行，定义的符号 (循环变量) 绑定到该范围或数组中的每个值。
 请注意，如果范围表达式的计算结果为空范围或数组，则正文根本不会运行。
 在进入循环之前，将完全计算该表达式，并且在执行循环时不会更改。
 
@@ -78,7 +81,7 @@ if (i == 1) {
 For 循环完成后，循环变量未绑定。
 循环变量的绑定是不可变的，并且与其他变量绑定遵循相同的规则。 
 
-在这些示例中， `qubits` 是 qubits （即类型）的寄存器 `Qubit[]` ， 
+在这些示例中， `qubits` 是 qubits 的寄存器 (即) 类型的 `Qubit[]` ， 
 
 ```qsharp
 // ...
@@ -104,12 +107,12 @@ for ((index, measured) in results) { // iterates over the tuple values in result
 
 ## <a name="repeat-until-success-loop"></a>重复执行-成功循环
 
-Q # 语言允许经典控制流依赖于测量 qubits 的结果。
+此 Q# 语言允许经典控制流依赖于测量 qubits 的结果。
 此功能进而实现了实现功能强大的概率小工具，从而降低了实现 unitaries 的计算成本。
-这种情况的示例如下所示： Q # 中的 "*重复-成功*" （ru）模式。
+这种情况的示例如下所示 *-成功* (ru) 模式 Q# 。
 这些 RUS 模式是概率的程序，这些程序在基本入口方面具有*预期*的低成本;产生的费用取决于多个可能 branchings 的实际运行和交叉交叉。
 
-为了便于重复到成功（ru）模式，Q # 支持构造
+为了便于重复-成功 (ru) 模式， Q# 支持构造
 
 ```qsharp
 repeat {
@@ -125,7 +128,7 @@ fixup {
 循环体运行，然后计算条件。
 如果条件为 true，则语句已完成;否则，修正将运行，并且语句将再次运行（从循环体开始）。
 
-*每个重复*项的所有三个部分（正文、测试和修正）被视为单个作用域，因此，在正文中绑定的符号可用于测试和修复。
+ (正文、测试和修正) 的所有三个部分都被视为*每个重复*的单个作用域，因此，在正文中绑定的符号可用于测试和修复。
 但是，完成修正的执行将结束语句的范围，以便在正文或修正期间所进行的符号绑定在后续的重复中不可用。
 
 而且， `fixup` 语句通常非常有用，但并非总是必需的。
@@ -147,10 +150,10 @@ until (expression);
 
 ## <a name="while-loop"></a>While 循环
 
-重复-直到成功模式有一个非常特定于量程的内涵。 它们广泛用于特定的量程算法类，因此，它是 Q # 中的专用语言构造。 但是，在编译时，中断的循环会在量程运行时中按特定的小心处理，这种情况下，会在编译时进行中断。 但是，它们在函数中的使用是 unproblematic 的，因为这些循环只包含在传统（非量程）硬件上运行的代码。 
+重复-直到成功模式有一个非常特定于量程的内涵。 它们广泛用于特定的量程算法类，因此是中的专用语言构造 Q# 。 但是，在编译时，中断的循环会在量程运行时中按特定的小心处理，这种情况下，会在编译时进行中断。 但是，它们在函数中的使用是 unproblematic 的，因为这些循环只包含在常规 (非量程) 硬件上运行的代码。 
 
-因此，Q # 支持仅在函数内使用 while 循环。 `while`语句由关键字 `while` 、括号中的布尔表达式和语句块组成。
-只要条件的计算结果为，语句块（循环的主体）将运行 `true` 。
+Q#因此，仅支持在函数内使用 while 循环。 `while`语句由关键字 `while` 、括号中的布尔表达式和语句块组成。
+只要条件的计算结果为，语句块 (循环的主体) 运行 `true` 。
 
 ```qsharp
 // ...
@@ -166,11 +169,11 @@ while (index < Length(arr) && item < 0) {
 Return 语句结束操作或函数的运行，并将值返回给调用方。
 它包含关键字 `return` ，后跟适当类型的表达式和终止分号。
 
-例如，
+例如，应用于对象的
 ```qsharp
 return 1;
 ```
-或
+or
 ```qsharp
 return (results, qubits);
 ```
@@ -191,7 +194,7 @@ Fail 语句结束操作的运行，并将错误值返回给调用方。
 操作中的 fail 语句数量没有限制。
 如果语句在块中跟随 fail 语句，则编译器可能会发出警告。
 
-例如，
+例如，应用于对象的
 
 ```qsharp
 fail $"Impossible state reached";
@@ -205,7 +208,7 @@ fail $"Syndrome {syn} is incorrect";
 
 ### <a name="rus-pattern-for-single-qubit-rotation-about-an-irrational-axis"></a>针对无理数轴的单 qubit 旋转的 RUS 模式 
 
-在典型用例中，以下 Q # 操作实现绕 Bloch 球上的无理数轴（I + 2i Z）/\sqrt $ 围绕 {5} 的旋转。 实现使用已知的 RUS 模式：
+在典型用例中，以下 Q# 操作实现绕 {5} Bloch 球上的无理数轴（$ (I + 2i Z) /\sqrt $）的旋转。 实现使用已知的 RUS 模式：
 
 ```qsharp
 operation ApplyVRotationUsingRUS(qubit : Qubit) : Unit {
@@ -247,9 +250,9 @@ fixup {
 
 ### <a name="rus-without-fixup"></a>不带`fixup`
 
-此示例显示了不带修正步骤的 ru 循环。 此代码是一种概率线路，它使用和入口实现重要的旋转门 $V _3 = （\boldone + 2 i Z）/\sqrt {5} $ `H` `T` 。
+此示例显示了不带修正步骤的 ru 循环。 此代码是一种概率线路，它使用和入口实现重要的旋转门 $V _3 = ( \boldone + 2 i Z) /\sqrt {5} $ `H` `T` 。
 该循环平均终止 $ \frac {8} {5} $ 重复。
-有关更多详细信息，请参阅[*qubit unitaries 的非确定性分解*](https://arxiv.org/abs/1311.1074)（Paetznick 和 Svore，2014）。
+有关更多详细信息，请参阅 qubit unitaries (Paetznick 和 Svore，2014) 的[*非确定性分解*](https://arxiv.org/abs/1311.1074)。
 
 ```qsharp
 using (qubit = Qubit()) {
@@ -273,7 +276,7 @@ using (qubit = Qubit()) {
 
 ### <a name="rus-to-prepare-a-quantum-state"></a>用于准备量子状态的 ru
 
-最后，下面是一个用于 {1} {3} {2} {0} {1} 从 $ \ket +} $ 状态中获取量程状态 $ \frac {\sqrt} \left （\sqrt \ket + \right \ket{） $ 的 ru 模式的示例。
+最后，下面是一个用于准备量子状态 $ \frac {1} {\sqrt {3} } \left ( \sqrt {2} \ket {0} + \ket {1} \right) $，从 $ \ket{+} $ 状态开始的 ru 模式的示例。
 
 此操作中所示的明显编程功能包括：
 
@@ -331,4 +334,4 @@ operation PrepareStateUsingRUS(target : Qubit) : Unit {
 
 ## <a name="next-steps"></a>后续步骤
 
-了解问题解答 # 中的[测试和调试](xref:microsoft.quantum.guide.testingdebugging)。
+了解中的[测试和调试](xref:microsoft.quantum.guide.testingdebugging) Q# 。

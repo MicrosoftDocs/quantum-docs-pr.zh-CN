@@ -1,6 +1,8 @@
 ---
 title：量程 oracles 说明：了解如何使用和定义量程 oracles、用于作为其他算法的输入的黑色框操作。
 author： cgranade uid： oracles。作者： Christopher.Granade@microsoft.com ms. 日期： 07/11/2018 ms. 主题：项目不相关：
+- "Q#"
+- "$$v"
 - "$$"
 - "$$"
 - "$"
@@ -84,12 +86,12 @@ author： cgranade uid： oracles。作者： Christopher.Granade@microsoft.com 
 
 Oracle $ O $ 是一个 "黑色框" 操作，用于作为其他算法的输入。
 通常，此类操作使用传统函数 $ f： \\ { 0、1 \\ } ^ n \to \\ { 0、1 ^ m 进行定义， \\ } $ 该函数采用 $ n $ 位二进制输入并生成一个 $ m $ 位二进制输出。
-为此，请考虑特定的二进制输入 $ x = （x_ { 0 } ，x_ { 1 } ，\dots ..，x_ { n-1 } ） $ 。
+为此，请考虑使用特定的二进制输入 $ x = (x_ { 0 } ，x_ { 1 } ，\dots ..，x_ { n-1 }) $ 。
 我们可以将 qubit 状态标记为 $ \ket { \vec { x } } = \ket { x_ { 0 } } \otimes \ket { x_ { 1 } } \otimes \cdots \otimes \ket { x_ { n-1 } } $ 。
 
-我们可能首先尝试将 o 定义为 o $ $ $ \ket { x } = \ket { f （x） } $ ，但这样做有几个问题。
-首先， $ f $ 可能会有不同的输入和输出大小（ $ n \ne m $ ），因此，应用 $ O $ 将更改寄存器中的 qubits 数目。
-其次，即使 $ n = m $ ，函数也不能可逆： $ = 对于某些 x y，则为 f （x） f （y） $ $ \ne $ ， $ 而 o \ket { x o } = \ket { x o } $ $ x o \dagger \ket { x o x o x o x o } \ne \dagger \ket { y } $ 。
+我们可能首先尝试定义 $ o， $ 使 $ o \ket { x } = \ket { f (x) } $ ，但这有一些问题。
+首先， $ f 的 $ 输入和输出大小可能不同 ($ n \ne m $) ，因此，应用 $ O $ 将更改寄存器中的 qubits 数目。
+其次，即使 $ n = m $ ，函数也不能可逆：如果 $ f (x) = f (y) $ 对于某些 $ x \ne y $ ，则为 $ o \ket { x } = o \ket { y } $ 但 $ o ^ \dagger O \ket { x o x o x o x o x o x o x o x o x o } \ne \dagger \ket { y } $ 。
 这意味着我们无法构造 adjoint 操作 $ O ^ \dagger $ ，oracles 必须为其定义 adjoint。
 
 ## <a name="defining-an-oracle-by-its-effect-on-computational-basis-states"></a>通过其对计算基础状态的影响来定义 oracle
@@ -98,15 +100,15 @@ Oracle $ O $ 是一个 "黑色框" 操作，用于作为其他算法的输入。
 
 $$
 \begin{align}
-    O （ \ket { x } \otimes \ket { y } ） = \ket { x } \otimes \ket { y \oplus f （x） } 。
+    O (\ket { x } \otimes \ket { y }) = \ket { x } \otimes \ket { y \oplus f (x) } 。
 \end{align}
 $$
 
 现在 $ = \dagger $ ，我们已解决了这两个以前的问题。
 
 > [!TIP]
->若要查看 $ o = o ^ { \dagger } $ ，请注意 $ o ^ 2， = \boldone $ 因为 $ \oplus b \oplus b = a $ for $ a，b \in \[ ！基金.非 LOC （{）] 0，1 \[ ！基金.NO-LOC （}）] $ 。
->因此， $ O \ket { x } \ket { y \oplus f （x） } = \ket { x } \ket { y \oplus f （x） \oplus f （x） } = \ket { x } \ket { y } $ 。
+>若要查看 $ o = o ^ { \dagger } $ ，请注意 $ o ^ 2， = \boldone $ 因为 $ \oplus b \oplus b = a $ for all $ a，b \in \: ：： no-loc ( {) ：：：0，1 \: ：： no loc (} ) ：：： $ 。
+>因此， $ O \ket { x } \ket { y \oplus f (x) } = \ket { x } \ket { y \oplus f (x) \oplus f (x) x } = \ket { } \ket { y } $ 。
 
 重要的是，以这种方式为每个计算基础状态 $ \ket { x y 定义 oracle } \ket { } $ 也定义了 O 如何处理 $ $ 任何其他状态。
 这 $ 是因为 O $ （与所有量程操作一样）在其作用于的状态下是线性的。
@@ -115,8 +117,8 @@ $$
 
 $$
 \begin{align}
-H \ket { + } & = \frac { 1 } { \sqrt { 2 } } H （ \ket { 0 }  +  \ket { 1 } ） = \frac { 1 } { \sqrt { 2 } } （H \ket { 0 } + h \ket { 1 } ）\\\\
-           &= \frac{1 } { \sqrt { 2 } } （ \ket { + }  +  \ket { - } ） = \frac 12 （ \ket { 0 }  +  \ket { 1 }  +  \ket { 0 }  -  \ket { 1 } ） = \ket { 0 } 。
+H \ket { + } & = \frac { 1 } { \sqrt { 2 } } H (\ket { 0 }  +  \ket { 1 }) = \frac { 1 } { \sqrt { 2 } } (h \ket { 0 } + h \ket { 1 }) \\\\
+           &= \frac{1 } { \sqrt { 2 } } (\ket { + }  +  \ket { - }) = \frac 12 (\ket { 0 }  +  \ket { 1 }  +  \ket { 0 }  -  \ket { 1 }) = \ket { 0 } 。
 \end{align}
 $$
 
@@ -124,7 +126,7 @@ $$
 
 $$
 \begin{align}
-\ket{\psi}& = \sum_ { x \in \\ { 0、1 \\ } ^ n、y \in \\ { 0、1 \\ } ^ m } \alpha （x，y） \ket { x } \ket { y}
+\ket{\psi}& = \sum_ { x \in \\ { 0、1 \\ } ^ n、y \in \\ { 0、1 \\ } ^ m } \alpha (x、y) \ket { x } \ket { y}
 \end{align}
 $$
 
@@ -132,15 +134,15 @@ $$
 
 $$
 \begin{align}
-O \ket { \psi } & = o \sum _ { x \in \\ { 0，1 \\ } ^ n，y \in \\ { 0，1 \\ } ^ m } \alpha （x，y） \ket { x } \ket { y } x \\\\ 0 & ， = 1 ^ n，y 0，1 ^ m （x，y） O \sum _ { \in \\ { \\ } \in \\ { \\ } } \alpha \ket { x } \ket { y }\\\\
-             &= \sum _ { x \in \\ { 0、1 \\ } ^ n、y \in \\ { 0、1 \\ } ^ m } \alpha （x，y） \ket { x } \ket { y \oplus f （x） } 。
+O \ket { \psi } & = o \sum _ { x \in \\ { 0、1 \\ } ^ n、y \in \\ { 0、1 \\ } ^ m } \alpha (x、y) \ket { x } \ket { y } x \\\\ 0 & 、 = 1 ^ n、y 0、1 ^ m (x、y) O \sum _ { \in \\ { \\ } \in \\ { \\ } } \alpha \ket { x } \ket { y }\\\\
+             &= \sum _ { x \in \\ { 0、1 \\ } ^ n、y \in \\ { 0、1 \\ } ^ m } \alpha (x、y) \ket { x } \ket { y \oplus f (x) } 。
 \end{align}
 $$
 
 ## <a name="phase-oracles"></a>阶段 oracles
 此外，我们还可以 $ $ $ $ 通过基于到 O 的输入应用_阶段_，将 f 编码为 oracle $ O $ 。例如，我们可以定义 $ O $ ，使$$
 \begin{align}
-    O \ket { x } = （-1） ^ { f （x） } \ket { x } 。
+    O \ket { x } = (-1) ^ { f (x) } \ket { x } 。
 \end{align}
 $$
 如果 oracle 最初在计算基础状态 x 中对寄存器 $ \ket { } $ 进行操作，则此阶段为全局阶段，因此无法观察。
@@ -149,10 +151,10 @@ $$
 接着$$
 \begin{align}
     O_f\ket{+}
-        &=O_f （ \ket { 0 }  +  \ket { 1 } ）/ \sqrt { 2 }\\\\
-        &=（-1） ^ { f （0） } \ket { 0 } + （-1） ^ { f （1） } \ket { 1 } ）/ \sqrt { 2 }\\\\
-        &=（-1） ^ { f （0） } （ \ket { 0 } + （-1） ^ { f （1）-f （0） } \ket { 1 } ）/ \sqrt { 2 }\\\\
-        &=（-1） ^ { f （0） } z ^ { f （0）-f （1） } \ket { + } 。
+        &=O_f (\ket {0 }  +  \ket { 1 }) / \sqrt { 2 }\\\\
+        &= ( # A1-1) ^ { f (0) } \ket { 0 } + () ^ { f (1) } \ket { 1 }) / \sqrt { 2 }\\\\
+        &= (-1) ^ { f (0) } (\ket { 0 } + () ^ { f (1)  (} \ket { } \sqrt { } 1) \\\\
+        &= (-1) ^ { f (0) } Z ^ { f (0)  (1) } \ket { + } 。
 \end{align}
 $$
 

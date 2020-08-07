@@ -1,17 +1,20 @@
 ---
 title: 无效的 qubits use 检测器-量程开发工具包
-description: '了解 Microsoft QDK 失效 qubits use 检查器，它使用量程跟踪模拟器检查您的 Q # 代码是否有可能无效的 qubits。'
+description: 了解 Microsoft QDK 失效 qubits use 检查器，它使用量程跟踪模拟器检查您 Q# 的代码是否存在潜在的无效 qubits。
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits
-ms.openlocfilehash: fccf6d5784b587f4ad9b659e23027619acd06ffa
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: c451747badba03801bd4ecd419420f131ac502d6
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871087"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868281"
 ---
 # <a name="quantum-trace-simulator-invalidated-qubits-use-checker"></a>量程跟踪模拟器： qubits use 检查器失效
 
@@ -19,7 +22,7 @@ ms.locfileid: "86871087"
 
 ## <a name="invalid-qubits"></a>无效的 qubits
 
-请考虑以下 Q # 代码部分，以说明由无效的 qubits use 检查器检测到的问题：
+请考虑下面这段 Q# 代码，说明无效 qubits use 检测器检测到的问题：
 
 ```qsharp
 operation UseReleasedQubit() : Unit {

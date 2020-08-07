@@ -1,21 +1,24 @@
 ---
-title: 在 Q# 中运行 Grover 搜索算法 - Quantum 开发工具
-description: 生成一个 Q# 项目，以展示 Grover 搜索这种经典的量子算法。
+title: 在量程开发工具包中运行 Grover 的搜索算法 Q#
+description: 构建一个 Q# 项目，该项目演示了 Grover 的算法，其中一种是规范的量程算法。
 author: cgranade
 ms.author: chgranad@microsoft.com
 ms.date: 10/19/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.search
-ms.openlocfilehash: 9e4c53b4d5159cf07f0654603c1d477ad09eb7c6
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 5c23d71209eb484a510f102e8b581ba4ec21829a
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274283"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869658"
 ---
 # <a name="tutorial-implement-grovers-search-algorithm-in-q"></a>教程：使用 Q\# 实现 Grover 搜索算法
 
-本教程介绍如何构建并运行 Grover 搜索，以便加快非结构化数据的搜索速度。  Grover 搜索是最常用量子计算算法之一。这个相对较小的 Q# 实现可以让你感受一下使用高级 Q# 量子编程语言进行量子解决方案编程（用于表达量子算法）的部分优势。  在指南末尾，我们会看到模拟输出。该输出表明我们已经在未排序条目的列表中成功找到一个特定的字符串，所花时间远远少于在经典计算机上搜索整个列表所花的时间。
+本教程介绍如何构建并运行 Grover 搜索，以便加快非结构化数据的搜索速度。  Grover 的搜索是最常用的量程计算算法之一，这种相对较小的 Q# 实现使您能够通过具有高级的 Q# 量程编程语言来表达量子算法，来编程量程解决方案的一些优点。  在指南末尾，我们会看到模拟输出。该输出表明我们已经在未排序条目的列表中成功找到一个特定的字符串，所花时间远远少于在经典计算机上搜索整个列表所花的时间。
 
 Grover 算法在非结构化数据列表中搜索特定项。 例如，它可以回答如下问题：从一副纸牌中抽出的这张纸牌是红桃 A 吗？ 特定项的标签称为“标记输入”。
 
@@ -39,7 +42,7 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
 ## <a name="write-the-code"></a>编写代码
 
-1. 使用量子开发工具包，[为命令行应用程序创建新的 Q# 项目](xref:microsoft.quantum.install.standalone)。 将项目命名为 `Grover`。
+1. 使用量程开发工具包， [ Q# 为命令行应用程序创建一个新项目](xref:microsoft.quantum.install.standalone)。 将项目命名为 `Grover`。
 
 1. 在新项目中，将以下代码添加到 `Program.qs` 文件中：
 
@@ -51,9 +54,9 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
     `ReflectAboutMarked` 运算定义要搜索的标记输入：0 和 1 交替的字符串。 此示例对标记输入进行硬编码，并且可以扩展为搜索不同的输入或针对任何输入进行通用化。
 
-1. 接下来，运行你的新 Q# 程序，以查找 `ReflectAboutMarked` 标记的项。
+1. 接下来，运行新 Q# 程序以查找标记为的项 `ReflectAboutMarked` 。
 
-### <a name="q-command-line-applications-with-visual-studio-or-visual-studio-code"></a>Q# 命令行应用程序与 Visual Studio 或 Visual Studio Code
+### <a name="no-locq-command-line-applications-with-visual-studio-or-visual-studio-code"></a>Q#带有 Visual Studio 或 Visual Studio Code 的命令行应用程序
 
 可执行文件将在仿真器或资源估计器上运行使用 `@EntryPoint()` 特性标记的操作或函数，具体取决于项目配置和命令行选项。
 
@@ -104,7 +107,7 @@ Reflecting about marked state...
 
 ## <a name="next-steps"></a>后续步骤
 
-如果喜欢本教程，请查看以下部分资源，详细了解有关使用 Q# 编写自己的量子应用程序：
+如果你喜欢本教程，请查看下面的一些资源，详细了解如何使用 Q# 编写你自己的量程应用程序：
 
 - [回到 QDK 入门指南](xref:microsoft.quantum.welcome)
 - 尝试使用更多常用 Grover 搜索算法[示例](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/database-search)

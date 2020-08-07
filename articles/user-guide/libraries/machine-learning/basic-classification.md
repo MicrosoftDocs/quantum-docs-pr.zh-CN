@@ -1,28 +1,31 @@
 ---
 title: 带有量程机器学习库的基本分类
-description: '了解如何使用 Microsoft QDK 的量程机器学习库来执行用 Q # 编写的量程顺序分类器。'
+description: 了解如何执行 Q# 使用 MICROSOFT QDK 的量程机器学习库中编写的量程顺序分类器。
 author: geduardo
 ms.author: v-edsanc@microsoft.com
 ms.date: 02/16/2020
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.basics
-ms.openlocfilehash: 1d2538fd164c4c61c2712978d3b5c57b0eb766e6
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: f9c3e7ab85c0f0d1a6063e593607d35c5cb76936
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274421"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868961"
 ---
 # <a name="basic-classification-classify-data-with-the-qdk"></a>基本分类：将数据与 QDK 进行分类
 
-在本快速入门中，你将学习如何使用 QDK 的量程机器学习库来执行用 Q # 编写的量程顺序分类器。 
+在本快速入门中，你将学习如何 Q# 使用 QDK 的量程机器学习库来执行以编写的量程顺序分类器。 
 
-在本指南中，我们将使用 "Q #" 中定义的分类器结构来使用半形数据集。
+在本指南中，我们将使用中定义的分类器结构来使用半形数据集 Q# 。
 
 ## <a name="prerequisites"></a>先决条件
 
 - Microsoft [Quantum 开发工具包](xref:microsoft.quantum.install)。
-- 为[Python 主机程序](xref:microsoft.quantum.install.python)或[c # 宿主程序](xref:microsoft.quantum.install.cs)创建 Q # 项目。
+- Q#为[Python 主机程序](xref:microsoft.quantum.install.python)或[c # 宿主程序](xref:microsoft.quantum.install.cs)创建项目。
 
 ## <a name="host-program"></a>主机程序
 
@@ -34,7 +37,7 @@ ms.locfileid: "85274421"
 
     ### <a name="python-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 Python](#tab/tabid-python)
 
-    若要运行你是 Python 中的 Q # 分类器，请将以下代码另存为 `host.py` 。 请记住，还需要在 `Training.qs` 本教程后面部分介绍的 Q # 文件。
+    若要运行你是 Q# Python 中的分类器，请将以下代码另存为 `host.py` 。 请记住，还需要 Q# `Training.qs` 在本教程后面部分介绍的文件。
 
     :::code language="python" source="~/quantum/samples/machine-learning/half-moons/host.py" range="3-42":::
 
@@ -49,7 +52,7 @@ ms.locfileid: "85274421"
 
     ### <a name="c-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 C#](#tab/tabid-csharp)
 
-    若要运行 c # 中的 Q # 分类器，请将以下代码另存为 `Host.cs` 。 请记住，还需要在 `Training.qs` 本教程后面部分介绍的 Q # 文件。
+    若要运行的是 Q# c # 中的分类器，请将以下代码另存为 `Host.cs` 。 请记住，还需要 Q# `Training.qs` 在本教程后面部分介绍的文件。
 
     :::code language="csharp" source="~/quantum/samples/machine-learning/half-moons/Host.cs" range="4-86":::
 
@@ -63,7 +66,7 @@ ms.locfileid: "85274421"
 
     ### <a name="c-with-visual-studio-2019"></a>[在 Visual Studio 2019 中使用 C#](#tab/tabid-vs2019)
 
-    若要从 Visual Studio 中的 c # 运行新的 Q # 程序，请修改 `Host.cs` 以包含以下 c # 代码。 请记住，还需要在 `Training.qs` 本教程后面部分介绍的 Q # 文件。
+    若要 Q# 从 Visual Studio 中的 c # 运行新程序，请修改 `Host.cs` 以包含以下 c # 代码。 请记住，还需要 Q# `Training.qs` 在本教程后面部分介绍的文件。
 
     :::code language="csharp" source="~/quantum/samples/machine-learning/half-moons/Host.cs" range="4-86":::
 
@@ -78,7 +81,7 @@ ms.locfileid: "85274421"
 
 ## <a name="q-classifier-code"></a>Q \# 分类器代码
 
-现在让我们看看如何在 Q # 中定义主机程序调用的操作。
+现在让我们看一下如何在中定义主机程序调用的操作 Q# 。
 我们将以下代码保存到名为的文件中 `Training.qs` 。
 
 :::code language="qsharp" source="~/quantum/samples/machine-learning/half-moons/Training.qs" range="4-116":::

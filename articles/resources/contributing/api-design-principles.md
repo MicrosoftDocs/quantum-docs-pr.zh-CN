@@ -1,32 +1,35 @@
 ---
-title: 'Q # API 设计原则'
-description: 'Q # API 设计原则'
+title: Q#API 设计原则
+description: Q#API 设计原则
 author: cgranade
 ms.author: chgranad
 ms.date: 3/9/2020
 ms.topic: article
 uid: microsoft.quantum.contributing.api-design
-ms.openlocfilehash: def6a9f12accfa399fd4db3783b9899fc743f025
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 580fcaea575ff544ed2c5f31eba7e963bea4534b
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274384"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866887"
 ---
-# <a name="q-api-design-principles"></a>Q # API 设计原则
+# <a name="no-locq-api-design-principles"></a>Q#API 设计原则
 
 ## <a name="introduction"></a>简介
 
-作为一种语言和平台，Q # 使用户能够编写、运行、了解和探索量程应用程序。
-若要为用户提供支持，请在设计 Q # 库时，按照一组 API 设计原则来指导我们的设计，并帮助我们为量子开发社区提供可用库。
-本文列出了这些原则，并提供示例来帮助指导如何在设计 Q # Api 时应用这些原则。
+作为一种语言和平台， Q# 使用户能够编写、运行、了解和探索量程应用程序。
+若要为用户提供支持，设计 Q# 库时，请遵循一组 API 设计原则，指导我们的设计，并帮助我们为量子开发社区提供可用库。
+本文列出了这些原则，并提供示例来帮助指导如何在设计 api 时应用这些原则 Q# 。
 
 > [!TIP]
 > 这是一个相当详细的文档，旨在帮助指导库开发和深度库内容。
-> 如果你在 Q # 中编写自己的库，或者如果你要将更大的功能提供给[q # 库存储库](https://github.com/microsoft/QuantumLibraries)，则可能会发现它最有用。
+> 如果你在中编写自己的库 Q# ，或者如果你要将更大的功能提供给[ Q# 库存储库](https://github.com/microsoft/QuantumLibraries)，则可能会发现它最有用。
 >
 > 另一方面，如果你想要了解如何更常见地参与量程开发工具包，则建议从[贡献指南](xref:microsoft.quantum.contributing)开始。
-> 如果你要查找有关我们建议如何设置你的 Q # 代码格式的更多常规信息，你可能会对签出[样式指南](xref:microsoft.quantum.contributing.style)感兴趣。
+> 如果你要查找有关我们如何推荐设置代码格式的更多常规信息 Q# ，你可能会对签出[样式指南](xref:microsoft.quantum.contributing.style)感兴趣。
 
 ## <a name="general-principles"></a>一般原则
 
@@ -81,13 +84,13 @@ ms.locfileid: "85274384"
 - ✅在同一 API 和之前的现有库中，**请设计函数**和操作，使其与其他函数和操作很好地结合。
 
   *示例：*
-  - 此 @"microsoft.quantum.canon.delay" 操作对其输入做出最小假设，因此可用于延迟 Q # 标准库或用户定义的操作的应用程序。
+  - 此 @"microsoft.quantum.canon.delay" 操作对其输入进行了最少的假设，因此可用于延迟跨 Q# 标准库或用户定义的操作的应用程序。
     <!-- TODO: define bad example. -->
 
 - ✅将纯粹确定的传统逻辑作为函数**而不是操作公开。**
 
   *示例：*
-  - 可以确定如何以确定性的方式写入其浮点输入的子例程，因此应将其公开给用户， `Squared : Double -> Double` 而不是作为一个操作公开给用户 `Square : Double => Double` 。 这允许在更多位置（例如，在其他函数中）调用子例程，并向编译器提供有用的优化信息，从而影响性能和优化。
+  - 可以确定如何以确定性的方式写入其浮点输入的子例程，因此应将其公开给用户， `Squared : Double -> Double` 而不是作为一个操作公开给用户 `Square : Double => Double` 。 这允许在更多位置调用子例程 (例如：) 的其他函数内部，并向编译器提供有用的优化信息，从而影响性能和优化。
   - `ForEach<'TInput, 'TOutput>('TInput => 'TOutput, 'TInput[]) => 'TOutput[]`与 `Mapped<'TInput, 'TOutput>('TInput -> 'TOutput, 'TInput[]) -> 'TOutput[]` 确定性有关的保证不同; 两者在不同情况下都很有用。
   - 转换量程操作应用程序的 API 例程经常以确定性的方式执行，因此可作为函数提供 `CControlled<'T>(op : 'T => Unit) => ((Bool, 'T) => Unit)` 。
 
@@ -115,7 +118,7 @@ ms.locfileid: "85274384"
 
 **关键原则：** 设计函数和操作，以便与 \# 部分应用程序等 Q 语言功能正常工作。
 
-- ✅在输入元组中对项**进行**排序，以便首先发生最常应用的输入（即：使部分应用程序的行为类似于 currying）。
+- ✅**请**在输入元组中对项进行排序，以便最常见的已应用输入 (即：，以便部分应用程序的行为类似于 currying) 。
 
   *示例：*
   - `ApplyRotation`采用浮点数和 qubit 作为输入的操作通常可能会部分应用于浮点输入，后者首先与需要类型输入的操作一起使用 `Qubit => Unit` 。 因此，签名为`operation ApplyRotation(angle : Double, target : Qubit) : Unit is Adj + Ctl`
@@ -137,7 +140,7 @@ ms.locfileid: "85274384"
   *示例：*
   - 应专门将操作解释为将古典数据编码为量程寄存器的操作，可能适合使用用户定义类型进行标记 `newtype InputEncoder = (Apply : (Qubit[] => Unit))` 。
 
-- ✅**确实**会引入新的用户定义类型，其中包含允许将来可扩展性的命名项（例如：以后可能包含其他命名项的结果结构）。
+- ✅使用命名**项引入新**的用户定义的类型，这些类型允许将来的扩展性 (例如：在以后的) 中可能包含其他命名项的结果结构。
 
   *示例：*
   - 当某个操作 `TrainModel` 公开大量配置选项时，将这些选项公开为新的 `TrainingOptions` UDT 并提供新函数， `DefaultTrainingOptions : Unit -> TrainingOptions` 使用户能够在 TrainingOptions UDT 值中重写特定的已命名项，同时仍允许库开发人员根据需要添加新的 UDT 项。
@@ -149,7 +152,7 @@ ms.locfileid: "85274384"
 
 **关键原则：** 通过使用用户定义的类型来降低认知负载，无需用户了解其他概念和命名法。
 
-- ⛔️**不**会引入要求用户频繁使用解包运算符（）的用户定义类型 `!` ，也不会引入通常需要多个解包级别的用户定义类型。 可能的缓解策略包括：
+- ⛔️**不**会引入要求用户经常使用解包运算符 () 的用户定义类型 `!` ，或者通常需要多个级别的解包。 可能的缓解策略包括：
 
   - 使用单个项公开用户定义类型时，请考虑定义该项的名称。 例如， `newtype Encoder = (Apply : (Qubit[] => Unit is Adj + Ctl))` 将优先考虑到 `newtype Encoder = (Qubit[] => Unit is Adj + Ctl)` 。
 
@@ -190,7 +193,7 @@ ms.locfileid: "85274384"
 
 **关键原则：** 将命名空间和访问修饰符一起用于蓄意向用户公开的 API 图面，并隐藏与 Api 实现和测试相关的内部详细信息。
 
-- ✅只要合理，就会将实现 API 所需的所有函数和操作放入与正在实现的 API 相同的命名空间中，但使用 "private" 或 "internal"**关键字进行标记**，以指示它们不属于库的公共 API 图面。 使用以下划线（）开头的名称 `_` ，以直观区分公共 callables 中的私有和内部操作和函数。
+- ✅只要合理，就会将实现 API 所需的所有函数和操作放入与正在实现的 API 相同的命名空间中，但使用 "private" 或 "internal"**关键字进行标记**，以指示它们不属于库的公共 API 图面。 使用以下划线 () 开头的名称 `_` ，以直观区分公共 callables 中的私有和内部操作和函数。
 
   *示例：*
   - 操作名称 `_Features` 指示一个专用于给定命名空间和程序集的函数，并且应带有 `internal` 关键字。
@@ -229,7 +232,7 @@ ms.locfileid: "85274384"
       - @"microsoft.quantum.characterization.estimatefrequency"
       - @"microsoft.quantum.characterization.estimateoverlapbetweenstates"
 
-    - **准备**：将量程操作或一系列操作应用到一个或多个 qubits （通常是 $ \ket{00\cdots 0} $），这会导致这些 qubits 的状态发展到所需的结束状态。 通常，在给定的开始状态以外的其他状态下，**可能会**导致未定义的单一转换，但仍**应**保留操作及其 adjoint "取消"，并应用无操作。
+    - **准备**：将量程操作或一系列操作应用到一个或多个 qubits，假定其在特定初始状态下启动 (通常为 $ \ket{00\cdots 0} $) ，这将导致这些 qubits 的状态发展到所需的结束状态。 通常，在给定的开始状态以外的其他状态下，**可能会**导致未定义的单一转换，但仍**应**保留操作及其 adjoint "取消"，并应用无操作。
 
       *示例：*
       - @"microsoft.quantum.preparation.preparearbitrarystate"
@@ -258,14 +261,14 @@ ms.locfileid: "85274384"
 
   - **形容词**：
 
-    - ⛔️ **New**：**不应**使用此形容词，因为这样可以避免在许多编程语言（例如 c + +、c #、Java、TypeScript、PowerShell）中将其用法与谓词混淆。
+    - ⛔️ **New**：**不应**使用此形容词，因为这样可以避免在许多编程语言中将其用法与谓词混淆 (例如： c + +、c #、Java、TypeScript、PowerShell) 。
 
   - **介词：** 在某些情况下，介词可用于进一步消除或阐明函数和操作名称中的名词和动词的角色。 不过，请注意，这种情况并不一致。
 
     - **如下：** 表示函数的输入和输出表示相同的信息，但输出将该信息表示**为** *X*而不是其原始表示形式。 这对于类型转换函数尤其常见。
 
       *示例：*
-      - `IntAsDouble(2)`指示输入（ `2` ）和输出（ `2.0` ）表示定性的信息相同，但使用不同的 Q \# 数据类型执行此操作。
+      - `IntAsDouble(2)`指示输入 (`2`) 和输出 (`2.0`) 表示定性相同的信息，但使用不同的 Q \# 数据类型执行此操作。
 
     - **源：** 为了确保一致性，**不应**使用此介词来指示类型转换函数或任何其他**适合的情况**。
 

@@ -1,17 +1,20 @@
 ---
 title: 不同输入检查器-量程开发工具包
-description: '了解 Microsoft QDK distinct 输入检查器，该检查器使用量程跟踪模拟器检查您的 Q # 代码中是否存在与共享 qubits 的潜在冲突。'
+description: 了解 Microsoft QDK distinct 输入检查器，该检查器使用量程跟踪模拟器检查 Q# 代码是否存在与共享 qubits 的潜在冲突。
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.distinct-inputs
-ms.openlocfilehash: 49a1ccc5f37acfeaa1ee08bd974be45a40a76f93
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 750c94e7f861678d37f051619ff5b29bf4fd3d3e
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871138"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868264"
 ---
 # <a name="quantum-trace-simulator-distinct-inputs-checker"></a>量程跟踪模拟器：不同的输入检查器
 
@@ -19,7 +22,7 @@ Distinct 输入检查器是量程开发工具包[量程跟踪模拟器](xref:mic
 
 ## <a name="conflicts-with-shared-qubits"></a>与共享的 qubits 冲突
 
-请考虑以下 Q # 代码部分来说明不同输入检查器检测到的问题：
+请考虑下面这段 Q# 代码，说明 distinct 输入检查器检测到的问题：
 
 ```qsharp
 operation ApplyBoth(
@@ -47,7 +50,7 @@ operation ApplyWithNonDistinctInputs() : Unit {
 }
 ```
 
-请注意， `op1` 和 `op2` 均使用部分应用程序获取，并共享 qubit。 `ApplyBoth`在此示例中调用时，操作的结果取决于 `op1` 预期发生的顺序和 `op2` 内部 `ApplyBoth` 。 启用 distinct 输入检查器时，它会检测到这种情况并引发 `DistinctInputsCheckerException` 。 有关详细信息，请参阅 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.DistinctInputsCheckerException> Q # API 库中的。
+请注意， `op1` 和 `op2` 均使用部分应用程序获取，并共享 qubit。 `ApplyBoth`在此示例中调用时，操作的结果取决于 `op1` 预期发生的顺序和 `op2` 内部 `ApplyBoth` 。 启用 distinct 输入检查器时，它会检测到这种情况并引发 `DistinctInputsCheckerException` 。 有关详细信息，请参阅 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.DistinctInputsCheckerException> Q# API 库中的。
 
 ## <a name="invoking-the-distinct-inputs-checker"></a>调用 distinct 输入检查器
 

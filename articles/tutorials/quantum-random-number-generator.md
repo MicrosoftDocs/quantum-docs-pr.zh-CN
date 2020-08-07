@@ -1,30 +1,33 @@
 ---
 title: 创建量子随机数生成器
-description: 生成一个 Q# 项目，通过创建量子随机数生成器来演示基本的量子概念（例如叠加）。
+description: 构建一个 Q# 项目，通过创建一个量程随机数生成器来演示 superposition 等基本的量程概念。
 author: bromeg
 ms.author: megbrow@microsoft.com
 ms.date: 10/25/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.qrng
-ms.openlocfilehash: 18e8975e513a87c0a67a6dbb5586cc7dab5a93fb
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 8db892091794cb1166e41744572d8938d975abf2
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274285"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869760"
 ---
 # <a name="tutorial-implement-a-quantum-random-number-generator-in-q"></a>教程：使用 Q# 实现量子随机数生成器\#
 
-以 Q# 编写的量子算法的一个简单示例是量子随机数生成器。 此算法利用量子力学特性来生成随机数。
+用写入的量程算法的一个简单示例 Q# 是量程随机数生成器。 此算法利用量子力学特性来生成随机数。
 
 ## <a name="prerequisites"></a>先决条件
 
 - Microsoft [Quantum 开发工具包](xref:microsoft.quantum.install)。
-- [从命令行使用 Q#](xref:microsoft.quantum.install.standalone)，或者使用 [Python 主机程序](xref:microsoft.quantum.install.python)或 [C# 主机程序](xref:microsoft.quantum.install.cs)创建 Q# 项目。
+- Q#[使用 Q# 从命令行](xref:microsoft.quantum.install.standalone)或使用[Python 主机程序](xref:microsoft.quantum.install.python)或[c # 宿主程序](xref:microsoft.quantum.install.cs)来创建项目。
 
-## <a name="write-a-q-operation"></a>编写 Q# 运算
+## <a name="write-a-no-locq-operation"></a>编写 Q# 操作
 
-### <a name="q-operation-code"></a>Q# 运算代码
+### <a name="no-locq-operation-code"></a>Q#操作代码
 
 1. 将 Program.qs 文件的内容替换为以下代码：
 
@@ -32,7 +35,7 @@ ms.locfileid: "85274285"
 
 如[了解量子计算](xref:microsoft.quantum.overview.understanding)一文中所述，量子比特是可以叠加的量子信息单位。 度量时，量子位只能是 0 或 1。 但在执行时，量子位的状态表示进行度量时读取值为 0 或 1 的概率。 此概率状态称为叠加。 我们可以根据此概率生成随机数。
 
-在 Q# 操作中，我们引入了 Q# 原生的 `Qubit` 数据类型。 我们只能通过 `using` 语句来分配 `Qubit`。 分配后，量子位始终处于 `Zero` 状态。 
+在我们的 Q# 操作中，我们将 `Qubit` 向提供本机数据类型 Q# 。 我们只能通过 `using` 语句来分配 `Qubit`。 分配后，量子位始终处于 `Zero` 状态。 
 
 我们可以使用 `H` 操作将 `Qubit` 置于叠加态。 若要度量某个量子位并读取其值，请使用 `M` 内部操作。
 
@@ -61,13 +64,13 @@ ms.locfileid: "85274285"
 
 ## <a name="creating-a-complete-random-number-generator"></a>创建完整的随机数生成器
 
-有了一个生成随机位的 Q# 操作以后，即可使用它构建完整的量子随机数生成器。 我们可以使用 Q# 命令行应用程序或主机程序。
+现在，我们有了一个 Q# 生成随机位的操作，可以使用它来生成完整的量程随机数生成器。 我们可以使用 Q# 命令行应用程序或使用主机程序。
 
 
 
-### <a name="q-command-line-applications-with-visual-studio-or-visual-studio-code"></a>[Q# 命令行应用程序与 Visual Studio 或 Visual Studio Code](#tab/tabid-qsharp)
+### <a name="no-locq-command-line-applications-with-visual-studio-or-visual-studio-code"></a>[Q#带有 Visual Studio 或 Visual Studio Code 的命令行应用程序](#tab/tabid-qsharp)
 
-若要创建完整的 Q# 命令行应用程序，请在 Q# 程序中添加以下入口点： 
+若要创建完整的 Q# 命令行应用程序，请在你的程序中添加以下入口点 Q# ： 
 
 :::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="17-33":::
 
@@ -91,7 +94,7 @@ dotnet run --no-build
 
 ### <a name="python-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 Python](#tab/tabid-python)
 
-要从 Python 运行你的新 Q# 程序，请将以下代码另存为 `host.py`：
+若要 Q# 从 Python 运行新程序，请将以下代码另存为 `host.py` ：
 
 :::code language="python" source="~/quantum/samples/interoperability/qrng/host.py" range="11-30":::
 
@@ -105,7 +108,7 @@ Preparing Q# environment...
 
 ### <a name="c-with-visual-studio-code-or-visual-studio"></a>[C# 与 Visual Studio Code 或 Visual Studio](#tab/tabid-csharp)
 
-要从 C# 运行你的新 Q# 程序，请修改 `Driver.cs` 以包含以下 C# 代码：
+若要 Q# 从 c # 运行新程序，请修改 `Driver.cs` 以包含以下 c # 代码：
 
 :::code language="csharp" source="~/quantum/samples/interoperability/qrng/Host.cs" range="4-39":::
 

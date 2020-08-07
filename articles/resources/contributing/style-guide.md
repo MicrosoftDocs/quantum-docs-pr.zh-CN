@@ -1,22 +1,25 @@
 ---
-title: 'Microsoft Q # 样式指南'
-description: '了解 Q # 程序和库的命名、输入、文档和格式设置约定。'
+title: Microsoft Q# 风格指南
+description: 了解程序和库的命名、输入、文档和格式设置约定 Q# 。
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.style
-ms.openlocfilehash: 26de7d5f639ea1b4df24232127b6f95cee3a041e
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 27a2ae5ae9d00329fc369268edae24228a9a9d0d
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871376"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867583"
 ---
-# <a name="q-style-guide"></a>Q # 样式指南 #
+# <a name="no-locq-style-guide"></a>Q#样式指南 #
 ## <a name="general-conventions"></a>一般约定 ##
 
-本指南中建议的约定旨在帮助以 Q # 编写编写的程序和库更易于阅读和理解。
+本指南中建议的约定旨在帮助编写 Q# 更易于阅读和理解的程序和库。
 
 ## <a name="guidance"></a>指南
 
@@ -29,13 +32,13 @@ ms.locfileid: "86871376"
 在提供量子开发工具包时，我们努力实现函数和操作名称，这些名称有助于量子开发人员编写易于阅读的程序，并最大程度地减少意外情况。
 这种情况的一个重要部分是，当我们为函数、操作和类型选择名称时，我们将建立编程人员用来表示量程概念的*词汇*;利用我们的选择，我们可以在很大程度上帮助或阻止他们进行清晰的沟通。
 这会给我们带来责任，以确保我们引入的名称更清晰，而不是隐匿性。
-在本部分中，我们将详细说明我们如何在明确指导下实现这一义务，帮助我们通过 Q # 开发社区获得最佳帮助。
+在本部分中，我们将详细说明我们如何通过明确指导来实现这一义务，这有助于我们开发人员的最佳做法 Q# 。
 
 ### <a name="operations-and-functions"></a>操作和函数 ###
 
 名称应建立的首要任务之一就是给定的符号表示函数还是操作。
 函数和操作之间的区别对于理解代码块的行为方式至关重要。
-为了向用户传达函数和操作之间的区别，我们依赖于该 Q # 模型，通过使用副作用来进行量程操作。
+为了向用户传达函数和操作之间的区别，我们依赖于通过使用副作用来对 Q# 量程操作进行建模。
 也就是说，操作*执行*一些操作。
 
 与此相反，函数说明了数据之间的数学关系。
@@ -69,7 +72,7 @@ ms.locfileid: "86871376"
 | 准备 | 给定的 qubits 寄存器初始化为特定状态 |
 | 示例 | 从某一分布中随机返回一个传统值 |
 
-对于函数，我们建议避免使用谓词来取代常用名词（请参阅下面正确名词的指导）或形容词：
+对于函数，我们建议避免使用谓词来取代常见名词 (请参阅下面的正确名词) 或形容词指导：
 
 - `ConstantArray`
 - `Head`
@@ -93,15 +96,15 @@ ms.locfileid: "86871376"
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | 名称 | 说明 |
+|   | 名称 | 描述 |
 |---|------|-------------|
-| ☑ | `operation ReflectAboutStart` | 清除动词的使用（"反射"）以指示操作的效果。 |
+| ☑ | `operation ReflectAboutStart` | 清除使用谓词 ( "反射" ) 指示操作的效果。 |
 | ☒ | <s>`operation XRotation`</s> | 使用名词短语建议函数，而不是操作。 |
-| ☒ | <s>`operation search_oracle`</s> | 使用 `snake_case` Contravenes Q # 表示法。 |
-| ☒ | <s>`operation Search_Oracle`</s> | 在操作名称 contravenes Q # 表示法内部使用下划线。 |
+| ☒ | <s>`operation search_oracle`</s> | 使用 `snake_case` contravenes Q# 表示法。 |
+| ☒ | <s>`operation Search_Oracle`</s> | 使用带下划线的内部操作名称 contravenes Q# 表示法。 |
 | ☑ | `function StatePreparationOracle` | 使用名词短语建议函数返回操作。 |
-| ☑ | `function EqualityFact` | 清除名词的使用（"事实"），以指示这是一个函数，而形容词却是一个函数。 |
-| ☒ | <s>`function GetRotationAngles`</s> | 使用谓词（"get"）表示这是一个操作。 |
+| ☑ | `function EqualityFact` | 清楚地使用名词 ( "事实" ) 指示这是一个函数，而形容词。 |
+| ☒ | <s>`function GetRotationAngles`</s> | 使用谓词 ( "get" ) 表明这是一个操作。 |
 | ☑ | `newtype GeneratorTerm` | 名词短语的使用显然是指调用 UDT 构造函数的结果。 |
 | ☒ | <s>`@Attribute() newtype RunOnce()`</s> | 使用谓词短语建议 UDT 构造函数为操作。 |
 | ☑ | `@Attribute() newtype Deprecated(Reason : String)` | 使用名词短语会传达属性的使用情况。 |
@@ -110,9 +113,9 @@ ms.locfileid: "86871376"
 
 ### <a name="entry-points"></a>入口点
 
-在将入口点定义为 Q # 程序时，Q # 编译器会识别该[ `@EntryPoint()` 属性](xref:microsoft.quantum.core.entrypoint)，而无需输入点具有特定的名称（例如： `main` 、 `Main` 或 `__main__` ）。
-也就是说，从 Q # 开发人员的角度来看，入口点是使用批注的普通操作 `@EntryPoint()` 。
-此外，Q # 入口点可能是整个应用程序的入口点（即，在 Q # 独立可执行文件中），或者可能是 Q # 程序与应用程序的主机程序（即：将 Q # 与 Python 或 .NET 一起使用时）之间的一个接口，因此，在应用于 Q # 入口点时，名称 "main" 可能会产生误导。
+在将入口点定义到 Q# 程序时， Q# 编译器将识别该[ `@EntryPoint()` 属性](xref:microsoft.quantum.core.entrypoint)，而不要求入口点具有特定名称 (例如： `main` 、 `Main` 或 `__main__`) 。
+也就是说，从开发人员的角度来看 Q# ，入口点是使用批注的普通操作 `@EntryPoint()` 。
+此外， Q# 入口点可能是整个应用程序的入口点 (例如：在 Q# 独立可执行文件) 中，或者可能是程序 Q# 与应用程序的主机程序之间的接口 (也就是说：在使用 Q# Python 或 .net) 时，名称 "main" 在应用于入口点时可能会产生误导 Q# 。
 
 建议使用命名入口点来反映属性的使用情况， `@EntryPoint()` 方法是使用上面列出的命名操作的一般建议。
 
@@ -126,7 +129,7 @@ ms.locfileid: "86871376"
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | 名称 | 说明 |
+|   | 名称 | 描述 |
 |---|------|-------------|
 | ☑ | `@EntryPoint() operation RunSimulation` | 通过操作名称清楚地传达入口点的用途。 |
 | ☒ | <s>`@EntryPoint() operation Main`</s> | 使用 `Main` 不会清晰地传达入口点的目的，它是属性冗余的 `@EntryPoint()` 。 |
@@ -138,13 +141,13 @@ ms.locfileid: "86871376"
 上述建议（尽管如此）有很多形式的速记，可在量程计算中了解常见和普遍使用情况。
 建议使用现有的和常见的速记，特别是对于目标计算机操作的内部操作。
 例如，我们选择名称而不是 `X` `ApplyX` ，而 `Rz` 不是 `RotateAboutZ` 。
-使用此类速记时，操作名称应全部大写（例如： `MAJ` ）。
+使用此类速记时，操作名称应为全部大写 (例如： `MAJ`) 。
 
 在使用常用首字母缩写词和缩略词（例如 "QFT" 表示 "量程傅立叶转换"）时，应用此约定时需要注意一些。
 建议遵循以下常规 .NET 约定，以便在全名中使用首字母缩写词和缩略词，这规定：
 
-- 以大写形式命名两字母首字母缩写词和缩略词（例如： `BE` 对于 "大字节序"），
-- 所有更长的首字母缩写词和缩略词在中命名 `CamelCase` （例如： `Qft` "量程傅立叶变换"）
+- 以大写形式 (两个字母的首字母缩写词和缩略词，例如： `BE` 对于 "大字节序" ) ，
+- 在 `CamelCase` (（例如： `Qft` "量程傅立叶转换"）中命名所有更长的首字母缩写词和缩略词 ) 
 
 因此，实现 QFT 的操作可以被称为 `QFT` 速记，或写出为 `ApplyQft` 。
 
@@ -163,12 +166,12 @@ is Adj + Ctl {
 
 - 适当时，请考虑经常接受和广泛使用的速记名称。
 - 将大写字母用于速记。
-- 将大写字母用于短（两字母）首字母缩写词和缩略词。
-- 使用 `CamelCase` 更长（三个或更多字母）的首字母缩写词和缩略词。
+- 使用大写 (两个字母的短信) 首字母缩写词和缩略词。
+- 使用 `CamelCase` 更长 (三个或更多字母) 缩写词和缩略词。
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | 名称 | 说明 |
+|   | 名称 | 描述 |
 |---|------|-------------|
 | ☑ | `X` | "应用 $X $ 转换" 的公认简写 |
 | ☑ | `CNOT` | "受控-非" 的理解简写 |
@@ -190,11 +193,11 @@ Especially in a field such as quantum computing that is rich with domain experti
 In naming code symbols, one way that this cognizance expresses itself is as an awareness of the convention from physics of adopting as the names of algorithms and operations the names of their original publishers.
 While we must maintain the history and intellectual provenance of concepts in quantum computing, demanding that all users be versed in this history to use even the most basic of functions and operations places a barrier to entry that is in most cases severe enough to even present an ethical compromise. -->
 因此，我们建议无论在哪一种合理的情况下，都要将描述概念的常用名词视为强首选项，以使描述概念的发布历史记录的正确名词。
-例如，单独控制的交换和双向受控 NOT 操作通常称为学术文献中的 "Fredkin" 和 "Toffoli" 操作，但在 Q # 中标识为 `CSWAP` 和 `CCNOT` 。
+例如，单独控制的交换和双向受控 NOT 操作通常称为学术文学中的 "Fredkin" 和 "Toffoli" 操作，但 Q# 主要作为 `CSWAP` 和标识 `CCNOT` 。
 在这两种情况下，API 文档注释都提供基于正确名词的同义词名称以及所有合适的引文。
 
-如果始终需要使用正确名词的某些使用方式，则此首选项非常重要，例如，Q # 遵循许多传统语言所设置的传统语言（例如），并引用对 `Bool` 布尔值逻辑的引用中的类型，这反过来又以 George Boole 为荣誉。
-几个量程概念的命名方式类似于类似的命名方式，其中包括 `Pauli` 对 Q # 语言的内置类型。
+此首选项特别重要，因为必须始终使用正确名词的某些使用方式（ Q# 例如，使用许多传统语言设置的传统语言），并引用对 `Bool` 布尔值逻辑的引用中的类型。
+与此类似，一些量程概念的命名方式类似，其中包括 `Pauli` 内置于语言中的类型 Q# 。
 通过最大限度地减少使用正确名词的情况并不是很重要，我们将减少不能合理避免正确名词的影响。
 
 # <a name="guidance"></a>[指南](#tab/guidance) 
@@ -209,11 +212,11 @@ While we must maintain the history and intellectual provenance of concepts in qu
 
 ### <a name="type-conversions"></a>类型转换 ###
 
-由于 Q # 是一种强类型和 staticly 类型的语言，因此只能使用对类型转换函数的显式调用将一种类型的值用作另一种类型的值。
-这与允许值隐式更改类型（例如，类型提升）或通过强制转换的语言不同。
-因此，类型转换函数在 Q # 库开发中扮演着重要的角色，并且包含有关命名的一个更常见的决策。
+由于 Q# 是强类型化语言，因此，只能使用对类型转换函数的显式调用将一种类型的值用作另一种类型的值。
+这与允许值隐式更改类型 (例如：类型提升) 或通过强制转换）的语言不同。
+因此，类型转换函数在库开发中扮演着重要的角色 Q# ，并且包含有关命名的一个更常见的决策。
 但请注意，由于类型转换始终是_确定性_的，因此可以将它们作为函数编写，因而会在上述建议的范围之内。
-具体而言，我们建议不要将类型转换函数命名为谓词（例如： `ConvertToX` ）或副词 prepositional 短语（ `ToX` ），但应将其命名为形容词 prepositional 短语，指示源和目标类型（ `XAsY` ）。
+具体而言，我们建议不要将类型转换函数命名为谓词 (例如： `ConvertToX`) 或副词 prepositional 短语 (`ToX`) ，但应将其命名为形容词 prepositional 短语，指示源类型和目标类型 (`XAsY`) 。
 在类型转换函数名称中列出数组类型时，建议采用速记 `Arr` 。
 避免异常情况，我们建议使用命名所有类型转换函数， `As` 以便可以快速识别它们。
 
@@ -225,7 +228,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | 名称 | 说明 |
+|   | 名称 | 描述 |
 |---|------|-------------|
 | ☒ | <s>`ToDouble`</s> | 介词 "to" 会生成谓词短语，指示操作而不是函数。 |
 | ☒ | <s>`AsDouble`</s> | 函数名称中不明确输入类型。 |
@@ -244,11 +247,11 @@ While we must maintain the history and intellectual provenance of concepts in qu
 
 建议：
 
-- 当函数、操作或用户定义类型不是 Q # 库或程序的公共 API 的一部分时，请通过将 `internal` 关键字置于 `function` 、 `operation` 或声明之前来确保将其标记为内部 `newtype` 。
+- 当函数、操作或用户定义类型不是库或程序的公共 API 的一部分时，请 Q# 通过将关键字放在 `internal` `function` 、 `operation` 或声明之前来确保将其标记为内部 `newtype` 。
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | 名称 | 说明 |
+|   | 名称 | 描述 |
 |---|------|-------------|
 | ☒ | <s>`operation _ApplyDecomposedOperation`</s> | 不要使用下划线 `_` 指示此操作仅供内部使用。 |
 | ☑ | `internal operation ApplyDecomposedOperation` | `internal`开头的关键字清楚地指示此操作仅供内部使用。 |
@@ -256,7 +259,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 ***
 ### <a name="variants"></a>变量 ###
 
-尽管此限制可能不会在 Q # 的未来版本中保持不变，但目前这种情况下，通常会有一组相关的操作或函数，这些操作或函数可由函子它们的输入支持，或其参数的具体类型区分开来。
+尽管此限制在的未来版本中可能不会保持不变 Q# ，但目前这种情况下，通常会有一组相关的操作或函数，这些操作或函数可由函子它们的输入支持，或其参数的具体类型区分开来。
 可以通过使用相同的根名称，后跟一个或两个指示其变体的字母来区分这些组。
 
 | Suffix | 含义 |
@@ -281,7 +284,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 
 ### <a name="arguments-and-variables"></a>参数和变量 ###
 
-函数或操作的 Q # 代码的主要目标是使其易于阅读和理解。
+Q#函数或操作的代码的主要目标是使其易于阅读和理解。
 同样，输入和类型参数的名称应传达函数或自变量在提供后的使用方式。
 
 
@@ -292,13 +295,13 @@ While we must maintain the history and intellectual provenance of concepts in qu
 - 对于所有变量和输入名称，请 `pascalCase` 在、或中使用强首选项 `CamelCase` `snake_case` `ANGRY_CASE` 。
 - 输入名称应为描述性值;如果可能，请避免一个或两个字母名称。
 - 仅接受一个类型自变量的操作和函数应 `T` 在其角色非常明显时用它来表示该类型参数。
-- 如果函数或操作采用多个类型自变量，或者如果单个类型参数的角色不明显，请考虑 `T` `TOutput` 对每个类型使用以（例如：）开头的简短大写单词。
+- 如果函数或操作采用多个类型自变量，或者如果单个类型参数的角色不明显，请考虑 `T` `TOutput` 对每个类型使用以 (（例如：) ）开头的简短大写单词。
 - 不要在参数和变量名称中包括类型名称;此信息可以并且应由您的开发环境提供。
-- 按复数（）表示标量类型 `flagQubit` ，并按复数（）表示数组类型 `measResults` 。
+- 按 `flagQubit` 复数 ()  () 和数组类型来表示标量类型 `measResults` 。
   对于 qubits 的数组，请考虑以某种方式引用此类类型， `Register` 其中名称是以某种方式密切相关的 qubits 序列。
-- 用作数组索引的变量应以开头 `idx` ，并且应为单数（例如： `things[idxThing]` ）。
+- 用作数组索引的变量应以开头 `idx` ，并且应为单数 (例如： `things[idxThing]`) 。
   具体而言，请特别避免使用单字母变量名作为索引;请考虑至少使用 `idx` 。
-- 用于保存数组长度的变量应以开头 `n` ，并且应为复数（例如： `nThings` ）。
+- 用于保存数组长度的变量应以开头 `n` ，并且应为复数 (例如： `nThings`) 。
 
 # <a name="examples"></a>[示例](#tab/examples)
 
@@ -307,7 +310,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 ### <a name="user-defined-type-named-items"></a>用户定义的名为 Items 的类型 ###
 
 用户定义类型中的命名项应命名为 `CamelCase` ，即使是在对 UDT 构造函数的输入中。
-使用访问器表示法（例如： `callable::Apply` ）或复制和更新表示法（）时，这有助于清晰地将命名项与对本地范围变量的引用区分开来 `set arr w/= Data <- newData` 。
+使用访问器表示法时，这有助于清晰地将命名项与对本地范围变量的引用区分开来 (例如： `callable::Apply`) 或 () 的复制和更新表示法。 `set arr w/= Data <- newData`
 
 # <a name="guidance"></a>[指南](#tab/guidance)
 
@@ -320,7 +323,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | 片段 | 说明 |
+|   | 片段 | 描述 |
 |---|---------|-------------|
 | ☑ | `newtype Oracle = (Apply : Qubit[] => Unit is Adj + Ctl)` | 该名称 `Apply` 是一个 `CamelCase` 格式的谓词短语，建议指定的项是操作。 |
 | ☒ | <s>`newtype Oracle = (apply : Qubit[] => Unit is Adj + Ctl) `</s> | 命名项的开头应为大写字母。 |
@@ -337,12 +340,12 @@ While we must maintain the history and intellectual provenance of concepts in qu
 在可能的情况下，减少操作或函数预期的输入数量可能会很有帮助，因此，每个输入的角色对于调用到该操作或函数中的开发人员和以后读取该代码的开发人员来说都是非常明显的。
 特别是在不可能或不合理地减少操作或函数的参数数量时，必须具有一致的顺序，以便在预测输入顺序时最大程度地减少用户面临的意外情况。
 
-我们建议使用部分应用程序，这种类型的排序约定主要是为了 currying f （x，y）≡ f （x）（y）的泛化。
+建议使用部分应用程序，这种类型的排序约定很大程度上是将部分应用程序视为 currying f (x、y) ≡ f (x) # B4 y) 的通用化。
 因此，部分应用第一个参数应该导致可调用的，只要这种方法合理，就会很有用。
 遵循此原则时，请考虑使用以下参数顺序：
 
 - 传统的不可调用的参数，如角度、动力向量等。
-- 可调用参数（函数和参数）。
+- )  (函数和参数的可调用参数。
   如果函数和操作都作为参数执行，请考虑在函数后放置运算。
 - 可调用参数对其进行操作的集合的方法与 `Map` 、 `Iter` 、和类似 `Enumerate` `Fold` 。
 - 用作控件的 Qubit 参数。
@@ -380,10 +383,10 @@ operation ApplyPhaseEstimationIteration(
 
 ## <a name="documentation-conventions"></a>文档约定 ##
 
-使用 Q # 语言，可以通过使用特殊格式的文档注释，将文档附加到操作、函数和用户定义的类型。
-这些文档注释由三斜杠（ `///` ）表示，这是[DocFX-风格 Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)文档，可用于描述每个操作、函数和用户定义类型的用途、每个预期的输入，等等。
+该 Q# 语言允许通过使用特殊格式的文档注释，将文档附加到操作、函数和用户定义的类型。
+这些文档注释由三斜杠 (`///`) 表示，这些文档注释[是风格 Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)文档，可用于描述每个操作、函数和用户定义类型的用途、每个所需的输入等。
 使用量子开发工具包提供的编译器可提取这些注释，并使用它们来帮助录入文档，如中所示 https://docs.microsoft.com/quantum 。
-同样，随量子开发工具包一起提供的语言服务器使用这些注释在用户将鼠标悬停在其 Q # 代码中的符号上方时向用户提供帮助。
+同样，随量程开发工具包一起提供的语言服务器使用这些注释在用户悬停在其代码中的符号时向用户提供帮助。 Q#
 利用文档注释，可以通过提供有用的参考来帮助用户理解代码，这是使用本文档中的其他约定不容易表达的详细信息。
 
 > [!div class="nextstepaction"]
@@ -399,17 +402,17 @@ operation ApplyPhaseEstimationIteration(
 - 每个文档注释至少应包含以下部分：
     - 总结
     - 输入
-    - 输出（如果适用）
+    - 输出 (（如果适用）) 
 - 确保所有摘要都是两个句子或更少。 如果需要更多空间，请在 `# Description` 后面提供 `# Summary` 完整的详细信息部分。
-- 如果合理，则不要在摘要中包含数学，因为并非所有客户端都支持摘要中的 TeX 表示法。 请注意，在编写 prose 文档（例如 TeX 或 Markdown）时，最好使用较长的行长度。
+- 如果合理，则不要在摘要中包含数学，因为并非所有客户端都支持摘要中的 TeX 表示法。 请注意，将 prose 文档写入 (例如 TeX 或 Markdown) 时，最好使用较长的行长度。
 - 在部分中提供所有相关的数学表达式 `# Description` 。
 - 在描述输入时，请不要重复每个输入的类型，因为编译器可以推断这些类型，并且会导致不一致的风险。
 - 提供相应的示例，每个示例都在各自的 `# Example` 部分中。
 - 在列出代码之前，请简要说明每个示例。
-- 将所有相关学术出版物（例如：论文、诉讼、博客文章和替代实现）引用 `# References` 为一节中的链接列表。
-- 请确保在可能的情况下，所有引文链接都是永久和不可变的标识符（DOIs 或版本控制的 arXiv 数字）。
+- 引用所有相关学术出版物 (例如：论文、诉讼、博客文章和替代实现) 在 `# References` 部分中作为链接的项目符号列表。
+- 请尽可能确保所有引文链接都是永久且不可变的标识符 (DOIs 或版本化 arXiv 号) 。
 - 当某个操作或函数通过函子变体与其他操作或函数相关时，请将其他变体作为此部分中的项目符号列出 `# See Also` 。
-- 在第1级（）节之间留空注释行 `/// #` ，但不要在第2级（）部分之间留有空行 `/// ##` 。
+- 在第1级 () 部分留空注释行 `/// #` ，但不要在第2级 () 部分之间留有空行 `/// ##` 。
 
 # <a name="examples"></a>[示例](#tab/examples)
 
@@ -454,8 +457,8 @@ is Adj + Ctl {
 
 除了上述建议外，还有助于使代码尽可能清晰地使用一致的格式设置规则。
 这种格式设置规则按性质，这种格式略有意义，并且是个人美观。
-尽管如此，我们建议在一组协作者内维护一组一致的格式设置约定，特别是对于较大的 Q # 项目（如量子开发工具包本身）。
-可以通过使用与 Q # 编译器集成的格式设置工具来自动应用这些规则。
+尽管如此，我们建议在一组协作者内维护一组一致的格式设置约定，特别是对于较大 Q# 的项目（如量子开发工具包本身）。
+可以通过使用与编译器集成的格式设置工具来自动应用这些规则 Q# 。
 
 # <a name="guidance"></a>[指南](#tab/guidance) 
 
@@ -470,13 +473,13 @@ is Adj + Ctl {
 - 行在合理的位置换行79个字符。
 - 在二元运算符周围使用空格。
 - 使用用于类型批注的冒号两侧的空格。
-- 在数组和元组文本中使用逗号后使用单个空格（例如：在函数和操作的输入中）。
+- 在数组和元组文本中使用逗号后使用单个空格 (例如：在函数和操作) 输入。
 - 在函数、操作或 UDT 名称后，或在属性声明后面不要使用空格 `@` 。
 - 每个属性声明都应在自己的行上。
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-|   | 片段 | 说明 |
+|   | 片段 | 描述 |
 |---|---------|-------------|
 | ☒ | <s>`2+3`</s> | 在二元运算符周围使用空格。 |
 | ☒ | <s>`target:Qubit`</s> | 在类型批注冒号前后使用空格。 |

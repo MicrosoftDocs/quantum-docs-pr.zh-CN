@@ -1,17 +1,20 @@
 ---
-title: 'Q # 标准库中的数据结构'
-description: '了解 Microsoft Q # 标准库中的数据结构、oracles 和 dynamical 生成器。'
+title: 标准库中的数据结构 Q#
+description: 了解 Microsoft 标准库中的数据结构、oracles 和 dynamical 生成器 Q# 。
 author: QuantumWriter
 uid: microsoft.quantum.libraries.data-structures
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 46ac6794d1e21e111aa1d98e11a6f83194f8d54e
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 222fa7d0d33d4ac6c15e9ee9e6e97f380867a145
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274414"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868506"
 ---
 # <a name="data-structures-and-modeling"></a>数据结构和建模 #
 
@@ -34,7 +37,7 @@ ApplyToEach(H, Snd(pair)); // No need to deconstruct to access the register.
 ### <a name="arrays"></a>数组 ###
 
 Canon 提供了若干用于操作数组的函数。
-这些函数是类型参数化的，因此可以与任何 Q # 类型的数组一起使用。
+这些函数是类型参数化的，因此可用于任何类型的数组 Q# 。
 例如， <xref:microsoft.quantum.arrays.reversed> 函数返回一个新数组，其元素与输入的顺序相反。
 这可用于更改调用操作时量程寄存器的表示方式：
 
@@ -72,7 +75,7 @@ ApplyToEach(
 此处的术语 "oracle" 指的是一组 qubits 的黑盒量程子例程，并以阶段的形式返回答案。
 通常，可以将此子例程视为接受 oracle 的量程算法的输入，以及其他一些参数，并应用一系列的量程操作，并将对此量程子例程的调用视为一个基本入口。
 很明显，若要实际实现更大的算法，必须提供 oracle 到基本入口的具体分解，但这种情况下无需进行此类分解即可了解调用 oracle 的算法。
-在 Q # 中，此抽象通过使用该操作是第一类值来表示的，因此，可以将操作以黑白方式传递到量程算法的实现中。
+在中 Q# ，此抽象通过使用该操作是第一类值来表示，这样，就可以将操作以黑白方式传递到量程算法的实现中。
 此外，用户定义的类型用于以类型安全的方式标记不同的 oracle 表示形式，这使得难以偶然人们常常会不同种类的黑框操作。
 
 此类 oracles 显示在多个不同的上下文中，其中包括[Grover 的搜索](https://en.wikipedia.org/wiki/Grover%27s_algorithm)和量程模拟算法等著名示例。
@@ -92,17 +95,17 @@ Oracles 标识了这样的 subspaces，与 Pauli 运算符如何识别两个空�
 
 我们将表示我们需要将振幅放大的第一台 oracle 用于 $P \_ $0，定义为执行以下操作。  对于 "初始" 子空间中的所有状态 $ \ket{x} $ $P \_ 0 \ket{x} =-\ket{x} $ 和不在此 \ket{y} 中的所有状态 $ 子空间 $，我们 $P \_ 0 \ket{y} = \ket{y} $。
 标记目标子空间 $P _1 $ 的 oracle 将采用完全相同的形式。
-对于目标子空间中的所有状态 $ \ket{x} $ （即，对于要输出算法的所有状态），$P _1 \ 票证 {x} =-\ket{x} $。
+对于目标子空间中的所有状态 $ \ket{x} $ (即，对于想要算法输出) 的所有状态，$P _1 \ 票证 {x} =-\ket{x} $。
 同样，对于不在目标子空间中的所有状态 $ \ket{y} $ $P _1 \ 票证 {y} = \ket{y} $。
 然后将这两个反射组合起来以形成一个运算符，该运算符将制定 =-P_0 P_1 $ 的单个步骤 $Q，其中，整体减号只是在受控应用程序中考虑。
 然后，振幅放大进入初始状态的 $ \ket{\psi} $，然后执行 $ \ket{\psi} \mapsto Q ^ m \ket{\psi} $。
-如果执行此类迭代，则可保证如果一次启动时使用的初始状态与标记的空间重叠 $ \sin ^ 2 （\theta） $，则在 $m $ 迭代后，此重叠将变为 $ \sin ^ 2 （[2m + 1] \theta） $。
+执行此类迭代可保证如果一次启动时使用的初始状态与已标记的空格重叠 $ \sin ^ 2 ( \theta) $，则 $m $ 迭代后，此重叠将变为 $ \sin ^ 2 ( [2m + 1] \theta) $。
 因此，我们通常希望选择 $m $ 为自由参数，如 $ [2m + 1] \theta = \ pi/2 $;但是，这种严格的选择对于某些形式的振幅放大（如固定点波幅放大）并不重要。
 使用此过程，我们可以在标记的子空间中准备一个状态，使用几率更少查询标记函数，将状态准备函数限制在严格的设备上。
 这就是为什么在量程计算的许多应用程序中，振幅放大是一个重要的构建基块。
 
 若要了解如何使用该算法，提供一个提供 oracles 构造的示例非常有用。  请考虑在此设置中执行 Grover 的数据库搜索算法。
-在 Grover 的搜索中，目标是将状态 $ \ket{+} ^ {\otimes n} = H ^ {\otimes n} \ket $ 转换为 {0} 一个（可能的）多个标记的状态。
+在 Grover 的搜索中，目标是将状态 $ \ket{+} ^ {\otimes n} = H ^ {\otimes n} \ket $ 转换为 {0} (之一可能) 多个标记的状态。
 为了进一步简化，只需查看标记状态为 $ \ket $ 的情况 {0} 。
 接下来，我们设计了两个 oracles：一个仅使用减号标记初始状态 $ \ket{+} ^ {\otimes n} $，另一个使用减号标记标记状态 $ \ket {0} $。
 通过使用 canon 中的控制流操作，可以使用以下处理操作来实现后一门：
@@ -145,7 +148,7 @@ is Adj + Ctl {
 }
 ```
 
-然后，可以将这两个 oracles 组合在一起，以在两个状态之间切换，并使用多个与 $ Hadamard ^ n 关联的 \Sqrt{2 入口层来确定将 $ \ket{+} ^ {\otimes n} $ 转换为 $ \ket {0} $ （ie $m \propto \sqrt{2 ^ n} $）与大约 $ 2 ^ n $ 层之间的对比，这是因为在观察到 {0} 结果 $0 $ 之前，通过准备和测量初始状态而不确定地准备 $ \ket $ 状态所需要的。
+然后，可以将这两个 oracles 组合在一起，以在两个状态之间切换，并使用多个与 $ Hadamard ^ n 关联的 \Sqrt{2 入口层来确定将 $ \ket{+} ^ {\otimes n} $ 转换为 $ \ket {0} $ (ie $m \propto \sqrt{2 ^ n} $) 与大约 $ 2 ^ n $ 层之间的对比，这是因为在观察到 {0} 结果 $0 $ 之前准备和测量初始状态所需要的。
 
 ### <a name="phase-estimation-oracles"></a>阶段估算 Oracles ###
 
@@ -163,37 +166,37 @@ is Adj + Ctl {
 第一种类型的 oracle 是，我们称之为单独查询 oracle 并使用用户定义类型表示 <xref:microsoft.quantum.oracles.discreteoracle> ，只涉及一个单一矩阵。
 如果 $U $ 是要估计其本征值的单一项，则 $U $ 的 oracle 只是实现 $U $ 的子程序的一个独立。
 例如，可以将 $U $ 指定为上述 oracle $Q $ 来估算幅度估算。
-此矩阵的本征值可用于估算初始状态与目标状态之间的重叠，$ \sin ^ 2 （\theta） $，使用的样本越少，将需要其他值。
+此矩阵的本征值可用于估算初始状态与目标状态之间的重叠，$ \sin ^ 2 ( \theta) $，使用的样本越少，将需要其他值。
 这盈利将使用 Grover oracle $Q $ 作为输入的应用程序阶段估算作为输入的名字对象。
 量程 metrology 中广泛使用的另一个常见应用程序涉及到估计一个小旋转角度。
-换而言之，我们想要估算 $R _z （\theta） $ 形式未知旋转入口的 $ \theta $。
-在这种情况下，我们要与之交互的子例程是： $ $ \begin{align} U & = R_z （\theta） \\ \\ & = \begin{bmatrix} e ^ {-i \theta/2} & 0 \\ \\ 0 & e ^ {i \ theta/2} \end{bmatrix}。
+换句话说，我们想要为窗体 $R _z ( \theta) $ 的未知旋转入口估计 $ \theta $。
+在这种情况下，我们要与之交互的子例程是： $ $ \begin{align} U & = R_z ( \theta) \\ \\ & = \begin{bmatrix} e ^ {-i \theta/2} & 0 \\ \\ 0 & e ^ {i \ theta/2} \end{bmatrix}。
 \end{align} $ $
 
 阶段估算中使用的第二种类型的 oracle 是连续查询 oracle，由 <xref:microsoft.quantum.oracles.continuousoracle> 类型表示。
-针对阶段估算的连续查询采用形式 $U （t） $，其中 $t $ 是经典的已知实数。
-如果允许 $U $ 是固定的单一项，则 oracle 连续查询将采用 $U （t） = U ^ t $ 的形式。
+Oracle for 阶段估算的连续查询采用 $U (t) $ 的形式，其中 $t $ 是经典的已知实数。
+如果允许 $U $ 是固定的单一项，则 oracle 查询将采用 (t) = U ^ t $ $U 的格式。
 这样，我们就可以查询如 $ \sqrt{U} $ 这样的矩阵，这些矩阵无法直接在离散查询模型中实现。
 
 这种类型的 oracle 非常有用，因为你不会探测特定的单一系统，而是想要了解单一的生成器属性。
-例如，在 dynamical 量程模拟中，目标是设计一些量程线路，使其大致接近 $U （t） = e ^ {-i H t} $ for Hermitian matrix $H $ 和演化时间 $t $。
-$U （t） $ 的本征值直接与 $H $ 的本征值相关。
-若要查看此内容，请考虑 $H $： $H \ket{E} = E\ket {E} $ 的 eigenvector，然后可以从矩阵指数的电源系列定义中轻松看到 $U （t） \ket{E} = e ^ {i\phi} \ 票证 {E} = e ^ {-iEt} \ket{E} $。
-因此，估计 $U 的 eigenphase （t） $ $E $ 假设 eigenvector $ \ket{E} $ 输入到阶段估算算法。
+例如，在 dynamical 量程模拟中，目标是设计一些量程线路，使其大致接近 $U (t) = e ^ {-i H t} $ for Hermitian matrix $H $ 和演化时间 $t $。
+$U (t) $ 的本征值直接与 $H $ 的本征值相关联。
+若要查看此内容，请考虑 $H $： $H \ket{E} = E\ket {E} $ 的 eigenvector，然后可以从矩阵指数的电源系列定义中轻松看出，$U (t) \ket{E} = e ^ {i\phi} \ 票证} iEt $。
+因此，若要估计 $U (t) $ 的 eigenphase，请将 eigenvalue $E $ 假设 eigenvector $ \ket{E} $ 输入到阶段估算算法中。
 但是，在这种情况下，可以按用户的意愿选择值 $t $，因为 $t $ 的任何足够小值都可以通过 $E =-\ phi/t $ $E 唯一反转。
 由于量程模拟方法提供执行小数演变的功能，因此，在查询单一阶段时，这会授予阶段估算算法额外的自由度，具体而言，在离散查询模型只允许使用 $U ^ j $ 形式为 integer $j $ 的形式的 unitaries 时，可以使用 "持续查询" 来将 ^ t $t $ $U ^ t $ 的形式近似于 "unitaries"。
 这一点非常重要，因为它使我们能够精确地选择可提供有关 $E $ 的最多信息的试验：而基于离散查询的方法必须在算法中选择最大的整数查询来使其成为损害。
 
 作为此问题的具体示例，请考虑估计不是门的旋转角度但旋转后的量程系统的 procession 频率的问题。
-描述此类量程动态的单一 $U （t） = R_z （2 \ omega t） $ for 演化时间 $t $ 和 unknown frequency $ \omega $。
-在这种情况下，我们可以使用单个 $R _z $ 入口来模拟任何 $t $ $U （t） $，因此不需要将自己限制为仅对单一的单独查询。
+描述此类量程动态的单一 $U (t) = R_z (2 \ omega t) $，以获取演化时间 $t $ 和 unknown frequency $ \omega $。
+在这种情况下，我们可以使用单个 $R $ 关口来模拟任何 $t $ $U (t) $，因此，不需要将自己限制为仅限单一的单独查询。
 此类连续模型还具有属性，该属性可以从使用连续查询的阶段估算流程中了解到 $ 2 \ pi $ 的频率，这是因为在相当 $ 的非 $t 值上执行的试验结果可能会显示通过对数函数的分支切口来屏蔽的阶段信息。
 因此，对于这样的问题，例如，针对阶段估计 oracle 的连续查询模型不仅合适，而且还优于离散查询模型。
-出于此原因，Q # 功能适用于这两种形式的查询，并将其留给用户，以决定满足其需求的阶段估算算法，以及可用的 oracle 类型。
+出于此原因，对于 Q# 这两种形式的查询都具有功能，并将其留给用户，以决定满足其需求的阶段估算算法，以及可用的 oracle 类型。
 
 ## <a name="dynamical-generator-modeling"></a>Dynamical 生成器建模 ##
 
-时间演化的生成器介绍状态随着时间推移的发展方式。 例如，量程状态 $ \ket{\psi} $ 的 dynamics 由 Schrödinger 公式 $ $ \begin{align} i\frac {d \ket{\psi （t）}} {d t} & = H \ket{\psi （t）}，\end{align} $ $ 和 Hermitian matrix $H $ （称为 Hamiltonian，作为运动的生成器。 给定初始状态 $ \ket{\psi （0）} $，时间 $t = $0，这种情况下，此公式的正式解决方案 $t $ 可能是按以下方式编写的： $ $ \begin{align} \ket{\psi （t）} = U （t） \ket{\psi （0）}，\end{align} $ $，其中矩阵指数 $U （t） = e ^ {-i H t} $ 称为单一时间演化运算符。 尽管我们将重点放在下面这一窗体的发电机上，但我们强调到，该概念更广泛地应用，例如模拟开放的量程系统或更多抽象的差分等式。
+时间演化的生成器介绍状态随着时间推移的发展方式。 例如，量程状态 $ \ket{\psi} $ 的 dynamics 由 Schrödinger 公式 $ $ \begin{align} i\frac {d \ket{\psi (t) }} {d t} & = H \ket{\psi (t) }，\end{align} $ $ 和 Hermitian matrix $H $ （称为 Hamiltonian，作为运动的生成器。 给定初始状态 $ \ket{\psi (0) } $，时间 $t = $0，这种情况下，此公式的正式解决方案 $t $ 可能是按以下方式编写的： $ $ \begin{align} \ket{\psi (t) } = U (t) \ket{\psi (0) }，\end{align} $ $，其中矩阵指数 $U (t) = e ^ {-i H t} $ 称为单一时间演化运算符。 尽管我们将重点放在下面这一窗体的发电机上，但我们强调到，该概念更广泛地应用，例如模拟开放的量程系统或更多抽象的差分等式。
 
 Dynamical 模拟的主要目标是对在量程计算机的 qubits 中编码的某些量程状态实施时间演化运算符。  在许多情况下，Hamiltonian 可能会被分解为某些 $d $ 简化术语的总和
 
@@ -201,7 +204,7 @@ $ $ \begin{align} H & = \sum ^ {d-1} _ {j = 0} H_j，\end{align} $ $
 
 在量程计算机上，每个术语单独进行的时间演化非常容易实现。 例如，如果 $H _j $ 是一个在 qubit 寄存器的第一个和第二个元素上执行的 Pauli $X _1X_2 $ operator `qubits` ，则它在任何时间 $t $ 只能通过调用具有签名的操作来实现 `Exp([PauliX,PauliX], t, qubits[1..2])` `((Pauli[], Double, Qubit[]) => Unit is Adj + Ctl)` 。 如稍后在 Hamiltonian 模拟中所述，一个解决方案是通过使用一系列简单的操作 $H $ 来估算时间演变。
 
-$ $ \begin{align} U （t） & = \left （e ^ {-iH \_ 0 t/r} e ^ {-iH \_ 1 t/r} \cdots e ^ {-iH \_ {d-1} t/r} \right） ^ {r} + \mathcal{O} （d ^ 2 \ max_j \\ |H \_ j \\ | ^ 2 t ^ 2/r），\end{align} $ $
+$ $ \begin{align} U (t) & = \left ( e ^ {-iH \_ 0 t/r} e ^ {-iH \_ 1 t/r} \cdots e ^ {-iH \_ {d} \right) d ^ 2 \ (\\ |H \_ j \\ | ^ 2 t ^ 2/r) ，\end{align} $ $
 
 其中整数 $r > $0 控制近似值错误。
 
@@ -260,7 +263,7 @@ newtype EvolutionUnitary = ((Double, Qubit[]) => Unit is Adj + Ctl);
 
 ### <a name="time-dependent-generators"></a>与时间相关的生成器 ###
 
-在许多情况下，我们还对与时间相关的生成器进行建模，如 Schrödinger 公式 $ $ \begin{align} i\frac {d \ket{\psi （t）}} {d t} & = \hat H （t） \ket{\psi （t）}，\end{align} $ $，其中生成器 $ \hat H （t） $ 现在依赖于时间。 这种情况下，与此案例相关的独立生成器的扩展非常简单。 不是将 `GeneratorSystem` Hamiltonian 的所有 $t 时间都固定在一起，而是使用 `GeneratorSystemTimeDependent` 用户定义的类型。
+在许多情况下，我们还对与时间相关的生成器进行建模，Schrödinger 公式 $ $ \begin{align} i\frac {d \ket{\psi (t) }} {d t} & = \hat H (t) \ket{\psi (t) }，\end{align} $ $，其中生成器 $ \hat H () $ 现在取决于时间。 这种情况下，与此案例相关的独立生成器的扩展非常简单。 不是将 `GeneratorSystem` Hamiltonian 的所有 $t 时间都固定在一起，而是使用 `GeneratorSystemTimeDependent` 用户定义的类型。
 
 ```qsharp
 newtype GeneratorSystemTimeDependent = (Double -> GeneratorSystem);

@@ -4,34 +4,37 @@ description: Microsoft Quantum Development Kit 的许可条款、免责声明和
 author: QuantumWriter
 ms.author: cpalmer
 ms.date: 11/04/2019
-ms.openlocfilehash: 0d3aa9ae9e4f232ba2403512ff6e2394ecedeb22
-ms.sourcegitcommit: 6ccea4a2006a47569c4e2c2cb37001e132f17476
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 33b36e5619c62c9e2306441f55b244caa3214e98
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/28/2020
-ms.locfileid: "77907114"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866717"
 ---
 # <a name="microsoft-software-license-terms"></a>MICROSOFT 软件许可条款 
-## <a name="microsoft-quantum-development-kit-preview"></a>MICROSOFT 量程开发工具包（预览版）
+## <a name="microsoft-quantum-development-kit-preview"></a>MICROSOFT 量程开发工具包 (预览) 
 
 
 * * *
 
-**如果你居住在美国，或者是由你的主要经营公司的业务，请阅读下面的 "绑定仲裁和类操作弃权" 一节。它会影响争议的解决方式。**
+**如果你居住在 (或者是在美国) 的主要业务，请阅读下面的 "绑定仲裁和类操作弃权" 部分。它会影响争议的解决方式。**
 
 * * *
 
-这些许可条款是您与 Microsoft Corporation（或其附属机构之一）之间达成的协议。 它们适用于上面提到的预发行软件和任何 Microsoft 服务或软件更新（此类服务或更新的范围附带了新的或其他条款，在这种情况下，这些不同的条款适用于潜在，不会改变或 Microsoft 与预更新的软件或服务相关的权利）。
+这些许可条款是您与 Microsoft Corporation（或其附属机构之一）之间达成的协议。 它们适用于上面提到的预发行软件和任何 Microsoft 服务或软件更新 (但这类服务或更新附带了新的或其他条款，在这种情况下，这些不同的条款将适用于潜在，并且不会更改您或 Microsoft 与预更新的软件或服务) 相关的权利。
 
-如果遵守这些许可条款，将拥有以下权利。 使用该软件即表示您接受这些条款。
+如果遵守这些许可条款，将拥有以下权利。 使用该软件即表示接受这些条款。
 
 1. **安装和使用权利。**
 
-     a. **一般**。 您只能使用 Microsoft Quantum Development Kit （预览版）软件来帮助您开发和测试您的应用程序。
+     a. “常规”****。 您只能使用 Microsoft Quantum Development Kit (预览版) 软件来帮助您开发和测试应用程序。
 
-     b. **第三方软件**。 本软件可能包含根据本协议或相关条款向您许可的第三方应用程序。 第三方应用程序的许可条款、声明和确认（如果有）可以在[第三方通知](https://3rdpartysource.microsoft.com/)或随附的通知文件中联机访问。 即使此类应用程序受其他协议的管制，但以下免责声明、限制和豁免项在适用法律的允许范围内同样适用。 由 ETH 苏黎世（瑞士）、Troyer 组开发的内核。
+     b. **第三方软件**。 本软件可能包含根据本协议或相关条款向您许可的第三方应用程序。 第三方应用程序的许可条款、声明和确认（如果有）可以在[第三方通知](https://3rdpartysource.microsoft.com/)或随附的通知文件中联机访问。 即使此类应用程序受其他协议的管制，但以下免责声明、限制和豁免项在适用法律的允许范围内同样适用。 通过 ETH 苏黎世开发的内核 (瑞士) ，Troyer 的盈利率组。
  
-2. **区分时间的软件。**
+2. **具有时效性的软件。**
 
      a. **Period**。 该软件的时间是敏感的，可能会在软件中定义的日期停止运行。
 
@@ -42,9 +45,9 @@ ms.locfileid: "77907114"
 1. **预发行软件**。 本软件是预发行版。 它可能无法正常工作。 它可能与商业发行版本不同。
 
 
-1. **反馈**。 如果您向 Microsoft 提供有关该软件的反馈，则表示您免费授予 Microsoft 以任何方式和出于任何目的使用、共享和商业化您的反馈的权利。 您不会提供受许可证约束的反馈，许可证要求 Microsoft 将其软件或文档的许可发放给第三方，因为 Microsoft 会在其中包含您的反馈。 这些权利在本协议仍然有效。
+1. 反馈。 如果您向 Microsoft 提供有关本软件的反馈，即表示您免费向 Microsoft 提供以任何方式出于任何目的使用、共享和商业化您的反馈的权利。 您不会提供受许可证约束的反馈，许可证要求 Microsoft 将其软件或文档的许可发放给第三方，因为 Microsoft 会在其中包含您的反馈。 此类权利在本协议中继续有效。
 
-1. **数据收集**。 软件可能收集有关您及您对软件使用的信息，并将该信息发送给 Microsoft。 Microsoft 可能使用此信息提供服务并改进 Microsoft 的产品和服务。 选择退出的权利（如有）在产品文档中描述。 软件的某些功能可能允许从您的访问或使用该软件的应用程序中收集用户数据。 如果使用这些功能在应用程序中启用数据收集，则必须遵守适用法律，包括获得任何必需的用户同意，并维护重要的隐私策略，以准确地通知用户您使用、收集和共享其数据的方式。 可在 https://go.microsoft.com/fwlink/?LinkId=521839 中查阅产品文档和 Microsoft 隐私声明，详细了解有关 Microsoft 数据收集和使用的信息。 您需同意遵守 Microsoft 隐私声明的所有适用条款。
+1. **数据收集**。 软件可能收集有关您及您对软件使用的信息，并将该信息发送给 Microsoft。 Microsoft 可能使用此信息提供服务并改进 Microsoft 的产品和服务。 选择退出的权利（如有）在产品文档中描述。 软件的某些功能可能允许从您的访问或使用该软件的应用程序中收集用户数据。 如果使用这些功能在应用程序中启用数据收集，则必须遵守适用法律，包括获得任何必需的用户同意，并维护重要的隐私策略，以准确地通知用户您使用、收集和共享其数据的方式。 可在 https://go.microsoft.com/fwlink/?LinkId=521839 中查阅产品文档和 Microsoft 隐私声明，详细了解有关 Microsoft 数据收集和使用的信息。 你同意遵守《Microsoft 隐私声明》的所有适用条款。
 
 1. **许可证范围**该软件已获得许可，而非出售。 Microsoft 保留所有其他权利。 尽管存在这一限制，但适用法律可赋予您更多权利，否则您不能（且没有权利）：
 
@@ -64,7 +67,7 @@ ms.locfileid: "77907114"
 
 1. **更新**。 软件可能会定期检查更新，并为您下载和安装。 只能从 Microsoft 或授权的来源获取这些更新。 Microsoft 可能需要更新系统以为您提供更新。 您同意接收这些自动更新，系统不会发送任何其他通知。 更新可能不包括或支持所有现有软件功能、服务或外围设备。
 
-1. **绑定仲裁和类操作弃权。本部分适用于你的情况（或者，如果业务，你的主要经营地点位于）美国**。  如果您与 Microsoft 有争议，则您和 Microsoft 同意尝试 60 天，以非正式方式进行解决。 如果你和 Microsoft 无法做到这一点，则你和 Microsoft 同意在美国联邦联邦行为（"FAA"）下**的美国仲裁关联之前绑定个人** 中立仲裁员将作出决定。 **不允许** **类操作诉讼、类范围仲裁、私有律师-常规操作**以及任何其他在任何人都在使用代表容量的情况下继续操作。也不会在所有参与方同意的情况下合并单个的。 完整的仲裁协议包含更多条款，可在 https://aka.ms/arb-agreement-1 中查看。 您和 Microsoft 同意这些条款。
+1. **绑定仲裁和类操作弃权。本部分适用于你居住 (的情况，或者如果业务，你的主要经营地点在美国) **。  如果您与 Microsoft 有争议，则您和 Microsoft 同意尝试 60 天，以非正式方式进行解决。 如果你和 Microsoft 无法做到这一点，则你和 Microsoft 同意在美国 ( "FAA" ) 下**的美国仲裁关联之前绑定单个仲裁**，而不是在 "**判断" 或 "陪审团面前" 前面的法庭中进行**。 中立仲裁员将作出决定。 **不允许****类操作诉讼、类范围仲裁、私有律师-常规操作**以及任何其他在任何人都在使用代表容量的情况下继续操作。也不会在所有参与方同意的情况下合并单个的。 完整的仲裁协议包含更多条款，可在 https://aka.ms/arb-agreement-1 中查看。 您和 Microsoft 同意这些条款。
 
 1. **完整协议**。 本协议以及 Microsoft 可能为补充、更新或第三方应用程序提供的任何其他条款构成该软件的完整协议。
 
@@ -86,7 +89,7 @@ ms.locfileid: "77907114"
 
 <p>15. <strong>损坏的限制和排除。如果你有权恢复损害，而不考虑前述担保，你可以从 MICROSOFT 及其供应商处恢复，仅限美国 $5.00 的直接损害。您无法恢复任何其他损害，包括后果性的、利润损失、特殊、间接或附带的损害。</strong>
 
-**此限制适用于（a）与第三方 Internet 站点上的软件、服务、内容（包括代码）或第三方应用程序相关的任何内容; 以及（b）违反合同、担保、保证或条件、严格责任、过失或其他侵权行为、严格责任、过失或其他侵权行为，或者在每种情况下都适用法律允许的范围**。
+**此限制适用于 () 与软件、服务、内容 (（包括第三方 Internet 站点上的代码) 或第三方应用程序）相关的任何内容; 以及 (b) 声明违反合同、担保、保证或条件; 严格责任、过失或其他侵权行为; 或者，在每种情况下为适用法律允许的范围**。
 
 **即使 Microsoft 知道或应该知道损坏的可能性，它也同样适用。上述限制或排除可能不适用于你，因为你的州、省或国家/地区可能不允许排除或限制附带的、后果性的或其他损害**。
 </blockquote>
@@ -100,7 +103,7 @@ ms.locfileid: "77907114"
 **限制 DES DOMMAGES-INTÉRÊTS ET RESPONSABILITÉ浇筑 LES DOMMAGES。Vous pouvez obtenir de Microsoft et de se fournisseurs une indemnisation，ca de dommages 指引 uniquement à hauteur de 5，00 $ US。Vous ne pouvez prétendre à aucune indemnisation 浇筑 les autres dommages，y compris les dommages spéciaux，indirects ou accessoires et pertes de bénéfices**。
 
 **Cette 限制 concerne**：
-- **图文并茂 ce qui est relié au logiciel，aux 服务 ou au contenu （y compris le code） figurant .sur des 站点 Internet 分层 ou dans des 服务层;et**
+- **tout ce qui est relié au logiciel, aux services ou au contenu (y compris le code) figurant sur des sites Internet tiers ou dans des programmes tiers; et**
 - **les réclamations au titre 消除违反 contrat ou de garantie，ou au titre de responsabilité stricte，de négligence ou d'une autre faute dans la limite autorisée par la loi en vigueur**。
 
 **Elle s'applique également，même Si Microsoft connaissait ou devrait connaître l'éventualité d'un 电话 dommage。Si votre 支付 n'autorise 的 pas l'exclusion ou la 限制 de responsabilité浇筑 les dommages indirects，accessoires ou de quelque 本质查询 ce soit，il se peut 查询 la 限制 ou l'exclusion ci-dessus ne s'appliquera pas： votre égard**。

@@ -1,28 +1,31 @@
 ---
-title: 问答中的操作和函数#
+title: 中的操作和函数Q#
 description: 如何定义和调用操作和函数，以及受控和 adjoint 操作专用化。
 author: gillenhaalb
 ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.operationsfunctions
-ms.openlocfilehash: 08eaf150a38afd789f8a23f567ff111d002bac07
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 76437c83df894fa86409e680f961d97e267c6869
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85884209"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867873"
 ---
-# <a name="operations-and-functions-in-q"></a>问答中的操作和函数#
+# <a name="operations-and-functions-in-no-locq"></a>中的操作和函数Q#
 
 ## <a name="defining-new-operations"></a>定义新操作
 
-操作是 Q # 的核心。
-一旦声明后，就可以从传统的 .NET 应用程序调用它们，例如，使用模拟器或通过 Q # 内的其他操作。
-在 Q # 中定义的每个操作都可以调用任意数量的其他操作，包括由语言定义的内置内部操作。 Q # 定义这些内部操作的特定方式取决于目标计算机。
+操作是的核心 Q# 。
+声明后，可以从传统的 .NET 应用程序调用它们，例如，使用模拟器或内的其他操作 Q# 。
+在中定义的每个操作 Q# 都可以调用任意数量的其他操作，包括由语言定义的内置内部操作。 Q#定义这些内部操作的特定方式取决于目标计算机。
 在编译时，每个操作都表示为可提供给目标计算机的 .NET 类类型。
 
-每个 Q # 源文件可以定义任意数量的操作。
+每个 Q# 源文件都可以定义任意数量的操作。
 操作名称在命名空间中必须唯一，并且不能与类型或函数名冲突。
 
 操作声明由关键字组成 `operation` ，后跟作为操作名称的符号、定义操作参数的类型化标识符元组、冒号 `:` 、描述操作结果类型的类型批注，还可以是包含操作特征的批注、左大括号和操作声明的正文（括在大括号中） `{ }` 。
@@ -38,7 +41,7 @@ operation BitFlip(target : Qubit) : Unit {
 ```
 
 关键字 `operation` 开始操作定义，后跟名称; 此处为 `BitFlip` 。
-接下来，定义输入的类型（ `Qubit` ），以及 `target` 用于引用新操作中的输入的名称。
+接下来，定义输入类型 (`Qubit`) ，以及 `target` 用于引用新操作中的输入的名称。
 最后， `Unit` 定义操作的输出为空。
 `Unit``void`在 c # 和其他命令式语言中使用方式类似，并且等效于 `unit` F # 和其他功能语言。
 
@@ -61,16 +64,16 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 ```
 
 > [!NOTE]
-> Q # 中的每个操作都只采用一个输入，并只返回一个输出。
+> 中的每个操作 Q# 都只采用一个输入，并只返回一个输出。
 > 多个输入和输出使用元组表示，这些*元组*将多个值一起收集到单个值中。
-> 在这种情况下，Q # 是 "元组" 语言。
+> 在这种情况下， Q# 是 "元组" 语言。
 > 按照此概念，应将一组空括号 `()` 作为 "empty" 元组（类型为）进行读取 `Unit` 。
 
 ## <a name="controlled-and-adjoint-operations"></a>受控和 Adjoint 操作
 
-如果某个操作实现了单一转换（如 Q # 中的多个操作），则可以定义操作在*adjointed*或*控制*时的行为方式。 操作的*adjoint*专用化指定操作的 "反转" 的行为方式，而*受控*专用化指定操作在其应用程序的应用程序在特定量程寄存器状态下运行时的行为方式。
+如果操作实现了单一转换，就像在中执行许多操作一样 Q# ，然后可以定义操作在*adjointed*或*控制*时的行为方式。 操作的*adjoint*专用化指定操作的 "反转" 的行为方式，而*受控*专用化指定操作在其应用程序的应用程序在特定量程寄存器状态下运行时的行为方式。
 
-量程操作的 Adjoints 对量程计算的许多方面都至关重要。 有关本示例中所述的一个此类情况的示例，请参阅本文中的[语态](#conjugations)。 
+量程操作的 Adjoints 对量程计算的许多方面都至关重要。 有关在一种有用的编程技术中讨论的这种情况的示例 Q# ，请参阅本文中的[语态](#conjugations)。 
 
 操作的受控版本是新操作，仅当所有控件 qubits 都处于指定状态时，才会有效地应用基本操作。
 如果控件 qubits 在 superposition 中，则会将基本操作一致应用到 superposition 的相应部分。
@@ -83,15 +86,15 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 > 依次应用某一操作，然后将其 adjoint 的状态保持不变，如 $UU ^ \dagger = U ^ \dagger U = \id $，则为恒等矩阵。
 > 受控操作的单一表示形式略微微妙，但可以在量程计算概念中找到更多详细信息[：多个 qubits](xref:microsoft.quantum.concepts.multiple-qubits)。
 
-以下部分介绍如何在 Q # 代码中调用这些不同的专用化，以及如何定义操作来支持它们。
+以下部分介绍如何在代码中调用这些不同的专用化 Q# ，以及如何定义操作来支持它们。
 
 ### <a name="calling-operation-specializations"></a>调用专用操作
 
-Q # 中的*函子*是一个工厂，它定义了其他操作的新操作。
-Q # 中的两个标准函子是 `Adjoint` 和 `Controlled` 。
+中*functor*的函子 Q# 是一个工厂，它定义了其他操作的新操作。
+中的两个标准函子 Q# 是 `Adjoint` 和 `Controlled` 。
 
 在定义新操作的实现时，函子有权访问基操作的实现。
-因此，函子可以比传统的高级函数执行更复杂的功能。 函子在 Q # 类型系统中没有表示形式。 因此，目前不可能将其绑定到变量或将其作为参数传递。 
+因此，函子可以比传统的高级函数执行更复杂的功能。 函子在类型系统中没有表示形式 Q# 。 因此，目前不可能将其绑定到变量或将其作为参数传递。 
 
 通过将函子应用到操作来使用该操作，该操作将返回一个新操作。
 例如，将函子应用 `Adjoint` 到操作会 `Y` 返回新操作 `Adjoint Y` 。 可以像调用任何其他操作一样调用新操作。
@@ -109,13 +112,13 @@ Q # 中的两个标准函子是 `Adjoint` 和 `Controlled` 。
 同样， `Controlled X(controls, target)` 将 `Controlled` 函子应用到 `X` 操作以生成新的操作，并将该新操作应用于 `controls` 和 `target` 。
 
 > [!NOTE]
-> 在 Q # 中，受控版本始终采用控件 qubits 数组，并且控制始终基于所有控件 qubits 处于计算（ `PauliZ` ） `One` 状态 "$ \ket {1} $"。
+> 在中 Q# ，受控制的版本始终采用控件 qubits 数组，并且控制始终基于所有控件 qubits 处于计算 (`PauliZ`) `One` 状态 $ \ket {1} $。
 > 基于其他状态的控制是通过在受控操作之前向控件 qubits 应用适当的单一操作来实现的，然后在受控操作之后应用单一操作的逆。
-> 例如，将操作应用 `X` 于受控操作前后的控件 qubit 会导致操作控制 `Zero` 该 qubit 的状态（$ \ket {0} $）; `H` 在状态上和控件之后应用操作 `PauliX` `One` ，即，Pauli X，$ \ket {-} \mathrel{： =} （\ket {0} -\ket {1} ）/\sqrt {2} $ 而不是 `PauliZ` `One` 状态。
+> 例如，将操作应用 `X` 于受控操作前后的控件 qubit 会导致操作控制该 `Zero` qubit 的状态 ($ \ket {0} $) ; `H` 在状态上和控件之前和之后应用操作 `PauliX` `One` ，即 Pauli X，$ \ket {-} \mathrel{： =} ( \ket {0} -\ket {1}) /\sqrt {2} $，而不是 `PauliZ` `One` 状态。
 
 给定一个操作表达式，你可以使用函子来形成新的操作表达式 `Controlled` 。
 新操作的签名基于原始操作的签名。
-结果类型是相同的，但输入类型是具有 qubit 数组的两元组，它将控件 qubit 保存为第一个元素，并将原始操作的参数作为第二个元素。
+结果类型是相同的，但输入类型是一个具有 qubit 数组的双元组，该数组保存作为第一个元素的控件 qubit () s，作为第二个元素的初始操作的参数。
 新操作支持 `Controlled` ，且 `Adjoint` 仅当原始操作执行时才支持。
 
 如果原始操作只使用了一个参数，则会在此处播放[单独的元组等效](xref:microsoft.quantum.guide.types)性。
@@ -125,9 +128,9 @@ Q # 中的两个标准函子是 `Adjoint` 和 `Controlled` 。
 如果基本操作采用多个参数，请记住将操作的受控版本的相应参数括在括号中，以将其转换为元组。
 例如， `Controlled Rz` 是操作的受控版本 `Rz` 。 
 `Rz`具有类型 `((Double, Qubit) => Unit is Adj + Ctl)` ，因此 `Controlled Rz` 具有类型 `((Qubit[], (Double, Qubit)) => Unit is Adj + Ctl)` 。
-因此，将 `Controlled Rz(controls, (0.1, target))` 是的有效调用 `Controlled Rz` （请注意两边的括号 `0.1, target` ）。
+因此，将 `Controlled Rz(controls, (0.1, target))` 是 (的有效调用， `Controlled Rz` 请注意) 附近的括号 `0.1, target` 。
 
-作为另一个示例， `CNOT(control, target)` 可以实现为 `Controlled X([control], target)` 。 如果目标应通过两个 control qubits （CCNOT）进行控制，请使用 `Controlled X([control1, control2], target)` 语句。
+作为另一个示例， `CNOT(control, target)` 可以实现为 `Controlled X([control], target)` 。 如果目标应由两个 control qubits (CCNOT) 控制，请使用 `Controlled X([control1, control2], target)` 语句。
 
 #### `Controlled Adjoint` 
 
@@ -137,10 +140,10 @@ Q # 中的两个标准函子是 `Adjoint` 和 `Controlled` 。
 ## <a name="defining-controlled-and-adjoint-implementations"></a>定义受控和 Adjoint 实现
 
 在前面的示例中的第一个操作声明中，操作 `BitFlip` 和 `DecodeSuperdense` 分别定义为签名 `(Qubit => Unit)` 和 `((Qubit, Qubit) => (Result, Result))` 。
-`DecodeSuperdense`这并不是一个单一的操作，因此，它不是单一操作，因此，不能有控制的 adjoint 专用化不能存在（重新调用此类操作返回的相关要求 `Unit` ）。
+`DecodeSuperdense`这并不是一个单一的操作，因此，它不是一种单一操作，因此，不能 adjoint 特殊化， (重新调用此类操作返回) 的相关要求 `Unit` 。
 但是， `BitFlip` 只需执行单一 <xref:microsoft.quantum.intrinsic.x> 操作，即可将其定义为专用化。
 
-本部分详细介绍了如何在 Q # 操作声明中包括特殊化的存在性，从而使它们能够与 `Adjoint` 或函子一起调用 `Controlled` 。
+本节详细介绍了如何在操作声明中包括特殊化的存在性 Q# ，从而使它们能够与 `Adjoint` 或函子一起调用 `Controlled` 。
 若要详细了解它是有效的或无效的声明特定专用化的某些情况，请参阅本文中[的有效定义专用](#circumstances-for-validly-defining-specializations)化的情况。
 
 操作特征定义可应用于声明的操作的函子类型，以及它们的影响。 这些专用化的存在可以声明为操作签名的一部分，具体而言，具有操作特征： `is Adj` 、 `is Ctl` 或 `is Adj + Ctl` 。
@@ -189,7 +192,7 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 
 #### <a name="explicit-specialization-declarations"></a>显式专用化声明
 
-Q # 操作可以包含以下显式专用化声明：
+Q#操作可以包含以下显式专用化声明：
 
 - `body`专用化指定未应用函子的操作的实现。
 - `adjoint`专用化指定应用了函子的操作的实现 `Adjoint` 。
@@ -198,7 +201,7 @@ Q # 操作可以包含以下显式专用化声明：
   此特殊化还可以命名 `adjoint controlled` ，因为这两个函子。
 
 
-操作特殊化包括特殊化标记（例如， `body` 或 `adjoint` ），后跟以下其中之一：
+操作特殊化包含专业化标记 (例如， `body` 或 `adjoint`) 后跟以下其中之一：
 
 - 如下所述的显式声明。
 - 告诉编译器*如何*生成专用化的*指令*，可以是：
@@ -224,7 +227,7 @@ Q # 操作可以包含以下显式专用化声明：
 > [!TIP]   
 > 如果操作是自我 adjoint 的，则通过生成指令显式指定 adjoint 或受控 adjoint 专用化，以便 `self` 编译器可以利用该信息进行优化。
 
-包含用户定义的实现的专用化声明包含一个参数元组，后面跟有用于实现专用化的 Q # 代码的语句块。
+包含用户定义的实现的专用化声明包含一个参数元组，后面跟有用于 Q# 实现专用化的代码的语句块。
 在参数列表中， `...` 用于表示作为一个整体为操作声明的参数。
 对于 `body` 和 `adjoint` ，参数列表应始终为 `(...)` ; 对于 `controlled` 和 `adjoint controlled` ，参数列表应为表示控件 qubits 数组的符号，后面跟有 `...` 括号括在括号中; 例如， `(controls,...)` 。
 
@@ -326,9 +329,9 @@ operation CountOnes(qubits: Qubit[]) : Int {
 
 使用具有更少函子但签名相同的操作的其他函子支持的操作。 例如，使用类型为的操作的 `(Qubit => Unit is Adj)` 任何地方的类型运算 `(Qubit => Unit)` 。
 
-Q # 对于可调用的返回类型是*协变*的：返回类型的可调用与 `'A` 具有相同输入类型的可调用和与兼容的结果类型兼容 `'A` 。
+Q#对于可调用的返回类型是*协变*的：返回类型的可调用与 `'A` 具有相同输入类型的可调用和与兼容的结果类型兼容 `'A` 。
 
-Q # 对于输入类型是*逆变*的：将类型作为输入的可调用与 `'A` 具有相同结果类型和与兼容的输入类型的可调用兼容 `'A` 。
+Q#对于输入类型是*逆变*的：将类型作为输入的可调用与 `'A` 具有相同结果类型的可调用和兼容的输入类型兼容 `'A` 。
 
 即，给定以下定义，
 
@@ -357,7 +360,7 @@ function ConjugateUnitaryWith(
 - 从返回一个类型的 `(Qubit[] => Unit is Adj + Ctl)` 值 `ConjugateInvertWith` 。
 
 > [!IMPORTANT]
-> Q # 0.3 引入了用户定义类型的行为方面的显著差异。
+> Q#0.3 引入了用户定义类型的行为的显著差异。
 
 用户定义的类型被视为基础类型的包装版本，而不是作为子类型。
 这意味着用户定义类型的值在预期基础类型的值为时不能使用。
@@ -380,7 +383,7 @@ operation ApplyWith<'T>(
 }
 ```
 
-从0.9 版本开始，Q # 支持用于实现前面转换的语态语句。 使用该语句，可以通过 `ApplyWith` 以下方式实现操作：
+从0.9 版本开始， Q# 支持实现前面转换的语态语句。 使用该语句，可以通过 `ApplyWith` 以下方式实现操作：
 
 ```qsharp
 operation ApplyWith<'T>(
@@ -405,12 +408,12 @@ operation ApplyWith<'T>(
 
 ## <a name="defining-new-functions"></a>定义新函数
 
-函数是在 Q # 中纯粹确定的传统例程，不同于操作，因为它们不允许在计算输出值之前有任何影响。
+函数在中是纯粹确定性的传统例程 Q# ，不同于操作，因为它们不允许在计算输出值之前有任何影响。
 特别是，函数不能调用操作;操作、分配或借用 qubits;示例随机数;否则，依赖于输入值超出函数的状态。
-因此，Q # 函数是*纯*的，因为它们始终将相同的输入值映射到相同的输出值。
-此行为允许 Q # 编译器在生成操作专用化时，对调用函数的方式和时间进行安全重新排序。
+因此， Q# 函数是*纯*的，因为它们始终将相同的输入值映射到相同的输出值。
+此行为允许 Q# 编译器在生成操作专用化时，对调用函数的方式和时间进行安全重新排序。
 
-每个 Q # 源文件可以定义任意数量的函数。
+每个 Q# 源文件都可以定义任意数量的函数。
 函数名称在命名空间中必须是唯一的，且不能与操作或类型名称冲突。
 
 定义函数的工作方式与定义操作类似，但不能为函数定义 adjoint 或受控专用化。
@@ -442,7 +445,7 @@ function DotProduct(a : Double[], b : Double[]) : Double {
 
 只要有可能，就可以根据函数（而不是操作）编写传统逻辑，使操作能够更轻松地使用它。 例如，如果您已编写了前面的 `Square` 声明作为*运算*，则编译器不能保证使用相同的输入调用它会一致地生成相同的输出。
 
-若要在函数和操作之间使用下划线，请考虑经典的问题：从 Q # 操作中采样随机数字：
+为了下划线函数和操作之间的差异，请考虑经典在操作中采样随机数字的问题 Q# ：
 
 ```qsharp
 operation U(target : Qubit) : Unit {
@@ -453,18 +456,18 @@ operation U(target : Qubit) : Unit {
 ```
 
 每次 `U` 调用时，它将对执行不同的操作 `target` 。
-特别是，如果您将一个 `adjoint auto` 专用化声明添加到中，则编译器无法保证其 `U` `U(target); Adjoint U(target);` 充当标识（即，作为无操作）。
+特别是，如果您将一个专用化声明添加到，则该编译器无法保证，它作为 `adjoint auto` `U` 一种 `U(target); Adjoint U(target);` 无操作)  (。
 这违反了在[向量和矩阵](xref:microsoft.quantum.concepts.vectors)中定义的 adjoint 的定义，使编译器能够在调用操作的操作中自动生成 adjoint 特殊化，这 <xref:microsoft.quantum.math.randomreal> 会破坏编译器提供的保证; <xref:microsoft.quantum.math.randomreal> 是不存在 adjoint 或受控版本的操作。
 
 另一方面，允许函数调用（如） `Square` 是安全的，并确保编译器仅需保留输入以 `Square` 保持其输出稳定。
 因此，将尽可能多的传统逻辑隔离到函数中，可以轻松地在其他函数和操作中重复使用该逻辑。
 
 
-## <a name="generic-type-parameterized-callables"></a>泛型（类型参数化） Callables
+## <a name="generic-type-parameterized-callables"></a>泛型 (类型参数化) Callables
 
 您可能想要定义的许多函数和操作实际上不依赖于其输入的类型，而只是通过其他函数或操作隐式使用其类型。
-例如，请考虑许多功能语言共有的*地图*概念;给定一个函数 $f （x） $，值为 $ x_1 的集合 \{ ，x_2，\dots ..，x_n \} $，map 返回一个新的集合 $ \{ f （x_1）、f （x_2）、\dots ..、f （x_n） \} $。
-若要在 Q # 中实现此功能，请利用函数是第一类这一事实。
+例如，请考虑许多功能语言共有的*地图*概念;给定函数 $f (x) $ 和值的集合 $ \{ x_1，x_2，\dots ..，x_n \} $，map 将返回一个新的集合 $ f (x_1)  (x_2)  (\{ \} $。
+若要在中实现此 Q# 功能，请利用函数是第一类这一事实。
 下面是的一个快速示例 `Map` ，使用 `T` 作为占位符，同时找出所需的类型。
 
 ```qsharp
@@ -504,18 +507,18 @@ function MapDoublesToStrings(fn : (Double -> String), values : Double[]) : Strin
 虽然这对于少量此类函数是易的，但当你收集与相同窗体的更多函数时， `Map` 引入新类型的成本将以相当短的顺序变为太。
 
 但是，这种情况很难产生这种情况，因为您没有为编译器提供所需的信息来识别的不同版本 `Map` 是如何相关的。
-实际上，你希望编译器将 `Map` q #*类型*中的某种数学函数视为 q # 函数。
+实际上，你希望编译器将 `Map` 类型中的某种数学函数视为 Q# *types* Q# 函数。
 
-Q # 通过允许函数和操作具有*类型参数*及其普通元组参数来实现此概念的形式。
+Q#通过允许函数和操作具有*类型参数*，以及其普通元组参数，实现了这一概念的形式。
 在前面的示例中，您希望在 `Map` 第一种情况下将类型形参视为 `Int, Pauli` ， `Double, String` 在第二种情况下。
 大多数情况下，使用这些类型参数，如同它们是普通类型。 使用类型参数的值来生成数组和元组，调用函数和操作，并将其分配给普通或可变变量。
 
 > [!NOTE]
-> 间接依赖关系的最极端情况是 qubits，其中 Q # 程序不能直接依赖类型的结构， `Qubit` 而是**必须**将此类类型传递给其他操作和函数。
+> 间接依赖关系的最极端情况是 qubits，其中 Q# 程序不能直接依赖类型的结构， `Qubit` 而是**必须**将此类类型传递给其他操作和函数。
 
 返回到前面的示例，然后您将看到 `Map` 需要具有类型参数，一个用于表示输入，另一个用于 `fn` 表示的输出 `fn` 。
-在 Q # 中，这是通过 `<>` 在其声明中的函数或操作名称后面添加尖括号（即，不 brakets $ \braket $！）来编写的， {} 并列出每个类型参数。
-每个类型形参的名称必须以计时周期开始 `'` ，指示它是一个类型形参，而不是一个普通类型（也称为*具体*类型）。
+在中 Q# ，通过在 `<>` 其声明中的函数或操作的名称后面添加尖括号 (（而不是 brakets $ \braket {} $！ ) ），并列出每个类型参数来编写这种情况。
+每个类型形参的名称必须以计时周期开始 `'` ，这表示它是一个类型形参，而不是一个普通类型 (也称为) 的*具体*类型。
 因此， `Map` 将编写：
 
 ```qsharp
@@ -541,8 +544,8 @@ let paulis = Map(IntToPauli, ints);
 ```
 
 > [!TIP]
-> 编写泛型函数和操作是一个位置，其中 "元组即用元组" 是一种非常有用的方法，用于考虑 Q # 函数和操作。
-> 由于每个函数只使用一个输入并返回一个输出，因此类型为的输入 `'T -> 'U` 与*任何*Q # 函数匹配。
+> 编写泛型函数和操作是一个位置，其中 "元组 out" 是一种非常有用的方法，用于考虑 Q# 函数和操作。
+> 由于每个函数只采用一个输入并返回一个输出，因此类型的输入 `'T -> 'U` 与*任何* Q# 函数都匹配。
 > 同样，可以将任何操作传递到类型为的输入 `'T => 'U` 。
 
 作为第二个示例，请考虑编写一个函数，该函数返回两个其他函数的组合：
@@ -571,15 +574,15 @@ function Compose<'A, 'B, 'C>(outerFn : ('B -> 'C), innerFn : ('A -> 'B)) : ('A -
 }
 ```
 
-Q # 标准库提供了多种类型参数化操作和函数，使更高顺序控制流更易于表达。
-" [Q # 标准库指南](xref:microsoft.quantum.libraries.standard.intro)" 中进一步讨论了这些问题。
+Q#标准库提供了一系列这样的类型参数化操作和函数，使更高顺序控制流更易于表达。
+[ Q# 标准库指南](xref:microsoft.quantum.libraries.standard.intro)中进一步讨论了这些情况。
 
 
 ## <a name="callables-as-first-class-values"></a>Callables 作为第一类值
 
-使用函数（而不是操作）对控制流和传统逻辑的推理的一项重要技巧是，使用 Q # 中的操作和函数作为*第一类*。
+使用函数（而不是操作）对控制流和传统逻辑的推理的一项重要技巧是，使用中的操作和函数是 Q# *第一类*。
 也就是说，它们本身就是语言中的每个值。
-例如，下面是非常有效的 Q # 代码，如果没有间接的：
+例如，下面是一个非常有效的 Q# 代码，如果是间接的：
 
 ```qsharp
 operation FirstClassExample(target : Qubit) : Unit {
@@ -649,12 +652,12 @@ function SquareOperation(op : (Qubit => Unit)) : (Qubit => Unit) {
 }
 ```
 
-原则上，中的传统逻辑 `SquareOperation` 可能会更多地涉及到，但它仍与操作的其余部分隔离，因为编译器可以提供函数。 Q # 标准库在整个过程中都使用这种方法，以一种可让量子程序随时使用的方式表示传统的控制流。
+原则上，中的传统逻辑 `SquareOperation` 可能会更多地涉及到，但它仍与操作的其余部分隔离，因为编译器可以提供函数。 Q#标准库在整个过程中都使用这种方法，以一种可让量子程序随时使用的方式表示传统的控制流。
 
 
 ## <a name="recursion"></a>递归
 
-Q # callables 允许直接或间接递归。
+Q#允许直接或间接递归 callables。
 也就是说，操作或函数可以调用自身，也可以调用可直接或间接调用可调用操作的另一个可调用的。
 
 不过，有两个关于递归使用的重要说明：
@@ -662,8 +665,8 @@ Q # callables 允许直接或间接递归。
 - 在操作中使用递归可能会干扰某些优化。
   此干扰可能会对算法的执行时间产生重大影响。
 - 在实际的量程设备上运行时，堆栈空间可能会受到限制，因此深度递归可能导致运行时错误。
-  特别是，Q # 编译器和运行时不标识和优化尾递归。
+  具体而言， Q# 编译器和运行时不会标识和优化尾递归。
 
 ## <a name="next-steps"></a>后续步骤
 
-了解 Q # 中的[变量](xref:microsoft.quantum.guide.variables)。
+了解中[Variables](xref:microsoft.quantum.guide.variables)的变量 Q# 。

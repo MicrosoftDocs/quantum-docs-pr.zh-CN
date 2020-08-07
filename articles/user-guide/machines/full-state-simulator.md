@@ -1,25 +1,28 @@
 ---
 title: 完整状态量程模拟器-量程开发工具包
-description: '了解如何在 Microsoft Quantum Development Kit 完全状态模拟器上运行 Q # 程序。'
+description: 了解如何 Q# 在 Microsoft Quantum Development Kit 完全状态模拟器上运行你的程序。
 author: anpaz-msft
 ms.author: anpaz@microsoft.com
 ms.date: 06/26/2020
 ms.topic: article
 uid: microsoft.quantum.machines.full-state-simulator
-ms.openlocfilehash: 563fdbd2a45461d112e4c46651eddd75c6fc3db2
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: b15af66123dadae09815cde1966c69b3ce2e9e64
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871172"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868332"
 ---
-# <a name="quantum-development-kit-qdk-full-state-simulator"></a>量程开发工具包（QDK）完整状态模拟器
+# <a name="quantum-development-kit-qdk-full-state-simulator"></a>量程开发工具包 (QDK) 完整状态模拟器
 
-QDK 提供了模拟本地计算机上的量子计算机的完整状态模拟器。 你可以使用完整状态模拟器来运行和调试用 Q # 编写的量程算法，使用最多30个 qubits。 完整状态模拟器类似于 Microsoft Research 的[LIQ $ Ui | \rangle $](http://stationq.github.io/Liquid/)平台中使用的量程模拟器。
+QDK 提供了模拟本地计算机上的量子计算机的完整状态模拟器。 可以使用完整状态模拟器来运行和调试用编写的量程算法 Q# ，最多可利用30个 qubits。 完整状态模拟器类似于 Microsoft Research 的[LIQ $ Ui | \rangle $](http://stationq.github.io/Liquid/)平台中使用的量程模拟器。
 
 ## <a name="invoking-and-running-the-full-state-simulator"></a>调用并运行完全状态模拟器
 
-通过类公开完整状态模拟器 `QuantumSimulator` 。 有关更多详细信息，请参阅[运行 Q # 程序的方法](xref:microsoft.quantum.guide.host-programs)。
+通过类公开完整状态模拟器 `QuantumSimulator` 。 有关更多详细信息，请参阅[运行 Q# 程序的方法](xref:microsoft.quantum.guide.host-programs)。
 
 ### <a name="invoking-the-simulator-from-c"></a>从 C 调用模拟器#
 
@@ -36,7 +39,7 @@ QDK 提供了模拟本地计算机上的量子计算机的完整状态模拟器�
 
 ### <a name="invoking-the-simulator-from-python"></a>从 Python 调用模拟器
 
-使用带有导入的 Q # 操作的 Q # Python 库中的[模拟（）](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable)方法：
+使用导入的操作从 Python 库中[模拟 ( # B1](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable)方法 Q# Q# ：
 
 ```python
 qubit_result = myOperation.simulate()
@@ -44,7 +47,7 @@ qubit_result = myOperation.simulate()
 
 ### <a name="invoking-the-simulator-from-the-command-line"></a>从命令行调用模拟器
 
-当从命令行运行 Q # 程序时，完全状态模拟器是默认的目标计算机。 （可选）可以使用 **--模拟器**（或 **-s**快捷方式）参数来指定所需的目标计算机。 以下两个命令都使用完整状态模拟器运行程序。 
+在 Q# 从命令行运行程序时，完全状态模拟器是默认的目标计算机。 （可选）可以使用 **--模拟器** (或 **-s**快捷键) 参数指定所需的目标计算机。 以下两个命令都使用完整状态模拟器运行程序。 
 
 ```dotnetcli
 dotnet run
@@ -53,7 +56,7 @@ dotnet run -s QuantumSimulator
 
 ### <a name="invoking-the-simulator-from-juptyer-notebooks"></a>从 Juptyer 笔记本调用模拟器
 
-使用 IQ # 幻命令[% 模拟](xref:microsoft.quantum.iqsharp.magic-ref.simulate)运行 Q # 操作。
+使用 "我的 Q# 神奇命令[% 模拟](xref:microsoft.quantum.iqsharp.magic-ref.simulate)" 运行 Q# 操作。
 
 ```
 %simulate myOperation
@@ -76,6 +79,6 @@ dotnet run -s QuantumSimulator
 
 ## <a name="see-also"></a>另请参阅
 
-- [量程资源估计器](xref:microsoft.quantum.machines.resources-estimator)
-- [量程 Toffoli 模拟器](xref:microsoft.quantum.machines.toffoli-simulator)
+- [量子资源估算器](xref:microsoft.quantum.machines.resources-estimator)
+- [量子 Toffoli 模拟器](xref:microsoft.quantum.machines.toffoli-simulator)
 - [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)

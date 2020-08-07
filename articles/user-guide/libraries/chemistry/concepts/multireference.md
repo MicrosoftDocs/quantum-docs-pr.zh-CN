@@ -6,12 +6,15 @@ ms.author: gulow@microsoft.com
 ms.date: 05/28/2019
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.concepts.multireference
-ms.openlocfilehash: 005ef86382ca72969b06a4206cab01f3845718e2
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 0066d676205901d4f2d41538684f9ba57407eb82
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274435"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869556"
 ---
 # <a name="correlated-wavefunctions"></a>相关波函数
 
@@ -26,7 +29,7 @@ Dynamical 相关导致电子的趋势，例如 interelectronic 斥力。 通过�
 ## <a name="sparse-multi-reference-wavefunction"></a>稀疏多引用 wavefunction
 多引用状态 $ \ket{\ psi_ {\rm {MCSCF}}} $ 可以显式指定为 $N $-electron Slater determininants 的线性组合。
 \begin{align} \ket{\ psi_ {\rm {MCSCF}}} \propto \ sum_ {i_1 < i_2 < \cdots < i_N} \ lambda_ {i_1，i_2，\cdots，i_N} a ^ \ dagger_ {i_1} a ^ \ dagger_ {i_2} \cdots a ^ \ dagger_ {i_N} \ket {0} 。
-例如，\end{align} 的状态 $ \propto （0.1 a ^ \ dagger_1a ^ \ dagger_2a ^ \ dagger_6-0.2 a ^ \ dagger_2a ^ \ dagger_1a ^ \ dagger_5 ^ \ ^ \ ^ \ ^ \） \ket {0} $ 可以在化学库中指定，如下所示。
+\end{align} 例如，state $ \propto (0.1 dagger_1a ^ \ dagger_2a ^ \ dagger_6-0.2 a ^ \ dagger_2a ^ \ dagger_1a ^ \ dagger_5 \ket {0} $ 可在化学库中指定，如下所示。
 ```csharp
 // Create a list of tuples where the first item of each 
 // tuple are indices to the creation operators acting on the
@@ -46,12 +49,12 @@ var wavefunction = new FermionWavefunction<int>(superposition);
 此单一运算符通常编写为 $e ^ {T-T ^ \dagger} $，其中 $T-T ^ \dagger $ 是反 Hermitian 群集运算符。 因此，\begin{align} \ket{\ psi_ {\rm {UCC}}} = e ^ {T t ^ \dagger}\ket{\ psi_ {\rm{SCF}}}。
 \end{align}
 
-通常，将群集运算符 $T = T_1 + T_2 + \cdots $ 分为几个部分，其中每个部分 $T _j $ 包含 $j $ 正文术语。 在一般化耦合群集理论中，一种正文分类运算符（单精度值）的形式为 \begin{align} T_1 = \ sum_ {pq} T ^ {p} _ {q} a ^ \ dagger_p a_q，\end{align}
+通常，将群集运算符 $T = T_1 + T_2 + \cdots $ 分为几个部分，其中每个部分 $T _j $ 包含 $j $ 正文术语。 在一般化耦合群集理论中， (单精度值) 的单正文分类操作员的形式为 \begin{align} T_1 = \ sum_ {pq} T ^ {p} _ {q} a ^ \ dagger_p a_q、\end{align}
 
-和两正文分类运算符（双精度型）的形式为 \begin{align} T_2 = \ sum_ {pqrs} T ^ {pq} _ {rs} a ^ \ dagger_p ^ \ dagger_q a_r a_s。
+和两主体群集运算符 (双精度) 的形式为 \begin{align} T_2 = \ sum_ {pqrs} T ^ {pq} _ {rs} a ^ \ dagger_p ^ \ dagger_q a_r a_s。
 \end{align}
 
-高阶术语（三元组、可等）是可能的，但不受化学库支持。
+高阶条款 (为三元组、可等 ) ，但化学库当前不支持。
 
 例如，让 $ \ket{\ psi_ {\rm{SCF}}} = a ^ \ dagger_1 ^ \ dagger_2 \ket {0} $，并让 $T = 0.123 ^ \ dagger_0 a_1 + 0.456 a ^ \ dagger_0a ^ \ 0.789 dagger_3 a_1 a_2 dagger_3a dagger_2 a_1 $。 然后，此状态在化学库中实例化，如下所示。
 ```csharp

@@ -6,25 +6,28 @@ ms.author: nawiebe@microsoft.com
 ms.date: 10/09/2017
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.concepts.secondquantization
-ms.openlocfilehash: e17c97767b05395af46a82c4035337406c7e3218
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: ba77c499d6830b1f78bba39e20b15c4ebe9433fc
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274457"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869454"
 ---
 # <a name="second-quantization"></a>第二量化
 
 第二个量化通过不同的镜头查看电子结构的问题。
-除了将每个 $N _e $ 电子分配到特定状态（或 orbital），第二个量化都将跟踪每个 orbital 并存储每个中是否存在 electron，同时自动确保相应波形函数的对称属性。
-这一点很重要，因为它允许指定量子化学模型，而无需担心 symmetrizing 输入状态（这对于 fermions 是必需的），也是因为第二个量化允许使用小型量子计算机模拟此类模型。
+除了将每个 $N _e $ 电子分配到特定状态 (或 orbital) 外，第二个量化还会跟踪每个 orbital，并存储每个，并同时自动确保相应波形函数的对称属性。
+这一点很重要，因为它允许指定量子化学模型，而无需担心 symmetrizing 输入状态 (与 fermions) 所必需的一样，另外，因为第二个量化允许使用小型量子计算机模拟此类模型。
 
 作为第二个量化运算的示例，假设 $ \ psi_0 \cdots \ psi_ {N-1} $ 是一组 orthonormal 的空间 orbitals。
 选择这些 orbitals 以尽可能准确地表示所考虑的有限基数内的系统。
 此类 orbitals 的一个常见示例是原子 orbitals，它构成 hydrogen atom 的 eigenbasis。
 由于电子具有两个自旋状态，因此可将两个电子 crammed 到每个此类空间 orbital 中。
 也就是说，有效的基本状态为以下形式： $ \ psi_ {0，\uparrow}，\ldots，\ psi_ {N-1，\uparrow}，\ psi_ {0，\downarrow}，\ldots，\ psi_ {N-1，\downarrow} $，其中 $ \uparrow $ 和 $ \downarrow $ 是指定旋转度的两个 eigenstates 的标签。
-$ （J，\sigma） $ 的此组合索引 $ \sigma \in \{ \uparrow，\downarrow \} $ 称为旋转 orbital，因为它同时存储空间以及旋转的自由度。
+此组合索引 $ (j，\sigma) $ for $ \sigma \in \{ \uparrow，\downarrow \} $ 称为旋转 orbital，因为它同时存储空间以及旋转的自由度。
 在化学库中，orbitals 存储在 `SpinOrbital` 数据结构中，并按如下所示创建。
 
 ```csharp
@@ -49,9 +52,9 @@ $ （J，\sigma） $ 的此组合索引 $ \sigma \in \{ \uparrow，\downarrow \}
     SpinOrbital spinOrbital1 = tuple;
 ```
 
-这意味着我们可以正式考虑将波形函数的旋转和空间部分的基础作为 $ \ psi_ {0} \cdots \ psi_ {2n-1} $，其中每个索引现在是 $ （j，\sigma） $ 的枚举。
-一个可能的枚举是 $g （j，\sigma） = j + N\sigma "$。
-另一个可能的枚举是 $h （j，\sigma） = 2 * j + \sigma $。
+这意味着我们可以正式考虑将波形函数的旋转空间部分和空间部分的基础作为 $ \ psi_ {0} \cdots \ psi_ {2n-1} $，其中每个索引现在是 $ (j \sigma) $ 的枚举。
+一个可能的枚举是 $g (j，\sigma) = j + N\sigma "$。
+另一个可能的枚举是 $h (j，\sigma) = 2 * j + \sigma $。
 量程化学库可以使用这些约定，因此，这种编码中的 orbitals 可以实例化，如下所示。
 
 ```csharp
@@ -144,7 +147,7 @@ $ $ 此运算符序列将使用 c # 代码在 Hamiltonian 模拟库中构造，�
     var fermionTerm = new FermionTerm(ladderSequences);
 ```
 
-对于 $k $ Fermions 的系统，在第二个量化中，$a ^ \ dagger_i $ 的创建操作员的操作由 $ $ a ^ \ dagger_i \ket{n_1、n_2、\ldots、0_i、\ldots、n_k} = （-1） ^ {S_i} \ket{n_1、n_2、\ldots 1_i、\ldots、n_k}、$ $ 和 $ $ a ^ \ dagger_i \ket{n_1，n_2，\ldots，1_i，\ldots，n_k} = 0，$ $，其中 $S _i = \ sum_ {j<i} a ^ \ dagger_j a_j $ 度量处于单个粒子状态且索引 $j < i $ 的 Fermions 总数。
+对于 $k $ Fermions 的系统，在第二个量化中，$a ^ \ dagger_i $ 的创建操作员的操作由 $ $ a ^ \ dagger_i \ket{n_1、n_2、\ldots、0_i、\ldots、n_k} = (-1) ^ {S_i} \ket{n_1、n_2、\ldots 1_i、\ldots、n_k}、$ $ 和 $ $ a ^ \ dagger_i \ket{n_1，n_2，\ldots，1_i，\ldots，n_k} = 0，$ $，其中 $S _i = \ sum_ {j<i} a ^ \ dagger_j a_j $ 度量处于单个粒子状态且索引 $j < i $ 的 Fermions 总数。
 
 第三个运算符也经常用在第二个量化表示形式中。
 此运算符被称为 number 运算符，由 \begin{equation} n_i = a ^ \ dagger_i a_i 定义。
@@ -167,7 +170,7 @@ n_i \ket {1} _i &= \ket {1} _i。
 使用 fermionic 系统中的创建或 annihilation 运算符时，将出现个很微妙。
 我们要求在 "标签交换" 下，任何有效的量程状态都为抗对称状态。
 这意味着 $ $ a ^ \ dagger_2 ^ \ dagger_1 \ket {0} =-a ^ \ dagger_1 ^ \ dagger_2 \ket {0} 。
-$ $ 此类运算符称为 "反双回"，一般适用于任何 $i，j $ 我们已 \begin{align} ^ \ dagger_i ^ \ dagger_j =-（1-\ delta_ {i，j}） ^ \ dagger_j ^ \ dagger_i，\quad，^ \ dagger_i a_j = \ delta_ {i，j}-a_j ^ \ dagger_i。
+$ $ 此类运算符被称为 "反双回"，一般适用于任何 $i，j $ 我们已 \begin{align} ^ \ dagger_i ^ \ dagger_j =- (1-\ delta_ {i，j} ) ^ \ dagger_j ^ \ dagger_i，\quad ^ \ dagger_i a_j = \ delta_ {i，j}-a_j ^ \ dagger_i。
 \end{align} 因此，以下两个 <xref:Microsoft.Quantum.Chemistry.LadderOperators.LadderSequence`1> 实例被视为 inequivalent
 ```csharp
     // Let us initialize an array of tuples representing the
@@ -213,13 +216,13 @@ Any `FermionTerm` 将按如下方式自动纳入规范顺序。
 可能 unsurprising，可以通过创建和 annihilation 运算符来编写[适用于电子系统的量程模型](xref:microsoft.quantum.chemistry.concepts.quantummodels)中的 Hamiltonian。
 具体而言，如果 $ \psi \_ j $ 是形成基础的旋转 orbitals，
 
-\begin{equation} \hat{H} = \sum \_ {pq} H \_ {pq} a ^ \dagger \_ p a \_ q + \frac {1} {2} \sum \_ {pqrs} H \_ {pqrs} a ^ \dagger \_ p a ^ \dagger \_ q a \_ Ra \_ s + H \_ {\textrm nuc}，\label{eq： totalHam} \end{equation}，其中 $h \_ {\textrm nuc} $ 是
+\begin{equation} \hat{H} = \sum \_ {pq} H \_ {pq} a ^ \dagger \_ p a \_ q + \frac {1} {2} \sum \_ {pqrs} H \_ {pqrs} a ^ \dagger \_ p a ^ \dagger \_ q a \_ Ra \_ s + H \_ {\textrm nuc}，\label{eq： totalHam} \end{equation}，其中 $h \_ {\textrm nuc} $ (是在) 
 
-\begin{align} h \_ {pq} &= \int \_ {-\infty} ^ \infty \psi ^ \* \_ p （x \_ 1） \left （-\Frac{\nabla ^ 2} {2} + V （x \_ 1） \right） \psi \_ q （x \_ 1） \mathrm{d} ^ 3： \_ \end{align}
+\begin{align} h \_ {pq} &= \int \_ {-\infty} ^ \infty \psi ^ \* \_ p (x \_ 1) \left (-\Frac{\nabla ^ 2} {2} + V (x \_ 1) \right) \psi \_ q (x \_ 1) \mathrm{d} ^ 3 \_ 1，\end{align}
 
-其中 $V （x） $ 是可能的平均字段，并且
+其中 $V (x) $ 是 "平均" 字段的潜力，
 
-\begin{align} h \_ {pqrs} &= \int \_ {-\infty} ^ \infty \int \_ {-\infty} ^ \infty\psi \_ p ^ \* （x \_ 1） \psi \_ q ^ \* （x \_ 2） \left （\frac {1} {| x_1-x_2 |} \right） \psi \_ r （x \_ 2） \psi \_ s （x \_ 1） \mathrm{d} \_ \_
+\begin{align} h \_ {pqrs} &= \int \_ {-\infty} ^ \infty \int \_ {-\infty} ^ \infty\psi \_ p ^ \* (x \_ 1) \psi \_ q ^ \* (x \_ 2) \left ( \frac {1} {| x_1 \_ x \_ 2 x_2 \right) \_ x \_ 1 (\psi ^ 3 x \_ \psi {d} ^ 3 \_ ： \mathrm{d}
 
 术语 $h \_ {pq} $ 称为 electron 积分，因为所有这类条款仅涉及单个电子，同样 $h \_ {pqrs} $ 是两个 electron 整型。
 它们被称为整型，因为计算这些系数的值需要整数值。
@@ -228,7 +231,7 @@ Any `FermionTerm` 将按如下方式自动纳入规范顺序。
 
 对于这些术语的含义，直觉可从包含每个术语的创建和 annihilation 运算符搜集。
 例如，$h _ {pq} a ^ \ dagger_p a_q $ 描述从自旋 orbital $q $ 到自旋 orbital $p $ 的 electron 跳跃。
-同样，术语 $h _ {pqrs} a ^ \ dagger_p ^ \ dagger_q a_r a_s $ （对于 distinct $p，q，r，s $）介绍了自旋 orbitals $r $ 和 $s $ 分散之间的两个电子，并最终在自旋 orbitals $p $ 和 $q $。
+同样，术语 $h _ {pqrs} a ^ \ dagger_p ^ \ dagger_q a_r a_s $ (对于 distinct $p，q，r，s $) 介绍了自旋 orbitals $r $ 和 $s $ 分散之间的两个电子，并最终在自旋 orbitals $p $ 和 $q $。
 如果 $r = q $ and $p = s $，则 $h _ {prrp} a ^ \ dagger_p ^ \ dagger_r a_r a_p = h_ {prrp} n_p n_r $ 为与这两个电子关联的能源损失进行了关联，但不描述 dynamical 过程。
 
 我们可能会使用类来表示此类 Hamiltonians `FermionHamiltonian` ，该类实质上是包含所有所需实例的列表 `FermionTerm` 。
@@ -309,14 +312,14 @@ $ $ \begin{align} H = \sum \_ {pq} H \_ {pq} a ^ \dagger \_ {p} a \_ {q} + \frac
 例如，在 $p、q、r、s $ 是不同的索引，我们可以使用反通信规则显示： $ $ a ^ \dagger \_ {p} a ^ \dagger \_ {q} a \_ {r} a \_ {s} =-a ^ \dagger \_ {q} a ^ \dagger \_ {p} a \_ {r} a \_ {s} =-a ^ \dagger \_ {p} a ^ \dagger \_ {q} a \_ {s} a \_ {r} = a ^ \dagger \_ {q} a ^ \dagger \_ {p} a \_ {s} a \_ {r}。
 $$
 
-此外，由于 $H $ 是 Hermitian 的，因此每个非 Hermitian fermionic 运算符（如 $h \_ {pqrs} a ^ \dagger \_ {p} a ^ \dagger \_ {q} a \_ {r} a \_ {s} $）都具有一个 Hermitian $H 共轭。 为了唯一索引按这些 symmetries 的术语组，我们在索引 $ （i \_ 1，\cdots，i \_ n，j \_ 1，\cdots，j m）中定义了 \_ 任何 $n + m $ fermionic 运算符序列的规范排序 $a ^ \dagger \_ {i \_ 1} \cdots a ^ \dagger \_ {i \_ n} a \_ {j \_ 1} \cdots a \_ {j \_ m} $as 如下所示：
+此外，由于 $H $ 是 Hermitian 的，因此每个非 Hermitian fermionic 运算符（如 $h \_ {pqrs} a ^ \dagger \_ {p} a ^ \dagger \_ {q} a \_ {r} a \_ {s} $）都具有一个 Hermitian $H 共轭。 为了唯一索引按这些 symmetries 的术语组，我们在索引 $ (i \_ 1，\cdots，i \_ n，j \_ 1，\cdots，j \_ m) $，定义 $n + m $ fermionic 运算符 $a ^ \dagger \_ {i \_ 1} \cdots a ^ \dagger \_ {i \_ n} a \_ {j \_ 1} \cdots a \_ {j m} $as 的标准排序， \_ 如下所示：
 -   所有创建操作员 $a ^ \dagger \_ {i \_ \cdot} $ 位于所有 annihilation 运算符之前 $a \_ {j \_ \cdot} $。
 -   所有创建运算符索引按升序排序，即 $i \_ 1< i \_ 2< \cdots < i \_ n $。
 -   所有 annihilation 运算符索引按降序排序，即 $j \_ 1> j \_ 2 \cdots > j \_ m $。
 -   最左侧的索引小于或等于最右侧的索引，该索引 $i \_ 1 \ le j \_ m $。
 
-让我们将这组规范的有序索引标识为 $ $ \begin{align} （i \_ 1，\cdots，i \_ n，j \_ 1，\cdots，j \_ m） \in S \_ {n，m}。
+让我们将这组规范有序索引标识为 $ $ \begin{align} (i \_ 1、\cdots、i \_ n、j \_ 1、\cdots、j \_ m) \in S \_ {n，m}。
 \end{align} $ $
 
-使用此规范排序，fermionic Hamiltonian 可表示为 $ $ \begin{align} H = \sum \_ {（p，q） \In S \_ {1,1} } H ' \_ {pq} \frac{a ^ \dagger \_ {p} a \_ {q} + a ^ \dagger \_ {q} a \_ {p}} {2} + \sum \_ {（p，q，r，s） \in S \_ {2,2} } H ' \_ {pqrs} \frac{a ^ \dagger \_ {p} a ^ \dagger \_ {q} a \_ {r} a \_ {S} + a ^ \dagger \_ {S} a ^ \dagger \_ {r} a \_ {q} a \_ {p}} {2} ，\end{align} $ $，经过适当调整的 electron 整型 $h " \_ {pq} $ 和 $h" \_ {pqrs} $。
+使用此规范排序，fermionic Hamiltonian 可表示为 $ $ \begin{align} H = \sum \_ { (p，q) \In S \_ {1,1} } H ' \_ {pq} \frac{a ^ \dagger \_ {p} a \_ {q} + a ^ \dagger \_ {q} a \_ {p}} {2} + \sum \_ { (p，q，r，S) \in s \_ {2,2} } H ' \_ {pqrs} \frac{a ^ \dagger \_ {p} a ^ \dagger \_ {q} a \_ {r} a \_ {S} + a ^ \dagger \_ {S} a ^ \dagger \_ {r} a \_ {q} a \_ {p}} {2} ，\end{align} $ $，经过适当调整的 electron 整型 $h " \_ {pq} $ 和 $h" \_ {pqrs} $。
 

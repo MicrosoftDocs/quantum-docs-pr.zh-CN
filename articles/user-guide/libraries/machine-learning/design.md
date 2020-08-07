@@ -6,12 +6,15 @@ ms.author: v-edsanc@microsoft.com
 ms.date: 02/17/2020
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.design
-ms.openlocfilehash: b304b9d1a15f164f4dfe758aaed31b7b2369b18c
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 60e694e9f7c2f01a6679ef960f5a7774c8bd6a62
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274449"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868928"
 ---
 # <a name="design-your-own-classifier"></a>设计自己的分类器
 
@@ -47,6 +50,8 @@ ms.locfileid: "85274449"
 此处定义的是一个函数，该函数返回一组 `ControlledRotation` 元素，这些元素与一组参数一起使用，而偏移将定义我们的 [`SequentialModel`](xref:microsoft.quantum.machinelearning.sequentialmodel) 。 此类型在量程机器学习库中是基本的，定义分类器。 上述函数中定义的线路是分类器的一部分，其中，数据集的每个示例都包含两个功能。 因此，我们只需要两个 qubits。 线路的图形表示形式为：
 
  ![线路模型示例](~/media/circuit_model_1.PNG)
+
+请注意，默认情况下，量程机器学习库的操作测量寄存器的最后 qubit 以估计分类概率。 设计线路时，应记住这一点。
 
 ## <a name="use-the-library-functions-to-write-layers-of-gates"></a>使用库函数来编写入口层
 

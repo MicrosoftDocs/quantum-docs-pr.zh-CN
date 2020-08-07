@@ -1,17 +1,20 @@
 ---
 title: 向 Microsoft QDK 发布代码
-description: 了解如何将示例和库代码提供给 Microsoft Quantum Development Kit （QDK）。
+description: 了解如何将示例和库代码提供给 Microsoft Quantum Development Kit (QDK) 。
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.code
-ms.openlocfilehash: edc52dc4434e91258bece28812fd76b66329c6f9
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 956b0957a5261b8a77bf18d776fbcc2853bfbfe7
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274383"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866903"
 ---
 # <a name="contributing-code"></a>贡献代码
 
@@ -28,10 +31,10 @@ ms.locfileid: "85274383"
 
 ### <a name="unit-tests"></a>单元测试
 
-构成库（如 canon）的 Q # 函数、操作和用户定义类型在[**Microsoft/QuantumLibraries**](https://github.com/Microsoft/QuantumLibraries/)存储库中作为开发的一部分自动进行测试。
+Q#构成库（如 canon）的函数、操作和用户定义类型在[**Microsoft/QuantumLibraries**](https://github.com/Microsoft/QuantumLibraries/)存储库中作为开发的一部分自动进行测试。
 例如，当打开一个新的拉取请求时， [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/)配置将检查拉取请求中的更改是否不会破坏该量程编程社区依赖的任何现有功能。
 
-使用最新的 Q # 版本，使用特性定义单元测试 `@Test("QuantumSimulator")` 。 参数可以是 "QuantumSimulator"、"ToffoliSimulator"、"TraceSimulator"，也可以是指定执行目标的任何完全限定名称。 定义不同执行目标的多个属性可能附加到同一个可调用的。 某些测试仍使用不推荐使用的[Xunit](https://www.nuget.org/packages/Microsoft.Quantum.Xunit/)包，该包公开 `Test` 以[Xunit](https://xunit.github.io/) framework 结尾的所有 Q # 函数和操作。 定义单元测试不再需要此包。 
+使用最新 Q# 版本时，将使用特性定义单元测试 `@Test("QuantumSimulator")` 。 参数可以是 "QuantumSimulator"、"ToffoliSimulator"、"TraceSimulator"，也可以是指定执行目标的任何完全限定名称。 定义不同执行目标的多个属性可能附加到同一个可调用的。 某些测试仍使用不推荐使用的[Xunit](https://www.nuget.org/packages/Microsoft.Quantum.Xunit/)包，此包公开所有 Q# `Test` 以[Xunit](https://xunit.github.io/) framework 结尾的函数和操作。 定义单元测试不再需要此包。 
 
 以下函数用于确保 <xref:microsoft.quantum.canon.fst> 和 <xref:microsoft.quantum.canon.snd> 函数在有代表性的示例中返回正确的输出。
 如果或的输出 `Fst` 不 `Snd` 正确，则 `fail` 使用语句来导致测试失败。
@@ -92,7 +95,7 @@ operation TestApplyWith() : Unit {
 这可能是另一种用来将功能作为第三方库发布的情况。
 另外，我们可能会要求你修改功能以更好地适应我们的路线图，以便我们能够完成我们的最佳工作。
 
-如果拉取请求需要更多文档或单元测试来帮助我们使用它，或者与其他 Q # 库的其他样式有足够的样式，则还会询问拉取请求的更改，这会使用户难以找到功能。
+如果拉取请求需要更多文档或单元测试来帮助我们使用它，或者与库的其余部分的样式完全不同，则还会询问拉取请求的更改，这 Q# 会使用户更难查找功能。
 在这些情况下，我们将尝试在代码评审中提供一些建议，以帮助你更轻松地加入你的内容。
 
 最后，我们不能接受会损害量子计算社区的贡献，如[Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)中所述。
@@ -102,10 +105,10 @@ operation TestApplyWith() : Unit {
 ## <a name="next-steps"></a>后续步骤
 
 感谢帮助您为整个量程编程社区提供很大的资源。
-若要了解详细信息，请继续阅读有关 Q # 样式的以下指南。
+若要了解详细信息，请继续阅读以下 Q# 样式指南。
 
 > [!div class="nextstepaction"]
-> [了解 Q # 样式准则](xref:microsoft.quantum.contributing.style)
+> [了解 Q# 样式准则](xref:microsoft.quantum.contributing.style)
 
 根据你所提供的代码的类型，可能会有其他一些需要记住的事项，可帮助你使你的参与对社区的处理方式尽可能好。
 

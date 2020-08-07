@@ -1,21 +1,24 @@
 ---
 title: 正在加载传统数据
-description: 了解如何加载您自己的数据集，以便使用 Microsoft Quantum Development Kit （QDK）为分类器模型定型。
+description: 了解如何加载自己的数据集，以便使用 Microsoft Quantum Development Kit (QDK) 训练分类器模型。
 author: geduardo
 ms.author: v-edsanc@microsoft.com
 ms.date: 02/16/2020
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.load
-ms.openlocfilehash: efa4a65a489446cbef48507d0b02a932da74c71c
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 26ba7411c9ade1d6c4b606e8c12c10ade18fc584
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274460"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868825"
 ---
 # <a name="load-and-classify-your-own-datasets"></a>对你自己的数据集进行加载和分类
 
-在本快速教程中，我们将学习如何加载自己的数据集，以便使用量程开发工具包（QDK）为分类器模型定型。
+在本快速教程中，我们将学习如何加载自己的数据集，以便使用量程开发工具包 (QDK) 来训练分类器模型。
 
 我们强烈建议使用标准化的序列化格式（如[JSON 文件](https://en.wikipedia.org/wiki/JSON)）来存储数据。
 此类格式提供与 Python 和 .NET 生态系统等不同框架的高兼容性。
@@ -23,7 +26,7 @@ ms.locfileid: "85274460"
 
 ## <a name="template-for-loading-your-datasets"></a>用于加载数据集的模板
 
-假设我们有一个 $N = $2 的定型数据集 $ （x，y） $，其中每个实例 $x $x $ 的 _i $ 包含三个功能： $x _ {i1} $、$x _ {i2} $ 和 $x _ {i3} $。
+假设我们有一个定型数据集 $ (x，y) $ of $N = $2，其中，_i $ 的每个实例 $x $x $ 有三个功能： $x _ {i1} $，$x _ {i2} $，$x _ {i3} $。
 验证数据集具有相同的结构。
 这些下可由类似于以下内容的 `data.json` 文件表示：
 
@@ -72,7 +75,7 @@ ms.locfileid: "85274460"
 
 假设我们有一个小型数据集，其中包含不同猫和狗的高度和权重。 此数据集非常小，不能定型模型，但足以显示加载数据集的过程。
 
-| 高度（m） | 重量（千克） | 动物 |
+| 高度 (m)  | 重量 (千克)  | 动物 |
 |-----------|------------|--------|
 | 0.54      | 30         | 狗    |
 | 0.30      | 8          | Cat    |

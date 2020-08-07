@@ -1,21 +1,24 @@
 ---
-title: 'Q # 标准库中的诊断'
-description: '了解用于在量程程序中捕获错误或错误的 Q # 标准库中的诊断功能和操作。'
+title: 标准库中的诊断 Q#
+description: 了解 Q# 用于在量程程序中捕获错误或错误的标准库中的诊断功能和操作。
 author: cgranade
 uid: microsoft.quantum.libraries.diagnostics
 ms.author: chgranad@microsoft.com
 ms.topic: article
-ms.openlocfilehash: 324753cfa1b7d940bf5a0bbe7665f19cc6dda82c
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 4a98795b2459adaa4e47c888751121fffdc70971
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86870628"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868536"
 ---
 # <a name="diagnostics"></a>诊断 #
 
 与传统开发一样，能够在量程程序中诊断错误和错误非常重要。
-Q # 标准库提供了各种不同的方法来确保量程程序的正确性，如中所述 <xref:microsoft.quantum.guide.testingdebugging> 。
+Q#标准库提供各种不同的方法来确保量程程序的正确性，如中所述 <xref:microsoft.quantum.guide.testingdebugging> 。
 很多情况下，这种支持采用函数和操作的形式，可指示目标计算机向宿主程序或开发人员提供额外的诊断信息，或强制执行由函数或操作调用表示的条件和固定条件的正确性。
 
 ## <a name="machine-diagnostics"></a>计算机诊断 ##
@@ -30,7 +33,7 @@ Message($"About to rotate by an angle of {angle}...");
 ```
 
 > [!NOTE]
-> `Message`具有签名 `(String -> Unit)` ，而不能在 Q # 内观察发出调试日志消息的。
+> `Message`具有签名 `(String -> Unit)` ，而不能在中观察发出调试日志消息的 Q# 。
 
 <xref:microsoft.quantum.diagnostics.dumpmachine>和 <xref:microsoft.quantum.diagnostics.dumpregister> callables 指示目标计算机提供有关当前已分配的所有 qubits 的诊断信息，或分别提供有关 qubits 的特定寄存器的诊断信息。
 每个目标计算机因提供的诊断信息而异，以响应转储指令。
@@ -49,7 +52,7 @@ Message($"About to rotate by an angle of {angle}...");
 例如， `EqualityFactI(1 + 1, 2, "1 + 1 != 2")` 表示 $1 + 1 = $2 的数学事实，而 `AssertQubit(One, qubit)` 表示测量 `qubit` 将返回具有确定性的条件的条件 `One` 。
 在前一种情况下，我们可以检查只给定其值的条件的正确性，而在后一种情况下，我们必须知道 qubit 的状态，以便评估断言。
 
-Q # 标准库提供了若干不同的函数来表示事实，其中包括：
+Q#标准库提供了若干不同的函数来表示事实，其中包括：
 
 - <xref:microsoft.quantum.diagnostics.fact>
 - <xref:microsoft.quantum.diagnostics.equalitywithintolerancefact>
@@ -67,10 +70,10 @@ Q # 标准库提供了若干不同的函数来表示事实，其中包括：
 如果断言失败，则执行将通过 `fail` 使用给定的消息调用来结束。
 默认情况下，不实现此操作;可支持它的模拟器应该提供执行运行时检查的实现。
 `AssertMeasurement`具有签名 `((Pauli[], Qubit[], Result, String) -> ())` 。
-由于 `AssertMeasurement` 是一个带有空元组作为其输出类型的函数，因此，不 `AssertMeasurement` 会在 Q # 程序中使用具有调用的效果。
+由于 `AssertMeasurement` 是一个带有空元组作为其输出类型的函数，因此不能在 `AssertMeasurement` 程序中使用具有调用的效果 Q# 。
 
 在 <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> 给定 Pauli 基础上测量给定 qubits 的操作函数断言在某种程度上具有给定概率的给定结果。
-公差为累加性（例如 `abs(expected-actual) < tol` ）。
+容差是加法 (例如 `abs(expected-actual) < tol`) 。
 如果断言失败，则执行将通过 `fail` 使用给定的消息调用来结束。
 默认情况下，不实现此操作;可支持它的模拟器应该提供执行运行时检查的实现。
 `AssertMeasurementProbability`具有签名 `((Pauli[], Qubit[], Result, Double, String, Double) -> Unit)` 。 第一个 `Double` 参数提供所需的结果概率，第二个参数为容差。
@@ -100,7 +103,7 @@ using (register = Qubit()) {
 ```
 
 但是，更常见的情况是，我们无法访问断言与 Pauli 运算符的 eigenstates 不一致的状态。
-例如，$ \ket{\psi} = （\ket {0} + e ^ {i \pi/8} \ket {1} ）/\sqrt {2} $ 不是任何 eigenstate 运算符的 Pauli，因此不能使用 <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> 唯一确定状态 $ \ket{\psi '} $ 等于 $ \ket{\psi} $。
+例如，$ \ket{\psi} = ( \ket {0} + e ^ {i \pi/8} \ket {1}) /\sqrt {2} $ 不是任何 eigenstate 运算符的 Pauli，因此不能使用 <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> 唯一确定状态 $ \ket{\psi '} $ 等于 $ \ket{\psi} $。
 相反，我们必须将断言 $ \ket{\psi '} = \ket{\psi} $ 分解为可使用模拟器支持的基元直接测试的假设。
 为此，请将 $ \ket{\psi} = \alpha \ket {0} + \beta \ket {1} $ 用于复数 $ \alpha = a \_ r + a \_ i i $ 和 $ \beta $。
 请注意，此表达式需要四个实数 $ \{ a \_ r、 \_ i、b \_ r、b \_ i \} $ 来指定，因为每个复数都可以表示为实部和虚部的总和。
@@ -109,7 +112,7 @@ using (register = Qubit()) {
 因此，需要指定三个断言，它们彼此独立，以便断言所需的状态。
 为此，我们需要找 `Zero` 出每个 Pauli 度量值为 $ \alpha $ 和 $ \beta $ 的观察概率，并分别对每个度量值进行断言。
 允许 $x $、$y $ 和 $z， `Result` 分别为 Pauli $X $、$Y $ 和 $Z $ 度量值。
-然后，对量子度量使用可能性函数 \begin{align} \Pr （x = \texttt{Zero} | \alpha，\beta） & = \frac12 + a \_ r b \_ r + a \_ i b \_ \\ \\ \Pr （y = \texttt{Zero} | \alpha，\beta） & = \frac12 + a \_ r b \_ i i \_ b \_ r \\ \\ \Pr （z = \texttt{Zero} | \alpha，\beta） & = \frac12\left （1 + a \_ r ^ 2 + a \_ i ^ 2 + b \_ r ^ 2 + b \_ i ^ 2 \right）。
+然后，对量子度量使用可能性函数 \begin{align} \Pr (x = \texttt{Zero} |\alpha，\beta) & = \frac12 + a \_ r b \_ r + a \_ i b \_ i \\ \\ \Pr (y = \texttt{Zero} | \alpha，\beta) & = \frac12 + a \_ r b \_ i a \_ i b \_ r \\ \\ \Pr (z = \texttt{Zero} | \alpha，\beta) & = \frac12\left ( 1 + a \_ r ^ 2 + a i ^ 2 \_ + b \_ r ^ 2 + b \_ i ^ 2 \right) 。
 \end{align}
 
 <xref:microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance>操作以类型的值的形式实现了 $ \alpha $ 和 $ \beta $ 的表示形式 <xref:microsoft.quantum.math.complex> 。
@@ -119,8 +122,8 @@ using (register = Qubit()) {
 
 到目前为止，我们关注的是用于准备特定状态的测试操作。
 不过，通常情况下，我们对操作如何处理任意输入（而不是单个固定的输入）感兴趣。
-例如，假设我们已实现了一个 `U : ((Double, Qubit[]) => () : Adjoint)` 与单一运算符系列 $U （t） $ 对应的操作，并提供了一个显式 `adjoint` 块，而不是使用 `adjoint auto` 。
-如果 $t $ 表示演化时间，我们可能会有兴趣断言 $U ^ \dagger （t） = U （-t） $。
+例如，假设我们实现了 `U : ((Double, Qubit[]) => () : Adjoint)` 与一系列单一运算符对应的操作 $U (t) $，并且提供了一个显式块， `adjoint` 而不是使用 `adjoint auto` 。
+如果) $ 表示演化时间，我们可能会有兴趣断言 $U ^ \dagger (t) = U (-t $t $。
 
 广泛地说，有两种不同的策略，我们可以在使断言成为两个操作并执行相同的操作 `U` `V` 。
 首先，可以检查 `U(target); (Adjoint V)(target);` 以给定的方式保留每个状态。
@@ -129,7 +132,7 @@ using (register = Qubit()) {
 
 > [!NOTE]
 > 上面所述的引用断言基于[Choi – Jamiłkowski isomorphism](https://en.wikipedia.org/wiki/Channel-state_duality)，这是一个数学框架，该框架将 $n $ qubits 上的操作与 $ 2n $ 放大上的 qubits 状态关联起来。
-> 具体而言，$n $ qubits 上的标识操作由放大状态 $ \ket{\ beta_ {00} } \mathrel{： =} （\ket {00} + \ket {11} ）/\sqrt $ $n $ 副本表示 {2} 。
+> 具体而言，$n $ qubits 上的标识操作由放大状态 $ \ket{\ beta_ {00} } \mathrel{： =} ( \ket {00} + \ket {11}) /\sqrt $ $n $ 副本表示 {2} 。
 > 操作 <xref:microsoft.quantum.preparation.preparechoistate> 实现此 isomorphism，并准备一个表示给定操作的状态。
 
 大致而言，这些策略可通过时间空间平衡来区分。

@@ -1,17 +1,20 @@
 ---
 title: 获取能量级别估算
-description: '演练一个示例 Q # 程序，该程序估算分子 hydrogen 的能源级别值。'
+description: 演练一个示例 Q# 程序，该程序估算分子 hydrogen 的能源级别值。
 author: guanghaolow
 ms.author: gulow
 ms.date: 07/02/2020
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.energyestimate
-ms.openlocfilehash: b26538980366cf4cbe01fc2ef59580ae182f1e8a
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: a2df4b829a3f4946c6de6e6b80ad72a5bc192b2c
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871558"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869199"
 ---
 # <a name="obtaining-energy-level-estimates"></a>获取能量级别估算
 估计能耗级别的值是量程化学的主要应用程序之一。 本文概述了如何针对分子 hydrogen 的规范示例执行此操作。 此部分中引用的示例位于 [`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogen) 化学示例存储库中。 演示中绘制出了一个更直观的示例 [`MolecularHydrogenGUI`](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogenGUI) 。
@@ -121,7 +124,7 @@ operation GetEnergyByTrotterization (
 }
 ```
 
-你现在可以从宿主程序调用 Q # 代码。 下面的 c # 代码创建一个全状态模拟器，并运行 `GetEnergyByTrotterization` 以获取地面状态能量。
+你现在可以 Q# 从宿主程序调用该代码。 下面的 c # 代码创建一个全状态模拟器，并运行 `GetEnergyByTrotterization` 以获取地面状态能量。
 
 ```csharp
 using (var qsim = new QuantumSimulator())

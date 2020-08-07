@@ -1,20 +1,23 @@
 ---
-title: 'Q # 标准库中的数学公式'
-description: '了解用于内置数据类型的 Q # 标准库中的传统数学函数。'
+title: 标准库中的数学公式 Q#
+description: 了解 Q# 与内置数据类型一起使用的标准库中的传统数学函数。
 author: cgranade
 uid: microsoft.quantum.libraries.math
 ms.author: chgranad@microsoft.com
 ms.topic: article
-ms.openlocfilehash: bec866472abc0d4327cdc570306341375395f492
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 4a3747eaa2c91e482ded3af1279a0e40d922bfb3
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274405"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868417"
 ---
 # <a name="classical-mathematical-functions"></a>传统数学函数 #
 
-这些函数主要用于处理 Q # 内置数据类型 `Int` 、 `Double` 和 `Range` 。
+这些函数主要用于处理 Q# 内置的数据类型 `Int` 、 `Double` 和 `Range` 。
 
 <xref:microsoft.quantum.intrinsic.random>操作具有签名 `(Double[] => Int)` 。
 它采用双精度数组作为输入，并将随机选择的索引作为返回到数组中 `Int` 。

@@ -1,18 +1,21 @@
 ---
-title: IQ# Magic 命令
-description: '带有 Q # Jupyter 笔记本的 IQ # 幻命令的快速参考页面'
+title: I Q# 幻命令
+description: Q#Jupyter 笔记本的 I 幻命令的快速参考页面 Q#
 author: gillenhaalb
 ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 uid: microsoft.quantum.guide.quickref.iqsharp
-ms.openlocfilehash: 2fb542df8723fa437c82b4a1dfada77e22c1d6e4
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: fb7b5543ef9222e6bab2b1cbbc7e3ebb54863438
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86870528"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867975"
 ---
-# <a name="iq-magic-commands"></a>IQ# Magic 命令
+# <a name="ino-locq-magic-commands"></a>I Q# 幻命令
 
 ### <a name="general"></a>常规
 
@@ -23,7 +26,7 @@ ms.locfileid: "86870528"
 - [`%performance`](xref:microsoft.quantum.iqsharp.magic-ref.performance)：报告此内核的当前性能指标。
 - [`%simulate`](xref:microsoft.quantum.iqsharp.magic-ref.simulate)：在 QuantumSimulator 目标计算机上运行给定的函数或操作。
 - [`%toffoli`](xref:microsoft.quantum.iqsharp.magic-ref.toffoli)：在 ToffoliSimulator 目标计算机上运行给定的函数或操作。
-- [`%who`](xref:microsoft.quantum.iqsharp.magic-ref.who)：列出当前会话中可用的 Q # 操作。
+- [`%who`](xref:microsoft.quantum.iqsharp.magic-ref.who)：列出 Q# 当前会话中可用的操作。
 - [`%workspace`](xref:microsoft.quantum.iqsharp.magic-ref.workspace)：提供与当前工作区相关的操作。
 
 ### <a name="azure-quantum-integration"></a>Azure 量程集成
@@ -34,17 +37,17 @@ ms.locfileid: "86870528"
 - [`%azure.output`](xref:microsoft.quantum.iqsharp.magic-ref.azure.output)：显示当前 Azure 量程工作区中某个作业的结果。
 - [`%azure.status`](xref:microsoft.quantum.iqsharp.magic-ref.azure.status)：在当前 Azure 量程工作区中显示作业的状态。
 - [`%azure.submit`](xref:microsoft.quantum.iqsharp.magic-ref.azure.submit)：将作业提交到 Azure 量程工作区。
-- [`%azure.target`](xref:microsoft.quantum.iqsharp.magic-ref.azure.target)：设置或显示 Azure 量程工作区中 Q # 作业提交的活动执行目标。
+- [`%azure.target`](xref:microsoft.quantum.iqsharp.magic-ref.azure.target)： Q# 在 Azure 量程工作区中设置或显示作业提交的活动执行目标。
 
-### <a name="chemistry-from-microsoftquantumchemistry-package"></a>化学（来自 Microsoft 量子包）
+### <a name="chemistry-from-microsoftquantumchemistry-package"></a>来自 Microsoft 量子包的化学 () 
 
 - [`%chemistry.broombridge`](xref:microsoft.quantum.iqsharp.magic-ref.chemistry.broombridge)：从 yaml 文件加载并返回 Broombridge 电子结构问题表示形式。
-- [`%chemistry.encode`](xref:microsoft.quantum.iqsharp.magic-ref.chemistry.encode)：将 fermion Hamiltonian 编码为 Q # 可使用的格式。
+- [`%chemistry.encode`](xref:microsoft.quantum.iqsharp.magic-ref.chemistry.encode)：将 fermion Hamiltonian 编码为可使用的格式 Q# 。
 - [`%chemistry.fh.add_terms`](xref:microsoft.quantum.iqsharp.magic-ref.chemistry.fh.add_terms)：向 fermion Hamiltonian 添加术语。
 - [`%chemistry.fh.load`](xref:microsoft.quantum.iqsharp.magic-ref.chemistry.fh.load)：加载 fermion Hamiltonian 以解决电子结构问题。 此问题是从文件加载的，或作为参数传递。
 - [`%chemistry.inputstate.load`](xref:microsoft.quantum.iqsharp.magic-ref.chemistry.inputstate.load)：加载 Broombridge 电子结构问题并返回所选输入状态。
 
-### <a name="katas-from-microsoftquantumkatas-package"></a>Katas （来自 Katas 包）
+### <a name="katas-from-microsoftquantumkatas-package"></a>Katas (Katas package) 
 
 - [`%kata`](xref:microsoft.quantum.iqsharp.magic-ref.kata)：执行单个测试，并报告测试是否已成功通过。
 - [`%check_kata`](xref:microsoft.quantum.iqsharp.magic-ref.check_kata)：检查单个 kata 测试的引用实现。

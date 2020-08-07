@@ -5,12 +5,15 @@ ms.author: alexei.bocharov@microsoft.com
 ms.date: 11/22/2019
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.intro
-ms.openlocfilehash: 4a4ecbb85cc5bbfb1ccb1f111309578bcc5bce3d
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 9a24d0b4145d0db2fd8c4e16be807165fff5fb32
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86872616"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868910"
 ---
 # <a name="introduction-to-quantum-machine-learning"></a>量程机器学习简介
 
@@ -22,7 +25,7 @@ ms.locfileid: "86872616"
 
 ## <a name="classifier-architecture"></a>分类器体系结构
 
-分类是一种监督的机器学习任务，其中的目标是推断类标签 $ \{ y_1、y_2、\ldots、y_d \} $ 的某些数据示例。 "定型数据集" 是示例 $ \mathcal{D} = \{ （x，y）} $ 的集合，其中包含已知的预分配标签。 此处 $x $ 是数据样本，并且 $y $ 是其称为 "定型标签" 的已知标签。
+分类是一种监督的机器学习任务，其中的目标是推断类标签 $ \{ y_1、y_2、\ldots、y_d \} $ 的某些数据示例。 "定型数据集" 是示例 $ \mathcal{D} = \{ (x，y) } $ 的集合，其中包含已知的预分配标签。 此处 $x $ 是数据样本，并且 $y $ 是其称为 "定型标签" 的已知标签。
 类似于传统方法，量程分类包含三个步骤：
 - 数据编码
 - 分类器状态的准备工作
@@ -33,13 +36,13 @@ ms.locfileid: "86872616"
 
 ![多层感知器与以线路为中心的分类器](~/media/DLvsQCC.png)
 
-我们可以将此模型与多层感知器进行比较，以更好地了解基本结构。 在感知器中，预测器 $p （y | x，\theta） $ 由一组权重 $ \theta $ 参数化，后者确定连接非线性激活函数（神经元）的线性函数。 这些参数可以定型来创建模型。 在输出层，我们可以通过使用非线性激活函数（如 softmax）来获取属于某个类的示例的概率。 在以线路为中心的分类器中，预测器由模型线路的 qubit 和两 qubit 控制旋转的旋转角度参数化。 类似地，这些参数可以通过混合量程/经典版本的梯度下降算法进行训练。 若要计算输出，而不是使用非线性激活函数，则可以通过在受控旋转后通过特定 qubit 读取重复度量来获取类的概率。 若要在量程状态中对传统数据进行编码，我们使用可控编码线路来准备状态。
+我们可以将此模型与多层感知器进行比较，以更好地了解基本结构。 在感知器中，预测器 $p (y | x，\theta) $ 由一组权重 $ \theta $ 参数化，后者确定线性函数连接非线性激活函数 (神经元) 。 这些参数可以定型来创建模型。 在输出层，我们可以通过使用非线性激活函数（如 softmax）来获取属于某个类的示例的概率。 在以线路为中心的分类器中，预测器由模型线路的 qubit 和两 qubit 控制旋转的旋转角度参数化。 类似地，这些参数可以通过混合量程/经典版本的梯度下降算法进行训练。 若要计算输出，而不是使用非线性激活函数，则可以通过在受控旋转后通过特定 qubit 读取重复度量来获取类的概率。 若要在量程状态中对传统数据进行编码，我们使用可控编码线路来准备状态。
 
 这种体系结构探讨了相对浅的线路，因此必须*快速 entangling*才能捕获所有范围内数据功能之间的所有相关性。 下图显示了最有用的快速 entangling 线路组件示例。 尽管具有此几何的线路仅包含 $3 n + 1 $ 入口，但它计算的单一权重矩阵可确保 $ 2 ^ n $ 功能之间的明显交叉对话。
 
-![快速 entangling 5 qubits 上的量程线路（具有两个循环层）。](~/media/5-qubit-qccc.png)
+![快速 entangling 5 qubits (上的量子线路，) 两个循环层。](~/media/5-qubit-qccc.png)
 
-上述示例中的线路包含6个 qubit 入口 $ （G_1、\ldots、G_5;G_ {16} ） $ 和 10 2-qubits 入口 $ （G_6，\ldots，G_ {15} ） $。 假设每个入口都是使用一个 learnable 参数定义的，我们有16个 learnable 参数，而 5 qubit Hilbert 空间的维度为32。 当 $n $ 为奇数时，可以轻松地将此类线路几何通用化为任何 $n 的 qubit 寄存器，并为 $ 2 ^ n $ 维特征空间产生 $3 n + 1 $ 参数的线路。
+上述示例中的线路包含6个 qubit 入口 $ (G_1，\ldots，G_5;G_ {16}) $ 和 10 2-qubits 入口 $ (G_6，\ldots，G_ {15}) $。 假设每个入口都是使用一个 learnable 参数定义的，我们有16个 learnable 参数，而 5 qubit Hilbert 空间的维度为32。 当 $n $ 为奇数时，可以轻松地将此类线路几何通用化为任何 $n 的 qubit 寄存器，并为 $ 2 ^ n $ 维特征空间产生 $3 n + 1 $ 参数的线路。
 
 ## <a name="classifier-training-as-a-supervised-learning-task"></a>作为监督式学习任务的分类器培训
 
@@ -51,17 +54,17 @@ ms.locfileid: "86872616"
 
 ### <a name="likelihood-as-the-training-goal"></a>作为定型目标的可能性
 
-给定一个 learnable 量程电路 $U （\theta） $ （其中 $ \theta $ 是参数的一个向量，并通过 $M $ 表示最终度量值），正确标签推理的平均可能性是 $ $ \begin{align} \mathcal{L} （\theta） = \frac {1} {| \mathcal{D} |} \left （\ sum_ {（x，y_1） \In\mathcal{D}} P （M = y_1 |U （\theta） x） + \ sum_ {（x，y_2） \in\mathcal{D}} P （M = y_2 |U （\theta） x） \right） \end{align} $ $ where $P （M = y | z） $ 是在量程状态下测量 $y $ $z $ 的概率。
-在这里，它后缀了解到，函数 $ \mathcal{L} （\theta） $ 非常平滑，$ \theta $ 和它在任何 $ \ theta_j $ 中的导数可以通过实质上与用于计算可能性函数本身相同的量程协议来计算。 这允许按梯度下降优化 $ \mathcal{L} （\theta） $。
+给定一个 learnable 量程线路 $U ( \theta) $，其中 $ \theta $ 是参数的一个向量，并通过 $M $ 来表示最终度量值，正确标签推理的平均可能性是 $ $ \begin{align} \mathcal{L} ( \theta) = \frac {1} {| \mathcal{D} |} \left ( \ sum_ { (x，y_1) \in\mathcal{d}} (Y_1 M = |U ( \theta) x) + \ sum_ { (x，y_2) \in\mathcal{D}} P (M = y_2 |U ( \theta) x) \right) \end{align} $ $，其中 $P (M = y | z) $ 是在量程状态 $y $ 的度量的概率。
+在这里，它后缀了解到 $ \theta $) $ \theta $ 的 ( 可能性，并且它的 theta_j 派生方式实质上是与用于计算可能性函数本身相同的量程协议。 这允许按梯度下降量优化 $ \mathcal{L} ( \theta) $。
 
 ### <a name="classifier-bias-and-training-score"></a>分类器偏差和定型分数
 
-如果 $ \theta $ 中有一些参数的中间（或最后一个）值，我们需要标识一个真实值 $b $ 称为*分类器偏差*来执行推理。 标签推理规则的工作原理如下所示： 
-- 当且仅当 $P （M = y_2 | 时，将 $x $ 赋值 $yU （\theta） x） + b > $0.5 （RULE1）（否则 $y _1 $ 为其分配标签）
+如果 $ \theta $ 中的参数有一些中间 (或最终) 值，则需要确定单个实数值 $b $ 称为*分类器偏差*来执行推理。 标签推理规则的工作原理如下所示： 
+- 当且仅当 $P (M = y_2 时，为 _2 $ 赋值 $y $x $ 的示例U ( \theta) x) + b > $0.5 ()  ($y) 
 
-明确 $b $ 必须是要有意义的间隔 $ （-0.5，+ 0.5） $。
+明确 $b $ 必须在时间间隔 $ (-0.5，+ 0.5) $ 才能有意义。
 
-如果为每个 $y RULE1 推断 $x $ $ 的标签，则将定型事例 $ （x，y） \in \mathcal{D} $ 视为 $b*错误分类*。 Misclassifications 的总数是分类器的*定型分数*（给定偏差 $b $）。 *最佳*分类器偏差 $b $ 将定型分数降到最低。 在给定预计算概率估计 $ \{ P （M = y_2 |U （\theta） x） |（x，*） \in\mathcal{D} \} $，通过最多 $ \ log_2 （| \mathcal{D} |），可以通过二进制搜索在间隔 $ （-0.5，+ 0.5） $ 中找到最佳分类符偏移$ 步骤。
+如果根据 RULE1 为 $x $ $b 推断的标签与 $y $) ，则将定型事例 $ (x、y \in \mathcal{D} $ 视为*错误分类*。 Misclassifications 的总数是分类器的*定型分数*（给定偏差 $b $）。 *最佳*分类器偏差 $b $ 将定型分数降到最低。 在给定预计算概率估计 $ \{ P (M = y_2 的情况下，很容易就会看到。U ( \theta) x) | (x，* ) \in\mathcal{D} \} $，通过最多 $ \ log_2 (| \mathcal{D} |) $ 个步骤，可以通过二进制搜索以 "间隔 $ (-0.5，+ 0.5) $" 来找到最佳分类符偏移量。
 
 ### <a name="reference"></a>参考
 

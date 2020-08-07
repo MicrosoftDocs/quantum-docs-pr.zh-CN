@@ -5,12 +5,15 @@ author: cgranade
 ms.author: chgranad@microsoft.com
 ms.date: 10/23/2018
 uid: microsoft.quantum.chemistry.examples.endtoend
-ms.openlocfilehash: 7605676e05ee352e47791657eeaafceef5dbb493
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 78d6488ed5e3972f85f1e6cf1ba2d197596c4cc3
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274282"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869301"
 ---
 # <a name="end-to-end-with-nwchem"></a>NWChem 端到端 #
 
@@ -100,7 +103,7 @@ cd nwchem/QA/chem_library_tests/H4
 Get-Content h4_sto6g_0.000.nw
 ```
 
-相关的分子是 4 hydrogen 原子的系统，这些原子按特定的几何（取决于一个角度）和参数（在 `alpha` 卡片组名称中指定）排列 `h4_sto6g_alpha.nw` 。 H4 是自70年代以来计算化学的已知[分子基准](https://onlinelibrary.wiley.com/doi/abs/10.1002/qua.560180511) 参数表示， `sto6g` 此纸牌的实现表示形式为 Slater orbital，具体而言，是指与[停止-nG basis 集](https://en.wikipedia.org/wiki/STO-nG_basis_sets)（包含6个高斯基础函数）相关的表示形式。 此输入组还包含 NWChem Tensor 缩写式引擎（TCE）的若干说明，这些说明指示 NWChem 生成与量程开发工具包互操作所需的信息：
+相关的分子是 4 hydrogen 原子的系统，这些原子按特定的几何（取决于一个角度）和参数（在 `alpha` 卡片组名称中指定）排列 `h4_sto6g_alpha.nw` 。 H4 是自70年代以来计算化学的已知[分子基准](https://onlinelibrary.wiley.com/doi/abs/10.1002/qua.560180511) 参数表示， `sto6g` 此纸牌的实现表示形式为 Slater orbital，具体而言，是指与[停止-nG basis 集](https://en.wikipedia.org/wiki/STO-nG_basis_sets)（包含6个高斯基础函数）相关的表示形式。 这一输入板还包含对 NWChem Tensor 缩写式引擎 (TCE) 的多个说明，这些说明指示 NWChem 生成与量程开发工具包互操作所需的信息：
 
 ```
 ...
@@ -165,8 +168,8 @@ ElapsedMilliseconds : 721
 - 请尝试通过直接编辑 NWChem 卡片进行修改，例如，通过浏览 `STO-nG` 各种选项 n 来浏览模型， 
 - 尝试使用中提供的其他预定义 NWChem 输入卡座 `nwchem/qa/chem_library_tests` ，
 - 尝试从 NWChem 生成的一系列预定义的 Broombridge YAML 基准，并将其作为[Microsoft/量子存储库](https://github.com/Microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML)的一部分提供。 这些基准包括： 
-    - small 分子，例如分子 hydrogen （H2）、Beryllium （）、锂 hydride （LiH）、
-    - 更大的分子，例如臭氧（O3）、carotene、cytosine 等。 
+    - 小型分子，例如分子 hydrogen (H2) 、Beryllium () 、锂 hydride (LiH) 
+    - 更大的分子，例如臭氧 (O3) 、beta carotene、cytosine 等。 
 - 尝试使用具有 Microsoft Quantum Development Kit 的接口的图形前端[EMSL 箭头](https://arrows.emsl.pnnl.gov/api/qsharp_chem)。 
 
 
@@ -200,7 +203,7 @@ qsharp_chem.yaml-2018-10-23-14:37:42 (download)
 ...
 ```
 
-单击 "启用 ``download`` " 将使用唯一的文件名（例如， ``qsharp_chem48443.yaml`` 每次运行时的特定名称不同）保存本地副本。 然后，你可以按照上述方式进一步处理此文件，例如，用 
+单击 "打开 ``download`` "，这将使用唯一的文件名（例如 ``qsharp_chem48443.yaml`` (特定名称将不同于每个运行) 的名称来保存本地副本。 然后，你可以按照上述方式进一步处理此文件，例如，用 
 ```powershell
 Get-GateCount -Format YAML qsharp_chem48443.yaml
 ```

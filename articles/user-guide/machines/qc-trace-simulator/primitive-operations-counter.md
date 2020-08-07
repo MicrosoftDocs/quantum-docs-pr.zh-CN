@@ -1,17 +1,20 @@
 ---
 title: 基元操作计数器-量程开发工具包
-description: '了解 Microsoft QDK 基元操作计数器，该计数器使用量程跟踪模拟器跟踪 Q # 程序中操作所使用的基元执行。'
+description: 了解 Microsoft QDK 基元操作计数器，该计数器使用量程跟踪模拟器跟踪程序中操作所使用的基元执行 Q# 。
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.primitive-counter
-ms.openlocfilehash: ea022d499354f7cefd60da690466496e0ce7c336
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: ceb70cef6dc0a4530b992b5a529248a8b283c17f
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871019"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868230"
 ---
 # <a name="quantum-trace-simulator-primitive-operations-counter"></a>量程跟踪模拟器：基元操作计数器
 
@@ -31,7 +34,7 @@ var sim = new QCTraceSimulator(config);
 
 ## <a name="using-the-primitive-operation-counter-in-a-c-host-program"></a>在 c # 宿主程序中使用基元操作计数器
 
-本部分中的 c # 示例 <xref:microsoft.quantum.intrinsic.t> <xref:microsoft.quantum.intrinsic.ccnot> 根据以下 Q # 示例代码，计算实现操作所需的操作数：
+本部分中的 c # 示例将根据 <xref:microsoft.quantum.intrinsic.t> <xref:microsoft.quantum.intrinsic.ccnot> 下面的示例代码，计算实现该操作所需的操作数 Q# ：
 
 ```qsharp
 open Microsoft.Quantum.Intrinsic;

@@ -1,17 +1,20 @@
 ---
 title: 深度计数器-量程开发工具包
-description: '了解 Microsoft QDK depth 计数器，该计数器使用量程跟踪模拟器收集在 Q # 程序中调用的每个操作的深度计数。'
+description: 了解 Microsoft QDK depth 计数器，该计数器使用量程跟踪模拟器收集程序中调用的每个操作的深度计数 Q# 。
 author: vadym-kl
 ms.author: vadym@microsoft.com
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.depth-counter
-ms.openlocfilehash: 811e387fedf547d2681518ae0bb525c13dc84ff4
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 5c54f6fc479203d30c68c4958329605d4323f9ea
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871121"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868315"
 ---
 # <a name="quantum-trace-simulator-depth-counter"></a>量程跟踪模拟器：深度计数器
 
@@ -20,7 +23,7 @@ ms.locfileid: "86871121"
 
 ## <a name="depth-values"></a>深度值
 
-默认情况下，除**0** `T` 操作（深度为**1**）外，所有操作的深度均为0。 这意味着，在默认情况下，只 `T` 会计算操作深度（这通常是必需的）。 深度计数器聚合并收集操作的[调用关系图](https://en.wikipedia.org/wiki/Call_graph)的所有边缘上的统计信息。
+默认情况下，除**0** `T` 操作（深度为**1**）外，所有操作的深度均为0。 这意味着，在默认情况下，只 `T` 会计算操作深度 (通常需要) 。 深度计数器聚合并收集操作的[调用关系图](https://en.wikipedia.org/wiki/Call_graph)的所有边缘上的统计信息。
 
 所有 <xref:microsoft.quantum.intrinsic> 操作都以单 qubit 循环、 <xref:microsoft.quantum.intrinsic.t> 操作、qubit Clifford 操作、 <xref:microsoft.quantum.intrinsic.cnot> 操作和多 qubit Pauli 可观察量的度量来表示。 用户可以通过的字段设置每个基元操作的深度 `gateTimes` <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 。
 
@@ -36,7 +39,7 @@ var sim = new QCTraceSimulator(config);
 
 ## <a name="using-the-depth-counter-in-a-c-host-program"></a>在 c # 宿主程序中使用深度计数器
 
-本部分中的 c # 示例 `T` `CCNOT` 基于以下 Q # 示例代码计算操作的深度：
+本部分中的 c # 示例将 `T` `CCNOT` 根据下面的示例代码计算操作的深度 Q# ：
 
 ```qsharp
 open Microsoft.Quantum.Intrinsic;

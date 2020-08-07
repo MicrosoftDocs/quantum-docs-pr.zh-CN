@@ -1,29 +1,32 @@
 ---
-title: Q 中的类型表达式#
-description: '了解如何指定、引用和组合常量、变量、运算符、操作和函数作为 Q # 中的表达式。'
+title: 表达式Q#
+description: 了解如何在中将常量、变量、运算符、操作和函数作为表达式进行指定、引用和合并 Q# 。
 author: gillenhaalb
 ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.expressions
-ms.openlocfilehash: 1821df6a3a51a62b44f3ccd96b127577c5db990a
-ms.sourcegitcommit: af10179284967bd7a72a52ae7e1c4da65c7d128d
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: b6cc97dfee05dc843e213e84f17043714a8a9656
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415382"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869607"
 ---
-# <a name="type-expressions-in-q"></a>Q 中的类型表达式#
+# <a name="expressions-in-no-locq"></a>表达式Q#
 
 ## <a name="numeric-expressions"></a>数值表达式
 
 数值表达式是、或类型的表达式 `Int` `BigInt` `Double` 。
 也就是说，它们是整数或浮点数。
 
-`Int`Q # 中的文本作为一系列数字写入。
+`Int`中的文本 Q# 作为一系列数字写入。
 支持十六进制和二进制整数 `0x` ，并分别使用和前缀来编写 `0b` 。
 
-`BigInt`Q # 中的文本具有尾随 `l` 或 `L` 后缀。
+`BigInt`中的文本 Q# 具有尾随 `l` 或 `L` 后缀。
 支持十六进制大整数，并使用 "0x" 前缀来写入。
 因此，以下是文本的有效用法 `BigInt` ：
 
@@ -33,8 +36,8 @@ let bigHex = 0x123456789abcdef123456789abcdefL;
 let bigOne = bigZero + 1L;
 ```
 
-`Double`Q # 中的文本是使用十进制数字编写的浮点数。
-可以使用或不使用小数点、 `.` 或用 "e" 或 "e" 指示的指数部分来编写它们（在这种情况下，只有可能的负号和十进制数字有效）。
+`Double`中的文本 Q# 是使用十进制数字编写的浮点数。
+可以使用或不使用小数点、 `.` 或使用 "e" 或 "e" 指示的指数部分来编写它们 (之后，只有可能的负号和十进制数字) 有效。
 下面是有效的 `Double` 文本： `0.0` 、 `1.2e5` 、 `1e-5` 。
 
 给定任意元素类型的数组表达式，你可以 `Int` 使用 [`Length`](xref:microsoft.quantum.core.length) 内置函数形成表达式，并将数组表达式括在括号中。
@@ -44,16 +47,16 @@ let bigOne = bigZero + 1L;
 假设两个数值表达式具有相同的类型，则可以 `+` 使用二元运算符、、 `-` `*` 和 `/` 形成新的数值表达式。
 新表达式的类型与构成表达式的类型相同。
 
-给定两个整数表达式，使用二元运算符 `^` （power）可形成新的整数表达式。
+给定两个整数表达式，使用二元运算符 `^` (power) 构成一个新的整数表达式。
 同样，您还可以使用 `^` with 两个双表达式来形成新的双精度表达式。
 最后，可以 `^` 在左侧使用大整数，在右侧使用整数来形成新的大整数表达式。
 在这种情况下，第二个参数必须适合32位;如果不是，则引发运行时错误。
 
-给定两个整数或大整数表达式，使用 `%` （取模）、 `&&&` （位与）、 `|||` （位或）或 `^^^` （位 XOR）运算符形成一个新整数或大整数表达式。
+假设有两个整数或大整数表达式，则使用 `%` (取模) 、 `&&&` (按位 "与") "、" `|||` (位 "或") "或 `^^^` (位 XOR) 运算符来形成一个新整数或大整数表达式。
 
-给定左侧的整数或大整数表达式，并在右侧使用整数表达式，使用 `<<<` （算术左移位）或 `>>>` （算术右移位）运算符来创建与左侧表达式具有相同类型的新表达式。
+给定左侧的整数表达式或大整数表达式，并在右侧 (使用整数表达式， `<<<`) 或 `>>>` (算术右移位) 运算符来创建与左侧表达式的类型相同的新表达式。
 
-转换操作的第二个参数（移位量）必须大于或等于零;负移位量的行为是不确定的。
+第二个参数 (移位量) 转换操作必须大于或等于零;负移位量的行为是不确定的。
 移位运算的移位量还必须适合32位;如果不是，则引发运行时错误。
 如果移动的数字是一个整数，则移位量将被解释 `mod 64` ; 也就是说，1的移位和65的移位具有相同的效果。
 
@@ -77,7 +80,7 @@ let bigOne = bigZero + 1L;
 如果给定了数值表达式，则可以使用一元运算符建立新的表达式 `-` 。
 新表达式与构成表达式的类型相同。
 
-给定任何整数或大整数表达式，都可以使用 `~~~` （按位求补）一元运算符形成同一类型的新表达式。
+给定任意整数或大整数表达式，可以使用 `~~~` (按位求补) 一元运算符来形成同一类型的新表达式。
 
 ## <a name="boolean-expressions"></a>布尔表达式
 
@@ -86,7 +89,7 @@ let bigOne = bigZero + 1L;
 给定任意两个具有相同基元类型的表达式， `==` 和 `!=` 二元运算符可用于构造 `Bool` 表达式。
 如果两个表达式相等，则表达式为 true; 否则为 false。
 
-不能比较用户定义类型的值，只能比较它们的解包值。 例如，使用 "解包" 运算符 `!` （在[Q # 中的类型](xref:microsoft.quantum.guide.types#access-anonymous-items-with-the-unwrap-operator)详细说明），
+不能比较用户定义类型的值，只能比较它们的解包值。 例如，使用 "解包" 运算符 `!` () 中的[类型 Q# ](xref:microsoft.quantum.guide.types#access-anonymous-items-with-the-unwrap-operator)详细说明，
 
 ```qsharp
 newtype WrappedInt = Int;     // Yes, this is a contrived example
@@ -110,12 +113,12 @@ let t = x == y;               // This will cause a compiler error.
 
 ## <a name="string-expressions"></a>字符串表达式
 
-Q # 允许在语句中使用字符串 `fail` （在[控制流](xref:microsoft.quantum.guide.controlflow#fail-statement)中说明）和标准函数中的字符串 [`Message`](xref:microsoft.quantum.intrinsic.message) 。 后者的特定行为取决于所使用的模拟器，但当在 Q # 程序中调用时，通常会将消息写入主机控制台。
+Q#允许在 " `fail` [控制流](xref:microsoft.quantum.guide.controlflow#fail-statement)") 和标准函数中说明 (语句中使用字符串 [`Message`](xref:microsoft.quantum.intrinsic.message) 。 后者的特定行为取决于所使用的模拟器，但通常会在程序期间调用时将消息写入主机控制台 Q# 。
 
-Q # 中的字符串是文本或内插字符串。
+中的字符串 Q# 是文本或内插字符串。
 
 字符串文本类似于大多数语言中的简单字符串文本：用双引号引起来的 Unicode 字符序列 `" "` 。
-在字符串内，使用反斜杠字符 `\` 来转义双引号字符（ `\"` ），或插入新行（ `\n` ）、回车符（ `\r` ）或制表符（ `\t` ）。
+在字符串内，使用反斜杠字符将 `\` 双引号字符转义 (`\"`) ，或插入新行 ( `\n` ) 、回车符 (`\r`) 或 () 的选项卡 `\t` 。
 例如：
 
 ```qsharp
@@ -123,11 +126,11 @@ Q # 中的字符串是文本或内插字符串。
 ```
 ### <a name="interpolated-strings"></a>内插字符串
 
-字符串内插的 Q # 语法是 c # 语法的子集。 下面是与 Q # 相关的要点：
+Q#字符串内插的语法是 c # 语法的子集。 下面是与以下各项相关的要点 Q# ：
 
 * 若要将字符串标识为内插字符串，可在该字符串前面加上 `$` 符号。 与之间不能存在空格， `$` `"` 后者用于启动字符串文本。
 
-* 下面是一个基本示例，它使用 [`Message`](xref:microsoft.quantum.intrinsic.message) 函数将度量结果写入控制台，并将其写入其他 Q # 表达式。
+* 下面是一个基本示例，使用 [`Message`](xref:microsoft.quantum.intrinsic.message) 函数将度量结果写入控制台，并将其写入其他 Q# 表达式。
 
 ```qsharp
     let num = 8;       // some Q# expression
@@ -135,9 +138,9 @@ Q # 中的字符串是文本或内插字符串。
     Message($"Number: {num}, Result: {res}");
 ```
 
-* 任何有效的 Q # 表达式都可以出现在内插字符串中。
+* 任何有效的 Q# 表达式都可以出现在内插字符串中。
 
-* 内插字符串中的表达式遵循 Q # 语法，而不是 c # 语法。 最明显的区别在于，Q # 不支持逐字（多行）内插字符串。
+* 内插字符串中的表达式遵循 Q# 语法，而不是 c # 语法。 最明显的区别在于不 Q# 支持逐字 (多行) 内插字符串。
 
 有关 c # 语法的更多详细信息，请参阅内[*插字符串*](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/interpolated-strings)。
 
@@ -197,14 +200,14 @@ Q # 中的字符串是文本或内插字符串。
 
 ## <a name="unwrap-expressions"></a>解包表达式
 
-在 Q # 中，解包运算符是一个尾随引号 `!` 。
+在中 Q# ，解包运算符是一个尾随引号 `!` 。
 例如，如果 `IntPair` 是具有基础类型的用户定义类型， `(Int, Int)` 并且 `s` 是具有值的变量，则 `IntPair(2, 3)` `s!` 为 `(2, 3)` 。
 
 对于根据其他用户定义类型定义的用户定义类型，可以重复解包运算符。 例如， `s!!` 指示的双重解包值 `s` 。
 因此，如果 `WrappedPair` 是具有基础类型的用户定义类型 `IntPair` ，并且 `t` 是具有值的变量 `WrappedPair(IntPair(1,2))` ，则 `t!!` 为 `(1,2)` 。
 
 运算符的优先级高于除 `!` `[]` 数组索引和切片以外的其他所有运算符。
-`!`并 `[]` 绑定按位置; 即， `a[i]![3]` 读取为 `((a[i])!)[3]` ：获取 `i` 的第一个元素，将 `a` 其解包，然后获取解包值（必须是数组）的第3个元素。
+`!`并 `[]` 绑定按位置; 即， `a[i]![3]` 读取为 `((a[i])!)[3]` ：取 `i` 的第一个元素，将 `a` 其解包，然后获取解包值 (的第三个元素，该元素必须是) 的数组。
 
 运算符的优先级 `!` 有一个可能不明显的影响。
 如果函数或操作返回一个值，则该函数或操作调用必须括在括号中，以便参数元组绑定到该调用，而不是绑定到解包。
@@ -270,7 +273,7 @@ let g = Foo(arg)!;      // Syntax error
 (a + b)[13]
 ```
 
-Q # 中的所有数组都是从零开始的。
+中的所有数组 Q# 都是从零开始的。
 也就是说，数组的第一个元素 `a` 始终为 `a[0]` 。
 
 
@@ -301,7 +304,7 @@ Q # 中的所有数组都是从零开始的。
   * 如果未指定步骤或指定步骤为正值，则为切片的数组的长度减一。
   * 如果指定的步骤为负数，则为零。
 
-下面是一些示例：
+一些示例如下：
 
 ```qsharp
 let arr = [1,2,3,4,5,6];
@@ -318,7 +321,7 @@ let slice10 = arr[...];       // slice10 is [1,2,3,4,5,6];
 
 ### <a name="copy-and-update-expressions"></a>复制和更新表达式
 
-由于所有 Q # 类型都是值类型（qubits 采用一个特殊的角色），因此，在将值绑定到符号或重新绑定符号时，将创建一个 "复制"。 也就是说，Q # 的行为与使用赋值运算符创建副本的行为相同。 
+由于所有 Q# 类型都是值类型 (，而 qubits 采用某种特殊的角色) ，所以当值绑定到某个符号或重新绑定符号时，将创建一个 "复制"。 也就是说，的行为与 Q# 使用赋值运算符创建副本的行为相同。 
 
 当然，在实际情况下，只会根据需要重新创建相关的部分。 这会影响复制数组的方式，因为不能更新数组项。 若要修改现有阵列，需要利用*复制和更新*机制。
 
@@ -327,9 +330,9 @@ let slice10 = arr[...];       // slice10 is [1,2,3,4,5,6];
 
 * `expression1``T[]`对于某些类型，必须是类型 `T` 。
 * `expression2`定义要修改的数组中指定的索引 `expression1` 。 `expression2`必须是类型 `Int` 或类型 `Range` 。
-* `expression3``expression1`基于中指定的索引，用于更新中的元素的值 `expression2` 。 如果 `expression2` 为类型 `Int` ，则 `expression3` 必须为类型 `T` 。 如果 `expression2` 为类型 `Range` ，则 `expression3` 必须为类型 `T[]` 。
+* `expression3``expression1`基于中指定的索引， (s) 用于更新中的元素的值 `expression2` 。 如果 `expression2` 为类型 `Int` ，则 `expression3` 必须为类型 `T` 。 如果 `expression2` 为类型 `Range` ，则 `expression3` 必须为类型 `T[]` 。
 
-例如，复制和更新表达式 `arr w/ idx <- value` 构造一个新数组，其中所有元素都设置为中的相应元素 `arr` ，但指定的元素除外 `idx` ，该元素设置为中的值 `value` 。 
+例如，复制和更新表达式将 `arr w/ idx <- value` 构造一个新数组，其中所有元素都设置为中的相应元素 `arr` ，但指定的元素 () `idx` ，该元素设置为中) 的值 (`value` 。 
 
 给定 `arr` 包含数组 `[0,1,2,3]` ，然后 
 
@@ -381,7 +384,7 @@ for (i in 1..N) {
 
 例如， `[[Op1], [Op2]]` 当前将引发错误，因为它会尝试创建两个不兼容的数组类型和的 `(Qubit[] => Unit is Adj)[]` 数组 `(Qubit[] => Unit is Ctl)[]` 。
 
-有关 callables 的详细信息，请参阅此页上的可[调用表达式](#callable-expressions)或[Q # 中的操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。
+有关 callables 的详细信息，请参阅此页上的可[调用表达式](#callable-expressions)或[中 Q# 的操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。
 
 ## <a name="conditional-expressions"></a>条件表达式
 
@@ -406,7 +409,7 @@ for (i in 1..N) {
 同样，如果操作支持 `Controlled` 函子，则 `Controlled op` 是操作表达式。
 有关这些表达式的类型的详细信息，请参阅[调用操作专用](xref:microsoft.quantum.guide.operationsfunctions#calling-operation-specializations)化。
 
-`Adjoint` `Controlled` 除解包运算符和数组索引外，函子（和）与其他所有运算符更紧密地绑定 `!` `[ ]` 。
+`Adjoint` `Controlled` 除解包运算符和数组索引外，函子 (和) 绑定更严格于其他所有运算符 `!` `[ ]` 。
 因此，以下所有操作都是有效的，前提是这些操作支持使用的函子：
 
 ```qsharp
@@ -431,7 +434,7 @@ SomeOtherFun(Fun);           // This also causes a compilation error.
 
 ## <a name="callable-invocation-expressions"></a>可调用调用表达式
 
-给定可调用的表达式（操作或函数）和可调用签名的输入类型的元组表达式时，可以通过将元组表达式追加到可调用表达式来形成*调用表达式*。
+给定可调用的表达式 (操作或函数) 以及可调用的签名的输入类型的元组表达式，可以通过将元组表达式追加到可调用表达式来形成*调用表达式*。
 调用表达式的类型是可调用的签名的输出类型。
 
 例如，如果 `Op` 是具有签名的操作 `((Int, Qubit) => Double)` ， `Op(3, qubit1)` 则为类型的表达式 `Double` 。
@@ -446,7 +449,7 @@ SomeOtherFun(Fun);           // This also causes a compilation error.
 ```
 
 调用[类型参数化](xref:microsoft.quantum.guide.operationsfunctions#generic-type-parameterized-callables)的可调用时，可以在可调用表达式后的尖括号中指定实际的类型参数 `< >` 。
-此操作通常是不必要的，因为 Q # 编译器会推断实际类型。
+此操作通常是不必要的，因为 Q# 编译器会推断实际类型。
 但是，如果*未指定*类型参数化的参数，则此[部分应用程序](xref:microsoft.quantum.guide.operationsfunctions#partial-application)需要它。
 在将具有不同函子支持的操作传递给可调用时，此方法也非常有用。
 
@@ -469,9 +472,9 @@ let combinedOp = Func<(Qubit[] => Unit), (Qubit[] => Unit is Adj)>(Op1, Op2, Op3
 
 * 用于运算和函数调用的括号也绑定在任何运算符之前，但在数组索引和函子之后。
 
-Q # 运算符按优先级顺序排列，从高到低：
+Q#按优先顺序排列的运算符，从高到低：
 
-运算符 | 元 | 说明 | 操作数类型
+运算符 | 元 | 描述 | 操作数类型
 ---------|----------|---------|---------------
  加`!` | 一元 | 解包 | 任何用户定义类型
  `-`, `~~~`, `not` | 一元 | 数值负，按位求补，逻辑求反 | `Int`对于，为 `BigInt` 或 `Double` `-` `Int` `BigInt` `~~~` `Bool``not`
@@ -492,4 +495,4 @@ Q # 运算符按优先级顺序排列，从高到低：
 
 ## <a name="next-steps"></a>后续步骤
 
-现在，你可以使用 Q # 中的表达式，请转到[q # 中的操作和函数](xref:microsoft.quantum.guide.operationsfunctions)以了解如何定义和调用操作和函数。
+现在你可以使用中的表达式 Q# ，请转到[中 Q# 的操作和函数](xref:microsoft.quantum.guide.operationsfunctions)以了解如何定义和调用操作和函数。

@@ -6,18 +6,21 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.qubits
-ms.openlocfilehash: 1655d18ab9d8638ad356e6fb90994b5c1fd76a25
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 6808a852ee0de7d3a38ea44e9637eeaa6bea382a
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85885298"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867856"
 ---
 # <a name="working-with-qubits"></a>使用量子位
 
 Qubits 是量程计算中信息的基础对象。 有关 qubits 的常规介绍，请参阅[了解量程计算](xref:microsoft.quantum.overview.understanding)，若要深入了解其数学表示形式，请参阅[Qubit](xref:microsoft.quantum.concepts.qubit)。 
 
-本文探讨了如何在 Q # 程序中使用和处理 qubits。 
+本文介绍如何在程序中使用和使用 qubits Q# 。 
 
 > [!IMPORTANT]
 >本文中所述的所有语句在函数体中均无效。 它们仅在操作内有效。
@@ -25,7 +28,7 @@ Qubits 是量程计算中信息的基础对象。 有关 qubits 的常规介绍�
 ## <a name="allocating-qubits"></a>分配 Qubits
 
 由于物理 qubits 是量程计算机中宝贵的资源，因此，编译器的一项工作是确保它们尽可能有效地使用。
-因此，您需要告诉 Q # 为在特定语句块内使用而*分配*qubits。
+因此，您需要 Q# 指定在特定语句块内*分配*qubits 以供使用。
 可以将 qubits 分配为单一 qubit，也可以将其分配为 qubits 数组（称为*寄存器*）。 
 
 ### <a name="clean-qubits"></a>清理 qubits
@@ -36,7 +39,7 @@ Qubits 是量程计算中信息的基础对象。 有关 qubits 的常规介绍�
 绑定遵循与语句相同的模式 `let` ：单个符号或符号元组，后跟一个等号 `=` ，一个值或匹配*项*的匹配元组。
 
 初始值设定项可用于单个 qubit （表示为 `Qubit()` ）或 qubits 的数组， `Qubit[n]` 其中 `n` 是一个 `Int` 表达式。
-例如，
+例如，应用于对象的
 
 ```qsharp
 using (qubit = Qubit()) {
@@ -65,7 +68,7 @@ using ((auxiliary, register) = (Qubit(), Qubit[5])) {
 这通常称为 "脏" qubits，因为它们的状态未知，甚至可以与量程计算机内存的其他部分放大。
 
 绑定遵循与语句相同的模式和规则 `using` 。
-例如，
+例如，应用于对象的
 ```qsharp
 borrowing (qubit = Qubit()) {
     // ...
@@ -82,17 +85,17 @@ borrowing ((auxiliary, register) = (Qubit(), Qubit[5])) {
 如果没有足够的 qubits，则会分配新的 qubits 来完成请求。
 
 在脏 qubits 的已知用例中，是多控制 CNOT-CONTAINS 入口的实现，只需很少的 qubits 和实现 incrementers。
-有关在 Q # 中使用的示例，请参阅本文中的[借款 Qubits 示例](#borrowing-qubits-example)，或使用 2n + 2 Qubits （对于利用借用 Roetteler 的算法，[*使用 2n + 2*](https://arxiv.org/abs/1611.07995) 2017 和 Toffoli）进行的纸张分解。
+有关如何在中使用的示例 Q# ，请参阅本文中的[借用 Qubits 示例](#borrowing-qubits-example)，或使用 2n + 2 Qubits （对于使用借用 Roetteler 的算法，[*使用 2n + 2*](https://arxiv.org/abs/1611.07995)) 2017 和 (Toffoli）进行。
 
 ## <a name="intrinsic-operations"></a>内部操作
 
 分配后，可以将 qubit 传递到函数和操作。
-在某种意义上，Q # 程序可以使用 qubit 执行的操作，因为可执行的操作全部定义为操作。
+在某种意义上，这是 Q# 程序可以对 qubit 执行的所有操作，因为可执行的操作全部定义为操作。
 
-本文讨论了几个有用的 Q # 操作，可用于与 qubits 交互。
+本文介绍 Q# 可用于与 qubits 交互的几个有用操作。
 有关这些和其他的详细信息，请参阅[内部操作和函数](xref:microsoft.quantum.libraries.standard.prelude)。 
 
-首先，qubit Pauli 运算符 $X $、$Y $ 和 $Z $ 通过内部操作 [`X`](xref:microsoft.quantum.intrinsic.x) 、 [`Y`](xref:microsoft.quantum.intrinsic.y) 和（ [`Z`](xref:microsoft.quantum.intrinsic.z) 其中每个都具有类型）表示 `(Qubit => Unit is Adj + Ctl)` 。
+首先，qubit Pauli 运算符 $X $、$Y $ 和 $Z $ Q# 由内部操作 [`X`](xref:microsoft.quantum.intrinsic.x) 、和表示， [`Y`](xref:microsoft.quantum.intrinsic.y) [`Z`](xref:microsoft.quantum.intrinsic.z) 其中每个都具有类型 `(Qubit => Unit is Adj + Ctl)` 。
 
 如[内部操作和函数](xref:microsoft.quantum.libraries.standard.prelude)中所述，请将 $X $， `X` 以作为位翻转操作，而不是入口。
 您可以使用该 `X` 操作来为某些传统位字符串 $s $ s_0 \ket{s_1 \dots .. s_n} $ 的形式准备状态：
@@ -124,7 +127,7 @@ operation RunExample() : Unit {
 > [!TIP]
 > 稍后，您将看到更简洁的方式来编写不需要手动控制流的操作。
 
-你还可以使用 \Right 转换 $H $ 来准备状态，例如 $ \ket{+} = \left （\ket {0} + \ket {1} \sqrt）/\ket {2} $ 和 $ \left {-} = \ket （\ket {0} -\right {1} \sqrt）/Hadamard {2} $，该转换在 Q # 中通过内部运算 [`H`](xref:microsoft.quantum.intrinsic.h) （类型为（Qubit => Unit is 调整 + Ctl））来表示：
+你还可以通过使用 \Right 转换 $H $ 来准备状态，例如 $ \ket{+} = \left ( \ket {0} + \ket {1} \sqrt) /\ket {2} $ and $ \left {-} = \ket ( \ket {0} -\right {1} \sqrt) /Hadamard {2} $，该转换 ($，该转换由 Q# 内部操作 [`H`](xref:microsoft.quantum.intrinsic.h) (">") ) ：
 
 ```qsharp
 operation PreparePlusMinusState(bitstring : Bool[], register : Qubit[]) : Unit {
@@ -174,7 +177,7 @@ operation MeasureOneQubit() : Result {
 
 若要测量特定基数的一个或多个 qubits 数组，可以使用 [`Measure`](xref:microsoft.quantum.intrinsic.measure) 操作。
 
-的输入 `Measure` 是一组 `Pauli` 类型（例如， `[PauliX, PauliZ, PauliZ]` ）和 qubits 的数组。
+的输入 `Measure` 是一组 `Pauli` 类型 (例如， `[PauliX, PauliZ, PauliZ]`) 和 qubits 的数组。
 
 下面的操作将提供一个稍微复杂的示例， `true` 如果 `Qubit[]` 在指定的 Pauli 基础上测量时，类型寄存器中的所有 qubits 都处于状态零，则返回布尔值; `false` 否则返回。
 
@@ -242,4 +245,4 @@ is Adj + Ctl {
 
 ## <a name="next-steps"></a>后续步骤
 
-了解 Q # 中的[控制流](xref:microsoft.quantum.guide.controlflow)。
+了解中的[控制流](xref:microsoft.quantum.guide.controlflow) Q# 。

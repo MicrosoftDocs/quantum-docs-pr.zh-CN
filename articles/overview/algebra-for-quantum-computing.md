@@ -6,12 +6,15 @@ ms.author: bradben
 ms.date: 5/5/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.algebra
-ms.openlocfilehash: 4cf6cce870c7661a7fffc21dcb60dd53cf281ddd
-ms.sourcegitcommit: af10179284967bd7a72a52ae7e1c4da65c7d128d
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 8b06eba9cadce84aca6f87e4451026ca2ffc794f
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85415433"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867635"
 ---
 # <a name="linear-algebra-for-quantum-computing"></a>用于量子计算的线性代数
 

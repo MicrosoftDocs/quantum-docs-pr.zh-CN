@@ -1,17 +1,20 @@
 ---
-title: 'Q # 标准库中的纠错'
-description: '了解如何在你的 Q # 程序中使用纠错代码，同时保护 qubits 的状态。'
+title: 标准库中的错误更正 Q#
+description: 了解如何在程序中使用纠错代码， Q# 同时保护 qubits 的状态。
 author: QuantumWriter
 uid: microsoft.quantum.libraries.error-correction
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
-ms.openlocfilehash: 514fe68f603b9a3a0b4607390719b08a43fe4967
-ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 8b1f008793281121bc547d1a6ac3b960feb082ab
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85274413"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868485"
 ---
 # <a name="error-correction"></a>错误更正 #
 
@@ -21,14 +24,14 @@ ms.locfileid: "85274413"
 例如，让 $ \overline {0} = $0 是数据位0的编码，其中使用标签0上面的一行来指示它是0状态中位的编码。
 如果我们以类似的方式让 $ \overline {1} = $111，则我们有一个简单的重复代码，可以防止出现一位翻转错误。
 也就是说，如果三个位中有任何一个进行了翻转，则可以通过使用大多数投票来恢复逻辑位的状态。
-尽管传统的纠错是此特定示例中的一个更加丰富的主题（我们建议不要再[介绍编码理论](https://www.springer.com/us/book/9783540641339)），但上面的重复代码已经指向了一个可能存在的问题来保护量程信息。
+尽管传统的纠错是一个非常丰富的主题，这一特定的示例 (我们建议不[起毛的编码理论简介](https://www.springer.com/us/book/9783540641339)) ，上面的重复代码已指向保护量程信息的可能问题。
 也就是说，"[无克隆" 定理](xref:microsoft.quantum.concepts.pauli#the-no-cloning-theorem)意味着如果我们测量每个单独的 qubit，并通过与上面的传统代码进行交叉投票，就会丢失我们尝试保护的准确信息。
 
 在量程设置中，我们会看到测量值有问题。 我们仍可以实现上述编码。
 这样做有助于了解我们如何将错误更正通用化到量程情况。
 因此，让 $ \ket{\overline {0} } = \ket {000} = \ket {0} \otimes \ket {0} \otimes \ket {0} $，并让 $ \ket{\overline {1} } = \ket {111} $。
-然后，按线性，为所有输入定义重复代码;例如，$ \ket{\overline{+}} = （\ket{\overline {0} } + \ket{\overline {1} }）/\sqrt {2} = （\ket {000} + \ket {111} ）/\sqrt {2} $。
-具体而言，在 qubit 中使用 _1 $ act $X 时，请注意，这两个分支中所需的更正都精确地 $X _1 $： $ $ \begin{align} X_1 \ket{\overline{+}} & = \frac {1} {\sqrt {2} } \left （X_1 \ket {000} + X_1 \ket {111} \right） \\ \\ & = \frac {1} {\sqrt {2} } \left （\ket {010} + \ket {101} \right）。
+然后，按线性，为所有输入定义重复代码;例如，$ \ket{\overline{+}} = ( \ket{\overline {0} } + \ket{\overline {1} } ) /\sqrt {2} = ( \ket {000} + \ket {111}) /\sqrt {2} $。
+具体而言，在 qubit 中使用 _1 $ act $X 时，请注意，这两个分支中所需的更正精确 $X _1 $： $ $ \begin{align} X_1 \ket{\overline{+}} & = \frac {1} {\sqrt {2} } \left ( X_1 \ket {000} + X_1 \ket {111} \right) \\ \\ & = \frac {1} {\sqrt {2} } \left ( \ket {010} + \ket {101} \right) 。
 \end{align} $ $
 
 若要查看我们如何确定这种情况，而无需测量我们尝试保护的状态，可以记下每个不同的位翻转错误对逻辑状态的操作：
@@ -48,7 +51,7 @@ ms.locfileid: "85274413"
 另一方面，$Z _0 Z_1 \ket {100} =-\ket {100} $ and $Z _0 Z_1 \ket {011} =-\ket {011} $，因此衡量 $Z _0 Z_1 $ 的结果将显示有关发生了哪些错误的有用信息。
 
 为了强调这一点，请重复上述表，但在每一行上添加度量 $Z _0 Z_1 $ 和 $Z _1 Z_2 $ 的结果。
-我们通过分别与 and 的 Q # 值相对应的 eigenvalue 的符号表示每个度量值的结果： $ + $ 或 $-$ `Result` `Zero` `One` 。
+我们将每个度量值的结果表示为所观察到的 eigenvalue 的符号，分别为 $ + $ 或 $-$，分别对应于 Q# `Result` 和的值 `Zero` `One` 。
 
 | 错误 $E $ | $E \ket{\overline {0} } $ | $E \ket{\overline {1} } $ | $Z _0 的结果 Z_1 $ | $Z _1 Z_2 $ 的结果 |
 | --- | --- | --- | --- | --- |
@@ -68,16 +71,16 @@ ms.locfileid: "85274413"
 > 通常，可以创建代码来处理更多错误，并处理 $Z $ 个错误以及 $X $ 个错误。
 
 对于在所有代码状态下以相同方式操作的量程错误更正，我们可以对其进行描述，这就是*稳定的形式*。
-Q # canon 提供了一个框架，用于描述从稳定程序代码进行的编码和解码，并描述了一个从错误中恢复的方法。
+Q#Canon 提供了一个框架，用于描述从稳定程序代码进行的编码和解码，并描述了一个从错误中恢复的方法。
 在本部分中，我们使用几个简单的量程纠错代码描述此框架及其应用程序。
 
 > [!TIP]
 > 稳定介绍了对稳定形式的介绍。
 > 我们向读者介绍了了解更多[Gottesman 2009](https://arxiv.org/abs/0904.2557)的兴趣。
 
-## <a name="representing-error-correcting-codes-in-q"></a>表示问答中的纠错代码# ##
+## <a name="representing-error-correcting-codes-in-no-locq"></a>表示中的纠错代码Q# ##
 
-为了帮助指定错误更正代码，Q # canon 提供了几个不同的用户定义类型：
+为了帮助指定错误更正代码， Q# canon 提供了几种不同的用户定义类型：
 
 - <xref:microsoft.quantum.errorcorrection.logicalregister>`= Qubit[]`：表示 qubits 的寄存器应解释为纠错代码的代码块。
 - <xref:microsoft.quantum.errorcorrection.syndrome>`= Result[]`：表示度量结果的数组应解释为在代码块上测量的症状。
@@ -119,4 +122,4 @@ using (scratch = Qubit[nScratch]) {
 
 我们将在[位翻转代码示例](https://github.com/microsoft/Quantum/tree/master/samples/error-correction/bit-flip-code)中更详细地探讨这一点。
 
-除了位翻转代码外，Q # canon 还提供了[5 qubit 完美代码](https://arxiv.org/abs/quant-ph/9602019)的实现和[七 qubit 代码](https://arxiv.org/abs/quant-ph/9705052)，这两者都可以更正任意单 qubit 错误。
+除了位翻转代码 Q# 外，canon 还提供了[5 qubit 完美代码](https://arxiv.org/abs/quant-ph/9602019)的实现和[七 qubit 代码](https://arxiv.org/abs/quant-ph/9705052)，这两者都可以更正任意单 qubit 错误。

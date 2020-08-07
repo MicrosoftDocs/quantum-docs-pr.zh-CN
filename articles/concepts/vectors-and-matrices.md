@@ -1,6 +1,8 @@
 ---
 标题：量程计算说明中的矢量和矩阵：了解有关如何使用向量和矩阵的基本知识。
 author： QuantumWriter uid：： nawiebe@microsoft.com ms. 日期：12/11/2017 毫秒。主题：项目不相关：
+- "Q#"
+- "$$v"
 - "$$"
 - "$$"
 - "$"
@@ -87,7 +89,7 @@ author： QuantumWriter uid：： nawiebe@microsoft.com ms. 日期：12/11/2017 
 
 列向量 (或只是[*矢量*](https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics))) $ v of $ dimension (或 size) $ n $ 为 $ n 复数的集合 $ (v_1 $ 、v_2、\ldots、v_n) $ 排列为一列：
 
-$$向量=\begin{bmatrix}
+$$v =\begin{bmatrix}
 v_1\\\\
 v_2\\\\
 \vdots\\\\

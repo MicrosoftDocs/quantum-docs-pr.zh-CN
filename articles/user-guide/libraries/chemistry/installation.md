@@ -1,17 +1,20 @@
 ---
-title: 'Microsoft Q # 化学库安装'
+title: Microsoft Q# 化学库安装
 description: 了解如何安装 Microsoft 量程化学库，并将其与 NWChem 计算化学平台配合使用。
 author: guanghaolow
 ms.author: gulow
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.chemistry.concepts.installation
-ms.openlocfilehash: 0e870bb3421dddb632375a2fc8633249954f8c8b
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 5fe973d24ceffd413cdbd3c543013dcc7ee379c0
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871523"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869335"
 ---
 # <a name="chemistry-library-installation"></a>化学库安装
 
@@ -19,7 +22,7 @@ ms.locfileid: "86871523"
 虽然这对小型示例而言很不错，但大规模的量程化学要求 Hamiltonians 或数十亿。
 此类 Hamiltonians 是由可扩展的计算化学包生成的，太大，无法手动导入。
 
-适用于量子开发工具包的量程化学库旨在与计算化学包一起正常工作，最值得注意的是，在太平洋西北部国家实验室，环境分子科学实验室（EMSL）开发的[**NWChem**](http://www.nwchem-sw.org/)计算化学平台。
+用于量程开发工具包的量程化学库旨在与计算化学包一起正常工作，尤其是在太平洋西北部国家实验室，环境分子科学实验室实验室 (EMSL) 开发的[**NWChem**](http://www.nwchem-sw.org/)计算化学平台。
 具体而言，Broombridge [ **Microsoft.Quantum.Chemistry**包](https://www.nuget.org/packages/Microsoft.Quantum.Chemistry)提供的工具可用于加载在[架构](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)中表示的量程化学模拟问题的实例，还支持在最新版本的 NWChem 中导出。
 
 量程开发工具包化学库还提供了一个命令行工具， `qdk-chem` 用于在旧式格式与[Broombridge](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)之间进行转换。
@@ -84,7 +87,7 @@ $NWCHEM_TOP/contrib/quasar/yaml_driver input.nw
 - [安装用于 Windows 的 Docker 10](https://docs.docker.com/docker-for-windows/install/)
 
 > [!TIP]
-> 如果使用用于 Windows 的 Docker，则需要与 Docker 守护程序共享包含临时目录的驱动器（通常是 `C:\` 驱动器）。 有关更多详细信息，请参阅[Docker 文档](https://docs.docker.com/docker-for-windows/#shared-drives)。
+> 如果使用用于 Windows 的 Docker，则需要共享包含临时目录的驱动器 (通常这是 `C:\` Docker 守护程序) 的驱动器。 有关更多详细信息，请参阅[Docker 文档](https://docs.docker.com/docker-for-windows/#shared-drives)。
 
 安装 Docker 后，可以使用随量程开发工具包示例提供的 PowerShell 模块来运行映像，也可以手动运行映像。
 此处是使用 PowerShell 的详细信息;如果希望手动使用 Docker 映像，请参阅[随图像提供的文档](https://hub.docker.com/r/nwchemorg/nwchem-qc/)。
