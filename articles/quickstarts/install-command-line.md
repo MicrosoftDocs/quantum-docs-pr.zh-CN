@@ -1,21 +1,24 @@
 ---
-title: 开发 Q# 命令行应用程序
+title: 使用 Q# 命令行应用程序进行开发
 author: KittyYeungQ
 ms.author: kitty
 ms.date: 4/24/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.standalone
-ms.openlocfilehash: 3d70838289e72afdd0a48bbdff0bec407428d125
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 630dc7b8acf2dd8f258eb27dfbc367b812cd1c19
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871427"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867601"
 ---
-# <a name="develop-with-q-command-line-applications"></a>开发 Q# 命令行应用程序
+# <a name="develop-with-no-locq-command-line-applications"></a>使用 Q# 命令行应用程序进行开发
 
-Q# 程序可以自己执行，而无需采用 C#、F# 或 Python 等主机语言的驱动程序。
+Q# 程序可自己执行，无需采用 C#、F# 或 Python 等主机语言的驱动程序。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -48,7 +51,7 @@ Q# 程序可以自己执行，而无需采用 C#、F# 或 Python 等主机语言
 dotnet new -i Microsoft.Quantum.ProjectTemplates
 ```
 
-## <a name="develop-with-q"></a>使用 Q# 进行开发
+## <a name="develop-with-no-locq"></a>使用 Q# 进行开发
 
 按照你的环境所对应的选项卡上的说明操作。
 
@@ -56,7 +59,7 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 
 创建新项目：
 
-1. 单击“查看” -> “命令面板”，然后选择 Q#  **：** Create New Project”。
+1. 单击“查看” -> “命令面板” ，然后选择“Q#:Create New Project”。
 2. 单击“独立控制台应用程序”。
 3. 导航到项目的保存位置，然后单击“创建项目”。
 4. 成功创建项目后，单击右下方的“打开新项目…”。
@@ -74,9 +77,9 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 
 ### <a name="visual-studio"></a>[Visual Studio](#tab/tabid-vs)
 
-创建 Q# `Hello World` 应用程序，验证 Visual Studio 安装。
+创建 Q# `Hello World` 应用程序来验证 Visual Studio 安装。
 
-创建新的 Q# 应用程序：
+若要创建新的 Q# 应用程序：
 1. 打开 Visual Studio，单击“文件” -> “新建” -> “项目”  。
 2. 在“搜索”框中键入 `Q#`，选择“Q# 应用程序”，然后单击“下一步” 。
 3. 输入应用程序的“名称”和“位置”，然后单击“创建”。
@@ -93,7 +96,7 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 
 ### <a name="other-editors-with-the-command-line"></a>[其他使用命令行的编辑器](#tab/tabid-cmdline)
 
-通过创建 Q# `Hello World` 应用程序来验证安装。
+创建 Q# `Hello World` 应用程序来验证安装项。
 
 1. 安装项目模板。
 

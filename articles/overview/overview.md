@@ -6,12 +6,15 @@ ms.author: bradben
 ms.date: 05/05/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.introduction
-ms.openlocfilehash: 7c55420bd35f9b6e0e7ec80ddffe8a861cb7df39
-ms.sourcegitcommit: 2317473fdf2b80de58db0f43b9fcfb57f56aefff
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 59cb595ac207d6e84358fc6ba742e0e0019c76f9
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/15/2020
-ms.locfileid: "83430775"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866972"
 ---
 # <a name="introduction-to-quantum-computing-and-the-quantum-development-kit"></a>量子计算和 Quantum 开发工具包简介
 
@@ -62,7 +65,7 @@ Microsoft Quantum 开发工具包 (QDK) 是一组开放源代码工具，旨在�
 
 Quantum 开发工具包随附[量子机器学习库](xref:microsoft.quantum.machine-learning.concepts.intro)，使你能够运行混合量子/经典机器学习试验。 该库包括示例和教程，并提供了实现新的混合算法，即经典算法（以电路为中心的量子分类器）所需的工具，以解决监督分类问题。
 
-## <a name="q-and-the-microsoft-quantum-development-kit-qdk"></a>Q# 和 Microsoft Quantum 开发工具包 (QDK)
+## <a name="no-locq-and-the-microsoft-quantum-development-kit-qdk"></a>Q# 和 Microsoft Quantum 开发工具包 (QDK)
 
 Q# 是用于开发和运行量子算法的 Microsoft 开放源代码编程语言。 它是 [QDK](https://docs.microsoft.com/quantum/)（一种功能完善的 Q# 开发工具包）的一部分，可与标准工具和语言一起使用，以开发可在各种环境（包括内置的状态量子模拟器）中运行的量子应用程序。
 
@@ -70,7 +73,7 @@ Q# 是用于开发和运行量子算法的 Microsoft 开放源代码编程语言
 
 QDK 包括一个标准库以及专门的化学库、机器学习库和数字库。
 
-该文档包括 Q# 语言指南、教程和示例代码，以帮助你快速入门，并提供丰富的文章来帮助你更深入地了解量子计算概念。  
+该文档包括 Q# 语言指南、教程和示例代码来帮助你快速入门，还提供丰富的文章来帮助你更深入地了解量子计算概念。  
 
 ## <a name="microsoft-quantum-hardware-partners"></a>Microsoft 量子硬件合作伙伴
 

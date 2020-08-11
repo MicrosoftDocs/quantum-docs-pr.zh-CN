@@ -6,15 +6,18 @@ ms.author: chgranad@microsoft.com
 ms.date: 10/17/2018
 ms.topic: article
 uid: microsoft.quantum.libraries
-ms.openlocfilehash: 09fc723d27f2e026430b358c62b817c106c135c2
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: d61fe459362fdb5f3550768a26b34656a8a538a7
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871495"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869097"
 ---
-# <a name="overview-of-q-libraries"></a>Q# 库概述
-量子开发工具包附带几个库，让在 Q# 中开发量子应用程序变得更轻松。
+# <a name="overview-of-no-locq-libraries"></a>Q# 库概述
+量子开发工具包附带几个库，让你可以更轻松地以 Q# 中开发量子应用程序。
 在文档的此部分中，我们介绍了这些库，以及如何在程序中使用这些库。
 
 - [**标准库**](xref:microsoft.quantum.libraries.standard.intro)：此部分介绍 prelude 和 canon。prelude 定义 Q# 程序与目标计算机之间的接口，canon 是一个 Q# 库，提供用于编写 Q# 程序的常规操作和函数。

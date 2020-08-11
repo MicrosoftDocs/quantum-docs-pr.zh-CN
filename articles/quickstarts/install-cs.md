@@ -6,14 +6,17 @@ ms.date: 5/30/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.cs
-ms.openlocfilehash: 714c15d9589095f0fe395fcd6941672167879dca
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 13d73bdf0287941c89e03ba63869095e5fca4e70
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85885492"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867550"
 ---
-# <a name="develop-with-q-and-net"></a>使用 Q# 和 .NET 进行开发
+# <a name="develop-with-no-locq-and-net"></a>使用 Q# 和 .NET 进行开发
 
 Q# 能够很好地与 C# 和 F# 等 .NET 语言配合运行。
 在本指南中，我们将演示如何将 Q# 与采用 .NET 语言编写的主机程序结合使用。
@@ -22,9 +25,9 @@ Q# 能够很好地与 C# 和 F# 等 .NET 语言配合运行。
 
 ## <a name="prerequisites"></a>先决条件
 
-- 安装 Quantum 开发工具包，以[用于 Q# 命令行项目](xref:microsoft.quantum.install.standalone)。
+- 安装 Quantum 开发工具包，将它[用于 Q# 命令行项目](xref:microsoft.quantum.install.standalone)。
 
-## <a name="creating-a-q-library-and-a-net-host"></a>创建 Q# 库和 .NET 主机
+## <a name="creating-a-no-locq-library-and-a-net-host"></a>创建 Q# 库和 .NET 主机
 
 第一步是为 Q# 库以及将要调入到（Q# 库中定义的）操作和函数的 .NET 主机创建项目。
 
@@ -65,7 +68,7 @@ Q# 能够很好地与 C# 和 F# 等 .NET 语言配合运行。
 - 创建新的 Q# 库
   - 转到“文件” -> “新建” -> “项目”  
   - 在搜索框中键入“Q#”
-  - 选择 Q# 库
+  - 选择“Q# 库”
   - 选择“下一步”
   - 为库选择名称和位置
   - 请确保未选中“将项目和解决方案置于同一目录中”
@@ -80,7 +83,7 @@ Q# 能够很好地与 C# 和 F# 等 .NET 语言配合运行。
 
 ***
 
-## <a name="calling-into-q-from-net"></a>从 .NET 调用 Q#
+## <a name="calling-into-no-locq-from-net"></a>从 .NET 调用 Q#
 
 按照上述说明设置项目后，可从 .NET 控制台应用程序调用 Q#。
 Q# 编译器将为每个 Q# 操作和函数创建 .NET 类，使你能够在模拟器上运行量子程序。
@@ -103,4 +106,4 @@ Q# 编译器将为每个 Q# 操作和函数创建 .NET 类，使你能够在模�
     
 ## <a name="next-steps"></a>后续步骤
 
-现在，你已为 Q# 命令行程序和与 .NET 的互操作设置了 Quantum 开发工具包，接下来可以编写并运行你的[第一个量程程序](xref:microsoft.quantum.quickstarts.qrng)。
+现在，你已为 Q# 命令行程序和与 .NET 的互操作设置了 Quantum 开发工具包，接下来可以编写并运行你的[第一个量子程序](xref:microsoft.quantum.quickstarts.qrng)。

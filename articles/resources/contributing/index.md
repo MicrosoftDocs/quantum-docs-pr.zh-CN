@@ -6,12 +6,15 @@ ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing
-ms.openlocfilehash: c5acd6c2b3163488a9b4c6e52e6d34489a8f4056
-ms.sourcegitcommit: 2f4c637e194dc2b5d18539469ed37444e2800199
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 0fbbe127b9f4c6b98bdc2cf0e46098bf40a816e3
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87436568"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866853"
 ---
 # <a name="contributing-to-the-quantum-development-kit"></a>对量子开发工具包做出贡献
 
@@ -63,7 +66,7 @@ ms.locfileid: "87436568"
 
 还有其他一些更具专门用途的存储库，专注于与 Quantum 开发工具包相关的辅助功能。
 
-- [**msr-quarc/qsharp.sty**](https://github.com/msr-quarc/qsharp.sty)：格式化对 Q# 语法的支持的 LaTeX。
+- [**msr-quarc/qsharp.sty**](https://github.com/msr-quarc/qsharp.sty)：针对 Q# 语法的 LaTeX 格式化支持。
 
 ## <a name="next-steps"></a>后续步骤
 

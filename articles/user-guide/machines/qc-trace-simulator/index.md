@@ -6,12 +6,15 @@ ms.author: vadym@microsoft.com
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.intro
-ms.openlocfilehash: c01f01973ea08153cbfa35d87a588a4eae46f1b7
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 5d5efef037ff236bd040dfd88e94f7f3dd331aef
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871104"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87868213"
 ---
 # <a name="microsoft-quantum-development-kit-qdk-quantum-trace-simulator"></a>Microsoft Quantum 开发工具包 (QDK) 量子跟踪模拟器
 

@@ -1,19 +1,22 @@
 ---
-title: 使用 Q# Jupyter Notebook 进行开发
+title: 使用 Jupyter Notebooks 开发 Q#
 author: bradben
 ms.author: bradben
 ms.date: 5/30/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.jupyter
-ms.openlocfilehash: bbd1f58ba7de205e452be7bac72b5fd78e7acd56
-ms.sourcegitcommit: cdf67362d7b157254e6fe5c63a1c5551183fc589
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 10b1faafa70c87a99ea09916e2c386b32f9a570f
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/21/2020
-ms.locfileid: "86871444"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866802"
 ---
-# <a name="develop-with-q-jupyter-notebooks"></a>使用 Q# Jupyter Notebook 进行开发
+# <a name="develop-with-no-locq-jupyter-notebooks"></a>使用 Jupyter Notebooks 开发 Q#
 
 在 Q# Jupyter 笔记本上安装用于开发 Q# 操作的 QDK。
 
@@ -22,7 +25,7 @@ Jupyter Notebook 支持在包含说明、注释和其他内容的情况下就地
 > [!NOTE]
 > * 在 Q# Jupyter Notebooks 中，只能运行 Q# 代码，不能从外部主机程序（例如 Python 或 C# 文件）调用操作。 如果你的目标是将外部传统主机程序与量子程序结合，则此环境不适合。
 
-## <a name="install-the-iq-jupyter-kernel"></a>安装 IQ# Jupyter 内核
+## <a name="install-the-ino-locq-jupyter-kernel"></a>安装 IQ# Jupyter 内核
 
 IQ#（发音为 i-q-sharp）是主要由 Jupyter 和 Python 使用的 .NET Core SDK 的扩展，它提供用于编译和模拟 Q# 操作的核心功能。
 
@@ -70,9 +73,9 @@ IQ#（发音为 i-q-sharp）是主要由 Jupyter 和 Python 使用的 .NET Core 
     
 ***
 
-就这么简单！ 你现在有了 Jupyter 的 IQ# 内核，它为用 Q# 来编译和执行 Q# 操作提供了核心功能。
+就这么简单！ 你现在有了 Jupyter 的 IQ# 内核，它为用 Q# Jupyter Notebooks 来编译和执行 Q# 操作提供了核心功能。
 
-## <a name="create-your-first-q-notebook"></a>创建你的第一个 Q# 笔记本
+## <a name="create-your-first-no-locq-notebook"></a>创建你的第一个 Q# 笔记本
 
 你现可通过编写和执行简单的 Q# 操作来验证 Q# Jupyter Notebook 安装项。
 
@@ -104,7 +107,7 @@ IQ#（发音为 i-q-sharp）是主要由 Jupyter 和 Python 使用的 .NET Core 
 
 你现已安装适用于 Q# Jupyter Notebooks 的 QDK，接下来可在 Jupyter Notebook 环境中直接编写 Q# 代码，从而完成并运行[你的第一个量子程序](xref:microsoft.quantum.quickstarts.qrng)。
 
-要了解更多关于使用 Q# Jupyter Notebook 可以执行的操作的示例，请参阅：
+要了解更多关于使用 Q# Jupyter Notebook 可执行的操作的示例，请参阅：
 
 - [Q# 和 Jupyter Notebook 简介](https://docs.microsoft.com/samples/microsoft/quantum/intro-to-qsharp-jupyter/)。 你将在这里找到一个 Q# Jupyter Notebook，其中更详细地演示了如何在 Jupyter 环境中使用 Q#。
-- [Quantum Katas](xref:microsoft.quantum.overview.katas) 是一系列采用 Q# Jupyter Notebook 形式的可自定进度的开放元代码教程和编程练习。 可以先从 [Quantum Katas 教程笔记本](https://github.com/microsoft/QuantumKatas#tutorial-topics)开始。 Quantum Katas 的目标是同时教授量子计算和 Q# 编程的要素。 它们很好地演示了可以使用 Q# Jupyter Notebook 创建哪种内容。
+- [Quantum Katas](xref:microsoft.quantum.overview.katas) 是一系列采用 Q# Jupyter Notebook 形式的可自定进度的开源教程和编程练习。 可以先从 [Quantum Katas 教程笔记本](https://github.com/microsoft/QuantumKatas#tutorial-topics)开始。 Quantum Katas 的目标是同时教授量子计算和 Q# 编程的要素。 它们很好地演示了可使用 Q# Jupyter Notebook 创建哪种内容。

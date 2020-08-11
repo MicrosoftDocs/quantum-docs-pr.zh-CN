@@ -6,14 +6,17 @@ ms.date: 5/30/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.python
-ms.openlocfilehash: 4d148435f01d975e690828dd02335758fc71dfe4
-ms.sourcegitcommit: 2f4c637e194dc2b5d18539469ed37444e2800199
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 01a5c31a7a920a69f4f90701d370f3a772d2c4d2
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "87436545"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87866734"
 ---
-# <a name="develop-with-q-and-python"></a>使用 Q# 和 Python 进行开发
+# <a name="develop-with-no-locq-and-python"></a>使用 Q# 和 Python 进行开发
 
 安装用于开发 Python 主机程序的 QDK 以调用 Q# 操作。
 
@@ -74,7 +77,7 @@ ms.locfileid: "87436545"
 
 ## <a name="choose-your-ide"></a>选择 IDE
 
-虽然可以在任何 IDE 中结合使用 Q# 与 Python，但我们强烈建议为 Q# + Python 应用程序使用 Visual Studio Code (VS Code) IDE。 通过 QDK Visual Studio Code 扩展，你可获得更丰富的功能，例如警告、语法突出显示和项目模板等。
+虽然可在任何 IDE 中结合使用 Q# 与 Python，但我们强烈建议为 Q# + Python 应用程序使用 Visual Studio Code (VS Code) IDE。 通过 QDK Visual Studio Code 扩展，你可获得更丰富的功能，例如警告、语法突出显示和项目模板等。
 
 如果想要使用 VS Code：
 
@@ -83,7 +86,7 @@ ms.locfileid: "87436545"
 
 如果想要使用其他编辑器，则上述说明都已全部设置好。
 
-## <a name="write-your-first-q-program"></a>编写你的第一个 Q# 程序
+## <a name="write-your-first-no-locq-program"></a>编写你的第一个 Q# 程序
 
 你现可通过编写和执行简单的 Q# 程序来验证 `qsharp` Python 包安装项。
 
@@ -91,7 +94,7 @@ ms.locfileid: "87436545"
 
     :::code language="qsharp" source="~/quantum/samples/interoperability/qrng/Qrng.qs" range="3-14":::
 
-1. 在 `Operation.qs` 所在的文件夹中，创建一个名为 `host.py` 的 Python 程序来模拟 Q# `SampleQuantumRandomNumberGenerator()` 操作：
+1. 在 `Operation.qs` 所在的文件夹中，创建一个名为 `host.py`的 Python 程序来模拟 Q# `SampleQuantumRandomNumberGenerator()` 操作：
 
     ```python
     import qsharp

@@ -6,14 +6,17 @@ ms.author: a-gibec@microsoft.com
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide
-ms.openlocfilehash: 078d86c808b26c7f0b7b2577020cd9cef9491a9d
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 4fae2949bdcab0c3735b40ef029d70bf7ea3fb9f
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85885002"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87869624"
 ---
-# <a name="the-q-user-guide"></a>Q# 用户指南
+# <a name="the-no-locq-user-guide"></a>Q# 用户指南
 
 欢迎查看 Q# 用户指南！ 
 
@@ -21,21 +24,21 @@ ms.locfileid: "85885002"
 
 ## <a name="user-guide-contents"></a>用户指南内容
 
-- [Q# 基本信息](xref:microsoft.quantum.guide.basics)：简要概述了 Q# 编程语言的用途和功能。 
+- [Q#基本信息](xref:microsoft.quantum.guide.basics)：简要概述了 Q# 编程语言的用途和功能。 
 
 - [Q# 程序的运行方式](xref:microsoft.quantum.guide.host-programs)：描述了如何执行 Q# 程序，并简要介绍可用于调用该程序的各种方式：通过命令行、Q# Jupyter Notebooks，或者通过用 Python 或 .NET 语言编写的经典主机程序。
 
-### <a name="q-language"></a>Q# 语言
+### <a name="no-locq-language"></a>Q# 语言
 
 - [Q# 中的类型](xref:microsoft.quantum.guide.types)：列出了 Q# 类型模型，还描述了用于指定和使用这些类型的语法。
 
-- [类型表达式](xref:microsoft.quantum.guide.expressions)：详细说明了如何在 Q# 中指定、引用、组合和操作各类型的值。 
+- [类型表达式](xref:microsoft.quantum.guide.expressions)：详细说明了如何以 Q# 指定、引用、组合和操作各类型的值。 
 
-### <a name="using-q"></a>使用 Q#
+### <a name="using-no-locq"></a>使用 Q#
 
 - [Q# 文件结构](xref:microsoft.quantum.guide.filestructure)：描述了 `*.qs` Q# 文件的结构和语法。
 
-- [操作和函数](xref:microsoft.quantum.guide.operationsfunctions)：详细介绍了 Q# 语言的两种可调用类型，一种是“操作”，其中包含在量子位寄存器上进行的操作；另一种是“函数”，仅限于经典信息的处理 。 
+- [操作和函数](xref:microsoft.quantum.guide.operationsfunctions)：详细介绍了 Q# 语言的两种可调用类型，一种是“操作”，其中包含在量子位寄存器上进行的操作；另一种是“函数”，仅限于经典信息的处理。  
     你将在此处了解如何定义和调用它们，包括量子操作的伴随和受控版本。
 
 - [变量](xref:microsoft.quantum.guide.variables)：介绍了变量在 Q# 程序中的角色及其有效使用方式。 
@@ -47,7 +50,7 @@ ms.locfileid: "85885002"
 
 - [测试和调试](xref:microsoft.quantum.guide.testingdebugging)：详细介绍了一些用于确保代码正常运行的技术。 
     由于量子信息通常不透明，因此调试量子程序可能需要专门的技术。 
-    幸运的是，Q# 支持程序员熟悉的许多经典调试技术，以及特定于量子的调试技术。 其中包括在 Q# 中创建和运行单元测试、在代码中嵌入对值和概率的断言，以及用于输出目标计算机状态的 `Dump` 函数。 
+    幸运的是，Q# 支持程序员熟悉的许多经典调试技术，以及特定于量子的调试技术。 其中包括以 Q# 创建和运行单元测试、在代码中嵌入对值和概率的断言，以及用于输出目标计算机状态的 `Dump` 函数。 
     后者可与全状态模拟器一起使用，通过规避某些量子限制（例如，[非克隆定理](xref:microsoft.quantum.concepts.pauli)）来调试计算的某些部分。
 
 ### <a name="quantum-simulators-and-resource-estimators"></a>量子模拟器和资源估算器
@@ -64,4 +67,4 @@ ms.locfileid: "85885002"
 
 ### <a name="quick-reference-pages"></a>快速参考页面
 
-- [IQ# Magic 命令](xref:microsoft.quantum.guide.quickref.iqsharp)：Q# Jupyter 笔记本中 IQ# Magic 命令的快速参考页面
+- [IQ# Magic 命令](xref:microsoft.quantum.guide.quickref.iqsharp)：Q# Jupyter 笔记本中 IQ# Magic 命令的快速参考页面。

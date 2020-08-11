@@ -6,12 +6,15 @@ ms.author: bradben
 ms.date: 5/5/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.simulators
-ms.openlocfilehash: 2f5345504ba31211c97493e78af1563d575881e4
-ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 299baea75865a4f0ece6b490cef3301dd2a672ac
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2020
-ms.locfileid: "84327741"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867703"
 ---
 # <a name="quantum-computers-and-quantum-simulators"></a>量子计算机和量子模拟器
 

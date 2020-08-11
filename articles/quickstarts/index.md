@@ -7,19 +7,22 @@ ms.date: 5/8/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install
-ms.openlocfilehash: ee8d210d67a20cfea3bdc36162efc47f021a6dc6
-ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+no-loc:
+- Q#
+- $$v
+ms.openlocfilehash: 378970dc911ea5a794590f8336ffc6d3f9673285
+ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2020
-ms.locfileid: "85885457"
+ms.lasthandoff: 08/06/2020
+ms.locfileid: "87867567"
 ---
 # <a name="install-the-microsoft-quantum-development-kit-qdk"></a>安装 Microsoft Quantum 开发工具包 (QDK)
 
 了解如何安装 Microsoft Quantum 开发工具包 (QDK)，以便可以开始进行量子编程。 QDK 包括：
 
 - Q# 编程语言
-- 在 Q# 中对复杂功能进行抽象化的一组库
+- 以 Q# 对复杂功能进行抽象化的一组库
 - 适用于 Python 和 .NET 语言（C#、F# 和 VB.NET）的 API，用于运行以 Q# 编写的量子程序
 - 可帮助开发的工具
 
@@ -28,7 +31,7 @@ ms.locfileid: "85885457"
 
 在 [Q# 程序的运行方式](xref:microsoft.quantum.guide.host-programs)中，对其中每个设置的工作流都进行了描述和比较。
 
-要继续安装 QDK 并创建 Q# 项目，请选择你的首选设置：
+要继续安装 QDK 并创建Q# 项目，请选择你的首选设置：
 
 [使用 Q# 命令行应用程序进行开发](xref:microsoft.quantum.install.standalone) - 若要从命令行使用 Q#，请选择此方法。 这不会像以下选项一样需要驱动程序或主机程序。
 
