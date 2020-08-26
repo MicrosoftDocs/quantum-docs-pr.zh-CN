@@ -57,7 +57,7 @@ functions:
     返回对两个输入的操作的扩充版本。
 
 
-    也就是说，假设有一个具有两个输入的操作，则此函数将应用咖喱的 isomorphism $f （x，y） \equiv f （x）（y） $ 以返回一个输入的操作，该操作返回一个输入的操作。
+    也就是说，假设有一个具有两个输入的操作，则此函数将应用咖喱的 isomorphism $f (x，y) \equiv f (x) # B4 y) $ 以返回一个输入的操作，该操作返回一个输入的操作。
 - uid: microsoft.quantum.canon.decomposedintotimestepsca
   summary: 返回为给定操作实现 Trotter – Suzuki 集成器的操作。
 - uid: microsoft.quantum.canon.decomposeintotimestepsca
@@ -289,11 +289,11 @@ operations:
 - uid: microsoft.quantum.canon.applyseriesofops
   summary: 在数组上按顺序应用 ops 及其目标的列表。
 - uid: microsoft.quantum.canon.applyseriesofopsa
-  summary: 在数组上按顺序应用 ops 及其目标的列表。 (Adjoint)
+  summary: '在数组上按顺序应用 ops 及其目标的列表。  (Adjoint) '
 - uid: microsoft.quantum.canon.applyseriesofopsc
-  summary: 在数组上按顺序应用 ops 及其目标的列表。 操控
+  summary: '在数组上按顺序应用 ops 及其目标的列表。  (控制) '
 - uid: microsoft.quantum.canon.applyseriesofopsca
-  summary: 在数组上按顺序应用 ops 及其目标的列表。 （Adjoint + 受控）
+  summary: '在数组上按顺序应用 ops 及其目标的列表。  (Adjoint + 受控) '
 - uid: microsoft.quantum.canon.applytoeach
   summary: 对寄存器中的每个元素应用 qubit 操作。
 - uid: microsoft.quantum.canon.applytoeacha
@@ -444,17 +444,13 @@ operations:
 - uid: microsoft.quantum.canon.approximatelymultiplexz
   summary: 对 qubits 数组应用 Pauli Z 旋转，根据给定的公差截断小旋转角度。
 - uid: microsoft.quantum.canon.approximateqft
-  summary: 将大致的量程傅立叶转换（AQFT）应用到一个量程寄存器。
+  summary: 将大致的量程傅立叶转换 (AQFT) 应用到一个量程寄存器。
 - uid: microsoft.quantum.canon.asserthighestbit
   summary: "\n> [!WARNING]\n> 已放弃\n\nAssertHighestBit 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.assertmostsignificantbit\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.AssertMostSignificantBit\"。"
 - uid: microsoft.quantum.canon.assertlessthanphasele
   summary: "\n> [!WARNING]\n> 已放弃\n\nAssertLessThanPhaseLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.assertphaselessthan\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan\"。"
 - uid: microsoft.quantum.canon.assertphase
-  summary: >-
-    断言 superposition 状态相同的阶段具有预期值。
-
-
-    特别要注意的是，对于某些任意实数，可以将其表示为 $ \frac{e ^ {i t}} {\sqrt {2} } （e ^ {i\phi} \ 票证 {0} + e ^ {-i\phi} \ 票证） $ 的阶段 $ \phi $ 视为 {1} 预期值。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertPhase 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertphase\"。"
 - uid: microsoft.quantum.canon.cascadeccnot
   summary: "\n> [!WARNING]\n> 已放弃\n\nCascadeCCNOT 已被弃用。 请改用 @\"microsoft.quantum.canon.applyccnotchain\"。"
 - uid: microsoft.quantum.canon.cascadecnot
@@ -465,19 +461,19 @@ operations:
   summary: "\n> [!WARNING]\n> 已放弃\n\nCNOTChainTarget 已被弃用。 请改用 @\"microsoft.quantum.canon.applycnotchainwithtarget\"。"
 - uid: microsoft.quantum.canon.cx
   summary: >-
-    将受控的 X （CX）入口应用于一对 qubits。
+    将受控-X (CX) 入口应用于一对 qubits。
 
 
     $ $ \begin{align} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \end{align}，$ $，其中的行和列组织为 "量程概念" 指南。
 - uid: microsoft.quantum.canon.cy
   summary: >-
-    将受控 Y （CY）入口应用于一对 qubits。
+    将受控-Y (CY) 入口应用于一对 qubits。
 
 
     $ $ \begin{align} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 &-i \\ \\ 0 & 0 & & 0 \end{align}，$ $，其中的行和列按 "量程概念" 指南进行组织。
 - uid: microsoft.quantum.canon.cz
   summary: >-
-    将受控-Z （CZ）入口应用于一对 qubits。
+    将受控-Z (CZ) 入口应用于一对 qubits。
 
 
     $ $ \begin{align} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 0 & 0 &-1 \end{align}，$ $，其中的行和列组织为 "量程概念" 指南。
@@ -503,7 +499,7 @@ operations:
 - uid: microsoft.quantum.canon.inplacemajority
   summary: "\n> [!WARNING]\n> 已放弃\n\nInPlaceMajority 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applymajorityinplace\"。\n请使用 @\"microsoft.quantum.arithmetic.applymajorityinplace\"。"
 - uid: microsoft.quantum.canon.inplacexorbe
-  summary: "\n> [!WARNING]\n> 已放弃\n\nInPlaceXorBE 已被弃用。 请改用 @ \"applyreversedopleca （applyxorinplace （value，_），target）\"。\n此操作已被删除。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nInPlaceXorBE 已被弃用。 请改用 @ \"applyreversedopleca (applyxorinplace (值，_) ，目标) \"。\n此操作已被删除。"
 - uid: microsoft.quantum.canon.inplacexorle
   summary: "\n> [!WARNING]\n> 已放弃\n\nInPlaceXorLE 已被弃用。 请改用 @\"microsoft.quantum.measurement.applyxorinplace\"。\n请使用 @\"Microsoft.Quantum.Measurement.ApplyXorInPlace\"。"
 - uid: microsoft.quantum.canon.integerincrementle
@@ -550,7 +546,7 @@ operations:
 - uid: microsoft.quantum.canon.multiplexz
   summary: 对 qubits 数组应用 Pauli Z 旋转。
 - uid: microsoft.quantum.canon.noop
-  summary: 对参数执行标识操作（无操作）。
+  summary: 对参数执行 (no op) 的标识操作。
 - uid: microsoft.quantum.canon.permutequbits
   summary: 使用交换操作 Permutes qubits。
 - uid: microsoft.quantum.canon.qft
@@ -562,13 +558,13 @@ operations:
     执行阶段移位操作。
 
 
-    $R = \boldone-（1-e ^ {i \phi}） \ket{0\cdots 0} \bra{0\cdots 0} $。
+    $R = \boldone- (1-e ^ {i \phi} ) \ket{0\cdots 0} \bra{0\cdots 0} $。
 - uid: microsoft.quantum.canon.rall1
   summary: >-
     执行阶段移位操作。
 
 
-    $R = \boldone-（1-e ^ {i \phi}） \ket{1\cdots 1} \bra{1\cdots 1} $。
+    $R = \boldone- (1-e ^ {i \phi} ) \ket{1\cdots 1} \bra{1\cdots 1} $。
 - uid: microsoft.quantum.canon.repeat
   summary: 在给定的次数后重复操作。
 - uid: microsoft.quantum.canon.repeata
@@ -585,9 +581,9 @@ newtypes:
 - uid: microsoft.quantum.canon.resultstack
   summary: "\n> [!WARNING]\n> 已放弃\n\nResultStack 已被弃用。"
 metadata:
-  ms.openlocfilehash: ab6e8a58dd163e4a9b2ea299e544a4e487d61e23
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 72e806d0a44fdcc372ab0d10edcaceb501713180
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85884678"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88862953"

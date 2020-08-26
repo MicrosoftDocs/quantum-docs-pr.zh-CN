@@ -3,42 +3,18 @@ uid: microsoft.quantum.canon.assertphase
 name: AssertPhase
 type: operation
 namespace: Microsoft.Quantum.Canon
-summary: >-
-  断言 superposition 状态相同的阶段具有预期值。
-
-
-  特别要注意的是，对于某些任意实数，可以将其表示为 $ \frac{e ^ {i t}} {\sqrt{2}} （e ^ {i\phi} \ 票证{0} + e ^ {-i\phi} \ 票证{1}） $ 的阶段 $ \phi $ 视为预期值。
-examples: >-
-  以下断言成功： `qubit`处于状态 $ \ket{\psi} = e ^ {i 0.5} \ sqrt {1/2} \ 票证{0}+ e ^ {i 0.5} \ sqrt {1/2} \ 票证{1}$;
-
-
-  - `AssertPhase(0.0,qubit,10e-10);`
-
-
-  `qubit`处于状态 $ \ket{\psi} = e ^ {i 0.5} \ sqrt {1/2} \ 票证{0}+ e ^ {-i 0.5} \ sqrt {1/2} \ 票证{1}$;
-
-
-  - `AssertPhase(0.5,qubit,10e-10);`
-
-
-  `qubit`处于状态 $ \ket{\psi} = e ^ {-i 2.2} \ sqrt {1/2} \ 票证{0}+ e ^ {i 0.2} \ sqrt {1/2} \ 票证{1}$;
-
-
-  - `AssertPhase(-1.2,qubit,10e-10);`
+summary: AssertPhase 已被弃用。 请改用 @"microsoft.quantum.diagnostics.assertphase"。
 syntax: 'operation AssertPhase (expected : Double, qubit : Qubit, tolerance : Double) : Unit'
 input:
   content: '(expected : Double, qubit : Qubit, tolerance : Double)'
   types:
   - name: expected
-    summary: $ \Phi \in （-\pi，\pi] $ 的预期值。
     isPrimitive: true
     uid: Double
   - name: qubit
-    summary: 存储预期状态的 qubit。
     isPrimitive: true
     uid: Qubit
   - name: tolerance
-    summary: 实际值与预期值的绝对容差。
     isPrimitive: true
     uid: Double
 output:
@@ -47,9 +23,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: ecfc39806fb1ffe504c76889fb36949b4fee2ed4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 17fa383f5fd8e710f8c83920abe0727663506bfb
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674322"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863291"

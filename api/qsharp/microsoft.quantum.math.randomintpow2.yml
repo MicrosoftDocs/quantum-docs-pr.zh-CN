@@ -3,26 +3,23 @@ uid: microsoft.quantum.math.randomintpow2
 name: RandomIntPow2
 type: operation
 namespace: Microsoft.Quantum.Math
-summary: 生成一个随机采样的随机整数，该整数可按给定的位数表示的所有整数进行统一采样。
-remarks: 此函数调用<xref:microsoft.quantum.intrinsic.random>，因此其随机性依赖于的实现`Random`。
+summary: RandomIntPow2 已被弃用。 请改用 @"microsoft.quantum.random.drawrandomint"。
 syntax: 'operation RandomIntPow2 (maxBits : Int) : Int'
 input:
   content: '(maxBits : Int)'
   types:
   - name: maxBits
-    summary: 表示此操作可能返回的最大整数所需的传统位数。
     isPrimitive: true
     uid: Int
 output:
   content: Int
   types:
-  - summary: 一个整数，该整数 $x $ [0，2 ^ {\texttt{maxBits}}-1] $;也就是说，用 $ \Pr （x） = \frac{1}{2 ^ {\texttt{maxBits}}} $。
-    isPrimitive: true
+  - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: dec46f725da2f805839f7c03306853c851700027
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 61072e350facbf17b13aab9551210d00487cce40
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681541"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863591"

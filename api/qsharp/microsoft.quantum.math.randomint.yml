@@ -3,26 +3,23 @@ uid: microsoft.quantum.math.randomint
 name: RandomInt
 type: operation
 namespace: Microsoft.Quantum.Math
-summary: 生成一个大于或等于零且小于的所提供的上边界的样本随机整数。
-remarks: 此函数调用<xref:microsoft.quantum.intrinsic.random>，因此其随机性依赖于的实现`Random`。
+summary: RandomInt 已被弃用。 请改用 @"microsoft.quantum.random.drawrandomint"。
 syntax: 'operation RandomInt (maxInt : Int) : Int'
 input:
   content: '(maxInt : Int)'
   types:
   - name: maxInt
-    summary: 一个大于此操作要返回的最大整数的整数。
     isPrimitive: true
     uid: Int
 output:
   content: Int
   types:
-  - summary: 整数从给定的时间间隔均匀地 $x $;也就是说，用 $ \Pr （x） = \frac{1}{\texttt{maxInt}} $。
-    isPrimitive: true
+  - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 578761c1710484913122227fb3b37330702ea038
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: aacaa92c47492e49544241bd7a47519ce8413fe8
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682754"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863516"

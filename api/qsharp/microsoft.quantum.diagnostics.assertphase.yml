@@ -1,0 +1,55 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.assertphase
+name: AssertPhase
+type: operation
+namespace: Microsoft.Quantum.Diagnostics
+summary: >-
+  断言 superposition 状态相同的阶段具有预期值。
+
+
+  此操作断言对于一些任意实 $t $，可以表示为 $ \frac{e ^ {i t}} {\sqrt {2} } (e ^ {i\phi} \ 票证 {0} + e ^ {-i\phi} \ 票证) $ 的阶段 $ \phi $ {1} 具有预期值。
+examples: >-
+  以下断言成功： `qubit` 处于状态 $ \ket{\psi} = e ^ {i 0.5} \ sqrt {1/2} \ 票证 {0} + e ^ {i 0.5} \ sqrt {1/2} \ 票证 {1} $;
+
+
+  - `AssertPhase(0.0,qubit,10e-10);`
+
+
+  `qubit` 处于状态 $ \ket{\psi} = e ^ {i 0.5} \ sqrt {1/2} \ 票证 {0} + e ^ {-i 0.5} \ sqrt {1/2} \ 票证 {1} $;
+
+
+  - `AssertPhase(0.5,qubit,10e-10);`
+
+
+  `qubit` 处于状态 $ \ket{\psi} = e ^ {-i 2.2} \ sqrt {1/2} \ 票证 {0} + e ^ {i 0.2} \ sqrt {1/2} \ 票证 {1} $;
+
+
+  - `AssertPhase(-1.2,qubit,10e-10);`
+syntax: 'operation AssertPhase (expected : Double, qubit : Qubit, tolerance : Double) : Unit'
+input:
+  content: '(expected : Double, qubit : Qubit, tolerance : Double)'
+  types:
+  - name: expected
+    summary: $ \Phi \in 的预期值 (-\pi，\pi] $。
+    isPrimitive: true
+    uid: Double
+  - name: qubit
+    summary: 存储预期状态的 qubit。
+    isPrimitive: true
+    uid: Qubit
+  - name: tolerance
+    summary: 实际值与预期值的绝对容差。
+    isPrimitive: true
+    uid: Double
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+metadata:
+  ms.openlocfilehash: 5be9fdb82a955282a824b06dd921e6a59a0828a2
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863910"

@@ -10,10 +10,10 @@ operations:
 - uid: microsoft.quantum.intrinsic.assertprob
   summary: "\n> [!WARNING]\n> 已放弃\n\nAssertProb 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertmeasurementprobability\"。"
 - uid: microsoft.quantum.intrinsic.ccnot
-  summary: 将双向受控– NOT （CCNOT）入口应用到三个 qubits。
+  summary: 将双向受控– NOT (CCNOT) 入口应用到三 qubits。
 - uid: microsoft.quantum.intrinsic.cnot
   summary: >-
-    将受控-NOT （CNOT-CONTAINS）入口应用于一对 qubits。
+    将受控-NOT (CNOT-CONTAINS) 入口应用于一对 qubits。
 
 
     \begin{align} \operatorname{CNOT} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \end{bmatrix}，\end{align}
@@ -41,13 +41,13 @@ operations:
 
     \end{align}
 - uid: microsoft.quantum.intrinsic.i
-  summary: 在单个 qubit 上执行标识操作（无操作）。
+  summary: 在单个 qubit 上执行不含 op)  (的标识操作。
 - uid: microsoft.quantum.intrinsic.m
   summary: >-
     对 Pauli $Z $ basis 中的单个 qubit 进行度量。
 
 
-    此输出结果由分发 \begin{align} \Pr （\texttt{Zero} | \ket{\psi}） = \braket{\psi | 0} \braket{0 | \psi}. 提供
+    输出结果由分发 \begin{align} \Pr ( \texttt{Zero} 提供\ket{\psi} ) = \braket{\psi | 0} \braket{0 | \psi}。
 
     \end{align}
 - uid: microsoft.quantum.intrinsic.measure
@@ -55,21 +55,21 @@ operations:
     对指定的 Pauli 中的一个或多个 qubits 执行联合度量。
 
 
-    此分发提供的输出结果为： \begin{align} \Pr （\texttt{Zero} | \ket{\psi}） = \frac12 \braket{\psi \mid | \left （\boldone + P_0 \otimes P_1 \otimes \cdots \otimes P_ {N-1} \right） \mid | \psi}，\end{align}，其中 $P _i $ 是的 $i $ th 元素 `bases` ，其中 $N = \texttt{Length} （\texttt{bases}） $。
+    输出结果由分发提供： \begin{align} \Pr ( \texttt{Zero} |\ket{\psi} ) = \frac12 \braket{\psi \mid | \left ( \boldone + P_0 \otimes P_1 \otimes \cdots \otimes P_ {N-1} \right) \mid | \psi}，\end{align} 其中 $P _i $ 是的 $i $ th 元素 `bases` ，其中 $N = \texttt{Length} ( \texttt{bases} ) $。
 
-    也就是说，度量返回 $d $，以使 `Result` 观察到的度量值的 eigenvalue 为 $ （-1） ^ d $。
+    也就是说，度量值返回 $d $，以使 `Result` 观察到的度量值的 eigenvalue 为 $ (-1) ^ d $。
 - uid: microsoft.quantum.intrinsic.r
   summary: >-
     应用围绕给定 Pauli 轴的旋转。
 
 
-    \begin{align} R_ {\mu} （\theta） \mathrel{： =} e ^ {-i \theta \ sigma_ {\mu}/2}，\end{align}，其中，$ \mu \in \{ i，X，Y，Z \} $。
+    \begin{align} R_ {\mu} ( \theta) \mathrel{： =} e ^ {-i \theta \ sigma_ {\mu}/2}，\end{align}，其中，$ \mu \in \{ i，X，Y，Z \} $。
 - uid: microsoft.quantum.intrinsic.r1
   summary: >-
     {1}按给定角度对 $ \ket $ 状态应用旋转。
 
 
-    \begin{align} R_1 （\theta） \mathrel{： =} \operatorname{diag} （1，e ^ {i\theta}）。
+    \begin{align} R_1 ( \theta) \mathrel{： =} \operatorname{diag} (1，e ^ {i\theta} ) 。
 
     \end{align}
 - uid: microsoft.quantum.intrinsic.r1frac
@@ -77,21 +77,16 @@ operations:
     {1}通过指定为 dyadic 分数的角度，将关于 $ \ket $ 状态的旋转。
 
 
-    \begin{align} R_1 （n，k） \mathrel{： =} \operatorname{diag} （1，e ^ {i \pi k/2 ^ n}）。
+    \begin{align} R_1 (n，k) \mathrel{： =} \operatorname{diag} (1，e ^ {i \pi k/2 ^ n} ) 。
 
     \end{align}
 
 
     > [!WARNING]
 
-    > 此操作使用**相反**的符号约定，不包括中的 @"microsoft.quantum.intrinsic.r" $ 1/2 $ 的因子 @"microsoft.quantum.intrinsic.r1" 。
+    > 此操作使用 **相反** 的符号约定，不包括中的 @"microsoft.quantum.intrinsic.r" $ 1/2 $ 的因子 @"microsoft.quantum.intrinsic.r1" 。
 - uid: microsoft.quantum.intrinsic.random
-  summary: >-
-    随机操作采用双精度数组作为输入，并将随机选择的索引作为返回到数组中 `Int` 。
-
-    选择特定索引的概率与该索引处数组元素的值成正比。
-
-    将忽略等于零的数组元素并从不返回它们的索引。 如果任何数组元素小于0，或者如果没有数组元素大于零，则操作将失败。
+  summary: "\n> [!WARNING]\n> 已放弃\n\n已不推荐使用随机。 请改用 @\"microsoft.quantum.random.drawcategorical\"。"
 - uid: microsoft.quantum.intrinsic.reset
   summary: 给定单个 qubit，对其进行度量，并确保其处于 | 0 ⟩状态，以便可以安全地释放它。
 - uid: microsoft.quantum.intrinsic.resetall
@@ -101,22 +96,22 @@ operations:
     通过指定为 dyadic 分数的角度，对给定 Pauli 轴进行旋转。
 
 
-    \begin{align} R_ {\mu} （n，k） \mathrel{： =} e ^ {i \pi n \ sigma_ {\mu}/2 ^ k}，\end{align} 其中，$ \mu \in \{ i，X，Y，Z \} $。
+    \begin{align} R_ {\mu} (n，k) \mathrel{： =} e ^ {i \pi n \ sigma_ {\mu}/2 ^ k}，\end{align} 其中，$ \mu \in \{ i，X，Y，Z \} $。
 
 
     > [!WARNING]
 
-    > 此操作使用中的**相反**符号约定 @"microsoft.quantum.intrinsic.r" 。
+    > 此操作使用中的 **相反** 符号约定 @"microsoft.quantum.intrinsic.r" 。
 - uid: microsoft.quantum.intrinsic.rx
-  summary: "按给定角度向 $x $ 轴旋转。\n\n\\begin{align} R_x （\\theta） \\mathrel{： =} e ^ {-i \\theta \\ sigma_x/2} = \\begin{bmatrix} \\cos \\frac{\\theta} {2} &-i\\sin \\frac{\\theta} {2} \\\\ \\\\ -i\\sin \\frac{\\theta} {2} & \\cos \\frac{\\theta} {2} \\end{bmatrix}。  \n\\end{align}"
+  summary: "按给定角度向 $x $ 轴旋转。\n\n\\begin{align} R_x ( \\theta) \\mathrel{： =} e ^ {-i \\theta \\ sigma_x/2} = \\begin{bmatrix} \\cos \\frac{\\theta} {2} &-i\\sin \\frac{\\theta} {2} \\\\ \\\\ -i\\sin \\frac{\\theta} {2} & \\cos \\frac{\\theta} {2} \\end{bmatrix}。  \n\\end{align}"
 - uid: microsoft.quantum.intrinsic.ry
-  summary: "按给定角度向 $y $ 轴旋转。\n\n\\begin{align} R_y （\\theta） \\mathrel{： =} e ^ {-i \\theta \\ sigma_y/2} = \\begin{bmatrix} \\cos \\frac{\\theta} {2} &-\\sin \\frac{\\theta} {2} \\\\ \\\\ \\sin \\frac{\\theta} {2} & \\cos \\frac{\\theta} {2} \\end{bmatrix}。  \n\\end{align}"
+  summary: "按给定角度向 $y $ 轴旋转。\n\n\\begin{align} R_y ( \\theta) \\mathrel{： =} e ^ {-i \\theta \\ sigma_y/2} = \\begin{bmatrix} \\cos \\frac{\\theta} {2} &-\\sin \\frac{\\theta} {2} \\\\ \\\\ \\sin \\frac{\\theta} {2} & \\cos {2} \\frac{\\theta} \\end{bmatrix}。  \n\\end{align}"
 - uid: microsoft.quantum.intrinsic.rz
   summary: >-
     按给定角度向 $z $ 轴旋转。
 
 
-    \begin{align} R_z （\theta） \mathrel{： =} e ^ {-i \theta \ sigma_z/2} = \begin{bmatrix} e ^ {-i \theta/2} & 0 \\ \\ 0 & e ^ {i \theta/2} \end{bmatrix}。
+    \begin{align} R_z ( \theta) \mathrel{： =} e ^ {-i \theta \ sigma_z/2} = \begin{bmatrix} e ^ {-i \theta/2} & 0 \\ \\ 0 & e ^ {i \theta/2} \end{bmatrix}。
 
     \end{align}
 - uid: microsoft.quantum.intrinsic.s
@@ -157,9 +152,9 @@ operations:
 
     \end{align}
 metadata:
-  ms.openlocfilehash: c0be1da035393f32fa2949214d79ecb8a4c5ccb3
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 87002c73fd66a4b05e690daec1bed37d09708118
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85885226"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88862708"

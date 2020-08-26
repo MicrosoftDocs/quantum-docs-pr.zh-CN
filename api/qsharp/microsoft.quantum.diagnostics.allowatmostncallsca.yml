@@ -1,0 +1,64 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.diagnostics.allowatmostncallsca
+name: AllowAtMostNCallsCA
+type: operation
+namespace: Microsoft.Quantum.Diagnostics
+summary: 在对此操作及其 adjoint 的调用之间，断言给定的操作最多可调用特定次数。
+remarks: 对于不支持此操作的目标，此操作可能会替换为不支持操作。
+examples: >-
+  以下代码片段在支持此诊断的计算机上执行时将失败：
+
+
+  ```Q#
+
+  using (register = Qubit[4]) {
+      within {
+          AllowAtMostNCallsCA(3, H, "Too many calls to H.");
+      } apply {
+          // Fails since this calls H four times, rather than the
+          // allowed maximum of three.
+          ApplyToEach(H, register);
+      }
+  }
+
+  ```
+syntax: "operation AllowAtMostNCallsCA (nTimes : Int, op : ('TInput => 'TOutput is Adj + Ctl), message : String) : Unit"
+input:
+  content: "(nTimes : Int, op : ('TInput => 'TOutput is Adj + Ctl), message : String)"
+  types:
+  - name: nTimes
+    summary: 可调用的最大次数 `op` 。
+    isPrimitive: true
+    uid: Int
+  - name: op
+    summary: 要限制其调用的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'TInput"
+        isLocal: true
+    output:
+      types:
+      - uid: "'TOutput"
+        isLocal: true
+    functors:
+    - Adjoint
+    - Controlled
+  - name: message
+    summary: 失败时要显示的消息。
+    isPrimitive: true
+    uid: String
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+functors:
+- Adjoint
+metadata:
+  ms.openlocfilehash: 05a5791a9ec42aad2a2e90bb048204c642e68511
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863914"

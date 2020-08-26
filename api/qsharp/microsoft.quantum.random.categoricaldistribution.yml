@@ -1,0 +1,41 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.random.categoricaldistribution
+name: CategoricalDistribution
+type: function
+namespace: Microsoft.Quantum.Random
+summary: 返回一个离散分类分布，其中显式指定了给定结果的每个有限列表的概率。
+examples: >-
+  以下 Q # 代码将显示0，概率为30%，1的概率为70%：
+
+
+  ```Q#
+
+  let dist = CategoricalDistribution([0.3, 0.7]);
+
+  Message($"Got sample: {dist::Sample()}");
+
+  ```
+syntax: 'function CategoricalDistribution (probs : Double[]) : Microsoft.Quantum.Random.DiscreteDistribution'
+input:
+  content: '(probs : Double[])'
+  types:
+  - name: probs
+    summary: >-
+      分类分布中每个结果的概率。
+
+      这些概率可能不会规范化，但必须全部为非负值。
+    isArray: true
+    isPrimitive: true
+    uid: Double
+output:
+  content: Microsoft.Quantum.Random.DiscreteDistribution
+  types:
+  - summary: '`i`带有概率的索引 `probs[i] / sum` ，其中 `sum` 是给定的和的总和 `probs` `Fold(PlusD, 0.0, probs)` 。'
+    uid: microsoft.quantum.random.discretedistribution
+metadata:
+  ms.openlocfilehash: e81b286a1268e9ad1819a8f77bb375760f95af71
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863996"

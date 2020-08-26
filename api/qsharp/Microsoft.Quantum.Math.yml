@@ -53,9 +53,9 @@ functions:
 - uid: microsoft.quantum.math.complexpolarascomplex
   summary: 将类型的复杂数字转换 `ComplexPolar` 为类型的复数 `Complex` 。
 - uid: microsoft.quantum.math.continuedfractionconvergenti
-  summary: 查找最接近于 `fraction` 分母小于或等于的连续分数收敛性`denominatorBound`
+  summary: 查找最接近于 `fraction` 分母小于或等于的连续分数收敛性 `denominatorBound`
 - uid: microsoft.quantum.math.continuedfractionconvergentl
-  summary: 查找最接近于 `fraction` 分母小于或等于的连续分数收敛性`denominatorBound`
+  summary: 查找最接近于 `fraction` 分母小于或等于的连续分数收敛性 `denominatorBound`
 - uid: microsoft.quantum.math.cos
   summary: 返回指定角度的余弦值。
 - uid: microsoft.quantum.math.cosh
@@ -81,9 +81,9 @@ functions:
 - uid: microsoft.quantum.math.expmodl
   summary: 返回一个整数，该整数针对给定的模数引发了给定的幂。
 - uid: microsoft.quantum.math.extendedgreatestcommondivisori
-  summary: 计算元组 $ （u，v） $，以便 $u \cdot a + v \cdot b = \operatorname{GCD} （a，b） $，其中 $ \operatorname{GCD} $ $a $ 最大公因数 $a $ 和 $b $。 GCD 始终为正值。
+  summary: 计算元组 $ (u，v) $，以便 $u \cdot a + v \cdot b = \operatorname{GCD} (a，b) $，其中 $ \operatorname{GCD} $ 是 $a $ 最大公因数 $a $ 和 $b $。 GCD 始终为正值。
 - uid: microsoft.quantum.math.extendedgreatestcommondivisorl
-  summary: 计算元组 $ （u，v） $，以便 $u \cdot a + v \cdot b = \operatorname{GCD} （a，b） $，其中 $ \operatorname{GCD} $ $a $ 最大公因数 $a $ 和 $b $。 GCD 始终为正值。
+  summary: 计算元组 $ (u，v) $，以便 $u \cdot a + v \cdot b = \operatorname{GCD} (a，b) $，其中 $ \operatorname{GCD} $ 是 $a $ 最大公因数 $a $ 和 $b $。 GCD 始终为正值。
 - uid: microsoft.quantum.math.floor
   summary: 返回小于或等于指定数字的最大整数。
 - uid: microsoft.quantum.math.greatestcommondivisori
@@ -93,9 +93,9 @@ functions:
 - uid: microsoft.quantum.math.ieeeremainder
   summary: 返回一指定数字被另一指定数字相除的余数。
 - uid: microsoft.quantum.math.inversemodi
-  summary: 返回 $b $，$a \cdot b = 1 （\operatorname{mod} \texttt{modulus}） $。
+  summary: 返回 $b $ $a \cdot b = 1 ( \operatorname{mod} \texttt{modulus} ) $。
 - uid: microsoft.quantum.math.inversemodl
-  summary: 返回 $b $，$a \cdot b = 1 （\operatorname{mod} \texttt{modulus}） $。
+  summary: 返回 $b $ $a \cdot b = 1 ( \operatorname{mod} \texttt{modulus} ) $。
 - uid: microsoft.quantum.math.iscoprimei
   summary: 如果 $a $ 和 $b $ 是共同质数，则返回 true; 否则返回 false。
 - uid: microsoft.quantum.math.iscoprimel
@@ -103,7 +103,7 @@ functions:
 - uid: microsoft.quantum.math.lg
   summary: 计算数字的以2为底的对数。
 - uid: microsoft.quantum.math.log
-  summary: 返回指定数字的自然对数（底 $e $）。
+  summary: 返回指定数字的自然 (底数 $e $) 对数。
 - uid: microsoft.quantum.math.log10
   summary: 返回指定数字以 10 为底的对数。
 - uid: microsoft.quantum.math.logof2
@@ -157,7 +157,7 @@ functions:
 - uid: microsoft.quantum.math.pi
   summary: 表示圆的周长与其直径的比值，由常数 π 指定。
 - uid: microsoft.quantum.math.plusa
-  summary: 返回两个输入的总和（串联）。
+  summary: 返回两个输入 (串联) 的总和。
 - uid: microsoft.quantum.math.plusc
   summary: 返回两个输入之和。
 - uid: microsoft.quantum.math.pluscp
@@ -173,7 +173,7 @@ functions:
     返回 `L(p)` 向量的标准 `Double` 。
 
 
-    也就是说，给定类型的数组 $x $ `Double[]` ，这将返回 $p $-标准 $ \| x \| \_ p = （\ sum_ {j} | x_j | ^ {p}） ^ {1/p} $。
+    也就是说，给定类型的数组 $x $ `Double[]` ，这将返回 $p $-标准 $ \| x \| \_ p = ( \ sum_ {j} | x_j | ^ {p} ) ^ {1/p} $。
 - uid: microsoft.quantum.math.pnormalized
   summary: >-
     规范化中的向量 `Double` `L(p)` 。
@@ -240,20 +240,20 @@ newtypes:
     复数的极坐标表示形式为 $c = r e ^ {i t} $。
 - uid: microsoft.quantum.math.fraction
   summary: 表示形式的有理数 `p/q` 。 整数 `p` 是元组的第一个元素， `q` 是元组的第二个元素。
-summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含传统数学函数和数据类型。"
+summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含传统数学函数和数据类型。"
 operations:
 - uid: microsoft.quantum.math.randomint
-  summary: 生成一个大于或等于零且小于的所提供的上边界的样本随机整数。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nRandomInt 已被弃用。 请改用 @\"microsoft.quantum.random.drawrandomint\"。"
 - uid: microsoft.quantum.math.randomintpow2
-  summary: 生成一个随机采样的随机整数，该整数可按给定的位数表示的所有整数进行统一采样。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nRandomIntPow2 已被弃用。 请改用 @\"microsoft.quantum.random.drawrandomint\"。"
 - uid: microsoft.quantum.math.randomreal
-  summary: 返回大于或等于0且小于1的间隔中的随机实数。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nRandomReal 已被弃用。 请改用 @\"microsoft.quantum.random.drawrandomdouble\"。"
 - uid: microsoft.quantum.math.randomsinglequbitpauli
-  summary: 随机返回一个 qubit Pauli 运算符。
+  summary: "\n> [!WARNING]\n> 已放弃\n\nRandomSingleQubitPauli 已被弃用。 请改用 @\"microsoft.quantum.random.drawrandompauli\"。"
 metadata:
-  ms.openlocfilehash: 03b75e3dbaa8be699e58fcbcd13db4fbf1c82f12
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: 9df4513399d0b2d1ac534c7ba106189483ef49cc
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84326484"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863070"
