@@ -1,5 +1,5 @@
 ---
-title: 量子机器学习库
+title: 量程机器学习库术语表
 author: alexeib2
 ms.author: alexei.bocharov@microsoft.com
 ms.date: 2/27/2020
@@ -8,12 +8,12 @@ uid: microsoft.quantum.libraries.machine-learning.training
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 52c3f69fb99384270a27e57c4f32212d18bee1a4
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 068fc61d0d7c066df1270384679e13a3b3a8c878
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868893"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863033"
 ---
 # <a name="quantum-machine-learning-glossary"></a>量程机器学习术语表
 
@@ -21,15 +21,15 @@ ms.locfileid: "87868893"
 
 ## <a name="trainingtesting-schedules"></a>训练/测试计划
 
-在分类器培训的上下文中，*计划*介绍了整体定型或测试集中的一部分数据样本。 计划通常定义为示例索引的集合。
+在分类器培训的上下文中， *计划* 介绍了整体定型或测试集中的一部分数据样本。 计划通常定义为示例索引的集合。
 
 ## <a name="parameterbias-scores"></a>参数/偏向分数
 
-给定候选参数向量和分类符偏移，其*验证分数*是相对于所选验证计划的度量值，并由按计划中的所有示例计数的 misclassifications 表示。
+给定候选参数向量和分类符偏移，其 *验证分数* 是相对于所选验证计划的度量值，并由按计划中的所有示例计数的 misclassifications 表示。
 
 ## <a name="hyperparameters"></a>超参数
 
-模型定型过程由名为*超参数*的某些预先设置的值控制：
+模型定型过程由名为 *超参数*的某些预先设置的值控制：
 
 ### <a name="learning-rate"></a>学习速率
 

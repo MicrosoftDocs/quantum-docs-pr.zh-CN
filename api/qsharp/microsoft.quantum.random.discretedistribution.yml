@@ -1,0 +1,18 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.random.discretedistribution
+name: DiscreteDistribution
+type: newtype
+namespace: Microsoft.Quantum.Random
+summary: 表示单变量的概率分布。
+syntax: newtype DiscreteDistribution = (Unit => Int);
+seeAlso:
+- microsoft.quantum.random.continuousdistribution
+- microsoft.quantum.random.complexdistribution
+- microsoft.quantum.random.bigdiscretedistribution
+metadata:
+  ms.openlocfilehash: 499417f9b9e5421ae2e4c3933bc56159fda560dd
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863973"

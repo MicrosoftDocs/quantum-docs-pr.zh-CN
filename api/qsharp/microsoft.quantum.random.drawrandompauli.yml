@@ -1,0 +1,23 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.random.drawrandompauli
+name: DrawRandomPauli
+type: operation
+namespace: Microsoft.Quantum.Random
+summary: 绘制随机 Pauli 值。
+syntax: 'operation DrawRandomPauli () : Pauli'
+input:
+  content: ()
+  types: []
+output:
+  content: Pauli
+  types:
+  - summary: 为 `PauliI` 、 `PauliX` 、 `PauliY` 或， `PauliZ` 其概率相等。
+    isPrimitive: true
+    uid: Pauli
+metadata:
+  ms.openlocfilehash: 65fd410442afc0c12e625f38353c86bd1cf053ee
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863924"

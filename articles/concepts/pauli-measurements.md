@@ -87,12 +87,12 @@ author： QuantumWriter uid： pauli。作者： nawiebe@microsoft.com ms. 日�
 
 在前面的讨论中，我们重点介绍计算基础度量值。
 事实上，从符号的角度来看，量子计算会出现其他常见的度量，这在计算基础度量方面非常方便。
-当你使用时 Q# ，你将遇到的最常见的度量值可能是*Pauli 的度量值*，它将计算基础度量值纳入其他基准，并在不同 qubits 之间进行奇偶校验。
+当你使用时 Q# ，你将遇到的最常见的度量值可能是 *Pauli 的度量值*，它将计算基础度量值纳入其他基准，并在不同 qubits 之间进行奇偶校验。
 在这种情况下，通常会讨论度量 Pauli 运算符，通常是运算符（例如 $ x、Y、z $ 或 $ z \otimes z、x \otimes x、x \otimes Y $ 等）。
 
 > [!TIP]
->在中 Q# ，多 Qubit Pauli 运算符通常由类型的数组表示 `Pauli[]` 。
->例如，若要表示 $ X \otimes Z \otimes Y $ ，可以使用数组 `[PauliX, PauliZ, PauliY]` 。
+> 在中 Q# ，多 Qubit Pauli 运算符通常由类型的数组表示 `Pauli[]` 。
+> 例如，若要表示 $ X \otimes Z \otimes Y $ ，可以使用数组 `[PauliX, PauliZ, PauliY]` 。
 
 在量程错误纠正的子字段中，讨论 Pauli 运算符的度量值尤其常见。
 在中 Q# ，我们遵循类似的约定; 现在我们介绍了此替代方法视图。
@@ -122,7 +122,7 @@ Pauli 度量值的表示法通过标识 X、Y、Z 度量值来引用这种单一
 为方便起见，下面提供了这些度量值。
 
 
-|Pauli 度量 | 单一转换|
+|Pauli 度量  | 单一转换  |
 |-------------------|------------------------|
 |$ $ Z |               $\boldone$             |
 |$ $ X |$H               $                    |
@@ -162,7 +162,7 @@ operation MeasureY(qubit : Qubit) : Result {
 多 qubit Pauli 运算符的度量值的定义类似，如下所示：
 
 $$
-Z \otimes z = \begin{bmatrix} 1 & 0 & 0 0 0 & \\\\ 0 & -1 0 0 0 0 & & \\\\ & & -1 & 0 \\\\ & & & \end{bmatrix} 0 0 0 1。
+Z \otimes z = \begin{bmatrix} 1 & 0 & 0 0 0 & \\\\  0 & -1 0 0 0 0 & & \\\\ & & -1 & 0 \\\\ & & & \end{bmatrix} 0 0 0 1。
 $$
 
 因此，两个 Pauli 运算符的 tensor 产品构成一个矩阵，其中包含 $ $ 两个由 $ + 1 $ 和 $ -1 本征值 $ 组成的空格。
@@ -174,14 +174,14 @@ $$
 \begin{align}
     \otimes \boldone Z =\begin{bmatrix}
         1 & 0 & 0 0 &\\\\
-        0 & 1 & 0 & 0\\\\
-        0 & 0 & -1 & 0\\\\
-        0 & 0 & 0 & -1 \end{bmatrix} 。
+        0 &  1 &  0 &  0 \\\\
+        0 &  0 & -1 &  0 \\\\
+        0 &  0 &  0 & -1 \end{bmatrix} 。
 \end{align}
 $$
 
 与之前一样，此类矩阵的任何单一转换还将描述 \pm 1 本征值标记的两个半角空格 $ $ 。
-例如， $ x \otimes x = h \otimes h (z \otimes z) h \otimes h $ 与 z HXH 的标识 $ 相同 = $ 。
+例如， $ x \otimes x = h \otimes h (z \otimes z) h \otimes h $  与 z HXH 的标识 $ 相同 = $ 。
 与 qubit 情况类似，所有 qubit Pauli 度量值都可以作为 $ u ^ \dagger (Z \otimes \id) u 写入 $ 4 个 $ \times $ 单一矩阵 $ u $ 。枚举下表中的转换。
 
 > [!NOTE]
@@ -190,15 +190,14 @@ $$
 >     \operatorname{交换 } &=
 >     \left (\begin { 矩阵}
 >1 & 0 & 0 0 &\\\\
->0 & 0 & 1 & 0\\\\
->0 & 1 & 0 & 0\\\\
+>         0 & 0 & 1 & 0 \\\\
+>         0 & 1 & 0 & 0 \\\\
 >0 & 0 & 0 & 1 > \end { 矩阵 } \right) >     \end{align}
 > $$
->用于模拟内部操作 [`SWAP`](xref:microsoft.quantum.intrinsic) 。
+> 用于模拟内部操作 [`SWAP`](xref:microsoft.quantum.intrinsic) 。
 
-|Pauli 度量 | 单一转换|
+|Pauli 度量     | 单一转换  |
 |----------------------|------------------------|
-|$ \otimes \boldone Z $| $\boldone\otimes \boldone$|
 |$ \otimes \boldone Z $| $\boldone\otimes\boldone$|
 |$ \otimes \boldone X $| $\otimes \boldone H $|
 |$ \otimes \boldone Y $| $HS \dagger \otimes \boldone ^ $|
@@ -240,7 +239,7 @@ Pauli 运算符的所有此类 tensor 产品仅具有两个本征值 $ \pm 1 $ �
 在中 Q# ， $ $ 如果度量值生成的结果为 eigenspace ( 的 $) ^ j，则此类度量值将返回 j $ 。
 将 Pauli 度量作为内置功能 Q# 非常有用，因为测量此类运算符需要使用受控-NOT 入口和基础转换的长链来描述将 $ $ 操作表达为 Z 和的 tensor 产品所需的 diagonalizing U 门 $ $ $ \id $ 。
 通过能够指定想要执行其中一项预定义度量，无需担心如何转换基础，以使计算基础度量提供必要的信息。
-Q#自动为你处理所有必要的基础转换。
+Q# 自动为你处理所有必要的基础转换。
 有关详细信息，请参阅 [`Measure`](xref:microsoft.quantum.intrinsic.measure) 和 [`MeasurePaulis`](xref:microsoft.quantum.measurement.measurepaulis) 操作。
 
 ## <a name="the-no-cloning-theorem"></a>无克隆定理
@@ -248,16 +247,16 @@ Q#自动为你处理所有必要的基础转换。
 量程信息非常强大。
 它使我们能够以指数形式比最佳已知传统算法更快地执行令人惊叹的东西，或高效模拟经典需要指数成本来准确模拟的相关 electron 系统。
 但对量程计算的强大功能有一些限制。
-这种限制是由*无克隆定理*提供的。
+这种限制是由 *无克隆定理*提供的。
 
 不克隆的定理为名称正好。
 它不允许量程计算机克隆通用量程状态。
 定理的证明非常简单。
-虽然在这里我们的讨论中，无克隆定理的完整证明是一项很少的技术，但是，在我们的 (范围内，无需额外的辅助 qubits 的证明可用于计算中的草稿空间，并可以在中轻松地使用和管理 Q# ，请参阅[借用 qubits](xref:microsoft.quantum.guide.qubits#borrowed-qubits)) 。
+虽然在这里我们的讨论中，无克隆定理的完整证明是一项很少的技术，但是，在我们的 (范围内，无需额外的辅助 qubits 的证明可用于计算中的草稿空间，并可以在中轻松地使用和管理 Q# ，请参阅 [借用 qubits](xref:microsoft.quantum.guide.qubits#borrowed-qubits)) 。
 
 对于此类量程计算机，克隆操作必须由单一矩阵进行描述。
 我们不允许进行度量，因为它会损坏我们尝试克隆的量程状态。
-要模拟克隆操作，我们希望使用单一矩阵来使$$
+要模拟克隆操作，我们希望使用单一矩阵来使 $$
   U \ket { \psi } \ket { 0 } = \ket { \psi }\ket{\psi}
 $$
 适用于任何状态 $ \ket { \psi } $ 。
@@ -276,7 +275,7 @@ $$
 
 这提供了不克隆定理背后的基本直觉：复制未知量程状态的任何设备必须至少在其复制的某些状态下引发错误。
 虽然 cloner 在输入状态下线性处理的关键假设可以通过添加和度量辅助 qubits 来突破，此类交互还会通过测量统计信息泄漏有关系统的信息，并在这种情况下防止精确克隆。
-有关无克隆定理的更完整的证明，请参阅[以获取详细信息](xref:microsoft.quantum.more-information)。
+有关无克隆定理的更完整的证明，请参阅 [以获取详细信息](xref:microsoft.quantum.more-information)。
 
 无克隆定理对于定性了解量程计算非常重要，因为如果可以将量程状态重新克隆，则会被授予近乎神奇的功能，可以从量程状态中学习。
 事实上，您可能违反了海森堡的 vaunted 不确定性原则。

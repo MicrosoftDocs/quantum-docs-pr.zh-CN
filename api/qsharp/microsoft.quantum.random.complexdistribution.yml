@@ -1,0 +1,18 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.random.complexdistribution
+name: ComplexDistribution
+type: newtype
+namespace: Microsoft.Quantum.Random
+summary: 表示对复数的单变量概率分布。
+syntax: newtype ComplexDistribution = (Unit => Microsoft.Quantum.Math.Complex);
+seeAlso:
+- microsoft.quantum.random.continuousdistribution
+- microsoft.quantum.random.discretedistribution
+- microsoft.quantum.random.bigdiscretedistribution
+metadata:
+  ms.openlocfilehash: 74f12baeffd5ba7cd211269b19cc05b43651f382
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863993"

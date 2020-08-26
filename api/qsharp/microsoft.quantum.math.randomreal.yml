@@ -3,19 +3,12 @@ uid: microsoft.quantum.math.randomreal
 name: RandomReal
 type: operation
 namespace: Microsoft.Quantum.Math
-summary: 返回大于或等于0且小于1的间隔中的随机实数。
-remarks: 此函数调用<xref:microsoft.quantum.intrinsic.random>，因此其随机性依赖于的实现`Random`。
+summary: RandomReal 已被弃用。 请改用 @"microsoft.quantum.random.drawrandomdouble"。
 syntax: 'operation RandomReal (bitsRandom : Int) : Double'
 input:
   content: '(bitsRandom : Int)'
   types:
   - name: bitsRandom
-    summary: >-
-      应对其进行采样的精度位数。
-
-          # Output
-
-      一个实数 $x = k/2 ^ {\texttt{bitsRandom}} $ 用于一个整数 $k $ 采样间隔 $ [0，2 ^ {\texttt{bitsRandom}}） $，概率为 $ \Pr （k） = 1/2 ^ {\texttt{bitsRandom}} $。
     isPrimitive: true
     uid: Int
 output:
@@ -24,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: b3974f5b12f8d49cc7920021caad98f6e2f3a60c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2cb70e92b47d9233d241eee730337c5fcf709ca8
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681529"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863580"

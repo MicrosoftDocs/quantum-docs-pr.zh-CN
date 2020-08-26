@@ -1,0 +1,32 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.random.standardnormaldistribution
+name: StandardNormalDistribution
+type: function
+namespace: Microsoft.Quantum.Random
+summary: 返回一个平均分布，其平均值为0，方差为1。
+examples: >-
+  下面从标准正态分布绘制了10个样本：
+
+
+  ```Q#
+
+  let samples = DrawMany((StandardNormalDistribution())::Sample, 10, ());
+
+  ```
+syntax: 'function StandardNormalDistribution () : Microsoft.Quantum.Random.ContinuousDistribution'
+input:
+  content: ()
+  types: []
+output:
+  content: Microsoft.Quantum.Random.ContinuousDistribution
+  types:
+  - uid: microsoft.quantum.random.continuousdistribution
+seeAlso:
+- microsoft.quantum.random.normaldistribution
+metadata:
+  ms.openlocfilehash: 5e51a76b1bf2d83fe62a77663aa3cc8dc0d5bacb
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863977"

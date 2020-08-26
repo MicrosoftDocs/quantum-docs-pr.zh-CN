@@ -1,5 +1,5 @@
 ---
-title: 探索牵连Q#
+title: 探索牵连 Q#
 description: 了解如何在中编写量程计划 Q# 。 使用 Quantum 开发工具包 (QDK) 开发 Bell 态应用程序
 author: geduardo
 ms.author: v-edsanc@microsoft.com
@@ -9,12 +9,12 @@ uid: microsoft.quantum.write-program
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: c66d26b5ea253d6fc2633fbe52fa35ba703d185d
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: d815a9a25b8ba5e9489b6d3d27fb0d64ab4aaa1d
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869692"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863443"
 ---
 # <a name="tutorial-explore-entanglement-with-q"></a>教程：通过 Q\# 探索纠缠
 
@@ -32,7 +32,7 @@ Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，
 
 你还可以遵循这些叙述，无需安装 QDK、查看 Q# 编程语言的概述以及量程计算的第一概念。
 
-## <a name="in-this-tutorial-youll-learn-how-to"></a>在本教程中，你将学习如何执行以下操作：
+## <a name="in-this-tutorial-youll-learn-how-to"></a>本教程介绍以下操作：
 
 > [!div class="checklist"]
 > * 在 Q 中创建和合并操作\#
@@ -52,11 +52,11 @@ Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，
 
 ## <a name="creating-a-no-locq-project"></a>创建 Q# 项目
 
-首先，我们要做的就是创建一个新 Q# 项目。 在本教程中，我们将使用基于[命令行应用程序 VS Code](xref:microsoft.quantum.install.standalone)的环境。
+首先，我们要做的就是创建一个新 Q# 项目。 在本教程中，我们将使用基于[ Q# 具有 VS Code 的应用程序](xref:microsoft.quantum.install.standalone)的环境。
 
 若要创建新项目，请在 VS Code 中： 
 
-1. 单击 "**查看**" "  ->  **命令面板**"，然后选择 " ** Q# 创建新项目**"。
+1. 单击“查看” -> “命令面板” ，然后选择“Q#:Create New Project”。
 2. 单击“独立控制台应用程序”。
 3. 导航到项目的保存位置，然后单击“创建项目”。
 4. 成功创建项目后，单击右下方的“打开新项目…”。
@@ -125,7 +125,7 @@ Q#操作是一个量程子例程。 也就是说，它是包含对其他量程�
 
 为了演示 `SetQubitState` 操作的效果，我们接着添加了 `TestBellState` 操作。 此操作以 `Zero` 或 `One` 作为输入，使用该输入调用 `SetQubitState` 操作特定的次数，然后计算对量子位进行度量时返回 `Zero` 的次数和返回 `One` 的次数。 当然，在第一次对 `TestBellState` 操作进行这样的模拟时，我们预期输出会表明：在将 `Zero` 作为参数输入的情况下，对量子位集进行的所有度量都会返回 `Zero`；在将 `One` 作为参数输入的情况下，对量子位集进行的所有度量都会返回 `One`。 接下来，我们将向 `TestBellState` 演示 superposition 和牵连添加代码。
 
-`SetQubitState` 运算结束后，在命名空间内将以下运算添加到 `Bell.qs` 文件：
+`SetQubitState` 运算结束后，在命名空间内将以下运算添加到 `Program.qs` 文件：
 
 ```qsharp
    operation TestBellState(count : Int, initial : Result) : (Int, Int) {
@@ -161,15 +161,15 @@ Q#操作是一个量程子例程。 也就是说，它是包含对其他量程�
 
 如果需要可以更改值的变量（如示例中的 `numOnes`），可以使用 `mutable` 关键字声明该变量。 使用 `setQubitState` 语句可以更改可变变量的值。
 
-在这两种情况下，编译器都会推断变量的类型。 Q#不需要任何变量的类型批注。
+在这两种情况下，编译器都会推断变量的类型。 Q# 不需要任何变量的类型批注。
 
 #### <a name="about-using-statements-in-q"></a>`using`问答中的语句\#
 
 `using`语句也是特殊的 Q# 。 它用于分配要在代码块中使用的量子位。 在中 Q# ，所有 qubits 都是动态分配和释放的，而不是固定在复杂算法的整个生存期内的资源。 `using` 语句在代码块的开头分配一组量子位，并在代码块的末尾释放这些量子位。
 
-## <a name="execute-the-code-from-the-command-line"></a>从命令行执行代码
+## <a name="run-the-code-from-the-command-prompt"></a>在命令提示符下运行代码
 
-若要运行代码，我们需要指定在提供命令时要*运行的可调用的*编译器 `dotnet run` 。 此操作 Q# 通过在此情况下添加一行，并在 `@EntryPoint()` `TestBellState` 此示例中添加一行，在文件中进行简单的更改。 完整的代码应为：
+若要运行代码，我们需要指定在提供命令时要 *运行的可调用的* 编译器 `dotnet run` 。 此操作 Q# 通过在此情况下添加一行，并在 `@EntryPoint()` `TestBellState` 此示例中添加一行，在文件中进行简单的更改。 完整的代码应为：
 
 ```qsharp
 namespace Bell {
@@ -208,7 +208,7 @@ namespace Bell {
 }
 ```
 
-若要运行程序，我们需要 `count` `initial` 从命令行指定和参数。 选择例如 `count = 1000` 和 `initial = One` 。 输入以下命令：
+若要运行程序，我们需要 `count` `initial` 在命令提示符处指定和参数。 选择例如 `count = 1000` 和 `initial = One` 。 输入以下命令：
 
 ```dotnetcli
 dotnet run --count 1000 --initial One
@@ -235,7 +235,7 @@ Test results (# of 0s, # of 1s):
 
 现在让我们看看如何 Q# 在 superposition 中表达 qubits 的方式。  回想一下，量子位的状态可以是 0 和 1 的叠加。  为了实现这种叠加，我们将使用 `Hadamard` 操作。 如果量子位处于任一经典状态（度量始终返回 `Zero` 或始终返回 `One`），则 `Hadamard`（简称 `H`）操作会将量子位置于这样一种状态：对量子位进行度量时，50% 的情况下会返回 `Zero`，50% 的情况下会返回 `One`。  从概念上讲，可以将此量子位视为介于 `Zero` 和 `One` 之间的一种中间状态。  现在，我们在模拟 `TestBellState` 操作时会看到度量后的结果会大致返回相等数量的 `Zero` 和 `One`。  
 
-### <a name="x-flips-qubit-state"></a>`X`翻转 qubit 状态
+### <a name="x-flips-qubit-state"></a>`X` 翻转 qubit 状态
 
 首先，我们来尝试翻转量子位（如果量子位为 `Zero` 状态，则会翻转为 `One`，反之亦然）。 操作步骤：先执行 `X` 操作，然后在 `TestBellState` 操作中度量它：
 
@@ -265,7 +265,7 @@ Test results (# of 0s, # of 1s):
 
 现在，让我们探索 qubits 的量程属性。
 
-### <a name="h-prepares-superposition"></a>`H`准备 superposition
+### <a name="h-prepares-superposition"></a>`H` 准备 superposition
 
 我们需要做的就是将上一个运行中的 `X` 操作替换为 `H`（全称为 Hadamard）操作。 我们不会将所有量子位都从 0 翻转到 1，而是只翻转一半。 `TestBellState` 中的替换行现在如下所示：
 
@@ -415,6 +415,6 @@ Test results (# of 0s, # of 1s, # of agreements)
 
 ## <a name="next-steps"></a>后续步骤
 
-教程[Grover 的搜索](xref:microsoft.quantum.quickstarts.search)介绍了如何生成和运行 Grover 搜索，这是最常用的一种量程计算算法，提供了一个 Q# 可用于解决量程计算的真正问题的程序示例。  
+教程 [Grover 的搜索](xref:microsoft.quantum.quickstarts.search) 介绍了如何生成和运行 Grover 搜索，这是最常用的一种量程计算算法，提供了一个 Q# 可用于解决量程计算的真正问题的程序示例。  
 
-[量程开发工具包入门建议了](xref:microsoft.quantum.welcome)更多学习 Q# 和量程编程的方法。
+[量程开发工具包入门建议了](xref:microsoft.quantum.welcome) 更多学习 Q# 和量程编程的方法。

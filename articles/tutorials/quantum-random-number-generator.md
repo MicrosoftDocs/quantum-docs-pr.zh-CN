@@ -9,12 +9,12 @@ uid: microsoft.quantum.quickstarts.qrng
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 8db892091794cb1166e41744572d8938d975abf2
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: d80f1c640ac7ddb0104ccbbb6de6d0e26ba05fd6
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869760"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863622"
 ---
 # <a name="tutorial-implement-a-quantum-random-number-generator-in-q"></a>教程：使用 Q# 实现量子随机数生成器\#
 
@@ -23,11 +23,11 @@ ms.locfileid: "87869760"
 ## <a name="prerequisites"></a>先决条件
 
 - Microsoft [Quantum 开发工具包](xref:microsoft.quantum.install)。
-- Q#[使用 Q# 从命令行](xref:microsoft.quantum.install.standalone)或使用[Python 主机程序](xref:microsoft.quantum.install.python)或[c # 宿主程序](xref:microsoft.quantum.install.cs)来创建项目。
+- Q#使用[Python 主机程序](xref:microsoft.quantum.install.python)或[c # 宿主程序](xref:microsoft.quantum.install.cs)为[ Q# 应用程序](xref:microsoft.quantum.install.standalone)创建项目。
 
 ## <a name="write-a-no-locq-operation"></a>编写 Q# 操作
 
-### <a name="no-locq-operation-code"></a>Q#操作代码
+### <a name="no-locq-operation-code"></a>Q# 操作代码
 
 1. 将 Program.qs 文件的内容替换为以下代码：
 
@@ -64,13 +64,13 @@ ms.locfileid: "87869760"
 
 ## <a name="creating-a-complete-random-number-generator"></a>创建完整的随机数生成器
 
-现在，我们有了一个 Q# 生成随机位的操作，可以使用它来生成完整的量程随机数生成器。 我们可以使用 Q# 命令行应用程序或使用主机程序。
+现在，我们有了一个 Q# 生成随机位的操作，可以使用它来生成完整的量程随机数生成器。 可以使用 Q# 应用程序或使用主机程序。
 
 
 
-### <a name="no-locq-command-line-applications-with-visual-studio-or-visual-studio-code"></a>[Q#带有 Visual Studio 或 Visual Studio Code 的命令行应用程序](#tab/tabid-qsharp)
+### <a name="no-locq-applications-with-visual-studio-or-visual-studio-code"></a>[Q# 具有 Visual Studio 或 Visual Studio Code 的应用程序](#tab/tabid-qsharp)
 
-若要创建完整的 Q# 命令行应用程序，请在你的程序中添加以下入口点 Q# ： 
+若要创建完整的 Q# 应用程序，请在你的程序中添加以下入口点 Q# ： 
 
 :::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="17-33":::
 
@@ -92,13 +92,13 @@ dotnet build
 dotnet run --no-build
 ```
 
-### <a name="python-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 Python](#tab/tabid-python)
+### <a name="python-with-visual-studio-code-or-the-command-prompt"></a>[Visual Studio Code 或命令提示符下的 Python](#tab/tabid-python)
 
 若要 Q# 从 Python 运行新程序，请将以下代码另存为 `host.py` ：
 
 :::code language="python" source="~/quantum/samples/interoperability/qrng/host.py" range="11-30":::
 
-然后便可以从命令行运行 Python 主机程序：
+然后，你可以从命令提示符运行 Python 主机程序：
 
 ```bash
 $ python host.py
@@ -112,7 +112,7 @@ Preparing Q# environment...
 
 :::code language="csharp" source="~/quantum/samples/interoperability/qrng/Host.cs" range="4-39":::
 
-然后，可以从命令行运行 C# 主机程序（在 Visual Studio 中应按 F5）：
+然后，你可以从命令提示符运行 c # 宿主程序 (在 Visual Studio 中，你应按 F5) ：
 
 ```bash
 $ dotnet run

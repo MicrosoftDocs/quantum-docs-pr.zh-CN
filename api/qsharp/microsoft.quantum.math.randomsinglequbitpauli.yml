@@ -3,8 +3,7 @@ uid: microsoft.quantum.math.randomsinglequbitpauli
 name: RandomSingleQubitPauli
 type: operation
 namespace: Microsoft.Quantum.Math
-summary: 随机返回一个 qubit Pauli 运算符。
-remarks: 此函数调用<xref:microsoft.quantum.intrinsic.random>，因此其随机性依赖于的实现`Random`。
+summary: RandomSingleQubitPauli 已被弃用。 请改用 @"microsoft.quantum.random.drawrandompauli"。
 syntax: 'operation RandomSingleQubitPauli () : Pauli'
 input:
   content: ()
@@ -12,13 +11,12 @@ input:
 output:
   content: Pauli
   types:
-  - summary: 是`Pauli`的一个运算符`[PauliI, PauliX, PauliY, PauliZ]`。
-    isPrimitive: true
+  - isPrimitive: true
     uid: Pauli
 metadata:
-  ms.openlocfilehash: e0065244d20a9f9c6850a23625ecc3bbb73ace0f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: efe0aa48a13ce7fdfb5ec05ade0e7b6fbfece519
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681511"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863555"

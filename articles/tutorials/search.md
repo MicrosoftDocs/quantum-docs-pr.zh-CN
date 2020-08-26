@@ -9,12 +9,12 @@ uid: microsoft.quantum.quickstarts.search
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 5c23d71209eb484a510f102e8b581ba4ec21829a
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: f2ae56bdca893e8a317c16d0a993da15b9f021b5
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869658"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863117"
 ---
 # <a name="tutorial-implement-grovers-search-algorithm-in-q"></a>教程：使用 Q\# 实现 Grover 搜索算法
 
@@ -42,7 +42,7 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
 ## <a name="write-the-code"></a>编写代码
 
-1. 使用量程开发工具包， [ Q# 为命令行应用程序创建一个新项目](xref:microsoft.quantum.install.standalone)。 将项目命名为 `Grover`。
+1. 使用量程开发工具包， [ Q# 为应用程序创建一个新项目](xref:microsoft.quantum.install.standalone)。 将项目命名为 `Grover`。
 
 1. 在新项目中，将以下代码添加到 `Program.qs` 文件中：
 
@@ -56,7 +56,7 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
 1. 接下来，运行新 Q# 程序以查找标记为的项 `ReflectAboutMarked` 。
 
-### <a name="no-locq-command-line-applications-with-visual-studio-or-visual-studio-code"></a>Q#带有 Visual Studio 或 Visual Studio Code 的命令行应用程序
+### <a name="no-locq-applications-with-visual-studio-or-visual-studio-code"></a>Q# 具有 Visual Studio 或 Visual Studio Code 的应用程序
 
 可执行文件将在仿真器或资源估计器上运行使用 `@EntryPoint()` 特性标记的操作或函数，具体取决于项目配置和命令行选项。
 

@@ -8,12 +8,12 @@ uid: microsoft.quantum.guide.quickref.iqsharp
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: fb7b5543ef9222e6bab2b1cbbc7e3ebb54863438
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 1d2d092588e1a5c69d12e5d50377e3e26412c094
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867975"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863694"
 ---
 # <a name="ino-locq-magic-commands"></a>I Q# 幻命令
 
@@ -22,8 +22,10 @@ ms.locfileid: "87867975"
 - [`%config`](xref:microsoft.quantum.iqsharp.magic-ref.config)：允许设置或查询配置选项。
 - [`%estimate`](xref:microsoft.quantum.iqsharp.magic-ref.estimate)：在 ResourcesEstimator 目标计算机上运行给定的函数或操作。
 - [`%lsmagic`](xref:microsoft.quantum.iqsharp.magic-ref.lsmagic)：返回当前可用的所有幻命令的列表。
+- [`%lsopen`](xref:microsoft.quantum.iqsharp.magic-ref.lsopen)：列出当前打开的命名空间及其别名。
 - [`%package`](xref:microsoft.quantum.iqsharp.magic-ref.package)：提供加载 NuGet 包的能力。
 - [`%performance`](xref:microsoft.quantum.iqsharp.magic-ref.performance)：报告此内核的当前性能指标。
+- [`%project`](xref:microsoft.quantum.iqsharp.magic-ref.project)：提供查看或添加 Q# 项目引用的功能。 
 - [`%simulate`](xref:microsoft.quantum.iqsharp.magic-ref.simulate)：在 QuantumSimulator 目标计算机上运行给定的函数或操作。
 - [`%toffoli`](xref:microsoft.quantum.iqsharp.magic-ref.toffoli)：在 ToffoliSimulator 目标计算机上运行给定的函数或操作。
 - [`%who`](xref:microsoft.quantum.iqsharp.magic-ref.who)：列出 Q# 当前会话中可用的操作。

@@ -1,5 +1,5 @@
 ---
-title: 在中编写和模拟 qubit 级程序Q#
+title: 在中编写和模拟 qubit 级程序 Q#
 description: 有关编写和模拟在单个 qubit 级别运行的量程程序的分步教程
 author: gillenhaalb
 ms.author: a-gibec@microsoft.com
@@ -9,12 +9,12 @@ ms.topic: tutorial
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 22c79e4e01db1a0d0c291d0dcff81dbfa8df5cd3
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 39b2d762c0efbfa4bb3a60a1dcee6bcbe2bd91a9
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869709"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863336"
 ---
 # <a name="tutorial-write-and-simulate-qubit-level-programs-in-q"></a>教程：编写并模拟 qubit 中的程序\#
 
@@ -22,7 +22,7 @@ ms.locfileid: "87869709"
 
 尽管 Q# 主要是为大规模的量程程序创建为高级编程语言，但也可以轻松地浏览更低级别的量程程序：直接解决特定的 qubits。
 的灵活性 Q# 使用户能够从任何此类抽象级别来利用量程系统，在本教程中，我们将深入探讨 qubits 本身。
-具体而言，我们将看一下[量程傅立叶转换](https://en.wikipedia.org/wiki/Quantum_Fourier_transform)的组成部分，它是许多更大的量程算法的一个子例程。
+具体而言，我们将看一下 [量程傅立叶转换](https://en.wikipedia.org/wiki/Quantum_Fourier_transform)的组成部分，它是许多更大的量程算法的一个子例程。
 
 请注意，通常以 "[量程线路](xref:microsoft.quantum.concepts.circuits)" 的形式描述这一低级别的量程信息处理方式，这种方式表示将入口的顺序应用到系统的特定 qubits。
 
@@ -38,20 +38,20 @@ ms.locfileid: "87869709"
 * 如果已安装 QDK，请确保将其[更新](xref:microsoft.quantum.update)至最新版本
 
 
-## <a name="in-this-tutorial-youll-learn-how-to"></a>在本教程中，你将学习如何执行以下操作：
+## <a name="in-this-tutorial-youll-learn-how-to"></a>本教程介绍以下操作：
 
 > [!div class="checklist"]
-> * 定义量程操作Q#
-> * Q#直接从命令行或使用传统主机程序调用操作
+> * 定义量程操作 Q#
+> * Q#直接从命令提示符或使用传统主机程序调用操作
 > * 模拟从 qubit 分配到测量输出的量程操作
 > * 观察量程系统的模拟 wavefunction 在整个操作过程中的演变方式
 
 使用 Microsoft 的量程开发工具包运行量程程序通常包括两个部分：
 1. 该程序本身是使用 Q# 量程编程语言实现的，然后调用以在量程计算机或量程模拟器上运行。 这些包括 
-    - Q#操作：作用于量程寄存器和 
-    - Q#函数：在量程算法中使用的传统子例程。
+    - Q# 操作：作用于量程寄存器和 
+    - Q# 函数：在量程算法中使用的传统子例程。
 2. 用于调用量程程序并指定应在其上运行该程序的目标计算机的入口点。
-    可以直接从命令行执行此操作，也可以通过使用一种传统编程语言（例如 Python 或 c #）编写的主机程序来完成此操作。
+    这可以直接在命令提示符下完成，也可以通过使用一种传统编程语言（如 Python 或 c #）编写的主机程序来完成。
     本教程包括你喜欢的任何方法的说明。
 
 ## <a name="allocate-qubits-and-define-quantum-operations"></a>分配 qubits 并定义量程操作
@@ -61,7 +61,7 @@ ms.locfileid: "87869709"
 此外，我们将使用 [`DumpMachine`](xref:microsoft.quantum.diagnostics.dumpmachine) 函数来观察三个 qubit 系统的模拟 wavefunction 在整个操作中的发展情况。
 
 第一步是创建 Q# 项目和文件。
-此操作的步骤取决于你将用于调用程序的环境，你可以在相应的[安装指南](xref:microsoft.quantum.install)中找到相关详细信息。
+此操作的步骤取决于你将用于调用程序的环境，你可以在相应的 [安装指南](xref:microsoft.quantum.install)中找到相关详细信息。
 
 我们将逐步引导你完成文件的各个组件，但代码还可以作为完整的块提供。
 
@@ -92,7 +92,7 @@ namespace NamespaceQFT {
 现在，此操作不使用任何参数，并且不返回任何内容---在此示例中，我们编写了一个 `Unit` 对象，该对象在 Python 中类似于 `void` c # 或空元组 `Tuple[()]` 。
 稍后，我们将对其进行修改以返回度量值的数组，此时 `Unit` 将替换该结果 `Result[]` 。 
 
-### <a name="allocate-qubits-with-using"></a>将 qubits 分配给`using`
+### <a name="allocate-qubits-with-using"></a>将 qubits 分配给 `using`
 在我们 Q# 的操作中，我们首先使用以下语句分配三个 qubits 的寄存器 `using` ：
 
 ```qsharp
@@ -114,7 +114,7 @@ namespace NamespaceQFT {
 ### <a name="applying-single-qubit-and-controlled-gates"></a>应用单 qubit 和受控入口
 
 接下来，应用组成操作本身的入口。
-Q#已在命名空间中包含许多基本的量程入口作为操作 [`Microsoft.Quantum.Intrinsic`](xref:microsoft.quantum.intrinsic) ，并且这些都不是异常。 
+Q# 已在命名空间中包含许多基本的量程入口作为操作 [`Microsoft.Quantum.Intrinsic`](xref:microsoft.quantum.intrinsic) ，并且这些都不是异常。 
 
 在 Q# 操作中，调用 callables 的语句将按顺序执行。
 因此，要应用的第一个入口是 [`H`](xref:microsoft.quantum.intrinsic.h) 第一个 qubit (Hadamard) ：
@@ -134,10 +134,10 @@ Q#已在命名空间中包含许多基本的量程入口作为操作 [`Microsoft
 
 #### <a name="controlled-operations"></a>受控操作
 
-Q#使在一个或多个控件 qubits 上执行操作的条件非常简单。
+Q# 使在一个或多个控件 qubits 上执行操作的条件非常简单。
 通常，我们只是将调用置于 `Controlled` ，并将操作参数更改为：
 
- `Op(<normal args>)`$ \to $ `Controlled Op([<control qubits>], (<normal args>))` 。
+ `Op(<normal args>)` $ \to $ `Controlled Op([<control qubits>], (<normal args>))` 。
 
 请注意，控件 qubits 必须作为数组提供，即使它是单个 qubit。
 
@@ -157,7 +157,7 @@ Q#使在一个或多个控件 qubits 上执行操作的条件非常简单。
 此外，我们除以 `Double` (例如 `2.0`) ，因为除以整数 `2` 将引发类型错误。 
 
 > [!TIP]
-> `R1(π/2)`和 `R1(π/4)` 等效于 `S` 和 `T` 操作 (也在) 中 `Microsoft.Quantum.Intrinsic` 。
+> `R1(π/2)` 和 `R1(π/4)` 等效于 `S` 和 `T` 操作 (也在) 中 `Microsoft.Quantum.Intrinsic` 。
 
 
 `H`对第二个和第三个 qubits 应用相关操作和受控旋转后：
@@ -249,11 +249,11 @@ Q#完成文件和操作后，便可以调用和模拟我们的量程计划了。
 Q#在文件中定义了操作后 `.qs` ，我们现在需要调用该操作并观察返回的任何传统数据。
 目前，没有返回任何内容 (回忆，上面定义的操作返回 `Unit`) ，但当我们稍后修改 Q# 操作以返回度量结果的数组 (`Result[]`) 时，我们将解决此情况。
 
-尽管该 Q# 程序在用于调用它的环境中无处不在，但这样做的方式当然会有所不同。 因此，只需按照与设置相对应的选项卡中的说明进行操作：从 Q# 命令行应用程序或使用 Python 或 c # 中的主机程序进行操作。
+尽管该 Q# 程序在用于调用它的环境中无处不在，但这样做的方式当然会有所不同。 因此，只需按照与设置相对应的选项卡中的说明进行操作：从 Q# 应用程序或使用 Python 或 c # 中的主机程序进行操作。
 
-#### <a name="command-line"></a>[命令行](#tab/tabid-cmdline)
+#### <a name="command-prompt"></a>[命令提示符](#tab/tabid-cmdline)
 
-Q#从命令行运行程序只需对文件进行少量更改 Q# 。
+Q#从命令提示符运行程序只需对文件进行少量更改 Q# 。
 
 只需在 `@EntryPoint()` 操作定义之前添加一行：
 
@@ -280,7 +280,7 @@ dotnet run
 1. 首先，导入 `qsharp` 模块，该模块将注册模块加载程序以实现 Q# 互操作性。 
     这允许 Q# 命名空间 (例如， `NamespaceQFT` 我们在文件中定义的 Q#) 显示为 Python 模块，我们可以从这些模块中导入 Q# 操作。
 2. 然后，导入 Q# 在这种情况下将直接调用---的操作 `Perform3qubitQFT` 。
-    我们只需要将入口点导入到 Q# 程序中 (也就是说，_不_是像和这样的操作 `H` ，而 `R1` 是由其他操作调用，而不是 Q# 由经典主机) 。
+    我们只需要将入口点导入到 Q# 程序中 (也就是说， _不_ 是像和这样的操作 `H` ，而 `R1` 是由其他操作调用，而不是 Q# 由经典主机) 。
 3. 在模拟 Q# 操作或函数时，使用窗体 `<Q#callable>.simulate(<args>)` 在目标计算机上运行它们 `QuantumSimulator()` 。 
 
 > [!NOTE]
@@ -305,7 +305,7 @@ Perform3qubitQFT.simulate()
 
 #### <a name="c"></a>[C#](#tab/tabid-csharp)
 
-按照[安装指南](xref:microsoft.quantum.install.cs)中的说明进行操作，创建一个 c # 主机文件，然后将其重命名为 `host.cs` 。
+按照 [安装指南](xref:microsoft.quantum.install.cs)中的说明进行操作，创建一个 c # 主机文件，然后将其重命名为 `host.cs` 。
 
 C # 宿主有四部分：
 1. 构造量子模拟器。
@@ -389,14 +389,14 @@ After:
 * **`    ---`**：振幅阶段的图形化表示形式。
 * **`[ 0.0000 rad ]`**：相位 (的数值) 以弧度表示。
 
-大小和阶段都以图形表示形式显示。 大小表示形式非常简单：显示一个的条形 `*` ，并显示更大的概率。 对于阶段，请参阅[测试和调试：](xref:microsoft.quantum.guide.testingdebugging#dump-functions)基于角度范围的可能符号表示形式的转储函数。
+大小和阶段都以图形表示形式显示。 大小表示形式非常简单：显示一个的条形 `*` ，并显示更大的概率。 对于阶段，请参阅 [测试和调试：](xref:microsoft.quantum.guide.testingdebugging#dump-functions) 基于角度范围的可能符号表示形式的转储函数。
 
 
 因此，打印输出说明了我们的程控入口从
 
 $ $ \ket{\psi} \_ {初始} = \ket {000} $ $
 
-to 
+设置为 
 
 $ $ \begin{align} \ket{\psi} \_ {final} &= \frac {1} {\sqrt {8} } \left ( \ket + {000} \ket + {001} \ket {010} + \ket {011} + \ket + {100} \ket {101} + \ket {110} + \ket {111} \right) \\ \\ &= \frac {1} {\sqrt{2 ^ n}} \sum \_ {j = 0} ^ {2 ^ n-1} \ket{j}，\end{align} $ $
 
@@ -445,7 +445,7 @@ $ $ \begin{align} \ket{\psi} \_ {final} &= \frac {1} {\sqrt {8} } \left ( \ket +
 
 关键字 `set` 始终用于重新分配使用绑定 `mutable` 的变量。
 
-#### <a name="return-resultarray"></a>返回`resultArray`
+#### <a name="return-resultarray"></a>返回 `resultArray`
 
 所有三个 qubits 都得到了度量，并将结果添加到了 `resultArray` 中，我们就可以像以往一样重置和解除分配 qubits。
 `using`块关闭后，插入
@@ -499,10 +499,10 @@ $ $ \begin{align} \ket{\psi} \_ {final} &= \frac {1} {\sqrt {8} } \left ( \ket +
 }
 ```
 
-如果是从命令行运行，则在执行结束时，只会将返回的数组直接打印到控制台。
+如果是从命令提示符运行，则在执行结束时，只会将返回的数组直接打印到控制台。
 否则，请更新主机程序来处理返回的数组。
 
-#### <a name="command-line"></a>[命令行](#tab/tabid-cmdline)
+#### <a name="command-prompt"></a>[命令提示符](#tab/tabid-cmdline)
 
 为了更好地理解将在控制台中打印的返回数组，我们可以 `Message` 在 Q# 该语句的紧前面添加另一个文件 `return` ：
 
@@ -674,7 +674,7 @@ Press any key to continue...
 此输出显示了几个不同的内容：
 1. 将返回的结果与预度量值进行比较 `DumpMachine` 时，它_not_清楚地说明了 QFT superposition over 基础状态。
     度量仅返回单基准状态，其概率由系统的 wavefunction 中该状态的幅度决定。
-2. 从下度量值开始 `DumpMachine` ，我们会看到，量化指标_更改_了状态本身，并将其从初始 superposition over 基数状态投影到对应于度量值的单一基准状态。
+2. 从下度量值开始 `DumpMachine` ，我们会看到，量化指标 _更改_ 了状态本身，并将其从初始 superposition over 基数状态投影到对应于度量值的单一基准状态。
 
 如果要重复执行此操作多次，就会看到结果统计信息开始，说明 QFT 状态的 superposition，这会给每个拍摄产生随机结果。
 _不过_，除了效率低下且仍完善，这只会重现基础状态的相对 amplitudes，而不是它们之间的相对阶段。
@@ -701,13 +701,13 @@ _不过_，除了效率低下且仍完善，这只会重现基础状态的相对
 正如我们在简介中所提到的，很多人都是这样的，这样您就可以 Q# 抽象掉处理个别 qubits 的烦恼。
 当然，如果您想要开发完全规模的适用量程程序，请考虑某个操作是 `H` 在特定旋转之前还是之后才会减慢您的速度。 
 
-这些 Q# 库包含[QFT](xref:microsoft.quantum.canon.qft)操作，你只需执行此操作，即可将其应用于任意数量的 qubits。
+这些 Q# 库包含 [QFT](xref:microsoft.quantum.canon.qft) 操作，你只需执行此操作，即可将其应用于任意数量的 qubits。
 若要进行尝试，请在文件中定义一个新操作 Q# ，该操作具有相同的内容 `Perform3QubitQFT` ，但从第一个 `H` 到的内容 `SWAP` 替换为两个简单的行：
 ```qsharp
             let register = BigEndian(qs);    //from Microsoft.Quantum.Arithmetic
             QFT(register);                   //from Microsoft.Quantum.Canon
 ```
-第一行只是创建 [`BigEndian`](xref:microsoft.quantum.arithmetic.bigendian) qubits 的已分配数组的表达式，即 `qs` [QFT](xref:microsoft.quantum.canon.qft)操作将其作为参数。
+第一行只是创建 [`BigEndian`](xref:microsoft.quantum.arithmetic.bigendian) qubits 的已分配数组的表达式，即 `qs` [QFT](xref:microsoft.quantum.canon.qft) 操作将其作为参数。
 这对应于寄存器中 qubits 的索引排序。
 
 若要访问这些操作，请 `open` 在文件开头为其各自的命名空间添加语句 Q# ：

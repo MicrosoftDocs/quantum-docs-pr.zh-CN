@@ -3,31 +3,24 @@ uid: microsoft.quantum.intrinsic.random
 name: Random
 type: operation
 namespace: Microsoft.Quantum.Intrinsic
-summary: >-
-  随机操作采用双精度数组作为输入，并将随机选择的索引作为返回到数组中`Int`。
-
-  选择特定索引的概率与该索引处数组元素的值成正比。
-
-  将忽略等于零的数组元素并从不返回它们的索引。 如果任何数组元素小于0，或者如果没有数组元素大于零，则操作将失败。
+summary: 已不推荐使用随机。 请改用 @"microsoft.quantum.random.drawcategorical"。
 syntax: 'operation Random (probs : Double[]) : Int'
 input:
   content: '(probs : Double[])'
   types:
   - name: probs
-    summary: 浮点数的数组，与选择每个索引的概率成正比。
     isArray: true
     isPrimitive: true
     uid: Double
 output:
   content: Int
   types:
-  - summary: 一个整数 $i $ with probability $ \Pr （i） = p_i/\ sum_i p_i $，其中 $p _i $ 是的 $i $ th 元素`probs`。
-    isPrimitive: true
+  - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: b269b780b5e8ad048d1563e3dca98524a5ed63d2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: eb8c26f5085dc728c558bb996ebc6cf068fa6cb4
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686806"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863354"

@@ -2,19 +2,19 @@
 title: QDK 中的内部操作和函数
 description: 了解 QDK 中的内部操作和函数，包括传统函数和单一、旋转和度量运算。
 author: QuantumWriter
-uid: microsoft.quantum.libraries.standard.prelude
 ms.author: martinro@microsoft.com
 ms.date: 12/11/2017
 ms.topic: article
+uid: microsoft.quantum.libraries.standard.prelude
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 283504a5f5635a4996c804e514a6f52eb4966d22
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 4eb10e82a64381c503703be440be90e60f3a8622
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868434"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863728"
 ---
 # <a name="the-prelude"></a>Prelude #
 
@@ -25,12 +25,12 @@ Q#量程开发工具包随附的编译器和目标计算机提供了一组可在
 标准库中定义的内部操作大致分为以下几个类别之一：
 
 - 命名空间中收集的基本传统函数 <xref:microsoft.quantum.core> 。
-- 表示由[Clifford 和 $T $ 关口](xref:microsoft.quantum.concepts.qubit)组成的 unitaries 的操作。
+- 表示由 [Clifford 和 $T $ 关口](xref:microsoft.quantum.concepts.qubit)组成的 unitaries 的操作。
 - 表示各种运算符旋转的操作。
 - 实现度量的操作。
 
-由于 Clifford + $T $ 入口集[通用](xref:microsoft.quantum.concepts.multiple-qubits)于量程计算，因此这些操作足以满足 negligibly 小错误中的任何量程算法的要求。
-通过提供旋转， Q# 使程序员能够在单个 qubit 单一和 cnot-contains 入口库中工作。 此库更容易考虑，因为它不需要程序员直接学习 Clifford + $T $ 分解，而是因为存在用于将单个 qubit unitaries 编译到 Clifford 和 $T $ 入口的高效方法 (参见[此处](xref:microsoft.quantum.more-information)了解) 的详细信息。
+由于 Clifford + $T $ 入口集 [通用](xref:microsoft.quantum.concepts.multiple-qubits) 于量程计算，因此这些操作足以满足 negligibly 小错误中的任何量程算法的要求。
+通过提供旋转， Q# 使程序员能够在单个 qubit 单一和 cnot-contains 入口库中工作。 此库更容易考虑，因为它不需要程序员直接学习 Clifford + $T $ 分解，而是因为存在用于将单个 qubit unitaries 编译到 Clifford 和 $T $ 入口的高效方法 (参见 [此处](xref:microsoft.quantum.more-information) 了解) 的详细信息。
 
 在可能的情况下，在 prelude 中定义的操作（作用于 qubits）允许应用 `Controlled` 变量，以使目标计算机执行适当的分解。
 
@@ -39,7 +39,7 @@ Q#量程开发工具包随附的编译器和目标计算机提供了一组可在
 
 ### <a name="common-single-qubit-unitary-operations"></a>常见的单一 Qubit 单一操作 ###
 
-Prelude 还定义了很多常见[的 qubit 操作](xref:microsoft.quantum.concepts.qubit#single-qubit-operations)。
+Prelude 还定义了很多常见 [的 qubit 操作](xref:microsoft.quantum.concepts.qubit#single-qubit-operations)。
 所有这些操作都允许 `Controlled` 和 `Adjoint` 函子。
 
 #### <a name="pauli-operators"></a>Pauli 运算符 ####
@@ -66,7 +66,7 @@ Prelude 还定义了很多常见[的 qubit 操作](xref:microsoft.quantum.concep
 \begin{equation} \begin{bmatrix} 1 & 0 \\ \\ % FIXME：目前使用 quadwhack 黑客。
 0 &-1 \end{bmatrix} \end{equation}
 
-下面，我们将看到映射到[Bloch 球](xref:microsoft.quantum.concepts.qubit#visualizing-qubits-and-transformations-using-the-bloch-sphere)的这些转换 (在每种情况下，旋转轴将突出显示为红色) ：
+下面，我们将看到映射到 [Bloch 球](xref:microsoft.quantum.concepts.qubit#visualizing-qubits-and-transformations-using-the-bloch-sphere) 的这些转换 (在每种情况下，旋转轴将突出显示为红色) ：
 
 ![映射到 Bloch 球体的 Pauli 操作](~/media/prelude_pauliBloch.png)
 
@@ -102,7 +102,7 @@ Hadamard 入口特别重要，因为它可用于创建 $ \ket {0} $ 和 $ \ket {
 #### <a name="rotations"></a>轮换 ####
 
 除了上面的 Pauli 和 Clifford 操作， Q# prelude 还提供多种表达旋转方式的方法。
-如[qubit 操作](xref:microsoft.quantum.concepts.qubit#single-qubit-operations)中所述，旋转能力对于量子算法至关重要。
+如 [qubit 操作](xref:microsoft.quantum.concepts.qubit#single-qubit-operations)中所述，旋转能力对于量子算法至关重要。
 
 首先，我们可以通过使用 $H $ 和 $T $ 入口（其中 $H $ 是 Hadamard 操作，其中 \begin{equation} T \mathrel{： =} \begin{bmatrix} 1 & 0 \\ \\ % FIXME：此操作当前使用故障回复 whack 黑客来表达任何 qubit 操作。
 0 & e ^ {i \pi/4} \end{bmatrix} \end{equation} 这是操作的平方根 <xref:microsoft.quantum.intrinsic.s> ，因此 $T ^ 2 = S $。
@@ -118,17 +118,17 @@ Hadamard 入口特别重要，因为它可用于创建 $ \ket {0} $ 和 $ \ket {
 > <xref:microsoft.quantum.intrinsic.r>操作将输入角度除以2并将其与-1 相乘。
 > 对于 $Z $ 旋转，这意味着 $ \ket {0} $ eigenstate 通过 $-\phi/$2 进行旋转，$ \ket {1} $ eigenstate 旋转了 $ \phi/$2，以便 $ \ket {1} $ eigenstate 相对于 $ \phi $ \ket 旋转 $ eigenstate $ {0} 。
 >
-> 具体而言，这意味着 `T` 和 `R(PauliZ, PI() / 8, _)` 仅因无关的[全局阶段](xref:microsoft.quantum.glossary#global-phase)而异。
+> 具体而言，这意味着 `T` 和 `R(PauliZ, PI() / 8, _)` 仅因无关的 [全局阶段](xref:microsoft.quantum.glossary#global-phase)而异。
 > 出于此原因，$T $ 有时称为 $ \frac{\pi} {8} $-入口。
 >
-> 另请注意，绕过的 `PauliI` 只是应用了 $ \phi/$2 的全局阶段。 尽管此类阶段与[概念文档](xref:microsoft.quantum.concepts.qubit)中的观点无关，但它们与受控旋转相关 `PauliI` 。
+> 另请注意，绕过的 `PauliI` 只是应用了 $ \phi/$2 的全局阶段。 尽管此类阶段与 [概念文档](xref:microsoft.quantum.concepts.qubit)中的观点无关，但它们与受控旋转相关 `PauliI` 。
 
 在量程算法中，将循环表达为 dyadic 分式通常非常有用，例如，对于某些 $k \in \mathbb{Z} $ 和 $n \in $，$ \phi = \pi k/2 ^ n $。
 <xref:microsoft.quantum.intrinsic.rfrac>操作使用此约定实现围绕指定 Pauli 轴的旋转。
 它与的不同之处在于， <xref:microsoft.quantum.intrinsic.r> 旋转角度指定为类型的两个输入 `Int` ，解释为 dyadic 分数。
 因此， `RFrac` 具有签名 `((Pauli, Int, Int, Qubit) => Unit is Adj + Ctl)` 。
 它实现 qubit single $ \exp (i \pi k \sigma/2 ^ n) $，其中 $ \sigma $ 是与第一个参数相对应的 Pauli 矩阵，$k $ 为第二个参数，而 $n $ 是第三个参数。
-`RFrac(_,k,n,_)`与相同 `R(_,-πk/2^n,_)` ; 请注意，角度是分数的*负值*。
+`RFrac(_,k,n,_)` 与相同 `R(_,-πk/2^n,_)` ; 请注意，角度是分数的 *负值* 。
 
 <xref:microsoft.quantum.intrinsic.rx>操作实现绕 $X Pauli $ axis 的旋转。
 签名 `((Double, Qubit) => Unit is Adj + Ctl)` 。
@@ -144,11 +144,11 @@ Hadamard 入口特别重要，因为它可用于创建 $ \ket {0} $ 和 $ \ket {
 
 <xref:microsoft.quantum.intrinsic.r1>操作按给定的量实现对 $ \ket {1} $ $Z $ 的 $-$1 eigenstate 的旋转。
 签名 `((Double, Qubit) => Unit is Adj + Ctl)` 。
-`R1(phi,_)`与后面的相同 `R(PauliZ,phi,_)` `R(PauliI,-phi,_)` 。
+`R1(phi,_)` 与后面的相同 `R(PauliZ,phi,_)` `R(PauliI,-phi,_)` 。
 
 <xref:microsoft.quantum.intrinsic.r1frac>操作按照 Z = 1 eigenstate 的给定量实现小数旋转。
 签名 `((Int,Int, Qubit) => Unit is Adj + Ctl)` 。
-`R1Frac(k,n,_)`与后面的相同 `RFrac(PauliZ,-k.n+1,_)` `RFrac(PauliI,k,n+1,_)` 。
+`R1Frac(k,n,_)` 与后面的相同 `RFrac(PauliZ,-k.n+1,_)` `RFrac(PauliI,k,n+1,_)` 。
 
 围绕 Pauli $Z $ axis (旋转操作的示例，在此实例中) 映射到 Bloch 球体，如下所示：
 
@@ -170,10 +170,10 @@ Hadamard 入口特别重要，因为它可用于创建 $ \ket {0} $ 和 $ \ket {
 <xref:microsoft.quantum.intrinsic.swap>操作交换两个 qubits 的量程状态。
 也就是说，它实现了单一矩阵 \begin{equation} \operatorname{SWAP} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 1 \end{bmatrix}。
 \end{equation} 的签名 `((Qubit, Qubit) => Unit is Adj + Ctl)` 。
-`SWAP(q1,q2)`等效于 `CNOT(q1, q2)` 后跟 `CNOT(q2, q1)` 和 then `CNOT(q1, q2)` 。
+`SWAP(q1,q2)` 等效于 `CNOT(q1, q2)` 后跟 `CNOT(q2, q1)` 和 then `CNOT(q1, q2)` 。
 
 > [!NOTE]
-> 交换门不同于*将变量*的元素与类型重新排列 `Qubit[]` 。
+> 交换门不同于 *将变量* 的元素与类型重新排列 `Qubit[]` 。
 > 应用 `SWAP(q1, q2)` 会导致对和所引用的 qubits 的状态进行更改 `q1` `q2` ，而 `let swappedRegister = [q2, q1];` 只会影响我们引用这些 qubits 的方式。
 > 此外， `(Controlled SWAP)([q0], (q1, q2))` 还允许 `SWAP` 在第三个 qubit 的状态下进行条件，我们无法通过重新排列元素来表示。
 > 受控交换门（也称为 Fredkin 入口）的强大功能足以包含所有传统计算。
@@ -202,14 +202,14 @@ Hadamard 入口特别重要，因为它可用于创建 $ \ket {0} $ 和 $ \ket {
 
 <xref:microsoft.quantum.intrinsic.measure>操作对指定的 Pauli 运算符产品中的一个或多个 qubits 执行联合度量。
 如果 Pauli 数组和 qubit 数组的长度不同，则操作将失败。
-`Measure`具有签名 `((Pauli[], Qubit[]) => Result)` 。
+`Measure` 具有签名 `((Pauli[], Qubit[]) => Result)` 。
 
 请注意，联合度量不同于分别测量每个 qubit。
 例如，考虑状态 $ \ket {11} = \ket {1} \otimes \Ket {1} = X\otimes X \ket {00} $。
 $Z 每个 _0 $ 和分别 _1 $ $Z，得到 $r _0 = $1 和 $r _1 = $1 的结果。
 $Z 度量 Z_1 $，则会得到一个结果 $r _ {\textrm{joint}} = $0，表示 $ \ket $ 的 pairity {11} 为正值。
 采用不同的方式： $ (-1) ^ {r_0 + r_1} = () ^ r_ {\textrm{joint}} ) $。
-严重的是，由于我们*只*会从此度量值中了解奇偶校验，因此将保留在 superposition 的 2 2-qubit 状态之间的任何量程信息 {00} {11} 。
+严重的是，由于我们 *只* 会从此度量值中了解奇偶校验，因此将保留在 superposition 的 2 2-qubit 状态之间的任何量程信息 {00} {11} 。
 此属性将在以后介绍错误更正。
 
 为方便起见，prelude 还提供了两个其他操作来测量 qubits。
@@ -219,7 +219,7 @@ $Z 度量 Z_1 $，则会得到一个结果 $r _ {\textrm{joint}} = $0，表示 $
 
 <xref:microsoft.quantum.measurement.multim>*分别*对每个 Qubits 数组的 Pauli $Z $ operator 进行度量，返回*array* `Result` 为每个 qubit 获取的值的数组。
 在某些情况下，这可以进行优化。 它 (签名 `Qubit[] => Result[])` 。
-`MultiM(qs)`等效于：
+`MultiM(qs)` 等效于：
 
 ```qsharp
 mutable rs = new Result[Length(qs)];

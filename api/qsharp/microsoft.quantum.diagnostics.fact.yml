@@ -4,6 +4,15 @@ name: Fact
 type: function
 namespace: Microsoft.Quantum.Diagnostics
 summary: 声明传统条件为 true。
+examples: >-
+  以下 Q # 代码段将失败：
+
+
+  ```Q#
+
+  Fact(false, "Expected true.");
+
+  ```
 syntax: 'function Fact (actual : Bool, message : String) : Unit'
 input:
   content: '(actual : Bool, message : String)'
@@ -24,9 +33,9 @@ output:
 seeAlso:
 - microsoft.quantum.diagnostics.contradiction
 metadata:
-  ms.openlocfilehash: 3cb098e622438a7a151cd2fb8958adfeade7b69c
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: 396b1b65e16aa2499d6a8ce9a16e29ede0716695
+  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84327486"
+  ms.lasthandoff: 08/25/2020
+  ms.locfileid: "88863315"
