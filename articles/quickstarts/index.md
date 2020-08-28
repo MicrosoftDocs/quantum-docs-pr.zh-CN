@@ -10,33 +10,33 @@ uid: microsoft.quantum.install
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 378970dc911ea5a794590f8336ffc6d3f9673285
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 3aafe78d5910027e2836f7dce72c064e75fc4436
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867567"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863711"
 ---
-# <a name="install-the-microsoft-quantum-development-kit-qdk"></a><span data-ttu-id="ca754-103">安装 Microsoft Quantum 开发工具包 (QDK)</span><span class="sxs-lookup"><span data-stu-id="ca754-103">Install the Microsoft Quantum Development Kit (QDK)</span></span>
+# <a name="install-the-microsoft-quantum-development-kit-qdk"></a><span data-ttu-id="76884-103">安装 Microsoft Quantum 开发工具包 (QDK)</span><span class="sxs-lookup"><span data-stu-id="76884-103">Install the Microsoft Quantum Development Kit (QDK)</span></span>
 
-<span data-ttu-id="ca754-104">了解如何安装 Microsoft Quantum 开发工具包 (QDK)，以便可以开始进行量子编程。</span><span class="sxs-lookup"><span data-stu-id="ca754-104">Learn how to install the Microsoft Quantum Development Kit (QDK), so that you can get started with quantum programming.</span></span> <span data-ttu-id="ca754-105">QDK 包括：</span><span class="sxs-lookup"><span data-stu-id="ca754-105">The QDK consists of:</span></span>
+<span data-ttu-id="76884-104">了解如何安装 Microsoft Quantum 开发工具包 (QDK)，以便可以开始进行量子编程。</span><span class="sxs-lookup"><span data-stu-id="76884-104">Learn how to install the Microsoft Quantum Development Kit (QDK), so that you can get started with quantum programming.</span></span> <span data-ttu-id="76884-105">QDK 包括：</span><span class="sxs-lookup"><span data-stu-id="76884-105">The QDK consists of:</span></span>
 
-- <span data-ttu-id="ca754-106">Q# 编程语言</span><span class="sxs-lookup"><span data-stu-id="ca754-106">The Q# programming language</span></span>
-- <span data-ttu-id="ca754-107">以 Q# 对复杂功能进行抽象化的一组库</span><span class="sxs-lookup"><span data-stu-id="ca754-107">A set of libraries that abstract complex functionality in Q#</span></span>
-- <span data-ttu-id="ca754-108">适用于 Python 和 .NET 语言（C#、F# 和 VB.NET）的 API，用于运行以 Q# 编写的量子程序</span><span class="sxs-lookup"><span data-stu-id="ca754-108">APIs for Python and .NET languages (C#, F#, and VB.NET) for running quantum programs written in Q#</span></span>
-- <span data-ttu-id="ca754-109">可帮助开发的工具</span><span class="sxs-lookup"><span data-stu-id="ca754-109">Tools to facilitate your development</span></span>
+- <span data-ttu-id="76884-106">Q# 编程语言</span><span class="sxs-lookup"><span data-stu-id="76884-106">The Q# programming language</span></span>
+- <span data-ttu-id="76884-107">以 Q# 对复杂功能进行抽象化的一组库</span><span class="sxs-lookup"><span data-stu-id="76884-107">A set of libraries that abstract complex functionality in Q#</span></span>
+- <span data-ttu-id="76884-108">适用于 Python 和 .NET 语言（C#、F# 和 VB.NET）的 API，用于运行以 Q# 编写的量子程序</span><span class="sxs-lookup"><span data-stu-id="76884-108">APIs for Python and .NET languages (C#, F#, and VB.NET) for running quantum programs written in Q#</span></span>
+- <span data-ttu-id="76884-109">可帮助开发的工具</span><span class="sxs-lookup"><span data-stu-id="76884-109">Tools to facilitate your development</span></span>
 
-<span data-ttu-id="ca754-110">可使用 Visual Studio Code 或 Visual Studio，或结合使用 Jupyter 笔记本和 IQ# Jupyter 内核将 Q# 程序作为独立的应用程序来运行。</span><span class="sxs-lookup"><span data-stu-id="ca754-110">Q# programs can run as standalone applications using Visual Studio Code or Visual Studio, or through Jupyter Notebooks with the IQ# Jupyter kernel.</span></span>
-<span data-ttu-id="ca754-111">它们也可与用 .NET 语言（通常是 C#）或 Python 编写的程序配对，让你能够从经典程序内部调用量子操作。</span><span class="sxs-lookup"><span data-stu-id="ca754-111">They can also be paired with a host program written in a .NET language (typically C#) or Python, enabling you to call quantum operations from inside a classical program.</span></span>
+<span data-ttu-id="76884-110">可使用 Visual Studio Code 或 Visual Studio，或结合使用 Jupyter 笔记本和 IQ# Jupyter 内核将 Q# 程序作为独立的应用程序来运行。</span><span class="sxs-lookup"><span data-stu-id="76884-110">Q# programs can run as standalone applications using Visual Studio Code or Visual Studio, or through Jupyter Notebooks with the IQ# Jupyter kernel.</span></span>
+<span data-ttu-id="76884-111">它们也可与用 .NET 语言（通常是 C#）或 Python 编写的程序配对，让你能够从经典程序内部调用量子操作。</span><span class="sxs-lookup"><span data-stu-id="76884-111">They can also be paired with a host program written in a .NET language (typically C#) or Python, enabling you to call quantum operations from inside a classical program.</span></span>
 
-<span data-ttu-id="ca754-112">在 [Q# 程序的运行方式](xref:microsoft.quantum.guide.host-programs)中，对其中每个设置的工作流都进行了描述和比较。</span><span class="sxs-lookup"><span data-stu-id="ca754-112">The workflows for each of these setups are described and compared at [Ways to run a Q# program](xref:microsoft.quantum.guide.host-programs).</span></span>
+<span data-ttu-id="76884-112">在 [Q# 程序的运行方式](xref:microsoft.quantum.guide.host-programs)中，对其中每个设置的工作流都进行了描述和比较。</span><span class="sxs-lookup"><span data-stu-id="76884-112">The workflows for each of these setups are described and compared at [Ways to run a Q# program](xref:microsoft.quantum.guide.host-programs).</span></span>
 
-<span data-ttu-id="ca754-113">要继续安装 QDK 并创建Q# 项目，请选择你的首选设置：</span><span class="sxs-lookup"><span data-stu-id="ca754-113">To proceed with installing the QDK and creating Q# projects, select your preferred setup:</span></span>
+<span data-ttu-id="76884-113">要继续安装 QDK 并创建Q# 项目，请选择你的首选设置：</span><span class="sxs-lookup"><span data-stu-id="76884-113">To proceed with installing the QDK and creating Q# projects, select your preferred setup:</span></span>
 
-<span data-ttu-id="ca754-114">[使用 Q# 命令行应用程序进行开发](xref:microsoft.quantum.install.standalone) - 若要从命令行使用 Q#，请选择此方法。</span><span class="sxs-lookup"><span data-stu-id="ca754-114">[Develop with Q# command line applications](xref:microsoft.quantum.install.standalone) - Choose this approach to work with Q# from the command line.</span></span> <span data-ttu-id="ca754-115">这不会像以下选项一样需要驱动程序或主机程序。</span><span class="sxs-lookup"><span data-stu-id="ca754-115">This does not require a driver or a host program like the below options.</span></span>
+<span data-ttu-id="76884-114">[使用 Q# 应用程序进行开发](xref:microsoft.quantum.install.standalone) - 选择此方法以便在命令提示符下使用 Q#。</span><span class="sxs-lookup"><span data-stu-id="76884-114">[Develop with Q# applications](xref:microsoft.quantum.install.standalone) - Choose this approach to work with Q# from the command prompt.</span></span> <span data-ttu-id="76884-115">这不会像以下选项一样需要驱动程序或主机程序。</span><span class="sxs-lookup"><span data-stu-id="76884-115">This does not require a driver or a host program like the below options.</span></span>
 
-<span data-ttu-id="ca754-116">[使用 Q# Jupyter 笔记本进行开发](xref:microsoft.quantum.install.jupyter) - 选择此环境可在包含嵌入文本的单元中运行 Q# 代码，或创建量子计算交互式教程。</span><span class="sxs-lookup"><span data-stu-id="ca754-116">[Develop with Q# Jupyter Notebooks](xref:microsoft.quantum.install.jupyter) - Select this environment to run Q# code in cells with embedded text or create quantum computing interactive tutorials.</span></span> 
+<span data-ttu-id="76884-116">[使用 Q# Jupyter 笔记本进行开发](xref:microsoft.quantum.install.jupyter) - 选择此环境可在包含嵌入文本的单元中运行 Q# 代码，或创建量子计算交互式教程。</span><span class="sxs-lookup"><span data-stu-id="76884-116">[Develop with Q# Jupyter Notebooks](xref:microsoft.quantum.install.jupyter) - Select this environment to run Q# code in cells with embedded text or create quantum computing interactive tutorials.</span></span> 
 
-<span data-ttu-id="ca754-117">[使用 Q# 和 Python 进行开发](xref:microsoft.quantum.install.python) - 让你能够将 Python 和 Q# 结合使用来创建可调用 Q# 操作的 Python 主机程序。</span><span class="sxs-lookup"><span data-stu-id="ca754-117">[Develop with Q# and Python](xref:microsoft.quantum.install.python) - Enables you to combine Python and Q# to create a Python host program that calls Q# operations.</span></span>
+<span data-ttu-id="76884-117">[使用 Q# 和 Python 进行开发](xref:microsoft.quantum.install.python) - 让你能够将 Python 和 Q# 结合使用来创建可调用 Q# 操作的 Python 主机程序。</span><span class="sxs-lookup"><span data-stu-id="76884-117">[Develop with Q# and Python](xref:microsoft.quantum.install.python) - Enables you to combine Python and Q# to create a Python host program that calls Q# operations.</span></span>
 
-<span data-ttu-id="ca754-118">[使用 Q# 和 .NET 进行开发](xref:microsoft.quantum.install.cs) - 将 C#、F# 或 VB.NET 与 Q# 结合使用来创建可调用 Q# 操作的 .NET 主机程序。</span><span class="sxs-lookup"><span data-stu-id="ca754-118">[Develop with Q# and .NET](xref:microsoft.quantum.install.cs) - Combine C#, F#, or VB.NET with Q# to create a .NET host program that calls Q# operations.</span></span>
+<span data-ttu-id="76884-118">[使用 Q# 和 .NET 进行开发](xref:microsoft.quantum.install.cs) - 将 C#、F# 或 VB.NET 与 Q# 结合使用来创建可调用 Q# 操作的 .NET 主机程序。</span><span class="sxs-lookup"><span data-stu-id="76884-118">[Develop with Q# and .NET](xref:microsoft.quantum.install.cs) - Combine C#, F#, or VB.NET with Q# to create a .NET host program that calls Q# operations.</span></span>
