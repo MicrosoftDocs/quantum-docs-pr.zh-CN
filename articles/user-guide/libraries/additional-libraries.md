@@ -9,12 +9,12 @@ uid: microsoft.quantum.libraries.using
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: c558e25bf0d906ba6480cd7c41d3ece4ea97c2d1
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 39bf7dc52f4670a6e4536efc437d001c96f9584a
+ms.sourcegitcommit: 11bd357baeb6ab53a402882979e75964d0869b57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863084"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88992133"
 ---
 # <a name="using-additional-no-locq-libraries"></a>使用其他 Q# 库
 
@@ -83,7 +83,7 @@ Install-Package Microsoft.Quantum.Numerics
 ## <a name="python-interoperability"></a>[Python 互操作性](#tab/tabid-python)
 
 
-可以通过使用方法，使其他包在 Python 主机程序中可供使用 [`qsharp.packages.add`](https://docs.microsoft.com/python/qsharp/qsharp.packages.packages) 。
+可以通过使用方法，使其他包在 Python 主机程序中可供使用 [`qsharp.packages.add`](https://docs.microsoft.com/python/qsharp-core/qsharp.packages.packages) 。
 例如，若要添加要在 I 笔记本中使用的 [**Microsoft 量子**](https://www.nuget.org/packages/Microsoft.Quantum.Numerics) 包 Q# ，请运行以下 Python 代码：
 
 ```python

@@ -9,22 +9,22 @@ uid: microsoft.quantum.machines.resources-estimator
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: d5338eb740716d9d7f408703347f572688bbccb2
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 1892431c3e332385a5bcefa357eb64a9fac3f381
+ms.sourcegitcommit: 11bd357baeb6ab53a402882979e75964d0869b57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868179"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88992235"
 ---
 # <a name="quantum-development-kit-qdk-resources-estimator"></a>量程开发工具包 (QDK) 资源估计器
 
 顾名思义，类会估算在 `ResourcesEstimator` 量程计算机上运行某一给定操作实例所需的资源 Q# 。 它通过执行量程操作来实现此操作，而无需实际模拟量子计算机的状态;出于此原因，它会估算 Q# 使用上千个 qubits 的操作的资源，前提是代码的传统部分在合理的时间内运行。
 
-资源估计器是在[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的基础上构建的，它提供了一组更丰富的指标和工具来帮助调试 Q# 程序。
+资源估计器是在 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的基础上构建的，它提供了一组更丰富的指标和工具来帮助调试 Q# 程序。
 
 ## <a name="invoking-and-running-the-resources-estimator"></a>调用和运行资源估计器
 
-可以使用资源估计器运行任何 Q# 操作。 有关更多详细信息，请参阅[运行 Q# 程序的方法](xref:microsoft.quantum.guide.host-programs)。
+可以使用资源估计器运行任何 Q# 操作。 有关更多详细信息，请参阅 [运行 Q# 程序的方法](xref:microsoft.quantum.guide.host-programs)。
 
 ### <a name="invoking-the-resources-estimator-from-c"></a>从 C 调用资源估计器# 
 
@@ -69,7 +69,7 @@ BorrowedWidth   0
 
 ### <a name="invoking-the-resources-estimator-from-python"></a>从 Python 调用资源估计器
 
-使用导入的操作在 Python 库中使用[estimate_resources ( # B1](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable)方法 Q# ：
+使用导入的操作在 Python 库中使用 [estimate_resources ( # B1 ](https://docs.microsoft.com/python/qsharp-core/qsharp.loader.qsharpcallable) 方法 Q# ：
 
 ```python
 qubit_result = myOperation.estimate_resources()
@@ -77,7 +77,7 @@ qubit_result = myOperation.estimate_resources()
 
 ### <a name="invoking-the-resources-estimator-from-the-command-line"></a>从命令行调用资源估计器
 
-在 Q# 从命令行运行程序时，使用 **--模拟器** (或 **-s**快捷) 参数来指定 `ResourcesEstimator` 目标计算机。 以下命令使用资源估计器运行程序： 
+在 Q# 从命令行运行程序时，使用 **--模拟器** (或 **-s** 快捷) 参数来指定 `ResourcesEstimator` 目标计算机。 以下命令使用资源估计器运行程序： 
 
 ```dotnetcli
 dotnet run -s ResourcesEstimator
@@ -85,7 +85,7 @@ dotnet run -s ResourcesEstimator
 
 ### <a name="invoking-the-resources-estimator-from-juptyer-notebooks"></a>从 Juptyer 笔记本调用资源估计器
 
-使用 I Q# 幻命令[% 估算](xref:microsoft.quantum.iqsharp.magic-ref.simulate)来运行 Q# 操作。
+使用 I Q# 幻命令 [% 估算](xref:microsoft.quantum.iqsharp.magic-ref.simulate) 来运行 Q# 操作。
 
 ```
 %estimate myOperation
@@ -123,22 +123,22 @@ namespace Quantum.MyProgram
 
 资源估计器跟踪以下度量值：
 
-|指标|描述|
+|指标|说明|
 |----|----|
 |__CNOT__    |操作的运行计数 `CNOT` (也称为受控 Pauli X 操作) 。|
 |__QubitClifford__ |任何单个 qubit Clifford 和 Pauli 操作的运行计数。|
 |度量     |任何度量值的运行计数。  |
 |__R__    |任何单 qubit 循环、不包括 `T` 、Clifford 和 Pauli 操作的运行计数。  |
 |__T__    |操作的运行计数 `T` 及其词干，包括 `T` 操作、T_x = 1xt-hy-ubw 和 T_y = 1Xt-hy-ubw。。  |
-|__Depth__|该操作运行的量程线路深度的下限 Q# 。 默认情况下，深度指标仅计算 `T` 入口。 有关更多详细信息，请参阅[深度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)。   |
-|Width    |运行操作期间分配的最大 qubits 数的下限 Q# 。 可能无法同时实现__深度__和__宽度__下限。  |
+|__Depth__|该操作运行的量程线路深度的下限 Q# 。 默认情况下，深度指标仅计算 `T` 入口。 有关更多详细信息，请参阅 [深度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)。   |
+|Width    |运行操作期间分配的最大 qubits 数的下限 Q# 。 可能无法同时实现 __深度__ 和 __宽度__ 下限。  |
 |__BorrowedWidth__    |操作中借用的最大 qubits 数 Q# 。  |
 
 ## <a name="providing-the-probability-of-measurement-outcomes"></a>提供测量结果的概率
 
-您可以使用 <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> <xref:microsoft.quantum.diagnostics> 命名空间中的来提供有关测量操作预期概率的信息。 有关详细信息，请参阅[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)
+您可以使用 <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> <xref:microsoft.quantum.diagnostics> 命名空间中的来提供有关测量操作预期概率的信息。 有关详细信息，请参阅 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)
 - [量子 Toffoli 模拟器](xref:microsoft.quantum.machines.toffoli-simulator)

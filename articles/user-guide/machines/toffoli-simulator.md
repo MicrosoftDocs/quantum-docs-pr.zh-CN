@@ -9,22 +9,22 @@ uid: microsoft.quantum.machines.toffoli-simulator
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 8a981645703423856e667be7c3dccf5270a5885f
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 6a0885035c12a99ae43533f04cdc95c5c529380a
+ms.sourcegitcommit: 11bd357baeb6ab53a402882979e75964d0869b57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868094"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88992201"
 ---
 # <a name="quantum-development-kit-qdk-toffoli-simulator"></a>量程开发工具包 (QDK) Toffoli 模拟器
 
 QDK Toffoli 模拟器是一种特殊用途的模拟器，其作用域有限，只支持 `X` 、 `CNOT` 和多受控 `X` 量程操作。 所有传统逻辑和计算都可用。
 
-尽管 Toffoli 模拟器比[完整状态模拟器](xref:microsoft.quantum.machines.full-state-simulator)更受限制，但它的优势是能够模拟更多 qubits。 Toffoli 模拟器可用于数百万 qubits，而完整状态模拟器仅限约 30 qubits。 这很有用，例如，使用 oracles 来计算布尔函数，它们可以使用有限的一组受支持的算法来实现，并在大量 qubits 上测试。
+尽管 Toffoli 模拟器比 [完整状态模拟器](xref:microsoft.quantum.machines.full-state-simulator)更受限制，但它的优势是能够模拟更多 qubits。 Toffoli 模拟器可用于数百万 qubits，而完整状态模拟器仅限约 30 qubits。 这很有用，例如，使用 oracles 来计算布尔函数，它们可以使用有限的一组受支持的算法来实现，并在大量 qubits 上测试。
 
 ## <a name="invoking-the-toffoli-simulator"></a>调用 Toffoli 模拟器
 
-通过类公开 Toffoli 模拟器 `ToffoliSimulator` 。 有关更多详细信息，请参阅[运行 Q# 程序的方法](xref:microsoft.quantum.guide.host-programs)。
+通过类公开 Toffoli 模拟器 `ToffoliSimulator` 。 有关更多详细信息，请参阅 [运行 Q# 程序的方法](xref:microsoft.quantum.guide.host-programs)。
 
 ### <a name="invoking-the-toffoli-simulator-from-c"></a>从 C 调用 Toffoli 模拟器#
 
@@ -40,7 +40,7 @@ QDK Toffoli 模拟器是一种特殊用途的模拟器，其作用域有限，�
 
 ### <a name="invoking-the-toffoli-simulator-from-python"></a>从 Python 调用 Toffoli 模拟器
 
-使用导入的操作在 Python 库中使用[toffoli_simulate ( # B1](https://docs.microsoft.com/python/qsharp/qsharp.loader.qsharpcallable)方法 Q# ：
+使用导入的操作在 Python 库中使用 [toffoli_simulate ( # B1 ](https://docs.microsoft.com/python/qsharp-core/qsharp.loader.qsharpcallable) 方法 Q# ：
 
 ```python
 qubit_result = myOperation.toffoli_simulate()
@@ -48,7 +48,7 @@ qubit_result = myOperation.toffoli_simulate()
 
 ### <a name="invoking-the-toffoli-simulator-from-the-command-line"></a>从命令行调用 Toffoli 模拟器
 
-在 Q# 从命令行运行程序时，使用 **--模拟器** (或 **-s**快捷) 参数来指定 Toffoli 模拟器目标计算机。 以下命令使用资源估计器运行程序： 
+在 Q# 从命令行运行程序时，使用 **--模拟器** (或 **-s** 快捷) 参数来指定 Toffoli 模拟器目标计算机。 以下命令使用资源估计器运行程序： 
 
 ```dotnetcli
 dotnet run -s ToffoliSimulator
@@ -56,7 +56,7 @@ dotnet run -s ToffoliSimulator
 
 ### <a name="invoking-the-toffoli-simulator-from-juptyer-notebooks"></a>从 Juptyer 笔记本调用 Toffoli 模拟器
 
-使用 I Q# 幻命令[% toffoli](xref:microsoft.quantum.iqsharp.magic-ref.toffoli)运行 Q# 操作。
+使用 I Q# 幻命令 [% toffoli](xref:microsoft.quantum.iqsharp.magic-ref.toffoli) 运行 Q# 操作。
 
 ```
 %toffoli myOperation
@@ -67,8 +67,8 @@ dotnet run -s ToffoliSimulator
 Toffoli 模拟器支持：
 
 * `R` `Exp` 当结果操作等于或标识矩阵时，旋转和指数化 Paulis （如和） `X` 。
-* 度量和[断言](xref:microsoft.quantum.diagnostics.assertmeasurement)操作，但仅在 Pauli `Z` 基础中。 请注意，度量操作的概率始终为**0**或**1**;Toffoli 模拟器中没有随机性。
-* `DumpMachine`和 `DumpRegister` 函数。
+* 度量和 [断言](xref:microsoft.quantum.diagnostics.assertmeasurement) 操作，但仅在 Pauli `Z` 基础中。 请注意，度量操作的概率始终为 **0** 或 **1**;Toffoli 模拟器中没有随机性。
+* `DumpMachine` 和 `DumpRegister` 函数。
 这两个函数输出 `Z` 每个 qubit 的当前基础状态，每行一个 qubit。
 
 ## <a name="specifying-the-number-of-qubits"></a>指定 qubits 数
@@ -84,7 +84,7 @@ Toffoli 模拟器支持：
     var res = myLargeOperation.Run(sim).Result;
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [量程资源估计器](xref:microsoft.quantum.machines.resources-estimator)
 - [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)

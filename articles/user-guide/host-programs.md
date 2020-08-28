@@ -9,12 +9,12 @@ uid: microsoft.quantum.guide.host-programs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: e44a366b7eea133499beb44dbb338a02174c0073
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: f1eca44dabd72cd107d72d3b9e3ad1081c19c27d
+ms.sourcegitcommit: 11bd357baeb6ab53a402882979e75964d0869b57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863199"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88992184"
 ---
 # <a name="ways-to-run-a-no-locq-program"></a>运行程序的方式 Q#
 
@@ -346,7 +346,7 @@ Multiple qubits:
 
 默认情况下，该 `import qsharp` 命令 `.qs` 会加载当前文件夹中的所有文件，并使其 Q# 操作和函数可供在 Python 脚本中使用。
 
-若要 Q# 从其他文件夹加载代码，可以使用[ `qsharp.projects` API](https://docs.microsoft.com/python/qsharp/qsharp.projects.projects)来添加对项目的引用 `.csproj` Q# (即引用) 的项目 `Microsoft.Quantum.Sdk` 。
+若要 Q# 从其他文件夹加载代码，可以使用[ `qsharp.projects` API](https://docs.microsoft.com/python/qsharp-core/qsharp.projects.projects)来添加对项目的引用 `.csproj` Q# (即引用) 的项目 `Microsoft.Quantum.Sdk` 。
 此命令将编译 `.qs` 包含及其子文件夹的文件夹中的任何文件 `.csproj` 。 它还会以递归方式加载通过 `PackageReference` 或 Q# 通过该文件引用的项目引用的任何包 `ProjectReference` `.csproj` 。
 
 例如，以下 Python 代码将导入外部项目，并引用其相对于当前文件夹的路径，并调用其 Q# 操作之一：
@@ -365,7 +365,7 @@ Adding reference to project: ../qrng/Qrng.csproj
 Qrng result: 0
 ```
 
-若要加载包含代码的外部包 Q# ，请使用[ `qsharp.packages` API](https://docs.microsoft.com/python/qsharp/qsharp.packages.packages)。
+若要加载包含代码的外部包 Q# ，请使用[ `qsharp.packages` API](https://docs.microsoft.com/python/qsharp-core/qsharp.packages.packages)。
 
 如果 Q# 当前文件夹中的代码依赖于外部项目或包，则在运行时可能会看到错误 `import qsharp` ，因为尚未加载依赖关系。
 若要在命令期间加载所需的外部包或 Q# 项目 `import qsharp` ，请确保具有 Python 脚本的文件夹包含 `.csproj` 引用的文件 `Microsoft.Quantum.Sdk` 。 在这种情况 `.csproj` 下，将属性添加 `<IQSharpLoadAutomatically>true</IQSharpLoadAutomatically>` 到中 `<PropertyGroup>` 。 这将指示我在 Q# 命令过程中以递归方式加载 `ProjectReference` `PackageReference` 在中找到的任何或项 `.csproj` `import qsharp` 。
@@ -439,7 +439,7 @@ using NamespaceName;                              // make the Q# namespace avail
 await <callable>.Run(<simulator>);
 ```
 
-#### <a name="arguments"></a>参数
+#### <a name="arguments"></a>自变量
 
 可调用的任何参数 Q# 只是作为附加参数传递叫目标计算机。
 因此， `MeasureSuperpositionArray` qubits 上的结果 `n=4` 将通过 

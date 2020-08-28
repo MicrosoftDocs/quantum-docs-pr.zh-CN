@@ -9,12 +9,12 @@ uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f94c20281c5a242aac6a731a5091264dc2847712
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 70d0c9b61e49d4ee6142edbe2767310403885f01
+ms.sourcegitcommit: 11bd357baeb6ab53a402882979e75964d0869b57
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863770"
+ms.lasthandoff: 08/27/2020
+ms.locfileid: "88992252"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -32,7 +32,7 @@ ms.locfileid: "88863770"
 
 - 新的[Microsoft 量子命名空间](xref:microsoft.quantum.random)，提供更方便的方法来从程序内采样随机值。 Q#  ([QuantumLibraries # 311](https://github.com/microsoft/QuantumLibraries/pull/311)， [qsharp # 328](https://github.com/microsoft/qsharp-runtime/pull/328)) 
 - 改进了带有新[ `DumpOperation` 操作](xref:microsoft.quantum.diagnostics.dumpoperation)的[Microsoft 量子命名空间](xref:microsoft.quantum.diagnostics)，以及用于限制 qubit 分配和 oracle 调用的新操作。  ([QuantumLibraries # 302](https://github.com/microsoft/QuantumLibraries/pull/302)) 
-- 在[ `%project` ](xref:microsoft.quantum.iqsharp.magic-ref.project)我 Q# 和 Python 中的[ `qsharp.projects` API](https://docs.microsoft.com/python/qsharp/qsharp.projects.projects)中新建神奇命令，以支持对 Q# 当前工作区文件夹之外的项目的引用。 有关此功能的当前限制，请参阅 [iqsharp # 277](https://github.com/microsoft/iqsharp/issues/277) 。 
+- 在[ `%project` ](xref:microsoft.quantum.iqsharp.magic-ref.project)我 Q# 和 Python 中的[ `qsharp.projects` API](https://docs.microsoft.com/python/qsharp-core/qsharp.projects.projects)中新建神奇命令，以支持对 Q# 当前工作区文件夹之外的项目的引用。 有关此功能的当前限制，请参阅 [iqsharp # 277](https://github.com/microsoft/iqsharp/issues/277) 。 
 - 支持自动加载 `.csproj` I Q# /Python 主机的文件，这允许在初始化时加载外部项目或包引用。 有关更多详细信息，请参阅使用[ Q# Python 和 Jupyter 笔记本](xref:microsoft.quantum.guide.host-programs)的指南。
 - 添加了 ErrorCorrection 示例。
 - 向 SimpleIsing 添加了可调式耦合。
