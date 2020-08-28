@@ -38,10 +38,14 @@
   name: '%package magic 命令'
 - href: performance.md
   name: '%performance magic 命令'
+- href: project.md
+  name: '%project magic 命令'
 - href: simulate.md
   name: '%simulate magic 命令'
 - href: toffoli.md
   name: '%toffoli magic 命令'
+- href: trace.md
+  name: '%trace magic 命令'
 - href: who.md
   name: '%who magic 命令'
 - href: workspace.md

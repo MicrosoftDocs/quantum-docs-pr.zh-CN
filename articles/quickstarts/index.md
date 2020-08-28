@@ -10,12 +10,12 @@ uid: microsoft.quantum.install
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 378970dc911ea5a794590f8336ffc6d3f9673285
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 3aafe78d5910027e2836f7dce72c064e75fc4436
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867567"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863711"
 ---
 # <a name="install-the-microsoft-quantum-development-kit-qdk"></a>安装 Microsoft Quantum 开发工具包 (QDK)
 
@@ -33,7 +33,7 @@ ms.locfileid: "87867567"
 
 要继续安装 QDK 并创建Q# 项目，请选择你的首选设置：
 
-[使用 Q# 命令行应用程序进行开发](xref:microsoft.quantum.install.standalone) - 若要从命令行使用 Q#，请选择此方法。 这不会像以下选项一样需要驱动程序或主机程序。
+[使用 Q# 应用程序进行开发](xref:microsoft.quantum.install.standalone) - 选择此方法以便在命令提示符下使用 Q#。 这不会像以下选项一样需要驱动程序或主机程序。
 
 [使用 Q# Jupyter 笔记本进行开发](xref:microsoft.quantum.install.jupyter) - 选择此环境可在包含嵌入文本的单元中运行 Q# 代码，或创建量子计算交互式教程。 
 
