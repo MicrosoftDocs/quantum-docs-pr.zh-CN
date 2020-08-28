@@ -2,7 +2,7 @@
   items:
     - name: API 参考
       href: index.md
-    - name: 'Q# 库'
+    - name: Q# 库
       topicHref: qsharp/index.md
       href: qsharp/toc.yml
     - name: .NET 库
@@ -14,6 +14,6 @@
         - name: 量子化学
           href: 'https://docs.microsoft.com/dotnet/api/microsoft.quantum.chemistry'
     - name: Python 库
-      href: 'https://docs.microsoft.com/python/qsharp'
-    - name: 'IQ# magic 命令'
+      href: 'https://docs.microsoft.com/python/qsharp-core/qsharp'
+    - name: IQ# magic 命令
       href: iqsharp-magic/toc.yml
