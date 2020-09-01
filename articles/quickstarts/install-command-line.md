@@ -1,5 +1,5 @@
 ---
-title: 使用 Q# 命令行应用程序进行开发
+title: 使用 Q# 应用程序进行开发
 author: KittyYeungQ
 ms.author: kitty
 ms.date: 4/24/2020
@@ -9,14 +9,14 @@ uid: microsoft.quantum.install.standalone
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 630dc7b8acf2dd8f258eb27dfbc367b812cd1c19
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 6a287dd76162a05d72af7e9d1e46533425283e2a
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867601"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863667"
 ---
-# <a name="develop-with-no-locq-command-line-applications"></a>使用 Q# 命令行应用程序进行开发
+# <a name="develop-with-no-locq-applications"></a>使用 Q# 应用程序进行开发
 
 Q# 程序可自己执行，无需采用 C#、F# 或 Python 等主机语言的驱动程序。
 
@@ -26,7 +26,7 @@ Q# 程序可自己执行，无需采用 C#、F# 或 Python 等主机语言的驱
 
 ## <a name="installation"></a>安装
 
-在任何 IDE 中构建 Q# 命令行应用程序时，建议使用 Visual Studio Code (VS Code) 或 Visual Studio IDE 在本地开发 Q# 应用程序。 若要通过 Web 浏览器在云中开发，建议使用 Visual Studio Codespaces。 在这些环境中开发涉及到丰富的 QDK 扩展功能，其中包括警告、语法突出显示和项目模板等。 
+在任何 IDE 中构建 Q# 应用程序时，建议使用 Visual Studio Code (VS Code) 或 Visual Studio IDE 在本地开发 Q# 应用程序。 若要通过 Web 浏览器在云中开发，建议使用 Visual Studio Codespaces。 在这些环境中开发涉及到丰富的 QDK 扩展功能，其中包括警告、语法突出显示和项目模板等。 
 
 配置 VS Code：
 
@@ -45,7 +45,7 @@ Q# 程序可自己执行，无需采用 C#、F# 或 Python 等主机语言的驱
 3. 现可启动新环境，通过 [VS Codespaces Cloud IDE](https://online.visualstudio.com/environments) 在浏览器中开始开发。 或者，可使用 VS Code 的本地安装并将 Codespaces 用作[远程环境](https://docs.microsoft.com/visualstudio/online/how-to/vscode)。
 
 
-若要为另一环境安装 QDK，请输入命令行：
+若要为另一环境安装 QDK，请在命令提示符处输入：
 
 ```dotnetcli
 dotnet new -i Microsoft.Quantum.ProjectTemplates
@@ -94,7 +94,7 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 > [!NOTE]
 > 如果一个 Visual Studio 解决方案中具有多个项目，解决方案中包含的所有项目都需要位于解决方案所在的同一文件夹中，或位于其中一个子文件夹中。  
 
-### <a name="other-editors-with-the-command-line"></a>[其他使用命令行的编辑器](#tab/tabid-cmdline)
+### <a name="other-editors-with-the-command-prompt"></a>[其他使用命令提示符的编辑器](#tab/tabid-cmdline)
 
 创建 Q# `Hello World` 应用程序来验证安装项。
 

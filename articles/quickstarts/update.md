@@ -10,12 +10,12 @@ uid: microsoft.quantum.update
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: dd7360961aa728a6aa63b8d8c4e4840f5bf2afe8
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 84782d1628dd100c0939b2b12aa0a9aa8ab2b80e
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866751"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863647"
 ---
 # <a name="update-the-microsoft-quantum-development-kit-qdk"></a>更新 Microsoft Quantum 开发工具包 (QDK)
 
@@ -37,7 +37,7 @@ ms.locfileid: "87866751"
     dotnet --version
     ```
 
-    验证输出为 `3.1.100` 或更高版本。 如果未安装，请安装[最新版](https://dotnet.microsoft.com/download)并再次检查。 然后根据自己的设置（Visual Studio、Visual Studio Code 或直接使用命令行）按照以下说明操作。
+    验证输出为 `3.1.100` 或更高版本。 如果未安装，请安装[最新版](https://dotnet.microsoft.com/download)并再次检查。 然后，根据自己的设置（Visual Studio、Visual Studio Code 或直接使用命令提示符）按照以下说明操作。
 
 ### <a name="update-no-locq-projects-in-visual-studio"></a>更新 Visual Studio 中的 Q# 项目
  
@@ -84,9 +84,9 @@ ms.locfileid: "87866751"
 
 1. 在 Visual Studio Code 中，打开包含要更新的项目的文件夹。
 2. 选择“终端” -> “新终端” 。
-3. 按照使用命令行进行更新的相关说明进行操作（如下所示）。
+3. 按照使用命令提示符进行更新的相关说明操作（如下所示）。
 
-### <a name="update-no-locq-projects-using-the-command-line"></a>使用命令行更新 Q# 项目
+### <a name="update-no-locq-projects-using-the-command-prompt"></a>使用命令提示符更新 Q# 项目
 
 1. 导航到包含主项目文件的文件夹。
 
@@ -309,13 +309,13 @@ Q# 项目已更新，现请按照下面的说明更新 QDK。
 
 1. 更新适用于 .NET 的 Quantum 项目模板
 
-    通过命令行：
+    从命令提示符：
 
     ```dotnetcli
     dotnet new -i Microsoft.Quantum.ProjectTemplates
     ```
 
-   如果计划使用命令行模板，并且已经安装 VS Code QDK 扩展，可从扩展本身更新项目模板：
+   如果计划使用命令行模板，并且已安装 VS Code QDK 扩展，可从扩展本身更新项目模板：
 
    - [更新 QDK 扩展](#update-vs-code-qdk-extension)
    - 在 VS Code 中，转到“视图” -> “命令面板” 

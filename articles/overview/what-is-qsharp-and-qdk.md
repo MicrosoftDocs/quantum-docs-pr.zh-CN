@@ -9,12 +9,12 @@ uid: microsoft.quantum.overview.q-sharp
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 3ee9e897eb142bbc9503a617cc3e25c1a665ff35
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 5db574b0380ffa1616cb3959d84925854df4e321
+ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866938"
+ms.lasthandoff: 08/25/2020
+ms.locfileid: "88863776"
 ---
 # <a name="what-are-the-no-locq-programming-language-and-qdk"></a>什么是 Q# 编程语言和 QDK？
 
@@ -24,7 +24,7 @@ Q# 是用于开发和运行量子算法的 Microsoft 开放源代码编程语言
 
 ## <a name="what-can-i-do-with-the-qdk"></a>QDK 有什么作用？
 
-QDK 是功能完善的 Q# 开发工具包，可与常用工具和语言结合使用来开发可在各种环境中运行的量子应用程序。 Q# 程序可通过 Jupyter Notebook 以命令行应用的形式运行，也可使用 Python 或 .NET 主机程序运行。
+QDK 是功能完善的 Q# 开发工具包，可与常用工具和语言结合使用来开发可在各种环境中运行的量子应用程序。 Q# 程序可通过 Jupyter 笔记本以控制台应用程序的形式运行，也可使用 Python 或 .NET 主机程序运行。
 
 ### <a name="develop-in-common-tools-and-environments"></a>在常用工具和环境中进行开发
 
@@ -48,7 +48,7 @@ QDK 是功能完善的 Q# 开发工具包，可与常用工具和语言结合使
 
 ## <a name="how-does-no-locq-work"></a>Q# 是如何工作的？
 
-Q# 程序可编译为独立的命令行应用程序，也可由使用 Python 或 .NET 语言编写的主机程序调用。
+Q# 程序可编译为独立的应用程序，也可由使用 Python 或 .NET 语言编写的主机程序调用。
 
 编译并运行该程序时，它将创建量子模拟器的实例，并向其传递 Q# 代码。 该模拟器使用 Q# 代码创建量子比特（量子粒子的模拟）并应用转换来修改其状态。 然后将模拟器中的量子操作结果返回到程序。  
 
@@ -60,7 +60,7 @@ Q# 程序可编译为独立的命令行应用程序，也可由使用 Python 或
 
 编写和运行 Q# 程序所需的一切（包括 Q# 编译器、Q#库和量子模拟器）都可以在本地计算机上安装和运行。 最终，你将能够在实际的量子计算机上远程运行 Q# 程序，但在此之前，可借助 QDK 随附的量子模拟器提供准确而可靠的结果。
 
-- 要实现入门，最快的方式是[通过命令行运行 Q#](xref:microsoft.quantum.install.standalone)。
+- 要实现入门，最快的方式是开发 [Q# 应用程序](xref:microsoft.quantum.install.standalone)。
 
 - [运行使用 IQ# 的独立 Jupyter Notebooks](xref:microsoft.quantum.install.jupyter)，这是用于编译、模拟和可视化 Q# 程序的 Jupyter 扩展。
 
