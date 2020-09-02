@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.applyreversedopleca
 name: ApplyReversedOpLECA
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 应用一个操作，该操作将使用大字节序格式对无符号整数进行寄存器编码。
 syntax: 'operation ApplyReversedOpLECA (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Ctl + Adj), register : Microsoft.Quantum.Arithmetic.BigEndian) : Unit'
 input:
@@ -37,9 +37,9 @@ seeAlso:
 - applyreversedoplea
 - applyreversedoplec
 metadata:
-  ms.openlocfilehash: 117d4ab3ac176ce46d860d931c1961e602c23cf9
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d922f3083287689c7094f186754baf10806d1e7d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672834"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342578"

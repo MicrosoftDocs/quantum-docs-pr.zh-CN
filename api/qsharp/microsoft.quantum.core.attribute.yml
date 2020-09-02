@@ -2,13 +2,13 @@
 uid: microsoft.quantum.core.attribute
 name: Attribute
 type: newtype
-namespace: Microsoft.Quantum.Core
+namespace: microsoft.quantum.core
 summary: 编译器可识别的属性，用于将用户定义的类型标记为属性。
 syntax: newtype Attribute = Unit;
 metadata:
-  ms.openlocfilehash: 914a6931955c5f4afb0c7b751bc7bd3687a9d2a3
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 45ae9bf7acc13149637131781cfd7b0effa7234b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85885793"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89343038"

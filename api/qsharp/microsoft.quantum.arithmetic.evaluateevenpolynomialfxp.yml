@@ -2,14 +2,14 @@
 uid: microsoft.quantum.arithmetic.evaluateevenpolynomialfxp
 name: EvaluateEvenPolynomialFxP
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 计算定点表示形式的偶数。
 syntax: 'operation EvaluateEvenPolynomialFxP (coefficients : Double[], fpx : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
 input:
   content: '(coefficients : Double[], fpx : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint)'
   types:
   - name: coefficients
-    summary: 作为 double 数组的偶数的系数，即数组 $ [a_0，a_1，...，a_k] $ 用于偶多项式 $P （x） = a_0 + a_1 x ^ 2 + \cdots + a_k x ^ {2k} $。
+    summary: 作为 double 数组的偶数的系数，即数组 $ [a_0，a_1，...，a_k] $ for 偶数 $P (x) = a_0 + a_1 x ^ 2 + \cdots + a_k x ^ {2k} $。
     isArray: true
     isPrimitive: true
     uid: Double
@@ -17,7 +17,7 @@ input:
     summary: 为其计算多项式的定点数。
     uid: microsoft.quantum.arithmetic.fixedpoint
   - name: result
-    summary: 输出固定点数，其中包含 $P （x） $。 最初必须处于 $ \ket{0}$ 状态。
+    summary: 将保留 $P (x) $ 的定点数。 最初必须处于 $ \ket {0} $ 状态。
     uid: microsoft.quantum.arithmetic.fixedpoint
 output:
   content: Unit
@@ -28,9 +28,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: dca40d385ca3f63d40e68db4e5cc8b4031990b9a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2e7e690e50e8cd621d794e8461ebde49c33ee104
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679669"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342884"

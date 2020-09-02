@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.sampled
 name: Sampled
 type: function
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 使用给定的计划来采集给定数组的示例。
 syntax: "function Sampled (schedule : Microsoft.Quantum.MachineLearning.SamplingSchedule, values : 'T[]) : 'T[]"
 input:
@@ -24,9 +24,9 @@ output:
     uid: "'T"
     isLocal: true
 metadata:
-  ms.openlocfilehash: 5aae83e08e441d1cebb07d1c0f9396af5943643b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7529f454422520298359f1da64b8ac690e5c71e7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684418"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335761"

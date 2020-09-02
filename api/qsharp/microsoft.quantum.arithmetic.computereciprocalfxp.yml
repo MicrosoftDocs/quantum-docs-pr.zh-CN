@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.computereciprocalfxp
 name: ComputeReciprocalFxP
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 计算固定点数字的 $ 1/x $ $x $。
 syntax: 'operation ComputeReciprocalFxP (x : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
 input:
@@ -23,9 +23,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 0e83dd761908cf51d4d1a876cd6ca30256e1c1cb
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: cb49c6e8e0173c7fa601e15ef4052c111067e660
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679736"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342967"

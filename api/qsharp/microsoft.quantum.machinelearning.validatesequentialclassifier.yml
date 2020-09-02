@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.validatesequentialclassifier
 name: ValidateSequentialClassifier
 type: operation
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 针对给定的一组预标记的示例，对给定的顺序分类器进行验证。
 syntax: 'operation ValidateSequentialClassifier (model : Microsoft.Quantum.MachineLearning.SequentialModel, samples : Microsoft.Quantum.MachineLearning.LabeledSample[], tolerance : Double, nMeasurements : Int, validationSchedule : Microsoft.Quantum.MachineLearning.SamplingSchedule) : Microsoft.Quantum.MachineLearning.ValidationResults'
 input:
@@ -32,9 +32,9 @@ output:
   - summary: 给定验证的结果。
     uid: microsoft.quantum.machinelearning.validationresults
 metadata:
-  ms.openlocfilehash: e031630fd11ae7f230343513d3d5fc8d2b25a9c3
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: ac8aece2eb0c325109ddd081f7af82a4b5bbba51
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85885852"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335455"

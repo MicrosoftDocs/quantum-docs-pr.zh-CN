@@ -2,10 +2,10 @@
 uid: microsoft.quantum.machinelearning.trainingoptions
 name: TrainingOptions
 type: newtype
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 用于训练量子分类器的选项的集合。
 remarks: >-
-  不应直接创建此 UDT，而应通过调用@"microsoft.quantum.machinelearning.defaulttrainingoptions"并使用`w/`运算符重写不同的默认值来指定它。
+  不应直接创建此 UDT，而应通过调用 @"microsoft.quantum.machinelearning.defaulttrainingoptions" 并使用 `w/` 运算符重写不同的默认值来指定它。
 
 
   例如，若要使用100000度量值和最多8个定型时期：
@@ -20,9 +20,9 @@ remarks: >-
 syntax: newtype TrainingOptions = (Double, Double, Int, Int, Int, Int, Double, Int, (String -> Unit));
 references: '- [arXiv:1804.00633](https://arxiv.org/abs/1804.00633)'
 metadata:
-  ms.openlocfilehash: b8a24b0a9e036c0a6c1eea229ca76d62e400fde8
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e9020ee77dbad438c06e6504416303968ec5bba3
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684334"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335506"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.nmisclassifications
 name: NMisclassifications
 type: function
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 给定一组推断标签和一组正确标签，返回每组标签不同的索引数。
 examples: >-
   ```Q#
@@ -27,13 +27,13 @@ input:
 output:
   content: Int
   types:
-  - summary: 索引`idx`的数目`inferredLabels[idx] != actualLabels[idx]`。
+  - summary: 索引的数目 `idx` `inferredLabels[idx] != actualLabels[idx]` 。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 0fb65949c86d41412148ae9fc8cda993c518e9e9
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6cdc97f48ed8ecca1d7d347b5fbfc6f36326ed55
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684452"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335812"

@@ -2,8 +2,8 @@
 uid: microsoft.quantum.math.abscomplexpolar
 name: AbsComplexPolar
 type: function
-namespace: Microsoft.Quantum.Math
-summary: 返回类型`ComplexPolar`的复数的绝对值。
+namespace: microsoft.quantum.math
+summary: 返回类型的复数的绝对值 `ComplexPolar` 。
 syntax: 'function AbsComplexPolar (input : Microsoft.Quantum.Math.ComplexPolar) : Double'
 input:
   content: '(input : Microsoft.Quantum.Math.ComplexPolar)'
@@ -18,9 +18,9 @@ output:
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 07d4658e9c77475c7045c36bd881088313aaaf8a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: eb7648b627962e2ef068b638d120e37df6b9fa00
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685376"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335370"

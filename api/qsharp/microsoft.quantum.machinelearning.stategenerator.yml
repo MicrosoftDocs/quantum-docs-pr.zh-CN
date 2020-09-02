@@ -2,13 +2,13 @@
 uid: microsoft.quantum.machinelearning.stategenerator
 name: StateGenerator
 type: newtype
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 描述为顺序分类器准备给定输入的操作。
 syntax: newtype StateGenerator = (Int, (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj + Ctl));
 metadata:
-  ms.openlocfilehash: 35e822ecdd1a837058ed0a969be861a2bd0285b2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: f5648863bfdda02e868c9163beb619782de353b4
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684351"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335591"

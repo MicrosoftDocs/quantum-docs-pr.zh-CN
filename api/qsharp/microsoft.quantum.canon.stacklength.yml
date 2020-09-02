@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.stacklength
 name: StackLength
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: StackLength 已被弃用。
 syntax: 'function StackLength (stack : Microsoft.Quantum.Canon.ResultStack) : Int'
 input:
@@ -16,9 +16,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 08ba4ed27fea1c6d249b022c64cc0252bcc1ebae
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 66182337705bda2fe607076af5ae7a3af12cc288
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678203"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355243"

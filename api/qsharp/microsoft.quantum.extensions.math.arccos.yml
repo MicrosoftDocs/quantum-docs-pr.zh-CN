@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.arccos
 name: ArcCos
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: ArcCos 已被弃用。 请改用 @"microsoft.quantum.math.arccos"。
 syntax: 'function ArcCos (theta : Double) : Double'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: d7a00a44e9fc37bf389ec110075e0afea1308b33
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 148e491dc8bcd053bc8fd987df4bbf5ad690e391
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681939"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348698"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.applymajorityinplace
 name: ApplyMajorityInPlace
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   在 qubits 的收银机上就地应用三个 qubit 多数操作。
 
@@ -10,7 +10,7 @@ summary: >-
   此操作计算 3 qubits 上就地的函数。
 
 
-  如果我们将 output qubit 表示为 $z $ 和输入 qubits 作为 $x $ 和 $y $，则该操作将执行以下转换： $ \ket{xyz} \rightarrow \ket{x \oplus z} \ket{y \oplus z} \ket{\operatorname{MAJ} （x，y，z）} $。
+  如果我们将 output qubit 表示为 $z $ 和输入 qubits 作为 $x $ 和 $y $，则该操作将执行以下转换： $ \ket{xyz} \rightarrow \ket{x \oplus z} \ket{y \oplus z} \ket{\operatorname{MAJ} (x，y，z) } $。
 syntax: 'operation ApplyMajorityInPlace (output : Qubit, input : Qubit[]) : Unit'
 input:
   content: '(output : Qubit, input : Qubit[])'
@@ -33,9 +33,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 9b04666843c7f910352e3f16d566a522fddef3d3
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 8384aeaf43651c2731e6cdf6efc7dbcff12a2a11
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680013"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342986"

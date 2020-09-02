@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.trainsequentialclassifieratmodel
 name: TrainSequentialClassifierAtModel
 type: operation
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 给定顺序分类器的结构，从特定模型开始训练给定标签定型集上的分类器。
 syntax: 'operation TrainSequentialClassifierAtModel (model : Microsoft.Quantum.MachineLearning.SequentialModel, samples : Microsoft.Quantum.MachineLearning.LabeledSample[], options : Microsoft.Quantum.MachineLearning.TrainingOptions, trainingSchedule : Microsoft.Quantum.MachineLearning.SamplingSchedule, validationSchedule : Microsoft.Quantum.MachineLearning.SamplingSchedule) : (Microsoft.Quantum.MachineLearning.SequentialModel, Int)'
 input:
@@ -16,7 +16,7 @@ input:
     isArray: true
     uid: microsoft.quantum.machinelearning.labeledsample
   - name: options
-    summary: 训练时要使用的配置;有关@"microsoft.quantum.machinelearning.trainingoptions"更@"microsoft.quantum.machinelearning.defaulttrainingoptions"多详细信息，请参阅和。
+    summary: 训练时要使用的配置; @"microsoft.quantum.machinelearning.trainingoptions" @"microsoft.quantum.machinelearning.defaulttrainingoptions" 有关更多详细信息，请参阅和。
     uid: microsoft.quantum.machinelearning.trainingoptions
   - name: trainingSchedule
     summary: 在定型步骤中从定型数据中选择样本时要使用的采样计划。
@@ -39,9 +39,9 @@ seeAlso:
 - microsoft.quantum.machinelearning.trainsequentialclassifier
 - microsoft.quantum.machinelearning.validatesequentialclassifier
 metadata:
-  ms.openlocfilehash: ab30be93a0a1e0b347d2adfe82dbcf07b12d6996
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 36666626d6fb6319fbc62d2d49d5975fe29f8d93
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684273"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335472"

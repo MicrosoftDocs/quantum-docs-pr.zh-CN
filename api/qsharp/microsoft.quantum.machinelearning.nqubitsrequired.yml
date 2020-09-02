@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.nqubitsrequired
 name: NQubitsRequired
 type: function
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 返回应用给定顺序分类器所需的 qubits 的数目。
 syntax: 'function NQubitsRequired (model : Microsoft.Quantum.MachineLearning.SequentialModel) : Int'
 input:
@@ -17,9 +17,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 262de523a51d87ffd9e1d7859e887780b8e97336
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6cdeb34cab82735ae64e7ba99dfbee2089b6bb80
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674017"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335795"

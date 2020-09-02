@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.stackpeek
 name: StackPeek
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: StackPeek 已被弃用。
 syntax: 'function StackPeek (stack : Microsoft.Quantum.Canon.ResultStack) : Result'
 input:
@@ -16,9 +16,9 @@ output:
   - isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 3a2d428e56af02d3d660b9ecaa9396668e0b494c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3ff1e2da98431329b326c53dbc978941b0d57613
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678161"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355174"
