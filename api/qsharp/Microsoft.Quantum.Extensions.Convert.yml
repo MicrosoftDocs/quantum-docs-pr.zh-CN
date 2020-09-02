@@ -24,9 +24,9 @@ functions:
 - uid: microsoft.quantum.extensions.convert.tostringiformat
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nToStringIFormat 已被弃用。 请改用 @\"microsoft.quantum.convert.intasstringwithformat\"。\n请使用 @\"microsoft.quantum.convert.intasstringwithformat\"。"
 metadata:
-  ms.openlocfilehash: 8196882d8f7edf417f65bcd1651ecb770c4286f4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6f307cfeabec132c2b3b3953f30a2b0ad208f57a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673293"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341014"

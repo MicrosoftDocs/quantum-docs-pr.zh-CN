@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.lg
 name: Lg
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 计算数字的以2为底的对数。
 syntax: 'function Lg (input : Double) : Double'
 input:
@@ -15,13 +15,13 @@ input:
 output:
   content: Double
   types:
-  - summary: 以2为底的对数 $y = \ log_2 （x） $，$x = 2 ^ y $。
+  - summary: 以2为底的对数 $y = \ log_2 (x) $，$x = 2 ^ y $。
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 2146f224a6c8da738333e3ed190e164c0b3e3969
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5771a12c2869fb04c0cd84981ac5a99f90c9de0f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685321"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334401"

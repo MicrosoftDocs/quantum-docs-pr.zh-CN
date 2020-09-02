@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.diagnostics
 name: Microsoft.Quantum.Diagnostics
-summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含可用于诊断目的的函数和操作，包括断言操作和声明函数。"
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含可用于诊断目的的函数和操作，包括断言操作和声明函数。"
 functions:
 - uid: microsoft.quantum.diagnostics.allequalityfactb
   summary: 断言布尔值的两个数组相等。
@@ -96,9 +96,9 @@ newtypes:
 - uid: microsoft.quantum.diagnostics.test
   summary: 编译器可识别的属性，用于标记单元测试。
 metadata:
-  ms.openlocfilehash: 16c457188160a3e0d2b4d04b40af0dabbbdc0f0a
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 8fb9929c16e4f4b58a72b2879a3bb1fcc4e51f09
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863053"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341235"

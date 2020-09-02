@@ -172,11 +172,11 @@ newtypes:
 
     例如，如果 $ \ket{x} $ 为计算基础中的整数 $x $ 的小 endian 编码，则 $ \operatorname{QFTLE} \ket{x} $ 是 QFT 中 $x $ 的编码。
 - uid: microsoft.quantum.arithmetic.signedlittleendian
-  summary: 存储在 little endian 中的带符号整数的类型（请参见 LittleEndian）。
+  summary: Little endian (中存储的带符号整数的类型，请参阅 LittleEndian) 。
 metadata:
-  ms.openlocfilehash: 6e43f31c738b48413ead40e16fbbfe4185b8a57d
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: 57979033c298b9ff88153403c18f0e9698fb2523
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84326721"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341286"

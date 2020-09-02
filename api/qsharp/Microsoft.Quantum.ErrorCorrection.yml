@@ -46,7 +46,7 @@ operations:
   summary: 按类型描述的量程代码执行一轮错误更正 `CSS` 。
 newtypes:
 - uid: microsoft.quantum.errorcorrection.css
-  summary: 表示 Calderbank –选定– Steane （CSS）代码，该代码由其编码器、解码器定义，并分别表示和错误的症状度量过程 `X` `Z` 。
+  summary: 表示 Calderbank –选定– Steane (CSS) 代码，该代码由其编码器、解码器定义，并分别表示和错误的症状度量过程 `X` `Z` 。
 - uid: microsoft.quantum.errorcorrection.decodeop
   summary: >-
     表示一个操作，该操作将编码的寄存器解码为物理寄存器，并使用 qubits 来记录一个症状。
@@ -70,9 +70,9 @@ newtypes:
 - uid: microsoft.quantum.errorcorrection.syndromemeasop
   summary: 表示一个操作，该操作用于测量纠错代码块的症状。
 metadata:
-  ms.openlocfilehash: eed1de587e6bfbfc197113c5cd280ae72df1ce7e
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: 6b8fe65de09adf6297ca40420f77719ef19285eb
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84326602"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341133"

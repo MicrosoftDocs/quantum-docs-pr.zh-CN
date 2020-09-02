@@ -18,9 +18,9 @@ functions:
 - uid: microsoft.quantum.convert.boolarrayaspauli
   summary: 给定位字符串后，将返回一个 qubit Pauli 运算符，该运算符表示为一个 qubit Pauli 运算符的数组。
 - uid: microsoft.quantum.convert.boolarrayasresultarray
-  summary: '`Bool[]`将`Result[]`类型转换为类型，其中`true`映射到`One`并`false`映射到。 `Zero`'
+  summary: 将 `Bool[]` 类型转换为 `Result[]` 类型，其中 `true` 映射到 `One` 并 `false` 映射到 `Zero` 。
 - uid: microsoft.quantum.convert.boolasresult
-  summary: '`Bool`将`Result`类型转换为类型，其中`true`映射到`One`并`false`映射到。 `Zero`'
+  summary: 将 `Bool` 类型转换为 `Result` 类型，其中 `true` 映射到 `One` 并 `false` 映射到 `Zero` 。
 - uid: microsoft.quantum.convert.boolasstring
   summary: 将给定的布尔值转换为等效的字符串表示形式。
 - uid: microsoft.quantum.convert.doubleasstring
@@ -47,20 +47,20 @@ functions:
 - uid: microsoft.quantum.convert.pauliarrayasint
   summary: 将表示为一个 qubit Pauli 运算符数组的多 qubit Pauli 运算符编码为一个整数。
 - uid: microsoft.quantum.convert.rangeasintarray
-  summary: 创建一个由`arr` start. 枚举的整数数组。步骤 .。。端面.
+  summary: 创建一个 `arr` 由 start. 枚举的整数数组。步骤 .。。端面.
 - uid: microsoft.quantum.convert.resultarrayasboolarray
-  summary: '`Result[]`将`Bool[]`类型转换为类型，其中`One`映射到`true`并`Zero`映射到。 `false`'
+  summary: 将 `Result[]` 类型转换为 `Bool[]` 类型，其中 `One` 映射到 `true` 并 `Zero` 映射到 `false` 。
 - uid: microsoft.quantum.convert.resultarrayasint
   summary: 从结果的字符串中生成一个以 little endian 格式的正整数。
 - uid: microsoft.quantum.convert.resultasbool
-  summary: '`Result`将`Bool`类型转换为类型，其中`One`映射到`true`并`Zero`映射到。 `false`'
+  summary: 将 `Result` 类型转换为 `Bool` 类型，其中 `One` 映射到 `true` 并 `Zero` 映射到 `false` 。
 operations:
 - uid: microsoft.quantum.convert.call
   summary: 调用具有给定输入的函数。
 metadata:
-  ms.openlocfilehash: d435979692fe94efb64af82f4a7a949cb2341ef8
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7ab5e02631823dcf4dee36f98c14212b43381b74
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677001"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341354"

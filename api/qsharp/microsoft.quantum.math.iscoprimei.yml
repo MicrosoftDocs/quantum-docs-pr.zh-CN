@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.iscoprimei
 name: IsCoprimeI
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 如果 $a $ 和 $b $ 是共同质数，则返回 true; 否则返回 false。
 syntax: 'function IsCoprimeI (a : Int, b : Int) : Bool'
 input:
@@ -19,13 +19,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: 如果 $a $ 和 $b $ 是共同质数（例如，其最大公因数为1），则为 True; 否则为 false。
+  - summary: 如果 $a $ 和 $b $ 是共同质数 (例如，其最大公因数为 1 ) ，则为 True; 否则为 false。
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 113c979b0bc930cd31a28e6392b8f6fa9f354c22
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b5be2672df76c750e82e6a41e3b3932effe5c307
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673739"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334469"

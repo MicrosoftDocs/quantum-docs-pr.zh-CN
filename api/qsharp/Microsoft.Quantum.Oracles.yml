@@ -4,22 +4,22 @@ name: Microsoft.Quantum.Oracles
 summary: " # <a name=\"summary\"></a>总结\n 此命名空间提供了用户定义的类型，以通过其在量程估算和振幅放大等量程算法中的用途来装饰各种类型的 oracles。"
 functions:
 - uid: microsoft.quantum.oracles.deterministicstateoraclefromstateoracle
-  summary: 将类型`StateOracle`的 oracle 转换为`DeterministicStateOracle`。
+  summary: 将类型的 oracle 转换 `StateOracle` 为 `DeterministicStateOracle` 。
 - uid: microsoft.quantum.oracles.obliviousoraclefromdeterministicstateoracle
-  summary: 将 oracles `DeterministicStateOracle`和`ObliviousOracle`组合在一起。
+  summary: 将 oracles 和组合在一起 `DeterministicStateOracle` `ObliviousOracle` 。
 - uid: microsoft.quantum.oracles.oracletodiscrete
   summary: 给定一个表示 "黑盒" oracle 的操作，将返回一个独立的 oracle，它表示重复多次的 "黑箱" oracle。
 - uid: microsoft.quantum.oracles.reflectionoraclefromdeterministicstateoracle
   summary: 从 oracle 构造有关给定状态的反射。
 - uid: microsoft.quantum.oracles.stateoraclefromdeterministicstateoracle
-  summary: 将类型`DeterministicStateOracle`的 oracle 转换为`StateOracle`。
+  summary: 将类型的 oracle 转换 `DeterministicStateOracle` 为 `StateOracle` 。
 newtypes:
 - uid: microsoft.quantum.oracles.continuousoracle
   summary: >-
     表示连续 oracle。
 
 
-    这是一种 oracle，它实现 $U （\delta t）： \ket{\psi （t）} \mapsto \ket{\psi （t + \delta t）} $ $t $，其中 $U $ 是一个固定操作，其中 $ \delta t $ 是非负数实数。
+    这是一个 oracle，它实现 $U ( \delta t) ： \ket{\psi (t) } \mapsto \ket{\psi ($，其中) $ 是一个固定操作，其中 $ \delta t $ 是一个非负实数。
 - uid: microsoft.quantum.oracles.deterministicstateoracle
   summary: >-
     表示 oracle for 确定性状态准备。
@@ -28,7 +28,7 @@ newtypes:
     Oracle $O $ 的输入为：
 
 
-    - 将存储所需的量程状态 $ \ket{\psi}\_s $ 的寄存器。
+    - 将存储所需的量程状态 $ \ket{\psi} \_ s $ 的寄存器。
 - uid: microsoft.quantum.oracles.discreteoracle
   summary: >-
     表示离散 oracle。
@@ -45,7 +45,7 @@ newtypes:
 
     - Ancilla 注册了 $O $ $a $ 的操作。
 
-    - 系统注册 $s $，将对其应用所需的单一 $U $，并在 register $a $ $ \ket{t}\_a $。
+    - 系统注册 $s $，将对其应用所需的单一 $U $，并在 register $a $ $ \ket{t} \_ a $。
 - uid: microsoft.quantum.oracles.reflectionoracle
   summary: >-
     表示 oracle 反射。
@@ -67,11 +67,11 @@ newtypes:
 
     - 对标志 qubit $f $ 进行索引的整数。
 
-    - 系统注册 $s $，将存储所需的量程状态 $ \ket{\psi}\_s $。
+    - 系统注册 $s $，将存储所需的量程状态 $ \ket{\psi} \_ s $。
 metadata:
-  ms.openlocfilehash: c1f364d74aab6d318e7b6db078d5532aeae57bcd
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 100ea34895b343c8b24ef4f584bbf534acd9d6ff
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673105"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340946"

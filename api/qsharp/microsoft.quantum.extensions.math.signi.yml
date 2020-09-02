@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.signi
 name: SignI
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: SignI 已被弃用。 请改用 @"microsoft.quantum.math.signi"。
 syntax: 'function SignI (a : Int) : Int'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: e25c3492a6538f021d86b0fcd4a940891f4f7cb2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 8dc23b7fadccc0192504784d5681ba0359ade726
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682963"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347814"
