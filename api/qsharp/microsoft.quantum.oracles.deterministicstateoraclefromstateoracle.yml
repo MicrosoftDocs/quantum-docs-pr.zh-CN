@@ -2,31 +2,31 @@
 uid: microsoft.quantum.oracles.deterministicstateoraclefromstateoracle
 name: DeterministicStateOracleFromStateOracle
 type: function
-namespace: Microsoft.Quantum.Oracles
-summary: 将类型`StateOracle`的 oracle 转换为`DeterministicStateOracle`。
+namespace: microsoft.quantum.oracles
+summary: 将类型的 oracle 转换 `StateOracle` 为 `DeterministicStateOracle` 。
 syntax: 'function DeterministicStateOracleFromStateOracle (idxFlagQubit : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle) : Microsoft.Quantum.Oracles.DeterministicStateOracle'
 input:
   content: '(idxFlagQubit : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle)'
   types:
   - name: idxFlagQubit
-    summary: '`stateOracle` $A $ 的标志 qubit 的索引，该索引显式作用于两个寄存器： $f $ 和 system $s $，例如 $A \ket{0}\_f\ket {\ psi}\_s $。'
+    summary: $A $ 的标志 qubit 的索引 `stateOracle` ，该索引显式作用于两个寄存器： $f $ 和 system $s $，例如 $A \ket {0} \_ f\ket {\ psi} \_ s $。
     isPrimitive: true
     uid: Int
   - name: stateOracle
-    summary: 准备 oracle $A 类型`StateOracle`为的状态。
+    summary: 准备 oracle $A 类型为的状态 `StateOracle` 。
     uid: microsoft.quantum.oracles.stateoracle
 output:
   content: Microsoft.Quantum.Oracles.DeterministicStateOracle
   types:
-  - summary: 相同状态准备 oracle $A $，但现在为类型`DeterministicStateOracle`，因此它在 $a，而不会再显式分离，如 $A \ket{0\psi}\_{as} $。
+  - summary: 相同状态准备 oracle $A $，但现在为类型 `DeterministicStateOracle` ，因此它在 $a，而不会再显式分离，如 $A \ket{0\psi} \_ {as} $。
     uid: microsoft.quantum.oracles.deterministicstateoracle
 seeAlso:
 - microsoft.quantum.canon.stateoracle
 - microsoft.quantum.canon.deterministicstateoracle
 metadata:
-  ms.openlocfilehash: cf6ddc1f1baff27c986f36d944e67192958a0d3f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 20ce22cb90be3f7fd3c135e9dccce4482a3e3939
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681288"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332055"

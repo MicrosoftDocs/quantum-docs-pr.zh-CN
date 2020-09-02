@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applypaulifrombitstring
 name: ApplyPauliFromBitString
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 如果布尔数组的相应位与给定的输入相匹配，则对数组中的每个 qubit 应用 Pauli 运算符。
 remarks: 布尔数组和量程寄存器的长度必须相等。
 syntax: 'operation ApplyPauliFromBitString (pauli : Pauli, bitApply : Bool, bits : Bool[], qubits : Qubit[]) : Unit'
@@ -10,7 +10,7 @@ input:
   content: '(pauli : Pauli, bitApply : Bool, bits : Bool[], qubits : Qubit[])'
   types:
   - name: pauli
-    summary: 要应用于`qubits[idx]` where 的 Pauli 运算符`bitsApply == bits[idx]`
+    summary: 要应用于 `qubits[idx]` where 的 Pauli 运算符 `bitsApply == bits[idx]`
     isPrimitive: true
     uid: Pauli
   - name: bitApply
@@ -18,7 +18,7 @@ input:
     isPrimitive: true
     uid: Bool
   - name: bits
-    summary: 指定`qubits`应操作的相应 qubit 的布尔型寄存器
+    summary: 指定应操作的相应 qubit 的布尔型寄存器 `qubits`
     isArray: true
     isPrimitive: true
     uid: Bool
@@ -36,9 +36,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 5a65ec2aae17a1469e820e8cd14a0d50d0639015
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7efea4ea34ee1ae68695aa74142ebf6bce93d289
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672432"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357963"

@@ -2,9 +2,9 @@
 uid: microsoft.quantum.bitwise.xbits
 name: XBits
 type: function
-namespace: Microsoft.Quantum.Bitwise
+namespace: microsoft.quantum.bitwise
 summary: 返回一个整数，该整数表示 Pauli 运算符数组的 X 位。
-remarks: 如果`paulis`数组的长度大于63，则函数将引发。
+remarks: 如果数组的长度大于63，则函数将引发 `paulis` 。
 syntax: 'function XBits (paulis : Pauli[]) : Int'
 input:
   content: '(paulis : Pauli[])'
@@ -17,15 +17,15 @@ input:
 output:
   content: Int
   types:
-  - summary: 一个整数 $x $，其中二进制表示 $ （{62}\,p_{61}\,p_\,\dots .. p_0） $，其中 $p _i = $0 `paulis[i]`如果`PauliI`为`PauliZ` or，其中 $p _i = $1 `paulis[i]` （ `PauliX`如果`PauliY`为或）。
+  - summary: 二进制表示形式为 $ (的整数 $x p_ {62} \, p_ {61} \, \dots .. \, p_0) $，其中 $p _i = $0 如果 `paulis[i]` 为 or，其中 $p _i = `PauliI` `PauliZ` $1 （如果 `paulis[i]` 为或） `PauliX` `PauliY` 。
     isPrimitive: true
     uid: Int
 seeAlso:
 - zbits
 metadata:
-  ms.openlocfilehash: 0dccf94d895984b3661790b44f10455fce35331d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 386db905e433b5ab424eae80209ac9907ba3ed8c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680570"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351010"

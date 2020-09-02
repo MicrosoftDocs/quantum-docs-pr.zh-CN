@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applycnotchain
 name: ApplyCNOTChain
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   计算 qubits 的寄存器的奇偶校验。
 
@@ -28,9 +28,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 9ba0318a28b5148fa4ad7dbeb4ad547190b1d0ab
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6c6f1685267f2bca583b9a64d04667639702c549
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680526"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350806"

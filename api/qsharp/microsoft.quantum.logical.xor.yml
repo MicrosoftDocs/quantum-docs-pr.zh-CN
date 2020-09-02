@@ -2,7 +2,7 @@
 uid: microsoft.quantum.logical.xor
 name: Xor
 type: function
-namespace: Microsoft.Quantum.Logical
+namespace: microsoft.quantum.logical
 summary: 返回两个值的布尔互斥析取。
 syntax: 'function Xor (a : Bool, b : Bool) : Bool'
 input:
@@ -19,13 +19,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: '`true`当且仅当`a`和`b`中只有一个为`true`时。'
+  - summary: '`true` 当且仅当和中只有 `a` 一个 `b` 为时 `true` 。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: de35d7427d3de31e27465319bf8fa96ba2fb9aed
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 91046e184cc29b0a8605c61fe0267c6b91968ff0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682841"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89345060"

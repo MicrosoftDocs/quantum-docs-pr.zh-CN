@@ -2,7 +2,7 @@
 uid: microsoft.quantum.measurement.mresety
 name: MResetY
 type: operation
-namespace: Microsoft.Quantum.Measurement
+namespace: microsoft.quantum.measurement
 summary: >-
   按 Y 度量单个 qubit，并将其重置为测量后的固定初始状态。
 
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 2c177d035a949e700023cf8a89ec0b5d25aac645
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: cb3444eb9857c30088bbbeafd59d8975763a06bc
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84327418"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332361"

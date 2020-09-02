@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applyccnotchain
 name: ApplyCCNOTChain
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   实现控制在两个 qubit 寄存器的相应位上控制的 CCNOT 入口的层叠，这是在其中一个寄存器的下一个 qubit 上进行的。
 
@@ -31,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 06a61890e9dc5d3b78b56f0815f3c37b0f67fa74
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: 05ea20f0c8fddc1f108301f79908c6e59f8e9ec7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84328419"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350840"

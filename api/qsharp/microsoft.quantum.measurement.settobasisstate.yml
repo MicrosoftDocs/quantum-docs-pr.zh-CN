@@ -2,9 +2,9 @@
 uid: microsoft.quantum.measurement.settobasisstate
 name: SetToBasisState
 type: operation
-namespace: Microsoft.Quantum.Measurement
+namespace: microsoft.quantum.measurement
 summary: 通过测量 qubit 并在需要时应用位翻转，将 qubit 设置为给定的计算基础状态。
-remarks: 作为此操作的固定条件，将`M(q)`返回`result`之后`SetToBasisState(result, q)`立即调用。
+remarks: 作为此操作的固定条件， `M(q)` `SetToBasisState(result, q)` 将返回之后立即调用 `result` 。
 syntax: 'operation SetToBasisState (desired : Result, target : Qubit) : Unit'
 input:
   content: '(desired : Result, target : Qubit)'
@@ -23,9 +23,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 002ca4716f0aa57c0ddd4f33d421402c068ad244
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1bd8b8d83ff2bee3dfb1f4a696ddc3b493a2bb82
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681362"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332242"

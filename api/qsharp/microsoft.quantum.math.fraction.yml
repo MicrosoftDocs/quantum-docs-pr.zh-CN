@@ -2,13 +2,13 @@
 uid: microsoft.quantum.math.fraction
 name: Fraction
 type: newtype
-namespace: Microsoft.Quantum.Math
-summary: 表示形式`p/q`的有理数。 整数`p`是元组的第一个元素， `q`是元组的第二个元素。
+namespace: microsoft.quantum.math
+summary: 表示形式的有理数 `p/q` 。 整数 `p` 是元组的第一个元素， `q` 是元组的第二个元素。
 syntax: newtype Fraction = (Int, Int);
 metadata:
-  ms.openlocfilehash: 3059bc8bfb8e5f0cd92f373bc3999e25374dd777
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 63ff365d45d7000f2c75e72630da48fc75144eb9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673802"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89343938"

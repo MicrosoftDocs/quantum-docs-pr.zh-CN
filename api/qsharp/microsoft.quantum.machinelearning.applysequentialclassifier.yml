@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.applysequentialclassifier
 name: ApplySequentialClassifier
 type: operation
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 给定顺序分类器的结构和参数化，将分类器应用到 qubits 的寄存器。
 syntax: 'operation ApplySequentialClassifier (model : Microsoft.Quantum.MachineLearning.SequentialModel, qubits : Qubit[]) : Unit'
 input:
@@ -24,9 +24,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 34abd985d018a56a30744b83ab4b8fe21c1736ae
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 409c6e7fb6fcaf802b7ea7cfb320b85c5fce6392
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681731"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89345043"

@@ -2,8 +2,8 @@
 uid: microsoft.quantum.bitwise.parity
 name: Parity
 type: function
-namespace: Microsoft.Quantum.Bitwise
-summary: 返回整数的按位奇偶校验（如果其二进制表示形式包含奇数个值，则为 1; 否则为0）。
+namespace: microsoft.quantum.bitwise
+summary: 如果整数的二进制表示形式包含奇数个值，则返回 (1 的整数的按位奇偶校验，否则) 。
 examples: >-
   ```qsharp
 
@@ -25,9 +25,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 28890dd3f990f9574c2f0d7d52ef684ddf90c7a2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b9d4f086d4fdf4035e9afe95f3afe59353c2ba93
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680627"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351112"

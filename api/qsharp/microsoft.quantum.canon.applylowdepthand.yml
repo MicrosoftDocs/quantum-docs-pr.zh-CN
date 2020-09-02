@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applylowdepthand
 name: ApplyLowDepthAnd
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   当且仅当两个 control qubits 都处于1状态时，使用 qubit 执行 adjoint 操作时，使用度量来反转给定目标。
 
@@ -37,9 +37,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 7c0858443420741968865298e6179c81b8d23ef4
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 3513263f2b5fa2877c9642f803f153069a30bb19
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85885822"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89358099"

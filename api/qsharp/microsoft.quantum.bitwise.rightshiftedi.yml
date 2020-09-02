@@ -2,7 +2,7 @@
 uid: microsoft.quantum.bitwise.rightshiftedi
 name: RightShiftedI
 type: function
-namespace: Microsoft.Quantum.Bitwise
+namespace: microsoft.quantum.bitwise
 summary: 将数字的按位表示形式向右移位给定的位数。
 remarks: >-
   以下项是等效的：
@@ -20,23 +20,23 @@ input:
   content: '(value : Int, amount : Int)'
   types:
   - name: value
-    summary: 要向右移动（不太重要）的按位表示形式的数字。
+    summary: 要 (不太重要) 向右移动的按位表示形式的数字。
     isPrimitive: true
     uid: Int
   - name: amount
-    summary: 要向右移动的位数`value` 。
+    summary: 要向右移动的位数 `value` 。
     isPrimitive: true
     uid: Int
 output:
   content: Int
   types:
-  - summary: 的值`value`，右移一`amount`位。
+  - summary: 的值，右移一 `value` `amount` 位。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 9bf08ce00efc1bc93397c25c1a3ddd4d2432721d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: c7dc84cff910e641747327ef3cd6fd86e506041a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680611"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351146"

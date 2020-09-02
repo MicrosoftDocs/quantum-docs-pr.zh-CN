@@ -2,14 +2,14 @@
 uid: microsoft.quantum.canon.applyifzeroa
 name: ApplyIfZeroA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   应用对经典结果值为零的 adjointable 运算。
 
 
-  给定一个操作`op`和一个结果值`result`时， `op` `target`如果`result`为`Zero`，则应用于。 如果`One`为，则不会`target`发生任何事情。
+  给定一个操作 `op` 和一个结果值时 `result` ， `op` `target` 如果为， `result` 则应用于 `Zero` 。 如果 `One` 为，则不会发生任何事情 `target` 。
 
-  后缀`A`指示要应用的操作是 adjointable。
+  后缀 `A` 指示要应用的操作是 adjointable。
 syntax: "operation ApplyIfZeroA (result : Result, (op : ('T => Unit is Adj), target : 'T)) : Unit"
 input:
   content: "(result : Result, (op : ('T => Unit is Adj), target : 'T))"
@@ -50,9 +50,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifzeroa
 - microsoft.quantum.canon.applyifzeroca
 metadata:
-  ms.openlocfilehash: b8b85714f173e10d3121d6f012fefa76b956686e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: fe4c995a57e9dc964cb0c7d5e557cc51eca5bf0d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672617"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89358167"

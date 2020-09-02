@@ -2,12 +2,12 @@
 uid: microsoft.quantum.canon.applyifzero
 name: ApplyIfZero
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   应用对传统结果值为零的操作。
 
 
-  给定一个操作`op`和一个结果值`result`时， `op` `target`如果`result`为`Zero`，则应用于。 如果`One`为，则不会`target`发生任何事情。
+  给定一个操作 `op` 和一个结果值时 `result` ， `op` `target` 如果为， `result` 则应用于 `Zero` 。 如果 `One` 为，则不会发生任何事情 `target` 。
 syntax: "operation ApplyIfZero (result : Result, (op : ('T => Unit), target : 'T)) : Unit"
 input:
   content: "(result : Result, (op : ('T => Unit), target : 'T))"
@@ -44,9 +44,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifzeroa
 - microsoft.quantum.canon.applyifzeroca
 metadata:
-  ms.openlocfilehash: def6af6461ea91bc1df4ce347a1a35c6fb31cb8a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 65a20b30d6b0330e870407f31ecb216e2e06cb29
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672639"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89358184"

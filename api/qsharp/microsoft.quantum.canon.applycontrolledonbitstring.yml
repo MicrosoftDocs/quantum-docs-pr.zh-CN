@@ -2,10 +2,10 @@
 uid: microsoft.quantum.canon.applycontrolledonbitstring
 name: ApplyControlledOnBitString
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 对目标寄存器应用单一操作，该操作由给定位掩码指定的状态控制。
 remarks: >-
-  给定的模式 `bits` 可能比更短 `controlRegister` ，在这种情况下，将忽略附加的 qubits （即，不会在 $ \ket {0} $ 和 $ \ket {1} $）上进行控制。
+  给定的模式 `bits` 可能比更短 `controlRegister` ，在这种情况下，将 (忽略附加的 qubits，而不会在 $ \ket {0} $ 和 $ \ket $) 上进行控制 {1} 。
 
   如果 `bits` 的长度超过 `controlRegister` ，则会引发错误。
 
@@ -52,9 +52,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: cb0aaffb9710f98a3ed22d7a7c97828b05f6ae2c
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: c7cb4d26d54091398fab19b029bc7e1d6c4affd9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85886213"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350738"
