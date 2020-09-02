@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.arcsinh
 name: ArcSinh
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 计算数字的反双曲正弦值。
 syntax: 'function ArcSinh (x : Double) : Double'
 input:
@@ -15,13 +15,13 @@ input:
 output:
   content: Double
   types:
-  - summary: 实数 $y $，$x = \operatorname{sinh} （y） $。
+  - summary: 实数 $y $ $x = \operatorname{sinh} (y) $。
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 0dc90f0c09aff74d78045f31667b7b956fc2602f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 392e0b6ef3569aac5ad9e9d1d478859db2268b48
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683457"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344533"

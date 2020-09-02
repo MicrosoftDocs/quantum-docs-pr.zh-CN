@@ -2,22 +2,22 @@
 uid: microsoft.quantum.diagnostics.assertoperationsequalinplace
 name: AssertOperationsEqualInPlace
 type: operation
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: >-
   假设有两个运算，则断言它们对于所有输入状态都是相同的。
 
 
-  此断言是通过以下方式实现的：检查所有状态的操作的操作： $V _0 \otimes ... \otimes V_ {n-1} $，其中 $V _k $ 是状态 $ \ket{0}$，$ \ket{1}$，$ \ket{+} $，$ \ket{i} $ （+ 1 eigenstate of Pauli Y 运算符）。
+  此断言是通过以下方式实现的：检查所有状态的操作的操作： $V _0 \otimes ... \otimes V_ {n-1} $，其中 $V _k $ 是状态 $ \ket {0} $，$ \ket $ {1} ，$ \ket{+} $，$ \ket{i} $ (+ 1 Eigenstate Of Pauli Y operator) 。
 
 
   此断言使用 $n $ qubits，需要对要比较的操作进行多次调用。
 syntax: 'operation AssertOperationsEqualInPlace (nQubits : Int, givenU : (Qubit[] => Unit), expectedU : (Qubit[] => Unit is Adj)) : Unit'
-references: 状态 $ \ket{0}$、$ \ket{1}$、$ \ket{+} $ 和 $ \ket{i} $ 是语-Nielsen 的基础，如中所述[ *I. L. Chuang, M. A. Nielsen* 。 ](https://arxiv.org/abs/quant-ph/9610001)
+references: 状态 $ \ket {0} $、$ \ket {1} $、$ \ket{+} $ 和 $ \ket{i} $ 是语-Nielsen 的基础，如中所述[ *I. L. Chuang, M. A. Nielsen* ](https://arxiv.org/abs/quant-ph/9610001)。
 input:
   content: '(nQubits : Int, givenU : (Qubit[] => Unit), expectedU : (Qubit[] => Unit is Adj))'
   types:
   - name: nQubits
-    summary: 操作`givenU`和`expectedU`操作 $n $ 的 qubits 的数目。
+    summary: 操作和操作 $n $ 的 qubits 的数目 `givenU` `expectedU` 。
     isPrimitive: true
     uid: Int
   - name: givenU
@@ -33,7 +33,7 @@ input:
       - isPrimitive: true
         uid: Unit
   - name: expectedU
-    summary: 要与进行比较 $n $ qubits `givenU`上的引用操作。
+    summary: 要与进行比较 $n $ qubits 上的引用操作 `givenU` 。
     isOperation: true
     input:
       types:
@@ -54,9 +54,9 @@ output:
 seeAlso:
 - assertoperationsequalreferenced
 metadata:
-  ms.openlocfilehash: 007bb4b3dedd5a95fc464608fe8160784b02341b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 477ee177c1db07a9e92d11599ed3d7c0a822e10e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82657021"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337539"

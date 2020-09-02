@@ -2,7 +2,7 @@
 uid: microsoft.quantum.random.continuousdistribution
 name: ContinuousDistribution
 type: newtype
-namespace: Microsoft.Quantum.Random
+namespace: microsoft.quantum.random
 summary: 表示单变量的概率分布。
 syntax: newtype ContinuousDistribution = (Unit => Double);
 seeAlso:
@@ -10,9 +10,9 @@ seeAlso:
 - microsoft.quantum.random.discretedistribution
 - microsoft.quantum.random.bigdiscretedistribution
 metadata:
-  ms.openlocfilehash: a2bb5549b5e7353930697ccc3a2dcbaf26091782
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 5976f06aa3ebd77f9dd7892d99c58bdb089396d8
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863919"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89331018"

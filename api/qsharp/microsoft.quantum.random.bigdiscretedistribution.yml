@@ -2,7 +2,7 @@
 uid: microsoft.quantum.random.bigdiscretedistribution
 name: BigDiscreteDistribution
 type: newtype
-namespace: Microsoft.Quantum.Random
+namespace: microsoft.quantum.random
 summary: 表示针对任意大小的整数的单变量概率分布。
 syntax: newtype BigDiscreteDistribution = (Unit => BigInt);
 seeAlso:
@@ -10,9 +10,9 @@ seeAlso:
 - microsoft.quantum.random.complexdistribution
 - microsoft.quantum.random.discretedistribution
 metadata:
-  ms.openlocfilehash: ce882b890790b3d84922ee534811be9e2d225713
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 66f22f3c470ef8cf85636ac9578c738fbd050324
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863916"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89331188"

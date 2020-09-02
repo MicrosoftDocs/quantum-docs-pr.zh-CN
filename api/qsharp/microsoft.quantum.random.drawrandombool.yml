@@ -2,7 +2,7 @@
 uid: microsoft.quantum.random.drawrandombool
 name: DrawRandomBool
 type: operation
-namespace: Microsoft.Quantum.Random
+namespace: microsoft.quantum.random
 summary: 如果获得成功概率，则返回一个在给定概率下为 true 的单个伯努利试用期。
 examples: >-
   以下 Q # 代码段示例从偏向硬币上翻：
@@ -28,9 +28,9 @@ output:
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 950a636d91d82ebf3ccb663a65cd3a958a70dc19
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 45e5312ad43bf0382e1822277b6647208024c1bd
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863917"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330881"

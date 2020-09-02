@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.arccosh
 name: ArcCosh
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 计算数字的反双曲余弦值。
 syntax: 'function ArcCosh (x : Double) : Double'
 input:
@@ -15,13 +15,13 @@ input:
 output:
   content: Double
   types:
-  - summary: 实数 $y $，$x = \cosh （y） $。
+  - summary: 实数 $y $ $x = \cosh (y) $。
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 132302571d1c65304586c1e22f55f55a045ebd0c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: dedba3d2836417777e9f3063c0cfb0d5c1366aa0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686777"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344720"

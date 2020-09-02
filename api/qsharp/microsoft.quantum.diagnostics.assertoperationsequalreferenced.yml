@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.assertoperationsequalreferenced
 name: AssertOperationsEqualReferenced
 type: operation
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: >-
   假设有两个运算，则断言它们对于所有输入状态都是相同的。
 
@@ -56,9 +56,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 1d1711ee0c93aedca7731246cc8d12e813a7810b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2285a315056fac57bb025cf5a255a6381ea8af5e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82656657"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337614"

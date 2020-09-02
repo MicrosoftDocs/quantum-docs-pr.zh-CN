@@ -2,7 +2,7 @@
 uid: microsoft.quantum.random.discreteuniformdistribution
 name: DiscreteUniformDistribution
 type: function
-namespace: Microsoft.Quantum.Random
+namespace: microsoft.quantum.random
 summary: 返回在给定的非独占范围内的统一分布。
 remarks: 如果为 `max <= min` ，则失败。
 examples: >-
@@ -36,9 +36,9 @@ output:
 seeAlso:
 - microsoft.quantum.drawrandomdouble
 metadata:
-  ms.openlocfilehash: 3a74db8f7dec3050bd92cae3768760ca67c87002
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 9d9674e5d876117c5c9bbb9edb1a34b93470a96a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863969"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330933"

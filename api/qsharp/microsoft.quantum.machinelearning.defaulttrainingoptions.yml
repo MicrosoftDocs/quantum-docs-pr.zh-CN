@@ -2,10 +2,10 @@
 uid: microsoft.quantum.machinelearning.defaulttrainingoptions
 name: DefaultTrainingOptions
 type: function
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 返回用于定型分类器的一组默认选项。
 examples: >-
-  若要使用默认选项，但使用其他度量值，请`w/`使用运算符：
+  若要使用默认选项，但使用其他度量值，请使用 `w/` 运算符：
 
 
   ```Q#
@@ -23,9 +23,9 @@ output:
   - summary: 训练分类器时使用的一组合理的默认定型选项。
     uid: microsoft.quantum.machinelearning.trainingoptions
 metadata:
-  ms.openlocfilehash: 87f056e336ca78881421e669b3d282af8e679353
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5f9882b1067851fc206e302310657f9bf64cea3f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685437"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344754"

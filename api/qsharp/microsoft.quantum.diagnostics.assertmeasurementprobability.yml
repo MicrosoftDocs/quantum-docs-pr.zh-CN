@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.assertmeasurementprobability
 name: AssertMeasurementProbability
 type: operation
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 在给定 Pauli 基础上测量给定 qubits 的断言在某种程度上具有给定概率的给定结果。
 remarks: 请注意，此操作的 Adjoint 和受控版本将不检查该条件。
 examples: >-
@@ -55,9 +55,9 @@ functors:
 seeAlso:
 - microsoft.quantum.diagnostics.assertmeasurement
 metadata:
-  ms.openlocfilehash: 6663722ae72cc8dd984e6422029db5a0bfad5d39
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 1a76c05e2541fee649fcb73d8662c121f0930f98
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85886296"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337538"

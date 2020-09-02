@@ -2,9 +2,9 @@
 uid: microsoft.quantum.arrays.any
 name: Any
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 给定为数组元素定义的数组和谓词，检查数组中是否至少有一个元素满足该谓词。
-remarks: "函数是为泛型类型定义的，也就是说，只要`'T[]`有一个数组和一个函数`predicate: 'T -> Bool` ，我们就可以生成一个`Bool`值，该值指示某个元素是否`predicate`满足。"
+remarks: "函数是为泛型类型定义的，也就是说，只要有一个数组 `'T[]` 和一个函数， `predicate: 'T -> Bool` 我们就可以生成一个 `Bool` 值，该值指示某个元素是否满足 `predicate` 。"
 examples: >-
   ```qsharp
 
@@ -30,7 +30,7 @@ input:
   content: "(predicate : ('T -> Bool), array : 'T[])"
   types:
   - name: predicate
-    summary: 用于检查元素`'T` `Bool`的的函数。
+    summary: 用于 `'T` `Bool` 检查元素的的函数。
     isFunction: true
     input:
       types:
@@ -41,23 +41,23 @@ input:
       - isPrimitive: true
         uid: Bool
   - name: array
-    summary: 上`'T`的元素的数组。
+    summary: 上的元素的数组 `'T` 。
     isArray: true
     uid: "'T"
     isLocal: true
 output:
   content: Bool
   types:
-  - summary: 应用`Bool`于所有元素的谓词或函数的值。
+  - summary: '`Bool`应用于所有元素的谓词或函数的值。'
     isPrimitive: true
     uid: Bool
 typeParameters:
 - uid: "'T"
-  summary: '`array`元素的类型。'
+  summary: 元素的类型 `array` 。
 metadata:
-  ms.openlocfilehash: 4e80b5c39c83bc5d5b26d4df9ca86b8cbc796aeb
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: eb61be88ccba6392ca70c75f6c506b9b6c1c8bbd
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676556"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352591"

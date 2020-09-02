@@ -2,7 +2,7 @@
 uid: microsoft.quantum.random.drawrandomdouble
 name: DrawRandomDouble
 type: operation
-namespace: Microsoft.Quantum.Random
+namespace: microsoft.quantum.random
 summary: 以给定的非独占间隔绘制随机实数。
 remarks: 如果为 `max <= min` ，则失败。
 examples: >-
@@ -35,9 +35,9 @@ output:
 seeAlso:
 - microsoft.quantum.continuousuniformdistribution
 metadata:
-  ms.openlocfilehash: 8c029f8bf351b99900db8032012dc05ad7bda6ce
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 0508ffe0763dd392fef4db554db77138310826df
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863964"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330865"

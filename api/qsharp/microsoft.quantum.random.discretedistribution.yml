@@ -2,7 +2,7 @@
 uid: microsoft.quantum.random.discretedistribution
 name: DiscreteDistribution
 type: newtype
-namespace: Microsoft.Quantum.Random
+namespace: microsoft.quantum.random
 summary: 表示单变量的概率分布。
 syntax: newtype DiscreteDistribution = (Unit => Int);
 seeAlso:
@@ -10,9 +10,9 @@ seeAlso:
 - microsoft.quantum.random.complexdistribution
 - microsoft.quantum.random.bigdiscretedistribution
 metadata:
-  ms.openlocfilehash: 499417f9b9e5421ae2e4c3933bc56159fda560dd
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 8c22dfc83ec24993b0ae613ef6c10688f0dee0fc
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863973"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330968"

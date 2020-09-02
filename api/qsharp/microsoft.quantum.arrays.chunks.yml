@@ -2,9 +2,9 @@
 uid: microsoft.quantum.arrays.chunks
 name: Chunks
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 将数组拆分为长度相等的多个部分。
-remarks: 请注意，输出的最后一个元素可能比`nElements` `Length(arr)`不能被整除的更短`nElements`。
+remarks: 请注意，输出的最后一个元素可能比不能被整除的更短 `nElements` `Length(arr)` `nElements` 。
 syntax: "function Chunks (nElements : Int, arr : 'T[]) : 'T[][]"
 input:
   content: "(nElements : Int, arr : 'T[])"
@@ -28,9 +28,9 @@ output:
       uid: "'T"
       isLocal: true
 metadata:
-  ms.openlocfilehash: 283141b3d6826faff9451b122dc0d602edc34500
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 68d4dbf14be8372445eaa0d8034101d314363b00
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676541"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352472"
