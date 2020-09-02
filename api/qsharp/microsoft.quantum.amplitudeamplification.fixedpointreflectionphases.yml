@@ -2,16 +2,16 @@
 uid: microsoft.quantum.amplitudeamplification.fixedpointreflectionphases
 name: FixedPointReflectionPhases
 type: function
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: 计算固定点幅度放大的部分反射阶段。
 syntax: 'function FixedPointReflectionPhases (nQueries : Int, successMin : Double) : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases'
 references: >-
   我们使用 "使用最佳查询数进行定点的固定点放大" 中的阶段
 
 
-  - [YoderLowChuang2014](https://arxiv.org/abs/1409.3305)另请参阅 "复合量程入口方法"
+  - [YoderLowChuang2014](https://arxiv.org/abs/1409.3305) 另请参阅 "复合量程入口方法"
 
-  - [LowYoderChuang2016](https://arxiv.org/abs/1603.03996)的`RotationPhases`格式为。
+  - [LowYoderChuang2016](https://arxiv.org/abs/1603.03996) 的 `RotationPhases` 格式为。
 input:
   content: '(nQueries : Int, successMin : Double)'
   types:
@@ -29,9 +29,9 @@ output:
   - summary: 可在定点波幅放大量程算法实现中使用的阶段数组。
     uid: microsoft.quantum.amplitudeamplification.reflectionphases
 metadata:
-  ms.openlocfilehash: f1484b1f3bad5e5c6213919f0b95adcbc62f25c1
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 88345904b92a4e16fc25e8faa73ccbde181b03dc
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672992"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340470"

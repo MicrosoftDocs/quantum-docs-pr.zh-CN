@@ -2,7 +2,7 @@
 uid: microsoft.quantum.preparation.preparechoistateca
 name: PrepareChoiStateCA
 type: operation
-namespace: Microsoft.Quantum.Preparation
+namespace: microsoft.quantum.preparation
 summary: 为具有受控和 adjoint 变体的给定操作准备 Choi – Jamiłkowski 状态到给定的引用和目标寄存器。
 syntax: 'operation PrepareChoiStateCA (op : (Qubit[] => Unit is Adj + Ctl), reference : Qubit[], target : Qubit[]) : Unit'
 input:
@@ -41,9 +41,9 @@ functors:
 seeAlso:
 - preparechoistate
 metadata:
-  ms.openlocfilehash: 77835c16249c91210b0047e56b4817dcce73290a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1b571d736a7ce3a18f3fa961e108fa64d75b89f5
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685128"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89331528"

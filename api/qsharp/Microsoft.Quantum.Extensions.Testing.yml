@@ -19,9 +19,9 @@ operations:
 - uid: microsoft.quantum.extensions.testing.assertqubittol
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nAssertQubitTol 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertqubitwithintolerance\"。\n请使用 @\"microsoft.quantum.diagnostics.assertqubitwithintolerance\"。"
 metadata:
-  ms.openlocfilehash: 2edd8b382cb62078188850d6810c26e4f3a8a901
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b5ec7ae3ae8957082182787759effebb20f97125
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673251"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340198"

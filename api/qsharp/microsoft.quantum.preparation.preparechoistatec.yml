@@ -2,7 +2,7 @@
 uid: microsoft.quantum.preparation.preparechoistatec
 name: PrepareChoiStateC
 type: operation
-namespace: Microsoft.Quantum.Preparation
+namespace: microsoft.quantum.preparation
 summary: 针对给定的引用和目标寄存器，为具有受控变体的给定操作准备 Choi – Jamiłkowski 状态。
 syntax: 'operation PrepareChoiStateC (op : (Qubit[] => Unit is Ctl), reference : Qubit[], target : Qubit[]) : Unit'
 input:
@@ -39,9 +39,9 @@ functors:
 seeAlso:
 - preparechoistate
 metadata:
-  ms.openlocfilehash: 95390471e5a0354234b3e3a4c580a4627a35f268
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 12219fc492d6d532b33ef315a6e405192d08c17f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681135"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89331545"

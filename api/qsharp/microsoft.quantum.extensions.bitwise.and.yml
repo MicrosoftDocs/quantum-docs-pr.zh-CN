@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.bitwise.and
 name: And
 type: function
-namespace: Microsoft.Quantum.Extensions.Bitwise
+namespace: microsoft.quantum.extensions.bitwise
 summary: 和已弃用。 请改用 @"microsoft.quantum.bitwise.and"。
 syntax: 'function And (a : Int, b : Int) : Int'
 input:
@@ -20,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 947226b6ecf7c7215e2416beaea15f402fed3888
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e1a7bb392132ab5a46433ebd57d3598aaa0fb99d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684796"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89349582"

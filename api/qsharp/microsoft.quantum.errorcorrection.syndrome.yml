@@ -2,13 +2,13 @@
 uid: microsoft.quantum.errorcorrection.syndrome
 name: Syndrome
 type: newtype
-namespace: Microsoft.Quantum.ErrorCorrection
-summary: 指定量程代码的`Result[]`错误症状的度量结果的类型。
+namespace: microsoft.quantum.errorcorrection
+summary: '`Result[]`指定量程代码的错误症状的度量结果的类型。'
 syntax: newtype Syndrome = Result[];
 metadata:
-  ms.openlocfilehash: a354e8c2ccbfd8741e378cef855130b57eeebfba
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d29cdad256abef08ddd5c3c847060f5edbda1a0c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684839"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89349667"

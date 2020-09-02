@@ -2,13 +2,13 @@
 uid: microsoft.quantum.errorcorrection.steanecode
 name: SteaneCode
 type: function
-namespace: Microsoft.Quantum.ErrorCorrection
+namespace: microsoft.quantum.errorcorrection
 summary: 返回一个 CSS 值，它表示⟦7，1，3⟧ Steane 代码编码器，并使用就地的症状度量来表示解码器。
 remarks: >-
   此代码在以下文章中找到：
 
 
-  - A. Steane，"多粒子干扰和量程错误纠正"，过程。 Roy. Lond。 A452 （1996） pp 2551;https://arxiv.org/abs/quant-ph/9601029.
+  - A. Steane，"多粒子干扰和量程错误纠正"，过程。 Roy. Lond。 A452 (1996) pp 2551; https://arxiv.org/abs/quant-ph/9601029.
 syntax: 'function SteaneCode () : Microsoft.Quantum.ErrorCorrection.CSS'
 input:
   content: ()
@@ -19,9 +19,9 @@ output:
   - summary: CSS 类型的一个对象，该对象收集所有相关数据，以便对⟦7、1、3⟧ Steane 代码执行编码和错误更正。
     uid: microsoft.quantum.errorcorrection.css
 metadata:
-  ms.openlocfilehash: fd961a82ad1fb99abc9f4b3d7ba061d10680a3aa
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: af01020f35baa66113ca5e0992e93f8516e4b176
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682236"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89349769"

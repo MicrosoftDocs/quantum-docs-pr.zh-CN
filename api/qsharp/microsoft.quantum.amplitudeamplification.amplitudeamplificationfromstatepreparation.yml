@@ -2,14 +2,14 @@
 uid: microsoft.quantum.amplitudeamplification.amplitudeamplificationfromstatepreparation
 name: AmplitudeAmplificationFromStatePreparation
 type: function
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: 用于部分反射的 oracles 放大幅度。
 remarks: >-
-  这会在开始和目标状态的形式上强制实施更严格`AmpAmpByReflectionPhases`的条件，而不是在中。
+  这会在开始和目标状态的形式上强制实施更严格的条件，而不是在中 `AmpAmpByReflectionPhases` 。
 
-  假定目标状态标有 $ \ket{1}\_f $。
+  假定目标状态标有 $ \ket {1} \_ f $。
 
-  假设在大多数情况下，{0}\_{0}\_{1}\_ `flagQubit` \begin{align} A\ket {f} \ket s = \lambda\ket f\ket {\ text {target\_}} s + \sqrt{1-| \lambda | ^ 2{0}\_} \ket f\cdots，\end{align} 在状态 $ `auxiliaryRegister` \ket{0}\_{f} \ket{0}\_s $ 中进行初始化。
+  假设在 {0} \_ 大多数情况下，\begin{align} A\ket {f} \ket {0} \_ s = \lambda\ket {1} \_ f\ket {\ text {target}} \_ s + \sqrt{1-| \lambda | ^ 2} \ket {0} \_ f\cdots，\end{align} 在 `flagQubit` `auxiliaryRegister` 状态 $ \ket {0} \_ {f} \ket {0} \_ s $ 中进行初始化。
 syntax: 'function AmplitudeAmplificationFromStatePreparation (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int) : (Qubit[] => Unit is Adj + Ctl)'
 input:
   content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int)'
@@ -42,9 +42,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: 2d29383db3cebfe1848a1fcee3115fcee0825d4d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: de9059b0abc7eb8fd622c72561b8875e07a831ad
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676967"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340657"

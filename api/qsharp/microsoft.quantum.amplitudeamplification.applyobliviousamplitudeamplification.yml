@@ -2,21 +2,21 @@
 uid: microsoft.quantum.amplitudeamplification.applyobliviousamplitudeamplification
 name: ApplyObliviousAmplitudeAmplification
 type: operation
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: 通过指定部分反射来在意波幅放大。
 remarks: >-
-  在给定的特定辅助启动状态 $\_\ket{\text{start}} $、特定辅助\_目标状态 $ \ket{\text{target}} a $ 和任何系统状态 $ \ket{\psi}\_s $ 中，假设 \begin{align} O\ket {\ text {start}}\_a\ket {\ psi}\_s = \lambda\ket{\text{target}}\_a U \ket{\psi}\_s + \sqrt{1-| \lambda | ^ 2} \ket{\text{target} ^ \perp}\_a\cdots \end{align} 用于某些单一 $U $。
+  在给定的特定辅助启动状态 $ \ket{\text{start}} $ \_ 、特定辅助目标状态 $ \ket{\text{target}} \_ a $ 和任何系统状态 $ \ket{\psi} \_ s $ 中，假设 \begin{align} O\ket {\ text {start}} \_ a\ket {\ psi} \_ s = \lambda\ket{\text{target}} \_ a U \ket{\psi} \_ s + \sqrt{1-| \lambda | ^ 2} \ket{\text{target} ^ \perp} a\cdots \end{align} \_ 用于某些单一 $U $。
 
-  通过一系列反射，可以反映辅助寄存器上的起始和目标状态`signalOracle`以及其 adjoint 的应用程序，因此可能会更改应用 U 的成功概率。
+  通过一系列反射，可以反映辅助寄存器上的起始和目标状态 `signalOracle` 以及其 adjoint 的应用程序，因此可能会更改应用 U 的成功概率。
 
 
-  在大多数情况下`auxiliaryRegister` ，在状态 $ \ket{\text{start}}\_中进行初始化。
+  在大多数情况下， `auxiliaryRegister` 在状态 $ \ket{\text{start}} 中进行初始化 \_ 。
 syntax: 'operation ApplyObliviousAmplitudeAmplification (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, auxiliaryRegister : Qubit[], systemRegister : Qubit[]) : Unit'
 references: >-
   查看
 
 
-  - [ *D.W. Berry，am Childs，Cleve，Kothari，R.D. Somma，* ](https://arxiv.org/abs/1312.1414)适用于标准版。
+  - [ *D.W. Berry，am Childs，Cleve，Kothari，R.D. Somma，* ](https://arxiv.org/abs/1312.1414) 适用于标准版。
     查看
   - [ *G.H. Low、I.L. 语*](https://arxiv.org/abs/1610.06546) for 通用化 to partial 反射。
 input:
@@ -32,7 +32,7 @@ input:
     summary: 有关辅助寄存器的目标状态的反射运算符
     uid: microsoft.quantum.oracles.reflectionoracle
   - name: signalOracle
-    summary: 单一 oracle $O 类型`ObliviousOracle` ，它在辅助和系统寄存器上共同操作。
+    summary: 单一 oracle $O 类型 `ObliviousOracle` ，它在辅助和系统寄存器上共同操作。
     uid: microsoft.quantum.oracles.obliviousoracle
   - name: auxiliaryRegister
     summary: 辅助寄存器
@@ -53,9 +53,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 7452686a76d9ff89c0eb79290e7dae23347778ac
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 21bdb88716a07c32673425fd4f5276559b56d266
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672951"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340521"

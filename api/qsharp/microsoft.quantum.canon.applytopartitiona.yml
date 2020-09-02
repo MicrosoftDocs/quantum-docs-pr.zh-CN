@@ -2,11 +2,11 @@
 uid: microsoft.quantum.canon.applytopartitiona
 name: ApplyToPartitionA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   将一对操作应用于寄存器的给定分区分为两部分。
 
-  修饰符`A`指示操作为 adjointable。
+  修饰符 `A` 指示操作为 adjointable。
 syntax: 'operation ApplyToPartitionA (op : ((Qubit[], Qubit[]) => Unit is Adj), numberOfQubitsToFirstArgument : Int, target : Qubit[]) : Unit'
 input:
   content: '(op : ((Qubit[], Qubit[]) => Unit is Adj), numberOfQubitsToFirstArgument : Int, target : Qubit[])'
@@ -50,9 +50,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applytopartition
 metadata:
-  ms.openlocfilehash: 43f778ae370d7e9314c231680b911084b6dfed9e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 79b0ba67b7a7932c5152b463eed1c44cea58de59
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674616"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357334"

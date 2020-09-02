@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.approximatelymultiplexpauli
 name: ApproximatelyMultiplexPauli
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   应用对 qubits 数组使用的 Pauli 旋转，根据给定的公差截断小旋转角度。
 
@@ -18,7 +18,7 @@ summary: >-
 
 
   ##
-remarks: '`coefficients`如果指定少于 $ 2 ^ n $，则将用元素 $ \ theta_j = $0.0 填充。'
+remarks: '`coefficients` 如果指定少于 $ 2 ^ n $，则将用元素 $ \ theta_j = $0.0 填充。'
 syntax: 'operation ApproximatelyMultiplexPauli (tolerance : Double, coefficients : Double[], pauli : Pauli, control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit'
 input:
   content: '(tolerance : Double, coefficients : Double[], pauli : Pauli, control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit)'
@@ -54,9 +54,9 @@ functors:
 seeAlso:
 - multiplexpauli
 metadata:
-  ms.openlocfilehash: 65f74da36837a638d3442b6732ee24c682b2e47c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7fd00c7625cbff1a00f40920be632a05eb3dc59a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674452"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357062"

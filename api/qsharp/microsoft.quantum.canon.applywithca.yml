@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applywithca
 name: ApplyWithCA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   给定两个操作，将一个操作应用到另一个运算。
 
@@ -60,9 +60,9 @@ seeAlso:
 - applywitha
 - applywithc
 metadata:
-  ms.openlocfilehash: 4e61318e300685103840a759e30e5dd11d9f412f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d1cdd3e6752f7296d9c18a887853d2dc721fc791
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674498"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357164"

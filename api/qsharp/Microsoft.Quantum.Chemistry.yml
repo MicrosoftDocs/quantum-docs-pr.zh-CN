@@ -3,13 +3,13 @@ uid: microsoft.quantum.chemistry
 name: Microsoft.Quantum.Chemistry
 functions:
 - uid: microsoft.quantum.chemistry.htermstogenidx
-  summary: 将`HTerm[]`数据格式的 Hamiltonian 术语的索引转换为 GeneratorIndex。
+  summary: 将数据格式的 Hamiltonian 术语的索引转换 `HTerm[]` 为 GeneratorIndex。
 - uid: microsoft.quantum.chemistry.htermstogensys
-  summary: 将`HTerm[]`数据格式的 Hamiltonian 转换为 GeneratorSystem。
+  summary: 将数据格式的 Hamiltonian 转换 `HTerm[]` 为 GeneratorSystem。
 - uid: microsoft.quantum.chemistry.htermtogenidx
-  summary: 将`HTerm`数据格式的 Hamiltonian 术语转换为 GeneratorIndex。
+  summary: 将数据格式的 Hamiltonian 术语转换 `HTerm` 为 GeneratorIndex。
 - uid: microsoft.quantum.chemistry.isnotzero
-  summary: 检查`Double`数字是否不约为零。
+  summary: 检查数字是否 `Double` 不约为零。
 newtypes:
 - uid: microsoft.quantum.chemistry.hterm
   summary: >-
@@ -17,9 +17,9 @@ newtypes:
 
     表示的数据的含义取决于接收数据的算法。
 metadata:
-  ms.openlocfilehash: fda6e5c8daebeae115046771e85e0e49d057e666
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d39701c0e7ee50a064d24020298bef12406e5728
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677014"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340215"

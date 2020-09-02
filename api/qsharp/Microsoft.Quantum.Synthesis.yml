@@ -16,9 +16,9 @@ operations:
 - uid: microsoft.quantum.synthesis.applyxcontrolledontruthtablewithcleantarget
   summary: '@"microsoft.quantum.intrinsic.x" `target` 如果布尔函数的 `func` 计算结果为 true （对于中的传统分配），则应用操作 `controlRegister` 。'
 metadata:
-  ms.openlocfilehash: d12a16656826134cfe8c9fb44a1c577c267a6603
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 2b7fa4674af8d6f0a99f1579d323cd3ae90b5635
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85886225"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340725"
