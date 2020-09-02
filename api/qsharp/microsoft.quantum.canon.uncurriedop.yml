@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.uncurriedop
 name: UncurriedOp
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 给定一个返回操作的函数，返回一个将两个输入作为元组的新操作。
 syntax: "function UncurriedOp (curriedOp : ('T -> ('U => Unit))) : (('T, 'U) => Unit)"
 input:
@@ -51,9 +51,9 @@ seeAlso:
 - microsoft.quantum.canon.uncurryopa
 - microsoft.quantum.canon.uncurryopca
 metadata:
-  ms.openlocfilehash: 1ffa2f189770165a4da3eced0ee5d435a1f76acc
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: c339a98eb66dab5a2163a652e769a58f3095a51a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84327469"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354920"

@@ -2,11 +2,11 @@
 uid: microsoft.quantum.canon.uncurriedopa
 name: UncurriedOpA
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   给定一个返回操作的函数，返回一个将两个输入作为元组的新操作。
 
-  修饰符`A`指示操作是 adjointable 的。
+  修饰符 `A` 指示操作是 adjointable 的。
 syntax: "function UncurriedOpA (curriedOp : ('T -> ('U => Unit is Adj))) : (('T, 'U) => Unit is Adj)"
 input:
   content: "(curriedOp : ('T -> ('U => Unit is Adj)))"
@@ -34,7 +34,7 @@ input:
 output:
   content: (('T, 'U) => Unit is Adj)
   types:
-  - summary: 与等效的`op` `op(t, u)`新操作`(curriedOp(t))(u)`。
+  - summary: 与 `op` 等效的新操作 `op(t, u)` `(curriedOp(t))(u)` 。
     isOperation: true
     input:
       types:
@@ -56,9 +56,9 @@ typeParameters:
 seeAlso:
 - microsoft.quantum.canon.uncurryop
 metadata:
-  ms.openlocfilehash: 92ec8c1ae333bcd319c7d63f89fb8614f0793d79
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b85c0be304b8c0fcc2cfa1912445fe45b1347c44
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677983"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354835"

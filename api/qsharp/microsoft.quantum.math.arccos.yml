@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.arccos
 name: ArcCos
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回余弦值为指定数字的角度。
-remarks: 有关更多详细信息，请参阅[Acos](https://docs.microsoft.com/dotnet/api/system.math.acos) 。
+remarks: 有关更多详细信息，请参阅 [Acos](https://docs.microsoft.com/dotnet/api/system.math.acos) 。
 syntax: 'function ArcCos (x : Double) : Double'
 input:
   content: '(x : Double)'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: c8cf51ade7aa2fbda19681021a3c5880f59b18f0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: de70eea2beaa4ab5a617e16be34ba9b271552ccd
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673988"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335081"

@@ -2,8 +2,8 @@
 uid: microsoft.quantum.math.abssquaredcomplex
 name: AbsSquaredComplex
 type: function
-namespace: Microsoft.Quantum.Math
-summary: 返回类型`Complex`的复数的平方绝对值。
+namespace: microsoft.quantum.math
+summary: 返回类型的复数的平方绝对值 `Complex` 。
 syntax: 'function AbsSquaredComplex (input : Microsoft.Quantum.Math.Complex) : Double'
 input:
   content: '(input : Microsoft.Quantum.Math.Complex)'
@@ -18,9 +18,9 @@ output:
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: ef03322ea74453c7c407341a68e36c5505964460
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: dd267a3dbac7b59c99329a3d6ee1edd9eefd5dd4
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682786"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335149"

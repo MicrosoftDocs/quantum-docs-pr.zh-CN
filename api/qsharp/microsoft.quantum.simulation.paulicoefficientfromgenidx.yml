@@ -2,25 +2,25 @@
 uid: microsoft.quantum.simulation.paulicoefficientfromgenidx
 name: PauliCoefficientFromGenIdx
 type: function
-namespace: Microsoft.Quantum.Simulation
-summary: 提取由描述的 Pauli 术语的系数`GeneratorIndex`。
+namespace: microsoft.quantum.simulation
+summary: 提取由描述的 Pauli 术语的系数 `GeneratorIndex` 。
 syntax: 'function PauliCoefficientFromGenIdx (generatorIndex : Microsoft.Quantum.Simulation.GeneratorIndex) : Double'
 input:
   content: '(generatorIndex : Microsoft.Quantum.Simulation.GeneratorIndex)'
   types:
   - name: generatorIndex
-    summary: '`GeneratorIndex`对 Pauli 术语进行编码的类型。'
+    summary: '`GeneratorIndex` 对 Pauli 术语进行编码的类型。'
     uid: microsoft.quantum.simulation.generatorindex
 output:
   content: Double
   types:
-  - summary: 描述的术语的系数`GeneratorIndex`。
+  - summary: 描述的术语的系数 `GeneratorIndex` 。
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 8fbf424210cde86aa57068f2f5d2b7a1c85033a7
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3a4eaf64844b4087338a85d9c878b1a51ea96484
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682533"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89329624"

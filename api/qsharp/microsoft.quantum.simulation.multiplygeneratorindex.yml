@@ -2,8 +2,8 @@
 uid: microsoft.quantum.simulation.multiplygeneratorindex
 name: MultiplyGeneratorIndex
 type: function
-namespace: Microsoft.Quantum.Simulation
-summary: 将中的系数相乘`GeneratorIndex`。
+namespace: microsoft.quantum.simulation
+summary: 将中的系数相乘 `GeneratorIndex` 。
 examples: >-
   ```qsharp
 
@@ -28,14 +28,14 @@ input:
 output:
   content: Microsoft.Quantum.Simulation.GeneratorIndex
   types:
-  - summary: 一个`GeneratorIndex` ，它表示一个系数`multiplier`大于系数的字词。
+  - summary: 一个， `GeneratorIndex` 它表示一个系数大于系数的字词 `multiplier` 。
     uid: microsoft.quantum.simulation.generatorindex
 seeAlso:
 - microsoft.quantum.canon.generatorindex
 metadata:
-  ms.openlocfilehash: 37a7981f62881e1b8f1a6874508df87c042c6382
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a39adc439e4e7712458695869296aaefff4760b9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682576"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89329760"

@@ -2,8 +2,8 @@
 uid: microsoft.quantum.simulation.getgeneratorsystemnterms
 name: GetGeneratorSystemNTerms
 type: function
-namespace: Microsoft.Quantum.Simulation
-summary: 检索中的字词数`GeneratorSystem`。
+namespace: microsoft.quantum.simulation
+summary: 检索中的字词数 `GeneratorSystem` 。
 syntax: 'function GetGeneratorSystemNTerms (generatorSystem : Microsoft.Quantum.Simulation.GeneratorSystem) : Int'
 input:
   content: '(generatorSystem : Microsoft.Quantum.Simulation.GeneratorSystem)'
@@ -14,15 +14,15 @@ input:
 output:
   content: Int
   types:
-  - summary: 中的字词数`GeneratorSystem`。
+  - summary: 中的字词数 `GeneratorSystem` 。
     isPrimitive: true
     uid: Int
 seeAlso:
 - microsoft.quantum.canon.generatorsystem
 metadata:
-  ms.openlocfilehash: aed94d8dbf5ba97a2b7054cd6ec09a24df7b1a44
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 52b42a22319aa91042b9ee9375a881b0fa55440b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681074"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330049"
