@@ -2,13 +2,13 @@
 uid: microsoft.quantum.canon.resultstack
 name: ResultStack
 type: newtype
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: ResultStack 已被弃用。
 syntax: newtype ResultStack = (Int, Int, Result[]);
 metadata:
-  ms.openlocfilehash: 316d2a86d289feda66a586cbf70fa8c5389fae36
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 32b200987eec29f9d993f0bdf86b832ce002ec21
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678281"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355328"

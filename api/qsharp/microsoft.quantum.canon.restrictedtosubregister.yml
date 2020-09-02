@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.restrictedtosubregister
 name: RestrictedToSubregister
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 将操作限制为寄存器的索引数组，即，subregister。
 syntax: 'function RestrictedToSubregister (op : (Qubit[] => Unit), idxs : Int[]) : (Qubit[] => Unit)'
 input:
@@ -43,9 +43,9 @@ seeAlso:
 - microsoft.quantum.canon.restrictedtosubregisterc
 - microsoft.quantum.canon.restrictedtosubregisterca
 metadata:
-  ms.openlocfilehash: 4edfd49247480ce34f5c2d56c1ea33a62f756620
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7ea69915655d6366a12f4f4df0379f338a0215c2
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678459"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355481"

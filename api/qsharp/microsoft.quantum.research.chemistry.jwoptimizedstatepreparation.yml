@@ -2,7 +2,7 @@
 uid: microsoft.quantum.research.chemistry.jwoptimizedstatepreparation
 name: JWOptimizedStatePreparation
 type: operation
-namespace: Microsoft.Quantum.Research.Chemistry
+namespace: microsoft.quantum.research.chemistry
 summary: 通过使用 orbitals 来准备试验状态的简单状态
 syntax: 'operation JWOptimizedStatePreparation (qubitIndices : Int[], qubits : Qubit[]) : Unit'
 input:
@@ -27,9 +27,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 5fe5b532436e0560e98fa12385e77657f23a8515
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: acb58924152f686c445f660757315aa33d60cd6d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686935"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330372"

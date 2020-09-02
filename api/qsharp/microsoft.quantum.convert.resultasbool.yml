@@ -2,14 +2,14 @@
 uid: microsoft.quantum.convert.resultasbool
 name: ResultAsBool
 type: function
-namespace: Microsoft.Quantum.Convert
-summary: '`Result`将`Bool`类型转换为类型，其中`One`映射到`true`并`Zero`映射到。 `false`'
+namespace: microsoft.quantum.convert
+summary: 将 `Result` 类型转换为 `Bool` 类型，其中 `One` 映射到 `true` 并 `Zero` 映射到 `false` 。
 syntax: 'function ResultAsBool (input : Result) : Bool'
 input:
   content: '(input : Result)'
   types:
   - name: input
-    summary: '`Result`要转换的。'
+    summary: '`Result` 要转换的。'
     isPrimitive: true
     uid: Result
 output:
@@ -19,9 +19,9 @@ output:
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 460a7a8e2a6fc4433575f231978b5b3df51f7aaf
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 696e7afab1fd0f63345b1e6df0d62be8921b7467
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82658964"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89343105"

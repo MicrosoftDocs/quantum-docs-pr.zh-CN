@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.repeat
 name: Repeat
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 在给定的次数后重复操作。
 examples: >-
   以下项是等效的：
@@ -52,9 +52,9 @@ seeAlso:
 - microsoft.quantum.canon.repeatc
 - microsoft.quantum.canon.repeatca
 metadata:
-  ms.openlocfilehash: faf0526bd71cfa809bac5fdf06a6b72684ac8bbe
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 8984e319573e70cfee2718b9e6da5925a0c9b69a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85886233"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355668"

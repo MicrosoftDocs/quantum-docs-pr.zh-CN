@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.convert.tobigint
 name: ToBigInt
 type: function
-namespace: Microsoft.Quantum.Extensions.Convert
+namespace: microsoft.quantum.extensions.convert
 summary: ToBigInt 已被弃用。 请改用 @"microsoft.quantum.convert.intasbigint"。
 syntax: 'function ToBigInt (a : Int) : BigInt'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: e2f06ffac4153a150120a449d46e736ba72e1e9d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7cbe57c83b4ea199b902630c0ecaf891fe61884e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682073"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89349225"

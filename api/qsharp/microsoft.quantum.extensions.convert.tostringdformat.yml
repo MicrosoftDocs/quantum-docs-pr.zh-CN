@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.convert.tostringdformat
 name: ToStringDFormat
 type: function
-namespace: Microsoft.Quantum.Extensions.Convert
+namespace: microsoft.quantum.extensions.convert
 summary: ToStringDFormat 已被弃用。 请改用 @"microsoft.quantum.convert.doubleasstringwithformat"。
 syntax: 'function ToStringDFormat (a : Double, fmt : String) : String'
 input:
@@ -20,9 +20,9 @@ output:
   - isPrimitive: true
     uid: String
 metadata:
-  ms.openlocfilehash: 34cd5e0d595b9fdb7c6b85da5e243019c86f5afd
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: bf1bba24244ce68ea127efac8a00d5700280530e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681996"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89349004"
