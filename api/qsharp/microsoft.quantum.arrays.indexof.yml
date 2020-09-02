@@ -2,10 +2,10 @@
 uid: microsoft.quantum.arrays.indexof
 name: IndexOf
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 返回满足给定谓词的数组中第一个元素的第一个索引。 如果此类元素不存在，则返回-1。
 examples: >-
-  假设`IsEven : Int -> Bool`是一个函数，该函数`true`在且仅当其输入为偶数时返回。 然后，可将其与`IndexOf`一起用于查找数组中的第一个偶数元素：
+  假设 `IsEven : Int -> Bool` 是一个函数，该函数在 `true` 且仅当其输入为偶数时返回。 然后，可将其与一起用于 `IndexOf` 查找数组中的第一个偶数元素：
 
 
   ```Q#
@@ -38,13 +38,13 @@ input:
 output:
   content: Int
   types:
-  - summary: 最小索引`idx` （例如`predicate(arr[idx])` true），如果不存在此类元素，则为-1。
+  - summary: 最小索引 `idx` （例如 `predicate(arr[idx])` true），如果不存在此类元素，则为-1。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 6fb95357096751e53f601a9c855ff656e2dd1b34
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6b0097c4feb41a00f0d9c1fcb4c2b5dbcaa186ef
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681003"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352115"

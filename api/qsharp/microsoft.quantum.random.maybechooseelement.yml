@@ -2,7 +2,7 @@
 uid: microsoft.quantum.random.maybechooseelement
 name: MaybeChooseElement
 type: operation
-namespace: Microsoft.Quantum.Random
+namespace: microsoft.quantum.random
 summary: 给定一个数据数组和一个针对其索引的分布，尝试随机选择一个元素。
 examples: >-
   以下 Q # 代码段从数组中随机选择一个元素：
@@ -39,9 +39,9 @@ output:
     - uid: "'T"
       isLocal: true
 metadata:
-  ms.openlocfilehash: bbbb821e5826e7722c80010b534a38a828db5630
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 874b3972e4a10c322d171f202310756b2ef356fe
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863922"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330695"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.fact
 name: Fact
 type: function
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 声明传统条件为 true。
 examples: >-
   以下 Q # 代码段将失败：
@@ -33,9 +33,9 @@ output:
 seeAlso:
 - microsoft.quantum.diagnostics.contradiction
 metadata:
-  ms.openlocfilehash: 396b1b65e16aa2499d6a8ce9a16e29ede0716695
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: a6ea6a8602de675da045a32c1766759d2d72c9a5
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863315"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89336951"

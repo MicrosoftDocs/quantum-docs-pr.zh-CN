@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.exclude
 name: Exclude
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 返回一个数组，其中包含另一个数组的元素，而不包括给定索引列表中的元素。
 examples: >-
   ```qsharp
@@ -31,7 +31,7 @@ input:
 output:
   content: "'T[]"
   types:
-  - summary: 一个数组`output` ，它`output[0]`是`array`其索引未出现在中`remove`的第一个元素，这`output[1]`是第二个这样的元素，依此类推。
+  - summary: 一个数组， `output` 它 `output[0]` 是 `array` 其索引未出现在中的第一个元素 `remove` ，这 `output[1]` 是第二个这样的元素，依此类推。
     isArray: true
     uid: "'T"
     isLocal: true
@@ -39,9 +39,9 @@ typeParameters:
 - uid: "'T"
   summary: 数组元素的类型。
 metadata:
-  ms.openlocfilehash: 715610f2e8d0932a22d6dfdd0232e981a495fd6f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7e0f978f711962247c08c1b367f3ca62e16cad2c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676479"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352336"

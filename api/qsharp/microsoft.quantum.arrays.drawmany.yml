@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.drawmany
 name: DrawMany
 type: operation
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 对给定数量的样本重复操作，并在数组中收集其输出。
 examples: >-
   下面的示例为一个整数，给定一个操作，该操作一次采样一个位。
@@ -50,9 +50,9 @@ typeParameters:
 seeAlso:
 - microsoft.quantum.canon.repeat
 metadata:
-  ms.openlocfilehash: 8ed96fbb8b543cf8f9f167304e45e5f4fd82ad44
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: a4f3ab6f4224a9b5a293fe458ad653171983a6cc
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85886221"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352387"

@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.e
 name: E
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回自然对数底数 $e $。
-remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.e) 。
+remarks: 有关更多详细信息，请参阅 [system.object](https://docs.microsoft.com/dotnet/api/system.math.e) 。
 syntax: 'function E () : Double'
 input:
   content: ()
@@ -15,9 +15,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 84a9053159279de539c48786df3cad1c031fcc3f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 054099f4a7b0ae4a4c7a03571e97fd72f475d5af
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686767"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344188"

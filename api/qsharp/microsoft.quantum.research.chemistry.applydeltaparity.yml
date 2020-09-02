@@ -2,7 +2,7 @@
 uid: microsoft.quantum.research.chemistry.applydeltaparity
 name: ApplyDeltaParity
 type: operation
-namespace: Microsoft.Quantum.Research.Chemistry
+namespace: microsoft.quantum.research.chemistry
 summary: 计算上一个 PQRS 之间的奇偶校验差异条款和下一 PQRS二项式. 这种差异是在辅助 qubit 上计算的。
 remarks: 这假设 P < Q < R < S 的索引 < .。。适用于 prevPQ 和 nextPQ。
 syntax: 'operation ApplyDeltaParity (prevFermionicTerm : Int[], nextFermionicTerm : Int[], aux : Qubit, qubits : Qubit[]) : Unit'
@@ -37,9 +37,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 27d2ce22c9d7281682236b5214c39abf1d352eeb
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a953418f97a2883d12eb9d415943b8e3f3b24e44
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82687145"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330542"

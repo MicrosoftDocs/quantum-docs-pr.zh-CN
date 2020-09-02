@@ -2,11 +2,11 @@
 uid: microsoft.quantum.environment.getqubitsavailabletoborrow
 name: GetQubitsAvailableToBorrow
 type: operation
-namespace: Microsoft.Quantum.Environment
+namespace: microsoft.quantum.environment
 summary: >-
   返回当前可用于借用的 qubits 的数目。
 
-  这包括未使用的 qubits;也就是说，这包括由`GetQubitsAvailableToUse`返回的 qubits。
+  这包括未使用的 qubits;也就是说，这包括由返回的 qubits `GetQubitsAvailableToUse` 。
 syntax: 'operation GetQubitsAvailableToBorrow () : Int'
 input:
   content: ()
@@ -15,17 +15,17 @@ output:
   content: Int
   types:
   - summary: >-
-      可在`borrowing`语句中分配的 qubits 的数目。
+      可在语句中分配的 qubits 的数目 `borrowing` 。
 
-      如果正在使用的目标计算机未提供此信息， `-1`则返回。
+      如果正在使用的目标计算机未提供此信息，则 `-1` 返回。
     isPrimitive: true
     uid: Int
 seeAlso:
 - getqubitsavailabletouse
 metadata:
-  ms.openlocfilehash: 99dd2afb66c334b112a2ee511b0437281da6b888
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: fbb0ccdcc17346ba596df537e81aeabb61b135c4
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682415"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89336866"

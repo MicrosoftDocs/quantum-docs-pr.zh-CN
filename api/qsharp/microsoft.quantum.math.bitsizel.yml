@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.bitsizel
 name: BitSizeL
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: >-
-  对于非负整数`a`，返回表示`a`所需的位数。
+  对于非负整数 `a` ，返回表示所需的位数 `a` 。
 
 
   即，返回 < 2 ^ n $ $a 的最小 $n $。
@@ -19,13 +19,13 @@ input:
 output:
   content: Int
   types:
-  - summary: 的位大小`a`。
+  - summary: 的位大小 `a` 。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 70293cfdf4beb784e379632d2e7dc193300d4b52
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6f3e3219e62cf1c51153185ef9a78d710f4fd60f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683400"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344380"

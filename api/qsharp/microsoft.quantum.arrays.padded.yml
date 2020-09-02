@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.padded
 name: Padded
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 返回使用指定的值（最大指定长度）填充的数组。
 examples: >-
   ```qsharp
@@ -23,7 +23,7 @@ input:
   content: "(nElementsTotal : Int, defaultElement : 'T, inputArray : 'T[])"
   types:
   - name: nElementsTotal
-    summary: 填充的数组的长度。 如果为正， `inputArray`则在头中填充。 如果此为负， `inputArray`则在结尾处填充。
+    summary: 填充的数组的长度。 如果为正， `inputArray` 则在头中填充。 如果此为负， `inputArray` 则在结尾处填充。
     isPrimitive: true
     uid: Int
   - name: defaultElement
@@ -38,7 +38,7 @@ input:
 output:
   content: "'T[]"
   types:
-  - summary: 一个数组`output` ，它是`inputArray`在头`defaultElement`中填充的，直到`output`长度为`nElementsTotal`
+  - summary: 一个数组 `output` ，它是 `inputArray` 在头中填充的， `defaultElement` 直到 `output` 长度为 `nElementsTotal`
     isArray: true
     uid: "'T"
     isLocal: true
@@ -46,9 +46,9 @@ typeParameters:
 - uid: "'T"
   summary: 数组元素的类型。
 metadata:
-  ms.openlocfilehash: 6fafc015026ca9b369e23fda702af172867444ca
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 37b2f4bae9b5f055762ac1d84fef30d13f35a741
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680893"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351911"

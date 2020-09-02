@@ -2,7 +2,7 @@
 uid: microsoft.quantum.random.standardnormaldistribution
 name: StandardNormalDistribution
 type: function
-namespace: Microsoft.Quantum.Random
+namespace: microsoft.quantum.random
 summary: 返回一个平均分布，其平均值为0，方差为1。
 examples: >-
   下面从标准正态分布绘制了10个样本：
@@ -24,9 +24,9 @@ output:
 seeAlso:
 - microsoft.quantum.random.normaldistribution
 metadata:
-  ms.openlocfilehash: 5e51a76b1bf2d83fe62a77663aa3cc8dc0d5bacb
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: f3922258f624ca6f807c1ac173b38a0122e6166b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863977"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330661"

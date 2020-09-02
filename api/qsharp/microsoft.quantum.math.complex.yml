@@ -2,16 +2,16 @@
 uid: microsoft.quantum.math.complex
 name: Complex
 type: newtype
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: >-
   表示复数的实部和虚部。
 
   元组的第一个元素是实际的组件，第二个元素是虚部。
 syntax: newtype Complex = (Double, Double);
 metadata:
-  ms.openlocfilehash: f95be6b5e742421712458d171c21e989a68e342b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 8462531555c8e27a30cadf05f9f4a59a57ad1026
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683361"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344329"
