@@ -2,7 +2,7 @@
 uid: microsoft.quantum.characterization.measureallz
 name: MeasureAllZ
 type: operation
-namespace: Microsoft.Quantum.Characterization
+namespace: microsoft.quantum.characterization
 summary: MeasureAllZ 已被弃用。 请改用 @"microsoft.quantum.measurement.measureallz"。
 syntax: 'operation MeasureAllZ (register : Qubit[]) : Result'
 input:
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 7ea7ed36136e8eab994c0087e8bf487cca3fd508
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ee48e654ec0c8202a86c68912fac70b6ac4bc49b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677654"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354342"

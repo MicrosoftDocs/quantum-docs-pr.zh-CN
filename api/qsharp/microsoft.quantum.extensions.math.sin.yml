@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.sin
 name: Sin
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: Sin 已弃用。 请改用 @"microsoft.quantum.math.sin"。
 syntax: 'function Sin (theta : Double) : Double'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 13831d136b207c56899ab13cf91857ed76540551
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 79ece71fb758b6d98907939bc139989aa7259d41
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686054"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347729"

@@ -3,19 +3,19 @@ uid: microsoft.quantum.chemistry.jordanwigner
 name: Microsoft.Quantum.Chemistry.JordanWigner
 functions:
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerblockencodinggeneratorsystem
-  summary: 将描述的 Hamiltonian 转换`JWOptimizedHTerms`为 Pauli `GeneratorSystem` `GeneratorIndex`的表示形式。
+  summary: 将描述的 Hamiltonian 转换 `JWOptimizedHTerms` 为 `GeneratorSystem` Pauli 的表示形式 `GeneratorIndex` 。
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerclusteroperatorevolutionset
   summary: 将 dynamical 生成器表示为一组 simulatable 入口和 JordanWigner 中的扩展。
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerclusteroperatorgeneratorsystem
-  summary: 将描述的 Hamiltonian 转换`JWOptimizedHTerms`为用`GeneratorSystem`此文件中定义的`GeneratorIndex`约定表示的。
+  summary: 将描述的 Hamiltonian 转换 `JWOptimizedHTerms` 为用 `GeneratorSystem` `GeneratorIndex` 此文件中定义的约定表示的。
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerfermionevolutionset
   summary: 将 dynamical 生成器表示为一组 simulatable 入口和 JordanWigner 中的扩展。
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerfermionfunction
   summary: 将 dynamical 生成器表示为一组 simulatable 入口和 JordanWigner 中的扩展。
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignergeneratorsystem
-  summary: 将描述的 Hamiltonian 转换`JWOptimizedHTerms`为用`GeneratorSystem`此文件中定义的`GeneratorIndex`约定表示的。
+  summary: 将描述的 Hamiltonian 转换 `JWOptimizedHTerms` 为用 `GeneratorSystem` `GeneratorIndex` 此文件中定义的约定表示的。
 - uid: microsoft.quantum.chemistry.jordanwigner.optimizedblockencodinggeneratorsystem
-  summary: 将描述的 Hamiltonian 转换`JWOptimizedHTerms`为 Pauli `GeneratorSystem` `GeneratorIndex`的表示形式。
+  summary: 将描述的 Hamiltonian 转换 `JWOptimizedHTerms` 为 `GeneratorSystem` Pauli 的表示形式 `GeneratorIndex` 。
 - uid: microsoft.quantum.chemistry.jordanwigner.optimizedqubitizationoracle
   summary: 返回 T-sql 优化 Qubitization 操作和运行该操作所需的参数。
 - uid: microsoft.quantum.chemistry.jordanwigner.qubitizationoracle
@@ -24,7 +24,7 @@ functions:
   summary: 返回 Trotter 步骤操作和运行该操作所需的参数。
 operations:
 - uid: microsoft.quantum.chemistry.jordanwigner.optimizedbexy
-  summary: 一个单一 $U $，它对 $ （X ^ {z + 1}\_pY ^ {z}\_p） z\_{p-1} 应用 Pauli 字符串 .。。在索引 $z \in\{0、1\}$ 和 $p $ 上 Z_0 $ $。 也就是说，$ $ \begin{align} U\ket {z} \ 票证 {p} \ 票证 {\ psi} = \ket{z}\ket{p} （X ^ {z + 1}\_pY ^ {z}\_p） z\_{p-1} .。。Z_0 \ket{\psi} \end{align} $ $
+  summary: 一个单一 $U $，适用于 $ (X ^ {z + 1} \_ pY ^ {z} \_ p) z \_ {p-1} .。。在索引 $z \in \{ 0、1 \} $ 和 $p $ 上 Z_0 $ $。 也就是说，$ $ \begin{align} U\ket {z} \ 票证 {p} \ 票证 {\ psi} = \ket{z}\ket{p} (X ^ {z + 1} \_ pY ^ {z} \_ p) z \_ {p-1} .。。Z_0 \ket{\psi} \end{align} $ $
 - uid: microsoft.quantum.chemistry.jordanwigner.preparesingleconfigurationalstatesinglesiteoccupation
   summary: 通过使用 orbitals 来准备试验状态的简单状态
 - uid: microsoft.quantum.chemistry.jordanwigner.preparesparsemulticonfigurationalstate
@@ -34,7 +34,7 @@ operations:
 - uid: microsoft.quantum.chemistry.jordanwigner.prepareunitarycoupledclusterstate
   summary: 单一耦合群集状态准备试验状态
 - uid: microsoft.quantum.chemistry.jordanwigner.selectz
-  summary: 一种单一 $U $，它对索引状态 $ \ket{p} $ $p 上 $Z 的 qubits $ 也就是说，$ $ \begin{align} U\ket {p} \ 票证 {\ psi} = \ket{p}Z\_p\ket {\ psi} \end{align} $ $
+  summary: 一种单一 $U $，它对索引状态 $ \ket{p} $ $p 上 $Z 的 qubits $ 也就是说，$ $ \begin{align} U\ket {p} \ 票证 {\ psi} = \ket{p}Z \_ p\ket {\ psi} \end{align} $ $
 newtypes:
 - uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerencodingdata
   summary: >-
@@ -49,13 +49,13 @@ newtypes:
 
     表示的数据的含义取决于接收数据的算法。
 - uid: microsoft.quantum.chemistry.jordanwigner.optimizedbegeneratorsystem
-  summary: 一个`Int`函数， `OptimizedBETermIndex`它返回给定`n`整数`n`的术语的数据，以及中的字词数和中所有字词系数的绝对值之和`Double`。
+  summary: 一个函数，它返回 `OptimizedBETermIndex` 给定整数的术语的数据，以及中的字词 `n` `n` 数 `Int` 和中所有字词系数的绝对值之和 `Double` 。
 - uid: microsoft.quantum.chemistry.jordanwigner.optimizedbetermindex
   summary: 优化的块编码算法中的术语数据。
 metadata:
-  ms.openlocfilehash: bbc51f1ca36c81f15f96d0e526eb15bf79922373
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 0299b01d022eda61772a48ce1cb1bc693ffbdf31
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677047"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341439"

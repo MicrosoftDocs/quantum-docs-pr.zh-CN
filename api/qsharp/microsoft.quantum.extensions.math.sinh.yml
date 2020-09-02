@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.sinh
 name: Sinh
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: Sinh 已被弃用。 请改用 @"microsoft.quantum.math.sinh"。
 syntax: 'function Sinh (d : Double) : Double'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 284c3f5dee16dc2b06a43fe7be8a94d7345fa8b1
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 141a4f5c30e805e0aff9365810af259ad57b4bff
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686027"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347712"

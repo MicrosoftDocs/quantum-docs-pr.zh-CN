@@ -1,7 +1,7 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.amplitudeamplification
 name: Microsoft.Quantum.AmplitudeAmplification
-summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于执行振幅放大的函数和操作。\n\n # <a name=\"description\"></a>说明\n 采用部分反射的在意波幅放大是在此处实现的最常见的波幅放大形式。\n\n 这是通过操作 AmpAmpObliviousByReflectionPhases 调用的。\n\n 这有两个寄存器`ancillaRegister` ： `systemRegister`和。\n\n 这会接受两个 oracles，这种`ReflectionOracle`类型的反射只对`ancillaRegister`寄存器执行操作。\n\n 这就接受了一种在两个寄存器上`ObliviousOracle`共同操作的类型的 oracle 特殊在意波幅放大。\n\n 假定输入状态`ancillaRegister`为第一个反射运算符的唯一 $-$1 eigenstate，$I-2 \\ 票证 {s} \\ 寄存器 {s} $。\n\n 反射目标量程状态的反射通常是通过假定访问从计算基础 $ \\ket{0\\cdots 0} $ 准备该状态的 oracle 来实现的。\n\n 对于这些 oracles，我们的惯例需要两个注册：一个`flagQubit` qubit 寄存器，另一个寄存器用于 ancillaRegister 寄存器上的其他所有内容。\n\n 类型`StateOracle`为的 oracle 在两个寄存器上共同操作，用一些真实幅度来创建{1}由`flagQubit`寄存器中的 $ \\ket $ 标记的目标状态。\n\n 此标记`ReflectionOracle`状态的反射是由操作`TargetStateReflectionOracle`生成的。\n\n 有关输入`ReflectionOracle`状态`ancillaRegister`的反射将由反 StateOracle 生成，然后使用 ReflectionStart （）反射 $ \\ket{0\\cdots 0} $。\n\n 类型`DeterministicStateOracle`为的 oracle 对`qubitState`寄存器进行操作，以完全不带标志的方式创建目标状态。\n\n `AmpAmpObliviousByOraclePhases`是在意波幅放大的版本，它接受 oracles `StateOracle` ， `ObliviousOracle`而不是反射。\n\n 请注意，振幅放大是在意波幅放大的一种特殊`ObliviousOracle`情况，其中，是标识运算符，不存在任何系统 qubits `systemRegister` ，即为空。\n\n 此操作通过操作`AmpAmByReflectionPhases`和`AmpAmpByOraclePhases`调用。\n\n Grover 搜索标准情况下的部分反射阶段由函数 AmpAmpPhasesStandard 提供。\n\n 例如，我们有以下依赖项： AmpAmpByOracle-> AmpAmpByOraclePhases-> AmpAmpObliviousByOraclePhases-> AmpAmpObliviousByReflectionPhases。"
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于执行振幅放大的函数和操作。\n\n # <a name=\"description\"></a>描述\n 采用部分反射的在意波幅放大是在此处实现的最常见的波幅放大形式。\n\n 这是通过操作 AmpAmpObliviousByReflectionPhases 调用的。\n\n 这有两个寄存器： `ancillaRegister` 和 `systemRegister` 。\n\n 这会接受两个 oracles，这种类型的反射 `ReflectionOracle` 只对 `ancillaRegister` 寄存器执行操作。\n\n 这就接受了一种 `ObliviousOracle` 在两个寄存器上共同操作的类型的 oracle 特殊在意波幅放大。\n\n 假定输入状态为 `ancillaRegister` 第一个反射运算符的唯一 $-$1 eigenstate，$I-2 \\ 票证 {s} \\ 寄存器 {s} $。\n\n 反射目标量程状态的反射通常是通过假定访问从计算基础 $ \\ket{0\\cdots 0} $ 准备该状态的 oracle 来实现的。\n\n 对于这些 oracles，我们的惯例需要两个注册：一个 qubit `flagQubit` 寄存器，另一个寄存器用于 ancillaRegister 寄存器上的其他所有内容。\n\n 类型为的 oracle `StateOracle` 在两个寄存器上共同操作， {1} `flagQubit` 用一些真实幅度来创建由寄存器中的 $ \\ket $ 标记的目标状态。\n\n `ReflectionOracle`此标记状态的反射是由操作生成的 `TargetStateReflectionOracle` 。\n\n `ReflectionOracle`有关输入状态的反射将 `ancillaRegister` 由反 StateOracle 生成，然后使用 ReflectionStart ( # A1 反射 $ \\ket{0\\cdots 0} $。\n\n 类型为的 oracle `DeterministicStateOracle` 对 `qubitState` 寄存器进行操作，以完全不带标志的方式创建目标状态。\n\n `AmpAmpObliviousByOraclePhases` 是在意波幅放大的版本，它接受 oracles `StateOracle` ， `ObliviousOracle` 而不是反射。\n\n 请注意，振幅放大是在意波幅放大的一种特殊情况，其中， `ObliviousOracle` 是标识运算符，不存在任何系统 qubits，即 `systemRegister` 为空。\n\n 此操作通过操作和调用 `AmpAmByReflectionPhases` `AmpAmpByOraclePhases` 。\n\n Grover 搜索标准情况下的部分反射阶段由函数 AmpAmpPhasesStandard 提供。\n\n 例如，我们有以下依赖项： AmpAmpByOracle-> AmpAmpByOraclePhases-> AmpAmpObliviousByOraclePhases-> AmpAmpObliviousByReflectionPhases。"
 functions:
 - uid: microsoft.quantum.amplitudeamplification.ampampbyoracle
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nAmpAmpByOracle 已被弃用。 请改用 @\"microsoft.quantum.amplitudeamplification.standardamplitudeamplification\"。\n请使用 @\"microsoft.quantum.amplitudeamplification.standardamplitudeamplification\"。"
@@ -39,10 +39,10 @@ functions:
   summary: 计算标准振幅放大的部分反射阶段。
 - uid: microsoft.quantum.amplitudeamplification.targetstatereflectionoracle
   summary: >-
-    `ReflectionOracle`构造 qubit 标志唯一标记的目标状态。
+    构造 `ReflectionOracle` qubit 标志唯一标记的目标状态。
 
 
-    目标状态的单个 qubit 设置为1，其他所有0： $ \ket{1}_f $。
+    目标状态的单个 qubit 设置为1，其他所有0： $ \ket {1} _f $。
 operations:
 - uid: microsoft.quantum.amplitudeamplification.ampamprusbyoracle
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nAmpAmpRUSByOracle 已被弃用。 请改用 @\"microsoft.quantum.amplitudeamplification.applyfixedpointamplification\"。\n请使用 @\"microsoft.quantum.amplitudeamplification.applyfixedpointamplification\"。"
@@ -58,9 +58,9 @@ newtypes:
 - uid: microsoft.quantum.amplitudeamplification.rotationphases
   summary: 振幅放大中 qubit 旋转序列的各个阶段。
 metadata:
-  ms.openlocfilehash: 7f8b98826812e842a582d7940c5dc892a056e1fa
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: c64b38175c55e3f71f0746d9a7e65ea5e78b7383
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675516"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341337"

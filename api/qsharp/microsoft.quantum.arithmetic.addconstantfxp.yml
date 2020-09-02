@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.addconstantfxp
 name: AddConstantFxP
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 将传统常量添加到量程固定点数字。
 syntax: 'operation AddConstantFxP (constant : Double, fp : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
 input:
@@ -24,9 +24,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 7342dda93111b0454c5a4c9e9ca39ecb846be24b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e07a3ff38276fcd0c6a30a04084712e48e14cc30
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675335"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341796"

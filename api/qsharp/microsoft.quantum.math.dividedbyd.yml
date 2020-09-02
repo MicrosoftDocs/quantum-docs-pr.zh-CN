@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.dividedbyd
 name: DividedByD
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个输入的商。
 syntax: 'function DividedByD (a : Double, b : Double) : Double'
 input:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 7ec1a573f8d894264b400ec79a794b0ac487c0b4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5734e24c83f48febba7629148b9b9f8d28b12f20
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673924"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334724"

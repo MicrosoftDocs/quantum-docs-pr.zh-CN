@@ -25,7 +25,7 @@ functions:
 - uid: microsoft.quantum.extensions.math.divremb
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nDivRemB 已被弃用。 请改用 @\"microsoft.quantum.math.divreml\"。\n请使用 @\"microsoft.quantum.math.divreml\"。"
 - uid: microsoft.quantum.extensions.math.e
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nE 已弃用。 请使用@\"microsoft.quantum.math.e\" 。\n请使用 @\"microsoft.quantum.math.e\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nE 已弃用。 请使用 @\"microsoft.quantum.math.e\" 。\n请使用 @\"microsoft.quantum.math.e\"。"
 - uid: microsoft.quantum.extensions.math.expd
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nExpD 已被弃用。 请改用 @\"microsoft.quantum.math.expd\"。\n请使用 @\"microsoft.quantum.math.expd\"。"
 - uid: microsoft.quantum.extensions.math.floor
@@ -75,9 +75,9 @@ functions:
 - uid: microsoft.quantum.extensions.math.truncate
   summary: "\n> [!WARNING]\n> 不推荐使用\n\n截断已被弃用。 请改用 @\"microsoft.quantum.math.truncate\"。\n请使用 @\"microsoft.quantum.math.truncate\"。"
 metadata:
-  ms.openlocfilehash: b94b4c7aa1523d9f3e8b42359e759ffa356b25ea
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: f5896e114085169670eddd1f768f38ec89ce8b7a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673262"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340963"

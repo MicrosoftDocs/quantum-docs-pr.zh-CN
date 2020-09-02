@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.log
 name: Log
 type: function
-namespace: Microsoft.Quantum.Math
-summary: 返回指定数字的自然对数（底 $e $）。
-remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.log) 。
+namespace: microsoft.quantum.math
+summary: 返回指定数字的自然 (底数 $e $) 对数。
+remarks: 有关更多详细信息，请参阅 [system.object](https://docs.microsoft.com/dotnet/api/system.math.log) 。
 syntax: 'function Log (input : Double) : Double'
 input:
   content: '(input : Double)'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 69b9150083ad718036a114d7cee962f13b3650d4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 69d7898e997f6ff4c9370d29ebd21de5914191e2
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683326"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334384"

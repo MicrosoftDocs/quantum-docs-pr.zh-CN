@@ -2,8 +2,8 @@
 uid: microsoft.quantum.arithmetic.addi
 name: AddI
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
-summary: 根据的寄存器大小，自动选择 "执行" 和 "无" `ys`。
+namespace: microsoft.quantum.arithmetic
+summary: 根据的寄存器大小，自动选择 "执行" 和 "无" `ys` 。
 syntax: 'operation AddI (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
   content: '(xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian)'
@@ -23,9 +23,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 80e7ddfe5b3dca353fce102dc6ebdfde0ea2d018
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 197fb62310a9a5d391cbd8e1a81d68d17d07c1e8
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672889"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341694"

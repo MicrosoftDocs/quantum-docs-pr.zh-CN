@@ -2,8 +2,8 @@
 uid: microsoft.quantum.math.inversemodl
 name: InverseModL
 type: function
-namespace: Microsoft.Quantum.Math
-summary: 返回 $b $，$a \cdot b = 1 （\operatorname{mod} \texttt{modulus}） $。
+namespace: microsoft.quantum.math
+summary: 返回 $b $ $a \cdot b = 1 ( \operatorname{mod} \texttt{modulus} ) $。
 syntax: 'function InverseModL (a : BigInt, modulus : BigInt) : BigInt'
 input:
   content: '(a : BigInt, modulus : BigInt)'
@@ -19,13 +19,13 @@ input:
 output:
   content: BigInt
   types:
-  - summary: 整数 $b $，$a \cdot b = 1 （\operatorname{mod} \texttt{modulus}） $。
+  - summary: 整数 $b $，$a \cdot b = 1 ( \operatorname{mod} \texttt{modulus} ) $。
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: 054a0dc8e9e34943124fb90e40e6df9357076b7a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7a33f93632cfc968dbae004595c7ba347eb65b63
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673749"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334520"

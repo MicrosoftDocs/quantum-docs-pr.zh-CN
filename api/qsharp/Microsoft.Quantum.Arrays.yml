@@ -73,9 +73,9 @@ operations:
 - uid: microsoft.quantum.arrays.foreach
   summary: 给定为数组元素定义的数组和操作，返回一个新数组，该数组由该操作下的原始数组的图像组成。
 metadata:
-  ms.openlocfilehash: 32aeecb419739a89792bdf1e9761e3821abcf380
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: f84118178b46d8c65fbffa00562bbb1b21099353
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85884687"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341269"

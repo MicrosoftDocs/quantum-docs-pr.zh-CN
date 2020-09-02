@@ -7,9 +7,9 @@ functions:
 - uid: microsoft.quantum.extensions.diagnostics.dumpregister
   summary: "\n> [!WARNING]\n> 不推荐使用\n\nDumpRegister 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.dumpregister\"。\n请使用 @\"microsoft.quantum.diagnostics.dumpregister\"。"
 metadata:
-  ms.openlocfilehash: dcd10bf143cd50e937cb6ad0d81f15247401c2b8
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6c810a74938b7280a81b57c6cf7707f505303122
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673270"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340980"

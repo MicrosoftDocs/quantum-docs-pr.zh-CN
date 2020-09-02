@@ -2,8 +2,8 @@
 uid: microsoft.quantum.characterization.quantumphaseestimation
 name: QuantumPhaseEstimation
 type: operation
-namespace: Microsoft.Quantum.Characterization
-summary: 执行给定 oracle `U`和的量程阶段估算算法，并`targetState`将该阶段读入大字节序量程寄存器。
+namespace: microsoft.quantum.characterization
+summary: 执行给定 oracle 和的量程阶段估算算法 `U` ，并将 `targetState` 该阶段读入大字节序量程寄存器。
 syntax: 'operation QuantumPhaseEstimation (oracle : Microsoft.Quantum.Oracles.DiscreteOracle, targetState : Qubit[], controlRegister : Microsoft.Quantum.Arithmetic.BigEndian) : Unit'
 input:
   content: '(oracle : Microsoft.Quantum.Oracles.DiscreteOracle, targetState : Qubit[], controlRegister : Microsoft.Quantum.Arithmetic.BigEndian)'
@@ -12,7 +12,7 @@ input:
     summary: 为给定整数幂 m 实现 $U ^ m $ 的操作。
     uid: microsoft.quantum.oracles.discreteoracle
   - name: targetState
-    summary: 表示状态 $ \ket{\phi} $ 的量程寄存器 $U $。 如果 $ \ket{\phi} $ 是 $U $ 的 eigenstate，$U \ket{\phi} = e ^ {i\phi} \ket{\phi} $ for $ \phi \in [0，2 \ pi） $ 未知阶段。
+    summary: 表示状态 $ \ket{\phi} $ 的量程寄存器 $U $。 如果 $ \ket{\phi} $ 是 $U $ 的 eigenstate，$U \ket{\phi} = e ^ {i\phi} \ket{\phi} $ for $ \phi \in [0，2 \ pi) $ 未知阶段。
     isArray: true
     isPrimitive: true
     uid: Qubit
@@ -28,9 +28,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: adbaf8af437a7067e8d2e6076b1a48c9000be3eb
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6e6168df8419f7219e9165592fc37ba293f34231
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677613"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354274"
