@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.equalitywithintolerancefact
 name: EqualityWithinToleranceFact
 type: function
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 表示某一传统浮点值具有到给定绝对公差的预期值。
 syntax: 'function EqualityWithinToleranceFact (actual : Double, expected : Double, tolerance : Double) : Unit'
 input:
@@ -26,9 +26,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 1b9bbe0dbd508778a464aa01ae3033b34dff0531
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d5682a251de8adeca6be8cbc37bcef7f61a7d2fb
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677137"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89336985"

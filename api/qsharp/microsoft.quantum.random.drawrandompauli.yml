@@ -2,7 +2,7 @@
 uid: microsoft.quantum.random.drawrandompauli
 name: DrawRandomPauli
 type: operation
-namespace: Microsoft.Quantum.Random
+namespace: microsoft.quantum.random
 summary: 绘制随机 Pauli 值。
 syntax: 'operation DrawRandomPauli () : Pauli'
 input:
@@ -15,9 +15,9 @@ output:
     isPrimitive: true
     uid: Pauli
 metadata:
-  ms.openlocfilehash: 65fd410442afc0c12e625f38353c86bd1cf053ee
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 02538915661ecd00558a9ac4c26be0aa038eb796
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863924"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330763"

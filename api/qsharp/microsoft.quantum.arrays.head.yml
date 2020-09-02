@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.head
 name: Head
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 返回数组的第一个元素。
 syntax: "function Head (array : 'A[]) : 'A"
 input:
@@ -23,9 +23,9 @@ typeParameters:
 - uid: "'A"
   summary: 数组元素的类型。
 metadata:
-  ms.openlocfilehash: 5fd4fbcc82cb685490fab3d2b88da0d087678ab9
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: dd5e6e431d6cd1fdcc398ba263ed47b6195b1359
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681021"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352234"

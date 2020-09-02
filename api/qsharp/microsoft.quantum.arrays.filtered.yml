@@ -2,13 +2,13 @@
 uid: microsoft.quantum.arrays.filtered
 name: Filtered
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 给定为数组元素定义的数组和谓词后，将返回一个数组，其中包含满足谓词的元素。
-remarks: 函数是为泛型类型定义的，也就是说，只要有一个数组`'T[]`和一个谓词`'T -> Bool` ，就可以筛选元素。
+remarks: 函数是为泛型类型定义的，也就是说，只要有一个数组 `'T[]` 和一个谓词，就 `'T -> Bool` 可以筛选元素。
 examples: >-
   下面的代码演示 "筛选的" 函数。
 
-  使用@"microsoft.quantum.logical.greaterthani"函数定义谓词：
+  使用函数定义谓词 @"microsoft.quantum.logical.greaterthani" ：
 
 
   ```qsharp
@@ -33,7 +33,7 @@ input:
   content: "(predicate : ('T -> Bool), array : 'T[])"
   types:
   - name: predicate
-    summary: 从`'T`到用于筛选元素的布尔值的函数。
+    summary: 从 `'T` 到用于筛选元素的布尔值的函数。
     isFunction: true
     input:
       types:
@@ -44,24 +44,24 @@ input:
       - isPrimitive: true
         uid: Bool
   - name: array
-    summary: 上`'T`的元素的数组。
+    summary: 上的元素的数组 `'T` 。
     isArray: true
     uid: "'T"
     isLocal: true
 output:
   content: "'T[]"
   types:
-  - summary: 满足谓词`'T[]`的元素的数组。
+  - summary: "`'T[]`满足谓词的元素的数组。"
     isArray: true
     uid: "'T"
     isLocal: true
 typeParameters:
 - uid: "'T"
-  summary: '`array`元素的类型。'
+  summary: 元素的类型 `array` 。
 metadata:
-  ms.openlocfilehash: 6aa19a279425672675182f3c8098e7c47fb5cce6
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3b586b356e18c71f1721fbce0ec26e2ea37bfd73
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676468"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352285"

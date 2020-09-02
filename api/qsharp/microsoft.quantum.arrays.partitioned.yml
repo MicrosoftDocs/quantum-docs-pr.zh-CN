@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.partitioned
 name: Partitioned
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 将数组拆分为多个部分。
 examples: >-
   ```qsharp
@@ -36,9 +36,9 @@ output:
       uid: "'T"
       isLocal: true
 metadata:
-  ms.openlocfilehash: 431c62538c9d7c165c570d680c7d4c14974e294c
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: 5f2ac880334b7bd496951765d4ba2a7b9efd699e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84326517"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351877"

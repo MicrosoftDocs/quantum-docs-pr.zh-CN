@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.complexpolar
 name: ComplexPolar
 type: newtype
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: >-
   表示极坐标形式的复数。
 
@@ -10,9 +10,9 @@ summary: >-
   复数的极坐标表示形式为 $c = r e ^ {i t} $。
 syntax: newtype ComplexPolar = (Double, Double);
 metadata:
-  ms.openlocfilehash: dc1eb74c9fc146648456f0ec9e2a968b62ea5a82
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 4d990a1dfa3bf89bc7b9f9d5bfb07a76e6fbaa74
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685796"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344244"

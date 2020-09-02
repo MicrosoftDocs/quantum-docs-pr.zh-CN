@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.rest
 name: Rest
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 创建一个等于输入数组的数组，但第一个数组元素被删除。
 syntax: "function Rest (array : 'T[]) : 'T[]"
 input:
@@ -16,7 +16,7 @@ input:
 output:
   content: "'T[]"
   types:
-  - summary: 包含元素`array[1..Length(array) - 1]`的数组。
+  - summary: 包含元素的数组 `array[1..Length(array) - 1]` 。
     isArray: true
     uid: "'T"
     isLocal: true
@@ -24,9 +24,9 @@ typeParameters:
 - uid: "'T"
   summary: 数组元素的类型。
 metadata:
-  ms.openlocfilehash: 045480f59b03523e39f8feaddacc17b9e6a20c8a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7ffe760d9abfac16053228dc2d3f8518a1b3b288
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680863"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351758"

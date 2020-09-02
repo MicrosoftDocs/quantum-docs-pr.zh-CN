@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.isempty
 name: IsEmpty
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 当且仅当数组为空时，返回 true。
 syntax: "function IsEmpty (array : 'T[]) : Bool"
 input:
@@ -16,13 +16,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: '`true`当且仅当数组为空时（长度为0）。'
+  - summary: '`true` 当且仅当数组为空时 (长度为 0) 。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 47f38759dd72a014ac0bb1de552b94ae1821e0d1
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: c1820f0084275be29007f8a35becdb87be38fcc5
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680975"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352013"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.arctanh
 name: ArcTanh
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 计算数字的反双曲正切值。
 syntax: 'function ArcTanh (x : Double) : Double'
 input:
@@ -15,13 +15,13 @@ input:
 output:
   content: Double
   types:
-  - summary: 实数 $y $，$x = \tanh （y） $。
+  - summary: 实数 $y $ $x = \tanh (y) $。
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 5d87efdc92e0d6616ef112a99cdfd7502f4d35cb
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 37bdd9c3367b7439ba28f60882b8f69f605c2cf6
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683414"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344482"

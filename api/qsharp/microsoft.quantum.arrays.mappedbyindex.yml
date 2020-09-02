@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.mappedbyindex
 name: MappedByIndex
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 给定数组和为数组的索引元素定义的函数后，将返回一个新数组，该数组由函数下的原始数组的图像组成。
 examples: >-
   以下两行是等效的：
@@ -15,7 +15,7 @@ examples: >-
   ```
 
 
-  and
+  和
 
 
   ```qsharp
@@ -28,7 +28,7 @@ input:
   content: "(mapper : ((Int, 'T) -> 'U), array : 'T[])"
   types:
   - name: mapper
-    summary: 用于映射元素`(Int, 'T)`及其`'U`索引的的函数。
+    summary: 用于 `(Int, 'T)` `'U` 映射元素及其索引的的函数。
     isFunction: true
     input:
       types:
@@ -41,28 +41,28 @@ input:
       - uid: "'U"
         isLocal: true
   - name: array
-    summary: 上`'T`的元素的数组。
+    summary: 上的元素的数组 `'T` 。
     isArray: true
     uid: "'T"
     isLocal: true
 output:
   content: "'U[]"
   types:
-  - summary: 由`mapper`函数`'U[]`映射的元素的数组。
+  - summary: "`'U[]`由函数映射的元素的数组 `mapper` 。"
     isArray: true
     uid: "'U"
     isLocal: true
 typeParameters:
 - uid: "'T"
-  summary: '`array`元素的类型。'
+  summary: 元素的类型 `array` 。
 - uid: "'U"
-  summary: '`mapper`函数的结果类型。'
+  summary: 函数的结果类型 `mapper` 。
 seeAlso:
 - mapped
 metadata:
-  ms.openlocfilehash: 64741df4a3d7b7937f13614ffc9c7c7ec1aa3f7b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d6f50c3fe90998431b71050a953ec5dc08e31e92
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680938"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351928"

@@ -2,13 +2,13 @@
 uid: microsoft.quantum.diagnostics.test
 name: Test
 type: newtype
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 编译器可识别的属性，用于标记单元测试。
 syntax: newtype Test = String;
 metadata:
-  ms.openlocfilehash: c859042b4c27b6b11c6aab51232939bd45a9db91
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 6fa882395b6a12281f900dbcf371b08787378d8b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85884530"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89336849"

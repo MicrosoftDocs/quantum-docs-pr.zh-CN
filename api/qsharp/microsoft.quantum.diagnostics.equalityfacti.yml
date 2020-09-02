@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.equalityfacti
 name: EqualityFactI
 type: function
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 断言传统 Int 变量具有预期值。
 syntax: 'function EqualityFactI (actual : Int, expected : Int, message : String) : Unit'
 input:
@@ -26,9 +26,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: ae9eb90c63a15c814d23ed4850f322bb358922c5
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 9cf398d689c7393e605cebe8f5345e830520a337
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82655427"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337087"

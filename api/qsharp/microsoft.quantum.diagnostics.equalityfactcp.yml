@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.equalityfactcp
 name: EqualityFactCP
 type: function
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 断言复数具有预期值。
 syntax: 'function EqualityFactCP (actual : Microsoft.Quantum.Math.ComplexPolar, expected : Microsoft.Quantum.Math.ComplexPolar, message : String) : Unit'
 input:
@@ -24,9 +24,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: a334532b7d86498657197944431fb69ce9a72ebb
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: fab35c4e3ce0031ffdfc1cbb39510546a41160b2
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677194"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337223"

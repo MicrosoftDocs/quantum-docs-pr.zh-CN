@@ -2,7 +2,7 @@
 uid: microsoft.quantum.random.drawrandomint
 name: DrawRandomInt
 type: operation
-namespace: Microsoft.Quantum.Random
+namespace: microsoft.quantum.random
 summary: 绘制给定范围内的随机整数。
 remarks: 如果为 `max <= min` ，则失败。
 examples: >-
@@ -35,9 +35,9 @@ output:
 seeAlso:
 - microsoft.quantum.discreteuniformdistribution
 metadata:
-  ms.openlocfilehash: cb80cacff95dac9e4cecc5717124c20909a56ca0
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 89f7c6964ebe8e2fb06cb1430fa801e98169b103
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863926"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330814"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.equalityfactr
 name: EqualityFactR
 type: function
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 断言传统结果变量具有预期值。
 syntax: 'function EqualityFactR (actual : Result, expected : Result, message : String) : Unit'
 input:
@@ -26,9 +26,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 8adab24fb2c4161bbb8e23c77923fda09220641d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5b42d88cc17c2baaa7825d1edc815caa21c25ec3
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677152"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337019"

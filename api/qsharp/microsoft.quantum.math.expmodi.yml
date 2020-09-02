@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.expmodi
 name: ExpModI
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: >-
   返回一个整数，该整数针对给定的模数引发了给定的幂。
 
@@ -13,7 +13,7 @@ summary: >-
 
 
   假定 $N $，$x $ 为正，且 power 为非负数。
-remarks: 与中`power`的位数成正比，而不是`power`本身。
+remarks: 与中的位数成正比，而 `power` 不是 `power` 本身。
 syntax: 'function ExpModI (expBase : Int, power : Int, modulus : Int) : Int'
 input:
   content: '(expBase : Int, power : Int, modulus : Int)'
@@ -33,9 +33,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: f1da101fc6ae949aff96100f6b236d202c40d554
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6b12806ec6d8fec045e3c7dcf89d58b634a4d493
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685358"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344142"

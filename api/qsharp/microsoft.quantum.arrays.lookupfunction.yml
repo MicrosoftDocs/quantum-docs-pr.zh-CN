@@ -2,9 +2,9 @@
 uid: microsoft.quantum.arrays.lookupfunction
 name: LookupFunction
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 给定一个数组，返回返回该数组的元素的函数。
-remarks: 此函数主要用于与将`Int -> 'T`函数作为其参数的函数和操作进行互操作。 这种情况很常见，例如，在生成器表示库中，函数用于避免需要在内存中记录整个数组。
+remarks: 此函数主要用于与将 `Int -> 'T` 函数作为其参数的函数和操作进行互操作。 这种情况很常见，例如，在生成器表示库中，函数用于避免需要在内存中记录整个数组。
 syntax: "function LookupFunction (array : 'T[]) : (Int -> 'T)"
 input:
   content: "(array : 'T[])"
@@ -17,7 +17,7 @@ input:
 output:
   content: (Int -> 'T)
   types:
-  - summary: 这样的`f` `f(idx) == f[idx]`函数。
+  - summary: '`f`这样的函数 `f(idx) == f[idx]` 。'
     isFunction: true
     input:
       types:
@@ -31,9 +31,9 @@ typeParameters:
 - uid: "'T"
   summary: 表示为查找函数的数组元素的类型。
 metadata:
-  ms.openlocfilehash: 4d911a3952c273e050c75e4d785e6812d54f5fa1
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d8f92bec0999e01b570aebc0a6dcdc327fa8761b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680971"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351996"

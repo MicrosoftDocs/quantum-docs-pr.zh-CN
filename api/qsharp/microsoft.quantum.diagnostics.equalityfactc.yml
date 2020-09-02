@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.equalityfactc
 name: EqualityFactC
 type: function
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 断言复数具有预期值。
 syntax: 'function EqualityFactC (actual : Microsoft.Quantum.Math.Complex, expected : Microsoft.Quantum.Math.Complex, message : String) : Unit'
 input:
@@ -24,9 +24,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 46364b62a52fd11114135a085f5816662772cf28
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a2393139d1efae5841d98302265af2084d8f3b03
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82655707"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337240"

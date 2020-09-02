@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.ispermutation
 name: IsPermutation
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: >-
   当且仅当给定数组表示排列时，输出为 true。
 
@@ -36,9 +36,9 @@ output:
   - isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 259c7a073a02b8cae196853e66cd30d7fe3a9436
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: d00c6e638600ceddce7cb233b2a08c2be0c7afe4
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84328402"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352030"

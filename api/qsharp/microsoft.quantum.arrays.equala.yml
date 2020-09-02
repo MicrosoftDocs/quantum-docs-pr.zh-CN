@@ -2,10 +2,10 @@
 uid: microsoft.quantum.arrays.equala
 name: EqualA
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 给定两个相同类型的数组和为数组元素对定义的谓词，检查数组是否相等。
 remarks: >-
-  此函数是为泛型类型定义的;也就是说，每当有两个数组`'T[]`和一个函数`equal: ('T, 'T) -> Bool`时，此函数将返回`Bool`一个值，该值指示数组是否相等。
+  此函数是为泛型类型定义的;也就是说，每当有两个数组 `'T[]` 和一个函数时 `equal: ('T, 'T) -> Bool` ，此函数将返回一个 `Bool` 值，该值指示数组是否相等。
 
   对于两个要视为相等的数组，它们必须具有相等的长度，并且数组中同一位置的元素必须相等。
 examples: >-
@@ -59,18 +59,18 @@ output:
   content: Bool
   types:
   - summary: >-
-      当且`true`仅当`array1`和`array2`相等时，值为。
+      `true`当且仅当和相等时，值为 `array1` `array2` 。
 
-      也就是说，如果两个数组具有相同的长度，并且所有元素都与定义的相等`equal`。
+      也就是说，如果两个数组具有相同的长度，并且所有元素都与定义的相等 `equal` 。
     isPrimitive: true
     uid: Bool
 typeParameters:
 - uid: "'T"
   summary: 每个数组元素的类型。
 metadata:
-  ms.openlocfilehash: d2af5ff8e2d66e6162c73c3854670451a00dcf50
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 9f3083483b7720efb4f8eda89d2de224543c236e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676503"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352370"

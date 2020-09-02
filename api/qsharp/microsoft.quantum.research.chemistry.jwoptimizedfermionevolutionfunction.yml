@@ -2,7 +2,7 @@
 uid: microsoft.quantum.research.chemistry.jwoptimizedfermionevolutionfunction
 name: JWOptimizedFermionEvolutionFunction
 type: function
-namespace: Microsoft.Quantum.Research.Chemistry
+namespace: microsoft.quantum.research.chemistry
 summary: 将 dynamical 生成器表示为一组 simulatable 入口和 JWOptimized 中的扩展。
 syntax: 'function JWOptimizedFermionEvolutionFunction (generatorIndex : Microsoft.Quantum.Simulation.GeneratorIndex, parityQubit : Qubit) : Microsoft.Quantum.Simulation.EvolutionUnitary'
 input:
@@ -18,12 +18,12 @@ input:
 output:
   content: Microsoft.Quantum.Simulation.EvolutionUnitary
   types:
-  - summary: ， `EvolutionUnitary`它表示 "generatorIndex" 中引用的术语的时间演变。
+  - summary: ， `EvolutionUnitary` 它表示 "generatorIndex" 中引用的术语的时间演变。
     uid: microsoft.quantum.simulation.evolutionunitary
 metadata:
-  ms.openlocfilehash: ae5796c80198bd7e02940d978eeaebb3e2fcd814
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 17ba8059bc425bb01a06759606b537541db8e0eb
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683131"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330491"
