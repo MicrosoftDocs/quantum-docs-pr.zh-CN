@@ -2,13 +2,13 @@
 uid: microsoft.quantum.optimization.univariateoptimizationresult
 name: UnivariateOptimizationResult
 type: newtype
-namespace: Microsoft.Quantum.Optimization
+namespace: microsoft.quantum.optimization
 summary: 表示优化单变量函数的结果。
 syntax: newtype UnivariateOptimizationResult = (Double, Double);
 metadata:
-  ms.openlocfilehash: f40a317cbca444ba82dd70494ddc379350d734cc
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 73e34a2eb575fab4323379db32d36f3b2ca9c612
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673541"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332157"

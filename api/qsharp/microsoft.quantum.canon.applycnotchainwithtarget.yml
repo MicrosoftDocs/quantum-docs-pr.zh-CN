@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applycnotchainwithtarget
 name: ApplyCNOTChainWithTarget
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   计算 qubits 数组到目标 qubit 的奇偶校验。
 
@@ -19,7 +19,7 @@ remarks: >-
   ```
 
 
-  and
+  和
 
 
   ```qsharp
@@ -49,9 +49,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 631ef98fe43c0c3ca6b5e17ac67e9c9c717dc6d4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 156721c0e5f61dc9761e53d08342cbab3d815e75
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680511"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350789"

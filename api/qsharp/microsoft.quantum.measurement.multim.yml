@@ -2,7 +2,7 @@
 uid: microsoft.quantum.measurement.multim
 name: MultiM
 type: operation
-namespace: Microsoft.Quantum.Measurement
+namespace: microsoft.quantum.measurement
 summary: 按标准度量给定数组中的每个 qubit。
 syntax: 'operation MultiM (targets : Qubit[]) : Result[]'
 input:
@@ -21,9 +21,9 @@ output:
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 97163553f76011a0f4693549c2ca52b0341a35db
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a548bf1a0710ff9729ed7725531e3105e1554339
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681371"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332327"

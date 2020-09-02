@@ -2,14 +2,14 @@
 uid: microsoft.quantum.canon.applyif
 name: ApplyIf
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   应用可在传统上使用的操作。
 
 
-  给定一个操作`op`和一个位值`bit`后， `op` `target`如果`bit`为`true`，则应用于。 如果`false`为，则不会`target`发生任何事情。
+  给定一个操作 `op` 和一个位值 `bit` 后， `op` 如果为，则应用于 `target` `bit` `true` 。 如果 `false` 为，则不会发生任何事情 `target` 。
 examples: >-
-  下面的 qubits 将注册为一个计算基础状态，该状态由给定为值数组的`Bool`传统位字符串表示：
+  下面的 qubits 将注册为一个计算基础状态，该状态由给定为值数组的传统位字符串表示 `Bool` ：
 
 
   ```Q#
@@ -59,9 +59,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifa
 - microsoft.quantum.canon.applyifca
 metadata:
-  ms.openlocfilehash: b3a573c55d461eb3c1a2af0cb7bacd0a4cfecbe5
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7d74e21954daef04543dfc42534502b2fa8aab2e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676365"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350551"

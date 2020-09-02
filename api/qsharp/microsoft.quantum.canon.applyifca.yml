@@ -2,16 +2,16 @@
 uid: microsoft.quantum.canon.applyifca
 name: ApplyIfCA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   应用在传统上有条件的单一操作。
 
 
-  给定一个操作`op`和一个位值`bit`后， `op` `target`如果`bit`为`true`，则应用于。 如果`false`为，则不会`target`发生任何事情。
+  给定一个操作 `op` 和一个位值 `bit` 后， `op` 如果为，则应用于 `target` `bit` `true` 。 如果 `false` 为，则不会发生任何事情 `target` 。
 
-  后缀`CA`指示要应用的操作为单一操作（可控和 adjointable）。
+  后缀 `CA` 指示要应用的操作是单一 (可控和 adjointable) 。
 examples: >-
-  下面的 qubits 将注册为一个计算基础状态，该状态由给定为值数组的`Bool`传统位字符串表示：
+  下面的 qubits 将注册为一个计算基础状态，该状态由给定为值数组的传统位字符串表示 `Bool` ：
 
 
   ```Q#
@@ -67,9 +67,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifa
 - microsoft.quantum.canon.applyifca
 metadata:
-  ms.openlocfilehash: 2b716ef4a7d429176aa1359fb22b3ce24be0d5f4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2d341b8628c8d81fddd480bf47324041d575f1e5
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675042"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350500"

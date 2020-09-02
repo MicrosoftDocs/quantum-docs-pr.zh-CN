@@ -2,7 +2,7 @@
 uid: microsoft.quantum.measurement.mresetz
 name: MResetZ
 type: operation
-namespace: Microsoft.Quantum.Measurement
+namespace: microsoft.quantum.measurement
 summary: >-
   度量 Z 基准中的单个 qubit，并将其重置为固定的初始状态。
 
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 02f9e22522e9562068c9e0aea9293c93fc5d4644
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: 5d725a98bb2344e5ef40011f56c24915ffdea4a5
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84327384"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332344"

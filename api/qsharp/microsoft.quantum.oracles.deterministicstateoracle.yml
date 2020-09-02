@@ -2,7 +2,7 @@
 uid: microsoft.quantum.oracles.deterministicstateoracle
 name: DeterministicStateOracle
 type: newtype
-namespace: Microsoft.Quantum.Oracles
+namespace: microsoft.quantum.oracles
 summary: >-
   表示 oracle for 确定性状态准备。
 
@@ -10,16 +10,16 @@ summary: >-
   Oracle $O $ 的输入为：
 
 
-  - 将存储所需的量程状态 $ \ket{\psi}\_s $ 的寄存器。
+  - 将存储所需的量程状态 $ \ket{\psi} \_ s $ 的寄存器。
 remarks: >-
-  此 oracle 定义的 $O \ket{0}= \ket{\psi} $ 对计算基础状态 $ \ket{0}$ 采取操作，以创建状态 $ \ket{\psi} $。
+  此 oracle 定义的 $O \ket {0} = \ket{\psi} $ 对计算基础状态 $ \ket $ 采取操作 {0} ，以创建状态 $ \ket{\psi} $。
 
   第一个参数是 $ \ket{\psi} $ 的 qubit 寄存器。
 syntax: newtype DeterministicStateOracle = (Qubit[] => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: 35d4b0243fac954c483a81ae1cccb46b44759ca0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 49a8342a6e8a0fcae7a7cdae05967187c98ec34c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681312"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332089"

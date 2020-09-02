@@ -2,14 +2,14 @@
 uid: microsoft.quantum.canon.applyifzeroca
 name: ApplyIfZeroCA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   应用在传统结果值为零的条件运算。
 
 
-  给定一个操作`op`和一个结果值`result`时， `op` `target`如果`result`为`Zero`，则应用于。 如果`One`为，则不会`target`发生任何事情。
+  给定一个操作 `op` 和一个结果值时 `result` ， `op` `target` 如果为， `result` 则应用于 `Zero` 。 如果 `One` 为，则不会发生任何事情 `target` 。
 
-  后缀`CA`指示要应用的操作为单一操作（可控和 adjointable）。
+  后缀 `CA` 指示要应用的操作是单一 (可控和 adjointable) 。
 syntax: "operation ApplyIfZeroCA (result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T)) : Unit"
 input:
   content: "(result : Result, (op : ('T => Unit is Adj + Ctl), target : 'T))"
@@ -52,9 +52,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifzeroa
 - microsoft.quantum.canon.applyifzeroca
 metadata:
-  ms.openlocfilehash: 64e35b2fc198e7c3df862681e8c16870399f58c7
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2acf8c83aa4c0afbd129b2f18267f45bf9537390
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672572"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89358150"

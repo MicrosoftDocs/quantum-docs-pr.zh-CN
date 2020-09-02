@@ -2,7 +2,7 @@
 uid: microsoft.quantum.measurement.mresetx
 name: MResetX
 type: operation
-namespace: Microsoft.Quantum.Measurement
+namespace: microsoft.quantum.measurement
 summary: >-
   在 X 基础上测量单个 qubit，并将其重置为固定的初始状态。
 
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 72df2fcf966fcda09ef35e644007e713780e7a68
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: c5f73d7ea3e18b8a57fc893866bf16c554b668ad
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84327435"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332378"

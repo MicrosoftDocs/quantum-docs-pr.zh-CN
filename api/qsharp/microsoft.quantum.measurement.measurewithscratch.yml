@@ -2,7 +2,7 @@
 uid: microsoft.quantum.measurement.measurewithscratch
 name: MeasureWithScratch
 type: operation
-namespace: Microsoft.Quantum.Measurement
+namespace: microsoft.quantum.measurement
 summary: 使用显式暂存 qubit 度量给定的 Pauli 运算符以执行测量。
 syntax: 'operation MeasureWithScratch (pauli : Pauli[], target : Qubit[]) : Result'
 input:
@@ -21,13 +21,13 @@ input:
 output:
   content: Result
   types:
-  - summary: 在`target`收银机上测量给定 Pauli 运算符的结果。
+  - summary: 在收银机上测量给定 Pauli 运算符的结果 `target` 。
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: 1ef0f8d0c9d52c9ec6fe6976dc10733930c31f6e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: bc267c56e78df6384d6bfc50a4c988f3d1bee32a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685168"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332429"

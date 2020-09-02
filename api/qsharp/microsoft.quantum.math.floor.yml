@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.floor
 name: Floor
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回小于或等于指定数字的最大整数。
-remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.floor) 。
+remarks: 有关更多详细信息，请参阅 [system.object](https://docs.microsoft.com/dotnet/api/system.math.floor) 。
 syntax: 'function Floor (value : Double) : Int'
 input:
   content: '(value : Double)'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: d4cb37905728768b8271841aef49974279eedb9e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 52c50cf60e23ab8b4972096e18995f3014596719
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673818"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344006"

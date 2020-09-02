@@ -2,14 +2,14 @@
 uid: microsoft.quantum.canon.andladder
 name: AndLadder
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   在目标 qubits 的寄存器上执行受控的 "AND 阶梯"。
 
 
-  此操作应用以下映射中描述的转换： $ $ \begin{align} \ket{x\_1，\dots ..，x\_n} \ket{y\_1，\dots ..，y\_{n-1}} \mapsto \ket{x\_1，\dots ..，x\_n} \ket{y\_1 \oplus （x\_1 \land x\_2） \dots ..，y\_{n-1} \oplus （x\_1 \land x\_2 \land \cdots \land x\_{n-1}}，\end{align} $ $，其中 $ \ket{x\_1，\dots ..，x\_n} $ 表示的计算基础状态`controls`，其中 $ \ket{y\_1，\dots ..，y\_{n-1}} $ 表示计算基础状态。 `targets`
+  此操作应用以下映射中描述的转换： $ $ \begin{align} \ket{x \_ 1，\dots ..，x \_ n} \ket{y \_ 1，\dots ..，y \_ {n-1}} \mapsto \ket{x \_ 1，\dots ..，x \_ n} \ket{y \_ 1 \oplus (x \_ 1 \land x \_ 2) \dots ..，y \_ {n-1} \oplus (x \_ 1 \land x \_ 2 \land \cdots \land x \_ {n-1}}，\end{align} $ $，其中 $ \ket{x \_ 1，\dots ..，x \_ n} $ 表示的计算基础状态 `controls` ，其中 $ \ket{y \_ 1，\dots ..，y \_ {n-1}} $ 表示计算基础状态 `targets` 。
 remarks: >-
-  - 用作和<xref:microsoft.quantum.canon.applymulticontrolledc> <xref:microsoft.quantum.canon.applymulticontrolledca>的一部分。
+  - 用作和的一部分 <xref:microsoft.quantum.canon.applymulticontrolledc> <xref:microsoft.quantum.canon.applymulticontrolledca> 。
 
   - 有关说明和线路关系图，请参阅图4.10： Nielsen & 语中的第4.3 节。
 syntax: 'operation AndLadder (ccnot : Microsoft.Quantum.Canon.CCNOTop, controls : Qubit[], targets : Qubit[]) : Unit'
@@ -24,14 +24,14 @@ input:
     summary: >-
       要用作和阶梯控件的 qubits 寄存器。
 
-      此操作使计算基础状态保持`controls`不变。
+      此操作使计算基础状态保持不 `controls` 变。
 
-      的`controls`长度必须至少为2，并且必须等于的`targets`长度加1。
+      的长度 `controls` 必须至少为2，并且必须等于的长度加 1 `targets` 。
     isArray: true
     isPrimitive: true
     uid: Qubit
   - name: targets
-    summary: 的`targets`长度必须至少为1，并且必须等于`controls`减1的长度。
+    summary: 的长度 `targets` 必须至少为1，并且必须等于减1的长度 `controls` 。
     isArray: true
     isPrimitive: true
     uid: Qubit
@@ -43,9 +43,9 @@ output:
 functors:
 - Adjoint
 metadata:
-  ms.openlocfilehash: 4cc74315145176fd3a2258a3d92b2f2dfb4d66d3
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 194e562588a7ea244b39795ea1c489a07a7fbfba
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676392"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350874"

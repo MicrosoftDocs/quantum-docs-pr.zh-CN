@@ -2,14 +2,14 @@
 uid: microsoft.quantum.canon.applyifzeroc
 name: ApplyIfZeroC
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   应用在传统结果值为零的可控操作。
 
 
-  给定一个操作`op`和一个结果值`result`时， `op` `target`如果`result`为`Zero`，则应用于。 如果`One`为，则不会`target`发生任何事情。
+  给定一个操作 `op` 和一个结果值时 `result` ， `op` `target` 如果为， `result` 则应用于 `Zero` 。 如果 `One` 为，则不会发生任何事情 `target` 。
 
-  后缀`C`指示要应用的操作可控制。
+  后缀 `C` 指示要应用的操作可控制。
 syntax: "operation ApplyIfZeroC (result : Result, (op : ('T => Unit is Ctl), target : 'T)) : Unit"
 input:
   content: "(result : Result, (op : ('T => Unit is Ctl), target : 'T))"
@@ -50,9 +50,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifzeroa
 - microsoft.quantum.canon.applyifzeroca
 metadata:
-  ms.openlocfilehash: 12484848b3208dcb0a52e1f2084bbc3a5f4ec359
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e7963a6055306d00d6e7ec2d18f805f6e0fb3e11
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672601"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89358133"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applyoprepeatedlyovera
 name: ApplyOpRepeatedlyOverA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 多次对 qubit 寄存器应用相同的操作。
 syntax: 'operation ApplyOpRepeatedlyOverA (op : (Qubit[] => Unit is Adj), targets : Int[][], register : Qubit[]) : Unit'
 input:
@@ -44,9 +44,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applyseriesofops
 metadata:
-  ms.openlocfilehash: 3d3ad2cd2e3fb1288f4497433aa1b00936b32a5a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2fe65e4f08bfd823ab82d912527743d430125901
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672498"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89358048"

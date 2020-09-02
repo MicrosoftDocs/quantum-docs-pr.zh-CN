@@ -2,7 +2,7 @@
 uid: microsoft.quantum.optimization.localunivariateminimum
 name: LocalUnivariateMinimum
 type: function
-namespace: Microsoft.Quantum.Optimization
+namespace: microsoft.quantum.optimization
 summary: 使用黄金间隔搜索，返回单变量函数在限定间隔内的本地最小值。
 syntax: 'function LocalUnivariateMinimum (fn : (Double -> Double), bounds : (Double, Double), tolerance : Double) : Microsoft.Quantum.Optimization.UnivariateOptimizationResult'
 input:
@@ -39,9 +39,9 @@ output:
   - summary: 给定函数的本地 optima，位于给定边界内。
     uid: microsoft.quantum.optimization.univariateoptimizationresult
 metadata:
-  ms.openlocfilehash: 50dd7031f1c2d0e6a582bf9fa0774e4e71c5fc44
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: bd777d1a335a2a11acd269dde32d73764b68cf9c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681338"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332191"

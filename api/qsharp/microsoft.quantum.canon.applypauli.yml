@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applypauli
 name: ApplyPauli
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 给定多 qubit Pauli 运算符，将相应的操作应用于寄存器。
 examples: >-
   以下项是等效的：
@@ -15,7 +15,7 @@ examples: >-
   ```
 
 
-  and
+  和
 
 
   ```qsharp
@@ -50,9 +50,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 9ea6fb02080e72aadc55111bb71f7031fd852212
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a12fa423f1eb7685581674323197f198827c936e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672467"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357997"

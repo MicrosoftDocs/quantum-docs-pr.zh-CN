@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applyfermionicswap
 name: ApplyFermionicSWAP
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   应用 Fermionic 交换。
 
@@ -12,7 +12,7 @@ summary: >-
   有关详细信息，请参阅。
 
 
-  此操作由单一运算符 \begin{align} f_ {swap} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 &-1 \end{bmatrix}. \\ \\
+  此操作由单一运算符 \begin{align} f_ {swap} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 &-1 \\ \\ \end{bmatrix}。
 
   \end{align}
 syntax: 'operation ApplyFermionicSWAP (qubit1 : Qubit, qubit2 : Qubit) : Unit'
@@ -39,9 +39,9 @@ functors:
 seeAlso:
 - microsoft.quantum.intrinsic.swap
 metadata:
-  ms.openlocfilehash: c5e9a825d29bab3fa6b7a89e67f4cf5e40fec6d8
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 787fe0283d47c1bbfe1733d3a4ff15624a8c8370
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676378"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350568"

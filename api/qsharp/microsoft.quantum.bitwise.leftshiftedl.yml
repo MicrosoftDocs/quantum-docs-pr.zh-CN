@@ -2,7 +2,7 @@
 uid: microsoft.quantum.bitwise.leftshiftedl
 name: LeftShiftedL
 type: function
-namespace: Microsoft.Quantum.Bitwise
+namespace: microsoft.quantum.bitwise
 summary: 将数字的按位表示形式向左移动给定的位数。
 remarks: >-
   以下项是等效的：
@@ -20,23 +20,23 @@ input:
   content: '(value : BigInt, amount : Int)'
   types:
   - name: value
-    summary: 要向左移动（更重要）的按位表示形式的数字。
+    summary: 要向左移动 (更重要) 的按位表示形式的数字。
     isPrimitive: true
     uid: BigInt
   - name: amount
-    summary: 要向左移动的位数`value` 。
+    summary: 要向左移动的位数 `value` 。
     isPrimitive: true
     uid: Int
 output:
   content: BigInt
   types:
-  - summary: 的值`value`，按`amount`位向左移动。
+  - summary: 的值 `value` ，按位向左移动 `amount` 。
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: 61ae04f5085513742058c0208e8add0af8fd463b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 89f2643e60027818c962f90f043094a21dd579ee
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680682"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351214"
