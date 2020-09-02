@@ -2,13 +2,13 @@
 uid: microsoft.quantum.simulation.unitary
 name: Unitary
 type: newtype
-namespace: Microsoft.Quantum.Simulation
+namespace: microsoft.quantum.simulation
 summary: 表示单一运算符下的演变。
 syntax: newtype Unitary = (Qubit[] => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: d988710320718d3fe83ff1a4f54b034b4c336b3d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3c6c5abe18c433b98ef08a8e8916a69617b3d894
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82687206"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89328094"

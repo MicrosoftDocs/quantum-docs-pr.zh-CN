@@ -2,8 +2,8 @@
 uid: microsoft.quantum.simulation.timedependenttrottersimulationalgorithm
 name: TimeDependentTrotterSimulationAlgorithm
 type: function
-namespace: Microsoft.Quantum.Simulation
-summary: '`TimeDependentSimulationAlgorithm`使用 Trotter – Suzuki 分解来估算求解依赖于时间的 Schrodinger 公式的单一运算符的函数。'
+namespace: microsoft.quantum.simulation
+summary: '`TimeDependentSimulationAlgorithm` 使用 Trotter – Suzuki 分解来估算求解依赖于时间的 Schrodinger 公式的单一运算符的函数。'
 syntax: 'function TimeDependentTrotterSimulationAlgorithm (trotterStepSize : Double, trotterOrder : Int) : Microsoft.Quantum.Simulation.TimeDependentSimulationAlgorithm'
 input:
   content: '(trotterStepSize : Double, trotterOrder : Int)'
@@ -22,9 +22,9 @@ output:
   - summary: '`TimeDependentSimulationAlgorithm` 类型。'
     uid: microsoft.quantum.simulation.timedependentsimulationalgorithm
 metadata:
-  ms.openlocfilehash: 3dc5c7a7037be2b30dfdc3b7eb7c5d32d2f9b4c5
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7b9f0628d108af9eeef5fa7397f4f3088a7d9737
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82687253"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89328283"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.mini
 name: MinI
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: 已弃用最小化。 请改用 @"microsoft.quantum.math.mini"。
 syntax: 'function MinI (a : Int, b : Int) : Int'
 input:
@@ -20,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: cadd71756000006138446acf7ac5781efe9a7ece
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ddb079cf7b5b24262d8c6aa67d60cef7c7aecacf
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686166"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348035"

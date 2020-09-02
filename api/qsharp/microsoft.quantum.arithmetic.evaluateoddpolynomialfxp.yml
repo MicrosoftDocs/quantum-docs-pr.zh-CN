@@ -2,14 +2,14 @@
 uid: microsoft.quantum.arithmetic.evaluateoddpolynomialfxp
 name: EvaluateOddPolynomialFxP
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 计算定点表示形式的奇多项式。
 syntax: 'operation EvaluateOddPolynomialFxP (coefficients : Double[], fpx : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
 input:
   content: '(coefficients : Double[], fpx : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint)'
   types:
   - name: coefficients
-    summary: 奇多项式系数为 double 数组的系数，即数组 $ [a_0，a_1，...，a_k] $ 表示奇多项式 $P （x） = a_0 x + a_1 x ^ 3 + \cdots + a_k x ^ {2k + 1} $。
+    summary: 将奇多项式的系数视为 double 数组，即，数组 $ [a_0，a_1，...，a_k] $ 用于奇多项式 $P (x) = a_0 x + a_1 x ^ 3 + \cdots + a_k x ^ {2k + 1} $。
     isArray: true
     isPrimitive: true
     uid: Double
@@ -17,7 +17,7 @@ input:
     summary: 为其计算多项式的定点数。
     uid: microsoft.quantum.arithmetic.fixedpoint
   - name: result
-    summary: 用来存放 P （x）的固定点数。 最初必须处于 $ \ket{0}$ 状态。
+    summary: 用来容纳 P (x) 的固定点数。 最初必须处于 $ \ket {0} $ 状态。
     uid: microsoft.quantum.arithmetic.fixedpoint
 output:
   content: Unit
@@ -28,9 +28,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: ae149fe3ef12b5384bd08b62daabd6368e130399
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a35b2141757e7d18d8eddb48843541c1b73de7b4
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679657"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342119"

@@ -2,9 +2,9 @@
 uid: microsoft.quantum.characterization.estimateoverlapbetweenstates
 name: EstimateOverlapBetweenStates
 type: operation
-namespace: Microsoft.Quantum.Characterization
+namespace: microsoft.quantum.characterization
 summary: 给定两个操作，每个操作都准备状态的副本，并估计每个操作准备的状态之间的平方重叠。
-remarks: 此操作使用交换测试查找 $ $ \begin{align} \left |\braket{00\cdots 0 |V ^ {\dagger} U |00 \ cdots 0} \right | ^ 2 \end{align} $ $，其中 $U $ 是操作的`preparation1`单一表示形式，其中 $V $ 对应于。 `preparation2`
+remarks: 此操作使用交换测试查找 $ $ \begin{align} \left |\braket{00\cdots 0 |V ^ {\dagger} U |00 \ cdots 0} \right | ^ 2 \end{align} $ $，其中 $U $ 是操作的单一表示形式 `preparation1` ，其中 $V $ 对应于 `preparation2` 。
 syntax: 'operation EstimateOverlapBetweenStates (preparation1 : (Qubit[] => Unit is Adj), preparation2 : (Qubit[] => Unit is Adj), nQubits : Int, nMeasurements : Int) : Double'
 input:
   content: '(preparation1 : (Qubit[] => Unit is Adj), preparation2 : (Qubit[] => Unit is Adj), nQubits : Int, nMeasurements : Int)'
@@ -38,7 +38,7 @@ input:
     functors:
     - Adjoint
   - name: nQubits
-    summary: 对其`commonPreparation`执行、 `preparation1`和`preparation2`的 qubits 的数目。
+    summary: 对其执行、和的 qubits 的数目 `commonPreparation` `preparation1` `preparation2` 。
     isPrimitive: true
     uid: Int
   - name: nMeasurements
@@ -54,9 +54,9 @@ seeAlso:
 - microsoft.quantum.characterization.estimaterealoverlapbetweenstates
 - microsoft.quantum.characterization.estimateimagoverlapbetweenstates
 metadata:
-  ms.openlocfilehash: 6eefd9b32b73d3f73bb31ff81509466e754e20d6
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 968b8ec3ba5822475ffea0439a9c1cc84ac995ba
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677693"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354478"

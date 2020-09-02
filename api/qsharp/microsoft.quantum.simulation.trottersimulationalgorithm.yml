@@ -2,8 +2,8 @@
 uid: microsoft.quantum.simulation.trottersimulationalgorithm
 name: TrotterSimulationAlgorithm
 type: function
-namespace: Microsoft.Quantum.Simulation
-summary: '`SimulationAlgorithm`使用 Trotter – Suzuki 分解来接近时间演化运算符_exp （-iHt）_ 的函数。'
+namespace: microsoft.quantum.simulation
+summary: '`SimulationAlgorithm` 使用 Trotter – Suzuki 分解来近似于时间演化运算符 _exp (-iHt) _的函数。'
 syntax: 'function TrotterSimulationAlgorithm (trotterStepSize : Double, trotterOrder : Int) : Microsoft.Quantum.Simulation.SimulationAlgorithm'
 input:
   content: '(trotterStepSize : Double, trotterOrder : Int)'
@@ -22,9 +22,9 @@ output:
   - summary: '`SimulationAlgorithm` 类型。'
     uid: microsoft.quantum.simulation.simulationalgorithm
 metadata:
-  ms.openlocfilehash: 8f86dea6c3635b2428c30438fa3124094830888e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 598a4af2f18c8c98bcf817345ba59ebcd4429ca2
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82687240"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89328145"

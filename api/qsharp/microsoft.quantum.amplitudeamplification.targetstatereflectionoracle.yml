@@ -2,12 +2,12 @@
 uid: microsoft.quantum.amplitudeamplification.targetstatereflectionoracle
 name: TargetStateReflectionOracle
 type: function
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: >-
-  `ReflectionOracle`构造 qubit 标志唯一标记的目标状态。
+  构造 `ReflectionOracle` qubit 标志唯一标记的目标状态。
 
 
-  目标状态的单个 qubit 设置为1，其他所有0： $ \ket{1}_f $。
+  目标状态的单个 qubit 设置为1，其他所有0： $ \ket {1} _f $。
 syntax: 'function TargetStateReflectionOracle (idxFlagQubit : Int) : Microsoft.Quantum.Oracles.ReflectionOracle'
 input:
   content: '(idxFlagQubit : Int)'
@@ -19,14 +19,14 @@ input:
 output:
   content: Microsoft.Quantum.Oracles.ReflectionOracle
   types:
-  - summary: '`ReflectionOracle` ，它反映 $ \ket{1}_f $ 标记的状态。'
+  - summary: '`ReflectionOracle`，它反映 $ \ket _f $ 标记的状态 {1} 。'
     uid: microsoft.quantum.oracles.reflectionoracle
 seeAlso:
 - microsoft.quantum.canon.reflectionoracle
 metadata:
-  ms.openlocfilehash: 6f398f2c9122769dd6f83fd002d311c0b55db158
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 641915402522ca46567909c31a27e1e514d940ae
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672926"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341813"

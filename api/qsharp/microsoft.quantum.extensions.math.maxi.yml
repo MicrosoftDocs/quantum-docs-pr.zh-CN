@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.maxi
 name: MaxI
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: MaxI 已被弃用。 请改用 @"microsoft.quantum.math.maxi"。
 syntax: 'function MaxI (a : Int, b : Int) : Int'
 input:
@@ -20,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 00c3d874b8b5891d96261dc6e75656c8ddd1dc23
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a4674c861dfe4b6ac339ad533ce23cecc60c4f27
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686205"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348188"

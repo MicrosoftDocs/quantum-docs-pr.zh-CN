@@ -2,7 +2,7 @@
 uid: microsoft.quantum.synthesis.applyxcontrolledontruthtablewithcleantarget
 name: ApplyXControlledOnTruthTableWithCleanTarget
 type: operation
-namespace: Microsoft.Quantum.Synthesis
+namespace: microsoft.quantum.synthesis
 summary: >-
   @"microsoft.quantum.intrinsic.x" `target` 如果布尔函数的 `func` 计算结果为 true （对于中的传统分配），则应用操作 `controlRegister` 。
 
@@ -25,7 +25,7 @@ input:
     isPrimitive: true
     uid: Qubit
   - name: target
-    summary: 目标 qubit （必须为 $ \ket {0} $ 状态）
+    summary: '目标 qubit (必须处于 $ \ket {0} $ 状态) '
     isPrimitive: true
     uid: Qubit
 output:
@@ -39,9 +39,9 @@ functors:
 seeAlso:
 - microsoft.quantum.synthesis.applyxcontrolledontruthtable
 metadata:
-  ms.openlocfilehash: c779acd9dfcebd3b9a71ba53c66d9e07c19f792b
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 63626151268b4bb522fbd959fdc873c1c7627b93
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85886110"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89327958"

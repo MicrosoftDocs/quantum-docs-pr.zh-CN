@@ -2,22 +2,22 @@
 uid: microsoft.quantum.simulation.timedependentblockencoding
 name: TimeDependentBlockEncoding
 type: newtype
-namespace: Microsoft.Quantum.Simulation
+namespace: microsoft.quantum.simulation
 summary: >-
-  `BlockEncoding`表示由时钟寄存器控制的。
+  表示 `BlockEncoding` 由时钟寄存器控制的。
 
 
-  也就是说， `TimeDependentBlockEncoding`是一种由状态 $ \ket{k} _d $ 在时钟寄存器`d`中控制的单一 $U $，这样，在系统寄存器`s`上操作的任意 $H _k $ 就会在对应于辅助状态 $ \ket{0}_a $ 的左上块中进行编码。 即：
+  也就是说，是一种 `TimeDependentBlockEncoding` 由状态 $ \ket{k} _d $ 在时钟寄存器中控制的单一 $U $， `d` 这样，在系统寄存器上操作的任意 $H _k $ 就 `s` 会在对应于辅助状态 $ \ket _a $ 的左上块中进行编码 {0} 。 即：
 
 
-  $ $ \begin{align} （\bra{0}\_a\otimes I_ {ds}） U （\ket{0}\_a\otimes I_ {ds}） = \ sum_ {k} \ket{k}\bra{k}\_d\otimes H_k。
+  $ $ \begin{align} ( \bra {0} \_ a\otimes I_ {ds} ) U ( \ket {0} \_ a\otimes I_ {ds} ) = \ sum_ {k} \ket{k}\bra{k} \_ d\otimes H_k。
 
   \end{align} $ $。
 syntax: newtype TimeDependentBlockEncoding = ((Qubit[], Qubit[], Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: 6a9bb3648a24eae7fd5279c4300ece7b169fb00a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6c61073bec751dca528d65c03c3631b881a27520
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82687307"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89328349"

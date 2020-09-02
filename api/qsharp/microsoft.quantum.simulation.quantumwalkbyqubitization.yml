@@ -2,14 +2,14 @@
 uid: microsoft.quantum.simulation.quantumwalkbyqubitization
 name: QuantumWalkByQubitization
 type: function
-namespace: Microsoft.Quantum.Simulation
+namespace: microsoft.quantum.simulation
 summary: >-
   将块编码反射转换为量程审核。
 
 
-  给定一个`BlockEncodingReflection`由单一 $U $ 表示的，它对某个运算符 $H $ 相关的运算符进行编码，并将其转换为量程审核 $W $，其中包含 $ \pm e ^{-1}{\Pm i\sin ^ （H）} $ 的范围。
+  给定一个 `BlockEncodingReflection` 由单一 $U $ 表示的，用来对某个运算符 $H $ 相关的运算符进行编码，并将其转换为量程审核 $W $，其中包含 $ \pm e ^ {\pm i\sin ^ {-1} (H) } $ 的范围。
 syntax: 'function QuantumWalkByQubitization (blockEncoding : Microsoft.Quantum.Simulation.BlockEncodingReflection) : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)'
-references: '- Hamiltonian 模拟 by Qubitization Guang 脱离 Hao Low、Isaac 语https://arxiv.org/abs/1610.06546'
+references: '- Hamiltonian 模拟 by Qubitization Guang 脱离 Hao Low、Isaac 语 https://arxiv.org/abs/1610.06546'
 input:
   content: '(blockEncoding : Microsoft.Quantum.Simulation.BlockEncodingReflection)'
   types:
@@ -18,7 +18,7 @@ input:
 output:
   content: ((Qubit[], Qubit[]) => Unit is Adj + Ctl)
   types:
-  - summary: 量程审核 $W $ 联合在寄存器`a`上，并`s`对 $H $ 进行阻止编码，并包含 $ \pm e ^ {\Pm i\sin ^{-1}（H）} $ 的种类。
+  - summary: 量程审核 $W $ 联合在寄存器上， `a` 并对 `s` $H $ 进行阻止编码，并包含 $ \pm e ^ {\pm i\sin ^ {-1} (H) } $ 的范围。
     isOperation: true
     input:
       types:
@@ -39,9 +39,9 @@ seeAlso:
 - microsoft.quantum.canon.blockencoding
 - microsoft.quantum.canon.blockencodingreflection
 metadata:
-  ms.openlocfilehash: e2a6c0469b730140b8584e8cff2aad2d68254793
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: cbe89f5020c50fc653db7d629e618c317d528d94
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682503"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89328400"

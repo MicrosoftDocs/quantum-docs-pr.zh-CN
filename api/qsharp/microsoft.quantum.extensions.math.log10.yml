@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.log10
 name: Log10
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: Log10 已被弃用。 请改用 @"microsoft.quantum.math.log10"。
 syntax: 'function Log10 (input : Double) : Double'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: f3d3e47b15291d6cc58229ed50f9e7564b9952ae
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 71d9b21139b0b078ab4623b1949d650dd8a6ecca
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686271"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348309"

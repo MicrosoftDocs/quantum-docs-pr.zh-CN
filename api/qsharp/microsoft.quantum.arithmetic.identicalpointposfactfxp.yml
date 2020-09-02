@@ -2,14 +2,14 @@
 uid: microsoft.quantum.arithmetic.identicalpointposfactfxp
 name: IdenticalPointPosFactFxP
 type: function
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 断言当从最小有效位进行计数时，提供的数组中的所有固定点都具有相同的点位置。 也就是说，对于数组中的所有固定点，位数减去点的位数必须是常量。
 syntax: 'function IdenticalPointPosFactFxP (fixedPoints : Microsoft.Quantum.Arithmetic.FixedPoint[]) : Unit'
 input:
   content: '(fixedPoints : Microsoft.Quantum.Arithmetic.FixedPoint[])'
   types:
   - name: fixedPoints
-    summary: 将检查其兼容性的量程固定点数字的数组（使用断言）。
+    summary: 将使用断言) 检查兼容性 (的量程固定点数的数组。
     isArray: true
     uid: microsoft.quantum.arithmetic.fixedpoint
 output:
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 4c8d3c487901e7e63c22305ecdeaf3f13dd50da0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d33788f179c75cc524a604e2c41dc343f2bdc1de
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679573"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341915"

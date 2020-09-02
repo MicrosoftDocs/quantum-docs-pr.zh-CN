@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.ieeeremainder
 name: IEEERemainder
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: IEEERemainder 已被弃用。 请改用 @"microsoft.quantum.math.ieeeremainder"。
 syntax: 'function IEEERemainder (x : Double, y : Double) : Double'
 input:
@@ -20,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 18bec5e4a9bd5328c45360fa26f39f976d6435ba
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 20cc1b2fc63991a85d56289c5be187f70535028f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686305"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348308"

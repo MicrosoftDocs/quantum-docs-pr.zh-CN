@@ -2,13 +2,13 @@
 uid: microsoft.quantum.simulation.timedependentgeneratorsystem
 name: TimeDependentGeneratorSystem
 type: newtype
-namespace: Microsoft.Quantum.Simulation
+namespace: microsoft.quantum.simulation
 summary: 表示时间依赖于时间的 dynamical 生成器作为函数，时间与 dynamical 生成器的值相同。
 syntax: newtype TimeDependentGeneratorSystem = (Double -> Microsoft.Quantum.Simulation.GeneratorSystem);
 metadata:
-  ms.openlocfilehash: cc7894d1d136de59b9d065bc66d8109906291992
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 08f6f26881cd55df95f304632ba7e7bd408eccff
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82687288"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89328282"

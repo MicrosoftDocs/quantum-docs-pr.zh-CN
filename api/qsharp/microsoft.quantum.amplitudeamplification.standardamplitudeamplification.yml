@@ -2,9 +2,9 @@
 uid: microsoft.quantum.amplitudeamplification.standardamplitudeamplification
 name: StandardAmplitudeAmplification
 type: function
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: 标准振幅放大算法
-remarks: 这是由所选的反射阶段所获得的标准幅度放大算法， `AmpAmpPhasesStandard`通过假定 \begin{align} A\ket{0}\_{f} \ket{0}\_s = \lambda\ket{1}\_f\ket {\ text {target}}\_s + \sqrt{1-| \lambda | ^ 2} \ket{0}\_f\cdots，\end{align} 此操作在大多数情况下准备{0}\_状态 \begin{align} \operatorname{AmpAmpByOracle}\ket {{0}\_f} \ket s = \sin （（2n + 1{-1}） \sin ^ （\lambda{1}\_）） \ket f\ket {\ text {\_target}}{0}\_s + \cdots\ket f \end{align}， `flagQubit`并且`auxiliaryRegister`在{0}\_状态 $ \ket f\ket{0}\_a 中进行初始化。
+remarks: '这是由所选的反射阶段所获得的标准幅度放大算法，通过 `AmpAmpPhasesStandard` 假定 \Begin{align} A\ket {0} \_ {f} \ket {0} \_ s = \lambda\ket {1} \_ f\ket {\ text {target}} \_ s + \sqrt{1-| \lambda | ^ 2} \ket {0} \_ f\cdots，\End{align} 此操作 {0} \_ 在大多数情况下准备状态 \begin{align} \operatorname{AmpAmpByOracle}\ket {f} \ket {0} \_ s = \Sin ( # B1 2n + 1) \sin ^ {-1} ( \lambda) # A5\ket {1} \_ f\ket {\ text {target}} \_ s + \cdots\ket {0} \_ f \end{align} `flagQubit` `auxiliaryRegister` {0} \_ {0} \_'
 syntax: 'function StandardAmplitudeAmplification (nIterations : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int) : (Qubit[] => Unit is Adj + Ctl)'
 references: '- [*G. Brassard，Hoyer，Mosca，Tapp*](https://arxiv.org/abs/quant-ph/0005055)'
 input:
@@ -38,9 +38,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: 0fc7ceb390a64ce6224a084147207663d96c3b75
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: f78b541045b309403387962128a3cfda3290cade
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676914"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89341864"
