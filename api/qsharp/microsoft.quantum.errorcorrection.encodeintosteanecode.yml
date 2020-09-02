@@ -2,7 +2,7 @@
 uid: microsoft.quantum.errorcorrection.encodeintosteanecode
 name: EncodeIntoSteaneCode
 type: operation
-namespace: Microsoft.Quantum.ErrorCorrection
+namespace: microsoft.quantum.errorcorrection
 summary: 一种编码操作，用于将未编码的量程寄存器映射到⟦7，1，3⟧ Steane 量程代码下的编码的量程寄存器。
 syntax: 'operation EncodeIntoSteaneCode (physRegister : Qubit[], auxQubits : Qubit[]) : Microsoft.Quantum.ErrorCorrection.LogicalRegister'
 input:
@@ -27,9 +27,9 @@ seeAlso:
 - logicalregister
 - steanecodedecoder
 metadata:
-  ms.openlocfilehash: 57ed5c1f8d9d39feb884bc31520fc556d96153c5
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e68ce42d439af4c15e61d49ebeb7ed3657a4d4e5
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684978"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89336390"

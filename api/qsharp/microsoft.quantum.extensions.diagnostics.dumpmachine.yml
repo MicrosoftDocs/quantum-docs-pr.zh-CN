@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.diagnostics.dumpmachine
 name: DumpMachine
 type: function
-namespace: Microsoft.Quantum.Extensions.Diagnostics
+namespace: microsoft.quantum.extensions.diagnostics
 summary: DumpMachine 已被弃用。 请改用 @"microsoft.quantum.diagnostics.dumpmachine"。
 syntax: "function DumpMachine (location : 'T) : Unit"
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: c2158577d3c20f9ee1d047ec1b2e564d69bcd563
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 032fac8ae984c87d370b39bd262aaa5e2e6b8534
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681968"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348951"

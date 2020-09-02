@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.convert.todouble
 name: ToDouble
 type: function
-namespace: Microsoft.Quantum.Extensions.Convert
+namespace: microsoft.quantum.extensions.convert
 summary: ToDouble 已被弃用。 请改用 @"microsoft.quantum.convert.intasdouble"。
 syntax: 'function ToDouble (a : Int) : Double'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: c880b497511dac8249fa240bd0cd9d003358424c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 33374f06fcd81e11f2ff222b8280393ac1475a3f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682056"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89349174"

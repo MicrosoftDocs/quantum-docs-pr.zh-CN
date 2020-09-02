@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.convert.biginttobools
 name: BigIntToBools
 type: function
-namespace: Microsoft.Quantum.Extensions.Convert
+namespace: microsoft.quantum.extensions.convert
 summary: BigIntToBools 已被弃用。 请改用 @"microsoft.quantum.convert.bigintasboolarray"。
 syntax: 'function BigIntToBools (a : BigInt) : Bool[]'
 input:
@@ -18,9 +18,9 @@ output:
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 69bb204f4e48c17766a274c31f84b2f79833a82a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 0956bc89d99026fb130f11861afe16aaa5cc4571
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682121"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89349293"

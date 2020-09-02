@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.convert.tostringi
 name: ToStringI
 type: function
-namespace: Microsoft.Quantum.Extensions.Convert
+namespace: microsoft.quantum.extensions.convert
 summary: ToStringI 已被弃用。 请改用 @"microsoft.quantum.convert.intasstring"。
 syntax: 'function ToStringI (a : Int) : String'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: String
 metadata:
-  ms.openlocfilehash: 45bd82a00b66e141b4f3011d90af01e0a759ad9c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 51cea5bb5634619a160b48aa8c5a312912fa8356
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681988"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348987"

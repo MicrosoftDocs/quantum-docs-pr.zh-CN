@@ -2,7 +2,7 @@
 uid: microsoft.quantum.errorcorrection.encodeop
 name: EncodeOp
 type: newtype
-namespace: Microsoft.Quantum.ErrorCorrection
+namespace: microsoft.quantum.errorcorrection
 summary: >-
   表示一个操作，该操作使用提供的草稿 qubits 将物理寄存器编码为逻辑寄存器。
 
@@ -10,9 +10,9 @@ summary: >-
   第一个参数被视为将进行编码的物理寄存器，而第二个参数被视为将使用的暂存寄存器。
 syntax: newtype EncodeOp = ((Qubit[], Qubit[]) => Microsoft.Quantum.ErrorCorrection.LogicalRegister);
 metadata:
-  ms.openlocfilehash: 610b9de9ccf236855c8669ac7df41fde6c297533
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7962cc819dc32f48ac2e2e48e6039aa451ec7a26
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684958"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89336305"

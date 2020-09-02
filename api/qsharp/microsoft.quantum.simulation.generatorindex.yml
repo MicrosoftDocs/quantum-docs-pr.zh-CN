@@ -2,21 +2,21 @@
 uid: microsoft.quantum.simulation.generatorindex
 name: GeneratorIndex
 type: newtype
-namespace: Microsoft.Quantum.Simulation
+namespace: microsoft.quantum.simulation
 summary: >-
-  表示所有 dynamical 生成器（如 Hermitian 运算符）集中的单个基元术语，该生成器存在一个从该生成器到该生成器的时间演化的映射`EvolutionSet`。
+  表示所有 dynamical 生成器（如 Hermitian 运算符）集中的单个基元术语，该生成器存在一个从该生成器到该生成器的时间演化的映射 `EvolutionSet` 。
 
 
-  第一个元素（Int []，Double []）是单个字词的索引，例如，系数0.5 的 Pauli 字符串 XXY 将按（[1，1，2]，[0.5]）进行索引。 或者，通过连续变量（例如 X cos φ + Y sin φ）参数化的 Hamiltonians 可能以（[]，[φ]）表示。 第二个元素对生成器在其上操作的子系统进行索引。
+  第一个元素 (Int []，Double [] ) 是单个字词的索引，例如，系数为0.5 的 Pauli 字符串 XXY 将按 ( [1，1，2]，[0.5] ) 进行索引。 另外，可以通过 ( []、[φ] ) 以连续变量（例如 X cos φ + Y sin φ）表示的 Hamiltonians。 第二个元素对生成器在其上操作的子系统进行索引。
 remarks: >-
   > [!WARNING]
 
-  > 除引用一组`GeneratorIndex`特定生成器外，未定义的解释。
+  > `GeneratorIndex`除引用一组特定生成器外，未定义的解释。
 
 
   ### <a name="examples"></a>示例
 
-  使用<xref:microsoft.quantum.simulation.paulievolutionset>时，运算符 $ \pi X_2 X_5 Y_9 $ 表示为：
+  使用  <xref:microsoft.quantum.simulation.paulievolutionset> 时，运算符 $ \pi X_2 X_5 Y_9 $ 表示为：
 
 
   ```qsharp
@@ -29,9 +29,9 @@ seeAlso:
 - evolutionset
 - paulievolutionset
 metadata:
-  ms.openlocfilehash: d633ecdc11075eb45a40a58bb2a1ca67af577c3c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b291cc0b0adc4799e49403fb76f0f47dbadcaf5c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82655151"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330168"

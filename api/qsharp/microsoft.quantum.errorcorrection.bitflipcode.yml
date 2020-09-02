@@ -2,7 +2,7 @@
 uid: microsoft.quantum.errorcorrection.bitflipcode
 name: BitFlipCode
 type: function
-namespace: Microsoft.Quantum.ErrorCorrection
+namespace: microsoft.quantum.errorcorrection
 summary: 返回一个 QECC 值，该值表示⟦3，1，1⟧位翻转代码编码器和解码器，并使用就地症状度量。
 syntax: 'function BitFlipCode () : Microsoft.Quantum.ErrorCorrection.QECC'
 input:
@@ -11,12 +11,12 @@ input:
 output:
   content: Microsoft.Quantum.ErrorCorrection.QECC
   types:
-  - summary: 通过指定`QECC`类型返回量程错误更正代码的实现。
+  - summary: 通过指定类型返回量程错误更正代码的实现 `QECC` 。
     uid: microsoft.quantum.errorcorrection.qecc
 metadata:
-  ms.openlocfilehash: 3fb7c03f36a75d98238bbacfd7eb2a207894bb90
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 35bfd880cbb362e15665e341e860b68ae6618bed
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682378"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89336696"

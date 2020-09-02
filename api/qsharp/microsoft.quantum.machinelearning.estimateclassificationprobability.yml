@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.estimateclassificationprobability
 name: EstimateClassificationProbability
 type: operation
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 给定一个示例和顺序分类器，通过反复测量给定示例中分类器的输出来估计该样本的分类概率。
 syntax: 'operation EstimateClassificationProbability (tolerance : Double, model : Microsoft.Quantum.MachineLearning.SequentialModel, sample : Double[], nMeasurements : Int) : Double'
 input:
@@ -31,9 +31,9 @@ output:
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: e46269c83fb4343918c0154819631df1fde4279f
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 9262c44cabe2e658437fbd75eaa640477d2183f3
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85885873"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89336203"

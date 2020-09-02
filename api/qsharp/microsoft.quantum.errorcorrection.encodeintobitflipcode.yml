@@ -2,7 +2,7 @@
 uid: microsoft.quantum.errorcorrection.encodeintobitflipcode
 name: EncodeIntoBitFlipCode
 type: operation
-namespace: Microsoft.Quantum.ErrorCorrection
+namespace: microsoft.quantum.errorcorrection
 summary: 编码为 [3，1，3]/⟦3，1，1⟧位翻转代码。
 syntax: 'operation EncodeIntoBitFlipCode (physRegister : Qubit[], auxQubits : Qubit[]) : Microsoft.Quantum.ErrorCorrection.LogicalRegister'
 input:
@@ -14,7 +14,7 @@ input:
     isPrimitive: true
     uid: Qubit
   - name: auxQubits
-    summary: 最初在 $ \ket{00}$ 状态中注册辅助 qubits，用于对要保护的数据进行编码。
+    summary: 最初在 $ \ket $ 状态中注册辅助 qubits，用于对 {00} 要保护的数据进行编码。
     isArray: true
     isPrimitive: true
     uid: Qubit
@@ -26,9 +26,9 @@ output:
 seeAlso:
 - logicalregister
 metadata:
-  ms.openlocfilehash: 7a902bc056b9eb39bf12125a1078329f56712ac9
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: f02de84d141b145ec22d47a1d73300bf45cf2e78
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685013"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89336492"
