@@ -2,10 +2,10 @@
 uid: microsoft.quantum.canon.applywithinputtransformationca
 name: ApplyWithInputTransformationCA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 给定接受某些输入的操作，返回与该操作兼容的输出的函数以及该函数的输入将使用函数将输入转换为操作所需的格式。
 examples: >-
-  以下调用使用@"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian"将为@"Microsoft.Quantum.Arithmetic.BigEndian"输入设计的操作应用于类型@"Microsoft.Quantum.Arithmetic.LittleEndian"的输入：
+  以下调用使用将 @"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian" 为输入设计的操作应用于 @"Microsoft.Quantum.Arithmetic.BigEndian" 类型的输入 @"Microsoft.Quantum.Arithmetic.LittleEndian" ：
 
 
   ```qsharp
@@ -60,9 +60,9 @@ seeAlso:
 - applywithinputtransformationc
 - transformedoperation
 metadata:
-  ms.openlocfilehash: d49bfe512cc8460aaf9697b545b02ac2b5d96a9f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 505fd028126c966c9f64123414126b31c02a1ac1
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676242"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357096"

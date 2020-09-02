@@ -2,13 +2,13 @@
 uid: microsoft.quantum.errorcorrection.qecc
 name: QECC
 type: newtype
-namespace: Microsoft.Quantum.ErrorCorrection
+namespace: microsoft.quantum.errorcorrection
 summary: 表示由其编码器、解码器和症状度量过程定义的纠错码。
 syntax: newtype QECC = (Microsoft.Quantum.ErrorCorrection.EncodeOp, Microsoft.Quantum.ErrorCorrection.DecodeOp, Microsoft.Quantum.ErrorCorrection.SyndromeMeasOp);
 metadata:
-  ms.openlocfilehash: fa4418c73b119897a104503848efe9443512f71f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2638b9418c116a1b9ade8fa1794320a7760291f0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682332"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89349990"

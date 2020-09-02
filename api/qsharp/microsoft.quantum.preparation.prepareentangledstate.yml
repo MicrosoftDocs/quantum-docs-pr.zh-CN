@@ -2,12 +2,12 @@
 uid: microsoft.quantum.preparation.prepareentangledstate
 name: PrepareEntangledState
 type: operation
-namespace: Microsoft.Quantum.Preparation
+namespace: microsoft.quantum.preparation
 summary: >-
   成对 entangles 两个 qubit 寄存器。
 
 
-  也就是说，给定两个寄存器，在各自的寄存器上的每{1}对 \left{2}之间准备最大化放大{00} state ${11} \frac {\sqrt} \ket （\ket + \right qubits） $，假设每个注册都以 $ \ket{0\cdots 0} $ 状态启动。
+  也就是说，假设有两个寄存器，则准备最大化放大 state $ \frac {1} {\sqrt {2} } \left ( \ket {00} + \ket \right 在 {11} 各自寄存器上的每对 qubits 之间) $，假设每个注册都以 $ \ket{0\cdots 0} $ 状态启动。
 syntax: 'operation PrepareEntangledState (left : Qubit[], right : Qubit[]) : Unit'
 input:
   content: '(left : Qubit[], right : Qubit[])'
@@ -31,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: c761362c8793e4e08e7e702b2909f0253b8723d6
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1756ef2c983ea7b0a93e991369bc658ff02b06a9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686541"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89331511"

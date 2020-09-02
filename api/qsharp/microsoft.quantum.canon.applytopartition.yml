@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applytopartition
 name: ApplyToPartition
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 将一对操作应用于寄存器的给定分区分为两部分。
 syntax: 'operation ApplyToPartition (op : ((Qubit[], Qubit[]) => Unit), numberOfQubitsToFirstArgument : Int, target : Qubit[]) : Unit'
 input:
@@ -45,9 +45,9 @@ seeAlso:
 - microsoft.quantum.canon.applytopartitionc
 - microsoft.quantum.canon.applytopartitionca
 metadata:
-  ms.openlocfilehash: 31b88fac027d0b5ce0cad944853a36032050c9f0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2d9e410ca4cf94a2326c3cce6ae9ccc73a0c3cd8
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674643"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357351"

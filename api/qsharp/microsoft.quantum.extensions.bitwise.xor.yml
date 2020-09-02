@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.bitwise.xor
 name: Xor
 type: function
-namespace: Microsoft.Quantum.Extensions.Bitwise
+namespace: microsoft.quantum.extensions.bitwise
 summary: 不推荐使用 Xor。 请改用 @"microsoft.quantum.bitwise.xor"。
 syntax: 'function Xor (a : Int, b : Int) : Int'
 input:
@@ -20,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: fa6b2b2d2f898b9ee5ecc570397c2cf7c8266ac7
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: fcce170defefffc7b9f9f670f4b6ebf558ac75ac
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682158"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89349378"

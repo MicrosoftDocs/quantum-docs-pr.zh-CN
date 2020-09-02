@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.bitwise.xbits
 name: XBits
 type: function
-namespace: Microsoft.Quantum.Extensions.Bitwise
+namespace: microsoft.quantum.extensions.bitwise
 summary: XBits 已被弃用。 请改用 @"microsoft.quantum.bitwise.xbits"。
 syntax: 'function XBits (paulies : Pauli[]) : Int'
 input:
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: c098dc6a331ee1163754b26bed377fd18ee97ba2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5ca9e96b2cfcdbddf0a7ff8419ce34cfc5ee97e4
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682174"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89349412"

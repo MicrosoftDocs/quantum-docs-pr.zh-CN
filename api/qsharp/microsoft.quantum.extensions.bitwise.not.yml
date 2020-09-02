@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.bitwise.not
 name: Not
 type: function
-namespace: Microsoft.Quantum.Extensions.Bitwise
+namespace: microsoft.quantum.extensions.bitwise
 summary: 尚未弃用。 请改用 @"microsoft.quantum.bitwise.not"。
 syntax: 'function Not (a : Int) : Int'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 8ebe20c7cb6b35b8f6d2dfd5c328b72d826edba0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d49ba505702de9504e93c120d08e0ae33f4c775c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684779"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89349531"

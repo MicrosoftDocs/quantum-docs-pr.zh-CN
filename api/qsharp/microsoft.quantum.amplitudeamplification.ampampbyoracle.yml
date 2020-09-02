@@ -2,7 +2,7 @@
 uid: microsoft.quantum.amplitudeamplification.ampampbyoracle
 name: AmpAmpByOracle
 type: function
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: AmpAmpByOracle 已被弃用。 请改用 @"microsoft.quantum.amplitudeamplification.standardamplitudeamplification"。
 syntax: 'function AmpAmpByOracle (nIterations : Int, stateOracle : Microsoft.Quantum.Oracles.StateOracle, idxFlagQubit : Int) : (Qubit[] => Unit is Adj + Ctl)'
 input:
@@ -33,9 +33,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: c4c595b97029f4f37f82670cb26371887a3b4687
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5c6b6d5b9d6c532c6ec0a08811369cba5d9b156c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675448"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340640"

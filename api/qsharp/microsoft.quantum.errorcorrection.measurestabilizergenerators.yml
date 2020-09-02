@@ -2,7 +2,7 @@
 uid: microsoft.quantum.errorcorrection.measurestabilizergenerators
 name: MeasureStabilizerGenerators
 type: operation
-namespace: Microsoft.Quantum.ErrorCorrection
+namespace: microsoft.quantum.errorcorrection
 summary: 度量稳定组的给定生成器集。
 remarks: >-
   这不会检查给定的生成器集是否上下班途中。
@@ -16,7 +16,7 @@ input:
     summary: >-
       Multiqubit Pauli 运算符的数组。
 
-      例如， `stabilizerGroup[0]`是一个 qubit Pauli 矩阵列表，其中的 tensor 产品是一个稳定的生成器。
+      例如， `stabilizerGroup[0]` 是一个 Qubit Pauli 矩阵列表，其中的 tensor 产品是一个稳定的生成器。
     isArray: true
     types:
     - isArray: true
@@ -46,9 +46,9 @@ output:
   - summary: 度量值的结果。
     uid: microsoft.quantum.errorcorrection.syndrome
 metadata:
-  ms.openlocfilehash: d89455e8341d053053e110a6cfccd19e206d38d8
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: fe7e1d75d6108d3f1c8288560c011af14bf6529b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682317"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350007"

@@ -2,17 +2,17 @@
 uid: microsoft.quantum.amplitudeamplification.rotationphases
 name: RotationPhases
 type: newtype
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: 振幅放大中 qubit 旋转序列的各个阶段。
 remarks: >-
   第一个参数是一个用于反射的阶段数组，表示为一个 qubit 旋转的积。
 
-  [ G.H. 低，I. L。 语， https://arxiv.org/abs/1707.05391]。
+  [ G.H. 低，I. L。 语， https://arxiv.org/abs/1707.05391 ]。
 syntax: newtype RotationPhases = Double[];
 metadata:
-  ms.openlocfilehash: bcf8502387a5f4479730bcbb41eaf03fa7925f87
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6973d50061626f87fb57cf54e0abff0caf73c411
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680078"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340249"
