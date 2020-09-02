@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.allowatmostnqubits
 name: AllowAtMostNQubits
 type: operation
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 在对此操作及其 adjoint 的调用之间，将使用语句最多地断言给定数量的附加 qubits。
 remarks: 对于不支持此操作的目标，此操作可能会替换为不支持操作。
 examples: >-
@@ -40,9 +40,9 @@ output:
 functors:
 - Adjoint
 metadata:
-  ms.openlocfilehash: 154bcc5f67a44e436e42907d8679c14f68c88021
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 710f24e7b98cf0e3f82c50568ffb36e9732b5837
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863911"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337886"

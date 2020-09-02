@@ -2,12 +2,12 @@
 uid: microsoft.quantum.arithmetic.ripplecarryaddernocarryttk
 name: RippleCarryAdderNoCarryTTK
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   可逆的就地波纹，无需执行即可额外添加两个整数。
 
 
-  给定两 $n 个在 LittleEndian `xs`注册和`ys`中编码的 $ bit 整数，操作将计算两个整数的总和： $ 2 ^ n $，其中 $n $ 是输入`xs`和`ys`的位大小。 它不计算执行位。
+  给定两 $n 个在 LittleEndian 注册和中编码的 $ bit 整数， `xs` `ys` 操作将计算两个整数的总和： $ 2 ^ n $，其中 $n $ 是输入和的位大小 `xs` `ys` 。 它不计算执行位。
 remarks: 此操作具有与 RippleCarryAdderTTK 相同的功能，但不会返回带有位。
 syntax: 'operation RippleCarryAdderNoCarryTTK (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 references: >-
@@ -31,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: cf6855325edc354d22b0324f5949a435a11ce8bb
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 88ebe0e7799d446d4a3ff668a9abe8dd71601642
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676684"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352795"

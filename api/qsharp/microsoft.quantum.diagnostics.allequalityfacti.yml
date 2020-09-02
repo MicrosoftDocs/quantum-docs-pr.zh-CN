@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.allequalityfacti
 name: AllEqualityFactI
 type: function
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 断言整数值的两个数组相等。
 syntax: 'function AllEqualityFactI (actual : Int[], expected : Int[], message : String) : Unit'
 input:
@@ -28,9 +28,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 93071156fa4ddf209048c6880851494f2a7f19d2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: f948ce5073e2c55b409ddf861d1941a99f718bb2
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677310"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337903"

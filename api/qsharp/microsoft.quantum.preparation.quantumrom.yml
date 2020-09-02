@@ -2,16 +2,16 @@
 uid: microsoft.quantum.preparation.quantumrom
 name: QuantumROM
 type: function
-namespace: Microsoft.Quantum.Preparation
+namespace: microsoft.quantum.preparation
 summary: >-
   使用量程 ROM 技术来表示给定的密度矩阵。
 
 
-  给定一个 $N $ 系数 $ \ alpha_j $ 的列表，这将返回一个单一 $U $，该类型使用量程方法为密度矩阵 $ \rho = \ p_j {j = 0} ^ {N-1} \frac{的 purification {j = 0} ^ {sum_ \tilde\rho\} sum_ \ket{j}\bra{j} ${\ sum_k | \ alpha_k |}\ket{j}\bra{j} $。 在此近似中，错误 $ \epsilon $ 是： $ | p_j-\frac{| alpha_j |}{\ sum_k | \ alpha_k |} |\le \epsilon/N $ 和 $\|\tilde\rho-\rho\| \le \epsilon $。 换句话说，$ $ \begin{align} U\ket{0}^ {\Lceil\ log_2 N\rceil} \ 票证{0}^ {m} = \ sum_ {j = 0} ^ {N-1} \sqrt{p_j} \ket{j}\ket{\text{garbage} _j}。
+  给定一个 $N $ 系数 $ \ alpha_j $ 的列表，这将返回一个单一 $U $，该类型使用量程方法为密度矩阵 $ \rho = \ p_j {j = 0} ^ {N-1} \frac{的 purification {j = 0} ^ {sum_ \tilde\rho\} sum_ \ket{j}\bra{j} ${\ sum_k | \ alpha_k |}\ket{j}\bra{j} $。 在此近似中，错误 $ \epsilon $ 是： $ | p_j-\frac{| alpha_j |}{\ sum_k | \ alpha_k |} |\le \epsilon/N $ 和 $ \| \tilde\rho-\rho \| \le \epsilon $。 换句话说，$ $ \begin{align} U\ket {0} ^ {\lceil\ log_2 N\rceil} \ 票证 {0} ^ {m} = \ sum_ {j = 0} ^ {N-1} \sqrt{p_j} \ket{j}\ket{\text{garbage} _j}。
 
   \end{align} $ $
 examples: >-
-  下面的代码段准备了 $ 3 $-qubit state $ \rho = \ sum_ {j = 0} ^{4}\frac{| alpha_j |} 的 purification{\ sum_k | \ alpha_k |}\ket{j}\bra{j} $，其中 $ \vec\alpha = （1.0，2.0，3.0，4.0，5.0） $，错误为`1e-3`;
+  下面的代码段准备了 $ 3 $-qubit state $ \rho = \ sum_ {j = 0} ^ {4} \frac{| alpha_j |} 的 purification{\ sum_k | \ alpha_k |}\ket{j}\bra{j} $，其中 $ \vec\alpha = (1.0，2.0，3.0，4.0，5.0) $，错误为 `1e-3` ;
 
 
   ```qsharp
@@ -30,7 +30,7 @@ examples: >-
 
   ```
 syntax: 'function QuantumROM (targetError : Double, coefficients : Double[]) : ((Int, (Int, Int)), Double, ((Microsoft.Quantum.Arithmetic.LittleEndian, Qubit[]) => Unit is Adj + Ctl))'
-references: '- 通过线性线路编码的电子 Spectra，Ryan Babbush、Craig Gidney、Dominic Berry、Nathan Wiebe、Jarrod McClean、Alexandru 暗、奥斯汀 Fowler、Hartmut Nevenhttps://arxiv.org/abs/1805.03662'
+references: '- 通过线性线路编码的电子 Spectra，Ryan Babbush、Craig Gidney、Dominic Berry、Nathan Wiebe、Jarrod McClean、Alexandru 暗、奥斯汀 Fowler、Hartmut Neven https://arxiv.org/abs/1805.03662'
 input:
   content: '(targetError : Double, coefficients : Double[])'
   types:
@@ -53,7 +53,7 @@ output:
       ## <a name="first-parameter"></a>第一个参数
 
 
-      一个元`(x,(y,z))`组`x = y + z` ，其中是所分配的 qubits 总数`y` ，是`LittleEndian`寄存器的 qubits 数， `z`是垃圾 qubits 的数目。
+      一个元组， `(x,(y,z))` 其中 `x = y + z` 是所分配的 qubits 总数， `y` 是寄存器的 qubits 数 `LittleEndian` ， `z` 是垃圾 qubits 的数目。
 
 
       ## <a name="second-parameter"></a>第二个参数
@@ -92,9 +92,9 @@ output:
       - Adjoint
       - Controlled
 metadata:
-  ms.openlocfilehash: 9bf373f0cb7c495f8c29a4426861c74fbb0ec7f6
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6f0626eeccd1c8b411f8210b5e59f0321527a39c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686493"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89331274"

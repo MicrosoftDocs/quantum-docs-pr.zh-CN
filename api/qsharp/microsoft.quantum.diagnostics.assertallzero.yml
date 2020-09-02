@@ -2,8 +2,8 @@
 uid: microsoft.quantum.diagnostics.assertallzero
 name: AssertAllZero
 type: operation
-namespace: Microsoft.Quantum.Diagnostics
-summary: 断言给定的 qubits 都处于 $ \ket{0}$ 状态。
+namespace: microsoft.quantum.diagnostics
+summary: 断言给定的 qubits 都处于 $ \ket {0} $ 状态。
 syntax: 'operation AssertAllZero (qubits : Qubit[]) : Unit'
 input:
   content: '(qubits : Qubit[])'
@@ -23,9 +23,9 @@ functors:
 seeAlso:
 - assertqubit
 metadata:
-  ms.openlocfilehash: 762ffb43ac448bc2e592b9a4c7fbe46eed6021c1
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: aae724a1f95b6d0aea3c88408f2a2b876238df46
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82657170"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337478"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.assertphase
 name: AssertPhase
 type: operation
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: >-
   断言 superposition 状态相同的阶段具有预期值。
 
@@ -47,9 +47,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 5be9fdb82a955282a824b06dd921e6a59a0828a2
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 008304bb795d514247faba76075d28b238f4dc72
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863910"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337444"

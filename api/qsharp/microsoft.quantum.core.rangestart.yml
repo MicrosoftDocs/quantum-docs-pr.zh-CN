@@ -2,13 +2,13 @@
 uid: microsoft.quantum.core.rangestart
 name: RangeStart
 type: function
-namespace: Microsoft.Quantum.Core
+namespace: microsoft.quantum.core
 summary: 返回给定范围中定义的开始值。
 remarks: >-
-  范围表达式的第一个元素是`start`，其第二个`start+step`元素是，第`start+step+step`三个元素为， `end`依此类推，直到传递。
+  范围表达式的第一个元素是 `start` ，其第二个元素是， `start+step` 第三个元素为 `start+step+step` ，依此类推，直到 `end` 传递。
 
 
-  请注意，定义的范围的起始值与序列的第一个元素相同，除非该范围指定一个空序列（例如，2.）。 1）。
+  请注意，定义的范围的起始值与序列的第一个元素相同，除非该范围指定一个空序列 (例如 2.。 1）。
 syntax: 'function RangeStart (range : Range) : Int'
 input:
   content: '(range : Range)'
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: a5a5240da851b459e732c78f7be94b8a2d02b1f1
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5185ab84eb872312828011842988b4a8b1e55e53
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82657247"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337971"

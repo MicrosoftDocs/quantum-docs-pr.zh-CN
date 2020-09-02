@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.arcsin
 name: ArcSin
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回正弦值为指定数字的角度。
-remarks: 有关更多详细信息，请参阅[Asin](https://docs.microsoft.com/dotnet/api/system.math.asin) 。
+remarks: 有关更多详细信息，请参阅 [Asin](https://docs.microsoft.com/dotnet/api/system.math.asin) 。
 syntax: 'function ArcSin (y : Double) : Double'
 input:
   content: '(y : Double)'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: b9c84604ee375de0825c939e429e1dbadebfcf77
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 26cfa128616a27d819822e10c593b50a6820600a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683485"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344686"

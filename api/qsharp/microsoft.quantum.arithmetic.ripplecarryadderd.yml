@@ -2,11 +2,11 @@
 uid: microsoft.quantum.arithmetic.ripplecarryadderd
 name: RippleCarryAdderD
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   可逆的就地波纹-包含两个整数。
 
-  假设在 LittleEndian 中编码的两个 $n $ 位`xs`整数`ys`和一个 qubit，则该操作将计算两个整数的总和，其中包含结果的 $n $ 最低有效位`ys` ，而执行位被 xored 到 qubit。 `carry`
+  假设在 LittleEndian 中编码的两个 $n $ 位整数 `xs` 和 `ys` 一个 qubit，则该操作将计算两个整数的总和，其中包含结果的 $n $ 最低有效位 `ys` ，而执行位被 xored 到 qubit `carry` 。
 remarks: 指定的受控操作利用操作的对称和相互取消来改善将控件添加到每个操作的默认实现。
 syntax: 'operation RippleCarryAdderD (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, carry : Qubit) : Unit'
 references: >-
@@ -34,9 +34,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 4afc8f01d1a1e85aee8c974e126c4c112fd43536
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: bdc59f3699cbe36e80cc808e081b5e5d32d10f46
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676698"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352863"

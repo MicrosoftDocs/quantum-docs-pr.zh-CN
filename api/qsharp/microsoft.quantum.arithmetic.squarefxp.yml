@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.squarefxp
 name: SquareFxP
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 将定点数值作为平方。
 syntax: 'operation SquareFxP (fp : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
 input:
@@ -12,7 +12,7 @@ input:
     summary: 固定点数字。
     uid: microsoft.quantum.arithmetic.fixedpoint
   - name: result
-    summary: 结果固定点数字，最初必须处于状态 $ \ket{0}$。
+    summary: 结果固定点数字，最初必须处于状态 $ \ket {0} $。
     uid: microsoft.quantum.arithmetic.fixedpoint
 output:
   content: Unit
@@ -23,9 +23,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 872599fb948f3f9bcfdede64ddeb5d8bb58debab
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7fbc89e5a1986f633330a2f8c019bd0cf57930f9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676628"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352744"

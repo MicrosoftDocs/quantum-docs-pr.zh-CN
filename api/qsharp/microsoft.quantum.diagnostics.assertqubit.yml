@@ -2,15 +2,15 @@
 uid: microsoft.quantum.diagnostics.assertqubit
 name: AssertQubit
 type: operation
-namespace: Microsoft.Quantum.Diagnostics
-summary: 断言 qubit `q`位于 Pauli Z 运算符所需的 eigenstate 中。
-remarks: <xref:microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance>允许对任意 qubit 的状态进行断言，而不只是 $Z $ eigenstates。
+namespace: microsoft.quantum.diagnostics
+summary: 断言 qubit `q` 位于 Pauli Z 运算符所需的 eigenstate 中。
+remarks: <xref:microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance> 允许对任意 qubit 的状态进行断言，而不只是 $Z $ eigenstates。
 syntax: 'operation AssertQubit (expected : Result, q : Qubit) : Unit'
 input:
   content: '(expected : Result, q : Qubit)'
   types:
   - name: expected
-    summary: Qubit 应采用的状态： `Zero`或。 `One`
+    summary: Qubit 应采用的状态： `Zero` 或 `One` 。
     isPrimitive: true
     uid: Result
   - name: q
@@ -25,9 +25,9 @@ output:
 seeAlso:
 - assertqubitisinstatewithintolerance
 metadata:
-  ms.openlocfilehash: 18d1db5c36dddf7bd40c64e02252a15d37dc4fe1
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d50c75ef8bb7e1dd1c800149ff6d1862aefac6a5
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677264"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337531"

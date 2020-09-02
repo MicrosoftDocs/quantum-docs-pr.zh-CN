@@ -2,8 +2,8 @@
 uid: microsoft.quantum.preparation.quantumromqubitcount
 name: QuantumROMQubitCount
 type: function
-namespace: Microsoft.Quantum.Preparation
-summary: 返回必须分配给返回的操作的 qubits 的总数`QuantumROM`。
+namespace: microsoft.quantum.preparation
+summary: 返回必须分配给返回的操作的 qubits 的总数 `QuantumROM` 。
 syntax: 'function QuantumROMQubitCount (targetError : Double, nCoeffs : Int) : (Int, (Int, Int))'
 input:
   content: '(targetError : Double, nCoeffs : Int)'
@@ -13,7 +13,7 @@ input:
     isPrimitive: true
     uid: Double
   - name: nCoeffs
-    summary: 在中`QuantumROM`指定的系数数。
+    summary: 在中指定的系数数 `QuantumROM` 。
     isPrimitive: true
     uid: Int
 output:
@@ -23,7 +23,7 @@ output:
       ## <a name="first-parameter"></a>第一个参数
 
 
-      一个元`(x,(y,z))`组`x = y + z` ，其中是所分配的 qubits 总数`y` ，是`LittleEndian`寄存器的 qubits 数， `z`是垃圾 qubits 的数目。
+      一个元组， `(x,(y,z))` 其中 `x = y + z` 是所分配的 qubits 总数， `y` 是寄存器的 qubits 数 `LittleEndian` ， `z` 是垃圾 qubits 的数目。
     types:
     - isPrimitive: true
       uid: Int
@@ -33,9 +33,9 @@ output:
       - isPrimitive: true
         uid: Int
 metadata:
-  ms.openlocfilehash: 717de1097641dcbabf6441424e88d77b71e05738
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 897b91f985883ede77c3920c541bea53097d434c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685119"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89331239"

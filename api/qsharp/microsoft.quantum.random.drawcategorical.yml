@@ -2,7 +2,7 @@
 uid: microsoft.quantum.random.drawcategorical
 name: DrawCategorical
 type: operation
-namespace: Microsoft.Quantum.Random
+namespace: microsoft.quantum.random
 summary: >-
   使用 probablities 列表指定的分类分布绘制随机样本。
 
@@ -28,9 +28,9 @@ output:
 seeAlso:
 - microsoft.quantum.random.categoricaldistribution
 metadata:
-  ms.openlocfilehash: 1389b62eb1e5e1749abbb605cd7be8ef3925b167
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 308fe4afcda3063a38c1784b666edb4251b6d434
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863965"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89330916"

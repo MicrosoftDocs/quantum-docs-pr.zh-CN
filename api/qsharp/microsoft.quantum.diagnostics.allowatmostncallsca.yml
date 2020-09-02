@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.allowatmostncallsca
 name: AllowAtMostNCallsCA
 type: operation
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 在对此操作及其 adjoint 的调用之间，断言给定的操作最多可调用特定次数。
 remarks: 对于不支持此操作的目标，此操作可能会替换为不支持操作。
 examples: >-
@@ -56,9 +56,9 @@ output:
 functors:
 - Adjoint
 metadata:
-  ms.openlocfilehash: 05a5791a9ec42aad2a2e90bb048204c642e68511
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 70c12ee6d605a6132770ec07f69a889e46eecdc1
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863914"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337869"

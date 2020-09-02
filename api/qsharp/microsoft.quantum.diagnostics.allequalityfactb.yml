@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.allequalityfactb
 name: AllEqualityFactB
 type: function
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 断言布尔值的两个数组相等。
 syntax: 'function AllEqualityFactB (actual : Bool[], expected : Bool[], message : String) : Unit'
 input:
@@ -28,9 +28,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 71f3ef1e925f9803df080ee45b9d115240c03e0d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 31913ccc3e7d0f1324447c61f834eefd9d4684fb
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82657197"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337920"

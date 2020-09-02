@@ -2,7 +2,7 @@
 uid: microsoft.quantum.diagnostics.assertmeasurement
 name: AssertMeasurement
 type: operation
-namespace: Microsoft.Quantum.Diagnostics
+namespace: microsoft.quantum.diagnostics
 summary: 度量给定 Pauli 基础中给定 qubits 的断言将始终具有给定的结果。
 remarks: 请注意，此操作的 Adjoint 和受控版本将不检查该条件。
 syntax: 'operation AssertMeasurement (bases : Pauli[], qubits : Qubit[], result : Result, msg : String) : Unit'
@@ -38,9 +38,9 @@ functors:
 seeAlso:
 - microsoft.quantum.diagnostics.assertmeasurementprobability
 metadata:
-  ms.openlocfilehash: e8c74cdeb9ba196b337b56ec377a1158cd331ac7
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 8e48ecb3d430469fce3bf7571557f89db2d92b9e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85886229"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337695"

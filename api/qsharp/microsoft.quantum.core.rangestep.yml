@@ -2,9 +2,9 @@
 uid: microsoft.quantum.core.rangestep
 name: RangeStep
 type: function
-namespace: Microsoft.Quantum.Core
+namespace: microsoft.quantum.core
 summary: 返回一个整数，该整数指定如何计算范围的下一个值。
-remarks: 范围表达式的第一个元素是`start`，其第二个`start+step`元素是，第`start+step+step`三个元素为， `end`依此类推，直到传递。
+remarks: 范围表达式的第一个元素是 `start` ，其第二个元素是， `start+step` 第三个元素为 `start+step+step` ，依此类推，直到 `end` 传递。
 syntax: 'function RangeStep (range : Range) : Int'
 input:
   content: '(range : Range)'
@@ -19,9 +19,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 30f67fba4e263f3b01bec1c360198728087783f2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7196f33548767bb47fde9e8bbd6b6dcf720e5f9c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677327"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89337936"

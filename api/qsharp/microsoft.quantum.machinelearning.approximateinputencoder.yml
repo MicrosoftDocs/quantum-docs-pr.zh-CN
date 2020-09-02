@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.approximateinputencoder
 name: ApproximateInputEncoder
 type: function
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 给定一组系数和公差后，将返回状态准备操作，以便将每个系数准备为计算基础状态的相应波幅，直到达到给定的公差。
 syntax: 'function ApproximateInputEncoder (tolerance : Double, coefficients : Double[]) : Microsoft.Quantum.MachineLearning.StateGenerator'
 input:
@@ -23,9 +23,9 @@ output:
   - summary: 准备将给定的系数作为给定寄存器上的输入状态的状态准备操作。
     uid: microsoft.quantum.machinelearning.stategenerator
 metadata:
-  ms.openlocfilehash: 1fa74b1e3af1e82e5558a45b8ed3e9d2862a3bef
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5fa25ec584d3a2103559afb25d7673606c8055f1
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681711"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89344992"
