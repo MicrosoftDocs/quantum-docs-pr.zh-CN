@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.absi
 name: AbsI
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: AbsI 已被弃用。 请改用 @"microsoft.quantum.math.absi"。
 syntax: 'function AbsI (a : Int) : Int'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: dc2feed9f28fac7512654f0ff2d21d511843df2e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: bfd144d0d099c5cbe92b1e9b478b4efcd341de3c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681958"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348732"

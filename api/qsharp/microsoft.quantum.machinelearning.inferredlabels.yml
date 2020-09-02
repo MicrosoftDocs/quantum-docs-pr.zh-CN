@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.inferredlabels
 name: InferredLabels
 type: function
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 给定一组分类概率和一个偏差，返回从每个概率推导出的标签。
 syntax: 'function InferredLabels (bias : Double, probabilities : Double[]) : Int[]'
 input:
@@ -25,9 +25,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: f51e41cad897db06297af4ca0e7c0d71ed4cc632
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: f63709b4a1fc30019b5425295c9c45155e42e29a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85885841"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89336067"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.cos
 name: Cos
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: Cos 已弃用。 请改用 @"microsoft.quantum.math.cos"。
 syntax: 'function Cos (theta : Double) : Double'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: b065c04b93853755d3e3d6748730a50f9bc258c9
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 028f5987fc34d2cc67189c4ffdf2011c1bfc3acf
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683875"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348579"

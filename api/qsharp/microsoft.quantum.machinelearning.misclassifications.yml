@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.misclassifications
 name: Misclassifications
 type: function
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 给定一组推断标签和一组正确标签，返回每组标签不同的位置的索引。
 examples: >-
   ```Q#
@@ -29,14 +29,14 @@ input:
 output:
   content: Int[]
   types:
-  - summary: 索引`idx`的数组， `inferredLabels[idx] != actualLabels[idx]`例如。
+  - summary: 索引的数组 `idx` ，例如 `inferredLabels[idx] != actualLabels[idx]` 。
     isArray: true
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 62a99747a7e711ece041ee0d0d046ac78c0bb95e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3376caa295931db2817b3982854572d4d0c97b30
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684472"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335846"

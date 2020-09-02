@@ -2,21 +2,21 @@
 uid: microsoft.quantum.arithmetic.incrementphasebymodularinteger
 name: IncrementPhaseByModularInteger
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   按整数常量执行 qubit 寄存器的模块化增量。
 
 
-  通过 $y $ `increment` $N $ 和在`modulus`中编码的整数，让我们`target`以 $a $ 表示。
+  通过 `increment` `modulus` $y $ $N $ 和在中编码的整数，让我们以 $a $ 表示。 `target`
 
-  然后，该操作将执行以下转换： \begin{align} \ket{y} \mapsto \ket{（y + a） \operatorname{mod} N} \end{align} 将以小字节序格式编码。
+  然后，该操作将执行以下转换： \begin{align} \ket{y} \mapsto \ket{ (y + a) \operatorname{mod} N} \end{align} 将以小字节序格式编码。
 remarks: >-
-  `target`假定将最高位设置为0。
+  假定 `target` 将最高位设置为0。
 
   还假定目标值小于 $N $。
 
 
-  对于 "线路" 关系图和说明，请参阅[arXiv： quant/0205095V3 第5页](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=5)上的图5。
+  对于 "线路" 关系图和说明，请参阅 [arXiv： quant/0205095V3 第5页](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=5)上的图5。
 syntax: 'operation IncrementPhaseByModularInteger (increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit'
 input:
   content: '(increment : Int, modulus : Int, target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian)'
@@ -30,7 +30,7 @@ input:
     isPrimitive: true
     uid: Int
   - name: target
-    summary: $A $ 添加到的、阶段编码的小字节序`increment`格式的整数 $y $。
+    summary: $A $ 添加到的、阶段编码的小字节序格式的整数 $y $ `increment` 。
     uid: microsoft.quantum.arithmetic.phaselittleendian
 output:
   content: Unit
@@ -43,9 +43,9 @@ functors:
 seeAlso:
 - microsoft.quantum.arithmetic.incrementbymodularinteger
 metadata:
-  ms.openlocfilehash: e97f88d64d9188d18b10ed7f67adc0225167c466
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 92c20afa6753d80a10a38d8c787efab3a295fc2b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676851"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342833"

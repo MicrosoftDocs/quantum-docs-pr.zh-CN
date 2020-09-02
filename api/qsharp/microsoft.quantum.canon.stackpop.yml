@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.stackpop
 name: StackPop
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: StackPop 已被弃用。
 syntax: 'function StackPop (stack : Microsoft.Quantum.Canon.ResultStack) : Microsoft.Quantum.Canon.ResultStack'
 input:
@@ -15,9 +15,9 @@ output:
   types:
   - uid: microsoft.quantum.canon.resultstack
 metadata:
-  ms.openlocfilehash: 9eb0354e9cf3d65ea15c950169437a8590f84a42
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1646a70b00d13e1a78e8fb3c3dacbeb817bbbc46
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678151"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355090"

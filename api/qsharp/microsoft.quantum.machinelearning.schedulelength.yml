@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.schedulelength
 name: ScheduleLength
 type: function
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 返回给定抽样计划中的元素数。
 syntax: 'function ScheduleLength (schedule : Microsoft.Quantum.MachineLearning.SamplingSchedule) : Int'
 input:
@@ -18,9 +18,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 7ea7c0ba167950ae6597e08f7cacef910111121c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b37e173b26b0ef96c81186f43fd358a468612c91
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684389"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335696"

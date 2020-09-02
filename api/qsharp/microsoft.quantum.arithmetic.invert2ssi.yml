@@ -2,14 +2,14 @@
 uid: microsoft.quantum.arithmetic.invert2ssi
 name: Invert2sSI
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 反转给定的取模2的补码。
 syntax: 'operation Invert2sSI (xs : Microsoft.Quantum.Arithmetic.SignedLittleEndian) : Unit'
 input:
   content: '(xs : Microsoft.Quantum.Arithmetic.SignedLittleEndian)'
   types:
   - name: xs
-    summary: n 位带符号整数（SignedLittleEndian）将是取模2的补码。
+    summary: n 位有符号整数 (SignedLittleEndian) ，将会反转取模2的补码。
     uid: microsoft.quantum.arithmetic.signedlittleendian
 output:
   content: Unit
@@ -20,9 +20,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 241d368f40801a5ac938dff87ee9b8c92a7deb37
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ca984c055ec6a8a522ea9858e6b16de0cbe46b0e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679500"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342748"

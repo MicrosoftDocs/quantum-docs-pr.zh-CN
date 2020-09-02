@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.stackcapacity
 name: StackCapacity
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: StackCapacity 已被弃用。
 syntax: 'function StackCapacity (stack : Microsoft.Quantum.Canon.ResultStack) : Int'
 input:
@@ -16,9 +16,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: b22cd902f5b974bf79773d93599472431bfc0ab5
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d862c950c51f32cff7ba1d4f9fb915e681a699a1
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678213"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355260"

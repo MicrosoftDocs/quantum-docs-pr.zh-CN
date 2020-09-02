@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.featureregistersize
 name: FeatureRegisterSize
 type: function
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 返回对特定功能向量进行编码所需的 qubits 的数目。
 syntax: 'function FeatureRegisterSize (sample : Double[]) : Int'
 input:
@@ -16,13 +16,13 @@ input:
 output:
   content: Int
   types:
-  - summary: 编码`sample`为 qubit 寄存器所需的大小，以 qubits 数表示。
+  - summary: 编码为 qubit 寄存器所需的大小 `sample` ，以 qubits 数表示。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 6df78574a5385482223d53e19f56e453b7ee3aa4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ae50e2302b4187a7aa86a01447f735bff4dbe1db
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683531"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89336118"

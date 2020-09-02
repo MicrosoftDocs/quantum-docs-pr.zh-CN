@@ -2,8 +2,8 @@
 uid: microsoft.quantum.machinelearning.localrotationslayer
 name: LocalRotationsLayer
 type: function
-namespace: Microsoft.Quantum.MachineLearning
-summary: 返回沿给定轴的不受控制的（单 qubit）旋转的数组，对寄存器中的每个 qubit 进行一次旋转，由不同的模型参数参数化。
+namespace: microsoft.quantum.machinelearning
+summary: 返回一组不受 (控制的 qubit) 沿给定轴旋转的数组，并在寄存器中的每个 qubit 之间进行一次旋转，由不同的模型参数参数化。
 syntax: 'function LocalRotationsLayer (nQubits : Int, axis : Pauli) : Microsoft.Quantum.MachineLearning.ControlledRotation[]'
 input:
   content: '(nQubits : Int, axis : Pauli)'
@@ -19,13 +19,13 @@ input:
 output:
   content: Microsoft.Quantum.MachineLearning.ControlledRotation[]
   types:
-  - summary: 有关给定轴的受控旋转数组，每个`nQubits` qubits 上一个轴。
+  - summary: 有关给定轴的受控旋转数组，每个 qubits 上一个轴 `nQubits` 。
     isArray: true
     uid: microsoft.quantum.machinelearning.controlledrotation
 metadata:
-  ms.openlocfilehash: ad6259c46aee6b05ac201bd978f42ce3add8f03d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a08df354e389b1f282e18657f579e831180c81f2
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684481"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335902"

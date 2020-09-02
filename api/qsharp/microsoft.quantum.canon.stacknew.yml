@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.stacknew
 name: StackNew
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: StackNew 已被弃用。
 syntax: 'function StackNew (size : Int) : Microsoft.Quantum.Canon.ResultStack'
 input:
@@ -16,9 +16,9 @@ output:
   types:
   - uid: microsoft.quantum.canon.resultstack
 metadata:
-  ms.openlocfilehash: 970328e2d727412fa8f5d410eee846d05e88779b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 025057d3a9d8050fe50ca3c02f21ddfe95680eba
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678176"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355209"

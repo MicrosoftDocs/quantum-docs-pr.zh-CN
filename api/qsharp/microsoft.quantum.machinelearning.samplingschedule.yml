@@ -2,13 +2,13 @@
 uid: microsoft.quantum.machinelearning.samplingschedule
 name: SamplingSchedule
 type: newtype
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 用于从一组示例中绘制批处理的计划。
 syntax: newtype SamplingSchedule = Range[];
 metadata:
-  ms.openlocfilehash: 47903e33d0bc2c778853a7fabab3baabf4ce5cc3
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 4d94f5a69230719811c28af7b4b0e9b3ee69badb
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684395"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335744"

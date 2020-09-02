@@ -2,7 +2,7 @@
 uid: microsoft.quantum.machinelearning.partialrotationslayer
 name: PartialRotationsLayer
 type: function
-namespace: Microsoft.Quantum.MachineLearning
+namespace: microsoft.quantum.machinelearning
 summary: 返回沿给定轴旋转的 qubit 旋转数组，由不同的模型参数参数化。
 syntax: 'function PartialRotationsLayer (idxsQubits : Int[], axis : Pauli) : Microsoft.Quantum.MachineLearning.ControlledRotation[]'
 input:
@@ -20,13 +20,13 @@ input:
 output:
   content: Microsoft.Quantum.MachineLearning.ControlledRotation[]
   types:
-  - summary: 有关给定轴的受控旋转数组，每个`nQubits` qubits 上一个轴。
+  - summary: 有关给定轴的受控旋转数组，每个 qubits 上一个轴 `nQubits` 。
     isArray: true
     uid: microsoft.quantum.machinelearning.controlledrotation
 metadata:
-  ms.openlocfilehash: 1dd7b0309f257501119cd6039f16b3913e952950
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 9264e2e76aecac2d49bd7e53098fcd19d58294d6
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684440"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335778"
