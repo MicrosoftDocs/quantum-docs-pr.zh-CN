@@ -2,12 +2,12 @@
 uid: microsoft.quantum.errorcorrection.knilldistill
 name: KnillDistill
 type: operation
-namespace: Microsoft.Quantum.ErrorCorrection
+namespace: microsoft.quantum.errorcorrection
 summary: >-
   实现 Knill 幻状态升华算法。
 
 
-  给定15个近似状态 $ $ \begin{align}{8} \cos\frac{\pi} \ket{0} + \sin \frac{\pi}{8} \ket{1} \end{align} 的副本，$ $ 会生成一个较高质量的副本。
+  给定15个近似状态 $ $ \begin{align} \cos\frac{\pi} {8} \ket {0} + \sin \frac{\pi} \ket \end{align} 的 {8} 副本 {1} ，$ $ 会生成一个较高质量的副本。
 remarks: >-
   我们采用 Knill 的算法。
 
@@ -20,20 +20,20 @@ input:
   content: '(roughMagic : Qubit[])'
   types:
   - name: roughMagic
-    summary: 包含神奇状态近似副本的十五个 qubits 寄存器。 此升华过程的以下应用程序`roughMagic[0]`将包含一个较高质量的副本，并且寄存器的其余部分将重置为 $ \ket{00\cdots 0} $ 状态。
+    summary: 包含神奇状态近似副本的十五个 qubits 寄存器。 此升华过程的以下应用程序 `roughMagic[0]` 将包含一个较高质量的副本，并且寄存器的其余部分将重置为 $ \ket{00\cdots 0} $ 状态。
     isArray: true
     isPrimitive: true
     uid: Qubit
 output:
   content: Bool
   types:
-  - summary: 如果`true`为，则过程成功并且应接受更高质量的副本。 如果`false`为，则过程失败，并且应将寄存器的状态视为未定义。
+  - summary: 如果为 `true` ，则过程成功并且应接受更高质量的副本。 如果 `false` 为，则过程失败，并且应将寄存器的状态视为未定义。
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 5a8e4c43ff21491b35efedb8f60717979e44f0ed
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 979a318e036fbe1585809ce7ba0152b68b4a840e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682365"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350109"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.oracles.obliviousoracle
 name: ObliviousOracle
 type: newtype
-namespace: Microsoft.Quantum.Oracles
+namespace: microsoft.quantum.oracles
 summary: >-
   表示 oracle for 在意波幅放大。
 
@@ -12,16 +12,16 @@ summary: >-
 
   - Ancilla 注册了 $O $ $a $ 的操作。
 
-  - 系统注册 $s $，将对其应用所需的单一 $U $，并在 register $a $ $ \ket{t}\_a $。
+  - 系统注册 $s $，将对其应用所需的单一 $U $，并在 register $a $ $ \ket{t} \_ a $。
 remarks: >-
-  此 oracle 定义者： $ $ O\ket {s\_} a\ket {\ psi\_} s =\_\lambda\ket{t} a U\_\ket{\psi} s + \sqrt{1-| \lambda | ^ 2} \ket{t ^\_\perp} a\cdots $ $ 作用于 ancilla 状态 $ \ket{s}\_a $，在任何系统状态 $ \ket{\psi}\_s $ 上实现单一 $U $，该操作由 $ \lambda\_a $ 标记。
+  此 oracle 定义者： $ $ O\ket {s} \_ a\ket {\ psi} \_ s = \Lambda\ket{t} \_ a U \ket{\psi} \_ s + \sqrt{1-| \lambda | ^ 2} \ket{t ^ \perp} \_ a\cdots $ $ 作用于 ancilla 状态 $ \ket{s} \_ a $，在任何系统状态 $ \ket{\psi} s $ 上实现单一 $U $，该操作 \_ 由 $ \lambda \_ a $ 标记。
 
-  第一个参数是 $ \ket{s}\_的 qubit 寄存器 $。 第二个参数是 $ \ket{\psi}\_s $ 的 qubit 寄存器。
+  第一个参数是 $ \ket{s} 的 qubit 寄存器 \_ $。 第二个参数是 $ \ket{\psi} s $ 的 qubit 寄存器 \_ 。
 syntax: newtype ObliviousOracle = ((Qubit[], Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: 9d7a799a9069e6d7eb3470d62322f803a68eb2e6
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: c88ad3b0a4fe6067a0e52972c23587d5835c779e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681260"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332004"

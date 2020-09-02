@@ -2,11 +2,11 @@
 uid: microsoft.quantum.canon.applytofirstthreequbitsc
 name: ApplyToFirstThreeQubitsC
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   将操作应用于寄存器中的前三个 qubits。
 
-  修饰符`C`指示操作可控制。
+  修饰符 `C` 指示操作可控制。
 remarks: >-
   这等效于：
 
@@ -52,9 +52,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applytofirstthreequbits
 metadata:
-  ms.openlocfilehash: 16aad67536bb67d14826b9b57d80362de00ba0b0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3dcdefa7c1f556ed3b7235022e9a4ccbb5bfaff7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674783"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357453"

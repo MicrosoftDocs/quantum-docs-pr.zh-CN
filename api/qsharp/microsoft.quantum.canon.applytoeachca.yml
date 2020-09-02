@@ -2,11 +2,11 @@
 uid: microsoft.quantum.canon.applytoeachca
 name: ApplyToEachCA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   对寄存器中的每个元素应用 qubit 操作。
 
-  修饰符`CA`指示 qubit 操作可控制和 adjointable。
+  修饰符 `CA` 指示 qubit 操作可控制和 adjointable。
 examples: >-
   准备 qubit $ \ket{+} $ 状态：
 
@@ -55,9 +55,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applytoeach
 metadata:
-  ms.openlocfilehash: e646e3d27a555d46b7c4a7be41ba41f3d47fdecf
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 05399f7d8562b95d9dd1321ee384f10c99d3256c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674872"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357708"

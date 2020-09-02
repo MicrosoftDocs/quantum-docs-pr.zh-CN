@@ -2,7 +2,7 @@
 uid: microsoft.quantum.oracles.reflectionoracle
 name: ReflectionOracle
 type: newtype
-namespace: Microsoft.Quantum.Oracles
+namespace: microsoft.quantum.oracles
 summary: >-
   表示 oracle 反射。
 
@@ -13,12 +13,12 @@ summary: >-
   - 用于旋转反射子空间的阶段 $ \phi $。
 
   - 要对其执行给定反射的 qubit 注册。
-remarks: 此 oracle $O = \boldone-（1-e ^ {i \phi}） \ket{\psi}\bra{\psi} $ 通过一个单纯状态 $ \ket{\psi} $ 的阶段 $ \phi $ 执行部分反射。
+remarks: 此 oracle $O = \boldone- (1-e ^ {i \phi} ) \ket{\psi}\bra{\psi} $ 对单个纯状态 $ \ket{\psi} $ 执行部分反射。
 syntax: newtype ReflectionOracle = ((Double, Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: b75683aa7178248510c5f336e3dcda28623606af
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b85f21439327c6aa4c8f63e567ca40a7fa3a4538
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673517"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89331868"

@@ -2,13 +2,13 @@
 uid: microsoft.quantum.errorcorrection.logicalregister
 name: LogicalRegister
 type: newtype
-namespace: Microsoft.Quantum.ErrorCorrection
-summary: 用于注册逻辑 qubits 的物理`Qubit[]` qubits 的类型。
+namespace: microsoft.quantum.errorcorrection
+summary: 用于注册逻辑 qubits 的物理 qubits 的类型 `Qubit[]` 。
 syntax: newtype LogicalRegister = Qubit[];
 metadata:
-  ms.openlocfilehash: 1c2e9c159067681cbfa42f5395c6a00a0098540e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: dbe16f6dab15e43b7fbae0c351930c1bb8db6f48
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682339"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350058"

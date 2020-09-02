@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applyreversedoplittleendianc
 name: ApplyReversedOpLittleEndianC
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: ApplyReversedOpLittleEndianC 已被弃用。 请改用 @"microsoft.quantum.arithmetic.applyreversedoplec"。
 syntax: 'operation ApplyReversedOpLittleEndianC (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Ctl), register : Microsoft.Quantum.Arithmetic.BigEndian) : Unit'
 input:
@@ -29,9 +29,9 @@ output:
 functors:
 - Controlled
 metadata:
-  ms.openlocfilehash: 74ac2bdac123eecb5becbb72f25b60e43bc28d5c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 43561e6020b6c055b6859ede2f1e78ae813e7c69
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674927"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357878"

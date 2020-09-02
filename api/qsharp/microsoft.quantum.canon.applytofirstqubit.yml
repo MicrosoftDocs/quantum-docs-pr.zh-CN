@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applytofirstqubit
 name: ApplyToFirstQubit
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 将操作应用于寄存器中的第一个 qubit。
 syntax: 'operation ApplyToFirstQubit (op : (Qubit => Unit), register : Qubit[]) : Unit'
 input:
@@ -34,9 +34,9 @@ seeAlso:
 - microsoft.quantum.canon.applytofirstqubitc
 - microsoft.quantum.canon.applytofirstqubitca
 metadata:
-  ms.openlocfilehash: 78b3fa6ca2e7ad7fb512a1cb036b72bfa4de3b5f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 8a6dc6d3a633375de4bf723ade7dd81403b91167
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82669847"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357555"

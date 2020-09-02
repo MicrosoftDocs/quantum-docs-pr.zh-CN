@@ -2,13 +2,13 @@
 uid: microsoft.quantum.simulation.blockencodingreflectionbylcu
 name: BlockEncodingReflectionByLCU
 type: function
-namespace: Microsoft.Quantum.Simulation
+namespace: microsoft.quantum.simulation
 summary: >-
-  将`BlockEncodingReflection`感兴趣的运算符编码为。
+  将感兴趣的运算符编码为 `BlockEncodingReflection` 。
 
 
-  这将构造`BlockEncodingReflection`一个单一 $U = P\cdot V\cdot P ^ \dagger $，用于对一些运算符进行编码 $H = \ sum_ {j} | \ alpha_j |U_j 是 unitaries 的线性组合。 通常情况下，$P $ 是一种状态准备，$P{0}\_\ket a \ sum_j \sqrt{\ alpha_j\|/\|\_\vec\alpha 2}\_\ket{j} $，$V = \ sum_ {j} \ket{j}\bra{j}\_a\otimes U_j $。
-remarks: 此`BlockEncoding`实现为它提供了`BlockEncodingReflection`的属性。
+  这将构造一个 `BlockEncodingReflection` 单一 $U = P\cdot V\cdot P ^ \dagger $，用于对一些运算符进行编码 $H = \ sum_ {j} | \ alpha_j |U_j 是 unitaries 的线性组合。 通常情况下，$P $ 是一种状态准备，$P \ket {0} \_ a \ sum_j \sqrt{\ alpha_j/ \| \vec\alpha \| \_ 2} \ket{j} \_ $，$V = \ sum_ {j} \ket{j}\bra{j} \_ a\otimes U_j $。
+remarks: 此 `BlockEncoding` 实现为它提供了的属性 `BlockEncodingReflection` 。
 syntax: 'function BlockEncodingReflectionByLCU (statePreparation : (Qubit[] => Unit is Adj + Ctl), selector : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)) : Microsoft.Quantum.Simulation.BlockEncodingReflection'
 input:
   content: '(statePreparation : (Qubit[] => Unit is Adj + Ctl), selector : ((Qubit[], Qubit[]) => Unit is Adj + Ctl))'
@@ -49,15 +49,15 @@ input:
 output:
   content: Microsoft.Quantum.Simulation.BlockEncodingReflection
   types:
-  - summary: 单一 $U $ 对寄存器`a`进行操作并`s`对其进行块编码 $H $，并满足 $U "^{-1} = U $。
+  - summary: 单一 $U $ 对寄存器进行操作并对其 `a` `s` 进行块编码 $H $，并满足 $U "^ {-1} = U $。
     uid: microsoft.quantum.simulation.blockencodingreflection
 seeAlso:
 - microsoft.quantum.canon.blockencoding
 - microsoft.quantum.canon.blockencodingreflection
 metadata:
-  ms.openlocfilehash: 8fe23d346a09e245d41f2a0c242462b5300561e1
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: de3a86598d62960d71fa205dc20507fa59cf9cf7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82687101"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89343394"

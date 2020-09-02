@@ -2,8 +2,8 @@
 uid: microsoft.quantum.canon.applyseriesofopsca
 name: ApplySeriesOfOpsCA
 type: operation
-namespace: Microsoft.Quantum.Canon
-summary: 在数组上按顺序应用 ops 及其目标的列表。 （Adjoint + 受控）
+namespace: microsoft.quantum.canon
+summary: '在数组上按顺序应用 ops 及其目标的列表。  (Adjoint + 受控) '
 syntax: "operation ApplySeriesOfOpsCA (listOfOps : ('T[] => Unit is Adj + Ctl)[], targets : Int[][], register : 'T[]) : Unit"
 input:
   content: "(listOfOps : ('T[] => Unit is Adj + Ctl)[], targets : Int[][], register : 'T[])"
@@ -50,9 +50,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applyoprepeatedlyover
 metadata:
-  ms.openlocfilehash: 18c59fddd1c0fe791d4e74008e52d08fbe0b2515
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d8cd78e9fea4a678465eb130187fffe10ab0afce
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82670776"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357759"

@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.maxi
 name: MaxI
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个指定数字中较大的一个。
-remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.max) 。
+remarks: 有关更多详细信息，请参阅 [system.object](https://docs.microsoft.com/dotnet/api/system.math.max) 。
 syntax: 'function MaxI (a : Int, b : Int) : Int'
 input:
   content: '(a : Int, b : Int)'
@@ -21,9 +21,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: b783cc228d0512e78c5cca29b2d40dfbf408f57c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 473e99fa51e8a7e5a8511658d8fb410eccfa5802
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673705"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89343802"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.oracles.stateoracle
 name: StateOracle
 type: newtype
-namespace: Microsoft.Quantum.Oracles
+namespace: microsoft.quantum.oracles
 summary: >-
   表示 oracle for 状态准备。
 
@@ -12,16 +12,16 @@ summary: >-
 
   - 对标志 qubit $f $ 进行索引的整数。
 
-  - 系统注册 $s $，将存储所需的量程状态 $ \ket{\psi}\_s $。
+  - 系统注册 $s $，将存储所需的量程状态 $ \ket{\psi} \_ s $。
 remarks: >-
-  此 oracle 定义者： $ ${0}\_O\ket {f}{0}\_\ket s ={1}\_\lambda\ket f\ket {\ psi\_} s + \sqrt{1-| \lambda | ^ 2}{0}\_\ket f\cdots，$ $ 作用于 on 计算基础状态 $ \ket{0}\_{f} \ket{0}\_s $，以在 $ \ket{\psi}\_{1}\_f $ 标志的基础上创建包含波幅 $ \lambda $ 的目标状态 $ \ket s $。
+  此 oracle 定义者： $ $ O\ket {0} \_ {f} \ket {0} \_ s = \lambda\ket {1} \_ f\ket {\ psi} \_ s + \sqrt{1-| \lambda | ^ 2} \ket {0} \_ f\cdots，$ $ 作用于 on 计算基础状态 $ \ket {0} \_ {f} \ket {0} \_ s $，以 \_ 在 $ \ket{\psi} {1} f $ 标志的基础上创建包含波幅 $ \lambda $ 的目标状态 $ \ket s $ \_ 。
 
-  第一个参数是 $ \ket{0}\_f $ 的 qubit 寄存器的索引。 第二个参数包含两个寄存器。
+  第一个参数是 $ \ket f $ 的 qubit 寄存器的索引 {0} \_ 。 第二个参数包含两个寄存器。
 syntax: newtype StateOracle = ((Int, Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: fe7ced83927d709bcc6fe82d8866b221446c7d73
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1a303e51638a792fb31ee7cca58bd3662d86897b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673485"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89331749"

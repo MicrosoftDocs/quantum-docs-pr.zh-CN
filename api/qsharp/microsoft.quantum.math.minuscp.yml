@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.minuscp
 name: MinusCP
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个输入之间的差。
 syntax: 'function MinusCP (a : Microsoft.Quantum.Math.ComplexPolar, b : Microsoft.Quantum.Math.ComplexPolar) : Microsoft.Quantum.Math.ComplexPolar'
 input:
@@ -20,9 +20,9 @@ output:
   - summary: 差异 $a-b $。
     uid: microsoft.quantum.math.complexpolar
 metadata:
-  ms.openlocfilehash: 8f211dff61358cbeb3d56d6827523daae2e4315e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: c41f1df6b619060a7a536b180eae7e162b4c113c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673577"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89343513"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.minusc
 name: MinusC
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个输入之间的差。
 syntax: 'function MinusC (a : Microsoft.Quantum.Math.Complex, b : Microsoft.Quantum.Math.Complex) : Microsoft.Quantum.Math.Complex'
 input:
@@ -20,9 +20,9 @@ output:
   - summary: 差异 $a-b $。
     uid: microsoft.quantum.math.complex
 metadata:
-  ms.openlocfilehash: f40fc51f45c93bf91ead82d138247b76bbe44ad2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5d196aba3b188824277c5acecb12fe85ef14eddb
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673599"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89343547"

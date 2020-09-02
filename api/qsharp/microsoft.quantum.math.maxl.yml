@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.maxl
 name: MaxL
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个指定数字中较大的一个。
 remarks: 有关更多详细信息，请参阅[BigInteger。](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.max)
 syntax: 'function MaxL (a : BigInt, b : BigInt) : BigInt'
@@ -21,9 +21,9 @@ output:
   - isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: ce1fa7ddc509225955785ae5cb34ff90cd41cce7
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ca7ce0423952532f54b7a08ea33eddedb5a3f997
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673687"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89343785"

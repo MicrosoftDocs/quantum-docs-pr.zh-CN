@@ -1,14 +1,14 @@
 ### YamlMime:QSharpNamespace
 uid: microsoft.quantum.research.chemistry
 name: Microsoft.Quantum.Research.Chemistry
-summary: " # <a name=\"summary\"></a>总结\n 此命名空间提供了用于量程化学模拟的高级研究方法。\n\n # <a name=\"references\"></a>参考\n - 为量程化学、M. B 改进量程算法。 Hastings，Wecker，Bauer，Troyer，https://arxiv.org/abs/1403.1539"
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间提供了用于量程化学模拟的高级研究方法。\n\n # <a name=\"references\"></a>参考\n - 为量程化学、M. B 改进量程算法。 Hastings，Wecker，Bauer，Troyer， https://arxiv.org/abs/1403.1539"
 functions:
 - uid: microsoft.quantum.research.chemistry.jordanwigneroptimizedfermionevolutionset
   summary: 将 dynamical 生成器表示为一组 simulatable 入口和 Pauli 中的扩展。
 - uid: microsoft.quantum.research.chemistry.jwoptimizedfermionevolutionfunction
   summary: 将 dynamical 生成器表示为一组 simulatable 入口和 JWOptimized 中的扩展。
 - uid: microsoft.quantum.research.chemistry.jwoptimizedgeneratorsystem
-  summary: 将描述的 Hamiltonian 转换`JWOptimizedHTerms`为用`GeneratorSystem`此文件中定义的`GeneratorIndex`约定表示的。
+  summary: 将描述的 Hamiltonian 转换 `JWOptimizedHTerms` 为用 `GeneratorSystem` `GeneratorIndex` 此文件中定义的约定表示的。
 - uid: microsoft.quantum.research.chemistry.optimizedtrottersteporacle
   summary: 返回优化的 Trotter 步骤操作和运行它所需的参数。
 operations:
@@ -17,9 +17,9 @@ operations:
 - uid: microsoft.quantum.research.chemistry.jwoptimizedstatepreparation
   summary: 通过使用 orbitals 来准备试验状态的简单状态
 metadata:
-  ms.openlocfilehash: aa1aa58d6e2dcee6f650714073b9a1386f0ed679
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 010fc81468a408782ac6549716f60f9b3671f4c3
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675475"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340844"

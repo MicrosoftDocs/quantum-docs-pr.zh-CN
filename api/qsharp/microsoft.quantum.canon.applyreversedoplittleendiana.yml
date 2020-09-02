@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applyreversedoplittleendiana
 name: ApplyReversedOpLittleEndianA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: ApplyReversedOpLittleEndianA 已被弃用。 请改用 @"microsoft.quantum.arithmetic.applyreversedoplea"。
 syntax: 'operation ApplyReversedOpLittleEndianA (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj), register : Microsoft.Quantum.Arithmetic.BigEndian) : Unit'
 input:
@@ -29,9 +29,9 @@ output:
 functors:
 - Adjoint
 metadata:
-  ms.openlocfilehash: b2d10af0af7590058648bcc89d8cfa86a305f149
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 911752ae41cb00eff2a919a27eefeeef1d79d52d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674949"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357895"

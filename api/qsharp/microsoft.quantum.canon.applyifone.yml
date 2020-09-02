@@ -2,12 +2,12 @@
 uid: microsoft.quantum.canon.applyifone
 name: ApplyIfOne
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   应用对经典结果值为1的操作。
 
 
-  给定一个操作`op`和一个结果值`result`时， `op` `target`如果`result`为`One`，则应用于。 如果`Zero`为，则不会`target`发生任何事情。
+  给定一个操作 `op` 和一个结果值时 `result` ， `op` `target` 如果为， `result` 则应用于 `One` 。 如果 `Zero` 为，则不会发生任何事情 `target` 。
 syntax: "operation ApplyIfOne (result : Result, (op : ('T => Unit), target : 'T)) : Unit"
 input:
   content: "(result : Result, (op : ('T => Unit), target : 'T))"
@@ -44,9 +44,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifonea
 - microsoft.quantum.canon.applyifoneca
 metadata:
-  ms.openlocfilehash: 1cf549dce4e903810d4c59f8020afb4689c26888
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ed8054c7d110db9abbeb72ae5f00ac7e669795ec
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82672704"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350126"
