@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.powd
 name: PowD
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: PowD 已被弃用。 请改用 @"microsoft.quantum.math.powd"。
 syntax: 'function PowD (x : Double, y : Double) : Double'
 input:
@@ -20,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 8ed0892934673c252c1fe67701750847b510870a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 43f4bd732ad18127487c2587a62be40638e86ea2
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686124"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347949"

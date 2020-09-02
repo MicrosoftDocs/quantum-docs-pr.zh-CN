@@ -2,7 +2,7 @@
 uid: microsoft.quantum.synthesis.applypermutationusingdecompositionwithvariableorder
 name: ApplyPermutationUsingDecompositionWithVariableOrder
 type: operation
-namespace: Microsoft.Quantum.Synthesis
+namespace: microsoft.quantum.synthesis
 summary: >-
   使用基于分解的合成，Permutes amplitudes 在量程状态中。
 
@@ -48,9 +48,9 @@ seeAlso:
 - microsoft.quantum.synthesis.applypermutationusingdecomposition
 - microsoft.quantum.synthesis.applypermutationusingtransformation
 metadata:
-  ms.openlocfilehash: ef6b24fa5b9c010f01ade622f470aec7c0a25835
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 87a1984cdc281cdea1569604216f66c1c30bae0e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85886115"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89328043"

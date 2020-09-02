@@ -2,19 +2,19 @@
 uid: microsoft.quantum.simulation.simulationalgorithm
 name: SimulationAlgorithm
 type: newtype
-namespace: Microsoft.Quantum.Simulation
+namespace: microsoft.quantum.simulation
 summary: >-
   表示与时间无关的模拟算法。
 
 
-  与时间无关的模拟技术将<xref:microsoft.quantum.simulation.evolutiongenerator>
+  与时间无关的模拟技术将 <xref:microsoft.quantum.simulation.evolutiongenerator>
 
   到某个时间间隔内的单一时间演变。
 syntax: newtype SimulationAlgorithm = ((Double, Microsoft.Quantum.Simulation.EvolutionGenerator, Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: 8fa6845599852a972d152870a926a499272a43a3
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 89c3e6e972264c6ec8427f6e69756d95b86b011c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682487"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89328366"

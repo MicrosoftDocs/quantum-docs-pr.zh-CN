@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.floor
 name: Floor
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: 楼层已弃用。 请改用 @"microsoft.quantum.math.floor"。
 syntax: 'function Floor (value : Double) : Int'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: ed30822f104b01d4d92a22c7ee9f3cc47a5bda65
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 56a213065acb058ee096ba0eb1b1ffd4d56df6d9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686329"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348341"

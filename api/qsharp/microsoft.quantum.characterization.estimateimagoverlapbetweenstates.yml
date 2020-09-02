@@ -2,9 +2,9 @@
 uid: microsoft.quantum.characterization.estimateimagoverlapbetweenstates
 name: EstimateImagOverlapBetweenStates
 type: operation
-namespace: Microsoft.Quantum.Characterization
+namespace: microsoft.quantum.characterization
 summary: 假设每个操作都准备好状态的副本，并估计每个操作准备的状态之间重叠部分的虚部。
-remarks: 此操作使用 Hadamard 测试查找 $ $ \begin{align} \braket{\psi 的虚部 |V ^ {\dagger} U |\psi} \end{align} $ $ 其中 $ \ket{\psi} $ 是准备的状态`commonPreparation`，$U $ 是的操作的单一表示形式`preparation1`，其中 $V $ 对应于。 `preparation2`
+remarks: 此操作使用 Hadamard 测试查找 $ $ \begin{align} \braket{\psi 的虚部 |V ^ {\dagger} U |\psi} \end{align} $ $ 其中 $ \ket{\psi} $ 是准备的状态 `commonPreparation` ，$U $ 是的操作的单一表示形式 `preparation1` ，其中 $V $ 对应于 `preparation2` 。
 syntax: 'operation EstimateImagOverlapBetweenStates (commonPreparation : (Qubit[] => Unit is Adj), preparation1 : (Qubit[] => Unit is Adj + Ctl), preparation2 : (Qubit[] => Unit is Adj + Ctl), nQubits : Int, nMeasurements : Int) : Double'
 references: '- Aharonov *et* [quant/0511096](https://arxiv.org/abs/quant-ph/0511096)。'
 input:
@@ -55,7 +55,7 @@ input:
     - Adjoint
     - Controlled
   - name: nQubits
-    summary: 对其`commonPreparation`执行、 `preparation1`和`preparation2`的 qubits 的数目。
+    summary: 对其执行、和的 qubits 的数目 `commonPreparation` `preparation1` `preparation2` 。
     isPrimitive: true
     uid: Int
   - name: nMeasurements
@@ -71,9 +71,9 @@ seeAlso:
 - microsoft.quantum.characterization.estimaterealoverlapbetweenstates
 - microsoft.quantum.characterization.estimateoverlapbetweenstates
 metadata:
-  ms.openlocfilehash: 6885830a644da147b0e9fe4e9efd3b553b15885e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1383a83c07db7017926c5fe51b1c73112b2c001d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677720"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354512"

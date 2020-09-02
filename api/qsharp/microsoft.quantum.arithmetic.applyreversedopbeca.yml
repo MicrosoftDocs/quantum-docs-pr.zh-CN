@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.applyreversedopbeca
 name: ApplyReversedOpBECA
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 使用小 endian 格式将使用大字节序输入的操作应用到寄存器编码的无符号整数。
 syntax: 'operation ApplyReversedOpBECA (op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit is Ctl + Adj), register : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
@@ -37,9 +37,9 @@ seeAlso:
 - applyreversedopbea
 - applyreversedopbec
 metadata:
-  ms.openlocfilehash: 0deee5e330f38ac8fd956e36fbd9f3d2cf2bdf64
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6d241af7addaad6ca00997500a28209d78dce199
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679980"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89327635"

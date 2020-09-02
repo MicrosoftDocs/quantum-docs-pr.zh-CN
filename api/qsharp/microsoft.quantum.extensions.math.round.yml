@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.round
 name: Round
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: 已弃用舍入。 请改用 @"microsoft.quantum.math.round"。
 syntax: 'function Round (a : Double) : Int'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 40a151d5a02c1f5e2714f7bb657de0c3e29eb913
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3cdb37f43d851961f1b64aec2fa346290466d268
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686098"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347916"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.synthesis.applytransposition
 name: ApplyTransposition
 type: operation
-namespace: Microsoft.Quantum.Synthesis
+namespace: microsoft.quantum.synthesis
 summary: 此操作将索引中的波幅替换 `a` 为 `b` 长度为 $n $ 的给定状态向量的索引中的波幅 `register` 。  如果 `a` 等于 `b` ，则不更改状态向量。
 examples: >-
   在 2 qubits 上为数字状态 $ | 1 \ rangle $、$ | 2 \ rangle $ 和 $ | 3 \ rangle $ 准备统一的 superposition。
@@ -22,11 +22,11 @@ input:
   content: '(a : Int, b : Int, qubits : Microsoft.Quantum.Arithmetic.LittleEndian)'
   types:
   - name: a
-    summary: 第一个索引（必须是从0到 $ 2 ^ n-$1 的值）
+    summary: '第一个索引 (的值必须介于0到 $ 2 ^ n-$1) '
     isPrimitive: true
     uid: Int
   - name: b
-    summary: 第二个索引（必须是从0到 $ 2 ^ n-$1 的值）
+    summary: '第二个索引 (的值必须介于0到 $ 2 ^ n-$1) '
     isPrimitive: true
     uid: Int
   - name: qubits
@@ -41,9 +41,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: de888c27a7d897492283c7285c6d2d828fe5821b
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: caffae137e4e1fa23ef087c4fbb30179a43dd8c0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85886112"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89327975"

@@ -2,8 +2,8 @@
 uid: microsoft.quantum.arithmetic.comparegtsi
 name: CompareGTSI
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
-summary: 带符号整数比较的包装`result = xs > ys`器：。
+namespace: microsoft.quantum.arithmetic
+summary: 带符号整数比较的包装器： `result = xs > ys` 。
 syntax: 'operation CompareGTSI (xs : Microsoft.Quantum.Arithmetic.SignedLittleEndian, ys : Microsoft.Quantum.Arithmetic.SignedLittleEndian, result : Qubit) : Unit'
 input:
   content: '(xs : Microsoft.Quantum.Arithmetic.SignedLittleEndian, ys : Microsoft.Quantum.Arithmetic.SignedLittleEndian, result : Qubit)'
@@ -27,9 +27,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 20960077dedf087096dac4d5dc5e50fcb9aed860
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: c916177dd56241d8e8816e1f60f3afefe865dbb9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679782"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89327380"

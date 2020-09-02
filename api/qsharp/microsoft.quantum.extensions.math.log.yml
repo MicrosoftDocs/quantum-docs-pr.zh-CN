@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.log
 name: Log
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: 日志已被弃用。 请改用 @"microsoft.quantum.math.log"。
 syntax: 'function Log (input : Double) : Double'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: a3029b2c3596fa2b9c33ed05a70b88d2d85a9440
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: cb6d358eb53dc6cfba92ce6d7d5c5b6bcb7772c2
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686282"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348290"

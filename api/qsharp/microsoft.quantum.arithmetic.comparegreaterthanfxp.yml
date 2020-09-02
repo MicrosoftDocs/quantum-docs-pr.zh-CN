@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.comparegreaterthanfxp
 name: CompareGreaterThanFxP
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 比较量程寄存器中存储的两个固定点数字，并控制对结果的反向。
 remarks: 当前实现要求两个固定点数字具有相同的点位置和相同数量的 qubits。
 syntax: 'operation CompareGreaterThanFxP (fp1 : Microsoft.Quantum.Arithmetic.FixedPoint, fp2 : Microsoft.Quantum.Arithmetic.FixedPoint, result : Qubit) : Unit'
@@ -16,7 +16,7 @@ input:
     summary: 要比较的第二个定点数字。
     uid: microsoft.quantum.arithmetic.fixedpoint
   - name: result
-    summary: 比较的结果。 如果`fp1 > fp2`为，则将翻转。
+    summary: 比较的结果。 如果为，则将翻转 `fp1 > fp2` 。
     isPrimitive: true
     uid: Qubit
 output:
@@ -28,9 +28,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 851baa02ebf746966b5534a96f1c1bc285632bc2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 68b23de42a62a20d33cc713649df8714706dc592
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679816"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89327400"

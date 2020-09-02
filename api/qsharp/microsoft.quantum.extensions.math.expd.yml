@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.expd
 name: ExpD
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: ExpD 已被弃用。 请改用 @"microsoft.quantum.math.expd"。
 syntax: 'function ExpD (a : Double) : Double'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 9f96ddb9ebf8a7acade64fe4f2a78e3a7bbdec6b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: c1d704e095d02cf3e1dc1aa2982f7d742f34c4c5
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681906"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348375"

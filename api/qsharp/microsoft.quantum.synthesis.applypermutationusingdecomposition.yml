@@ -2,7 +2,7 @@
 uid: microsoft.quantum.synthesis.applypermutationusingdecomposition
 name: ApplyPermutationUsingDecomposition
 type: operation
-namespace: Microsoft.Quantum.Synthesis
+namespace: microsoft.quantum.synthesis
 summary: >-
   使用基于分解的合成，Permutes amplitudes 在量程状态中。
 
@@ -12,7 +12,7 @@ summary: >-
   算法会对每个可变索引 $i $ 执行以下步骤：
 
 
-  1. 计算 $ （（\ pi_l，\ pi_r），\pi '） $，这样，$ \ pi_l $ 和 $ \ pi_r $ 的图像不会在其元素中的索引（而不是 $ \pi ' $）更改其元素中的位，也不会在其元素中更改位 $i $。
+  1. 计算 $ ( # A1 \ pi_l，\ pi_r) ，\pi ' ) $，以便 $ \ pi_l $ 和 $ \ pi_r $ 的图像在其元素中的索引（而不是 $ \pi ' $ 的索引）上更改其元素中的位。
 
   2. 设置 $ \pi \leftarrow \pi ' $，并基于不是固定点的元素 pi_r $ pi_l 中派生事实数据表。
 
@@ -34,9 +34,9 @@ examples: >-
   ```
 syntax: 'operation ApplyPermutationUsingDecomposition (perm : Int[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 references: >-
-  - [*Alexis De Vos*、 *Yvan Van Rentergem*、高级。通信。2（2），2008，pp 183--200](http://www.aimsciences.org/article/doi/10.3934/amc.2008.2.183)
+  - [*Alexis De Vos*， *Yvan Van Rentergem*，高级. 2 (2) ，2008，pp 183--200](http://www.aimsciences.org/article/doi/10.3934/amc.2008.2.183)
 
-  - [*Mathias Soeken*、*刘娜 Tague*、 *Gerhard Dueck*、 *Rolf Drechsler*、符号计算73（2016）、pp 1--26](https://www.sciencedirect.com/science/article/pii/S0747717115000188?via%3Dihub)
+  - [*Mathias Soeken*、 *刘娜 Tague*、 *Gerhard Dueck*、 *Rolf Drechsler*、) 符号计算 73 (2016、pp 1--26](https://www.sciencedirect.com/science/article/pii/S0747717115000188?via%3Dihub)
 input:
   content: '(perm : Int[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian)'
   types:
@@ -60,9 +60,9 @@ seeAlso:
 - microsoft.quantum.synthesis.applypermutationusingdecompositionwithvariableorder
 - microsoft.quantum.synthesis.applypermutationusingtransformation
 metadata:
-  ms.openlocfilehash: 2394b1260a848e590bea911e5b52d0e37d8c1bac
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 3fd7b84cbf403fe271849ae4d8841a1c8123faa0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85886116"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89328077"

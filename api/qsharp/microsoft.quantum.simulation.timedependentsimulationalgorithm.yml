@@ -2,19 +2,19 @@
 uid: microsoft.quantum.simulation.timedependentsimulationalgorithm
 name: TimeDependentSimulationAlgorithm
 type: newtype
-namespace: Microsoft.Quantum.Simulation
+namespace: microsoft.quantum.simulation
 summary: >-
   表示依赖时间的模拟算法。
 
 
-  依赖于时间的模拟技术将<xref:microsoft.quantum.simulation.evolutionschedule>
+  依赖于时间的模拟技术将 <xref:microsoft.quantum.simulation.evolutionschedule>
 
   用于某些时间间隔的单一时间演变。
 syntax: newtype TimeDependentSimulationAlgorithm = ((Double, Microsoft.Quantum.Simulation.EvolutionSchedule, Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: 2467e0756a80ef14461dea16f5b84d2dff74825c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 16bd82a90a3395f6b34ad3ffdfe340feb6d759f4
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82687278"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89328315"

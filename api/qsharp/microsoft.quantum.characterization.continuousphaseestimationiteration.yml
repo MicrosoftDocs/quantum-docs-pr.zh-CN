@@ -2,8 +2,8 @@
 uid: microsoft.quantum.characterization.continuousphaseestimationiteration
 name: ContinuousPhaseEstimationIteration
 type: operation
-namespace: Microsoft.Quantum.Characterization
-summary: 使用单一 oracle 的任意实际幂，执行迭代（经典控制）阶段估算算法的单个迭代。
+namespace: microsoft.quantum.characterization
+summary: 使用单一 oracle 的任意实际幂，执行迭代 (经典控制的) 阶段估算算法的单个迭代。
 syntax: 'operation ContinuousPhaseEstimationIteration (oracle : Microsoft.Quantum.Oracles.ContinuousOracle, time : Double, theta : Double, targetState : Qubit[], controlQubit : Qubit) : Unit'
 input:
   content: '(oracle : Microsoft.Quantum.Oracles.ContinuousOracle, time : Double, theta : Double, targetState : Qubit[], controlQubit : Qubit)'
@@ -36,9 +36,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 753daba20f1bb60e7044a9b6bf64bb22051e4549
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 4623f2d881388b802f5bb543390d0de1fc655c7c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677767"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354648"

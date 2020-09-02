@@ -2,12 +2,12 @@
 uid: microsoft.quantum.synthesis.applyxcontrolledontruthtable
 name: ApplyXControlledOnTruthTable
 type: operation
-namespace: Microsoft.Quantum.Synthesis
+namespace: microsoft.quantum.synthesis
 summary: >-
   @"microsoft.quantum.intrinsic.x" `target` 如果布尔函数的 `func` 计算结果为 true （对于中的传统分配），则应用操作 `controlRegister` 。
 
 
-  此操作实现单一操作 \begin{align} U\ket {x} \ 票证 {y} = \ket{x}\ket{y \oplus f （x）} \end{align}，其中 $x $ 和 $y $ `controlRegister` 分别表示和 `target` 。
+  此操作实现单一操作 \begin{align} U\ket {x} \ 票证 {y} = \ket{x}\ket{y \oplus f (x) } \end{align}，其中 $x $ 和 $y $ `controlRegister` 分别表示和 `target` 。
 
 
   $F $ 的布尔函数以大整数表示为事实数据表。
@@ -16,7 +16,7 @@ summary: >-
 
   它可以用十六进制表示法中的大整数表示， `0xE8L` 或以 `232L` 十进制表示法表示。  `L`后缀指示常数的类型为 `BigInt` 。
 
-  有关此表示形式的更多详细信息，请参阅[kata 表](https://github.com/microsoft/QuantumKatas/tree/master/TruthTables)。
+  有关此表示形式的更多详细信息，请参阅 [kata 表](https://github.com/microsoft/QuantumKatas/tree/master/TruthTables)。
 
 
   实现利用 @"microsoft.quantum.intrinsic.cnot" 和 @"microsoft.quantum.intrinsic.r1" 入口。
@@ -24,7 +24,7 @@ syntax: 'operation ApplyXControlledOnTruthTable (func : BigInt, controlRegister 
 references: >-
   - [*Schuch*， *Siewert*，PRL 91，no，027902，2003，arXiv： quant-ph/0303063](https://arxiv.org/abs/quant-ph/0303063)
 
-  - [*Mathias Soeken*，*圣马丁 Roetteler*，arXiv：2005.12310](https://arxiv.org/abs/2005.12310)
+  - [*Mathias Soeken*， *圣马丁 Roetteler*，arXiv：2005.12310](https://arxiv.org/abs/2005.12310)
 input:
   content: '(func : BigInt, controlRegister : Qubit[], target : Qubit)'
   types:
@@ -52,9 +52,9 @@ functors:
 seeAlso:
 - microsoft.quantum.synthesis.applyxcontrolledontruthtablewithcleantarget
 metadata:
-  ms.openlocfilehash: c15037917da8101270d3888ec0f335ad7986cbf2
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 782833d34462056413628504cca92f5333a04659
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85886111"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89327976"

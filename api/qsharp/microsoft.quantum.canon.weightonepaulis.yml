@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.weightonepaulis
 name: WeightOnePaulis
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 返回给定数量的 qubits 上的所有 Pauli 运算符的数组。
 syntax: 'function WeightOnePaulis (nQubits : Int) : Pauli[][]'
 input:
@@ -15,16 +15,16 @@ input:
 output:
   content: Pauli[][]
   types:
-  - summary: 多 qubit Pauli 运算符的数组，其中每个运算符都表示为长度`nQubits`为的数组。
+  - summary: 多 qubit Pauli 运算符的数组，其中每个运算符都表示为长度为的数组 `nQubits` 。
     isArray: true
     types:
     - isArray: true
       isPrimitive: true
       uid: Pauli
 metadata:
-  ms.openlocfilehash: 9e502178d60b75a312f6e5a7b80105c15741b7aa
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7c572253aff89ff8607ebc345f3bb4adaa62272c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677868"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354665"

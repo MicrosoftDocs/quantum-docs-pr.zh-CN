@@ -2,26 +2,26 @@
 uid: microsoft.quantum.arithmetic.compareusingripplecarry
 name: CompareUsingRippleCarry
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   此操作测试由 qubits 的寄存器表示的整数是否大于另一个整数，并将结果 XOR 应用到输出 qubit。
 
 
-  给定两个`x`整数`y`并存储在大小相等的 qubit 寄存器中，此操作将检查`x > y`它们是否满足。 如果为 true，则将 1 XORed 到输出 qubit。 否则，0将 XORed 到输出 qubit 中。
+  给定两个整数 `x` 并 `y` 存储在大小相等的 qubit 寄存器中，此操作将检查它们是否满足 `x > y` 。 如果为 true，则将 1 XORed 到输出 qubit。 否则，0将 XORed 到输出 qubit 中。
 
-  换句话说，此操作可由单一 $ $ \begin{align} U\ket {x} \ 票证 {y} \ 票证 {z} = \ket{x}\ket{y}\ket{z\oplus （x>y）} 表示。
+  换句话说，此操作可由单一 $ $ \begin{align} U\ket {x} \ 票证 {y} \ 票证 {z} = \ket{x}\ket{y}\ket{z\oplus (x>y) } 表示。
 
   \end{align} $ $
 syntax: 'operation CompareUsingRippleCarry (x : Microsoft.Quantum.Arithmetic.LittleEndian, y : Microsoft.Quantum.Arithmetic.LittleEndian, output : Qubit) : Unit'
-references: '- 新的量程波纹-携带加法线路 Steven Cuccaro、Thomas Draper、Samuel Kutin、David Petrie Moultonhttps://arxiv.org/abs/quant-ph/0410184'
+references: '- 新的量程波纹-携带加法线路 Steven Cuccaro、Thomas Draper、Samuel Kutin、David Petrie Moulton https://arxiv.org/abs/quant-ph/0410184'
 input:
   content: '(x : Microsoft.Quantum.Arithmetic.LittleEndian, y : Microsoft.Quantum.Arithmetic.LittleEndian, output : Qubit)'
   types:
   - name: x
-    summary: 要进行比较的第一个数字`LittleEndian`以 qubit 寄存器格式存储。
+    summary: 要进行比较的第一个数字以 `LittleEndian` qubit 寄存器格式存储。
     uid: microsoft.quantum.arithmetic.littleendian
   - name: y
-    summary: 要进行比较的第二个`LittleEndian`数字，以 qubit 寄存器格式存储。
+    summary: 要进行比较的第二个数字，以 `LittleEndian` qubit 寄存器格式存储。
     uid: microsoft.quantum.arithmetic.littleendian
   - name: output
     summary: Qubit，用于存储比较 $x>y $ 的结果。
@@ -36,9 +36,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 08cff4d874060fce0b461c7eeadfdcadf6fa1453
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 374b1611c7bf34f11ab8a8c3f11fad951e288565
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679764"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89327363"
