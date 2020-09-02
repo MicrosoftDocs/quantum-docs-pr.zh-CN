@@ -2,11 +2,11 @@
 uid: microsoft.quantum.canon.uncurriedopc
 name: UncurriedOpC
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   给定一个返回操作的函数，返回一个将两个输入作为元组的新操作。
 
-  修饰符`C`指示操作可以控制。
+  修饰符 `C` 指示操作可以控制。
 syntax: "function UncurriedOpC (curriedOp : ('T -> ('U => Unit is Ctl))) : (('T, 'U) => Unit is Ctl)"
 input:
   content: "(curriedOp : ('T -> ('U => Unit is Ctl)))"
@@ -34,7 +34,7 @@ input:
 output:
   content: (('T, 'U) => Unit is Ctl)
   types:
-  - summary: 与等效的`op` `op(t, u)`新操作`(curriedOp(t))(u)`。
+  - summary: 与 `op` 等效的新操作 `op(t, u)` `(curriedOp(t))(u)` 。
     isOperation: true
     input:
       types:
@@ -56,9 +56,9 @@ typeParameters:
 seeAlso:
 - microsoft.quantum.canon.uncurryop
 metadata:
-  ms.openlocfilehash: 763ea81f9a459a358d9a41e177697eb6bf2ca307
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 75f104b22d6d7ec642ff9ce00f9fc3dbea776431
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677978"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354818"

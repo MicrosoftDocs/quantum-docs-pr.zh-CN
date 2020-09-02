@@ -2,8 +2,8 @@
 uid: microsoft.quantum.simulation.identitygeneratorsystem
 name: IdentityGeneratorSystem
 type: function
-namespace: Microsoft.Quantum.Simulation
-summary: 返回与零 Hamiltonian `H = 0`一致的生成器系统，该系统与标识演化操作相对应。
+namespace: microsoft.quantum.simulation
+summary: 返回与零 Hamiltonian 一致的生成器系统 `H = 0` ，该系统与标识演化操作相对应。
 syntax: 'function IdentityGeneratorSystem () : Microsoft.Quantum.Simulation.GeneratorSystem'
 input:
   content: ()
@@ -14,9 +14,9 @@ output:
   - summary: Hamiltonian $H = $0 下表示进化的生成器系统。
     uid: microsoft.quantum.simulation.generatorsystem
 metadata:
-  ms.openlocfilehash: 5b4ace024d7a327959d7358c4b8b8cc17febba33
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7be759ae2aede978989ce4c60efe65bf0c2bf72f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683039"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89329981"

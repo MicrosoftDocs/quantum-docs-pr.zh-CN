@@ -2,8 +2,8 @@
 uid: microsoft.quantum.simulation.identitytimedependentgeneratorsystem
 name: IdentityTimeDependentGeneratorSystem
 type: function
-namespace: Microsoft.Quantum.Simulation
-summary: 返回与 Hamiltonian `H(s) = 0`一致的时间依赖生成器系统。
+namespace: microsoft.quantum.simulation
+summary: 返回与 Hamiltonian 一致的时间依赖生成器系统 `H(s) = 0` 。
 syntax: 'function IdentityTimeDependentGeneratorSystem () : Microsoft.Quantum.Simulation.TimeDependentGeneratorSystem'
 input:
   content: ()
@@ -11,12 +11,12 @@ input:
 output:
   content: Microsoft.Quantum.Simulation.TimeDependentGeneratorSystem
   types:
-  - summary: 对于所有 $s $，以时间相关的生成器系统表示 Hamiltonian $H （s） = $0 下的演变。
+  - summary: 时间依赖于 (s) = $0 的时间依赖于所有 $s $ 的时间依赖生成器系统 $H。
     uid: microsoft.quantum.simulation.timedependentgeneratorsystem
 metadata:
-  ms.openlocfilehash: e181d778ec0a7fdd3961780f27259a2501d5697e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 9575abb8d8ffbe505cd1d299fe4aae411a9d1f74
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683031"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89329947"

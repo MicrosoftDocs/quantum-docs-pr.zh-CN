@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.stackpush
 name: StackPush
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: StackPush 已被弃用。
 syntax: 'function StackPush (stack : Microsoft.Quantum.Canon.ResultStack, datum : Result) : Microsoft.Quantum.Canon.ResultStack'
 input:
@@ -18,9 +18,9 @@ output:
   types:
   - uid: microsoft.quantum.canon.resultstack
 metadata:
-  ms.openlocfilehash: d915fb97ea7ca0b7eebdb4257d3ef3385e7b204e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 25cb7710bb4825e867679addebb6db4c04049d71
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678126"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355039"

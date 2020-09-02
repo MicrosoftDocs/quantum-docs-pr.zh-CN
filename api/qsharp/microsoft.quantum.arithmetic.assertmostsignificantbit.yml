@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.assertmostsignificantbit
 name: AssertMostSignificantBit
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 断言表示无符号整数的 qubit 寄存器的最重要 qubit 处于特定状态。
 remarks: 此操作的受控版本将忽略控件。
 syntax: 'operation AssertMostSignificantBit (value : Result, number : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
@@ -27,9 +27,9 @@ functors:
 seeAlso:
 - microsoft.quantum.intrinsic.assert
 metadata:
-  ms.openlocfilehash: 01a69b7f9af1fdc32c565b72aaec4c00bc290fc0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ce471f3e7f1a6ab320f9094493dc5c0f5031d1e1
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679898"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342476"

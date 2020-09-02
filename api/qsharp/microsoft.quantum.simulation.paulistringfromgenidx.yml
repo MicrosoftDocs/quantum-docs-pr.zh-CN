@@ -2,19 +2,19 @@
 uid: microsoft.quantum.simulation.paulistringfromgenidx
 name: PauliStringFromGenIdx
 type: function
-namespace: Microsoft.Quantum.Simulation
-summary: 提取 Pauli 字符串及其 qubit 的 Pauli 术语的索引`GeneratorIndex`。
+namespace: microsoft.quantum.simulation
+summary: 提取 Pauli 字符串及其 qubit 的 Pauli 术语的索引 `GeneratorIndex` 。
 syntax: 'function PauliStringFromGenIdx (generatorIndex : Microsoft.Quantum.Simulation.GeneratorIndex) : (Pauli[], Int[])'
 input:
   content: '(generatorIndex : Microsoft.Quantum.Simulation.GeneratorIndex)'
   types:
   - name: generatorIndex
-    summary: '`GeneratorIndex`对 Pauli 术语进行编码的类型。'
+    summary: '`GeneratorIndex` 对 Pauli 术语进行编码的类型。'
     uid: microsoft.quantum.simulation.generatorindex
 output:
   content: (Pauli[], Int[])
   types:
-  - summary: 由描述的术语的 Pauli 字符串`GeneratorIndex`，以及它处理的 qubits 的索引。
+  - summary: 由描述的术语的 Pauli 字符串 `GeneratorIndex` ，以及它处理的 qubits 的索引。
     types:
     - isArray: true
       isPrimitive: true
@@ -23,9 +23,9 @@ output:
       isPrimitive: true
       uid: Int
 metadata:
-  ms.openlocfilehash: 585cac037696e370f3fc3ca4364db6f753b2c642
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7c924d806130c1181290a3154c5dba1f337f787c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82687033"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89329488"

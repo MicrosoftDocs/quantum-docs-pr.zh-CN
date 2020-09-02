@@ -2,12 +2,12 @@
 uid: microsoft.quantum.arithmetic.dividei
 name: DivideI
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   两个量程整数相除。
 
 
-  `xs`将保留余数`xs - floor(xs/ys) * ys`并`result`保留。 `floor(xs/ys)`
+  `xs` 将保留余数 `xs - floor(xs/ys) * ys` 并 `result` 保留 `floor(xs/ys)` 。
 remarks: >-
   使用标准的移位和减法方法来实现除法。
 
@@ -23,7 +23,7 @@ input:
     summary: $n $ 位除数
     uid: microsoft.quantum.arithmetic.littleendian
   - name: result
-    summary: $n $ 位结果，必须先处于状态 $ \ket{0}$，并将替换为整数相除的结果。
+    summary: $n $ 位结果，必须先处于状态 $ \ket {0} $，并将替换为整数相除的结果。
     uid: microsoft.quantum.arithmetic.littleendian
 output:
   content: Unit
@@ -34,9 +34,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 05f4b6766910af24a956bfa14bca615633ed1031
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1a426cc92da9db4c1155d2653451031ca37e3965
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679697"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342153"

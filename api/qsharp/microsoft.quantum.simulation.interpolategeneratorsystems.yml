@@ -2,30 +2,30 @@
 uid: microsoft.quantum.simulation.interpolategeneratorsystems
 name: InterpolateGeneratorSystems
 type: function
-namespace: Microsoft.Quantum.Simulation
-summary: 返回一个`TimeDependentGeneratorSystem` ，它表示两个`GeneratorSystem`之间的线性内插。
+namespace: microsoft.quantum.simulation
+summary: 返回一个， `TimeDependentGeneratorSystem` 它表示两个之间的线性内插 `GeneratorSystem` 。
 syntax: 'function InterpolateGeneratorSystems (generatorSystemStart : Microsoft.Quantum.Simulation.GeneratorSystem, generatorSystemEnd : Microsoft.Quantum.Simulation.GeneratorSystem) : Microsoft.Quantum.Simulation.TimeDependentGeneratorSystem'
 input:
   content: '(generatorSystemStart : Microsoft.Quantum.Simulation.GeneratorSystem, generatorSystemEnd : Microsoft.Quantum.Simulation.GeneratorSystem)'
   types:
   - name: generatorSystemStart
-    summary: 开始`GeneratorSystem`。
+    summary: 开始 `GeneratorSystem` 。
     uid: microsoft.quantum.simulation.generatorsystem
   - name: generatorSystemEnd
-    summary: 结束`GeneratorSystem`。
+    summary: 结束 `GeneratorSystem` 。
     uid: microsoft.quantum.simulation.generatorsystem
 output:
   content: Microsoft.Quantum.Simulation.TimeDependentGeneratorSystem
   types:
-  - summary: 一个`TimeDependentGeneratorSystem` ，它表示一个系统，该系统是输入生成器系统的总和，权重 $ （1-s） $ `generatorSystemStart` on，权重 $s $ `generatorSystemEnd`on。
+  - summary: 一个， `TimeDependentGeneratorSystem` 它表示一个系统，该系统是输入生成器系统的总和，权重 $ (1-s) $ on， `generatorSystemStart` 权重 $s $ on `generatorSystemEnd` 。
     uid: microsoft.quantum.simulation.timedependentgeneratorsystem
 seeAlso:
 - microsoft.quantum.canon.generatorsystem
 - microsoft.quantum.canon.timedependentgeneratorsystem
 metadata:
-  ms.openlocfilehash: ba7fdf0d9c2a08e8a330700fcab7b54f9347e9cb
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: adced7798e4bdcf9a73cb3a68f6b26302ec8ae5c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682634"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89329828"

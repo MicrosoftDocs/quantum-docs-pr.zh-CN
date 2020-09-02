@@ -2,14 +2,14 @@
 uid: microsoft.quantum.arithmetic.identicalformatfactfxp
 name: IdenticalFormatFactFxP
 type: function
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 断言提供的数组中的所有固定点都具有相同的点位置和 qubit 数字。
 syntax: 'function IdenticalFormatFactFxP (fixedPoints : Microsoft.Quantum.Arithmetic.FixedPoint[]) : Unit'
 input:
   content: '(fixedPoints : Microsoft.Quantum.Arithmetic.FixedPoint[])'
   types:
   - name: fixedPoints
-    summary: 将检查其兼容性的量程固定点数字的数组（使用断言）。
+    summary: 将使用断言) 检查兼容性 (的量程固定点数的数组。
     isArray: true
     uid: microsoft.quantum.arithmetic.fixedpoint
 output:
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: d5f2e01ccd87e70723260b4d5818510272569829
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 97a028456ebc67b2d03fefd6e38daa1d61999c9a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679592"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89342272"

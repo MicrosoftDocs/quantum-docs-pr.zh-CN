@@ -2,8 +2,8 @@
 uid: microsoft.quantum.extensions.math.e
 name: E
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
-summary: E 已弃用。 请使用@"microsoft.quantum.math.e" 。
+namespace: microsoft.quantum.extensions.math
+summary: E 已弃用。 请使用 @"microsoft.quantum.math.e" 。
 syntax: 'function E () : Double'
 input:
   content: ()
@@ -14,9 +14,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 0205a3b57690556eb947c22d31e7022b6b713b83
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: fda63eaa0abb36cf5b8a0cf7419dbb9f405d3aa4
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681915"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348528"

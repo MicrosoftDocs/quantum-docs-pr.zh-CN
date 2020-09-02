@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.absl
 name: AbsL
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回大整数的绝对值。
 remarks: 有关更多详细信息，请参阅[BigInteger。](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.abs)
 syntax: 'function AbsL (a : BigInt) : BigInt'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: af77d16067362f8cd8ce4ae0aad21f6ba8f34cc9
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b2a892895f05f0fd0085f7ed17dfb18bf5f118ff
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682810"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89335183"
