@@ -6,9 +6,9 @@ operations:
 - uid: microsoft.quantum.research.characterization.randomwalkphaseestimation
   summary: 执行迭代阶段估算，并使用随机遍历来估算给定 oracle 和 eigenstate 的传统测量结果中的 Bayesian 推理。
 metadata:
-  ms.openlocfilehash: 8f4ca8b0f5f16f5eae8b6db42e1da32cfc3a778f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d643722f4e2a8c6d076ce3d6d7bc8a7df879b5cc
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82706697"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340861"

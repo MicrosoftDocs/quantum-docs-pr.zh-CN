@@ -37,9 +37,9 @@ newtypes:
 - uid: microsoft.quantum.random.discretedistribution
   summary: 表示单变量的概率分布。
 metadata:
-  ms.openlocfilehash: 04ceecba6c304e33452dd5eac014f59522a76e91
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: b5bcae55d824c9bfc1582e0b1585b9aea05bd0fe
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863907"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340895"

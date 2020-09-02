@@ -2,7 +2,7 @@
 uid: microsoft.quantum.oracles.reflectionoraclefromdeterministicstateoracle
 name: ReflectionOracleFromDeterministicStateOracle
 type: function
-namespace: Microsoft.Quantum.Oracles
+namespace: microsoft.quantum.oracles
 summary: >-
   从 oracle 构造有关给定状态的反射。
 
@@ -24,9 +24,9 @@ seeAlso:
 - microsoft.quantum.oracles.deterministicstateoracle
 - microsoft.quantum.oracles.reflectionoracle
 metadata:
-  ms.openlocfilehash: 580e4f0a38888faf0fbea99f680c82a5172f82a4
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 6bbfe2716055d008fc87330c974cc21e1a2a756c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85884501"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89331851"

@@ -2,30 +2,30 @@
 uid: microsoft.quantum.oracles.obliviousoraclefromdeterministicstateoracle
 name: ObliviousOracleFromDeterministicStateOracle
 type: function
-namespace: Microsoft.Quantum.Oracles
-summary: 将 oracles `DeterministicStateOracle`和`ObliviousOracle`组合在一起。
+namespace: microsoft.quantum.oracles
+summary: 将 oracles 和组合在一起 `DeterministicStateOracle` `ObliviousOracle` 。
 syntax: 'function ObliviousOracleFromDeterministicStateOracle (ancillaOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle) : Microsoft.Quantum.Oracles.ObliviousOracle'
 input:
   content: '(ancillaOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle)'
   types:
   - name: ancillaOracle
-    summary: 一种状态，它准备 $a $ `DeterministicStateOracle`的注册，oracle $A $ 的类型。
+    summary: 一种状态，它准备 $a $ 的注册，oracle $A $ 的类型 `DeterministicStateOracle` 。
     uid: microsoft.quantum.oracles.deterministicstateoracle
   - name: signalOracle
-    summary: 类型`ObliviousOracle`为的 oracle $U $，它在注册 $a，s $ 上合作。
+    summary: 类型为的 oracle $U $ `ObliviousOracle` ，它在注册 $a，s $ 上合作。
     uid: microsoft.quantum.oracles.obliviousoracle
 output:
   content: Microsoft.Quantum.Oracles.ObliviousOracle
   types:
-  - summary: Oracle $O = UA $ of 类型`ObliviousOracle`。
+  - summary: Oracle $O = UA $ of 类型 `ObliviousOracle` 。
     uid: microsoft.quantum.oracles.obliviousoracle
 seeAlso:
 - microsoft.quantum.canon.deterministicstateoracle
 - microsoft.quantum.canon.obliviousoracle
 metadata:
-  ms.openlocfilehash: 036d89ed2a9b3a0db2637964e4fabec7352a67d9
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b0b900189648ab78d74cc3378528156309c67d0e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681244"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89331970"

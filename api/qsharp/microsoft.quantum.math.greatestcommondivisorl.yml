@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.greatestcommondivisorl
 name: GreatestCommonDivisorL
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 计算 $a $ 和 $b $ 的最大公因数。 GCD 始终为正值。
 syntax: 'function GreatestCommonDivisorL (a : BigInt, b : BigInt) : BigInt'
 input:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: 4a49c4a3bfbd662bdaf2990d5de87dc668cae135
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 498e1e64f2c1e919b5cd4ecff643f91963f483c1
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684211"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89343870"

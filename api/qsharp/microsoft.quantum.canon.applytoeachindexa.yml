@@ -2,11 +2,11 @@
 uid: microsoft.quantum.canon.applytoeachindexa
 name: ApplyToEachIndexA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   将单 qubit 操作应用于寄存器中的每个索引元素。
 
-  修饰符`A`指示 qubit 操作是 adjointable。
+  修饰符 `A` 指示 qubit 操作是 adjointable。
 syntax: "operation ApplyToEachIndexA (singleElementOperation : ((Int, 'T) => Unit is Adj), register : 'T[]) : Unit"
 input:
   content: "(singleElementOperation : ((Int, 'T) => Unit is Adj), register : 'T[])"
@@ -44,9 +44,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applytoeachindex
 metadata:
-  ms.openlocfilehash: f380de31e21f060e64b3c39f81873563d7cf2d2b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 72302dba8720fd64ad6c19434f5a723511442a50
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674846"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357674"

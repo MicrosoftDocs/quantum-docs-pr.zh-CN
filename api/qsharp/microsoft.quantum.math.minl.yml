@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.minl
 name: MinL
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个指定数字中较小的一个。
 remarks: 有关更多详细信息，请参阅[BigInteger。](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.min)
 syntax: 'function MinL (a : BigInt, b : BigInt) : BigInt'
@@ -21,9 +21,9 @@ output:
   - isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: fd156a2b7383b179abd215f4e363f319fa1d5879
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3109a60bd398ead85bc9d857e522545ccc7521f7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673617"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89343564"

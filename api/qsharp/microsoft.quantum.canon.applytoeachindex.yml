@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applytoeachindex
 name: ApplyToEachIndex
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 将单 qubit 操作应用于寄存器中的每个索引元素。
 syntax: "operation ApplyToEachIndex (singleElementOperation : ((Int, 'T) => Unit), register : 'T[]) : Unit"
 input:
@@ -40,9 +40,9 @@ seeAlso:
 - microsoft.quantum.canon.applytoeachindexc
 - microsoft.quantum.canon.applytoeachindexca
 metadata:
-  ms.openlocfilehash: 9458058939e4d01feea2f89f3f4ca2b1be56f666
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3110020fc1e70f524d58a2fb1556daa5f46ab0ff
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674871"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357691"

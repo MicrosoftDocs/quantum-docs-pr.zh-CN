@@ -2,11 +2,11 @@
 uid: microsoft.quantum.canon.applytoeachindexc
 name: ApplyToEachIndexC
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   将单 qubit 操作应用于寄存器中的每个索引元素。
 
-  修饰符`C`指示 qubit 操作可控制。
+  修饰符 `C` 指示 qubit 操作可控制。
 syntax: "operation ApplyToEachIndexC (singleElementOperation : ((Int, 'T) => Unit is Ctl), register : 'T[]) : Unit"
 input:
   content: "(singleElementOperation : ((Int, 'T) => Unit is Ctl), register : 'T[])"
@@ -44,9 +44,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applytoeachindex
 metadata:
-  ms.openlocfilehash: 975cefaacf1e8f4fb6e80daf94ad4caecd7adb8d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: c386a8d66baf681b85b6641044012c7a384d92a9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674835"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357640"

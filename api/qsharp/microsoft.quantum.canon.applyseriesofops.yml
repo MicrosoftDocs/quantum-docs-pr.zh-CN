@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applyseriesofops
 name: ApplySeriesOfOps
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 在数组上按顺序应用 ops 及其目标的列表。
 syntax: "operation ApplySeriesOfOps (listOfOps : ('T[] => Unit)[], targets : Int[][], register : 'T[]) : Unit"
 input:
@@ -41,9 +41,9 @@ output:
 seeAlso:
 - microsoft.quantum.canon.applyoprepeatedlyover
 metadata:
-  ms.openlocfilehash: 62c4494fb60a69eb52eca2d3fa97b41eb9b7f020
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e998272cb0e34cd4d8e9b8b2af5bb528042a2d3b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82671157"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357793"

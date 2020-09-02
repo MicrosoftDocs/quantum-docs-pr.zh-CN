@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applytofirsttwoqubits
 name: ApplyToFirstTwoQubits
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 将操作应用于寄存器中的前两个 qubits。
 remarks: >-
   这等效于：
@@ -45,9 +45,9 @@ seeAlso:
 - microsoft.quantum.canon.applytofirsttwoqubitsc
 - microsoft.quantum.canon.applytofirsttwoqubitsca
 metadata:
-  ms.openlocfilehash: c14b79486836ff27d1773c851458bd9dc7db8c7f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d2f3fede8f8d6a91d3c860969125c00edcf83bab
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674701"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357424"

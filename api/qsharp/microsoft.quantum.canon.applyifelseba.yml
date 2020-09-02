@@ -2,22 +2,22 @@
 uid: microsoft.quantum.canon.applyifelseba
 name: ApplyIfElseBA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   应用两个 adjointable 操作之一，具体取决于传统位的值。
 
 
-  给定一个位`bit`，在为时`trueOp`应用`trueInput`该操作，并`bit`在`true`为时应用`falseOp(falseInput)` `bit`该操作`false`。
+  给定一个位，在为时 `bit` 应用该操作，并在为时应用该操作 `trueOp` `trueInput` `bit` `true` `falseOp(falseInput)` `bit` `false` 。
 syntax: "operation ApplyIfElseBA (bit : Bool, (trueOp : ('T => Unit is Adj), trueInput : 'T), (falseOp : ('U => Unit is Adj), falseInput : 'U)) : Unit"
 input:
   content: "(bit : Bool, (trueOp : ('T => Unit is Adj), trueInput : 'T), (falseOp : ('U => Unit is Adj), falseInput : 'U))"
   types:
   - name: bit
-    summary: 用于确定是否`trueOp`应用或`falseOp`的布尔值。
+    summary: 用于确定是否 `trueOp` 应用或的布尔值 `falseOp` 。
     isPrimitive: true
     uid: Bool
   - name: trueOp
-    summary: 当为`bit` `true`时要应用的 adjointable 操作。
+    summary: 当为时要应用的 adjointable `bit` 操作 `true` 。
     isOperation: true
     input:
       types:
@@ -30,11 +30,11 @@ input:
     functors:
     - Adjoint
   - name: trueInput
-    summary: 当为`trueOp` `bit` `true`时要向其提供的输入。
+    summary: 当为时要向其提供的输入 `trueOp` `bit` `true` 。
     uid: "'T"
     isLocal: true
   - name: falseOp
-    summary: 当为`bit` `false`时要应用的 adjointable 操作。
+    summary: 当为时要应用的 adjointable `bit` 操作 `false` 。
     isOperation: true
     input:
       types:
@@ -47,7 +47,7 @@ input:
     functors:
     - Adjoint
   - name: falseInput
-    summary: 当为`falseOp` `bit` `false`时要向其提供的输入。
+    summary: 当为时要向其提供的输入 `falseOp` `bit` `false` 。
     uid: "'U"
     isLocal: true
 output:
@@ -57,9 +57,9 @@ output:
     uid: Unit
 typeParameters:
 - uid: "'T"
-  summary: 要有条件地应用的`trueOp`操作的输入类型。
+  summary: '`trueOp`要有条件地应用的操作的输入类型。'
 - uid: "'U"
-  summary: 要有条件地应用的`falseOp`操作的输入类型。
+  summary: '`falseOp`要有条件地应用的操作的输入类型。'
 functors:
 - Adjoint
 seeAlso:
@@ -69,9 +69,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifelsera
 - microsoft.quantum.canon.applyifelserca
 metadata:
-  ms.openlocfilehash: 6e84acfbad8d1811ee0ab41de1f51fbcab4c286c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ec84d5f11aefafd44bd2a4a2ef9fff21a6f6d1b8
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675013"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350364"

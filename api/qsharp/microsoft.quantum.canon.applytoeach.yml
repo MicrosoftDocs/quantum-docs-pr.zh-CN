@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.applytoeach
 name: ApplyToEach
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 对寄存器中的每个元素应用 qubit 操作。
 examples: >-
   准备 qubit $ \ket{+} $ 状态：
@@ -48,9 +48,9 @@ seeAlso:
 - microsoft.quantum.canon.applytoeacha
 - microsoft.quantum.canon.applytoeachca
 metadata:
-  ms.openlocfilehash: 8d04e012f9ee1837b233a7127361027a5bfe7ccd
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: f3d4df2c31c6315e9b52c686e7800a3593eae4c0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82670812"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357810"

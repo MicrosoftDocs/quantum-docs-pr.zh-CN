@@ -2,11 +2,11 @@
 uid: microsoft.quantum.canon.applytofirsttwoqubitsc
 name: ApplyToFirstTwoQubitsC
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   将操作应用于寄存器中的前两个 qubits。
 
-  修饰符`C`指示操作可控制。
+  修饰符 `C` 指示操作可控制。
 remarks: >-
   这等效于：
 
@@ -50,9 +50,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applytofirsttwoqubits
 metadata:
-  ms.openlocfilehash: 2d7fd1ab6e588300f90f0f50881d2eef4680e5c8
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7cff8317350e0e9d0cd36033d89c3e2d283ec83e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674668"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357385"

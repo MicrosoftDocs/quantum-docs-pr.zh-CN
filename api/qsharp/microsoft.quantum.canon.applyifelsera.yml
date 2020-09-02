@@ -2,22 +2,22 @@
 uid: microsoft.quantum.canon.applyifelsera
 name: ApplyIfElseRA
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   应用两个 adjointable 操作之一，具体取决于古典结果的值。
 
 
-  如果结果`result`为，则在等于`zeroOp` `zeroInput` `result` `Zero`时应用该操作，并应用`oneOp(oneInput)`该操作。 `result == One`
+  如果结果为 `result` ，则在等于时应用该操作， `zeroOp` `zeroInput` `result` `Zero` 并应用 `oneOp(oneInput)` `result == One` 该操作。
 syntax: "operation ApplyIfElseRA (result : Result, (zeroOp : ('T => Unit is Adj), zeroInput : 'T), (oneOp : ('U => Unit is Adj), oneInput : 'U)) : Unit"
 input:
   content: "(result : Result, (zeroOp : ('T => Unit is Adj), zeroInput : 'T), (oneOp : ('U => Unit is Adj), oneInput : 'U))"
   types:
   - name: result
-    summary: 用于确定是否应用`zeroOp`或`oneOp`的测量结果。
+    summary: 用于确定是否应用或的测量 `zeroOp` 结果 `oneOp` 。
     isPrimitive: true
     uid: Result
   - name: zeroOp
-    summary: 在时`result == Zero`要应用的 adjointable 操作。
+    summary: 在时要应用的 adjointable 操作 `result == Zero` 。
     isOperation: true
     input:
       types:
@@ -30,11 +30,11 @@ input:
     functors:
     - Adjoint
   - name: zeroInput
-    summary: 要提供给`zeroOp`的时间`result == Zero`。
+    summary: 要提供给的 `zeroOp` 时间 `result == Zero` 。
     uid: "'T"
     isLocal: true
   - name: oneOp
-    summary: 在时`result == One`要应用的 adjointable 操作。
+    summary: 在时要应用的 adjointable 操作 `result == One` 。
     isOperation: true
     input:
       types:
@@ -47,7 +47,7 @@ input:
     functors:
     - Adjoint
   - name: oneInput
-    summary: 要提供给`oneOp`的时间`result == One`。
+    summary: 要提供给的 `oneOp` 时间 `result == One` 。
     uid: "'U"
     isLocal: true
 output:
@@ -57,9 +57,9 @@ output:
     uid: Unit
 typeParameters:
 - uid: "'T"
-  summary: 要有条件地应用的`zeroOp`操作的输入类型。
+  summary: '`zeroOp`要有条件地应用的操作的输入类型。'
 - uid: "'U"
-  summary: 要有条件地应用的`oneOp`操作的输入类型。
+  summary: '`oneOp`要有条件地应用的操作的输入类型。'
 functors:
 - Adjoint
 seeAlso:
@@ -69,9 +69,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifelsera
 - microsoft.quantum.canon.applyifelserca
 metadata:
-  ms.openlocfilehash: 6168a991766f07ec5d0fd0a7685f17d02510e038
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 53de104adbb9a77d082369b244448b3a84849b97
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676319"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89350194"

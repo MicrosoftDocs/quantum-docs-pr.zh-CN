@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.mini
 name: MinI
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个指定数字中较小的一个。
-remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.min) 。
+remarks: 有关更多详细信息，请参阅 [system.object](https://docs.microsoft.com/dotnet/api/system.math.min) 。
 syntax: 'function MinI (a : Int, b : Int) : Int'
 input:
   content: '(a : Int, b : Int)'
@@ -21,9 +21,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 1492c49eb35f298411e37747ad7f4e968d11a77d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: c89a1d94630c81da01c1b9703bb65f1608a3587d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673640"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89343598"
