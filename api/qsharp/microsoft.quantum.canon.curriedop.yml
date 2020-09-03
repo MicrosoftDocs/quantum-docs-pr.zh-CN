@@ -2,12 +2,12 @@
 uid: microsoft.quantum.canon.curriedop
 name: CurriedOp
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   返回对两个输入的操作的扩充版本。
 
 
-  也就是说，假设有一个具有两个输入的操作，则此函数将应用咖喱的 isomorphism $f （x，y） \equiv f （x）（y） $ 以返回一个输入的操作，该操作返回一个输入的操作。
+  也就是说，假设有一个具有两个输入的操作，则此函数将应用咖喱的 isomorphism $f (x，y) \equiv f (x) # B4 y) $ 以返回一个输入的操作，该操作返回一个输入的操作。
 remarks: >-
   以下项是等效的：
 
@@ -67,9 +67,9 @@ typeParameters:
 - uid: "'U"
   summary: 成对定义的函数的第二个分量的类型。
 metadata:
-  ms.openlocfilehash: b89dbef2ff8d28656cae7f527fb3d94d869381f0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 97b800f064737d0c53bc7c90853cfe9c91a74aa9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675703"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356603"

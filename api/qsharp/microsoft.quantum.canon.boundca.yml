@@ -2,11 +2,11 @@
 uid: microsoft.quantum.canon.boundca
 name: BoundCA
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   给定针对单个输入的操作数组时，将生成一个按顺序执行每个给定操作的新操作。
 
-  修饰符`CA`指示数组中的所有操作都是 adjointable 且可控制的。
+  修饰符 `CA` 指示数组中的所有操作都是 adjointable 且可控制的。
 examples: >-
   以下项是等效的：
 
@@ -20,7 +20,7 @@ examples: >-
   ```
 
 
-  and
+  和
 
 
   ```qsharp
@@ -69,9 +69,9 @@ typeParameters:
 seeAlso:
 - microsoft.quantum.canon.bound
 metadata:
-  ms.openlocfilehash: 0144486e675bfb18d4e171a4a8cfec7e5a8be2ae
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3a843acbb186750e23d35b3c3e38ce76b369392e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675958"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356892"

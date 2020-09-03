@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.decomposeintotimestepsca
 name: DecomposeIntoTimeStepsCA
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: DecomposeIntoTimeStepsCA 已被弃用。 请改用 @"microsoft.quantum.canon.decomposedintotimestepsca"。
 syntax: "function DecomposeIntoTimeStepsCA ((nSteps : Int, op : ((Int, Double, 'T) => Unit is Adj + Ctl)), trotterOrder : Int) : ((Double, 'T) => Unit is Adj + Ctl)"
 input:
@@ -49,9 +49,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: 3b8e24d950f1339febce609e6232c9fbb42f8074
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b634df5a18b0363847ddb30bec2ee95fa9380e47
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680235"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356518"

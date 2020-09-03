@@ -2,7 +2,7 @@
 uid: microsoft.quantum.amplitudeamplification.ampamprusbyoracle
 name: AmpAmpRUSByOracle
 type: operation
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: AmpAmpRUSByOracle 已被弃用。 请改用 @"microsoft.quantum.amplitudeamplification.applyfixedpointamplification"。
 syntax: 'operation AmpAmpRUSByOracle (statePrepOracle : Microsoft.Quantum.Oracles.StateOracle, startQubits : Qubit[]) : Unit'
 input:
@@ -20,9 +20,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 797348a1c2a3a313fe0c95155d78e206a466f01e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e30e03a45094d698415f5fd56fdf0bc9900c7db0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673027"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339654"

@@ -2,8 +2,8 @@
 uid: microsoft.quantum.canon.approximateqft
 name: ApproximateQFT
 type: operation
-namespace: Microsoft.Quantum.Canon
-summary: 将大致的量程傅立叶转换（AQFT）应用到一个量程寄存器。
+namespace: microsoft.quantum.canon
+summary: 将大致的量程傅立叶转换 (AQFT) 应用到一个量程寄存器。
 remarks: >-
   AQFT 需要 2π/2k 和 Hadamard 入口的 Z 旋转入口。
 
@@ -11,7 +11,7 @@ remarks: >-
   输入和输出假定为以大字节序编码进行编码。
 syntax: 'operation ApproximateQFT (a : Int, qs : Microsoft.Quantum.Arithmetic.BigEndian) : Unit'
 references: >-
-  - [*Roetteler，Beth*，Appl.exe，Commun。计算机.19（3）：177-193 （2008）](http://doi.org/10.1007/s00200-008-0072-2)
+  - [*Roetteler，Beth*，Appl.exe，Commun。计算机.19 (3) ： 177-193 (2008) ](http://doi.org/10.1007/s00200-008-0072-2)
 
   - [*D. Coppersmith* arXiv： quant/0201067v1](https://arxiv.org/abs/quant-ph/0201067)
 input:
@@ -22,7 +22,7 @@ input:
       确定 QFT 线路中发生的受控 Z 旋转在哪个级别上被修剪的近似值参数。
 
 
-      近似值参数 a 确定 Z 旋转的修剪级别，即∈ {0 ... n} 和所有 Z 旋转 2π/2k，其中 k>从 QFT 线路中删除。 知道，对于 k >= log ₂（n） + log ₂（1/ε） + 3 个可绑定 | |QFT-AQFT | |<ε。
+      近似值参数 a 确定 Z 旋转的修剪级别，即∈ {0 ... n} 和所有 Z 旋转 2π/2k，其中 k>从 QFT 线路中删除。 知道，对于 k >= log ₂ (n) + log ₂ (1/ε) + 3 1 可以绑定 | |QFT-AQFT | |<ε。
     isPrimitive: true
     uid: Int
   - name: qs
@@ -37,9 +37,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 44d6a5937924f13cab04137bd3d0eb81396824c9
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 8e657778669f9b0e8c1b702047a8499b680ee1e0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674395"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89357028"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.bound
 name: Bound
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 给定针对单个输入的操作数组时，将生成一个按顺序执行每个给定操作的新操作。
 examples: >-
   以下项是等效的：
@@ -17,7 +17,7 @@ examples: >-
   ```
 
 
-  and
+  和
 
 
   ```qsharp
@@ -62,9 +62,9 @@ seeAlso:
 - microsoft.quantum.canon.bounda
 - microsoft.quantum.canon.boundca
 metadata:
-  ms.openlocfilehash: 3b588e1481ff35c06aef5a381ca3a8fb67054ebd
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 67c61c10e00585f1419f01f19ca3dc5f4ca07d4f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676019"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356926"

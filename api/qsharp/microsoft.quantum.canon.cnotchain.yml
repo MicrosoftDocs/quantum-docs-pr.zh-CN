@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.cnotchain
 name: CNOTChain
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: CNOTChain 已被弃用。 请改用 @"microsoft.quantum.canon.applycnotchain"。
 syntax: 'operation CNOTChain (qubits : Qubit[]) : Unit'
 input:
@@ -21,9 +21,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: b47e2d4005a3d1cc46a2a576a9253f40c18396d9
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ae41082ab08e838d2a47c254ff3ab6460be59b75
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675854"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356756"

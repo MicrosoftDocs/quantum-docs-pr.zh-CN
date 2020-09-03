@@ -2,9 +2,9 @@
 uid: microsoft.quantum.canon.cy
 name: CY
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
-  将受控 Y （CY）入口应用于一对 qubits。
+  将受控-Y (CY) 入口应用于一对 qubits。
 
 
   $ $ \begin{align} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 &-i \\ \\ 0 & 0 & & 0 \end{align}，$ $，其中的行和列按 "量程概念" 指南进行组织。
@@ -38,9 +38,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: c7d7d0fb5413051ec7a654c04e01b6ffc02903e6
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6d2934f6e8b2f5b286d70eb773ae3fdaf8a3ba65
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680287"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356569"

@@ -2,9 +2,9 @@
 uid: microsoft.quantum.canon.cz
 name: CZ
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
-  将受控-Z （CZ）入口应用于一对 qubits。
+  将受控-Z (CZ) 入口应用于一对 qubits。
 
 
   $ $ \begin{align} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 1 & 0 \\ \\ 0 & 0 & 0 &-1 \end{align}，$ $，其中的行和列组织为 "量程概念" 指南。
@@ -38,9 +38,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: ebece418cac216516b6c34ca22ead35275ac37c7
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 56173b63ca5d5da72a350315213671fbb1cf7367
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680269"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356552"

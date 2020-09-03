@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.compose
 name: Compose
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   返回两个函数的组合。
 
@@ -37,7 +37,7 @@ input:
 output:
   content: ('T -> 'V)
   types:
-  - summary: 新函数 $h $，以便所有输入 $x $，$f （g （x）） = h （x） $。
+  - summary: '新函数 $h $，以便所有输入 $x $，$f (g (x) # A3 = h (x) $。'
     isFunction: true
     input:
       types:
@@ -55,9 +55,9 @@ typeParameters:
 - uid: "'V"
   summary: 要应用的第二个函数的输出类型。
 metadata:
-  ms.openlocfilehash: 77037411aace0f69850b62322f3e63d6a34358ed
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e62937fd42cb4067ca7a7947cac29a9ef539da6c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675813"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356739"

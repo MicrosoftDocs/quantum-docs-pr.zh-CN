@@ -2,12 +2,12 @@
 uid: microsoft.quantum.amplitudeamplification.amplitudeamplificationfrompartialreflections
 name: AmplitudeAmplificationFromPartialReflections
 type: function
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: 通过部分反射放大幅度。
 remarks: >-
   振幅放大是一种特殊的在意波幅放大，其中没有系统 qubits，而在意 oracle 设置为 identity。
 
-  在大多数情况下`startQubits` ，在状态 $ \ket{\text{start}}\_$1 中初始化，后者是的`startStateReflection`$-$1 eigenstate。
+  在大多数情况下， `startQubits` 在状态 $ \ket{\text{start}} $1 中初始化， \_ 后者是的 $-$1 eigenstate `startStateReflection` 。
 syntax: 'function AmplitudeAmplificationFromPartialReflections (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle) : (Qubit[] => Unit is Adj + Ctl)'
 input:
   content: '(phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle)'
@@ -39,9 +39,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: 4dae118f99c8a2e7cf933a378ed38d414a94fef4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a0ee80fdc187154986db9d7621ce5a1d448b4111
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673005"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339637"

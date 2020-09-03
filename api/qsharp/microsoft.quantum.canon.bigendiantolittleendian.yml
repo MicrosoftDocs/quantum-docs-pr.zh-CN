@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.bigendiantolittleendian
 name: BigEndianToLittleEndian
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: BigEndianToLittleEndian 已被弃用。 请改用 @"microsoft.quantum.arithmetic.bigendianaslittleendian"。
 syntax: 'function BigEndianToLittleEndian (input : Microsoft.Quantum.Arithmetic.BigEndian) : Microsoft.Quantum.Arithmetic.LittleEndian'
 input:
@@ -15,9 +15,9 @@ output:
   types:
   - uid: microsoft.quantum.arithmetic.littleendian
 metadata:
-  ms.openlocfilehash: cdccc692cfb88c81e91f1a1f3e3f1cacfee3a998
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 059567a03f1d05c2a95dd874336fac7b2b8a503d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674261"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356943"

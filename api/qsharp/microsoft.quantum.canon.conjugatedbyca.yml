@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.conjugatedbyca
 name: ConjugatedByCA
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 给定的外部和内部操作返回一个新的操作，该操作将由外部操作词干内部操作。
 remarks: 外部操作始终被认为是 adjointable 的，但不需要控制以便使组合操作可控制。
 syntax: "function ConjugatedByCA (outerOperation : ('T => Unit is Adj), innerOperation : ('T => Unit is Adj + Ctl)) : ('T => Unit is Adj + Ctl)"
@@ -61,9 +61,9 @@ seeAlso:
 - conjugatedbyca
 - applywith
 metadata:
-  ms.openlocfilehash: a57abf658e59e05baabc700a08c38e10e1325801
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 85b738f29ba5838e6eeedd871756efa771fd08f0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680376"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356654"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.amplitudeamplification.ampampbyreflectionphases
 name: AmpAmpByReflectionPhases
 type: function
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: AmpAmpByReflectionPhases 已被弃用。 请改用 @"microsoft.quantum.amplitudeamplification.amplitudeamplificationfrompartialreflections"。
 syntax: 'function AmpAmpByReflectionPhases (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle) : (Qubit[] => Unit is Adj + Ctl)'
 input:
@@ -31,9 +31,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: 1a65d26bf014e322c09bff4a91f8f78ba48df64d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: f6002d9eb01c397264be7900a3290410c1f23298
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675399"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339834"

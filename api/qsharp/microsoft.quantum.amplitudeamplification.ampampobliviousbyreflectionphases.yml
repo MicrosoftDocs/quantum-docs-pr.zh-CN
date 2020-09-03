@@ -2,7 +2,7 @@
 uid: microsoft.quantum.amplitudeamplification.ampampobliviousbyreflectionphases
 name: AmpAmpObliviousByReflectionPhases
 type: function
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: AmpAmpObliviousByReflectionPhases 已被弃用。 请改用 @"microsoft.quantum.amplitudeamplification.obliviousamplitudeamplificationfrompartialreflections"。
 syntax: 'function AmpAmpObliviousByReflectionPhases (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, targetStateReflection : Microsoft.Quantum.Oracles.ReflectionOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle) : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)'
 input:
@@ -36,9 +36,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: d9467ed6500491a512534bd686e0deb027e84bb8
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1816d05bd176907ef5005e31667da78a6275ac5c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675380"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339756"

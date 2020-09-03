@@ -2,13 +2,13 @@
 uid: microsoft.quantum.chemistry.jordanwigner.optimizedbetermindex
 name: OptimizedBETermIndex
 type: newtype
-namespace: Microsoft.Quantum.Chemistry.JordanWigner
+namespace: microsoft.quantum.chemistry.jordanwigner
 summary: 优化的块编码算法中的术语数据。
 syntax: newtype OptimizedBETermIndex = (Double, Bool, Bool[], Bool[], Int[], Int[]);
 metadata:
-  ms.openlocfilehash: 2213d1d4034559467a50b3542853fab2d70367b3
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 78980ab01be2203332a1141f9fc15a9d67a3603f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82665577"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339467"

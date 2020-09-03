@@ -2,11 +2,11 @@
 uid: microsoft.quantum.canon.ccontrolledca
 name: CControlledCA
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
-  给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果`false`为，则不执行任何操作。
+  给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果为，则不 `false` 执行任何操作。
 
-  修饰符`CA`指示该操作是可控制的且 adjointable。
+  修饰符 `CA` 指示该操作是可控制的且 adjointable。
 syntax: "function CControlledCA (op : ('T => Unit is Ctl + Adj)) : ((Bool, 'T) => Unit is Ctl + Adj)"
 input:
   content: "(op : ('T => Unit is Ctl + Adj))"
@@ -49,9 +49,9 @@ typeParameters:
 seeAlso:
 - microsoft.quantum.canon.ccontrolled
 metadata:
-  ms.openlocfilehash: a0a30761119d661d759f585d4ce4f6a4e7b30f94
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7b8b96c1a7b3095b6f81ab1c74ccbc6d759c498d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675868"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356790"

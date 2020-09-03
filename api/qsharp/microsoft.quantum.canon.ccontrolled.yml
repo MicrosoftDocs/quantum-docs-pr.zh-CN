@@ -2,8 +2,8 @@
 uid: microsoft.quantum.canon.ccontrolled
 name: CControlled
 type: function
-namespace: Microsoft.Quantum.Canon
-summary: 给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果`false`为，则不执行任何操作。
+namespace: microsoft.quantum.canon
+summary: 给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果为，则不 `false` 执行任何操作。
 syntax: "function CControlled (op : ('T => Unit)) : ((Bool, 'T) => Unit)"
 input:
   content: "(op : ('T => Unit))"
@@ -42,9 +42,9 @@ seeAlso:
 - microsoft.quantum.canon.ccontrolleda
 - microsoft.quantum.canon.ccontrolledca
 metadata:
-  ms.openlocfilehash: ed9e5a80bdb0678b21165ecc710f56cccdbbe76d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 4496692b56ecb860e4039c88ff358cbb842c75e0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675915"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356824"
