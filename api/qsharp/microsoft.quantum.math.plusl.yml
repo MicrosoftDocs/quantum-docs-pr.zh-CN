@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.plusl
 name: PlusL
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个输入之和。
 syntax: 'function PlusL (a : BigInt, b : BigInt) : BigInt'
 input:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: debd846b86b86787459df010d214de9416021840
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 90d359895133171b9fcfa227902d90a6a17a0ebe
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684061"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333517"

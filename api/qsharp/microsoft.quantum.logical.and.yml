@@ -2,10 +2,10 @@
 uid: microsoft.quantum.logical.and
 name: And
 type: function
-namespace: Microsoft.Quantum.Logical
+namespace: microsoft.quantum.logical
 summary: 返回两个值的布尔值。
 remarks: >-
-  与`and`运算符不同，此函数不会进行短路，因此，这两个输入都是完全计算的。
+  与 `and` 运算符不同，此函数不会进行短路，因此，这两个输入都是完全计算的。
 
 
   最多短路行为，如下所示：
@@ -33,13 +33,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: '`true`当且仅当`a`和`b`都是`true`时。'
+  - summary: '`true` 当且仅当 `a` 和 `b` 都是时 `true` 。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 01c26ef3804d484d2cfbd6f54261ad80b8f66594
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 79d3e2fb5499e10a73c4ead1c19d36f09b721f98
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674092"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346267"

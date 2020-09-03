@@ -2,17 +2,17 @@
 uid: microsoft.quantum.intrinsic.rfrac
 name: RFrac
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: >-
   通过指定为 dyadic 分数的角度，对给定 Pauli 轴进行旋转。
 
 
-  \begin{align} R_ {\mu} （n，k） \mathrel{： =} e ^ {i \pi n \ sigma_ {\mu}/2 ^ k}，\end{align} 其中，$ \mu \{\in i，X，Y，\}Z $。
+  \begin{align} R_ {\mu} (n，k) \mathrel{： =} e ^ {i \pi n \ sigma_ {\mu}/2 ^ k}，\end{align} 其中，$ \mu \in \{ i，X，Y，Z \} $。
 
 
   > [!WARNING]
 
-  > 此操作使用中**opposite** @"microsoft.quantum.intrinsic.r"的相反符号约定。
+  > 此操作使用中的 **相反** 符号约定 @"microsoft.quantum.intrinsic.r" 。
 remarks: >-
   等效于：
 
@@ -53,9 +53,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: dc9f0ca68e1528ee7a36ef1503785cf60c08567c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 00baacab18c2fa77946abf1f0220da6016b688e6
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683688"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346641"

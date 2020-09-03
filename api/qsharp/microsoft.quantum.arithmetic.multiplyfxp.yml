@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.multiplyfxp
 name: MultiplyFxP
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 将量程寄存器中的两个定点数相乘。
 remarks: 当前实现要求三个固定点数字具有相同的点位置和相同数量的 qubits。
 syntax: 'operation MultiplyFxP (fp1 : Microsoft.Quantum.Arithmetic.FixedPoint, fp2 : Microsoft.Quantum.Arithmetic.FixedPoint, result : Microsoft.Quantum.Arithmetic.FixedPoint) : Unit'
@@ -16,7 +16,7 @@ input:
     summary: 第二个定点数。
     uid: microsoft.quantum.arithmetic.fixedpoint
   - name: result
-    summary: 结果固定点数字，最初必须处于状态 $ \ket{0}$。
+    summary: 结果固定点数字，最初必须处于状态 $ \ket {0} $。
     uid: microsoft.quantum.arithmetic.fixedpoint
 output:
   content: Unit
@@ -27,9 +27,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: b37ca00a41df323f2cab854eecd40c276696cbe4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: c19c5333f936f633427b8fc7d1ce4d1892ea47c5
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679472"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353407"

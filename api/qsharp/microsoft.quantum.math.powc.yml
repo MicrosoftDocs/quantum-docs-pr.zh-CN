@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.powc
 name: PowC
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回一个数的指定幂。
 syntax: 'function PowC (base_ : Microsoft.Quantum.Math.Complex, power : Microsoft.Quantum.Math.Complex) : Microsoft.Quantum.Math.Complex'
 input:
@@ -19,9 +19,9 @@ output:
   - summary: Power $a ^ b $
     uid: microsoft.quantum.math.complex
 metadata:
-  ms.openlocfilehash: cccd8bcbdf64cb8b514b341e7ab318fcdb1dba8a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e919f836891404668ac478599ac491eb7f0272eb
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681590"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333449"

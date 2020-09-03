@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.plusd
 name: PlusD
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个输入之和。
 syntax: 'function PlusD (a : Double, b : Double) : Double'
 input:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: c697d2bcbf7cb3c3afcd9febcc5ee595179fd744
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3af4ac0891e41721383f8bcb8ae8c17b2bafb7ce
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684094"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333670"

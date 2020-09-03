@@ -2,21 +2,21 @@
 uid: microsoft.quantum.arithmetic.phaselittleendian
 name: PhaseLittleEndian
 type: newtype
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   QFT 基础中的小字节端无符号整数。
 
 
   例如，如果 $ \ket{x} $ 为计算基础中的整数 $x $ 的小 endian 编码，则 $ \operatorname{QFTLE} \ket{x} $ 是 QFT 中 $x $ 的编码。
-remarks: 与文档`PhaseLittleEndian`中`PhaseLE`的缩写相同。
+remarks: '`PhaseLittleEndian`与 `PhaseLE` 文档中的缩写相同。'
 syntax: newtype PhaseLittleEndian = Qubit[];
 seeAlso:
 - qft
 - qftle
 metadata:
-  ms.openlocfilehash: a4c547a88ef49de180f68534f4f61fb1062a4764
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 713b3eedf58f08c4a4a721707884aa32973a33b9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679429"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353356"

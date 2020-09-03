@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.pluscp
 name: PlusCP
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个输入之和。
 syntax: 'function PlusCP (a : Microsoft.Quantum.Math.ComplexPolar, b : Microsoft.Quantum.Math.ComplexPolar) : Microsoft.Quantum.Math.ComplexPolar'
 input:
@@ -20,9 +20,9 @@ output:
   - summary: Sum $a + b $。
     uid: microsoft.quantum.math.complexpolar
 metadata:
-  ms.openlocfilehash: af78ad00bf364b58049d2f1e46ca8ac9b07f862a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b46bace9cc60a170db022c776508125c724bca2a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684114"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333687"

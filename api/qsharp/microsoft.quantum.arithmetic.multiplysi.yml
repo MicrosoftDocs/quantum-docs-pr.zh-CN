@@ -2,20 +2,20 @@
 uid: microsoft.quantum.arithmetic.multiplysi
 name: MultiplySI
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
-summary: 将带符号`xs`整数`ys`与有符号整数相乘并将`result`结果存储在中，后者最初必须为零。
+namespace: microsoft.quantum.arithmetic
+summary: 将带符号整数与有符号整数相乘 `xs` `ys` 并将结果存储在中 `result` ，后者最初必须为零。
 syntax: 'operation MultiplySI (xs : Microsoft.Quantum.Arithmetic.SignedLittleEndian, ys : Microsoft.Quantum.Arithmetic.SignedLittleEndian, result : Microsoft.Quantum.Arithmetic.SignedLittleEndian) : Unit'
 input:
   content: '(xs : Microsoft.Quantum.Arithmetic.SignedLittleEndian, ys : Microsoft.Quantum.Arithmetic.SignedLittleEndian, result : Microsoft.Quantum.Arithmetic.SignedLittleEndian)'
   types:
   - name: xs
-    summary: n 位被乘数（SignedLittleEndian）
+    summary: 'n 位被乘数 (SignedLittleEndian) '
     uid: microsoft.quantum.arithmetic.signedlittleendian
   - name: ys
-    summary: n 位乘法器（SignedLittleEndian）
+    summary: 'n 位乘法器 (SignedLittleEndian) '
     uid: microsoft.quantum.arithmetic.signedlittleendian
   - name: result
-    summary: 2n 位结果（SignedLittleEndian）的状态必须为 $ \ket{0}$ 初始。
+    summary: " (SignedLittleEndian) 的2n 位结果必须处于 $ \\ket {0} $ 起初状态。"
     uid: microsoft.quantum.arithmetic.signedlittleendian
 output:
   content: Unit
@@ -26,9 +26,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: b8710ecce1986b43e50a8b0567ae4746bda1589e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e81995b6dfb20ddd3e3e3139831d3cc43bfd60da
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679456"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353390"

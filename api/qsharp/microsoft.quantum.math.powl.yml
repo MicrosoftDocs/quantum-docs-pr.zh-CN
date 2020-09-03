@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.powl
 name: PowL
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回一个数的指定幂。
 syntax: 'function PowL (a : BigInt, power : Int) : BigInt'
 input:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: a7e8722abb7be51c2c4757c1fe1c34cfb0ef040d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5daf93a2afbfffad0cb9af17cc17ad842906023c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683987"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333279"

@@ -2,8 +2,8 @@
 uid: microsoft.quantum.intrinsic.ry
 name: Ry
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
-summary: "按给定角度向 $y $ 轴旋转。\n\n\\begin{align} R_y （\\theta） \\mathrel{： =} e ^ {-i \\theta \\ sigma_y/2} = \\begin{bmatrix} \\cos \\frac{\\theta}{2} &-\\sin \\frac{\\theta}{2} \\\\ \\\\ \\sin \\frac{\\theta}{2} & \\cos \\frac{\\theta}{2} \\end{bmatrix}。  \n\\end{align}"
+namespace: microsoft.quantum.intrinsic
+summary: "按给定角度向 $y $ 轴旋转。\n\n\\begin{align} R_y ( \\theta) \\mathrel{： =} e ^ {-i \\theta \\ sigma_y/2} = \\begin{bmatrix} \\cos \\frac{\\theta} {2} &-\\sin \\frac{\\theta} {2} \\\\ \\\\ \\sin \\frac{\\theta} {2} & \\cos {2} \\frac{\\theta} \\end{bmatrix}。  \n\\end{align}"
 remarks: >-
   等效于：
 
@@ -34,9 +34,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 1f37b16752b9001a5e87f5d16dd0c857264a64a4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 34b03761aff3c4f4ff8da1bc39666a8979dca979
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683631"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346454"

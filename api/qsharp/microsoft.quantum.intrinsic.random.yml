@@ -2,7 +2,7 @@
 uid: microsoft.quantum.intrinsic.random
 name: Random
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: 已不推荐使用随机。 请改用 @"microsoft.quantum.random.drawcategorical"。
 syntax: 'operation Random (probs : Double[]) : Int'
 input:
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: eb8c26f5085dc728c558bb996ebc6cf068fa6cb4
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: def2d92b693304e6fe7650f3d4ea9b40e0cd15dd
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863354"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346726"

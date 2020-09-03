@@ -2,12 +2,12 @@
 uid: microsoft.quantum.math.pnormalized
 name: PNormalized
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: >-
-  规范化中`L(p)`的向量`Double`。
+  规范化中的向量 `Double` `L(p)` 。
 
 
-  也就是说，给定类型`Double[]`的数组 $x $，这将返回一个数组，其中所有元素均除以 $p $-标准 $\|x\|_p $。
+  也就是说，给定类型的数组 $x $ `Double[]` ，这将返回一个数组，其中所有元素均除以 $p $-标准 $ \| x \| _p $。
 syntax: 'function PNormalized (p : Double, array : Double[]) : Double[]'
 input:
   content: '(p : Double, array : Double[])'
@@ -23,16 +23,16 @@ input:
 output:
   content: Double[]
   types:
-  - summary: 由 $p $-标准 $\|x\|_p $ 标准化 $x $ 的数组。
+  - summary: 由 $p $-标准 $ \| x _p $ 标准化 $x $ 的数组 \| 。
     isArray: true
     isPrimitive: true
     uid: Double
 seeAlso:
 - pnorm
 metadata:
-  ms.openlocfilehash: 68697fe159fecfeed0078f95de8d91f825125f41
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 4605ad867b02b240bd5c11bd8a5137b089b5265e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684034"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333466"

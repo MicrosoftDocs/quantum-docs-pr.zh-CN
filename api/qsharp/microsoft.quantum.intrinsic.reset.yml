@@ -2,7 +2,7 @@
 uid: microsoft.quantum.intrinsic.reset
 name: Reset
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: 给定单个 qubit，对其进行度量，并确保其处于 | 0 ⟩状态，以便可以安全地释放它。
 syntax: 'operation Reset (target : Qubit) : Unit'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: c26e69568b237c274341c092cfcb9c023cbd292c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 538a6bc97f42d9d7216a18f3ad288eb9352bed05
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683722"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346692"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.reversedoplea
 name: ReversedOpLEA
 type: function
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 给定一个采用小 endian 输入的操作，将返回采用大字节序输入的新操作。
 syntax: 'function ReversedOpLEA (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj)) : (Microsoft.Quantum.Arithmetic.BigEndian => Unit is Adj)'
 input:
@@ -40,9 +40,9 @@ seeAlso:
 - reversedoplec
 - reversedopleca
 metadata:
-  ms.openlocfilehash: 6265d6cfe4e06a731deee0cdf7279856ae1d7566
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a8865c9924cccfa58b0de28de7990f4f95f35c46
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675178"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353050"
