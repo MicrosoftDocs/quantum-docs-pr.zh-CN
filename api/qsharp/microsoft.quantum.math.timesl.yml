@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.timesl
 name: TimesL
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个输入的乘积。
 syntax: 'function TimesL (a : BigInt, b : BigInt) : BigInt'
 input:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: a8f5c46fb2210f654b9e5104bb22555965beee01
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 0333d1a2f626b44fc823df9f3ea237163b5af16e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685213"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332531"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.squarednorm
 name: SquaredNorm
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: >-
   返回向量的2平方标准。
 
@@ -20,13 +20,13 @@ input:
 output:
   content: Double
   types:
-  - summary: 的2平方标准`array`。
+  - summary: 的2平方标准 `array` 。
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: e370d6d5f21d459bbe37e969776e3722bf14bd9e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a10001eb154b19bacf10fa846ceee8c5c093f1e6
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673571"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332820"

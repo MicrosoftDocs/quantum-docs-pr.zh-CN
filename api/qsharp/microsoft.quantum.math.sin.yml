@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.sin
 name: Sin
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回指定角度的正弦值。
-remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.sin) 。
+remarks: 有关更多详细信息，请参阅 [system.object](https://docs.microsoft.com/dotnet/api/system.math.sin) 。
 syntax: 'function Sin (theta : Double) : Double'
 input:
   content: '(theta : Double)'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 103f223767fd7d32d817c229d4d96d9c20bdcb40
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 506c95ea31f63d8d54900ddfe847ae1a30366aa4
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681445"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332905"

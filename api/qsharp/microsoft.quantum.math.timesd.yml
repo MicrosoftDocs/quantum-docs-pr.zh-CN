@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.timesd
 name: TimesD
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个输入的乘积。
 syntax: 'function TimesD (a : Double, b : Double) : Double'
 input:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: a9933fa762d3da1a359b95374bc05e289934afe6
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6067f90b01660567bef481d808974ae2689c5ab7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685256"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332667"

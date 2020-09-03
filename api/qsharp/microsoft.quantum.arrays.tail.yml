@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.tail
 name: Tail
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 返回数组的最后一个元素。
 syntax: "function Tail (array : 'A[]) : 'A"
 input:
@@ -23,9 +23,9 @@ typeParameters:
 - uid: "'A"
   summary: 数组元素的类型。
 metadata:
-  ms.openlocfilehash: 597b24c8a7dc79fbc5fd52f5cea7cf7cb247d43f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ea636e99911964950bc74e01cdb885e2c3e36780
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680782"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351520"

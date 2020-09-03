@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.reversed
 name: Reversed
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 创建一个数组，该数组包含与输入数组相同的元素，但其顺序相反。
 syntax: "function Reversed (array : 'T[]) : 'T[]"
 input:
@@ -16,7 +16,7 @@ input:
 output:
   content: "'T[]"
   types:
-  - summary: 包含元素`array[Length(array) - 1]`的数组。 `array[0]`.
+  - summary: 包含元素的数组 `array[Length(array) - 1]` 。 `array[0]`.
     isArray: true
     uid: "'T"
     isLocal: true
@@ -24,9 +24,9 @@ typeParameters:
 - uid: "'T"
   summary: 数组元素的类型。
 metadata:
-  ms.openlocfilehash: f7424045ae518a2ea4c91724a0811d1ce5aaabd9
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ee68cb5aa0207b5a09fd02146cda4c0067c79130
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680847"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351707"

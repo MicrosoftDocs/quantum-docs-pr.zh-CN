@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.truncate
 name: Truncate
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 计算一个数字的整数部分。
-remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.truncate) 。
+remarks: 有关更多详细信息，请参阅 [system.object](https://docs.microsoft.com/dotnet/api/system.math.truncate) 。
 syntax: 'function Truncate (a : Double) : Int'
 input:
   content: '(a : Double)'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: fa337a2c02d7e96de73a887f912a5267916e1aea
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 303d791551a57a98db06e7cd62e6726a77cbc9dc
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685238"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332514"

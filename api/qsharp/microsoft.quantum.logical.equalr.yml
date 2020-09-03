@@ -2,7 +2,7 @@
 uid: microsoft.quantum.logical.equalr
 name: EqualR
 type: function
-namespace: Microsoft.Quantum.Logical
+namespace: microsoft.quantum.logical
 summary: 当且仅当两个输入相等时，返回 true。
 remarks: >-
   以下项是等效的：
@@ -30,13 +30,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: '`true`当且仅当`a`等于时`b`。'
+  - summary: '`true` 当且仅当 `a` 等于时 `b` 。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 88ac59dd3a0972e1c43e2d4c7716dcf7403d83c0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: beb31b0eb25f2e2d8e09e774ba7d64d0ee8d13f6
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685897"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89345995"

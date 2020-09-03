@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.timescp
 name: TimesCP
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个输入的乘积。
 syntax: 'function TimesCP (a : Microsoft.Quantum.Math.ComplexPolar, b : Microsoft.Quantum.Math.ComplexPolar) : Microsoft.Quantum.Math.ComplexPolar'
 input:
@@ -20,9 +20,9 @@ output:
   - summary: Product $a \times b $。
     uid: microsoft.quantum.math.complexpolar
 metadata:
-  ms.openlocfilehash: 6ada5bfe0155332a3dc4da12f0e88d4bcf76277e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: fcd3f2375b48fe01b81e6cb56e36c17cbf1c37a0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685264"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332718"

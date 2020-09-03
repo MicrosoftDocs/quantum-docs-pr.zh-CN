@@ -2,7 +2,7 @@
 uid: microsoft.quantum.logical.greaterthand
 name: GreaterThanD
 type: function
-namespace: Microsoft.Quantum.Logical
+namespace: microsoft.quantum.logical
 summary: 当且仅当一个数字大于另一个数字时，返回 true。
 remarks: >-
   以下项是等效的：
@@ -30,13 +30,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: '`true`当且仅当`a`严格大于时`b`。'
+  - summary: '`true` 当且仅当 `a` 严格大于时 `b` 。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 6aab2a2ef67a8d5efa8507144b65eabc35f84405
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 64eb86fce1f1395e9019ef222ee100f4514b742f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685877"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89345859"

@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.signi
 name: SignI
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回指示数字符号的整数。
-remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.sign) 。
+remarks: 有关更多详细信息，请参阅 [system.object](https://docs.microsoft.com/dotnet/api/system.math.sign) 。
 syntax: 'function SignI (a : Int) : Int'
 input:
   content: '(a : Int)'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: c320d9ce4d1e4c79377ac62fcb28fcc52c66c526
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e5cac1e5830ca206be777bf8eb4942997bc8e7c2
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682729"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333058"

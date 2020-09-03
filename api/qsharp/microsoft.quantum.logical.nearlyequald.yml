@@ -2,8 +2,8 @@
 uid: microsoft.quantum.logical.nearlyequald
 name: NearlyEqualD
 type: function
-namespace: Microsoft.Quantum.Logical
-summary: 当且仅当两个输入几乎相等时（即在1e 的容错范围内），将返回 true。
+namespace: microsoft.quantum.logical
+summary: 当且仅当两个输入几乎相等 (即在 1e-12) 的容错范围内时，返回 true。
 remarks: >-
   以下项是等效的：
 
@@ -30,13 +30,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: '`true`当且仅当`a`约等于时`b`。'
+  - summary: '`true` 当且仅当 `a` 约等于时 `b` 。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: dc752d914306cfb4f4bca481af3e6cd7006b644e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3f11baf79c830a9fb85063cd7dc86fbfcd06b07a
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684629"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89345451"

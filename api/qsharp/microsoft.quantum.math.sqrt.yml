@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.sqrt
 name: Sqrt
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回指定数字的平方根。
-remarks: 有关更多详细信息，请参阅[system.object](https://docs.microsoft.com/dotnet/api/system.math.sqrt) 。
+remarks: 有关更多详细信息，请参阅 [system.object](https://docs.microsoft.com/dotnet/api/system.math.sqrt) 。
 syntax: 'function Sqrt (d : Double) : Double'
 input:
   content: '(d : Double)'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 8d9ecefeedfc263cf7c1d143b052ef12c900beb4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1360333a3dd20d8882eae8acd1b21bf7fe866b65
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683247"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332854"
