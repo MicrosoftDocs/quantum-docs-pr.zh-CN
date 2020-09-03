@@ -2,9 +2,9 @@
 uid: microsoft.quantum.characterization.singlequbitprocesstomographymeasurement
 name: SingleQubitProcessTomographyMeasurement
 type: operation
-namespace: Microsoft.Quantum.Characterization
+namespace: microsoft.quantum.characterization
 summary: 根据感兴趣的特定通道，在 Pauli 基础上执行 qubit 进程 tomography 度量。
-remarks: 此操作返回的结果的分布是 qubit 状态 tomography 的一种特殊情况。 让 $ \rho = J （\Lambda）/$2 作为 $ \Lambda $ 的 Choi – Jamiłkowski 状态。 然后，以上分发版与 $ $ \begin{align} \Pr （\texttt{Zero} | \rho;M） = \operatorname{Tr} （M \rho），\end{align} $ $，其中 $M = 2 （\boldone + P） ^ \mathrm{T}/2 \cdot （\boldone + Q）/$2 是对应于 $P $ 和 $Q $ 的有效度量值。
+remarks: 此操作返回的结果的分布是 qubit 状态 tomography 的一种特殊情况。 让 $ \rho = J ( \Lambda) /$2 作为 $ \Lambda $ 的 Choi – Jamiłkowski 状态。 然后，上面的分发与 $ $ \begin{align} \Pr ( \texttt{Zero} |rhoM) = \operatorname{Tr} (M \rho) ，\end{align} $ $，其中 $M = 2 ( \boldone + P) ^ \mathrm{T}/2 \cdot ( \boldone + Q) /$2 是对应于 $P $ 和 $Q $ 的有效度量值。
 syntax: 'operation SingleQubitProcessTomographyMeasurement (preparation : Pauli, measurement : Pauli, channel : (Qubit => Unit)) : Result'
 input:
   content: '(preparation : Pauli, measurement : Pauli, channel : (Qubit => Unit))'
@@ -32,15 +32,15 @@ output:
   content: Result
   types:
   - summary: >-
-      带有概率`Zero` $ $ \begin{align} \Pr （\Texttt{Zero} | \Lambda; 的结果P，Q） = \operatorname{Tr}\left （\frac{\boldone + Q}{2} \Lambda\left [\Frac{\boldone + P}{2} \right] \right）。
+      概率为 `Zero` $ $ \Begin{align} \Pr ( \texttt{zero} | \Lambda; 的结果P，Q) = \operatorname{Tr}\left ( \frac{\boldone + Q} {2} \Lambda\left [\frac{\boldone + P} {2} \right] \right) 。
 
       \end{align} $ $
     isPrimitive: true
     uid: Result
 metadata:
-  ms.openlocfilehash: f554910a414666c6d61a96932a932b9320426360
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 030ca1ba45df6ea1fc37b994c30bd4f862a6b923
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677582"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354240"

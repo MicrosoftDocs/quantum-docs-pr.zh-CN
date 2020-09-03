@@ -2,12 +2,12 @@
 uid: microsoft.quantum.canon.rall1
 name: RAll1
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   执行阶段移位操作。
 
 
-  $R = \boldone-（1-e ^ {i \phi}） \ket{1\cdots 1} \bra{1\cdots 1} $。
+  $R = \boldone- (1-e ^ {i \phi} ) \ket{1\cdots 1} \bra{1\cdots 1} $。
 syntax: 'operation RAll1 (phase : Double, qubits : Qubit[]) : Unit'
 input:
   content: '(phase : Double, qubits : Qubit[])'
@@ -30,9 +30,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 8dbfc158af20385fa4a38279e6f89a84a68ec1e0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 96d422a34a4254aef743da02f28400ba714ee709
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678489"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355702"

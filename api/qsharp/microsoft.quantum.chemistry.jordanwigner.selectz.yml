@@ -2,8 +2,8 @@
 uid: microsoft.quantum.chemistry.jordanwigner.selectz
 name: SelectZ
 type: operation
-namespace: Microsoft.Quantum.Chemistry.JordanWigner
-summary: 一种单一 $U $，它对索引状态 $ \ket{p} $ $p 上 $Z 的 qubits $ 也就是说，$ $ \begin{align} U\ket {p} \ 票证 {\ psi} = \ket{p}Z\_p\ket {\ psi} \end{align} $ $
+namespace: microsoft.quantum.chemistry.jordanwigner
+summary: 一种单一 $U $，它对索引状态 $ \ket{p} $ $p 上 $Z 的 qubits $ 也就是说，$ $ \begin{align} U\ket {p} \ 票证 {\ psi} = \ket{p}Z \_ p\ket {\ psi} \end{align} $ $
 syntax: 'operation SelectZ (indexRegister : Microsoft.Quantum.Arithmetic.LittleEndian, targetRegister : Qubit[]) : Unit'
 input:
   content: '(indexRegister : Microsoft.Quantum.Arithmetic.LittleEndian, targetRegister : Qubit[])'
@@ -25,9 +25,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 4577f684260e3f0898dac1c2dd0794323deaa98e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 915adc14764c84f5d914164535aba7caf5ef9d05
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82663249"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339110"

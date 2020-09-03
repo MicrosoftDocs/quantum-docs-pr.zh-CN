@@ -2,20 +2,20 @@
 uid: microsoft.quantum.canon.multiplexoperationsfromgenerator
 name: MultiplexOperationsFromGenerator
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   应用 $U $ 的乘法控制的单一操作，该操作将应用单一 $V _j $，由 n qubit number state $ \ket{j} $ 控制。
 
 
   $U = \sum ^ {N-1} _ {j = 0} \ket{j}\bra{j}\otimes V_j $。
-remarks: '`coefficients`如果指定少于 $ 2 ^ n $，则将用标识元素填充。 此实现使用 $n-$1 辅助 qubits。'
+remarks: '`coefficients` 如果指定少于 $ 2 ^ n $，则将用标识元素填充。 此实现使用 $n-$1 辅助 qubits。'
 syntax: "operation MultiplexOperationsFromGenerator (unitaryGenerator : (Int, (Int -> ('T => Unit is Adj + Ctl))), index : Microsoft.Quantum.Arithmetic.LittleEndian, target : 'T) : Unit"
 references: '- [*Andrew，Childs，Dmitri Maslov，Yunseong，Neil*，Ross，人民币元 Su，arXiv：1711.10980](https://arxiv.org/abs/1711.10980)'
 input:
   content: "(unitaryGenerator : (Int, (Int -> ('T => Unit is Adj + Ctl))), index : Microsoft.Quantum.Arithmetic.LittleEndian, target : 'T)"
   types:
   - name: unitaryGenerator
-    summary: 一个元组，其中第`Int`一个元素是 unitaries $N $ 的数量，第二个`(Int -> ('T => () is Adj + Ctl))`元素是在 $ [0，N-1] $ 中采用整数 $j $ 并输出单一运算 $V _j $ 的函数。
+    summary: 一个元组，其中第一个元素 `Int` 是 unitaries $N $ 的数量，第二个元素 `(Int -> ('T => () is Adj + Ctl))` 是在 $ [0，N-1] $ 中采用整数 $j $ 并输出单一运算 $V _j $ 的函数。
     types:
     - isPrimitive: true
       uid: Int
@@ -54,9 +54,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: b9599723cf6296367412a5603f4b36a3d610acc5
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 456bb3a91d5e996b0af3e40676803984482f91ea
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678790"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355941"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerfermionfunction
 name: JordanWignerFermionFunction
 type: function
-namespace: Microsoft.Quantum.Chemistry.JordanWigner
+namespace: microsoft.quantum.chemistry.jordanwigner
 summary: 将 dynamical 生成器表示为一组 simulatable 入口和 JordanWigner 中的扩展。
 syntax: 'function JordanWignerFermionFunction (generatorIndex : Microsoft.Quantum.Simulation.GeneratorIndex) : Microsoft.Quantum.Simulation.EvolutionUnitary'
 input:
@@ -14,12 +14,12 @@ input:
 output:
   content: Microsoft.Quantum.Simulation.EvolutionUnitary
   types:
-  - summary: ， `EvolutionUnitary`它表示 "generatorIndex" 中引用的术语的时间演变。
+  - summary: ， `EvolutionUnitary` 它表示 "generatorIndex" 中引用的术语的时间演变。
     uid: microsoft.quantum.simulation.evolutionunitary
 metadata:
-  ms.openlocfilehash: 2156f656dfff7663113ae63a625e0ce81955b65e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 0d571e93b8ca67ab9990fb178f70350318cb8b6f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82667301"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353815"

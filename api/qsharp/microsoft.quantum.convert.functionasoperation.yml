@@ -2,7 +2,7 @@
 uid: microsoft.quantum.convert.functionasoperation
 name: FunctionAsOperation
 type: function
-namespace: Microsoft.Quantum.Convert
+namespace: microsoft.quantum.convert
 summary: >-
   将函数转换为操作。
 
@@ -27,7 +27,7 @@ input:
 output:
   content: ('Input => 'Output)
   types:
-  - summary: 与所有`op` `input`相同`fn(input)`的`op(input)`操作。
+  - summary: 与 `op` `op(input)` 所有相同的操作 `fn(input)` `input` 。
     isOperation: true
     input:
       types:
@@ -43,9 +43,9 @@ typeParameters:
 - uid: "'Output"
   summary: 要转换的函数的输出类型。
 metadata:
-  ms.openlocfilehash: a1383f44c1515e60cde3ee44f8daf3c53a621839
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6e5d92c4aeae43707fc21cfa116e1c375160e0b3
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82659525"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338583"

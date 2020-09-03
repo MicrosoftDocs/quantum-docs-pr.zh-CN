@@ -2,7 +2,7 @@
 uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerfermionevolutionset
 name: JordanWignerFermionEvolutionSet
 type: function
-namespace: Microsoft.Quantum.Chemistry.JordanWigner
+namespace: microsoft.quantum.chemistry.jordanwigner
 summary: 将 dynamical 生成器表示为一组 simulatable 入口和 JordanWigner 中的扩展。
 syntax: 'function JordanWignerFermionEvolutionSet () : Microsoft.Quantum.Simulation.EvolutionSet'
 input:
@@ -11,12 +11,12 @@ input:
 output:
   content: Microsoft.Quantum.Simulation.EvolutionSet
   types:
-  - summary: 一个`EvolutionSet` ，它将`GeneratorIndex` JordanWigner 基础的映射到 "EvolutionUnitary"。
+  - summary: 一个 `EvolutionSet` ，它将 `GeneratorIndex` JordanWigner 基础的映射到 "EvolutionUnitary"。
     uid: microsoft.quantum.simulation.evolutionset
 metadata:
-  ms.openlocfilehash: a28058b9327d1ad9ef59a727567e5c03dc8312aa
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6a3cac4e512d41f9e512c157a3615e90835b9b08
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82667328"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353883"

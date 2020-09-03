@@ -2,7 +2,7 @@
 uid: microsoft.quantum.convert.boolarrayasint
 name: BoolArrayAsInt
 type: function
-namespace: Microsoft.Quantum.Convert
+namespace: microsoft.quantum.convert
 summary: 从 little endian 格式的位字符串生成一个正整数。
 syntax: 'function BoolArrayAsInt (bits : Bool[]) : Int'
 input:
@@ -19,9 +19,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: d2c07120712802203e5463f35245ecf01297f94c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7a2384b6abd51e67142cbb3b43d0998012b0ebd0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82661396"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338889"

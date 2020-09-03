@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.modularmultiplybyconstantle
 name: ModularMultiplyByConstantLE
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: ModularMultiplyByConstantLE 已被弃用。 请改用 @"microsoft.quantum.arithmetic.multiplybymodularinteger"。
 syntax: 'operation ModularMultiplyByConstantLE (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
@@ -25,9 +25,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 1b6fd8fd1a62b13ef773d617e392b45c604440ea
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 807818daed604e78643609e0aa2f87402c286754
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678894"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356059"

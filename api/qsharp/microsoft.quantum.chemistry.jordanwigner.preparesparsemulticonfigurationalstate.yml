@@ -2,7 +2,7 @@
 uid: microsoft.quantum.chemistry.jordanwigner.preparesparsemulticonfigurationalstate
 name: PrepareSparseMultiConfigurationalState
 type: operation
-namespace: Microsoft.Quantum.Chemistry.JordanWigner
+namespace: microsoft.quantum.chemistry.jordanwigner
 summary: 通过将 excitations 添加到初始试用状态，对试用状态进行稀疏的多配置状态准备。
 syntax: 'operation PrepareSparseMultiConfigurationalState (initialStatePreparation : (Qubit[] => Unit), excitations : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerInputState[], qubits : Qubit[]) : Unit'
 input:
@@ -35,9 +35,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 54d7bbbc0909279d9617b9e7cd523e998db5874a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: cb4a90a4686c26139f956ae7438fd1da6b38897b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82664919"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339297"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.chemistry.jordanwigner.vqe.measurementoperators
 name: MeasurementOperators
 type: function
-namespace: Microsoft.Quantum.Chemistry.JordanWigner.VQE
+namespace: microsoft.quantum.chemistry.jordanwigner.vqe
 summary: 计算计算 Wigner 条款预期所需的所有度量运算符。
 syntax: 'function MeasurementOperators (nQubits : Int, indices : Int[], termType : Int) : Pauli[][]'
 input:
@@ -24,16 +24,16 @@ input:
 output:
   content: Pauli[][]
   types:
-  - summary: 度量运算符数组（每个都是 Pauli 的数组）。
+  - summary: 度量运算符数组 (每个都是 Pauli) 的数组。
     isArray: true
     types:
     - isArray: true
       isPrimitive: true
       uid: Pauli
 metadata:
-  ms.openlocfilehash: cae0c641ca24e81d6c5ce4c3293e33ba0adb8f22
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: fa0907d1e9087065169f3d2b4505851d325fb520
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82662246"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338974"

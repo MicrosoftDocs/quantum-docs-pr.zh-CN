@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.operationpow
 name: OperationPow
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   引发幂运算。
 
@@ -48,9 +48,9 @@ seeAlso:
 - microsoft.quantum.canon.operationpowa
 - microsoft.quantum.canon.operationpowca
 metadata:
-  ms.openlocfilehash: 3f89dedcfb83e01a8a797cfd143fa7036b3086df
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a2524d8182046d14c6bfc6ce1867f58eba50e9e6
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678710"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355926"

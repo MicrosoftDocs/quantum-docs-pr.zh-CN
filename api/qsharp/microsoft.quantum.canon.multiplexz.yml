@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.multiplexz
 name: MultiplexZ
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   对 qubits 数组应用 Pauli Z 旋转。
 
@@ -15,9 +15,9 @@ summary: >-
   $ $ \begin{align} U = \sum ^ {2 ^ n-1} _ {j = 0} \ket{j}\bra{j} \otimes e ^ {i Z \ theta_j}。
 
   \end{align} $ $
-remarks: '`coefficients`如果指定少于 $ 2 ^ n $，则将用元素 $ \ theta_j = $0.0 填充。'
+remarks: '`coefficients` 如果指定少于 $ 2 ^ n $，则将用元素 $ \ theta_j = $0.0 填充。'
 syntax: 'operation MultiplexZ (coefficients : Double[], control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit'
-references: '- 量程逻辑电路的合成 Vivek Shende、Stephen Bullock、Igor Markovhttps://arxiv.org/abs/quant-ph/0406176'
+references: '- 量程逻辑电路的合成 Vivek Shende、Stephen Bullock、Igor Markov https://arxiv.org/abs/quant-ph/0406176'
 input:
   content: '(coefficients : Double[], control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit)'
   types:
@@ -44,9 +44,9 @@ functors:
 seeAlso:
 - approximatelymultiplexz
 metadata:
-  ms.openlocfilehash: 3549830aeeca9aa6254a203261245e4c0e356a41
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2049e27565cc02dba5e698ddc32a76522e20a8ef
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678764"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355906"

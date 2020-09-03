@@ -2,7 +2,7 @@
 uid: microsoft.quantum.chemistry.jordanwigner.vqe.estimatetermexpectation
 name: EstimateTermExpectation
 type: operation
-namespace: Microsoft.Quantum.Chemistry.JordanWigner.VQE
+namespace: microsoft.quantum.chemistry.jordanwigner.vqe
 summary: >-
   计算与给定约旦 Wigner Hamiltonian 术语关联的能量
 
@@ -55,9 +55,9 @@ output:
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 6ddaa0c9385815d878f23048ae4787d93f36beca
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d39089e9d517d9f0abb701b92914f773523310e7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82662879"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339008"
