@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.randomint
 name: RandomInt
 type: operation
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: RandomInt 已被弃用。 请改用 @"microsoft.quantum.random.drawrandomint"。
 syntax: 'operation RandomInt (maxInt : Int) : Int'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: aacaa92c47492e49544241bd7a47519ce8413fe8
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 6e9b627e161c335febf817f764ae931b415f64f8
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863516"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333228"

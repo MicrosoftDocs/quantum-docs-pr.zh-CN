@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.randomsinglequbitpauli
 name: RandomSingleQubitPauli
 type: operation
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: RandomSingleQubitPauli 已被弃用。 请改用 @"microsoft.quantum.random.drawrandompauli"。
 syntax: 'operation RandomSingleQubitPauli () : Pauli'
 input:
@@ -14,9 +14,9 @@ output:
   - isPrimitive: true
     uid: Pauli
 metadata:
-  ms.openlocfilehash: efe0aa48a13ce7fdfb5ec05ade0e7b6fbfece519
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 35ee284f0d8d558c98569d5e1f954a2612c60d66
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863555"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333143"

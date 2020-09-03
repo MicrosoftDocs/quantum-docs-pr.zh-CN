@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.powi
 name: PowI
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回一个数的指定幂。
 syntax: 'function PowI (a : Int, power : Int) : Int'
 input:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 343ca99cc9be6edbdb0a8f76a908d1ec2846b7ba
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 67bb6ac1868872cd3064ade850aa2fda2f04dc35
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681567"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333364"

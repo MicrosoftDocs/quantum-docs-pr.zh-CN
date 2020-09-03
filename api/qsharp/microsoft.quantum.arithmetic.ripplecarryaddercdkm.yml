@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.ripplecarryaddercdkm
 name: RippleCarryAdderCDKM
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   可逆的就地波纹-包含两个整数。
 
@@ -35,9 +35,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: a72b9fe01846bbdb0b3cb6079a681104904747df
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: c9cda7c3e4a5c6396144d4388ae7246de602fab7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84326489"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89352965"

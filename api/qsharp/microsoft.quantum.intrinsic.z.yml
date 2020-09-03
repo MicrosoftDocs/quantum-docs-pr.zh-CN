@@ -2,7 +2,7 @@
 uid: microsoft.quantum.intrinsic.z
 name: Z
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: >-
   将 Pauli $Z $ 入口。
 
@@ -27,9 +27,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 40f917f9cf3208ae66ef5a26c59865ec6e392089
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5e365f71fb5f8a1d07122bb8ee4c919593c046da
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686005"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346301"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.randomintpow2
 name: RandomIntPow2
 type: operation
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: RandomIntPow2 已被弃用。 请改用 @"microsoft.quantum.random.drawrandomint"。
 syntax: 'operation RandomIntPow2 (maxBits : Int) : Int'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 61072e350facbf17b13aab9551210d00487cce40
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 7cc56e3a4e943b6c53053c3a0978c33c9f2b3021
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863591"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333245"

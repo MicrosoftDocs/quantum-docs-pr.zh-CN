@@ -2,19 +2,19 @@
 uid: microsoft.quantum.intrinsic.r1frac
 name: R1Frac
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: >-
-  通过指定为 dyadic 分数的角度{1}，将关于 $ \ket $ 状态的旋转。
+  {1}通过指定为 dyadic 分数的角度，将关于 $ \ket $ 状态的旋转。
 
 
-  \begin{align} R_1 （n，k） \mathrel{： =} \operatorname{diag} （1，e ^ {i \pi k/2 ^ n}）。
+  \begin{align} R_1 (n，k) \mathrel{： =} \operatorname{diag} (1，e ^ {i \pi k/2 ^ n} ) 。
 
   \end{align}
 
 
   > [!WARNING]
 
-  > 此操作使用**相反**的符号约定@"microsoft.quantum.intrinsic.r"，不包括中的 $ 1/2 $ 的因子。 @"microsoft.quantum.intrinsic.r1"
+  > 此操作使用 **相反** 的符号约定，不包括中的 @"microsoft.quantum.intrinsic.r" $ 1/2 $ 的因子 @"microsoft.quantum.intrinsic.r1" 。
 remarks: >-
   等效于：
 
@@ -51,9 +51,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 45fa756e94be8b580c909004016e0f40861111c1
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1cfaf195a3c811d43df50548771759f6dbf3fdc6
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683736"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346743"

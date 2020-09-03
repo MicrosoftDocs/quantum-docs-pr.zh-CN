@@ -2,8 +2,8 @@
 uid: microsoft.quantum.arithmetic.multiplyi
 name: MultiplyI
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
-summary: 将整数`xs`与整数`ys`相乘并将结果存储`result`在中，后者最初必须为零。
+namespace: microsoft.quantum.arithmetic
+summary: 将整数 `xs` 与整数相乘 `ys` 并将结果存储在中 `result` ，后者最初必须为零。
 remarks: >-
   使用标准的移位和添加方法来实现乘法。
 
@@ -13,13 +13,13 @@ input:
   content: '(xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, result : Microsoft.Quantum.Arithmetic.LittleEndian)'
   types:
   - name: xs
-    summary: $n $ bit 被乘数（LittleEndian）
+    summary: '$n $ 被乘数 (LittleEndian) '
     uid: microsoft.quantum.arithmetic.littleendian
   - name: ys
-    summary: $n $-bit 乘数（LittleEndian）
+    summary: '$n $ (LittleEndian) '
     uid: microsoft.quantum.arithmetic.littleendian
   - name: result
-    summary: $ 2n $ bit result （LittleEndian）的状态必须为 $ \ket{0}$ 初始。
+    summary: $ 2n $-bit result (LittleEndian) ，其最初必须处于 $ \ket {0} $ 状态。
     uid: microsoft.quantum.arithmetic.littleendian
 output:
   content: Unit
@@ -30,9 +30,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: fcb55b47c0d5ca82736e8c3da14190daffd2b414
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 67e1ef577bf36cf524d2468bc191d2b381c800df
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679492"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353373"

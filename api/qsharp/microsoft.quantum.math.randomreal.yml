@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.randomreal
 name: RandomReal
 type: operation
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: RandomReal 已被弃用。 请改用 @"microsoft.quantum.random.drawrandomdouble"。
 syntax: 'operation RandomReal (bitsRandom : Int) : Double'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 2cb70e92b47d9233d241eee730337c5fcf709ca8
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 0e88a59f8ac2239362c1fee46de9b0f8c035b6de
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863580"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333160"

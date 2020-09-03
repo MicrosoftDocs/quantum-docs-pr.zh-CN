@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.powd
 name: PowD
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回乘幂 y 的数字 x。
-remarks: 有关更多详细信息，请参阅[Pow](https://docs.microsoft.com/dotnet/api/system.math.pow) 。
+remarks: 有关更多详细信息，请参阅 [Pow](https://docs.microsoft.com/dotnet/api/system.math.pow) 。
 syntax: 'function PowD (x : Double, y : Double) : Double'
 input:
   content: '(x : Double, y : Double)'
@@ -21,9 +21,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 0cc5b5b8aef1c511e5dd8c7e45284c7f73a84a04
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3a0d3953657e28d509d5f5a4e1773d134e27d028
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684005"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333416"

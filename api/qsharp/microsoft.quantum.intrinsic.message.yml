@@ -2,7 +2,7 @@
 uid: microsoft.quantum.intrinsic.message
 name: Message
 type: function
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: 在日志中记录消息。
 remarks: 此函数的特定行为与模拟器相关，但在大多数情况下，会将给定消息写入控制台。
 syntax: 'function Message (msg : String) : Unit'
@@ -19,9 +19,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: b089c79752d13d9b35c4d212a5ffeeed49d100e5
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 807ab3fa3b305f9ddf5afec2c4a84921ccb2b7aa
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674146"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346811"

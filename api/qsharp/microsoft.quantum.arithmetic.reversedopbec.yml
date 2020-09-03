@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.reversedopbec
 name: ReversedOpBEC
 type: function
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 给定一个采用大字节序输入的操作，将返回采用小 endian 输入的新操作。
 syntax: 'function ReversedOpBEC (op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit is Ctl)) : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Ctl)'
 input:
@@ -40,9 +40,9 @@ seeAlso:
 - reversedopbea
 - reversedopbeca
 metadata:
-  ms.openlocfilehash: 59b7da22eeaf9f6abe272f50b10201ad975b0411
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 4f1dbb7c928d535e03a55dc143569759023f7838
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676720"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353135"

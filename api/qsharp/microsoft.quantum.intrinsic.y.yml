@@ -2,7 +2,7 @@
 uid: microsoft.quantum.intrinsic.y
 name: Y
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: >-
   将 Pauli $Y $ 入口。
 
@@ -27,9 +27,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 6e5f5b35541b8eebc8cd0168e5665a39a75eb7b1
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e2ca288480d4271f633526f29c861fdcbb4d7412
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686011"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346335"
