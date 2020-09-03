@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.modi
 name: ModI
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回与另一个数字相关的数字的模数。
 syntax: 'function ModI (a : Int, b : Int) : Int'
 input:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 28512e3eee87edb1c05574fb12483b4b54e17f45
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e0d351bc3164ec5f5eb08d1d41f1c1ef80953ddd
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686702"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334163"

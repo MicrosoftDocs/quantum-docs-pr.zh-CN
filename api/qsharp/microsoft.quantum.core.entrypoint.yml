@@ -2,13 +2,13 @@
 uid: microsoft.quantum.core.entrypoint
 name: EntryPoint
 type: newtype
-namespace: Microsoft.Quantum.Core
+namespace: microsoft.quantum.core
 summary: 编译器可识别的属性，用于标记可执行文件的入口点。
 syntax: newtype EntryPoint = Unit;
 metadata:
-  ms.openlocfilehash: 82abb7cee1ee120334495da55b1bd096218a4a0e
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: f015094a23935db4f6cf69b20797511bdab03ea6
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85885326"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338005"

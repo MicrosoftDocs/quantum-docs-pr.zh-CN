@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.diagnostics.dumpregister
 name: DumpRegister
 type: function
-namespace: Microsoft.Quantum.Extensions.Diagnostics
+namespace: microsoft.quantum.extensions.diagnostics
 summary: DumpRegister 已被弃用。 请改用 @"microsoft.quantum.diagnostics.dumpregister"。
 syntax: "function DumpRegister (location : 'T, qubits : Qubit[]) : Unit"
 input:
@@ -21,9 +21,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 0bff5abf2a2a6662f7548c86c5c220e681c26c0d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a702ca3ca2e8f27a06ef14f2b19c45af417ec89e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685591"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348902"

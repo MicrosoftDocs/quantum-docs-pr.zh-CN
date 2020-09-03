@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.tanh
 name: Tanh
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: Tanh 已被弃用。 请改用 @"microsoft.quantum.math.tanh"。
 syntax: 'function Tanh (d : Double) : Double'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 78739703dbe311885e06845a305af268362d7937
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 8f613152341b641bd94415a44361201c2846b93c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681855"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347610"

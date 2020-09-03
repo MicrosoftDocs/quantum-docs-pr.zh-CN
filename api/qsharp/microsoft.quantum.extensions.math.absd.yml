@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.absd
 name: AbsD
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: AbsD 已被弃用。 请改用 @"microsoft.quantum.math.absd"。
 syntax: 'function AbsD (a : Double) : Double'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: de1545bcc52ac6dd4ad271eb0bddc353c97cd1bf
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 99f240bb9bd14851dabed4e1621ff6803eb43d3e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685559"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89348885"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.core.default
 name: Default
 type: function
-namespace: Microsoft.Quantum.Core
+namespace: microsoft.quantum.core
 summary: 返回指定类型的默认实例。
 syntax: "function Default () : 'T"
 input:
@@ -18,9 +18,9 @@ typeParameters:
 - uid: "'T"
   summary: 要返回的默认值的类型。
 metadata:
-  ms.openlocfilehash: e7e2177965f247b66cb13a0a033208ad1a4700e9
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 83f08955dc060c29c8033e52a6dd31ccd638abd6
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82658815"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338226"

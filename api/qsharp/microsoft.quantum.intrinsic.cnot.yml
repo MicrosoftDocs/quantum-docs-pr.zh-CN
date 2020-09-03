@@ -2,12 +2,12 @@
 uid: microsoft.quantum.intrinsic.cnot
 name: CNOT
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: >-
-  将受控-NOT （CNOT-CONTAINS）入口应用于一对 qubits。
+  将受控-NOT (CNOT-CONTAINS) 入口应用于一对 qubits。
 
 
-  \begin{align} \operatorname{CNOT} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & \\ \\ 0 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \end{bmatrix}，\end{align}
+  \begin{align} \operatorname{CNOT} \mathrel{： =} \begin{bmatrix} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \end{bmatrix}，\end{align}
 
 
   行和列的排序顺序，如量程概念指南中所示。
@@ -41,9 +41,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: a690d324f8449a953f59eded299547b354da6417
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 76be7211917c6422beb17c1ca4fccb32c4594d17
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683838"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347117"

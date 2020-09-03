@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.modl
 name: ModL
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回与另一个数字相关的数字的模数。
 syntax: 'function ModL (a : BigInt, b : BigInt) : BigInt'
 input:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: bdcfc7793e20b75dddc24fc61b880349eb8e10ed
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e6a04e2969a38305c64fb5cbb299ad258cbdf1e3
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686683"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334112"

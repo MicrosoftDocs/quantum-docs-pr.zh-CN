@@ -2,12 +2,12 @@
 uid: microsoft.quantum.intrinsic.expfrac
 name: ExpFrac
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: >-
   使用由 dyadic 分式给定的自变量对 qubit Pauli 运算符应用指数。
 
 
-  \begin{align} e ^ {i \pi k [P_0 \otimes P_1 \cdots P_ {N-1}]/2 ^ N}，\end{align} 其中 $P _i $ 是的 $i $ th 元素`paulis`，其中 $N = $。`Length(paulis)`
+  \begin{align} e ^ {i \pi k [P_0 \otimes P_1 \cdots P_ {N-1}]/2 ^ N}，\end{align} 其中 $P _i $ 是的 $i $ th 元素 `paulis` ，其中 $N = $ `Length(paulis)` 。
 syntax: 'operation ExpFrac (paulis : Pauli[], numerator : Int, power : Int, qubits : Qubit[]) : Unit'
 input:
   content: '(paulis : Pauli[], numerator : Int, power : Int, qubits : Qubit[])'
@@ -18,11 +18,11 @@ input:
     isPrimitive: true
     uid: Pauli
   - name: numerator
-    summary: Qubit 寄存器旋转角度的 dyadic 分表示法中的分子（$k $）。
+    summary: 分子 ($k $) ，该角度表示 qubit 寄存器要旋转的角度。
     isPrimitive: true
     uid: Int
   - name: power
-    summary: 2的幂（$n $），指定 qubit 寄存器的旋转角度。
+    summary: 两个 (的幂 $n $) 指定 qubit 寄存器旋转角度的分母。
     isPrimitive: true
     uid: Int
   - name: qubits
@@ -39,9 +39,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 61bd52b3bcce87c6bcbf61ebeb52f720e96fe0f0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 9873cc2a15cb458baba9c6984c050974ad4b17d4
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683811"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347049"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.testing.assertqubitstate
 name: AssertQubitState
 type: operation
-namespace: Microsoft.Quantum.Extensions.Testing
+namespace: microsoft.quantum.extensions.testing
 summary: AssertQubitState 已被弃用。 请改用 @"microsoft.quantum.diagnostics.assertqubitisinstatewithintolerance"。
 syntax: 'operation AssertQubitState (expected : (Microsoft.Quantum.Math.Complex, Microsoft.Quantum.Math.Complex), register : Qubit, tolerance : Double) : Unit'
 input:
@@ -24,9 +24,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: d8514fb37ada09f6eea7e38dac7b4bc9b6d41f69
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 119cc63ed5f09f767f6b1952bae24fa1953930d2
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682875"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347321"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.minusl
 name: MinusL
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个输入之间的差。
 syntax: 'function MinusL (a : BigInt, b : BigInt) : BigInt'
 input:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: a473dd5c60fffd63ae70af2bb12df710d8cee65d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: cce95d33f8b5cd7171ff520337936ca8fec754ed
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686713"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334180"

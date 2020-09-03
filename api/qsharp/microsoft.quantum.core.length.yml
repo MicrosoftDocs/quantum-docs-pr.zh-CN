@@ -2,7 +2,7 @@
 uid: microsoft.quantum.core.length
 name: Length
 type: function
-namespace: Microsoft.Quantum.Core
+namespace: microsoft.quantum.core
 summary: 返回数组中的元素数。
 syntax: "function Length (a : 'T[]) : Int"
 input:
@@ -20,9 +20,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 8f2963bafd867a92e46e27a555dea7ea16833cf2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 512162a85117823fcb53327f3611777304134230
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82657961"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338022"

@@ -2,16 +2,16 @@
 uid: microsoft.quantum.chemistry.jordanwigner.jwoptimizedhterms
 name: JWOptimizedHTerms
 type: newtype
-namespace: Microsoft.Quantum.Chemistry.JordanWigner
+namespace: microsoft.quantum.chemistry.jordanwigner
 summary: >-
   从 c # 传递到 Q # 以表示 Hamiltonian 的术语的数据格式。
 
   表示的数据的含义取决于接收数据的算法。
 syntax: newtype JWOptimizedHTerms = (Microsoft.Quantum.Chemistry.HTerm[], Microsoft.Quantum.Chemistry.HTerm[], Microsoft.Quantum.Chemistry.HTerm[], Microsoft.Quantum.Chemistry.HTerm[]);
 metadata:
-  ms.openlocfilehash: ce994e1a01a4c620ef7d1e1c54bb090194e48c96
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e07c91b8c8e0e873529ca1539725884df12a1573
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82666123"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353696"

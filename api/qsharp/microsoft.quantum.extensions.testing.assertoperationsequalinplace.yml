@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.testing.assertoperationsequalinplace
 name: AssertOperationsEqualInPlace
 type: operation
-namespace: Microsoft.Quantum.Extensions.Testing
+namespace: microsoft.quantum.extensions.testing
 summary: AssertOperationsEqualInPlace 已被弃用。 请改用 @"microsoft.quantum.diagnostics.assertoperationsequalinplace"。
 syntax: 'operation AssertOperationsEqualInPlace (actual : (Qubit[] => Unit), expected : (Qubit[] => Unit is Adj), nQubits : Int) : Unit'
 input:
@@ -41,9 +41,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 1c1f22467cfd875d563d523665aedee77f5cf673
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d4df015a3b02b9442d5d7c3fb05fa570ce4ca6d2
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682941"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347423"

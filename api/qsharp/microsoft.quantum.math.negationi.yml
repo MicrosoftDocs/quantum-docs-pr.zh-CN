@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.negationi
 name: NegationI
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回输入的一元求反。
 syntax: 'function NegationI (input : Int) : Int'
 input:
@@ -15,13 +15,13 @@ input:
 output:
   content: Int
   types:
-  - summary: 的一元求反`input`。
+  - summary: 的一元求反 `input` 。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 322f03582958e7acb05afe0f77516771fd570ae4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: f271b048afae88b3af473217d0cf628e26110f36
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686566"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89333840"

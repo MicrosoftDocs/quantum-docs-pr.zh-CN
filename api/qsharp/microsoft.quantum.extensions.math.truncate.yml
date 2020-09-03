@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.math.truncate
 name: Truncate
 type: function
-namespace: Microsoft.Quantum.Extensions.Math
+namespace: microsoft.quantum.extensions.math
 summary: 截断已被弃用。 请改用 @"microsoft.quantum.math.truncate"。
 syntax: 'function Truncate (a : Double) : Int'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: ff85035da375e7c8e5224fd77a3cad861f908f28
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 4390c7b4a05046014148784440c7c03180ae2a85
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681832"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347576"

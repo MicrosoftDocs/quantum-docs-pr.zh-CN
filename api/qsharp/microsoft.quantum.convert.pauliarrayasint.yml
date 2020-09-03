@@ -2,7 +2,7 @@
 uid: microsoft.quantum.convert.pauliarrayasint
 name: PauliArrayAsInt
 type: function
-namespace: Microsoft.Quantum.Convert
+namespace: microsoft.quantum.convert
 summary: 将表示为一个 qubit Pauli 运算符数组的多 qubit Pauli 运算符编码为一个整数。
 remarks: >-
   每个 Pauli 运算符都可以使用两个位进行编码： $ $ \begin{align} \boldone \mapsto 00，\quad X \mapsto 01，\quad Y \mapsto 11，\quad Z \mapsto 10。
@@ -10,7 +10,7 @@ remarks: >-
   \end{align} $ $
 
 
-  给定一个 Pauli 运算符`[P0, ..., Pn]`数组，该函数将返回一个整数，该整数通过以大字节序顺序`bits(Pn) ... bits(P0)`连接每个 Pauli 运算符的映射来形成二进制展开。
+  给定一个 Pauli 运算符数组 `[P0, ..., Pn]` ，该函数将返回一个整数，该整数通过以大字节序顺序连接每个 Pauli 运算符的映射来形成二进制展开 `bits(Pn) ... bits(P0)` 。
 syntax: 'function PauliArrayAsInt (paulis : Pauli[]) : Int'
 input:
   content: '(paulis : Pauli[])'
@@ -23,13 +23,13 @@ input:
 output:
   content: Int
   types:
-  - summary: 唯一标识`paulis`的整数，如下所述。
+  - summary: 唯一标识的整数 `paulis` ，如下所述。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 170218ccf1ec4ee1183a7a69ff1e0969f595cac4
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e0ec584f77489d019a501ff31074e730152218f7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677392"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338284"

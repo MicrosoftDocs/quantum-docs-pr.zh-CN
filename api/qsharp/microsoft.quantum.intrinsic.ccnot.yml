@@ -2,8 +2,8 @@
 uid: microsoft.quantum.intrinsic.ccnot
 name: CCNOT
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
-summary: 将双向受控– NOT （CCNOT）入口应用到三个 qubits。
+namespace: microsoft.quantum.intrinsic
+summary: 将双向受控– NOT (CCNOT) 入口应用到三 qubits。
 remarks: >-
   等效于：
 
@@ -38,9 +38,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 54c2fd68454505187152269e65e827e35cc1a249
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ee04b3d049bef28e2fbf83e1403e6efd1bf163b0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683852"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347134"

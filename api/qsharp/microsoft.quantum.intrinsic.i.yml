@@ -2,8 +2,8 @@
 uid: microsoft.quantum.intrinsic.i
 name: I
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
-summary: 在单个 qubit 上执行标识操作（无操作）。
+namespace: microsoft.quantum.intrinsic
+summary: 在单个 qubit 上执行不含 op)  (的标识操作。
 remarks: 这是一个不能操作的。 提供此方法是为了提供完整的，因为有时在算法中调用标识或将其作为参数传递是非常有用的。
 syntax: 'operation I (target : Qubit) : Unit'
 input:
@@ -21,9 +21,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: f3403e33b859c8fd0943c02126f45327d341be52
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7cd0e0a0cb2f477216c3f85902ce27f65285c82c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683770"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346998"
