@@ -2,7 +2,7 @@
 uid: microsoft.quantum.amplitudeamplification.ampampphasesstandard
 name: AmpAmpPhasesStandard
 type: function
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: AmpAmpPhasesStandard 已被弃用。 请改用 @"microsoft.quantum.amplitudeamplification.standardreflectionphases"。
 syntax: 'function AmpAmpPhasesStandard (nIterations : Int) : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases'
 input:
@@ -16,9 +16,9 @@ output:
   types:
   - uid: microsoft.quantum.amplitudeamplification.reflectionphases
 metadata:
-  ms.openlocfilehash: 2f770a2fea2e3b5e8b321683492ce2b665b4d14a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 83d10951aee9b46bfddb382cd8c238cf3c3aa090
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675356"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339705"

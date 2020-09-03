@@ -240,20 +240,20 @@ newtypes:
     复数的极坐标表示形式为 $c = r e ^ {i t} $。
 - uid: microsoft.quantum.math.fraction
   summary: 表示形式的有理数 `p/q` 。 整数 `p` 是元组的第一个元素， `q` 是元组的第二个元素。
-summary: " # <a name=\"summary\"></a>摘要\n 此命名空间包含传统数学函数和数据类型。"
+summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含传统数学函数和数据类型。"
 operations:
 - uid: microsoft.quantum.math.randomint
-  summary: "\n> [!WARNING]\n> 已放弃\n\nRandomInt 已被弃用。 请改用 @\"microsoft.quantum.random.drawrandomint\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nRandomInt 已被弃用。 请改用 @\"microsoft.quantum.random.drawrandomint\"。"
 - uid: microsoft.quantum.math.randomintpow2
-  summary: "\n> [!WARNING]\n> 已放弃\n\nRandomIntPow2 已被弃用。 请改用 @\"microsoft.quantum.random.drawrandomint\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nRandomIntPow2 已被弃用。 请改用 @\"microsoft.quantum.random.drawrandomint\"。"
 - uid: microsoft.quantum.math.randomreal
-  summary: "\n> [!WARNING]\n> 已放弃\n\nRandomReal 已被弃用。 请改用 @\"microsoft.quantum.random.drawrandomdouble\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nRandomReal 已被弃用。 请改用 @\"microsoft.quantum.random.drawrandomdouble\"。"
 - uid: microsoft.quantum.math.randomsinglequbitpauli
-  summary: "\n> [!WARNING]\n> 已放弃\n\nRandomSingleQubitPauli 已被弃用。 请改用 @\"microsoft.quantum.random.drawrandompauli\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nRandomSingleQubitPauli 已被弃用。 请改用 @\"microsoft.quantum.random.drawrandompauli\"。"
 metadata:
-  ms.openlocfilehash: 9df4513399d0b2d1ac534c7ba106189483ef49cc
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 86740e618edd4a58f9aef339a21b6cacac373689
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88863070"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340011"

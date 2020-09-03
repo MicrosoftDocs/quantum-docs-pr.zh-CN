@@ -2,7 +2,7 @@
 uid: microsoft.quantum.chemistry.jordanwigner.preparesingleconfigurationalstatesinglesiteoccupation
 name: PrepareSingleConfigurationalStateSingleSiteOccupation
 type: operation
-namespace: Microsoft.Quantum.Chemistry.JordanWigner
+namespace: microsoft.quantum.chemistry.jordanwigner
 summary: 通过使用 orbitals 来准备试验状态的简单状态
 syntax: 'operation PrepareSingleConfigurationalStateSingleSiteOccupation (qubitIndices : Int[], qubits : Qubit[]) : Unit'
 input:
@@ -27,9 +27,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 1f4d073162e2896e5c2c7f8503e524aacc0b3101
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6ae72c826058288ba2318b0056cf017e571e216e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82664948"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339382"

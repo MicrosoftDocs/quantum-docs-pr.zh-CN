@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.ignore
 name: Ignore
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 忽略操作或函数的输出。
 syntax: "function Ignore (value : 'T) : Unit"
 input:
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 947d3500035ce8c8787beedb9e7c9d2ace13c7cb
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2cf1168ff6eccf1cb689437177003b24b3ed658b
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679279"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356314"

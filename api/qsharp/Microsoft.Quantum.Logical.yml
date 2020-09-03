@@ -46,7 +46,7 @@ functions:
 - uid: microsoft.quantum.logical.lessthanorequall
   summary: 当且仅当一个数字小于或等于另一个数字时，返回 true。
 - uid: microsoft.quantum.logical.nearlyequald
-  summary: 当且仅当两个输入几乎相等时（即在1e 的容错范围内），将返回 true。
+  summary: 当且仅当两个输入几乎相等 (即在 1e-12) 的容错范围内时，返回 true。
 - uid: microsoft.quantum.logical.not
   summary: 返回值的布尔值求反。
 - uid: microsoft.quantum.logical.notequalb
@@ -64,15 +64,15 @@ functions:
 - uid: microsoft.quantum.logical.notequalr
   summary: 当且仅当两个输入不相等时，返回 true。
 - uid: microsoft.quantum.logical.notnearlyequald
-  summary: 当且仅当两个输入不相等（即，不在1e 的容差中）时，返回 true。
+  summary: 当且仅当两个输入不 (相等时（即，不在 1e-12) 的容差内），将返回 true。
 - uid: microsoft.quantum.logical.or
   summary: 返回两个值的布尔析取。
 - uid: microsoft.quantum.logical.xor
   summary: 返回两个值的布尔互斥析取。
 metadata:
-  ms.openlocfilehash: ece9d3bcc41697efa07101844c0693edfc4bec89
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 0ab7077bc2cdf9bc76f3da701a88869f8bb9bf85
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673206"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340096"

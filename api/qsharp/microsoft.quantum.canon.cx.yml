@@ -2,9 +2,9 @@
 uid: microsoft.quantum.canon.cx
 name: CX
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
-  将受控的 X （CX）入口应用于一对 qubits。
+  将受控-X (CX) 入口应用于一对 qubits。
 
 
   $ $ \begin{align} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \end{align}，$ $，其中的行和列组织为 "量程概念" 指南。
@@ -48,9 +48,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: d5a987001de638b9415a1d5ede1dc88aee7edf0f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 0be3fea70cf8201b6b1877fce688f8104749b424
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680299"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356586"

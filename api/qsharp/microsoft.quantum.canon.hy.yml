@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.hy
 name: HY
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   将 Y 基础模拟应用于交换 Z 轴和 Y 轴的 Hadamard 转换。
 
@@ -10,7 +10,7 @@ summary: >-
   单个 qubit 上的 Y Hadamard 转换 $H _Y = S H $ 为：
 
 
-  \begin{align} H_Y \mathrel{： =} \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ \\ i &-i \end{bmatrix}。
+  \begin{align} H_Y \mathrel{： =} \frac {1} {\sqrt {2} } \begin{bmatrix} 1 & 1 \\ \\ i &-i \end{bmatrix}。
 
   \end{align}
 syntax: 'operation HY (target : Qubit) : Unit'
@@ -30,9 +30,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: ec108cdc5a9d23e6afeba547acb9a8171f65650d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e279ac05dd582b4309d4761cfd655b41de7e4261
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679305"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356331"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.amplitudeamplification.ampampobliviousbyoraclephases
 name: AmpAmpObliviousByOraclePhases
 type: function
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: AmpAmpObliviousByOraclePhases 已被弃用。 请改用 @"microsoft.quantum.amplitudeamplification.obliviousamplitudeamplificationfromstatepreparation"。
 syntax: 'function AmpAmpObliviousByOraclePhases (phases : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases, startStateOracle : Microsoft.Quantum.Oracles.DeterministicStateOracle, signalOracle : Microsoft.Quantum.Oracles.ObliviousOracle, idxFlagQubit : Int) : ((Qubit[], Qubit[]) => Unit is Adj + Ctl)'
 input:
@@ -37,9 +37,9 @@ output:
     - Adjoint
     - Controlled
 metadata:
-  ms.openlocfilehash: c088379c8c57b1a72c321a282422999df0188c4d
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a8bc436f33054fbb174abdbd58f9bee77c14a697
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675385"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339824"

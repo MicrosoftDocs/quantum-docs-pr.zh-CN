@@ -2,8 +2,8 @@
 uid: microsoft.quantum.canon.inplacexorbe
 name: InPlaceXorBE
 type: operation
-namespace: Microsoft.Quantum.Canon
-summary: InPlaceXorBE 已被弃用。 请改用 @ "applyreversedopleca （applyxorinplace （value，_），target）"。
+namespace: microsoft.quantum.canon
+summary: InPlaceXorBE 已被弃用。 请改用 @ "applyreversedopleca (applyxorinplace (值，_) ，目标) "。
 syntax: 'operation InPlaceXorBE (value : Int, target : Microsoft.Quantum.Arithmetic.BigEndian) : Unit'
 input:
   content: '(value : Int, target : Microsoft.Quantum.Arithmetic.BigEndian)'
@@ -22,9 +22,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 44fcbd957888922856856f3dee8b837df5e2edc0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d1f8a3112c760b5166c25d72a266842ee623aace
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679250"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356297"

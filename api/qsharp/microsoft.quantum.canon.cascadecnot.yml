@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.cascadecnot
 name: CascadeCNOT
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: CascadeCNOT 已被弃用。 请改用 @"microsoft.quantum.canon.applycnotchain"。
 syntax: 'operation CascadeCNOT (register : Qubit[]) : Unit'
 input:
@@ -21,9 +21,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: e64677db032e2b13b3fc8536fcd982c2a2d18304
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: a6d3ae8225cc035f9c9658c2bc9028661283a3f1
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675989"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356858"

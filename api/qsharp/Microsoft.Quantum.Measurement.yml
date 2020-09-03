@@ -19,9 +19,9 @@ operations:
 - uid: microsoft.quantum.measurement.settobasisstate
   summary: 通过测量 qubit 并在需要时应用位翻转，将 qubit 设置为给定的计算基础状态。
 metadata:
-  ms.openlocfilehash: 894c0bb7f0b57e9fe04837b89cd57345745df6c5
-  ms.sourcegitcommit: a35498492044be4018b4d1b3b611d70a20e77ecc
+  ms.openlocfilehash: 10d1ca2f2733e22f950cb5d1867bb24a07bd5619
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/03/2020
-  ms.locfileid: "84326619"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339994"

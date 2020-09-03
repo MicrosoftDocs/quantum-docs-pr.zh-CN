@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.fst
 name: Fst
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 给定一对，返回其第一个元素。
 syntax: "function Fst (pair : ('T, 'U)) : 'T"
 input:
@@ -27,9 +27,9 @@ typeParameters:
 - uid: "'U"
   summary: 对的第二个成员的类型。
 metadata:
-  ms.openlocfilehash: e2479e03c87722a34315257966821827aa3cc72e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: fcba34781aa3a39a0d1318f63e00291fff7883b8
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679337"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356348"

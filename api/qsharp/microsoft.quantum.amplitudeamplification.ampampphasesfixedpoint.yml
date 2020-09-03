@@ -2,7 +2,7 @@
 uid: microsoft.quantum.amplitudeamplification.ampampphasesfixedpoint
 name: AmpAmpPhasesFixedPoint
 type: function
-namespace: Microsoft.Quantum.AmplitudeAmplification
+namespace: microsoft.quantum.amplitudeamplification
 summary: AmpAmpPhasesFixedPoint 已被弃用。 请改用 @"microsoft.quantum.amplitudeamplification.fixedpointreflectionphases"。
 syntax: 'function AmpAmpPhasesFixedPoint (nQueries : Int, successMin : Double) : Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases'
 input:
@@ -19,9 +19,9 @@ output:
   types:
   - uid: microsoft.quantum.amplitudeamplification.reflectionphases
 metadata:
-  ms.openlocfilehash: da866115ef135e581ff3f2b857c3fc58bc6c48ff
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: f3bb650823a4e12551264537750584cc74291a08
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82673060"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339722"

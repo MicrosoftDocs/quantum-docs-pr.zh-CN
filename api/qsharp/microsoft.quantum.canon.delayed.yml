@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.delayed
 name: Delayed
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 返回应用给定自变量的给定操作的操作。
 syntax: "function Delayed (op : ('T => 'U), arg : 'T) : (Unit => 'U)"
 input:
@@ -26,7 +26,7 @@ input:
 output:
   content: (Unit => 'U)
   types:
-  - summary: 适用于`op`输入的新操作`arg`
+  - summary: 适用于输入的新操作 `op``arg`
     isOperation: true
     input:
       types:
@@ -47,9 +47,9 @@ seeAlso:
 - microsoft.quantum.canon.delayedca
 - microsoft.quantum.canon.delay
 metadata:
-  ms.openlocfilehash: c7a0d7bb01828c03eff6a7297c9984f7697b7a10
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ce224fafa35dcb2d839a596c719905f4bba9fb2e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675658"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356433"

@@ -2,13 +2,13 @@
 uid: microsoft.quantum.canon.ccnotop
 name: CCNOTop
 type: newtype
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: CCNOT 入口的签名类型。
 syntax: newtype CCNOTop = ((Qubit, Qubit, Qubit) => Unit is Adj);
 metadata:
-  ms.openlocfilehash: 5fd119340e9ae510c8e9b46580f4d3e366d98737
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: cac7e86fa1c2241b3dcffdc814e15549a6e049f3
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675933"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356841"

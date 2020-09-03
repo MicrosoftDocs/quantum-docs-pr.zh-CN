@@ -6,9 +6,9 @@ functions:
   summary: 在日志中记录消息。
 operations:
 - uid: microsoft.quantum.intrinsic.assert
-  summary: "\n> [!WARNING]\n> 已放弃\n\n已弃用断言。 请改用 @\"microsoft.quantum.diagnostics.assertmeasurement\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\n已弃用断言。 请改用 @\"microsoft.quantum.diagnostics.assertmeasurement\"。"
 - uid: microsoft.quantum.intrinsic.assertprob
-  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertProb 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertmeasurementprobability\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\nAssertProb 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertmeasurementprobability\"。"
 - uid: microsoft.quantum.intrinsic.ccnot
   summary: 将双向受控– NOT (CCNOT) 入口应用到三 qubits。
 - uid: microsoft.quantum.intrinsic.cnot
@@ -86,7 +86,7 @@ operations:
 
     > 此操作使用 **相反** 的符号约定，不包括中的 @"microsoft.quantum.intrinsic.r" $ 1/2 $ 的因子 @"microsoft.quantum.intrinsic.r1" 。
 - uid: microsoft.quantum.intrinsic.random
-  summary: "\n> [!WARNING]\n> 已放弃\n\n已不推荐使用随机。 请改用 @\"microsoft.quantum.random.drawcategorical\"。"
+  summary: "\n> [!WARNING]\n> 不推荐使用\n\n已不推荐使用随机。 请改用 @\"microsoft.quantum.random.drawcategorical\"。"
 - uid: microsoft.quantum.intrinsic.reset
   summary: 给定单个 qubit，对其进行度量，并确保其处于 | 0 ⟩状态，以便可以安全地释放它。
 - uid: microsoft.quantum.intrinsic.resetall
@@ -152,9 +152,9 @@ operations:
 
     \end{align}
 metadata:
-  ms.openlocfilehash: 87002c73fd66a4b05e690daec1bed37d09708118
-  ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+  ms.openlocfilehash: 98358ec475358378c2c263166c32f2b76530fd9d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/25/2020
-  ms.locfileid: "88862708"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89340130"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.inplacemajority
 name: InPlaceMajority
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: InPlaceMajority 已被弃用。 请改用 @"microsoft.quantum.arithmetic.applymajorityinplace"。
 syntax: 'operation InPlaceMajority (output : Qubit, input : Qubit[]) : Unit'
 input:
@@ -24,9 +24,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 5caf7bd2667702aef1c1c84f73e02dda37fc4b40
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 51d7ff3fd353fec3e830a91e370ee7e476c036e7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679267"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356280"

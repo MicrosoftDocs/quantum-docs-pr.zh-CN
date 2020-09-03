@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.delayedca
 name: DelayedCA
 type: function
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 返回应用给定自变量的给定操作的操作。
 syntax: "function DelayedCA (op : ('T => Unit is Ctl + Adj), arg : 'T) : (Unit => Unit is Ctl + Adj)"
 input:
@@ -23,13 +23,13 @@ input:
     - Adjoint
     - Controlled
   - name: arg
-    summary: 将操作`op`应用到的输入。
+    summary: 将操作应用到的输入 `op` 。
     uid: "'T"
     isLocal: true
 output:
   content: (Unit => Unit is Ctl + Adj)
   types:
-  - summary: 适用于`op`输入的新操作`arg`
+  - summary: 适用于输入的新操作 `op``arg`
     isOperation: true
     input:
       types:
@@ -49,9 +49,9 @@ seeAlso:
 - microsoft.quantum.canon.delayed
 - microsoft.quantum.canon.delay
 metadata:
-  ms.openlocfilehash: 49f8d45df6b59fa1dec9f0ba42f54f43a48f0ed5
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 0b3bcbc7835135dc7fe2a561dc6ebad7f0a9c7d7
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675616"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356399"
