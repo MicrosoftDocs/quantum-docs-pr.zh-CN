@@ -2,19 +2,19 @@
 uid: microsoft.quantum.canon.noop
 name: NoOp
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
-  对参数执行标识操作（无操作）。
+  对参数执行 (no op) 的标识操作。
 
 
   此操作采用任何类型的值，但不执行任何操作。
 
   这在需要输入操作类型时非常有用，但不应采取任何措施。
 
-  例如，如果特定错误更正症状指示未发生错误， `NoOp<Qubit[]>`则可能是正确的恢复过程。
+  例如，如果特定错误更正症状指示未发生错误， `NoOp<Qubit[]>` 则可能是正确的恢复过程。
 
-  同样，如果某个操作需要状态准备过程作为输入， `NoOp<Qubit[]>`则可使用来准备状态 $ \ket{0 \cdots 0} $。
-remarks: 几乎在所有情况下，都需要显式`NoOp`指定的类型参数。 例如， `NoOp<Qubit>`与相同<xref:microsoft.quantum.intrinsic.i>。
+  同样，如果某个操作需要状态准备过程作为输入，则 `NoOp<Qubit[]>` 可使用来准备状态 $ \ket{0 \cdots 0} $。
+remarks: 几乎在所有情况下，都 `NoOp` 需要显式指定的类型参数。 例如，与 `NoOp<Qubit>` 相同 <xref:microsoft.quantum.intrinsic.i> 。
 syntax: "operation NoOp (input : 'T) : Unit"
 input:
   content: "(input : 'T)"
@@ -34,9 +34,9 @@ functors:
 seeAlso:
 - microsoft.quantum.intrinsic.i
 metadata:
-  ms.openlocfilehash: 74c85340e065929feabb81d7e97339f80255c0f6
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 9af76ff7f2c559aef0f940ff3c56e6f8d8cdbb60
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678724"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355974"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.permutequbits
 name: PermuteQubits
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 使用交换操作 Permutes qubits。
 examples: >-
   给定顺序 = [2，1，0]，并注册 $ \ket{\ alpha_0} \ket{\ alpha_1} \ket{\ alpha_2} $，PermuteQubits 将寄存器更改为 $ \ket{\ alpha_2} \ket{\ alpha_1} \ket{\ alpha_0} $
@@ -40,9 +40,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: e6f0db4538980d47c26a6947223546c4beb3a180
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 017fd0ec49bc9bb0b7f823a942cf6df02a37ce87
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678604"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355804"

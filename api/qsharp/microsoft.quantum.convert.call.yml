@@ -2,7 +2,7 @@
 uid: microsoft.quantum.convert.call
 name: Call
 type: operation
-namespace: Microsoft.Quantum.Convert
+namespace: microsoft.quantum.convert
 summary: >-
   调用具有给定输入的函数。
 
@@ -35,9 +35,9 @@ output:
     uid: "'Output"
     isLocal: true
 metadata:
-  ms.openlocfilehash: 407f1b1e3caf0740cca2eaae479dffdaf57fa614
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3dfed1dfb313ede3ff7f70baadb3b15278d6c9e2
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82660514"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338668"

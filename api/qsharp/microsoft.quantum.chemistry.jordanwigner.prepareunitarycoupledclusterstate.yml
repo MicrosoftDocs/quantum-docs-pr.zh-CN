@@ -2,7 +2,7 @@
 uid: microsoft.quantum.chemistry.jordanwigner.prepareunitarycoupledclusterstate
 name: PrepareUnitaryCoupledClusterState
 type: operation
-namespace: Microsoft.Quantum.Chemistry.JordanWigner
+namespace: microsoft.quantum.chemistry.jordanwigner
 summary: 单一耦合群集状态准备试验状态
 syntax: 'operation PrepareUnitaryCoupledClusterState (initialStatePreparation : (Qubit[] => Unit), clusterOperator : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerInputState[], trotterStepSize : Double, qubits : Qubit[]) : Unit'
 input:
@@ -37,9 +37,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 9f9f3ae3be33e1ec85524acf13b74b9cf60dc99f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1f4308a112aa9855836c038ec061570dcc166ed0
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82663810"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339263"

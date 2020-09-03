@@ -2,7 +2,7 @@
 uid: microsoft.quantum.canon.qftle
 name: QFTLE
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: 对包含小 endian 表示形式整数的量程寄存器执行量程傅立叶转换。
 remarks: 输入和输出假定为 little endian 编码。
 syntax: 'operation QFTLE (qs : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
@@ -23,9 +23,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.qft
 metadata:
-  ms.openlocfilehash: 0c33bf3690a4b2a47a813271aaddfc29cdc09b8b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: def99a3402c63065d37013b348487c1e26c07090
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82678515"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89355753"

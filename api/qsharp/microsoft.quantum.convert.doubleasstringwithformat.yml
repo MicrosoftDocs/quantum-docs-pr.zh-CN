@@ -2,7 +2,7 @@
 uid: microsoft.quantum.convert.doubleasstringwithformat
 name: DoubleAsStringWithFormat
 type: function
-namespace: Microsoft.Quantum.Convert
+namespace: microsoft.quantum.convert
 summary: 使用给定的格式将给定的双精度浮点数转换为等效的字符串表示形式。
 remarks: '有关更多详细信息，请参阅[c # Double。](https://docs.microsoft.com/dotnet/api/system.double.tostring?view=netframework-4.7.1#System_Double_ToString_System_String_)'
 syntax: 'function DoubleAsStringWithFormat (a : Double, fmt : String) : String'
@@ -21,9 +21,9 @@ output:
   - isPrimitive: true
     uid: String
 metadata:
-  ms.openlocfilehash: 7e1f1df7f43b2595345594dbfbddf7734f1cb709
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e8d634b694dd2f8f6148a1f58c840a5dff7e2c93
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82659952"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338617"

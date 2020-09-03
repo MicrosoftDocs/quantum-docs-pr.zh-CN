@@ -2,19 +2,19 @@
 uid: microsoft.quantum.chemistry.jordanwigner.qubitizationoracle
 name: QubitizationOracle
 type: function
-namespace: Microsoft.Quantum.Chemistry.JordanWigner
+namespace: microsoft.quantum.chemistry.jordanwigner
 summary: 返回 Qubitization 操作和运行该操作所需的参数。
 syntax: 'function QubitizationOracle (qSharpData : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerEncodingData) : (Int, (Double, (Qubit[] => Unit is Adj + Ctl)))'
 input:
   content: '(qSharpData : Microsoft.Quantum.Chemistry.JordanWigner.JordanWignerEncodingData)'
   types:
   - name: qSharpData
-    summary: 格式描述的`JordanWignerEncodingData` Hamiltonian。
+    summary: 格式描述的 Hamiltonian `JordanWignerEncodingData` 。
     uid: microsoft.quantum.chemistry.jordanwigner.jordanwignerencodingdata
 output:
   content: (Int, (Double, (Qubit[] => Unit is Adj + Ctl)))
   types:
-  - summary: 元组，其中`Int` ：是已分配的 qubits 数`Double` ，是 Hamiltonian 系数的一种标准，操作是 Qubitization 创建的量程审核。
+  - summary: 元组，其中： `Int` 是已分配的 qubits 数， `Double` 是 Hamiltonian 系数的一种标准，操作是 Qubitization 创建的量程审核。
     types:
     - isPrimitive: true
       uid: Int
@@ -35,9 +35,9 @@ output:
         - Adjoint
         - Controlled
 metadata:
-  ms.openlocfilehash: 9e58837b8f4d59505a321578cbd9f69b4c849627
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: e4aac826537428f5226b83873beb29a06e21dd75
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82663446"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89339161"

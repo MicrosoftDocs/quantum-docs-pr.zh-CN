@@ -2,14 +2,14 @@
 uid: microsoft.quantum.canon.iteratethroughcartesianpower
 name: IterateThroughCartesianPower
 type: operation
-namespace: Microsoft.Quantum.Canon
+namespace: microsoft.quantum.canon
 summary: >-
   以整数范围的笛卡尔幂对每个索引应用操作。
 
 
-  以迭代方式为范围`0..(bound - 1)`的笛卡尔幂的每个元素应用操作。
+  以迭代方式为范围的笛卡尔幂的每个元素应用操作 `0..(bound - 1)` 。
 examples: >-
-  给定一个操作`op`，以下两个代码段是等效的：
+  给定一个操作 `op` ，以下两个代码段是等效的：
 
 
   ```Q#
@@ -39,7 +39,7 @@ input:
   content: '(power : Int, bound : Int, op : (Int[] => Unit))'
   types:
   - name: power
-    summary: 应为范围`0..(bound - 1)`增加的笛卡尔幂。
+    summary: 应为范围增加的笛卡尔幂 `0..(bound - 1)` 。
     isPrimitive: true
     uid: Int
   - name: bound
@@ -66,9 +66,9 @@ output:
 seeAlso:
 - microsoft.quantum.canon.iteratethroughcartesianproduct
 metadata:
-  ms.openlocfilehash: a6f2d0e1f99c6cf7038803271af974a1c5fca465
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ed106ae6d6b84b2b00644709751e57153aec91fb
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82679054"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89356161"

@@ -2,14 +2,14 @@
 uid: microsoft.quantum.chemistry.htermstogensys
 name: HTermsToGenSys
 type: function
-namespace: Microsoft.Quantum.Chemistry
-summary: 将`HTerm[]`数据格式的 Hamiltonian 转换为 GeneratorSystem。
+namespace: microsoft.quantum.chemistry
+summary: 将数据格式的 Hamiltonian 转换 `HTerm[]` 为 GeneratorSystem。
 syntax: 'function HTermsToGenSys (data : Microsoft.Quantum.Chemistry.HTerm[], termType : Int[]) : Microsoft.Quantum.Simulation.GeneratorSystem'
 input:
   content: '(data : Microsoft.Quantum.Chemistry.HTerm[], termType : Int[])'
   types:
   - name: data
-    summary: 输入格式的`HTerm[]`数据。
+    summary: 输入格式的数据 `HTerm[]` 。
     isArray: true
     uid: microsoft.quantum.chemistry.hterm
   - name: termType
@@ -20,12 +20,12 @@ input:
 output:
   content: Microsoft.Quantum.Simulation.GeneratorSystem
   types:
-  - summary: 表示由输入`data`表示的 Hamiltonian 的 GeneratorSystem。
+  - summary: 表示由输入表示的 Hamiltonian 的 GeneratorSystem `data` 。
     uid: microsoft.quantum.simulation.generatorsystem
 metadata:
-  ms.openlocfilehash: de0e035fd51537ab3e70792a8a31b64a7651a14a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1c51930d60a481039ad30c57b3883d23d8a20ab1
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677527"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354155"

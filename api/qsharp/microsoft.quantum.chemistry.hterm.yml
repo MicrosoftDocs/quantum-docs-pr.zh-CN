@@ -2,16 +2,16 @@
 uid: microsoft.quantum.chemistry.hterm
 name: HTerm
 type: newtype
-namespace: Microsoft.Quantum.Chemistry
+namespace: microsoft.quantum.chemistry
 summary: >-
   从 c # 传递到 Q # 以表示 Hamiltonian 的术语的数据格式。
 
   表示的数据的含义取决于接收数据的算法。
 syntax: newtype HTerm = (Int[], Double[]);
 metadata:
-  ms.openlocfilehash: 06a54570477ceaacc2b8e1d3df4094235eebc573
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: d26465a5ebb0218501149a97398e9b4559343f1d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677545"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89354189"

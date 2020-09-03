@@ -2,12 +2,12 @@
 uid: microsoft.quantum.convert.bigintasboolarray
 name: BigIntAsBoolArray
 type: function
-namespace: Microsoft.Quantum.Convert
+namespace: microsoft.quantum.convert
 summary: >-
   将给定的大整数转换为布尔数组。
 
   数组的0元素是大整数的最小有效位。
-remarks: '有关更多详细信息，请参阅[c # BigInteger 构造函数](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.-ctor?view=netframework-4.7.2#System_Numerics_BigInteger__ctor_System_Int64_)。'
+remarks: '有关更多详细信息，请参阅 [c # BigInteger 构造函数](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.-ctor?view=netframework-4.7.2#System_Numerics_BigInteger__ctor_System_Int64_) 。'
 syntax: 'function BigIntAsBoolArray (a : BigInt) : Bool[]'
 input:
   content: '(a : BigInt)'
@@ -22,9 +22,9 @@ output:
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 6375f10b22d555b834a147d2b9efcb6b323642b2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 56ea9bbd2fe99c87439a7120be5651ecefcd290c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82661996"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338940"
