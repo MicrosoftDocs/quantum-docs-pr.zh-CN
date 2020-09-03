@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.modulusi
 name: ModulusI
 type: function
-namespace: Microsoft.Quantum.Math
-summary: 计算`value`模`modulus`的规范 residue。
-remarks: '此函数的行为方式与运算符`%`在 c # 和 Q # 中的行为方式相同，因为结果中始终是一个介于`modulus - 1`0 到之间的正整数，即使值为负。'
+namespace: microsoft.quantum.math
+summary: 计算模的规范 residue `value` `modulus` 。
+remarks: '此函数的行为方式与运算符 `%` 在 c # 和 Q # 中的行为方式相同，因为结果中始终是一个介于0到之间的正整数 `modulus - 1` ，即使值为负。'
 syntax: 'function ModulusI (value : Int, modulus : Int) : Int'
 input:
   content: '(value : Int, modulus : Int)'
@@ -20,13 +20,13 @@ input:
 output:
   content: Int
   types:
-  - summary: 0之间的`value - r`整数 $r $ `modulus - 1` ，这可被模数整除
+  - summary: 0之间的整数 $r $， `modulus - 1` 这可 `value - r` 被模数整除
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: d804caa4e5eba1e8d6293d33164255ea4768900c
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 63d8e1ed1083be193b976ea7c4086f7bfdad7a69
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686640"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334044"

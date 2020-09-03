@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arithmetic.measurefxp
 name: MeasureFxP
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: 度量固定点数字，将其值返回为 Double，并将所有寄存器重置为零。
 syntax: 'operation MeasureFxP (fp : Microsoft.Quantum.Arithmetic.FixedPoint) : Double'
 input:
@@ -17,9 +17,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: e75aedffc516bda5d39358f1b629545d50195fce
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 85efdf3e7c46ea0997d439a03317cfb3f7a9cd16
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676785"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353611"

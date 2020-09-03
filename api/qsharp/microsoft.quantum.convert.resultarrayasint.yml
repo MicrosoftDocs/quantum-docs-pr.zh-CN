@@ -2,7 +2,7 @@
 uid: microsoft.quantum.convert.resultarrayasint
 name: ResultArrayAsInt
 type: function
-namespace: Microsoft.Quantum.Convert
+namespace: microsoft.quantum.convert
 summary: 从结果的字符串中生成一个以 little endian 格式的正整数。
 syntax: 'function ResultArrayAsInt (results : Result[]) : Int'
 input:
@@ -19,9 +19,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 391dce7bbe4e103fdf66c9dedbe46a827d9f7bb0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2c80af1581e4656400bff0e5f07e83368d83f788
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677347"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338243"

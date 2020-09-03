@@ -2,12 +2,12 @@
 uid: microsoft.quantum.convert.maybebigintasint
 name: MaybeBigIntAsInt
 type: function
-namespace: Microsoft.Quantum.Convert
+namespace: microsoft.quantum.convert
 summary: >-
   如果可能，将给定的大整数转换为等效的整数。
 
   当且仅当可以进行转换时，函数将返回生成的整数对以及布尔标志。
-remarks: '有关更多详细信息，请参阅[c # BigInteger 构造函数](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.-ctor?view=netframework-4.7.2#System_Numerics_BigInteger__ctor_System_Int64_)。'
+remarks: '有关更多详细信息，请参阅 [c # BigInteger 构造函数](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.-ctor?view=netframework-4.7.2#System_Numerics_BigInteger__ctor_System_Int64_) 。'
 syntax: 'function MaybeBigIntAsInt (a : BigInt) : (Int, Bool)'
 input:
   content: '(a : BigInt)'
@@ -24,9 +24,9 @@ output:
     - isPrimitive: true
       uid: Bool
 metadata:
-  ms.openlocfilehash: 98bd88315e9a1cbce2770ba82fd0eed18eac73c3
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3764633cf18bb0f8a3bf0d1ebe4619d25a9b80dc
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677402"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338362"

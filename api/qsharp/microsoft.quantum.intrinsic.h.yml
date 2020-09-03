@@ -2,12 +2,12 @@
 uid: microsoft.quantum.intrinsic.h
 name: H
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: >-
   将 Hadamard 转换应用于单个 qubit。
 
 
-  \begin{align} H \mathrel{： =} \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\ \\ 1 &-1 \end{bmatrix}。
+  \begin{align} H \mathrel{： =} \frac {1} {\sqrt {2} } \begin{bmatrix} 1 & 1 \\ \\ 1 &-1 \end{bmatrix}。
 
   \end{align}
 syntax: 'operation H (qubit : Qubit) : Unit'
@@ -27,9 +27,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 4d37e45d0af2daf07a594c8e1ffe8f8b5e5140d1
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 8e93fb217aaf49a88935bb1021dd30c11fa89c3d
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683791"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347015"

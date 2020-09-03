@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.testing.assertallzerotol
 name: AssertAllZeroTol
 type: operation
-namespace: Microsoft.Quantum.Extensions.Testing
+namespace: microsoft.quantum.extensions.testing
 summary: AssertAllZeroTol 已被弃用。 请改用 @"microsoft.quantum.diagnostics.assertallzerowithintolerance"。
 syntax: 'operation AssertAllZeroTol (qubits : Qubit[], tolerance : Double) : Unit'
 input:
@@ -24,9 +24,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 819157c8aa27cddc6f0ab0347b9b076db3986da0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: b551aa884911be9bc2c600331863258f30feff87
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681803"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347491"

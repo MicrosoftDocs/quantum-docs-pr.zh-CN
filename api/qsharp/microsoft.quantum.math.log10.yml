@@ -2,9 +2,9 @@
 uid: microsoft.quantum.math.log10
 name: Log10
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回指定数字以 10 为底的对数。
-remarks: 有关更多详细信息，请参阅[Log10](https://docs.microsoft.com/dotnet/api/system.math.log10) 。
+remarks: 有关更多详细信息，请参阅 [Log10](https://docs.microsoft.com/dotnet/api/system.math.log10) 。
 syntax: 'function Log10 (input : Double) : Double'
 input:
   content: '(input : Double)'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: c7b85ac178392669d3dc4864ffc64cc1c65b6eb7
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 72464bd1c952e247ff12bb4a67c13b9324210dc9
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683310"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334367"

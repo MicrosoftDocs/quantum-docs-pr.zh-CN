@@ -2,7 +2,7 @@
 uid: microsoft.quantum.convert.intasstring
 name: IntAsString
 type: function
-namespace: Microsoft.Quantum.Convert
+namespace: microsoft.quantum.convert
 summary: 将给定整数转换为等效的字符串表示形式。
 remarks: '有关更多详细信息，请参阅[c # Convert。](https://docs.microsoft.com/dotnet/api/system.convert.tostring?view=netframework-4.7.1#System_Convert_ToString_System_Int64_)'
 syntax: 'function IntAsString (a : Int) : String'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: String
 metadata:
-  ms.openlocfilehash: 26264d2de273f434da19e70937bf88e4b8dcc43e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5422e875678e3707cd72f21477087a23c290aff1
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677445"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338328"

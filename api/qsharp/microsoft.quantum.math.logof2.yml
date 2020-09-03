@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.logof2
 name: LogOf2
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回2的自然对数。
 syntax: 'function LogOf2 () : Double'
 input:
@@ -11,13 +11,13 @@ input:
 output:
   content: Double
   types:
-  - summary: 返回一个`Double`等于 $ 0.6931471805599453 $ 的。
+  - summary: 返回一个 `Double` 等于 $ 0.6931471805599453 $ 的。
     isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 26efec659acda2d93921ef6789b56ff2493d4531
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 2ebefb19888eda5ce8d906bf2431719ec0a1f32f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683295"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334248"

@@ -2,14 +2,14 @@
 uid: microsoft.quantum.convert.resultarrayasboolarray
 name: ResultArrayAsBoolArray
 type: function
-namespace: Microsoft.Quantum.Convert
-summary: '`Result[]`将`Bool[]`类型转换为类型，其中`One`映射到`true`并`Zero`映射到。 `false`'
+namespace: microsoft.quantum.convert
+summary: 将 `Result[]` 类型转换为 `Bool[]` 类型，其中 `One` 映射到 `true` 并 `Zero` 映射到 `false` 。
 syntax: 'function ResultArrayAsBoolArray (input : Result[]) : Bool[]'
 input:
   content: '(input : Result[])'
   types:
   - name: input
-    summary: '`Result[]`要转换的。'
+    summary: '`Result[]` 要转换的。'
     isArray: true
     isPrimitive: true
     uid: Result
@@ -21,9 +21,9 @@ output:
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 19a9287931dddf1a302a66cb85d4e925163688ad
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 9eb9414ca3b58dea5c58d0e305a6fddcdf1032c8
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677358"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338260"

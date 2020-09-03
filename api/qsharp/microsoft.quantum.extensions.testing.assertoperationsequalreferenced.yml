@@ -2,7 +2,7 @@
 uid: microsoft.quantum.extensions.testing.assertoperationsequalreferenced
 name: AssertOperationsEqualReferenced
 type: operation
-namespace: Microsoft.Quantum.Extensions.Testing
+namespace: microsoft.quantum.extensions.testing
 summary: AssertOperationsEqualReferenced 已被弃用。 请改用 @"microsoft.quantum.diagnostics.assertoperationsequalreferenced"。
 syntax: 'operation AssertOperationsEqualReferenced (actual : (Qubit[] => Unit), expected : (Qubit[] => Unit is Adj), nQubits : Int) : Unit'
 input:
@@ -41,9 +41,9 @@ output:
   - isPrimitive: true
     uid: Unit
 metadata:
-  ms.openlocfilehash: 0d3ff35e1502d4f82b44abc720fcb3b29fcefda5
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 427ac807a5651b1d9d4c141b6e3b5d42a6f2e257
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82682900"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347371"

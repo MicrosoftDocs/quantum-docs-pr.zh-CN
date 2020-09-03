@@ -2,9 +2,9 @@
 uid: microsoft.quantum.convert.intasdouble
 name: IntAsDouble
 type: function
-namespace: Microsoft.Quantum.Convert
+namespace: microsoft.quantum.convert
 summary: 将给定整数转换为等效的双精度浮点数。
-remarks: '有关更多详细信息，请参阅[c # ToDouble](https://docs.microsoft.com/dotnet/api/system.convert.todouble?view=netframework-4.7.1#System_Convert_ToDouble_System_Int64_) 。'
+remarks: '有关更多详细信息，请参阅 [c # ToDouble](https://docs.microsoft.com/dotnet/api/system.convert.todouble?view=netframework-4.7.1#System_Convert_ToDouble_System_Int64_) 。'
 syntax: 'function IntAsDouble (a : Int) : Double'
 input:
   content: '(a : Int)'
@@ -18,9 +18,9 @@ output:
   - isPrimitive: true
     uid: Double
 metadata:
-  ms.openlocfilehash: 87ae45f7b96fb3c66ef8b49ab6ca297a7ca48871
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 3b80e677e3e41627f6e6ebac1de8a299b2b671af
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82677460"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89338396"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.intrinsic.assert
 name: Assert
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: 已弃用断言。 请改用 @"microsoft.quantum.diagnostics.assertmeasurement"。
 syntax: 'operation Assert (bases : Pauli[], qubits : Qubit[], result : Result, msg : String) : Unit'
 input:
@@ -31,9 +31,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 56e41923bfeaa5ecf10bd47130260c78fbce7970
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: e08270f516b7107fa29a84bc96f1816fddbbdca1
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85885743"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347151"

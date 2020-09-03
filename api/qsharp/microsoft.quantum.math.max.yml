@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.max
 name: Max
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 给定整数数组，返回最大元素。
 syntax: 'function Max (values : Int[]) : Int'
 input:
@@ -16,13 +16,13 @@ input:
 output:
   content: Int
   types:
-  - summary: 的最大元素`values`。
+  - summary: 的最大元素 `values` 。
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: ef6ae2738eac5c0422038a1f6bfa08ef6f503d4e
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: ba661aee2a4db3402449330316d344405a8399f5
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82683284"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334231"

@@ -2,7 +2,7 @@
 uid: microsoft.quantum.intrinsic.assertprob
 name: AssertProb
 type: operation
-namespace: Microsoft.Quantum.Intrinsic
+namespace: microsoft.quantum.intrinsic
 summary: AssertProb 已被弃用。 请改用 @"microsoft.quantum.diagnostics.assertmeasurementprobability"。
 syntax: 'operation AssertProb (bases : Pauli[], qubits : Qubit[], result : Result, prob : Double, msg : String, tol : Double) : Unit'
 input:
@@ -37,9 +37,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: db29d52b79b1e7b5a980f3e3196c5b2547132103
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 872f918f0d425b3e531c4d09825803c88a0bac2f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85885718"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89347168"

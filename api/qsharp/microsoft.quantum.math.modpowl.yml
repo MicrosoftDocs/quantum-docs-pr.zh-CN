@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.modpowl
 name: ModPowL
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 对某个数字进行模块化除法运算，使另一个数字的幂。
 remarks: 有关更多详细信息，请参阅[BigInteger。](https://docs.microsoft.com/dotnet/api/system.numerics.biginteger.modpow)
 syntax: 'function ModPowL (value : BigInt, exponent : BigInt, modulus : BigInt) : BigInt'
@@ -24,9 +24,9 @@ output:
   - isPrimitive: true
     uid: BigInt
 metadata:
-  ms.openlocfilehash: 1c151bec017ded9fa4fba375e4d3332af25b0502
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: dfe48785cf07cbf94f09b3ed91218c9241ec7daf
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82686669"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89334078"
