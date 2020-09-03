@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.swapped
 name: Swapped
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 应用数组中两个元素的交换。
 syntax: "function Swapped (firstIndex : Int, secondIndex : Int, arr : 'T[]) : 'T[]"
 input:
@@ -42,9 +42,9 @@ output:
     uid: "'T"
     isLocal: true
 metadata:
-  ms.openlocfilehash: 0f87061e3f3ef2a310df6a6bdc8c65619356406a
-  ms.sourcegitcommit: a3775921db1dc5c653c97b8fa8fe2c0ddd5261ff
+  ms.openlocfilehash: 5cadb5a93f91fc37aa0c2d2f61c69644e3eff9f6
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/02/2020
-  ms.locfileid: "85884625"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351605"

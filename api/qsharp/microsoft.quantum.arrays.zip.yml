@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.zip
 name: Zip
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 给定两个数组，返回一个新的对数组，以便每个对都包含来自每个原始数组的元素。
 examples: >-
   ```qsharp
@@ -31,7 +31,7 @@ input:
 output:
   content: ('T, 'U)[]
   types:
-  - summary: 一个数组，其中包含每个`(left[idx], right[idx])` `idx`的形式对。 如果两个数组的长度不相等，则输出将与输入的较短内容相同。
+  - summary: 一个数组，其中包含每个的形式对 `(left[idx], right[idx])` `idx` 。 如果两个数组的长度不相等，则输出将与输入的较短内容相同。
     isArray: true
     types:
     - uid: "'T"
@@ -47,9 +47,9 @@ seeAlso:
 - zip3
 - zip4
 metadata:
-  ms.openlocfilehash: ae3a66ee226cdc0e26ec0cc0e87b1822bad45579
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 448a5f66cbb8d927f357d83420c593ee80555705
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675085"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351452"

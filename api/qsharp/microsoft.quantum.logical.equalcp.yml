@@ -2,7 +2,7 @@
 uid: microsoft.quantum.logical.equalcp
 name: EqualCP
 type: function
-namespace: Microsoft.Quantum.Logical
+namespace: microsoft.quantum.logical
 summary: 当且仅当两个输入相等时，返回 true。
 syntax: 'function EqualCP (a : Microsoft.Quantum.Math.ComplexPolar, b : Microsoft.Quantum.Math.ComplexPolar) : Bool'
 input:
@@ -17,13 +17,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: '`true`当且仅当`a`等于时`b`。'
+  - summary: '`true` 当且仅当 `a` 等于时 `b` 。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 4c22fc92aea12e145da4c680fb23bee1e1fbc76f
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 6421bacfd375e846848b37ecf45d3b80685c2480
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82685947"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346063"

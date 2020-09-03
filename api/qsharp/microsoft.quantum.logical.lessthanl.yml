@@ -2,7 +2,7 @@
 uid: microsoft.quantum.logical.lessthanl
 name: LessThanL
 type: function
-namespace: Microsoft.Quantum.Logical
+namespace: microsoft.quantum.logical
 summary: 当且仅当一个数字小于另一个数字时，返回 true。
 remarks: >-
   以下项是等效的：
@@ -30,13 +30,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: '`true`当且仅当`a`严格小于时`b`。'
+  - summary: '`true` 当且仅当 `a` 严格小于时 `b` 。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 9d4f97dc354ae51052c812d6cef3673edee84cb0
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 118c96ec863aff82dcc04be5d8e2b5570657756f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684693"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89345655"

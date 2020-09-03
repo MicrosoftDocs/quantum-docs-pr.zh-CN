@@ -2,7 +2,7 @@
 uid: microsoft.quantum.logical.not
 name: Not
 type: function
-namespace: Microsoft.Quantum.Logical
+namespace: microsoft.quantum.logical
 summary: 返回值的布尔值求反。
 remarks: >-
   以下项是等效的：
@@ -26,13 +26,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: '`true`当且仅当`value`为`false`时。'
+  - summary: '`true` 当且仅当 `value` 为时 `false` 。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 0d2e455b7567a282709711caa6d5a5e59f52100b
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 7d9cf5117273cd565b51815a2487fd9687844b14
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684605"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89345383"

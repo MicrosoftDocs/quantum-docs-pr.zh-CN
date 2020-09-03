@@ -2,7 +2,7 @@
 uid: microsoft.quantum.math.timesi
 name: TimesI
 type: function
-namespace: Microsoft.Quantum.Math
+namespace: microsoft.quantum.math
 summary: 返回两个输入的乘积。
 syntax: 'function TimesI (a : Int, b : Int) : Int'
 input:
@@ -23,9 +23,9 @@ output:
     isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 15961b6bdd40c6c0e841f6c360aed8f01eaddd01
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 5383f360a52bc538247111a91d17c0a280391e2f
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82681428"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89332582"

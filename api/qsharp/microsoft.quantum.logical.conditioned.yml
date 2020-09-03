@@ -2,10 +2,10 @@
 uid: microsoft.quantum.logical.conditioned
 name: Conditioned
 type: function
-namespace: Microsoft.Quantum.Logical
+namespace: microsoft.quantum.logical
 summary: 根据布尔条件的值返回两个值中的一个值。
 remarks: >-
-  与`?|`运算符不同，此函数不会进行短路，因此，这两个输入都是完全计算的。
+  与 `?|` 运算符不同，此函数不会进行短路，因此，这两个输入都是完全计算的。
 
 
   最多短路行为，如下所示：
@@ -27,23 +27,23 @@ input:
     isPrimitive: true
     uid: Bool
   - name: ifTrue
-    summary: 当为`condition` `true`时要返回的值。
+    summary: 当为时要返回的 `condition` 值 `true` 。
     uid: "'T"
     isLocal: true
   - name: ifFalse
-    summary: 当为`condition` `false`时要返回的值。
+    summary: 当为时要返回的 `condition` 值 `false` 。
     uid: "'T"
     isLocal: true
 output:
   content: "'T"
   types:
-  - summary: '`ifTrue`如果`condition`为`true`，则`ifFalse`为; 否则为。'
+  - summary: '`ifTrue` 如果 `condition` 为，则为; `true` `ifFalse` 否则为。'
     uid: "'T"
     isLocal: true
 metadata:
-  ms.openlocfilehash: c5a255fe0434c7dfc9bf49f1a1c9c6be03cd8055
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 98d1cf77257fc79ba12fe383c0c2e49a25bdee10
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82674080"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89346148"

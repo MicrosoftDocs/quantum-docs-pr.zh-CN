@@ -2,17 +2,17 @@
 uid: microsoft.quantum.arrays.subarray
 name: Subarray
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 采用一个数组和一个位置列表，并生成一个新数组，该数组由与给定位置匹配的原始数组的元素构成。
 remarks: >-
-  函数是为泛型类型定义的，即，只要有一个数组`'T[]`和一个定义子数组的位置`Int[]`列表。
+  函数是为泛型类型定义的，即，只要有一个数组 `'T[]` 和一个定义子数组的位置列表 `Int[]` 。
 
   子数组的构造是基于生成给定数组的新深层副本的，而不是维护引用。
 
 
-  如果`Length(indices) < Length(array)`为，则此函数将返回的`array`子集。 另一方面，如果`indices`包含重复的元素，则同样会重复执行的`array`相应元素。
+  如果为 `Length(indices) < Length(array)` ，则此函数将返回的子集 `array` 。 另一方面，如果 `indices` 包含重复的元素，则 `array` 同样会重复执行的相应元素。
 
-  如果`indices`和`array`的长度相同，则此函数将提供`array`。
+  如果 `indices` 和的 `array` 长度相同，则此函数将提供 `array` 。
 syntax: "function Subarray (indices : Int[], array : 'T[]) : 'T[]"
 input:
   content: "(indices : Int[], array : 'T[])"
@@ -23,24 +23,24 @@ input:
     isPrimitive: true
     uid: Int
   - name: array
-    summary: 上`'T`的元素的数组。
+    summary: 上的元素的数组 `'T` 。
     isArray: true
     uid: "'T"
     isLocal: true
 output:
   content: "'T[]"
   types:
-  - summary: 元素的`out`数组，这些元素的索引对应于子数组， `out[idx] == array[indices[idx]]`因此为。
+  - summary: '`out`元素的数组，这些元素的索引对应于子数组，因此为 `out[idx] == array[indices[idx]]` 。'
     isArray: true
     uid: "'T"
     isLocal: true
 typeParameters:
 - uid: "'T"
-  summary: '`array`元素的类型。'
+  summary: 元素的类型 `array` 。
 metadata:
-  ms.openlocfilehash: 2740a39d1b7c1c56aed4f9107c65d339c5fb4c1a
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 1d5739f49e32ec4548cb24df2106dec0866a94cb
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675118"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351622"

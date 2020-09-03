@@ -2,7 +2,7 @@
 uid: microsoft.quantum.arrays.tuplearrayasnestedarray
 name: TupleArrayAsNestedArray
 type: function
-namespace: Microsoft.Quantum.Arrays
+namespace: microsoft.quantum.arrays
 summary: 将2元组的列表转换为嵌套数组。
 syntax: "function TupleArrayAsNestedArray (tupleList : ('T, 'T)[]) : 'T[][]"
 input:
@@ -39,9 +39,9 @@ output:
       uid: "'T"
       isLocal: true
 metadata:
-  ms.openlocfilehash: b583defde468b808cf8b77347bcf37384577b0f9
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 9ef220228f28579791757b371f66a881f537cf4c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82675097"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351486"

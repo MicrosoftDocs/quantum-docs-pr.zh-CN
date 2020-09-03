@@ -2,12 +2,12 @@
 uid: microsoft.quantum.bitwise.and
 name: And
 type: function
-namespace: Microsoft.Quantum.Bitwise
+namespace: microsoft.quantum.bitwise
 summary: >-
   返回两个整数的按位 "与"。
 
-  这会执行与内置`&&&`运算符相同的计算。
-remarks: '有关更多详细信息，请参阅[c # &amp;运算符](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/and-operator)（二进制）。'
+  这会执行与内置运算符相同的计算 `&&&` 。
+remarks: '有关更多详细信息，请参阅 [c # &amp; 运算符](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/and-operator) (二进制) 。'
 examples: >-
   ```qsharp
 
@@ -34,9 +34,9 @@ output:
   - isPrimitive: true
     uid: Int
 metadata:
-  ms.openlocfilehash: 502101daebe79aeb14732f6e484f96e45e65d089
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 74bc26f5b9f113573e51a0f3e066403d2bfbbb50
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82680711"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89351316"

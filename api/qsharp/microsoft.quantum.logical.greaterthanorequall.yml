@@ -2,7 +2,7 @@
 uid: microsoft.quantum.logical.greaterthanorequall
 name: GreaterThanOrEqualL
 type: function
-namespace: Microsoft.Quantum.Logical
+namespace: microsoft.quantum.logical
 summary: 当且仅当一个数字大于或等于另一个数字时，返回 true。
 remarks: >-
   以下项是等效的：
@@ -30,13 +30,13 @@ input:
 output:
   content: Bool
   types:
-  - summary: '`true`当且仅当`a`大于或等于时`b`。'
+  - summary: '`true` 当且仅当 `a` 大于或等于时 `b` 。'
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: d99d09cfa15f95d4827a4b6197395d9cd16a0928
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 077f9141d547dfffcc43cbdd5db9a68f22983212
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82684734"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89345706"
