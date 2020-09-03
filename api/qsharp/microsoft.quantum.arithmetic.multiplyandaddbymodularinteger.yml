@@ -2,16 +2,16 @@
 uid: microsoft.quantum.arithmetic.multiplyandaddbymodularinteger
 name: MultiplyAndAddByModularInteger
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   对 qubit 寄存器上的整数常量执行模块化乘法和-add。
 
 
-  为给定的取模（$N $、常量乘数 $a $ 和 \ket{x} $y $）实现 map $ $ \begin{align} \ket{x} \ket{b} \mapsto \ket{\cdot （b + a \operatorname{mod} x） \end{align} N} 被加数 $ $。
+  为给定的取模实现 map $ $ \begin{align} \ket{x} \ket{b} \mapsto \ket{x} \ket{ (b + a \cdot x) \operatorname{mod} N} \end{align} $ $ $N $，恒定乘数 $a $，被加数 $y $。
 remarks: >-
   - 有关线路和说明，请参阅[arXiv： quant/0205095V3 第7页](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=7)上的图6
 
-  - 此操作对应于 ArXiv 中的 CMULT （a） MOD （N） [： quant/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf)
+  - 此操作对应于 ArXiv 中的 CMULT () MOD (N) [： quant/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf)
 syntax: 'operation MultiplyAndAddByModularInteger (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, summand : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
 input:
   content: '(constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, summand : Microsoft.Quantum.Arithmetic.LittleEndian)'
@@ -24,7 +24,7 @@ input:
     isPrimitive: true
     uid: Int
   - name: multiplier
-    summary: 一个量程寄存器，表示其值要添加到的每个基本状态标签的`summand`无符号整数。
+    summary: 一个量程寄存器，表示其值要添加到的每个基本状态标签的无符号整数 `summand` 。
     uid: microsoft.quantum.arithmetic.littleendian
   - name: summand
     summary: 一个量程寄存器，表示要用作此操作的目标的无符号整数。
@@ -40,9 +40,9 @@ functors:
 seeAlso:
 - microsoft.quantum.arithmetic.multiplyandaddphasebymodularinteger
 metadata:
-  ms.openlocfilehash: 38efb2840406fc82b7ae24640bec6641f048a5b2
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: de9bec96048c4c1f8431bdfd831f560e7c1af72c
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676755"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353526"

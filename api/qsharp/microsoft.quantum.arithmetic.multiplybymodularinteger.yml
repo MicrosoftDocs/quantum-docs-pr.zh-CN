@@ -2,16 +2,16 @@
 uid: microsoft.quantum.arithmetic.multiplybymodularinteger
 name: MultiplyByModularInteger
 type: operation
-namespace: Microsoft.Quantum.Arithmetic
+namespace: microsoft.quantum.arithmetic
 summary: >-
   对 qubit 寄存器上的整数常量执行模块化乘法运算。
 
 
-  让我们通过`modulus` $N $ 和`constMultiplier` $a $ 来表示。
+  让我们 `modulus` 通过 $N $ 和 `constMultiplier` $a $ 来表示。
 
-  然后，此操作实现由以下映射定义的单一操作：对于每个 $0 $ 和 $N-$1 $y $ $ $ \begin{align} \ket{y} \mapsto \ket{（a \cdot y） \operatorname{mod} N} \end{align} $ $。
+  然后，此操作实现了以下映射定义的单一操作： $ $ \begin{align} \ket{y} \mapsto \ket{ (\cdot y) \operatorname{mod} N} \end{align} $ $，用于 $0 $ 和 $N-$1 之间的所有 $y $。
 remarks: >-
-  - 对于 "线路" 关系图和解释，请参阅[arXiv 的第8页上的图7： quant/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=8)
+  - 对于 "线路" 关系图和解释，请参阅 [arXiv 的第8页上的图7： quant/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=8)
 
   - 此操作对应于 ArXiv 中的 U ₐ [： quant/0205095v3](https://arxiv.org/pdf/quant-ph/0205095v3.pdf)
 syntax: 'operation MultiplyByModularInteger (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit'
@@ -23,7 +23,7 @@ input:
     isPrimitive: true
     uid: Int
   - name: modulus
-    summary: 乘法运算执行取模`modulus`运算。
+    summary: 乘法运算执行取模运算 `modulus` 。
     isPrimitive: true
     uid: Int
   - name: multiplier
@@ -41,9 +41,9 @@ functors:
 - Adjoint
 - Controlled
 metadata:
-  ms.openlocfilehash: 48a0f19334f65a6b80003d90dc4dc216dc8dee98
-  ms.sourcegitcommit: db23885adb7ff76cbf8bd1160d401a4f0471e549
+  ms.openlocfilehash: 4ebbe9808772f51b1a7b2b3caf47379e74bd823e
+  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/01/2020
-  ms.locfileid: "82676736"
+  ms.lasthandoff: 09/02/2020
+  ms.locfileid: "89353509"
