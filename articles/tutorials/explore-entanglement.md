@@ -9,12 +9,12 @@ uid: microsoft.quantum.write-program
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: d815a9a25b8ba5e9489b6d3d27fb0d64ab4aaa1d
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 3e95f142572e104fe1e133b109d197ed5bb01d9a
+ms.sourcegitcommit: af2e9691c1900ced7e09d6320255617c9939ed55
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863443"
+ms.lasthandoff: 09/14/2020
+ms.locfileid: "90063234"
 ---
 # <a name="tutorial-explore-entanglement-with-q"></a>教程：通过 Q\# 探索纠缠
 
@@ -112,7 +112,7 @@ Q#操作是一个量程子例程。 也就是说，它是包含对其他量程�
 
 运算的参数在括号内指定为元组。
 
-运算的返回类型在冒号之后指定。 根据这个规则，`SetQubitState` 运算表示没有返回类型，因此将标记为返回 `Unit`。 这是 Q# `unit` F # 中的等效项，它大致类似于 `void` c # 中的，空元组 (`Tuple[()]` 在 Python 中) 。
+运算的返回类型在冒号之后指定。 根据这个规则，`SetQubitState` 运算表示没有返回类型，因此将标记为返回 `Unit`。 这相当于 Q# F # 中的等效项， `unit` 它大致类似于 `void` c # 中的，而 Python (中的空元组 `()` 由类型提示 `Tuple[()]`) 表示。
 
 您在第一次操作中使用了两个量程操作 Q# ：
 
