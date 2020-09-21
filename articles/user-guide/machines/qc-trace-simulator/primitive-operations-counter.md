@@ -1,30 +1,30 @@
 ---
 title: 基元操作计数器-量程开发工具包
-description: 了解 Microsoft QDK 基元操作计数器，该计数器使用量程跟踪模拟器跟踪程序中操作所使用的基元执行 Q# 。
+description: 了解 Microsoft QDK 基元操作计数器，该计数器使用量程跟踪模拟器跟踪程序中操作所使用的基元进程 Q# 。
 author: vadym-kl
-ms.author: vadym@microsoft.com
+ms.author: vadym
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.primitive-counter
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: ceb70cef6dc0a4530b992b5a529248a8b283c17f
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 8ee9ce25e680112e2f3c68d82ae9267c1b0fb355
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868230"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835972"
 ---
 # <a name="quantum-trace-simulator-primitive-operations-counter"></a>量程跟踪模拟器：基元操作计数器
 
-基元操作计数器是量程开发工具包[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的一部分。 它计算在量程程序中调用的每个操作所使用的原始执行数。 
+基元操作计数器是量程开发工具包 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的一部分。 它计算在量程程序中调用的每个操作所使用的基元进程的数目。 
 
-所有 <xref:microsoft.quantum.intrinsic> 操作都以单 qubit 循环、T 操作、Qubit Clifford 操作、cnot-contains 操作和多 Qubit Pauli 可观察量的度量来表示。 基元操作计数器聚合并收集操作的[调用关系图](https://en.wikipedia.org/wiki/Call_graph)边缘的统计信息。
+所有 <xref:microsoft.quantum.intrinsic> 操作都以单 qubit 循环、T 操作、Qubit Clifford 操作、cnot-contains 操作和多 Qubit Pauli 可观察量的度量来表示。 基元操作计数器聚合并收集操作的 [调用关系图](https://en.wikipedia.org/wiki/Call_graph)边缘的统计信息。
 
 ## <a name="invoking-the-primitive-operation-counter"></a>调用基元操作计数器
 
-若要使用基元操作计数器运行量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将属性设置 `UsePrimitiveOperationsCounter` 为**true**，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。
+若要使用基元操作计数器运行量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将属性设置 `UsePrimitiveOperationsCounter` 为 **true**，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。
 
 ```csharp
 var config = new QCTraceSimulatorConfiguration();
@@ -75,9 +75,9 @@ double cxCount = sim.GetMetric<Primitive.CCNOT, ApplySampleWithCCNOT>(PrimitiveO
 string csvSummary = sim.ToCSV()[MetricsCountersNames.primitiveOperationsCounter];
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- 量程开发工具包[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)概述。
+- 量程开发工具包 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro) 概述。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>API 参考。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration>API 参考。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.PrimitiveOperationsGroupsNames>API 参考。

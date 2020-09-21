@@ -1,40 +1,40 @@
 ---
-title: 类型Q#
+title: 类型 Q#
 description: 了解编程语言中使用的不同类型 Q# 。
 author: gillenhaalb
-ms.author: a-gibec@microsoft.com
+ms.author: a-gibec
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.types
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: b034af0b1d3b967b5680403341813407e4412f93
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: c4a3e6563b8cabee87d1db6b9cb1c1f1c1a7131b
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869590"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835819"
 ---
-# <a name="types-in-no-locq"></a>类型Q#
+# <a name="types-in-no-locq"></a>类型 Q#
 
-本文介绍 Q# 用于指定和使用类型的类型模型和语法。 有关如何创建和操作这些类型的表达式的详细信息，请参阅[类型表达式](xref:microsoft.quantum.guide.expressions)。
+本文介绍 Q# 用于指定和使用类型的类型模型和语法。 有关如何创建和操作这些类型的表达式的详细信息，请参阅 [类型表达式](xref:microsoft.quantum.guide.expressions)。
 
-我们注意 Q# 到，是一种*强类型*语言，因此，仔细使用这些类型可帮助编译器 Q# 在编译时提供对程序的强保证。
+我们注意 Q# 到，是一种 *强类型* 语言，因此，仔细使用这些类型可帮助编译器 Q# 在编译时提供对程序的强保证。
 若要提供最强的保证，中类型之间的转换 Q# 必须使用对函数的调用进行显式转换，这种转换可表达该转换。 
-Q#提供各种此类函数作为 <xref:microsoft.quantum.convert> 命名空间的一部分。
+Q# 提供各种此类函数作为 <xref:microsoft.quantum.convert> 命名空间的一部分。
 另一方面，向上转换到兼容类型是隐式发生的。 
 
-Q#提供直接使用的基元类型，以及从其他类型生成新类型的各种方法。
+Q# 提供直接使用的基元类型，以及从其他类型生成新类型的各种方法。
 本文的其余部分将对此进行介绍。
 
 ## <a name="primitive-types"></a>基元类型
 
-此 Q# 语言提供以下*基元类型*，所有这些类型都可直接在程序中使用 Q# 。 你还可以使用这些基元类型构造新类型。
+此 Q# 语言提供以下 *基元类型*，所有这些类型都可直接在程序中使用 Q# 。 你还可以使用这些基元类型构造新类型。
 
 - `Int`类型表示64位有符号整数，例如，、 `2` `107` 、 `-5` 。
 - `BigInt`类型表示任意大小的有符号整数，例如、、 `2L` `107L` `-5L` 。
-   此类型基于 .NET<xref:System.Numerics.BigInteger>
+   此类型基于 .NET <xref:System.Numerics.BigInteger>
    的参数。
 
 - `Double`类型表示双精度浮点数，如、、 `0.0` `-1.3` `4e-7` 。
@@ -53,7 +53,7 @@ Q#提供直接使用的基元类型，以及从其他类型生成新类型的各
    这是一个枚举类型，它具有四个可能 `PauliI` 的值：、 `PauliX` 、 `PauliY` 和 `PauliZ` ，它们是类型的常量 `Pauli` 。
 - `Result`类型表示度量值的结果。
    它是具有两个可能值的枚举类型： `One` 和 `Zero` ，它们是类型的常量 `Result` 。
-   `Zero`指示已度量 + 1 eigenvalue;`One`指示已测量-1 eigenvalue。
+   `Zero` 指示已度量 + 1 eigenvalue; `One` 指示已测量-1 eigenvalue。
 
 常量 `true` 、、、、、、 `false` `PauliI` `PauliX` `PauliY` `PauliZ` `One` 和 `Zero` 是中的所有保留符号 Q# 。
 
@@ -65,15 +65,15 @@ Q#提供直接使用的基元类型，以及从其他类型生成新类型的各
 * 数组的数组也是有效的。 在前面的示例中，将指示数组的数组 `(Bool, Pauli)` `(Bool, Pauli)[][]` 。
 
 > [!NOTE] 
-> 此示例 `(Bool, Pauli)[][]` 表示数组的可能交错数组，而不是矩形二维数组。 Q#不支持矩形多维数组。
+> 此示例 `(Bool, Pauli)[][]` 表示数组的可能交错数组，而不是矩形二维数组。 Q# 不支持矩形多维数组。
 
 * 使用方括号将数组值用方括号 Q# 括起来，如中所示 `[PauliI, PauliX, PauliY, PauliZ]` 。
 数组中所有项的通用基类型确定数组文本的类型。 因此，使用没有公共基类型的元素构造数组将引发错误。  
-有关示例，请参阅[callables 的数组](xref:microsoft.quantum.guide.expressions#arrays-of-callables)。
+有关示例，请参阅 [callables 的数组](xref:microsoft.quantum.guide.expressions#arrays-of-callables)。
 
     > [!WARNING]
     > 创建后，不能更改数组的元素。
-    > 若要构造修改后的数组，请使用[更新和重新分配语句](xref:microsoft.quantum.guide.variables#update-and-reassign-statements)或[副本和更新表达式](xref:microsoft.quantum.guide.expressions#copy-and-update-expressions)。
+    > 若要构造修改后的数组，请使用 [更新和重新分配语句](xref:microsoft.quantum.guide.variables#update-and-reassign-statements) 或 [副本和更新表达式](xref:microsoft.quantum.guide.expressions#copy-and-update-expressions)。
 
 * 或者，可以使用关键字通过其大小创建数组 `new` ：
 
@@ -98,7 +98,7 @@ Q#提供直接使用的基元类型，以及从其他类型生成新类型的各
 元组是一种功能强大的概念 Q# ，可用于将值组合成单个值，使其更易于传递。
 特别是，使用元组表示法，可以表达每个操作和可调用只采用一个输入，并只返回一个输出。
 
-* 给定零个或多个不同类型 `T0` ， `T1` ，...， `Tn` 可将新的*元组类型*表示为 `(T0, T1, ..., Tn)` 。
+* 给定零个或多个不同类型 `T0` ， `T1` ，...， `Tn` 可将新的  *元组类型* 表示为 `(T0, T1, ..., Tn)` 。
 用于构造新元组类型的类型本身可以是元组，如中所示 `(Int, (Qubit, Qubit))` 。
 但这种嵌套始终是有限的，因为在任何情况下，元组类型都不能包含自身。
 
@@ -109,7 +109,7 @@ Q#提供直接使用的基元类型，以及从其他类型生成新类型的各
 * Q#从0.3 到， `Unit` 是空元组的*类型*名称; `()` 用于空元组的*值*。
 
 * 元组实例是不可变的。
-Q#创建后，不提供更改元组内容的机制。
+Q# 创建后，不提供更改元组内容的机制。
 
 
 
@@ -126,7 +126,7 @@ Q#创建后，不提供更改元组内容的机制。
 
 具体而言，这意味着您可以查看其输入元组或输出元组类型具有一个字段的操作或函数，以采用单个参数或返回单个值。
 
-我们将此属性称为_单独元组等效_。
+我们将此属性称为 _单独元组等效_。
 
 
 ## <a name="user-defined-types"></a>用户定义类型
@@ -155,10 +155,10 @@ newtype Complex = (Double, Double);
 ```
 此语句创建一个新类型，其中包含两个匿名项类型 `Double` 。   
 
-除了匿名项以外，用户定义类型还支持0.7 或更高版本中的*命名项* Q# 。 例如，可以将的项命名为， `Re` 表示复数的实部和 `Im` 虚部： 
+除了匿名项以外，用户定义类型还支持0.7 或更高版本中的 *命名项* Q# 。 例如，可以将的项命名为， `Real` 表示复数的实部和 `Imag` 虚部： 
 
 ```qsharp
-newtype Complex = (Re : Double, Im : Double);
+newtype Complex = (Real : Double, Imag : Double);
 ```
 为用户定义类型中的一个项命名并不意味着需要命名所有项-支持命名项和未命名项的任意组合。 此外，内部项还可以命名为。
 `Nested`例如，下面定义的类型具有基础类型 `(Double, (Int, String))` ，其类型仅为类型为的项 `Int` ，所有其他项都是匿名的。 
@@ -167,22 +167,22 @@ newtype Complex = (Re : Double, Im : Double);
 newtype Nested = (Double, (ItemName : Int, String)); 
 ```
 
-命名项的优点是可以通过*访问运算符*直接访问它们 `::` 。 
+命名项的优点是可以通过 *访问运算符*直接访问它们 `::` 。 
 
 ```qsharp
 function ComplexAddition(c1 : Complex, c2 : Complex) : Complex {
-    return Complex(c1::Re + c2::Re, c1::Im + c2::Im);
+    return Complex(c1::Real + c2::Real, c1::Imag + c2::Imag);
 }
 ```
 
 除了为可能复杂的元组类型提供短别名以外，定义此类类型的一个明显优势在于它们可以记录特定值的意图。
-返回到的示例 `Complex` ，一个还可以将2d 极坐标定义为用户定义的类型：
+返回到的示例 `Complex` ，还可以将极坐标表示形式定义为用户定义的类型：
 
 ```qsharp
-newtype Polar = (Radius : Double, Phase : Double);
+newtype ComplexPolar = (Magnitude : Double, Argument : Double);
 ```
 
-尽管 `Complex` 和 `Polar` 都有基础类型，但这 `(Double, Double)` 两种类型在中完全不兼容 Q# ，但在极大程度上，最大程度地降低意外调用复杂数学函数的风险，反之亦然。
+尽管 `Complex` 和 `ComplexPolar` 都有基础类型，但这 `(Double, Double)` 两种类型在中完全不兼容 Q# ，但在极大程度上，最大程度地降低意外调用复杂数学函数的风险，反之亦然。
 
 #### <a name="access-anonymous-items-with-the-unwrap-operator"></a>使用解包运算符访问匿名项
 
@@ -226,7 +226,7 @@ let realUnit = Complex(1.0, 0.0);
 let imaginaryUnit = Complex(0.0, 1.0);
 ```
 
-或者，您可以使用[复制和更新表达式](xref:microsoft.quantum.guide.expressions#copy-and-update-expressions)从现有值创建新值。 与在数组中一样，复制和更新表达式会复制原始表达式的所有项值（指定的已命名项除外）。 对于这些异常，这些项的值是在表达式的右侧定义的值。 对于用户定义类型中的命名项，还存在可用于数组项的任何其他语言构造（例如，[更新和重新分配语句](xref:microsoft.quantum.guide.variables#update-and-reassign-statements)）。
+或者，您可以使用 [复制和更新表达式](xref:microsoft.quantum.guide.expressions#copy-and-update-expressions)从现有值创建新值。 与在数组中一样，复制和更新表达式会复制原始表达式的所有项值（指定的已命名项除外）。 对于这些异常，这些项的值是在表达式的右侧定义的值。 对于用户定义类型中的命名项，还存在可用于数组项的任何其他语言构造（例如， [更新和重新分配语句](xref:microsoft.quantum.guide.variables#update-and-reassign-statements)）。
 
 ```qsharp
 newtype ComplexArray = (Count : Int, Data : Complex[]);
@@ -259,10 +259,10 @@ function AsComplexArray (data : Double[]) : ComplexArray {
 
 给定类型 `'Tinput` 和 `'Tresult` ：
 
-* `('Tinput => 'Tresult)`是任何*操作*的基本类型，例如 `((Qubit, Pauli) => Result)` 。
-* `('Tinput -> 'Tresult)`是任何*函数*的基本类型，例如 `(Int -> Int)` 。 
+* `('Tinput => 'Tresult)` 是任何 *操作*的基本类型，例如 `((Qubit, Pauli) => Result)` 。
+* `('Tinput -> 'Tresult)` 是任何 *函数*的基本类型，例如 `(Int -> Int)` 。 
 
-这些是可调用的*签名*。
+这些是可调用的 *签名* 。
 
 * 所有 Q# callables 采用单个值作为输入，并返回单个值作为输出。
 * 可以对输入和输出值使用元组。
@@ -271,16 +271,16 @@ function AsComplexArray (data : Double[]) : ComplexArray {
 
 ### <a name="functors"></a>函子
 
-*函数*类型由其签名完全指定。 例如，计算角度正弦值的函数将具有类型 `(Double -> Double)` 。 
+*函数* 类型由其签名完全指定。 例如，计算角度正弦值的函数将具有类型 `(Double -> Double)` 。 
 
-*操作*具有一些其他特征，这些特征表示为操作类型的一部分。 此类特征包括有关操作支持的*函子*的信息。
-例如，如果执行操作依赖于其他 qubits 的状态，则它应支持 `Controlled` 函子; 如果操作具有反向，则它应支持 `Adjoint` 函子。
+*操作* 具有一些其他特征，这些特征表示为操作类型的一部分。 此类特征包括有关操作支持的 *函子* 的信息。
+例如，如果运行操作依赖于其他 qubits 的状态，则它应支持 `Controlled` 函子; 如果操作具有反向，则它应支持 `Adjoint` 函子。
 
 > [!NOTE]
 > 本文仅讨论函子如何更改操作签名。 有关函子和操作的更多详细信息，请参阅[中 Q# 的操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。 
 
 若要要求对 `Controlled` 操作类型中的和/或函子提供支持 `Adjoint` ，需要添加指示相应特征的注释。
-批注 `is Ctl` (例如， `(Qubit => Unit is Ctl)`) 指示操作可控制。 也就是说，它的执行依赖于另一个 qubit 或 qubits 的状态。 同样，批注 `is Adj` 指示操作具有 adjoint，也就是说，它可以 "反转" 以便连续应用操作，然后将其 adjoint 为状态，使状态保持不变。 
+批注 `is Ctl` (例如， `(Qubit => Unit is Ctl)`) 指示操作可控制。 也就是说，它的运行依赖于另一个 qubit 或 qubits 的状态。 同样，批注 `is Adj` 指示操作具有 adjoint，也就是说，它可以 "反转" 以便连续应用操作，然后将其 adjoint 为状态，使状态保持不变。 
 
 如果你希望要求该类型的操作同时支持 `Adjoint` 和 `Controlled` 函子，则可以将此表示为 `(Qubit => Unit is Adj + Ctl)` 。 例如，内置 Pauli 操作的类型为 <xref:microsoft.quantum.intrinsic.x> `(Qubit => Unit is Adj + Ctl)` 。 
 
@@ -288,7 +288,7 @@ function AsComplexArray (data : Double[]) : ComplexArray {
 
 ### <a name="type-parameterized-functions-and-operations"></a>类型参数化的函数和操作
 
-可调用类型可以包含*类型参数*。
+可调用类型可以包含 *类型参数*。
 使用以单引号为前缀的符号指示类型参数;例如， `'A` 是一个合法的类型参数。
 有关如何定义类型参数化 callables 的详细信息和详细信息，请参阅[中的 Q# 操作和函数](xref:microsoft.quantum.guide.operationsfunctions#generic-type-parameterized-callables)。
 
@@ -298,7 +298,7 @@ function AsComplexArray (data : Double[]) : ComplexArray {
 
 调用类型参数化的可调用时，具有相同类型参数的所有参数都必须具有相同的类型。
 
-Q#不提供一种机制来约束用户可能替换为类型参数的可能类型。
+Q# 不提供一种机制来约束用户可能替换为类型参数的可能类型。
 
 ## <a name="next-steps"></a>后续步骤
 

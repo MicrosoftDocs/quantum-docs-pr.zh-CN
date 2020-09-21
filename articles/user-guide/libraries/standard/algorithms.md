@@ -1,26 +1,26 @@
 ---
-title: 中的量程算法Q#
+title: 中的量程算法 Q#
 description: 了解基本的量程计算算法，包括波幅放大、傅立叶转换、Draper 和 Beauregard 添加器以及相位估算。
 author: QuantumWriter
-ms.author: martinro@microsoft.com
+ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.libraries.standard.algorithms
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 0b5972480061c460345057285bbfe53305acc122
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 7ce13c5df3795656156cccf28640c0a4b0dcba2e
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868808"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835666"
 ---
 # <a name="quantum-algorithms"></a>量程算法 #
 
 ## <a name="amplitude-amplification"></a>振幅放大 ##
 
-*振幅放大*是量程计算的一项基本工具。 这是一种基本的概念，即 Grover 的搜索、幅度估算和许多量程机器学习算法。  存在许多变体，并且在中， Q# 我们提供了一个基于在意波幅放大的通用版本，其中包含部分反射，以允许最大的应用程序区域。
+*振幅放大* 是量程计算的一项基本工具。 这是一种基本的概念，即 Grover 的搜索、幅度估算和许多量程机器学习算法。  存在许多变体，并且在中， Q# 我们提供了一个基于在意波幅放大的通用版本，其中包含部分反射，以允许最大的应用程序区域。
 
 振幅放大的中心思想是通过执行一系列反射来放大所需结果的概率。  这些反射会使初始状态更接近所需的目标状态，通常称为标记的状态。  具体来说，如果将初始状态测量为标记状态的概率是 $ \sin ^ 2 ( \theta) $，然后在应用振幅放大后 $m $ 次，则成功的概率变为 $ \sin ^ 2 ( # B3 2m + 1) \theta) $。  这意味着，如果 $ \theta = \ pi/[2 (2n + 1) ] $ 用于 $n $ 的某些值，则振幅放大功能可以 \\ 在 $n $ 迭代幅度放大后提高成功到 $100% $ 的概率。  由于 $ \theta = \sin ^ {-1} ( \sqrt{\pr (success) } ) $ 这意味着获取成功所需的迭代次数将几率低于预期使用随机抽样来确定标记状态时所需的次数。
 
@@ -30,7 +30,7 @@ ms.locfileid: "87868808"
 
 这一问题的另一个有用的属性是，eigenvalue $ \theta $ 直接与 $P _0 $ 是投影仪仅限初始状态) 的情况下将标记为 (。  由于 $Q $ 的 eigenphases 是 $ 2 \ theta = 2 \ sin ^ {-1} ( \sqrt{\pr (success) } ) $，因此，如果我们将阶段估算应用于 $Q $，则可以了解单一量程过程成功的概率。  这很有用，因为它需要几率更少的量程过程应用程序，以了解与其他情况下的成功概率。
 
-Q#将振幅放大引入为在意波幅放大的专用化。  在意波幅放大盈利此名字对象，因为投影仪到初始 eigenspace 无需投影仪到初始状态。  从这种意义上讲，该协议在意初始状态。  在意波幅放大的关键应用是单一 Hamiltonian 模拟方法的一些*线性组合，其中*初始状态是未知的，但会在模拟协议中与 ancilla 注册放大。  如果将此 ancilla 寄存器测量为固定值（如 $0 $），则此类模拟方法会将所需的单一转换应用到) 系统注册的剩余 qubits (。  但是，所有其他测量结果都会导致故障。  在意波幅放大允许使用以上推理将此度量值的成功提升为 $100 \\ % $。  而且，普通幅度放大对应于系统注册为空的情况。  这就是 Q# 使用在意波幅放大子例程的原因。
+Q# 将振幅放大引入为在意波幅放大的专用化。  在意波幅放大盈利此名字对象，因为投影仪到初始 eigenspace 无需投影仪到初始状态。  从这种意义上讲，该协议在意初始状态。  在意波幅放大的关键应用是单一 Hamiltonian 模拟方法的一些 *线性组合，其中* 初始状态是未知的，但会在模拟协议中与 ancilla 注册放大。  如果将此 ancilla 寄存器测量为固定值（如 $0 $），则此类模拟方法会将所需的单一转换应用到) 系统注册的剩余 qubits (。  但是，所有其他测量结果都会导致故障。  在意波幅放大允许使用以上推理将此度量值的成功提升为 $100 \\ % $。  而且，普通幅度放大对应于系统注册为空的情况。  这就是 Q# 使用在意波幅放大子例程的原因。
 
 常规例程 (`AmpAmpObliviousByReflectionPhases`) 有两个注册 `ancillaRegister` 和 `systemRegister` 。 它还接受两个 oracles 来实现必要的反射。 `ReflectionOracle`仅在上起作用， `ancillaRegister` 而在 `ObliviousOracle` 两个寄存器上共同操作。 `ancillaRegister`必须将的输入初始化为第1个反射运算符 $ \boldone-2P_1 $ 的第1个 eigenstate。
 
@@ -40,23 +40,23 @@ Q#将振幅放大引入为在意波幅放大的专用化。  在意波幅放大�
 
 如前所述，传统的振幅放大只是这些例程的一种特殊情况，其中， `ObliviousOracle` 为 identity 运算符，并且没有系统 qubits (（即） `systemRegister` 为空) 。 如果要获取部分反射的阶段 (例如，对于 Grover search) ，该函数 `AmpAmpPhasesStandard` 可用。 `DatabaseSearch.qs`有关 Grover 算法的实现示例，请参阅。
 
-我们将 qubit 轮换阶段与反射运算符阶段相关联[，如 G.H. Low，语](https://arxiv.org/abs/1707.05391)中所述。 使用的固定点阶段在[Yoder、low 和语](https://arxiv.org/abs/1409.3305)以及[low、Yoder 和语](https://arxiv.org/abs/1603.03996)的阶段中进行了详细说明。
+我们将 qubit 轮换阶段与反射运算符阶段相关联 [，如 G.H. Low，语](https://arxiv.org/abs/1707.05391)中所述。 使用的固定点阶段在 [Yoder、low 和语](https://arxiv.org/abs/1409.3305) 以及 [low、Yoder 和语](https://arxiv.org/abs/1603.03996)的阶段中进行了详细说明。
 
-对于背景，你可以从[标准幅度放大](https://arxiv.org/abs/quant-ph/0005055)开始，转到[在意波幅放大](https://arxiv.org/abs/1312.1414)简介，最后展示为[Low 和语](https://arxiv.org/abs/1610.06546)。 此整个领域的一个不错的概述演示 (与 Hamiltonian 模拟) 相关，因为它是由[Dominic Berry](http://www.dominicberry.org/presentations/Durban.pdf)提供的。
+对于背景，你可以从 [标准幅度放大](https://arxiv.org/abs/quant-ph/0005055) 开始，转到 [在意波幅放大](https://arxiv.org/abs/1312.1414) 简介，最后展示为 [Low 和语](https://arxiv.org/abs/1610.06546)。 此整个领域的一个不错的概述演示 (与 Hamiltonian 模拟) 相关，因为它是由 [Dominic Berry](http://www.dominicberry.org/presentations/Durban.pdf)提供的。
 
 ## <a name="quantum-fourier-transform"></a>量程傅立叶转换 ##
 
 傅立叶转换是一种古典型分析工具，与量程计算一样重要。
-此外，在设计量程算法时，*量程傅立叶转换* (QFT) 远远超过了在传统计算机上可能会出现的情况。
+此外，在设计量程算法时， *量程傅立叶转换* (QFT) 远远超过了在传统计算机上可能会出现的情况。
 
 作为 QFT 的大致通用化，我们提供了这样的 <xref:microsoft.quantum.canon.approximateqft> 操作：通过修剪旋转（对所需的算法准确性并不是绝对必需的）来实现进一步的优化。
 大致的 QFT 要求 dyadic $Z $ 旋转操作以及 <xref:microsoft.quantum.intrinsic.rfrac> <xref:microsoft.quantum.intrinsic.h> 操作。
 输入和输出假设编码为大字节序编码---也就是说，带有索引的 qubit `0` 在二进制整数表示形式的最左边 (最高) 位进行编码。
-这与[票证表示法](xref:microsoft.quantum.concepts.dirac)一致，因为状态 $ \ket $ 中的三个 qubits 的寄存器对应 $q 于状态 $ \ket $ 中的三个， {100} {1} 而 $q _1 $ 和 $q _2 $ 都处于状态 $ \ket {0} $ 中。
+这与 [票证表示法](xref:microsoft.quantum.concepts.dirac)一致，因为状态 $ \ket $ 中的三个 qubits 的寄存器对应 $q 于状态 $ \ket $ 中的三个， {100} {1} 而 $q _1 $ 和 $q _2 $ 都处于状态 $ \ket {0} $ 中。
 近似值参数 $a $ 确定 $Z $ 旋转的修剪级别，即 $a \in [0 ... n] $。
 在这种情况下，所有 $Z $-循环 $ 2 \ pi/2 ^ k $，其中 $k > $ 将从 QFT 线路中删除。
 已知 $k \ge \ log_2 (n) + \ log_2 (1/\epsilon) + $3。 一个可以绑定 $ \\ | \operatorname{QFT}-\operatorname{AQFT} \\ | < \epsilon $。
-此处 \\ 的 $ | \cdot \\ | $ 是运算符标准，在本例中是 $ ( \Operatorname{qft}-\operatorname{AQFT} ) # A2\OPERATORNAME {QFT}-\operatorname{AQFT} ) ^ \dagger $ 的最大[eigenvalue](xref:microsoft.quantum.concepts.matrix-advanced)的平方根。
+此处 \\ 的 $ | \cdot \\ | $ 是运算符标准，在本例中是 $ ( \Operatorname{qft}-\operatorname{AQFT} ) # A2\OPERATORNAME {QFT}-\operatorname{AQFT} ) ^ \dagger $ 的最大 [eigenvalue](xref:microsoft.quantum.concepts.matrix-advanced) 的平方根。
 
 ## <a name="arithmetic"></a>算术 ##
 
@@ -99,11 +99,11 @@ Beauregard 添加插件使用 Draper 添加项，或更具体的 $ \phi \\ \! \o
 
 此处，入口 $ \Phi \\ \! \operatorname{ADD} $ 采用与 $ \Phi \operatorname{ADD} $ 相同的形式 \\ \! ，只不过在此上下文中，输入为经典而不是量程。  这允许将 $ \Phi \Operatorname{ADD} $ 中的受控阶段 \\ \! 替换为阶段入口，然后可以将这些阶段编译成更少的操作，减少了执行程序所需的 qubits 和入口数。
 
-有关更多详细信息，请参阅[Roetteler、Beth](http://doi.org/10.1007/s00200-008-0072-2 )和[Coppersmith](https://arxiv.org/abs/quant-ph/0201067)。
+有关更多详细信息，请参阅 [Roetteler、Beth](http://doi.org/10.1007/s00200-008-0072-2 ) 和 [Coppersmith](https://arxiv.org/abs/quant-ph/0201067)。
 
 ### <a name="quantum-phase-estimation"></a>量子相位估计 ###
 
-量程傅立叶转换的一个特别重要的应用是了解单一运算符（称为*阶段估算*的问题）的本征值。
+量程傅立叶转换的一个特别重要的应用是了解单一运算符（称为 *阶段估算*的问题）的本征值。
 假设单一 $U $ 和状态 $ \ket{\phi} $，$ \ket{\phi} $ 是包含未知 eigenvalue $ \phi $ 的 $U $ 的 eigenstate，\begin{equation} U\ket {\ phi} = \phi\ket{\phi}。
 \end{equation} 如果仅有权访问作为 oracle $U $，则可以通过使用应用于受控操作目标的 $Z $ 旋转传播回控件来了解阶段 $ \phi $。
 
@@ -111,7 +111,7 @@ Beauregard 添加插件使用 Draper 添加项，或更具体的 $ \phi \\ \! \o
 然后，通过 \end{align}、\begin{align} V ( \ket{+} \otimes \ket{\phi} ) & = \frac{ ( \ket {0} \otimes \ket{\phi} ) + e ^ {i \phi} ( \ket {1} \otimes \ket{\phi} ) } {\sqrt {2} }。
 \end{align} 我们可以收集术语来查找 \begin{align} V ( \ket{+} \otimes \ket{\phi} ) & = \frac{\ket {0} + e ^ {i \phi} \ket {1} } {\sqrt {2} } \otimes \ket{\phi} \\ \\ & = (R_1 ( \phi) \ket{+} ) \otimes \ket{\phi}，\end{align}，其中 $R _1 $ 是操作应用的单一 <xref:microsoft.quantum.intrinsic.r1> 。
 换句话说，应用 $V $ 的影响与将 $R _1 $ 应用于未知角度完全相同，即使我们仅有权访问作为 oracle $V $。
-因此，对于本文的其余部分，我们将根据 $R _1 ( \phi) $ （通过使用所谓的*阶段 kickback*来实现）讨论阶段估算。
+因此，对于本文的其余部分，我们将根据 $R _1 ( \phi) $ （通过使用所谓的 *阶段 kickback*来实现）讨论阶段估算。
 
 由于在此过程后，控件和目标注册仍处于 untangled 状态，因此，我们可以将 $ \ket{\phi} $ 作为 $U ^ $2 的受控应用程序的目标，以便在州 $R _1 (2 \phi) \ket{+} $ 中准备第二个控制 qubit。
 继续以这种方式，我们可以获取形式为 \begin{align} \ket{\psi} & = \ sum_ {j = 0} ^ n R_1 (2 ^ j \phi) \ket{+} \\ \\ & \propto \ bigotimes_ {j = 0} ^ {n} \left ( \ket {0} + \exp (i 2 ^ {j} \phi) \ket {1} \right) \\ \\ & \propto \ sum_ {k = 0} ^ {2 ^ n-1} \exp (i \phi k) \ket{k} \end{align}，其中 $n $ 是我们需要的精度位数。而且，我们已使用 $ {} \propto {} $ 来指示我们已取消标准化系数 $1/\sqrt{2 ^ n} $。

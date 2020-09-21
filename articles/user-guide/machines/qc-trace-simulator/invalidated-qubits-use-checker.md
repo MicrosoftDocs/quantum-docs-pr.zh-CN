@@ -2,23 +2,23 @@
 title: 无效的 qubits use 检测器-量程开发工具包
 description: 了解 Microsoft QDK 失效 qubits use 检查器，它使用量程跟踪模拟器检查您 Q# 的代码是否存在潜在的无效 qubits。
 author: vadym-kl
-ms.author: vadym@microsoft.com
+ms.author: vadym
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: c451747badba03801bd4ecd419420f131ac502d6
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 18371b3798d0eaa12d4e7107f58f44379594619f
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868281"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835989"
 ---
 # <a name="quantum-trace-simulator-invalidated-qubits-use-checker"></a>量程跟踪模拟器： qubits use 检查器失效
 
-无效的 qubits use 检查器是量程开发工具包[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的组成部分。 您可以使用它来检测由无效 qubits 导致的代码中的潜在 bug。 
+无效的 qubits use 检查器是量程开发工具包 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的组成部分。 您可以使用它来检测由无效 qubits 导致的代码中的潜在 bug。 
 
 ## <a name="invalid-qubits"></a>无效的 qubits
 
@@ -38,7 +38,7 @@ operation UseReleasedQubit() : Unit {
 
 ## <a name="invoking-the-invalidated-qubits-use-checker"></a>调用无效的 qubits use 检查器
 
-若要运行具有无效 qubits use 检查器的量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将 `UseInvalidatedQubitsUseChecker` 属性设置为**true**，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。 
+若要运行具有无效 qubits use 检查器的量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将 `UseInvalidatedQubitsUseChecker` 属性设置为 **true**，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。 
 
 ```csharp
 var config = new QCTraceSimulatorConfiguration();
@@ -73,9 +73,9 @@ namespace Quantum.MyProgram
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- 量程开发工具包[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)概述。
+- 量程开发工具包 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro) 概述。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>API 参考。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration>API 参考。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.InvalidatedQubitsUseCheckerException>API 参考。

@@ -1,24 +1,24 @@
 ---
-title: 中的变量Q#
-description: 填充说明
+title: 中的变量 Q#
+description: 了解如何使用中的不同变量 Q#
 author: gillenhaalb
-ms.author: a-gibec@microsoft.com
+ms.author: a-gibec
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.variables
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 00af0989cd5a1f9ccc7d9f2545acd0d256bc7eb9
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: bb87f36d3c9b7df195f64e85151e833d494ea945
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867839"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835870"
 ---
-# <a name="variables-in-no-locq"></a>中的变量Q#
+# <a name="variables-in-no-locq"></a>中的变量 Q#
 
-Q#区分可变和不可变的符号（或*变量*，它们被绑定/分配到表达式）。
+Q# 区分可变和不可变的符号（或 *变量*，它们被绑定/分配到表达式）。
 通常，建议使用不可变符号，因为它允许编译器执行更多优化。
 
 绑定的左侧由一个符号元组和一个表达式的右侧组成。
@@ -40,12 +40,12 @@ let measurementOperator = [PauliX, PauliZ, PauliZ, PauliX, PauliI];
 > [!NOTE]
 > 在前面的示例中，无需显式指定新变量的类型，因为语句右侧的表达式 `let` 是明确的，编译器将推断正确的类型。 
 
-使用定义的变量 `let` 是*不可变*的，这意味着，定义后，不能再以任何方式对其进行更改。
+使用定义的变量 `let` 是 *不可变*的，这意味着，定义后，不能再以任何方式对其进行更改。
 这可以实现多个有利的优化，包括对要对变量进行排序以便应用操作变体的传统逻辑的优化 `Adjoint` 。
 
 ## <a name="mutable-variables"></a>可变变量
 
-作为使用创建变量的替代方法 `let` ， `mutable` 关键字创建一个可变变量，该变量在最初使用关键字创建后*可以*重新绑定 `set` 。
+作为使用创建变量的替代方法 `let` ， `mutable` 关键字创建一个可变变量，该变量在最初使用关键字创建后 *可以* 重新绑定 `set` 。
 
 稍后可将在语句中声明并绑定的符号重新绑定 `mutable` 到代码中的其他值。 如果稍后在代码中重新绑定符号，则其类型不会更改，并且新绑定的值必须与该类型兼容。
 
@@ -91,7 +91,7 @@ for (q in qubits) {
 
 #### <a name="update-and-reassign-statements"></a>更新和重新分配语句
 
-在右侧的[复制和更新表达式](xref:microsoft.quantum.guide.expressions#copy-and-update-expressions)中存在类似的连接。
+在右侧的 [复制和更新表达式](xref:microsoft.quantum.guide.expressions#copy-and-update-expressions) 中存在类似的连接。
 相应地，对于用户定义的类型中的*命名项*以及*数组项*，都存在*更新和重新分配*语句。  
 
 ```qsharp
@@ -161,7 +161,7 @@ function PauliEmbedding(pauli : Pauli, length : Int, location : Int) : Pauli[] {
 ## <a name="tuple-deconstruction"></a>元组析构
 
 除了分配单个变量外，还可以使用 `let` 和 `mutable` 关键字（或任何其他绑定构造，如）将 `set` [元组类型](xref:microsoft.quantum.guide.types#tuple-types)的内容解压缩。
-此窗体的赋值被称为*析构*该元组的元素。
+此窗体的赋值被称为 *析构* 该元组的元素。
 
 如果绑定右侧是元组，则可以在赋值时析构该元组。
 此类 deconstructions 可以涉及嵌套元组，只要右侧的元组形状与符号元组的形状兼容，所有完整或部分析构都有效。
@@ -185,7 +185,7 @@ let (r1, r2) = MeasureTwice(q1, PauliX, q2, PauliY);
 - 循环的所有三个部分 `repeat` / `until` (主体、测试和修正) 视为单个作用域，因此，在主体中绑定的符号可用于测试中，并提供修正。
 
 对于这两种类型的循环，每次循环都在其自己的作用域中运行，因此更早传递中的绑定在稍后的传递中不可用。
-有关这些循环的详细信息，请参阅[控制流](xref:microsoft.quantum.guide.controlflow)。
+有关这些循环的详细信息，请参阅 [控制流](xref:microsoft.quantum.guide.controlflow)。
 
 内部块从外部块继承符号绑定。
 每个块只能绑定一个符号;定义与作用域中的另一个符号名称相同的符号是非法的， (不 ) "隐藏"。
@@ -239,4 +239,4 @@ if (a == b) {
 
 ## <a name="next-steps"></a>后续步骤
 
-了解如何使用中[的 Qubits](xref:microsoft.quantum.guide.qubits) Q# 。
+了解如何使用中 [的 Qubits](xref:microsoft.quantum.guide.qubits) Q# 。

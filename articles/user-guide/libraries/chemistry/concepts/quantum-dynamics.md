@@ -1,24 +1,24 @@
 ---
 title: 量程 Dynamics
 description: 了解量程动态与经典 dynamics 之间的相似性和差异。
-author: nathanwiebe2
-ms.author: nawiebe@microsoft.com
+author: bradben
+ms.author: v-benbra
 ms.date: 10/09/2017
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.concepts.quantumdynamics
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: e63ec497f2a7747e172d5fbdc249fe4064c482b6
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: fb54416ecdc38ea90999f33cb673c2c9e4c5f8d7
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869488"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833867"
 ---
 # <a name="quantum-dynamics"></a>量程 Dynamics
 
-量程机制在很大程度上是对量程动态的调查，它设法理解初始量程状态 $ \ket{\psi (0) } $ 随时间而变化 ([查看有关 Dirac](xref:microsoft.quantum.concepts.dirac)表示法) 的详细信息。
+量程机制在很大程度上是对量程动态的调查，它设法理解初始量程状态 $ \ket{\psi (0) } $ 随时间而变化 ([查看有关 Dirac](xref:microsoft.quantum.concepts.dirac) 表示法) 的详细信息。
 具体来说，假设此初始条件为量程状态、dynamical 系统的演变时间和规范、量程状态 $ \ket{\psi (t) } $。
 在继续解释量子 dynamics 之前，采取一步操作并考虑传统 dynamics 会很有用，因为它可让你深入了解量程机制与传统动态的不同之处。
 
@@ -34,7 +34,7 @@ ms.locfileid: "87869488"
 具体而言，让 $f (x，p，t) $ 是系统 $x $ 和 momenta $p $ 的某个通用化位置函数，并允许 $H x，p，t ($ 为 Hamiltonian 函数。
 例如，如果采用 $f (x，p，t) = x (t) $ and $H (x，p，t) = p ^ 2 ()  ($，则会恢复上述 Newtonian dynamics 情况。
 在通用性下，我们将 \begin{align} \frac{d}{dt} f &= \ partial_t f- ( \ partial_x H \ partial_p f + \ partial_p H \ partial_x f) \\ \\ & \defeq \ partial_t f + \\ {f，H \\ }。
-此处的 \end{align} $ \\ {f，H \\ } $ 称为[泊松形括号](https://en.wikipedia.org/wiki/Poisson_bracket)，由于它在定义 dynamics 中扮演的中心角色，它在经典 dynamics 中显示为普遍。
+此处的 \end{align} $ \\ {f，H \\ } $ 称为 [泊松形括号](https://en.wikipedia.org/wiki/Poisson_bracket) ，由于它在定义 dynamics 中扮演的中心角色，它在经典 dynamics 中显示为普遍。
 
 可以使用完全相同的语言描述量程 dynamics。
 Hamiltonian 或总能量会完全指定任何闭合的量程系统的动态。
@@ -43,7 +43,7 @@ Hamiltonian 或总能量会完全指定任何闭合的量程系统的动态。
 的确，它们甚至不是在上下班： $xp \ne px $。
 
 描述这些非上下班途中对象的正确的数学概念是一个运算符，在这种情况下，$x $ 和 $p $ 只能采用一组离散的值，这两个值与矩阵的概念相符。
-因此，为了简单起见，我们假定量程系统是有限的，因此可以使用[向量和矩阵](xref:microsoft.quantum.concepts.vectors)进行描述。
+因此，为了简单起见，我们假定量程系统是有限的，因此可以使用 [向量和矩阵](xref:microsoft.quantum.concepts.vectors)进行描述。
 我们进一步要求这些矩阵是 Hermitian 的 (意味着矩阵的共轭换位与原始矩阵) 相同。
 这可以确保这些矩阵的本征值是真实值;我们要做的一个条件是，当我们测量的数量类似于无法返回虚数的位置时。
 

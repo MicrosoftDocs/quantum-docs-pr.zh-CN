@@ -2,19 +2,19 @@
 title: 中的操作和函数 Q#
 description: 如何定义和调用操作和函数，以及受控和 adjoint 操作专用化。
 author: gillenhaalb
-ms.author: a-gibec@microsoft.com
+ms.author: a-gibec
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.operationsfunctions
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: c2ce999ea2a0fe7204f402fedb4cd3a3c15bd44b
-ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
+ms.openlocfilehash: e9a84de2753bc3293f441e66ee53e78559263e5c
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90759418"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833487"
 ---
 # <a name="operations-and-functions-in-no-locq"></a>中的操作和函数 Q#
 
@@ -73,9 +73,7 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 
 如果操作实现了单一转换，就像在中执行许多操作一样 Q# ，然后可以定义操作在 *adjointed* 或 *控制*时的行为方式。 操作的 *adjoint* 专用化指定操作的 "反转" 的行为方式，而 *受控* 专用化指定操作在其应用程序的应用程序在特定量程寄存器状态下运行时的行为方式。
 
-量程操作的 Adjoints 对量程计算的许多方面都至关重要。 有关在一种有用的编程技术中讨论的这种情况的示例 Q# ，请参阅本文中的 [语态](#conjugations) 。 
-
-操作的受控版本是新操作，仅当所有控件 qubits 都处于指定状态时，才会有效地应用基本操作。
+量程操作的 Adjoints 对量程计算的许多方面都至关重要。 有关在一种有用的编程方法中讨论的这种情况的示例 Q# ，请参阅 [控制流：语态](xref:microsoft.quantum.guide.controlflow#conjugations)。 操作的受控版本是新操作，仅当所有控件 qubits 都处于指定状态时，才会有效地应用基本操作。
 如果控件 qubits 在 superposition 中，则会将基本操作一致应用到 superposition 的相应部分。
 因此，受控操作通常用于生成牵连。
 
@@ -366,46 +364,6 @@ function ConjugateUnitaryWith(
 这意味着用户定义类型的值在预期基础类型的值为时不能使用。
 
 
-### <a name="conjugations"></a>语态
-
-与传统位相比，释放量程内存会稍微增加一点，因为在 qubits 仍放大时，盲目重置 qubits 可能会对剩余计算产生意外影响。 在释放内存之前，可以通过适当的方式 "撤消" 已执行的计算来避免这些效果。 量程计算的常见模式如下： 
-
-```qsharp
-operation ApplyWith<'T>(
-    outerOperation : ('T => Unit is Adj), 
-    innerOperation : ('T => Unit), 
-    target : 'T) 
-: Unit {
-
-    outerOperation(target);
-    innerOperation(target);
-    Adjoint outerOperation(target);
-}
-```
-
-从0.9 版本开始， Q# 支持实现前面转换的语态语句。 使用该语句，可以通过 `ApplyWith` 以下方式实现操作：
-
-```qsharp
-operation ApplyWith<'T>(
-    outerOperation : ('T => Unit is Adj), 
-    innerOperation : ('T => Unit), 
-    target : 'T) 
-: Unit {
-
-    within{ 
-        outerOperation(target);
-    }
-    apply {
-        innerOperation(target);
-    }
-}
-```
-如果外部和内部转换不能像操作那样轻松地提供，则这种语态语句就变得更加有用，但通过多个语句组成的块可以更方便地进行描述。 
-
-在内块中定义的语句的反转换是由编译器自动生成的，并在应用块完成后运行。
-由于不能在 apply 块中重新绑定用作内部块的一部分的任何可变变量，因此，生成的转换将保证为内块中计算的 adjoint。 
-
-
 ## <a name="defining-new-functions"></a>定义新函数
 
 函数在中是纯粹确定性的传统例程 Q# ，不同于操作，因为它们不允许在计算输出值之前有任何影响。
@@ -663,7 +621,7 @@ Q# 允许直接或间接递归 callables。
 不过，有两个关于递归使用的重要说明：
 
 - 在操作中使用递归可能会干扰某些优化。
-  此干扰可能会对算法的执行时间产生重大影响。
+  此干扰可能对算法的运行时间有重大影响。
 - 在实际的量程设备上运行时，堆栈空间可能会受到限制，因此深度递归可能导致运行时错误。
   具体而言， Q# 编译器和运行时不会标识和优化尾递归。
 

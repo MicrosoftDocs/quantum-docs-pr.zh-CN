@@ -2,18 +2,18 @@
 title: 示例 NWChem 量程计划
 description: 使用 NWChem 输入纸牌，演练一个示例，了解如何获取量程化学模拟的入口计数。
 author: cgranade
-ms.author: chgranad@microsoft.com
+ms.author: chgranad
 ms.date: 10/23/2018
 uid: microsoft.quantum.chemistry.examples.endtoend
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 528c34ea9b28b2f9b8f9a8bad681557f44bfcdaa
-ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
+ms.openlocfilehash: 986ff2c2ff144c57bd01ddeea0467d0168fd9334
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90759709"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835751"
 ---
 # <a name="end-to-end-with-nwchem"></a>NWChem 端到端 #
 
@@ -46,14 +46,14 @@ Import-Module InvokeNWChem.psm1
 ```
 
 > [!NOTE]
-> 默认情况下，Windows 会阻止执行任何脚本或模块作为安全措施。
-> 若要允许等模块 `Invoke-NWChem.psm1` 在 Windows 上运行，你可能需要更改执行策略。
+> 默认情况下，Windows 阻止将任何脚本或模块作为安全措施运行。
+> 若要允许等模块 `Invoke-NWChem.psm1` 在 Windows 上运行，你可能需要更改策略。
 > 为此，请运行 `Set-ExecutionPolicy` 以下命令：
 > ```powershell
 > Set-ExecutionPolicy RemoteSigned -Scope Process
 > ```
-> 当你退出 PowerShell 时，执行策略将被还原。
-> 如果要保存执行策略，请使用不同的值 `-Scope` ：
+> 退出 PowerShell 时，策略将恢复。
+> 如果要保存策略，请使用不同的值 `-Scope` ：
 > ```powershell
 > Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 > ```

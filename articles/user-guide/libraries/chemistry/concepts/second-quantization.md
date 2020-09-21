@@ -1,20 +1,20 @@
 ---
 title: 第二量化
 description: 了解第二种量化方法，用于在量程编程中对电子结构建模。
-author: nathanwiebe2
-ms.author: nawiebe@microsoft.com
+author: bradben
+ms.author: v-benbra
 ms.date: 10/09/2017
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.concepts.secondquantization
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: ba77c499d6830b1f78bba39e20b15c4ebe9433fc
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 6becd348f7b3957cb60b16bbd5a28228527e1d4c
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869454"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835802"
 ---
 # <a name="second-quantization"></a>第二量化
 
@@ -77,7 +77,7 @@ ms.locfileid: "87869454"
 ```
 
 对于 fermionic 系统，Pauli 排除原则阻止在任何自旋 orbital 同时出现多个 electron。
-这意味着我们可以将 $ \ psi_1 $ 的两个合法状态编写为 \begin{equation} \ psi_1 \rightarrow \begin{cases} \ket {0} _1 & \text{if $ \ psi_1 $，}\\\
+这意味着我们可以将 $ \ psi_1 $ 的两个合法状态编写为 \begin{equation} \ psi_1 \rightarrow \begin{cases} \ket {0} _1 & \text{if $ \ psi_1 $，} \\\
 \ket {1} _1 & \text{if $ \ psi_1 $ 已被占用。} \end{cases} \end{equation} 这种编码非常适合于量子计算机，因为这意味着我们可以将电子职业存储为单个量子位。
 
 $ 2N $ 自旋 orbitals 的职业状态同样可以存储在 $ 2N $ qubits 中。
@@ -213,7 +213,7 @@ Any `FermionTerm` 将按如下方式自动纳入规范顺序。
 
 ## <a name="second-quantized-fermionic-hamiltonian"></a>量化 Fermionic Hamiltonian
 
-可能 unsurprising，可以通过创建和 annihilation 运算符来编写[适用于电子系统的量程模型](xref:microsoft.quantum.chemistry.concepts.quantummodels)中的 Hamiltonian。
+可能 unsurprising，可以通过创建和 annihilation 运算符来编写 [适用于电子系统的量程模型](xref:microsoft.quantum.chemistry.concepts.quantummodels) 中的 Hamiltonian。
 具体而言，如果 $ \psi \_ j $ 是形成基础的旋转 orbitals，
 
 \begin{equation} \hat{H} = \sum \_ {pq} H \_ {pq} a ^ \dagger \_ p a \_ q + \frac {1} {2} \sum \_ {pqrs} H \_ {pqrs} a ^ \dagger \_ p a ^ \dagger \_ q a \_ Ra \_ s + H \_ {\textrm nuc}，\label{eq： totalHam} \end{equation}，其中 $h \_ {\textrm nuc} $ (是在) 

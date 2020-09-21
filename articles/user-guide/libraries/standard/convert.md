@@ -3,21 +3,21 @@ title: 标准库中的类型转换 Q#
 description: 了解标准库中的常用和用户定义类型转换函数 Q# 。
 author: cgranade
 uid: microsoft.quantum.libraries.convert
-ms.author: chgranad@microsoft.com
+ms.author: chgranad
 ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 2319bf453f5fbf6bd068859ea65562423d3ff4d0
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: aa8a1ad624067906998d2735c7a95174a163ce97
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868503"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835598"
 ---
 # <a name="type-conversions"></a>类型转换 #
 
-Q#是**强类型**语言。
+Q# 是 **强类型** 语言。
 具体而言，不 Q# 会在不同类型之间隐式强制转换。 例如，不是 `1 + 2.0` 有效的 Q# 表达式。
 而是 Q# 提供各种类型转换函数用于构造给定类型的新值。
 

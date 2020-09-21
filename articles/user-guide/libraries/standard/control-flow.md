@@ -3,22 +3,22 @@ title: 标准 libararies 中的流控制 Q#
 description: 了解 Microsoft 标准库中的流控制操作和函数 Q# 。
 author: QuantumWriter
 uid: microsoft.quantum.concepts.control-flow
-ms.author: martinro@microsoft.com
+ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a440f1ef2b901b18593816ca27aeadf7ab827104
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 1cfef50cf2bbecd2043972a662edd8120c5570ec
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868570"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835615"
 ---
 # <a name="higher-order-control-flow"></a>高阶控制流 #
 
-标准库的主要角色之一是，更轻松地将高级算法想法作为[量程程序](https://en.wikipedia.org/wiki/Quantum_programming)进行表达。
+标准库的主要角色之一是，更轻松地将高级算法想法作为 [量程程序](https://en.wikipedia.org/wiki/Quantum_programming)进行表达。
 因此， Q# canon 提供了各种不同的流控制构造，每个构造使用函数和操作的部分应用程序实现。
 立即跳转到一个示例，请考虑要在收银机上构造 "CNOT-CONTAINS 阶梯" 的情况：
 
@@ -86,7 +86,7 @@ ApplyToEachCA(Adjoint U, register);
 同样， <xref:microsoft.quantum.canon.applytoeachindex> 可用于表示窗体的模式 `U(0, targets[0]); U(1, targets[1]); ...` ，并为其输入支持的函子的每个组合提供版本。
 
 > [!TIP]
-> `ApplyToEach`已参数化，因此它可以与接受除以外的输入的操作一起使用 `Qubit` 。
+> `ApplyToEach` 已参数化，因此它可以与接受除以外的输入的操作一起使用 `Qubit` 。
 > 例如，假设 `codeBlocks` 是 <xref:microsoft.quantum.errorcorrection.logicalregister> 需要恢复的值数组。
 > 然后， `ApplyToEach(Recover(code, recoveryFn, _), codeBlocks)` 将错误更正代码 `code` 和恢复函数独立应用于 `recoveryFn` 每个块。
 > 即使对于传统输入，此操作也是如此： `ApplyToEach(R(_, _, qubit), [(PauliX, PI() / 2.0); (PauliY(), PI() / 3.0]))` 将应用 $ \pi/$2 的旋转约 $X $，后跟 $pi/$3 的旋转 $Y $。
@@ -120,7 +120,7 @@ function Sum(xs : Int[]) {
 
 > [!NOTE]
 > 分解 $U $ 的另一个结果是，我们甚至不必知道如何将函子应用于 `Controlled` `U` 。
-> `ApplyWithCA`因此，签名比预期的更弱：
+> `ApplyWithCA` 因此，签名比预期的更弱：
 > ```qsharp
 > ApplyWithCA<'T> : (('T => Unit is Adj),
 >     ('T => Unit is Adj + Ctl), 'T) => Unit
@@ -147,8 +147,8 @@ ApplyWith(ApplyToEach(Bound([H, X]), _), QFT, _);
 这种类比是通过识别来精确进行的，即，单一运算符与调用操作的副作用完全一致，以便在其他单一运算符方面对单一运算符进行的任何分解都对应于为传统子例程构造特定调用序列，这将发出说明作为特定单一运算符。
 在此视图下， `Bound` 是矩阵产品的精确表示形式，因为 `Bound([A, B])(target)` 等效于 `A(target); B(target);` ，后者又是对应于 $BA $ 的调用序列。
 
-更复杂的示例是[Trotter – Suzuki 扩展](https://arxiv.org/abs/math-ph/0506007v1)。
-如[数据结构](xref:microsoft.quantum.libraries.data-structures)的 "Dynamical 生成器表示" 部分所述，Trotter – Suzuki 扩展提供了一种表示矩阵指数的特别有用的方式。
+更复杂的示例是 [Trotter – Suzuki 扩展](https://arxiv.org/abs/math-ph/0506007v1)。
+如 [数据结构](xref:microsoft.quantum.libraries.data-structures)的 "Dynamical 生成器表示" 部分所述，Trotter – Suzuki 扩展提供了一种表示矩阵指数的特别有用的方式。
 例如，以最低顺序应用扩展时，会生成任何运算符 $A $ 和 $B $，$A = A ^ \dagger $ 和 $B = B ^ \dagger $，\begin{align} \tag{★} \label{eq： trotter-suzuki-0} \exp (i [A + B] t) = \ lim_ {n\to\infty} \left ( \exp () \exp () \right) ^ n。
 \end{align} 俗称，这意味着我们可以通过在 $A $ 和 $B $ 单独的情况下进行发展，在 $A + B $ 下提高状态。
 如果我们在 `A : (Double, Qubit[]) => Unit` 应用 $e ^ {i t A} $ 的操作下，通过 $A $ 来表示进化，则在重新排列调用序列方面，Trotter – Suzuki 扩展的表示形式就变得清晰。
@@ -162,7 +162,7 @@ U(1, time / Float(nSteps), target);
 // ...
 ```
 
-此时，我们现在可以了解 Trotter – Suzuki 扩展，*根本不需引用量程机制*。
+此时，我们现在可以了解 Trotter – Suzuki 扩展， *根本不需引用量程机制*。
 此扩展实际上是一个由 $ \eqref{eq： trotter-suzuki-0} $ 使用的特殊迭代模式。
 此迭代模式的实现方式 <xref:microsoft.quantum.canon.decomposeintotimestepsca> 如下：
 
@@ -213,7 +213,7 @@ operation _ControlledOnBitString(
 ```
 
 在这里，我们已使用 <xref:microsoft.quantum.canon.applypaulifrombitstring> 应用 $P $，在其目标上进行部分应用，以便与一起使用 `ApplyWith` 。
-但请注意，我们需要将*控制*寄存器转换为所需的格式，因此我们 `(Controlled oracle)` 在*目标*上部分应用内部操作。
+但请注意，我们需要将 *控制* 寄存器转换为所需的格式，因此我们 `(Controlled oracle)` 在 *目标*上部分应用内部操作。
 这会使 `ApplyWith` 控制寄存器与 $P $ 的方括号完全相同。
 
 此时，我们可以这样做，但我们的新操作并不像应用函子，unsatisfying `Controlled` 。

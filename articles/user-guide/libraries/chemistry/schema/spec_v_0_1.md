@@ -2,23 +2,23 @@
 title: 'Broombridge 架构规范 (版本 0.1) '
 description: 详细说明了适用于 Microsoft 量程化学库的 Broombridge 量程化学架构 v 0.1。
 author: cgranade
-ms.author: chgranad@microsoft.com
+ms.author: chgranad
 ms.date: 10/17/2018
 ms.topic: article
 uid: microsoft.quantum.libraries.chemistry.schema.spec_v_0_1
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: abbc63b8801c774e6ba06cff99b7382d64424b2c
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: b99c90c434958f7b04712580789b203766cd084d
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869131"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835734"
 ---
 # <a name="broombridge-specification-v01"></a>Broombridge 规范 v 0。1 #
 
-本文档中的关键字 "必须"、"不得"、"需要"、"应"、"不应"、"应该"、"不能"、"建议"、"可以" 和 "可选" 将被解释为[RFC 2119](https://tools.ietf.org/html/rfc2119)中所述。
+本文档中的关键字 "必须"、"不得"、"需要"、"应"、"不应"、"应该"、"不能"、"建议"、"可以" 和 "可选" 将被解释为 [RFC 2119](https://tools.ietf.org/html/rfc2119)中所述。
 
 标题为 "NOTE"、"信息" 或 "警告" 的任何边栏都是信息性的。
 
@@ -32,7 +32,7 @@ Broombridge 文档用于在量程化学中传达模拟问题的实例，以便�
 
 本部分进行了规范。
 
-Broombridge 文档必须序列化为表示 JSON 对象的[YAML 1.2 文档](http://yaml.org/spec/)，如[RFC 4627](https://tools.ietf.org/html/rfc4627)第2.2 节中所述。
+Broombridge 文档必须序列化为表示 JSON 对象的 [YAML 1.2 文档](http://yaml.org/spec/) ，如 [RFC 4627](https://tools.ietf.org/html/rfc4627) 第2.2 节中所述。
 序列化到 YAML 的对象必须具有一个属性，该属性 `"$schema"` 的值为 `"https://raw.githubusercontent.com/Microsoft/Quantum/master/Chemistry/Schema/qchem-0.1.schema.json"` ，并且必须根据 JSON 架构草稿-06 规范 [[1](https://tools.ietf.org/html/draft-wright-json-schema-01)， [2](https://tools.ietf.org/html/draft-wright-json-schema-validation-01)] 有效。
 
 对于此规范的其余部分，"Broombridge 对象" 将引用从 Broombridge YAML 文档反序列化的 JSON 对象。
@@ -49,14 +49,14 @@ Broombridge 文档必须序列化为表示 JSON 对象的[YAML 1.2 文档](http:
 
 _数量对象_是 JSON 对象，并且必须具有一个属性， `units` 其值为表1中列出的允许值之一。
 
-如果某个数量对象除了其属性之外有一个属性，则它是一个_简单的数量对象_ `value` `units` 。
+如果某个数量对象除了其属性之外有一个属性，则它是一个 _简单的数量对象_ `value` `units` 。
 属性的值 `value` 必须是数字。
 
-如果某个数量对象具有属性及其属性，则它是一个_有限数量的对象_ `lower` `upper` `units` 。
+如果某个数量对象具有属性及其属性，则它是一个 _有限数量的对象_ `lower` `upper` `units` 。
 和属性的值 `lower` `upper` 必须是数字。
 限制数量对象可以有属性 `value` ，其值为数值。
 
-如果某个数量对象具有属性和属性及其属性，则它是一个_稀疏数组的数量对象_ `format` `values` `units` 。
+如果某个数量对象具有属性和属性及其属性，则它是一个 _稀疏数组的数量对象_ `format` `values` `units` 。
 的值 `format` 必须是字符串 `sparse` 。
 属性的值 `values` 必须是数组。
 的每个元素 `values` 必须是一个数组，该数组表示稀疏数组数量的索引和值。

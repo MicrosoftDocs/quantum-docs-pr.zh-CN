@@ -1,24 +1,24 @@
 ---
 title: 量程计算学习资源 |Microsoft Docs
 description: 如果想要详细了解量程计算机编程，请参阅深入了解量程计算主题的参考列表。
-author: QuantumWriter
+author: bradben
 uid: microsoft.quantum.more-information
-ms.author: nawiebe@microsoft.com
+ms.author: v-benbra
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 7c5063fccbe73478aeb917e0cd2fe2f7fe51c070
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 91b4c052fd7f20906433a4bb481f113acbe789ea
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866836"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834170"
 ---
 # <a name="more-quantum-computing-learning-resources"></a>更多量程计算学习资源
 
-尽管 "[量程计算概念](xref:microsoft.quantum.concepts.intro)" 一节中所述的工具是任何量程软件开发人员的基础，但它们并不是跨越有关量子计算机编程和算法设计的深度或广度。  由于量程计算是一个快速的开发字段，因此没有任何一个资源包含了解如何最好地使用这些工具来解决问题所需的所有信息。  出于此原因，我们已编译一个引用列表，该列表可能会对读者感兴趣的读者了解有关量子计算机编程的详细信息。
+尽管 " [量程计算概念](xref:microsoft.quantum.concepts.intro) " 一节中所述的工具是任何量程软件开发人员的基础，但它们并不是跨越有关量子计算机编程和算法设计的深度或广度。  由于量程计算是一个快速的开发字段，因此没有任何一个资源包含了解如何最好地使用这些工具来解决问题所需的所有信息。  出于此原因，我们已编译一个引用列表，该列表可能会对读者感兴趣的读者了解有关量子计算机编程的详细信息。
 本部分包含对量程计算主题深入介绍的选定参考内容。
 
 ## <a name="basic-quantum-computing"></a>基本量程计算 ##

@@ -2,18 +2,18 @@
 title: I Q# 幻命令
 description: Q#Jupyter 笔记本的 I 幻命令的快速参考页面 Q#
 author: gillenhaalb
-ms.author: a-gibec@microsoft.com
+ms.author: a-gibec
 ms.date: 03/05/2020
 uid: microsoft.quantum.guide.quickref.iqsharp
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 1d2d092588e1a5c69d12e5d50377e3e26412c094
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 75a1e1820e5ca16268c9b11322eb5653094b1a3c
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863694"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833570"
 ---
 # <a name="ino-locq-magic-commands"></a>I Q# 幻命令
 
@@ -34,12 +34,12 @@ ms.locfileid: "88863694"
 ### <a name="azure-quantum-integration"></a>Azure 量程集成
 
 - [`%azure.connect`](xref:microsoft.quantum.iqsharp.magic-ref.azure.connect)：连接到 Azure 量程工作区或显示当前连接状态。
-- [`%azure.execute`](xref:microsoft.quantum.iqsharp.magic-ref.azure.execute)：在 Azure 量程工作区中执行作业。
+- [`%azure.execute`](xref:microsoft.quantum.iqsharp.magic-ref.azure.execute)：在 Azure 量程工作区中运行作业。
 - [`%azure.jobs`](xref:microsoft.quantum.iqsharp.magic-ref.azure.jobs)：显示当前 Azure 量程工作区中的作业列表。
 - [`%azure.output`](xref:microsoft.quantum.iqsharp.magic-ref.azure.output)：显示当前 Azure 量程工作区中某个作业的结果。
 - [`%azure.status`](xref:microsoft.quantum.iqsharp.magic-ref.azure.status)：在当前 Azure 量程工作区中显示作业的状态。
 - [`%azure.submit`](xref:microsoft.quantum.iqsharp.magic-ref.azure.submit)：将作业提交到 Azure 量程工作区。
-- [`%azure.target`](xref:microsoft.quantum.iqsharp.magic-ref.azure.target)： Q# 在 Azure 量程工作区中设置或显示作业提交的活动执行目标。
+- [`%azure.target`](xref:microsoft.quantum.iqsharp.magic-ref.azure.target)： Q# 在 Azure 量程工作区中设置或显示作业提交的活动运行目标。
 
 ### <a name="chemistry-from-microsoftquantumchemistry-package"></a>来自 Microsoft 量子包的化学 () 
 
@@ -51,6 +51,6 @@ ms.locfileid: "88863694"
 
 ### <a name="katas-from-microsoftquantumkatas-package"></a>Katas (Katas package) 
 
-- [`%kata`](xref:microsoft.quantum.iqsharp.magic-ref.kata)：执行单个测试，并报告测试是否已成功通过。
+- [`%kata`](xref:microsoft.quantum.iqsharp.magic-ref.kata)：运行单个测试，并报告测试是否已成功通过。
 - [`%check_kata`](xref:microsoft.quantum.iqsharp.magic-ref.check_kata)：检查单个 kata 测试的引用实现。
     具体而言，它将一个任务的引用实现替换为单元，并报告测试是否成功通过。

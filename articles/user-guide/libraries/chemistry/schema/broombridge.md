@@ -2,33 +2,33 @@
 title: Broombridge 量程化学架构
 description: Broombridge 量程化学架构概述，用于建模 Microsoft Quantum Development Kit 的实际化学问题。
 author: martinro
-ms.author: martinro@microsoft.com
+ms.author: martinro
 ms.date: 10/17/2018
 ms.topic: article
 uid: microsoft.quantum.libraries.chemistry.schema.broombridge
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: ed24fdd58dc16f97d1ba8051b1c8d0fd84ce0588
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: e580fd8267cc7ba30533d557eceb486f8c205be6
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869165"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835768"
 ---
 # <a name="broombridge-quantum-chemistry-schema"></a>Broombridge 量程化学架构 # 
 
-强大的计算化学软件（如[NWChem](http://www.nwchem-sw.org/) ）允许您对各种真实的化学问题进行建模。 若要使用 Microsoft 量程化学库来访问 NWChem 分子模型，请使用名为**Broombridge**的基于[YAML](https://en.wikipedia.org/wiki/YAML)的架构。 此名称被选作了引用，其中某些圆圈中的一个[路标](https://en.wikipedia.org/wiki/Broom_Bridge)Celebrated 为 Hamiltonians 的 birthplace。 
+强大的计算化学软件（如 [NWChem](http://www.nwchem-sw.org/) ）允许您对各种真实的化学问题进行建模。 若要使用 Microsoft 量程化学库来访问 NWChem 分子模型，请使用名为**Broombridge**的基于[YAML](https://en.wikipedia.org/wiki/YAML)的架构。 此名称被选作了引用，其中某些圆圈中的一个 [路标](https://en.wikipedia.org/wiki/Broom_Bridge) Celebrated 为 Hamiltonians 的 birthplace。 
 
-[NWChem](https://github.com/nwchemgit/nwchem)是一种开放源代码项目，根据许可教育社区许可证 (ECL) 2.0 许可证授权。 [Broombridge 量程化学架构](https://docs.microsoft.com/quantum/libraries/chemistry/schema/spec_v_0_2)) 是一种开放源架构，其中包含[RFC 2119](https://tools.ietf.org/html/rfc2119)后面的[定义](https://raw.githubusercontent.com/Microsoft/Quantum/master/Chemistry/Schema/broombridge-0.1.schema.json)，以及在 MIT 许可证下授权的[验证程序脚本](https://raw.githubusercontent.com/Microsoft/Quantum/master/Chemistry/Schema/validator.py)。 
+[NWChem](https://github.com/nwchemgit/nwchem) 是一种开放源代码项目，根据许可教育社区许可证 (ECL) 2.0 许可证授权。 [Broombridge 量程化学架构](https://docs.microsoft.com/quantum/libraries/chemistry/schema/spec_v_0_2)) 是一种开放源架构，其中包含[RFC 2119](https://tools.ietf.org/html/rfc2119)后面的[定义](https://raw.githubusercontent.com/Microsoft/Quantum/master/Chemistry/Schema/broombridge-0.1.schema.json)，以及在 MIT 许可证下授权的[验证程序脚本](https://raw.githubusercontent.com/Microsoft/Quantum/master/Chemistry/Schema/validator.py)。 
 
 Broombridge 是 YAML 的，它是一种用于表示电子结构问题的可人工读取的结构化、可人工阅读的方式。 具体而言，可以表示以下数据：
 - Fermionic Hamiltonians 可使用 electron 和双整型表示。
 - 使用创建序列可展示地面和兴奋状态。
 - 可以指定能源水平的上限和下限。
 
-可以使用各种方法从 NWChem 生成数据，例如，使用完全安装的 NWChem 来运行化学标签 (例如，在[NWChem 库](https://github.com/nwchemgit/nwchem/tree/master/QA/chem_library_tests)中提供的，它将 Broombridge 作为 "运行") 的一部分输出，或者也可用于生成 NWChem 的 docker 图像。 若要快速开始使用计算化学，无需安装任何化学软件，可以使用[EMSL 箭头](https://arrows.emsl.pnnl.gov/api/qsharp_chem)提供的 NWChem 视觉对象界面。
+可以使用各种方法从 NWChem 生成数据，例如，使用完全安装的 NWChem 来运行化学标签 (例如，在 [NWChem 库](https://github.com/nwchemgit/nwchem/tree/master/QA/chem_library_tests) 中提供的，它将 Broombridge 作为 "运行") 的一部分输出，或者也可用于生成 NWChem 的 docker 图像。 若要快速开始使用计算化学，无需安装任何化学软件，可以使用 [EMSL 箭头](https://arrows.emsl.pnnl.gov/api/qsharp_chem)提供的 NWChem 视觉对象界面。
 
 从较高层次来看，NWChem 与 Microsoft Quantum Development Kit 之间的相互作用可以按如下所示进行可视化： ![ 化学堆栈 ](~/media/broombridge.png) 蓝色阴影框表示 Broombridge 架构，而不同灰色阴影框表示选择的其他内部数据表示形式，这些数据表示法表示和处理基于实际化学问题的计算化学的量程算法。
 
-量程开发工具包示例存储库中的[整数/YAML](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML)文件夹包含使用 Broombridge 架构定义的多个化学表示形式。
+量程开发工具包示例存储库中的 [整数/YAML](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML) 文件夹包含使用 Broombridge 架构定义的多个化学表示形式。

@@ -3,29 +3,29 @@ title: 标准库中的错误更正 Q#
 description: 了解如何在程序中使用纠错代码， Q# 同时保护 qubits 的状态。
 author: QuantumWriter
 uid: microsoft.quantum.libraries.error-correction
-ms.author: martinro@microsoft.com
+ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 8b1f008793281121bc547d1a6ac3b960feb082ab
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: dad0db4d2aab27e5ae46d4df10ee050f785d8bb8
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868485"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835547"
 ---
 # <a name="error-correction"></a>错误更正 #
 
 ## <a name="introduction"></a>简介 ##
 
-在传统计算中，如果有一位要防范错误，通常可以通过重复数据位来用*逻辑位*来表示该位。
+在传统计算中，如果有一位要防范错误，通常可以通过重复数据位来用 *逻辑位* 来表示该位。
 例如，让 $ \overline {0} = $0 是数据位0的编码，其中使用标签0上面的一行来指示它是0状态中位的编码。
 如果我们以类似的方式让 $ \overline {1} = $111，则我们有一个简单的重复代码，可以防止出现一位翻转错误。
 也就是说，如果三个位中有任何一个进行了翻转，则可以通过使用大多数投票来恢复逻辑位的状态。
-尽管传统的纠错是一个非常丰富的主题，这一特定的示例 (我们建议不[起毛的编码理论简介](https://www.springer.com/us/book/9783540641339)) ，上面的重复代码已指向保护量程信息的可能问题。
-也就是说，"[无克隆" 定理](xref:microsoft.quantum.concepts.pauli#the-no-cloning-theorem)意味着如果我们测量每个单独的 qubit，并通过与上面的传统代码进行交叉投票，就会丢失我们尝试保护的准确信息。
+尽管传统的纠错是一个非常丰富的主题，这一特定的示例 (我们建议不 [起毛的编码理论简介](https://www.springer.com/us/book/9783540641339)) ，上面的重复代码已指向保护量程信息的可能问题。
+也就是说，" [无克隆" 定理](xref:microsoft.quantum.concepts.pauli#the-no-cloning-theorem) 意味着如果我们测量每个单独的 qubit，并通过与上面的传统代码进行交叉投票，就会丢失我们尝试保护的准确信息。
 
 在量程设置中，我们会看到测量值有问题。 我们仍可以实现上述编码。
 这样做有助于了解我们如何将错误更正通用化到量程情况。
@@ -61,8 +61,8 @@ ms.locfileid: "87868485"
 | $X_2$ | $ \ket {001} $ | $ \ket {110} $ | $+$ | $-$ |
 
 因此，两个度量值的结果可唯一确定发生了哪个位翻转错误，但不会泄漏有关所编码的状态的任何信息。
-我们将这些结果称为 "不*症状*"，并参阅将一个症状映射回导致其*恢复*的错误的过程。
-特别是，我们强调，恢复是一种*传统*的推理过程，该过程会将发生的症状作为其输入，并返回一个指示，说明如何修复可能发生的任何错误。
+我们将这些结果称为 "不 *症状*"，并参阅将一个症状映射回导致其 *恢复*的错误的过程。
+特别是，我们强调，恢复是一种 *传统* 的推理过程，该过程会将发生的症状作为其输入，并返回一个指示，说明如何修复可能发生的任何错误。
 
 > [!NOTE]
 > 以上的位翻转代码只能纠正单个位翻转错误;也就是说， `X` 操作在单个 qubit 上。
@@ -70,15 +70,15 @@ ms.locfileid: "87868485"
 > 同样，应用阶段翻转操作 `Z` 会将 $ \ket{\overline {1} } $ 映射到 $-\ket{\overline {1} } $，因此会将 $ \ket{\overline{+}} $ 映射到 $ \ket{\overline {-} } $。
 > 通常，可以创建代码来处理更多错误，并处理 $Z $ 个错误以及 $X $ 个错误。
 
-对于在所有代码状态下以相同方式操作的量程错误更正，我们可以对其进行描述，这就是*稳定的形式*。
+对于在所有代码状态下以相同方式操作的量程错误更正，我们可以对其进行描述，这就是 *稳定的形式*。
 Q#Canon 提供了一个框架，用于描述从稳定程序代码进行的编码和解码，并描述了一个从错误中恢复的方法。
 在本部分中，我们使用几个简单的量程纠错代码描述此框架及其应用程序。
 
 > [!TIP]
 > 稳定介绍了对稳定形式的介绍。
-> 我们向读者介绍了了解更多[Gottesman 2009](https://arxiv.org/abs/0904.2557)的兴趣。
+> 我们向读者介绍了了解更多 [Gottesman 2009](https://arxiv.org/abs/0904.2557)的兴趣。
 
-## <a name="representing-error-correcting-codes-in-no-locq"></a>表示中的纠错代码Q# ##
+## <a name="representing-error-correcting-codes-in-no-locq"></a>表示中的纠错代码 Q# ##
 
 为了帮助指定错误更正代码， Q# canon 提供了几种不同的用户定义类型：
 
@@ -101,7 +101,7 @@ let syndMeasOp = SyndromeMeasOp(MeasureStabilizerGenerators([
 let code = QECC(encodeOp, decodeOp, syndMeasOp);
 ```
 
-请注意，该 `QECC` 类型*不*包含恢复功能。
+请注意，该 `QECC` 类型 *不* 包含恢复功能。
 这样，我们就可以更改在更正错误时使用的恢复功能，而无需更改代码本身的定义;此功能在将信息从特征度量纳入到恢复所假定的模型时特别有用。
 
 以这种方式定义代码后，可以使用该 <xref:microsoft.quantum.errorcorrection.recover> 操作从错误中恢复：
@@ -120,6 +120,6 @@ using (scratch = Qubit[nScratch]) {
 }
 ```
 
-我们将在[位翻转代码示例](https://github.com/microsoft/Quantum/tree/master/samples/error-correction/bit-flip-code)中更详细地探讨这一点。
+我们将在 [位翻转代码示例](https://github.com/microsoft/Quantum/tree/main/samples/error-correction/bit-flip-code)中更详细地探讨这一点。
 
-除了位翻转代码 Q# 外，canon 还提供了[5 qubit 完美代码](https://arxiv.org/abs/quant-ph/9602019)的实现和[七 qubit 代码](https://arxiv.org/abs/quant-ph/9705052)，这两者都可以更正任意单 qubit 错误。
+除了位翻转代码 Q# 外，canon 还提供了 [5 qubit 完美代码](https://arxiv.org/abs/quant-ph/9602019)的实现和 [七 qubit 代码](https://arxiv.org/abs/quant-ph/9705052)，这两者都可以更正任意单 qubit 错误。

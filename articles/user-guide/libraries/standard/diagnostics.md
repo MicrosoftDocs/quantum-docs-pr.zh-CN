@@ -3,17 +3,17 @@ title: 标准库中的诊断 Q#
 description: 了解 Q# 用于在量程程序中捕获错误或错误的标准库中的诊断功能和操作。
 author: cgranade
 uid: microsoft.quantum.libraries.diagnostics
-ms.author: chgranad@microsoft.com
+ms.author: chgranad
 ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 4a98795b2459adaa4e47c888751121fffdc70971
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 11ce1bc86db0c5aa0f81ba7d0f2d6ec3463b178c
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868536"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835564"
 ---
 # <a name="diagnostics"></a>诊断 #
 
@@ -33,19 +33,19 @@ Message($"About to rotate by an angle of {angle}...");
 ```
 
 > [!NOTE]
-> `Message`具有签名 `(String -> Unit)` ，而不能在中观察发出调试日志消息的 Q# 。
+> `Message` 具有签名 `(String -> Unit)` ，而不能在中观察发出调试日志消息的 Q# 。
 
 <xref:microsoft.quantum.diagnostics.dumpmachine>和 <xref:microsoft.quantum.diagnostics.dumpregister> callables 指示目标计算机提供有关当前已分配的所有 qubits 的诊断信息，或分别提供有关 qubits 的特定寄存器的诊断信息。
 每个目标计算机因提供的诊断信息而异，以响应转储指令。
-例如，[完整状态模拟器](xref:microsoft.quantum.machines.full-state-simulator)目标虚拟机为主机程序提供了其内部使用的状态向量，以表示寄存器 qubits。
-相比之下， [Toffoli 模拟器](xref:microsoft.quantum.machines.toffoli-simulator)目标计算机为每个 qubit 提供一个传统位。
+例如， [完整状态模拟器](xref:microsoft.quantum.machines.full-state-simulator) 目标虚拟机为主机程序提供了其内部使用的状态向量，以表示寄存器 qubits。
+相比之下， [Toffoli 模拟器](xref:microsoft.quantum.machines.toffoli-simulator) 目标计算机为每个 qubit 提供一个传统位。
 
- 若要了解有关[完整状态模拟器的](xref:microsoft.quantum.machines.full-state-simulator)输出的详细信息 `DumpMachine` ，请参阅[测试和调试一文](xref:microsoft.quantum.guide.testingdebugging#dump-functions)的 "转储函数" 一节。
+ 若要了解有关 [完整状态模拟器的](xref:microsoft.quantum.machines.full-state-simulator)输出的详细信息 `DumpMachine` ，请参阅 [测试和调试一文](xref:microsoft.quantum.guide.testingdebugging#dump-functions)的 "转储函数" 一节。
 
 
 ## <a name="facts-and-assertions"></a>事实和断言 ##
 
-如[测试和调试](xref:microsoft.quantum.guide.testingdebugging)中所述，可以将具有签名的函数或操作 `Unit -> Unit` `Unit => Unit` 分别标记为*单元测试*。
+如 [测试和调试](xref:microsoft.quantum.guide.testingdebugging)中所述，可以将具有签名的函数或操作 `Unit -> Unit` `Unit => Unit` 分别标记为 *单元测试*。
 每个单元测试通常包含一个小型量程计划，以及一个或多个检查该程序的正确性的条件。
 这些条件可采用以下两种形式之一：检查输入的值或_断言_，这些_事实_检查作为输入传递的一个或多个 qubits 的状态。
 
@@ -62,24 +62,24 @@ Q#标准库提供了若干不同的函数来表示事实，其中包括：
 
 ### <a name="testing-qubit-states"></a>测试 Qubit 状态 ###
 
-实际上，断言依赖于这一事实，即，对量子机制的传统模拟不需要遵循非[克隆定理](https://arxiv.org/abs/quant-ph/9607018)，因此，我们可以在为目标计算机使用模拟器时进行 unphysical 测量和断言。
+实际上，断言依赖于这一事实，即，对量子机制的传统模拟不需要遵循非 [克隆定理](https://arxiv.org/abs/quant-ph/9607018)，因此，我们可以在为目标计算机使用模拟器时进行 unphysical 测量和断言。
 因此，可以在部署硬件之前，在传统模拟器上测试各个操作。
 在不允许评估断言的目标计算机上， <xref:microsoft.quantum.diagnostics.assertmeasurement> 可以安全地忽略对的调用。
 
 更常见的情况是，在 <xref:microsoft.quantum.diagnostics.assertmeasurement> 给定 Pauli 基础上测量给定 qubits 的操作断言将始终具有给定的结果。
-如果断言失败，则执行将通过 `fail` 使用给定的消息调用来结束。
+如果断言失败，则运行将通过调用 `fail` 给定的消息结束。
 默认情况下，不实现此操作;可支持它的模拟器应该提供执行运行时检查的实现。
-`AssertMeasurement`具有签名 `((Pauli[], Qubit[], Result, String) -> ())` 。
+`AssertMeasurement` 具有签名 `((Pauli[], Qubit[], Result, String) -> ())` 。
 由于 `AssertMeasurement` 是一个带有空元组作为其输出类型的函数，因此不能在 `AssertMeasurement` 程序中使用具有调用的效果 Q# 。
 
 在 <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> 给定 Pauli 基础上测量给定 qubits 的操作函数断言在某种程度上具有给定概率的给定结果。
 容差是加法 (例如 `abs(expected-actual) < tol`) 。
-如果断言失败，则执行将通过 `fail` 使用给定的消息调用来结束。
+如果断言失败，则运行将通过调用 `fail` 给定的消息结束。
 默认情况下，不实现此操作;可支持它的模拟器应该提供执行运行时检查的实现。
-`AssertMeasurementProbability`具有签名 `((Pauli[], Qubit[], Result, Double, String, Double) -> Unit)` 。 第一个 `Double` 参数提供所需的结果概率，第二个参数为容差。
+`AssertMeasurementProbability` 具有签名 `((Pauli[], Qubit[], Result, Double, String, Double) -> Unit)` 。 第一个 `Double` 参数提供所需的结果概率，第二个参数为容差。
 
 我们不仅可以使用断言单个度量值，还可以使用模拟器用来表示 qubit 的内部状态的传统信息适合复制，这样我们就不需要实际执行度量来测试断言。
-具体而言，这使我们能够考虑到在实际硬件上无法进行的*不兼容*指标。
+具体而言，这使我们能够考虑到在实际硬件上无法进行的 *不兼容* 指标。
 
 假设 `P : Qubit => Unit` 是一项操作，用于在其输入处于状态 $ \ket $ 时准备状态 $ \ket{\psi} $ {0} 。
 让 $ \ket{\psi '} $ 是准备的实际状态 `P` 。
@@ -131,7 +131,7 @@ using (register = Qubit()) {
 这些策略是通过 canon 操作 <xref:microsoft.quantum.diagnostics.assertoperationsequalinplace> 和分别实现的 <xref:microsoft.quantum.diagnostics.assertoperationsequalreferenced> 。
 
 > [!NOTE]
-> 上面所述的引用断言基于[Choi – Jamiłkowski isomorphism](https://en.wikipedia.org/wiki/Channel-state_duality)，这是一个数学框架，该框架将 $n $ qubits 上的操作与 $ 2n $ 放大上的 qubits 状态关联起来。
+> 上面所述的引用断言基于 [Choi – Jamiłkowski isomorphism](https://en.wikipedia.org/wiki/Channel-state_duality)，这是一个数学框架，该框架将 $n $ qubits 上的操作与 $ 2n $ 放大上的 qubits 状态关联起来。
 > 具体而言，$n $ qubits 上的标识操作由放大状态 $ \ket{\ beta_ {00} } \mathrel{： =} ( \ket {00} + \ket {11}) /\sqrt $ $n $ 副本表示 {2} 。
 > 操作 <xref:microsoft.quantum.preparation.preparechoistate> 实现此 isomorphism，并准备一个表示给定操作的状态。
 
@@ -145,7 +145,7 @@ using (register = Qubit()) {
 
 但更严重的是，这两种方法测试正在检查的操作的不同属性。
 由于就地断言多次调用每个操作，因此对每个输入状态一次，任何随机选项和测量结果可能在调用之间发生变化。
-与此相反，引用的断言只调用一次每个操作一次，以便*在一个拍摄中*检查操作是否相等。
+与此相反，引用的断言只调用一次每个操作一次，以便 *在一个拍摄中*检查操作是否相等。
 这两个测试可用于确保量程程序的正确性。
 
 

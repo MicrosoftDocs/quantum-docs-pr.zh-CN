@@ -1,24 +1,24 @@
 ---
 title: 使用量子位
-description: 填充说明
+description: 了解如何在中使用 qubits Q#
 author: gillenhaalb
-ms.author: a-gibec@microsoft.com
+ms.author: a-gibec
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.qubits
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 6808a852ee0de7d3a38ea44e9637eeaa6bea382a
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: aa942a61280553ae4e51cd5ddcc85c0df935dab1
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867856"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835853"
 ---
 # <a name="working-with-qubits"></a>使用量子位
 
-Qubits 是量程计算中信息的基础对象。 有关 qubits 的常规介绍，请参阅[了解量程计算](xref:microsoft.quantum.overview.understanding)，若要深入了解其数学表示形式，请参阅[Qubit](xref:microsoft.quantum.concepts.qubit)。 
+Qubits 是量程计算中信息的基础对象。 有关 qubits 的常规介绍，请参阅 [了解量程计算](xref:microsoft.quantum.overview.understanding)，若要深入了解其数学表示形式，请参阅 [Qubit](xref:microsoft.quantum.concepts.qubit)。 
 
 本文介绍如何在程序中使用和使用 qubits Q# 。 
 
@@ -28,15 +28,15 @@ Qubits 是量程计算中信息的基础对象。 有关 qubits 的常规介绍�
 ## <a name="allocating-qubits"></a>分配 Qubits
 
 由于物理 qubits 是量程计算机中宝贵的资源，因此，编译器的一项工作是确保它们尽可能有效地使用。
-因此，您需要 Q# 指定在特定语句块内*分配*qubits 以供使用。
-可以将 qubits 分配为单一 qubit，也可以将其分配为 qubits 数组（称为*寄存器*）。 
+因此，您需要 Q# 指定在特定语句块内 *分配* qubits 以供使用。
+可以将 qubits 分配为单一 qubit，也可以将其分配为 qubits 数组（称为 *寄存器*）。 
 
 ### <a name="clean-qubits"></a>清理 qubits
 
 使用 `using` 语句可分配新的 qubits，以便在语句块期间使用。
 
 语句包含关键字 `using` ，后跟括在括号中的绑定 `( )` 和 qubits 可用的语句块。
-绑定遵循与语句相同的模式 `let` ：单个符号或符号元组，后跟一个等号 `=` ，一个值或匹配*项*的匹配元组。
+绑定遵循与语句相同的模式 `let` ：单个符号或符号元组，后跟一个等号 `=` ，一个值或匹配 *项*的匹配元组。
 
 初始值设定项可用于单个 qubit （表示为 `Qubit()` ）或 qubits 的数组， `Qubit[n]` 其中 `n` 是一个 `Int` 表达式。
 例如，应用于对象的
@@ -85,7 +85,7 @@ borrowing ((auxiliary, register) = (Qubit(), Qubit[5])) {
 如果没有足够的 qubits，则会分配新的 qubits 来完成请求。
 
 在脏 qubits 的已知用例中，是多控制 CNOT-CONTAINS 入口的实现，只需很少的 qubits 和实现 incrementers。
-有关如何在中使用的示例 Q# ，请参阅本文中的[借用 Qubits 示例](#borrowing-qubits-example)，或使用 2n + 2 Qubits （对于使用借用 Roetteler 的算法，[*使用 2n + 2*](https://arxiv.org/abs/1611.07995)) 2017 和 (Toffoli）进行。
+有关如何在中使用的示例 Q# ，请参阅本文中的 [借用 Qubits 示例](#borrowing-qubits-example) ，或使用 2n + 2 Qubits （对于使用借用 Roetteler 的算法， [*使用 2n + 2*](https://arxiv.org/abs/1611.07995)) 2017 和 (Toffoli）进行。
 
 ## <a name="intrinsic-operations"></a>内部操作
 
@@ -93,11 +93,11 @@ borrowing ((auxiliary, register) = (Qubit(), Qubit[5])) {
 在某种意义上，这是 Q# 程序可以对 qubit 执行的所有操作，因为可执行的操作全部定义为操作。
 
 本文介绍 Q# 可用于与 qubits 交互的几个有用操作。
-有关这些和其他的详细信息，请参阅[内部操作和函数](xref:microsoft.quantum.libraries.standard.prelude)。 
+有关这些和其他的详细信息，请参阅 [内部操作和函数](xref:microsoft.quantum.libraries.standard.prelude)。 
 
 首先，qubit Pauli 运算符 $X $、$Y $ 和 $Z $ Q# 由内部操作 [`X`](xref:microsoft.quantum.intrinsic.x) 、和表示， [`Y`](xref:microsoft.quantum.intrinsic.y) [`Z`](xref:microsoft.quantum.intrinsic.z) 其中每个都具有类型 `(Qubit => Unit is Adj + Ctl)` 。
 
-如[内部操作和函数](xref:microsoft.quantum.libraries.standard.prelude)中所述，请将 $X $， `X` 以作为位翻转操作，而不是入口。
+如 [内部操作和函数](xref:microsoft.quantum.libraries.standard.prelude)中所述，请将 $X $， `X` 以作为位翻转操作，而不是入口。
 您可以使用该 `X` 操作来为某些传统位字符串 $s $ s_0 \ket{s_1 \dots .. s_n} $ 的形式准备状态：
 
 ```qsharp
@@ -144,13 +144,13 @@ operation PreparePlusMinusState(bitstring : Bool[], register : Qubit[]) : Unit {
 
 ## <a name="measurements"></a>度量
 
-可以在不同的基础上执行单个 qubits 的度量值，每个度量值由[Bloch 球体](xref:microsoft.quantum.glossary#bloch-sphere)上的 Pauli 轴表示。
+可以在不同的基础上执行单个 qubits 的度量值，每个度量值由 [Bloch 球体](xref:microsoft.quantum.glossary#bloch-sphere)上的 Pauli 轴表示。
 *计算基础*是指 `PauliZ` 基础，是用于度量的最常见的基础。
 
 ### <a name="measure-a-single-qubit-in-the-pauliz-basis"></a>基于单个 qubit 度量 `PauliZ`
 
 使用 " [`M`](xref:microsoft.quantum.intrinsic.m) 操作"，它是一个内置的非单一的非单一操作，用于度量单个 qubit 并为 `PauliZ` 结果分配一个传统值。
-`M`具有保留的返回类型， `Result` 它只能接受值 `Zero` 或 `One` 对应于已测量状态 $ \ket {0} $ 或 $ \ket {1} $-指示结果不再是量程状态。
+`M` 具有保留的返回类型， `Result` 它只能接受值 `Zero` 或 `One` 对应于已测量状态 $ \ket {0} $ 或 $ \ket {1} $-指示结果不再是量程状态。
 
 一个简单的示例是以下操作，它在 $ \ket $ 状态下分配一个 qubit {0} ，然后对其应用一个 Hadamard 操作， `H` 并根据结果测量结果 `PauliZ` 。
 
@@ -197,7 +197,7 @@ operation MeasureIfAllQubitsAreZero(qubits : Qubit[], pauli : Pauli) : Bool {
 
 ## <a name="borrowing-qubits-example"></a>借款 Qubits 示例
 
-使用关键字的 canon 中有一些示例 `borrowing` ，如以下函数 `MultiControlledXBorrow` 。 如果 `controls` 表示要添加到操作的控件 qubits `X` ，则该实现添加的脏[ancillas](xref:microsoft.quantum.glossary#ancilla)的数量为 `Length(controls)-2` 。
+使用关键字的 canon 中有一些示例 `borrowing` ，如以下函数 `MultiControlledXBorrow` 。 如果 `controls` 表示要添加到操作的控件 qubits `X` ，则该实现添加的脏 [ancillas](xref:microsoft.quantum.glossary#ancilla) 的数量为 `Length(controls)-2` 。
 
 ```qsharp
 operation MultiControlledXBorrow ( controls : Qubit[] , target : Qubit ) : Unit
@@ -245,4 +245,4 @@ is Adj + Ctl {
 
 ## <a name="next-steps"></a>后续步骤
 
-了解中的[控制流](xref:microsoft.quantum.guide.controlflow) Q# 。
+了解中的 [控制流](xref:microsoft.quantum.guide.controlflow) Q# 。

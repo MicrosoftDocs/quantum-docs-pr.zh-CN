@@ -2,23 +2,23 @@
 title: 量程资源估计器-量程开发工具包
 description: 了解 Microsoft QDK resources 估计器，它估算 Q# 在量程计算机上运行某一给定操作实例所需的资源。
 author: anpaz-msft
-ms.author: anpaz@microsoft.com
+ms.author: anpaz
 ms.date: 06/26/2020
 ms.topic: article
 uid: microsoft.quantum.machines.resources-estimator
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 1892431c3e332385a5bcefa357eb64a9fac3f381
-ms.sourcegitcommit: 11bd357baeb6ab53a402882979e75964d0869b57
+ms.openlocfilehash: 6138c098a4efe2797c7d7360573ddcb9cb70a6c1
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88992235"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835921"
 ---
 # <a name="quantum-development-kit-qdk-resources-estimator"></a>量程开发工具包 (QDK) 资源估计器
 
-顾名思义，类会估算在 `ResourcesEstimator` 量程计算机上运行某一给定操作实例所需的资源 Q# 。 它通过执行量程操作来实现此操作，而无需实际模拟量子计算机的状态;出于此原因，它会估算 Q# 使用上千个 qubits 的操作的资源，前提是代码的传统部分在合理的时间内运行。
+顾名思义，类会估算在 `ResourcesEstimator` 量程计算机上运行某一给定操作实例所需的资源 Q# 。 它通过运行量程操作来实现此操作，而无需实际模拟量子计算机的状态;出于此原因，它会估算 Q# 使用上千个 qubits 的操作的资源，前提是代码的传统部分在合理的时间内运行。
 
 资源估计器是在 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的基础上构建的，它提供了一组更丰富的指标和工具来帮助调试 Q# 程序。
 
@@ -131,7 +131,7 @@ namespace Quantum.MyProgram
 |__R__    |任何单 qubit 循环、不包括 `T` 、Clifford 和 Pauli 操作的运行计数。  |
 |__T__    |操作的运行计数 `T` 及其词干，包括 `T` 操作、T_x = 1xt-hy-ubw 和 T_y = 1Xt-hy-ubw。。  |
 |__Depth__|该操作运行的量程线路深度的下限 Q# 。 默认情况下，深度指标仅计算 `T` 入口。 有关更多详细信息，请参阅 [深度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)。   |
-|Width    |运行操作期间分配的最大 qubits 数的下限 Q# 。 可能无法同时实现 __深度__ 和 __宽度__ 下限。  |
+|Width     |运行操作期间分配的最大 qubits 数的下限 Q# 。 可能无法同时实现 __深度__ 和 __宽度__ 下限。  |
 |__BorrowedWidth__    |操作中借用的最大 qubits 数 Q# 。  |
 
 ## <a name="providing-the-probability-of-measurement-outcomes"></a>提供测量结果的概率

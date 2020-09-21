@@ -1,32 +1,32 @@
 ---
-title: 表达式Q#
+title: 表达式 Q#
 description: 了解如何在中将常量、变量、运算符、操作和函数作为表达式进行指定、引用和合并 Q# 。
 author: gillenhaalb
-ms.author: a-gibec@microsoft.com
+ms.author: a-gibec
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.expressions
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: b6cc97dfee05dc843e213e84f17043714a8a9656
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 9bf28e3854eae1892692d7ca840e1860de2e2934
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869607"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835836"
 ---
-# <a name="expressions-in-no-locq"></a>表达式Q#
+# <a name="expressions-in-no-locq"></a>表达式 Q#
 
 ## <a name="numeric-expressions"></a>数值表达式
 
 数值表达式是、或类型的表达式 `Int` `BigInt` `Double` 。
 也就是说，它们是整数或浮点数。
 
-`Int`中的文本 Q# 作为一系列数字写入。
+`Int` 中的文本 Q# 作为一系列数字写入。
 支持十六进制和二进制整数 `0x` ，并分别使用和前缀来编写 `0b` 。
 
-`BigInt`中的文本 Q# 具有尾随 `l` 或 `L` 后缀。
+`BigInt` 中的文本 Q# 具有尾随 `l` 或 `L` 后缀。
 支持十六进制大整数，并使用 "0x" 前缀来写入。
 因此，以下是文本的有效用法 `BigInt` ：
 
@@ -36,7 +36,7 @@ let bigHex = 0x123456789abcdef123456789abcdefL;
 let bigOne = bigZero + 1L;
 ```
 
-`Double`中的文本 Q# 是使用十进制数字编写的浮点数。
+`Double` 中的文本 Q# 是使用十进制数字编写的浮点数。
 可以使用或不使用小数点、 `.` 或使用 "e" 或 "e" 指示的指数部分来编写它们 (之后，只有可能的负号和十进制数字) 有效。
 下面是有效的 `Double` 文本： `0.0` 、 `1.2e5` 、 `1e-5` 。
 
@@ -64,16 +64,14 @@ let bigOne = bigZero + 1L;
 向左或向右移位负值将导致负数。
 也就是说，向左或向右移动一个步骤的方式与2的乘法或除法相同。
 
-对于负数，整数除法和整数取模的行为与 c # 的行为相同。
-也就是说， `a % b` 始终具有相同的符号 `a` ， `b * (a / b) + a % b` 始终等于 `a` 。
-例如：
+对于负数，整数除法和整数取模的行为与 c # 的行为相同。 也就是说， `a % b` 始终具有相同的符号 `a` ， `b * (a / b) + a % b` 始终等于 `a` 。 例如：
 
- `A` | `B` | `A / B` | `A % B`
----------|----------|---------|---------
- 5 | 2 | 2 | 1
- 5 | -2 | -2 | 1
- -5 | 2 | -2 | -1
- -5 | -2 | 2 | -1
+|`A` | `B` | `A / B` | `A % B`|
+|:---------:|:----------:|:---------:|:---------:|
+| 5 | 2 | 2 | 1 |
+| 5 | -2 | -2 | 1 |
+| -5 | 2 | -2 | -1 |
+| -5 | -2 | 2 | -1 |
 
 大整数除法和取模运算的工作方式相同。
 
@@ -103,7 +101,7 @@ let t = x == y;               // This will cause a compiler error.
 这两个 qubits 的状态不会进行比较、访问、度量或修改。
 
 `Double`由于舍入效果，值的相等比较可能会产生误导。
-例如 `49.0 * (1.0/49.0) != 1.0`。
+例如，`49.0 * (1.0/49.0) != 1.0` 。
 
 给定任意两个数值表达式，二元运算符 `>` 、 `<` 、 `>=` 和可 `<=` 用于构造新的布尔表达式，如果第一个表达式分别大于、小于、大于或等于，或者小于或等于第二个表达式，则该值为 true。
 
@@ -113,7 +111,7 @@ let t = x == y;               // This will cause a compiler error.
 
 ## <a name="string-expressions"></a>字符串表达式
 
-Q#允许在 " `fail` [控制流](xref:microsoft.quantum.guide.controlflow#fail-statement)") 和标准函数中说明 (语句中使用字符串 [`Message`](xref:microsoft.quantum.intrinsic.message) 。 后者的特定行为取决于所使用的模拟器，但通常会在程序期间调用时将消息写入主机控制台 Q# 。
+Q# 允许在 " `fail` [控制流](xref:microsoft.quantum.guide.controlflow#fail-statement) ") 和标准函数中说明 (语句中使用字符串 [`Message`](xref:microsoft.quantum.intrinsic.message) 。 后者的特定行为取决于所使用的模拟器，但通常会在程序期间调用时将消息写入主机控制台 Q# 。
 
 中的字符串 Q# 是文本或内插字符串。
 
@@ -142,7 +140,7 @@ Q#字符串内插的语法是 c # 语法的子集。 下面是与以下各项相
 
 * 内插字符串中的表达式遵循 Q# 语法，而不是 c # 语法。 最明显的区别在于不 Q# 支持逐字 (多行) 内插字符串。
 
-有关 c # 语法的更多详细信息，请参阅内[*插字符串*](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/interpolated-strings)。
+有关 c # 语法的更多详细信息，请参阅内 [*插字符串*](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/interpolated-strings)。
 
 ## <a name="range-expressions"></a>范围表达式
 
@@ -156,14 +154,14 @@ Q#字符串内插的语法是 c # 语法的子集。 下面是与以下各项相
 
 一些示例范围如下：
 
-- `1..3`的范围为1、2、3。
-- `2..2..5`范围为2、4。
-- `2..2..6`范围为2、4、6。
-- `6..-2..2`范围为6、4、2。
-- `2..1`为空范围。
-- `2..6..7`范围为2。
-- `2..2..1`为空范围。
-- `1..-1..2`为空范围。
+- `1..3` 的范围为1、2、3。
+- `2..2..5` 范围为2、4。
+- `2..2..6` 范围为2、4、6。
+- `6..-2..2` 范围为6、4、2。
+- `2..1` 为空范围。
+- `2..6..7` 范围为2。
+- `2..2..1` 为空范围。
+- `1..-1..2` 为空范围。
 
 ## <a name="qubit-expressions"></a>Qubit 表达式
 
@@ -207,7 +205,7 @@ Q#字符串内插的语法是 c # 语法的子集。 下面是与以下各项相
 因此，如果 `WrappedPair` 是具有基础类型的用户定义类型 `IntPair` ，并且 `t` 是具有值的变量 `WrappedPair(IntPair(1,2))` ，则 `t!!` 为 `(1,2)` 。
 
 运算符的优先级高于除 `!` `[]` 数组索引和切片以外的其他所有运算符。
-`!`并 `[]` 绑定按位置; 即， `a[i]![3]` 读取为 `((a[i])!)[3]` ：取 `i` 的第一个元素，将 `a` 其解包，然后获取解包值 (的第三个元素，该元素必须是) 的数组。
+`!` 并 `[]` 绑定按位置; 即， `a[i]![3]` 读取为 `((a[i])!)[3]` ：取 `i` 的第一个元素，将 `a` 其解包，然后获取解包值 (的第三个元素，该元素必须是) 的数组。
 
 运算符的优先级 `!` 有一个可能不明显的影响。
 如果函数或操作返回一个值，则该函数或操作调用必须括在括号中，以便参数元组绑定到该调用，而不是绑定到解包。
@@ -253,7 +251,7 @@ let g = Foo(arg)!;      // Syntax error
  `Qubit` | _无效的 qubit_
  `Pauli` | `PauliI`
  `Result` | `Zero`
- `Range` | 空范围，`1..1..0`
+ `Range` | 空范围， `1..1..0`
  `Callable` | _调用无效_
  `Array['T]` | `'T[0]`
 
@@ -294,13 +292,13 @@ let g = Foo(arg)!;      // Syntax error
 
 #### <a name="inferred-startend-values"></a>推断的开始/结束值
 
-从[0.8 版本](xref:microsoft.quantum.relnotes)开始，我们支持范围切片的上下文表达式。 特别是，在范围切片表达式的上下文中，您可以省略范围起始值和结束值。 在这种情况下，编译器会应用以下规则来推断范围的预期分隔符：
+从 [0.8 版本](xref:microsoft.quantum.relnotes)开始，我们支持范围切片的上下文表达式。 特别是，在范围切片表达式的上下文中，您可以省略范围起始值和结束值。 在这种情况下，编译器会应用以下规则来推断范围的预期分隔符：
 
-* 如果省略范围*起始*值，则推断出的起始值
+* 如果省略范围 *起始* 值，则推断出的起始值
   * 如果未指定步骤或指定步骤为正值，则为零。  
   * 如果指定的步骤为负，则为切片的数组的长度减一。
 
-* 如果省略范围*结束*值，则推断出的结束值
+* 如果省略范围 *结束* 值，则推断出的结束值
   * 如果未指定步骤或指定步骤为正值，则为切片的数组的长度减一。
   * 如果指定的步骤为负数，则为零。
 
@@ -323,22 +321,22 @@ let slice10 = arr[...];       // slice10 is [1,2,3,4,5,6];
 
 由于所有 Q# 类型都是值类型 (，而 qubits 采用某种特殊的角色) ，所以当值绑定到某个符号或重新绑定符号时，将创建一个 "复制"。 也就是说，的行为与 Q# 使用赋值运算符创建副本的行为相同。 
 
-当然，在实际情况下，只会根据需要重新创建相关的部分。 这会影响复制数组的方式，因为不能更新数组项。 若要修改现有阵列，需要利用*复制和更新*机制。
+当然，在实际情况下，只会根据需要重新创建相关的部分。 这会影响复制数组的方式，因为不能更新数组项。 若要修改现有阵列，需要利用 *复制和更新* 机制。
 
-可以通过使用运算符和的*复制和更新*表达式从现有数组创建新数组 `w/` `<-` 。
+可以通过使用运算符和的 *复制和更新* 表达式从现有数组创建新数组 `w/` `<-` 。
 复制和更新表达式是格式为的表达式 `expression1 w/ expression2 <- expression3` ，其中
 
 * `expression1``T[]`对于某些类型，必须是类型 `T` 。
-* `expression2`定义要修改的数组中指定的索引 `expression1` 。 `expression2`必须是类型 `Int` 或类型 `Range` 。
+* `expression2` 定义要修改的数组中指定的索引 `expression1` 。 `expression2` 必须是类型 `Int` 或类型 `Range` 。
 * `expression3``expression1`基于中指定的索引， (s) 用于更新中的元素的值 `expression2` 。 如果 `expression2` 为类型 `Int` ，则 `expression3` 必须为类型 `T` 。 如果 `expression2` 为类型 `Range` ，则 `expression3` 必须为类型 `T[]` 。
 
 例如，复制和更新表达式将 `arr w/ idx <- value` 构造一个新数组，其中所有元素都设置为中的相应元素 `arr` ，但指定的元素 () `idx` ，该元素设置为中) 的值 (`value` 。 
 
 给定 `arr` 包含数组 `[0,1,2,3]` ，然后 
 
-- `arr w/ 0 <- 10`是数组 `[10,1,2,3]` 。
-- `arr w/ 2 <- 10`是数组 `[0,1,10,3]` 。
-- `arr w/ 0..2..3 <- [10,12]`是数组 `[10,1,12,3]` 。
+- `arr w/ 0 <- 10` 是数组 `[10,1,2,3]` 。
+- `arr w/ 2 <- 10` 是数组 `[0,1,10,3]` 。
+- `arr w/ 0..2..3 <- [10,12]` 是数组 `[10,1,12,3]` 。
 
 #### <a name="copy-and-update-expressions-for-named-items"></a>已命名项的复制和更新表达式
 
@@ -374,13 +372,13 @@ for (i in 1..N) {
 还可以创建 callables 的数组。
 
 * 如果公共元素类型是运算或函数类型，则所有元素必须具有相同的输入和输出类型。
-* 数组的元素类型支持所有元素支持的任何[函子](xref:microsoft.quantum.guide.operationsfunctions)。
+* 数组的元素类型支持所有元素支持的任何 [函子](xref:microsoft.quantum.guide.operationsfunctions) 。
 例如，如果 `Op1` 、 `Op2` 和 `Op3` 均为 `Qubit[] => Unit` 操作，但支持、 `Op1` 支持 `Adjoint` `Op2` `Controlled` 和 `Op3` 均支持：
-  * `[Op1, Op2]`是一组 `(Qubit[] => Unit)` 操作。
-  * `[Op1, Op3]`是一组 `(Qubit[] => Unit is Adj)` 操作。
-  * `[Op2, Op3]`是一组 `(Qubit[] => Unit is Ctl)` 操作。
+  * `[Op1, Op2]` 是一组 `(Qubit[] => Unit)` 操作。
+  * `[Op1, Op3]` 是一组 `(Qubit[] => Unit is Adj)` 操作。
+  * `[Op2, Op3]` 是一组 `(Qubit[] => Unit is Ctl)` 操作。
 
-但是，尽管操作 `(Qubit[] => Unit is Adj)` 和 `(Qubit[] => Unit is Ctl)` 具有的通用基类型，但 `(Qubit[] => Unit)` 这些操作的*数组*不共享公共基类型。
+但是，尽管操作 `(Qubit[] => Unit is Adj)` 和  `(Qubit[] => Unit is Ctl)` 具有的通用基类型，但 `(Qubit[] => Unit)` 这些操作的 *数组* 不共享公共基类型。
 
 例如， `[[Op1], [Op2]]` 当前将引发错误，因为它会尝试创建两个不兼容的数组类型和的 `(Qubit[] => Unit is Adj)[]` 数组 `(Qubit[] => Unit is Ctl)[]` 。
 
@@ -395,11 +393,11 @@ for (i in 1..N) {
 条件表达式的计算结果可能为具有相同输入和输出但支持不同函子的操作。 在这种情况下，条件表达式的类型是一个操作，其输入和输出支持两个表达式支持的任何函子。
 例如，如果、和都是，则支持、支持 `Op1` `Op2` `Op3` `Qubit[]=>Unit` `Op1` `Adjoint` `Op2` `Controlled` 和 `Op3` 均支持：
 
-- `flag ? Op1 | Op2`为 `(Qubit[] => Unit)` 操作。
-- `flag ? Op1 | Op3`为 `(Qubit[] => Unit is Adj)` 操作。
-- `flag ? Op2 | Op3`为 `(Qubit[] => Unit is Ctl)` 操作。
+- `flag ? Op1 | Op2` 为 `(Qubit[] => Unit)` 操作。
+- `flag ? Op1 | Op3` 为 `(Qubit[] => Unit is Adj)` 操作。
+- `flag ? Op2 | Op3` 为 `(Qubit[] => Unit is Ctl)` 操作。
 
-如果两个可能的结果表达式中有一个包含函数或操作调用，则只会在该结果是调用值的情况下调用。 例如，在这种情况下 `a==b ? C(qs) | D(qs)` ，如果 `a==b` 为 true，则 `C` 调用操作，如果为 false，则只 `D` 调用操作。 此方法类似于其他语言的*短路*。
+如果两个可能的结果表达式中有一个包含函数或操作调用，则只会在该结果是调用值的情况下调用。 例如，在这种情况下 `a==b ? C(qs) | D(qs)` ，如果 `a==b` 为 true，则 `C` 调用操作，如果为 false，则只 `D` 调用操作。 此方法类似于其他语言的 *短路* 。
 
 ## <a name="callable-expressions"></a>可调用表达式
 
@@ -407,7 +405,7 @@ for (i in 1..N) {
 
 如果操作支持 `Adjoint` 函子，则 `Adjoint op` 是操作表达式。
 同样，如果操作支持 `Controlled` 函子，则 `Controlled op` 是操作表达式。
-有关这些表达式的类型的详细信息，请参阅[调用操作专用](xref:microsoft.quantum.guide.operationsfunctions#calling-operation-specializations)化。
+有关这些表达式的类型的详细信息，请参阅 [调用操作专用](xref:microsoft.quantum.guide.operationsfunctions#calling-operation-specializations)化。
 
 `Adjoint` `Controlled` 除解包运算符和数组索引外，函子 (和) 绑定更严格于其他所有运算符 `!` `[ ]` 。
 因此，以下所有操作都是有效的，前提是这些操作支持使用的函子：
@@ -421,7 +419,7 @@ Adjoint WrappedOp!(qs)
 
 ### <a name="type-parameterized-callable-expressions"></a>类型参数化的可调用表达式
 
-例如，可以将可调用文本作为值，将其分配给变量或将其传递给其他可调用的。 在这种情况下，如果可调用的具有[类型参数](xref:microsoft.quantum.guide.operationsfunctions#generic-type-parameterized-callables)，则必须提供作为可调用值一部分的参数。
+例如，可以将可调用文本作为值，将其分配给变量或将其传递给其他可调用的。 在这种情况下，如果可调用的具有 [类型参数](xref:microsoft.quantum.guide.operationsfunctions#generic-type-parameterized-callables)，则必须提供作为可调用值一部分的参数。
 
 可调用的值不能具有任何未指定的类型参数。 例如，如果 `Fun` 是具有签名的函数 `'T1->Unit` ：
 
@@ -434,7 +432,7 @@ SomeOtherFun(Fun);           // This also causes a compilation error.
 
 ## <a name="callable-invocation-expressions"></a>可调用调用表达式
 
-给定可调用的表达式 (操作或函数) 以及可调用的签名的输入类型的元组表达式，可以通过将元组表达式追加到可调用表达式来形成*调用表达式*。
+给定可调用的表达式 (操作或函数) 以及可调用的签名的输入类型的元组表达式，可以通过将元组表达式追加到可调用表达式来形成 *调用表达式* 。
 调用表达式的类型是可调用的签名的输出类型。
 
 例如，如果 `Op` 是具有签名的操作 `((Int, Qubit) => Double)` ， `Op(3, qubit1)` 则为类型的表达式 `Double` 。
@@ -448,9 +446,9 @@ SomeOtherFun(Fun);           // This also causes a compilation error.
 (Builder(3))(2)
 ```
 
-调用[类型参数化](xref:microsoft.quantum.guide.operationsfunctions#generic-type-parameterized-callables)的可调用时，可以在可调用表达式后的尖括号中指定实际的类型参数 `< >` 。
+调用 [类型参数化](xref:microsoft.quantum.guide.operationsfunctions#generic-type-parameterized-callables) 的可调用时，可以在可调用表达式后的尖括号中指定实际的类型参数 `< >` 。
 此操作通常是不必要的，因为 Q# 编译器会推断实际类型。
-但是，如果*未指定*类型参数化的参数，则此[部分应用程序](xref:microsoft.quantum.guide.operationsfunctions#partial-application)需要它。
+但是，如果 *未指定* 类型参数化的参数，则此 [部分应用程序](xref:microsoft.quantum.guide.operationsfunctions#partial-application) 需要它。
 在将具有不同函子支持的操作传递给可调用时，此方法也非常有用。
 
 例如，如果具有签名，并具有签名， `Func` `('T1, 'T2, 'T1) -> 'T2` `Op1` `Op2` `(Qubit[] => Unit is Adj)` 并 `Op3` 具有签名，则 `(Qubit[] => Unit)` `Func` 使用 `Op1` 作为第一个参数进行调用， `Op2` 并 `Op3` 将作为第二个参数进行调用，第三个参数为：
@@ -472,17 +470,17 @@ let combinedOp = Func<(Qubit[] => Unit), (Qubit[] => Unit is Adj)>(Op1, Op2, Op3
 
 * 用于运算和函数调用的括号也绑定在任何运算符之前，但在数组索引和函子之后。
 
-Q#按优先顺序排列的运算符，从高到低：
+Q# 按优先顺序排列的运算符，从高到低：
 
-运算符 | 元 | 描述 | 操作数类型
+运算符 | 元 | 说明 | 操作数类型
 ---------|----------|---------|---------------
- 加`!` | 一元 | 解包 | 任何用户定义类型
+ 加 `!` | 一元 | 解包 | 任何用户定义类型
  `-`, `~~~`, `not` | 一元 | 数值负，按位求补，逻辑求反 | `Int`对于，为 `BigInt` 或 `Double` `-` `Int` `BigInt` `~~~` `Bool``not`
  `^` | 二进制 | 整数幂 | `Int`对于 `BigInt` 指数，为或 `Int`
  `/`, `*`, `%` | 二进制 | 除法、乘法、integer 模数 | `Int`对于 `BigInt` 、或 `Double` 为 `/` `*` `Int` `BigInt``%`
- `+`, `-` | 二进制 | 加法或 string 和 array 串联，减法 | `Int`、 `BigInt` 或 `Double` ，另外 `String` 或任何类型的数组类型`+`
+ `+`, `-` | 二进制 | 加法或 string 和 array 串联，减法 | `Int`、 `BigInt` 或 `Double` ，另外 `String` 或任何类型的数组类型 `+`
  `<<<`, `>>>` | 二进制 | 左移、右移 | `Int` 或 `BigInt`
- `<`, `<=`, `>`, `>=` | 二进制 | 小于、小于或等于、大于、大于等于或等于比较的比较 | `Int`， `BigInt` 或`Double`
+ `<`, `<=`, `>`, `>=` | 二进制 | 小于、小于或等于、大于、大于等于或等于比较的比较 | `Int`、`BigInt` 或 `Double`
  `==`, `!=` | 二进制 | 相等，不等于比较 | 任何基元类型
  `&&&` | 二进制 | 位与 | `Int` 或 `BigInt`
  `^^^` | 二进制 | 按位“异或” | `Int` 或 `BigInt`
@@ -490,8 +488,8 @@ Q#按优先顺序排列的运算符，从高到低：
  `and` | 二进制 | 逻辑与 | `Bool`
  `or` | 二进制 | 逻辑或 | `Bool`
  `..` | 二进制/三元 | 范围运算符 | `Int`
- `?` `|` | 三元 | 条件逻辑 | `Bool`对于左侧
-`w/` `<-` | 三元 | 复制和更新 | 请参阅[复制和更新表达式](#copy-and-update-expressions)
+ `?` `|` | 三元 | 条件逻辑 | `Bool` 对于左侧
+`w/` `<-` | 三元 | 复制和更新 | 请参阅 [复制和更新表达式](#copy-and-update-expressions)
 
 ## <a name="next-steps"></a>后续步骤
 

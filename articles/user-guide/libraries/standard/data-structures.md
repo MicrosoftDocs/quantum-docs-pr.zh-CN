@@ -3,18 +3,18 @@ title: 标准库中的数据结构 Q#
 description: 了解 Microsoft 标准库中的数据结构、oracles 和 dynamical 生成器 Q# 。
 author: QuantumWriter
 uid: microsoft.quantum.libraries.data-structures
-ms.author: martinro@microsoft.com
+ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 222fa7d0d33d4ac6c15e9ee9e6e97f380867a145
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 51eb52d0b8ace972f6a425edba400ca9a8916d2e
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868506"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835581"
 ---
 # <a name="data-structures-and-modeling"></a>数据结构和建模 #
 
@@ -71,14 +71,14 @@ ApplyToEach(
 
 ## <a name="oracles"></a>Oracles ##
 
-在[阶段估算](https://en.wikipedia.org/wiki/Quantum_phase_estimation_algorithm)和[振幅放大](https://en.wikipedia.org/wiki/Amplitude_amplification)文献中，oracle 的概念经常显示。
+在 [阶段估算](https://en.wikipedia.org/wiki/Quantum_phase_estimation_algorithm) 和 [振幅放大](https://en.wikipedia.org/wiki/Amplitude_amplification) 文献中，oracle 的概念经常显示。
 此处的术语 "oracle" 指的是一组 qubits 的黑盒量程子例程，并以阶段的形式返回答案。
 通常，可以将此子例程视为接受 oracle 的量程算法的输入，以及其他一些参数，并应用一系列的量程操作，并将对此量程子例程的调用视为一个基本入口。
 很明显，若要实际实现更大的算法，必须提供 oracle 到基本入口的具体分解，但这种情况下无需进行此类分解即可了解调用 oracle 的算法。
 在中 Q# ，此抽象通过使用该操作是第一类值来表示，这样，就可以将操作以黑白方式传递到量程算法的实现中。
 此外，用户定义的类型用于以类型安全的方式标记不同的 oracle 表示形式，这使得难以偶然人们常常会不同种类的黑框操作。
 
-此类 oracles 显示在多个不同的上下文中，其中包括[Grover 的搜索](https://en.wikipedia.org/wiki/Grover%27s_algorithm)和量程模拟算法等著名示例。
+此类 oracles 显示在多个不同的上下文中，其中包括 [Grover 的搜索](https://en.wikipedia.org/wiki/Grover%27s_algorithm) 和量程模拟算法等著名示例。
 这里，我们将重点介绍两个应用程序所需的 oracles：振幅放大和相位估算。
 首先，我们将讨论振幅放大 oracles，然后再继续进行阶段估算。
 
@@ -160,8 +160,8 @@ is Adj + Ctl {
 
 > [!TIP]
 > 示例中介绍了以下两种 oracle 类型。
-> 若要了解有关连续查询 oracles 的详细信息，请参阅[ **PhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/master/samples/characterization/phase-estimation)。
-> 若要了解有关离散查询 oracles 的详细信息，请参阅[ **IsingPhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/phase-estimation)。
+> 若要了解有关连续查询 oracles 的详细信息，请参阅[ **PhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/main/samples/characterization/phase-estimation)。
+> 若要了解有关离散查询 oracles 的详细信息，请参阅[ **IsingPhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/phase-estimation)。
 
 第一种类型的 oracle 是，我们称之为单独查询 oracle 并使用用户定义类型表示 <xref:microsoft.quantum.oracles.discreteoracle> ，只涉及一个单一矩阵。
 如果 $U $ 是要估计其本征值的单一项，则 $U $ 的 oracle 只是实现 $U $ 的子程序的一个独立。
@@ -211,8 +211,8 @@ $ $ \begin{align} U (t) & = \left ( e ^ {-iH \_ 0 t/r} e ^ {-iH \_ 1 t/r} \cdots
 Dynamical 生成器建模库提供了一个框架，用于在更简单的生成器方面系统地编码复杂的生成器。 然后，可以通过所选的模拟算法将此类描述传递给模拟库，以实现由所选模拟算法进行的时间演化，并自动处理许多详细信息。
 
 > [!TIP]
-> 示例中介绍了下面描述的 dynamical 生成器库。 有关基于 Ising 模型的示例，请参阅[ **IsingGenerators**示例](https://github.com/microsoft/Quantum/tree/master/samples/simulation/ising/generators)。
-> 有关基于分子 Hydrogen 的示例，请参阅[**H2SimulationCmdLine**](https://github.com/microsoft/Quantum/tree/master/samples/simulation/h2/command-line)和[**H2SimulationGUI**](https://github.com/microsoft/Quantum/tree/master/samples/simulation/h2/gui)示例。
+> 示例中介绍了下面描述的 dynamical 生成器库。 有关基于 Ising 模型的示例，请参阅[ **IsingGenerators**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/generators)。
+> 有关基于分子 Hydrogen 的示例，请参阅 [**H2SimulationCmdLine**](https://github.com/microsoft/Quantum/tree/main/samples/simulation/h2/command-line) 和 [**H2SimulationGUI**](https://github.com/microsoft/Quantum/tree/main/samples/simulation/h2/gui) 示例。
 
 ### <a name="complete-description-of-a-generator"></a>生成器的完整说明 ###
 

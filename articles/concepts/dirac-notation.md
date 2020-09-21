@@ -1,6 +1,6 @@
 ---
 title： Dirac 表示法说明：了解如何使用 Dirac 表示法来表示量程状态并模拟量程运算。
-author： QuantumWriter uid： dirac。作者： nawiebe@microsoft.com ms. 日期： 12/11/2017 ms. 主题：项目不相关：
+author： QuantumWriter uid： dirac： benbra： v-ms. 日期： 12/11/2017 ms. 主题：文章不是：
 - "Q#"
 - "$$v"
 - "$$"
@@ -91,9 +91,9 @@ $$\begin{bmatrix}1 \\\\ 0 \end{bmatrix} \otimes \cdots \otimes \begin{bmatrix} 1
 
 当然，评估此 tensor 的产品是不切实际的，因为矢量位于呈指数量大的空间，因此此表示法实际上是可使用上一个表示法提供的状态的最佳说明。  
 
-[*Dirac 表示法*](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation)解决了这些问题的方法是，通过提供一种新语言来满足量程机制的精确需求。  出于此原因，我们建议读者不要查看本部分中的示例，作为如何描述量程状态的严格处方，而是鼓励读者查看这些示例，这是可用于简洁表达量子创意的建议。
+[*Dirac 表示法*](https://en.wikipedia.org/wiki/Bra%E2%80%93ket_notation) 解决了这些问题的方法是，通过提供一种新语言来满足量程机制的精确需求。  出于此原因，我们建议读者不要查看本部分中的示例，作为如何描述量程状态的严格处方，而是鼓励读者查看这些示例，这是可用于简洁表达量子创意的建议。
 
-Dirac 表示法中有两种类型的向量：*寄存器*向量和*票证*向量，因此命名为，因为当将它们组合在一起构成*braket*或内部产品。  如果 $ \psi $ 是列向量，则可以将 Dirac 表示法编写为 $ \ket { \psi } $ ，其中 $ \ket { \cdot } $ 表示它是 unit 列向量，即*票证*向量。  同样，行向量 $ \psi ^ \dagger $ 表示为 $ \bra { \psi } $ 。 换句话说，通过将 $ \psi ^ \dagger $ 按输入的复杂语态应用于转置的元素来获得 $ \psi $ 。 寄存器-票证表示法直接表示，它 $ \braket { \psi | \psi } $ 是向量的内部积 $ \psi $ ，后者是定义 $ 1 $ 。  
+Dirac 表示法中有两种类型的向量： *寄存器* 向量和 *票证* 向量，因此命名为，因为当将它们组合在一起构成 *braket* 或内部产品。  如果 $ \psi $ 是列向量，则可以将 Dirac 表示法编写为 $ \ket { \psi } $ ，其中 $ \ket { \cdot } $ 表示它是 unit 列向量，即*票证*向量。  同样，行向量 $ \psi ^ \dagger $ 表示为 $ \bra { \psi } $ 。 换句话说，通过将 $ \psi ^ \dagger $ 按输入的复杂语态应用于转置的元素来获得 $ \psi $ 。 寄存器-票证表示法直接表示，它 $ \braket { \psi | \psi } $ 是向量的内部积 $ \psi $ ，后者是定义 $ 1 $ 。  
 
 一般来说，如果 $ \psi $ 和 $ \phi $ 是量子状态向量，则其内部产品是 $ \braket { \phi | \psi } $ 指将状态测量为 $ \ket { \psi } $ $ \ket { \phi } $ $ | \braket { \phi | \psi } | ^ 2 $ 的概率。  
 
@@ -120,7 +120,7 @@ $$
 $$
 
 ### <a name="computational-basis-vectors"></a>计算基础向量
-这说明了这些状态通常称为*计算基础*：每个量程状态始终可以表示为计算基础向量的总和，此类 sum 可以使用 Dirac 表示法来表示。  相反，在状态中也是如此， $ \ket { + } $ 并且 $ \ket { - } $ 还构成量程状态的基础。  你可以看到这样的事实：
+这说明了这些状态通常称为 *计算基础*：每个量程状态始终可以表示为计算基础向量的总和，此类 sum 可以使用 Dirac 表示法来表示。  相反，在状态中也是如此， $ \ket { + } $ 并且 $ \ket { - } $ 还构成量程状态的基础。  你可以看到这样的事实：
 
 $$
 \ket{0 } = \frac { 1 } { \sqrt { 2 } } (\ket { + }  +  \ket { - }) ， \qquad \ket { 1 } = \frac { 1 } { \sqrt { 2 } } (\ket { + }  -  \ket { - }) 。
@@ -180,7 +180,7 @@ $$|\braket{- |\psi}|^ 2 = \left | \frac { 1 } { \sqrt { 2 } } (\bra { 0 }  -  \b
 负号在概率计算中出现的事实是量程干扰的表现形式，这是量程计算与传统计算相比的优点之一。
 
 ## <a name="ketbra-or-outer-product"></a>ketbra 或外部产品
-Dirac 表示法中值得讨论的最后一项是*ketbra*或 outer 积。  外部产品在 Dirac 表示法中表示为 $ \ket { \psi } \bra { \phi } $ ，有时称为 ketbras，因为 bras 和 kets 的顺序与 brakets 相反。  外部产品通过矩阵乘法定义，与 $ \ket { \psi } \bra { \phi } = \psi \phi ^ \dagger $ 量程状态向量和相同 $ \psi $ $ \phi $ 。  最简单且最常见的是此表示法的示例是
+Dirac 表示法中值得讨论的最后一项是 *ketbra* 或 outer 积。  外部产品在 Dirac 表示法中表示为 $ \ket { \psi } \bra { \phi } $ ，有时称为 ketbras，因为 bras 和 kets 的顺序与 brakets 相反。  外部产品通过矩阵乘法定义，与 $ \ket { \psi } \bra { \phi } = \psi \phi ^ \dagger $ 量程状态向量和相同 $ \psi $ $ \phi $ 。  最简单且最常见的是此表示法的示例是
 
 $$
 \ket{0 } \bra { 0 } = \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} \begin{bmatrix} 1 & 0 \end{bmatrix} = \begin{bmatrix} 1 & 0 0 0 \\\\ & \end{bmatrix} \qquad \ket { 1 } \bra { } = \begin{bmatrix} 0 1 \\\\ \end{bmatrix} \begin{bmatrix} 0 & 1 0 0 0 \end{bmatrix} = \begin{bmatrix} & \\\\ & 1 \end{bmatrix} 。
@@ -224,11 +224,11 @@ P (\text { first qubit = 1 }) = \psi ^ \dagger (e \_ { 10 } e \_ { 10 } ^ \dagge
 
 ## <a name="density-operators"></a>密度运算符
 
-使用 Dirac 表示法表示的另一个有用的运算符是*密度运算符*，有时也称为*状态运算符*。
+使用 Dirac 表示法表示的另一个有用的运算符是 *密度运算符*，有时也称为 *状态运算符*。
 量程状态向量的密度运算符采用 $ \rho 形式 = \ket { \psi } \bra { \psi } $ 。
 将状态表示为矩阵而不是向量的这一概念通常非常方便，因为它提供了一种表示概率计算的便利方法，还允许同时描述统计不确定性以及同一形式内的量程不确定性。
 一般的量程状态运算符（而不是向量）在量程计算的某些方面无处不在，但并不需要了解字段的基础知识。
-对于感兴趣的读者，建议阅读中提供的参考书籍之一[以获取详细信息](xref:microsoft.quantum.more-information)。
+对于感兴趣的读者，建议阅读中提供的参考书籍之一 [以获取详细信息](xref:microsoft.quantum.more-information)。
 
-## <a name="no-locq-gate-sequences-equivalent-to-quantum-states"></a>Q#等效于量程状态的入口序列
+## <a name="no-locq-gate-sequences-equivalent-to-quantum-states"></a>Q# 等效于量程状态的入口序列
 最后一点值得一提的是量程表示法和 Q# 编程语言：在本文档的开始中，该量程状态是量程计算中信息的基础对象。  这可能会导致意外，因为没有 Q# 量程状态的概念。  相反，所有状态仅由用于准备它们的操作描述。  上面的示例是对此的一个很好的说明。  我们可以将结果表示为 $ H ^ { \otimes n } \ket { 0 } $ ，而不是在寄存器中的每个量程位字符串上都表示统一的 superposition。  这种状态的更短的简短说明不仅可以经典原因，而且还可以简明地定义要在软件堆栈中传播以实现算法所需的操作。  出于此原因， Q# 设计为发出入口序列而不是量程状态; 但是，在理论级别上，这两个透视是等效的。

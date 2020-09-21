@@ -2,29 +2,29 @@
 title: 相关波函数
 description: 使用 Microsoft 量程化学库了解 wavefunctions 中的动态和非动态关联。
 author: guanghaolow
-ms.author: gulow@microsoft.com
+ms.author: gulow
 ms.date: 05/28/2019
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.concepts.multireference
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 0066d676205901d4f2d41538684f9ba57407eb82
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 420fc8e108852f6548e2147693e089f5ce970aa9
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869556"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835479"
 ---
 # <a name="correlated-wavefunctions"></a>相关波函数
 
-对于很多系统，尤其是接近平衡的几何， [Hartree – Fock](xref:microsoft.quantum.chemistry.concepts.hartreefock)理论通过单行列式引用状态提供分子属性的定性说明。 但是，为了实现定量准确性，还必须考虑相关影响。 
+对于很多系统，尤其是接近平衡的几何， [Hartree – Fock](xref:microsoft.quantum.chemistry.concepts.hartreefock) 理论通过单行列式引用状态提供分子属性的定性说明。 但是，为了实现定量准确性，还必须考虑相关影响。 
 
 在这种情况下，必须在动态和非动态相关性之间进行 dinstinguish。
 Dynamical 相关导致电子的趋势，例如 interelectronic 斥力。 通过在引用状态中考虑 excitations 电子，可以建模这种影响。 如果 wavefunction 由两个或更多配置按第零个的顺序进行，甚至只是为了实现系统的定性说明，则会出现非动态关联。
 这就是 superposition 的 qps，而 multireference wavefunction 的示例。
 
-化学库提供了一种方法，用于将 multireference 问题的第零个 order wavefunction 指定为 qps 的 superposition。 当只有几个组件足以指定 superposition 时，此方法（我们称为稀疏 multireference wavefunctions）有效。 该库还提供了一种方法，用于通过通用的单一行列式群集 ansatz 在单个行列式引用之上包含动态关联。 此外，它还构造在量程计算机上生成这些状态的量程电路。 这些状态可能在[Broombridge 架构](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)中指定，并且我们还提供了通过化学库手动指定这些状态的功能。
+化学库提供了一种方法，用于将 multireference 问题的第零个 order wavefunction 指定为 qps 的 superposition。 当只有几个组件足以指定 superposition 时，此方法（我们称为稀疏 multireference wavefunctions）有效。 该库还提供了一种方法，用于通过通用的单一行列式群集 ansatz 在单个行列式引用之上包含动态关联。 此外，它还构造在量程计算机上生成这些状态的量程电路。 这些状态可能在 [Broombridge 架构](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)中指定，并且我们还提供了通过化学库手动指定这些状态的功能。
 
 ## <a name="sparse-multi-reference-wavefunction"></a>稀疏多引用 wavefunction
 多引用状态 $ \ket{\ psi_ {\rm {MCSCF}}} $ 可以显式指定为 $N $-electron Slater determininants 的线性组合。

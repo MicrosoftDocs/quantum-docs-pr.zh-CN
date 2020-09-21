@@ -2,19 +2,19 @@
 title: Quantum Katas 介绍
 description: 了解 Microsoft Quantum 开发工具包 (QDK) 随附的 katas（培训练习）
 author: bradben
-ms.author: bradben
+ms.author: v-benbra
 ms.date: 06/02/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.katas
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 780f04aa941d416032ea3e50b05769f93fae769f
-ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
+ms.openlocfilehash: 097d7f70088b6ee84a1e91ee99be59149dd9e15b
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90759385"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834816"
 ---
 # <a name="learn-quantum-computing-with-the-quantum-katas"></a>使用 Quantum Katas 学习量子计算
 
@@ -39,7 +39,7 @@ ms.locfileid: "90759385"
 
 ### <a name="introduction-to-quantum-computing-concepts"></a>量子计算概念简介
 
-| Kata | 描述 |
+| Kata | 说明 |
 |:-----|-------------|
 |[复杂算术](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ComplexArithmetic)|本教程介绍了使用量程计算（如虚部和复数）所需的一些数学背景。|
 |[线性代数](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/LinearAlgebra)|线性代数用于在量程计算中表示量程状态和操作。 本教程介绍基础知识，包括矩阵和矢量。|
@@ -50,7 +50,7 @@ ms.locfileid: "90759385"
 
 ### <a name="quantum-computing-fundamentals"></a>量子计算基础知识
 
-| Kata | 描述 |
+| Kata | 说明 |
 |:-----|-------------|
 |[认识量子门](https://github.com/microsoft/QuantumKatas/tree/main/BasicGates)|旨在帮助你熟悉中的基本量程入口的一系列练习 Q# 。 包括基本的 qubit 和多 qubit 入口、adjoint 和控制入口的练习，以及如何使用入口来修改 qubit 的状态。|
 |[创建量子叠加](https://github.com/microsoft/QuantumKatas/tree/main/Superposition)|使用这些练习，熟悉中 superposition 和编程的概念 Q# 。 包括对中基本的 qubit 和多 qubit 入口、superposition 以及 flow 控制和递归的练习 Q# 。|
@@ -59,7 +59,7 @@ ms.locfileid: "90759385"
 
 ### <a name="algorithms"></a>算法
 
-| Kata | 描述 |
+| Kata | 说明 |
 |:-----|-------------|
 |[量子隐形传送](https://github.com/microsoft/QuantumKatas/tree/main/Teleportation)|此 kata 探讨了量子 teleportation-一种协议，该协议允许只使用传统通信和之前共享的量程牵连来传递量程状态。|
 |[超密集编码](https://github.com/microsoft/QuantumKatas/tree/main/SuperdenseCoding)|Superdense 编码是一种协议，它允许通过使用之前共享的量程牵连只发送一个 qubit 来传输传统信息的两位。  |
@@ -71,7 +71,7 @@ ms.locfileid: "90759385"
 
 ### <a name="protocols-and-libraries"></a>协议和库
 
-| Kata | 描述 |
+| Kata | 说明 |
 |:-----|-------------|
 |[用于量子密钥分发的 BB84 协议](https://github.com/microsoft/QuantumKatas/tree/main/KeyDistribution_BB84)|了解并使用 qubits 交换加密密钥，实现 [BB84](https://en.wikipedia.org/wiki/BB84)的量程密钥分发协议。 |
 |[位翻转纠错代码](https://github.com/microsoft/QuantumKatas/tree/main/QEC_BitFlipCode)|利用量程错误更正中最简单的量程错误更正来探索量程错误更正 (QEC) 代码-三 qubit 位翻转代码。|
@@ -80,7 +80,7 @@ ms.locfileid: "90759385"
 
 ### <a name="entanglement-games"></a>纠缠游戏
 
-| Kata | 描述 |
+| Kata | 说明 |
 |:-----|-------------|
 |[CHSH 游戏](https://github.com/microsoft/QuantumKatas/tree/main/CHSHGame)|使用 [CHSH](https://en.wikipedia.org/wiki/CHSH_inequality) 游戏的实现来浏览量程牵连。 这一非本非 [本地](https://en.wikipedia.org/wiki/Quantum_refereed_game) 游戏显示了如何使用量程牵连来增加玩家的机会，使其超出了使用纯粹的传统策略可能会发生的可能性。|
 |[GHZ 游戏](https://github.com/microsoft/QuantumKatas/tree/main/GHZGame)|GHZ 游戏是另一个非本地游戏，但涉及三个玩家。|
