@@ -9,12 +9,12 @@ uid: microsoft.quantum.libraries.machine-learning.design
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 60e694e9f7c2f01a6679ef960f5a7774c8bd6a62
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: c87a84654cda04f81115a83684f0e125d23a77bc
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868928"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759215"
 ---
 # <a name="design-your-own-classifier"></a>设计自己的分类器
 
@@ -30,7 +30,7 @@ ms.locfileid: "87868928"
 
 若要生成分类器，我们要将线路模型中的参数化控制旋转连接起来。 为此，我们可以使用 [`ControlledRotation`](xref:microsoft.quantum.machinelearning.controlledrotation) 量程机器学习库中定义的类型。 此类型接受四个参数，这些参数可确定：目标 qubit 的索引、控件 qubits 的索引数组、旋转轴以及定义模型的参数数组中关联参数的索引。
 
-让我们看一下分类器的示例。 在[半部月亮示例](https://github.com/microsoft/Quantum/tree/master/samples/machine-learning/half-moons)中，可以找到在文件中定义的以下分类器 `Training.qs` 。
+让我们看一下分类器的示例。 在 [半部月亮示例](https://github.com/microsoft/Quantum/tree/main/samples/machine-learning/half-moons)中，可以找到在文件中定义的以下分类器 `Training.qs` 。
 
 ```qsharp
     function ClassifierStructure() : ControlledRotation[] {
@@ -59,7 +59,7 @@ ms.locfileid: "87868928"
 
  ![本地旋转层](~/media/local_rotations_layer.PNG)
 
-建议浏览[量程机器学习库的 API 参考](xref:microsoft.quantum.machinelearning)，以发现可用于简化线路设计的所有工具。
+建议浏览 [量程机器学习库的 API 参考](xref:microsoft.quantum.machinelearning) ，以发现可用于简化线路设计的所有工具。
 
 ## <a name="next-steps"></a>后续步骤
 

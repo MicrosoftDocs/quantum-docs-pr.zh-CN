@@ -2,19 +2,19 @@
 title: 探索牵连 Q#
 description: 了解如何在中编写量程计划 Q# 。 使用 Quantum 开发工具包 (QDK) 开发 Bell 态应用程序
 author: geduardo
-ms.author: v-edsanc@microsoft.com
+ms.author: v-edsanc
 ms.date: 05/29/2020
 ms.topic: tutorial
 uid: microsoft.quantum.write-program
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 3e95f142572e104fe1e133b109d197ed5bb01d9a
-ms.sourcegitcommit: af2e9691c1900ced7e09d6320255617c9939ed55
+ms.openlocfilehash: 6fd7494d341a83a1354d23a283d21a7ae535e49f
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90063234"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834017"
 ---
 # <a name="tutorial-explore-entanglement-with-q"></a>教程：通过 Q\# 探索纠缠
 
@@ -83,7 +83,7 @@ Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，
 
 ### <a name="initialize-qubit-using-measurement"></a>使用度量值初始化 qubit
 
-下面的第一个代码介绍了如何在中使用 qubits Q# 。  我们将介绍两个操作，这些操作将 [`M`](xref:microsoft.quantum.intrinsic.m) [`X`](xref:microsoft.quantum.intrinsic.x) 转换 qubit 的状态。 在此代码片段中，我们定义了操作 `SetQubitState`。该操作使用一个量子位作为参数，使用另一个参数 (`desired`) 来表示我们希望该量子位呈现的状态。  操作 `SetQubitState` 使用操作 `M` 对量子位进行度量。  在中 Q# ，qubit 度量值始终返回 `Zero` 或 `One` 。  如果度量值返回一个不等于所需值的值，则 `SetQubitState` "翻转" qubit; 也就是说，它将执行一个 `X` 操作，该操作会将 qubit 状态更改为一种新状态，在该状态下，测量的概率返回 `Zero` 并 `One` 反转。 这样，就 `SetQubitState` 始终将目标 qubit 置于所需状态。
+下面的第一个代码介绍了如何在中使用 qubits Q# 。  我们将介绍两个操作，这些操作将 [`M`](xref:microsoft.quantum.intrinsic.m) [`X`](xref:microsoft.quantum.intrinsic.x) 转换 qubit 的状态。 在此代码片段中，我们定义了操作 `SetQubitState`。该操作使用一个量子位作为参数，使用另一个参数 (`desired`) 来表示我们希望该量子位呈现的状态。  操作 `SetQubitState` 使用操作 `M` 对量子位进行度量。  在中 Q# ，qubit 度量值始终返回 `Zero` 或 `One` 。  如果度量值返回一个与所需值不相等的值，则 `SetQubitState` "翻转" qubit; 也就是说，它将运行一个 `X` 操作，该操作将 qubit 状态更改为一种新状态，在该状态下，测量的概率返回 `Zero` 并 `One` 反转。 这样，就 `SetQubitState` 始终将目标 qubit 置于所需状态。
 
 将的内容替换为 `Program.qs` 以下代码：
 
@@ -104,7 +104,7 @@ Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，
 现在可以调用此操作，将量子位设置为经典状态：100% 的情况下返回 `Zero`，或者 100% 的情况下返回 `One`。
 `Zero` 和 `One` 为常量，表示对量子位进行度量时仅有的两个可能结果。
 
-操作 `SetQubitState` 用于度量量子位。 如果量子位处于所需状态，`SetQubitState` 会将其保留，否则会执行 `X` 操作，将量子位状态更改为所需状态。
+操作 `SetQubitState` 用于度量量子位。 如果 qubit 处于所需状态，则将 `SetQubitState` 其保持不变; 否则，通过运行 `X` 操作，我们将 qubit 状态更改为所需状态。
 
 #### <a name="about-no-locq-operations"></a>关于 Q# 操作
 
@@ -300,7 +300,7 @@ Test results (# of 0s, # of 1s):
 ## <a name="prepare-entanglement"></a>准备展示纠缠
 
 现在让我们看看如何 Q# 表达 entangle qubits 的方法。
-首先，我们将第一个量子位设置为初始状态，然后使用 `H` 操作将其置于叠加状态。  然后，在度量第一个 qubit 之前，我们使用 () 的新操作 `CNOT` ，该操作代表受控-NOT。  对两个量子位执行此操作的结果是，在第一个量子位是 `One` 的情况下翻转第二个量子位。  现在，这两个量子位纠缠在一起。  第一个量子位的统计信息没有变化（在度量后，`Zero` 和 `One` 各一半），但现在当我们度量第二个量子位时，它__始终__与我们第一个量子位的度量值相同。 `CNOT` 把这两个量子位纠缠在了一起，因此，不论其中一个发生什么，另一个也会同样发生。 如果翻转度量值（先翻转第二个量子位，再翻转第一个），会发生相同的情况。 第一个度量值是随机的，第二个将与第一个同步。
+首先，我们将第一个量子位设置为初始状态，然后使用 `H` 操作将其置于叠加状态。  然后，在度量第一个 qubit 之前，我们使用 () 的新操作 `CNOT` ，该操作代表 *受控-NOT*。  在两个 qubits 上运行此操作的结果是：如果第一个 qubit 为，则会翻转第二个 qubit `One` 。  现在，这两个量子位纠缠在一起。  第一个量子位的统计信息没有变化（在度量后，`Zero` 和 `One` 各一半），但现在当我们度量第二个量子位时，它__始终__与我们第一个量子位的度量值相同。 `CNOT` 把这两个量子位纠缠在了一起，因此，不论其中一个发生什么，另一个也会同样发生。 如果翻转度量值（先翻转第二个量子位，再翻转第一个），会发生相同的情况。 第一个度量值是随机的，第二个将与第一个同步。
 
 我们需要做的第一件事就是在中分配两个 qubits，而不是一个 `TestBellState` ：
 

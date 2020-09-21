@@ -9,23 +9,23 @@ uid: microsoft.quantum.chemistry.concepts.installation
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 5fe973d24ceffd413cdbd3c543013dcc7ee379c0
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: f1a7d1d041dab73980d8debc179d6c79acac6d33
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869335"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759793"
 ---
 # <a name="chemistry-library-installation"></a>化学库安装
 
-[ **MolecularHydrogen**示例](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogen)使用手动配置的分子输入数据。
+[ **MolecularHydrogen**示例](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogen)使用手动配置的分子输入数据。
 虽然这对小型示例而言很不错，但大规模的量程化学要求 Hamiltonians 或数十亿。
 此类 Hamiltonians 是由可扩展的计算化学包生成的，太大，无法手动导入。
 
-用于量程开发工具包的量程化学库旨在与计算化学包一起正常工作，尤其是在太平洋西北部国家实验室，环境分子科学实验室实验室 (EMSL) 开发的[**NWChem**](http://www.nwchem-sw.org/)计算化学平台。
+用于量程开发工具包的量程化学库旨在与计算化学包一起正常工作，尤其是在太平洋西北部国家实验室，环境分子科学实验室实验室 (EMSL) 开发的 [**NWChem**](http://www.nwchem-sw.org/) 计算化学平台。
 具体而言，Broombridge [ **Microsoft.Quantum.Chemistry**包](https://www.nuget.org/packages/Microsoft.Quantum.Chemistry)提供的工具可用于加载在[架构](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)中表示的量程化学模拟问题的实例，还支持在最新版本的 NWChem 中导出。
 
-量程开发工具包化学库还提供了一个命令行工具， `qdk-chem` 用于在旧式格式与[Broombridge](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)之间进行转换。
+量程开发工具包化学库还提供了一个命令行工具， `qdk-chem` 用于在旧式格式与 [Broombridge](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)之间进行转换。
 
 本部分详细介绍如何将量程开发工具包与 NWChem 和 Broombridge 一起使用，或者使用旧格式和 `qdk-chem` 。
 
@@ -33,27 +33,27 @@ ms.locfileid: "87869335"
 
 若要使用 NWChem 和量程开发工具包启动并运行，请使用以下方法之一：
 
-- 开始使用在[IntegralData/YAML](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML)的示例中提供的现有 Broombridge 文件。
-- 将[EMSL 箭头生成器用于](https://arrows.emsl.pnnl.gov/api/qsharp_chem)作为基于 web 的前端到 NWChem 的 Microsoft Quantum Development Kit，以生成新的 Broombridge 格式化分子输入文件。  
-- 使用 PNNL 提供的[Docker 映像](https://hub.docker.com/r/nwchemorg/nwchem-qc/)运行 NWChem，或
-- [编译](http://www.nwchem-sw.org/index.php/Compiling_NWChem)平台的 NWChem。
+- 开始使用在 [IntegralData/YAML](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/IntegralData/YAML)的示例中提供的现有 Broombridge 文件。
+- 将 [EMSL 箭头生成器用于](https://arrows.emsl.pnnl.gov/api/qsharp_chem) 作为基于 web 的前端到 NWChem 的 Microsoft Quantum Development Kit，以生成新的 Broombridge 格式化分子输入文件。  
+- 使用 PNNL 提供的 [Docker 映像](https://hub.docker.com/r/nwchemorg/nwchem-qc/) 运行 NWChem，或
+- [编译](http://www.nwchem-sw.org/index.php/Compiling_NWChem) 平台的 NWChem。
 
-请参阅[使用 NWChem 的端到端](xref:microsoft.quantum.chemistry.examples.endtoend)的详细信息，了解有关如何使用 NWChem 到化学模型的详细信息，以使用量程开发套件化学库进行分析。
+请参阅 [使用 NWChem 的端到端](xref:microsoft.quantum.chemistry.examples.endtoend) 的详细信息，了解有关如何使用 NWChem 到化学模型的详细信息，以使用量程开发套件化学库进行分析。
 
 ### <a name="getting-started-using-broombridge-files-provided-with-the-samples"></a>使用示例提供的 Broombridge 文件入门
 
-量程开发工具包示例存储库中的[IntegralData/YAML](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML)文件夹包含 Broombridge 格式化的分子数据文件。  
+量程开发工具包示例存储库中的 [IntegralData/YAML](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/IntegralData/YAML) 文件夹包含 Broombridge 格式化的分子数据文件。  
 
-作为一个简单的示例，请使用化学 library 示例， [GetGateCount](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/GetGateCount)从 Broombridge 文件之一加载 Hamiltonian，并执行量程模拟 algorigthms 的入口估计：
+作为一个简单的示例，请使用化学 library 示例， [GetGateCount](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/GetGateCount) 从 Broombridge 文件之一加载 Hamiltonian，并执行量程模拟 algorigthms 的入口估计：
 
 ```bash
 cd Quantum/Chemistry/GetGateCount
 dotnet run -- --path=../IntegralData/YAML/h2.yaml --format=YAML
 ```
 
-有关如何输入 Broombridge 架构表示的分子的详细信息，请参阅[从文件加载 Hamiltonian](xref:microsoft.quantum.chemistry.examples.loadhamiltonian) 。  
+有关如何输入 Broombridge 架构表示的分子的详细信息，请参阅 [从文件加载 Hamiltonian](xref:microsoft.quantum.chemistry.examples.loadhamiltonian) 。  
 
-有关资源估计的详细信息，请参阅[获取资源计数](xref:microsoft.quantum.chemistry.examples.resourcecounts)。  
+有关资源估计的详细信息，请参阅 [获取资源计数](xref:microsoft.quantum.chemistry.examples.resourcecounts) 。  
 
 ### <a name="getting-started-using-the-emsl-arrows-builder"></a>开始使用 EMSL 箭头生成器
 
@@ -67,7 +67,7 @@ EMSL 箭头是一种使用 NWChem 和化学计算数据库生成分子数据的�
 
 > [!TIP]
 > 如果要从 Windows 10 使用 NWChem，适用于 Linux 的 Windows 子系统是一个不错的选择。
-> 安装[Ubuntu 18.04 LTS For Windows](https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q#activetab=pivot:overviewtab)后， `ubuntu18.04` 从你喜欢的终端运行并按照上面的说明从源安装 NWChem。
+> 安装 [Ubuntu 18.04 LTS For Windows](https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q#activetab=pivot:overviewtab)后， `ubuntu18.04` 从你喜欢的终端运行并按照上面的说明从源安装 NWChem。
 
 从源中编译 NWChem 后，可以运行 `yaml_driver` 与 NWChem 一起提供的脚本，通过 NWChem 输入卡座快速生成 Broombridge 实例：
 
@@ -79,7 +79,7 @@ $NWCHEM_TOP/contrib/quasar/yaml_driver input.nw
 
 ### <a name="using-nwchem-with-docker"></a>结合使用 NWChem 和 Docker
 
-使用 NWChem 的预构建映像可通过[Docker 中心](https://hub.docker.com)跨平台使用。
+使用 NWChem 的预构建映像可通过 [Docker 中心](https://hub.docker.com)跨平台使用。
 若要开始，请遵循适用于你的平台的 Docker 安装说明：
 
 - [安装 Docker for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/)
@@ -87,15 +87,15 @@ $NWCHEM_TOP/contrib/quasar/yaml_driver input.nw
 - [安装用于 Windows 的 Docker 10](https://docs.docker.com/docker-for-windows/install/)
 
 > [!TIP]
-> 如果使用用于 Windows 的 Docker，则需要共享包含临时目录的驱动器 (通常这是 `C:\` Docker 守护程序) 的驱动器。 有关更多详细信息，请参阅[Docker 文档](https://docs.docker.com/docker-for-windows/#shared-drives)。
+> 如果使用用于 Windows 的 Docker，则需要共享包含临时目录的驱动器 (通常这是 `C:\` Docker 守护程序) 的驱动器。 有关更多详细信息，请参阅 [Docker 文档](https://docs.docker.com/docker-for-windows/#shared-drives) 。
 
 安装 Docker 后，可以使用随量程开发工具包示例提供的 PowerShell 模块来运行映像，也可以手动运行映像。
-此处是使用 PowerShell 的详细信息;如果希望手动使用 Docker 映像，请参阅[随图像提供的文档](https://hub.docker.com/r/nwchemorg/nwchem-qc/)。
+此处是使用 PowerShell 的详细信息;如果希望手动使用 Docker 映像，请参阅 [随图像提供的文档](https://hub.docker.com/r/nwchemorg/nwchem-qc/)。
 
 #### <a name="running-nwchem-through-powershell-core"></a>通过 PowerShell Core 运行 NWChem
 
 若要将 NWChem Docker 映像与量程开发工具包一起使用，我们提供了一个小型 PowerShell 模块，用于处理将文件移入和移出 NWChem 的情况。
-如果尚未安装 PowerShell Core，则可以从[GitHub 上的 powershell 存储库](https://github.com/PowerShell/PowerShell#get-powershell)跨平台下载。
+如果尚未安装 PowerShell Core，则可以从 [GitHub 上的 powershell 存储库](https://github.com/PowerShell/PowerShell#get-powershell)跨平台下载。
 
 > [!NOTE]
 > PowerShell Core 还适用于一些示例，用于演示与数据科学和业务分析工作流的互操作性。
@@ -124,7 +124,7 @@ Convert-NWChemToBroombridge -?
 Get-Help Convert-NWChemToBroombridge -Full
 ```
 
-## <a name="using-the-quantum-development-kit-with-qdk-chem"></a>使用量子开发工具包`qdk-chem`
+## <a name="using-the-quantum-development-kit-with-qdk-chem"></a>使用量子开发工具包 `qdk-chem`
 
 若要安装 `qdk-chem` ，你可以在命令行中使用 .NET Core SDK：
 

@@ -1,20 +1,20 @@
 ---
 title: Hartree-Fock 理论
 description: 了解 Hartree – Fock 理论，它是一种简单的方法来构造量程系统的初始状态。
-author: nathanwiebe2
-ms.author: nawiebe@microsoft.com
+author: bradben
+ms.author: v-benbra
 ms.date: 10/09/2017
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.concepts.hartreefock
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 2d5e597c36f7873dfd1e011e7ce7d4b01c0f786e
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 53d6e4342e5b58886528e89871591e57d8e70c82
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869538"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835343"
 ---
 # <a name="hartreefock-theory"></a>Hartree – Fock 理论
 
@@ -54,7 +54,7 @@ var wavefunctionInt = wavefunctionSpinOrbital.ToIndexing(IndexConvention.UpDown)
 关于 Hartree 的最重要的功能-Fock 理论是，它生成的量程状态在电子之间没有牵连。
 这意味着，它通常提供分子系统属性的合适定性说明。 
 
-还可以从中重新构造 Hartree Fock 状态 `FermionHamiltonian` ，如下所示。
+还可以从中重新构造 Hartree Fock 状态 `FermionHamiltonian`  ，如下所示。
 ```csharp
 // We initialize a fermion Hamiltonian.
 var fermionHamiltonian = new FermionHamiltonian();

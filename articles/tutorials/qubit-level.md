@@ -2,19 +2,19 @@
 title: 在中编写和模拟 qubit 级程序 Q#
 description: 有关编写和模拟在单个 qubit 级别运行的量程程序的分步教程
 author: gillenhaalb
-ms.author: a-gibec@microsoft.com
+ms.author: a-gibec
 ms.date: 10/06/2019
 uid: microsoft.quantum.circuit-tutorial
 ms.topic: tutorial
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 39b2d762c0efbfa4bb3a60a1dcee6bcbe2bd91a9
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 0dbeee8e092c830576ba8f79733035cdeeac11de
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863336"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834952"
 ---
 # <a name="tutorial-write-and-simulate-qubit-level-programs-in-q"></a>教程：编写并模拟 qubit 中的程序\#
 
@@ -116,7 +116,7 @@ namespace NamespaceQFT {
 接下来，应用组成操作本身的入口。
 Q# 已在命名空间中包含许多基本的量程入口作为操作 [`Microsoft.Quantum.Intrinsic`](xref:microsoft.quantum.intrinsic) ，并且这些都不是异常。 
 
-在 Q# 操作中，调用 callables 的语句将按顺序执行。
+当然， Q# 调用 callables 的语句将按顺序运行。
 因此，要应用的第一个入口是 [`H`](xref:microsoft.quantum.intrinsic.h) 第一个 qubit (Hadamard) ：
 
 <br/>
@@ -132,9 +132,9 @@ Q# 已在命名空间中包含许多基本的量程入口作为操作 [`Microsof
 除了将 `H` (Hadamard) 入口应用于单个 qubits 外，QFT 线路主要包括受控 [`R1`](xref:microsoft.quantum.intrinsic.r1) 旋转。
 `R1(θ, <qubit>)`通常，操作会保持 qubit 的 $ \ket {0} $ 组件不变，同时应用 $e ^ {i\theta} $ 的旋转到 $ \ket {1} $ 组件。
 
-#### <a name="controlled-operations"></a>受控操作
+#### <a name="controlled-operations"></a>可控运算
 
-Q# 使在一个或多个控件 qubits 上执行操作的条件非常简单。
+Q# 使在一个或多个控件 qubits 上运行操作的条件非常简单。
 通常，我们只是将调用置于 `Controlled` ，并将操作参数更改为：
 
  `Op(<normal args>)` $ \to $ `Controlled Op([<control qubits>], (<normal args>))` 。
@@ -244,7 +244,7 @@ namespace NamespaceQFT {
 
 Q#完成文件和操作后，便可以调用和模拟我们的量程计划了。
 
-## <a name="execute-the-program"></a>执行程序
+## <a name="run-the-program"></a>运行程序
 
 Q#在文件中定义了操作后 `.qs` ，我们现在需要调用该操作并观察返回的任何传统数据。
 目前，没有返回任何内容 (回忆，上面定义的操作返回 `Unit`) ，但当我们稍后修改 Q# 操作以返回度量结果的数组 (`Result[]`) 时，我们将解决此情况。
@@ -269,7 +269,7 @@ Q#从命令提示符运行程序只需对文件进行少量更改 Q# 。
 dotnet run
 ```
 
-执行时，应会 `Message` `DumpMachine` 在控制台中看到以下输出和输出。
+完成后，会 `Message` `DumpMachine` 在控制台中看到以下输出和输出。
 
 
 #### <a name="python"></a>[Python](#tab/tabid-python)
@@ -314,9 +314,9 @@ C # 宿主有四部分：
     在此示例中，没有任何内容。
 3. 运行量子算法。 
     每个 Q# 操作都会生成一个同名的 c # 类。 
-    此类具有“异步”执行运算的 `Run` 方法。
-    执行是异步的，因为实际硬件上的执行将是异步的。 
-    由于 `Run` 方法是异步的，因此我们调用 `Wait()` 方法; 这会阻止执行，直到任务完成并同步返回结果。 
+    此类有一个 `Run` **异步**运行操作的方法。
+    运行是异步的，因为在实际硬件上运行它将是异步的。 
+    由于 `Run` 方法是异步的，因此我们调用 `Wait()` 方法; 这将阻止运行，直到任务完成并同步返回结果。 
 4. 处理返回的操作结果。
     现在，操作不返回任何内容。
 
@@ -396,7 +396,7 @@ After:
 
 $ $ \ket{\psi} \_ {初始} = \ket {000} $ $
 
-设置为 
+to 
 
 $ $ \begin{align} \ket{\psi} \_ {final} &= \frac {1} {\sqrt {8} } \left ( \ket + {000} \ket + {001} \ket {010} + \ket {011} + \ket + {100} \ket {101} + \ket {110} + \ket {111} \right) \\ \\ &= \frac {1} {\sqrt{2 ^ n}} \sum \_ {j = 0} ^ {2 ^ n-1} \ket{j}，\end{align} $ $
 
@@ -499,7 +499,7 @@ $ $ \begin{align} \ket{\psi} \_ {final} &= \frac {1} {\sqrt {8} } \left ( \ket +
 }
 ```
 
-如果是从命令提示符运行，则在执行结束时，只会将返回的数组直接打印到控制台。
+如果是从命令提示符运行，则返回的数组只在运行结束时直接显示在控制台上。
 否则，请更新主机程序来处理返回的数组。
 
 #### <a name="command-prompt"></a>[命令提示符](#tab/tabid-cmdline)

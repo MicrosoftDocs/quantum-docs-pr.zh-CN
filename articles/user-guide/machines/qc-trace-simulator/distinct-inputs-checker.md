@@ -2,23 +2,23 @@
 title: 不同输入检查器-量程开发工具包
 description: 了解 Microsoft QDK distinct 输入检查器，该检查器使用量程跟踪模拟器检查 Q# 代码是否存在与共享 qubits 的潜在冲突。
 author: vadym-kl
-ms.author: vadym@microsoft.com
+ms.author: vadym
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.distinct-inputs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 750c94e7f861678d37f051619ff5b29bf4fd3d3e
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: bcb0bc92a546279496d27ad9b8c5f943ac133e2a
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868264"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833466"
 ---
 # <a name="quantum-trace-simulator-distinct-inputs-checker"></a>量程跟踪模拟器：不同的输入检查器
 
-Distinct 输入检查器是量程开发工具包[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的一部分。 您可以使用它来检测因与共享 qubits 冲突而导致的代码中的潜在 bug。 
+Distinct 输入检查器是量程开发工具包 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的一部分。 您可以使用它来检测因与共享 qubits 冲突而导致的代码中的潜在 bug。 
 
 ## <a name="conflicts-with-shared-qubits"></a>与共享的 qubits 冲突
 
@@ -54,7 +54,7 @@ operation ApplyWithNonDistinctInputs() : Unit {
 
 ## <a name="invoking-the-distinct-inputs-checker"></a>调用 distinct 输入检查器
 
-若要使用不同的输入检查器运行量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将 `UseDistinctInputsChecker` 属性设置为**true**，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。 
+若要使用不同的输入检查器运行量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将 `UseDistinctInputsChecker` 属性设置为 **true**，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。 
 
 ```csharp
 var config = new QCTraceSimulatorConfiguration();
@@ -88,9 +88,9 @@ namespace Quantum.MyProgram
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- 量程开发工具包[量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)概述。
+- 量程开发工具包 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro) 概述。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>API 参考。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration>API 参考。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.DistinctInputsCheckerException>API 参考。

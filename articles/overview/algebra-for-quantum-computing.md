@@ -9,12 +9,12 @@ uid: microsoft.quantum.overview.algebra
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 8b06eba9cadce84aca6f87e4451026ca2ffc794f
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: d7a8dff8d491a9ce6451148d2d27121f1c190ed0
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867635"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759316"
 ---
 # <a name="linear-algebra-for-quantum-computing"></a>用于量子计算的线性代数
 
@@ -22,8 +22,8 @@ ms.locfileid: "87867635"
 
 就像熟悉[量子物理学的基本概念](xref:microsoft.quantum.overview.understanding)可以帮助你了解量子计算一样，了解一些线性代数基础知识也可以帮助你了解量子算法的工作原理。 至少需要熟悉向量和矩阵乘法 。 如需重温这些代数概念的知识，请参阅下面这些介绍基础知识的教程：
 
-- [关于线性代数的 Jupyter 笔记本教程](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/LinearAlgebra)
-- [关于复数算术的 Jupyter 笔记本教程](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/ComplexArithmetic)
+- [关于线性代数的 Jupyter 笔记本教程](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/LinearAlgebra)
+- [关于复数算术的 Jupyter 笔记本教程](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/ComplexArithmetic)
 - [用于量子计算的线性代数](https://cds.cern.ch/record/1522001/files/978-1-4614-6336-8_BookBackMatter.pdf)
 - [线性代数的基础知识](https://www.math.ubc.ca/~carrell/NB.pdf)
 - [量子计算入门](https://www.codeproject.com/Articles/5155638/Quantum-Computation-Primer-Part-1#exploring-quantum-superposition)

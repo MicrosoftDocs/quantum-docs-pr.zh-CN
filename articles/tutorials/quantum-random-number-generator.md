@@ -2,19 +2,19 @@
 title: 创建量子随机数生成器
 description: 构建一个 Q# 项目，通过创建一个量程随机数生成器来演示 superposition 等基本的量程概念。
 author: bromeg
-ms.author: megbrow@microsoft.com
+ms.author: megbrow
 ms.date: 10/25/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.qrng
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: d80f1c640ac7ddb0104ccbbb6de6d0e26ba05fd6
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: a0e8933e6a77d017db914e4bb969ea05f760a443
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863622"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834034"
 ---
 # <a name="tutorial-implement-a-quantum-random-number-generator-in-q"></a>教程：使用 Q# 实现量子随机数生成器\#
 
@@ -33,7 +33,7 @@ ms.locfileid: "88863622"
 
 :::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="3-15,34":::
 
-如[了解量子计算](xref:microsoft.quantum.overview.understanding)一文中所述，量子比特是可以叠加的量子信息单位。 度量时，量子位只能是 0 或 1。 但在执行时，量子位的状态表示进行度量时读取值为 0 或 1 的概率。 此概率状态称为叠加。 我们可以根据此概率生成随机数。
+如[了解量子计算](xref:microsoft.quantum.overview.understanding)一文中所述，量子比特是可以叠加的量子信息单位。 度量时，量子位只能是 0 或 1。 但是，当操作正在运行时，qubit 的状态表示使用度量读取0或1的概率。 此概率状态称为叠加。 我们可以根据此概率生成随机数。
 
 在我们的 Q# 操作中，我们将 `Qubit` 向提供本机数据类型 Q# 。 我们只能通过 `using` 语句来分配 `Qubit`。 分配后，量子位始终处于 `Zero` 状态。 
 
@@ -74,11 +74,11 @@ ms.locfileid: "88863622"
 
 :::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="17-33":::
 
-可执行文件将在仿真器或资源估计器上运行使用 `@EntryPoint()` 特性标记的操作或函数，具体取决于项目配置和命令行选项。
+该程序将使用模拟器或资源估计器上的特性标记的操作或函数 `@EntryPoint()` ，具体取决于项目配置和命令行选项。
 
 :::code language="qsharp" source="~/quantum/samples/getting-started/qrng/Qrng.qs" range="3-34":::
 
-在 Visual Studio 中，只需按 Ctrl + F5 即可执行该脚本。
+在 Visual Studio 中，只需按 Ctrl + F5 即可运行脚本。
 
 在 VS Code 中，通过在终端中键入以下内容来首次生成 Program.qs：
 

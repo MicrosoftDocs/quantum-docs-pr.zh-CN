@@ -1,6 +1,6 @@
 ---
 标题：多个 qubits 说明：了解如何对两个或更多个 qubits 执行操作。
-author： QuantumWriter uid： qubits： ms. 作者： nawiebe@microsoft.com ms. 日期： 12/11/2017 ms. 主题：文章不是：
+author： bradben uid： benbra-qubits：： v-ms. 日期： 12/11/2017 ms. 主题：文章不是：
 - "Q#"
 - "$$v"
 - "$$"
@@ -89,7 +89,7 @@ author： QuantumWriter uid： qubits： ms. 作者： nawiebe@microsoft.com ms.
 仅当我们增加 qubits 的数量时，量程计算的真正功能才会变得明显。
 此功能在某种程度上导致，因为量程状态向量的矢量空间的尺寸随 qubits 的数量呈指数增长。
 这意味着，虽然可以对单个 qubit 进行完全建模，但模拟 50 qubit 的量程计算会导致推送现有超级计算机的限制。
-增加计算的大小只需一个额外的 qubit 就会使存储状态所需的内存*翻倍*，并大致使计算时间*加倍*。
+增加计算的大小只需一个额外的 qubit 就会使存储状态所需的内存 *翻倍* ，并大致使计算时间 *加倍* 。
 这种快速计算能力翻倍的原因是，具有相对较小 qubits 数的量程计算机可能远远超过今天、明天和其他计算任务的最强大超级计算机。
 
 为什么要为量程状态向量增加指数级增长？  本部分的目的是查看用于从单 qubit 状态中构建多 qubit 状态的规则，并讨论我们需要包括在设置为构成通用多 qubit 量程计算机的入口中的操作。
@@ -97,7 +97,7 @@ author： QuantumWriter uid： qubits： ms. 作者： nawiebe@microsoft.com ms.
 
 ## <a name="representing-two-qubits"></a>表示两个 Qubits
 Qubit 状态之间的主要区别在于两 qubit 状态为四维，而不是二维。
-这是因为，qubit 状态的计算基础由一 qubit 状态的 tensor 产品构成。  例如，我们有\begin{align}
+这是因为，qubit 状态的计算基础由一 qubit 状态的 tensor 产品构成。  例如，我们有 \begin{align}
 00 \equiv \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} \otimes \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} & = \begin{bmatrix} 1 \\\\ 0 \\\\ 0 \\\\ 0 \end{bmatrix} ， \qquad 01 \equiv \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} \otimes \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} = \begin{bmatrix} 0 \\\\ 1 \\\\ 0 \\\\ 0 \end{bmatrix} ，\\\\
 10 \equiv \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} \otimes \begin{bmatrix} 1 \\\\ 0 0 0 \end{bmatrix} & = \begin{bmatrix} \\\\ \\\\ 1 \\\\ 0 \end{bmatrix} ， \qquad 11 \equiv \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} \otimes \begin{bmatrix} 0 \\\\ 1 0 0 0 \end{bmatrix} = \begin{bmatrix} \\\\ \\\\ \\\\ 1 \end{bmatrix} 。
 \end{align}
@@ -122,7 +122,7 @@ $$
 
 $$\psi\otimes\phi = \begin{bmatrix}1/ \sqrt { 2 } \\\\ 0 \\\\ 0 \\\\ 1/ \sqrt { 2 } \end{bmatrix} 。$$ 
 
-这种 qubit 状态（不能编写为单 qubit 状态的 tensor 产品）称为 "放大状态";这两个 qubits 称为[*放大*](https://en.wikipedia.org/wiki/Quantum_entanglement)。  由于不能将量程状态视为单一 qubit 状态的 tensor 产品，因此，状态保存的信息并不局限于每个 qubits。  相反，该信息在两个状态之间的关联中以非本地方式存储。  此非区域信息是针对传统计算的量程计算的主要区别功能之一，并且对于大量的量程协议（包括[量程 teleportation](https://github.com/microsoft/Quantum/tree/master/samples/getting-started/teleportation)和[量程错误更正](xref:microsoft.quantum.libraries.error-correction)）非常重要。
+这种 qubit 状态（不能编写为单 qubit 状态的 tensor 产品）称为 "放大状态";这两个 qubits 称为 [*放大*](https://en.wikipedia.org/wiki/Quantum_entanglement)。  由于不能将量程状态视为单一 qubit 状态的 tensor 产品，因此，状态保存的信息并不局限于每个 qubits。  相反，该信息在两个状态之间的关联中以非本地方式存储。  此非区域信息是针对传统计算的量程计算的主要区别功能之一，并且对于大量的量程协议（包括 [量程 teleportation](https://github.com/microsoft/Quantum/tree/main/samples/getting-started/teleportation) 和 [量程错误更正](xref:microsoft.quantum.libraries.error-correction)）非常重要。
 
 ## <a name="measuring-two-qubit-states"></a>度量 Qubit 状态 ##
 测量 qubit 状态与 qubit 度量非常类似。 测量状态
@@ -137,9 +137,9 @@ $$
 生成 $ 00 $ ，概率为 $ | \alpha _ { 00 } | ^ 2 $ ， $ 01， $ $ 概率 | 为 \alpha _ { 01 } | ^ 2 $ ， $ 10 $ 的概率为 $ | \alpha _ { 10 } | ^ 2 $ ， $ 11 $ 的 $ 概率 | 为 \alpha _ { 11 } | ^ 2 $ 。 变量 $ \alpha _ { 00 } 、 \alpha _ { 01 } 、 \alpha _ { 10 } $ 和 $ 11 \alpha _ { } $ 特意进行了命名，使此连接清晰明了。 完成度量后，如果结果为00，则 $ $ qubit 系统的量程状态已折叠，现在为
 
 $$
-    –\equiv
+    – \equiv
     \begin{bmatrix}
-        2\\\\ 
+        2 \\\\ 
         0 \\\\ 
         0 \\\\ 
         0 \end{bmatrix} 。
@@ -147,19 +147,19 @@ $$
 
 还可以只测量一个 qubit 为两 qubit 的量程状态。 在仅测量其中一个 qubits 的情况下，度量值的影响将稍有不同，因为整个状态不会折叠为计算基础状态，而只是折叠为一个子系统。  换句话说，在这种情况下，只测量一个 qubit 只会折叠其中一个子系统，而不是全部。  
 
-若要查看这一点，请考虑测量以下状态的第一个 qubit，这是通过 $ 在两个 qubits 上将 Hadamard 转换 H 应用于 $ 初始设置为 "0" 状态而形成的：$$
+若要查看这一点，请考虑测量以下状态的第一个 qubit，这是通过 $ 在两个 qubits 上将 Hadamard 转换 H 应用于 $ 初始设置为 "0" 状态而形成的： $$
 H ^ 2 ( 1 0 1 0) 1 2 1 1 1 1 1 1 1 1 1 1 1 1 1-1 1 1 1 1 1 1 1 { \otimes } \left \begin{bmatrix} \\\\ \end{bmatrix} \otimes \begin{bmatrix} \\\\ \end{bmatrix} \right = \frac { } { } \begin{bmatrix} & & & \\\\ & & & \\\\ 0 0 & & & \\\\ & & & \end{bmatrix} \begin{bmatrix} \\\\ \\\\ \\\\ 0 \end{bmatrix} = \frac { 1 } { 2 1 1 1 } \begin{bmatrix} \\\\ \\\\ \\\\ \end{bmatrix} \mapsto \begin{cases} \text { 结果 } = 0 & \frac { 1 } { \sqrt { 2 } } \begin{bmatrix} 1 \\\\ 1 \\\\ 0 \\\\ 0 \end{bmatrix} \\\\ \text { 结果 } = 1 & \frac { 1 } { \sqrt { 2 } } \begin{bmatrix} 0 \\\\ 0 \\\\ 1 \\\\ \end{bmatrix} \\\\ \end{cases} 。  
 $$
 这两个结果的发生率均为50%。  这两者的结果50% 的概率可以 intuited，这是因为初始量程状态向量在 $ $ $ $ 第一个 qubit 上的 "交换 0" 下是固定的。
 
-用于度量第一个或第二个 qubit 的数学规则非常简单。  如果我们让 $ e_k $ 成为 $ k ^ { \rm 的第 i } $ 个计算基准向量，并使 $ S $ 成为所有 e_k 的集合， $ 以使 $ 所涉及的 qubit 获取该值 k 的值 $ 1 $ $ $ 。  例如，如果对度量第一个 qubit 感兴趣，则 $ $ 会包含 $ e_1 \equiv 10 $ 和 $ e_3 \equiv 11 $ 。  同样，如果对第二个 qubit 感兴趣，则 $ $ 会包含 $ e_2 \equiv 01 $ 和 $ e_3 \equiv 11 $ 。  那么，将所选 qubit 测量为1的概率表示 $ $ 状态向量$\psi$
+用于度量第一个或第二个 qubit 的数学规则非常简单。  如果我们让 $ e_k $ 成为 $ k ^ { \rm 的第 i } $ 个计算基准向量，并使 $ S $ 成为所有 e_k 的集合， $ 以使 $ 所涉及的 qubit 获取该值 k 的值 $ 1 $ $ $ 。  例如，如果对度量第一个 qubit 感兴趣，则 $ $ 会包含 $ e_1 \equiv 10 $ 和 $ e_3 \equiv 11 $ 。  同样，如果对第二个 qubit 感兴趣，则 $ $ 会包含 $ e_2 \equiv 01 $ 和 $ e_3 \equiv 11 $ 。  那么，将所选 qubit 测量为1的概率表示 $ $ 状态向量 $\psi$
 
 $$
 P (\text { 结果 } = 1) = \sum _ { \text { } e_k e_k } \psi ^ \dagger e_k ^ \dagger \psi 。
 $$
 
 > [!NOTE]
->在本文档中，我们使用的是小字节序格式来标记计算基础。 在 little endian 格式中，最小的有效位数首先是。 例如，以小字节序格式表示的四个数字由 bits 001 的字符串表示。
+> 在本文档中，我们使用的是小字节序格式来标记计算基础。 在 little endian 格式中，最小的有效位数首先是。 例如，以小字节序格式表示的四个数字由 bits 001 的字符串表示。
 
 由于每个 qubit 度量值只能产生 $ 0 $ 或 $ 1，因此度量值0的 $ 概率 $ $ 只是 $ 1-P (\text { 结果 } = 1) $ 。  这就是我们只为测量1的概率显式提供公式的 $ 原因 $ 。
 
@@ -198,37 +198,37 @@ $$
 例如，CNOT-CONTAINS (控制-NOT) 门是一种常用的 qubit 门，由以下单一矩阵表示：
 
 $$
-\operatorname{CNOT-CONTAINS } = \begin{bmatrix} 1 \ 0 \ 0 \ 0 \\\\ 0 \ 1 \ 0 \ 0 \\\\ 0 \ 0 \ 0 \ 1 \\\\ 0 \ 0 \ 1 \ 0\end{bmatrix}
+\operatorname{CNOT-CONTAINS } = \begin{bmatrix} 1 \ 0 \ 0 \ 0  \\\\  0 \ 1 \ 0 \ 0 \\\\  0 \ 0 \ 0 \ 1 \\\\  0 \ 0 \ 1 \ 0 \end{bmatrix}
 $$
 
 我们还可以通过在两个 qubits 上应用 qubit 入口来形成两 qubit 入口。 例如，如果我们应用入口 
 
 $$
 \begin{bmatrix}
-a b \\\\ c d\end{bmatrix}
+a b \\\\ c d \end{bmatrix}
 $$
 
 和
 
 $$\begin{bmatrix}
-e \ f \\\\ g \ h\end{bmatrix}
+e \ f \\\\ g \ h \end{bmatrix}
 $$
 
-对于第一个和第二个 qubits，这相当于应用其 tensor 产品指定的 qubit 单一项：$$\begin{bmatrix}
-a b \\\\ c d\end{bmatrix}
+对于第一个和第二个 qubits，这相当于应用其 tensor 产品指定的 qubit 单一项： $$\begin{bmatrix}
+a b \\\\ c d \end{bmatrix}
 \otimes 
 \begin{bmatrix}
-e \ f \\\\ g \ h\end{bmatrix}=
+e \ f \\\\ g \ h \end{bmatrix}=
     \begin{bmatrix}
-    ae \ af \ \ bf\\\\
-    ag \ ah \ bg \ bh\\\\
-    ce \ cf \ de \ df\\\\
+    ae \ af \ \ bf \\\\
+    ag \ ah \ bg \ bh \\\\
+    ce \ cf \ de \ df \\\\
     cg \ ch \ dg \ dh \end{bmatrix} 。$$
 这样，我们就可以通过 tensor 的产品来构建一些已知 qubit 入口的 qubit 入口。 Qubit 入口的一些示例包括 $ h \otimes h $ 、 $ x \otimes \boldone $ 和 $ x \otimes Z $ 。
 
-请注意，尽管任意两个 qubit 入口通过 tensor 产品来定义两 qubit 入口，但反之并不成立。 并非所有 qubit 入口都可以编写为 qubit 入口的 tensor 产品。  此类入口称为*entangling*入口。 Entangling 入口的一个示例是 CNOT-CONTAINS 入口。
+请注意，尽管任意两个 qubit 入口通过 tensor 产品来定义两 qubit 入口，但反之并不成立。 并非所有 qubit 入口都可以编写为 qubit 入口的 tensor 产品。  此类入口称为 *entangling* 入口。 Entangling 入口的一个示例是 CNOT-CONTAINS 入口。
 
-受控-not 入口后面的直觉可以通用化为任意入口。  通常，受控制的入口是一个入口，它充当标识 (ie 没有操作) ，除非特定 qubit 为 $ 1 $ 。  在此示例中，在标记为 x 的 qubit 上， $ $ 使用 $ \Lambda \_ x (U) $ 来表示受控单一。  例如， $ \Lambda _0 (u) e \_ { 1 } \otimes { \psi } = e \_ { 1 } \otimes u { \psi } $ 和 $ \Lambda \_ 0 (u) e \_ { 0 } \otimes { \psi } = e \_ { 0 } \otimes { \psi } $ ，其中 $ e \_ 0 $ 和 $ e \_ 1 $ 是对应于值 $ 0 $ 和1的单个 qubit 的计算基础向量 $ $ 。  例如，请考虑以下受控- $ Z $ 门，然后我们可以将此表示为$$
+受控-not 入口后面的直觉可以通用化为任意入口。  通常，受控制的入口是一个入口，它充当标识 (ie 没有操作) ，除非特定 qubit 为 $ 1 $ 。  在此示例中，在标记为 x 的 qubit 上， $ $ 使用 $ \Lambda \_ x (U) $ 来表示受控单一。  例如， $ \Lambda _0 (u) e \_ { 1 } \otimes { \psi } = e \_ { 1 } \otimes u { \psi } $ 和 $ \Lambda \_ 0 (u) e \_ { 0 } \otimes { \psi } = e \_ { 0 } \otimes { \psi } $ ，其中 $ e \_ 0 $ 和 $ e \_ 1 $ 是对应于值 $ 0 $ 和1的单个 qubit 的计算基础向量 $ $ 。  例如，请考虑以下受控- $ Z $ 门，然后我们可以将此表示为 $$
 \Lambda\_0 (Z) 1 0 0 0 0 1 0 0 0 0 0 = \begin{bmatrix} & & & \\\\ & & & \\\\ & & 1 & 0 \\\\ 0 0 & & & -1 \end{bmatrix} = (\boldone \otimes H) \operatorname { cnot-contains } (\boldone \otimes h) 。
 $$
 
@@ -251,7 +251,7 @@ $$
 
 \begin{align}
 & (X \otimes \operatorname { cnot-contains } _ { 12 } \otimes \boldone \otimes \boldone \otimes \boldone \otimes \boldone) \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} \otimes \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} \otimes \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} \otimes \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} \otimes \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} \otimes \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} \otimes \begin{bmatrix} 0 \\\\ 1\end{bmatrix}\\\\
-&\qquad\qquad\equiv0011001。\end{align}
+&\qquad\qquad\equiv 0011001。 \end{align}
 
 在许多 qubit 的系统中，通常需要分配和解除分配用作量程计算机的临时内存的 qubits。  此类 qubit 称为 ancilla。  默认情况下，我们假定 qubit 状态初始化为 $ $ 在分配时 e_0。  接下来，我们会进一步假定在 $ 释放之前再次返回 e_0 $ 。  这一假设非常重要，因为如果 ancilla qubit 在被解除分配后会与另一个 qubit 注册放大，则解除分配的过程将损坏 ancilla。  出于此原因，我们总是会假设此类 qubits 在发布之前会恢复到其初始状态。
 

@@ -9,12 +9,12 @@ uid: microsoft.quantum.guide.host-programs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f1eca44dabd72cd107d72d3b9e3ad1081c19c27d
-ms.sourcegitcommit: 11bd357baeb6ab53a402882979e75964d0869b57
+ms.openlocfilehash: f24c608ffc6522cb50f512de1a02b3db4b290e83
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "88992184"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759810"
 ---
 # <a name="ways-to-run-a-no-locq-program"></a>运行程序的方式 Q#
 
@@ -250,7 +250,7 @@ BorrowedWidth   0
 使用主机程序的一个主要优点是， Q# 可以使用主机语言进一步处理程序返回的传统数据。
 这可能包括一些高级的数据处理 (例如，不能在内部执行 Q#) ，然后 Q# 基于这些结果调用更多操作，也可以像绘制结果那样简单 Q# 。
 
-此处显示了一般方案，并讨论了下面的 Python 和 c # 的具体实现。 有关使用 F # 宿主程序的示例，请参阅 [.net 互操作性示例](https://github.com/microsoft/Quantum/tree/master/samples/interoperability/dotnet)。
+此处显示了一般方案，并讨论了下面的 Python 和 c # 的具体实现。 有关使用 F # 宿主程序的示例，请参阅 [.net 互操作性示例](https://github.com/microsoft/Quantum/tree/main/samples/interoperability/dotnet)。
 
 <br/>
 <img src="../media/hostprograms_host_program_diagram.png" alt="Q# program from a host program" width="700">
@@ -409,7 +409,7 @@ using NamespaceName;                              // make the Q# namespace avail
 ```
 
 接下来，我们声明 c # 命名空间，一些其他位和部分 (查看以下完整的代码块) ，然后需要 (如计算 callables) 的参数。 Q#
-在本例中，后者不是必需的，但在  [.net 互操作性示例](https://github.com/microsoft/Quantum/tree/master/samples/interoperability/dotnet)中可以找到此类用法的示例。
+在本例中，后者不是必需的，但在  [.net 互操作性示例](https://github.com/microsoft/Quantum/tree/main/samples/interoperability/dotnet)中可以找到此类用法的示例。
 
 #### <a name="target-machines"></a>目标计算机
 
@@ -580,7 +580,7 @@ BorrowedWidth   0
 Q# Jupyter 笔记本利用 I Q# 内核，使你能够在单个笔记本中定义、编译和运行 Q# callables，---所有说明、注释和其他内容。
 这意味着，虽然可以导入和使用文件的内容，但 `*.qs` Q# 它们在执行模型中不是必需的。
 
-在这里，我们将详细介绍如何运行 Q# 上面定义的操作，但 Q# 在 [简介 Q# 和 Jupyter 笔记本](https://github.com/microsoft/Quantum/blob/master/samples/getting-started/intro-to-iqsharp/Notebook.ipynb)中提供了有关使用 Jupyter 笔记本的更广泛的介绍。
+在这里，我们将详细介绍如何运行 Q# 上面定义的操作，但 Q# 在 [简介 Q# 和 Jupyter 笔记本](https://github.com/microsoft/Quantum/blob/main/samples/getting-started/intro-to-iqsharp/Notebook.ipynb)中提供了有关使用 Jupyter 笔记本的更广泛的介绍。
 
 ### <a name="defining-operations"></a>定义操作
 
@@ -591,7 +591,7 @@ Q# Jupyter 笔记本利用 I Q# 内核，使你能够在单个笔记本中定义
 
 > [!NOTE]
 > Callables 和[Microsoft.Quantum.Intrinsic](xref:microsoft.quantum.intrinsic) [Canon](xref:microsoft.quantum.canon) (（例如 [`H`](xref:microsoft.quantum.intrinsic.h) [`ApplyToEach`](xref:microsoft.quantum.canon.applytoeach) ）和) 自动可用于 Jupyter 笔记本的单元中定义的操作。 Q#
-> 不过，对于从外部源文件引入的代码)  (，这种情况并不是如此 Q# 。 [ Q# ](https://github.com/microsoft/Quantum/blob/master/samples/getting-started/intro-to-iqsharp/Notebook.ipynb) 
+> 不过，对于从外部源文件引入的代码)  (，这种情况并不是如此 Q# 。 [ Q# ](https://github.com/microsoft/Quantum/blob/main/samples/getting-started/intro-to-iqsharp/Notebook.ipynb) 
 > 
 
 同样，定义操作只需编写 Q# 代码并运行单元。

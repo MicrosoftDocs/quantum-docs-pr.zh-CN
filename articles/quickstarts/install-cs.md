@@ -9,12 +9,12 @@ uid: microsoft.quantum.install.cs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 24318380e0e63957a51961762a33446fe0121b21
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 96a1d0d75f3ff7de11407fd76479cbae86ce7571
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863673"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759266"
 ---
 # <a name="develop-with-no-locq-and-net"></a>使用 Q# 和 .NET 进行开发
 
@@ -88,7 +88,7 @@ Q# 能够很好地与 C# 和 F# 等 .NET 语言配合运行。
 按照上述说明设置项目后，可从 .NET 控制台应用程序调用 Q#。
 Q# 编译器将为每个 Q# 操作和函数创建 .NET 类，使你能够在模拟器上运行量子程序。
 
-例如，[.NET 互操作性示例](https://github.com/microsoft/Quantum/tree/master/samples/interoperability/dotnet)包含以下 Q# 操作的示例：
+例如，[.NET 互操作性示例](https://github.com/microsoft/Quantum/tree/main/samples/interoperability/dotnet)包含以下 Q# 操作的示例：
 
 :::code language="qsharp" source="~/quantum/samples/interoperability/dotnet/qsharp/Operations.qs" range="67-75":::
 

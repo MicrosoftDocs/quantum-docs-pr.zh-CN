@@ -9,16 +9,16 @@ uid: microsoft.quantum.contributing.samples
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 20da0e1765a242c172cc595f03d7791a0e8b8d2d
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: ae29614cc9c8bf965ea3cb373dc17470aec21252
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867500"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759180"
 ---
 # <a name="contributing-samples-to-the-quantum-development-kit"></a>向量程开发工具包贡献示例
 
-如果您对将代码提供给[示例存储库](https://github.com/Microsoft/Quantum)感兴趣，感谢您使量子开发社区成为一个更好的场所！
+如果您对将代码提供给 [示例存储库](https://github.com/Microsoft/Quantum)感兴趣，感谢您使量子开发社区成为一个更好的场所！
 
 ## <a name="the-quantum-development-kit-samples-repository"></a>量程开发工具包示例存储库
 
@@ -41,17 +41,17 @@ microsoft/Quantum
    ⋮
 ```
 
-也就是说， [microsoft/量子存储库](https://github.com/microsoft/Quantum)中的示例按主题区域细分为不同的文件夹 `algorithms/` ，例如、 `arithmetic/` 或 `characterization/` 。
+也就是说， [microsoft/量子存储库](https://github.com/microsoft/Quantum) 中的示例按主题区域细分为不同的文件夹 `algorithms/` ，例如、 `arithmetic/` 或 `characterization/` 。
 在每个主题区域的文件夹内，每个示例都包含一个文件夹，该文件夹收集用户需要浏览和使用该示例的所有内容。
 
 ## <a name="how-samples-are-structured"></a>如何构造示例
 
-查看构成每个文件夹的文件，让我们深入了解 [`algorithms/chsh-game/`](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/chsh-game) 示例。
+查看构成每个文件夹的文件，让我们深入了解 [`algorithms/chsh-game/`](https://github.com/microsoft/Quantum/tree/main/samples/algorithms/chsh-game) 示例。
 
 | 文件              | 描述                                                |
 |-------------------|------------------------------------------------------------|
-| `CHSHGame.csproj` | Q#用于使用 .NET Core SDK 生成示例的项目 |
-| `Game.qs`         | Q#示例的操作和函数                 |
+| `CHSHGame.csproj` | Q# 用于使用 .NET Core SDK 生成示例的项目 |
+| `Game.qs`         | Q# 示例的操作和函数                 |
 | `Host.cs`         | 用于运行示例的 c # 宿主程序                     |
 | `host.py`         | 用于运行示例的 Python 主机程序                 |
 | `README.md`       | 有关示例内容以及如何使用它的文档    |
@@ -67,7 +67,7 @@ microsoft/Quantum
 > [!div class="nextstepaction"]
 > [了解如何呈现 chsh 示例](https://docs.microsoft.com/samples/microsoft/quantum/validating-quantum-mechanics/)
 
-此元数据以[YAML 标头](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#yaml-header)的形式提供，此标头指示你的示例所涵盖的语言 (通常情况下，这将是 `qsharp` 、 `csharp` 和 `python`) ，而你的示例所涉及的产品 (通常只是 `qdk`) 。
+此元数据以 [YAML 标头](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html#yaml-header) 的形式提供，此标头指示你的示例所涵盖的语言 (通常情况下，这将是 `qsharp` 、 `csharp` 和 `python`) ，而你的示例所涉及的产品 (通常只是 `qdk`) 。
 
 :::code language="markdown" source="~/quantum/samples/algorithms/chsh-game/README.md" range="1-11":::
 

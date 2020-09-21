@@ -1,6 +1,6 @@
 ---
 title：量程 oracles 说明：了解如何使用和定义量程 oracles、用于作为其他算法的输入的黑色框操作。
-author： cgranade uid： oracles。作者： Christopher.Granade@microsoft.com ms. 日期： 07/11/2018 ms. 主题：项目不相关：
+author： cgranade uid： oracles： chgranad： ms. 日期： 07/11/2018 ms. 主题：文章不是：
 - "Q#"
 - "$$v"
 - "$$"
@@ -140,7 +140,7 @@ O \ket { \psi } & = o \sum _ { x \in \\ { 0、1 \\ } ^ n、y \in \\ { 0、1 \\ }
 $$
 
 ## <a name="phase-oracles"></a>阶段 oracles
-此外，我们还可以 $ $ $ $ 通过基于到 O 的输入应用_阶段_，将 f 编码为 oracle $ O $ 。例如，我们可以定义 $ O $ ，使$$
+此外，我们还可以 $ $ $ $ 通过基于到 O 的输入应用 _阶段_ ，将 f 编码为 oracle $ O $ 。例如，我们可以定义 $ O $ ，使 $$
 \begin{align}
     O \ket { x } = (-1) ^ { f (x) } \ket { x } 。
 \end{align}
@@ -148,9 +148,9 @@ $$
 如果 oracle 最初在计算基础状态 x 中对寄存器 $ \ket { } $ 进行操作，则此阶段为全局阶段，因此无法观察。
 但如果应用于 superposition 或作为受控操作，此类 oracle 可能是非常强大的资源。
 例如，请考虑一个阶段 $ $ 为 qubit 函数 $ f O_f $ 。
-接着$$
+接着 $$
 \begin{align}
-    O_f\ket{+}
+    O_f \ket{+}
         &=O_f (\ket {0 }  +  \ket { 1 }) / \sqrt { 2 }\\\\
         &= ( # A1-1) ^ { f (0) } \ket { 0 } + () ^ { f (1) } \ket { 1 }) / \sqrt { 2 }\\\\
         &= (-1) ^ { f (0) } (\ket { 0 } + () ^ { f (1)  (} \ket { } \sqrt { } 1) \\\\
@@ -161,7 +161,7 @@ $$
 更常见的情况是，oracles 的两个视图都可以扩大了，以表示返回实数而不只是一位的传统函数。
 
 选择实现 oracle 的最佳方式很大程度上取决于 oracle 在给定算法中的使用方式。
-例如， [Deutsch-Jozsa 算法](https://en.wikipedia.org/wiki/Deutsch%E2%80%93Jozsa_algorithm)依赖于第一种方式实现的 oracle，而[Grover 的算法](https://en.wikipedia.org/wiki/Grover's_algorithm)依赖于第二个方法实现的 oracle。
+例如， [Deutsch-Jozsa 算法](https://en.wikipedia.org/wiki/Deutsch%E2%80%93Jozsa_algorithm) 依赖于第一种方式实现的 oracle，而 [Grover 的算法](https://en.wikipedia.org/wiki/Grover's_algorithm) 依赖于第二个方法实现的 oracle。
 
 
-有关更多详细信息，我们建议在[Gilyén *et al*. 1711.00465](https://arxiv.org/abs/1711.00465)中进行讨论。
+有关更多详细信息，我们建议在 [Gilyén *et al*. 1711.00465](https://arxiv.org/abs/1711.00465)中进行讨论。

@@ -2,25 +2,25 @@
 title: 正在加载传统数据
 description: 了解如何加载自己的数据集，以便使用 Microsoft Quantum Development Kit (QDK) 训练分类器模型。
 author: geduardo
-ms.author: v-edsanc@microsoft.com
+ms.author: v-edsanc
 ms.date: 02/16/2020
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.load
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 26ba7411c9ade1d6c4b606e8c12c10ade18fc584
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: cd6fdb6bb33a65ee02ac8c43f40df9abeff9c841
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868825"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833695"
 ---
 # <a name="load-and-classify-your-own-datasets"></a>对你自己的数据集进行加载和分类
 
 在本快速教程中，我们将学习如何加载自己的数据集，以便使用量程开发工具包 (QDK) 来训练分类器模型。
 
-我们强烈建议使用标准化的序列化格式（如[JSON 文件](https://en.wikipedia.org/wiki/JSON)）来存储数据。
+我们强烈建议使用标准化的序列化格式（如 [JSON 文件](https://en.wikipedia.org/wiki/JSON) ）来存储数据。
 此类格式提供与 Python 和 .NET 生态系统等不同框架的高兼容性。
 具体而言，我们建议使用模板来加载数据，以便直接从示例中复制和粘贴代码。
 
@@ -146,7 +146,7 @@ ms.locfileid: "87868825"
 
 ### <a name="python"></a>[Python](#tab/tabid-python)
 
-Python 提供了用于处理 JSON 序列化数据的[内置 `json` 包](https://docs.python.org/3.7/library/json.html)：
+Python 提供了用于处理 JSON 序列化数据的 [内置 `json` 包](https://docs.python.org/3.7/library/json.html) ：
 
 :::code language="python" source="~/quantum/samples/machine-learning/half-moons/host.py" range="4-5,20-22":::
 

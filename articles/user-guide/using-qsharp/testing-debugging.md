@@ -2,19 +2,19 @@
 title: 测试和调试
 description: 了解如何使用单元测试、事实和断言以及转储函数来测试和调试量程程序。
 author: tcNickolas
-ms.author: mamykhai@microsoft.com
+ms.author: mamykhai
 ms.date: 06/01/2020
 ms.topic: article
 uid: microsoft.quantum.guide.testingdebugging
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 2b5276da594ba263177d435c1153f6d96e29c4e8
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 2f2181d388a59c1c6c5a0f13c9aa49d5fa1e51ae
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867907"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833170"
 ---
 # <a name="testing-and-debugging"></a>测试和调试
 
@@ -23,10 +23,10 @@ ms.locfileid: "87867907"
 
 ## <a name="unit-tests"></a>单元测试
 
-测试传统程序的一种常见方法是编写称为*单元测试*的小程序，这些程序在库中运行代码，并将其输出与某个预期输出进行比较。
-例如，你可以确保返回， `Square(2)` `4` 因为你知道 $ 2 ^ 2 = $4 的*先验*。
+测试传统程序的一种常见方法是编写称为 *单元测试*的小程序，这些程序在库中运行代码，并将其输出与某个预期输出进行比较。
+例如，你可以确保返回， `Square(2)` `4` 因为你知道 $ 2 ^ 2 = $4 的 *先验* 。
 
-Q#支持为量程程序创建单元测试，并且该测试可以作为测试在[xUnit](https://xunit.github.io/)单元测试框架中运行。
+Q# 支持为量程程序创建单元测试，并且该测试可以作为测试在 [xUnit](https://xunit.github.io/) 单元测试框架中运行。
 
 ### <a name="creating-a-test-project"></a>创建测试项目
 
@@ -69,19 +69,19 @@ Q#采用类型为的参数和返回的任何操作或函数 `Unit` `Unit` 都可
 ```
 保存该文件并运行所有测试。 现在应有两个单元测试，一个在 `AllocateQubit` 上运行，另一个 `QuantumSimulator` 在上运行 `ResourcesEstimator` 。 
 
-Q#编译器可识别内置目标 `"QuantumSimulator"` 、 `"ToffoliSimulator"` 和 `"ResourcesEstimator"` 作为单元测试的有效执行目标。 还可以指定任何完全限定名称来定义自定义执行目标。 
+Q#编译器可识别内置目标 `"QuantumSimulator"` 、 `"ToffoliSimulator"` 和， `"ResourcesEstimator"` 作为单元测试的有效运行目标。 还可以指定任何完全限定的名称来定义自定义的运行目标。 
 
 ### <a name="running-no-locq-unit-tests"></a>运行 Q# 单元测试
 
 #### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
-作为一次性的每个解决方案设置，请在 "**测试**" 菜单中，选择 "**测试设置" > 默认处理器体系结构 > X64**。
+作为一次性的每个解决方案设置，请在 " **测试** " 菜单中，选择 " **测试设置" > 默认处理器体系结构 > X64**。
 
 > [!TIP]
 > Visual Studio 的默认处理器结构设置存储在解决方案选项 (`.suo` 每个解决方案) 文件中。
-> 如果删除此文件，则需要再次选择**X64**作为处理器体系结构。
+> 如果删除此文件，则需要再次选择 **X64** 作为处理器体系结构。
 
-生成项目，打开 "**测试**" 菜单，然后选择 " **Windows > 测试资源管理器**"。 **AllocateQubit**在 "**未运行的测试**" 组中的测试列表中显示。 选择 "**全部运行**" 或 "运行此单个测试"。
+生成项目，打开 " **测试** " 菜单，然后选择 " **Windows > 测试资源管理器**"。 **AllocateQubit** 在 " **未运行的测试** " 组中的测试列表中显示。 选择 " **全部运行** " 或 "运行此单个测试"。
 
 #### <a name="command-line--visual-studio-code"></a>[命令行/Visual Studio Code](#tab/tabid-vscode)
 
@@ -113,7 +113,7 @@ Test Run Successful.
 Test execution time: 1.9607 Seconds
 ```
 
-可以根据其名称或执行目标筛选单元测试：
+可以根据其名称或运行目标筛选单元测试：
 
 ```bash 
 $ dotnet test --filter "Target=QuantumSimulator"
@@ -127,7 +127,7 @@ $ dotnet test --filter "Name=AllocateQubit"
 
 #### <a name="visual-studio-2019"></a>[Visual Studio 2019](#tab/tabid-vs2019)
 
-在测试资源管理器中运行测试并单击测试后，将显示一个面板，其中包含有关测试执行的信息：通过/失败状态、已用时间和指向输出的链接。 单击 "**输出**"，在新窗口中打开测试输出。
+在测试资源管理器中运行测试并单击测试后，将显示一个面板，其中包含有关测试运行的信息：通过/失败状态、运行时间和输出链接。 单击 " **输出** "，在新窗口中打开测试输出。
 
 ![测试输出](~/media/unit-test-output.png)
 
@@ -140,7 +140,7 @@ $ dotnet test --filter "Name=AllocateQubit"
 
 ## <a name="facts-and-assertions"></a>事实和断言
 
-因为中的函数没有 Q# 任何_逻辑_副作用，所以，你永远不会观察到 Q# 程序中的任何其他类型的效果，因为它运行的函数的输出类型为空元组 `()` 。
+因为中的函数没有 Q# 任何 _逻辑_ 副作用，所以，你永远不会观察到 Q# 程序中的任何其他类型的效果，因为它运行的函数的输出类型为空元组 `()` 。
 也就是说，目标计算机可以选择不运行返回的任何函数， `()` 保证此省略不会修改任何以下代码的行为 Q# 。
 此行为使函数返回 `()` (如 `Unit`) 用于将断言和调试逻辑嵌入到程序中的有用工具 Q# 。 
 
@@ -177,11 +177,11 @@ operation AssertQubitsAreAvailable() : Unit
 ```
 
 在这里，我们将使用操作 <xref:microsoft.quantum.environment.getqubitsavailabletouse> 来返回可供使用的 qubits 数。
-这取决于程序及其执行环境的全局状态，的定义 `AssertQubitsAreAvailable` 必须也是操作。
+因为这取决于程序及其运行环境的全局状态，所以，的定义 `AssertQubitsAreAvailable` 必须也是操作。
 但是，我们可以使用该全局状态生成简单 `Bool` 值作为函数的输入 `Fact` 。
 
 基于这些观点构建[的 prelude](xref:microsoft.quantum.libraries.standard.prelude)提供两个特别有用的断言， <xref:microsoft.quantum.diagnostics.assertmeasurement> 并 <xref:microsoft.quantum.diagnostics.assertmeasurementprobability> 作为操作建模 `()` 。 这些断言每个都采用一个 Pauli 运算符，该运算符描述特定的感兴趣的度量、在其上执行度量的量程注册，以及一个假设结果。
-模拟使用的目标计算机不受非[克隆定理](https://en.wikipedia.org/wiki/No-cloning_theorem)的约束，并且可以在不干扰传递到此类断言的寄存器的情况下执行此类测量。
+模拟使用的目标计算机不受非 [克隆定理](https://en.wikipedia.org/wiki/No-cloning_theorem)的约束，并且可以在不干扰传递到此类断言的寄存器的情况下执行此类测量。
 然后，模拟器可以类似于 `PositivityFact` previous 函数，如果在实践中未发现假设结果，则停止计算：
 
 ```qsharp
@@ -205,7 +205,7 @@ using (register = Qubit())
 
 ### <a name="dumpmachine"></a>DumpMachine
 
-作为量程开发工具包的一部分分发的全状态量程模拟器会将整个量程系统的[波形函数](https://en.wikipedia.org/wiki/Wave_function)写入文件中，这是一维复数数组，其中每个元素都表示度量计算基础状态 $ \ket{n} $ 的概率的波幅，其中 $ \ket{n} = \ket{b_ {n-1} .。。bits $ b_i $ b_1b_0} \{ $ \} 。 例如，在仅分配了两个 qubits 并在量程状态 $ $ \begin{align} \ket{\psi} = \frac {1} {\sqrt {2} } \ket {00} -\frac{ (1 + i) } \ket 中的计算机上 {2} {10} ，\end{align} $ $ 调用将 <xref:microsoft.quantum.diagnostics.dumpmachine> 生成以下输出：
+作为量程开发工具包的一部分分发的全状态量程模拟器会将整个量程系统的 [波形函数](https://en.wikipedia.org/wiki/Wave_function) 写入文件中，这是一维复数数组，其中每个元素都表示度量计算基础状态 $ \ket{n} $ 的概率的波幅，其中 $ \ket{n} = \ket{b_ {n-1} .。。bits $ b_i $ b_1b_0} \{ $ \} 。 例如，在仅分配了两个 qubits 并在量程状态 $ $ \begin{align} \ket{\psi} = \frac {1} {\sqrt {2} } \ket {00} -\frac{ (1 + i) } \ket 中的计算机上 {2} {10} ，\end{align} $ $ 调用将 <xref:microsoft.quantum.diagnostics.dumpmachine> 生成以下输出：
 
 ```
 # wave function for qubits with ids (least to most significant): 0;1
@@ -314,7 +314,7 @@ using (register = Qubit())
 
 ***
 
-由于 <xref:microsoft.quantum.diagnostics.dumpmachine> 是 <xref:microsoft.quantum.diagnostics> 命名空间的一部分，因此必须添加 `open` 语句来访问它：
+由于 <xref:microsoft.quantum.diagnostics.dumpmachine> 是  <xref:microsoft.quantum.diagnostics> 命名空间的一部分，因此必须添加 `open` 语句来访问它：
 
 ```qsharp
 namespace Samples {
@@ -333,7 +333,7 @@ namespace Samples {
 
 ### <a name="dumpregister"></a>DumpRegister
 
-<xref:microsoft.quantum.diagnostics.dumpregister>的工作方式类似 <xref:microsoft.quantum.diagnostics.dumpmachine> ，不同之处在于它还采用 qubits 数组，以将信息量限制为仅与对应 qubits 相关。
+<xref:microsoft.quantum.diagnostics.dumpregister> 的工作方式类似 <xref:microsoft.quantum.diagnostics.dumpmachine> ，不同之处在于它还采用 qubits 数组，以将信息量限制为仅与对应 qubits 相关。
 
 与一样 <xref:microsoft.quantum.diagnostics.dumpmachine> ，生成的信息 <xref:microsoft.quantum.diagnostics.dumpregister> 取决于目标计算机。 对于全状态量程模拟器，它会将波形功能写入文件，使其与所提供的 qubits 生成的量程子系统的全局阶段完全相同，格式与相同 <xref:microsoft.quantum.diagnostics.dumpmachine> 。  例如，再次使计算机只分配了两个 qubits，并在量程状态 $ $ \begin{align} \ket{\psi} = \frac {1} {\sqrt {2} } \ket {00} -\frac{ (1 + i) } {2} \ket {10} =-e ^ {-i \ pi/4} ( ( \frac {1} {\sqrt {2} } \ket {0} -\frac{ (1 + i) {2} } \ket {1} ) \otimes \frac{- ({2} {0} \end{align} $ $ 调用 <xref:microsoft.quantum.diagnostics.dumpregister> 来 `qubit[0]` 生成此输出：
 
@@ -384,6 +384,6 @@ namespace app
 
 ## <a name="debugging"></a>调试
 
-在 `Assert` 和 `Dump` 函数和操作的基础上， Q# 支持标准 Visual Studio 调试功能的子集：[设置行断点](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints)、[使用 F10 逐句通过代码](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger)，以及在模拟器上的代码执行过程中[检查典型变量的值](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows)。
+在 `Assert` 和 `Dump` 函数和操作的基础上， Q# 支持标准 Visual Studio 调试功能的子集： [设置行断点](https://docs.microsoft.com/visualstudio/debugger/using-breakpoints)、 [使用 F10 逐句通过代码](https://docs.microsoft.com/visualstudio/debugger/navigating-through-code-with-the-debugger)，以及在模拟器上运行代码时，可以 [检查经典变量的值](https://docs.microsoft.com/visualstudio/debugger/autos-and-locals-windows) 。
 
-Visual Studio Code 中的调试利用了 c # 提供的调试功能作为由 OmniSharp 提供支持的 Visual Studio Code 扩展，并需要安装[最新版本](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)。 
+Visual Studio Code 中的调试利用了 c # 提供的调试功能作为由 OmniSharp 提供支持的 Visual Studio Code 扩展，并需要安装 [最新版本](https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp)。 

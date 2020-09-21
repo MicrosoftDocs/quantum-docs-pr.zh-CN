@@ -9,15 +9,15 @@ uid: microsoft.quantum.chemistry.examples.energyestimate
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a2df4b829a3f4946c6de6e6b80ad72a5bc192b2c
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 05506f4099de754cd02d81fbd9200f2de091e37e
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869199"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759726"
 ---
 # <a name="obtaining-energy-level-estimates"></a>获取能量级别估算
-估计能耗级别的值是量程化学的主要应用程序之一。 本文概述了如何针对分子 hydrogen 的规范示例执行此操作。 此部分中引用的示例位于 [`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogen) 化学示例存储库中。 演示中绘制出了一个更直观的示例 [`MolecularHydrogenGUI`](https://github.com/microsoft/Quantum/tree/master/samples/chemistry/MolecularHydrogenGUI) 。
+估计能耗级别的值是量程化学的主要应用程序之一。 本文概述了如何针对分子 hydrogen 的规范示例执行此操作。 此部分中引用的示例位于 [`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogen) 化学示例存储库中。 演示中绘制出了一个更直观的示例 [`MolecularHydrogenGUI`](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogenGUI) 。
 
 ## <a name="estimating-the-energy-values-of-molecular-hydrogen"></a>估计分子 hydrogen 的能耗值
 
@@ -65,7 +65,7 @@ ms.locfileid: "87869199"
     var qSharpData = QSharpFormat.Convert.ToQSharpFormat(qSharpHamiltonianData, qSharpWavefunctionData);
 ```
 
-接下来， `qSharpData` 将（表示 Hamiltonian）传递给 `TrotterStepOracle` 函数。 `TrotterStepOracle`返回一项量程运算，它模拟 Hamiltonian 的实时演变。 有关详细信息，请参阅[模拟 Hamiltonian dynamics](xref:microsoft.quantum.chemistry.concepts.simulationalgorithms)。
+接下来， `qSharpData` 将（表示 Hamiltonian）传递给 `TrotterStepOracle` 函数。 `TrotterStepOracle` 返回一项量程运算，它模拟 Hamiltonian 的实时演变。 有关详细信息，请参阅 [模拟 Hamiltonian dynamics](xref:microsoft.quantum.chemistry.concepts.simulationalgorithms)。
 
 ```qsharp
 // qSharpData passed from driver
@@ -83,7 +83,7 @@ let integratorOrder = 4;
 let (nQubits, (rescale, oracle)) =  TrotterStepOracle (qSharpData, stepSize, integratorOrder);
 ```
 
-此时，你可以使用标准库的[阶段估算算法](xref:microsoft.quantum.libraries.characterization)，使用以前的模拟来了解地面状态能量。 这需要准备好近似值到量子地面状态。 架构中提供了此类近似值的建议 [`Broombridge`](xref:microsoft.quantum.libraries.chemistry.schema.broombridge) 。 但是，如果不提供这些建议，则默认方法会将多个 `hamiltonian.NElectrons` 电子添加到贪婪，从而最大程度地减少 electron 字词凝聚的。 DocFX[命名空间中的](xref:microsoft.quantum.characterization)表示法中提供了阶段估计函数和操作。
+此时，你可以使用标准库的 [阶段估算算法](xref:microsoft.quantum.libraries.characterization) ，使用以前的模拟来了解地面状态能量。 这需要准备好近似值到量子地面状态。 架构中提供了此类近似值的建议 [`Broombridge`](xref:microsoft.quantum.libraries.chemistry.schema.broombridge) 。 但是，如果不提供这些建议，则默认方法会将多个 `hamiltonian.NElectrons` 电子添加到贪婪，从而最大程度地减少 electron 字词凝聚的。 DocFX [命名空间中的](xref:microsoft.quantum.characterization) 表示法中提供了阶段估计函数和操作。
 
 以下代码片段演示了化学模拟库的实时演变输出如何与量程阶段估算集成。
 
@@ -156,5 +156,5 @@ using (var qsim = new QuantumSimulator())
 
 操作返回两个参数： 
 
-- `energyEst`是对地面省电的估计，并且应接近 `-1.137` 平均。 
-- `phaseEst`是阶段估算算法返回的原始阶段。 这对于因值太大而无法诊断别名时非常有用 `trotterStep` 。
+- `energyEst` 是对地面省电的估计，并且应接近 `-1.137` 平均。 
+- `phaseEst` 是阶段估算算法返回的原始阶段。 这对于因值太大而无法诊断别名时非常有用 `trotterStep` 。

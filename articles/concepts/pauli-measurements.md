@@ -1,6 +1,6 @@
 ---
 title： Pauli 度量说明：了解如何使用单 qubit Pauli 度量值操作。
-author： QuantumWriter uid： pauli。作者： nawiebe@microsoft.com ms. 日期： 12/11/2017 ms. 主题：项目不相关：
+author： bradben uid： pauli： benbra： v-ms. 日期： 12/11/2017 ms. 主题：文章不是：
 - "Q#"
 - "$$v"
 - "$$"
@@ -143,8 +143,8 @@ $$
 operation MeasureY(qubit : Qubit) : Result {
     mutable result = Zero;
     within {
-        H(q);
         Adjoint S(q);
+        H(q);
     } apply {
         set result = M(q);
     }
@@ -223,14 +223,14 @@ $Z z 的本征值 \otimes $ 仅依赖于构成每个计算基础向量的 qubits
 原因是度量 $ z \otimes z $ 将量程状态投影到了 $ 这些运算符的 + 1 $ 或 $ -1 $ eigenstate 中。
 $先度量 z \otimes \mathbb { 1 } $ ，然后再 $ \mathbb { } \otimes $ 将量程状态向量投影到 Z 1 的半个空格上 $ \otimes \mathbb { } $ ，然后计算为 $ \mathbb { 1 } \otimes z $ 的半个空格。由于有四个计算基准向量，同时执行这两个度量会将状态降到一个四分之一空间，因此将其减少为单个计算基础向量。
 
-## <a name="correlations-between-qubits"></a>Qubits 之间的关联
+## <a name="correlations-between-qubits"></a>量子位之间的关联
 另一种方法是查看度量标准（例如 $ x x 或 z z）的 tensor 产品， \otimes $ $ \otimes $ 这些度量值使你可以查看在这两个 qubits 间的关联中存储的信息。
 度量 $ X \otimes \id $ 使你可以查看在第一个 qubit 中本地存储的信息。
 尽管这两种类型的度量在量程计算中都同样很有价值，但前者会导致量程计算的强大功能。
 它在量程计算中表现出这一点，通常情况下，您想要学习的信息并不存储在任何单个 qubit 中，而是一次只存储在所有 qubits 中，因此，这种情况下，只能通过联合 (度量来查看 $ 此信息，例如 z \otimes z $) 会将此信息变为清单。
 
 例如，在 "纠错" 中，我们经常想要了解在学习有关我们尝试保护的状态时所发生的错误。
-"[位翻转" 代码示例](https://github.com/microsoft/Quantum/tree/master/samples/error-correction/bit-flip-code)显示了如何使用 $ Z \otimes z \otimes \id $ 和 $ \id \otimes z \otimes z $ < 等度量来执行此操作的示例。--TODO：在载入的情况下，将其更改为指向示例浏览器的链接。 -->
+"[位翻转" 代码示例](https://github.com/microsoft/Quantum/tree/main/samples/error-correction/bit-flip-code)显示了如何使用 $ Z \otimes z \otimes \id $ 和 $ \id \otimes z \otimes z $ < 等度量来执行此操作的示例。--TODO：在载入的情况下，将其更改为指向示例浏览器的链接。 -->
 
 $ \otimes \otimes \otimes \boldone $ 也可以测量 X Y Z 等任意 Pauli 运算符。
 Pauli 运算符的所有此类 tensor 产品仅具有两个本征值 $ \pm 1 $ ，两个 eigenspaces 构成整个矢量空间的半个空格。

@@ -9,32 +9,32 @@ uid: microsoft.quantum.contributing.docs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 1110f32a6486de1a346b115fa928a098749b6690
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 20e9f8126a290f52701b6b0e525d7669a605d4c9
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866870"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759673"
 ---
 # <a name="improving-documentation"></a>改进文档
 
 量程开发工具包的文档采用多种不同的形式，以使该信息可供量子开发人员使用。
 
-按照文档的原则[编写为代码](https://www.writethedocs.org/guide/docs-as-code/)，所有量子开发工具包文档都被格式化为代码，并使用 Git 进行管理，其方式与用于构建量程开发工具包的源代码相同。
-大多数情况下，代码支持文档由各种形式的[Markdown](https://daringfireball.net/projects/markdown/)组成，一种语言，用于以纯文本格式编写格式丰富的文本，该语言可在命令行、ide 和源代码管理中轻松使用。
-同样，我们采用[MathJax](https://www.mathjax.org/)库来允许使用 LaTeX 语言在文档中设置数学格式，如下所述。
+按照文档的原则 [编写为代码](https://www.writethedocs.org/guide/docs-as-code/)，所有量子开发工具包文档都被格式化为代码，并使用 Git 进行管理，其方式与用于构建量程开发工具包的源代码相同。
+大多数情况下，代码支持文档由各种形式的 [Markdown](https://daringfireball.net/projects/markdown/)组成，一种语言，用于以纯文本格式编写格式丰富的文本，该语言可在命令行、ide 和源代码管理中轻松使用。
+同样，我们采用 [MathJax](https://www.mathjax.org/) 库来允许使用 LaTeX 语言在文档中设置数学格式，如下所述。
 
 
 也就是说，每种形式的文档在细节上都不同：
 
-- **概念文档**包含一组发布到的文章 https://docs.microsoft.com/quantum ，这些文章介绍了从量程计算的基本知识到交换格式的技术规范的所有内容。 这些文章以[DocFX-风格 Markdown (DFM) ](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)（一种用于创建丰富文档集的 Markdown 变量）编写。
+- **概念文档**包含一组发布到的文章 https://docs.microsoft.com/quantum ，这些文章介绍了从量程计算的基本知识到交换格式的技术规范的所有内容。 这些文章以 [DocFX-风格 Markdown (DFM) ](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)（一种用于创建丰富文档集的 Markdown 变量）编写。
 - **API 引用**是发布到的每个 Q# 函数、操作和用户定义类型的一组页 https://docs.microsoft.com/qsharp/api/ 。 这些页面记录每个可调用的输入和操作，以及示例和指向详细信息的链接。 在每个版本中，将自动从源代码中的小型 DFM 文档中提取 API 引用 Q# 。
-- 每个示例和 kata 附带的**readme.txt <!----> **文件介绍了如何使用该示例或 kata，它所涵盖的内容以及它如何与量程开发工具包的其余部分相关。 这些文件使用[GitHub 风格 Markdown (GFM) ](https://github.github.com/gfm/)，这是一种更轻量的替代方法，用于将文档直接附加到代码存储库。
+- 每个示例和 kata 附带的 **readme.txt <!----> ** 文件介绍了如何使用该示例或 kata，它所涵盖的内容以及它如何与量程开发工具包的其余部分相关。 这些文件使用 [GitHub 风格 Markdown (GFM) ](https://github.github.com/gfm/)，这是一种更轻量的替代方法，用于将文档直接附加到代码存储库。
 
 ## <a name="contributing-to-the-conceptual-documentation"></a>参与概念文档
 
-若要为概念文档或自述文档提供改进，请从拉取请求开始到[**MicrosoftDocs/量子**](https://github.com/MicrosoftDocs/quantum-docs-pr/
-)、 [**microsoft/量子**](https://github.com/Microsoft/Quantum)或[**microsoft/QuantumKatas**](https://github.com/Microsoft/QuantumKatas)（适用时）。
+若要为概念文档或自述文档提供改进，请从拉取请求开始到 [**MicrosoftDocs/量子**](https://github.com/MicrosoftDocs/quantum-docs-pr/
+)、 [**microsoft/量子**](https://github.com/Microsoft/Quantum)或 [**microsoft/QuantumKatas**](https://github.com/Microsoft/QuantumKatas)（适用时）。
 我们将在下面介绍有关拉取请求的详细信息，但现在，当你改进文档时，有几个问题值得注意：
 
 - 读者从非常多的背景到了量程开发工具包文档。 高中学生中的每个人都希望了解一些新的、令人兴奋的终身，执行量程计算研究应能够从文档中排除内容。 在这种情况下，请不要对读者的部分进行广泛的了解，因为他们可能只是开始。如果可以提供清晰和可访问的说明，或者可提供其他资源的链接以获取详细信息，则此功能非常有用。
@@ -46,13 +46,13 @@ ms.locfileid: "87866870"
 
 ### <a name="referencing-sample-code-from-conceptual-articles"></a>从概念文章中引用示例代码
 
-如果要将代码包含在[示例存储库](https://github.com/Microsoft/Quantum)中，可以使用特殊的 DocFX-风格 Markdown 命令来执行此操作：
+如果要将代码包含在 [示例存储库](https://github.com/Microsoft/Quantum)中，可以使用特殊的 DocFX-风格 Markdown 命令来执行此操作：
 
 ```markdown
 :::code language="qsharp" source="~/quantum/samples/algorithms/chsh-game/Game.qs" range="4-8":::
 ```
 
-此命令将[ `Game.qs` 从该 `chsh-game` 示例](https://github.com/microsoft/Quantum/blob/master/samples/algorithms/chsh-game/Game.qs)中导入第4行到第8行的文件，并将它们标记为 Q# 代码以进行语法突出显示。
+此命令将[ `Game.qs` 从该 `chsh-game` 示例](https://github.com/microsoft/Quantum/blob/main/samples/algorithms/chsh-game/Game.qs)中导入第4行到第8行的文件，并将它们标记为 Q# 代码以进行语法突出显示。
 使用此命令，您可以避免在概念项目和示例存储库之间复制代码，以便文档中的示例代码始终尽可能地保持最新。
 
 ## <a name="contributing-to-the-api-references"></a>参与 API 参考
@@ -138,7 +138,7 @@ ms.locfileid: "87866870"
  }
 ```
 
-可以在[ `ControlledOnBitString` 函数的 API 文档](xref:microsoft.quantum.canon.controlledonbitstring)中查看上述代码的呈现版本。
+可以在 [ `ControlledOnBitString` 函数的 API 文档](xref:microsoft.quantum.canon.controlledonbitstring)中查看上述代码的呈现版本。
 
 除了文档编写的一般做法之外，在编写 API 文档注释中，这有助于保持几个要点：
 

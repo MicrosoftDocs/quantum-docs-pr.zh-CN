@@ -1,19 +1,20 @@
 ---
 title: 量子机器学习库
+description: 了解如何在量程系统上使用机器学习
 author: alexeib2
-ms.author: alexei.bocharov@microsoft.com
+ms.author: alexeib
 ms.date: 11/22/2019
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.intro
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 65b0aa6a7f385765933d4d89ce34901f77cf76ec
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 9f7f892fb2b76432942c86163497c22f0c73d51f
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863099"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833805"
 ---
 # <a name="introduction-to-quantum-machine-learning"></a>量程机器学习简介
 
@@ -74,4 +75,4 @@ ms.locfileid: "88863099"
 
 此信息应该足以开始播放代码。 但是，如果想要了解有关此模型的详细信息，请阅读原始提议： [ *' 以线路为中心的量程分类器 '、Maria Schuld、Alex Bocharov、Krysta Svore 和 Nathan Wiebe*](https://arxiv.org/abs/1804.00633)
 
-除了接下来的步骤中所示的代码示例外，还可以在[本教程](https://github.com/microsoft/QuantumKatas/tree/master/tutorials/QuantumClassification)中开始探索量程分类 
+除了接下来的步骤中所示的代码示例外，还可以在[本教程](https://github.com/microsoft/QuantumKatas/tree/main/tutorials/QuantumClassification)中开始探索量程分类 

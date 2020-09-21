@@ -8,21 +8,21 @@ uid: microsoft.quantum.chemistry.examples.endtoend
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 78d6488ed5e3972f85f1e6cf1ba2d197596c4cc3
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 528c34ea9b28b2f9b8f9a8bad681557f44bfcdaa
+ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869301"
+ms.lasthandoff: 09/17/2020
+ms.locfileid: "90759709"
 ---
 # <a name="end-to-end-with-nwchem"></a>NWChem 端到端 #
 
-在本文中，你将逐步了解如何从[NWChem](http://www.nwchem-sw.org/index.php/Main_Page)的输入牌中获取量程化学模拟的入口计数。
-在继续此示例之前，请确保已按照[安装和验证指南](xref:microsoft.quantum.chemistry.concepts.installation)安装了 Docker。
+在本文中，你将逐步了解如何从 [NWChem](http://www.nwchem-sw.org/index.php/Main_Page) 的输入牌中获取量程化学模拟的入口计数。
+在继续此示例之前，请确保已按照 [安装和验证指南](xref:microsoft.quantum.chemistry.concepts.installation)安装了 Docker。
 
 更多相关信息：
 - [NWChem 输入卡座的结构](https://github.com/nwchemgit/nwchem/wiki/Getting-Started#input-file-structure)
-    - [用于量程开发工具包的输入纸牌命令](https://github.com/nwchemgit/nwchem/tree/master/contrib/quasar)
+    - [用于量程开发工具包的输入纸牌命令](https://github.com/nwchemgit/nwchem/tree/main/contrib/quasar)
 - [安装化学库和依赖项](xref:microsoft.quantum.chemistry.concepts.installation)
 - [资源计数](xref:microsoft.quantum.chemistry.examples.resourcecounts)
 
@@ -32,7 +32,7 @@ ms.locfileid: "87869301"
 
 ## <a name="importing-required-powershell-modules"></a>导入所需的 PowerShell 模块 ##
 
-如果尚未这样做，请克隆[Microsoft/量子存储库](https://github.com/Microsoft/Quantum)，其中包含用于处理量程开发工具包的示例和实用程序：
+如果尚未这样做，请克隆 [Microsoft/量子存储库](https://github.com/Microsoft/Quantum)，其中包含用于处理量程开发工具包的示例和实用程序：
 
 ```powershell
 git clone https://github.com/Microsoft/Quantum
@@ -64,8 +64,8 @@ Import-Module InvokeNWChem.psm1
 Get-Command -Module InvokeNWChem
 ```
 
-接下来，我们将导入 `Get-GateCount` 随**GetGateCount**示例提供的命令。
-有关完整的详细信息，请参阅[示例中提供的说明](https://github.com/Microsoft/Quantum/tree/master/samples/chemistry/GetGateCount)。
+接下来，我们将导入 `Get-GateCount` 随 **GetGateCount** 示例提供的命令。
+有关完整的详细信息，请参阅 [示例中提供的说明](https://github.com/Microsoft/Quantum/tree/main/samples/chemistry/GetGateCount)。
 接下来，运行以下内容，将替换 `<runtime>` 为 `win10-x64` 、 `osx-x64` 或 `linux-x64` ，具体取决于你的操作系统：
 
 ```powershell
@@ -82,9 +82,9 @@ Get-Command Get-GateCount
 
 ## <a name="input-decks"></a>输入卡片 ##
 
-NWChem 包采用一个名为 "_输入_" 的文本文件，该文件指定要解决的量程化学问题以及其他参数，例如内存分配设置。
+NWChem 包采用一个名为 " _输入_ " 的文本文件，该文件指定要解决的量程化学问题以及其他参数，例如内存分配设置。
 在此示例中，我们将使用 NWChem 附带的一个预输入牌。
-首先，克隆[nwchemgit/nwchem 存储库](https://github.com/nwchemgit/nwchem)：
+首先，克隆 [nwchemgit/nwchem 存储库](https://github.com/nwchemgit/nwchem)：
 
 > [!NOTE]
 > 由于这是一个非常大的存储库，因此可以通过使用参数来执行浅表克隆来节省带宽和磁盘空间 `--depth 1` 。
@@ -95,7 +95,7 @@ NWChem 包采用一个名为 "_输入_" 的文本文件，该文件指定要解�
 git clone https://github.com/nwchemgit/nwchem --depth 1
 ```
 
-该 `nwchemgit/nwchem` 存储库附带了各种输入工具，用于在[ `QA/chem_library_tests` 文件夹](https://github.com/nwchemgit/nwchem/tree/master/QA/chem_library_tests)下列出的量程开发工具包。
+该 `nwchemgit/nwchem` 存储库附带了各种输入工具，用于在[ `QA/chem_library_tests` 文件夹](https://github.com/nwchemgit/nwchem/tree/main/QA/chem_library_tests)下列出的量程开发工具包。
 在此示例中，我们将使用 `H4` 输入卡片：
 
 ```powershell
@@ -103,7 +103,7 @@ cd nwchem/QA/chem_library_tests/H4
 Get-Content h4_sto6g_0.000.nw
 ```
 
-相关的分子是 4 hydrogen 原子的系统，这些原子按特定的几何（取决于一个角度）和参数（在 `alpha` 卡片组名称中指定）排列 `h4_sto6g_alpha.nw` 。 H4 是自70年代以来计算化学的已知[分子基准](https://onlinelibrary.wiley.com/doi/abs/10.1002/qua.560180511) 参数表示， `sto6g` 此纸牌的实现表示形式为 Slater orbital，具体而言，是指与[停止-nG basis 集](https://en.wikipedia.org/wiki/STO-nG_basis_sets)（包含6个高斯基础函数）相关的表示形式。 这一输入板还包含对 NWChem Tensor 缩写式引擎 (TCE) 的多个说明，这些说明指示 NWChem 生成与量程开发工具包互操作所需的信息：
+相关的分子是 4 hydrogen 原子的系统，这些原子按特定的几何（取决于一个角度）和参数（在 `alpha` 卡片组名称中指定）排列 `h4_sto6g_alpha.nw` 。 H4 是自70年代以来计算化学的已知[分子基准](https://onlinelibrary.wiley.com/doi/abs/10.1002/qua.560180511) 参数表示， `sto6g` 此纸牌的实现表示形式为 Slater orbital，具体而言，是指与 [停止-nG basis 集](https://en.wikipedia.org/wiki/STO-nG_basis_sets) （包含6个高斯基础函数）相关的表示形式。 这一输入板还包含对 NWChem Tensor 缩写式引擎 (TCE) 的多个说明，这些说明指示 NWChem 生成与量程开发工具包互操作所需的信息：
 
 ```
 ...
@@ -167,20 +167,20 @@ ElapsedMilliseconds : 721
 - 尝试不同的预定义输入卡片组，例如，通过 `alpha` 在中改变 `h4_sto6g_alpha.nw` 参数， 
 - 请尝试通过直接编辑 NWChem 卡片进行修改，例如，通过浏览 `STO-nG` 各种选项 n 来浏览模型， 
 - 尝试使用中提供的其他预定义 NWChem 输入卡座 `nwchem/qa/chem_library_tests` ，
-- 尝试从 NWChem 生成的一系列预定义的 Broombridge YAML 基准，并将其作为[Microsoft/量子存储库](https://github.com/Microsoft/Quantum/tree/master/samples/chemistry/IntegralData/YAML)的一部分提供。 这些基准包括： 
+- 尝试从 NWChem 生成的一系列预定义的 Broombridge YAML 基准，并将其作为 [Microsoft/量子存储库](https://github.com/Microsoft/Quantum/tree/main/samples/chemistry/IntegralData/YAML)的一部分提供。 这些基准包括： 
     - 小型分子，例如分子 hydrogen (H2) 、Beryllium () 、锂 hydride (LiH) 
     - 更大的分子，例如臭氧 (O3) 、beta carotene、cytosine 等。 
-- 尝试使用具有 Microsoft Quantum Development Kit 的接口的图形前端[EMSL 箭头](https://arrows.emsl.pnnl.gov/api/qsharp_chem)。 
+- 尝试使用具有 Microsoft Quantum Development Kit 的接口的图形前端 [EMSL 箭头](https://arrows.emsl.pnnl.gov/api/qsharp_chem) 。 
 
 
 ## <a name="producing-broombridge-output-from-emsl-arrows"></a>从 EMSL 箭头生成 Broombridge 输出 ##
 
-若要开始使用基于 web 的前端 EMSL 箭头，请在[此处](https://arrows.emsl.pnnl.gov/api/qsharp_chem)导航浏览器。 
+若要开始使用基于 web 的前端 EMSL 箭头，请在 [此处](https://arrows.emsl.pnnl.gov/api/qsharp_chem)导航浏览器。 
 
 > [!NOTE]
-> 在 web 浏览器中运行 EMSL 箭头需要启用 JavaScript。 请参阅以下[说明](https://www.enable-javascript.com/)，了解如何在浏览器中启用 JavaScript。 
+> 在 web 浏览器中运行 EMSL 箭头需要启用 JavaScript。 请参阅以下 [说明](https://www.enable-javascript.com/) ，了解如何在浏览器中启用 JavaScript。 
 
-首先，在 "查询" 框中输入分子，其中显示了``Enter an esmiles, esmiles reaction, or other Arrows input, then push the "Run Arrows" button.`` 
+首先，在 "查询" 框中输入分子，其中显示了 ``Enter an esmiles, esmiles reaction, or other Arrows input, then push the "Run Arrows" button.`` 
 
 可以按其 colloquial 名称输入许多分子，例如 "加班加点"，而不是 "1，3，7-Trimethylxanthine"。 
 
@@ -209,4 +209,4 @@ Get-GateCount -Format YAML qsharp_chem48443.yaml
 ```
 获取资源计数。 
 
-你可能会喜欢可以通过 ``Arrows Entry - 3D Builder`` EMSL 箭头起始页上的选项卡访问的3d 分子生成器。 单击所显示的分子的[JSMol](http://wiki.jmol.org/index.php/JSmol) 3d 图片，可以允许对其进行编辑。 您可以四处移动原子，将原子拖到一起，使它们之间的分子距离发生变化、添加/删除原子等。对于上述每个选项， ``theory{qsharp_chem}`` 在 "查询" 框中添加后，可以生成 BROOMBRIDGE YAML 架构的实例，并使用量程化学库进一步浏览该实例。 
+你可能会喜欢可以通过 ``Arrows Entry - 3D Builder`` EMSL 箭头起始页上的选项卡访问的3d 分子生成器。 单击所显示的分子的 [JSMol](http://wiki.jmol.org/index.php/JSmol) 3d 图片，可以允许对其进行编辑。 您可以四处移动原子，将原子拖到一起，使它们之间的分子距离发生变化、添加/删除原子等。对于上述每个选项， ``theory{qsharp_chem}`` 在 "查询" 框中添加后，可以生成 BROOMBRIDGE YAML 架构的实例，并使用量程化学库进一步浏览该实例。 

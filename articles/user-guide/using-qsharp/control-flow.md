@@ -1,46 +1,47 @@
 ---
-title: 控制流Q#
+title: 控制流 Q#
 description: 循环、条件等。
 author: gillenhaalb
-ms.author: a-gibec@microsoft.com
+ms.author: a-gibec
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.controlflow
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: fc619d64bfebfc27d7feac6dafb2dd4cf22825d6
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 547c57cab67443e8b487bf817eb79fc922b43cdc
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867941"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833509"
 ---
-# <a name="control-flow-in-no-locq"></a>控制流Q#
+# <a name="control-flow-in-no-locq"></a>控制流 Q#
 
 在操作或函数中，每个语句都按顺序运行，类似于其他常见的命令性传统语言。
 但是，可以通过三种不同的方式修改控制流：
 
-* `if`前瞻性
-* `for`循环
-* `repeat-until-success`循环
+* `if` 前瞻性
+* `for` 循环
+* `repeat-until-success` 循环
+* 语态 (`apply-within` 语句) 
 
-`if`和 `for` 控制流构造在熟悉大多数传统编程语言的情况下继续进行。 [`Repeat-until-success`](#repeat-until-success-loop)循环将在本文的后面部分进行讨论。
+`if`和 `for` 控制流构造在熟悉大多数传统编程语言的情况下继续进行。 [`Repeat-until-success`](#repeat-until-success-loop) 循环和 [语态](#conjugations) 将在本文的后面部分进行讨论。
 
-重要的 `for` 是，循环和 `if` 语句可用于自动生成[专用](xref:microsoft.quantum.guide.operationsfunctions)化的操作。 在这种情况下，循环的 adjoint `for` 会反转方向，并 adjoint 每次迭代。
+重要的 `for` 是，循环和 `if` 语句可用于自动生成 [专用](xref:microsoft.quantum.guide.operationsfunctions) 化的操作。 在这种情况下，循环的 adjoint `for` 会反转方向，并 adjoint 每次迭代。
 此操作遵循 "鞋和 socks" 原则：如果想要撤消在 socks 和鞋上进行操作，必须先撤消鞋，然后撤消放置 socks。 
 
 ## <a name="if-else-if-else"></a>如果为，则为; 否则为
 
-`if`语句支持条件执行。
-它包含关键字 `if` 、括号中的布尔表达式和语句块 (_then_块) 。
+`if`语句支持条件处理。
+它包含关键字 `if` 、括号中的布尔表达式和语句块 (_then_ 块) 。
 根据需要，可以遵循任意数量的 else if 子句，其中每个子句都包含关键字 `elif` 、括号中的布尔表达式和语句块 (_else （if）_ 块) 。
-最后，语句可以选择使用 else 子句完成，后者由关键字 `else` 后跟另一个语句块 (_else_块) 。
+最后，语句可以选择使用 else 子句完成，后者由关键字 `else` 后跟另一个语句块 (_else_ 块) 。
 
 `if`计算条件，如果该条件为*true*，则运行*then*块。
-如果条件为*false*，则计算第一个 else if 条件;如果为 true，则运行*其他-if*块。
+如果条件为 *false*，则计算第一个 else if 条件;如果为 true，则运行 *其他-if* 块。
 否则，第二个 else-if block 计算，然后是第三个，依此类推，直到遇到具有 true 条件的子句，或者没有其他的 else 子句。
-如果原始*if*条件和所有 else if 子句的计算结果为*false*，则将运行*else*块（如果已提供）。
+如果原始 *if* 条件和所有 else if 子句的计算结果为 *false*，则将运行 *else* 块（如果已提供）。
 
 请注意，不管哪个块运行，它都在它自己的作用域内运行。
 `if`块结束后，在、或块内部所做的绑定 `elif` `else` 将不可见。
@@ -55,7 +56,7 @@ if (result == One) {
 } 
 // n is not bound
 ```
-or
+或
 ```qsharp
 if (i == 1) {
     X(target);
@@ -75,7 +76,7 @@ if (i == 1) {
 
 语句块 (循环的主体) 重复运行，定义的符号 (循环变量) 绑定到该范围或数组中的每个值。
 请注意，如果范围表达式的计算结果为空范围或数组，则正文根本不会运行。
-在进入循环之前，将完全计算该表达式，并且在执行循环时不会更改。
+在进入循环之前，将完全计算该表达式，并且循环运行时不会更改。
 
 循环变量绑定到循环体的每个入口，在主体末尾解除绑定。
 For 循环完成后，循环变量未绑定。
@@ -103,14 +104,14 @@ for ((index, measured) in results) { // iterates over the tuple values in result
 }
 ```
 
-请注意，在结束时，我们使用了算术左移的二进制运算符 `<<<` 。 有关详细信息，请参阅[数值表达式](xref:microsoft.quantum.guide.expressions#numeric-expressions)。
+请注意，在结束时，我们使用了算术左移的二进制运算符 `<<<` 。 有关详细信息，请参阅 [数值表达式](xref:microsoft.quantum.guide.expressions#numeric-expressions)。
 
 ## <a name="repeat-until-success-loop"></a>重复执行-成功循环
 
 此 Q# 语言允许经典控制流依赖于测量 qubits 的结果。
 此功能进而实现了实现功能强大的概率小工具，从而降低了实现 unitaries 的计算成本。
 这种情况的示例如下所示 *-成功* (ru) 模式 Q# 。
-这些 RUS 模式是概率的程序，这些程序在基本入口方面具有*预期*的低成本;产生的费用取决于多个可能 branchings 的实际运行和交叉交叉。
+这些 RUS 模式是概率的程序，这些程序在基本入口方面具有 *预期* 的低成本;产生的费用取决于多个可能 branchings 的实际运行和交叉交叉。
 
 为了便于重复-成功 (ru) 模式， Q# 支持构造
 
@@ -128,8 +129,8 @@ fixup {
 循环体运行，然后计算条件。
 如果条件为 true，则语句已完成;否则，修正将运行，并且语句将再次运行（从循环体开始）。
 
- (正文、测试和修正) 的所有三个部分都被视为*每个重复*的单个作用域，因此，在正文中绑定的符号可用于测试和修复。
-但是，完成修正的执行将结束语句的范围，以便在正文或修正期间所进行的符号绑定在后续的重复中不可用。
+ (正文、测试和修正) 的所有三个部分都被视为 *每个重复*的单个作用域，因此，在正文中绑定的符号可用于测试和修复。
+但是，完成修正的运行将结束语句的范围，以便在正文或修正期间所进行的符号绑定在后续的重复中不可用。
 
 而且， `fixup` 语句通常非常有用，但并非总是必需的。
 如果不需要，构造
@@ -143,16 +144,17 @@ until (expression);
 
 也是有效的 RUS 模式。
 
-有关更多示例和详细信息，请参阅本文中的[重复-截止到成功示例](#repeat-until-success-examples)。
+有关更多示例和详细信息，请参阅本文中的 [重复-截止到成功示例](#repeat-until-success-examples) 。
 
 > [!TIP]   
-> 避免在函数内使用重复-until 循环。 使用*while*循环来提供函数内的相应功能。 
+> 避免在函数内使用重复-until 循环。 使用 *while* 循环来提供函数内的相应功能。 
 
 ## <a name="while-loop"></a>While 循环
 
-重复-直到成功模式有一个非常特定于量程的内涵。 它们广泛用于特定的量程算法类，因此是中的专用语言构造 Q# 。 但是，在编译时，中断的循环会在量程运行时中按特定的小心处理，这种情况下，会在编译时进行中断。 但是，它们在函数中的使用是 unproblematic 的，因为这些循环只包含在常规 (非量程) 硬件上运行的代码。 
+重复-直到成功模式有一个非常特定于量程的内涵。 它们广泛用于特定的量程算法类，因此是中的专用语言构造 Q# 。 但是，在编译时，中断的循环会根据特定的时刻处理中断，并且在编译时是未知的。 但是，它们在函数中的使用是 unproblematic 的，因为这些循环只包含在常规 (非量程) 硬件上运行的代码。 
 
-Q#因此，仅支持在函数内使用 while 循环。 `while`语句由关键字 `while` 、括号中的布尔表达式和语句块组成。
+Q#因此，仅支持在函数内使用 while 循环。
+`while`语句由关键字 `while` 、括号中的布尔表达式和语句块组成。
 只要条件的计算结果为，语句块 (循环的主体) 运行 `true` 。
 
 ```qsharp
@@ -164,6 +166,45 @@ while (index < Length(arr) && item < 0) {
 }
 ```
 
+## <a name="conjugations"></a>语态
+
+与传统位相比，释放量程内存会稍微增加一点，因为在 qubits 仍放大时，盲目重置 qubits 可能会对剩余计算产生意外影响。 在释放内存之前，可以通过适当的方式 "撤消" 已执行的计算来避免这些效果。 量程计算的常见模式如下： 
+
+```qsharp
+operation ApplyWith<'T>(
+    outerOperation : ('T => Unit is Adj), 
+    innerOperation : ('T => Unit), 
+    target : 'T) 
+: Unit {
+
+    outerOperation(target);
+    innerOperation(target);
+    Adjoint outerOperation(target);
+}
+```
+
+Q# 支持语态语句，该语句实现前面的转换。 使用该语句，可以通过 `ApplyWith` 以下方式实现操作：
+
+```qsharp
+operation ApplyWith<'T>(
+    outerOperation : ('T => Unit is Adj), 
+    innerOperation : ('T => Unit), 
+    target : 'T) 
+: Unit {
+
+    within{ 
+        outerOperation(target);
+    }
+    apply {
+        innerOperation(target);
+    }
+}
+```
+如果外部和内部转换不能作为运算随时使用，则此类语态语句将非常有用，但通过多个语句组成的块可以更方便地进行描述。 
+
+在内块中定义的语句的反转换是由编译器自动生成的，并在应用块完成后运行。
+由于不能在 apply 块中重新绑定用作内部块的一部分的任何可变变量，因此，生成的转换将保证为内块中计算的 adjoint。 
+
 ## <a name="return-statement"></a>Return 语句
 
 Return 语句结束操作或函数的运行，并将值返回给调用方。
@@ -173,7 +214,7 @@ Return 语句结束操作或函数的运行，并将值返回给调用方。
 ```qsharp
 return 1;
 ```
-or
+或
 ```qsharp
 return (results, qubits);
 ```
@@ -248,11 +289,11 @@ fixup {
 }
 ```
 
-### <a name="rus-without-fixup"></a>不带`fixup`
+### <a name="rus-without-fixup"></a>不带 `fixup`
 
 此示例显示了不带修正步骤的 ru 循环。 此代码是一种概率线路，它使用和入口实现重要的旋转门 $V _3 = ( \boldone + 2 i Z) /\sqrt {5} $ `H` `T` 。
 该循环平均终止 $ \frac {8} {5} $ 重复。
-有关更多详细信息，请参阅 qubit unitaries (Paetznick 和 Svore，2014) 的[*非确定性分解*](https://arxiv.org/abs/1311.1074)。
+有关更多详细信息，请参阅 qubit unitaries (Paetznick 和 Svore，2014) 的 [*非确定性分解*](https://arxiv.org/abs/1311.1074) 。
 
 ```qsharp
 using (qubit = Qubit()) {
@@ -283,7 +324,7 @@ using (qubit = Qubit()) {
 * `fixup`循环中涉及量程操作的更为复杂的部分。 
 * 使用 `AssertMeasurementProbability` 语句来确定在程序中的某些指定点测量量程状态的概率。
 
-有关和操作的详细 [`AssertMeasurement`](xref:microsoft.quantum.diagnostics.assertmeasurement) 信息 [`AssertMeasurementProbability`](xref:microsoft.quantum.diagnostics.assertmeasurementprobability) ，请参阅[测试和调试](xref:microsoft.quantum.guide.testingdebugging)。
+有关和操作的详细 [`AssertMeasurement`](xref:microsoft.quantum.diagnostics.assertmeasurement) 信息 [`AssertMeasurementProbability`](xref:microsoft.quantum.diagnostics.assertmeasurementprobability) ，请参阅 [测试和调试](xref:microsoft.quantum.guide.testingdebugging)。
 
 ```qsharp
 operation PrepareStateUsingRUS(target : Qubit) : Unit {
@@ -330,8 +371,8 @@ operation PrepareStateUsingRUS(target : Qubit) : Unit {
 }
 ```
 
-有关详细信息，请参阅[随标准库提供的单元测试示例](https://github.com/microsoft/Quantum/blob/master/samples/diagnostics/unit-testing/RepeatUntilSuccessCircuits.qs)：
+有关详细信息，请参阅 [随标准库提供的单元测试示例](https://github.com/microsoft/Quantum/blob/main/samples/diagnostics/unit-testing/RepeatUntilSuccessCircuits.qs)：
 
 ## <a name="next-steps"></a>后续步骤
 
-了解中的[测试和调试](xref:microsoft.quantum.guide.testingdebugging) Q# 。
+了解中的 [测试和调试](xref:microsoft.quantum.guide.testingdebugging) Q# 。

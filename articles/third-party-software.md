@@ -4,18 +4,18 @@ description: Microsoft Quantum Development Kit 第三方软件通知和信息。
 services: service-name-with-dashes-AZURE-ONLY
 keywords: 未咨询 SEO 专家的情况下，请不要添加或编辑关键字。
 author: QuantumWriter
-ms.author: MSFT-alias-person-or-DL
+ms.author: v-benbra
 ms.date: 10/09/2017
 ms.topic: article-type-from-white-list
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 1d76e9c8532dd7818941d182773a8f85a86becee
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 939dc681d6b9a89f02fd1f392b7fd84067d98e8f
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869743"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834119"
 ---
 # <a name="third-party-software-notices-and-information"></a>第三方软件通知和信息
 
@@ -195,7 +195,7 @@ Microsoft 公共许可证 (Ms-损益)
 
 (D) <a>如果您以源代码形式分发该软件的任何部分，则必须在分发内容中随附本许可证的完整副本，并依据本许可证进行分发。 如果您以编译的或目标代码的形式分发该软件的任何部分，则只能依据一个符合本许可证的许可证进行分发。
 
-(E) 该软件按“原样”授予许可。 你须自行承担使用风险。 参与者没有任何明示的担保、保证或条件。 根据所在地区的法律，您可能拥有本许可证无法更改的其他消费者权利。 在您当地法律允许的范围内，撰稿人排除有关适销性、针对特定目的的适用性和不侵权的默示担保。
+(E) 该软件按“原样”授予许可。 您自行承担其使用风险。 参与者没有任何明示的担保、保证或条件。 根据所在地区的法律，您可能拥有本许可证无法更改的其他消费者权利。 在您当地法律允许的范围内，撰稿人排除有关适销性、针对特定目的的适用性和不侵权的默示担保。
 
 ## <a name="fsharpcore-notices-and-information"></a>Fsharp.core 通知和信息
 ---------------------------------------
@@ -268,7 +268,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 除非另有说明，否则，将在简化的 BSD 许可证下分发源和二进制格式的 FParsec 库。 简化的 BSD 许可证 (也称为 "2 ‐子句 BSD 许可证" ) 是符合 OSI ‐的简单许可许可。 
 
-FParsec 合并了从 Unicode 字符数据库 v 派生的数据。 8.0.0、版权所有 (c) 1991 \ u20122015 Unicode，Inc.，它是根据以下条款分发的：http://www.unicode.org/terms_of_use.html#Exhibit1 
+FParsec 合并了从 Unicode 字符数据库 v 派生的数据。 8.0.0、版权所有 (c) 1991 \ u20122015 Unicode，Inc.，它是根据以下条款分发的： http://www.unicode.org/terms_of_use.html#Exhibit1 
 
 Doc 文件夹中的文档根据创造性的 Commons 归属‐非商业性 3.0 Unported 许可证授权。 此创造性 Commons 许可证不允许无需权限就使用本文档。 例如，这意味着您不能出售书籍窗体中的文档，也不能将其放在 web 内容场中，以便通过广告获得资金。 当然，您当然可以使用商业环境中的文档 (例如，将其放在商业公司) 的 intranet 上，前提是您没有尝试直接从文档文本中获得金钱。 
 
@@ -284,6 +284,6 @@ Redistribution and use in source and binary forms, with or without modification,
 
 2.2 创造性 Commons 归属‐非商业性 3.0 Unported 许可证
 
-小结https://creativecommons.org/licenses/by-nc/3.0/
+小结 https://creativecommons.org/licenses/by-nc/3.0/
 
-完整许可文本：https://creativecommons.org/licenses/by-nc/3.0/legalcode 
+完整许可文本： https://creativecommons.org/licenses/by-nc/3.0/legalcode 

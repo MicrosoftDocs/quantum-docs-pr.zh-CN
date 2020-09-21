@@ -1,24 +1,24 @@
 ---
 title: 带有量程机器学习库的基本分类
-description: 了解如何执行 Q# 使用 MICROSOFT QDK 的量程机器学习库中编写的量程顺序分类器。
+description: 了解如何运行 Q# 使用 MICROSOFT QDK 的量程机器学习库中编写的量程顺序分类器。
 author: geduardo
-ms.author: v-edsanc@microsoft.com
+ms.author: v-edsanc
 ms.date: 02/16/2020
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.basics
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f9c3e7ab85c0f0d1a6063e593607d35c5cb76936
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 5dc4614b9992e2c6b9f8ff4b839c0929ec8cab7c
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868961"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833723"
 ---
 # <a name="basic-classification-classify-data-with-the-qdk"></a>基本分类：将数据与 QDK 进行分类
 
-在本快速入门中，你将学习如何 Q# 使用 QDK 的量程机器学习库来执行以编写的量程顺序分类器。 
+在本快速入门教程中，你将学习如何 Q# 使用 QDK 的量程机器学习库来运行在中编写的量程顺序分类器。 
 
 在本指南中，我们将使用中定义的分类器结构来使用半形数据集 Q# 。
 
@@ -32,7 +32,7 @@ ms.locfileid: "87868961"
 主机程序由三个部分组成：
 
 - 加载数据集并为模型选择一组起始参数。
-- 执行训练以确定模型的参数和偏置。
+- 运行训练以确定模型的参数和偏置。
 - 验证模型以确定其准确性
 
     ### <a name="python-with-visual-studio-code-or-the-command-line"></a>[在 Visual Studio Code 或命令行中使用 Python](#tab/tabid-python)
@@ -70,7 +70,7 @@ ms.locfileid: "87868961"
 
     :::code language="csharp" source="~/quantum/samples/machine-learning/half-moons/Host.cs" range="4-86":::
 
-    然后按 F5，此时系统就会开始执行程序并弹出一个新窗口，其中包含以下结果： 
+    按 F5，程序将开始运行。 新窗口将显示以下结果： 
 
     ```bash
     $ dotnet run
@@ -88,10 +88,10 @@ ms.locfileid: "87868961"
 
 在上面的代码中定义的最重要的函数和操作包括：
 
-- `ClassifierStructure() : ControlledRotation[]`：在此函数中，我们通过添加所需的受控入口层来设置线路模型的结构。 此步骤类似于按顺序深入学习模型中的神经元层的声明。
-- `TrainHalfMoonModel() : (Double[], Double)`：此操作是代码的核心部分并定义培训。 在这里，我们将从库中包含的数据集中加载示例，为训练设置了超级参数和初始参数，并通过调用库中包含的操作开始培训 `TrainSequentialClassifier` 。 它输出参数和确定分类器的偏差。
-- `ValidateHalfMoonModel(parameters : Double[], bias : Double) : Int`：此操作定义用于评估模型的验证过程。 在这里，我们将加载用于验证的示例、每个样本的度量值和容差。 它输出所选的一批样本的 misclassifications 数，用于验证。
+- `ClassifierStructure() : ControlledRotation[]` ：在此函数中，我们通过添加所需的受控入口层来设置线路模型的结构。 此步骤类似于按顺序深入学习模型中的神经元层的声明。
+- `TrainHalfMoonModel() : (Double[], Double)` ：此操作是代码的核心部分并定义培训。 在这里，我们将从库中包含的数据集中加载示例，为训练设置了超级参数和初始参数，并通过调用库中包含的操作开始培训 `TrainSequentialClassifier` 。 它输出参数和确定分类器的偏差。
+- `ValidateHalfMoonModel(parameters : Double[], bias : Double) : Int` ：此操作定义用于评估模型的验证过程。 在这里，我们将加载用于验证的示例、每个样本的度量值和容差。 它输出所选的一批样本的 misclassifications 数，用于验证。
 
 ## <a name="next-steps"></a>后续步骤
 
-首先，您可以与代码一起玩，尝试更改一些参数，以查看它如何影响培训。 然后，在下一教程中[，您](xref:microsoft.quantum.libraries.machine-learning.design)将学习如何定义分类器的结构。
+首先，您可以与代码一起玩，尝试更改一些参数，以查看它如何影响培训。 然后，在下一教程中 [，您](xref:microsoft.quantum.libraries.machine-learning.design)将学习如何定义分类器的结构。

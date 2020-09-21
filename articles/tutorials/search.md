@@ -2,19 +2,19 @@
 title: 在量程开发工具包中运行 Grover 的搜索算法 Q#
 description: 构建一个 Q# 项目，该项目演示了 Grover 的算法，其中一种是规范的量程算法。
 author: cgranade
-ms.author: chgranad@microsoft.com
+ms.author: chgranad
 ms.date: 10/19/2019
 ms.topic: article
 uid: microsoft.quantum.quickstarts.search
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f2ae56bdca893e8a317c16d0a993da15b9f021b5
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 86c6a651a117b788eb4c8fdd805ead7ab8f54dd7
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863117"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834799"
 ---
 # <a name="tutorial-implement-grovers-search-algorithm-in-q"></a>教程：使用 Q\# 实现 Grover 搜索算法
 
@@ -58,9 +58,9 @@ Grover 算法会询问列表中的某一项是否是我门正在搜索的项。 
 
 ### <a name="no-locq-applications-with-visual-studio-or-visual-studio-code"></a>Q# 具有 Visual Studio 或 Visual Studio Code 的应用程序
 
-可执行文件将在仿真器或资源估计器上运行使用 `@EntryPoint()` 特性标记的操作或函数，具体取决于项目配置和命令行选项。
+该程序将使用模拟器或资源估计器上的特性标记的操作或函数 `@EntryPoint()` ，具体取决于项目配置和命令行选项。
 
-在 Visual Studio 中，只需按 Ctrl + F5 即可执行该脚本。
+在 Visual Studio 中，只需按 Ctrl + F5 即可运行脚本。
 
 在 VS Code 中，通过在终端中键入以下内容来首次生成 `Program.qs`：
 
@@ -89,7 +89,7 @@ operations.qs [options] [command]
 Commands:
 ```
 
-这是因为你未指定想要使用的量子位的数目，因此终端显示了可用于该可执行文件的命令。 如果想要使用 5 个量子位，应键入：
+这是因为未指定想要使用的 qubits 数，因此，终端会显示可执行程序的可用命令。 如果我们想要使用 5 qubits，应键入：
 
 ```Command line
 dotnet run --n-qubits 5
@@ -110,7 +110,7 @@ Reflecting about marked state...
 如果你喜欢本教程，请查看下面的一些资源，详细了解如何使用 Q# 编写你自己的量程应用程序：
 
 - [回到 QDK 入门指南](xref:microsoft.quantum.welcome)
-- 尝试使用更多常用 Grover 搜索算法[示例](https://github.com/microsoft/Quantum/tree/master/samples/algorithms/database-search)
+- 尝试使用更多常用 Grover 搜索算法[示例](https://github.com/microsoft/Quantum/tree/main/samples/algorithms/database-search)
 - [详细了解 Quantum Katas 的 Grover 搜索](xref:microsoft.quantum.overview.katas)
 - 详细了解[振幅放大][amplitude-amplification]：支持 Grover 搜索算法的量子计算技术
 - [量子计算概念](xref:microsoft.quantum.concepts.intro)

@@ -2,19 +2,19 @@
 title: QDK 中的内部操作和函数
 description: 了解 QDK 中的内部操作和函数，包括传统函数和单一、旋转和度量运算。
 author: QuantumWriter
-ms.author: martinro@microsoft.com
+ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.libraries.standard.prelude
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 4eb10e82a64381c503703be440be90e60f3a8622
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: dd507d0c644ae711a5e5a1dff9156f571cb0fa92
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863728"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833541"
 ---
 # <a name="the-prelude"></a>Prelude #
 
@@ -240,7 +240,7 @@ return rs;
 
 ### <a name="math"></a>数学 ###
 
-<xref:microsoft.quantum.math>命名空间提供 .net 基类库的[ `System.Math` 类](https://docs.microsoft.com/dotnet/api/system.math?view=netframework-4.7.1)中许多有用的函数。
+<xref:microsoft.quantum.math>命名空间提供 .net 基类库的[ `System.Math` 类](https://docs.microsoft.com/dotnet/api/system.math?view=netframework-4.7.1&preserve-view=true)中许多有用的函数。
 这些函数的使用方式与任何其他 Q# 函数相同：
 
 ```qsharp

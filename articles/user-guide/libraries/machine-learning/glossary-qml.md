@@ -1,19 +1,20 @@
 ---
 title: 量程机器学习库术语表
+description: 量程机器学习条款术语表
 author: alexeib2
-ms.author: alexei.bocharov@microsoft.com
+ms.author: alexeib
 ms.date: 2/27/2020
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.training
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 068fc61d0d7c066df1270384679e13a3b3a8c878
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 39974af0121a5167f1965e508cd595535178548b
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863033"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833907"
 ---
 # <a name="quantum-machine-learning-glossary"></a>量程机器学习术语表
 
@@ -42,7 +43,7 @@ ms.locfileid: "88863033"
 ### <a name="training-epochs-tolerance-gridlocks"></a>定型时期、容差、gridlocks
 
 "Epoch" 表示通过计划的定型数据完成一次。
-) 应限制每个定型线程 (的最大时期数。 训练线程定义为在执行了时期的最大数目后终止 (具有最佳的候选参数) 。 不过，如果验证计划的错误分类率低于所选的容差，此类培训会提前终止。 例如，假设错误分类公差为 0.01 (1% ) ;如果在2000示例的验证集上看到的 misclassifications 少于20个，则实现公差级别。 如果候选模型的验证分数未显示对多个连续时期 (停滞不前) 的任何改进，则定型线程也会提前终止。 当前对停滞不前终止的逻辑进行了硬编码。
+) 应限制每个定型线程 (的最大时期数。 训练线程定义为在运行时期的最大数目时终止具有最佳) 候选参数的 (。 不过，如果验证计划的错误分类率低于所选的容差，此类培训会提前终止。 例如，假设错误分类公差为 0.01 (1% ) ;如果在2000示例的验证集上看到的 misclassifications 少于20个，则实现公差级别。 如果候选模型的验证分数未显示对多个连续时期 (停滞不前) 的任何改进，则定型线程也会提前终止。 当前对停滞不前终止的逻辑进行了硬编码。
 
 ### <a name="measurements-count"></a>度量值计数
 

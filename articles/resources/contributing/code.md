@@ -9,12 +9,12 @@ uid: microsoft.quantum.contributing.code
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 956b0957a5261b8a77bf18d776fbcc2853bfbfe7
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: b27d084bbe2cda878efa6250c52c0ae628637850
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866903"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834884"
 ---
 # <a name="contributing-code"></a>贡献代码
 
@@ -32,9 +32,9 @@ ms.locfileid: "87866903"
 ### <a name="unit-tests"></a>单元测试
 
 Q#构成库（如 canon）的函数、操作和用户定义类型在[**Microsoft/QuantumLibraries**](https://github.com/Microsoft/QuantumLibraries/)存储库中作为开发的一部分自动进行测试。
-例如，当打开一个新的拉取请求时， [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/)配置将检查拉取请求中的更改是否不会破坏该量程编程社区依赖的任何现有功能。
+例如，当打开一个新的拉取请求时， [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) 配置将检查拉取请求中的更改是否不会破坏该量程编程社区依赖的任何现有功能。
 
-使用最新 Q# 版本时，将使用特性定义单元测试 `@Test("QuantumSimulator")` 。 参数可以是 "QuantumSimulator"、"ToffoliSimulator"、"TraceSimulator"，也可以是指定执行目标的任何完全限定名称。 定义不同执行目标的多个属性可能附加到同一个可调用的。 某些测试仍使用不推荐使用的[Xunit](https://www.nuget.org/packages/Microsoft.Quantum.Xunit/)包，此包公开所有 Q# `Test` 以[Xunit](https://xunit.github.io/) framework 结尾的函数和操作。 定义单元测试不再需要此包。 
+使用最新 Q# 版本，将使用属性定义单元测试 `@Test("QuantumSimulator")` 。 参数可以是 "QuantumSimulator"、"ToffoliSimulator"、"TraceSimulator"，也可以是指定运行目标的任何完全限定名称。 定义不同的运行目标的多个属性可能附加到同一个可调用的。 某些测试仍使用不推荐使用的 [Xunit](https://www.nuget.org/packages/Microsoft.Quantum.Xunit/) 包，此包公开所有 Q# `Test` 以 [Xunit](https://xunit.github.io/) framework 结尾的函数和操作。 定义单元测试不再需要此包。 
 
 以下函数用于确保 <xref:microsoft.quantum.canon.fst> 和 <xref:microsoft.quantum.canon.snd> 函数在有代表性的示例中返回正确的输出。
 如果或的输出 `Fst` 不 `Snd` 正确，则 `fail` 使用语句来导致测试失败。
@@ -56,7 +56,7 @@ function PairTest () : Unit {
 }
 ```
 
-使用标准库指南的 "[测试" 部分](xref:microsoft.quantum.libraries.diagnostics)中的技术可以检查更复杂的条件。
+使用标准库指南的 " [测试" 部分](xref:microsoft.quantum.libraries.diagnostics) 中的技术可以检查更复杂的条件。
 例如，下面的测试检查 `H(q); X(q); H(q);` 调用者是否执行与 <xref:microsoft.quantum.canon.applywith> 相同的操作 `Z(q)` 。
 
 ```Q#
@@ -98,7 +98,7 @@ operation TestApplyWith() : Unit {
 如果拉取请求需要更多文档或单元测试来帮助我们使用它，或者与库的其余部分的样式完全不同，则还会询问拉取请求的更改，这 Q# 会使用户更难查找功能。
 在这些情况下，我们将尝试在代码评审中提供一些建议，以帮助你更轻松地加入你的内容。
 
-最后，我们不能接受会损害量子计算社区的贡献，如[Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)中所述。
+最后，我们不能接受会损害量子计算社区的贡献，如 [Microsoft 开放源代码行为准则](https://opensource.microsoft.com/codeofconduct/)中所述。
 我们想要确保贡献为整个量子计算社区提供服务，这两者都在其当前的日益多元化，在未来越来越多的情况下都是如此。
 我们非常感谢您的帮助。
 
