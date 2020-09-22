@@ -1,20 +1,20 @@
 ---
 title: 量程特性和统计信息
 description: 了解如何使用阶段估计中的度量统计信息来估算量程编程中的结果值。
-author: QuantumWriter
+author: bradben
 uid: microsoft.quantum.libraries.characterization
-ms.author: martinro@microsoft.com
+ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: b226f355771f2b65399ebe00cc3de9429a3cebb0
-ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
+ms.openlocfilehash: 8dddc15354c32808e7ad1310bce233ee3dc93fe8
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90759903"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835632"
 ---
 # <a name="quantum-characterization-and-statistics"></a>量程特性和统计信息 #
 

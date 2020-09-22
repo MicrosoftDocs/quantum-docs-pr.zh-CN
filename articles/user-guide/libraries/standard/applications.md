@@ -3,18 +3,18 @@ title: 标准库中的应用程序 Q#
 description: 了解以下两个基本应用程序：量子计算-Hamiltonian 模拟和选定的搜索算法。
 author: QuantumWriter
 uid: microsoft.quantum.libraries.applications
-ms.author: martinro@microsoft.com
+ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a3380627aa196a749dd9487ad603aad29f34ae29
-ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
+ms.openlocfilehash: 115cd65621afd8272887b36163b066a4e6a554d7
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90759922"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835649"
 ---
 # <a name="applications"></a>应用程序 #
 
