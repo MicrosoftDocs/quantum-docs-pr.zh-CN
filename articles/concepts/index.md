@@ -2,19 +2,19 @@
 title: 量子计算历史和背景
 description: 了解量子计算的历史、一些描述其工作原理的背景信息以及关于 Microsoft Quantum 开发工具包的信息。
 author: QuantumWriter
-ms.author: nawiebe
+ms.author: v-benbra
 uid: microsoft.quantum.concepts.intro
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f62317cd32068319f15c15ae1fa0775ea3fb00b2
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 1b767313b7f421ddaba62ab2be99fe10b8d0430e
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866819"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834544"
 ---
 # <a name="quantum-computing-history-and-background"></a>量子计算历史和背景
 

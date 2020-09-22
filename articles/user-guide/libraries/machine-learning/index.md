@@ -2,19 +2,19 @@
 title: 量子机器学习包简介 | Microsoft Docs
 description: 量子机器学习包简介
 author: QuantumWriter
-ms.author: alexeib@microsoft.com
+ms.author: alexeib
 ms.date: 12/5/2019
 ms.topic: article
 uid: microsoft.quantum.machine-learning.concepts.intro
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 2f8884fafd6370e4f70ec93e6fc8617c34c29431
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 321901a7976e4633a672495827c27c5f1645ad30
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868842"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835683"
 ---
 # <a name="introduction-to-the-quantum-machine-learning-library"></a>量子机器学习库简介
 

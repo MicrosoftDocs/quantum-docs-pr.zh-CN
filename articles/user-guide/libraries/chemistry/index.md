@@ -2,19 +2,19 @@
 title: 量子化学库简介
 description: 了解 Microsoft 量子化学库，以及如何使用它来模拟量子计算机上的电子结构问题。
 author: QuantumWriter
-ms.author: Alan.Geller@microsoft.com
+ms.author: ageller
 ms.date: 12/11/2017
 ms.topic: article
 uid: microsoft.quantum.chemistry.concepts.intro
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: e2ec4173d4f2bdaac7125c13b09708934b758a1d
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 15439a34933bd561dc011acf48e669abeb031e33
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869403"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835785"
 ---
 # <a name="introduction-to-the-quantum-chemistry-library"></a>量子化学库简介
 
