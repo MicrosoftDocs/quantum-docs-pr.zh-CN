@@ -2,19 +2,19 @@
 title: 量子模拟器和 Q# 程序
 description: 介绍可用作 Q# 程序的目标计算机的量子模拟器。
 author: QuantumWriter
-ms.author: Alan.Geller@microsoft.com
+ms.author: v-benbra
 ms.date: 6/17/2020
 ms.topic: article
 uid: microsoft.quantum.machines
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 77401ca3642b89d708f338f852dc60bf7346b87b
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 6a2a4bb829301f9db9bd14f3240556a403b9a54f
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868298"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90833426"
 ---
 # <a name="quantum-simulators"></a>量子模拟器
 
@@ -24,14 +24,14 @@ ms.locfileid: "87868298"
 
 ## <a name="the-quantum-development-kit-qdk-quantum-simulators"></a>Quantum 开发工具包 (QDK) 量子模拟器
 
-量子模拟器负责为算法提供量子基元的实现。 其中包括 `H`、`CNOT` 和 `Measure` 等基元操作，以及量子位管理和跟踪。 QDK 包括不同类的量子模拟器（代表同一量子算法的不同执行模型）。 
+量子模拟器负责为算法提供量子基元的实现。 其中包括 `H`、`CNOT` 和 `Measure` 等基元操作，以及量子位管理和跟踪。 QDK 包括不同类的量子模拟器（代表同一量子算法的不同运行模型）。 
 
 
 每种类型的量子模拟器可以提供这些基元的不同实现。 例如，[全状态模拟器](xref:microsoft.quantum.machines.full-state-simulator)通过全面模拟[量子状态矢量](xref:microsoft.quantum.glossary#quantum-state)来运行量子算法，而[量子计算机跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)则根本不考虑实际的量子状态。 而是跟踪算法的量子门、量子位和其他资源使用情况。
 
 ### <a name="quantum-machine-classes"></a>量子计算机类
 
-QDK 会在将来定义更多量子计算机类以支持其他类型的模拟，并支持在量子硬件上执行。 在改变基础计算机实现的同时允许算法保持不变，可以轻松地在模拟中测试和调试算法，然后在实际硬件上运行该算法，确信该算法没有发生更改。
+未来，QDK 将定义更多量子计算机类以支持其他类型的模拟，并支持在量子硬件上运行。 在改变基础计算机实现的同时允许算法保持不变，可以轻松地在模拟中测试和调试算法，然后在实际硬件上运行该算法，确信该算法没有发生更改。
 
 QDK 包含多个量子计算机类，全都在 `Microsoft.Quantum.Simulation.Simulators` 命名空间中定义。
 

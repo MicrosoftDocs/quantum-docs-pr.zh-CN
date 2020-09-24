@@ -2,19 +2,19 @@
 title: Q# 用户指南
 description: 用户指南的目的和内容概述
 author: gillenhaalb
-ms.author: a-gibec@microsoft.com
+ms.author: a-gibec
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 4fae2949bdcab0c3735b40ef029d70bf7ea3fb9f
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: f0680e773c8233d6c4f1acb742b3cc38dbc069d5
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869624"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834748"
 ---
 # <a name="the-no-locq-user-guide"></a>Q# 用户指南
 
@@ -26,7 +26,7 @@ ms.locfileid: "87869624"
 
 - [Q#基本信息](xref:microsoft.quantum.guide.basics)：简要概述了 Q# 编程语言的用途和功能。 
 
-- [Q# 程序的运行方式](xref:microsoft.quantum.guide.host-programs)：描述了如何执行 Q# 程序，并简要介绍可用于调用该程序的各种方式：通过命令行、Q# Jupyter Notebooks，或者通过用 Python 或 .NET 语言编写的经典主机程序。
+- [Q# 程序的运行方式](xref:microsoft.quantum.guide.host-programs)：描述 Q# 程序的运行方式，并简要介绍可用于调用该程序的各种方式：通过命令行、Q# Jupyter Notebook，或者通过用 Python 或 .NET 语言编写的经典主机程序。
 
 ### <a name="no-locq-language"></a>Q# 语言
 
@@ -46,7 +46,7 @@ ms.locfileid: "87869624"
 
 - [使用量子位](xref:microsoft.quantum.guide.qubits)：描述用于处理单个量子位和量子位系统的 Q# 功能，具体而言，就是分配它们，对其执行操作，然后测量它们。 
 
-- [控制流](xref:microsoft.quantum.guide.controlflow)：详细描述了 Q# 中提供的编程控制流模式，其中包含许多标准技术（如条件执行、for 循环、while 循环），以及量子特定的“重复直到成功”模式。
+- [控制流](xref:microsoft.quantum.guide.controlflow)：详细描述了 Q# 中提供的编程控制流模式，其中包含许多标准技术（如条件处理、for 循环、while 循环），以及量子特定的“重复直到成功”模式  。
 
 - [测试和调试](xref:microsoft.quantum.guide.testingdebugging)：详细介绍了一些用于确保代码正常运行的技术。 
     由于量子信息通常不透明，因此调试量子程序可能需要专门的技术。 
@@ -55,13 +55,13 @@ ms.locfileid: "87869624"
 
 ### <a name="quantum-simulators-and-resource-estimators"></a>量子模拟器和资源估算器
 
-- [量子模拟器和主机应用程序](xref:microsoft.quantum.machines)：概述了不同的可用模拟器，以及主机程序与目标计算机之间的常规执行模型。
+- [量子模拟器和主机应用程序](xref:microsoft.quantum.machines)：概述了不同的可用模拟器，以及主机程序与目标计算机之间的常规运行模型。
 
-- [全状态模拟器](xref:microsoft.quantum.machines.full-state-simulator)：模拟完整量子状态的目标计算机。 适用于完全执行或调试规模更小的程序（不超过几十个量子位）
+- [全状态模拟器](xref:microsoft.quantum.machines.full-state-simulator)：模拟完整量子状态的目标计算机。 适用于完全运行或调试规模更小的程序（不超过几十个量子位）
 
 - [资源估算器](xref:microsoft.quantum.machines.resources-estimator)：估计在量子计算机上运行给定的 Q# 操作实例所需的资源。
 
-- [跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)：在不实际模拟量子计算机状态的情况下执行量子程序，因此可执行使用数千个量子位的量子程序。 适用于在量子程序中调试经典代码，以及预估所需的资源。
+- [跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)：在不实际模拟量子计算机状态的情况下运行量子程序，因此可运行使用数千个量子位的量子程序。 适用于在量子程序中调试经典代码，以及预估所需的资源。
 
 - [Toffoli 模拟器](xref:microsoft.quantum.machines.toffoli-simulator)：一种特殊用途的量子模拟器，可处理数百万个量子位，但仅适用于具有一组有限的量子操作（X、CNOT 和多受控 X）的程序。
 
