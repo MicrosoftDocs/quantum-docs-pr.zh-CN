@@ -2,19 +2,19 @@ expanded: true
 items:
   - name: QDK 入门
     href: get-started.md
-  - name: 安装 QDK
+  - name: 设置 QDK
+    href: index.md
+  - name: 入门示例
     items:
-      - name: 安装概述
-        href: index.md
       - name: Q# 应用程序
         href: install-command-line.md
-      - name: Q# Jupyter Notebook
+      - name: Q# 与 Jupyter Notebook 结合使用
         href: install-jupyter.md
-      - name: Q# 与其他语言结合使用
-        items:
-          - name: Q# 与 Python 结合使用
-            href: install-python.md
-          - name: Q# 与 .NET 结合使用
-            href: install-cs.md
+      - name: 'Q # 与 Binder 结合使用'
+        href: install-binder.md
+      - name: Q# 与 Python 结合使用
+        href: install-python.md
+      - name: Q# 与 .NET 结合使用
+        href: install-cs.md
   - name: 更新 QDK
     href: update.md
