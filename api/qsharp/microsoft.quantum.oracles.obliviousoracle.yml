@@ -19,9 +19,9 @@ remarks: >-
   第一个参数是 $ \ket{s} 的 qubit 寄存器 \_ $。 第二个参数是 $ \ket{\psi} s $ 的 qubit 寄存器 \_ 。
 syntax: newtype ObliviousOracle = ((Qubit[], Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: c88ad3b0a4fe6067a0e52972c23587d5835c779e
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 56bf9eb10068201969e3d245ee406f41e61f7e89
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89332004"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91492007"

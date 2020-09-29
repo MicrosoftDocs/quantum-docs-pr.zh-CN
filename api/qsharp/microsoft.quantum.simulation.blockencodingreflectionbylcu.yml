@@ -55,9 +55,9 @@ seeAlso:
 - microsoft.quantum.canon.blockencoding
 - microsoft.quantum.canon.blockencodingreflection
 metadata:
-  ms.openlocfilehash: de3a86598d62960d71fa205dc20507fa59cf9cf7
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: c2eb05f05379957588034c6a2bd99ed3d7ac3c27
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89343394"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91491786"

@@ -30,9 +30,9 @@ output:
   - summary: 部分应用于 "黑盒" oracle 的操作，该
     uid: microsoft.quantum.oracles.discreteoracle
 metadata:
-  ms.openlocfilehash: 3b9cd2ae2554f070e79701c409ad24bc9314e002
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 06a19028b2a5d5405e3776842aba744f0717cffa
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89331919"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91491990"
