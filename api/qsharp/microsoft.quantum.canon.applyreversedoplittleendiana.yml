@@ -29,9 +29,9 @@ output:
 functors:
 - Adjoint
 metadata:
-  ms.openlocfilehash: 911752ae41cb00eff2a919a27eefeeef1d79d52d
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 9f8ed27629ac6bf619de30e722bda194f85c1cd8
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89357895"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91469206"
