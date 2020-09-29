@@ -45,6 +45,8 @@ functions:
   summary: 当且仅当一个数字小于或等于另一个数字时，返回 true。
 - uid: microsoft.quantum.logical.lessthanorequall
   summary: 当且仅当一个数字小于或等于另一个数字时，返回 true。
+- uid: microsoft.quantum.logical.lexographiccomparison
+  summary: 给定比较函数，将返回 lexographically 比较两个数组的新函数。
 - uid: microsoft.quantum.logical.nearlyequald
   summary: 当且仅当两个输入几乎相等 (即在 1e-12) 的容错范围内时，返回 true。
 - uid: microsoft.quantum.logical.not
@@ -70,9 +72,9 @@ functions:
 - uid: microsoft.quantum.logical.xor
   summary: 返回两个值的布尔互斥析取。
 metadata:
-  ms.openlocfilehash: 0ab7077bc2cdf9bc76f3da701a88869f8bb9bf85
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 006100b659daedbcca30fe443756a185a965ee1e
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89340096"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91464328"

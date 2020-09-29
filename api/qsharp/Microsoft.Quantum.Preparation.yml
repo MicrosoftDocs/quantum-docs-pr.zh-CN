@@ -85,16 +85,16 @@ operations:
     它通过应用 depolarizing 通道 $ $ \begin{align} \Omega ( \rho) \mathrel{，在 $ \boldone/$2 状态中准备给定的 qubit： =} \frac {1} {4} \ sum_ {\mu \in \{ 0，1，2，3 \} } \sigma \_ {\mu} \rho \sigma \_ {\mu} ^ {\dagger}，\end{align} $ $，其中 $ \sigma \_ i $ 是 $i $ th Pauli 运算符，其中 $ \rho $ 是表示混合状态的密度运算符。
 - uid: microsoft.quantum.preparation.prepareuniformsuperposition
   summary: >-
-    创建对 superposition 进行编码的状态为0的统一 `nIndices` 。
+    创建对 superposition 进行编码的状态为0的统一 `nIndices - 1` 。
 
 
     也就是说，在给定输入状态 $ \ket{0\cdots 0} $ 的情况下，此单一 $U $ 将在所有数字状态 $0 $ 到 $M-$1 上创建一个统一的 superposition。 换句话说，$ $ \begin{align} U\ket {0} = \frac {1} {\sqrt{m}}\ sum_ {j = 0} ^ {M-1} \ket{j}。
 
     \end{align} $ $。
 metadata:
-  ms.openlocfilehash: 46bed785972355044c9ef9765ab957ca6d31e5f1
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 35645ba3566dbe0b8e9efa76fa4c3316ce7d5e47
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89339875"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91464311"

@@ -6,9 +6,9 @@ namespace: microsoft.quantum.diagnostics
 summary: 编译器可识别的属性，通过该属性可以定义可在加载类型时使用的可选名称，也可以将其用于测试目的。
 syntax: newtype EnableTestingViaName = String;
 metadata:
-  ms.openlocfilehash: 58ae661d98b7177230fa54946bafdd07c77ff38b
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 72f56f3cc07c898a336ba708eeb042f3860ffe96
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89337325"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91465467"

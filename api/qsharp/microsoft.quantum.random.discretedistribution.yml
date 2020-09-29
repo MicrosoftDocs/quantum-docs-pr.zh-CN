@@ -10,9 +10,9 @@ seeAlso:
 - microsoft.quantum.random.complexdistribution
 - microsoft.quantum.random.bigdiscretedistribution
 metadata:
-  ms.openlocfilehash: 8c22dfc83ec24993b0ae613ef6c10688f0dee0fc
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 776c1d68ab142ed68e8b7e461a924e4eed94dfc0
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89330968"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91465894"

@@ -18,9 +18,9 @@ output:
   - summary: 一个 `EvolutionSet` ，它将 `GeneratorIndex` JWOptimized 基础的映射到 "EvolutionUnitary"。
     uid: microsoft.quantum.simulation.evolutionset
 metadata:
-  ms.openlocfilehash: 91c351eaf2977f15d308edfbc482977477c17959
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 678ab0c4d39f561aadac020314b32d1000c50ca1
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89330508"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91465518"
