@@ -22,9 +22,9 @@ output:
   - summary: '`TimeDependentSimulationAlgorithm` 类型。'
     uid: microsoft.quantum.simulation.timedependentsimulationalgorithm
 metadata:
-  ms.openlocfilehash: 7b9f0628d108af9eeef5fa7397f4f3088a7d9737
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 995903d798879b008d93c0a87008d388233836b9
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89328283"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91482670"
