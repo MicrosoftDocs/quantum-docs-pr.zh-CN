@@ -17,9 +17,9 @@ output:
   - summary: Hamiltonian 的表示形式 `GeneratorSystem` 。
     uid: microsoft.quantum.chemistry.jordanwigner.optimizedbegeneratorsystem
 metadata:
-  ms.openlocfilehash: d2fe71ccfcc25e80df51e5a2505073ec7da812a8
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 0c27f2dc12d1f72ee5b9bc05d47b86a3750ea9f8
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89339399"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91480069"

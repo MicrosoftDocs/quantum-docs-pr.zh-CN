@@ -17,9 +17,9 @@ output:
   - summary: 的一元求反 `input` 。
     uid: microsoft.quantum.math.complexpolar
 metadata:
-  ms.openlocfilehash: 4ed7202440b10c033a796a7a3ebffcfe471b15e7
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 076c0646394733b06de21dab8dcfe39bf9c902e4
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89333891"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91480103"

@@ -19,7 +19,7 @@ examples: >-
   let bitstring = [true, false, true];
 
   using (register = Qubit(3)) {
-      ApplyToEach(ApplyIf(X, _, _), Zip(bitstring, register));
+      ApplyToEach(ApplyIf(X, _, _), Zipped(bitstring, register));
       // register should now be in the state |101⟩.
       ...
   }
@@ -67,9 +67,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifa
 - microsoft.quantum.canon.applyifca
 metadata:
-  ms.openlocfilehash: 2d341b8628c8d81fddd480bf47324041d575f1e5
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: ac36b00dff1e00f0994150f34323f03ba417609f
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89350500"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91473252"
