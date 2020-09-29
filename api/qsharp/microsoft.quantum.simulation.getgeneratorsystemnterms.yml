@@ -20,9 +20,9 @@ output:
 seeAlso:
 - microsoft.quantum.canon.generatorsystem
 metadata:
-  ms.openlocfilehash: 52b42a22319aa91042b9ee9375a881b0fa55440b
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: b8db3a6fdd5a1d55daa35e006e2f393defac88d8
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89330049"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91484914"

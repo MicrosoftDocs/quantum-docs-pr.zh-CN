@@ -33,9 +33,9 @@ output:
 seeAlso:
 - microsoft.quantum.diagnostics.contradiction
 metadata:
-  ms.openlocfilehash: a6ea6a8602de675da045a32c1766759d2d72c9a5
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: f49677b24296035d52c6a4335ea3d31300ba9c01
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89336951"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91478233"

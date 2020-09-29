@@ -14,9 +14,9 @@ output:
   - summary: Hamiltonian $H = $0 下表示进化的生成器系统。
     uid: microsoft.quantum.simulation.generatorsystem
 metadata:
-  ms.openlocfilehash: 7be759ae2aede978989ce4c60efe65bf0c2bf72f
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 292fac231eea13d1ee53029892dbe4b6c7d08a60
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89329981"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91484897"

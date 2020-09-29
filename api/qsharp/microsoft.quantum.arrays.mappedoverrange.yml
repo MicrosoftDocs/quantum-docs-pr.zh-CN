@@ -1,0 +1,56 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.mappedoverrange
+name: MappedOverRange
+type: function
+namespace: microsoft.quantum.arrays
+summary: 给定一个范围和一个采用整数作为输入的函数时，将返回一个新数组，该数组由函数下的范围值的图像组成。
+remarks: "函数是为泛型类型定义的，也就是说，只要有一个函数， `mapper: Int -> 'T` 我们就可以映射范围的值并生成类型为的数组 `'T[]` 。"
+examples: >-
+  此示例将1添加到偶数范围中：
+
+
+  ```Q#
+
+  let numbers = MappedOverRange(PlusI(1, _), 0..2..10);
+
+  // numbers = [1, 3, 5, 7, 9, 11]
+
+  ```
+syntax: "function MappedOverRange (mapper : (Int -> 'T), range : Range) : 'T[]"
+input:
+  content: "(mapper : (Int -> 'T), range : Range)"
+  types:
+  - name: mapper
+    summary: 用于 `Int` `'T` 映射范围值的的函数。
+    isFunction: true
+    input:
+      types:
+      - isPrimitive: true
+        uid: Int
+    output:
+      types:
+      - uid: "'T"
+        isLocal: true
+  - name: range
+    summary: 整数的范围。
+    isPrimitive: true
+    uid: Range
+output:
+  content: "'T[]"
+  types:
+  - summary: "`'T[]`由函数映射的元素的数组 `mapper` 。"
+    isArray: true
+    uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: 函数的结果类型 `mapper` 。
+seeAlso:
+- microsoft.quantum.arrays.mapped
+metadata:
+  ms.openlocfilehash: fe918a8f7e74d49834f992442344e99dbcd33422
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493528"

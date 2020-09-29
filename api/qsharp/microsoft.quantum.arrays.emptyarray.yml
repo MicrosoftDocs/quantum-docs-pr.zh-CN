@@ -1,0 +1,33 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.emptyarray
+name: EmptyArray
+type: function
+namespace: microsoft.quantum.arrays
+summary: 返回给定类型的空数组。
+examples: >-
+  ```Q#
+
+  let empty = EmptyArray<Int>();
+
+  ```
+syntax: "function EmptyArray () : 'TElement[]"
+input:
+  content: ()
+  types: []
+output:
+  content: "'TElement[]"
+  types:
+  - summary: 空数组。
+    isArray: true
+    uid: "'TElement"
+    isLocal: true
+typeParameters:
+- uid: "'TElement"
+  summary: 数组元素的类型。
+metadata:
+  ms.openlocfilehash: 47fa36da3a9a36cda09a10cb05ce7d9e1b3b8278
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493556"

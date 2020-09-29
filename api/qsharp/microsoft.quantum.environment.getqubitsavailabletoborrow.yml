@@ -23,9 +23,9 @@ output:
 seeAlso:
 - getqubitsavailabletouse
 metadata:
-  ms.openlocfilehash: fbb0ccdcc17346ba596df537e81aeabb61b135c4
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 18e68548e9f344a70dac95f70528a8b3e87f5909
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89336866"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91478063"
