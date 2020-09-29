@@ -9,9 +9,9 @@ summary: >-
   表示的数据的含义取决于接收数据的算法。
 syntax: newtype HTerm = (Int[], Double[]);
 metadata:
-  ms.openlocfilehash: d26465a5ebb0218501149a97398e9b4559343f1d
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 01bfe86f978fa55e15f91c42b0bc93302396904e
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89354189"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91478692"

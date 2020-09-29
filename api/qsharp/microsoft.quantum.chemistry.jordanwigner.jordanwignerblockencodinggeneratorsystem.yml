@@ -17,9 +17,9 @@ output:
   - summary: Hamiltonian 的表示形式 `GeneratorSystem` 。
     uid: microsoft.quantum.simulation.generatorsystem
 metadata:
-  ms.openlocfilehash: 815e0931a046842060eec76bdbdcd93efb234c51
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 05640c8f12a3205de8cb0a10311415f308ff1fb6
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89353985"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91478607"

@@ -34,9 +34,9 @@ seeAlso:
 - microsoft.quantum.canon.applytofirstqubitc
 - microsoft.quantum.canon.applytofirstqubitca
 metadata:
-  ms.openlocfilehash: 8a6dc6d3a633375de4bf723ade7dd81403b91167
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 9d7c1c559859b1aeb1ca05ffd47a82362fe26dfe
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89357555"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91468515"

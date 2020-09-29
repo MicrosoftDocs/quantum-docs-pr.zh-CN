@@ -50,9 +50,9 @@ seeAlso:
 - microsoft.quantum.canon.applytoelementc
 - microsoft.quantum.canon.applytoelementa
 metadata:
-  ms.openlocfilehash: 84737033dd1446b2ec209482cb096201308a94fe
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 374191805600c759b65e4eea4f1c8b6b1678bfe6
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89357572"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91468509"
