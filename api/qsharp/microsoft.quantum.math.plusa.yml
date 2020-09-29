@@ -29,9 +29,9 @@ typeParameters:
 - uid: "'Element"
   summary: 两个输入数组中每个元素的类型。
 metadata:
-  ms.openlocfilehash: 8b729c0c76a12c52beb83313500fbe6c39609f69
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 231159034d1fa24b00223a54144e085e9dcac976
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89333755"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91488705"

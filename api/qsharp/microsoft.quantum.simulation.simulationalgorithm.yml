@@ -12,9 +12,9 @@ summary: >-
   到某个时间间隔内的单一时间演变。
 syntax: newtype SimulationAlgorithm = ((Double, Microsoft.Quantum.Simulation.EvolutionGenerator, Qubit[]) => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: 89c3e6e972264c6ec8427f6e69756d95b86b011c
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: ba99768f99a6101f998230813e7c32ff91858b98
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89328366"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91488229"

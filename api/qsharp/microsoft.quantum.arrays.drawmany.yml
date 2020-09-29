@@ -50,9 +50,9 @@ typeParameters:
 seeAlso:
 - microsoft.quantum.canon.repeat
 metadata:
-  ms.openlocfilehash: a4f3ab6f4224a9b5a293fe458ad653171983a6cc
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: c580b8cf4e412f07d4b09b7a27fefb2c1f6826de
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89352387"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91475700"
