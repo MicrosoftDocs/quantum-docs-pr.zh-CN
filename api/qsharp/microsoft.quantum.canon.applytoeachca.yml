@@ -55,9 +55,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applytoeach
 metadata:
-  ms.openlocfilehash: 05399f7d8562b95d9dd1321ee384f10c99d3256c
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 1a8bad81be2d39cc7c6c5a0dd7455af1ee0914b2
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89357708"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91468917"

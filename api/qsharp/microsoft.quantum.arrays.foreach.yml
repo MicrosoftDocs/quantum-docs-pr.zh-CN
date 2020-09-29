@@ -38,9 +38,9 @@ typeParameters:
 - uid: "'U"
   summary: 操作的结果类型 `action` 。
 metadata:
-  ms.openlocfilehash: c630f23c57ccba1588e553641acf61312411f146
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 481061d53db7d492b975db6250bbc6306e070777
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89352268"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91475343"

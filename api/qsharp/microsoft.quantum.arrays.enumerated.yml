@@ -41,9 +41,9 @@ typeParameters:
 - uid: "'TElement"
   summary: 数组元素的类型。
 metadata:
-  ms.openlocfilehash: aecfb5c9f6a7d3f6b14717a7068a0596ae867c9f
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: a921804bcc452bdfe3aa141e23d14b0374819508
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89352404"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91475513"
