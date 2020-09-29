@@ -6,9 +6,9 @@ namespace: microsoft.quantum.core
 summary: 编译器可识别的属性，用于标记可执行文件的入口点。
 syntax: newtype EntryPoint = Unit;
 metadata:
-  ms.openlocfilehash: f015094a23935db4f6cf69b20797511bdab03ea6
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 48b1a2018606b39b80170cc24f63bf875d3beb42
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89338005"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91482976"

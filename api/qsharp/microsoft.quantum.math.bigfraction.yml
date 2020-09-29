@@ -6,9 +6,9 @@ namespace: microsoft.quantum.math
 summary: 表示形式的有理数 `p/q` 。 整数 `p` 是元组的第一个元素， `q` 是元组的第二个元素。
 syntax: newtype BigFraction = (BigInt, BigInt);
 metadata:
-  ms.openlocfilehash: 3ae7d6cf0f9bd200c0620caf8bce93403e18f9cf
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: d82ac3629c0fff5c5a111f24fe3cc68ef30b3a77
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89344414"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91491187"

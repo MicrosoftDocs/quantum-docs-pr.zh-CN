@@ -34,9 +34,9 @@ functors:
 seeAlso:
 - microsoft.quantum.intrinsic.i
 metadata:
-  ms.openlocfilehash: 9af76ff7f2c559aef0f940ff3c56e6f8d8cdbb60
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 7cad15816969697183ed413cd9a02c3464fe42ff
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89355974"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91466809"
