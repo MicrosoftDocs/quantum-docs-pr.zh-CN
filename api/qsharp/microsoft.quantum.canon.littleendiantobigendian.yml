@@ -15,9 +15,9 @@ output:
   types:
   - uid: microsoft.quantum.arithmetic.bigendian
 metadata:
-  ms.openlocfilehash: 3f671fa70841bcc4997f0d75c29f728c38536ab2
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 99545333b9a892e5e3b67eff14ce3f9dccc14997
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89356128"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91470889"

@@ -46,9 +46,9 @@ output:
   - summary: 度量值的结果。
     uid: microsoft.quantum.errorcorrection.syndrome
 metadata:
-  ms.openlocfilehash: fe7e1d75d6108d3f1c8288560c011af14bf6529b
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 2881ab42a25c1007fa511249d2e77d7f85619d99
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89350007"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91484115"

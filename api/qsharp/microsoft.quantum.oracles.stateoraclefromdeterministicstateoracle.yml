@@ -20,9 +20,9 @@ seeAlso:
 - microsoft.quantum.canon.deterministicstateoracle
 - microsoft.quantum.canon.stateoracle
 metadata:
-  ms.openlocfilehash: 77cdfba157be67bb68cec53f3d8a0780a347bf37
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: e03f41c2d7cdb21297287339f760a96121bf8bff
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89331732"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91491939"

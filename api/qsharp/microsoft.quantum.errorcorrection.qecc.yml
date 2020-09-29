@@ -6,9 +6,9 @@ namespace: microsoft.quantum.errorcorrection
 summary: 表示由其编码器、解码器和症状度量过程定义的纠错码。
 syntax: newtype QECC = (Microsoft.Quantum.ErrorCorrection.EncodeOp, Microsoft.Quantum.ErrorCorrection.DecodeOp, Microsoft.Quantum.ErrorCorrection.SyndromeMeasOp);
 metadata:
-  ms.openlocfilehash: 2638b9418c116a1b9ade8fa1794320a7760291f0
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 48a0ca01e08663e1df32fab603cd9e08483ba5b6
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89349990"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91484064"
