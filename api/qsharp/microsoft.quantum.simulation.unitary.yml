@@ -6,9 +6,9 @@ namespace: microsoft.quantum.simulation
 summary: 表示单一运算符下的演变。
 syntax: newtype Unitary = (Qubit[] => Unit is Adj + Ctl);
 metadata:
-  ms.openlocfilehash: 3c6c5abe18c433b98ef08a8e8916a69617b3d894
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 33518fea8e2b8fb914c92eab865e31534a02abf4
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89328094"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91482568"
