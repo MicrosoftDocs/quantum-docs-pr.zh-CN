@@ -21,9 +21,9 @@ output:
   - isPrimitive: true
     uid: String
 metadata:
-  ms.openlocfilehash: d73472502e2d4a05f67463e246e7b0f5c39870f2
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 5e036aa24a6c7d50025f6bf70cb40e84b0ab708c
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89338345"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91482177"
