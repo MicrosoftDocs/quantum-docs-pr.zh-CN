@@ -16,9 +16,9 @@ output:
 seeAlso:
 - microsoft.quantum.canon.recoveryfn
 metadata:
-  ms.openlocfilehash: fc6b353eaa67d82b2c49f8c795acd0dd11ab921b
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 1676907063e0e218100ed21e5e1767f5cf0ccee5
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89336645"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91484642"

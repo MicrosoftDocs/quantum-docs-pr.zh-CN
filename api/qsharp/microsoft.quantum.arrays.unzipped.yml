@@ -1,0 +1,51 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.unzipped
+name: Unzipped
+type: function
+namespace: microsoft.quantum.arrays
+summary: 给定一个2元组数组，返回两个数组的元组，其中每个数组包含输入数组的元组的元素。
+examples: >-
+  ```Q#
+
+  // split is same as ([6, 5, 5, 3, 2, 1], [true, false, false, false, true, false])
+
+  let split = Unzipped([(6, true), (5, false), (5, false), (3, false), (2, true), (1, false)]);
+
+  ```
+syntax: "function Unzipped (arr : ('T, 'U)[]) : ('T[], 'U[])"
+input:
+  content: "(arr : ('T, 'U)[])"
+  types:
+  - name: arr
+    summary: 包含2元组的数组
+    isArray: true
+    types:
+    - uid: "'T"
+      isLocal: true
+    - uid: "'U"
+      isLocal: true
+output:
+  content: ('T[], 'U[])
+  types:
+  - summary: 两个数组，第一个数组包含输入元组的所有第一个元素，第二个数组包含输入元组的所有第二个元素。
+    types:
+    - isArray: true
+      uid: "'T"
+      isLocal: true
+    - isArray: true
+      uid: "'U"
+      isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: 每个元组中第一个元素的类型
+- uid: "'U"
+  summary: 每个元组中第二个元素的类型
+seeAlso:
+- microsoft.quantum.arrays.zipped
+metadata:
+  ms.openlocfilehash: 2bde9351719a662008abf0db507aca9fee289b6b
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493434"

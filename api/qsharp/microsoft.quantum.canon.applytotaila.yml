@@ -1,0 +1,52 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applytotaila
+name: ApplyToTailA
+type: operation
+namespace: microsoft.quantum.canon
+summary: >-
+  将操作应用到数组的最后一个元素。
+
+
+  给定一个操作 `op` 和一个目标数组 `targets` ，适用于 `op(Tail(targets))` 。
+syntax: "operation ApplyToTailA (op : ('T => Unit is Adj), targets : 'T[]) : Unit"
+input:
+  content: "(op : ('T => Unit is Adj), targets : 'T[])"
+  types:
+  - name: op
+    summary: 要应用的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Adjoint
+  - name: targets
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 要应用的操作的输入类型。
+functors:
+- Adjoint
+seeAlso:
+- microsoft.quantum.canon.applytotail
+- microsoft.quantum.canon.applytotailc
+- microsoft.quantum.canon.applytotailca
+metadata:
+  ms.openlocfilehash: 037691ea2a4b038f92e55e1f221c81c361086457
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493396"

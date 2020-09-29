@@ -45,9 +45,9 @@ seeAlso:
 - microsoft.quantum.canon.applytopartitionc
 - microsoft.quantum.canon.applytopartitionca
 metadata:
-  ms.openlocfilehash: 2d9e410ca4cf94a2326c3cce6ae9ccc73a0c3cd8
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 83e29cf12679d7212f11511cb1bdb6bd0a4acae0
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89357351"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91468169"

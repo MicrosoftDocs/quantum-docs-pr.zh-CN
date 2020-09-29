@@ -1,0 +1,52 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applytoheadc
+name: ApplyToHeadC
+type: operation
+namespace: microsoft.quantum.canon
+summary: >-
+  将操作应用到数组的第一个元素。
+
+
+  给定一个操作 `op` 和一个目标数组 `targets` ，适用于 `op(Head(targets))` 。
+syntax: "operation ApplyToHeadC (op : ('T => Unit is Ctl), targets : 'T[]) : Unit"
+input:
+  content: "(op : ('T => Unit is Ctl), targets : 'T[])"
+  types:
+  - name: op
+    summary: 要应用的操作。
+    isOperation: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: targets
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 要应用的操作的输入类型。
+functors:
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applytohead
+- microsoft.quantum.canon.applytoheada
+- microsoft.quantum.canon.applytoheadca
+metadata:
+  ms.openlocfilehash: 9117da30af11b4f102d46cf17bd52414489a0981
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493420"

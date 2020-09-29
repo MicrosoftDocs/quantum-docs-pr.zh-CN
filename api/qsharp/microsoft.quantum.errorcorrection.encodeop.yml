@@ -10,9 +10,9 @@ summary: >-
   第一个参数被视为将进行编码的物理寄存器，而第二个参数被视为将使用的暂存寄存器。
 syntax: newtype EncodeOp = ((Qubit[], Qubit[]) => Microsoft.Quantum.ErrorCorrection.LogicalRegister);
 metadata:
-  ms.openlocfilehash: 7962cc819dc32f48ac2e2e48e6039aa451ec7a26
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: ab6a20f44e2839ae42156b7b2711d397e5a20004
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89336305"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91484309"

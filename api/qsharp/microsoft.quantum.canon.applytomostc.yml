@@ -1,0 +1,53 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.canon.applytomostc
+name: ApplyToMostC
+type: operation
+namespace: microsoft.quantum.canon
+summary: >-
+  将操作应用到数组中除最后一个元素之外的所有元素。
+
+
+  给定一个操作 `op` 和一个目标数组 `targets` ，适用于 `op(Most(targets))` 。
+syntax: "operation ApplyToMostC (op : ('T[] => Unit is Ctl), targets : 'T[]) : Unit"
+input:
+  content: "(op : ('T[] => Unit is Ctl), targets : 'T[])"
+  types:
+  - name: op
+    summary: 要应用的操作。
+    isOperation: true
+    input:
+      types:
+      - isArray: true
+        uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Unit
+    functors:
+    - Controlled
+  - name: targets
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 要应用的操作的输入类型。
+functors:
+- Controlled
+seeAlso:
+- microsoft.quantum.canon.applytomost
+- microsoft.quantum.canon.applytomosta
+- microsoft.quantum.canon.applytomostca
+metadata:
+  ms.openlocfilehash: 0c8b39a9e27e12152d6060381f69d188837ccac0
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493412"

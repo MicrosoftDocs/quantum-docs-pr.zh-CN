@@ -51,9 +51,9 @@ seeAlso:
 - microsoft.quantum.canon.uncurryopa
 - microsoft.quantum.canon.uncurryopca
 metadata:
-  ms.openlocfilehash: c339a98eb66dab5a2163a652e769a58f3095a51a
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 4c2ecbf7123ca4c2bec991b9ee548737a10ff630
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89354920"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91477859"

@@ -9,12 +9,12 @@ uid: microsoft.quantum.write-program
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 6fd7494d341a83a1354d23a283d21a7ae535e49f
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: ac9c060c157ba5ee3bc66852c42298ac8adcb3b3
+ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834017"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91492330"
 ---
 # <a name="tutorial-explore-entanglement-with-q"></a>教程：通过 Q\# 探索纠缠
 
@@ -32,7 +32,7 @@ Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，
 
 你还可以遵循这些叙述，无需安装 QDK、查看 Q# 编程语言的概述以及量程计算的第一概念。
 
-## <a name="in-this-tutorial-youll-learn-how-to"></a>本教程介绍以下操作：
+## <a name="in-this-tutorial-youll-learn-how-to"></a>在本教程中，你将了解：
 
 > [!div class="checklist"]
 > * 在 Q 中创建和合并操作\#
@@ -83,7 +83,7 @@ Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，
 
 ### <a name="initialize-qubit-using-measurement"></a>使用度量值初始化 qubit
 
-下面的第一个代码介绍了如何在中使用 qubits Q# 。  我们将介绍两个操作，这些操作将 [`M`](xref:microsoft.quantum.intrinsic.m) [`X`](xref:microsoft.quantum.intrinsic.x) 转换 qubit 的状态。 在此代码片段中，我们定义了操作 `SetQubitState`。该操作使用一个量子位作为参数，使用另一个参数 (`desired`) 来表示我们希望该量子位呈现的状态。  操作 `SetQubitState` 使用操作 `M` 对量子位进行度量。  在中 Q# ，qubit 度量值始终返回 `Zero` 或 `One` 。  如果度量值返回一个与所需值不相等的值，则 `SetQubitState` "翻转" qubit; 也就是说，它将运行一个 `X` 操作，该操作将 qubit 状态更改为一种新状态，在该状态下，测量的概率返回 `Zero` 并 `One` 反转。 这样，就 `SetQubitState` 始终将目标 qubit 置于所需状态。
+在下面的第一个代码段中，我们将向你演示如何在中使用 qubits Q# 。  我们将介绍两个操作，这些操作将 [`M`](xref:microsoft.quantum.intrinsic.m) [`X`](xref:microsoft.quantum.intrinsic.x) 转换 qubit 的状态。 在此代码片段中，我们定义了操作 `SetQubitState`。该操作使用一个量子位作为参数，使用另一个参数 (`desired`) 来表示我们希望该量子位呈现的状态。  操作 `SetQubitState` 使用操作 `M` 对量子位进行度量。  在中 Q# ，qubit 度量值始终返回 `Zero` 或 `One` 。  如果度量值返回一个与所需值不相等的值，则 `SetQubitState` "翻转" qubit; 也就是说，它将运行一个 `X` 操作，该操作将 qubit 状态更改为一种新状态，在该状态下，测量的概率返回 `Zero` 并 `One` 反转。 这样，就 `SetQubitState` 始终将目标 qubit 置于所需状态。
 
 将的内容替换为 `Program.qs` 以下代码：
 
@@ -112,7 +112,7 @@ Q#操作是一个量程子例程。 也就是说，它是包含对其他量程�
 
 运算的参数在括号内指定为元组。
 
-运算的返回类型在冒号之后指定。 根据这个规则，`SetQubitState` 运算表示没有返回类型，因此将标记为返回 `Unit`。 这相当于 Q# F # 中的等效项， `unit` 它大致类似于 `void` c # 中的，而 Python (中的空元组 `()` 由类型提示 `Tuple[()]`) 表示。
+运算的返回类型在冒号之后指定。 在这种情况下，该 `SetQubitState` 操作没有返回类型，因此将其标记为返回 `Unit` 。 这相当于 Q# F # 中的等效项， `unit` 它大致类似于 `void` c # 中的，而 Python (中的空元组 `()` 由类型提示 `Tuple[()]`) 表示。
 
 您在第一次操作中使用了两个量程操作 Q# ：
 
@@ -159,7 +159,7 @@ Q#操作是一个量程子例程。 也就是说，它是包含对其他量程�
 
 默认情况下，中的变量 Q# 是不可变的; 它们的值在绑定后可能不会更改。 `let` 关键字用于指示不可变变量的绑定。 运算参数始终是不可变的。
 
-如果需要可以更改值的变量（如示例中的 `numOnes`），可以使用 `mutable` 关键字声明该变量。 使用 `setQubitState` 语句可以更改可变变量的值。
+如果需要可以更改值的变量（如示例中的 `numOnes`），可以使用 `mutable` 关键字声明该变量。 使用 `set` 语句可以更改可变变量的值。
 
 在这两种情况下，编译器都会推断变量的类型。 Q# 不需要任何变量的类型批注。
 
@@ -169,7 +169,7 @@ Q#操作是一个量程子例程。 也就是说，它是包含对其他量程�
 
 ## <a name="run-the-code-from-the-command-prompt"></a>在命令提示符下运行代码
 
-若要运行代码，我们需要指定在提供命令时要 *运行的可调用的* 编译器 `dotnet run` 。 此操作 Q# 通过在此情况下添加一行，并在 `@EntryPoint()` `TestBellState` 此示例中添加一行，在文件中进行简单的更改。 完整的代码应为：
+若要运行代码，我们需要告诉编译器在提供命令时要运行 *的* 可调用的 `dotnet run` 。 此操作 Q# 通过在此情况下添加一行，并在 `@EntryPoint()` `TestBellState` 此示例中添加一行，在文件中进行简单的更改。 完整的代码应为：
 
 ```qsharp
 namespace Bell {
@@ -237,7 +237,7 @@ Test results (# of 0s, # of 1s):
 
 ### <a name="x-flips-qubit-state"></a>`X` 翻转 qubit 状态
 
-首先，我们来尝试翻转量子位（如果量子位为 `Zero` 状态，则会翻转为 `One`，反之亦然）。 操作步骤：先执行 `X` 操作，然后在 `TestBellState` 操作中度量它：
+首先，我们将尝试翻转 qubit (如果 qubit 处于 `Zero` 状态，则会反向 `One` 转换为，反之亦然) 。 操作步骤：先执行 `X` 操作，然后在 `TestBellState` 操作中度量它：
 
 ```qsharp
 X(qubit);

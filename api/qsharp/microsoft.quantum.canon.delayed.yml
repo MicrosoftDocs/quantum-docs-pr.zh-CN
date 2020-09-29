@@ -47,9 +47,9 @@ seeAlso:
 - microsoft.quantum.canon.delayedca
 - microsoft.quantum.canon.delay
 metadata:
-  ms.openlocfilehash: ce224fafa35dcb2d839a596c719905f4bba9fb2e
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 437df20ab0718d64ae8c33f9be881dd7dd2efcb3
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89356433"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91471552"
