@@ -38,9 +38,9 @@ typeParameters:
 - uid: "'T"
   summary: 元素的类型 `array` 。
 metadata:
-  ms.openlocfilehash: 1d5739f49e32ec4548cb24df2106dec0866a94cb
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 5e6e29211f1d17afb89680e6a1aa0d826f31b91c
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89351622"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91474629"

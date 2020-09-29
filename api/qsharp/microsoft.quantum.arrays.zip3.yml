@@ -3,7 +3,7 @@ uid: microsoft.quantum.arrays.zip3
 name: Zip3
 type: function
 namespace: microsoft.quantum.arrays
-summary: 给定三个数组，返回一个新数组，其中包含3个元组，以便每个第三个元组包含每个原始数组中的一个元素。
+summary: List.zip3 已被弃用。 请改用 @"microsoft.quantum.arrays.zipped3"。
 syntax: "function Zip3 (first : 'T1[], second : 'T2[], third : 'T3[]) : ('T1, 'T2, 'T3)[]"
 input:
   content: "(first : 'T1[], second : 'T2[], third : 'T3[])"
@@ -46,9 +46,9 @@ seeAlso:
 - zip
 - zip4
 metadata:
-  ms.openlocfilehash: d16fb3da1b11fbed9487ef8555dd83bb6b3a16a5
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 8c60bd34ea03cacd81bd4b4d5c097bea6bec7715
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89351384"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91474272"

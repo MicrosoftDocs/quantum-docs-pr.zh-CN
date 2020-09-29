@@ -3,7 +3,7 @@ uid: microsoft.quantum.arrays.zip4
 name: Zip4
 type: function
 namespace: microsoft.quantum.arrays
-summary: 给定四个数组，返回一个4元组的新数组，使每个4元组包含每个原始数组中的一个元素。
+summary: Zip4 已被弃用。 请改用 @"microsoft.quantum.arrays.zipped4"。
 syntax: "function Zip4 (first : 'T1[], second : 'T2[], third : 'T3[], fourth : 'T4[]) : ('T1, 'T2, 'T3, 'T4)[]"
 input:
   content: "(first : 'T1[], second : 'T2[], third : 'T3[], fourth : 'T4[])"
@@ -55,9 +55,9 @@ seeAlso:
 - zip
 - zip3
 metadata:
-  ms.openlocfilehash: 437027a767ea7a2c49fd3b8dfa73858c847942c6
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 19ca2876fa0342745147cd2ff7f7dbc56d787b6b
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89351333"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91474238"
