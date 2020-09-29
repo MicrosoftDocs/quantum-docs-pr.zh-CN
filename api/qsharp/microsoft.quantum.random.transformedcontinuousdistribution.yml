@@ -42,9 +42,9 @@ output:
   - summary: 由提供的转换与关联的新分布 `distribution` `transform` 。
     uid: microsoft.quantum.random.continuousdistribution
 metadata:
-  ms.openlocfilehash: 515cb4bd06fe5dd4d6c3c5dae9f7d51d616be5fb
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 4a0b4aed81006ef8770f159cb274c046ae208130
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89330644"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91465637"

@@ -24,9 +24,9 @@ output:
 seeAlso:
 - microsoft.quantum.random.normaldistribution
 metadata:
-  ms.openlocfilehash: f3922258f624ca6f807c1ac173b38a0122e6166b
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: a817b6648eb4d8a5b178e368ca63d1c6490d1a34
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89330661"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91465671"

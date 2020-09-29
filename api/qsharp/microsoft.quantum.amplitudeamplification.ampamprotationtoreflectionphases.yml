@@ -15,9 +15,9 @@ output:
   types:
   - uid: microsoft.quantum.amplitudeamplification.reflectionphases
 metadata:
-  ms.openlocfilehash: e0b27c371f3b203793772a5a7ffa40362fc20b35
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 212f3c0d44d5bff98809b555af426adb5f6c81e9
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89339671"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91464123"

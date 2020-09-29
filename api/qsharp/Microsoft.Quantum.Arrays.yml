@@ -8,40 +8,74 @@ functions:
   summary: 给定为数组元素定义的数组和谓词，检查数组中是否至少有一个元素满足该谓词。
 - uid: microsoft.quantum.arrays.chunks
   summary: 将数组拆分为长度相等的多个部分。
+- uid: microsoft.quantum.arrays.columnat
+  summary: 提取矩阵中的列。
 - uid: microsoft.quantum.arrays.constantarray
   summary: 创建一个给定长度的数组，其中的所有元素都等于给定的值。
+- uid: microsoft.quantum.arrays.count
+  summary: 给定为数组元素定义的数组和谓词后，将返回一个数组，该数组由满足该谓词的元素组成。
+- uid: microsoft.quantum.arrays.cumulativefolded
+  summary: 将映射和折叠合并为一个函数
+- uid: microsoft.quantum.arrays.diagonal
+  summary: 返回二维数组的对角元素数组
+- uid: microsoft.quantum.arrays.elementat
+  summary: 返回数组中给定索引处的。
+- uid: microsoft.quantum.arrays.elementsat
+  summary: 返回给定索引范围内的数组元素。
+- uid: microsoft.quantum.arrays.emptyarray
+  summary: 返回给定类型的空数组。
 - uid: microsoft.quantum.arrays.enumerated
   summary: 给定一个数组，返回一个新数组，其中包含原始数组的元素以及每个元素的索引。
 - uid: microsoft.quantum.arrays.equala
   summary: 给定两个相同类型的数组和为数组元素对定义的谓词，检查数组是否相等。
 - uid: microsoft.quantum.arrays.exclude
   summary: 返回一个数组，其中包含另一个数组的元素，而不包括给定索引列表中的元素。
+- uid: microsoft.quantum.arrays.excluding
+  summary: 返回一个数组，其中包含另一个数组的元素，而不包括给定索引列表中的元素。
 - uid: microsoft.quantum.arrays.filtered
   summary: 给定为数组元素定义的数组和谓词后，将返回一个数组，其中包含满足谓词的元素。
+- uid: microsoft.quantum.arrays.flatmapped
+  summary: 给定一个数组和一个将数组元素映射到某个输出数组的函数，将返回每个数组元素的串联输出数组。
+- uid: microsoft.quantum.arrays.flattened
+  summary: 给定数组的数组，返回所有数组的串联。
 - uid: microsoft.quantum.arrays.fold
   summary: 通过数组循环访问函数 `f` `array` ，返回 `f(f(f(initialState, array[0]), array[1]), ...)` 。
 - uid: microsoft.quantum.arrays.head
   summary: 返回数组的第一个元素。
+- uid: microsoft.quantum.arrays.headandrest
+  summary: 返回数组的第一个和所有剩余元素的元组。
 - uid: microsoft.quantum.arrays.indexof
   summary: 返回满足给定谓词的数组中第一个元素的第一个索引。 如果此类元素不存在，则返回-1。
 - uid: microsoft.quantum.arrays.indexrange
   summary: 给定一个数组，返回该数组的索引范围，该范围适用于在 for 循环中使用。
+- uid: microsoft.quantum.arrays.interleaved
+  summary: 交错的两个 (数组几乎) 相同大小。
 - uid: microsoft.quantum.arrays.isempty
   summary: 当且仅当数组为空时，返回 true。
 - uid: microsoft.quantum.arrays.ispermutation
   summary: 当且仅当给定数组表示排列时，输出为 true。
+- uid: microsoft.quantum.arrays.issorted
+  summary: 给定数组，返回数组是否按给定比较函数的定义进行排序。
 - uid: microsoft.quantum.arrays.lookupfunction
   summary: 给定一个数组，返回返回该数组的元素的函数。
 - uid: microsoft.quantum.arrays.mapped
   summary: 给定数组和为数组元素定义的函数后，将返回一个新数组，该数组由函数下的原始数组的图像组成。
 - uid: microsoft.quantum.arrays.mappedbyindex
   summary: 给定数组和为数组的索引元素定义的函数后，将返回一个新数组，该数组由函数下的原始数组的图像组成。
+- uid: microsoft.quantum.arrays.mappedoverrange
+  summary: 给定一个范围和一个采用整数作为输入的函数时，将返回一个新数组，该数组由函数下的范围值的图像组成。
 - uid: microsoft.quantum.arrays.most
   summary: 创建一个等于输入数组的数组，只不过最后一个数组元素被删除。
+- uid: microsoft.quantum.arrays.mostandtail
+  summary: 返回数组的所有元素，而不是数组的最后一个元素。
 - uid: microsoft.quantum.arrays.padded
   summary: 返回使用指定的值（最大指定长度）填充的数组。
 - uid: microsoft.quantum.arrays.partitioned
   summary: 将数组拆分为多个部分。
+- uid: microsoft.quantum.arrays.prefixes
+  summary: 给定一个数组，返回其所有前缀。
+- uid: microsoft.quantum.arrays.rectangulararrayfact
+  summary: 表示二维数组具有矩形形状的条件
 - uid: microsoft.quantum.arrays.rest
   summary: 创建一个等于输入数组的数组，但第一个数组元素被删除。
 - uid: microsoft.quantum.arrays.reversed
@@ -50,21 +84,63 @@ functions:
   summary: 获取给定时间间隔内的整数数组。
 - uid: microsoft.quantum.arrays.sequencel
   summary: 获取给定时间间隔内的整数数组。
+- uid: microsoft.quantum.arrays.sorted
+  summary: 给定一个数组，返回该数组的元素，这些元素按给定的比较函数排序。
+- uid: microsoft.quantum.arrays.squarearrayfact
+  summary: 表示二维数组具有正方形形状的条件
 - uid: microsoft.quantum.arrays.subarray
   summary: 采用一个数组和一个位置列表，并生成一个新数组，该数组由与给定位置匹配的原始数组的元素构成。
 - uid: microsoft.quantum.arrays.swapped
   summary: 应用数组中两个元素的交换。
 - uid: microsoft.quantum.arrays.tail
   summary: 返回数组的最后一个元素。
+- uid: microsoft.quantum.arrays.transposed
+  summary: 返回一个矩阵的换位，该矩阵表示为数组的数组。
 - uid: microsoft.quantum.arrays.tuplearrayasnestedarray
   summary: 将2元组的列表转换为嵌套数组。
+- uid: microsoft.quantum.arrays.unique
+  summary: 返回一个没有相等相邻元素的新数组。
+- uid: microsoft.quantum.arrays.unzipped
+  summary: 给定一个2元组数组，返回两个数组的元组，其中每个数组包含输入数组的元组的元素。
 - uid: microsoft.quantum.arrays.where
   summary: 给定谓词和数组后，返回该数组的索引，其中谓词为 true。
+- uid: microsoft.quantum.arrays.windows
+  summary: 返回子的所有连续的 `size` 。
 - uid: microsoft.quantum.arrays.zip
-  summary: 给定两个数组，返回一个新的对数组，以便每个对都包含来自每个原始数组的元素。
+  summary: >-
+    给定两个数组，返回一个新的对数组，以便每个对都包含来自每个原始数组的元素。
+
+    > [!WARNING]
+
+    > 已放弃
+
+
+    Zip 已弃用。 请改用 @"microsoft.quantum.arrays.zipped"。
 - uid: microsoft.quantum.arrays.zip3
-  summary: 给定三个数组，返回一个新数组，其中包含3个元组，以便每个第三个元组包含每个原始数组中的一个元素。
+  summary: >-
+    给定三个数组，返回一个新数组，其中包含3个元组，以便每个第三个元组包含每个原始数组中的一个元素。
+
+    > [!WARNING]
+
+    > 已放弃
+
+
+    List.zip3 已被弃用。 请改用 @"microsoft.quantum.arrays.zipped3"。
 - uid: microsoft.quantum.arrays.zip4
+  summary: >-
+    给定四个数组，返回一个4元组的新数组，使每个4元组包含每个原始数组中的一个元素。
+
+    > [!WARNING]
+
+    > 已放弃
+
+
+    Zip4 已被弃用。 请改用 @"microsoft.quantum.arrays.zipped4"。
+- uid: microsoft.quantum.arrays.zipped
+  summary: 给定两个数组，返回一个新的对数组，以便每个对都包含来自每个原始数组的元素。
+- uid: microsoft.quantum.arrays.zipped3
+  summary: 给定三个数组，返回一个新数组，其中包含3个元组，以便每个第三个元组包含每个原始数组中的一个元素。
+- uid: microsoft.quantum.arrays.zipped4
   summary: 给定四个数组，返回一个4元组的新数组，使每个4元组包含每个原始数组中的一个元素。
 summary: " # <a name=\"summary\"></a>总结\n 此命名空间包含用于创建和操作数据数组的函数。"
 operations:
@@ -73,9 +149,9 @@ operations:
 - uid: microsoft.quantum.arrays.foreach
   summary: 给定为数组元素定义的数组和操作，返回一个新数组，该数组由该操作下的原始数组的图像组成。
 metadata:
-  ms.openlocfilehash: f84118178b46d8c65fbffa00562bbb1b21099353
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: af1527356d0b4962f6aba2aad79395a383fa3fab
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89341269"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91464447"

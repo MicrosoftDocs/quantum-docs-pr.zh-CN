@@ -20,9 +20,9 @@ output:
   - summary: 商 $a/b $。
     uid: microsoft.quantum.math.complexpolar
 metadata:
-  ms.openlocfilehash: 7ecdd306acff72798ac3ed07c6d089a02632a2d9
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 70725f02047799026a7739c5b7d398c832f2f563
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89334775"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91465009"

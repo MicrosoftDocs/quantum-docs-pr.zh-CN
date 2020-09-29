@@ -6,9 +6,9 @@ namespace: microsoft.quantum.machinelearning
 summary: 用于从一组示例中绘制批处理的计划。
 syntax: newtype SamplingSchedule = Range[];
 metadata:
-  ms.openlocfilehash: 4d94f5a69230719811c28af7b4b0e9b3ee69badb
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: cf5b4b6078c02bc9ffef1baad567439a90274f71
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89335744"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91465399"

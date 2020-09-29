@@ -35,9 +35,9 @@ output:
 seeAlso:
 - microsoft.quantum.continuousuniformdistribution
 metadata:
-  ms.openlocfilehash: 0508ffe0763dd392fef4db554db77138310826df
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 1d2179a30f333c8fbebf6d0d45d2f83b90ae0ec0
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89330865"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91465773"

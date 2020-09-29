@@ -3,7 +3,7 @@ uid: microsoft.quantum.canon
 name: Microsoft.Quantum.Canon
 functions:
 - uid: microsoft.quantum.canon.bigendiantolittleendian
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nBigEndianToLittleEndian 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.bigendianaslittleendian\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.BigEndianAsLittleEndian\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nBigEndianToLittleEndian 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.bigendianaslittleendian\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.BigEndianAsLittleEndian\"。"
 - uid: microsoft.quantum.canon.bound
   summary: 给定针对单个输入的操作数组时，将生成一个按顺序执行每个给定操作的新操作。
 - uid: microsoft.quantum.canon.bounda
@@ -61,7 +61,7 @@ functions:
 - uid: microsoft.quantum.canon.decomposedintotimestepsca
   summary: 返回为给定操作实现 Trotter – Suzuki 集成器的操作。
 - uid: microsoft.quantum.canon.decomposeintotimestepsca
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nDecomposeIntoTimeStepsCA 已被弃用。 请改用 @\"microsoft.quantum.canon.decomposedintotimestepsca\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nDecomposeIntoTimeStepsCA 已被弃用。 请改用 @\"microsoft.quantum.canon.decomposedintotimestepsca\"。"
 - uid: microsoft.quantum.canon.delayed
   summary: 返回应用给定自变量的给定操作的操作。
 - uid: microsoft.quantum.canon.delayeda
@@ -81,7 +81,7 @@ functions:
 - uid: microsoft.quantum.canon.isresultzero
   summary: 测试给定结果值是否等于 `Zero` 。
 - uid: microsoft.quantum.canon.littleendiantobigendian
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nLittleEndianToBigEndian 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.littleendianasbigendian\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nLittleEndianToBigEndian 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.littleendianasbigendian\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian\"。"
 - uid: microsoft.quantum.canon.multiplexerbruteforcefromgenerator
   summary: >-
     返回 $U $ 的乘法控制的单一操作，该操作将应用单一 $V _j $，由 n qubit number state $ \ket{j} $ 控制。
@@ -144,17 +144,17 @@ functions:
 - uid: microsoft.quantum.canon.snd
   summary: 如果给定对，则返回第二个元素。
 - uid: microsoft.quantum.canon.stackcapacity
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nStackCapacity 已被弃用。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nStackCapacity 已被弃用。"
 - uid: microsoft.quantum.canon.stacklength
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nStackLength 已被弃用。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nStackLength 已被弃用。"
 - uid: microsoft.quantum.canon.stacknew
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nStackNew 已被弃用。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nStackNew 已被弃用。"
 - uid: microsoft.quantum.canon.stackpeek
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nStackPeek 已被弃用。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nStackPeek 已被弃用。"
 - uid: microsoft.quantum.canon.stackpop
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nStackPop 已被弃用。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nStackPop 已被弃用。"
 - uid: microsoft.quantum.canon.stackpush
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nStackPush 已被弃用。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nStackPush 已被弃用。"
 - uid: microsoft.quantum.canon.transformedoperation
   summary: 给定一个函数和一个操作，返回一个新的操作，其输入由给定函数转换。
 - uid: microsoft.quantum.canon.transformedoperationa
@@ -183,7 +183,7 @@ functions:
 - uid: microsoft.quantum.canon.weightonepaulis
   summary: 返回给定数量的 qubits 上的所有 Pauli 运算符的数组。
 - uid: microsoft.quantum.canon.xor
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\n不推荐使用 XOR。 请改用 @\"microsoft.quantum.logical.xor\"。\n请使用 @\"microsoft.quantum.logical.xor\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\n不推荐使用 XOR。 请改用 @\"microsoft.quantum.logical.xor\"。\n请使用 @\"microsoft.quantum.logical.xor\"。"
 operations:
 - uid: microsoft.quantum.canon.andladder
   summary: 在目标 qubits 的寄存器上执行受控的 "AND 阶梯"。
@@ -273,19 +273,19 @@ operations:
 - uid: microsoft.quantum.canon.applyquantumfouriertransform
   summary: 对包含小 endian 表示形式整数的量程寄存器执行量程傅立叶转换。
 - uid: microsoft.quantum.canon.applyreversedopbigendiana
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nApplyReversedOpBigEndianA 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applyreversedopbea\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEA\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nApplyReversedOpBigEndianA 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applyreversedopbea\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEA\"。"
 - uid: microsoft.quantum.canon.applyreversedopbigendianc
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nApplyReversedOpBigEndianC 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applyreversedopbec\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEC\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nApplyReversedOpBigEndianC 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applyreversedopbec\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEC\"。"
 - uid: microsoft.quantum.canon.applyreversedopbigendianca
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nApplyReversedOpBigEndianCA 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applyreversedopbeca\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEC\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nApplyReversedOpBigEndianCA 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applyreversedopbeca\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEC\"。"
 - uid: microsoft.quantum.canon.applyreversedoplittleendiana
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nApplyReversedOpLittleEndianA 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applyreversedoplea\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEA\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nApplyReversedOpLittleEndianA 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applyreversedoplea\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEA\"。"
 - uid: microsoft.quantum.canon.applyreversedoplittleendianc
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nApplyReversedOpLittleEndianC 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applyreversedoplec\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEC\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nApplyReversedOpLittleEndianC 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applyreversedoplec\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEC\"。"
 - uid: microsoft.quantum.canon.applyreversedoplittleendianca
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nApplyReversedOpLittleEndianCA 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applyreversedopleca\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEC\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nApplyReversedOpLittleEndianCA 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applyreversedopleca\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ApplyReversedOpLEC\"。"
 - uid: microsoft.quantum.canon.applyripplecarrycomparatorle
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nApplyRippleCarryComparatorLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.compareusingripplecarry\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.CompareUsingRippleCarry\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nApplyRippleCarryComparatorLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.compareusingripplecarry\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.CompareUsingRippleCarry\"。"
 - uid: microsoft.quantum.canon.applyseriesofops
   summary: 在数组上按顺序应用 ops 及其目标的列表。
 - uid: microsoft.quantum.canon.applyseriesofopsa
@@ -387,6 +387,22 @@ operations:
     将操作应用于寄存器中的前两个 qubits。
 
     修饰符 `CA` 指示该操作是可控制的且 adjointable。
+- uid: microsoft.quantum.canon.applytohead
+  summary: 将操作应用到数组的第一个元素。
+- uid: microsoft.quantum.canon.applytoheada
+  summary: 将操作应用到数组的第一个元素。
+- uid: microsoft.quantum.canon.applytoheadc
+  summary: 将操作应用到数组的第一个元素。
+- uid: microsoft.quantum.canon.applytoheadca
+  summary: 将操作应用到数组的第一个元素。
+- uid: microsoft.quantum.canon.applytomost
+  summary: 将操作应用到数组中除最后一个元素之外的所有元素。
+- uid: microsoft.quantum.canon.applytomosta
+  summary: 将操作应用到数组中除最后一个元素之外的所有元素。
+- uid: microsoft.quantum.canon.applytomostc
+  summary: 将操作应用到数组中除最后一个元素之外的所有元素。
+- uid: microsoft.quantum.canon.applytomostca
+  summary: 将操作应用到数组中除最后一个元素之外的所有元素。
 - uid: microsoft.quantum.canon.applytopartition
   summary: 将一对操作应用于寄存器的给定分区分为两部分。
 - uid: microsoft.quantum.canon.applytopartitiona
@@ -404,6 +420,14 @@ operations:
     将一对操作应用于寄存器的给定分区分为两部分。
 
     修饰符 `CA` 指示该操作是可控制的且 adjointable。
+- uid: microsoft.quantum.canon.applytorest
+  summary: 将操作应用到数组中除第一个元素之外的所有元素。
+- uid: microsoft.quantum.canon.applytoresta
+  summary: 将操作应用到数组中除第一个元素之外的所有元素。
+- uid: microsoft.quantum.canon.applytorestc
+  summary: 将操作应用到数组中除第一个元素之外的所有元素。
+- uid: microsoft.quantum.canon.applytorestca
+  summary: 将操作应用到数组中除第一个元素之外的所有元素。
 - uid: microsoft.quantum.canon.applytosubregister
   summary: 将操作应用于寄存器的 subregister，其 qubits 由其索引数组指定。
 - uid: microsoft.quantum.canon.applytosubregistera
@@ -421,6 +445,14 @@ operations:
     将操作应用于寄存器的 subregister，其 qubits 由其索引数组指定。
 
     修饰符 `CA` 指示该操作是可控制的且 adjointable。
+- uid: microsoft.quantum.canon.applytotail
+  summary: 将操作应用到数组的最后一个元素。
+- uid: microsoft.quantum.canon.applytotaila
+  summary: 将操作应用到数组的最后一个元素。
+- uid: microsoft.quantum.canon.applytotailc
+  summary: 将操作应用到数组的最后一个元素。
+- uid: microsoft.quantum.canon.applytotailca
+  summary: 将操作应用到数组的最后一个元素。
 - uid: microsoft.quantum.canon.applywith
   summary: 给定两个操作，将一个操作应用到另一个运算。
 - uid: microsoft.quantum.canon.applywitha
@@ -446,19 +478,19 @@ operations:
 - uid: microsoft.quantum.canon.approximateqft
   summary: 将大致的量程傅立叶转换 (AQFT) 应用到一个量程寄存器。
 - uid: microsoft.quantum.canon.asserthighestbit
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nAssertHighestBit 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.assertmostsignificantbit\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.AssertMostSignificantBit\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertHighestBit 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.assertmostsignificantbit\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.AssertMostSignificantBit\"。"
 - uid: microsoft.quantum.canon.assertlessthanphasele
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nAssertLessThanPhaseLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.assertphaselessthan\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertLessThanPhaseLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.assertphaselessthan\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan\"。"
 - uid: microsoft.quantum.canon.assertphase
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nAssertPhase 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertphase\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nAssertPhase 已被弃用。 请改用 @\"microsoft.quantum.diagnostics.assertphase\"。"
 - uid: microsoft.quantum.canon.cascadeccnot
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nCascadeCCNOT 已被弃用。 请改用 @\"microsoft.quantum.canon.applyccnotchain\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nCascadeCCNOT 已被弃用。 请改用 @\"microsoft.quantum.canon.applyccnotchain\"。"
 - uid: microsoft.quantum.canon.cascadecnot
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nCascadeCNOT 已被弃用。 请改用 @\"microsoft.quantum.canon.applycnotchain\"。\n请使用 @\"microsoft.quantum.canon.applycnotchain\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nCascadeCNOT 已被弃用。 请改用 @\"microsoft.quantum.canon.applycnotchain\"。\n请使用 @\"microsoft.quantum.canon.applycnotchain\"。"
 - uid: microsoft.quantum.canon.cnotchain
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nCNOTChain 已被弃用。 请改用 @\"microsoft.quantum.canon.applycnotchain\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nCNOTChain 已被弃用。 请改用 @\"microsoft.quantum.canon.applycnotchain\"。"
 - uid: microsoft.quantum.canon.cnotchaintarget
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nCNOTChainTarget 已被弃用。 请改用 @\"microsoft.quantum.canon.applycnotchainwithtarget\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nCNOTChainTarget 已被弃用。 请改用 @\"microsoft.quantum.canon.applycnotchainwithtarget\"。"
 - uid: microsoft.quantum.canon.cx
   summary: >-
     将受控-X (CX) 入口应用于一对 qubits。
@@ -497,29 +529,29 @@ operations:
 
     \end{align}
 - uid: microsoft.quantum.canon.inplacemajority
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nInPlaceMajority 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applymajorityinplace\"。\n请使用 @\"microsoft.quantum.arithmetic.applymajorityinplace\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nInPlaceMajority 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.applymajorityinplace\"。\n请使用 @\"microsoft.quantum.arithmetic.applymajorityinplace\"。"
 - uid: microsoft.quantum.canon.inplacexorbe
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nInPlaceXorBE 已被弃用。 请改用 @ \"applyreversedopleca (applyxorinplace (值，_) ，目标) \"。\n此操作已被删除。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nInPlaceXorBE 已被弃用。 请改用 @ \"applyreversedopleca (applyxorinplace (值，_) ，目标) \"。\n此操作已被删除。"
 - uid: microsoft.quantum.canon.inplacexorle
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nInPlaceXorLE 已被弃用。 请改用 @\"microsoft.quantum.measurement.applyxorinplace\"。\n请使用 @\"Microsoft.Quantum.Measurement.ApplyXorInPlace\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nInPlaceXorLE 已被弃用。 请改用 @\"microsoft.quantum.measurement.applyxorinplace\"。\n请使用 @\"Microsoft.Quantum.Measurement.ApplyXorInPlace\"。"
 - uid: microsoft.quantum.canon.integerincrementle
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nIntegerIncrementLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.incrementbyinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.IncrementByInteger\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nIntegerIncrementLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.incrementbyinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.IncrementByInteger\"。"
 - uid: microsoft.quantum.canon.integerincrementphasele
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nIntegerIncrementPhaseLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.incrementphasebyinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.IncrementPhaseByInteger\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nIntegerIncrementPhaseLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.incrementphasebyinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.IncrementPhaseByInteger\"。"
 - uid: microsoft.quantum.canon.iteratethroughcartesianpower
   summary: 以整数范围的笛卡尔幂对每个索引应用操作。
 - uid: microsoft.quantum.canon.iteratethroughcartesianproduct
   summary: 对若干范围内笛卡尔积中的每个索引应用操作。
 - uid: microsoft.quantum.canon.modularaddproductle
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nModularAddProductLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.multiplyandaddbymodularinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.MultiplyAndAddByModularInteger\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nModularAddProductLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.multiplyandaddbymodularinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.MultiplyAndAddByModularInteger\"。"
 - uid: microsoft.quantum.canon.modularaddproductphasele
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nModularAddProductPhaseLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.multiplyandaddphasebymodularinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.MultiplyAndAddPhaseByModularInteger\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nModularAddProductPhaseLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.multiplyandaddphasebymodularinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.MultiplyAndAddPhaseByModularInteger\"。"
 - uid: microsoft.quantum.canon.modularincrementle
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nModularIncrementLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.modularincrementbyinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ModularIncrementByInteger\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nModularIncrementLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.modularincrementbyinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.ModularIncrementByInteger\"。"
 - uid: microsoft.quantum.canon.modularincrementphasele
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nModularIncrementPhaseLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.incrementphasebymodularinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.IncrementPhaseByModularInteger\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nModularIncrementPhaseLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.incrementphasebymodularinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.IncrementPhaseByModularInteger\"。"
 - uid: microsoft.quantum.canon.modularmultiplybyconstantle
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nModularMultiplyByConstantLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.multiplybymodularinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.MultiplyByModularInteger\"。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nModularMultiplyByConstantLE 已被弃用。 请改用 @\"microsoft.quantum.arithmetic.multiplybymodularinteger\"。\n请使用 @\"Microsoft.Quantum.Arithmetic.MultiplyByModularInteger\"。"
 - uid: microsoft.quantum.canon.multiplexoperations
   summary: >-
     应用由数值状态数组控制的操作的数组。
@@ -579,11 +611,11 @@ newtypes:
 - uid: microsoft.quantum.canon.ccnotop
   summary: CCNOT 入口的签名类型。
 - uid: microsoft.quantum.canon.resultstack
-  summary: "\n> [!WARNING]\n> 不推荐使用\n\nResultStack 已被弃用。"
+  summary: "\n> [!WARNING]\n> 已放弃\n\nResultStack 已被弃用。"
 metadata:
-  ms.openlocfilehash: 969eec6767f3323e0470b0e968051bafb92d29ae
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 7346d86d3ff9db2146f37a3f402b60faebe442b7
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89341558"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91464430"
