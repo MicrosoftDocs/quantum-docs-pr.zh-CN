@@ -67,9 +67,9 @@ typeParameters:
 seeAlso:
 - microsoft.quantum.canon.bound
 metadata:
-  ms.openlocfilehash: 07625092442a9c59cc8fa6799e3a43ea8c79bd5a
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: b2aefcaa3ee32b9a29679fbade2fea5dd5567ee3
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89356909"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91472249"

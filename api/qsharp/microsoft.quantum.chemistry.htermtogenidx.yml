@@ -22,9 +22,9 @@ output:
   - summary: 表示由表示的 Hamiltonian 术语的 GeneratorIndex `term` ，以及添加的附加信息 `termType` 。
     uid: microsoft.quantum.simulation.generatorindex
 metadata:
-  ms.openlocfilehash: 670f5dbc8a836f644fbd4f9ada01fa99e78d35c5
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 6d70f2b3ed2f162861492bf6db8fa6a2416d85e2
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89354087"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91478641"

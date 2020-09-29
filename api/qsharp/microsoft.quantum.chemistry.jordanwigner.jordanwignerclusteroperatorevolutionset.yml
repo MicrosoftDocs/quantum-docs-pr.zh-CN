@@ -14,9 +14,9 @@ output:
   - summary: 一个 `EvolutionSet` ，它将 `GeneratorIndex` JordanWigner 基础的映射到 "EvolutionUnitary"。
     uid: microsoft.quantum.simulation.evolutionset
 metadata:
-  ms.openlocfilehash: 65635fbf2dc0074d30a69bb2ee51793b325b2bcf
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: e02eaeab228b4693ff28f1d430d0a8901c60fba7
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89353900"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91478590"
