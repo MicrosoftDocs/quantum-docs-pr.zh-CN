@@ -27,9 +27,9 @@ typeParameters:
 - uid: "'U"
   summary: 对的第二个成员的类型。
 metadata:
-  ms.openlocfilehash: fcba34781aa3a39a0d1318f63e00291fff7883b8
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 99581ae97f56babc18c51480d7eb5a338b8438f0
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89356348"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91471314"

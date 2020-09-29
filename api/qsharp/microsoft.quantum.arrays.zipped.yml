@@ -1,0 +1,56 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.zipped
+name: Zipped
+type: function
+namespace: microsoft.quantum.arrays
+summary: 给定两个数组，返回一个新的对数组，以便每个对都包含来自每个原始数组的元素。
+examples: >-
+  ```qsharp
+
+  let left = [1, 3, 71];
+
+  let right = [false, true];
+
+  let pairs = Zipped(left, right); // [(1, false), (3, true)]
+
+  ```
+syntax: "function Zipped (left : 'T[], right : 'U[]) : ('T, 'U)[]"
+input:
+  content: "(left : 'T[], right : 'U[])"
+  types:
+  - name: left
+    summary: 一个数组，其中包含每个元组的第一个元素的值。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+  - name: right
+    summary: 一个数组，其中包含每个元组的第二个元素的值。
+    isArray: true
+    uid: "'U"
+    isLocal: true
+output:
+  content: ('T, 'U)[]
+  types:
+  - summary: 一个数组，其中包含每个的形式对 `(left[idx], right[idx])` `idx` 。 如果两个数组的长度不相等，则输出将与输入的较短内容相同。
+    isArray: true
+    types:
+    - uid: "'T"
+      isLocal: true
+    - uid: "'U"
+      isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: 左侧数组元素的类型。
+- uid: "'U"
+  summary: 右侧数组元素的类型。
+seeAlso:
+- microsoft.quantum.arrays.zipped3
+- microsoft.quantum.arrays.zipped4
+- microsoft.quantum.arrays.unzipped
+metadata:
+  ms.openlocfilehash: 933bf0d7f80436f0e942f84ad89b05ccd5c91620
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493429"

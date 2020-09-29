@@ -6,9 +6,9 @@ namespace: microsoft.quantum.errorcorrection
 summary: 表示 Calderbank –选定– Steane (CSS) 代码，该代码由其编码器、解码器定义，并分别表示和错误的症状度量过程 `X` `Z` 。
 syntax: newtype CSS = (Microsoft.Quantum.ErrorCorrection.EncodeOp, Microsoft.Quantum.ErrorCorrection.DecodeOp, Microsoft.Quantum.ErrorCorrection.SyndromeMeasOp, Microsoft.Quantum.ErrorCorrection.SyndromeMeasOp);
 metadata:
-  ms.openlocfilehash: ee80335b929e9c1e4ef5fc67dee03ad9dc99bd29
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: a12ae0fc8cf83d50e39a34ea4062c9abaa910fca
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89336628"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91484608"
