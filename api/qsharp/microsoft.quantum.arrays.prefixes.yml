@@ -1,0 +1,45 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.prefixes
+name: Prefixes
+type: function
+namespace: microsoft.quantum.arrays
+summary: >-
+  给定一个数组，返回其所有前缀。
+
+
+  返回一个数组，其中包含所有前缀（从仅具有第一个元素直到整个数组的数组开始）。
+examples: >-
+  ```Q#
+
+  let prefixes = Prefixes([23, 42, 144]);
+
+  // prefixes = [[23], [23, 42], [23, 42, 144]]
+
+  ```
+syntax: "function Prefixes (array : 'T[]) : 'T[][]"
+input:
+  content: "(array : 'T[])"
+  types:
+  - name: array
+    summary: 元素的数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T[][]"
+  types:
+  - isArray: true
+    types:
+    - isArray: true
+      uid: "'T"
+      isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: 元素的类型 `array` 。
+metadata:
+  ms.openlocfilehash: 185aa7119630dca7ff1d9fa890d64826f156a84b
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493524"

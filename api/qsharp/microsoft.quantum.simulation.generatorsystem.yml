@@ -13,9 +13,9 @@ syntax: newtype GeneratorSystem = (Int, (Int -> Microsoft.Quantum.Simulation.Gen
 seeAlso:
 - microsoft.quantum.canon.lookupfunction
 metadata:
-  ms.openlocfilehash: 30b2671a4be5f92ce28126353c6cdfae0e2f53fa
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 7300c446d7eaa666763d35f3d877285e019de8c6
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89330151"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91485016"

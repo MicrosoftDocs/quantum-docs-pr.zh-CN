@@ -1,0 +1,56 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.flatmapped
+name: FlatMapped
+type: function
+namespace: microsoft.quantum.arrays
+summary: 给定一个数组和一个将数组元素映射到某个输出数组的函数，将返回每个数组元素的串联输出数组。
+examples: >-
+  ```Q#
+
+  let Numbers = SequenceI(1, _); // generates numbers starting from 1
+
+  let values = FlatMapped(Numbers, [1, 2, 3]);
+
+  // values = [1, 1, 2, 1, 2, 3]
+
+  ```
+syntax: "function FlatMapped (mapper : ('TInput -> 'TOutput[]), array : 'TInput[]) : 'TOutput[]"
+input:
+  content: "(mapper : ('TInput -> 'TOutput[]), array : 'TInput[])"
+  types:
+  - name: mapper
+    summary: 用于 `'TInput` `'TOutput[]` 映射数组元素的的函数。
+    isFunction: true
+    input:
+      types:
+      - uid: "'TInput"
+        isLocal: true
+    output:
+      types:
+      - isArray: true
+        uid: "'TOutput"
+        isLocal: true
+  - name: array
+    summary: 元素的数组。
+    isArray: true
+    uid: "'TInput"
+    isLocal: true
+output:
+  content: "'TOutput[]"
+  types:
+  - summary: 数组， `'TOutput[]` 它是由映射函数生成的所有数组的串联。
+    isArray: true
+    uid: "'TOutput"
+    isLocal: true
+typeParameters:
+- uid: "'TInput"
+  summary: 元素的类型 `array` 。
+- uid: "'TOutput"
+  summary: '`mapper`函数返回此类型的数组。'
+metadata:
+  ms.openlocfilehash: 358e45ce25825b333def906411ff3b27607b1195
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493549"

@@ -14,9 +14,9 @@ output:
   - summary: 时间依赖于 (s) = $0 的时间依赖于所有 $s $ 的时间依赖生成器系统 $H。
     uid: microsoft.quantum.simulation.timedependentgeneratorsystem
 metadata:
-  ms.openlocfilehash: 9575abb8d8ffbe505cd1d299fe4aae411a9d1f74
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 9f8ebcc47327065ad897f9cea53ea80fa9aa57f1
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89329947"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91484846"

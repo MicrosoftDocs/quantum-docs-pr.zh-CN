@@ -1,0 +1,45 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.issorted
+name: IsSorted
+type: function
+namespace: microsoft.quantum.arrays
+summary: 给定数组，返回数组是否按给定比较函数的定义进行排序。
+remarks: 假定函数是 `comparison` 可传递的，因此，如果 `comparison(a, b)` 和，则 `comparison(b, c)` `comparison(a, c)` 假定为。 如果此属性不存在，则此函数的输出可能不正确。
+syntax: "function IsSorted (comparison : (('T, 'T) -> Bool), array : 'T[]) : Bool"
+input:
+  content: "(comparison : (('T, 'T) -> Bool), array : 'T[])"
+  types:
+  - name: comparison
+    summary: 比较两个元素的函数，如果为，则将 `a` 其视为小于或等于 `b` `comparison(a, b)` `true` 。
+    isFunction: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Bool
+  - name: array
+    summary: 要检查的数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: Bool
+  types:
+  - summary: '`true` 当且仅当对于每对元素 `a` 和 `b` 按顺序发生时 `array` ， `comparison(a, b)` 为 `true` 。'
+    isPrimitive: true
+    uid: Bool
+typeParameters:
+- uid: "'T"
+  summary: 的每个元素的类型 `array` 。
+metadata:
+  ms.openlocfilehash: 4cf457c3f53bd9acdcccf699d3c0047185953c9f
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493532"

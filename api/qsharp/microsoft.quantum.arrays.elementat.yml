@@ -1,0 +1,38 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.elementat
+name: ElementAt
+type: function
+namespace: microsoft.quantum.arrays
+summary: 返回数组中给定索引处的。
+examples: "获取四个著名整数序列中的第三个数字。  (请注意，0索引对应于序列的 _第一个_ 值。 ) \n\n```Q#\nlet lucas = [2, 1, 3, 4, 7, 11, 18, 29, 47, 76];\nlet prime = [2, 3, 5, 7, 11, 13, 17, 19, 23, 29];\nlet fibonacci = [0, 1, 1, 2, 3, 5, 8, 13, 21, 34];\nlet catalan = [1, 1, 2, 5, 14, 42, 132, 429, 1430, 4862];\nlet famous2 = Mapped(ElementAt<Int>(2, _), [lucas, prime, fibonacci, catalan]);\n// same as: famous2 = [3, 5, 1, 2]\n```"
+syntax: "function ElementAt (index : Int, array : 'T[]) : 'T"
+input:
+  content: "(index : Int, array : 'T[])"
+  types:
+  - name: index
+    summary: 元素的索引
+    isPrimitive: true
+    uid: Int
+  - name: array
+    summary: 要编制索引的数组。
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'T"
+  types:
+  - uid: "'T"
+    isLocal: true
+typeParameters:
+- uid: "'T"
+  summary: 的每个元素的类型 `array` 。
+seeAlso:
+- microsoft.quantum.arrays.lookupfunction
+- microsoft.quantum.arrays.elementsat
+metadata:
+  ms.openlocfilehash: e4fb0c0795658244b356094a24b1ee65573bdfd4
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493557"

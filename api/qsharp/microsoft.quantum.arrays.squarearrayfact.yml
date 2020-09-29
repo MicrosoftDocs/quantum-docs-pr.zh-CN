@@ -1,0 +1,52 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.squarearrayfact
+name: SquareArrayFact
+type: function
+namespace: microsoft.quantum.arrays
+summary: >-
+  表示二维数组具有正方形形状的条件
+
+
+  此函数断言数组中的每行都有多个元素，因为数组中有行 (元素) 。
+examples: >-
+  ```Q#
+
+  SquareArrayFact([[1, 2], [3, 4]], "Array is not a square");       // okay
+
+  SquareArrayFact([[1, 2, 3], [4, 5, 6]], "Array is not a square"); // will fail
+
+  SquareArrayFact([[1, 2], [3, 4, 5]], "Array is not a square");    // will fail
+
+  ```
+syntax: "function SquareArrayFact (array : 'T[][], message : String) : Unit"
+input:
+  content: "(array : 'T[][], message : String)"
+  types:
+  - name: array
+    summary: 二维元素数组
+    isArray: true
+    types:
+    - isArray: true
+      uid: "'T"
+      isLocal: true
+  - name: message
+    summary: 如果数组不是正方形数组，则为要打印的消息
+    isPrimitive: true
+    uid: String
+output:
+  content: Unit
+  types:
+  - isPrimitive: true
+    uid: Unit
+typeParameters:
+- uid: "'T"
+  summary: 的每个元素的类型 `array` 。
+seeAlso:
+- microsoft.quantum.arrays.rectangulararrayfact
+metadata:
+  ms.openlocfilehash: 3800c568ed1cee0c9d1e0a4c123b28cfe49280aa
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493509"

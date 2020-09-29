@@ -1,0 +1,66 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.arrays.cumulativefolded
+name: CumulativeFolded
+type: function
+namespace: microsoft.quantum.arrays
+summary: >-
+  将映射和折叠合并为一个函数
+
+
+  此函数 `fn` 通过数组来循环访问函数，从初始状态开始， `state` 返回所有中间值，不包括初始状态。
+examples: >-
+  ```Q#
+
+  // same as sums = [1, 3, 6, 10, 15]
+
+  let sums = CumulativeFolded(PlusI, 0, SequenceI(1, 5));
+
+  ```
+syntax: "function CumulativeFolded (fn : (('State, 'T) -> 'State), state : 'State, array : 'T[]) : 'State[]"
+input:
+  content: "(fn : (('State, 'T) -> 'State), state : 'State, array : 'T[])"
+  types:
+  - name: fn
+    summary: 要在数组上折叠的函数
+    isFunction: true
+    input:
+      types:
+      - uid: "'State"
+        isLocal: true
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - uid: "'State"
+        isLocal: true
+  - name: state
+    summary: 要折叠的初始状态
+    uid: "'State"
+    isLocal: true
+  - name: array
+    summary: 要折叠的值数组
+    isArray: true
+    uid: "'T"
+    isLocal: true
+output:
+  content: "'State[]"
+  types:
+  - summary: >-
+      所有中间状态，包括最终状态，但不包括初始状态。
+
+      输出数组的长度与相同 `array` 。
+    isArray: true
+    uid: "'State"
+    isLocal: true
+typeParameters:
+- uid: "'State"
+  summary: 函数操作的状态的类型 `fn` ，即接受作为其第一个输入并返回。
+- uid: "'T"
+  summary: 元素的类型 `array` 。
+metadata:
+  ms.openlocfilehash: 02779107bd5556a7f94e8a9ae2798cef98675221
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493573"

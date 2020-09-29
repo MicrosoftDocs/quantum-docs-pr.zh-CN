@@ -6,9 +6,9 @@ namespace: microsoft.quantum.chemistry.jordanwigner
 summary: '从 c # 传递到 Q # 以表示初始状态准备的数据的格式由所表示的数据的含义决定。'
 syntax: newtype JordanWignerInputState = ((Double, Double), Int[]);
 metadata:
-  ms.openlocfilehash: ae7c9ab056dd8c512063297828660b43b0afb022
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 34ecf539f793e213dea14c0620cd103e59c4fdcb
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89353764"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91478301"

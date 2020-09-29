@@ -1,0 +1,59 @@
+### YamlMime:QSharpType
+uid: microsoft.quantum.logical.lexographiccomparison
+name: LexographicComparison
+type: function
+namespace: microsoft.quantum.logical
+summary: 给定比较函数，将返回 lexographically 比较两个数组的新函数。
+remarks: >-
+  两个数组之间的 lexographic 比较 `xs` ， `ys` 由以下过程定义。 假设 and 都为 true，则这两个元素 `x` 和 `y` 都是等效的 `elementComparison(x, y)` `elementComparison(y, x)` 。
+
+
+  - 这两个数组都是逐个元素进行比较，直到第一对不等效的元素。 如果数组包含首先按照 lexographical 排序发生的元素，则该数组将 `elementComparison` 首先出现。
+
+  - 如果未找到任何 inequivalent 的元素，并且一个数组的长度超过另一个，则认为较短的数组将首先出现。
+syntax: "function LexographicComparison (elementComparison : (('T, 'T) -> Bool)) : (('T[], 'T[]) -> Bool)"
+input:
+  content: "(elementComparison : (('T, 'T) -> Bool))"
+  types:
+  - name: elementComparison
+    summary: 一个函数，它比较两个元素 `x` ，并 `y` 在 `x` 小于或等于时返回 `y` 。
+    isFunction: true
+    input:
+      types:
+      - uid: "'T"
+        isLocal: true
+      - uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Bool
+output:
+  content: (('T[], 'T[]) -> Bool)
+  types:
+  - summary: 一个函数，它比较两个数组 `xs` ， `ys` 并 `xs` `ys` 在 lexographical 排序之前或等于时返回。
+    isFunction: true
+    input:
+      types:
+      - isArray: true
+        uid: "'T"
+        isLocal: true
+      - isArray: true
+        uid: "'T"
+        isLocal: true
+    output:
+      types:
+      - isPrimitive: true
+        uid: Bool
+typeParameters:
+- uid: "'T"
+  summary: 要比较的数组元素的类型。
+seeAlso:
+- microsoft.quantum.arrays.sorted
+metadata:
+  ms.openlocfilehash: c7b1ec454d7a87c344b0297007dff32fb6ee07a6
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91493585"
