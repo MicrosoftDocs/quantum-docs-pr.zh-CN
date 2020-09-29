@@ -2,19 +2,19 @@
 title: 量子计算机和量子模拟器
 description: 了解有关量子硬件、量子模拟器以及量子操作工作原理的信息。
 author: bradben
-ms.author: bradben
+ms.author: v-benbra
 ms.date: 5/5/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.simulators
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 299baea75865a4f0ece6b490cef3301dd2a672ac
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 8691838b2d6c54baa40042245eee8c901a7ca965
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867703"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90835003"
 ---
 # <a name="quantum-computers-and-quantum-simulators"></a>量子计算机和量子模拟器
 
@@ -33,7 +33,7 @@ ms.locfileid: "87867703"
 
 ## <a name="quantum-simulators"></a>量子模拟器
 
-在经典计算机上运行的量子模拟器使你可以在量子系统上模拟量子算法的执行。  Microsoft Quantum 开发工具包 (QDK) 包含一个完整状态向量模拟器以及其他专用量子模拟器。
+在经典计算机上运行的量子模拟器使你可以在量子系统上模拟量子算法的运行。  Microsoft Quantum 开发工具包 (QDK) 包含一个完整状态向量模拟器以及其他专用量子模拟器。
 
 ## <a name="topological-qubit"></a>拓扑量子比特
 

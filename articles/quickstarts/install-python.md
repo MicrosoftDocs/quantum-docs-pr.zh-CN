@@ -1,20 +1,21 @@
 ---
 title: 使用 Q# 和 Python 进行开发
+description: 了解如何使用 Python 创建 Q# 应用程序。
 author: bradben
-ms.author: bradben
-ms.date: 5/30/2020
+ms.author: v-benbra
+ms.date: 8/20/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.python
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 01a5c31a7a920a69f4f90701d370f3a772d2c4d2
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: f6a2a7d1888cfe458fa3989a27d71fcdeed0f01f
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866734"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834153"
 ---
 # <a name="develop-with-no-locq-and-python"></a>使用 Q# 和 Python 进行开发
 
@@ -55,7 +56,7 @@ ms.locfileid: "87866734"
     pip install qsharp
     ```
 
-1. 安装 IQ#，它是 Jupyter 和 Python 使用的内核，提供用于编译和执行 Q# 操作的核心功能。
+1. 安装 IQ#，它是 Jupyter 和 Python 使用的内核，提供用于编译和运行 Q# 操作的核心功能。
 
     ```dotnetcli
     dotnet tool install -g Microsoft.Quantum.IQSharp
@@ -73,7 +74,7 @@ ms.locfileid: "87866734"
     
 ***
 
-就这么简单！ 你现在有了 `qsharp` Python 包和 Jupyter 的 IQ# 内核，它为用 Python 来编译和执行 Q# 操作提供了核心功能，你还可通过它使用 Q# Jupyter Notebooks。
+就这么简单！ 你现在有了 `qsharp` Python 包和 Jupyter 的 IQ# 内核，它为用 Python 来编译和运行 Q# 操作提供了核心功能，你还可通过它使用 Q# Jupyter Notebooks。
 
 ## <a name="choose-your-ide"></a>选择 IDE
 
@@ -88,7 +89,7 @@ ms.locfileid: "87866734"
 
 ## <a name="write-your-first-no-locq-program"></a>编写你的第一个 Q# 程序
 
-你现可通过编写和执行简单的 Q# 程序来验证 `qsharp` Python 包安装项。
+你现可通过编写和运行简单的 Q# 程序来验证 `qsharp` Python 包安装项。
 
 1. 通过创建名为 `Operation.qs` 的文件并向其添加以下代码来创建最小 Q# 操作：
 
@@ -109,11 +110,11 @@ ms.locfileid: "87866734"
     python host.py
     ```
 
-1. 应会看到所调用的操作的结果。 在本例中，由于操作会生成一个随机结果，因此你将看到屏幕上输出 `0` 或 `1`。 如果重复执行该程序，则每个结果显示的时间大约减半。
+1. 应会看到所调用的操作的结果。 在本例中，由于操作会生成一个随机结果，因此你将看到屏幕上输出 `0` 或 `1`。 如果重复运行该程序，则每个结果显示的时间大约减半。
 
 > [!NOTE]
 > * Python 代码只是普通的 Python 程序。 你可使用任何 Python 环境（包括基于 Python 的 Jupyter Notebooks）来编写 Python 程序和调用 Q# 操作。 Python 程序可从 Python 代码本身所在的文件夹中的任意 .qs 文件导入 Q# 操作。
 
 ## <a name="next-steps"></a>后续步骤
 
-在首选环境中安装量子开发工具包之后，可按照本教程编写并运行[你的第一个量子程序](xref:microsoft.quantum.quickstarts.qrng)。
+在首选环境中测试量子开发工具包之后，可按照本教程编写并运行[你的第一个量子程序](xref:microsoft.quantum.quickstarts.qrng)。

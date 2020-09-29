@@ -1,24 +1,27 @@
 ---
 title: 使用 Q# 应用程序进行开发
-author: KittyYeungQ
-ms.author: kitty
-ms.date: 4/24/2020
+description: 了解如何创建从命令提示符运行的 Q# 应用程序。
+author: bradben
+ms.author: v-benbra
+ms.date: 8/20/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.standalone
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a630b2307f5d95321fb26f480d7a441ddba846fc
-ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+ms.openlocfilehash: 68f530d80e5c5f40dc2bcbb185879c3cb6f93f91
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89358252"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834408"
 ---
 # <a name="develop-with-no-locq-applications"></a>使用 Q# 应用程序进行开发
 
-Q# 程序可自己执行，无需采用 C#、F# 或 Python 等主机语言的驱动程序。
+按照你的环境所对应的选项卡上的说明操作。
+
+Q# 程序可自己运行，无需采用 C#、F# 或 Python 等主机语言的驱动程序。
 
 ## <a name="prerequisites"></a>先决条件
 
@@ -45,7 +48,7 @@ Q# 程序可自己执行，无需采用 C#、F# 或 Python 等主机语言的驱
 3. 现可启动新环境，通过 [VS Codespaces Cloud IDE](https://online.visualstudio.com/environments) 在浏览器中开始开发。 或者，可使用 VS Code 的本地安装并将 Codespaces 用作[远程环境](https://docs.microsoft.com/visualstudio/online/how-to/vscode)。
 
 
-若要为另一环境安装 QDK，请在命令提示符处输入：
+若要为另一环境安装 QDK，请在命令提示符处输入以下内容：
 
 ```dotnetcli
 dotnet new -i Microsoft.Quantum.ProjectTemplates
@@ -63,14 +66,14 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 2. 单击“独立控制台应用程序”。
 3. 导航到项目的保存位置，然后单击“创建项目”。
 4. 成功创建项目后，单击右下方的“打开新项目…”。
-        
+
 检查项目。 你应该会看到一个名为 `Program.qs` 的源文件，该文件是一个 Q# 程序，用于定义将消息输出到控制台的简单操作。
 
 运行应用程序：
+
 1. 单击“终端” -> “新终端” 。
 2. 在终端提示符下，输入 `dotnet run`。
 3. 应在输出窗口 `Hello quantum world!` 中看到以下文本
-
 
 > [!NOTE]
 > VS Code Q# 扩展当前不支持具有多个根文件夹的工作区。 如果一个 VS Code 工作区中具有多个项目，则所有项目都必须包含在同一个根文件夹中。
@@ -80,6 +83,7 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 创建 Q# `Hello World` 应用程序来验证 Visual Studio 安装。
 
 若要创建新的 Q# 应用程序：
+
 1. 打开 Visual Studio，单击“文件” -> “新建” -> “项目”  。
 2. 在“搜索”框中键入 `Q#`，选择“Q# 应用程序”，然后单击“下一步” 。
 3. 输入应用程序的“名称”和“位置”，然后单击“创建”。
@@ -88,6 +92,7 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 检查项目。 你应该会看到一个名为 `Program.qs` 的源文件，该文件是一个 Q# 程序，用于定义将消息输出到控制台的简单操作。
 
 运行应用程序：
+
 1. 选择“调试” -> “在不调试的情况下启动”。
 2. 应该会看到打印到控制台窗口的文本 `Hello quantum world!`。
 
@@ -105,11 +110,13 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
     ```
 
 1. 创建新的应用程序：
+
     ```dotnetcli
     dotnet new console -lang Q# -o runSayHello
     ```
 
 1. 导航到应用程序目录：
+
     ```dotnetcli
     cd runSayHello
     ```
@@ -117,6 +124,7 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
     该目录现在应该会包含一个 `Program.qs` 文件，它是 Q# 程序，用于定义将消息输出到控制台的简单操作。 你可使用文本编辑器来修改此模板，并用你自己的量子应用程序来覆盖它。 
 
 1. 运行该程序：
+
     ```dotnetcli
     dotnet run
     ```

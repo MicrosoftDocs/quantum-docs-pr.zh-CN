@@ -2,23 +2,23 @@
 title: 什么是 Q# 编程语言和 QDK？
 description: 了解 Microsoft Quantum 开发工具包、Q# 编程语言以及量子程序的创建方式。
 author: bradben
-ms.author: bradben
+ms.author: v-benbra
 ms.date: 5/5/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.q-sharp
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 5db574b0380ffa1616cb3959d84925854df4e321
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 21adfcc1c5321d87665adb39a3c838bbda0b8861
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88863776"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834561"
 ---
 # <a name="what-are-the-no-locq-programming-language-and-qdk"></a>什么是 Q# 编程语言和 QDK？
 
-Q# 是用于开发和运行量子算法的 Microsoft 开放源代码编程语言。 它是 Quantum 开发工具包 (QDK) 的一部分，其中包括 [Q#Q# 库](xref:microsoft.quantum.libraries)、[量子模拟器](xref:microsoft.quantum.machines)、[其他编程环境的扩展](xref:microsoft.quantum.install)和 [API 文档](xref:microsoft.quantum.standardlibsintro)。 除了标准 Q# 库，QDK 还包括化学库、机器学习库和数字库。
+Q# 是用于开发和运行量子算法的 Microsoft 开放源代码编程语言。 它是 Quantum 开发工具包 (QDK) 的一部分，其中包括 [Q#Q# 库](xref:microsoft.quantum.libraries)、[量子模拟器](xref:microsoft.quantum.machines)、[其他编程环境的扩展](xref:microsoft.quantum.install)和 [API 文档](xref:microsoft.quantum.apiref-intro)。 除了标准 Q# 库，QDK 还包括化学库、机器学习库和数字库。
 
 作为一种编程语言，Q# 从 Python、C# 和 F# 中汲取了熟悉的元素，并支持使用循环、if/then 语句和常用数据类型编写程序的基本过程模型。 它还介绍了新的特定于量子的数据结构和操作。
 
@@ -54,7 +54,7 @@ Q# 程序可编译为独立的应用程序，也可由使用 Python 或 .NET 语
 
 在模拟器中隔离 Q# 代码可确保算法遵循量子物理学定律，还确保这些算法可在量子计算机上正确运行。
 
-![qsharp-code-flow](~/media/qsharp-code-flow.png)
+![Qsharp 代码流](~/media/qsharp-code-flow.png)
 
 ## <a name="how-do-i-use-the-qdk"></a>如何使用 QDK？
 

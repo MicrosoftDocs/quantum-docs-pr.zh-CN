@@ -2,23 +2,23 @@
 title: 了解量子计算
 description: 什么是量子计算机，量子计算机如何运用量子力学原理？
 author: bradben
-ms.author: bradben
+ms.author: v-benbra
 ms.date: 5/5/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.understanding
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 214fe809aaeba759005fa76ba3615f376d402bc9
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 332afb4ea7de01da5d8f22fee6517032ed4f9fc1
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866955"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834986"
 ---
 # <a name="understanding-quantum-computing"></a>了解量子计算
 
-量子计算运用量子力学原理来处理信息。 因此，量子计算需要的方法不同于经典计算。  这种差异的一个例子是量子计算机中使用的处理器。  经典计算机使用熟悉的硅材料芯片，而量子计算机使用原子、离子、光子或电子等量子材料。  
+量子计算运用量子力学原理来处理信息。 因此，量子计算需要的方法不同于经典计算。 这种差异的一个例子是量子计算机中使用的处理器。 经典计算机使用熟悉的硅材料芯片，而量子计算机使用原子、离子、光子或电子等量子系统。 它们使用其量子属性来表示可以在 1 和 0 的不同量子叠加中准备的位。  
 
 量子材料的行为符合量子力学定律，并且利用概率计算、叠加和纠缠等概念。 这些概念为利用量子计算解决复杂问题的量子算法提供了基础。 本文介绍了量子计算所基于的一些量子力学基本概念。
 

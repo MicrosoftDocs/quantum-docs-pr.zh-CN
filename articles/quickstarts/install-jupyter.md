@@ -1,29 +1,27 @@
 ---
 title: 使用 Jupyter Notebooks 开发 Q#
+description: 了解如何使用 Jupyter Notebooks 创建 Q# 应用程序。
 author: bradben
-ms.author: bradben
-ms.date: 5/30/2020
+ms.author: v-benbra
+ms.date: 8/20/2020
 ms.topic: article
 ms.custom: how-to
 uid: microsoft.quantum.install.jupyter
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 10b1faafa70c87a99ea09916e2c386b32f9a570f
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: 51de510907ea087d1f23d3ff65d268d6d455a493
+ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866802"
+ms.lasthandoff: 09/21/2020
+ms.locfileid: "90834306"
 ---
 # <a name="develop-with-no-locq-jupyter-notebooks"></a>使用 Jupyter Notebooks 开发 Q#
 
 在 Q# Jupyter 笔记本上安装用于开发 Q# 操作的 QDK。
 
-Jupyter Notebook 支持在包含说明、注释和其他内容的情况下就地执行代码。 此环境非常适合编写包含嵌入式说明的 Q# 代码或量子计算交互式教程。 下面是开始创建自己的 Q# 笔记本时需要执行的操作。
-
-> [!NOTE]
-> * 在 Q# Jupyter Notebooks 中，只能运行 Q# 代码，不能从外部主机程序（例如 Python 或 C# 文件）调用操作。 如果你的目标是将外部传统主机程序与量子程序结合，则此环境不适合。
+Jupyter Notebook 支持在包含说明、注释和其他内容的情况下就地计算代码。 此环境非常适合编写包含嵌入式说明的 Q# 代码或量子计算交互式教程。 下面是开始创建自己的 Q# 笔记本时需要执行的操作。
 
 ## <a name="install-the-ino-locq-jupyter-kernel"></a>安装 IQ# Jupyter 内核
 
@@ -62,22 +60,22 @@ IQ#（发音为 i-q-sharp）是主要由 Jupyter 和 Python 使用的 .NET Core 
     dotnet iqsharp install
     ```
 
-    > [!NOTE]
-    > 如果在 `dotnet iqsharp install` 步骤中遇到错误，请打开新的终端窗口，然后重试。
-    > 如果仍有问题，请尝试查找安装的 `dotnet-iqsharp` 工具（在 Windows 上为 `dotnet-iqsharp.exe`）并运行：
-    > ```
-    > /path/to/dotnet-iqsharp install --user --path-to-tool="/path/to/dotnet-iqsharp"
-    > ```
-    > 其中 `/path/to/dotnet-iqsharp` 应替换为文件系统中 `dotnet-iqsharp` 工具的绝对路径。
-    > 通常，该工具在用户配置文件文件夹中的 `.dotnet/tools` 下。
+> [!NOTE]
+> 如果在 `dotnet iqsharp install` 步骤中遇到错误，请打开新的终端窗口，然后重试。
+> 如果仍有问题，请尝试查找安装的 `dotnet-iqsharp` 工具（在 Windows 上为 `dotnet-iqsharp.exe`）并运行：
+> ```
+> /path/to/dotnet-iqsharp install --user --path-to-tool="/path/to/dotnet-iqsharp"
+> ```
+> 其中 `/path/to/dotnet-iqsharp` 应替换为文件系统中 `dotnet-iqsharp` 工具的绝对路径。
+> 通常，该工具在用户配置文件文件夹中的 `.dotnet/tools` 下。
     
 ***
 
-就这么简单！ 你现在有了 Jupyter 的 IQ# 内核，它为用 Q# Jupyter Notebooks 来编译和执行 Q# 操作提供了核心功能。
+就这么简单！ 你现在有了 Jupyter 的 IQ# 内核，它为用 Q# Jupyter Notebooks 来编译和运行 Q# 操作提供了核心功能。
 
 ## <a name="create-your-first-no-locq-notebook"></a>创建你的第一个 Q# 笔记本
 
-你现可通过编写和执行简单的 Q# 操作来验证 Q# Jupyter Notebook 安装项。
+你现可通过编写和运行简单的 Q# 操作来验证 Q# Jupyter Notebook 安装项。
 
 1. 从在安装期间创建的环境（即创建的 conda 环境或安装了 Jupyter 的 Python 环境），运行以下命令来启动 Jupyter Notebook 服务器：
 
@@ -97,11 +95,11 @@ IQ#（发音为 i-q-sharp）是主要由 Jupyter 和 Python 使用的 .NET Core 
 
     应在单元格的输出中看到 `SampleQuantumRandomNumberGenerator`。 在 Jupyter Notebook 中运行时，将编译 Q# 代码，并且单元格将输出找到的所有操作的名称。
 
-1. 在新单元格中，使用 `%simulate` 命令执行刚刚创建的操作（在模拟器中）：
+1. 在新单元格中，使用 `%simulate` 命令运行刚刚创建的操作（在模拟器中）：
 
     ![包含 %simulate magic 的 Jupyter Notebook 单元格](~/media/install-guide-jupyter-simulate.png)
 
-    应会看到所调用的操作的结果。 在本例中，由于操作会生成一个随机结果，因此你将看到屏幕上输出 `Zero` 或 `One`。 如果重复执行该单元格，则每个结果显示的时间大约减半。
+    应会看到所调用的操作的结果。 在本例中，由于操作会生成一个随机结果，因此你将看到屏幕上输出 `Zero` 或 `One`。 如果重复运行该单元格，则每个结果显示的时间大约减半。
 
 ## <a name="next-steps"></a>后续步骤
 
