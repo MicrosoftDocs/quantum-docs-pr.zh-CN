@@ -43,9 +43,9 @@ seeAlso:
 - microsoft.quantum.canon.restrictedtosubregisterc
 - microsoft.quantum.canon.restrictedtosubregisterca
 metadata:
-  ms.openlocfilehash: 7ea69915655d6366a12f4f4df0379f338a0215c2
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: d205c9468bc0509d4ce6af8a8924775cc7088878
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89355481"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91470379"

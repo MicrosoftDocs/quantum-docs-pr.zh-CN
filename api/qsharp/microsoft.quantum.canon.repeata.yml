@@ -56,9 +56,9 @@ seeAlso:
 - microsoft.quantum.canon.repeatc
 - microsoft.quantum.canon.repeatca
 metadata:
-  ms.openlocfilehash: b805943a2d85e62fd5f8b27664b51dbed5409fc1
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: b412859d05ae39fad798e7e0a2034c6eb7aee2df
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89355634"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91470481"

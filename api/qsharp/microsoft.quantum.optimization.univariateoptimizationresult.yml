@@ -6,9 +6,9 @@ namespace: microsoft.quantum.optimization
 summary: 表示优化单变量函数的结果。
 syntax: newtype UnivariateOptimizationResult = (Double, Double);
 metadata:
-  ms.openlocfilehash: 73e34a2eb575fab4323379db32d36f3b2ca9c612
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 24b4569140c03bcbe9fcf08630e7a8a512c72439
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89332157"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91491561"

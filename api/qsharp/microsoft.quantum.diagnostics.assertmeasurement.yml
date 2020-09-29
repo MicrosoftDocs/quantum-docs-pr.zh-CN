@@ -38,9 +38,9 @@ functors:
 seeAlso:
 - microsoft.quantum.diagnostics.assertmeasurementprobability
 metadata:
-  ms.openlocfilehash: 8e48ecb3d430469fce3bf7571557f89db2d92b9e
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: dc2b16f7f3b9998991221e504a6968f557965e7e
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89337695"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91483555"
