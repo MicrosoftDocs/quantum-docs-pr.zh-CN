@@ -40,9 +40,9 @@ output:
 seeAlso:
 - microsoft.quantum.canon.applyseriesofops
 metadata:
-  ms.openlocfilehash: ec920b0d28efd650701a59e26e1dae8c4902582c
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: c597a308ab0a162aa5fc3865d055e30dedc9b780
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89358065"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91472725"
