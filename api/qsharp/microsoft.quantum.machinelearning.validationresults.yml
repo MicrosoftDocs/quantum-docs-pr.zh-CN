@@ -6,9 +6,9 @@ namespace: microsoft.quantum.machinelearning
 summary: 根据一组示例验证了分类器后得到的结果。
 syntax: newtype ValidationResults = (Int, Int);
 metadata:
-  ms.openlocfilehash: 3a4395506ab3c9c8bbceda4e0028d9791106eb10
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 4e948bc6d41c6fe1ee31b6a5c7bf1760636dd70b
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89335438"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91490014"

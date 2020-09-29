@@ -50,9 +50,9 @@ functors:
 seeAlso:
 - microsoft.quantum.canon.applytofirsttwoqubits
 metadata:
-  ms.openlocfilehash: 7cff8317350e0e9d0cd36033d89c3e2d283ec83e
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: ea65a7cccd7f8d206d872c890bbc0ccc541dc950
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89357385"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91472453"

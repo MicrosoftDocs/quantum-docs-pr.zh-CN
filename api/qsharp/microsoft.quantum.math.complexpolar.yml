@@ -10,9 +10,9 @@ summary: >-
   复数的极坐标表示形式为 $c = r e ^ {i t} $。
 syntax: newtype ComplexPolar = (Double, Double);
 metadata:
-  ms.openlocfilehash: 4d990a1dfa3bf89bc7b9f9d5bfb07a76e6fbaa74
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 620cdada3ff58dbefe48e1c56ab366bd084c0a95
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89344244"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91489861"
