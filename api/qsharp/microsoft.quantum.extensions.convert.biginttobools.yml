@@ -18,9 +18,9 @@ output:
     isPrimitive: true
     uid: Bool
 metadata:
-  ms.openlocfilehash: 0956bc89d99026fb130f11861afe16aaa5cc4571
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 0ae83dd155fc6672115e6b3b34696de52c94c290
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89349293"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91486427"
