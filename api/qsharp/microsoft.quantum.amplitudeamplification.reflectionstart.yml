@@ -16,9 +16,9 @@ output:
 seeAlso:
 - microsoft.quantum.canon.reflectionoracle
 metadata:
-  ms.openlocfilehash: f79d2b494a407e5d6d9cb750794823ea2faa8302
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: a1c2f7e531902c8b4672d59bed55264b04e74f02
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89340266"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91463648"

@@ -10,9 +10,9 @@ remarks: >-
   [ G.H. 低，I. L。 语， https://arxiv.org/abs/1707.05391 ]。
 syntax: newtype RotationPhases = Double[];
 metadata:
-  ms.openlocfilehash: 6973d50061626f87fb57cf54e0abff0caf73c411
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 70e54e108f963cb426963c8cc89a014926d4726f
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89340249"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91463631"
