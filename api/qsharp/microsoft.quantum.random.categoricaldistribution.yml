@@ -33,9 +33,9 @@ output:
   - summary: '`i`带有概率的索引 `probs[i] / sum` ，其中 `sum` 是给定的和的总和 `probs` `Fold(PlusD, 0.0, probs)` 。'
     uid: microsoft.quantum.random.discretedistribution
 metadata:
-  ms.openlocfilehash: a298d84d177c15d67d9d1ec24c8f6a9c11f1cd8b
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 035c8921e1be0a9f90850fac47d8f323809e354d
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89331103"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91465960"

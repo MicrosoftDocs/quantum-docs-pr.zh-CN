@@ -52,9 +52,9 @@ functors:
 seeAlso:
 - microsoft.quantum.synthesis.applyxcontrolledontruthtablewithcleantarget
 metadata:
-  ms.openlocfilehash: d07c1ae20f133d1215d1f6b0cdbd07a635039dda
-  ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
+  ms.openlocfilehash: bf402e6c44db1a1332c9d4396eae821e657d1c18
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/17/2020
-  ms.locfileid: "90759350"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91482381"

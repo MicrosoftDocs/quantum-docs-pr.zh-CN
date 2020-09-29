@@ -18,9 +18,9 @@ output:
   types:
   - uid: microsoft.quantum.canon.resultstack
 metadata:
-  ms.openlocfilehash: 25cb7710bb4825e867679addebb6db4c04049d71
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: a8aae005fdd28f3574e7f5f9cd5f7e9778b9aa56
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89355039"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91469988"

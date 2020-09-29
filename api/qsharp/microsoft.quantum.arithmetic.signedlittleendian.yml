@@ -6,9 +6,9 @@ namespace: microsoft.quantum.arithmetic
 summary: Little endian (中存储的带符号整数的类型，请参阅 LittleEndian) 。
 syntax: newtype SignedLittleEndian = Microsoft.Quantum.Arithmetic.LittleEndian;
 metadata:
-  ms.openlocfilehash: 202d5c9fa4dfe43caa62d728f913d88733af246b
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 150f7ef0bb21c4641bdfbada97c9385ae4b69b2d
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89352771"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91476074"

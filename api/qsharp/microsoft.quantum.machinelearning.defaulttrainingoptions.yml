@@ -23,9 +23,9 @@ output:
   - summary: 训练分类器时使用的一组合理的默认定型选项。
     uid: microsoft.quantum.machinelearning.trainingoptions
 metadata:
-  ms.openlocfilehash: 5f9882b1067851fc206e302310657f9bf64cea3f
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: c9b8b4c444885c2f8c9ad7cc2c874cc80fc0991d
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89344754"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91490235"

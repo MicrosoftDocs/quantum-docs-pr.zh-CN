@@ -36,9 +36,9 @@ output:
 seeAlso:
 - microsoft.quantum.drawrandomdouble
 metadata:
-  ms.openlocfilehash: 9d9674e5d876117c5c9bbb9edb1a34b93470a96a
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: c1e513b4cfd4ff79a991174203b79b2b430f7af9
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89330933"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91466031"
