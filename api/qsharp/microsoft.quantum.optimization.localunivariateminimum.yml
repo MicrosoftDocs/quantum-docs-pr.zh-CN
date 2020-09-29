@@ -39,9 +39,9 @@ output:
   - summary: 给定函数的本地 optima，位于给定边界内。
     uid: microsoft.quantum.optimization.univariateoptimizationresult
 metadata:
-  ms.openlocfilehash: bd777d1a335a2a11acd269dde32d73764b68cf9c
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 1cb3588d3761b2eab1c8c14b7c6fcebdc077662a
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89332191"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91491578"
