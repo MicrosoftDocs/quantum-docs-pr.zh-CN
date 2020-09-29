@@ -44,9 +44,9 @@ seeAlso:
 - microsoft.quantum.canon.applyifonea
 - microsoft.quantum.canon.applyifoneca
 metadata:
-  ms.openlocfilehash: ed8054c7d110db9abbeb72ae5f00ac7e669795ec
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: 34e33863bd85b13a1c541d1b64b5705b880d6233
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89350126"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91473014"

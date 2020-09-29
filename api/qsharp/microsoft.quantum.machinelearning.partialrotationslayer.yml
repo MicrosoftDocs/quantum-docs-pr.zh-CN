@@ -24,9 +24,9 @@ output:
     isArray: true
     uid: microsoft.quantum.machinelearning.controlledrotation
 metadata:
-  ms.openlocfilehash: 9264e2e76aecac2d49bd7e53098fcd19d58294d6
-  ms.sourcegitcommit: d6ac6f4345be0dd68f1bcd944f44b08e7a3cf346
+  ms.openlocfilehash: f50486de9e41202dce87b2c1f5334b0098c0f81d
+  ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "89335778"
+  ms.lasthandoff: 09/29/2020
+  ms.locfileid: "91490048"
