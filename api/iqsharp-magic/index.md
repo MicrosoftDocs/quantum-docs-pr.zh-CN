@@ -3,14 +3,14 @@ title: IQ# Magic 命令
 author: rmshaffer
 uid: microsoft.quantum.iqsharp.magic-ref.index
 ms.author: rmshaffer
-ms.date: 08/25/2020
+ms.date: 09/29/2020
 ms.topic: article
-ms.openlocfilehash: d6bf8407e40be092689b38cf90514c88f798cc2f
-ms.sourcegitcommit: 75c4edc7c410cc63dc8352e2a5bef44b433ed188
+ms.openlocfilehash: 934ab18b667797d09d2c8188f727e64b0017e1d5
+ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88862967"
+ms.lasthandoff: 09/29/2020
+ms.locfileid: "91464668"
 ---
 # <a name="iq-magic-commands"></a>IQ# Magic 命令
 | Magic 命令 | 总结 |
