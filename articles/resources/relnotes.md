@@ -9,12 +9,12 @@ uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 28e880445bf61150d7940730009a5482298adae2
-ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+ms.openlocfilehash: 27038a86dc4854c397458d95529aca463d493fd6
+ms.sourcegitcommit: d98190988ff03146d9ca2b0d325870cd717d729a
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91492347"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91771335"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -23,6 +23,12 @@ ms.locfileid: "91492347"
 有关安装说明，请参阅[安装指南](xref:microsoft.quantum.install)。
 
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
+
+## <a name="version-01220100504"></a>版本0.12.20100504
+
+*发布日期：2020年10月5日*
+
+此版本修复了影响笔记本加载的 bug Q# (参阅 [iqsharp # 331](https://github.com/microsoft/iqsharp/pull/331)) 。
 
 ## <a name="version-01220092803"></a>版本0.12.20092803
 
@@ -66,7 +72,7 @@ ms.locfileid: "91492347"
 
 此版本包含以下各项：
 
-- 笔记本中打开 Q# 的命名空间现在可供将来的所有单元计算使用。 例如，这样就可以在笔记本顶部的单元中打开一次命名空间，而无需在每个代码单元格中打开相关的命名空间。 新的 `%lsopen` 幻命令显示当前打开的命名空间的列表。
+- 当前在笔记本中打开的命名空间在 Q# 运行以后的所有单元时均可用。 例如，这样就可以在笔记本顶部的单元中打开一次命名空间，而无需在每个代码单元格中打开相关的命名空间。 新的 `%lsopen` 幻命令显示当前打开的命名空间的列表。
 
 请参阅适用于[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed)、[编译器](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+is%3Aclosed)、[运行时](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+is%3Aclosed)、[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed)、 [I Q# ](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+is%3Aclosed)和[Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+is%3Aclosed)的已关闭 pr 的完整列表。  
 
