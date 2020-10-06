@@ -9,12 +9,12 @@ uid: microsoft.quantum.numerics.usage
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 474fc74b9c92fbf28c0618a3090905d025699d32
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: dfcb8e9e5a15d0881750d67cf58d7ad47cbecd3a
+ms.sourcegitcommit: 897ace8b506adb2331e911ee5633dceced566174
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87868791"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91764129"
 ---
 # <a name="using-the-numerics-library"></a>使用数字库
 
@@ -37,9 +37,9 @@ open Microsoft.Quantum.Arithmetic;
 
 1. **`LittleEndian`**：表示整数的 qubit 数组 `qArr : Qubit[]` ，其中 `qArr[0]` 表示最小有效位。
 1. **`SignedLittleEndian`**：与相同 `LittleEndian` ，只不过它表示以两个补码形式存储的带符号整数。
-1. **`FixedPoint`**：表示包含 qubit 数组的实数 `qArr2 : Qubit[]` 和一个二进制点位置 `pos` ，该位置计算二进制点左侧的二进制位数。 `qArr2`的存储方式与相同 `SignedLittleEndian` 。
+1. **`FixedPoint`**：表示包含 qubit 数组的实数 `qArr2 : Qubit[]` 和一个二进制点位置 `pos` ，该位置计算二进制点左侧的二进制位数。 `qArr2` 的存储方式与相同 `SignedLittleEndian` 。
 
-## <a name="operations"></a>Operations
+## <a name="operations"></a>操作
 
 上述三种类型的操作都可用：
 
@@ -67,7 +67,7 @@ open Microsoft.Quantum.Arithmetic;
     - 倒数 (1/x) 
     -  (传统双) 度量值
 
-有关这些操作的详细信息和详细信息，请参阅 Q# 库参考文档，网址为[docs.microsoft.com](https://docs.microsoft.com/quantum)
+有关这些操作的详细信息和详细信息，请参阅 Q# 库参考文档，网址为 [docs.microsoft.com](https://docs.microsoft.com/quantum)
 
 ## <a name="sample-integer-addition"></a>示例：整数加法
 
@@ -95,7 +95,7 @@ operation TestMyAddition(xValue : Int, yValue : Int, n : Int) : Unit {
 
 若要在量程计算机上评估平滑功能，如 $ \sin (x) $，其中 $x $ 是一个量程 `FixedPoint` 号，量子开发工具包数字库将提供操作 `EvaluatePolynomialFxP` 和 `Evaluate[Even/Odd]PolynomialFxP` 。
 
-第一种是，可 `EvaluatePolynomialFxP` 计算 $ $ P (x) = a_0 + a_1x + a_2x ^ 2 + \cdots + a_dx ^ d，$ $ 其中 $d $ 表示*度*的多项式。 为此，所需的全部都是多项式系数 `[a_0,..., a_d]` (类型 `Double[]`) 、输入 `x : FixedPoint` 和输出 `y : FixedPoint` (最初为零) ：
+第一种是，可 `EvaluatePolynomialFxP` 计算 $ $ P (x) = a_0 + a_1x + a_2x ^ 2 + \cdots + a_dx ^ d，$ $ 其中 $d $ 表示 *度*的多项式。 为此，所需的全部都是多项式系数 `[a_0,..., a_d]` (类型 `Double[]`) 、输入 `x : FixedPoint` 和输出 `y : FixedPoint` (最初为零) ：
 ```qsharp
 EvaluatePolynomialFxP([1.0, 2.0], x, y);
 ```
@@ -114,13 +114,13 @@ EvaluateOddPolynomialFxP([1.0, 2.0], x, y);
 
 ## <a name="more-samples"></a>更多示例
 
-可以在[主示例存储库](https://github.com/Microsoft/Quantum)中找到更多示例。
+可以在 [主示例存储库](https://github.com/Microsoft/Quantum)中找到更多示例。
 
 若要开始，请克隆存储库并打开 `Numerics` 子文件夹：
 
 ```bash
 git clone https://github.com/Microsoft/Quantum.git
-cd Quantum/Numerics
+cd Quantum/samples/numerics
 ```
 
 然后， `cd` 加入其中一个示例文件夹，并通过
