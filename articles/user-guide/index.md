@@ -9,12 +9,12 @@ uid: microsoft.quantum.guide
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f0680e773c8233d6c4f1acb742b3cc38dbc069d5
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 81f31a531a1b50ead332bb578ccf392ddced9e8d
+ms.sourcegitcommit: d98190988ff03146d9ca2b0d325870cd717d729a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834748"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91771379"
 ---
 # <a name="the-no-locq-user-guide"></a>Q# 用户指南
 
@@ -55,7 +55,7 @@ ms.locfileid: "90834748"
 
 ### <a name="quantum-simulators-and-resource-estimators"></a>量子模拟器和资源估算器
 
-- [量子模拟器和主机应用程序](xref:microsoft.quantum.machines)：概述了不同的可用模拟器，以及主机程序与目标计算机之间的常规运行模型。
+- [量子模拟器和主机应用程序](xref:microsoft.quantum.machines)：概述了不同的可用模拟器，简要介绍了主机程序和目标计算机如何搭配使用来运行 Q# 程序。
 
 - [全状态模拟器](xref:microsoft.quantum.machines.full-state-simulator)：模拟完整量子状态的目标计算机。 适用于完全运行或调试规模更小的程序（不超过几十个量子位）
 

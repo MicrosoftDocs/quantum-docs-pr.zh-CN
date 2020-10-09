@@ -9,12 +9,12 @@ uid: microsoft.quantum.machines.qc-trace-simulator.intro
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 54a1f63461cfcc8146f7dc4d18d321238d77454d
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 7f5e25aa7b58277642783e03d03854cd75ff4ca3
+ms.sourcegitcommit: d98190988ff03146d9ca2b0d325870cd717d729a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833358"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91771288"
 ---
 # <a name="microsoft-quantum-development-kit-qdk-quantum-trace-simulator"></a>Microsoft Quantum 开发工具包 (QDK) 量子跟踪模拟器
 
@@ -86,7 +86,7 @@ QDK 包括五个工具。你可以将这些工具与量子跟踪模拟器一起�
 |-----| -----|
 |[不同输入检查器](xref:microsoft.quantum.machines.qc-trace-simulator.distinct-inputs) |检查是否与共享量子位存在潜在冲突 |
 |[失效的量子位使用检查器](xref:microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits)  |检查程序是否已将操作应用到已释放的量子位 |
-|[基元操作计数器](xref:microsoft.quantum.machines.qc-trace-simulator.primitive-counter)  | 计算在量子程序中调用的每个操作所使用的基元进程的数目  |
+|[基元操作计数器](xref:microsoft.quantum.machines.qc-trace-simulator.primitive-counter)  | 计算在量子程序中调用的每个操作所使用的基元的数目  |
 |[深度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)  |收集的计数表示在量子程序中调用的每个操作的深度的下限   |
 |[宽度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.width-counter)  |计算量子程序中每个操作所分配和借用的量子位数目 |
 

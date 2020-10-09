@@ -1,3 +1,5 @@
+- name: 通过 MS Learn 掌握技能
+  href: 'https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals/'
 - name: 术语表
   href: glossary.md
 - name: 参与编写 QDK
