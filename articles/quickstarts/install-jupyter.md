@@ -10,18 +10,18 @@ uid: microsoft.quantum.install.jupyter
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 51de510907ea087d1f23d3ff65d268d6d455a493
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: b34d89ab33a4644c1dd4342949685f9bf84babd8
+ms.sourcegitcommit: d98190988ff03146d9ca2b0d325870cd717d729a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834306"
+ms.lasthandoff: 10/06/2020
+ms.locfileid: "91771387"
 ---
 # <a name="develop-with-no-locq-jupyter-notebooks"></a>使用 Jupyter Notebooks 开发 Q#
 
 在 Q# Jupyter 笔记本上安装用于开发 Q# 操作的 QDK。
 
-Jupyter Notebook 支持在包含说明、注释和其他内容的情况下就地计算代码。 此环境非常适合编写包含嵌入式说明的 Q# 代码或量子计算交互式教程。 下面是开始创建自己的 Q# 笔记本时需要执行的操作。
+Jupyter Notebook 支持在包含说明、注释和其他内容的情况下就地运行代码。 此环境非常适合编写包含嵌入式说明的 Q# 代码或量子计算交互式教程。 下面是开始创建自己的 Q# 笔记本时需要执行的操作。
 
 ## <a name="install-the-ino-locq-jupyter-kernel"></a>安装 IQ# Jupyter 内核
 
