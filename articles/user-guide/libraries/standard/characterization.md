@@ -9,12 +9,12 @@ ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 8dddc15354c32808e7ad1310bce233ee3dc93fe8
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 51e7b3bcf4402a4d0ba5647643f284e9f10c3bb3
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835632"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92692149"
 ---
 # <a name="quantum-characterization-and-statistics"></a>量程特性和统计信息 #
 
@@ -39,7 +39,7 @@ ms.locfileid: "90835632"
 以下建议的每个方法都使用不同的策略来设计试验，并使用不同的数据处理方法来了解这一阶段。  它们各自具有独特的优势，包括严格的错误界限、合并先前信息的能力、容忍错误或在内存 limitted 传统计算机上运行。
 
 在讨论迭代阶段估计时，我们会将一个单一 $U $ 指定为一个黑色的操作。
-如 " [数据结构](xref:microsoft.quantum.libraries.data-structures)中的 oracles" 一节中所述，canon 通过由 Q# <xref:microsoft.quantum.oracles.discreteoracle> 元组类型定义的用户定义类型来模拟此类操作 `((Int, Qubit[]) => Unit : Adjoint, Controlled)` 。
+如 " [数据结构](xref:microsoft.quantum.libraries.data-structures)中的 oracles" 一节中所述，canon 通过由 Q# <xref:Microsoft.Quantum.Oracles.DiscreteOracle> 元组类型定义的用户定义类型来模拟此类操作 `((Int, Qubit[]) => Unit : Adjoint, Controlled)` 。
 具体而言，如果 `U : DiscreteOracle` 为，则 `U(m)` 实现 $U ^ m $ `m : Int` 。
 
 使用此定义时，每个迭代阶段估计步骤会在 $ \ket{+} $ 状态中准备一个辅助 qubit，并将其假定)  ($U [为 "](xref:microsoft.quantum.concepts.matrix-advanced) " 的初始状态 $ \ket{\phi} $，即 $U () \ket{\phi} = e ^ {im\phi} \ 票证 {\ phi} $。  
@@ -99,7 +99,7 @@ Bayesian 阶段估算的理念非常简单。
 为此，我们想要了解 $x $ $n $ 位变量。
 之前的分发 $ \Pr (x) $ 支持 $x $ 的 $ 2 ^ n $ 假设值。
 这意味着，如果需要对 $x $ 进行非常准确的估计，Bayesian 阶段估计可能需要内存和处理时间不高。
-对于某些应用程序，如量程模拟，所需的 limitted 准确性不会排除这样的方法。其他应用程序（如选定的算法）在其阶段估算步骤内不能使用精确的 Bayesian 推理。  出于此原因，我们还提供了近似 Bayesian 方法（如 [随机审核阶段估算 (RWPE) ](xref:microsoft.quantum.research.characterization.randomwalkphaseestimation) ）的实现，还提供了不 Bayesian 的方法，例如 [可靠的阶段估算](xref:microsoft.quantum.characterization.robustphaseestimation)。
+对于某些应用程序，如量程模拟，所需的 limitted 准确性不会排除这样的方法。其他应用程序（如选定的算法）在其阶段估算步骤内不能使用精确的 Bayesian 推理。  出于此原因，我们还提供了近似 Bayesian 方法（如 [随机审核阶段估算 (RWPE) ](xref:Microsoft.Quantum.Research.Characterization.RandomWalkPhaseEstimation) ）的实现，还提供了不 Bayesian 的方法，例如 [可靠的阶段估算](xref:Microsoft.Quantum.Characterization.RobustPhaseEstimation)。
 
 ### <a name="robust-phase-estimation"></a>可靠阶段估算 ###
 
@@ -112,14 +112,14 @@ Bayesian 阶段估算的理念非常简单。
 其他相关的详细信息包括：仅 $1 $ ancilla qubit 的小空间开销，或该过程是非自适应，这意味着所需的量程试验顺序与中间测量结果无关。 在此示例中，如果选择阶段估算算法非常重要，其中一项应引用文档（如和）， @"microsoft.quantum.characterization.robustphaseestimation" 以获取有关详细信息及其实现的详细信息。
 
 > [!TIP]
-> 在许多示例中，使用了可靠的阶段估算。 有关提取各个物理系统的地面状态能量的阶段估算，请参阅[ **H2 模拟**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/h2/command-line)、 [ **SimpleIsing**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/simple)和[ **Hubbard 模型**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/hubbard)。
+> 在许多示例中，使用了可靠的阶段估算。 有关提取各个物理系统的地面状态能量的阶段估算，请参阅 [ **H2 模拟** 示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/h2/command-line)、 [ **SimpleIsing** 示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/simple)和 [ **Hubbard 模型** 示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/hubbard)。
 
 
 ### <a name="continuous-oracles"></a>连续 Oracles ###
 
-我们还可以从上述 oracle 模型通用化，以允许按 canon 类型建模的连续时间 oracles <xref:microsoft.quantum.oracles.continuousoracle> 。
+我们还可以从上述 oracle 模型通用化，以允许按 canon 类型建模的连续时间 oracles <xref:Microsoft.Quantum.Oracles.ContinuousOracle> 。
 请考虑不要使用单个单一运算符 $U $，而是将一个单一运算符系列 $U (t) $ for $t \in \mathbb{R} $，$U ()  () $ = $U () $。
-这是一个比离散大小写更弱的语句，因为我们可以 <xref:microsoft.quantum.oracles.discreteoracle> 通过 \, 对某些固定的 $ \delta t $ 限制 $t = m \delta t $ 来构造。
+这是一个比离散大小写更弱的语句，因为我们可以 <xref:Microsoft.Quantum.Oracles.DiscreteOracle> 通过 \, 对某些固定的 $ \delta t $ 限制 $t = m \delta t $ 来构造。
 按 [石头的定理](https://en.wikipedia.org/wiki/Stone%27s_theorem_on_one-parameter_unitary_groups)，$U (t) = \exp (对于某个运算符) $ $H $，其中 $ \exp $ 为矩阵指数，如 [高级矩阵](xref:microsoft.quantum.concepts.matrix-advanced)中所述。
 Eigenstate $ \ket{\phi} $ of $H $，因此 $H \ket{\phi} = \phi \ket{\phi} $ 还 $U (t) $ for all $t $，eigenstate U (t) \begin{equation} = e ^ {i \ket{\phi} t} \phi \ket{\phi}。
 \end{equation}
@@ -146,14 +146,14 @@ Q# 提供了一种非常有用的 Bayesian 阶段估算，旨在通过对从迭�
 
 与 canon 一起提供的每个阶段估计操作 Q# 都采用一组不同的输入，参数化从最终估计 $ \hat{\phi} $ 中所需的质量。
 但这些不同的输入都有多个共同的输入，因此，部分应用程序的质量参数导致公共签名。
-例如， <xref:microsoft.quantum.characterization.robustphaseestimation> 在下一部分中讨论的操作具有以下签名：
+例如， <xref:Microsoft.Quantum.Characterization.RobustPhaseEstimation> 在下一部分中讨论的操作具有以下签名：
 
 ```qsharp
 operation RobustPhaseEstimation(bitsPrecision : Int, oracle : DiscreteOracle, eigenstate : Qubit[])  : Double
 ```
 
 `bitsPrecision`输入对于 `RobustPhaseEstimation` 、和都是唯一 `oracle` 的 `eigenstate` 。
-因此，如 **H2Sample**中所示，操作可以接受具有表单输入的迭代阶段估算算法， `(DiscreteOracle, Qubit[]) => Unit` 以允许用户指定任意阶段估算算法：
+因此，如 **H2Sample** 中所示，操作可以接受具有表单输入的迭代阶段估算算法， `(DiscreteOracle, Qubit[]) => Unit` 以允许用户指定任意阶段估算算法：
 
 ```qsharp
 operation H2EstimateEnergy(

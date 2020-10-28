@@ -9,12 +9,12 @@ uid: microsoft.quantum.machines.qc-trace-simulator.depth-counter
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 8280783adfcc2867c3a598a6f57d827125aadcfd
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 89d8a2c9f2ecd5c5332215cd4307bcf4a6422036
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833454"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92692099"
 ---
 # <a name="quantum-trace-simulator-depth-counter"></a>量程跟踪模拟器：深度计数器
 
@@ -23,13 +23,13 @@ ms.locfileid: "90833454"
 
 ## <a name="depth-values"></a>深度值
 
-默认情况下，除**0** `T` 操作（深度为**1**）外，所有操作的深度均为0。 这意味着，在默认情况下，只 `T` 会计算操作深度 (通常需要) 。 深度计数器聚合并收集操作的 [调用关系图](https://en.wikipedia.org/wiki/Call_graph)的所有边缘上的统计信息。
+默认情况下，除 **0** `T` 操作（深度为 **1** ）外，所有操作的深度均为0。 这意味着，在默认情况下，只 `T` 会计算操作深度 (通常需要) 。 深度计数器聚合并收集操作的 [调用关系图](https://en.wikipedia.org/wiki/Call_graph)的所有边缘上的统计信息。
 
-所有 <xref:microsoft.quantum.intrinsic> 操作都以单 qubit 循环、 <xref:microsoft.quantum.intrinsic.t> 操作、qubit Clifford 操作、 <xref:microsoft.quantum.intrinsic.cnot> 操作和多 qubit Pauli 可观察量的度量来表示。 用户可以通过的字段设置每个基元操作的深度 `gateTimes` <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 。
+所有 <xref:Microsoft.Quantum.Intrinsic> 操作都以单 qubit 循环、 <xref:Microsoft.Quantum.Intrinsic.T> 操作、qubit Clifford 操作、 <xref:Microsoft.Quantum.Intrinsic.CNOT> 操作和多 qubit Pauli 可观察量的度量来表示。 用户可以通过的字段设置每个基元操作的深度 `gateTimes` <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 。
 
 ## <a name="invoking-the-depth-counter"></a>调用深度计数器
 
-若要使用深度计数器运行量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将其 `UseDepthCounter` 属性设置为 **true**，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。 
+若要使用深度计数器运行量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将其 `UseDepthCounter` 属性设置为 **true** ，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。 
 
 ```csharp
 var config = new QCTraceSimulatorConfiguration();
@@ -52,7 +52,7 @@ operation ApplySampleWithCCNOT() : Unit {
 }
 ```
 
-若要检查 `CCNOT` 是否具有 `T` 深度 **5** 并 `ApplySampleWithCCNOT` 具有 `T` 深度 **6**，请使用以下 c # 代码：
+若要检查 `CCNOT` 是否具有 `T` 深度 **5** 并 `ApplySampleWithCCNOT` 具有 `T` 深度 **6** ，请使用以下 c # 代码：
 
 ```csharp
 using Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators;
@@ -73,7 +73,7 @@ double tDepthAll = sim.GetMetric<ApplySampleWithCCNOT>(DepthCounter.Metrics.Dept
 string csvSummary = sim.ToCSV()[MetricsCountersNames.depthCounter];
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - 量程开发工具包 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro) 概述。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>API 参考。

@@ -9,12 +9,12 @@ uid: microsoft.quantum.guide.operationsfunctions
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: e9a84de2753bc3293f441e66ee53e78559263e5c
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 55e6d3e1a242386c46213083692377520df83a80
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833487"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92692127"
 ---
 # <a name="operations-and-functions-in-no-locq"></a>中的操作和函数 Q#
 
@@ -32,7 +32,7 @@ ms.locfileid: "90833487"
 
 每个操作都使用一个输入，生成一个输出，并为一个或多个专用操作指定实现。
 本文的不同部分详细说明了可能的专用化，以及如何定义和调用它们。
-现在，请考虑以下操作，该操作仅定义默认的主体特殊化并使用单个 qubit 作为其输入，然后对 <xref:microsoft.quantum.intrinsic.x> 该输入调用内置操作：
+现在，请考虑以下操作，该操作仅定义默认的主体特殊化并使用单个 qubit 作为其输入，然后对 <xref:Microsoft.Quantum.Intrinsic.X> 该输入调用内置操作：
 
 ```qsharp
 operation BitFlip(target : Qubit) : Unit {
@@ -46,7 +46,7 @@ operation BitFlip(target : Qubit) : Unit {
 `Unit``void`在 c # 和其他命令式语言中使用方式类似，并且等效于 `unit` F # 和其他功能语言。
 
 操作还可以返回比更有趣 `Unit` 的类型。
-例如， <xref:microsoft.quantum.intrinsic.m> 操作返回类型的输出，该输出 `Result` 表示已执行了一个度量值。  可以将其从操作传递到另一个操作，或将其与 `let` 关键字一起使用来定义新变量。
+例如， <xref:Microsoft.Quantum.Intrinsic.m> 操作返回类型的输出，该输出 `Result` 表示已执行了一个度量值。  可以将其从操作传递到另一个操作，或将其与 `let` 关键字一起使用来定义新变量。
 
 此方法允许表示在较低级别与量程操作交互的传统计算，如 [superdense 编码](https://github.com/microsoft/QuantumKatas/tree/main/SuperdenseCoding)：
 
@@ -65,13 +65,13 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 
 > [!NOTE]
 > 中的每个操作 Q# 都只采用一个输入，并只返回一个输出。
-> 多个输入和输出使用元组表示，这些 *元组*将多个值一起收集到单个值中。
+> 多个输入和输出使用元组表示，这些 *元组* 将多个值一起收集到单个值中。
 > 在这种情况下， Q# 是 "元组" 语言。
 > 按照此概念，应将一组空括号 `()` 作为 "empty" 元组（类型为）进行读取 `Unit` 。
 
 ## <a name="controlled-and-adjoint-operations"></a>受控和 Adjoint 操作
 
-如果操作实现了单一转换，就像在中执行许多操作一样 Q# ，然后可以定义操作在 *adjointed* 或 *控制*时的行为方式。 操作的 *adjoint* 专用化指定操作的 "反转" 的行为方式，而 *受控* 专用化指定操作在其应用程序的应用程序在特定量程寄存器状态下运行时的行为方式。
+如果操作实现了单一转换，就像在中执行许多操作一样 Q# ，然后可以定义操作在 *adjointed* 或 *控制* 时的行为方式。 操作的 *adjoint* 专用化指定操作的 "反转" 的行为方式，而 *受控* 专用化指定操作在其应用程序的应用程序在特定量程寄存器状态下运行时的行为方式。
 
 量程操作的 Adjoints 对量程计算的许多方面都至关重要。 有关在一种有用的编程方法中讨论的这种情况的示例 Q# ，请参阅 [控制流：语态](xref:microsoft.quantum.guide.controlflow#conjugations)。 操作的受控版本是新操作，仅当所有控件 qubits 都处于指定状态时，才会有效地应用基本操作。
 如果控件 qubits 在 superposition 中，则会将基本操作一致应用到 superposition 的相应部分。
@@ -88,7 +88,7 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 
 ### <a name="calling-operation-specializations"></a>调用专用操作
 
-中*functor*的函子 Q# 是一个工厂，它定义了其他操作的新操作。
+中 *functor* 的函子 Q# 是一个工厂，它定义了其他操作的新操作。
 中的两个标准函子 Q# 是 `Adjoint` 和 `Controlled` 。
 
 在定义新操作的实现时，函子有权访问基操作的实现。
@@ -139,7 +139,7 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 
 在前面的示例中的第一个操作声明中，操作 `BitFlip` 和 `DecodeSuperdense` 分别定义为签名 `(Qubit => Unit)` 和 `((Qubit, Qubit) => (Result, Result))` 。
 `DecodeSuperdense`这并不是一个单一的操作，因此，它不是一种单一操作，因此，不能 adjoint 特殊化， (重新调用此类操作返回) 的相关要求 `Unit` 。
-但是， `BitFlip` 只需执行单一 <xref:microsoft.quantum.intrinsic.x> 操作，即可将其定义为专用化。
+但是， `BitFlip` 只需执行单一 <xref:Microsoft.Quantum.Intrinsic.X> 操作，即可将其定义为专用化。
 
 本节详细介绍了如何在操作声明中包括特殊化的存在性 Q# ，从而使它们能够与 `Adjoint` 或函子一起调用 `Controlled` 。
 若要详细了解它是有效的或无效的声明特定专用化的某些情况，请参阅本文中 [的有效定义专用](#circumstances-for-validly-defining-specializations) 化的情况。
@@ -202,7 +202,7 @@ Q# 操作可以包含以下显式专用化声明：
 操作特殊化包含专业化标记 (例如， `body` 或 `adjoint`) 后跟以下其中之一：
 
 - 如下所述的显式声明。
-- 告诉编译器*如何*生成专用化的*指令*，可以是：
+- 告诉编译器 *如何* 生成专用化的 *指令* ，可以是：
   - `intrinsic`，它指示目标计算机提供专用化。
   - `distribute`，与和专用化一起使用 `controlled` `controlled adjoint` 。
     当与一起使用时 `controlled` ，它指示编译器应通过将应用 `Controlled` 到中的所有操作来计算特殊化 `body` 。
@@ -368,7 +368,7 @@ function ConjugateUnitaryWith(
 
 函数在中是纯粹确定性的传统例程 Q# ，不同于操作，因为它们不允许在计算输出值之前有任何影响。
 特别是，函数不能调用操作;操作、分配或借用 qubits;示例随机数;否则，依赖于输入值超出函数的状态。
-因此， Q# 函数是 *纯*的，因为它们始终将相同的输入值映射到相同的输出值。
+因此， Q# 函数是 *纯* 的，因为它们始终将相同的输入值映射到相同的输出值。
 此行为允许 Q# 编译器在生成操作专用化时，对调用函数的方式和时间进行安全重新排序。
 
 每个 Q# 源文件都可以定义任意数量的函数。
@@ -401,7 +401,7 @@ function DotProduct(a : Double[], b : Double[]) : Double {
 
 ### <a name="classical-logic-in-functions--good"></a>函数 = = 良好中的传统逻辑
 
-只要有可能，就可以根据函数（而不是操作）编写传统逻辑，使操作能够更轻松地使用它。 例如，如果您已编写了前面的 `Square` 声明作为 *运算*，则编译器不能保证使用相同的输入调用它会一致地生成相同的输出。
+只要有可能，就可以根据函数（而不是操作）编写传统逻辑，使操作能够更轻松地使用它。 例如，如果您已编写了前面的 `Square` 声明作为 *运算* ，则编译器不能保证使用相同的输入调用它会一致地生成相同的输出。
 
 为了下划线函数和操作之间的差异，请考虑经典在操作中采样随机数字的问题 Q# ：
 
@@ -415,7 +415,7 @@ operation U(target : Qubit) : Unit {
 
 每次 `U` 调用时，它将对执行不同的操作 `target` 。
 特别是，如果您将一个专用化声明添加到，则该编译器无法保证，它作为 `adjoint auto` `U` 一种 `U(target); Adjoint U(target);` 无操作)  (。
-这违反了在 [向量和矩阵](xref:microsoft.quantum.concepts.vectors)中定义的 adjoint 的定义，使编译器能够在调用操作的操作中自动生成 adjoint 特殊化，这 <xref:microsoft.quantum.math.randomreal> 会破坏编译器提供的保证; <xref:microsoft.quantum.math.randomreal> 是不存在 adjoint 或受控版本的操作。
+这违反了在 [向量和矩阵](xref:microsoft.quantum.concepts.vectors)中定义的 adjoint 的定义，使编译器能够在调用操作的操作中自动生成 adjoint 特殊化，这 <xref:Microsoft.Quantum.Math.RandomReal> 会破坏编译器提供的保证; <xref:Microsoft.Quantum.Math.RandomReal> 是不存在 adjoint 或受控版本的操作。
 
 另一方面，允许函数调用（如） `Square` 是安全的，并确保编译器仅需保留输入以 `Square` 保持其输出稳定。
 因此，将尽可能多的传统逻辑隔离到函数中，可以轻松地在其他函数和操作中重复使用该逻辑。
@@ -467,7 +467,7 @@ function MapDoublesToStrings(fn : (Double -> String), values : Double[]) : Strin
 但是，这种情况很难产生这种情况，因为您没有为编译器提供所需的信息来识别的不同版本 `Map` 是如何相关的。
 实际上，你希望编译器将 `Map` 类型中的某种数学函数视为 Q# *types* Q# 函数。
 
-Q# 通过允许函数和操作具有 *类型参数*，以及其普通元组参数，实现了这一概念的形式。
+Q# 通过允许函数和操作具有 *类型参数* ，以及其普通元组参数，实现了这一概念的形式。
 在前面的示例中，您希望在 `Map` 第一种情况下将类型形参视为 `Int, Pauli` ， `Double, String` 在第二种情况下。
 大多数情况下，使用这些类型参数，如同它们是普通类型。 使用类型参数的值来生成数组和元组，调用函数和操作，并将其分配给普通或可变变量。
 
@@ -536,9 +536,9 @@ Q#标准库提供了一系列这样的类型参数化操作和函数，使更高
 [ Q# 标准库指南](xref:microsoft.quantum.libraries.standard.intro)中进一步讨论了这些情况。
 
 
-## <a name="callables-as-first-class-values"></a>Callables 作为第一类值
+## <a name="callables-as-first-class-values"></a>Callables 作为 First-Class 值
 
-使用函数（而不是操作）对控制流和传统逻辑的推理的一项重要技巧是，使用中的操作和函数是 Q# *第一类*。
+使用函数（而不是操作）对控制流和传统逻辑的推理的一项重要技巧是，使用中的操作和函数是 Q# *第一类* 。
 也就是说，它们本身就是语言中的每个值。
 例如，下面是一个非常有效的 Q# 代码，如果是间接的：
 
@@ -549,7 +549,7 @@ operation FirstClassExample(target : Qubit) : Unit {
 }
 ```
 
-`ourH`上一个代码段中的变量的值就是操作 <xref:microsoft.quantum.intrinsic.h> ，因此可以像任何其他操作一样调用该值。
+`ourH`上一个代码段中的变量的值就是操作 <xref:Microsoft.Quantum.Intrinsic.H> ，因此可以像任何其他操作一样调用该值。
 利用此功能，您可以编写将操作作为其输入的一部分执行的操作，形成更高顺序的控制流概念。
 例如，你可能想要通过将其应用到同一个目标 qubit 来 "正方形" 的操作。
 
@@ -589,7 +589,7 @@ function TeleporationDecoderForMessage(hereBit : Result, thereBit : Result)
 
 ## <a name="partial-application"></a>部分应用程序
 
-通过使用 *部分应用程序*返回操作的函数，你可以更多地执行此操作，在该应用程序中，你可以向函数或操作提供一个或多个输入部分，而无需实际调用它。 在前面的 `ApplyTwice` 示例中，您可以指示您不希望立即指定输入操作应应用到的 qubit：
+通过使用 *部分应用程序* 返回操作的函数，你可以更多地执行此操作，在该应用程序中，你可以向函数或操作提供一个或多个输入部分，而无需实际调用它。 在前面的 `ApplyTwice` 示例中，您可以指示您不希望立即指定输入操作应应用到的 qubit：
 
 ```qsharp
 operation PartialApplicationExample(op : (Qubit => Unit), target : Qubit) : Unit {

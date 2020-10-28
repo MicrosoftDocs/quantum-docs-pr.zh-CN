@@ -9,12 +9,12 @@ ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: dad0db4d2aab27e5ae46d4df10ee050f785d8bb8
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 94251e185cea65c5fc08ed70d5fba9b7b19501e3
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835547"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92692033"
 ---
 # <a name="error-correction"></a>错误更正 #
 
@@ -61,7 +61,7 @@ ms.locfileid: "90835547"
 | $X_2$ | $ \ket {001} $ | $ \ket {110} $ | $+$ | $-$ |
 
 因此，两个度量值的结果可唯一确定发生了哪个位翻转错误，但不会泄漏有关所编码的状态的任何信息。
-我们将这些结果称为 "不 *症状*"，并参阅将一个症状映射回导致其 *恢复*的错误的过程。
+我们将这些结果称为 "不 *症状* "，并参阅将一个症状映射回导致其 *恢复* 的错误的过程。
 特别是，我们强调，恢复是一种 *传统* 的推理过程，该过程会将发生的症状作为其输入，并返回一个指示，说明如何修复可能发生的任何错误。
 
 > [!NOTE]
@@ -70,7 +70,7 @@ ms.locfileid: "90835547"
 > 同样，应用阶段翻转操作 `Z` 会将 $ \ket{\overline {1} } $ 映射到 $-\ket{\overline {1} } $，因此会将 $ \ket{\overline{+}} $ 映射到 $ \ket{\overline {-} } $。
 > 通常，可以创建代码来处理更多错误，并处理 $Z $ 个错误以及 $X $ 个错误。
 
-对于在所有代码状态下以相同方式操作的量程错误更正，我们可以对其进行描述，这就是 *稳定的形式*。
+对于在所有代码状态下以相同方式操作的量程错误更正，我们可以对其进行描述，这就是 *稳定的形式* 。
 Q#Canon 提供了一个框架，用于描述从稳定程序代码进行的编码和解码，并描述了一个从错误中恢复的方法。
 在本部分中，我们使用几个简单的量程纠错代码描述此框架及其应用程序。
 
@@ -82,14 +82,14 @@ Q#Canon 提供了一个框架，用于描述从稳定程序代码进行的编码
 
 为了帮助指定错误更正代码， Q# canon 提供了几种不同的用户定义类型：
 
-- <xref:microsoft.quantum.errorcorrection.logicalregister>`= Qubit[]`：表示 qubits 的寄存器应解释为纠错代码的代码块。
-- <xref:microsoft.quantum.errorcorrection.syndrome>`= Result[]`：表示度量结果的数组应解释为在代码块上测量的症状。
-- <xref:microsoft.quantum.errorcorrection.recoveryfn>`= (Syndrome -> Pauli[])`：表示*传统*函数应用于解释症状并返回应应用的更正。
-- <xref:microsoft.quantum.errorcorrection.encodeop>`= ((Qubit[], Qubit[]) => LogicalRegister)`：表示操作使用表示数据的 qubits 和全新的 ancilla qubits，以生成错误更正代码的代码块。
-- <xref:microsoft.quantum.errorcorrection.decodeop>`= (LogicalRegister => (Qubit[], Qubit[]))`：表示一个操作，分解将错误更正代码的代码块转换为数据 qubits，并使用 ancilla qubits 表示症状信息。
-- <xref:microsoft.quantum.errorcorrection.syndromemeasop>`= (LogicalRegister => Syndrome)`：表示一个操作，该操作应用于从代码块中提取症状信息，而不会影响由代码保护的状态。
+- <xref:Microsoft.Quantum.ErrorCorrection.LogicalRegister>`= Qubit[]`：表示 qubits 的寄存器应解释为纠错代码的代码块。
+- <xref:Microsoft.Quantum.ErrorCorrection.Syndrome>`= Result[]`：表示度量结果的数组应解释为在代码块上测量的症状。
+- <xref:Microsoft.Quantum.ErrorCorrection.RecoveryFn>`= (Syndrome -> Pauli[])`：表示 *传统* 函数应用于解释症状并返回应应用的更正。
+- <xref:Microsoft.Quantum.ErrorCorrection.EncodeOp>`= ((Qubit[], Qubit[]) => LogicalRegister)`：表示操作使用表示数据的 qubits 和全新的 ancilla qubits，以生成错误更正代码的代码块。
+- <xref:Microsoft.Quantum.ErrorCorrection.DecodeOp>`= (LogicalRegister => (Qubit[], Qubit[]))`：表示一个操作，分解将错误更正代码的代码块转换为数据 qubits，并使用 ancilla qubits 表示症状信息。
+- <xref:Microsoft.Quantum.ErrorCorrection.SyndromeMeasOp>`= (LogicalRegister => Syndrome)`：表示一个操作，该操作应用于从代码块中提取症状信息，而不会影响由代码保护的状态。
 
-最后，canon 提供 <xref:microsoft.quantum.errorcorrection.qecc> 类型以收集定义量程错误更正代码所需的其他类型。 与每个稳定量程代码相关联的代码长度为： $ $n $、逻辑 qubits 的数字 $k $，$d $，最小距离 $，通常以表示法⟦ $n $，$k $，$d $ ⟧。 例如， <xref:microsoft.quantum.errorcorrection.bitflipcode> 函数定义⟦3，1，1⟧位翻转代码：
+最后，canon 提供 <xref:Microsoft.Quantum.ErrorCorrection.QECC> 类型以收集定义量程错误更正代码所需的其他类型。 与每个稳定量程代码相关联的代码长度为： $ $n $、逻辑 qubits 的数字 $k $，$d $，最小距离 $，通常以表示法⟦ $n $，$k $，$d $ ⟧。 例如， <xref:Microsoft.Quantum.ErrorCorrection.BitFlipCode> 函数定义⟦3，1，1⟧位翻转代码：
 
 ```qsharp
 let encodeOp = EncodeOp(BitFlipEncoder);
@@ -104,7 +104,7 @@ let code = QECC(encodeOp, decodeOp, syndMeasOp);
 请注意，该 `QECC` 类型 *不* 包含恢复功能。
 这样，我们就可以更改在更正错误时使用的恢复功能，而无需更改代码本身的定义;此功能在将信息从特征度量纳入到恢复所假定的模型时特别有用。
 
-以这种方式定义代码后，可以使用该 <xref:microsoft.quantum.errorcorrection.recover> 操作从错误中恢复：
+以这种方式定义代码后，可以使用该 <xref:Microsoft.Quantum.ErrorCorrection.Recover> 操作从错误中恢复：
 
 ```qsharp
 let code = BitFlipCode();

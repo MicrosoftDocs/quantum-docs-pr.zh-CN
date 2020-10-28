@@ -9,12 +9,12 @@ ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 115cd65621afd8272887b36163b066a4e6a554d7
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 5a29dcc74c638cb8ecbeb1f924d0e50d40d19f66
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835649"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92692162"
 ---
 # <a name="applications"></a>应用程序 #
 
@@ -48,13 +48,13 @@ Hamiltonian 模拟是许多其他量程模拟问题的主要组成部分，而 H
 
 量程模拟算法将 Hamiltonian 的给定描述转换为一系列基元量子入口，作为一个整体，这是一项 Hamiltonian 的大致时间演变。
 
-在 Hamiltonian 分解为 Hermitian 部分求和的特殊情况下，Trotter-Suzuki 分解是一个特别简单且直观的算法，用于模拟将分解为 Hamiltonians 组件的总和的 Hermitian。 例如，此系列的第一个顺序的集成器约为 $ $ \begin{align} U (t) & = \left ( e ^ {-iH \_ 0 t/r} e ^ {-iH \_ 1 t/r} \cdots e ^ {-iH \_ {d-1} t/r} \right) ^ {r} + \mathcal{O} (d ^ 2 \ max_j \\ |H \_ j \\ | ^ 2 t ^ 2/r) ，\end{align} $ $ 使用 $r d $ 条款的产品。 
+在 Hamiltonian 分解为 Hermitian 部分求和的特殊情况下，Trotter-Suzuki 分解是一个特别简单且直观的算法，用于模拟分解为 Hermitian 组件的总和的 Hamiltonians。 例如，此系列的第一个顺序的集成器约为 $ $ \begin{align} U (t) & = \left ( e ^ {-iH \_ 0 t/r} e ^ {-iH \_ 1 t/r} \cdots e ^ {-iH \_ {d-1} t/r} \right) ^ {r} + \mathcal{O} (d ^ 2 \ max_j \\ |H \_ j \\ | ^ 2 t ^ 2/r) ，\end{align} $ $ 使用 $r d $ 条款的产品。 
 
 > [!TIP]
 > 示例中介绍了 Trotter-Suzuki 模拟算法的应用程序。
-> 对于 Ising 模型，只使用每个目标计算机提供的内部操作，请参阅[ **SimpleIsing**示例](https://github.com/microsoft/Quantum/blob/main/samples/simulation/ising/simple)。
-> 对于使用 Trotter-Suzuki 库控件结构的 Ising 模型，请参阅[ **IsingTrotter**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/trotter-evolution)。
-> 对于使用 Trotter-Suzuki 库控件结构的分子 Hydrogen，请参阅[ **H2 模拟**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/h2/command-line)。
+> 对于 Ising 模型，只使用每个目标计算机提供的内部操作，请参阅 [ **SimpleIsing** 示例](https://github.com/microsoft/Quantum/blob/main/samples/simulation/ising/simple)。
+> 有关使用 Trotter-Suzuki 库控件结构的 Ising 模型，请参阅 [ **IsingTrotter** 示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/trotter-evolution)。
+> 对于使用 Trotter-Suzuki 库控件结构的分子 Hydrogen，请参阅 [ **H2 模拟** 示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/h2/command-line)。
 
 在许多情况下，我们想要实现模拟算法，但并不关心其实现的详细信息。 例如，第二顺序集成器接近 $ $ \begin{align} U (t) & = \left ( e ^ {-iH \_ 0 t/2r} e ^ {-iH \_ 1 t/2r} \cdots e ^ {-iH \_ {d-1} t/2r} e ^ {-iH \_ {d-1} t/2r} \cdots e ^ {-iH \_ 1 t/2r} e ^ {-iH \_ 0 t/2r} \right) ^ {r} + \mathcal{O} (d ^ 3 \ max_j \\ |H \_ j \\ | ^ 3 t ^ 3/r ^ 2) ，\end{align} $ $ 使用产品 $ 2rd $ 条款。 更大的订单会涉及更多的术语，而优化后的变量可能需要对指数的高度非常重要的排序。 其他高级算法还可能涉及在中间步骤中使用 ancilla qubits。 因此，我们将 canon 中的模拟算法打包为用户定义的类型
 
@@ -68,7 +68,7 @@ newtype SimulationAlgorithm = ((Double, EvolutionGenerator, Qubit[]) => Unit is 
 newtype TimeDependentSimulationAlgorithm = ((Double, EvolutionSchedule, Qubit[]) => Unit : Adjoint, Controlled);
 ```
 
-例如，可以使用以下 canon 函数调用 Trotter-Suzuki 分解，其中的参数 `trotterStepSize` 修改每个指数的模拟持续时间以及所需的集成器的 `trotterOrder` 顺序。
+例如，可以使用以下 canon 函数来调用 Trotter-Suzuki 分解，其中的参数 `trotterStepSize` 修改每个指数的模拟持续时间以及所需的集成器的 `trotterOrder` 顺序。
 
 ```qsharp
 function TrotterSimulationAlgorithm(
@@ -87,8 +87,8 @@ function TimeDependentTrotterSimulationAlgorithm(
 ```
 
 > [!TIP]
-> 示例中介绍了模拟库的应用程序。 有关使用的 Ising 模型中的阶段估计 `SimulationAlgorithm` ，请参阅[ **IsingPhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/phase-estimation)。
-> 若要使用在 Ising 模型中准备 adiabatic 状态 `TimeDependentSimulationAlgorithm` ，请参阅[ **AdiabaticIsing**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/adiabatic)。
+> 示例中介绍了模拟库的应用程序。 有关使用的 Ising 模型中的阶段估计 `SimulationAlgorithm` ，请参阅 [ **IsingPhaseEstimation** 示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/phase-estimation)。
+> 若要使用在 Ising 模型中准备 adiabatic 状态 `TimeDependentSimulationAlgorithm` ，请参阅 [ **AdiabaticIsing** 示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/adiabatic)。
 
 
 ### <a name="adiabatic-state-preparation--phase-estimation"></a>Adiabatic 状态准备 & 阶段估计 ###
@@ -132,15 +132,15 @@ operation EstimateAdiabaticStateEnergy(
 `nQubits` 用于对初始量程状态进行编码的 qubits 的数目。 `statePrepUnitary` 从计算基础 $ \ket{0\cdots 0} $ 准备开始状态。 `adiabaticUnitary` 是实现 adiabatic 状态准备的单一操作，如函数生成的  `InterpolatedEvolution` 。 `qpeUnitary` 用于对生成的量程状态执行阶段估计的单一操作。 `phaseEstAlgorithm` 是我们选择的阶段估算算法。
 
 > [!TIP]
-> 示例中介绍了 adiabatic 状态准备的应用程序。 对于 Ising 模型，使用手动实现 adiabatic 状态准备，而不是使用 `AdiabaticEvolution` 函数，请参阅[ **AdiabaticIsing**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/adiabatic)。
-> 有关 Ising 模型中的阶段估算和 adiabatic 状态准备，请参阅[ **IsingPhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/phase-estimation)。
+> 示例中介绍了 adiabatic 状态准备的应用程序。 对于 Ising 模型，使用手动实现 adiabatic 状态准备，而不是使用 `AdiabaticEvolution` 函数，请参阅 [ **AdiabaticIsing** 示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/adiabatic)。
+> 有关 Ising 模型中的阶段估算和 adiabatic 状态准备，请参阅 [ **IsingPhaseEstimation** 示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/phase-estimation)。
 
 > [!TIP]
 > [分子 Hydrogen 的模拟](https://github.com/microsoft/Quantum/tree/main/samples/simulation/h2/command-line)是一个有趣且简单的示例。 [O'Malley et](https://arxiv.org/abs/1512.06860)中报告的模型和实验性结果。 只需要 Pauli 矩阵，并采用 $ \hat H = g \_ {0} I \_ 0 i \_ 1 + g \_ 1 {z \_ 0} + g \_ 2 {Z 1 \_ } + g \_ 3 {z \_ 0} {z 1} + g \_ \_ 4 {x 0} { \_ \_ \_ \_ x 1} \_ $。 这是一个有效的 Hamiltonian，只需要2个 qubits，在这种情况下，将根据两个 Hydrogen 原子之间的距离 $R $ 计算 $g $ 的常量。 使用 canon 函数，Paulis 转换为 unitaries，然后使用 Trotter-Suzuki 分解在短时间段内演变。 可以在不使用 adiabatic 状态准备的情况下创建 $H _2 $ 地面状态的良好近似值，因此，可以通过利用 canon 中的阶段估算直接找到地面状态。
 
 ## <a name="shors-algorithm"></a>秀尔算法 ##
 选定的算法仍是量程计算中最重要的开发，因为它显示了量程计算机可以用于解决重要的当前经典棘手问题。
-选定的算法提供了一种使用量程计算机（称为 " *分解*" 的问题）对较大数字进行因式分解的快速方法。
+选定的算法提供了一种使用量程计算机（称为 " *分解* " 的问题）对较大数字进行因式分解的快速方法。
 许多 cryptosystems 的安全是基于不存在任何快速算法以进行分解的假设。
 因此，选定的算法对我们在一个量程后世界中的安全性的看法产生了深远的影响。
 
@@ -151,7 +151,7 @@ operation EstimateAdiabaticStateEnergy(
 
 ### <a name="period-finding"></a>期间查找 ###
 
-了解到量程傅立叶转换和阶段估算工作原理 (参阅 [量程算法](xref:microsoft.quantum.libraries.standard.algorithms)) ，我们可以使用这些工具解决称为 *时间段查找*的经典硬计算问题。  在下一部分中，我们将了解如何应用时间段查找以进行分解。
+了解到量程傅立叶转换和阶段估算工作原理 (参阅 [量程算法](xref:microsoft.quantum.libraries.standard.algorithms)) ，我们可以使用这些工具解决称为 *时间段查找* 的经典硬计算问题。  在下一部分中，我们将了解如何应用时间段查找以进行分解。
 
 给定两个整数 $a $ 和 $N $，其中 $a<N $，句点的目标（也称为顺序查找）是查找 $r $ $a $ $N $ 的 _顺序_ $r $ $a $，其中 $ 被定义为最少的正整数，^ r \equiv 1 \text{Mod} N $。  
 
@@ -178,8 +178,8 @@ $U _a $ 的本征值是 $ $ U \_ a \ket{x \_ s} = e ^ {2 \ pi i s/r} \ket{x \_ s
 若要实现 $ (^ nx) \text{mod} N $，只需应用受控-$U _ {a ^ N} $，在此计算 $a ^ N \text{mod} N $ 经典，以插入量程线路。  
 [量程算法文档](./algorithms.md#arithmetic)中介绍了实现这种模块化算法的线路，具体而言，我们需要使用模块求幂线路来实现受控-$U \_ {a ^ i} $ 操作。
 
-尽管上面的线路对应于 [量程阶段估算](xref:microsoft.quantum.characterization.quantumphaseestimation) ，并显式启用了订单查找，但我们可以减少所需的 qubits 数量。 我们可以按照 [arXiv： quant/0205095V3 第8页](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=8)中所述的顺序查找 Beauregard 的方法，或使用中提供的一个阶段估算例程。 例如， [强健的阶段估算](xref:microsoft.quantum.characterization.robustphaseestimation) 还使用一个额外的 qubit。
- 
+尽管上面的线路对应于 [量程阶段估算](xref:Microsoft.Quantum.Characterization.QuantumPhaseEstimation) ，并显式启用了订单查找，但我们可以减少所需的 qubits 数量。 我们可以按照 [arXiv： quant/0205095V3 第8页](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=8)中所述的顺序查找 Beauregard 的方法，或使用中提供的一个阶段估算例程。 例如， [强健的阶段估算](xref:microsoft.quantum.characterization.robustphaseestimation) 还使用一个额外的 qubit。
+
 ### <a name="factoring"></a>分解 ###
 因式分解的目标是确定整数 $N $ 的两个质数因素，其中 $N $ 是 $n $ 位数字。  
 因式分解包含如下所述的步骤。 步骤分为三个部分： "传统预处理" 例程 (1-4) ;用于查找 $a \text{mod} N $ (5) 的顺序的量程计算例程;和一个传统的后处理例程，用于从订单 (6-9) 中派生出质数。
@@ -197,6 +197,6 @@ $U _a $ 的本征值是 $ $ U \_ a \ket{x \_ s} = e ^ {2 \ pi i s/r} \ket{x \_ s
 9. 如果 $ \text{gcd} (^ {r/2}-1，N) $ 是 $N $ 的一个非常简单的因素，则返回 $ \text{gcd} (^ {r/2}-1，N) $。
 
 
-分解算法是概率的：它可以表明，概率至少为1的一半 $r $ 将为偶数，$a ^ {r/2} \neq-1 \text{mod} N $，因此产生了一个主要因素。   (参阅[选定的原始纸张](https://doi.org/10.1109/SFCS.1994.365700)以获取详细[信息](xref:microsoft.quantum.more-information)，请参阅中的*基础量程计算*文本之一) 。
+分解算法是概率的：它可以表明，概率至少为1的一半 $r $ 将为偶数，$a ^ {r/2} \neq-1 \text{mod} N $，因此产生了一个主要因素。   (参阅 [选定的原始纸张](https://doi.org/10.1109/SFCS.1994.365700)以获取详细 [信息](xref:microsoft.quantum.more-information)，请参阅中的 *基础量程计算* 文本之一) 。
 如果未返回一个质数因素，则只需重复步骤 (1) 中的算法。  $N $ 次尝试后，每次尝试失败的概率最多为 $ 2 ^ {-n} $。
 因此，在重复该算法后，几乎可确保成功的次数较少。
