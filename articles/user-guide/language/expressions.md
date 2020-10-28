@@ -9,12 +9,12 @@ uid: microsoft.quantum.guide.expressions
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 9bf28e3854eae1892692d7ca840e1860de2e2934
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: e95a7cb9b74136ef9a6f51b4bbc32d1d93c43a0d
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835836"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691607"
 ---
 # <a name="expressions-in-no-locq"></a>表达式 Q#
 
@@ -40,7 +40,7 @@ let bigOne = bigZero + 1L;
 可以使用或不使用小数点、 `.` 或使用 "e" 或 "e" 指示的指数部分来编写它们 (之后，只有可能的负号和十进制数字) 有效。
 下面是有效的 `Double` 文本： `0.0` 、 `1.2e5` 、 `1e-5` 。
 
-给定任意元素类型的数组表达式，你可以 `Int` 使用 [`Length`](xref:microsoft.quantum.core.length) 内置函数形成表达式，并将数组表达式括在括号中。
+给定任意元素类型的数组表达式，你可以 `Int` 使用 [`Length`](xref:Microsoft.Quantum.Core.Length) 内置函数形成表达式，并将数组表达式括在括号中。
 例如，如果 `a` 绑定到数组，则 `Length(a)` 是整数表达式。
 如果 `b` 是整数数组的数组，则 `Int[][]` `Length(b)` 为中的子数组的数目 `b` ， `Length(b[1])` 是中第二个子数组 `b` 中的整数的数目。
 
@@ -101,7 +101,7 @@ let t = x == y;               // This will cause a compiler error.
 这两个 qubits 的状态不会进行比较、访问、度量或修改。
 
 `Double`由于舍入效果，值的相等比较可能会产生误导。
-例如，`49.0 * (1.0/49.0) != 1.0` 。
+例如，`49.0 * (1.0/49.0) != 1.0`。
 
 给定任意两个数值表达式，二元运算符 `>` 、 `<` 、 `>=` 和可 `<=` 用于构造新的布尔表达式，如果第一个表达式分别大于、小于、大于或等于，或者小于或等于第二个表达式，则该值为 true。
 
@@ -111,7 +111,7 @@ let t = x == y;               // This will cause a compiler error.
 
 ## <a name="string-expressions"></a>字符串表达式
 
-Q# 允许在 " `fail` [控制流](xref:microsoft.quantum.guide.controlflow#fail-statement) ") 和标准函数中说明 (语句中使用字符串 [`Message`](xref:microsoft.quantum.intrinsic.message) 。 后者的特定行为取决于所使用的模拟器，但通常会在程序期间调用时将消息写入主机控制台 Q# 。
+Q# 允许在 " `fail` [控制流](xref:microsoft.quantum.guide.controlflow#fail-statement) ") 和标准函数中说明 (语句中使用字符串 [`Message`](xref:Microsoft.Quantum.Intrinsic.Message) 。 后者的特定行为取决于所使用的模拟器，但通常会在程序期间调用时将消息写入主机控制台 Q# 。
 
 中的字符串 Q# 是文本或内插字符串。
 
@@ -128,7 +128,7 @@ Q#字符串内插的语法是 c # 语法的子集。 下面是与以下各项相
 
 * 若要将字符串标识为内插字符串，可在该字符串前面加上 `$` 符号。 与之间不能存在空格， `$` `"` 后者用于启动字符串文本。
 
-* 下面是一个基本示例，使用 [`Message`](xref:microsoft.quantum.intrinsic.message) 函数将度量结果写入控制台，并将其写入其他 Q# 表达式。
+* 下面是一个基本示例，使用 [`Message`](xref:Microsoft.Quantum.Intrinsic.Message) 函数将度量结果写入控制台，并将其写入其他 Q# 表达式。
 
 ```qsharp
     let num = 8;       // some Q# expression
@@ -189,7 +189,7 @@ Q#字符串内插的语法是 c # 语法的子集。 下面是与以下各项相
 
 除了文本以外，唯一的元组表达式是绑定到元组值、元组数组的数组元素和返回元组的可调用调用的符号。
 
-## <a name="user-defined-type-expressions"></a>用户定义的类型表达式
+## <a name="user-defined-type-expressions"></a>User-Defined 类型表达式
 
 用户定义类型的文本包含类型名称，后跟类型的基元组类型的元组文本。
 例如，如果 `IntPair` 是基于的用户定义类型 `(Int, Int)` ，则 `IntPair(2, 3)` 是该类型的有效文本。
@@ -237,7 +237,7 @@ let g = Foo(arg)!;      // Syntax error
 
 对于引用实体的 qubits 和 callables，没有合理的默认值。
 因此，对于这些类型，默认值是无效的引用，不能在不引发运行时错误的情况下使用，这类似于 c # 或 Java 等语言的空引用。
-必须使用非默认值初始化包含 qubits 或 callables 的数组，才能安全地使用其元素。 有关适当的初始化例程，请参见 <xref:microsoft.quantum.arrays> 。
+必须使用非默认值初始化包含 qubits 或 callables 的数组，才能安全地使用其元素。 有关适当的初始化例程，请参见 <xref:Microsoft.Quantum.Arrays> 。
 
 每种类型的默认值为：
 

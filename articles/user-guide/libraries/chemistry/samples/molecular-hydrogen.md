@@ -9,12 +9,12 @@ uid: microsoft.quantum.chemistry.examples.energyestimate
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 05506f4099de754cd02d81fbd9200f2de091e37e
-ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
+ms.openlocfilehash: 81fba0c52c854d61f9143659795fb4d3c3cee8b9
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90759726"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691524"
 ---
 # <a name="obtaining-energy-level-estimates"></a>获取能量级别估算
 估计能耗级别的值是量程化学的主要应用程序之一。 本文概述了如何针对分子 hydrogen 的规范示例执行此操作。 此部分中引用的示例位于 [`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogen) 化学示例存储库中。 演示中绘制出了一个更直观的示例 [`MolecularHydrogenGUI`](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogenGUI) 。
@@ -44,7 +44,7 @@ ms.locfileid: "90759726"
     var fermionHamiltonian = new OrbitalIntegralHamiltonian(orbitalIntegrals).ToFermionHamiltonian();
 ```
 
-模拟 Hamiltonian 需要将 fermion 运算符转换为 qubit 运算符。 此转换是通过 Wigner 编码执行的，如下所示：
+模拟 Hamiltonian 需要将 fermion 运算符转换为 qubit 运算符。 这种转换是通过 Jordan-Wigner 编码执行的，如下所示：
 
 ```csharp
     // The Jordan-Wigner encoding converts the fermion Hamiltonian, 
@@ -83,7 +83,7 @@ let integratorOrder = 4;
 let (nQubits, (rescale, oracle)) =  TrotterStepOracle (qSharpData, stepSize, integratorOrder);
 ```
 
-此时，你可以使用标准库的 [阶段估算算法](xref:microsoft.quantum.libraries.characterization) ，使用以前的模拟来了解地面状态能量。 这需要准备好近似值到量子地面状态。 架构中提供了此类近似值的建议 [`Broombridge`](xref:microsoft.quantum.libraries.chemistry.schema.broombridge) 。 但是，如果不提供这些建议，则默认方法会将多个 `hamiltonian.NElectrons` 电子添加到贪婪，从而最大程度地减少 electron 字词凝聚的。 DocFX [命名空间中的](xref:microsoft.quantum.characterization) 表示法中提供了阶段估计函数和操作。
+此时，你可以使用标准库的 [阶段估算算法](xref:microsoft.quantum.libraries.characterization) ，使用以前的模拟来了解地面状态能量。 这需要准备好近似值到量子地面状态。 架构中提供了此类近似值的建议 [`Broombridge`](xref:microsoft.quantum.libraries.chemistry.schema.broombridge) 。 但是，如果不提供这些建议，则默认方法会将多个 `hamiltonian.NElectrons` 电子添加到贪婪，从而最大程度地减少 electron 字词凝聚的。 DocFX [命名空间中的](xref:Microsoft.Quantum.Characterization) 表示法中提供了阶段估计函数和操作。
 
 以下代码片段演示了化学模拟库的实时演变输出如何与量程阶段估算集成。
 

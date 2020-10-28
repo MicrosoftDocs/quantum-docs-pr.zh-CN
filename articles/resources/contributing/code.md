@@ -9,12 +9,12 @@ uid: microsoft.quantum.contributing.code
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 7a258a915a807b8e1ee7c2c9c062017d90f6a454
-ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+ms.openlocfilehash: 47845c4f3520e8c50cf8aefd9bf9e8f086c42842
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91489759"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691806"
 ---
 # <a name="contributing-code"></a>贡献代码
 
@@ -31,12 +31,12 @@ ms.locfileid: "91489759"
 
 ### <a name="unit-tests"></a>单元测试
 
-Q#构成库（如 canon）的函数、操作和用户定义类型在[**Microsoft/QuantumLibraries**](https://github.com/Microsoft/QuantumLibraries/)存储库中作为开发的一部分自动进行测试。
+Q#构成库（如 canon）的函数、操作和用户定义类型在 [**Microsoft/QuantumLibraries**](https://github.com/Microsoft/QuantumLibraries/)存储库中作为开发的一部分自动进行测试。
 例如，当打开一个新的拉取请求时， [Azure Pipelines](https://azure.microsoft.com/services/devops/pipelines/) 配置将检查拉取请求中的更改是否不会破坏该量程编程社区依赖的任何现有功能。
 
 使用最新 Q# 版本，将使用属性定义单元测试 `@Test("QuantumSimulator")` 。 参数可以是 "QuantumSimulator"、"ToffoliSimulator"、"TraceSimulator"，也可以是指定运行目标的任何完全限定名称。 定义不同的运行目标的多个属性可能附加到同一个可调用的。 某些测试仍使用不推荐使用的 [Xunit](https://www.nuget.org/packages/Microsoft.Quantum.Xunit/) 包，此包公开所有 Q# `Test` 以 [Xunit](https://xunit.github.io/) framework 结尾的函数和操作。 定义单元测试不再需要此包。 
 
-以下函数用于确保 <xref:microsoft.quantum.canon.fst> 和 <xref:microsoft.quantum.canon.snd> 函数在有代表性的示例中返回正确的输出。
+以下函数用于确保 <xref:Microsoft.Quantum.Canon.Fst> 和 <xref:Microsoft.Quantum.Canon.Snd> 函数在有代表性的示例中返回正确的输出。
 如果或的输出 `Fst` 不 `Snd` 正确，则 `fail` 使用语句来导致测试失败。
 
 ```qsharp
@@ -57,7 +57,7 @@ function PairTest () : Unit {
 ```
 
 使用标准库指南的 " [测试" 部分](xref:microsoft.quantum.libraries.diagnostics) 中的技术可以检查更复杂的条件。
-例如，下面的测试检查 `H(q); X(q); H(q);` 调用者是否执行与 <xref:microsoft.quantum.canon.applywith> 相同的操作 `Z(q)` 。
+例如，下面的测试检查 `H(q); X(q); H(q);` 调用者是否执行与 <xref:Microsoft.Quantum.Canon.ApplyWith> 相同的操作 `Z(q)` 。
 
 ```Q#
 @Test("QuantumSimulator")

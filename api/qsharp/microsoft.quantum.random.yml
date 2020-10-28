@@ -1,0 +1,54 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: 返回一个离散分类分布，其中显式指定了给定结果的每个有限列表的概率。
+  uid: Microsoft.Quantum.Random.CategoricalDistribution
+- summary: 返回在给定的非独占时间间隔内的统一分布。
+  uid: Microsoft.Quantum.Random.ContinuousUniformDistribution
+- summary: 返回在给定的非独占范围内的统一分布。
+  uid: Microsoft.Quantum.Random.DiscreteUniformDistribution
+- summary: 返回具有给定平均值和方差的正态分布。
+  uid: Microsoft.Quantum.Random.NormalDistribution
+- summary: 返回一个平均分布，其平均值为0，方差为1。
+  uid: Microsoft.Quantum.Random.StandardNormalDistribution
+- summary: ''
+  uid: Microsoft.Quantum.Random.StandardTransformation
+- summary: 给定连续分布时，将返回一个新的分布，该分布通过给定函数转换原始。
+  uid: Microsoft.Quantum.Random.TransformedContinuousDistribution
+name: Microsoft.Quantum.Random
+newtypes:
+- summary: 表示针对任意大小的整数的单变量概率分布。
+  uid: Microsoft.Quantum.Random.BigDiscreteDistribution
+- summary: 表示对复数的单变量概率分布。
+  uid: Microsoft.Quantum.Random.ComplexDistribution
+- summary: 表示单变量的概率分布。
+  uid: Microsoft.Quantum.Random.ContinuousDistribution
+- summary: 表示单变量的概率分布。
+  uid: Microsoft.Quantum.Random.DiscreteDistribution
+operations:
+- summary: ''
+  uid: Microsoft.Quantum.Random.Delay
+- summary: 使用 probablities 列表指定的分类分布绘制随机样本。
+  uid: Microsoft.Quantum.Random.DrawCategorical
+- summary: 如果获得成功概率，则返回一个在给定概率下为 true 的单个伯努利试用期。
+  uid: Microsoft.Quantum.Random.DrawRandomBool
+- summary: 以给定的非独占间隔绘制随机实数。
+  uid: Microsoft.Quantum.Random.DrawRandomDouble
+- summary: 绘制给定范围内的随机整数。
+  uid: Microsoft.Quantum.Random.DrawRandomInt
+- summary: 绘制随机 Pauli 值。
+  uid: Microsoft.Quantum.Random.DrawRandomPauli
+- summary: ''
+  uid: Microsoft.Quantum.Random.DrawStandardNormalVariate
+- summary: 给定一个数据数组和一个针对其索引的分布，尝试随机选择一个元素。
+  uid: Microsoft.Quantum.Random.MaybeChooseElement
+- summary: 从转换后的分发进行采样的仅限内部操作。 只应通过部分应用程序使用。
+  uid: Microsoft.Quantum.Random.SampleTransformedContinuousDistribution
+summary: ''
+uid: Microsoft.Quantum.Random
+metadata:
+  ms.openlocfilehash: 1504b9ae9ffc21a7684a45b58f56f138068beb67
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92695386"

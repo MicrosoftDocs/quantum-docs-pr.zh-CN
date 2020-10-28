@@ -9,12 +9,12 @@ uid: microsoft.quantum.write-program
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: ac9c060c157ba5ee3bc66852c42298ac8adcb3b3
-ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+ms.openlocfilehash: 7a1a49e18ac9330ca6e3cc89b3e58c96eccb91db
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91492330"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691667"
 ---
 # <a name="tutorial-explore-entanglement-with-q"></a>教程：通过 Q\# 探索纠缠
 
@@ -32,7 +32,7 @@ Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，
 
 你还可以遵循这些叙述，无需安装 QDK、查看 Q# 编程语言的概述以及量程计算的第一概念。
 
-## <a name="in-this-tutorial-youll-learn-how-to"></a>在本教程中，你将了解：
+## <a name="in-this-tutorial-youll-learn-how-to"></a>本教程介绍以下操作：
 
 > [!div class="checklist"]
 > * 在 Q 中创建和合并操作\#
@@ -41,12 +41,12 @@ Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，
 
 ## <a name="demonstrating-qubit-behavior-with-the-qdk"></a>通过 QDK 演示 qubit 行为
 
-经典位保存单个二进制值（如 0 或 1），而[量子位](xref:microsoft.quantum.glossary#qubit)的状态则可以是 0 和 1 的**叠加**。  从概念上讲，qubit 的状态可以看作是抽象空间中的方向 (也称为矢量) 。  Qubit 状态可以为任何可能的方向。 两个**经典状态**是两个方向，一个方向表示度量结果为 0 的可能性为 100%，另一个方向表示度量结果为 1 的可能性为 100%。
+经典位保存单个二进制值（如 0 或 1），而 [量子位](xref:microsoft.quantum.glossary#qubit)的状态则可以是 0 和 1 的 **叠加** 。  从概念上讲，qubit 的状态可以看作是抽象空间中的方向 (也称为矢量) 。  Qubit 状态可以为任何可能的方向。 两个 **经典状态** 是两个方向，一个方向表示度量结果为 0 的可能性为 100%，另一个方向表示度量结果为 1 的可能性为 100%。
 
 度量行为会生成二进制结果并改变量子位状态。
 度量值生成一个二进制值，0或1。  量子位从叠加态（任何方向）变为经典状态之一。  随后，在没有任何干预操作的情况下重复进行相同的度量会生成相同的二进制结果。  
 
-多个量子位可以[**纠缠**](xref:microsoft.quantum.glossary#entanglement)在一起。  度量一个纠缠的量子位时，就会知道另一个量子位的状态。
+多个量子位可以 [**纠缠**](xref:microsoft.quantum.glossary#entanglement)在一起。  度量一个纠缠的量子位时，就会知道另一个量子位的状态。
 
 现在，我们已准备好演示如何 Q# 表达这一行为。  一开始可以编写并生成一个最简单的程序，用于演示量子叠加和量子纠缠。
 
@@ -83,7 +83,7 @@ Bell 这一名称是指 Bell 状态，即两个量子位的特定量子状态，
 
 ### <a name="initialize-qubit-using-measurement"></a>使用度量值初始化 qubit
 
-在下面的第一个代码段中，我们将向你演示如何在中使用 qubits Q# 。  我们将介绍两个操作，这些操作将 [`M`](xref:microsoft.quantum.intrinsic.m) [`X`](xref:microsoft.quantum.intrinsic.x) 转换 qubit 的状态。 在此代码片段中，我们定义了操作 `SetQubitState`。该操作使用一个量子位作为参数，使用另一个参数 (`desired`) 来表示我们希望该量子位呈现的状态。  操作 `SetQubitState` 使用操作 `M` 对量子位进行度量。  在中 Q# ，qubit 度量值始终返回 `Zero` 或 `One` 。  如果度量值返回一个与所需值不相等的值，则 `SetQubitState` "翻转" qubit; 也就是说，它将运行一个 `X` 操作，该操作将 qubit 状态更改为一种新状态，在该状态下，测量的概率返回 `Zero` 并 `One` 反转。 这样，就 `SetQubitState` 始终将目标 qubit 置于所需状态。
+在下面的第一个代码段中，我们将向你演示如何在中使用 qubits Q# 。  我们将介绍两个操作，这些操作将 [`M`](xref:Microsoft.Quantum.Intrinsic.m) [`X`](xref:Microsoft.Quantum.Intrinsic.X) 转换 qubit 的状态。 在此代码片段中，我们定义了操作 `SetQubitState`。该操作使用一个量子位作为参数，使用另一个参数 (`desired`) 来表示我们希望该量子位呈现的状态。  操作 `SetQubitState` 使用操作 `M` 对量子位进行度量。  在中 Q# ，qubit 度量值始终返回 `Zero` 或 `One` 。  如果度量值返回一个与所需值不相等的值，则 `SetQubitState` "翻转" qubit; 也就是说，它将运行一个 `X` 操作，该操作将 qubit 状态更改为一种新状态，在该状态下，测量的概率返回 `Zero` 并 `One` 反转。 这样，就 `SetQubitState` 始终将目标 qubit 置于所需状态。
 
 将的内容替换为 `Program.qs` 以下代码：
 
@@ -116,8 +116,8 @@ Q#操作是一个量程子例程。 也就是说，它是包含对其他量程�
 
 您在第一次操作中使用了两个量程操作 Q# ：
 
-* [`M`](xref:microsoft.quantum.intrinsic.m)操作，它测量 qubit 的状态
-* [`X`](xref:microsoft.quantum.intrinsic.x)操作，该操作将反转 qubit 的状态
+* [`M`](xref:Microsoft.Quantum.Intrinsic.m)操作，它测量 qubit 的状态
+* [`X`](xref:Microsoft.Quantum.Intrinsic.X)操作，该操作将反转 qubit 的状态
 
 量子操作可转换量子位的状态。 有时候，人们在讨论时会使用与经典“逻辑门”类似的“量子门”（而不是“量子操作”）这一术语。 这种习惯根源于早期的量子计算时代。那时候，算法只是一种理论构造，以图形（类似于经典计算中的线路图）方式表示。
 
@@ -300,7 +300,7 @@ Test results (# of 0s, # of 1s):
 ## <a name="prepare-entanglement"></a>准备展示纠缠
 
 现在让我们看看如何 Q# 表达 entangle qubits 的方法。
-首先，我们将第一个量子位设置为初始状态，然后使用 `H` 操作将其置于叠加状态。  然后，在度量第一个 qubit 之前，我们使用 () 的新操作 `CNOT` ，该操作代表 *受控-NOT*。  在两个 qubits 上运行此操作的结果是：如果第一个 qubit 为，则会翻转第二个 qubit `One` 。  现在，这两个量子位纠缠在一起。  第一个量子位的统计信息没有变化（在度量后，`Zero` 和 `One` 各一半），但现在当我们度量第二个量子位时，它__始终__与我们第一个量子位的度量值相同。 `CNOT` 把这两个量子位纠缠在了一起，因此，不论其中一个发生什么，另一个也会同样发生。 如果翻转度量值（先翻转第二个量子位，再翻转第一个），会发生相同的情况。 第一个度量值是随机的，第二个将与第一个同步。
+首先，我们将第一个量子位设置为初始状态，然后使用 `H` 操作将其置于叠加状态。  然后，在度量第一个 qubit 之前，我们使用 () 的新操作 `CNOT` ，该操作代表 *受控-NOT* 。  在两个 qubits 上运行此操作的结果是：如果第一个 qubit 为，则会翻转第二个 qubit `One` 。  现在，这两个量子位纠缠在一起。  第一个量子位的统计信息没有变化（在度量后，`Zero` 和 `One` 各一半），但现在当我们度量第二个量子位时，它 __始终__ 与我们第一个量子位的度量值相同。 `CNOT` 把这两个量子位纠缠在了一起，因此，不论其中一个发生什么，另一个也会同样发生。 如果翻转度量值（先翻转第二个量子位，再翻转第一个），会发生相同的情况。 第一个度量值是随机的，第二个将与第一个同步。
 
 我们需要做的第一件事就是在中分配两个 qubits，而不是一个 `TestBellState` ：
 
@@ -411,7 +411,7 @@ Test results (# of 0s, # of 1s, # of agreements)
 (507, 493, 1000)
 ```
 
-如概述中所述，第一个量子位的统计信息没有变化（0 和 1 各一半），但现在当我们度量第二个量子位时，它__始终__与我们第一个量子位的度量值相同，因为这两个量子位已纠缠在一起！
+如概述中所述，第一个量子位的统计信息没有变化（0 和 1 各一半），但现在当我们度量第二个量子位时，它 __始终__ 与我们第一个量子位的度量值相同，因为这两个量子位已纠缠在一起！
 
 ## <a name="next-steps"></a>后续步骤
 

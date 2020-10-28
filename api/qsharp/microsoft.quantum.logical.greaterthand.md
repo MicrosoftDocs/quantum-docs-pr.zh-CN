@@ -1,0 +1,55 @@
+---
+uid: Microsoft.Quantum.Logical.GreaterThanD
+title: GreaterThanD 函数
+ms.date: 10/26/2020 12:00:00 AM
+ms.topic: article
+qsharp.kind: function
+qsharp.namespace: Microsoft.Quantum.Logical
+qsharp.name: GreaterThanD
+qsharp.summary: Returns true if and only if a number is greater than another number.
+ms.openlocfilehash: 20414e80e08993a18331a8f0b385a1e4cc1255b3
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92695173"
+---
+# <a name="greaterthand-function"></a>GreaterThanD 函数
+
+命名空间： [Microsoft 量子. 逻辑](xref:Microsoft.Quantum.Logical)
+
+软件包 [](https://nuget.org/packages/)
+
+
+当且仅当一个数字大于另一个数字时，返回 true。
+
+```qsharp
+function GreaterThanD (a : Double, b : Double) : Bool
+```
+
+
+## <a name="input"></a>输入
+
+### <a name="a--double"></a>答： [Double](xref:microsoft.quantum.lang-ref.double)
+
+要比较的第一个值。
+
+
+### <a name="b--double"></a>b： [Double](xref:microsoft.quantum.lang-ref.double)
+
+要比较的第二个值。
+
+
+
+## <a name="output--bool"></a>输出：[布尔](xref:microsoft.quantum.lang-ref.bool)值
+
+`true` 当且仅当 `a` 严格大于时 `b` 。
+
+## <a name="remarks"></a>注解
+
+以下项是等效的：
+
+```Q#
+let cond = a > b;
+let cond = GreaterThanD(a, b);
+```

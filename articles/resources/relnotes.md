@@ -9,12 +9,12 @@ uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 27038a86dc4854c397458d95529aca463d493fd6
-ms.sourcegitcommit: d98190988ff03146d9ca2b0d325870cd717d729a
+ms.openlocfilehash: fae603a81f8edc23ab8dc14277c5e3c4699f2cee
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91771335"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691691"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -23,6 +23,16 @@ ms.locfileid: "91771335"
 有关安装说明，请参阅[安装指南](xref:microsoft.quantum.install)。
 
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
+
+## <a name="version-01320102604"></a>版本0.13.20102604
+
+*发布日期：10月27日，2020*
+
+此版本包含以下各项：
+
+- 资源估算现在同时发出可实现的深度和宽度估计，同时还包括 qubit 计数。 请参阅[此处](xref:microsoft.quantum.machines.resources-estimator#metrics-reported)了解详细信息。
+
+请参阅适用于[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+closed%3A2020-09-25..2020-10-22)、[编译器](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+closed%3A2020-09-25..2020-10-22)、[运行时](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+closed%3A2020-09-25..2020-10-22)、[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+closed%3A2020-09-25..2020-10-22)、 [I Q# ](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+closed%3A2020-09-25..2020-10-22)和[Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+closed%3A2020-09-25..2020-10-22)的已关闭 pr 的完整列表。
 
 ## <a name="version-01220100504"></a>版本0.12.20100504
 
@@ -54,8 +64,8 @@ ms.locfileid: "91771335"
 
 此版本包含以下各项：
 
-- 新的[Microsoft 量子命名空间](xref:microsoft.quantum.random)，提供更方便的方法来从程序内采样随机值。 Q#  ([QuantumLibraries # 311](https://github.com/microsoft/QuantumLibraries/pull/311)， [qsharp # 328](https://github.com/microsoft/qsharp-runtime/pull/328)) 
-- 改进了带有新[ `DumpOperation` 操作](xref:microsoft.quantum.diagnostics.dumpoperation)的[Microsoft 量子命名空间](xref:microsoft.quantum.diagnostics)，以及用于限制 qubit 分配和 oracle 调用的新操作。  ([QuantumLibraries # 302](https://github.com/microsoft/QuantumLibraries/pull/302)) 
+- 新的[Microsoft 量子命名空间](xref:Microsoft.Quantum.Random)，提供更方便的方法来从程序内采样随机值。 Q#  ([QuantumLibraries # 311](https://github.com/microsoft/QuantumLibraries/pull/311)， [qsharp # 328](https://github.com/microsoft/qsharp-runtime/pull/328)) 
+- 改进了带有新[ `DumpOperation` 操作](xref:Microsoft.Quantum.Diagnostics.DumpOperation)的[Microsoft 量子命名空间](xref:Microsoft.Quantum.Diagnostics)，以及用于限制 qubit 分配和 oracle 调用的新操作。  ([QuantumLibraries # 302](https://github.com/microsoft/QuantumLibraries/pull/302)) 
 - 在[ `%project` ](xref:microsoft.quantum.iqsharp.magic-ref.project)我 Q# 和 Python 中的[ `qsharp.projects` API](https://docs.microsoft.com/python/qsharp-core/qsharp.projects.projects)中新建神奇命令，以支持对 Q# 当前工作区文件夹之外的项目的引用。 有关此功能的当前限制，请参阅 [iqsharp # 277](https://github.com/microsoft/iqsharp/issues/277) 。 
 - 支持自动加载 `.csproj` I Q# /Python 主机的文件，这允许在初始化时加载外部项目或包引用。 有关更多详细信息，请参阅使用[ Q# Python 和 Jupyter 笔记本](xref:microsoft.quantum.guide.host-programs)的指南。
 - 添加了 ErrorCorrection 示例。
@@ -83,7 +93,7 @@ ms.locfileid: "91771335"
 此版本包含以下各项：
 
 - `qdk-chem`用于转换旧电子结构问题序列化格式的新工具 (例如： FCIDUMP) 到[Broombridge](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)
-- 一致命名空间中的新函数和操作 [`Microsoft.Quantum.Synthesis`](xref:microsoft.quantum.synthesis) 使用基于转换和分解的合成算法来应用传统 oracles。
+- 一致命名空间中的新函数和操作 [`Microsoft.Quantum.Synthesis`](xref:Microsoft.Quantum.Synthesis) 使用基于转换和分解的合成算法来应用传统 oracles。
 - 我 Q# 现在允许将参数用于 `%simulate` 、 `%estimate` 和其他幻命令。 有关更多详细信息，请参阅[ `%simulate` 幻命令参考](xref:microsoft.quantum.iqsharp.magic-ref.simulate)。
 - I 中的新阶段显示选项 Q# 。有关更多详细信息，请参阅[ `%config` 幻命令参考](xref:microsoft.quantum.iqsharp.magic-ref.config)。
 - Q#现在，我和 `qsharp` Python 包都是通过 conda 包提供 ([qsharp](https://anaconda.org/quantum-engineering/qsharp)和[iqsharp](https://anaconda.org/quantum-engineering/iqsharp)) 来简化 Q# Jupyter 和 Python 功能到 conda 环境的本地安装。 有关更多详细信息，请参阅[ Q# Jupyter 笔记本](xref:microsoft.quantum.install.jupyter)和[ Q# Python](xref:microsoft.quantum.install.python)安装指南。
@@ -99,13 +109,13 @@ ms.locfileid: "91771335"
 
 ## <a name="version-0112006403"></a>版本 0.11.2006.403
 
-发行日期：*2020 年 6 月 4 日*
+发行日期： *2020 年 6 月 4 日*
 
 此版本修复了影响项目编译的 bug Q# 。
 
 ## <a name="version-0112006207"></a>版本 0.11.2006.207
 
-发行日期：*2020 年 6 月 3 日*
+发行日期： *2020 年 6 月 3 日*
 
 此版本包含以下各项：
 
@@ -121,7 +131,7 @@ ms.locfileid: "91771335"
 
 ## <a name="version-01120042825"></a>版本 0.11.2004.2825
 
-发行日期：*2020 年 4 月 30 日*
+发行日期： *2020 年 4 月 30 日*
 
 此版本包含以下各项：
 
@@ -130,18 +140,18 @@ ms.locfileid: "91771335"
 - 对我的 Docker 映像的性能改进 Q#
 
 > [!NOTE]
-> Q#[`@EntryPoint()`](xref:microsoft.quantum.core.entrypoint)当前无法从 Python 或 .net 主机程序调用使用新属性的应用程序。
+> Q#[`@EntryPoint()`](xref:Microsoft.Quantum.Core.EntryPoint)当前无法从 Python 或 .net 主机程序调用使用新属性的应用程序。
 > 有关详细信息，请参阅 [Python](xref:microsoft.quantum.install.python) 和 [.NET 互操作性](xref:microsoft.quantum.install.cs)指南。
 
 ## <a name="version-01120033107"></a>版本 0.11.2003.3107
 
-发行日期：*2020 年 3 月 31 日*
+发行日期： *2020 年 3 月 31 日*
 
 此版本包含针对版本 0.11.2003.2506 的小 Bug 修复。
 
 ## <a name="version-01120032506"></a>版本 0.11.2003.2506
 
-发行日期：*2020 年 3 月 26 日*
+发行日期： *2020 年 3 月 26 日*
 
 此版本包含以下各项：
 
@@ -179,11 +189,11 @@ ms.locfileid: "91771335"
 
 ## <a name="version-01019120501"></a>版本 0.10.1912.0501
 
-发行日期：*2019 年 12 月 5 日*
+发行日期： *2019 年 12 月 5 日*
 
 此版本包含以下各项：
 
-- 用于单元测试的新测试属性 Q# ，请参阅[此处](https://docs.microsoft.com/qsharp/api/qsharp/microsoft.quantum.diagnostics.test)的更新 API 文档和更新的[here](xref:microsoft.quantum.guide.testingdebugging)测试 & 调试指南
+- 用于单元测试的新测试属性 Q# ，请参阅[此处](xref:Microsoft.Quantum.Diagnostics.Test)的更新 API 文档和更新的[here](xref:microsoft.quantum.guide.testingdebugging)测试 & 调试指南
 - 在出现 Q# 程序运行错误的情况下添加堆栈跟踪
 - 对 Visual Studio Code 中的断点的支持（由于 [OmniSharp C# Visual Studio Code 扩展](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)中的更新）
 
@@ -191,7 +201,7 @@ ms.locfileid: "91771335"
 
 ## <a name="version-01019111607"></a>版本 0.10.1911.1607
 
-发行日期：*2019 年 11 月 17 日*
+发行日期： *2019 年 11 月 17 日*
 
 此版本包含以下各项：
 
@@ -202,7 +212,7 @@ ms.locfileid: "91771335"
 
 ## <a name="version-0101911307"></a>版本 0.10.1911.307
 
-发行日期：*2019 年 11 月 1 日*
+发行日期： *2019 年 11 月 1 日*
 
 此版本包含以下各项：
 
@@ -233,7 +243,7 @@ ms.locfileid: "91771335"
 - 新支持中的[语态语句](xref:microsoft.quantum.guide.operationsfunctions#conjugations)Q#
 - 编译器中新的代码操作，例如：“replace with”、“add documentation”和简单数组项更新
 - 已将安装模板和新项目命令添加到 Visual Studio Code 扩展
-- 添加了 ApplyIf 连结符的新变体，例如 [Microsoft.Quantum.Canon.ApplyIfOne](xref:microsoft.quantum.canon.applyifone)
+- 添加了 ApplyIf 连结符的新变体，例如 [Microsoft.Quantum.Canon.ApplyIfOne](xref:Microsoft.Quantum.Canon.ApplyIfOne)
 - 已转换为 Jupyter Notebook 的其他[量子 Katas](https://github.com/Microsoft/QuantumKatas)
 - Visual Studio 扩展现在需要 Visual Studio 2019
 
@@ -241,7 +251,7 @@ ms.locfileid: "91771335"
 
 此处汇总了这些更改，以及有关升级现有程序的说明。  有关这些更改的详细信息，请参阅[ Q# 开发博客](https://devblogs.microsoft.com/qsharp)。
 
-## <a name="version-08-packagereference-0819071701"></a>版本 0.8 (*PackageReference 0.8.1907.1701*)
+## <a name="version-08-packagereference-0819071701"></a>版本 0.8 ( *PackageReference 0.8.1907.1701* )
 
 发行日期：2019 年 7 月 12 日
 
@@ -253,7 +263,7 @@ ms.locfileid: "91771335"
 
 有关[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed)和[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed)的信息，请参阅已结束的 PR 的完整列表。  
 
-## <a name="version-07-packagereference-0719053109"></a>版本 0.7 (*PackageReference 0.7.1905.3109*)
+## <a name="version-07-packagereference-0719053109"></a>版本 0.7 ( *PackageReference 0.7.1905.3109* )
 
 发行日期：2019 年 5 月 31 日
 
@@ -320,7 +330,7 @@ ms.locfileid: "91771335"
 
 * 已弃用几个命名空间，因为其中的操作已重新组织到其他命名空间。 使用这些命名空间的程序将继续运行，并且编译时警告将指示在其中定义操作的命名空间。  
 
-* Microsoft.Quantum.Arithmetic 命名空间已标准化为使用 <xref:microsoft.quantum.arithmetic.littleendian> 用户定义类型。 需要转换为小端时，请使用函数 [BigEndianAsLittleEndian](xref:microsoft.quantum.arithmetic.bigendianaslittleendian)。  
+* Microsoft.Quantum.Arithmetic 命名空间已标准化为使用 <xref:Microsoft.Quantum.Arithmetic.LittleEndian> 用户定义类型。 需要转换为小端时，请使用函数 [BigEndianAsLittleEndian](xref:Microsoft.Quantum.Arithmetic.BigEndianAsLittleEndian)。  
 
 * 多个 callables (函数和操作) 的名称已更改为符合[ Q# 样式指南](xref:microsoft.quantum.contributing.style)。  旧的可调用对象的名称已弃用。  使用旧的可调用对象的程序将继续处理编译时警告。 
 

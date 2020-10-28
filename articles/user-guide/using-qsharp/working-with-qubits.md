@@ -9,12 +9,12 @@ uid: microsoft.quantum.guide.qubits
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: aa942a61280553ae4e51cd5ddcc85c0df935dab1
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 9a3d7e03016332a04ac9d1610428b6fcd546d1f6
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835853"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691586"
 ---
 # <a name="working-with-qubits"></a>使用量子位
 
@@ -29,17 +29,17 @@ Qubits 是量程计算中信息的基础对象。 有关 qubits 的常规介绍�
 
 由于物理 qubits 是量程计算机中宝贵的资源，因此，编译器的一项工作是确保它们尽可能有效地使用。
 因此，您需要 Q# 指定在特定语句块内 *分配* qubits 以供使用。
-可以将 qubits 分配为单一 qubit，也可以将其分配为 qubits 数组（称为 *寄存器*）。 
+可以将 qubits 分配为单一 qubit，也可以将其分配为 qubits 数组（称为 *寄存器* ）。 
 
 ### <a name="clean-qubits"></a>清理 qubits
 
 使用 `using` 语句可分配新的 qubits，以便在语句块期间使用。
 
 语句包含关键字 `using` ，后跟括在括号中的绑定 `( )` 和 qubits 可用的语句块。
-绑定遵循与语句相同的模式 `let` ：单个符号或符号元组，后跟一个等号 `=` ，一个值或匹配 *项*的匹配元组。
+绑定遵循与语句相同的模式 `let` ：单个符号或符号元组，后跟一个等号 `=` ，一个值或匹配 *项* 的匹配元组。
 
 初始值设定项可用于单个 qubit （表示为 `Qubit()` ）或 qubits 的数组， `Qubit[n]` 其中 `n` 是一个 `Int` 表达式。
-例如，应用于对象的
+例如，
 
 ```qsharp
 using (qubit = Qubit()) {
@@ -68,7 +68,7 @@ using ((auxiliary, register) = (Qubit(), Qubit[5])) {
 这通常称为 "脏" qubits，因为它们的状态未知，甚至可以与量程计算机内存的其他部分放大。
 
 绑定遵循与语句相同的模式和规则 `using` 。
-例如，应用于对象的
+例如，
 ```qsharp
 borrowing (qubit = Qubit()) {
     // ...
@@ -95,7 +95,7 @@ borrowing ((auxiliary, register) = (Qubit(), Qubit[5])) {
 本文介绍 Q# 可用于与 qubits 交互的几个有用操作。
 有关这些和其他的详细信息，请参阅 [内部操作和函数](xref:microsoft.quantum.libraries.standard.prelude)。 
 
-首先，qubit Pauli 运算符 $X $、$Y $ 和 $Z $ Q# 由内部操作 [`X`](xref:microsoft.quantum.intrinsic.x) 、和表示， [`Y`](xref:microsoft.quantum.intrinsic.y) [`Z`](xref:microsoft.quantum.intrinsic.z) 其中每个都具有类型 `(Qubit => Unit is Adj + Ctl)` 。
+首先，qubit Pauli 运算符 $X $、$Y $ 和 $Z $ Q# 由内部操作 [`X`](xref:Microsoft.Quantum.Intrinsic.X) 、和表示， [`Y`](xref:Microsoft.Quantum.Intrinsic.Y) [`Z`](xref:Microsoft.Quantum.Intrinsic.Z) 其中每个都具有类型 `(Qubit => Unit is Adj + Ctl)` 。
 
 如 [内部操作和函数](xref:microsoft.quantum.libraries.standard.prelude)中所述，请将 $X $， `X` 以作为位翻转操作，而不是入口。
 您可以使用该 `X` 操作来为某些传统位字符串 $s $ s_0 \ket{s_1 \dots .. s_n} $ 的形式准备状态：
@@ -127,7 +127,7 @@ operation RunExample() : Unit {
 > [!TIP]
 > 稍后，您将看到更简洁的方式来编写不需要手动控制流的操作。
 
-你还可以通过使用 \Right 转换 $H $ 来准备状态，例如 $ \ket{+} = \left ( \ket {0} + \ket {1} \sqrt) /\ket {2} $ and $ \left {-} = \ket ( \ket {0} -\right {1} \sqrt) /Hadamard {2} $，该转换 ($，该转换由 Q# 内部操作 [`H`](xref:microsoft.quantum.intrinsic.h) (">") ) ：
+你还可以通过使用 \Right 转换 $H $ 来准备状态，例如 $ \ket{+} = \left ( \ket {0} + \ket {1} \sqrt) /\ket {2} $ and $ \left {-} = \ket ( \ket {0} -\right {1} \sqrt) /Hadamard {2} $，该转换 ($，该转换由 Q# 内部操作 [`H`](xref:Microsoft.Quantum.Intrinsic.H) (">") ) ：
 
 ```qsharp
 operation PreparePlusMinusState(bitstring : Bool[], register : Qubit[]) : Unit {
@@ -145,11 +145,11 @@ operation PreparePlusMinusState(bitstring : Bool[], register : Qubit[]) : Unit {
 ## <a name="measurements"></a>度量
 
 可以在不同的基础上执行单个 qubits 的度量值，每个度量值由 [Bloch 球体](xref:microsoft.quantum.glossary#bloch-sphere)上的 Pauli 轴表示。
-*计算基础*是指 `PauliZ` 基础，是用于度量的最常见的基础。
+*计算基础* 是指 `PauliZ` 基础，是用于度量的最常见的基础。
 
 ### <a name="measure-a-single-qubit-in-the-pauliz-basis"></a>基于单个 qubit 度量 `PauliZ`
 
-使用 " [`M`](xref:microsoft.quantum.intrinsic.m) 操作"，它是一个内置的非单一的非单一操作，用于度量单个 qubit 并为 `PauliZ` 结果分配一个传统值。
+使用 " [`M`](xref:Microsoft.Quantum.Intrinsic.M) 操作"，它是一个内置的非单一的非单一操作，用于度量单个 qubit 并为 `PauliZ` 结果分配一个传统值。
 `M` 具有保留的返回类型， `Result` 它只能接受值 `Zero` 或 `One` 对应于已测量状态 $ \ket {0} $ 或 $ \ket {1} $-指示结果不再是量程状态。
 
 一个简单的示例是以下操作，它在 $ \ket $ 状态下分配一个 qubit {0} ，然后对其应用一个 Hadamard 操作， `H` 并根据结果测量结果 `PauliZ` 。
@@ -175,7 +175,7 @@ operation MeasureOneQubit() : Result {
 
 ### <a name="measure-one-or-more-qubits-in-specific-bases"></a>度量特定基准中的一个或多个 qubits
 
-若要测量特定基数的一个或多个 qubits 数组，可以使用 [`Measure`](xref:microsoft.quantum.intrinsic.measure) 操作。
+若要测量特定基数的一个或多个 qubits 数组，可以使用 [`Measure`](xref:Microsoft.Quantum.Intrinsic.Measure) 操作。
 
 的输入 `Measure` 是一组 `Pauli` 类型 (例如， `[PauliX, PauliZ, PauliZ]`) 和 qubits 的数组。
 

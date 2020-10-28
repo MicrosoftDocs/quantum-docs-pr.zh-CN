@@ -89,7 +89,7 @@ author： QuantumWriter uid： benbra 毫秒。作者： v-毫秒。日期： 12
 
 $$\mathrm{Cnot-contains } _ { 01 } (H \otimes 1) \ket { 00 } = \frac { 1 } { \sqrt { 2 } } \left (\ket { 00 }  +  \ket { 11 } \right) ，$$
 
-具有这种或更大复杂性的操作在量程算法和量程错误更正中无处不在，因此它应该会很好地降低，其中有一种简单的方法可以将其可视化称为 " *量程*"。
+具有这种或更大复杂性的操作在量程算法和量程错误更正中无处不在，因此它应该会很好地降低，其中有一种简单的方法可以将其可视化称为 " *量程* "。
 准备此最大化放大量程状态的线路关系图为：
 
 <!--- ![](.\media\1.svg) --->
@@ -109,7 +109,7 @@ $$\mathrm{Cnot-contains } _ { 01 } (H \otimes 1) \ket { 00 } = \frac { 1 } { \sq
 <!--找不到一种轻松地将此 .。。可能需要扩展：-->
 ![对 qubit 寄存器执行的 Hadamard 操作的符号](~/media/2.svg)
 
-是对 qubit 寄存器进行的 [Hadamard](xref:microsoft.quantum.intrinsic.h) 操作。
+是对 qubit 寄存器进行的 [Hadamard](xref:Microsoft.Quantum.Intrinsic.H) 操作。
 
 量程入口按时间顺序排列，并将最左侧的入口排列为第一个应用到 qubits 的入口。
 换而言之，如果将电缆画为包含量程状态，则电缆会从左到右从图中的每个入口开始显示量程状态。
@@ -150,7 +150,7 @@ $$\mathrm{Cnot-contains } _ { 01 } (H \otimes 1) \ket { 00 } = \frac { 1 } { \sq
 ![单个受控入口的回路图](~/media/5.svg)
 
 此时，黑色圆圈表示控制门的量程位，垂直线表示在控件 qubit 采用值1时应用的单一 $ $ 。
-对于 $ g = X 和 g Z 的特殊情况， $ $ = $ 我们引入了以下表示法，用于描述控制的入口版本 (请注意，受控-X 入口) ： [ $ $ ](xref:microsoft.quantum.intrinsic.cnot)
+对于 $ g = X 和 g Z 的特殊情况， $ $ = $ 我们引入了以下表示法，用于描述控制的入口版本 (请注意，受控-X 入口) ： [ $ $ ](xref:Microsoft.Quantum.Intrinsic.CNOT)
 
 <!--- ![](.\media\6.svg) --->
 <!--找不到一种轻松地将此 .。。可能需要扩展：-->
@@ -175,7 +175,7 @@ is Ctl { // Auto-generate the controlled specialization of the operation
 <!--找不到一种轻松地将此 .。。可能需要扩展：-->
 ![表示度量操作的符号](~/media/7.svg)
 
-Q# 实现一个 [度量运算符](xref:microsoft.quantum.intrinsic.measure) 用于实现此目的。
+Q# 实现一个 [度量运算符](xref:Microsoft.Quantum.Intrinsic.Measure) 用于实现此目的。
 有关详细信息，请参阅 [有关度量值的部分](xref:microsoft.quantum.libraries.standard.prelude#measurements) 。
 
 同样，subcircuit

@@ -9,12 +9,12 @@ uid: microsoft.quantum.contributing.api-design
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 8714d3290e4099f901dab20a9ee9334699c4ad81
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 6b196cf1be584a3157c7a9eb8cf497fe1121dd7a
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834901"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691820"
 ---
 # <a name="no-locq-api-design-principles"></a>Q# API 设计原则
 
@@ -35,18 +35,18 @@ ms.locfileid: "90834901"
 
 **关键原则：** 公开将焦点放在量程应用程序上的 Api。
 
-- ✅**选择反映**算法和应用程序的高级结构的操作和函数名称。
+- ✅**选择反映** 算法和应用程序的高级结构的操作和函数名称。
 - ⛔️ **不** 公开主要依赖于低级别实现细节的 api。
 
 **关键原则：** 使用示例用例启动每个 API 设计，以确保 Api 直观地使用。
 
-- ✅**请确保公共**API 的每个组件都有相应的用例，而不是尝试针对所有可能的用法进行设计。
+- ✅**请确保公共** API 的每个组件都有相应的用例，而不是尝试针对所有可能的用法进行设计。
     以不同的方式进行设置，如果它们很有用，请不要引入公共 Api，但请确保 API 的每个部分都有一个 *具体* 的示例。
 
   *示例：*
   - @"microsoft.quantum.canon.applytoeachca" 可用作 `ApplyToEachCA(H, _)` 以统一 superposition 状态准备寄存器，这是许多量程算法中的常见任务。 同样的操作还可用于准备、数字和基于 oracle 的算法中的许多其他任务。
 
-- ✅**进行**集体讨论和研讨会新的 API 设计，以仔细检查它们是否直观，并满足建议的用例。
+- ✅**进行** 集体讨论和研讨会新的 API 设计，以仔细检查它们是否直观，并满足建议的用例。
 
   *示例：*
   - 检查当前 \# 的问答代码，了解新的 API 设计如何简化和阐明现有实现。
@@ -54,20 +54,20 @@ ms.locfileid: "90834901"
 
 **关键原则：** 设计 Api 以支持和鼓励可读代码。
 
-- ✅**请确保代码**可供域专家和非专家使用。
-- ✅**请将重点放在**高级算法中的每个操作和功能的效果上，并使用文档深入了解具体的实现细节。
+- ✅**请确保代码** 可供域专家和非专家使用。
+- ✅**请将重点放在** 高级算法中的每个操作和功能的效果上，并使用文档深入了解具体的实现细节。
 - ✅如果适用， **请遵循常见** 的 [Q \# 样式指南](xref:microsoft.quantum.contributing.style) 。
 
 **关键原则：** 设计稳定的 Api，提供向前兼容性。
 
 - ✅如果需要进行重大更改， **请** 正常弃用旧 api。
 
-- ✅**请**提供 "填充程序" 操作和函数，使现有用户代码在弃用期间能够正常运行。
+- ✅**请** 提供 "填充程序" 操作和函数，使现有用户代码在弃用期间能够正常运行。
 
   *示例：*
   - 将调用的操作重命名 `EstimateExpectation` 为时   `EstimateAverage` ，引入一个名为的新操作，   `EstimateExpectation` 该操作在其新名称上调用原始操作，以便现有代码可以继续正常工作。
 
-- ✅**使用**属性将 @"microsoft.quantum.core.deprecated" 弃用功能传达给用户。
+- ✅**使用** 属性将 @"microsoft.quantum.core.deprecated" 弃用功能传达给用户。
 
 - ✅ 重命名操作或函数 **时，请** 将新名称提供为的字符串输入 `@Deprecated` 。
 
@@ -87,7 +87,7 @@ ms.locfileid: "90834901"
   - 此 @"microsoft.quantum.canon.delay" 操作对其输入进行了最少的假设，因此可用于延迟跨 Q# 标准库或用户定义的操作的应用程序。
     <!-- TODO: define bad example. -->
 
-- ✅将纯粹确定的传统逻辑作为函数**而不是操作公开。**
+- ✅将纯粹确定的传统逻辑作为函数 **而不是操作公开。**
 
   *示例：*
   - 可以确定如何以确定性的方式写入其浮点输入的子例程，因此应将其公开给用户， `Squared : Double -> Double` 而不是作为一个操作公开给用户 `Square : Double => Double` 。 这允许在更多位置调用子例程 (例如：) 的其他函数内部，并向编译器提供有用的优化信息，从而影响性能和优化。
@@ -105,7 +105,7 @@ ms.locfileid: "90834901"
 
 **关键原则：** 选择可预测的函数和操作的输入和输出类型，并传达可调用的用途。
 
-- ✅**请**使用元组类型对输入和输出进行逻辑分组，这些输入和输出在一起被视为非常重要。 在这些情况下，请考虑使用用户定义的类型。
+- ✅**请** 使用元组类型对输入和输出进行逻辑分组，这些输入和输出在一起被视为非常重要。 在这些情况下，请考虑使用用户定义的类型。
 
   *示例：*
   - 用于输出另一个函数的本地最小值的函数可能需要将搜索间隔的界限作为输入，以使 `LocalMinima(fn : (Double -> Double), (left : Double, right : Double)) : Double` 其成为适当的签名。
@@ -118,7 +118,7 @@ ms.locfileid: "90834901"
 
 **关键原则：** 设计函数和操作，以便与 \# 部分应用程序等 Q 语言功能正常工作。
 
-- ✅**请**在输入元组中对项进行排序，以便最常见的已应用输入 (即：，以便部分应用程序的行为类似于 currying) 。
+- ✅**请** 在输入元组中对项进行排序，以便最常见的已应用输入 (即：，以便部分应用程序的行为类似于 currying) 。
 
   *示例：*
   - `ApplyRotation`采用浮点数和 qubit 作为输入的操作通常可能会部分应用于浮点输入，后者首先与需要类型输入的操作一起使用 `Qubit => Unit` 。 因此，签名为 `operation ApplyRotation(angle : Double, target : Qubit) : Unit is Adj + Ctl`
@@ -129,13 +129,13 @@ ms.locfileid: "90834901"
 
 **关键原则：** 使用用户定义的类型来帮助使 api 更具表现力且便于使用。
 
-- ✅**请**引入新的用户定义类型，为长和/或复杂类型提供有用的速记。
+- ✅**请** 引入新的用户定义类型，为长和/或复杂类型提供有用的速记。
 
   *示例：*
   - 在以下情况下，具有三个 qubit 数组输入的操作类型通常作为输入或作为输出返回，提供 UDT，如 `newtype TimeDependentBlockEncoding = ((Qubit[], Qubit[], Qubit[]) => Unit is Adj + Ctl)`
       有助于提供有用的速记。
 
-- ✅**请**引入新的用户定义类型，以指示给定的基类型仅应在非常特殊的意义上使用。
+- ✅**请** 引入新的用户定义类型，以指示给定的基类型仅应在非常特殊的意义上使用。
 
   *示例：*
   - 应专门将操作解释为将古典数据编码为量程寄存器的操作，可能适合使用用户定义类型进行标记 `newtype InputEncoder = (Apply : (Qubit[] => Unit))` 。
@@ -179,13 +179,13 @@ ms.locfileid: "90834901"
   - 作为量程开发工具包的量程模拟功能的一部分，由 Microsoft 发布的函数、操作和 Udt 置于   `Microsoft.Quantum.Simulation` 命名空间中。
   - `Microsoft.Quantum.Math` 表示由 Microsoft 发布的命名空间，它是与数学域区相关的量程开发工具包的一部分。
 
-- ✅将用于特定功能的操作、函数和用户定义类型放置到描述该功能的命名空间中，即使在不同的问题域中使用该功能，也**是如此。**
+- ✅将用于特定功能的操作、函数和用户定义类型放置到描述该功能的命名空间中，即使在不同的问题域中使用该功能，也 **是如此。**
 
   *示例：*
   - 作为量程开发工具包的一部分，由 Microsoft 发布的状态准备 Api 将放入中   `Microsoft.Quantum.Preparation` 。
   - 将 Microsoft 发布的量程模拟 Api 作为量程开发工具包的一部分进行放置   `Microsoft.Quantum.Simulation` 。
 
-- ✅**将仅**在特定域中使用的操作、函数和用户定义类型放入命名空间，以指示其实用工具的域。 如果需要，请使用子命名空间来指示每个特定于域的命名空间中的焦点任务。
+- ✅**将仅** 在特定域中使用的操作、函数和用户定义类型放入命名空间，以指示其实用工具的域。 如果需要，请使用子命名空间来指示每个特定于域的命名空间中的焦点任务。
 
   *示例：*
   - Microsoft 发布的量程机器学习库主要放在 @"microsoft.quantum.machinelearning" 命名空间中，但示例数据集由 @"microsoft.quantum.machinelearning.datasets"   命名空间提供。
@@ -200,7 +200,7 @@ ms.locfileid: "90834901"
 
 - ✅ 在极少数情况下，若要实现给定命名空间的 **API，需要** 使用一组丰富的私有函数或操作，请将它们放在一个与正在实现和结束的命名空间相匹配的新命名空间中 `.Private` 。
 
-- ✅**将所有**单元测试置于与受测命名空间匹配的命名空间中，并以结尾 `.Tests` 。
+- ✅**将所有** 单元测试置于与受测命名空间匹配的命名空间中，并以结尾 `.Tests` 。
 
 ## <a name="naming-conventions-and-vocabulary"></a>命名约定和词汇
 
@@ -208,14 +208,14 @@ ms.locfileid: "90834901"
 
 - ⛔️ **请勿** 使用歧视或 exclusionary 标识符名称，也不会在 API 文档注释中使用术语。
 
-- ✅**使用 API**文档注释来提供相关的上下文、示例和引用，尤其是对于更难的概念。
+- ✅**使用 API** 文档注释来提供相关的上下文、示例和引用，尤其是对于更难的概念。
 
 - ⛔️ **不** 会使用不必要的深奥或需要大量的量程算法知识来读取的标识符名称。
 
   *示例：*
   - 首选 "调幅放大迭代" 到 "Grover 迭代"。
 
-- ✅**选择操作**和函数名称可以清楚地传达可调用的预期效果，而不是其实现。 请注意，可在 [API 文档注释](xref:microsoft.quantum.guide.filestructure#documentation-comments)中记录实现。
+- ✅**选择操作** 和函数名称可以清楚地传达可调用的预期效果，而不是其实现。 请注意，可在 [API 文档注释](xref:microsoft.quantum.guide.filestructure#documentation-comments)中记录实现。
 
   *示例：*
   - 由于后者传达了前者的实现方式，因此更喜欢 "估计重叠" 到 "Hadamard 测试"。
@@ -224,32 +224,32 @@ ms.locfileid: "90834901"
 
   - **谓词**
 
-    - **断言**：检查有关目标计算机及其 qubits 的状态的假设，可能是通过使用 unphysical 资源来保存。 使用此谓词的操作应始终安全删除，而不会影响库和可执行程序的功能。 请注意，与事实不同，断言可能通常依赖于外部状态，如 qubit 寄存器的状态、运行环境等。 由于与外部状态的依赖关系是一种副作用，因此必须将断言作为运算公开，而不是作为函数公开。
+    - **断言** ：检查有关目标计算机及其 qubits 的状态的假设，可能是通过使用 unphysical 资源来保存。 使用此谓词的操作应始终安全删除，而不会影响库和可执行程序的功能。 请注意，与事实不同，断言可能通常依赖于外部状态，如 qubit 寄存器的状态、运行环境等。 由于与外部状态的依赖关系是一种副作用，因此必须将断言作为运算公开，而不是作为函数公开。
 
-    - **估计**：使用一个或多个可能重复的度量，从度量结果中估计一个传统的数量。
+    - **估计** ：使用一个或多个可能重复的度量，从度量结果中估计一个传统的数量。
 
       *示例：*
       - @"microsoft.quantum.characterization.estimatefrequency"
       - @"microsoft.quantum.characterization.estimateoverlapbetweenstates"
 
-    - **准备**：将量程操作或一系列操作应用到一个或多个 qubits，假定其在特定初始状态下启动 (通常为 $ \ket{00\cdots 0} $) ，这将导致这些 qubits 的状态发展到所需的结束状态。 通常，在给定的开始状态以外的其他状态下， **可能会** 导致未定义的单一转换，但仍 **应** 保留操作及其 adjoint "取消"，并应用无操作。
+    - **准备** ：将量程操作或一系列操作应用到一个或多个 qubits，假定其在特定初始状态下启动 (通常为 $ \ket{00\cdots 0} $) ，这将导致这些 qubits 的状态发展到所需的结束状态。 通常，在给定的开始状态以外的其他状态下， **可能会** 导致未定义的单一转换，但仍 **应** 保留操作及其 adjoint "取消"，并应用无操作。
 
       *示例：*
       - @"microsoft.quantum.preparation.preparearbitrarystate"
       - @"microsoft.quantum.preparation.prepareuniformsuperposition"
 
-    - **Measure**：向一个或多个 qubits 应用量程操作或一系列操作，读取传统数据。
+    - **Measure** ：向一个或多个 qubits 应用量程操作或一系列操作，读取传统数据。
 
       *示例：*
-      - @"microsoft.quantum.intrinsic.measure"
+      - @"Microsoft.Quantum.Intrinsic.Measure"
       - @"microsoft.quantum.arithmetic.measurefxp"
       - @"microsoft.quantum.arithmetic.measureinteger"
 
-    - **Apply**：向一个或多个 qubits 应用量程运算或一系列操作，从而使这些 qubits 的状态以一致的方式进行更改。 此谓词是 Q 命名法中最常见的动词 \# ， **不应** 在更具体的动词更直接相关时使用。
+    - **Apply** ：向一个或多个 qubits 应用量程运算或一系列操作，从而使这些 qubits 的状态以一致的方式进行更改。 此谓词是 Q 命名法中最常见的动词 \# ， **不应** 在更具体的动词更直接相关时使用。
 
-  - **名词**：
+  - **名词** ：
 
-    - **事实**：一个布尔条件，它仅依赖于其输入，而不依赖于目标计算机、其环境或计算机的 qubits 的状态。 与断言相比，事实只是对为该事实提供的 *值* 敏感。 例如：
+    - **事实** ：一个布尔条件，它仅依赖于其输入，而不依赖于目标计算机、其环境或计算机的 qubits 的状态。 与断言相比，事实只是对为该事实提供的 *值* 敏感。 例如：
 
       *示例：*
       - @"microsoft.quantum.diagnostics.equalityfacti"：表示大约两个整数输入的相等性事实;作为输入提供的整数彼此相等，或不依赖于任何其他程序状态。
@@ -259,9 +259,9 @@ ms.locfileid: "90834901"
       *示例：*
       - @"microsoft.quantum.machinelearning.trainingoptions"UDT 包含用于学习速率、minibatch 大小和用于 ML 培训的其他可配置参数的命名项。
 
-  - **形容词**：
+  - **形容词** ：
 
-    - ⛔️ **New**： **不应** 使用此形容词，因为这样可以避免在许多编程语言中将其用法与谓词混淆 (例如： c + +、c #、Java、TypeScript、PowerShell) 。
+    - ⛔️ **New** ： **不应** 使用此形容词，因为这样可以避免在许多编程语言中将其用法与谓词混淆 (例如： c + +、c #、Java、TypeScript、PowerShell) 。
 
   - **介词：** 在某些情况下，介词可用于进一步消除或阐明函数和操作名称中的名词和动词的角色。 不过，请注意，这种情况并不一致。
 

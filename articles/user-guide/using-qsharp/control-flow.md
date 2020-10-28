@@ -9,12 +9,12 @@ uid: microsoft.quantum.guide.controlflow
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 547c57cab67443e8b487bf817eb79fc922b43cdc
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: eca37202e5fe9b48dcfdec4eeb4ba6cafaac8723
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833509"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691094"
 ---
 # <a name="control-flow-in-no-locq"></a>控制流 Q#
 
@@ -34,19 +34,19 @@ ms.locfileid: "90833509"
 ## <a name="if-else-if-else"></a>如果为，则为; 否则为
 
 `if`语句支持条件处理。
-它包含关键字 `if` 、括号中的布尔表达式和语句块 (_then_ 块) 。
-根据需要，可以遵循任意数量的 else if 子句，其中每个子句都包含关键字 `elif` 、括号中的布尔表达式和语句块 (_else （if）_ 块) 。
-最后，语句可以选择使用 else 子句完成，后者由关键字 `else` 后跟另一个语句块 (_else_ 块) 。
+它包含关键字 `if` 、括号中的布尔表达式和语句块 ( _then_ 块) 。
+根据需要，可以遵循任意数量的 else if 子句，其中每个子句都包含关键字 `elif` 、括号中的布尔表达式和语句块 ( _else （if）_ 块) 。
+最后，语句可以选择使用 else 子句完成，后者由关键字 `else` 后跟另一个语句块 ( _else_ 块) 。
 
-`if`计算条件，如果该条件为*true*，则运行*then*块。
-如果条件为 *false*，则计算第一个 else if 条件;如果为 true，则运行 *其他-if* 块。
+`if`计算条件，如果该条件为 *true* ，则运行 *then* 块。
+如果条件为 *false* ，则计算第一个 else if 条件;如果为 true，则运行 *其他-if* 块。
 否则，第二个 else-if block 计算，然后是第三个，依此类推，直到遇到具有 true 条件的子句，或者没有其他的 else 子句。
-如果原始 *if* 条件和所有 else if 子句的计算结果为 *false*，则将运行 *else* 块（如果已提供）。
+如果原始 *if* 条件和所有 else if 子句的计算结果为 *false* ，则将运行 *else* 块（如果已提供）。
 
 请注意，不管哪个块运行，它都在它自己的作用域内运行。
 `if`块结束后，在、或块内部所做的绑定 `elif` `else` 将不可见。
 
-例如，应用于对象的
+例如，
 
 ```qsharp
 if (result == One) {
@@ -129,7 +129,7 @@ fixup {
 循环体运行，然后计算条件。
 如果条件为 true，则语句已完成;否则，修正将运行，并且语句将再次运行（从循环体开始）。
 
- (正文、测试和修正) 的所有三个部分都被视为 *每个重复*的单个作用域，因此，在正文中绑定的符号可用于测试和修复。
+ (正文、测试和修正) 的所有三个部分都被视为 *每个重复* 的单个作用域，因此，在正文中绑定的符号可用于测试和修复。
 但是，完成修正的运行将结束语句的范围，以便在正文或修正期间所进行的符号绑定在后续的重复中不可用。
 
 而且， `fixup` 语句通常非常有用，但并非总是必需的。
@@ -210,7 +210,7 @@ operation ApplyWith<'T>(
 Return 语句结束操作或函数的运行，并将值返回给调用方。
 它包含关键字 `return` ，后跟适当类型的表达式和终止分号。
 
-例如，应用于对象的
+例如，
 ```qsharp
 return 1;
 ```
@@ -235,7 +235,7 @@ Fail 语句结束操作的运行，并将错误值返回给调用方。
 操作中的 fail 语句数量没有限制。
 如果语句在块中跟随 fail 语句，则编译器可能会发出警告。
 
-例如，应用于对象的
+例如，
 
 ```qsharp
 fail $"Impossible state reached";
@@ -324,7 +324,7 @@ using (qubit = Qubit()) {
 * `fixup`循环中涉及量程操作的更为复杂的部分。 
 * 使用 `AssertMeasurementProbability` 语句来确定在程序中的某些指定点测量量程状态的概率。
 
-有关和操作的详细 [`AssertMeasurement`](xref:microsoft.quantum.diagnostics.assertmeasurement) 信息 [`AssertMeasurementProbability`](xref:microsoft.quantum.diagnostics.assertmeasurementprobability) ，请参阅 [测试和调试](xref:microsoft.quantum.guide.testingdebugging)。
+有关和操作的详细 [`AssertMeasurement`](xref:Microsoft.Quantum.Diagnostics.assertmeasurement) 信息 [`AssertMeasurementProbability`](xref:Microsoft.Quantum.Diagnostics.assertmeasurementprobability) ，请参阅 [测试和调试](xref:microsoft.quantum.guide.testingdebugging)。
 
 ```qsharp
 operation PrepareStateUsingRUS(target : Qubit) : Unit {

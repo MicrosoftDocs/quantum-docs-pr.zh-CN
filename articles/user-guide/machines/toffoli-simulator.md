@@ -9,12 +9,12 @@ uid: microsoft.quantum.machines.toffoli-simulator
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 82882f01d1b5c036faee71f18a18b2595107ddb7
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 036896a33fa02db671a5fd07421160df164bd41d
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835904"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92690789"
 ---
 # <a name="quantum-development-kit-qdk-toffoli-simulator"></a>量程开发工具包 (QDK) Toffoli 模拟器
 
@@ -67,7 +67,7 @@ dotnet run -s ToffoliSimulator
 Toffoli 模拟器支持：
 
 * `R` `Exp` 当结果操作等于或标识矩阵时，旋转和指数化 Paulis （如和） `X` 。
-* 度量和 [断言](xref:microsoft.quantum.diagnostics.assertmeasurement) 操作，但仅在 Pauli `Z` 基础中。 请注意，度量操作的概率始终为 **0** 或 **1**;Toffoli 模拟器中没有随机性。
+* 度量和 [断言](xref:Microsoft.Quantum.Diagnostics.AssertMeasurement) 操作，但仅在 Pauli `Z` 基础中。 请注意，度量操作的概率始终为 **0** 或 **1** ;Toffoli 模拟器中没有随机性。
 * `DumpMachine` 和 `DumpRegister` 函数。
 这两个函数输出 `Z` 每个 qubit 的当前基础状态，每行一个 qubit。
 
@@ -84,7 +84,7 @@ Toffoli 模拟器支持：
     var res = myLargeOperation.Run(sim).Result;
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [量程资源估计器](xref:microsoft.quantum.machines.resources-estimator)
 - [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)

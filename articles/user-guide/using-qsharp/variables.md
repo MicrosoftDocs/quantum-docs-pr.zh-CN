@@ -9,16 +9,16 @@ uid: microsoft.quantum.guide.variables
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: bb87f36d3c9b7df195f64e85151e833d494ea945
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 67c71c09e004d77360902360fefc7a7752e4a829
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835870"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92690934"
 ---
 # <a name="variables-in-no-locq"></a>中的变量 Q#
 
-Q# 区分可变和不可变的符号（或 *变量*，它们被绑定/分配到表达式）。
+Q# 区分可变和不可变的符号（或 *变量* ，它们被绑定/分配到表达式）。
 通常，建议使用不可变符号，因为它允许编译器执行更多优化。
 
 绑定的左侧由一个符号元组和一个表达式的右侧组成。
@@ -40,7 +40,7 @@ let measurementOperator = [PauliX, PauliZ, PauliZ, PauliX, PauliI];
 > [!NOTE]
 > 在前面的示例中，无需显式指定新变量的类型，因为语句右侧的表达式 `let` 是明确的，编译器将推断正确的类型。 
 
-使用定义的变量 `let` 是 *不可变*的，这意味着，定义后，不能再以任何方式对其进行更改。
+使用定义的变量 `let` 是 *不可变* 的，这意味着，定义后，不能再以任何方式对其进行更改。
 这可以实现多个有利的优化，包括对要对变量进行排序以便应用操作变体的传统逻辑的优化 `Adjoint` 。
 
 ## <a name="mutable-variables"></a>可变变量
@@ -58,7 +58,7 @@ let measurementOperator = [PauliX, PauliZ, PauliZ, PauliX, PauliI];
 
 #### <a name="apply-and-reassign-statements"></a>应用和重新分配语句
 
-`set`如果右侧包含二元运算符的应用程序，则特定类型的语句（即*apply 和重新分配*语句）提供了一种简便的连接方式，并将结果重新绑定到运算符的左侧参数。 例如，应用于对象的
+`set`如果右侧包含二元运算符的应用程序，则特定类型的语句（即 *apply 和重新分配* 语句）提供了一种简便的连接方式，并将结果重新绑定到运算符的左侧参数。 例如，
 
 ```qsharp
 mutable counter = 0;
@@ -92,7 +92,7 @@ for (q in qubits) {
 #### <a name="update-and-reassign-statements"></a>更新和重新分配语句
 
 在右侧的 [复制和更新表达式](xref:microsoft.quantum.guide.expressions#copy-and-update-expressions) 中存在类似的连接。
-相应地，对于用户定义的类型中的*命名项*以及*数组项*，都存在*更新和重新分配*语句。  
+相应地，对于用户定义的类型中的 *命名项* 以及 *数组项* ，都存在 *更新和重新分配* 语句。  
 
 ```qsharp
 newtype Complex = (Re : Double, Im : Double);
@@ -110,7 +110,7 @@ function ComplexSum(reals : Double[], ims : Double[]) : Complex[] {
 }
 ```
 
-对于数组， [`Microsoft.Quantum.Arrays`](xref:microsoft.quantum.arrays) 在标准库中， Q# 可以为许多常见数组初始化和操作需要提供所需的工具，从而有助于避免第一次更新数组项。 
+对于数组， [`Microsoft.Quantum.Arrays`](xref:Microsoft.Quantum.Arrays) 在标准库中， Q# 可以为许多常见数组初始化和操作需要提供所需的工具，从而有助于避免第一次更新数组项。 
 
 如果需要，更新和重新分配语句提供了一种替代方法：
 
@@ -135,7 +135,7 @@ operation SampleUniformDistrbution(nSamples : Int, nSteps : Int) : Double[] {
 
 ```
 
-例如，使用中提供的数组的库工具， [`Microsoft.Quantum.Arrays`](xref:microsoft.quantum.arrays) 可以轻松地定义一个函数，该函数返回一个类型数组，该数组的 `Pauli` 索引处的元素 `i` 采用给定的 `Pauli` 值，其他所有项都是 (`PauliI`) 的标识。
+例如，使用中提供的数组的库工具， [`Microsoft.Quantum.Arrays`](xref:Microsoft.Quantum.Arrays) 可以轻松地定义一个函数，该函数返回一个类型数组，该数组的 `Pauli` 索引处的元素 `i` 采用给定的 `Pauli` 值，其他所有项都是 (`PauliI`) 的标识。
 
 下面是此类函数的两个定义，第二个是利用我们的处理工具。
 
@@ -150,7 +150,7 @@ function PauliEmbedding(pauli : Pauli, length : Int, location : Int) : Pauli[] {
 }
 ```
 
-您可以改为使用 from 来创建类型数组，而不是遍历数组中的每个索引，并有条件地将其设置为 `PauliI` 或给定 `pauli` ，而 `ConstantArray` [`Microsoft.Quantum.Arrays`](xref:microsoft.quantum.arrays) `PauliI` 只需返回已在索引中更改了特定值的复制和更新表达式 `location` ：
+您可以改为使用 from 来创建类型数组，而不是遍历数组中的每个索引，并有条件地将其设置为 `PauliI` 或给定 `pauli` ，而 `ConstantArray` [`Microsoft.Quantum.Arrays`](xref:Microsoft.Quantum.Arrays) `PauliI` 只需返回已在索引中更改了特定值的复制和更新表达式 `location` ：
 
 ```qsharp
 function PauliEmbedding(pauli : Pauli, length : Int, location : Int) : Pauli[] {

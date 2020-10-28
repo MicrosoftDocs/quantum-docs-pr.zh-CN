@@ -107,7 +107,7 @@ author： bradben： benbra 毫秒。日期： 9/1/2020 ms. 主题：文章 uid�
 
 ## <a name="clifford-group"></a>Clifford 组
 
-一组操作，这些操作占用 [Bloch 球](xref:microsoft.quantum.glossary#bloch-sphere) 的 octants 并影响 [Pauli 运算符](xref:microsoft.quantum.glossary#pauli-operators)的效果。 其中包括操作[ $ X $ ](xref:microsoft.quantum.intrinsic.x)、 [ $ Y $ ](xref:microsoft.quantum.intrinsic.y)、 [ $ Z $ ](xref:microsoft.quantum.intrinsic.z)、 [ $ H $ ](xref:microsoft.quantum.intrinsic.h)和[ $ S $ ](xref:microsoft.quantum.intrinsic.s)。
+一组操作，这些操作占用 [Bloch 球](xref:microsoft.quantum.glossary#bloch-sphere) 的 octants 并影响 [Pauli 运算符](xref:microsoft.quantum.glossary#pauli-operators)的效果。 其中包括操作[ $ X $ ](xref:Microsoft.Quantum.Intrinsic.X)、 [ $ Y $ ](xref:Microsoft.Quantum.Intrinsic.Y)、 [ $ Z $ ](xref:Microsoft.Quantum.Intrinsic.Z)、 [ $ H $ ](xref:Microsoft.Quantum.Intrinsic.H)和[ $ S $ ](xref:Microsoft.Quantum.Intrinsic.S)。
 
 ## <a name="controlled"></a>操控
 
@@ -115,7 +115,7 @@ author： bradben： benbra 毫秒。日期： 9/1/2020 ms. 主题：文章 uid�
 
 ## <a name="dirac-notation"></a>Dirac 表示法
 
-简化 [量程状态](xref:microsoft.quantum.glossary#quantum-state)表示形式的符号简写，也称为 *寄存器-票证* 表示法。  *寄存器*部分表示一个行向量，例如 a $ \bra { } = \begin{bmatrix} { _1 } & a { _2 } \end{bmatrix} $ ，而*票证*部分表示一个列向量， $ \ket { b } = \begin{bmatrix} b { _1 } \\\\ b { _2 } \end{bmatrix} $ 。 有关详细信息，请参阅 [Dirac 表示法](xref:microsoft.quantum.concepts.dirac)。
+简化 [量程状态](xref:microsoft.quantum.glossary#quantum-state)表示形式的符号简写，也称为 *寄存器-票证* 表示法。  *寄存器* 部分表示一个行向量，例如 a $ \bra { } = \begin{bmatrix} { _1 } & a { _2 } \end{bmatrix} $ ，而 *票证* 部分表示一个列向量， $ \ket { b } = \begin{bmatrix} b { _1 } \\\\ b { _2 } \end{bmatrix} $ 。 有关详细信息，请参阅 [Dirac 表示法](xref:microsoft.quantum.concepts.dirac)。
 
 ## <a name="eigenvalue"></a>Eigenvalue
 
@@ -150,7 +150,7 @@ author： bradben： benbra 毫秒。日期： 9/1/2020 ms. 主题：文章 uid�
 
 ## <a name="hadamard"></a>Hadamard
 
-Hadamard 操作 (也称为 Hadamard 入口或变换) 作用于单个[qubit](xref:microsoft.quantum.glossary#qubit) ，并将其置于[superposition](xref:microsoft.quantum.glossary#superposition) $ \ket { 0 或1之间， } $ $ \ket { } $ 如果 qubit 最初处于 $ \ket { 0 } $ 状态。 在中 Q# ，此操作由预定义的操作应用 [`H`](xref:microsoft.quantum.intrinsic.h) 。
+Hadamard 操作 (也称为 Hadamard 入口或变换) 作用于单个[qubit](xref:microsoft.quantum.glossary#qubit) ，并将其置于[superposition](xref:microsoft.quantum.glossary#superposition) $ \ket { 0 或1之间， } $ $ \ket { } $ 如果 qubit 最初处于 $ \ket { 0 } $ 状态。 在中 Q# ，此操作由预定义的操作应用 [`H`](xref:Microsoft.Quantum.Intrinsic.H) 。
 
 ## <a name="immutable"></a>不可变
 
@@ -182,11 +182,11 @@ Hadamard 操作 (也称为 Hadamard 入口或变换) 作用于单个[qubit](xref
 
 ## <a name="partial-application"></a>部分应用程序
 
-调用不包含所有必需输入的 [函数](xref:microsoft.quantum.glossary#function) 或 [操作](xref:microsoft.quantum.glossary#operation) 。 这会返回一个新的可调用，该 [调用](xref:microsoft.quantum.glossary#callable) 只需在以后的应用程序中提供的下划线)  (所需的缺少参数。 例如，假设函数 `MyFunc(x : int, y : int) : int {return x + y;}` 可部分应用于新函数 `let NewFunc = MyFunc(_, 3)` 。 然后，你可以在以后使用缺少的参数 `NewFunc(2)` （返回值 *5*）调用新函数。  有关详细信息，请参阅 [部分应用程序](xref:microsoft.quantum.guide.operationsfunctions#partial-application)。
+调用不包含所有必需输入的 [函数](xref:microsoft.quantum.glossary#function) 或 [操作](xref:microsoft.quantum.glossary#operation) 。 这会返回一个新的可调用，该 [调用](xref:microsoft.quantum.glossary#callable) 只需在以后的应用程序中提供的下划线)  (所需的缺少参数。 例如，假设函数 `MyFunc(x : int, y : int) : int {return x + y;}` 可部分应用于新函数 `let NewFunc = MyFunc(_, 3)` 。 然后，你可以在以后使用缺少的参数 `NewFunc(2)` （返回值 *5* ）调用新函数。  有关详细信息，请参阅 [部分应用程序](xref:microsoft.quantum.guide.operationsfunctions#partial-application)。
 
 ## <a name="pauli-operators"></a>Pauli 运算符
 
-由三个 2 x 2 个单一矩阵组成的一组 `X` ，称为 `Y` 和一个 `Z` 量程运算。 恒等矩阵 $ $ 通常也包含在集中。  $I = \begin{bmatrix} 1 & 0 \\\\ 0 & 1 \end{bmatrix} $ ， $ X = \begin{bmatrix} 0 & 1 \\\\ 1 & 0 \end{bmatrix} $ ， $ Y = \begin{bmatrix} 0 & -i \\\\ i & 0 \end{bmatrix} $ ， $ Z = \begin{bmatrix} 1 & 0 \\\\ 0 & -1 \end{bmatrix} $ 。   有关详细信息，请参阅 [qubit 操作](xref:microsoft.quantum.concepts.qubit#single-qubit-operations)。
+一组由 3 2 x 2 组成的单一矩阵，它们称为 `X` 、 `Y` `Z` 量程运算。 恒等矩阵 $ $ 通常也包含在集中。  $I = \begin{bmatrix} 1 & 0 \\\\ 0 & 1 \end{bmatrix} $ ， $ X = \begin{bmatrix} 0 & 1 \\\\ 1 & 0 \end{bmatrix} $ ， $ Y = \begin{bmatrix} 0 & -i \\\\ i & 0 \end{bmatrix} $ ， $ Z = \begin{bmatrix} 1 & 0 \\\\ 0 & -1 \end{bmatrix} $ 。   有关详细信息，请参阅 [qubit 操作](xref:microsoft.quantum.concepts.qubit#single-qubit-operations)。
 
 ## <a name="quantum-circuit-diagram"></a>量程线路关系图
 

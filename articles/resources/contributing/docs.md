@@ -9,12 +9,12 @@ uid: microsoft.quantum.contributing.docs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 20e9f8126a290f52701b6b0e525d7669a605d4c9
-ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
+ms.openlocfilehash: 2debef858c38b9a8f11264858130ed7cb41543ae
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90759673"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691791"
 ---
 # <a name="improving-documentation"></a>改进文档
 
@@ -27,9 +27,9 @@ ms.locfileid: "90759673"
 
 也就是说，每种形式的文档在细节上都不同：
 
-- **概念文档**包含一组发布到的文章 https://docs.microsoft.com/quantum ，这些文章介绍了从量程计算的基本知识到交换格式的技术规范的所有内容。 这些文章以 [DocFX-风格 Markdown (DFM) ](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)（一种用于创建丰富文档集的 Markdown 变量）编写。
-- **API 引用**是发布到的每个 Q# 函数、操作和用户定义类型的一组页 https://docs.microsoft.com/qsharp/api/ 。 这些页面记录每个可调用的输入和操作，以及示例和指向详细信息的链接。 在每个版本中，将自动从源代码中的小型 DFM 文档中提取 API 引用 Q# 。
-- 每个示例和 kata 附带的 **readme.txt <!----> ** 文件介绍了如何使用该示例或 kata，它所涵盖的内容以及它如何与量程开发工具包的其余部分相关。 这些文件使用 [GitHub 风格 Markdown (GFM) ](https://github.github.com/gfm/)，这是一种更轻量的替代方法，用于将文档直接附加到代码存储库。
+- **概念文档** 包含一组发布到的文章 https://docs.microsoft.com/quantum ，这些文章介绍了从量程计算的基本知识到交换格式的技术规范的所有内容。 这些文章以 [DocFX-风格 Markdown (DFM) ](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html)（一种用于创建丰富文档集的 Markdown 变量）编写。
+- **API 引用** 是发布到的每个 Q# 函数、操作和用户定义类型的一组页 https://docs.microsoft.com/qsharp/api/ 。 这些页面记录每个可调用的输入和操作，以及示例和指向详细信息的链接。 在每个版本中，将自动从源代码中的小型 DFM 文档中提取 API 引用 Q# 。
+- 每个示例和 kata 附带的 **readme.txt <!---->** 文件介绍了如何使用该示例或 kata，它所涵盖的内容以及它如何与量程开发工具包的其余部分相关。 这些文件使用 [GitHub 风格 Markdown (GFM) ](https://github.github.com/gfm/)，这是一种更轻量的替代方法，用于将文档直接附加到代码存储库。
 
 ## <a name="contributing-to-the-conceptual-documentation"></a>参与概念文档
 
@@ -46,7 +46,7 @@ ms.locfileid: "90759673"
 
 ### <a name="referencing-sample-code-from-conceptual-articles"></a>从概念文章中引用示例代码
 
-如果要将代码包含在 [示例存储库](https://github.com/Microsoft/Quantum)中，可以使用特殊的 DocFX-风格 Markdown 命令来执行此操作：
+如果要将代码包含在 [示例存储库](https://github.com/Microsoft/Quantum)中，可以使用特殊的 DocFX-Flavored Markdown 命令执行此操作：
 
 ```markdown
 :::code language="qsharp" source="~/quantum/samples/algorithms/chsh-game/Game.qs" range="4-8":::
@@ -138,7 +138,7 @@ ms.locfileid: "90759673"
  }
 ```
 
-可以在 [ `ControlledOnBitString` 函数的 API 文档](xref:microsoft.quantum.canon.controlledonbitstring)中查看上述代码的呈现版本。
+可以在 [ `ControlledOnBitString` 函数的 API 文档](xref:Microsoft.Quantum.Canon.ControlledOnBitString)中查看上述代码的呈现版本。
 
 除了文档编写的一般做法之外，在编写 API 文档注释中，这有助于保持几个要点：
 

@@ -9,12 +9,12 @@ uid: microsoft.quantum.overview.katas
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 097d7f70088b6ee84a1e91ee99be59149dd9e15b
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 6b2eff2a457b809bd168b9b59ab013b7fc7541e6
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834816"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691654"
 ---
 # <a name="learn-quantum-computing-with-the-quantum-katas"></a>使用 Quantum Katas 学习量子计算
 
@@ -55,7 +55,7 @@ ms.locfileid: "90834816"
 |[认识量子门](https://github.com/microsoft/QuantumKatas/tree/main/BasicGates)|旨在帮助你熟悉中的基本量程入口的一系列练习 Q# 。 包括基本的 qubit 和多 qubit 入口、adjoint 和控制入口的练习，以及如何使用入口来修改 qubit 的状态。|
 |[创建量子叠加](https://github.com/microsoft/QuantumKatas/tree/main/Superposition)|使用这些练习，熟悉中 superposition 和编程的概念 Q# 。 包括对中基本的 qubit 和多 qubit 入口、superposition 以及 flow 控制和递归的练习 Q# 。|
 |[使用度量来区分量子状态](https://github.com/microsoft/QuantumKatas/tree/main/Measurements)|解决这些练习，同时了解量程测量和正交和非正交状态。 |
-|[联合度量](https://github.com/microsoft/QuantumKatas/tree/main/JointMeasurements)|了解联合奇偶校验度量值，以及如何使用 [Measure](xref:microsoft.quantum.intrinsic.measure) 运算来区分量程状态。|
+|[联合度量](https://github.com/microsoft/QuantumKatas/tree/main/JointMeasurements)|了解联合奇偶校验度量值，以及如何使用 [Measure](xref:Microsoft.Quantum.Intrinsic.Measure) 运算来区分量程状态。|
 
 ### <a name="algorithms"></a>算法
 

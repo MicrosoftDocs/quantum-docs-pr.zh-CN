@@ -9,12 +9,12 @@ uid: microsoft.quantum.contributing.style
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: fef3cea1c11e4fef49ddbf63adb34e07675049d2
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 7666974e255d537c8d611d0077b7f9b37a61f918
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834187"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691729"
 ---
 # <a name="no-locq-style-guide"></a>Q# 样式指南 #
 ## <a name="general-conventions"></a>一般约定 ##
@@ -68,7 +68,7 @@ ms.locfileid: "90834187"
 | 应用 | 作为输入提供的操作称为 |
 | Assert | 模拟器检查可能的量程度量结果的假设 |
 | 估算 | 返回一个传统值，表示从一个或多个度量值中提取的估计值 |
-| 度量 | 将执行量程度量，并将其结果返回给用户 |
+| 测量 | 将执行量程度量，并将其结果返回给用户 |
 | 准备 | 给定的 qubits 寄存器初始化为特定状态 |
 | 示例 | 从某一分布中随机返回一个传统值 |
 
@@ -113,7 +113,7 @@ ms.locfileid: "90834187"
 
 ### <a name="entry-points"></a>入口点
 
-在将入口点定义到 Q# 程序时， Q# 编译器将识别该[ `@EntryPoint()` 属性](xref:microsoft.quantum.core.entrypoint)，而不要求入口点具有特定名称 (例如： `main` 、 `Main` 或 `__main__`) 。
+在将入口点定义到 Q# 程序时， Q# 编译器将识别该[ `@EntryPoint()` 属性](xref:Microsoft.Quantum.Core.EntryPoint)，而不要求入口点具有特定名称 (例如： `main` 、 `Main` 或 `__main__`) 。
 也就是说，从开发人员的角度来看 Q# ，入口点是使用批注的普通操作 `@EntryPoint()` 。
 此外， Q# 入口点可能是整个应用程序的入口点 (例如，在 Q# 独立的可执行程序) 中，或者可能是应用程序 Q# 与应用程序的主机程序之间的接口 (也就是说：在使用 Q# Python 或 .net) 时，名称 "main" 在应用于入口点时可能会产生误导 Q# 。
 
@@ -134,7 +134,7 @@ ms.locfileid: "90834187"
 | ☑ | `@EntryPoint() operation RunSimulation` | 通过操作名称清楚地传达入口点的用途。 |
 | ☒ | <s>`@EntryPoint() operation Main`</s> | 使用 `Main` 不会清晰地传达入口点的目的，它是属性冗余的 `@EntryPoint()` 。 |
 
-***
+**_
 
 ### <a name="shorthand-and-abbreviations"></a>速记和缩写 ###
 
@@ -181,7 +181,7 @@ is Adj + Ctl {
 
 
 
-***
+_*_
 
 
 ### <a name="proper-nouns-in-names"></a>名称中的正确名词 ###
@@ -208,14 +208,14 @@ While we must maintain the history and intellectual provenance of concepts in qu
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-***
+_*_
 
 ### <a name="type-conversions"></a>类型转换 ###
 
 由于 Q# 是强类型化语言，因此，只能使用对类型转换函数的显式调用将一种类型的值用作另一种类型的值。
 这与允许值隐式更改类型 (例如：类型提升) 或通过强制转换）的语言不同。
 因此，类型转换函数在库开发中扮演着重要的角色 Q# ，并且包含有关命名的一个更常见的决策。
-但请注意，由于类型转换始终是 _确定性_的，因此可以将它们作为函数编写，因而会在上述建议的范围之内。
+但请注意，由于类型转换始终是 _确定性_ 的，因此可以将它们作为函数编写，因而会在上述建议的范围之内。
 具体而言，我们建议不要将类型转换函数命名为谓词 (例如： `ConvertToX`) 或副词 prepositional 短语 (`ToX`) ，但应将其命名为形容词 prepositional 短语，指示源类型和目标类型 (`XAsY`) 。
 在类型转换函数名称中列出数组类型时，建议采用速记 `Arr` 。
 避免异常情况，我们建议使用命名所有类型转换函数， `As` 以便可以快速识别它们。
@@ -235,7 +235,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 | ☒ | <s>`PauliArrFromBoolArr`</s> | 输入和输出类型的显示顺序不正确。 |
 | ☑ | `ResultArrAsBoolArr` | 输入类型和输出类型都是明确的。 |
 
-***
+_*_
 
 ### <a name="private-or-internal-names"></a>专用或内部名称 ###
 
@@ -256,7 +256,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 | ☒ | <s>`operation _ApplyDecomposedOperation`</s> | 不要使用下划线 `_` 指示此操作仅供内部使用。 |
 | ☑ | `internal operation ApplyDecomposedOperation` | `internal`开头的关键字清楚地指示此操作仅供内部使用。 |
 
-***
+_*_
 ### <a name="variants"></a>变量 ###
 
 尽管此限制在的未来版本中可能不会保持不变 Q# ，但目前这种情况下，通常会有一组相关的操作或函数，这些操作或函数可由函子它们的输入支持，或其参数的具体类型区分开来。
@@ -280,7 +280,7 @@ While we must maintain the history and intellectual provenance of concepts in qu
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-***
+_*_
 
 ### <a name="arguments-and-variables"></a>参数和变量 ###
 
@@ -305,9 +305,9 @@ Q#函数或操作的代码的主要目标是使其易于阅读和理解。
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-***
+_*_
 
-### <a name="user-defined-type-named-items"></a>用户定义的名为 Items 的类型 ###
+### <a name="user-defined-type-named-items"></a>命名项 User-Defined 类型 ###
 
 用户定义类型中的命名项应命名为 `CamelCase` ，即使是在对 UDT 构造函数的输入中。
 使用访问器表示法时，这有助于清晰地将命名项与对本地范围变量的引用区分开来 (例如： `callable::Apply`) 或 () 的复制和更新表示法。 `set arr w/= Data <- newData`
@@ -329,7 +329,7 @@ Q#函数或操作的代码的主要目标是使其易于阅读和理解。
 | ☒ | <s>`newtype Oracle = (apply : Qubit[] => Unit is Adj + Ctl) `</s> | 命名项的开头应为大写字母。 |
 | ☒ | <s>`newtype Collection = (Length : Int, Get : Int -> (Qubit => Unit)) `</s> | 解析为函数的命名项应命名为名词短语，而不是谓词短语。 |
 
-***
+_*_
 
 ## <a name="input-conventions"></a>输入约定 ##
 
@@ -379,7 +379,7 @@ operation ApplyPhaseEstimationIteration(
 
 # <a name="examples"></a>[示例](#tab/examples)
 
-***
+_*_
 
 ## <a name="documentation-conventions"></a>文档约定 ##
 
@@ -451,7 +451,7 @@ is Adj + Ctl {
 }
 ```
 
-***
+_*_
 
 ## <a name="formatting-conventions"></a>格式设置约定 ##
 
@@ -486,4 +486,4 @@ is Adj + Ctl {
 | ☑ | `Example(a, b, c)` | 输入元组中的项会正确地分隔以便于阅读。 |
 | ☒ | <s>`Example (a, b, c)`</s> | 应在函数、操作或 UDT 名称后禁止显示空间。 |
 
-***
+_**

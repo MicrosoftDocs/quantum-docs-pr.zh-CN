@@ -9,12 +9,12 @@ uid: microsoft.quantum.guide.host-programs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 2cb02617c81ee8b144ffe933f11b476ba6f4a23e
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: f1a4ef0616a8a3f1548b7a7207cf8cbb9dcc7260
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835955"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691707"
 ---
 # <a name="ways-to-run-a-no-locq-program"></a>运行程序的方式 Q#
 
@@ -26,7 +26,7 @@ ms.locfileid: "90835955"
 - 作为独立的应用程序，其中 Q# 是所涉及的唯一语言，直接调用程序。 这两种方法实际上属于此类别：
   - 命令行接口
   - Q# Jupyter 笔记本
-- 使用其他 *主机程序*（以 Python 或 .net 语言编写） (例如，c # 或 F # ) ，然后调用程序并可以进一步处理返回的结果。
+- 使用其他 *主机程序* （以 Python 或 .net 语言编写） (例如，c # 或 F # ) ，然后调用程序并可以进一步处理返回的结果。
 
 为了更好地了解这些过程及其区别，我们考虑了一个简单的 Q# 程序并对其运行方式进行比较。
 
@@ -56,16 +56,16 @@ ms.locfileid: "90835955"
 ```
 您定义了一个操作， `MeasureSuperposition` 该操作不使用输入并返回类型 [Result](xref:microsoft.quantum.guide.types)的值。
 
-虽然此页上的示例只包含 Q# *操作*，但我们所讨论的所有概念将同样适用于 Q# *函数*，因此，我们将它们统称为 *callables*。 它们的差异在基础上进行了讨论[ Q# ：操作和功能](xref:microsoft.quantum.guide.basics#q-operations-and-functions)，以及有关如何定义它们的详细信息，请参阅[操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。
+虽然此页上的示例只包含 Q# *操作* ，但我们所讨论的所有概念将同样适用于 Q# *函数* ，因此，我们将它们统称为 *callables* 。 它们的差异在基础上进行了讨论[ Q# ：操作和功能](xref:microsoft.quantum.guide.basics#q-operations-and-functions)，以及有关如何定义它们的详细信息，请参阅[操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。
 
 ### <a name="callable-defined-in-a-no-locq-file"></a>在文件中定义的可调用 Q#
 
 可调用只是由调用和运行的 Q# 。
 但是，它需要额外添加一些内容才能包含完整 `*.qs` Q# 文件。
 
-所有 Q# 类型和 callables 都 (您定义的类型和) 在命名空间中定义的，这些都是在命名空间中定义的，这些 *命名空间*提供了可引用的全名。
+所有 Q# 类型和 callables 都 (您定义的类型和) 在命名空间中定义的，这些都是在命名空间中定义的，这些 *命名空间* 提供了可引用的全名。
 
-例如，在 [`H`](xref:microsoft.quantum.intrinsic.h) [`MResetZ`](xref:microsoft.quantum.measurement.mresetz) 和命名空间中找到和操作 [`Microsoft.Quantum.Instrinsic`](xref:microsoft.quantum.intrinsic) ， [`Microsoft.Quantum.Measurement`](xref:microsoft.quantum.measurement) ([ Q# 标准库](xref:microsoft.quantum.qsharplibintro)) 的一部分。
+例如，在 [`H`](xref:Microsoft.Quantum.Intrinsic.H) [`MResetZ`](xref:Microsoft.Quantum.Measurement.MResetZ) 和命名空间中找到和操作 [`Microsoft.Quantum.Instrinsic`](xref:Microsoft.Quantum.Intrinsic) ， [`Microsoft.Quantum.Measurement`](xref:Microsoft.Quantum.Measurement) ([ Q# 标准库](xref:microsoft.quantum.qsharplibintro)) 的一部分。
 因此，它们始终可以通过其 *完整* 名称调用， `Microsoft.Quantum.Intrinsic.H(<qubit>)` `Microsoft.Quantum.Measurement.MResetZ(<qubit>)` 但始终执行此操作会导致代码非常杂乱。
 
 相反， `open` 语句允许用更简洁的速记来引用 callables，正如以上操作体中所做的那样。
@@ -90,8 +90,8 @@ namespace NamespaceName {
 > 例如，我们可以使用 `open Microsoft.Quantum.Instrinsic as NamespaceWithH;` 上面的，然后 `H` 通过调用 `NamespaceWithH.H(<qubit>)` 。
 
 > [!NOTE]
-> 所有这些都是一个例外，即 [`Microsoft.Quantum.Core`](xref:microsoft.quantum.core) 始终自动打开的命名空间。
-> 因此， [`Length`](xref:microsoft.quantum.core.length) 可以始终直接使用 callables 等。
+> 所有这些都是一个例外，即 [`Microsoft.Quantum.Core`](xref:Microsoft.Quantum.Core) 始终自动打开的命名空间。
+> 因此， [`Length`](xref:Microsoft.Quantum.Core.Length) 可以始终直接使用 callables 等。
 
 ### <a name="running-on-target-machines"></a>在目标计算机上运行
 
@@ -121,7 +121,7 @@ namespace NamespaceName {
 我们保留了 Jupyter 笔记本的独立应用程序 Q# ，因为它与前三个不同，主要功能并不围绕本地 Q# 文件。
 
 > [!NOTE]
-> 虽然我们在这些示例中并不说明这种情况，但在运行方法中，从程序内部打印的任何消息都 Q# (通过或进行的 [`Message`](xref:microsoft.quantum.intrinsic.message) [`DumpMachine`](xref:microsoft.quantum.diagnostics.dumpmachine) ，例如) 通常会始终打印到各自的控制台。
+> 虽然我们在这些示例中并不说明这种情况，但在运行方法中，从程序内部打印的任何消息都 Q# (通过或进行的 [`Message`](xref:Microsoft.Quantum.Intrinsic.Message) [`DumpMachine`](xref:Microsoft.Quantum.Diagnostics.DumpMachine) ，例如) 通常会始终打印到各自的控制台。
 
 ## <a name="no-locq-from-the-command-prompt"></a>Q# 从命令提示符
 开始编写程序的最简单方法之一 Q# 是避免担心单独的文件和另一种语言。
@@ -180,7 +180,7 @@ namespace NamespaceName {
     }
 ```
 其中，返回值是度量结果的数组。
-请注意， [`ApplyToEach`](xref:microsoft.quantum.canon.applytoeach) 和 [`ForEach`](xref:microsoft.quantum.arrays.foreach) 位于 [`Microsoft.Quantum.Canon`](xref:microsoft.quantum.canon) 和 [`Microsoft.Quantum.Arrays`](xref:microsoft.quantum.arrays) 命名空间中，每个都需要其他 `open` 语句。
+请注意， [`ApplyToEach`](xref:Microsoft.Quantum.Canon.ApplyToEach) 和 [`ForEach`](xref:Microsoft.Quantum.Arrays.ForEach) 位于 [`Microsoft.Quantum.Canon`](xref:Microsoft.Quantum.Canon) 和 [`Microsoft.Quantum.Arrays`](xref:Microsoft.Quantum.Arrays) 命名空间中，每个都需要其他 `open` 语句。
 
 如果将属性移 `@EntryPoint()` 到此新操作之前 (请注意，在文件中只能有一个这样的行) ，尝试运行它只会 `dotnet run` 导致错误消息，指出需要其他哪些命令行选项以及如何表达它们。
 
@@ -593,7 +593,7 @@ Q# Jupyter 笔记本利用 I Q# 内核，使你能够在单个笔记本中定义
 使用此类语句运行单元时，这些命名空间中的定义在整个工作区中都可用。
 
 > [!NOTE]
-> Callables 和[Microsoft.Quantum.Intrinsic](xref:microsoft.quantum.intrinsic) [Canon](xref:microsoft.quantum.canon) (例如， [`H`](xref:microsoft.quantum.intrinsic.h) 和 [`ApplyToEach`](xref:microsoft.quantum.canon.applytoeach)) 自动可用于 Q# Jupyter 笔记本的单元内定义的操作中。
+> Callables 和[Microsoft.Quantum.Intrinsic](xref:Microsoft.Quantum.Intrinsic) [Canon](xref:Microsoft.Quantum.Canon) (例如， [`H`](xref:Microsoft.Quantum.Intrinsic.H) 和 [`ApplyToEach`](xref:Microsoft.Quantum.Canon.ApplyToEach)) 自动可用于 Q# Jupyter 笔记本的单元内定义的操作中。
 > 不过，对于从外部源文件引入的代码)  (，这种情况并不是如此 Q# 。 [ Q# ](https://github.com/microsoft/Quantum/blob/main/samples/getting-started/intro-to-iqsharp/Notebook.ipynb) 
 > 
 

@@ -1,0 +1,78 @@
+---
+uid: Microsoft.Quantum.Diagnostics.AssertQubitIsInStateWithinTolerance
+title: AssertQubitIsInStateWithinTolerance 操作
+ms.date: 10/26/2020 12:00:00 AM
+ms.topic: article
+qsharp.kind: operation
+qsharp.namespace: Microsoft.Quantum.Diagnostics
+qsharp.name: AssertQubitIsInStateWithinTolerance
+qsharp.summary: >-
+  Asserts that a qubit in the expected state.
+
+  `expected` represents a complex vector, $\ket{\psi} = \begin{bmatrix}a & b\end{bmatrix}^{\mathrm{T}}$. The first element of the tuples representing each of $a$, $b$ is the real part of the complex number, while the second one is the imaginary part. The last argument defines the tolerance with which assertion is made.
+ms.openlocfilehash: 5d34bdac53870326dacb5a11c27c857793c3f420
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.translationtype: MT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92695592"
+---
+# <a name="assertqubitisinstatewithintolerance-operation"></a>AssertQubitIsInStateWithinTolerance 操作
+
+命名空间 [：](xref:Microsoft.Quantum.Diagnostics)
+
+软件包 [](https://nuget.org/packages/)
+
+
+断言处于预期状态的 qubit。
+
+`expected` 表示复杂向量，$ \ket{\psi} = \begin{bmatrix}a & b\end {bmatrix} ^ {\mathrm{T}} $。
+元组的第一个元素表示每个 $a $，$b $ 是复数的实部，第二个元素是复数的实部。
+最后一个参数定义进行断言的公差。
+
+```qsharp
+operation AssertQubitIsInStateWithinTolerance (expected : (Microsoft.Quantum.Math.Complex, Microsoft.Quantum.Math.Complex), register : Qubit, tolerance : Double) : Unit
+```
+
+
+## <a name="input"></a>输入
+
+### <a name="expected--complexcomplex"></a>应为： ([复杂](xref:Microsoft.Quantum.Math.Complex)的[复杂](xref:Microsoft.Quantum.Math.Complex)) 
+
+需要分别为 $ \ket {0} $ 和 $ \ket $ 的复杂 amplitudes {1} 。
+
+
+### <a name="register--qubit"></a>register： [Qubit](xref:microsoft.quantum.lang-ref.qubit)
+
+要断言其状态的 Qubit。 请注意，假定此 qubit 与其他已分配的 qubits 分离，而不是放大。
+
+
+### <a name="tolerance--double"></a>容差： [Double](xref:microsoft.quantum.lang-ref.double)
+
+允许实际 amplitudes 偏离预期值的附加容差。
+有关详细信息，请参阅下面的备注。
+
+
+
+## <a name="output--unit"></a>输出： [单元](xref:microsoft.quantum.lang-ref.unit)
+
+
+
+## <a name="remarks"></a>注解
+
+以下 Mathematica 代码可用于验证 mi、mx、my、mz 的表达式：
+
+```mathematica
+{Id, X, Y, Z} = Table[PauliMatrix[k], {k, 0, 3}];
+st = {{ reA + I imA }, { reB + I imB} };
+M = st . ConjugateTranspose[st];
+mx = Tr[M.X] // ComplexExpand;
+my = Tr[M.Y] // ComplexExpand;
+mz = Tr[M.Z] // ComplexExpand;
+mi = Tr[M.Id] // ComplexExpand;
+2 m == Id mi + X mx + Z mz + Y my // ComplexExpand // Simplify
+```
+
+容差是 \_ 三维实向量 (x ₂之间的 $L {\infty} $ 距离。 x ₃、x ₄) 由 $ \langle\psi | \psi\rangle = x \_ 1 I + x \_ 2 x + x \_ 3 Y + x \_ 4 Z $ 和实矢量 (y ₂、y ₃、y ₄定义，) 由复数 = Y ₁ I + y ₂ x + y ₃ y + y ₄ Z 定义，其中复数是与寄存器状态相对应的密度矩阵。
+这在假设 Tr (复数) 和 Tr (| ψ⟩⟨ψ |) 都是 1 (例如 x ₁ = 1/2、y ₁ = 1/2) 。
+如果不是这种情况，则该函数将断言 (x ₂-x ₁，x ₃-x ₁，x ₄-x ₁，x ₄ + x ₁) 和 (y ₂-y ₁，y ₃ + y ₁) 小于公差参数的∞距离。

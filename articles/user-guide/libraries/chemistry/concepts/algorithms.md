@@ -9,12 +9,12 @@ uid: microsoft.quantum.chemistry.concepts.simulationalgorithms
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 299eb1484a697ad9d1577aabb44ccb61e908bae3
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: a303d54476e42b98a14c6b452227b0e1346567c8
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834000"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691880"
 ---
 # <a name="simulating-hamiltonian-dynamics"></a>模拟 Hamiltonian Dynamics
 
@@ -28,13 +28,13 @@ Trotter – Suzuki 公式背后的理念非常简单：将 Hamiltonian 表达为
 具体而言，让 $H = \ sum_ {j = 1} ^ m H_j $ 为 Hamiltonian。
 然后，$ $ e ^ {-i \ sum_ {j = 1} ^ m H_j t} = \ prod_ {j = 1} ^ m e ^ {-iH_j t} + O (m ^ 2 t ^ 2) ，$ $ 这就是，如果 $t \ll $1，则此近似值中的错误将变为可忽略的。
 请注意，如果 $e ^ {-i H t} $ 是普通指数，则不会 $O 此近似值中的错误 (m ^ 2 t ^ 2) $：该值为零。
-之所以发生此错误，是因为 $e ^ {-iHt} $ 是运算符指数，因此，使用此公式时出现错误，原因是 $H _j $ 词条不 *在 (的*$H _j H_k H_k H_j) $。
+之所以发生此错误，是因为 $e ^ {-iHt} $ 是运算符指数，因此，使用此公式时出现错误，原因是 $H _j $ 词条不 *在 (的* $H _j H_k H_k H_j) $。
 
 如果 $t $ 是大的，则仍可以使用 Trotter – Suzuki 公式来准确模拟动态，方法是将其分解为一系列简短的时间。
 让 $r $ 是在时间演化过程中执行的步骤数，因此每次运行的时间 $t/r $。 接下来，我们将使用 $ $ e ^ {-i \ sum_ {j = 1} ^ m H_j t} = \left ( \ prod_ {j = 1} ^ m e ^ {-iH_j t/r} \ 右) ^ r + O (m ^ 2 t ^ 2/r) $ $ 这意味着如果 $r $ 缩放为 $m ^ 2 t ^ 2/\ epsilon $，则对于任何 $ \epsilon>$0，最多可以执行 $ \epsilon $ 此错误。
 
 通过构造运算符指数的序列来生成更准确的近似值，使错误词取消。
-最简单的此类公式，第二个 order Trotter-Suzuki 公式，采用格式 $ $ U_2 (t) = \left ( \ prod_ {j = 1} ^ {m} e ^ {-iH_j t/2r} \ prod_ {j = m} ^ 1 e ^ {-iH_j t/2r} \ 右) ^ r = e ^ {-iHt} + O (m ^ 3 t ^ 3/r ^ 2) 对于任何 $ \epsilon>$0，$ $ $r $ 可扩展为 $m ^ {3/2} t ^ {3/2}/\sqrt {\ epsilon} $，则可将其设为小于 $ \epsilon $ 的错误。
+最简单的此类公式，第二个顺序 Trotter-Suzuki 公式，采用格式 $ $ U_2 (t) = \left ( \ prod_ {j = 1} ^ {m} e ^ {-iH_j t/2r} \ prod_ {j = m} ^ 1 e ^ {-iH_j t/2r} \ 右) ^ r = e ^ {-iHt} + O (m ^ 3 t ^ 3/r ^ 2) 对于任何 $ \epsilon>$0，$ $ $r $ 可扩展为 $m ^ {3/2} t ^ {3/2}/\sqrt {\ epsilon} $，则可将其设为小于 $ \epsilon $ 的错误。
 
 更高顺序的公式（特别是 ($ 2k $) $k>$0 的第一顺序）可递归构造： $ $ U_ {2k} (t) = [U_ {2k-2} (s_k \~ t) ] ^ 2 U_ {2k-2} ( [1-4s_k] t) [U_ {2k-2} (s_k) \~ ] ^ 2 = e ^ {-iHt} + O ( # B11 m t) ^ {2k + 1}/r ^ {2k} ) ，$ $，其中 $s _k = (4-4 ^ {1} (^ {-1} $。
 
@@ -52,7 +52,7 @@ Trotter – Suzuki 公式背后的理念非常简单：将 Hamiltonian 表达为
         0 & 0 & 0 & e ^ {\end{bmatrix}.}
 $ $ 这里，$e ^ {-iHt} \ket {00} = e ^ {it} \ket {00} $ and $e ^ {-iHt} \ket {01} = e ^ {-} \ket {01} $，这种情况可以直接查看，因为 $0 $ 的奇偶校验为 $0 $，而位字符串 $1 $ 的奇偶校验为 $1 $。
 
-指数 of Pauli 运算符可在中 Q# 使用操作直接实现 <xref:microsoft.quantum.intrinsic.exp> ：
+指数 of Pauli 运算符可在中 Q# 使用操作直接实现 <xref:Microsoft.Quantum.Intrinsic.Exp> ：
 ```qsharp
     using(qubits = Qubit[2]){
         let pauliString = [PauliX, PauliX];
@@ -65,7 +65,7 @@ $ $ 这里，$e ^ {-iHt} \ket {00} = e ^ {it} \ket {00} $ and $e ^ {-iHt} \ket {
 
 对于 Fermionic Hamiltonians， [约旦– Wigner 分解](xref:microsoft.quantum.chemistry.concepts.jordanwigner) 方便地将 Hamiltonian 映射到 Pauli 运算符之和。
 这意味着可以轻松地将上述方法用于模拟化学。
-下面只是一个简单的示例，说明如何在化学中运行这样的模拟，而不是在 Wigner 表示形式中手动循环使用所有 Pauli 术语。
+下面只是一个简单的示例，说明如何在 Pauli 中运行这样的模拟，而不是手动遍历 Jordan-Wigner 表示形式中的所有字词。
 我们的起点是 Fermionic Hamiltonian 的 [约旦– Wigner 编码](xref:microsoft.quantum.chemistry.concepts.jordanwigner) ，用代码表示为类的实例 `JordanWignerEncoding` 。
 
 ```csharp
@@ -156,7 +156,7 @@ $ \Operatorname{Prepare} $ 操作不直接在 qubitization 中使用，而是用
 
 可以在中轻松设置这些子例程 Q# 。
 例如，请考虑简单的 qubit 横向 Ising Hamiltonian，其中 $H = X_1 + X_2 + Z_1 Z_2 $。
-在这种情况下， Q# 将通过调用实现 $ \operatorname{Select} $ 操作的代码 <xref:microsoft.quantum.canon.multiplexoperations> ，而 $ \operatorname{Prepare} $ 操作可使用来实现 <xref:microsoft.quantum.preparation.preparearbitrarystate> 。
+在这种情况下， Q# 将通过调用实现 $ \operatorname{Select} $ 操作的代码 <xref:Microsoft.Quantum.Canon.MultiplexOperations> ，而 $ \operatorname{Prepare} $ 操作可使用来实现 <xref:Microsoft.Quantum.Preparation.PrepareArbitraryState> 。
 例如，可以找到模拟 Hubbard 模型的[ Q# 示例。](https://github.com/microsoft/Quantum/tree/main/samples/simulation/hubbard)
 
 手动为任意化学问题指定这些步骤需要花费很多精力，这可避免使用化学库。
@@ -182,6 +182,6 @@ using(qubits = Qubit[nQubits]){
 }
 ```
 
-重要的是，实现 <xref:microsoft.quantum.chemistry.jordanwigner.qubitizationoracle> 适用于指定为 Pauli 字符串的线性组合的任意 Hamiltonians。
-使用对化学模拟优化的版本进行调用 <xref:microsoft.quantum.chemistry.jordanwigner.optimizedqubitizationoracle> 。
+重要的是，实现 <xref:Microsoft.Quantum.Chemistry.JordanWigner.QubitizationOracle> 适用于指定为 Pauli 字符串的线性组合的任意 Hamiltonians。
+使用对化学模拟优化的版本进行调用 <xref:Microsoft.Quantum.Chemistry.JordanWigner.OptimizedQubitizationOracle> 。
 此版本经过优化，可将使用 [编码电子 Spectra 时所讨论的技术与线性 t 复杂度进行编码](https://arxiv.org/abs/1805.03662)，从而最大程度地减少 T 入口数。

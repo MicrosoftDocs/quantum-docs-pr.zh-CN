@@ -9,12 +9,12 @@ uid: microsoft.quantum.libraries.machine-learning.training
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 39974af0121a5167f1965e508cd595535178548b
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 476e93e3737dee6ad8f3a97e8ffbcfb9b0012ee1
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833907"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691518"
 ---
 # <a name="quantum-machine-learning-glossary"></a>量程机器学习术语表
 
@@ -30,7 +30,7 @@ ms.locfileid: "90833907"
 
 ## <a name="hyperparameters"></a>超参数
 
-模型定型过程由名为 *超参数*的某些预先设置的值控制：
+模型定型过程由名为 *超参数* 的某些预先设置的值控制：
 
 ### <a name="learning-rate"></a>学习速率
 
@@ -56,9 +56,10 @@ ms.locfileid: "90833907"
 
 #### <a name="how-to-modify-the-hyperparameters"></a>如何修改超参数
 
-在 QML 库中，修改超参数的最佳方式是替代 UDT 的默认值 [`TrainingOptions`](xref:microsoft.quantum.machinelearning.trainingoptions) 。 为此，我们使用函数调用它 [`DefaultTrainingOptions`](xref:microsoft.quantum.machinelearning.defaulttrainingoptions) ，并应用运算符 `w/` 来替代默认值。 例如，若要使用100000度量值和0.01 的学习率：
- ```qsharp
+在 QML 库中，修改超参数的最佳方式是替代 UDT 的默认值 [`TrainingOptions`](xref:Microsoft.Quantum.MachineLearning.TrainingOptions) 。 为此，我们使用函数调用它 [`DefaultTrainingOptions`](xref:Microsoft.Quantum.MachineLearning.DefaultTrainingOptions) ，并应用运算符 `w/` 来替代默认值。 例如，若要使用100000度量值和0.01 的学习率：
+
+```qsharp
 let options = DefaultTrainingOptions()
 w/ LearningRate <- 0.01
 w/ NMeasurements <- 100000;
- ```
+```

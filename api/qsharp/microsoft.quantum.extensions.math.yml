@@ -1,0 +1,374 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: >+
+    > [!WARNING]
+
+    > AbsB 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.AbsL>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.absl"。
+
+  uid: Microsoft.Quantum.Extensions.Math.AbsB
+- summary: >+
+    > [!WARNING]
+
+    > AbsD 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.AbsD>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.absd"。
+
+  uid: Microsoft.Quantum.Extensions.Math.AbsD
+- summary: >+
+    > [!WARNING]
+
+    > AbsI 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.AbsI>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.absi"。
+
+  uid: Microsoft.Quantum.Extensions.Math.AbsI
+- summary: >+
+    > [!WARNING]
+
+    > ArcCos 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.ArcCos>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.arccos"。
+
+  uid: Microsoft.Quantum.Extensions.Math.ArcCos
+- summary: >+
+    > [!WARNING]
+
+    > ArcSin 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.ArcSin>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.arcsin"。
+
+  uid: Microsoft.Quantum.Extensions.Math.ArcSin
+- summary: >+
+    > [!WARNING]
+
+    > ArcTan 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.ArcTan>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.arctan"。
+
+  uid: Microsoft.Quantum.Extensions.Math.ArcTan
+- summary: >+
+    > [!WARNING]
+
+    > ArcTan2 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.ArcTan2>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.arctan2"。
+
+  uid: Microsoft.Quantum.Extensions.Math.ArcTan2
+- summary: >+
+    > [!WARNING]
+
+    > 天花板已弃用。 请改用 <xref:Microsoft.Quantum.Math.Ceiling>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.ceiling"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Ceiling
+- summary: >+
+    > [!WARNING]
+
+    > Cos 已弃用。 请改用 <xref:Microsoft.Quantum.Math.Cos>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.cos"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Cos
+- summary: >+
+    > [!WARNING]
+
+    > Cosh 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.Cosh>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.cosh"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Cosh
+- summary: >+
+    > [!WARNING]
+
+    > DivRemB 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.DivRemL>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.divreml"。
+
+  uid: Microsoft.Quantum.Extensions.Math.DivRemB
+- summary: >+
+    > [!WARNING]
+
+    > E 已弃用。 请改用 <xref:Microsoft.Quantum.Math.E>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.e"。
+
+  uid: Microsoft.Quantum.Extensions.Math.E
+- summary: >+
+    > [!WARNING]
+
+    > ExpD 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.ExpD>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.expd"。
+
+  uid: Microsoft.Quantum.Extensions.Math.ExpD
+- summary: >+
+    > [!WARNING]
+
+    > 楼层已弃用。 请改用 <xref:Microsoft.Quantum.Math.Floor>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.floor"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Floor
+- summary: >+
+    > [!WARNING]
+
+    > IEEERemainder 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.IEEERemainder>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.ieeeremainder"。
+
+  uid: Microsoft.Quantum.Extensions.Math.IEEERemainder
+- summary: >+
+    > [!WARNING]
+
+    > 日志已被弃用。 请改用 <xref:Microsoft.Quantum.Math.Log>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.log"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Log
+- summary: >+
+    > [!WARNING]
+
+    > Log10 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.Log10>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.log10"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Log10
+- summary: >+
+    > [!WARNING]
+
+    > MaxB 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.MaxL>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.maxl"。
+
+  uid: Microsoft.Quantum.Extensions.Math.MaxB
+- summary: >+
+    > [!WARNING]
+
+    > MaxD 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.MaxD>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.maxd"。
+
+  uid: Microsoft.Quantum.Extensions.Math.MaxD
+- summary: >+
+    > [!WARNING]
+
+    > MaxI 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.MaxI>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.maxi"。
+
+  uid: Microsoft.Quantum.Extensions.Math.MaxI
+- summary: >+
+    > [!WARNING]
+
+    > MinB 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.MinL>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.minl"。
+
+  uid: Microsoft.Quantum.Extensions.Math.MinB
+- summary: >+
+    > [!WARNING]
+
+    > 不推荐使用。 请改用 <xref:Microsoft.Quantum.Math.MinD>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.mind"。
+
+  uid: Microsoft.Quantum.Extensions.Math.MinD
+- summary: >+
+    > [!WARNING]
+
+    > 已弃用最小化。 请改用 <xref:Microsoft.Quantum.Math.MinI>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.mini"。
+
+  uid: Microsoft.Quantum.Extensions.Math.MinI
+- summary: >+
+    > [!WARNING]
+
+    > ModPowB 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.ModPowL>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.modpowl"。
+
+  uid: Microsoft.Quantum.Extensions.Math.ModPowB
+- summary: >+
+    > [!WARNING]
+
+    > PI 已弃用。 请改用 <xref:Microsoft.Quantum.Math.PI>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.pi"。
+
+  uid: Microsoft.Quantum.Extensions.Math.PI
+- summary: >+
+    > [!WARNING]
+
+    > PowD 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.PowD>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.powd"。
+
+  uid: Microsoft.Quantum.Extensions.Math.PowD
+- summary: >+
+    > [!WARNING]
+
+    > 已弃用舍入。 请改用 <xref:Microsoft.Quantum.Math.Round>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.round"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Round
+- summary: >+
+    > [!WARNING]
+
+    > SignB 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.SignL>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.signl"。
+
+  uid: Microsoft.Quantum.Extensions.Math.SignB
+- summary: >+
+    > [!WARNING]
+
+    > SignD 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.SignD>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.signd"。
+
+  uid: Microsoft.Quantum.Extensions.Math.SignD
+- summary: >+
+    > [!WARNING]
+
+    > SignI 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.SignI>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.signi"。
+
+  uid: Microsoft.Quantum.Extensions.Math.SignI
+- summary: >+
+    > [!WARNING]
+
+    > Sin 已弃用。 请改用 <xref:Microsoft.Quantum.Math.Sin>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.sin"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Sin
+- summary: >+
+    > [!WARNING]
+
+    > Sinh 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.Sinh>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.sinh"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Sinh
+- summary: >+
+    > [!WARNING]
+
+    > Sqrt 已弃用。 请改用 <xref:Microsoft.Quantum.Math.Sqrt>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.sqrt"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Sqrt
+- summary: >+
+    > [!WARNING]
+
+    > Tan 已弃用。 请改用 <xref:Microsoft.Quantum.Math.Tan>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.tan"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Tan
+- summary: >+
+    > [!WARNING]
+
+    > Tanh 已被弃用。 请改用 <xref:Microsoft.Quantum.Math.Tanh>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.tanh"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Tanh
+- summary: >+
+    > [!WARNING]
+
+    > 截断已被弃用。 请改用 <xref:Microsoft.Quantum.Math.Truncate>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.math.truncate"。
+
+  uid: Microsoft.Quantum.Extensions.Math.Truncate
+name: Microsoft.Quantum.Extensions.Math
+newtypes: []
+operations: []
+summary: ''
+uid: Microsoft.Quantum.Extensions.Math
+metadata:
+  ms.openlocfilehash: c07f137eaca95237d581691008c614025dd35a1d
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92695471"

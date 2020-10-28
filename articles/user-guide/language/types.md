@@ -9,12 +9,12 @@ uid: microsoft.quantum.guide.types
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: c4a3e6563b8cabee87d1db6b9cb1c1f1c1a7131b
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 349138984387cc564cca18ea09c7bf161524b0b6
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835819"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691618"
 ---
 # <a name="types-in-no-locq"></a>类型 Q#
 
@@ -22,7 +22,7 @@ ms.locfileid: "90835819"
 
 我们注意 Q# 到，是一种 *强类型* 语言，因此，仔细使用这些类型可帮助编译器 Q# 在编译时提供对程序的强保证。
 若要提供最强的保证，中类型之间的转换 Q# 必须使用对函数的调用进行显式转换，这种转换可表达该转换。 
-Q# 提供各种此类函数作为 <xref:microsoft.quantum.convert> 命名空间的一部分。
+Q# 提供各种此类函数作为 <xref:Microsoft.Quantum.Convert> 命名空间的一部分。
 另一方面，向上转换到兼容类型是隐式发生的。 
 
 Q# 提供直接使用的基元类型，以及从其他类型生成新类型的各种方法。
@@ -30,7 +30,7 @@ Q# 提供直接使用的基元类型，以及从其他类型生成新类型的�
 
 ## <a name="primitive-types"></a>基元类型
 
-此 Q# 语言提供以下 *基元类型*，所有这些类型都可直接在程序中使用 Q# 。 你还可以使用这些基元类型构造新类型。
+此 Q# 语言提供以下 *基元类型* ，所有这些类型都可直接在程序中使用 Q# 。 你还可以使用这些基元类型构造新类型。
 
 - `Int`类型表示64位有符号整数，例如，、 `2` `107` 、 `-5` 。
 - `BigInt`类型表示任意大小的有符号整数，例如、、 `2L` `107L` `-5L` 。
@@ -106,7 +106,7 @@ Q# 提供直接使用的基元类型，以及从其他类型生成新类型的�
 例如， `(3, false)` 是一个其类型为元组类型的元组 `(Int, Bool)` 。
 可以创建元组、数组的元组、子元组的元组等的数组。
 
-* Q#从0.3 到， `Unit` 是空元组的*类型*名称; `()` 用于空元组的*值*。
+* Q#从0.3 到， `Unit` 是空元组的 *类型* 名称; `()` 用于空元组的 *值* 。
 
 * 元组实例是不可变的。
 Q# 创建后，不提供更改元组内容的机制。
@@ -126,7 +126,7 @@ Q# 创建后，不提供更改元组内容的机制。
 
 具体而言，这意味着您可以查看其输入元组或输出元组类型具有一个字段的操作或函数，以采用单个参数或返回单个值。
 
-我们将此属性称为 _单独元组等效_。
+我们将此属性称为 _单独元组等效_ 。
 
 
 ## <a name="user-defined-types"></a>用户定义类型
@@ -167,7 +167,7 @@ newtype Complex = (Real : Double, Imag : Double);
 newtype Nested = (Double, (ItemName : Int, String)); 
 ```
 
-命名项的优点是可以通过 *访问运算符*直接访问它们 `::` 。 
+命名项的优点是可以通过 *访问运算符* 直接访问它们 `::` 。 
 
 ```qsharp
 function ComplexAddition(c1 : Complex, c2 : Complex) : Complex {
@@ -259,8 +259,8 @@ function AsComplexArray (data : Double[]) : ComplexArray {
 
 给定类型 `'Tinput` 和 `'Tresult` ：
 
-* `('Tinput => 'Tresult)` 是任何 *操作*的基本类型，例如 `((Qubit, Pauli) => Result)` 。
-* `('Tinput -> 'Tresult)` 是任何 *函数*的基本类型，例如 `(Int -> Int)` 。 
+* `('Tinput => 'Tresult)` 是任何 *操作* 的基本类型，例如 `((Qubit, Pauli) => Result)` 。
+* `('Tinput -> 'Tresult)` 是任何 *函数* 的基本类型，例如 `(Int -> Int)` 。 
 
 这些是可调用的 *签名* 。
 
@@ -282,13 +282,13 @@ function AsComplexArray (data : Double[]) : ComplexArray {
 若要要求对 `Controlled` 操作类型中的和/或函子提供支持 `Adjoint` ，需要添加指示相应特征的注释。
 批注 `is Ctl` (例如， `(Qubit => Unit is Ctl)`) 指示操作可控制。 也就是说，它的运行依赖于另一个 qubit 或 qubits 的状态。 同样，批注 `is Adj` 指示操作具有 adjoint，也就是说，它可以 "反转" 以便连续应用操作，然后将其 adjoint 为状态，使状态保持不变。 
 
-如果你希望要求该类型的操作同时支持 `Adjoint` 和 `Controlled` 函子，则可以将此表示为 `(Qubit => Unit is Adj + Ctl)` 。 例如，内置 Pauli 操作的类型为 <xref:microsoft.quantum.intrinsic.x> `(Qubit => Unit is Adj + Ctl)` 。 
+如果你希望要求该类型的操作同时支持 `Adjoint` 和 `Controlled` 函子，则可以将此表示为 `(Qubit => Unit is Adj + Ctl)` 。 例如，内置 Pauli 操作的类型为 <xref:Microsoft.Quantum.Intrinsic.X> `(Qubit => Unit is Adj + Ctl)` 。 
 
 不支持任何函子的操作类型由其输入和输出类型单独指定，无附加批注。
 
-### <a name="type-parameterized-functions-and-operations"></a>类型参数化的函数和操作
+### <a name="type-parameterized-functions-and-operations"></a>Type-Parameterized 函数和操作
 
-可调用类型可以包含 *类型参数*。
+可调用类型可以包含 *类型参数* 。
 使用以单引号为前缀的符号指示类型参数;例如， `'A` 是一个合法的类型参数。
 有关如何定义类型参数化 callables 的详细信息和详细信息，请参阅[中的 Q# 操作和函数](xref:microsoft.quantum.guide.operationsfunctions#generic-type-parameterized-callables)。
 
