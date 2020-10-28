@@ -1,0 +1,139 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: >+
+    > [!WARNING]
+
+    > AmpAmpByOracle 已被弃用。 请改用 <xref:Microsoft.Quantum.AmplitudeAmplification.StandardAmplitudeAmplification>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.amplitudeamplification.standardamplitudeamplification"。
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpByOracle
+- summary: >+
+    > [!WARNING]
+
+    > AmpAmpByOraclePhases 已被弃用。 请改用 <xref:Microsoft.Quantum.AmplitudeAmplification.AmplitudeAmplificationFromStatePreparation>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.amplitudeamplification.amplitudeamplificationfromstatepreparation"。
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpByOraclePhases
+- summary: >+
+    > [!WARNING]
+
+    > AmpAmpByReflectionPhases 已被弃用。 请改用 <xref:Microsoft.Quantum.AmplitudeAmplification.AmplitudeAmplificationFromPartialReflections>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.amplitudeamplification.amplitudeamplificationfrompartialreflections"。
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpByReflectionPhases
+- summary: >+
+    > [!WARNING]
+
+    > AmpAmpObliviousByOraclePhases 已被弃用。 请改用 <xref:Microsoft.Quantum.AmplitudeAmplification.ObliviousAmplitudeAmplificationFromStatePreparation>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.amplitudeamplification.obliviousamplitudeamplificationfromstatepreparation"。
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpObliviousByOraclePhases
+- summary: >+
+    > [!WARNING]
+
+    > AmpAmpObliviousByReflectionPhases 已被弃用。 请改用 <xref:Microsoft.Quantum.AmplitudeAmplification.ObliviousAmplitudeAmplificationFromPartialReflections>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.amplitudeamplification.obliviousamplitudeamplificationfrompartialreflections"。
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpObliviousByReflectionPhases
+- summary: >+
+    > [!WARNING]
+
+    > AmpAmpPhasesFixedPoint 已被弃用。 请改用 <xref:Microsoft.Quantum.AmplitudeAmplification.FixedPointReflectionPhases>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.amplitudeamplification.fixedpointreflectionphases"。
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpPhasesFixedPoint
+- summary: >+
+    > [!WARNING]
+
+    > AmpAmpPhasesStandard 已被弃用。 请改用 <xref:Microsoft.Quantum.AmplitudeAmplification.StandardReflectionPhases>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.amplitudeamplification.standardreflectionphases"。
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpPhasesStandard
+- summary: >+
+    > [!WARNING]
+
+    > AmpAmpRotationToReflectionPhases 已被弃用。 请改用 <xref:Microsoft.Quantum.AmplitudeAmplification.RotationPhasesAsReflectionPhases>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.amplitudeamplification.rotationphasesasreflectionphases"。
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpRotationToReflectionPhases
+- summary: 通过部分反射放大幅度。
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmplitudeAmplificationFromPartialReflections
+- summary: 用于部分反射的 oracles 放大幅度。
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmplitudeAmplificationFromStatePreparation
+- summary: 计算固定点幅度放大的部分反射阶段。
+  uid: Microsoft.Quantum.AmplitudeAmplification.FixedPointReflectionPhases
+- summary: 通过指定部分反射来返回实现在意波幅放大的单一单一。
+  uid: Microsoft.Quantum.AmplitudeAmplification.ObliviousAmplitudeAmplificationFromPartialReflections
+- summary: 用于部分反射的在意波幅按 oracles 放大。
+  uid: Microsoft.Quantum.AmplitudeAmplification.ObliviousAmplitudeAmplificationFromStatePreparation
+- summary: 构造有关 "全零字符串 | 0 ... 0 〉" 的反射，这是到波幅放大的典型输入状态。
+  uid: Microsoft.Quantum.AmplitudeAmplification.ReflectionStart
+- summary: 将指定为单一 qubit 旋转的阶段转换为指定为部分反射的阶段。
+  uid: Microsoft.Quantum.AmplitudeAmplification.RotationPhasesAsReflectionPhases
+- summary: 标准振幅放大算法
+  uid: Microsoft.Quantum.AmplitudeAmplification.StandardAmplitudeAmplification
+- summary: 计算标准振幅放大的部分反射阶段。
+  uid: Microsoft.Quantum.AmplitudeAmplification.StandardReflectionPhases
+- summary: >-
+    构造 `ReflectionOracle` qubit 标志唯一标记的目标状态。
+
+    目标状态的单个 qubit 设置为1，其他所有0： $ \ket {1} _f $。
+  uid: Microsoft.Quantum.AmplitudeAmplification.TargetStateReflectionOracle
+name: Microsoft.Quantum.AmplitudeAmplification
+newtypes:
+- summary: 振幅放大中部分反射序列的阶段。
+  uid: Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases
+- summary: 振幅放大中 qubit 旋转序列的各个阶段。
+  uid: Microsoft.Quantum.AmplitudeAmplification.RotationPhases
+operations:
+- summary: >+
+    > [!WARNING]
+
+    > AmpAmpRUSByOracle 已被弃用。 请改用 <xref:Microsoft.Quantum.AmplitudeAmplification.ApplyFixedPointAmplification>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.amplitudeamplification.applyfixedpointamplification"。
+
+  uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpRUSByOracle
+- summary: 在给定寄存器上应用振幅放大，使用一组给定的阶段和 oracles 来反映初始状态和最终状态。
+  uid: Microsoft.Quantum.AmplitudeAmplification.ApplyAmplitudeAmplification
+- summary: Fixed-Point 振幅放大算法
+  uid: Microsoft.Quantum.AmplitudeAmplification.ApplyFixedPointAmplification
+- summary: 通过指定部分反射来在意波幅放大。
+  uid: Microsoft.Quantum.AmplitudeAmplification.ApplyObliviousAmplitudeAmplification
+- summary: <xref:microsoft.quantum.canon.targetstatereflectionoracle> 的实现。
+  uid: Microsoft.Quantum.AmplitudeAmplification.ApplyTargetStateReflectionOracle
+summary: 此命名空间包含用于执行振幅放大的函数和操作。
+uid: Microsoft.Quantum.AmplitudeAmplification
+metadata:
+  ms.openlocfilehash: 7b95624eba1215e6b8be8f247c25a3931336b5fb
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92700273"
