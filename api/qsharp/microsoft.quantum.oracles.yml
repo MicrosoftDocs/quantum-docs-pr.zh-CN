@@ -1,0 +1,70 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: 将类型的 oracle 转换 `StateOracle` 为 `DeterministicStateOracle` 。
+  uid: Microsoft.Quantum.Oracles.DeterministicStateOracleFromStateOracle
+- summary: 将 oracles 和组合在一起 `DeterministicStateOracle` `ObliviousOracle` 。
+  uid: Microsoft.Quantum.Oracles.ObliviousOracleFromDeterministicStateOracle
+- summary: 给定一个表示 "黑盒" oracle 的操作，将返回一个独立的 oracle，它表示重复多次的 "黑箱" oracle。
+  uid: Microsoft.Quantum.Oracles.OracleToDiscrete
+- summary: 从 oracle 构造有关给定状态的反射。
+  uid: Microsoft.Quantum.Oracles.ReflectionOracleFromDeterministicStateOracle
+- summary: 将类型的 oracle 转换 `DeterministicStateOracle` 为 `StateOracle` 。
+  uid: Microsoft.Quantum.Oracles.StateOracleFromDeterministicStateOracle
+name: Microsoft.Quantum.Oracles
+newtypes:
+- summary: >-
+    表示连续 oracle。
+
+    这是一个 oracle，它实现 $U ( \delta t) ： \ket{\psi (t) } \mapsto \ket{\psi ($，其中) $ 是一个固定操作，其中 $ \delta t $ 是一个非负实数。
+  uid: Microsoft.Quantum.Oracles.ContinuousOracle
+- summary: >-
+    表示 oracle for 确定性状态准备。
+
+    Oracle $O $ 的输入为：
+
+    - 将存储所需的量程状态 $ \ket{\psi} \_ s $ 的寄存器。
+  uid: Microsoft.Quantum.Oracles.DeterministicStateOracle
+- summary: >-
+    表示离散 oracle。
+
+    这是一种 oracle，它实现 $U ^ m $ $U $ 的固定操作和非负 $m 整数。
+  uid: Microsoft.Quantum.Oracles.DiscreteOracle
+- summary: >-
+    表示 oracle for 在意波幅放大。
+
+    Oracle $O $ 的输入为：
+
+    - Ancilla 注册了 $O $ $a $ 的操作。 -系统注册 $s $，将对其应用所需的单一 $U $，并在 register $a $ 在 $ \ket{t} 中进行选择 \_ 。
+  uid: Microsoft.Quantum.Oracles.ObliviousOracle
+- summary: >-
+    表示 oracle 反射。
+
+    反射 oracle $O $，具有输入：
+
+    - 用于旋转反射子空间的阶段 $ \phi $。 -要对其执行给定反射的 qubit 注册。
+  uid: Microsoft.Quantum.Oracles.ReflectionOracle
+- summary: >-
+    表示 oracle for 状态准备。
+
+    Oracle $O $ 的输入为：
+
+    - 对标志 qubit $f $ 进行索引的整数。 -系统注册 $s $，将存储所需的量程状态 $ \ket{\psi} \_ s $。
+  uid: Microsoft.Quantum.Oracles.StateOracle
+operations:
+- summary: <xref:microsoft.quantum.canon.deterministicstateoraclefromstateoracle> 的实现。
+  uid: Microsoft.Quantum.Oracles.ApplyDeterministicStateOracleFromStateOracle
+- summary: <xref:microsoft.quantum.canon.obliviousoraclefromdeterministicstateoracle> 的实现。
+  uid: Microsoft.Quantum.Oracles.ApplyObliviousOracleFromDeterministicStateOracle
+- summary: <xref:microsoft.quantum.canon.stateoraclefromdeterministicstateoracle> 的实现。
+  uid: Microsoft.Quantum.Oracles.ApplyStateOracleFromDeterministicStateOracle
+- summary: <xref:microsoft.quantum.canon.reflectionoraclefromdeterministicstateoracle> 的实现。
+  uid: Microsoft.Quantum.Oracles._ReflectionOracleFromDeterministicStateOracle
+summary: 此命名空间提供了用户定义的类型，以通过其在量程估算和振幅放大等量程算法中的用途来装饰各种类型的 oracles。
+uid: Microsoft.Quantum.Oracles
+metadata:
+  ms.openlocfilehash: 2a06057030f99eba20b84f493f4bfb40d5b6a7e4
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92700989"

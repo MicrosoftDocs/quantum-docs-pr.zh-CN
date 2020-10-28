@@ -87,7 +87,7 @@ author： bradben uid： pauli： benbra： v-ms. 日期： 12/11/2017 ms. 主�
 
 在前面的讨论中，我们重点介绍计算基础度量值。
 事实上，从符号的角度来看，量子计算会出现其他常见的度量，这在计算基础度量方面非常方便。
-当你使用时 Q# ，你将遇到的最常见的度量值可能是 *Pauli 的度量值*，它将计算基础度量值纳入其他基准，并在不同 qubits 之间进行奇偶校验。
+当你使用时 Q# ，你将遇到的最常见的度量值可能是 *Pauli 的度量值* ，它将计算基础度量值纳入其他基准，并在不同 qubits 之间进行奇偶校验。
 在这种情况下，通常会讨论度量 Pauli 运算符，通常是运算符（例如 $ x、Y、z $ 或 $ z \otimes z、x \otimes x、x \otimes Y $ 等）。
 
 > [!TIP]
@@ -128,7 +128,7 @@ Pauli 度量值的表示法通过标识 X、Y、Z 度量值来引用这种单一
 |$ $ X |$H               $                    |
 |$ $ Y |$HS ^               {\dagger}$         |
 
-也就是说，使用这种语言时，"度量值 $ Y $ " 等效于应用 $ HS ^， \dagger $ 然后以计算为基础，其中 [`S`](xref:microsoft.quantum.intrinsic.s) 是一个内部量程操作，有时称为 "阶段入口"，可由单一矩阵模拟
+也就是说，使用这种语言时，"度量值 $ Y $ " 等效于应用 $ HS ^， \dagger $ 然后以计算为基础，其中 [`S`](xref:Microsoft.Quantum.Intrinsic.S) 是一个内部量程操作，有时称为 "阶段入口"，可由单一矩阵模拟
 
 $$
 \begin{align}
@@ -168,7 +168,7 @@ $$
 因此，两个 Pauli 运算符的 tensor 产品构成一个矩阵，其中包含 $ $ 两个由 $ + 1 $ 和 $ -1 本征值 $ 组成的空格。
 与单一 qubit 的情况一样，两者都构成一半空间，这意味着可访问的矢量空间的一半属于 $ + 1 $ eigenspace，另一半是 $ -1 $ eigenspace。
 通常，可以很容易地从 tensor 产品的定义中看出 Pauli 运算符的任何 tensor 产品 $ $ 和标识也服从这一点。
-例如，应用于对象的
+例如，
 
 $$
 \begin{align}
@@ -194,7 +194,7 @@ $$
 >         0 & 1 & 0 & 0 \\\\
 >0 & 0 & 0 & 1 > \end { 矩阵 } \right) >     \end{align}
 > $$
-> 用于模拟内部操作 [`SWAP`](xref:microsoft.quantum.intrinsic) 。
+> 用于模拟内部操作 [`SWAP`](xref:Microsoft.Quantum.Intrinsic) 。
 
 |Pauli 度量     | 单一转换  |
 |----------------------|------------------------|
@@ -214,7 +214,7 @@ $$
 |$X \otimesY $ | $ \operatorname { cnot-contains } \_ { 10 } (H \otimes HS ^ \dagger) $|
 |$Y \otimesY $ | $ \operatorname { cnot-contains } \_ { 10 } (HS ^ \dagger \otimes HS \dagger) $|
 
-[`CNOT`](xref:microsoft.quantum.intrinsic.cnot)此时，操作出现的原因如下。
+[`CNOT`](xref:Microsoft.Quantum.Intrinsic.CNOT)此时，操作出现的原因如下。
 不包含矩阵的每个 Pauli 度量 $ \boldone $ 都等效于以上推理的单一到 $ z \otimes z $ 。
 $Z z 的本征值 \otimes $ 仅依赖于构成每个计算基础向量的 qubits 的奇偶校验，并且用于计算此奇偶校验并将其存储在第一位的受控非运算。
 然后，在度量第一位后，可以恢复生成的半角空格的标识，这相当于测量 Pauli 运算符。
@@ -240,16 +240,16 @@ Pauli 运算符的所有此类 tensor 产品仅具有两个本征值 $ \pm 1 $ �
 将 Pauli 度量作为内置功能 Q# 非常有用，因为测量此类运算符需要使用受控-NOT 入口和基础转换的长链来描述将 $ $ 操作表达为 Z 和的 tensor 产品所需的 diagonalizing U 门 $ $ $ \id $ 。
 通过能够指定想要执行其中一项预定义度量，无需担心如何转换基础，以使计算基础度量提供必要的信息。
 Q# 自动为你处理所有必要的基础转换。
-有关详细信息，请参阅 [`Measure`](xref:microsoft.quantum.intrinsic.measure) 和 [`MeasurePaulis`](xref:microsoft.quantum.measurement.measurepaulis) 操作。
+有关详细信息，请参阅 [`Measure`](xref:Microsoft.Quantum.Intrinsic.Measure) 和 [`MeasurePaulis`](xref:Microsoft.Quantum.Measurement.MeasurePaulis) 操作。
 
-## <a name="the-no-cloning-theorem"></a>无克隆定理
+## <a name="the-no-cloning-theorem"></a>No-Cloning 定理
 
 量程信息非常强大。
 它使我们能够以指数形式比最佳已知传统算法更快地执行令人惊叹的东西，或高效模拟经典需要指数成本来准确模拟的相关 electron 系统。
 但对量程计算的强大功能有一些限制。
-这种限制是由 *无克隆定理*提供的。
+这种限制是由 *无克隆定理* 提供的。
 
-不克隆的定理为名称正好。
+No-Cloning 定理为名称正好。
 它不允许量程计算机克隆通用量程状态。
 定理的证明非常简单。
 虽然在这里我们的讨论中，无克隆定理的完整证明是一项很少的技术，但是，在我们的 (范围内，无需额外的辅助 qubits 的证明可用于计算中的草稿空间，并可以在中轻松地使用和管理 Q# ，请参阅 [借用 qubits](xref:microsoft.quantum.guide.qubits#borrowed-qubits)) 。
@@ -273,15 +273,15 @@ $$
 \end{align}
 $$
 
-这提供了不克隆定理背后的基本直觉：复制未知量程状态的任何设备必须至少在其复制的某些状态下引发错误。
+这提供了 No-Cloning 定理后面的基本直觉：复制未知量程状态的任何设备必须至少在其复制的某些状态下引发错误。
 虽然 cloner 在输入状态下线性处理的关键假设可以通过添加和度量辅助 qubits 来突破，此类交互还会通过测量统计信息泄漏有关系统的信息，并在这种情况下防止精确克隆。
-有关无克隆定理的更完整的证明，请参阅 [以获取详细信息](xref:microsoft.quantum.more-information)。
+有关更完整的 No-Cloning 定理，请参阅 [以获取详细信息](xref:microsoft.quantum.more-information)。
 
-无克隆定理对于定性了解量程计算非常重要，因为如果可以将量程状态重新克隆，则会被授予近乎神奇的功能，可以从量程状态中学习。
+No-Cloning 定理对于定性了解量程计算非常重要，因为如果你可以在较低的情况上克隆量程状态，则会向你授予一项近乎神奇的功能，以便从量程状态中学习。
 事实上，您可能违反了海森堡的 vaunted 不确定性原则。
 或者，您可以使用最佳的 cloner 从复杂的量程分布中获取一个示例，并从一个示例中了解有关该分布的所有内容。
 这就像你翻转硬币和观察打印头，然后在告诉朋友，使其响应 "Ah，这一硬币的分布必须与 $ p = 0.512643 \ ldots $ ！"  这种语句是不 sensical 的，因为有一小部分信息 (磁头结果) 只是不能提供编码分发所需的多个信息，而不是以前的信息。
 同样，如果没有以前的信息，我们就不能完全克隆量程状态，因为我们不知道 p 就无法准备系综的 $ $ 。
 
 信息在量程计算中不可用。
-每个 qubit 都提供一项信息，而不克隆定理显示没有后门，可以利用它来解决有关系统所获得的信息与对其调用的干扰之间的基本平衡点。
+每个 qubit 都提供一的信息，而 No-Cloning 定理表明没有后门，可以利用它来解决有关系统所获得的信息与对其调用的干扰之间的基本平衡点。
