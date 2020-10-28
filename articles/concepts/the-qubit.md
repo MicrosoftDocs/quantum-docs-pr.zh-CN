@@ -96,7 +96,7 @@ author： QuantumWriter uid： qubit： benbra： v-ms. 日期： 12/11/2017 ms.
 
 $$\begin{bmatrix}1 \\\\ 0 \end{bmatrix} ， \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} ， \begin{bmatrix} \frac { 1 } { \sqrt { 2 } } \\\\ \frac { 1 } { \sqrt { 2 } } \end{bmatrix} ， \begin{bmatrix} \frac { 1 } { \sqrt { 2 } } \\\\ \frac { -1 } { \sqrt { 2 } } \end{bmatrix} ， \text { } \begin{bmatrix} \frac { 1 } { \sqrt { 2 } } \\\\ \frac { i } { \sqrt { 2 } } \end{bmatrix} 。      $$
 
-量程状态向量 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ 和 $ \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $ 采用特殊角色。 这两个向量构成了用于说明 qubit 状态的矢量空间的基础。 这意味着，可以将任何量程状态向量编写为这些基础向量的总和。 具体而言，矢量 $ \begin{bmatrix} x \\\\ y \end{bmatrix} $ 可以写入 $ x \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} + y \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $ 。 尽管这些矢量的任何旋转都将作为 qubit 的完全有效基础，但我们选择使用 *计算*来处理此类矢量。
+量程状态向量 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ 和 $ \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $ 采用特殊角色。 这两个向量构成了用于说明 qubit 状态的矢量空间的基础。 这意味着，可以将任何量程状态向量编写为这些基础向量的总和。 具体而言，矢量 $ \begin{bmatrix} x \\\\ y \end{bmatrix} $ 可以写入 $ x \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} + y \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $ 。 尽管这些矢量的任何旋转都将作为 qubit 的完全有效基础，但我们选择使用 *计算* 来处理此类矢量。
 
 我们将这两个量程状态与传统位的两个状态相对应，即 $ 0 $ 和 $ 1 $ 。 标准约定是选择
 
@@ -108,7 +108,7 @@ $$0 \equiv \begin{bmatrix} 1 \\\\  0 \end{bmatrix} ， \qquad 1 \equiv \begin{bm
 
 现在，我们知道了如何表示 qubit，我们可以通过讨论 [*度量*](https://en.wikipedia.org/wiki/Measurement_in_quantum_mechanics)概念来获取这些状态所表示内容的一些直觉。 度量值对应于 "查找" qubit 的非正式构想，这会立即将量程状态折叠为两种传统状态 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ 或 $ \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $ 。 当测量由量程状态向量指定的 qubit 时 $ \begin{bmatrix} \alpha \\\\ \beta \end{bmatrix} $ ，我们将获取 $ $ 概率为 ^ 2 的结果 0 $ | \alpha | $ ，并获得 $ $ 概率为 $ | \beta | ^ 2 $ 的结果1。   在结果 $ 0 上 $ ，qubit 的新状态为 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ ; 在结果 $ 1 上， $ 其状态为 $ \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $ 。 请注意， $ $ 由于规范化条件 $ | \alpha | ^ 2 + | \beta | ^ 2 = 1 $ ，这些概率的总和为1。
 
-度量值的属性也表示量程状态向量的整体符号是不相关的。 取消矢量等效于 $ \alpha \right 箭头- \alpha $ 和 $ \beta \right 箭头- \beta $ 。 由于度量值 $ 0 $ 和1的 $ 概率 $ 取决于术语的大小平方，因此插入此类符号不会改变概率。 此类阶段通常称为[ `` *全局阶段*""](https://en.wikipedia.org/wiki/Phase_factor) ，更常见的形式为 $ e ^ { i \phi } $ 而不只是 $ \pm 1 $ 。
+度量值的属性也表示量程状态向量的整体符号是不相关的。 取消矢量等效于 $ \alpha \right 箭头- \alpha $ 和 $ \beta \right 箭头- \beta $ 。 由于度量值 $ 0 $ 和1的 $ 概率 $ 取决于术语的大小平方，因此插入此类符号不会改变概率。 此类阶段通常称为 [ `` *全局阶段* ""](https://en.wikipedia.org/wiki/Phase_factor) ，更常见的形式为 $ e ^ { i \phi } $ 而不只是 $ \pm 1 $ 。
 
 度量值的最后一个重要属性是它不一定损坏所有的量程状态向量。 如果我们以状态 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ （对应于古典状态0）开始，则 $ $ 测量此状态将始终产生结果 $ 0 $ 并使量程状态保持不变。 在这种情况下，如果我们仅具有 (为 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ 或 0 1) 的传统位， $ \begin{bmatrix} \\\\ \end{bmatrix} $ 则测量不会损坏系统。 这意味着，我们可以复制传统数据并在量程计算机上对其进行操作，就像在传统计算机上操作一样。 不过，同时将信息同时存储在这两个状态中的能力，就是将量程计算作为可能的经典以及进一步剥夺的量程计算能力，从而无法以无顺序复制量程数据，另请参阅 [无克隆定理](https://en.wikipedia.org/wiki/No-cloning_theorem)。
 
@@ -122,12 +122,12 @@ Qubits 还可以 $ $ 使用 [*Bloch 球*](https://en.wikipedia.org/wiki/Bloch_sp
 此图中的箭头显示了量程状态向量指向的方向，每次箭头转换都可以被视为一种基数轴的旋转。
 尽管将一系列循环计算视为一系列强大的直觉，但使用此直觉来设计和描述算法非常困难。 Q# 通过提供一种用于描述此类旋转的语言来缓解此问题。
 
-## <a name="single-qubit-operations"></a>单 Qubit 操作
+## <a name="single-qubit-operations"></a>Single-Qubit 操作
 
 量程计算机通过应用一组可以模拟量子状态向量旋转的通用量子入口来处理数据。
 这种通用性的概念类似于传统 (的通用性概念，即传统的) 计算，如果输入位的每个转换都可以使用有限长度线路执行，则将门集视为通用的。
 在量程计算中，允许在 qubit 上执行的有效转换是单一转换和度量。
-*Adjoint 操作*或复杂的共轭转置对量程计算至关重要，因为需要对量程转换进行反转。
+*Adjoint 操作* 或复杂的共轭转置对量程计算至关重要，因为需要对量程转换进行反转。
 Q# 通过提供将入口序列自动编译到 adjoint 的方法来反映这一情况，这会使程序员在许多情况下都不得不 adjoints 代码。 下面显示了一个示例：
 
 ```qsharp
@@ -176,7 +176,7 @@ $$
 
 最简单的此类基元是单个 qubit 旋转。 通常考虑三种单 qubit 旋转： $ R_x $ 、 $ R_y $ 和 $ R_z $ 。 例如，若要可视化旋转 $ R_x ( \theta) 的操作 $ ，请按 Bloch 球的 x 轴方向，将右指向右滚动， $ $ 并使用 $ \ theta/2 弧度角旋转矢量 $ 。 这种令人困惑的因素是2，这是 $ $ 因为在 $ $ Bloch 球上绘制正交矢量时，正 \circ 是 180 ^ $ $ 。 对应的单一矩阵包括：
 
-\begin{对齐* } 
+\begin{对齐 *} 
  & R_z ( \theta) = e ^ { -i\theta z/2 } = \begin{bmatrix} e ^ { -i \ theta/2 } & 0 \\\\ 0 & e ^ { i \ theta/2 } \end{bmatrix} ， \\\\ 
  & R_x ( \theta) = e ^ { -i\theta x/2 } = HR_z ( \theta) H = \begin{bmatrix} \cos ( \ theta/2) & -i\sin ( \ theta/2) \\\\ & \end{bmatrix} \\\\ 
  & R_y ( \theta) = e ^ { -i\theta y/2 } = SHR_z ( \theta) HS ^ \dagger = \begin{bmatrix} \cos ( \ theta/2) & -\sin ( \ theta/2) \\\\ \sin ( \ theta/2) & \cos ( \ theta/2) \end{bmatrix} 。 \end {对齐*}

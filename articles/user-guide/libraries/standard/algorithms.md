@@ -9,12 +9,12 @@ uid: microsoft.quantum.libraries.standard.algorithms
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 7ce13c5df3795656156cccf28640c0a4b0dcba2e
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 982103876b00718aa3b42c6bc3a07d242cde7594
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835666"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92692223"
 ---
 # <a name="quantum-algorithms"></a>量程算法 #
 
@@ -49,8 +49,8 @@ Q# 将振幅放大引入为在意波幅放大的专用化。  在意波幅放大
 傅立叶转换是一种古典型分析工具，与量程计算一样重要。
 此外，在设计量程算法时， *量程傅立叶转换* (QFT) 远远超过了在传统计算机上可能会出现的情况。
 
-作为 QFT 的大致通用化，我们提供了这样的 <xref:microsoft.quantum.canon.approximateqft> 操作：通过修剪旋转（对所需的算法准确性并不是绝对必需的）来实现进一步的优化。
-大致的 QFT 要求 dyadic $Z $ 旋转操作以及 <xref:microsoft.quantum.intrinsic.rfrac> <xref:microsoft.quantum.intrinsic.h> 操作。
+作为 QFT 的大致通用化，我们提供了这样的 <xref:Microsoft.Quantum.Canon.ApproximateQft> 操作：通过修剪旋转（对所需的算法准确性并不是绝对必需的）来实现进一步的优化。
+大致的 QFT 要求 dyadic $Z $ 旋转操作以及 <xref:Microsoft.Quantum.Intrinsic.RFrac> <xref:Microsoft.Quantum.Intrinsic.H> 操作。
 输入和输出假设编码为大字节序编码---也就是说，带有索引的 qubit `0` 在二进制整数表示形式的最左边 (最高) 位进行编码。
 这与 [票证表示法](xref:microsoft.quantum.concepts.dirac)一致，因为状态 $ \ket $ 中的三个 qubits 的寄存器对应 $q 于状态 $ \ket $ 中的三个， {100} {1} 而 $q _1 $ 和 $q _2 $ 都处于状态 $ \ket {0} $ 中。
 近似值参数 $a $ 确定 $Z $ 旋转的修剪级别，即 $a \in [0 ... n] $。
@@ -103,15 +103,15 @@ Beauregard 添加插件使用 Draper 添加项，或更具体的 $ \phi \\ \! \o
 
 ### <a name="quantum-phase-estimation"></a>量子相位估计 ###
 
-量程傅立叶转换的一个特别重要的应用是了解单一运算符（称为 *阶段估算*的问题）的本征值。
+量程傅立叶转换的一个特别重要的应用是了解单一运算符（称为 *阶段估算* 的问题）的本征值。
 假设单一 $U $ 和状态 $ \ket{\phi} $，$ \ket{\phi} $ 是包含未知 eigenvalue $ \phi $ 的 $U $ 的 eigenstate，\begin{equation} U\ket {\ phi} = \phi\ket{\phi}。
 \end{equation} 如果仅有权访问作为 oracle $U $，则可以通过使用应用于受控操作目标的 $Z $ 旋转传播回控件来了解阶段 $ \phi $。
 
 假设 $V $ 是 $U $ 的受控应用程序，因此 \begin{align} V ( \ket {0} \otimes \ket{\phi} ) & = \ket \otimes \ket{\phi} \textrm{ {0} \\ \\ and} V ( \ket \otimes {1} \ket{\phi} ) & = e ^ {i \phi} \ket {1} \otimes \ket{\phi}。
 然后，通过 \end{align}、\begin{align} V ( \ket{+} \otimes \ket{\phi} ) & = \frac{ ( \ket {0} \otimes \ket{\phi} ) + e ^ {i \phi} ( \ket {1} \otimes \ket{\phi} ) } {\sqrt {2} }。
-\end{align} 我们可以收集术语来查找 \begin{align} V ( \ket{+} \otimes \ket{\phi} ) & = \frac{\ket {0} + e ^ {i \phi} \ket {1} } {\sqrt {2} } \otimes \ket{\phi} \\ \\ & = (R_1 ( \phi) \ket{+} ) \otimes \ket{\phi}，\end{align}，其中 $R _1 $ 是操作应用的单一 <xref:microsoft.quantum.intrinsic.r1> 。
+\end{align} 我们可以收集术语来查找 \begin{align} V ( \ket{+} \otimes \ket{\phi} ) & = \frac{\ket {0} + e ^ {i \phi} \ket {1} } {\sqrt {2} } \otimes \ket{\phi} \\ \\ & = (R_1 ( \phi) \ket{+} ) \otimes \ket{\phi}，\end{align}，其中 $R _1 $ 是操作应用的单一 <xref:Microsoft.Quantum.Intrinsic.R1> 。
 换句话说，应用 $V $ 的影响与将 $R _1 $ 应用于未知角度完全相同，即使我们仅有权访问作为 oracle $V $。
-因此，对于本文的其余部分，我们将根据 $R _1 ( \phi) $ （通过使用所谓的 *阶段 kickback*来实现）讨论阶段估算。
+因此，对于本文的其余部分，我们将根据 $R _1 ( \phi) $ （通过使用所谓的 *阶段 kickback* 来实现）讨论阶段估算。
 
 由于在此过程后，控件和目标注册仍处于 untangled 状态，因此，我们可以将 $ \ket{\phi} $ 作为 $U ^ $2 的受控应用程序的目标，以便在州 $R _1 (2 \phi) \ket{+} $ 中准备第二个控制 qubit。
 继续以这种方式，我们可以获取形式为 \begin{align} \ket{\psi} & = \ sum_ {j = 0} ^ n R_1 (2 ^ j \phi) \ket{+} \\ \\ & \propto \ bigotimes_ {j = 0} ^ {n} \left ( \ket {0} + \exp (i 2 ^ {j} \phi) \ket {1} \right) \\ \\ & \propto \ sum_ {k = 0} ^ {2 ^ n-1} \exp (i \phi k) \ket{k} \end{align}，其中 $n $ 是我们需要的精度位数。而且，我们已使用 $ {} \propto {} $ 来指示我们已取消标准化系数 $1/\sqrt{2 ^ n} $。
@@ -119,4 +119,4 @@ Beauregard 添加插件使用 Draper 添加项，或更具体的 $ \phi \\ \! \o
 如果我们假设 $ \phi = 2 \pi p/2 ^ k $ 用于整数 $p $，则我们会将其识别为 $ \ket{\psi} = \operatorname{QFT} \ket{p_0 p_1 \dots .. p_n} $，其中 $p _j $ 是 $2 \textrm{th}} \pi $ 的 $j ^ {\phi $ 位。
 通过应用 "量程傅立叶转换" 的 adjoint，我们将获得编码为量程状态的阶段的二进制表示形式。
 
-在中 Q# ，此 <xref:microsoft.quantum.characterization.quantumphaseestimation> 操作由操作实现，该操作采用 <xref:microsoft.quantum.oracles.discreteoracle> $U ^ m $ 的实现应用程序作为正整数 $m $ 的函数。
+在中 Q# ，此 <xref:Microsoft.Quantum.Characterization.QuantumPhaseEstimation> 操作由操作实现，该操作采用 <xref:Microsoft.Quantum.Oracles.DiscreteOracle> $U ^ m $ 的实现应用程序作为正整数 $m $ 的函数。
