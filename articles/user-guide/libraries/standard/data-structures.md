@@ -9,21 +9,21 @@ ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 51eb52d0b8ace972f6a425edba400ca9a8916d2e
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: c3ce5d531618c269d15be3e4eb58ecbb597a022c
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835581"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92692239"
 ---
 # <a name="data-structures-and-modeling"></a>数据结构和建模 #
 
 ## <a name="classical-data-structures"></a>传统数据结构 ##
 
 除了用于表示量程概念的用户定义类型外，canon 还提供了操作、函数和类型，以便使用在量程系统控制中使用的传统数据。
-例如， <xref:microsoft.quantum.arrays.reversed> 函数使用数组作为输入，并以相反顺序返回相同的数组。
+例如， <xref:Microsoft.Quantum.Arrays.Reversed> 函数使用数组作为输入，并以相反顺序返回相同的数组。
 然后，可在类型为的数组中使用 `Qubit[]` ，以避免在整数的量程表示形式之间进行转换时，无需应用不必要的 $ \operatorname{SWAP} $ 入口。
-同样，我们在上一节中看到，窗体类型 `(Int, Int -> T)` 可用于表示随机访问集合，因此该 <xref:microsoft.quantum.arrays.lookupfunction> 函数提供了一种从数组类型中构造此类类型的便利方法。
+同样，我们在上一节中看到，窗体类型 `(Int, Int -> T)` 可用于表示随机访问集合，因此该 <xref:Microsoft.Quantum.Arrays.LookupFunction> 函数提供了一种从数组类型中构造此类类型的便利方法。
 
 ### <a name="pairs"></a>对 ###
 
@@ -38,7 +38,7 @@ ApplyToEach(H, Snd(pair)); // No need to deconstruct to access the register.
 
 Canon 提供了若干用于操作数组的函数。
 这些函数是类型参数化的，因此可用于任何类型的数组 Q# 。
-例如， <xref:microsoft.quantum.arrays.reversed> 函数返回一个新数组，其元素与输入的顺序相反。
+例如， <xref:Microsoft.Quantum.Arrays.Reversed> 函数返回一个新数组，其元素与输入的顺序相反。
 这可用于更改调用操作时量程寄存器的表示方式：
 
 ```qsharp
@@ -49,14 +49,14 @@ QFT(BigEndian(Reversed(leRegister!)));
 QFT(LittleEndianAsBigEndian(leRegister));
 ```
 
-同样，该 <xref:microsoft.quantum.arrays.subarray> 函数可用于重新排序或获取数组中元素的子集：
+同样，该 <xref:Microsoft.Quantum.Arrays.Subarray> 函数可用于重新排序或获取数组中元素的子集：
 
 ```qsharp
 // Applies H to qubits 2 and 5.
 ApplyToEach(H, Subarray([2, 5], register));
 ```
 
-与流控制结合使用时，数组操作函数（如） <xref:microsoft.quantum.arrays.zip> 可提供一种强大的方法来表示量程程序：
+与流控制结合使用时，数组操作函数（如） <xref:Microsoft.Quantum.Arrays.Zipped> 可提供一种强大的方法来表示量程程序：
 
 ```qsharp
 // Applies X₃ Y₁ Z₇ to a register of any size.
@@ -64,7 +64,7 @@ ApplyToEach(
     ApplyPauli(_, register),
     Map(
         EmbedPauli(_, _, Length(register)),
-        Zip([PauliX, PauliY, PauliZ], [3, 1, 7])
+        Zipped([PauliX, PauliY, PauliZ], [3, 1, 7])
     )
 );
 ```
@@ -127,8 +127,8 @@ is Adj + Ctl {
 }
 ```
 
-此 oracle 是操作的一种特殊情况 <xref:microsoft.quantum.canon.rall1> ，它允许由任意阶段（而不是反射事例 $ \phi = \pi $）进行旋转。
-在这种情况下， `RAll1` 类似于 <xref:microsoft.quantum.intrinsic.r1> prelude 操作，因为它会旋转约 $ \ket{11\cdots1} $，而不是单 qubit 状态 $ \ket {1} $。
+此 oracle 是操作的一种特殊情况 <xref:Microsoft.Quantum.Canon.RAll1> ，它允许由任意阶段（而不是反射事例 $ \phi = \pi $）进行旋转。
+在这种情况下， `RAll1` 类似于 <xref:Microsoft.Quantum.Intrinsic.R1> prelude 操作，因为它会旋转约 $ \ket{11\cdots1} $，而不是单 qubit 状态 $ \ket {1} $。
 
 标记初始子空间的 oracle 可以按类似方式构造。
 在伪代码中：
@@ -139,7 +139,7 @@ is Adj + Ctl {
 4. 将 $X $ 门应用到每个 qubit。
 5. 将 $H $ 门应用到每个 qubit。
 
-这次，我们还将演示如何 <xref:microsoft.quantum.canon.applywith> 结合 <xref:microsoft.quantum.canon.rall1> 上述操作使用：
+这次，我们还将演示如何 <xref:Microsoft.Quantum.Canon.ApplyWith> 结合 <xref:Microsoft.Quantum.Canon.RAll1> 上述操作使用：
 
 ```qsharp
 operation ReflectAboutInitial(register : Qubit[]) : Unit
@@ -160,10 +160,10 @@ is Adj + Ctl {
 
 > [!TIP]
 > 示例中介绍了以下两种 oracle 类型。
-> 若要了解有关连续查询 oracles 的详细信息，请参阅[ **PhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/main/samples/characterization/phase-estimation)。
-> 若要了解有关离散查询 oracles 的详细信息，请参阅[ **IsingPhaseEstimation**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/phase-estimation)。
+> 若要了解有关连续查询 oracles 的详细信息，请参阅 [ **PhaseEstimation** 示例](https://github.com/microsoft/Quantum/tree/main/samples/characterization/phase-estimation)。
+> 若要了解有关离散查询 oracles 的详细信息，请参阅 [ **IsingPhaseEstimation** 示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/phase-estimation)。
 
-第一种类型的 oracle 是，我们称之为单独查询 oracle 并使用用户定义类型表示 <xref:microsoft.quantum.oracles.discreteoracle> ，只涉及一个单一矩阵。
+第一种类型的 oracle 是，我们称之为单独查询 oracle 并使用用户定义类型表示 <xref:Microsoft.Quantum.Oracles.DiscreteOracle> ，只涉及一个单一矩阵。
 如果 $U $ 是要估计其本征值的单一项，则 $U $ 的 oracle 只是实现 $U $ 的子程序的一个独立。
 例如，可以将 $U $ 指定为上述 oracle $Q $ 来估算幅度估算。
 此矩阵的本征值可用于估算初始状态与目标状态之间的重叠，$ \sin ^ 2 ( \theta) $，使用的样本越少，将需要其他值。
@@ -173,7 +173,7 @@ is Adj + Ctl {
 在这种情况下，我们要与之交互的子例程是： $ $ \begin{align} U & = R_z ( \theta) \\ \\ & = \begin{bmatrix} e ^ {-i \theta/2} & 0 \\ \\ 0 & e ^ {i \ theta/2} \end{bmatrix}。
 \end{align} $ $
 
-阶段估算中使用的第二种类型的 oracle 是连续查询 oracle，由 <xref:microsoft.quantum.oracles.continuousoracle> 类型表示。
+阶段估算中使用的第二种类型的 oracle 是连续查询 oracle，由 <xref:Microsoft.Quantum.Oracles.ContinuousOracle> 类型表示。
 Oracle for 阶段估算的连续查询采用 $U (t) $ 的形式，其中 $t $ 是经典的已知实数。
 如果允许 $U $ 是固定的单一项，则 oracle 查询将采用 (t) = U ^ t $ $U 的格式。
 这样，我们就可以查询如 $ \sqrt{U} $ 这样的矩阵，这些矩阵无法直接在离散查询模型中实现。
@@ -211,7 +211,7 @@ $ $ \begin{align} U (t) & = \left ( e ^ {-iH \_ 0 t/r} e ^ {-iH \_ 1 t/r} \cdots
 Dynamical 生成器建模库提供了一个框架，用于在更简单的生成器方面系统地编码复杂的生成器。 然后，可以通过所选的模拟算法将此类描述传递给模拟库，以实现由所选模拟算法进行的时间演化，并自动处理许多详细信息。
 
 > [!TIP]
-> 示例中介绍了下面描述的 dynamical 生成器库。 有关基于 Ising 模型的示例，请参阅[ **IsingGenerators**示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/generators)。
+> 示例中介绍了下面描述的 dynamical 生成器库。 有关基于 Ising 模型的示例，请参阅 [ **IsingGenerators** 示例](https://github.com/microsoft/Quantum/tree/main/samples/simulation/ising/generators)。
 > 有关基于分子 Hydrogen 的示例，请参阅 [**H2SimulationCmdLine**](https://github.com/microsoft/Quantum/tree/main/samples/simulation/h2/command-line) 和 [**H2SimulationGUI**](https://github.com/microsoft/Quantum/tree/main/samples/simulation/h2/gui) 示例。
 
 ### <a name="complete-description-of-a-generator"></a>生成器的完整说明 ###
@@ -261,7 +261,7 @@ newtype EvolutionUnitary = ((Double, Qubit[]) => Unit is Adj + Ctl);
 
 第一个参数表示一个时间段，此时间段将乘以单一演变的中的系数 `GeneratorIndex` 。 第二个参数是 qubit register 单一操作。 
 
-### <a name="time-dependent-generators"></a>与时间相关的生成器 ###
+### <a name="time-dependent-generators"></a>Time-Dependent 生成器 ###
 
 在许多情况下，我们还对与时间相关的生成器进行建模，Schrödinger 公式 $ $ \begin{align} i\frac {d \ket{\psi (t) }} {d t} & = \hat H (t) \ket{\psi (t) }，\end{align} $ $，其中生成器 $ \hat H () $ 现在取决于时间。 这种情况下，与此案例相关的独立生成器的扩展非常简单。 不是将 `GeneratorSystem` Hamiltonian 的所有 $t 时间都固定在一起，而是使用 `GeneratorSystemTimeDependent` 用户定义的类型。
 
