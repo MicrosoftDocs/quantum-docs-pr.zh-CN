@@ -1,0 +1,18 @@
+### YamlMime:QSharpNamespace
+functions: []
+name: Microsoft.Quantum.Environment
+newtypes: []
+operations:
+- summary: 返回当前可用于借用的 qubits 的数目。 这包括未使用的 qubits;也就是说，这包括由返回的 qubits `GetQubitsAvailableToUse` 。
+  uid: Microsoft.Quantum.Environment.GetQubitsAvailableToBorrow
+- summary: 返回当前可供使用的 qubits 的数目。
+  uid: Microsoft.Quantum.Environment.GetQubitsAvailableToUse
+summary: 这些函数提供有关在其中发生量程计算的环境的信息。
+uid: Microsoft.Quantum.Environment
+metadata:
+  ms.openlocfilehash: 04a3ffe56be7da2c9adc13e2b27fe9ce0f982c44
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92695627"

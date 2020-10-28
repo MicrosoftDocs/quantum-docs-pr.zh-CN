@@ -1,0 +1,56 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: ''
+  uid: Microsoft.Quantum.Characterization.HeadMeasurement
+name: Microsoft.Quantum.Characterization
+newtypes: []
+operations:
+- summary: ''
+  uid: Microsoft.Quantum.Characterization.ApplyHadamardTest
+- summary: ''
+  uid: Microsoft.Quantum.Characterization.ApplyHadamardTestOnSingleRegister
+- summary: ''
+  uid: Microsoft.Quantum.Characterization.ApplySwapTest
+- summary: ''
+  uid: Microsoft.Quantum.Characterization.ApplySwapTestOnSingleRegister
+- summary: 使用单一 oracle 的任意实际幂，执行迭代 (经典控制的) 阶段估算算法的单个迭代。
+  uid: Microsoft.Quantum.Characterization.ContinuousPhaseEstimationIteration
+- summary: 使用单一 oracle 的整数幂，对迭代 (经典控制的) 阶段估算算法执行单个迭代。
+  uid: Microsoft.Quantum.Characterization.DiscretePhaseEstimationIteration
+- summary: 考虑到准备和度量， `Zero` 通过执行给定数量的试验，估算量化指标成功 (返回) 的频率。
+  uid: Microsoft.Quantum.Characterization.EstimateFrequency
+- summary: 对于 adjointable 和度量值的准备， `Zero` 通过执行给定数量的试验来估算度量成功 (返回) 的频率。
+  uid: Microsoft.Quantum.Characterization.EstimateFrequencyA
+- summary: 假设每个操作都准备好状态的副本，并估计每个操作准备的状态之间重叠部分的虚部。
+  uid: Microsoft.Quantum.Characterization.EstimateImagOverlapBetweenStates
+- summary: 给定两个操作，每个操作都准备状态的副本，并估计每个操作准备的状态之间的平方重叠。
+  uid: Microsoft.Quantum.Characterization.EstimateOverlapBetweenStates
+- summary: 假设每个操作都准备好状态的副本，并对每个操作准备的状态之间的重叠部分进行估计。
+  uid: Microsoft.Quantum.Characterization.EstimateRealOverlapBetweenStates
+- summary: >+
+    > [!WARNING]
+
+    > MeasureAllZ 已被弃用。 请改用 <xref:Microsoft.Quantum.Measurement.MeasureAllZ>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.measurement.measureAllZ"。
+
+  uid: Microsoft.Quantum.Characterization.MeasureAllZ
+- summary: 测量 qubits 的寄存器上的标识运算符。
+  uid: Microsoft.Quantum.Characterization.MeasureIdentity
+- summary: 执行给定 oracle 和的量程阶段估算算法 `U` ，并将 `targetState` 该阶段读入大字节序量程寄存器。
+  uid: Microsoft.Quantum.Characterization.QuantumPhaseEstimation
+- summary: 为给定的 oracle 和 eigenstate 执行强健的非迭代量程阶段估算算法 `U` ，并提供针对海森堡限制处的变化缩放阶段的单个实际值估算。
+  uid: Microsoft.Quantum.Characterization.RobustPhaseEstimation
+- summary: 根据感兴趣的特定通道，在 Pauli 基础上执行 qubit 进程 tomography 度量。
+  uid: Microsoft.Quantum.Characterization.SingleQubitProcessTomographyMeasurement
+summary: 此命名空间包含用于了解量程状态和进程的属性的函数和操作，包括 tomography 和阶段估算。
+uid: Microsoft.Quantum.Characterization
+metadata:
+  ms.openlocfilehash: a1d4837f03b6dff637c82d2c5b14823029bd2787
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92695982"

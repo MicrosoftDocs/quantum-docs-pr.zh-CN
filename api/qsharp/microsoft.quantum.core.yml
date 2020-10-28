@@ -1,0 +1,32 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: 返回指定类型的默认实例。
+  uid: Microsoft.Quantum.Core.Default
+- summary: 返回数组中的元素数。
+  uid: Microsoft.Quantum.Core.Length
+- summary: 返回给定范围的定义结束值，该范围不一定是序列中的最后一个元素。
+  uid: Microsoft.Quantum.Core.RangeEnd
+- summary: 返回一个新范围，该范围是输入范围的反向。
+  uid: Microsoft.Quantum.Core.RangeReverse
+- summary: 返回给定范围中定义的开始值。
+  uid: Microsoft.Quantum.Core.RangeStart
+- summary: 返回一个整数，该整数指定如何计算范围的下一个值。
+  uid: Microsoft.Quantum.Core.RangeStep
+name: Microsoft.Quantum.Core
+newtypes:
+- summary: 编译器可识别的属性，用于将用户定义的类型标记为属性。
+  uid: Microsoft.Quantum.Core.Attribute
+- summary: 编译器可识别的属性，用于将类型或可调用标记为已弃用。
+  uid: Microsoft.Quantum.Core.Deprecated
+- summary: 编译器可识别的属性，用于标记可执行文件的入口点。
+  uid: Microsoft.Quantum.Core.EntryPoint
+operations: []
+summary: '此命名空间包括 Q # 核心函数和操作。'
+uid: Microsoft.Quantum.Core
+metadata:
+  ms.openlocfilehash: 12de9824c55c72651f5b29cc806058be14343ec5
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92695702"

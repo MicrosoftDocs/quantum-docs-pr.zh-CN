@@ -1,0 +1,84 @@
+### YamlMime:QSharpNamespace
+functions:
+- summary: >+
+    > [!WARNING]
+
+    > 和已弃用。 请改用 <xref:Microsoft.Quantum.Bitwise.And>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.bitwise.and"。
+
+  uid: Microsoft.Quantum.Extensions.Bitwise.And
+- summary: >+
+    > [!WARNING]
+
+    > 尚未弃用。 请改用 <xref:Microsoft.Quantum.Bitwise.Not>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.bitwise.not"。
+
+  uid: Microsoft.Quantum.Extensions.Bitwise.Not
+- summary: >+
+    > [!WARNING]
+
+    > 或已弃用。 请改用 <xref:Microsoft.Quantum.Bitwise.Or>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.bitwise.or"。
+
+  uid: Microsoft.Quantum.Extensions.Bitwise.Or
+- summary: >+
+    > [!WARNING]
+
+    > 奇偶校验已弃用。 请改用 <xref:Microsoft.Quantum.Bitwise.Parity>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.bitwise.parity"。
+
+  uid: Microsoft.Quantum.Extensions.Bitwise.Parity
+- summary: >+
+    > [!WARNING]
+
+    > XBits 已被弃用。 请改用 <xref:Microsoft.Quantum.Bitwise.XBits>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.bitwise.xbits"。
+
+  uid: Microsoft.Quantum.Extensions.Bitwise.XBits
+- summary: >+
+    > [!WARNING]
+
+    > 不推荐使用 Xor。 请改用 <xref:Microsoft.Quantum.Bitwise.Xor>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.bitwise.xor"。
+
+  uid: Microsoft.Quantum.Extensions.Bitwise.Xor
+- summary: >+
+    > [!WARNING]
+
+    > ZBits 已被弃用。 请改用 <xref:Microsoft.Quantum.Bitwise.ZBits>。
+
+    >
+
+    > 请使用 @"microsoft.quantum.bitwise.zbits"。
+
+  uid: Microsoft.Quantum.Extensions.Bitwise.ZBits
+name: Microsoft.Quantum.Extensions.Bitwise
+newtypes: []
+operations: []
+summary: ''
+uid: Microsoft.Quantum.Extensions.Bitwise
+metadata:
+  ms.openlocfilehash: 4ae65fda1f41159bc876efbdade906c24892172c
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92695520"

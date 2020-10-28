@@ -1,0 +1,32 @@
+### YamlMime:QSharpNamespace
+functions: []
+name: Microsoft.Quantum.Measurement
+newtypes: []
+operations:
+- summary: ''
+  uid: Microsoft.Quantum.Measurement.BasisChangeZtoY
+- summary: 在 X 基础上测量单个 qubit，并将其重置为固定的初始状态。
+  uid: Microsoft.Quantum.Measurement.MResetX
+- summary: 按 Y 度量单个 qubit，并将其重置为测量后的固定初始状态。
+  uid: Microsoft.Quantum.Measurement.MResetY
+- summary: 度量 Z 基准中的单个 qubit，并将其重置为固定的初始状态。
+  uid: Microsoft.Quantum.Measurement.MResetZ
+- summary: 共同度量 Pauli Z 基础的 qubits 寄存器。
+  uid: Microsoft.Quantum.Measurement.MeasureAllZ
+- summary: 给定多 qubit Pauli 运算符的数组，使用指定的度量小工具测量每个运算符，然后返回结果的数组。
+  uid: Microsoft.Quantum.Measurement.MeasurePaulis
+- summary: 使用显式暂存 qubit 度量给定的 Pauli 运算符以执行测量。
+  uid: Microsoft.Quantum.Measurement.MeasureWithScratch
+- summary: 按标准度量给定数组中的每个 qubit。
+  uid: Microsoft.Quantum.Measurement.MultiM
+- summary: 通过测量 qubit 并在需要时应用位翻转，将 qubit 设置为给定的计算基础状态。
+  uid: Microsoft.Quantum.Measurement.SetToBasisState
+summary: ''
+uid: Microsoft.Quantum.Measurement
+metadata:
+  ms.openlocfilehash: f35f2867ca9fd68cbc0fbc0cf3d386d441adbaa7
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92695217"

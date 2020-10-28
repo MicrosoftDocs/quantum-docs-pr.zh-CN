@@ -1,0 +1,18 @@
+### YamlMime:QSharpNamespace
+functions: []
+name: Microsoft.Quantum.Research.Characterization
+newtypes: []
+operations:
+- summary: 执行迭代阶段估算，并使用随机遍历来估算给定 oracle 和 eigenstate 的传统测量结果中的 Bayesian 推理。
+  uid: Microsoft.Quantum.Research.Characterization.RandomWalkPhaseEstimation
+- summary: ''
+  uid: Microsoft.Quantum.Research.Characterization._PrepAndMeasurePhaseEst
+summary: 此命名空间提供了针对量程描述和阶段估算的高级研究方法。
+uid: Microsoft.Quantum.Research.Characterization
+metadata:
+  ms.openlocfilehash: d5896b8fbe78a9142c3636422b2913f517ae3b91
+  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 10/27/2020
+  ms.locfileid: "92695379"
