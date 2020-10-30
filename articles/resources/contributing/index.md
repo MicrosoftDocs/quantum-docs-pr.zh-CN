@@ -9,12 +9,12 @@ uid: microsoft.quantum.contributing
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 0fbbe127b9f4c6b98bdc2cf0e46098bf40a816e3
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: a8a527df59bd7ee038de71e04003cf456b094afb
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87866853"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691774"
 ---
 # <a name="contributing-to-the-quantum-development-kit"></a>对量子开发工具包做出贡献
 
@@ -59,6 +59,7 @@ ms.locfileid: "87866853"
 - [**microsoft/qsharp-compiler**](https://github.com/microsoft/qsharp-compiler)：Q# 编译器、Visual Studio 扩展和 Visual Studio Code 扩展。
 - [**microsoft/qsharp-runtime**](https://github.com/microsoft/qsharp-runtime)：量子开发工具包的模拟框架、代码生成和模拟目标计算机。
 - [**microsoft/iqsharp**](https://github.com/microsoft/iqsharp)：用于 Q# 的 Jupyter 内核和 Python 主机功能，以及用于在云环境中使用 IQ# 的 Docker 映像。
+- [**microsoft/qsharp-language**](https://github.com/microsoft/qsharp-language)：新的 Q# 功能在这里进行开发和指定，而你可在这里分享有关 Q# 语言和核心库的未来发展的观点和建议。
 - [**MicrosoftDocs/quantum-docs-pr**](https://github.com/MicrosoftDocs/quantum-docs-pr)： https://docs.microsoft.com/quantum 上发布的文档的源代码。
 
 > [!NOTE]

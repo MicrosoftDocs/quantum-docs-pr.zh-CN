@@ -1,22 +1,23 @@
 ---
 title: IQ# Magic 命令
+description: 列出 IQ# Jupyter 内核中可用的 magic 命令。
 author: rmshaffer
 uid: microsoft.quantum.iqsharp.magic-ref.index
-ms.author: rmshaffer
-ms.date: 09/29/2020
+ms.author: ryansha
+ms.date: 10/26/2020
 ms.topic: article
-ms.openlocfilehash: 934ab18b667797d09d2c8188f727e64b0017e1d5
-ms.sourcegitcommit: 685a8ab16d7e6a25e63a168d6e7c385fa6e876cc
+ms.openlocfilehash: a615c6dac6cdb80ff84cec2b0a3c99fc700efb8e
+ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91464668"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92691145"
 ---
 # <a name="iq-magic-commands"></a>IQ# Magic 命令
 | Magic 命令 | 总结 |
 |---------------|---------|
 | [`%azure.connect`](xref:microsoft.quantum.iqsharp.magic-ref.azure.connect) | 连接到 Azure Quantum 工作区或显示当前连接状态。 |
-| [`%azure.execute`](xref:microsoft.quantum.iqsharp.magic-ref.azure.execute) | 在 Azure Quantum 工作区中执行作业。 |
+| [`%azure.execute`](xref:microsoft.quantum.iqsharp.magic-ref.azure.execute) | 将作业提交到 Azure Quantum 工作区，等待它完成。 |
 | [`%azure.jobs`](xref:microsoft.quantum.iqsharp.magic-ref.azure.jobs) | 在 Azure Quantum 工作区中显示作业列表。 |
 | [`%azure.output`](xref:microsoft.quantum.iqsharp.magic-ref.azure.output) | 在当前 Azure Quantum 工作区中显示作业的结果。 |
 | [`%azure.status`](xref:microsoft.quantum.iqsharp.magic-ref.azure.status) | 在当前 Azure Quantum 工作区中显示走也的状态。 |
@@ -29,6 +30,7 @@ ms.locfileid: "91464668"
 | [`%chemistry.fh.load`](xref:microsoft.quantum.iqsharp.magic-ref.chemistry.fh.load) | 为电子结构问题加载费米子 Hamiltonian。 此问题是从文件加载的，或作为参数传递。 |
 | [`%chemistry.inputstate.load`](xref:microsoft.quantum.iqsharp.magic-ref.chemistry.inputstate.load) | 加载 Broombridge 电子结构问题并返回所选输入状态。 |
 | [`%config`](xref:microsoft.quantum.iqsharp.magic-ref.config) | 允许设置或查询配置选项。 |
+| [`%debug`](xref:microsoft.quantum.iqsharp.magic-ref.debug) | 逐步执行给定的 Q# 操作或函数。 |
 | [`%estimate`](xref:microsoft.quantum.iqsharp.magic-ref.estimate) | 在 ResourcesEstimator 目标计算机上运行给定的函数或操作。 |
 | [`%kata`](xref:microsoft.quantum.iqsharp.magic-ref.kata) | 执行单个测试。 |
 | [`%lsmagic`](xref:microsoft.quantum.iqsharp.magic-ref.lsmagic) | 返回所有当前可用的 magic 命令的列表。 |
