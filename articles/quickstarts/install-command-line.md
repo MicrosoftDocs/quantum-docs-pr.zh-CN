@@ -1,5 +1,5 @@
 ---
-title: 使用 Q# 应用程序进行开发
+title: 在 IDE 中使用 Q# 应用程序进行开发
 description: 了解如何创建从命令提示符运行的 Q# 应用程序。
 author: bradben
 ms.author: v-benbra
@@ -10,53 +10,52 @@ uid: microsoft.quantum.install.standalone
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 68f530d80e5c5f40dc2bcbb185879c3cb6f93f91
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: a6823888dcbe8cf79f0045d2615fe8b889dcc7c3
+ms.sourcegitcommit: a13c7c86fd52a05cbf129b8dd713d6586ca1cc2c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834408"
+ms.lasthandoff: 11/05/2020
+ms.locfileid: "93376416"
 ---
-# <a name="develop-with-no-locq-applications"></a>使用 Q# 应用程序进行开发
+# <a name="develop-with-no-locq-applications-in-an-ide"></a>在 IDE 中使用 Q# 应用程序进行开发
 
-按照你的环境所对应的选项卡上的说明操作。
+Q# 程序可自己运行，无需采用 C#、F# 或 Python 等主机语言的驱动程序。 可在 Visual Studio Code (VS Code)、Visual Studio、Visual Studio Codespaces 中，或者使用任何编辑器/IDE 来开发 Q# 应用程序，并通过 .NET 控制台运行这些应用程序。 
 
-Q# 程序可自己运行，无需采用 C#、F# 或 Python 等主机语言的驱动程序。
-
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites-for-all-environments"></a>面向所有环境的先决条件
 
 - [.NET Core SDK 3.1 或更高版本](https://www.microsoft.com/net/download)
 
 ## <a name="installation"></a>安装
 
-在任何 IDE 中构建 Q# 应用程序时，建议使用 Visual Studio Code (VS Code) 或 Visual Studio IDE 在本地开发 Q# 应用程序。 若要通过 Web 浏览器在云中开发，建议使用 Visual Studio Codespaces。 在这些环境中开发涉及到丰富的 QDK 扩展功能，其中包括警告、语法突出显示和项目模板等。 
+在任何 IDE 中构建 Q# 应用程序时，建议使用 Visual Studio Code (VS Code) 或 Visual Studio IDE 在本地开发 Q# 应用程序。 若要通过 Web 浏览器在云中开发，建议使用 Visual Studio Codespaces。 在这些环境中进行开发会使用 QDK 扩展的丰富功能，这包括警告、语法突出显示和项目模板等。 
 
-配置 VS Code：
+### <a name="to-configure-for-vs-code"></a>若要为 VS Code 进行配置：
 
 1. 下载并安装 [VS Code](https://code.visualstudio.com/download)（Windows、Linux 和 Mac）。
 2. 安装[适用于 VS Code 的 Microsoft QDK](https://marketplace.visualstudio.com/items?itemName=quantum.quantum-devkit-vscode)。
 
-配置 Visual Studio:
+### <a name="to-configure-for-visual-studio"></a>若要为 Visual Studio 进行配置：
 
 1. 下载并安装 [Visual Studio](https://visualstudio.microsoft.com/downloads/) 16.3 或更高版本，并启用 .NET Core 跨平台开发工作负载。
 2. 下载并安装 [Microsoft QDK](https://marketplace.visualstudio.com/items?itemName=quantum.DevKit)。
 
-若要配置 Visual Studio Codespaces：
+### <a name="to-configure-for-another-environment"></a>若要为另一环境进行配置： 
 
-1. 创建 [Azure 帐户](https://azure.microsoft.com/free/)。
-2. 创建一个 Codespaces 环境。 请按照[快速入门指南](https://docs.microsoft.com/visualstudio/codespaces/quickstarts/browser)操作。 创建 Codespace 时，建议在“Git 存储库”中输入 `microsoft/Quantum` 来加载 QDK 特定的设置。
-3. 现可启动新环境，通过 [VS Codespaces Cloud IDE](https://online.visualstudio.com/environments) 在浏览器中开始开发。 或者，可使用 VS Code 的本地安装并将 Codespaces 用作[远程环境](https://docs.microsoft.com/visualstudio/online/how-to/vscode)。
-
-
-若要为另一环境安装 QDK，请在命令提示符处输入以下内容：
+1. 在命令提示符处输入以下内容
 
 ```dotnetcli
 dotnet new -i Microsoft.Quantum.ProjectTemplates
 ```
 
+### <a name="to-configure-for-visual-studio-codespaces"></a>若要为 Visual Studio Codespaces 进行配置：
+
+1. 创建 [Azure 帐户](https://azure.microsoft.com/free/)。
+2. 创建一个 Codespaces 环境。 请按照[快速入门指南](https://docs.microsoft.com/visualstudio/codespaces/quickstarts/browser)操作。 创建 Codespace 时，建议在“Git 存储库”中输入 `microsoft/Quantum` 来加载 QDK 特定的设置。
+3. 现可启动新环境，通过 [VS Codespaces Cloud IDE](https://online.visualstudio.com/environments) 在浏览器中开始开发。 或者，可使用 VS Code 的本地安装并将 Codespaces 用作[远程环境](https://docs.microsoft.com/visualstudio/online/how-to/vscode)。
+
 ## <a name="develop-with-no-locq"></a>使用 Q# 进行开发
 
-按照你的环境所对应的选项卡上的说明操作。
+按照你的开发环境所对应的选项卡上的说明操作。
 
 ### <a name="vs-code"></a>[VS Code](#tab/tabid-vscode)
 
@@ -102,12 +101,6 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 ### <a name="other-editors-with-the-command-prompt"></a>[其他使用命令提示符的编辑器](#tab/tabid-cmdline)
 
 创建 Q# `Hello World` 应用程序来验证安装项。
-
-1. 安装项目模板。
-
-    ```dotnetcli
-    dotnet new -i Microsoft.Quantum.ProjectTemplates
-    ```
 
 1. 创建新的应用程序：
 
