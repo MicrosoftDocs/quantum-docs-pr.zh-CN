@@ -9,12 +9,12 @@ uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: fae603a81f8edc23ab8dc14277c5e3c4699f2cee
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: d38482be17e67f180441440ee8ccc7f1f64ebc9d
+ms.sourcegitcommit: fb75d8f30f1d91f644b2a594f46867eb5968cfda
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92691691"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94448338"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -23,6 +23,12 @@ ms.locfileid: "92691691"
 有关安装说明，请参阅[安装指南](xref:microsoft.quantum.install)。
 
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
+
+## <a name="version-01320111004"></a>版本0.13.20111004
+
+*发布日期：2020年11月10日*
+
+此版本禁用 Q# 了 Visual Studio 中的文件的 IntelliSense 功能，并在项目文件不存在时 Visual Studio Code。 这解决了以下问题：在将新文件添加到项目后，IntelliSense 功能可能会停止工作 Q# (参阅 [qsharp # 720](https://github.com/microsoft/qsharp-compiler/issues/720)) 。
 
 ## <a name="version-01320102604"></a>版本0.13.20102604
 
