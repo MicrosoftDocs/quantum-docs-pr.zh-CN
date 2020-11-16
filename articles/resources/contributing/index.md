@@ -7,8 +7,8 @@ ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: a8a527df59bd7ee038de71e04003cf456b094afb
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: HT
@@ -55,11 +55,11 @@ ms.locfileid: "92691774"
 
 - <span data-ttu-id="ddccc-132">[**microsoft/Quantum**](https://github.com/Microsoft/Quantum)：有助于开始使用量子开发工具包的示例和工具。</span><span class="sxs-lookup"><span data-stu-id="ddccc-132">[**microsoft/Quantum**](https://github.com/Microsoft/Quantum): Samples and tools to help get started with the Quantum Development Kit.</span></span>
 - <span data-ttu-id="ddccc-133">[**microsoft/QuantumLibraries**](https://github.com/Microsoft/QuantumLibraries)：量子开发工具包的标准和域特定库。</span><span class="sxs-lookup"><span data-stu-id="ddccc-133">[**microsoft/QuantumLibraries**](https://github.com/Microsoft/QuantumLibraries): Standard and domain-specific libraries for the Quantum Development Kit.</span></span>
-- <span data-ttu-id="ddccc-134">[**microsoft/QuantumKatas**](https://github.com/Microsoft/QuantumKatas)：用于学习量子计算和 :::no-loc(Q#)::: 编程语言的自定进度编程练习。</span><span class="sxs-lookup"><span data-stu-id="ddccc-134">[**microsoft/QuantumKatas**](https://github.com/Microsoft/QuantumKatas): Self-paced programming exercises for learning quantum computing and the :::no-loc(Q#)::: programming language.</span></span>
-- <span data-ttu-id="ddccc-135">[**microsoft/qsharp-compiler**](https://github.com/microsoft/qsharp-compiler)：:::no-loc(Q#)::: 编译器、Visual Studio 扩展和 Visual Studio Code 扩展。</span><span class="sxs-lookup"><span data-stu-id="ddccc-135">[**microsoft/qsharp-compiler**](https://github.com/microsoft/qsharp-compiler): The :::no-loc(Q#)::: compiler, Visual Studio extension, and Visual Studio Code extension.</span></span>
+- <span data-ttu-id="ddccc-134">[**microsoft/QuantumKatas**](https://github.com/Microsoft/QuantumKatas)：用于学习量子计算和 Q# 编程语言的自定进度编程练习。</span><span class="sxs-lookup"><span data-stu-id="ddccc-134">[**microsoft/QuantumKatas**](https://github.com/Microsoft/QuantumKatas): Self-paced programming exercises for learning quantum computing and the Q# programming language.</span></span>
+- <span data-ttu-id="ddccc-135">[**microsoft/qsharp-compiler**](https://github.com/microsoft/qsharp-compiler)：Q# 编译器、Visual Studio 扩展和 Visual Studio Code 扩展。</span><span class="sxs-lookup"><span data-stu-id="ddccc-135">[**microsoft/qsharp-compiler**](https://github.com/microsoft/qsharp-compiler): The Q# compiler, Visual Studio extension, and Visual Studio Code extension.</span></span>
 - <span data-ttu-id="ddccc-136">[**microsoft/qsharp-runtime**](https://github.com/microsoft/qsharp-runtime)：量子开发工具包的模拟框架、代码生成和模拟目标计算机。</span><span class="sxs-lookup"><span data-stu-id="ddccc-136">[**microsoft/qsharp-runtime**](https://github.com/microsoft/qsharp-runtime): Simulation framework, code generation, and simulation target machines for the Quantum Development Kit.</span></span>
-- <span data-ttu-id="ddccc-137">[**microsoft/iqsharp**](https://github.com/microsoft/iqsharp)：用于 :::no-loc(Q#)::: 的 Jupyter 内核和 Python 主机功能，以及用于在云环境中使用 I:::no-loc(Q#)::: 的 Docker 映像。</span><span class="sxs-lookup"><span data-stu-id="ddccc-137">[**microsoft/iqsharp**](https://github.com/microsoft/iqsharp): Jupyter kernel and Python host functionality for :::no-loc(Q#):::, as well as Docker images for using I:::no-loc(Q#)::: in cloud environments.</span></span>
-- <span data-ttu-id="ddccc-138">[**microsoft/qsharp-language**](https://github.com/microsoft/qsharp-language)：新的 :::no-loc(Q#)::: 功能在这里进行开发和指定，而你可在这里分享有关 :::no-loc(Q#)::: 语言和核心库的未来发展的观点和建议。</span><span class="sxs-lookup"><span data-stu-id="ddccc-138">[**microsoft/qsharp-language**](https://github.com/microsoft/qsharp-language): This is where new :::no-loc(Q#)::: features are developed and specified, and where you can share ideas and suggestions about the future evolution of the :::no-loc(Q#)::: language and core libraries.</span></span>
+- <span data-ttu-id="ddccc-137">[**microsoft/iqsharp**](https://github.com/microsoft/iqsharp)：用于 Q# 的 Jupyter 内核和 Python 主机功能，以及用于在云环境中使用 IQ# 的 Docker 映像。</span><span class="sxs-lookup"><span data-stu-id="ddccc-137">[**microsoft/iqsharp**](https://github.com/microsoft/iqsharp): Jupyter kernel and Python host functionality for Q#, as well as Docker images for using IQ# in cloud environments.</span></span>
+- <span data-ttu-id="ddccc-138">[**microsoft/qsharp-language**](https://github.com/microsoft/qsharp-language)：新的 Q# 功能在这里进行开发和指定，而你可在这里分享有关 Q# 语言和核心库的未来发展的观点和建议。</span><span class="sxs-lookup"><span data-stu-id="ddccc-138">[**microsoft/qsharp-language**](https://github.com/microsoft/qsharp-language): This is where new Q# features are developed and specified, and where you can share ideas and suggestions about the future evolution of the Q# language and core libraries.</span></span>
 - <span data-ttu-id="ddccc-139">[**MicrosoftDocs/quantum-docs-pr**](https://github.com/MicrosoftDocs/quantum-docs-pr)： https://docs.microsoft.com/quantum 上发布的文档的源代码。</span><span class="sxs-lookup"><span data-stu-id="ddccc-139">[**MicrosoftDocs/quantum-docs-pr**](https://github.com/MicrosoftDocs/quantum-docs-pr): Source code for the documentation published at https://docs.microsoft.com/quantum.</span></span>
 
 > [!NOTE]
@@ -67,7 +67,7 @@ ms.locfileid: "92691774"
 
 <span data-ttu-id="ddccc-141">还有其他一些更具专门用途的存储库，专注于与 Quantum 开发工具包相关的辅助功能。</span><span class="sxs-lookup"><span data-stu-id="ddccc-141">There are also a few other, more specialized repositories focusing on auxiliary functionality related to the Quantum Development Kit.</span></span>
 
-- <span data-ttu-id="ddccc-142">[**msr-quarc/qsharp.sty**](https://github.com/msr-quarc/qsharp.sty)：针对 :::no-loc(Q#)::: 语法的 LaTeX 格式化支持。</span><span class="sxs-lookup"><span data-stu-id="ddccc-142">[**msr-quarc/qsharp.sty**](https://github.com/msr-quarc/qsharp.sty): LaTeX formatting support for :::no-loc(Q#)::: syntax.</span></span>
+- <span data-ttu-id="ddccc-142">[**msr-quarc/qsharp.sty**](https://github.com/msr-quarc/qsharp.sty)：针对 Q# 语法的 LaTeX 格式化支持。</span><span class="sxs-lookup"><span data-stu-id="ddccc-142">[**msr-quarc/qsharp.sty**](https://github.com/msr-quarc/qsharp.sty): LaTeX formatting support for Q# syntax.</span></span>
 
 ## <a name="next-steps"></a><span data-ttu-id="ddccc-143">后续步骤</span><span class="sxs-lookup"><span data-stu-id="ddccc-143">Next steps</span></span>
 

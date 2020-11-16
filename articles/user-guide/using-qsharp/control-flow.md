@@ -1,5 +1,5 @@
 ---
-title: '控制流 :::no-loc(Q#):::'
+title: '控制流 Q#'
 description: 循环、条件等。
 author: gillenhaalb
 ms.author: a-gibec
@@ -7,8 +7,8 @@ ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.controlflow
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: eca37202e5fe9b48dcfdec4eeb4ba6cafaac8723
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -16,7 +16,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92691094"
 ---
-# <a name="control-flow-in-no-locq"></a><span data-ttu-id="2a559-103">控制流 :::no-loc(Q#):::</span><span class="sxs-lookup"><span data-stu-id="2a559-103">Control flow in :::no-loc(Q#):::</span></span>
+# <a name="control-flow-in-no-locq"></a><span data-ttu-id="2a559-103">控制流 Q#</span><span class="sxs-lookup"><span data-stu-id="2a559-103">Control flow in Q#</span></span>
 
 <span data-ttu-id="2a559-104">在操作或函数中，每个语句都按顺序运行，类似于其他常见的命令性传统语言。</span><span class="sxs-lookup"><span data-stu-id="2a559-104">Within an operation or function, each statement runs in order, similar to other common imperative classical languages.</span></span>
 <span data-ttu-id="2a559-105">但是，可以通过三种不同的方式修改控制流：</span><span class="sxs-lookup"><span data-stu-id="2a559-105">However, you can modify the flow of control in three distinct ways:</span></span>
@@ -108,12 +108,12 @@ for ((index, measured) in results) { // iterates over the tuple values in result
 
 ## <a name="repeat-until-success-loop"></a><span data-ttu-id="2a559-140">重复执行-成功循环</span><span class="sxs-lookup"><span data-stu-id="2a559-140">Repeat-until-success loop</span></span>
 
-<span data-ttu-id="2a559-141">此 :::no-loc(Q#)::: 语言允许经典控制流依赖于测量 qubits 的结果。</span><span class="sxs-lookup"><span data-stu-id="2a559-141">The :::no-loc(Q#)::: language allows classical control flow to depend on the results of measuring qubits.</span></span>
+<span data-ttu-id="2a559-141">此 Q# 语言允许经典控制流依赖于测量 qubits 的结果。</span><span class="sxs-lookup"><span data-stu-id="2a559-141">The Q# language allows classical control flow to depend on the results of measuring qubits.</span></span>
 <span data-ttu-id="2a559-142">此功能进而实现了实现功能强大的概率小工具，从而降低了实现 unitaries 的计算成本。</span><span class="sxs-lookup"><span data-stu-id="2a559-142">This capability, in turn, enables implementing powerful probabilistic gadgets that can reduce the computational cost for implementing unitaries.</span></span>
-<span data-ttu-id="2a559-143">这种情况的示例如下所示 *-成功* (ru) 模式 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="2a559-143">Examples of this are the *repeat-until-success* (RUS) patterns in :::no-loc(Q#):::.</span></span>
+<span data-ttu-id="2a559-143">这种情况的示例如下所示 *-成功* (ru) 模式 Q# 。</span><span class="sxs-lookup"><span data-stu-id="2a559-143">Examples of this are the *repeat-until-success* (RUS) patterns in Q#.</span></span>
 <span data-ttu-id="2a559-144">这些 RUS 模式是概率的程序，这些程序在基本入口方面具有 *预期* 的低成本;产生的费用取决于多个可能 branchings 的实际运行和交叉交叉。</span><span class="sxs-lookup"><span data-stu-id="2a559-144">These RUS patterns are probabilistic programs that have an *expected* low cost in terms of elementary gates; the incurred cost depends on the actual run and the interleaving of the multiple possible branchings.</span></span>
 
-<span data-ttu-id="2a559-145">为了便于重复-成功 (ru) 模式， :::no-loc(Q#)::: 支持构造</span><span class="sxs-lookup"><span data-stu-id="2a559-145">To facilitate repeat-until-success (RUS) patterns, :::no-loc(Q#)::: supports the constructs</span></span>
+<span data-ttu-id="2a559-145">为了便于重复-成功 (ru) 模式， Q# 支持构造</span><span class="sxs-lookup"><span data-stu-id="2a559-145">To facilitate repeat-until-success (RUS) patterns, Q# supports the constructs</span></span>
 
 ```qsharp
 repeat {
@@ -151,9 +151,9 @@ until (expression);
 
 ## <a name="while-loop"></a><span data-ttu-id="2a559-157">While 循环</span><span class="sxs-lookup"><span data-stu-id="2a559-157">While loop</span></span>
 
-<span data-ttu-id="2a559-158">重复-直到成功模式有一个非常特定于量程的内涵。</span><span class="sxs-lookup"><span data-stu-id="2a559-158">Repeat-until-success patterns have a very quantum-specific connotation.</span></span> <span data-ttu-id="2a559-159">它们广泛用于特定的量程算法类，因此是中的专用语言构造 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="2a559-159">They are widely used in particular classes of quantum algorithms - hence the dedicated language construct in :::no-loc(Q#):::.</span></span> <span data-ttu-id="2a559-160">但是，在编译时，中断的循环会根据特定的时刻处理中断，并且在编译时是未知的。</span><span class="sxs-lookup"><span data-stu-id="2a559-160">However, loops that break based on a condition and whose run length is thus unknown at compile-time, are handled with particular care in a quantum runtime.</span></span> <span data-ttu-id="2a559-161">但是，它们在函数中的使用是 unproblematic 的，因为这些循环只包含在常规 (非量程) 硬件上运行的代码。</span><span class="sxs-lookup"><span data-stu-id="2a559-161">However, their use within functions is unproblematic since these loops only contain code that runs on conventional (non-quantum) hardware.</span></span> 
+<span data-ttu-id="2a559-158">重复-直到成功模式有一个非常特定于量程的内涵。</span><span class="sxs-lookup"><span data-stu-id="2a559-158">Repeat-until-success patterns have a very quantum-specific connotation.</span></span> <span data-ttu-id="2a559-159">它们广泛用于特定的量程算法类，因此是中的专用语言构造 Q# 。</span><span class="sxs-lookup"><span data-stu-id="2a559-159">They are widely used in particular classes of quantum algorithms - hence the dedicated language construct in Q#.</span></span> <span data-ttu-id="2a559-160">但是，在编译时，中断的循环会根据特定的时刻处理中断，并且在编译时是未知的。</span><span class="sxs-lookup"><span data-stu-id="2a559-160">However, loops that break based on a condition and whose run length is thus unknown at compile-time, are handled with particular care in a quantum runtime.</span></span> <span data-ttu-id="2a559-161">但是，它们在函数中的使用是 unproblematic 的，因为这些循环只包含在常规 (非量程) 硬件上运行的代码。</span><span class="sxs-lookup"><span data-stu-id="2a559-161">However, their use within functions is unproblematic since these loops only contain code that runs on conventional (non-quantum) hardware.</span></span> 
 
-<span data-ttu-id="2a559-162">:::no-loc(Q#):::因此，仅支持在函数内使用 while 循环。</span><span class="sxs-lookup"><span data-stu-id="2a559-162">:::no-loc(Q#):::, therefore, supports to use of while loops within functions only.</span></span>
+<span data-ttu-id="2a559-162">Q#因此，仅支持在函数内使用 while 循环。</span><span class="sxs-lookup"><span data-stu-id="2a559-162">Q#, therefore, supports to use of while loops within functions only.</span></span>
 <span data-ttu-id="2a559-163">`while`语句由关键字 `while` 、括号中的布尔表达式和语句块组成。</span><span class="sxs-lookup"><span data-stu-id="2a559-163">A `while` statement consists of the keyword `while`, a Boolean expression in parentheses, and a statement block.</span></span>
 <span data-ttu-id="2a559-164">只要条件的计算结果为，语句块 (循环的主体) 运行 `true` 。</span><span class="sxs-lookup"><span data-stu-id="2a559-164">The statement block (the body of the loop) runs as long as the condition evaluates to `true`.</span></span>
 
@@ -183,7 +183,7 @@ operation ApplyWith<'T>(
 }
 ```
 
-<span data-ttu-id="2a559-169">:::no-loc(Q#)::: 支持语态语句，该语句实现前面的转换。</span><span class="sxs-lookup"><span data-stu-id="2a559-169">:::no-loc(Q#)::: supports a conjugation statement that implements the preceding transformation.</span></span> <span data-ttu-id="2a559-170">使用该语句，可以通过 `ApplyWith` 以下方式实现操作：</span><span class="sxs-lookup"><span data-stu-id="2a559-170">Using that statement, the operation `ApplyWith` can be implemented in the following way:</span></span>
+<span data-ttu-id="2a559-169">Q# 支持语态语句，该语句实现前面的转换。</span><span class="sxs-lookup"><span data-stu-id="2a559-169">Q# supports a conjugation statement that implements the preceding transformation.</span></span> <span data-ttu-id="2a559-170">使用该语句，可以通过 `ApplyWith` 以下方式实现操作：</span><span class="sxs-lookup"><span data-stu-id="2a559-170">Using that statement, the operation `ApplyWith` can be implemented in the following way:</span></span>
 
 ```qsharp
 operation ApplyWith<'T>(
@@ -249,7 +249,7 @@ fail $"Syndrome {syn} is incorrect";
 
 ### <a name="rus-pattern-for-single-qubit-rotation-about-an-irrational-axis"></a><span data-ttu-id="2a559-193">针对无理数轴的单 qubit 旋转的 RUS 模式</span><span class="sxs-lookup"><span data-stu-id="2a559-193">RUS pattern for single-qubit rotation about an irrational axis</span></span> 
 
-<span data-ttu-id="2a559-194">在典型用例中，以下 :::no-loc(Q#)::: 操作实现绕 {5} Bloch 球上的无理数轴（$ (I + 2i Z) /\sqrt $）的旋转。</span><span class="sxs-lookup"><span data-stu-id="2a559-194">In a typical use case, the following :::no-loc(Q#)::: operation implements a rotation around an irrational axis of $(I + 2i Z)/\sqrt{5}$ on the Bloch sphere.</span></span> <span data-ttu-id="2a559-195">实现使用已知的 RUS 模式：</span><span class="sxs-lookup"><span data-stu-id="2a559-195">The implementation uses a known RUS pattern:</span></span>
+<span data-ttu-id="2a559-194">在典型用例中，以下 Q# 操作实现绕 {5} Bloch 球上的无理数轴（$ (I + 2i Z) /\sqrt $）的旋转。</span><span class="sxs-lookup"><span data-stu-id="2a559-194">In a typical use case, the following Q# operation implements a rotation around an irrational axis of $(I + 2i Z)/\sqrt{5}$ on the Bloch sphere.</span></span> <span data-ttu-id="2a559-195">实现使用已知的 RUS 模式：</span><span class="sxs-lookup"><span data-stu-id="2a559-195">The implementation uses a known RUS pattern:</span></span>
 
 ```qsharp
 operation ApplyVRotationUsingRUS(qubit : Qubit) : Unit {
@@ -375,4 +375,4 @@ operation PrepareStateUsingRUS(target : Qubit) : Unit {
 
 ## <a name="next-steps"></a><span data-ttu-id="2a559-210">后续步骤</span><span class="sxs-lookup"><span data-stu-id="2a559-210">Next steps</span></span>
 
-<span data-ttu-id="2a559-211">了解中的 [测试和调试](xref:microsoft.quantum.guide.testingdebugging) :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="2a559-211">Learn about [Testing and Debugging](xref:microsoft.quantum.guide.testingdebugging) in :::no-loc(Q#):::.</span></span>
+<span data-ttu-id="2a559-211">了解中的 [测试和调试](xref:microsoft.quantum.guide.testingdebugging) Q# 。</span><span class="sxs-lookup"><span data-stu-id="2a559-211">Learn about [Testing and Debugging](xref:microsoft.quantum.guide.testingdebugging) in Q#.</span></span>

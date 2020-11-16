@@ -1,5 +1,5 @@
 ---
-title: '中的操作和函数 :::no-loc(Q#):::'
+title: '中的操作和函数 Q#'
 description: 如何定义和调用操作和函数，以及受控和 adjoint 操作专用化。
 author: gillenhaalb
 ms.author: a-gibec
@@ -7,8 +7,8 @@ ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.operationsfunctions
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 55e6d3e1a242386c46213083692377520df83a80
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -16,16 +16,16 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92692127"
 ---
-# <a name="operations-and-functions-in-no-locq"></a><span data-ttu-id="941f6-103">中的操作和函数 :::no-loc(Q#):::</span><span class="sxs-lookup"><span data-stu-id="941f6-103">Operations and Functions in :::no-loc(Q#):::</span></span>
+# <a name="operations-and-functions-in-no-locq"></a><span data-ttu-id="941f6-103">中的操作和函数 Q#</span><span class="sxs-lookup"><span data-stu-id="941f6-103">Operations and Functions in Q#</span></span>
 
 ## <a name="defining-new-operations"></a><span data-ttu-id="941f6-104">定义新操作</span><span class="sxs-lookup"><span data-stu-id="941f6-104">Defining New Operations</span></span>
 
-<span data-ttu-id="941f6-105">操作是的核心 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="941f6-105">Operations are the core of :::no-loc(Q#):::.</span></span>
-<span data-ttu-id="941f6-106">声明后，可以从传统的 .NET 应用程序调用它们，例如，使用模拟器或内的其他操作 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="941f6-106">Once declared, they can either be called from classical .NET applications, for example, using a simulator or by other operations within :::no-loc(Q#):::.</span></span>
-<span data-ttu-id="941f6-107">在中定义的每个操作 :::no-loc(Q#)::: 都可以调用任意数量的其他操作，包括由语言定义的内置内部操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-107">Each operation defined in :::no-loc(Q#)::: can call any number of other operations, including the built-in intrinsic operations defined by the language.</span></span> <span data-ttu-id="941f6-108">:::no-loc(Q#):::定义这些内部操作的特定方式取决于目标计算机。</span><span class="sxs-lookup"><span data-stu-id="941f6-108">The particular way in which :::no-loc(Q#)::: defines these intrinsic operations depends on the target machine.</span></span>
+<span data-ttu-id="941f6-105">操作是的核心 Q# 。</span><span class="sxs-lookup"><span data-stu-id="941f6-105">Operations are the core of Q#.</span></span>
+<span data-ttu-id="941f6-106">声明后，可以从传统的 .NET 应用程序调用它们，例如，使用模拟器或内的其他操作 Q# 。</span><span class="sxs-lookup"><span data-stu-id="941f6-106">Once declared, they can either be called from classical .NET applications, for example, using a simulator or by other operations within Q#.</span></span>
+<span data-ttu-id="941f6-107">在中定义的每个操作 Q# 都可以调用任意数量的其他操作，包括由语言定义的内置内部操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-107">Each operation defined in Q# can call any number of other operations, including the built-in intrinsic operations defined by the language.</span></span> <span data-ttu-id="941f6-108">Q#定义这些内部操作的特定方式取决于目标计算机。</span><span class="sxs-lookup"><span data-stu-id="941f6-108">The particular way in which Q# defines these intrinsic operations depends on the target machine.</span></span>
 <span data-ttu-id="941f6-109">在编译时，每个操作都表示为可提供给目标计算机的 .NET 类类型。</span><span class="sxs-lookup"><span data-stu-id="941f6-109">When compiled, each operation is represented as a .NET class type that can be provided to target machines.</span></span>
 
-<span data-ttu-id="941f6-110">每个 :::no-loc(Q#)::: 源文件都可以定义任意数量的操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-110">Each :::no-loc(Q#)::: source file can define any number of operations.</span></span>
+<span data-ttu-id="941f6-110">每个 Q# 源文件都可以定义任意数量的操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-110">Each Q# source file can define any number of operations.</span></span>
 <span data-ttu-id="941f6-111">操作名称在命名空间中必须唯一，并且不能与类型或函数名冲突。</span><span class="sxs-lookup"><span data-stu-id="941f6-111">Operation names must be unique within a namespace and can not conflict with type or function names.</span></span>
 
 <span data-ttu-id="941f6-112">操作声明由关键字组成 `operation` ，后跟作为操作名称的符号、定义操作参数的类型化标识符元组、冒号 `:` 、描述操作结果类型的类型批注，还可以是包含操作特征的批注、左大括号和操作声明的正文（括在大括号中） `{ }` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-112">An operation declaration consists of the keyword `operation`, followed by the symbol that is the operation's name, a typed identifier tuple that defines the arguments to the operation, a colon `:`, a type annotation that describes the operation's result type, optionally an annotation with the operation characteristics, an open brace, and then the body of the operation declaration, enclosed in braces `{ }`.</span></span>
@@ -64,16 +64,16 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 ```
 
 > [!NOTE]
-> <span data-ttu-id="941f6-124">中的每个操作 :::no-loc(Q#)::: 都只采用一个输入，并只返回一个输出。</span><span class="sxs-lookup"><span data-stu-id="941f6-124">Each operation in :::no-loc(Q#)::: takes exactly one input and returns exactly one output.</span></span>
+> <span data-ttu-id="941f6-124">中的每个操作 Q# 都只采用一个输入，并只返回一个输出。</span><span class="sxs-lookup"><span data-stu-id="941f6-124">Each operation in Q# takes exactly one input and returns exactly one output.</span></span>
 > <span data-ttu-id="941f6-125">多个输入和输出使用元组表示，这些 *元组* 将多个值一起收集到单个值中。</span><span class="sxs-lookup"><span data-stu-id="941f6-125">Multiple inputs and outputs are represented using *tuples* , which collect multiple values together into a single value.</span></span>
-> <span data-ttu-id="941f6-126">在这种情况下， :::no-loc(Q#)::: 是 "元组" 语言。</span><span class="sxs-lookup"><span data-stu-id="941f6-126">In this regard, :::no-loc(Q#)::: is a "tuple-in tuple-out" language.</span></span>
+> <span data-ttu-id="941f6-126">在这种情况下， Q# 是 "元组" 语言。</span><span class="sxs-lookup"><span data-stu-id="941f6-126">In this regard, Q# is a "tuple-in tuple-out" language.</span></span>
 > <span data-ttu-id="941f6-127">按照此概念，应将一组空括号 `()` 作为 "empty" 元组（类型为）进行读取 `Unit` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-127">Following this concept, a set of empty parentheses, `()`, should then be read as the "empty" tuple, which has the type `Unit`.</span></span>
 
 ## <a name="controlled-and-adjoint-operations"></a><span data-ttu-id="941f6-128">受控和 Adjoint 操作</span><span class="sxs-lookup"><span data-stu-id="941f6-128">Controlled and Adjoint Operations</span></span>
 
-<span data-ttu-id="941f6-129">如果操作实现了单一转换，就像在中执行许多操作一样 :::no-loc(Q#)::: ，然后可以定义操作在 *adjointed* 或 *控制* 时的行为方式。</span><span class="sxs-lookup"><span data-stu-id="941f6-129">If an operation implements a unitary transformation, as is the case for many operations in :::no-loc(Q#):::, then it is possible to define how the operation acts when *adjointed* or *controlled* .</span></span> <span data-ttu-id="941f6-130">操作的 *adjoint* 专用化指定操作的 "反转" 的行为方式，而 *受控* 专用化指定操作在其应用程序的应用程序在特定量程寄存器状态下运行时的行为方式。</span><span class="sxs-lookup"><span data-stu-id="941f6-130">An *adjoint* specialization of an operation specifies how the "inverse" of the operation acts, while a *controlled* specialization specifies how an operation acts when its application is conditioned on the state of a particular quantum register.</span></span>
+<span data-ttu-id="941f6-129">如果操作实现了单一转换，就像在中执行许多操作一样 Q# ，然后可以定义操作在 *adjointed* 或 *控制* 时的行为方式。</span><span class="sxs-lookup"><span data-stu-id="941f6-129">If an operation implements a unitary transformation, as is the case for many operations in Q#, then it is possible to define how the operation acts when *adjointed* or *controlled* .</span></span> <span data-ttu-id="941f6-130">操作的 *adjoint* 专用化指定操作的 "反转" 的行为方式，而 *受控* 专用化指定操作在其应用程序的应用程序在特定量程寄存器状态下运行时的行为方式。</span><span class="sxs-lookup"><span data-stu-id="941f6-130">An *adjoint* specialization of an operation specifies how the "inverse" of the operation acts, while a *controlled* specialization specifies how an operation acts when its application is conditioned on the state of a particular quantum register.</span></span>
 
-<span data-ttu-id="941f6-131">量程操作的 Adjoints 对量程计算的许多方面都至关重要。</span><span class="sxs-lookup"><span data-stu-id="941f6-131">Adjoints of quantum operations are crucial to many aspects of quantum computing.</span></span> <span data-ttu-id="941f6-132">有关在一种有用的编程方法中讨论的这种情况的示例 :::no-loc(Q#)::: ，请参阅 [控制流：语态](xref:microsoft.quantum.guide.controlflow#conjugations)。</span><span class="sxs-lookup"><span data-stu-id="941f6-132">For an example of one such situation discussed alongside a useful :::no-loc(Q#)::: programming technique, see [Control Flow: Conjugations](xref:microsoft.quantum.guide.controlflow#conjugations).</span></span> <span data-ttu-id="941f6-133">操作的受控版本是新操作，仅当所有控件 qubits 都处于指定状态时，才会有效地应用基本操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-133">The controlled version of an operation is a new operation that effectively applies the base operation only if all of the control qubits are in a specified state.</span></span>
+<span data-ttu-id="941f6-131">量程操作的 Adjoints 对量程计算的许多方面都至关重要。</span><span class="sxs-lookup"><span data-stu-id="941f6-131">Adjoints of quantum operations are crucial to many aspects of quantum computing.</span></span> <span data-ttu-id="941f6-132">有关在一种有用的编程方法中讨论的这种情况的示例 Q# ，请参阅 [控制流：语态](xref:microsoft.quantum.guide.controlflow#conjugations)。</span><span class="sxs-lookup"><span data-stu-id="941f6-132">For an example of one such situation discussed alongside a useful Q# programming technique, see [Control Flow: Conjugations](xref:microsoft.quantum.guide.controlflow#conjugations).</span></span> <span data-ttu-id="941f6-133">操作的受控版本是新操作，仅当所有控件 qubits 都处于指定状态时，才会有效地应用基本操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-133">The controlled version of an operation is a new operation that effectively applies the base operation only if all of the control qubits are in a specified state.</span></span>
 <span data-ttu-id="941f6-134">如果控件 qubits 在 superposition 中，则会将基本操作一致应用到 superposition 的相应部分。</span><span class="sxs-lookup"><span data-stu-id="941f6-134">If the control qubits are in superposition, then the base operation is applied coherently to the appropriate part of the superposition.</span></span>
 <span data-ttu-id="941f6-135">因此，受控操作通常用于生成牵连。</span><span class="sxs-lookup"><span data-stu-id="941f6-135">Thus, controlled operations are often used to generate entanglement.</span></span>
 
@@ -84,15 +84,15 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 > <span data-ttu-id="941f6-138">依次应用某一操作，然后将其 adjoint 的状态保持不变，如 $UU ^ \dagger = U ^ \dagger U = \id $，则为恒等矩阵。</span><span class="sxs-lookup"><span data-stu-id="941f6-138">Successively applying an operation and then its adjoint to a state leaves the state unchanged, as illustrated by the fact that $UU^\dagger = U^\dagger U = \id$, the identity matrix.</span></span>
 > <span data-ttu-id="941f6-139">受控操作的单一表示形式略微微妙，但可以在量程计算概念中找到更多详细信息 [：多个 qubits](xref:microsoft.quantum.concepts.multiple-qubits)。</span><span class="sxs-lookup"><span data-stu-id="941f6-139">The unitary representation of a controlled operation is slightly more nuanced, but you can find more details at [Quantum computing concepts: multiple qubits](xref:microsoft.quantum.concepts.multiple-qubits).</span></span>
 
-<span data-ttu-id="941f6-140">以下部分介绍如何在代码中调用这些不同的专用化 :::no-loc(Q#)::: ，以及如何定义操作来支持它们。</span><span class="sxs-lookup"><span data-stu-id="941f6-140">The following section describes how to call these various specializations in your :::no-loc(Q#)::: code, and how to define operations to support them.</span></span>
+<span data-ttu-id="941f6-140">以下部分介绍如何在代码中调用这些不同的专用化 Q# ，以及如何定义操作来支持它们。</span><span class="sxs-lookup"><span data-stu-id="941f6-140">The following section describes how to call these various specializations in your Q# code, and how to define operations to support them.</span></span>
 
 ### <a name="calling-operation-specializations"></a><span data-ttu-id="941f6-141">调用专用操作</span><span class="sxs-lookup"><span data-stu-id="941f6-141">Calling operation specializations</span></span>
 
-<span data-ttu-id="941f6-142">中 *functor* 的函子 :::no-loc(Q#)::: 是一个工厂，它定义了其他操作的新操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-142">A *functor* in :::no-loc(Q#)::: is a factory that defines a new operation from another operation.</span></span>
-<span data-ttu-id="941f6-143">中的两个标准函子 :::no-loc(Q#)::: 是 `Adjoint` 和 `Controlled` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-143">The two standard functors in :::no-loc(Q#)::: are `Adjoint` and `Controlled`.</span></span>
+<span data-ttu-id="941f6-142">中 *functor* 的函子 Q# 是一个工厂，它定义了其他操作的新操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-142">A *functor* in Q# is a factory that defines a new operation from another operation.</span></span>
+<span data-ttu-id="941f6-143">中的两个标准函子 Q# 是 `Adjoint` 和 `Controlled` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-143">The two standard functors in Q# are `Adjoint` and `Controlled`.</span></span>
 
 <span data-ttu-id="941f6-144">在定义新操作的实现时，函子有权访问基操作的实现。</span><span class="sxs-lookup"><span data-stu-id="941f6-144">Functors have access to the implementation of the base operation when defining the implementation of the new operation.</span></span>
-<span data-ttu-id="941f6-145">因此，函子可以比传统的高级函数执行更复杂的功能。</span><span class="sxs-lookup"><span data-stu-id="941f6-145">Thus, functors can perform more complex functions than traditional higher-level functions.</span></span> <span data-ttu-id="941f6-146">函子在类型系统中没有表示形式 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="941f6-146">Functors do not have a representation in the :::no-loc(Q#)::: type system.</span></span> <span data-ttu-id="941f6-147">因此，目前不可能将其绑定到变量或将其作为参数传递。</span><span class="sxs-lookup"><span data-stu-id="941f6-147">It is thus currently not possible to bind them to a variable or pass them as arguments.</span></span> 
+<span data-ttu-id="941f6-145">因此，函子可以比传统的高级函数执行更复杂的功能。</span><span class="sxs-lookup"><span data-stu-id="941f6-145">Thus, functors can perform more complex functions than traditional higher-level functions.</span></span> <span data-ttu-id="941f6-146">函子在类型系统中没有表示形式 Q# 。</span><span class="sxs-lookup"><span data-stu-id="941f6-146">Functors do not have a representation in the Q# type system.</span></span> <span data-ttu-id="941f6-147">因此，目前不可能将其绑定到变量或将其作为参数传递。</span><span class="sxs-lookup"><span data-stu-id="941f6-147">It is thus currently not possible to bind them to a variable or pass them as arguments.</span></span> 
 
 <span data-ttu-id="941f6-148">通过将函子应用到操作来使用该操作，该操作将返回一个新操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-148">Use a functor by applying it to an operation, which returns a new operation.</span></span>
 <span data-ttu-id="941f6-149">例如，将函子应用 `Adjoint` 到操作会 `Y` 返回新操作 `Adjoint Y` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-149">For example, applying the `Adjoint` functor to the `Y` operation returns the new operation `Adjoint Y`.</span></span> <span data-ttu-id="941f6-150">可以像调用任何其他操作一样调用新操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-150">You can invoke the new operation like any other operation.</span></span>
@@ -110,7 +110,7 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 <span data-ttu-id="941f6-158">同样， `Controlled X(controls, target)` 将 `Controlled` 函子应用到 `X` 操作以生成新的操作，并将该新操作应用于 `controls` 和 `target` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-158">Similarly, `Controlled X(controls, target)` applies the `Controlled` functor to the `X` operation to generate a new operation, and applies that new operation to `controls` and `target`.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="941f6-159">在中 :::no-loc(Q#)::: ，受控制的版本始终采用控件 qubits 数组，并且控制始终基于所有控件 qubits 处于计算 (`PauliZ`) `One` 状态 $ \ket {1} $。</span><span class="sxs-lookup"><span data-stu-id="941f6-159">In :::no-loc(Q#):::, controlled versions always take an array of control qubits, and the controlling is always based on all of the control qubits being in the computational (`PauliZ`) `One` state, $\ket{1}$.</span></span>
+> <span data-ttu-id="941f6-159">在中 Q# ，受控制的版本始终采用控件 qubits 数组，并且控制始终基于所有控件 qubits 处于计算 (`PauliZ`) `One` 状态 $ \ket {1} $。</span><span class="sxs-lookup"><span data-stu-id="941f6-159">In Q#, controlled versions always take an array of control qubits, and the controlling is always based on all of the control qubits being in the computational (`PauliZ`) `One` state, $\ket{1}$.</span></span>
 > <span data-ttu-id="941f6-160">基于其他状态的控制是通过在受控操作之前向控件 qubits 应用适当的单一操作来实现的，然后在受控操作之后应用单一操作的逆。</span><span class="sxs-lookup"><span data-stu-id="941f6-160">Controlling based on other states is achieved by applying the appropriate unitary operation to the control qubits before the controlled operation, and then applying the inverses of the unitary operation after the controlled operation.</span></span>
 > <span data-ttu-id="941f6-161">例如，将操作应用 `X` 于受控操作前后的控件 qubit 会导致操作控制该 `Zero` qubit 的状态 ($ \ket {0} $) ; `H` 在状态上和控件之前和之后应用操作 `PauliX` `One` ，即 Pauli X，$ \ket {-} \mathrel{： =} ( \ket {0} -\ket {1}) /\sqrt {2} $，而不是 `PauliZ` `One` 状态。</span><span class="sxs-lookup"><span data-stu-id="941f6-161">For example, applying an `X` operation to a control qubit before and after a controlled operation causes the operation to control on the `Zero` state ($\ket{0}$) for that qubit; applying an `H` operation before and after controls on the `PauliX` `One` state, that is -1 eigenvalue of Pauli X, $\ket{-} \mathrel{:=} (\ket{0} - \ket{1}) / \sqrt{2}$ rather than the `PauliZ` `One` state.</span></span>
 
@@ -141,7 +141,7 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 <span data-ttu-id="941f6-178">`DecodeSuperdense`这并不是一个单一的操作，因此，它不是一种单一操作，因此，不能 adjoint 特殊化， (重新调用此类操作返回) 的相关要求 `Unit` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-178">As `DecodeSuperdense` includes measurements, it is not a unitary operation, and therefore neither controlled not adjoint specializations could exist (recall the related requirement that such an operation return `Unit`).</span></span>
 <span data-ttu-id="941f6-179">但是， `BitFlip` 只需执行单一 <xref:Microsoft.Quantum.Intrinsic.X> 操作，即可将其定义为专用化。</span><span class="sxs-lookup"><span data-stu-id="941f6-179">However, as `BitFlip` simply performs the unitary <xref:Microsoft.Quantum.Intrinsic.X> operation, you could have defined it with both specializations.</span></span>
 
-<span data-ttu-id="941f6-180">本节详细介绍了如何在操作声明中包括特殊化的存在性 :::no-loc(Q#)::: ，从而使它们能够与 `Adjoint` 或函子一起调用 `Controlled` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-180">This section details how to include the existence of specializations in your :::no-loc(Q#)::: operation declarations, hence giving them the ability to called in conjunction with the `Adjoint` or `Controlled` functors.</span></span>
+<span data-ttu-id="941f6-180">本节详细介绍了如何在操作声明中包括特殊化的存在性 Q# ，从而使它们能够与 `Adjoint` 或函子一起调用 `Controlled` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-180">This section details how to include the existence of specializations in your Q# operation declarations, hence giving them the ability to called in conjunction with the `Adjoint` or `Controlled` functors.</span></span>
 <span data-ttu-id="941f6-181">若要详细了解它是有效的或无效的声明特定专用化的某些情况，请参阅本文中 [的有效定义专用](#circumstances-for-validly-defining-specializations) 化的情况。</span><span class="sxs-lookup"><span data-stu-id="941f6-181">For more information about some of the situations in which it is either valid or not valid to declare certain specializations, see [Circumstances for validly defining specializations](#circumstances-for-validly-defining-specializations) in this article.</span></span>
 
 <span data-ttu-id="941f6-182">操作特征定义可应用于声明的操作的函子类型，以及它们的影响。</span><span class="sxs-lookup"><span data-stu-id="941f6-182">Operation characteristics define what kinds of functors you can apply to the declared operation, and what effect they have.</span></span> <span data-ttu-id="941f6-183">这些专用化的存在可以声明为操作签名的一部分，具体而言，具有操作特征： `is Adj` 、 `is Ctl` 或 `is Adj + Ctl` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-183">The existence of these specializations can be declared as part of the operation signature, specifically through an annotation with the operation characteristics: either `is Adj`, `is Ctl`, or `is Adj + Ctl`.</span></span>
@@ -190,7 +190,7 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 
 #### <a name="explicit-specialization-declarations"></a><span data-ttu-id="941f6-200">显式专用化声明</span><span class="sxs-lookup"><span data-stu-id="941f6-200">Explicit specialization declarations</span></span>
 
-<span data-ttu-id="941f6-201">:::no-loc(Q#)::: 操作可以包含以下显式专用化声明：</span><span class="sxs-lookup"><span data-stu-id="941f6-201">:::no-loc(Q#)::: operations can contain the following explicit specialization declarations:</span></span>
+<span data-ttu-id="941f6-201">Q# 操作可以包含以下显式专用化声明：</span><span class="sxs-lookup"><span data-stu-id="941f6-201">Q# operations can contain the following explicit specialization declarations:</span></span>
 
 - <span data-ttu-id="941f6-202">`body`专用化指定未应用函子的操作的实现。</span><span class="sxs-lookup"><span data-stu-id="941f6-202">The `body` specialization specifies the implementation of the operation with no functors applied.</span></span>
 - <span data-ttu-id="941f6-203">`adjoint`专用化指定应用了函子的操作的实现 `Adjoint` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-203">The `adjoint` specialization specifies the implementation of the operation with the `Adjoint` functor applied.</span></span>
@@ -225,7 +225,7 @@ operation DecodeSuperdense(here : Qubit, there : Qubit) : (Result, Result) {
 > [!TIP]   
 > <span data-ttu-id="941f6-226">如果操作是自我 adjoint 的，则通过生成指令显式指定 adjoint 或受控 adjoint 专用化，以便 `self` 编译器可以利用该信息进行优化。</span><span class="sxs-lookup"><span data-stu-id="941f6-226">If an operation is self-adjoint, explicitly specify either the adjoint or the controlled adjoint specialization via the generation directive `self` to allow the compiler to make use of that information for optimization purposes.</span></span>
 
-<span data-ttu-id="941f6-227">包含用户定义的实现的专用化声明包含一个参数元组，后面跟有用于 :::no-loc(Q#)::: 实现专用化的代码的语句块。</span><span class="sxs-lookup"><span data-stu-id="941f6-227">A specialization declaration containing a user-defined implementation consists of an argument tuple followed by a statement block with the :::no-loc(Q#)::: code that implements the specialization.</span></span>
+<span data-ttu-id="941f6-227">包含用户定义的实现的专用化声明包含一个参数元组，后面跟有用于 Q# 实现专用化的代码的语句块。</span><span class="sxs-lookup"><span data-stu-id="941f6-227">A specialization declaration containing a user-defined implementation consists of an argument tuple followed by a statement block with the Q# code that implements the specialization.</span></span>
 <span data-ttu-id="941f6-228">在参数列表中， `...` 用于表示作为一个整体为操作声明的参数。</span><span class="sxs-lookup"><span data-stu-id="941f6-228">In the argument list, `...` is used to represent the arguments declared for the operation as a whole.</span></span>
 <span data-ttu-id="941f6-229">对于 `body` 和 `adjoint` ，参数列表应始终为 `(...)` ; 对于 `controlled` 和 `adjoint controlled` ，参数列表应为表示控件 qubits 数组的符号，后面跟有 `...` 括号括在括号中; 例如， `(controls,...)` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-229">For `body` and `adjoint`, the argument list should always be `(...)`; for `controlled` and `adjoint controlled`, the argument list should be a symbol that represents the array of control qubits, followed by `...`, enclosed in parentheses; for example, `(controls,...)`.</span></span>
 
@@ -327,9 +327,9 @@ operation CountOnes(qubits: Qubit[]) : Int {
 
 <span data-ttu-id="941f6-255">使用具有更少函子但签名相同的操作的其他函子支持的操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-255">Use an operation with additional functors supported anywhere you use an operation with fewer functors but the same signature.</span></span> <span data-ttu-id="941f6-256">例如，使用类型为的操作的 `(Qubit => Unit is Adj)` 任何地方的类型运算 `(Qubit => Unit)` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-256">For instance, use an operation of type `(Qubit => Unit is Adj)` anywhere you use an operation of type `(Qubit => Unit)`.</span></span>
 
-<span data-ttu-id="941f6-257">:::no-loc(Q#)::: 对于可调用的返回类型是 *协变* 的：返回类型的可调用与 `'A` 具有相同输入类型的可调用和与兼容的结果类型兼容 `'A` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-257">:::no-loc(Q#)::: is *covariant* with respect to callable return types: a callable that returns a type `'A` is compatible with a callable with the same input type and a result type that is compatible with `'A` .</span></span>
+<span data-ttu-id="941f6-257">Q# 对于可调用的返回类型是 *协变* 的：返回类型的可调用与 `'A` 具有相同输入类型的可调用和与兼容的结果类型兼容 `'A` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-257">Q# is *covariant* with respect to callable return types: a callable that returns a type `'A` is compatible with a callable with the same input type and a result type that is compatible with `'A` .</span></span>
 
-<span data-ttu-id="941f6-258">:::no-loc(Q#)::: 对于输入类型是 *逆变* 的：将类型作为输入的可调用与 `'A` 具有相同结果类型的可调用和兼容的输入类型兼容 `'A` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-258">:::no-loc(Q#)::: is *contravariant* with respect to input types: a callable that takes a type `'A` as input is compatible with a callable with the same result type and an input type that is compatible with `'A`.</span></span>
+<span data-ttu-id="941f6-258">Q# 对于输入类型是 *逆变* 的：将类型作为输入的可调用与 `'A` 具有相同结果类型的可调用和兼容的输入类型兼容 `'A` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-258">Q# is *contravariant* with respect to input types: a callable that takes a type `'A` as input is compatible with a callable with the same result type and an input type that is compatible with `'A`.</span></span>
 
 <span data-ttu-id="941f6-259">即，给定以下定义，</span><span class="sxs-lookup"><span data-stu-id="941f6-259">That is, given the following definitions,</span></span>
 
@@ -358,7 +358,7 @@ function ConjugateUnitaryWith(
 - <span data-ttu-id="941f6-263">从返回一个类型的 `(Qubit[] => Unit is Adj + Ctl)` 值 `ConjugateInvertWith` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-263">Return a value of type `(Qubit[] => Unit is Adj + Ctl)` from `ConjugateInvertWith`.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="941f6-264">:::no-loc(Q#)::: 0.3 引入了用户定义类型的行为的显著差异。</span><span class="sxs-lookup"><span data-stu-id="941f6-264">:::no-loc(Q#)::: 0.3 introduced a significant difference in the behavior of user-defined types.</span></span>
+> <span data-ttu-id="941f6-264">Q# 0.3 引入了用户定义类型的行为的显著差异。</span><span class="sxs-lookup"><span data-stu-id="941f6-264">Q# 0.3 introduced a significant difference in the behavior of user-defined types.</span></span>
 
 <span data-ttu-id="941f6-265">用户定义的类型被视为基础类型的包装版本，而不是作为子类型。</span><span class="sxs-lookup"><span data-stu-id="941f6-265">User-defined types are treated as a wrapped version of the underlying type, rather than as a subtype.</span></span>
 <span data-ttu-id="941f6-266">这意味着用户定义类型的值在预期基础类型的值为时不能使用。</span><span class="sxs-lookup"><span data-stu-id="941f6-266">This means that a value of a user-defined type is not usable where you expect a value of the underlying type is.</span></span>
@@ -366,12 +366,12 @@ function ConjugateUnitaryWith(
 
 ## <a name="defining-new-functions"></a><span data-ttu-id="941f6-267">定义新函数</span><span class="sxs-lookup"><span data-stu-id="941f6-267">Defining New Functions</span></span>
 
-<span data-ttu-id="941f6-268">函数在中是纯粹确定性的传统例程 :::no-loc(Q#)::: ，不同于操作，因为它们不允许在计算输出值之前有任何影响。</span><span class="sxs-lookup"><span data-stu-id="941f6-268">Functions are purely deterministic, classical routines in :::no-loc(Q#):::, which are distinct from operations in that they are not allowed to have any effects beyond calculating an output value.</span></span>
+<span data-ttu-id="941f6-268">函数在中是纯粹确定性的传统例程 Q# ，不同于操作，因为它们不允许在计算输出值之前有任何影响。</span><span class="sxs-lookup"><span data-stu-id="941f6-268">Functions are purely deterministic, classical routines in Q#, which are distinct from operations in that they are not allowed to have any effects beyond calculating an output value.</span></span>
 <span data-ttu-id="941f6-269">特别是，函数不能调用操作;操作、分配或借用 qubits;示例随机数;否则，依赖于输入值超出函数的状态。</span><span class="sxs-lookup"><span data-stu-id="941f6-269">In particular, functions cannot call operations; act on, allocate, or borrow qubits; sample random numbers; or otherwise depend on state beyond the input value to a function.</span></span>
-<span data-ttu-id="941f6-270">因此， :::no-loc(Q#)::: 函数是 *纯* 的，因为它们始终将相同的输入值映射到相同的输出值。</span><span class="sxs-lookup"><span data-stu-id="941f6-270">As a consequence, :::no-loc(Q#)::: functions are *pure* , in that they always map the same input values to the same output values.</span></span>
-<span data-ttu-id="941f6-271">此行为允许 :::no-loc(Q#)::: 编译器在生成操作专用化时，对调用函数的方式和时间进行安全重新排序。</span><span class="sxs-lookup"><span data-stu-id="941f6-271">This behavior allows the :::no-loc(Q#)::: compiler to safely reorder how and when to call functions when generating operation specializations.</span></span>
+<span data-ttu-id="941f6-270">因此， Q# 函数是 *纯* 的，因为它们始终将相同的输入值映射到相同的输出值。</span><span class="sxs-lookup"><span data-stu-id="941f6-270">As a consequence, Q# functions are *pure* , in that they always map the same input values to the same output values.</span></span>
+<span data-ttu-id="941f6-271">此行为允许 Q# 编译器在生成操作专用化时，对调用函数的方式和时间进行安全重新排序。</span><span class="sxs-lookup"><span data-stu-id="941f6-271">This behavior allows the Q# compiler to safely reorder how and when to call functions when generating operation specializations.</span></span>
 
-<span data-ttu-id="941f6-272">每个 :::no-loc(Q#)::: 源文件都可以定义任意数量的函数。</span><span class="sxs-lookup"><span data-stu-id="941f6-272">Each :::no-loc(Q#)::: source file can define any number of functions.</span></span>
+<span data-ttu-id="941f6-272">每个 Q# 源文件都可以定义任意数量的函数。</span><span class="sxs-lookup"><span data-stu-id="941f6-272">Each Q# source file can define any number of functions.</span></span>
 <span data-ttu-id="941f6-273">函数名称在命名空间中必须是唯一的，且不能与操作或类型名称冲突。</span><span class="sxs-lookup"><span data-stu-id="941f6-273">Function names must be unique within a namespace and cannot conflict with operation or type names.</span></span>
 
 <span data-ttu-id="941f6-274">定义函数的工作方式与定义操作类似，但不能为函数定义 adjoint 或受控专用化。</span><span class="sxs-lookup"><span data-stu-id="941f6-274">Defining a function works similarly to defining an operation, except that no adjoint or controlled specializations can be defined for a function.</span></span>
@@ -403,7 +403,7 @@ function DotProduct(a : Double[], b : Double[]) : Double {
 
 <span data-ttu-id="941f6-278">只要有可能，就可以根据函数（而不是操作）编写传统逻辑，使操作能够更轻松地使用它。</span><span class="sxs-lookup"><span data-stu-id="941f6-278">Whenever it is possible to do so, it is helpful to write out classical logic in terms of functions rather than operations so that operations can more readily use it.</span></span> <span data-ttu-id="941f6-279">例如，如果您已编写了前面的 `Square` 声明作为 *运算* ，则编译器不能保证使用相同的输入调用它会一致地生成相同的输出。</span><span class="sxs-lookup"><span data-stu-id="941f6-279">For example, if you had written the earlier `Square` declaration as an *operation* , then the compiler would not have been able to guarantee that calling it with the same input would consistently produce the same outputs.</span></span>
 
-<span data-ttu-id="941f6-280">为了下划线函数和操作之间的差异，请考虑经典在操作中采样随机数字的问题 :::no-loc(Q#)::: ：</span><span class="sxs-lookup"><span data-stu-id="941f6-280">To underscore the difference between functions and operations, consider the problem of classically sampling a random number from within a :::no-loc(Q#)::: operation:</span></span>
+<span data-ttu-id="941f6-280">为了下划线函数和操作之间的差异，请考虑经典在操作中采样随机数字的问题 Q# ：</span><span class="sxs-lookup"><span data-stu-id="941f6-280">To underscore the difference between functions and operations, consider the problem of classically sampling a random number from within a Q# operation:</span></span>
 
 ```qsharp
 operation U(target : Qubit) : Unit {
@@ -425,7 +425,7 @@ operation U(target : Qubit) : Unit {
 
 <span data-ttu-id="941f6-287">您可能想要定义的许多函数和操作实际上不依赖于其输入的类型，而只是通过其他函数或操作隐式使用其类型。</span><span class="sxs-lookup"><span data-stu-id="941f6-287">Many functions and operations that you might wish to define do not actually heavily rely on the types of their inputs, but rather only implicitly use their types via some other function or operation.</span></span>
 <span data-ttu-id="941f6-288">例如，请考虑许多功能语言共有的 *地图* 概念;给定函数 $f (x) $ 和值的集合 $ \{ x_1，x_2，\dots ..，x_n \} $，map 将返回一个新的集合 $ f (x_1)  (x_2)  (\{ \} $。</span><span class="sxs-lookup"><span data-stu-id="941f6-288">For example, consider the *map* concept common to many functional languages; given a function $f(x)$ and a collection of values $\{x_1, x_2, \dots, x_n\}$, map returns a new collection $\{f(x_1), f(x_2), \dots, f(x_n)\}$.</span></span>
-<span data-ttu-id="941f6-289">若要在中实现此 :::no-loc(Q#)::: 功能，请利用函数是第一类这一事实。</span><span class="sxs-lookup"><span data-stu-id="941f6-289">To implement this in :::no-loc(Q#):::, take advantage of the fact that functions are first class.</span></span>
+<span data-ttu-id="941f6-289">若要在中实现此 Q# 功能，请利用函数是第一类这一事实。</span><span class="sxs-lookup"><span data-stu-id="941f6-289">To implement this in Q#, take advantage of the fact that functions are first class.</span></span>
 <span data-ttu-id="941f6-290">下面是的一个快速示例 `Map` ，使用 `T` 作为占位符，同时找出所需的类型。</span><span class="sxs-lookup"><span data-stu-id="941f6-290">Here is a quick example of `Map`, using `T` as a placeholder while you figure out what types you need.</span></span>
 
 ```qsharp
@@ -465,17 +465,17 @@ function MapDoublesToStrings(fn : (Double -> String), values : Double[]) : Strin
 <span data-ttu-id="941f6-296">虽然这对于少量此类函数是易的，但当你收集与相同窗体的更多函数时， `Map` 引入新类型的成本将以相当短的顺序变为太。</span><span class="sxs-lookup"><span data-stu-id="941f6-296">While this is tractable for a small number of such functions, as you collect more and more functions of the same form as `Map`, the cost of introducing new types becomes unreasonably large in fairly short order.</span></span>
 
 <span data-ttu-id="941f6-297">但是，这种情况很难产生这种情况，因为您没有为编译器提供所需的信息来识别的不同版本 `Map` 是如何相关的。</span><span class="sxs-lookup"><span data-stu-id="941f6-297">However, much of this difficulty results from the fact that you have not given the compiler the information it needs to recognize how the different versions of `Map` are related.</span></span>
-<span data-ttu-id="941f6-298">实际上，你希望编译器将 `Map` 类型中的某种数学函数视为 :::no-loc(Q#)::: *types* :::no-loc(Q#)::: 函数。</span><span class="sxs-lookup"><span data-stu-id="941f6-298">Effectively, you want the compiler to treat `Map` as some kind of mathematical function from :::no-loc(Q#)::: *types* to :::no-loc(Q#)::: functions.</span></span>
+<span data-ttu-id="941f6-298">实际上，你希望编译器将 `Map` 类型中的某种数学函数视为 Q# *types* Q# 函数。</span><span class="sxs-lookup"><span data-stu-id="941f6-298">Effectively, you want the compiler to treat `Map` as some kind of mathematical function from Q# *types* to Q# functions.</span></span>
 
-<span data-ttu-id="941f6-299">:::no-loc(Q#)::: 通过允许函数和操作具有 *类型参数* ，以及其普通元组参数，实现了这一概念的形式。</span><span class="sxs-lookup"><span data-stu-id="941f6-299">:::no-loc(Q#)::: formalizes this notion by allowing functions and operations to have *type parameters* , as well as their ordinary tuple parameters.</span></span>
+<span data-ttu-id="941f6-299">Q# 通过允许函数和操作具有 *类型参数* ，以及其普通元组参数，实现了这一概念的形式。</span><span class="sxs-lookup"><span data-stu-id="941f6-299">Q# formalizes this notion by allowing functions and operations to have *type parameters* , as well as their ordinary tuple parameters.</span></span>
 <span data-ttu-id="941f6-300">在前面的示例中，您希望在 `Map` 第一种情况下将类型形参视为 `Int, Pauli` ， `Double, String` 在第二种情况下。</span><span class="sxs-lookup"><span data-stu-id="941f6-300">In the previous examples, you wish to think of `Map` as having type parameters `Int, Pauli` in the first case and `Double, String` in the second case.</span></span>
 <span data-ttu-id="941f6-301">大多数情况下，使用这些类型参数，如同它们是普通类型。</span><span class="sxs-lookup"><span data-stu-id="941f6-301">For the most part, use these type parameters as though they were ordinary types.</span></span> <span data-ttu-id="941f6-302">使用类型参数的值来生成数组和元组，调用函数和操作，并将其分配给普通或可变变量。</span><span class="sxs-lookup"><span data-stu-id="941f6-302">Use values of type parameters to make arrays and tuples, call functions and operations, and assign to ordinary or mutable variables.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="941f6-303">间接依赖关系的最极端情况是 qubits，其中 :::no-loc(Q#)::: 程序不能直接依赖类型的结构， `Qubit` 而是 **必须** 将此类类型传递给其他操作和函数。</span><span class="sxs-lookup"><span data-stu-id="941f6-303">The most extreme case of indirect dependence is that of qubits, where a :::no-loc(Q#)::: program cannot directly rely on the structure of the `Qubit` type but **must** pass such types to other operations and functions.</span></span>
+> <span data-ttu-id="941f6-303">间接依赖关系的最极端情况是 qubits，其中 Q# 程序不能直接依赖类型的结构， `Qubit` 而是 **必须** 将此类类型传递给其他操作和函数。</span><span class="sxs-lookup"><span data-stu-id="941f6-303">The most extreme case of indirect dependence is that of qubits, where a Q# program cannot directly rely on the structure of the `Qubit` type but **must** pass such types to other operations and functions.</span></span>
 
 <span data-ttu-id="941f6-304">返回到前面的示例，然后您将看到 `Map` 需要具有类型参数，一个用于表示输入，另一个用于 `fn` 表示的输出 `fn` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-304">Returning to the earlier example, then, you see that `Map` needs to have type parameters, one to represent the input to `fn` and one to represent the output from `fn`.</span></span>
-<span data-ttu-id="941f6-305">在中 :::no-loc(Q#)::: ，通过在 `<>` 其声明中的函数或操作的名称后面添加尖括号 (（而不是 brakets $ \braket {} $！ ) ），并列出每个类型参数来编写这种情况。</span><span class="sxs-lookup"><span data-stu-id="941f6-305">In :::no-loc(Q#):::, this is written by adding angle brackets (that's `<>`, not brakets $\braket{}$!) after the name of a function or operation in its declaration, and by listing each type parameter.</span></span>
+<span data-ttu-id="941f6-305">在中 Q# ，通过在 `<>` 其声明中的函数或操作的名称后面添加尖括号 (（而不是 brakets $ \braket {} $！ ) ），并列出每个类型参数来编写这种情况。</span><span class="sxs-lookup"><span data-stu-id="941f6-305">In Q#, this is written by adding angle brackets (that's `<>`, not brakets $\braket{}$!) after the name of a function or operation in its declaration, and by listing each type parameter.</span></span>
 <span data-ttu-id="941f6-306">每个类型形参的名称必须以计时周期开始 `'` ，这表示它是一个类型形参，而不是一个普通类型 (也称为) 的 *具体* 类型。</span><span class="sxs-lookup"><span data-stu-id="941f6-306">The name of each type parameter must start with a tick `'`, indicating that it is a type parameter and not a ordinary type (also known as a *concrete* type).</span></span>
 <span data-ttu-id="941f6-307">因此， `Map` 将编写：</span><span class="sxs-lookup"><span data-stu-id="941f6-307">Thus, `Map`, is written:</span></span>
 
@@ -502,8 +502,8 @@ let paulis = Map(IntToPauli, ints);
 ```
 
 > [!TIP]
-> <span data-ttu-id="941f6-311">编写泛型函数和操作是一个位置，其中 "元组 out" 是一种非常有用的方法，用于考虑 :::no-loc(Q#)::: 函数和操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-311">Writing generic functions and operations is one place where "tuple-in tuple-out" is a very useful way to think about :::no-loc(Q#)::: functions and operations.</span></span>
-> <span data-ttu-id="941f6-312">由于每个函数只采用一个输入并返回一个输出，因此类型的输入 `'T -> 'U` 与 *任何* :::no-loc(Q#)::: 函数都匹配。</span><span class="sxs-lookup"><span data-stu-id="941f6-312">Since every function takes exactly one input and returns exactly one output, an input of type `'T -> 'U` matches *any* :::no-loc(Q#)::: function whatsoever.</span></span>
+> <span data-ttu-id="941f6-311">编写泛型函数和操作是一个位置，其中 "元组 out" 是一种非常有用的方法，用于考虑 Q# 函数和操作。</span><span class="sxs-lookup"><span data-stu-id="941f6-311">Writing generic functions and operations is one place where "tuple-in tuple-out" is a very useful way to think about Q# functions and operations.</span></span>
+> <span data-ttu-id="941f6-312">由于每个函数只采用一个输入并返回一个输出，因此类型的输入 `'T -> 'U` 与 *任何* Q# 函数都匹配。</span><span class="sxs-lookup"><span data-stu-id="941f6-312">Since every function takes exactly one input and returns exactly one output, an input of type `'T -> 'U` matches *any* Q# function whatsoever.</span></span>
 > <span data-ttu-id="941f6-313">同样，可以将任何操作传递到类型为的输入 `'T => 'U` 。</span><span class="sxs-lookup"><span data-stu-id="941f6-313">Similarly, you can pass any operation to an input of type `'T => 'U`.</span></span>
 
 <span data-ttu-id="941f6-314">作为第二个示例，请考虑编写一个函数，该函数返回两个其他函数的组合：</span><span class="sxs-lookup"><span data-stu-id="941f6-314">As a second example, consider the challenge of writing a function that returns the composition of two other functions:</span></span>
@@ -532,15 +532,15 @@ function Compose<'A, 'B, 'C>(outerFn : ('B -> 'C), innerFn : ('A -> 'B)) : ('A -
 }
 ```
 
-<span data-ttu-id="941f6-318">:::no-loc(Q#):::标准库提供了一系列这样的类型参数化操作和函数，使更高顺序控制流更易于表达。</span><span class="sxs-lookup"><span data-stu-id="941f6-318">The :::no-loc(Q#)::: standard libraries provide a range of such type-parameterized operations and functions to make higher-order control flow easier to express.</span></span>
-<span data-ttu-id="941f6-319">[ :::no-loc(Q#)::: 标准库指南](xref:microsoft.quantum.libraries.standard.intro)中进一步讨论了这些情况。</span><span class="sxs-lookup"><span data-stu-id="941f6-319">These are discussed further in the [:::no-loc(Q#)::: standard library guide](xref:microsoft.quantum.libraries.standard.intro).</span></span>
+<span data-ttu-id="941f6-318">Q#标准库提供了一系列这样的类型参数化操作和函数，使更高顺序控制流更易于表达。</span><span class="sxs-lookup"><span data-stu-id="941f6-318">The Q# standard libraries provide a range of such type-parameterized operations and functions to make higher-order control flow easier to express.</span></span>
+<span data-ttu-id="941f6-319">[ Q# 标准库指南](xref:microsoft.quantum.libraries.standard.intro)中进一步讨论了这些情况。</span><span class="sxs-lookup"><span data-stu-id="941f6-319">These are discussed further in the [Q# standard library guide](xref:microsoft.quantum.libraries.standard.intro).</span></span>
 
 
 ## <a name="callables-as-first-class-values"></a><span data-ttu-id="941f6-320">Callables 作为 First-Class 值</span><span class="sxs-lookup"><span data-stu-id="941f6-320">Callables as First-Class Values</span></span>
 
-<span data-ttu-id="941f6-321">使用函数（而不是操作）对控制流和传统逻辑的推理的一项重要技巧是，使用中的操作和函数是 :::no-loc(Q#)::: *第一类* 。</span><span class="sxs-lookup"><span data-stu-id="941f6-321">One critical technique for reasoning about control flow and classical logic using functions rather than operations is to utilize that operations and functions in :::no-loc(Q#)::: are *first-class* .</span></span>
+<span data-ttu-id="941f6-321">使用函数（而不是操作）对控制流和传统逻辑的推理的一项重要技巧是，使用中的操作和函数是 Q# *第一类* 。</span><span class="sxs-lookup"><span data-stu-id="941f6-321">One critical technique for reasoning about control flow and classical logic using functions rather than operations is to utilize that operations and functions in Q# are *first-class* .</span></span>
 <span data-ttu-id="941f6-322">也就是说，它们本身就是语言中的每个值。</span><span class="sxs-lookup"><span data-stu-id="941f6-322">That is, they are each values in the language in their own right.</span></span>
-<span data-ttu-id="941f6-323">例如，下面是一个非常有效的 :::no-loc(Q#)::: 代码，如果是间接的：</span><span class="sxs-lookup"><span data-stu-id="941f6-323">For instance, the following is perfectly valid :::no-loc(Q#)::: code, if a little indirect:</span></span>
+<span data-ttu-id="941f6-323">例如，下面是一个非常有效的 Q# 代码，如果是间接的：</span><span class="sxs-lookup"><span data-stu-id="941f6-323">For instance, the following is perfectly valid Q# code, if a little indirect:</span></span>
 
 ```qsharp
 operation FirstClassExample(target : Qubit) : Unit {
@@ -610,12 +610,12 @@ function SquareOperation(op : (Qubit => Unit)) : (Qubit => Unit) {
 }
 ```
 
-<span data-ttu-id="941f6-341">原则上，中的传统逻辑 `SquareOperation` 可能会更多地涉及到，但它仍与操作的其余部分隔离，因为编译器可以提供函数。</span><span class="sxs-lookup"><span data-stu-id="941f6-341">In principle, the classical logic within `SquareOperation` could have been much more involved, but it is still isolated from the rest of an operation by the guarantees that the compiler can offer about functions.</span></span> <span data-ttu-id="941f6-342">:::no-loc(Q#):::标准库在整个过程中都使用这种方法，以一种可让量子程序随时使用的方式表示传统的控制流。</span><span class="sxs-lookup"><span data-stu-id="941f6-342">The :::no-loc(Q#)::: standard library uses this approach throughout for expressing classical control flow in a way that quantum programs can readily use.</span></span>
+<span data-ttu-id="941f6-341">原则上，中的传统逻辑 `SquareOperation` 可能会更多地涉及到，但它仍与操作的其余部分隔离，因为编译器可以提供函数。</span><span class="sxs-lookup"><span data-stu-id="941f6-341">In principle, the classical logic within `SquareOperation` could have been much more involved, but it is still isolated from the rest of an operation by the guarantees that the compiler can offer about functions.</span></span> <span data-ttu-id="941f6-342">Q#标准库在整个过程中都使用这种方法，以一种可让量子程序随时使用的方式表示传统的控制流。</span><span class="sxs-lookup"><span data-stu-id="941f6-342">The Q# standard library uses this approach throughout for expressing classical control flow in a way that quantum programs can readily use.</span></span>
 
 
 ## <a name="recursion"></a><span data-ttu-id="941f6-343">递归</span><span class="sxs-lookup"><span data-stu-id="941f6-343">Recursion</span></span>
 
-<span data-ttu-id="941f6-344">:::no-loc(Q#)::: 允许直接或间接递归 callables。</span><span class="sxs-lookup"><span data-stu-id="941f6-344">:::no-loc(Q#)::: callables are allowed to be directly or indirectly recursive.</span></span>
+<span data-ttu-id="941f6-344">Q# 允许直接或间接递归 callables。</span><span class="sxs-lookup"><span data-stu-id="941f6-344">Q# callables are allowed to be directly or indirectly recursive.</span></span>
 <span data-ttu-id="941f6-345">也就是说，操作或函数可以调用自身，也可以调用可直接或间接调用可调用操作的另一个可调用的。</span><span class="sxs-lookup"><span data-stu-id="941f6-345">That is, an operation or function can call itself, or it can call another callable that directly or indirectly calls the callable operation.</span></span>
 
 <span data-ttu-id="941f6-346">不过，有两个关于递归使用的重要说明：</span><span class="sxs-lookup"><span data-stu-id="941f6-346">There are two important comments about the use of recursion, however:</span></span>
@@ -623,8 +623,8 @@ function SquareOperation(op : (Qubit => Unit)) : (Qubit => Unit) {
 - <span data-ttu-id="941f6-347">在操作中使用递归可能会干扰某些优化。</span><span class="sxs-lookup"><span data-stu-id="941f6-347">The use of recursion in operations is likely to interfere with certain optimizations.</span></span>
   <span data-ttu-id="941f6-348">此干扰可能对算法的运行时间有重大影响。</span><span class="sxs-lookup"><span data-stu-id="941f6-348">This interference can have a substantial impact on the run time of the algorithm.</span></span>
 - <span data-ttu-id="941f6-349">在实际的量程设备上运行时，堆栈空间可能会受到限制，因此深度递归可能导致运行时错误。</span><span class="sxs-lookup"><span data-stu-id="941f6-349">When running on an actual quantum device, stack space might be limited, and so deep recursion can lead to a runtime error.</span></span>
-  <span data-ttu-id="941f6-350">具体而言， :::no-loc(Q#)::: 编译器和运行时不会标识和优化尾递归。</span><span class="sxs-lookup"><span data-stu-id="941f6-350">In particular, the :::no-loc(Q#)::: compiler and runtime do not identify and optimize tail recursion.</span></span>
+  <span data-ttu-id="941f6-350">具体而言， Q# 编译器和运行时不会标识和优化尾递归。</span><span class="sxs-lookup"><span data-stu-id="941f6-350">In particular, the Q# compiler and runtime do not identify and optimize tail recursion.</span></span>
 
 ## <a name="next-steps"></a><span data-ttu-id="941f6-351">后续步骤</span><span class="sxs-lookup"><span data-stu-id="941f6-351">Next steps</span></span>
 
-<span data-ttu-id="941f6-352">了解中[Variables](xref:microsoft.quantum.guide.variables)的变量 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="941f6-352">Learn about [Variables](xref:microsoft.quantum.guide.variables) in :::no-loc(Q#):::.</span></span>
+<span data-ttu-id="941f6-352">了解中[Variables](xref:microsoft.quantum.guide.variables)的变量 Q# 。</span><span class="sxs-lookup"><span data-stu-id="941f6-352">Learn about [Variables](xref:microsoft.quantum.guide.variables) in Q#.</span></span>

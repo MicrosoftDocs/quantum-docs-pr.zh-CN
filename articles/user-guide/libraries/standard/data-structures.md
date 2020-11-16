@@ -1,14 +1,14 @@
 ---
-title: '标准库中的数据结构 :::no-loc(Q#):::'
-description: '了解 Microsoft 标准库中的数据结构、oracles 和 dynamical 生成器 :::no-loc(Q#)::: 。'
+title: '标准库中的数据结构 Q#'
+description: '了解 Microsoft 标准库中的数据结构、oracles 和 dynamical 生成器 Q# 。'
 author: QuantumWriter
 uid: microsoft.quantum.libraries.data-structures
 ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: c3ce5d531618c269d15be3e4eb58ecbb597a022c
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -37,7 +37,7 @@ ApplyToEach(H, Snd(pair)); // No need to deconstruct to access the register.
 ### <a name="arrays"></a><span data-ttu-id="cc9f7-111">数组</span><span class="sxs-lookup"><span data-stu-id="cc9f7-111">Arrays</span></span> ###
 
 <span data-ttu-id="cc9f7-112">Canon 提供了若干用于操作数组的函数。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-112">The canon provides several functions for manipulating arrays.</span></span>
-<span data-ttu-id="cc9f7-113">这些函数是类型参数化的，因此可用于任何类型的数组 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-113">These functions are type-parameterized, and thus can be used with arrays of any :::no-loc(Q#)::: type.</span></span>
+<span data-ttu-id="cc9f7-113">这些函数是类型参数化的，因此可用于任何类型的数组 Q# 。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-113">These functions are type-parameterized, and thus can be used with arrays of any Q# type.</span></span>
 <span data-ttu-id="cc9f7-114">例如， <xref:Microsoft.Quantum.Arrays.Reversed> 函数返回一个新数组，其元素与输入的顺序相反。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-114">For instance, the <xref:Microsoft.Quantum.Arrays.Reversed> function returns a new array whose elements are in reverse order from its input.</span></span>
 <span data-ttu-id="cc9f7-115">这可用于更改调用操作时量程寄存器的表示方式：</span><span class="sxs-lookup"><span data-stu-id="cc9f7-115">This can be used to change how a quantum register is represented when calling operations:</span></span>
 
@@ -75,7 +75,7 @@ ApplyToEach(
 <span data-ttu-id="cc9f7-120">此处的术语 "oracle" 指的是一组 qubits 的黑盒量程子例程，并以阶段的形式返回答案。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-120">Here the term oracle refers to a blackbox quantum subroutine that acts upon a set of qubits and returns the answer as a phase.</span></span>
 <span data-ttu-id="cc9f7-121">通常，可以将此子例程视为接受 oracle 的量程算法的输入，以及其他一些参数，并应用一系列的量程操作，并将对此量程子例程的调用视为一个基本入口。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-121">This subroutine often can be thought of as an input to a quantum algorithm that accepts the oracle, in addition to some other parameters, and applies a series of quantum operations and treating a call to this quantum subroutine as if it were a fundamental gate.</span></span>
 <span data-ttu-id="cc9f7-122">很明显，若要实际实现更大的算法，必须提供 oracle 到基本入口的具体分解，但这种情况下无需进行此类分解即可了解调用 oracle 的算法。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-122">Obviously, in order to actually implement the larger algorithm a concrete decomposition of the oracle into fundamental gates must be provided but such a decomposition is not needed in order to understand the algorithm that calls the oracle.</span></span>
-<span data-ttu-id="cc9f7-123">在中 :::no-loc(Q#)::: ，此抽象通过使用该操作是第一类值来表示，这样，就可以将操作以黑白方式传递到量程算法的实现中。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-123">In :::no-loc(Q#):::, this abstraction is represented by using that operations are first-class values, such that operations can be passed to implementations of quantum algorithms in a black-box manner.</span></span>
+<span data-ttu-id="cc9f7-123">在中 Q# ，此抽象通过使用该操作是第一类值来表示，这样，就可以将操作以黑白方式传递到量程算法的实现中。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-123">In Q#, this abstraction is represented by using that operations are first-class values, such that operations can be passed to implementations of quantum algorithms in a black-box manner.</span></span>
 <span data-ttu-id="cc9f7-124">此外，用户定义的类型用于以类型安全的方式标记不同的 oracle 表示形式，这使得难以偶然人们常常会不同种类的黑框操作。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-124">Moreover, user-defined types are used to label the different oracle representations in a type-safe way, making it difficult to accidentally conflate different kinds of black box operations.</span></span>
 
 <span data-ttu-id="cc9f7-125">此类 oracles 显示在多个不同的上下文中，其中包括 [Grover 的搜索](https://en.wikipedia.org/wiki/Grover%27s_algorithm) 和量程模拟算法等著名示例。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-125">Such oracles appear in a number of different contexts, including famous examples such as [Grover's search](https://en.wikipedia.org/wiki/Grover%27s_algorithm) and quantum simulation algorithms.</span></span>
@@ -192,7 +192,7 @@ is Adj + Ctl {
 <span data-ttu-id="cc9f7-197">在这种情况下，我们可以使用单个 $R $ 关口来模拟任何 $t $ $U (t) $，因此，不需要将自己限制为仅限单一的单独查询。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-197">In this context, we can simulate $U(t)$ for any $t$ using a single $R_z$ gate and as such do not need to restrict ourselves to only discrete queries to the unitary.</span></span>
 <span data-ttu-id="cc9f7-198">此类连续模型还具有属性，该属性可以从使用连续查询的阶段估算流程中了解到 $ 2 \ pi $ 的频率，这是因为在相当 $ 的非 $t 值上执行的试验结果可能会显示通过对数函数的分支切口来屏蔽的阶段信息。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-198">Such a continuous model also has the property that frequencies greater than $2\pi$ can be learned from phase estimation processes that use continuous queries because phase information that would otherwise be masked by the branch-cuts of the logarithm function can be revealed from the results of experiments performed on non-commensurate values of $t$.</span></span>
 <span data-ttu-id="cc9f7-199">因此，对于这样的问题，例如，针对阶段估计 oracle 的连续查询模型不仅合适，而且还优于离散查询模型。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-199">Thus for problems such as this continuous query models for the phase estimation oracle are not only appropriate but are also preferable to the discrete query model.</span></span>
-<span data-ttu-id="cc9f7-200">出于此原因，对于 :::no-loc(Q#)::: 这两种形式的查询都具有功能，并将其留给用户，以决定满足其需求的阶段估算算法，以及可用的 oracle 类型。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-200">For this reason :::no-loc(Q#)::: has functionality for both forms of queries and leave it to the user to decide upon a phase estimation algorithm to fit their needs and the type of oracle that is available.</span></span>
+<span data-ttu-id="cc9f7-200">出于此原因，对于 Q# 这两种形式的查询都具有功能，并将其留给用户，以决定满足其需求的阶段估算算法，以及可用的 oracle 类型。</span><span class="sxs-lookup"><span data-stu-id="cc9f7-200">For this reason Q# has functionality for both forms of queries and leave it to the user to decide upon a phase estimation algorithm to fit their needs and the type of oracle that is available.</span></span>
 
 ## <a name="dynamical-generator-modeling"></a><span data-ttu-id="cc9f7-201">Dynamical 生成器建模</span><span class="sxs-lookup"><span data-stu-id="cc9f7-201">Dynamical Generator Modeling</span></span> ##
 

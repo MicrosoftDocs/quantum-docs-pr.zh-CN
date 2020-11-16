@@ -7,8 +7,8 @@ ms.date: 2/27/2020
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.training
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 476e93e3737dee6ad8f3a97e8ffbcfb9b0012ee1
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -52,7 +52,7 @@ ms.locfileid: "92691518"
 
 ### <a name="training-threads"></a><span data-ttu-id="3b912-138">训练线程</span><span class="sxs-lookup"><span data-stu-id="3b912-138">Training threads</span></span>
 
-<span data-ttu-id="3b912-139">作为分类器训练实用程序的可能性很小，这意味着它通常在参数空间中有大量的本地 optima，它们在质量上可能会有很大差异。</span><span class="sxs-lookup"><span data-stu-id="3b912-139">The likelihood function which is the training utility for the classifier is very seldom convex, meaning that it usually has a multitude of local optima in the parameter space that may differ significantly by quality.</span></span> <span data-ttu-id="3b912-140">由于 SGD 进程只能汇聚到一个特定的最佳方法，因此必须探索多个起始参数向量。</span><span class="sxs-lookup"><span data-stu-id="3b912-140">Since the SGD process can converge to only one specific optimum, it is important to explore multiple starting parameter vectors.</span></span> <span data-ttu-id="3b912-141">机器学习的常见做法是，随机初始化此类起始向量。</span><span class="sxs-lookup"><span data-stu-id="3b912-141">Common practice in machine learning is to initialize such starting vectors randomly.</span></span> <span data-ttu-id="3b912-142">:::no-loc(Q#):::训练 API 接受此类起始向量的任意数组，但基础代码会按顺序对其进行探讨。</span><span class="sxs-lookup"><span data-stu-id="3b912-142">The :::no-loc(Q#)::: training API accepts an arbitrary array of such starting vectors but the underlying code explores them sequentially.</span></span> <span data-ttu-id="3b912-143">在多核计算机上，或在任何并行计算体系结构上，建议使用多个调用来 :::no-loc(Q#)::: 与跨调用的不同参数初始化并行执行多个定型 API 调用。</span><span class="sxs-lookup"><span data-stu-id="3b912-143">On a multicore computer or in fact on any parallel computing architecture it is advisable to perform several calls to :::no-loc(Q#)::: training API in parallel with different parameter initializations across the calls.</span></span>
+<span data-ttu-id="3b912-139">作为分类器训练实用程序的可能性很小，这意味着它通常在参数空间中有大量的本地 optima，它们在质量上可能会有很大差异。</span><span class="sxs-lookup"><span data-stu-id="3b912-139">The likelihood function which is the training utility for the classifier is very seldom convex, meaning that it usually has a multitude of local optima in the parameter space that may differ significantly by quality.</span></span> <span data-ttu-id="3b912-140">由于 SGD 进程只能汇聚到一个特定的最佳方法，因此必须探索多个起始参数向量。</span><span class="sxs-lookup"><span data-stu-id="3b912-140">Since the SGD process can converge to only one specific optimum, it is important to explore multiple starting parameter vectors.</span></span> <span data-ttu-id="3b912-141">机器学习的常见做法是，随机初始化此类起始向量。</span><span class="sxs-lookup"><span data-stu-id="3b912-141">Common practice in machine learning is to initialize such starting vectors randomly.</span></span> <span data-ttu-id="3b912-142">Q#训练 API 接受此类起始向量的任意数组，但基础代码会按顺序对其进行探讨。</span><span class="sxs-lookup"><span data-stu-id="3b912-142">The Q# training API accepts an arbitrary array of such starting vectors but the underlying code explores them sequentially.</span></span> <span data-ttu-id="3b912-143">在多核计算机上，或在任何并行计算体系结构上，建议使用多个调用来 Q# 与跨调用的不同参数初始化并行执行多个定型 API 调用。</span><span class="sxs-lookup"><span data-stu-id="3b912-143">On a multicore computer or in fact on any parallel computing architecture it is advisable to perform several calls to Q# training API in parallel with different parameter initializations across the calls.</span></span>
 
 #### <a name="how-to-modify-the-hyperparameters"></a><span data-ttu-id="3b912-144">如何修改超参数</span><span class="sxs-lookup"><span data-stu-id="3b912-144">How to modify the hyperparameters</span></span>
 

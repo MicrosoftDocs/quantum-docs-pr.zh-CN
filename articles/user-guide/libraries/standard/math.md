@@ -1,13 +1,13 @@
 ---
-title: '标准库中的数学公式 :::no-loc(Q#):::'
-description: '了解 :::no-loc(Q#)::: 与内置数据类型一起使用的标准库中的传统数学函数。'
+title: '标准库中的数学公式 Q#'
+description: '了解 Q# 与内置数据类型一起使用的标准库中的传统数学函数。'
 author: cgranade
 uid: microsoft.quantum.libraries.math
 ms.author: chgranad
 ms.topic: article
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 6de1574341d67c569cd2f040ec533e263fdd386e
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -17,7 +17,7 @@ ms.locfileid: "92692058"
 ---
 # <a name="classical-mathematical-functions"></a><span data-ttu-id="0923f-103">传统数学函数</span><span class="sxs-lookup"><span data-stu-id="0923f-103">Classical Mathematical Functions</span></span> #
 
-<span data-ttu-id="0923f-104">这些函数主要用于处理 :::no-loc(Q#)::: 内置的数据类型 `Int` 、 `Double` 和 `Range` 。</span><span class="sxs-lookup"><span data-stu-id="0923f-104">These functions are primarily used to work with the :::no-loc(Q#)::: built-in data types `Int`, `Double`, and `Range`.</span></span>
+<span data-ttu-id="0923f-104">这些函数主要用于处理 Q# 内置的数据类型 `Int` 、 `Double` 和 `Range` 。</span><span class="sxs-lookup"><span data-stu-id="0923f-104">These functions are primarily used to work with the Q# built-in data types `Int`, `Double`, and `Range`.</span></span>
 
 <span data-ttu-id="0923f-105"><xref:Microsoft.Quantum.Intrinsic.Random>操作具有签名 `(Double[] => Int)` 。</span><span class="sxs-lookup"><span data-stu-id="0923f-105">The <xref:Microsoft.Quantum.Intrinsic.Random> operation has signature `(Double[] => Int)`.</span></span>
 <span data-ttu-id="0923f-106">它采用双精度数组作为输入，并将随机选择的索引作为返回到数组中 `Int` 。</span><span class="sxs-lookup"><span data-stu-id="0923f-106">It takes an array of doubles as input, and returns a randomly-selected index into the array as an `Int`.</span></span>

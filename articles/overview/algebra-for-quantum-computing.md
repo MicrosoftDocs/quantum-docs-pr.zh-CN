@@ -7,8 +7,8 @@ ms.date: 5/5/2020
 ms.topic: overview
 uid: microsoft.quantum.overview.algebra
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 3e6700acc09adf9e2e771f6289c73ad51aa2cb90
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: HT

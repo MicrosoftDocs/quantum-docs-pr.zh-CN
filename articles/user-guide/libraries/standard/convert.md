@@ -1,13 +1,13 @@
 ---
-title: '标准库中的类型转换 :::no-loc(Q#):::'
-description: '了解标准库中的常用和用户定义类型转换函数 :::no-loc(Q#)::: 。'
+title: '标准库中的类型转换 Q#'
+description: '了解标准库中的常用和用户定义类型转换函数 Q# 。'
 author: cgranade
 uid: microsoft.quantum.libraries.convert
 ms.author: chgranad
 ms.topic: article
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 9ec3a2ecd2aa59a10a7033e7b3067eb147ce4035
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -17,9 +17,9 @@ ms.locfileid: "92691103"
 ---
 # <a name="type-conversions"></a><span data-ttu-id="f6176-103">类型转换</span><span class="sxs-lookup"><span data-stu-id="f6176-103">Type Conversions</span></span> #
 
-<span data-ttu-id="f6176-104">:::no-loc(Q#)::: 是 **强类型** 语言。</span><span class="sxs-lookup"><span data-stu-id="f6176-104">:::no-loc(Q#)::: is a **strongly-typed** language.</span></span>
-<span data-ttu-id="f6176-105">具体而言，不 :::no-loc(Q#)::: 会在不同类型之间隐式强制转换。</span><span class="sxs-lookup"><span data-stu-id="f6176-105">In particular, :::no-loc(Q#)::: does not implicitly cast between distinct types.</span></span> <span data-ttu-id="f6176-106">例如，不是 `1 + 2.0` 有效的 :::no-loc(Q#)::: 表达式。</span><span class="sxs-lookup"><span data-stu-id="f6176-106">For instance, `1 + 2.0` is not a valid :::no-loc(Q#)::: expression.</span></span>
-<span data-ttu-id="f6176-107">而是 :::no-loc(Q#)::: 提供各种类型转换函数用于构造给定类型的新值。</span><span class="sxs-lookup"><span data-stu-id="f6176-107">Rather, :::no-loc(Q#)::: provides a variety of type conversion functions for constructing new values of a given type.</span></span>
+<span data-ttu-id="f6176-104">Q# 是 **强类型** 语言。</span><span class="sxs-lookup"><span data-stu-id="f6176-104">Q# is a **strongly-typed** language.</span></span>
+<span data-ttu-id="f6176-105">具体而言，不 Q# 会在不同类型之间隐式强制转换。</span><span class="sxs-lookup"><span data-stu-id="f6176-105">In particular, Q# does not implicitly cast between distinct types.</span></span> <span data-ttu-id="f6176-106">例如，不是 `1 + 2.0` 有效的 Q# 表达式。</span><span class="sxs-lookup"><span data-stu-id="f6176-106">For instance, `1 + 2.0` is not a valid Q# expression.</span></span>
+<span data-ttu-id="f6176-107">而是 Q# 提供各种类型转换函数用于构造给定类型的新值。</span><span class="sxs-lookup"><span data-stu-id="f6176-107">Rather, Q# provides a variety of type conversion functions for constructing new values of a given type.</span></span>
 
 <span data-ttu-id="f6176-108">例如，的 <xref:Microsoft.Quantum.Core.Length> 输出类型为 `Int` ，因此必须先将其输出转换为，然后才能 `Double` 将其用作浮点表达式的一部分。</span><span class="sxs-lookup"><span data-stu-id="f6176-108">For example, <xref:Microsoft.Quantum.Core.Length> has an output type of `Int`, so its output must first be converted to a `Double` before it can be used as a part of a floating-point expression.</span></span>
 <span data-ttu-id="f6176-109">可以使用函数执行此 <xref:Microsoft.Quantum.Convert.IntAsDouble> 操作：</span><span class="sxs-lookup"><span data-stu-id="f6176-109">This can be done using the <xref:Microsoft.Quantum.Convert.IntAsDouble> function:</span></span>
@@ -42,10 +42,10 @@ let indices = Convert.RangeAsIntArray(0..4); // [0, 1, 2, 3, 4]
 
 <span data-ttu-id="f6176-111"><xref:Microsoft.Quantum.Convert>命名空间还提供了一些更现的转换，例如 `FunctionAsOperation` ，将函数转换 `'T -> 'U` 为新操作 `'T => 'U` 。</span><span class="sxs-lookup"><span data-stu-id="f6176-111">The <xref:Microsoft.Quantum.Convert> namespace also provides some more exotic conversions, such as `FunctionAsOperation`, which converts functions `'T -> 'U` into new operations `'T => 'U`.</span></span>
 
-<span data-ttu-id="f6176-112">最后， :::no-loc(Q#)::: 标准库提供了许多用户定义的类型，例如 <xref:Microsoft.Quantum.Math.Complex> 和 <xref:Microsoft.Quantum.Arithmetic.LittleEndian> 。</span><span class="sxs-lookup"><span data-stu-id="f6176-112">Finally, the :::no-loc(Q#)::: standard library provides a number of user-defined types such as <xref:Microsoft.Quantum.Math.Complex> and <xref:Microsoft.Quantum.Arithmetic.LittleEndian>.</span></span>
+<span data-ttu-id="f6176-112">最后， Q# 标准库提供了许多用户定义的类型，例如 <xref:Microsoft.Quantum.Math.Complex> 和 <xref:Microsoft.Quantum.Arithmetic.LittleEndian> 。</span><span class="sxs-lookup"><span data-stu-id="f6176-112">Finally, the Q# standard library provides a number of user-defined types such as <xref:Microsoft.Quantum.Math.Complex> and <xref:Microsoft.Quantum.Arithmetic.LittleEndian>.</span></span>
 <span data-ttu-id="f6176-113">除了这些类型之外，标准库还提供如下功能 <xref:Microsoft.Quantum.Arithmetic.BigEndianAsLittleEndian> ：</span><span class="sxs-lookup"><span data-stu-id="f6176-113">Along with these types, the standard library provides functions such as <xref:Microsoft.Quantum.Arithmetic.BigEndianAsLittleEndian>:</span></span>
 
-```:::no-loc(Q#):::
+```Q#
 open Microsoft.Quantum.Arithmetic as Arithmetic;
 
 let register = Arithmetic.BigEndian(qubits);

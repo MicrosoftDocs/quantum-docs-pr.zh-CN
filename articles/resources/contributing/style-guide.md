@@ -1,14 +1,14 @@
 ---
-title: 'Microsoft :::no-loc(Q#)::: 风格指南'
-description: '了解程序和库的命名、输入、文档和格式设置约定 :::no-loc(Q#)::: 。'
+title: 'Microsoft Q# 风格指南'
+description: '了解程序和库的命名、输入、文档和格式设置约定 Q# 。'
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
 ms.topic: article
 uid: microsoft.quantum.contributing.style
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 7666974e255d537c8d611d0077b7f9b37a61f918
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -16,10 +16,10 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92691729"
 ---
-# <a name="no-locq-style-guide"></a><span data-ttu-id="d7508-103">:::no-loc(Q#)::: 样式指南</span><span class="sxs-lookup"><span data-stu-id="d7508-103">:::no-loc(Q#)::: Style Guide</span></span> #
+# <a name="no-locq-style-guide"></a><span data-ttu-id="d7508-103">Q# 样式指南</span><span class="sxs-lookup"><span data-stu-id="d7508-103">Q# Style Guide</span></span> #
 ## <a name="general-conventions"></a><span data-ttu-id="d7508-104">一般约定</span><span class="sxs-lookup"><span data-stu-id="d7508-104">General Conventions</span></span> ##
 
-<span data-ttu-id="d7508-105">本指南中建议的约定旨在帮助编写 :::no-loc(Q#)::: 更易于阅读和理解的程序和库。</span><span class="sxs-lookup"><span data-stu-id="d7508-105">The conventions suggested in this guide are intended to help make programs and libraries written in :::no-loc(Q#)::: easier to read and understand.</span></span>
+<span data-ttu-id="d7508-105">本指南中建议的约定旨在帮助编写 Q# 更易于阅读和理解的程序和库。</span><span class="sxs-lookup"><span data-stu-id="d7508-105">The conventions suggested in this guide are intended to help make programs and libraries written in Q# easier to read and understand.</span></span>
 
 ## <a name="guidance"></a><span data-ttu-id="d7508-106">指南</span><span class="sxs-lookup"><span data-stu-id="d7508-106">Guidance</span></span>
 
@@ -32,13 +32,13 @@ ms.locfileid: "92691729"
 <span data-ttu-id="d7508-110">在提供量子开发工具包时，我们努力实现函数和操作名称，这些名称有助于量子开发人员编写易于阅读的程序，并最大程度地减少意外情况。</span><span class="sxs-lookup"><span data-stu-id="d7508-110">In offering the Quantum Development Kit, we strive for function and operation names that help quantum developers write programs that are easy to read and that minimize surprise.</span></span>
 <span data-ttu-id="d7508-111">这种情况的一个重要部分是，当我们为函数、操作和类型选择名称时，我们将建立编程人员用来表示量程概念的 *词汇* ;利用我们的选择，我们可以在很大程度上帮助或阻止他们进行清晰的沟通。</span><span class="sxs-lookup"><span data-stu-id="d7508-111">An important part of that is that when we choose names for functions, operations, and types, we are establishing the *vocabulary* that programmers use to express quantum concepts; with our choices, we either help or hinder them in their effort to clearly communicate.</span></span>
 <span data-ttu-id="d7508-112">这会给我们带来责任，以确保我们引入的名称更清晰，而不是隐匿性。</span><span class="sxs-lookup"><span data-stu-id="d7508-112">This places a responsibility on us to make sure that the names we introduce offer clarity rather than obscurity.</span></span>
-<span data-ttu-id="d7508-113">在本部分中，我们将详细说明我们如何通过明确指导来实现这一义务，这有助于我们开发人员的最佳做法 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="d7508-113">In this section, we detail how we meet this obligation in terms of explicit guidance that helps us do the best by the :::no-loc(Q#)::: development community.</span></span>
+<span data-ttu-id="d7508-113">在本部分中，我们将详细说明我们如何通过明确指导来实现这一义务，这有助于我们开发人员的最佳做法 Q# 。</span><span class="sxs-lookup"><span data-stu-id="d7508-113">In this section, we detail how we meet this obligation in terms of explicit guidance that helps us do the best by the Q# development community.</span></span>
 
 ### <a name="operations-and-functions"></a><span data-ttu-id="d7508-114">操作和函数</span><span class="sxs-lookup"><span data-stu-id="d7508-114">Operations and Functions</span></span> ###
 
 <span data-ttu-id="d7508-115">名称应建立的首要任务之一就是给定的符号表示函数还是操作。</span><span class="sxs-lookup"><span data-stu-id="d7508-115">One of the first things that a name should establish is whether a given symbol represents a function or an operation.</span></span>
 <span data-ttu-id="d7508-116">函数和操作之间的区别对于理解代码块的行为方式至关重要。</span><span class="sxs-lookup"><span data-stu-id="d7508-116">The difference between functions and operations is critical to understanding how a block of code behaves.</span></span>
-<span data-ttu-id="d7508-117">为了向用户传达函数和操作之间的区别，我们依赖于通过使用副作用来对 :::no-loc(Q#)::: 量程操作进行建模。</span><span class="sxs-lookup"><span data-stu-id="d7508-117">To communicate the distinction between functions and operations to users, we rely on that :::no-loc(Q#)::: models quantum operations through the use of side effects.</span></span>
+<span data-ttu-id="d7508-117">为了向用户传达函数和操作之间的区别，我们依赖于通过使用副作用来对 Q# 量程操作进行建模。</span><span class="sxs-lookup"><span data-stu-id="d7508-117">To communicate the distinction between functions and operations to users, we rely on that Q# models quantum operations through the use of side effects.</span></span>
 <span data-ttu-id="d7508-118">也就是说，操作 *执行* 一些操作。</span><span class="sxs-lookup"><span data-stu-id="d7508-118">That is, an operation *does* something.</span></span>
 
 <span data-ttu-id="d7508-119">与此相反，函数说明了数据之间的数学关系。</span><span class="sxs-lookup"><span data-stu-id="d7508-119">By contrast, functions describe the mathematical relationships between data.</span></span>
@@ -100,8 +100,8 @@ ms.locfileid: "92691729"
 |---|------|-------------|
 | <span data-ttu-id="d7508-163">☑</span><span class="sxs-lookup"><span data-stu-id="d7508-163">☑</span></span> | `operation ReflectAboutStart` | <span data-ttu-id="d7508-164">清除使用谓词 ( "反射" ) 指示操作的效果。</span><span class="sxs-lookup"><span data-stu-id="d7508-164">Clear use of a verb ("reflect") to indicate the effect of the operation.</span></span> |
 | <span data-ttu-id="d7508-165">☒</span><span class="sxs-lookup"><span data-stu-id="d7508-165">☒</span></span> | <s>`operation XRotation`</s> | <span data-ttu-id="d7508-166">使用名词短语建议函数，而不是操作。</span><span class="sxs-lookup"><span data-stu-id="d7508-166">Use of noun phrase suggests function, rather than operation.</span></span> |
-| <span data-ttu-id="d7508-167">☒</span><span class="sxs-lookup"><span data-stu-id="d7508-167">☒</span></span> | <s>`operation search_oracle`</s> | <span data-ttu-id="d7508-168">使用 `snake_case` contravenes :::no-loc(Q#)::: 表示法。</span><span class="sxs-lookup"><span data-stu-id="d7508-168">Use of `snake_case` contravenes :::no-loc(Q#)::: notation.</span></span> |
-| <span data-ttu-id="d7508-169">☒</span><span class="sxs-lookup"><span data-stu-id="d7508-169">☒</span></span> | <s>`operation Search_Oracle`</s> | <span data-ttu-id="d7508-170">使用带下划线的内部操作名称 contravenes :::no-loc(Q#)::: 表示法。</span><span class="sxs-lookup"><span data-stu-id="d7508-170">Use of underscores internal to operation name contravenes :::no-loc(Q#)::: notation.</span></span> |
+| <span data-ttu-id="d7508-167">☒</span><span class="sxs-lookup"><span data-stu-id="d7508-167">☒</span></span> | <s>`operation search_oracle`</s> | <span data-ttu-id="d7508-168">使用 `snake_case` contravenes Q# 表示法。</span><span class="sxs-lookup"><span data-stu-id="d7508-168">Use of `snake_case` contravenes Q# notation.</span></span> |
+| <span data-ttu-id="d7508-169">☒</span><span class="sxs-lookup"><span data-stu-id="d7508-169">☒</span></span> | <s>`operation Search_Oracle`</s> | <span data-ttu-id="d7508-170">使用带下划线的内部操作名称 contravenes Q# 表示法。</span><span class="sxs-lookup"><span data-stu-id="d7508-170">Use of underscores internal to operation name contravenes Q# notation.</span></span> |
 | <span data-ttu-id="d7508-171">☑</span><span class="sxs-lookup"><span data-stu-id="d7508-171">☑</span></span> | `function StatePreparationOracle` | <span data-ttu-id="d7508-172">使用名词短语建议函数返回操作。</span><span class="sxs-lookup"><span data-stu-id="d7508-172">Use of noun phrase suggests that the function returns an operation.</span></span> |
 | <span data-ttu-id="d7508-173">☑</span><span class="sxs-lookup"><span data-stu-id="d7508-173">☑</span></span> | `function EqualityFact` | <span data-ttu-id="d7508-174">清楚地使用名词 ( "事实" ) 指示这是一个函数，而形容词。</span><span class="sxs-lookup"><span data-stu-id="d7508-174">Clear use of noun ("fact") to indicate that this is a function, while the adjective.</span></span> |
 | <span data-ttu-id="d7508-175">☒</span><span class="sxs-lookup"><span data-stu-id="d7508-175">☒</span></span> | <s>`function GetRotationAngles`</s> | <span data-ttu-id="d7508-176">使用谓词 ( "get" ) 表明这是一个操作。</span><span class="sxs-lookup"><span data-stu-id="d7508-176">Use of verb ("get") suggests that this is an operation.</span></span> |
@@ -113,9 +113,9 @@ ms.locfileid: "92691729"
 
 ### <a name="entry-points"></a><span data-ttu-id="d7508-183">入口点</span><span class="sxs-lookup"><span data-stu-id="d7508-183">Entry Points</span></span>
 
-<span data-ttu-id="d7508-184">在将入口点定义到 :::no-loc(Q#)::: 程序时， :::no-loc(Q#)::: 编译器将识别该[ `@EntryPoint()` 属性](xref:Microsoft.Quantum.Core.EntryPoint)，而不要求入口点具有特定名称 (例如： `main` 、 `Main` 或 `__main__`) 。</span><span class="sxs-lookup"><span data-stu-id="d7508-184">When defining an entry point into a :::no-loc(Q#)::: program, the :::no-loc(Q#)::: compiler recognizes the [`@EntryPoint()` attribute](xref:Microsoft.Quantum.Core.EntryPoint) rather requiring that entry points have a particular name (e.g.: `main`, `Main`, or `__main__`).</span></span>
-<span data-ttu-id="d7508-185">也就是说，从开发人员的角度来看 :::no-loc(Q#)::: ，入口点是使用批注的普通操作 `@EntryPoint()` 。</span><span class="sxs-lookup"><span data-stu-id="d7508-185">That is, from the perspective of a :::no-loc(Q#)::: developer, entry points are ordinary operations annotated with `@EntryPoint()`.</span></span>
-<span data-ttu-id="d7508-186">此外， :::no-loc(Q#)::: 入口点可能是整个应用程序的入口点 (例如，在 :::no-loc(Q#)::: 独立的可执行程序) 中，或者可能是应用程序 :::no-loc(Q#)::: 与应用程序的主机程序之间的接口 (也就是说：在使用 :::no-loc(Q#)::: Python 或 .net) 时，名称 "main" 在应用于入口点时可能会产生误导 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="d7508-186">Moreover, :::no-loc(Q#)::: entry points may be entry points for an entire application (for example, in :::no-loc(Q#)::: standalone executable programs), or may be an interface between a :::no-loc(Q#)::: program and the host program for an application (i.e.: when using :::no-loc(Q#)::: with Python or .NET), such that the name "main" could be misleading when applied to a :::no-loc(Q#)::: entry point.</span></span>
+<span data-ttu-id="d7508-184">在将入口点定义到 Q# 程序时， Q# 编译器将识别该[ `@EntryPoint()` 属性](xref:Microsoft.Quantum.Core.EntryPoint)，而不要求入口点具有特定名称 (例如： `main` 、 `Main` 或 `__main__`) 。</span><span class="sxs-lookup"><span data-stu-id="d7508-184">When defining an entry point into a Q# program, the Q# compiler recognizes the [`@EntryPoint()` attribute](xref:Microsoft.Quantum.Core.EntryPoint) rather requiring that entry points have a particular name (e.g.: `main`, `Main`, or `__main__`).</span></span>
+<span data-ttu-id="d7508-185">也就是说，从开发人员的角度来看 Q# ，入口点是使用批注的普通操作 `@EntryPoint()` 。</span><span class="sxs-lookup"><span data-stu-id="d7508-185">That is, from the perspective of a Q# developer, entry points are ordinary operations annotated with `@EntryPoint()`.</span></span>
+<span data-ttu-id="d7508-186">此外， Q# 入口点可能是整个应用程序的入口点 (例如，在 Q# 独立的可执行程序) 中，或者可能是应用程序 Q# 与应用程序的主机程序之间的接口 (也就是说：在使用 Q# Python 或 .net) 时，名称 "main" 在应用于入口点时可能会产生误导 Q# 。</span><span class="sxs-lookup"><span data-stu-id="d7508-186">Moreover, Q# entry points may be entry points for an entire application (for example, in Q# standalone executable programs), or may be an interface between a Q# program and the host program for an application (i.e.: when using Q# with Python or .NET), such that the name "main" could be misleading when applied to a Q# entry point.</span></span>
 
 <span data-ttu-id="d7508-187">建议使用命名入口点来反映属性的使用情况， `@EntryPoint()` 方法是使用上面列出的命名操作的一般建议。</span><span class="sxs-lookup"><span data-stu-id="d7508-187">We suggest using naming entry points to reflect the use of the `@EntryPoint()` attribute by using the general advice for naming operations listed above.</span></span>
 
@@ -193,11 +193,11 @@ Especially in a field such as quantum computing that is rich with domain experti
 In naming code symbols, one way that this cognizance expresses itself is as an awareness of the convention from physics of adopting as the names of algorithms and operations the names of their original publishers.
 While we must maintain the history and intellectual provenance of concepts in quantum computing, demanding that all users be versed in this history to use even the most basic of functions and operations places a barrier to entry that is in most cases severe enough to even present an ethical compromise. -->
 <span data-ttu-id="d7508-233">因此，我们建议无论在哪一种合理的情况下，都要将描述概念的常用名词视为强首选项，以使描述概念的发布历史记录的正确名词。</span><span class="sxs-lookup"><span data-stu-id="d7508-233">Thus, we recommend that wherever reasonable, common nouns that describe a concept be adopted in strong preference to proper nouns that describe the publication history of a concept.</span></span>
-<span data-ttu-id="d7508-234">例如，单独控制的交换和双向受控 NOT 操作通常称为学术文学中的 "Fredkin" 和 "Toffoli" 操作，但 :::no-loc(Q#)::: 主要作为 `CSWAP` 和标识 `CCNOT` 。</span><span class="sxs-lookup"><span data-stu-id="d7508-234">As a particular example, the singly controlled SWAP and doubly controlled NOT operations are often called the "Fredkin" and "Toffoli" operations in academic literature, but are identified in :::no-loc(Q#)::: primarily as `CSWAP` and `CCNOT`.</span></span>
+<span data-ttu-id="d7508-234">例如，单独控制的交换和双向受控 NOT 操作通常称为学术文学中的 "Fredkin" 和 "Toffoli" 操作，但 Q# 主要作为 `CSWAP` 和标识 `CCNOT` 。</span><span class="sxs-lookup"><span data-stu-id="d7508-234">As a particular example, the singly controlled SWAP and doubly controlled NOT operations are often called the "Fredkin" and "Toffoli" operations in academic literature, but are identified in Q# primarily as `CSWAP` and `CCNOT`.</span></span>
 <span data-ttu-id="d7508-235">在这两种情况下，API 文档注释都提供基于正确名词的同义词名称以及所有合适的引文。</span><span class="sxs-lookup"><span data-stu-id="d7508-235">In both cases, the API documentation comments provide synonymous names based on proper nouns, along with all appropriate citations.</span></span>
 
-<span data-ttu-id="d7508-236">此首选项特别重要，因为必须始终使用正确名词的某些使用方式（ :::no-loc(Q#)::: 例如，使用许多传统语言设置的传统语言），并引用对 `Bool` 布尔值逻辑的引用中的类型。</span><span class="sxs-lookup"><span data-stu-id="d7508-236">This preference is especially important given that some usage of proper nouns will always be necessary — :::no-loc(Q#)::: follows the tradition set by many classical languages, for instance, and refers to `Bool` types in reference to Boolean logic, which is in turn named in honor of George Boole.</span></span>
-<span data-ttu-id="d7508-237">与此类似，一些量程概念的命名方式类似，其中包括 `Pauli` 内置于语言中的类型 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="d7508-237">A few quantum concepts similarly are named in a similar fashion, including the `Pauli` type built-in to the :::no-loc(Q#)::: language.</span></span>
+<span data-ttu-id="d7508-236">此首选项特别重要，因为必须始终使用正确名词的某些使用方式（ Q# 例如，使用许多传统语言设置的传统语言），并引用对 `Bool` 布尔值逻辑的引用中的类型。</span><span class="sxs-lookup"><span data-stu-id="d7508-236">This preference is especially important given that some usage of proper nouns will always be necessary — Q# follows the tradition set by many classical languages, for instance, and refers to `Bool` types in reference to Boolean logic, which is in turn named in honor of George Boole.</span></span>
+<span data-ttu-id="d7508-237">与此类似，一些量程概念的命名方式类似，其中包括 `Pauli` 内置于语言中的类型 Q# 。</span><span class="sxs-lookup"><span data-stu-id="d7508-237">A few quantum concepts similarly are named in a similar fashion, including the `Pauli` type built-in to the Q# language.</span></span>
 <span data-ttu-id="d7508-238">通过最大限度地减少使用正确名词的情况并不是很重要，我们将减少不能合理避免正确名词的影响。</span><span class="sxs-lookup"><span data-stu-id="d7508-238">By minimizing the usage of proper nouns where such usage is not essential, we reduce the impact where proper nouns cannot be reasonably avoided.</span></span>
 
 # <a name="guidance"></a>[<span data-ttu-id="d7508-239">指南</span><span class="sxs-lookup"><span data-stu-id="d7508-239">Guidance</span></span>](#tab/guidance) 
@@ -212,9 +212,9 @@ _*_
 
 ### <a name="type-conversions"></a><span data-ttu-id="d7508-243">类型转换</span><span class="sxs-lookup"><span data-stu-id="d7508-243">Type Conversions</span></span> ###
 
-<span data-ttu-id="d7508-244">由于 :::no-loc(Q#)::: 是强类型化语言，因此，只能使用对类型转换函数的显式调用将一种类型的值用作另一种类型的值。</span><span class="sxs-lookup"><span data-stu-id="d7508-244">Since :::no-loc(Q#)::: is a strongly and staticly typed language, a value of one type can only be used as a value of another type by using an explicit call to a type conversion function.</span></span>
+<span data-ttu-id="d7508-244">由于 Q# 是强类型化语言，因此，只能使用对类型转换函数的显式调用将一种类型的值用作另一种类型的值。</span><span class="sxs-lookup"><span data-stu-id="d7508-244">Since Q# is a strongly and staticly typed language, a value of one type can only be used as a value of another type by using an explicit call to a type conversion function.</span></span>
 <span data-ttu-id="d7508-245">这与允许值隐式更改类型 (例如：类型提升) 或通过强制转换）的语言不同。</span><span class="sxs-lookup"><span data-stu-id="d7508-245">This is in contrast to languages which allow for values to change types implicitly (e.g.: type promotion), or through casting.</span></span>
-<span data-ttu-id="d7508-246">因此，类型转换函数在库开发中扮演着重要的角色 :::no-loc(Q#)::: ，并且包含有关命名的一个更常见的决策。</span><span class="sxs-lookup"><span data-stu-id="d7508-246">As a result, type conversion functions play an important role in :::no-loc(Q#)::: library development, and comprise one of the more commonly encountered decisions about naming.</span></span>
+<span data-ttu-id="d7508-246">因此，类型转换函数在库开发中扮演着重要的角色 Q# ，并且包含有关命名的一个更常见的决策。</span><span class="sxs-lookup"><span data-stu-id="d7508-246">As a result, type conversion functions play an important role in Q# library development, and comprise one of the more commonly encountered decisions about naming.</span></span>
 <span data-ttu-id="d7508-247">但请注意，由于类型转换始终是 _确定性_ 的，因此可以将它们作为函数编写，因而会在上述建议的范围之内。</span><span class="sxs-lookup"><span data-stu-id="d7508-247">We note, however, that since type conversions are always _deterministic_ , they can be written as functions and thus fall under the advice above.</span></span>
 <span data-ttu-id="d7508-248">具体而言，我们建议不要将类型转换函数命名为谓词 (例如： `ConvertToX`) 或副词 prepositional 短语 (`ToX`) ，但应将其命名为形容词 prepositional 短语，指示源类型和目标类型 (`XAsY`) 。</span><span class="sxs-lookup"><span data-stu-id="d7508-248">In particular, we suggest that type conversion functions should never be named as verbs (e.g.: `ConvertToX`) or adverb prepositional phrases (`ToX`), but should be named as adjective prepositional phrases that indicate the source and destination types (`XAsY`).</span></span>
 <span data-ttu-id="d7508-249">在类型转换函数名称中列出数组类型时，建议采用速记 `Arr` 。</span><span class="sxs-lookup"><span data-stu-id="d7508-249">When listing array types in type conversion function names, we recommend the shorthand `Arr`.</span></span>
@@ -247,7 +247,7 @@ _*_
 
 <span data-ttu-id="d7508-270">建议：</span><span class="sxs-lookup"><span data-stu-id="d7508-270">We suggest:</span></span>
 
-- <span data-ttu-id="d7508-271">当函数、操作或用户定义类型不是库或程序的公共 API 的一部分时，请 :::no-loc(Q#)::: 通过将关键字放在 `internal` `function` 、 `operation` 或声明之前来确保将其标记为内部 `newtype` 。</span><span class="sxs-lookup"><span data-stu-id="d7508-271">When a function, operation, or user-defined type is not a part of the public API for a :::no-loc(Q#)::: library or program, ensure that it is marked as internal by placing the `internal` keyword before the `function`, `operation`, or `newtype` declaration.</span></span>
+- <span data-ttu-id="d7508-271">当函数、操作或用户定义类型不是库或程序的公共 API 的一部分时，请 Q# 通过将关键字放在 `internal` `function` 、 `operation` 或声明之前来确保将其标记为内部 `newtype` 。</span><span class="sxs-lookup"><span data-stu-id="d7508-271">When a function, operation, or user-defined type is not a part of the public API for a Q# library or program, ensure that it is marked as internal by placing the `internal` keyword before the `function`, `operation`, or `newtype` declaration.</span></span>
 
 # <a name="examples"></a>[<span data-ttu-id="d7508-272">示例</span><span class="sxs-lookup"><span data-stu-id="d7508-272">Examples</span></span>](#tab/examples)
 
@@ -259,7 +259,7 @@ _*_
 _*_
 ### <a name="variants"></a><span data-ttu-id="d7508-279">变量</span><span class="sxs-lookup"><span data-stu-id="d7508-279">Variants</span></span> ###
 
-<span data-ttu-id="d7508-280">尽管此限制在的未来版本中可能不会保持不变 :::no-loc(Q#)::: ，但目前这种情况下，通常会有一组相关的操作或函数，这些操作或函数可由函子它们的输入支持，或其参数的具体类型区分开来。</span><span class="sxs-lookup"><span data-stu-id="d7508-280">Though this limitation may not persist in future versions of :::no-loc(Q#):::, it is presently the case that there will often be groups of related operations or functions that are distinguished by which functors their inputs support, or by the concrete types of their arguments.</span></span>
+<span data-ttu-id="d7508-280">尽管此限制在的未来版本中可能不会保持不变 Q# ，但目前这种情况下，通常会有一组相关的操作或函数，这些操作或函数可由函子它们的输入支持，或其参数的具体类型区分开来。</span><span class="sxs-lookup"><span data-stu-id="d7508-280">Though this limitation may not persist in future versions of Q#, it is presently the case that there will often be groups of related operations or functions that are distinguished by which functors their inputs support, or by the concrete types of their arguments.</span></span>
 <span data-ttu-id="d7508-281">可以通过使用相同的根名称，后跟一个或两个指示其变体的字母来区分这些组。</span><span class="sxs-lookup"><span data-stu-id="d7508-281">These groups can be distinguished by using the same root name, followed by one or two letters that indicate its variant.</span></span>
 
 | <span data-ttu-id="d7508-282">Suffix</span><span class="sxs-lookup"><span data-stu-id="d7508-282">Suffix</span></span> | <span data-ttu-id="d7508-283">含义</span><span class="sxs-lookup"><span data-stu-id="d7508-283">Meaning</span></span> |
@@ -284,7 +284,7 @@ _*_
 
 ### <a name="arguments-and-variables"></a><span data-ttu-id="d7508-295">参数和变量</span><span class="sxs-lookup"><span data-stu-id="d7508-295">Arguments and Variables</span></span> ###
 
-<span data-ttu-id="d7508-296">:::no-loc(Q#):::函数或操作的代码的主要目标是使其易于阅读和理解。</span><span class="sxs-lookup"><span data-stu-id="d7508-296">A key goal of the :::no-loc(Q#)::: code for a function or operation is for it to be easily read and understood.</span></span>
+<span data-ttu-id="d7508-296">Q#函数或操作的代码的主要目标是使其易于阅读和理解。</span><span class="sxs-lookup"><span data-stu-id="d7508-296">A key goal of the Q# code for a function or operation is for it to be easily read and understood.</span></span>
 <span data-ttu-id="d7508-297">同样，输入和类型参数的名称应传达函数或自变量在提供后的使用方式。</span><span class="sxs-lookup"><span data-stu-id="d7508-297">Similarly, the names of inputs and type arguments should communicate how a function or argument will be used once provided.</span></span>
 
 
@@ -383,10 +383,10 @@ _*_
 
 ## <a name="documentation-conventions"></a><span data-ttu-id="d7508-355">文档约定</span><span class="sxs-lookup"><span data-stu-id="d7508-355">Documentation Conventions</span></span> ##
 
-<span data-ttu-id="d7508-356">该 :::no-loc(Q#)::: 语言允许通过使用特殊格式的文档注释，将文档附加到操作、函数和用户定义的类型。</span><span class="sxs-lookup"><span data-stu-id="d7508-356">The :::no-loc(Q#)::: language allows for attaching documentation to operations, functions, and user-defined types through the use of specially formatted documentation comments.</span></span>
+<span data-ttu-id="d7508-356">该 Q# 语言允许通过使用特殊格式的文档注释，将文档附加到操作、函数和用户定义的类型。</span><span class="sxs-lookup"><span data-stu-id="d7508-356">The Q# language allows for attaching documentation to operations, functions, and user-defined types through the use of specially formatted documentation comments.</span></span>
 <span data-ttu-id="d7508-357">这些文档注释由三斜杠 (`///`) 表示，这些文档注释 [是风格 Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html) 文档，可用于描述每个操作、函数和用户定义类型的用途、每个所需的输入等。</span><span class="sxs-lookup"><span data-stu-id="d7508-357">Denoted by triple-slashes (`///`), these documentation comments are small [DocFX-flavored Markdown](https://dotnet.github.io/docfx/spec/docfx_flavored_markdown.html) documents that can be used to describing the purpose of each operation, function, and user-defined type, what inputs each expects, and so forth.</span></span>
 <span data-ttu-id="d7508-358">使用量子开发工具包提供的编译器可提取这些注释，并使用它们来帮助录入文档，如中所示 https://docs.microsoft.com/quantum 。</span><span class="sxs-lookup"><span data-stu-id="d7508-358">The compiler provided with the Quantum Development Kit extracts these comments and uses them to help typeset documentation similar to that at https://docs.microsoft.com/quantum.</span></span>
-<span data-ttu-id="d7508-359">同样，随量程开发工具包一起提供的语言服务器使用这些注释在用户悬停在其代码中的符号时向用户提供帮助。 :::no-loc(Q#):::</span><span class="sxs-lookup"><span data-stu-id="d7508-359">Similarly, the language server provided with the Quantum Development Kit uses these comments to provide help to users when they hover over symbols in their :::no-loc(Q#)::: code.</span></span>
+<span data-ttu-id="d7508-359">同样，随量程开发工具包一起提供的语言服务器使用这些注释在用户悬停在其代码中的符号时向用户提供帮助。 Q#</span><span class="sxs-lookup"><span data-stu-id="d7508-359">Similarly, the language server provided with the Quantum Development Kit uses these comments to provide help to users when they hover over symbols in their Q# code.</span></span>
 <span data-ttu-id="d7508-360">利用文档注释，可以通过提供有用的参考来帮助用户理解代码，这是使用本文档中的其他约定不容易表达的详细信息。</span><span class="sxs-lookup"><span data-stu-id="d7508-360">Making use of documentation comments can thus help users to make sense of code by providing a useful reference for details that are not easily expressed using the other conventions in this document.</span></span>
 
 > [!div class="nextstepaction"]
@@ -457,8 +457,8 @@ _*_
 
 <span data-ttu-id="d7508-385">除了上述建议外，还有助于使代码尽可能清晰地使用一致的格式设置规则。</span><span class="sxs-lookup"><span data-stu-id="d7508-385">In addition to the preceding suggestions, it is helpful to help make code as legible as possible to use consistent formatting rules.</span></span>
 <span data-ttu-id="d7508-386">这种格式设置规则按性质，这种格式略有意义，并且是个人美观。</span><span class="sxs-lookup"><span data-stu-id="d7508-386">Such formatting rules by nature tend to be somewhat arbitrary and strongly up to personal aesthetics.</span></span>
-<span data-ttu-id="d7508-387">尽管如此，我们建议在一组协作者内维护一组一致的格式设置约定，特别是对于较大 :::no-loc(Q#)::: 的项目（如量子开发工具包本身）。</span><span class="sxs-lookup"><span data-stu-id="d7508-387">Nonetheless, we recommend maintaining a consistent set of formatting conventions within a group of collaborators, and especially for large :::no-loc(Q#)::: projects such as the Quantum Development Kit itself.</span></span>
-<span data-ttu-id="d7508-388">可以通过使用与编译器集成的格式设置工具来自动应用这些规则 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="d7508-388">These rules can be automatically applied by using the formatting tool integrated with the :::no-loc(Q#)::: compiler.</span></span>
+<span data-ttu-id="d7508-387">尽管如此，我们建议在一组协作者内维护一组一致的格式设置约定，特别是对于较大 Q# 的项目（如量子开发工具包本身）。</span><span class="sxs-lookup"><span data-stu-id="d7508-387">Nonetheless, we recommend maintaining a consistent set of formatting conventions within a group of collaborators, and especially for large Q# projects such as the Quantum Development Kit itself.</span></span>
+<span data-ttu-id="d7508-388">可以通过使用与编译器集成的格式设置工具来自动应用这些规则 Q# 。</span><span class="sxs-lookup"><span data-stu-id="d7508-388">These rules can be automatically applied by using the formatting tool integrated with the Q# compiler.</span></span>
 
 # <a name="guidance"></a>[<span data-ttu-id="d7508-389">指南</span><span class="sxs-lookup"><span data-stu-id="d7508-389">Guidance</span></span>](#tab/guidance) 
 

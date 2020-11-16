@@ -1,14 +1,14 @@
 ---
-title: '标准 libararies 中的流控制 :::no-loc(Q#):::'
-description: '了解 Microsoft 标准库中的流控制操作和函数 :::no-loc(Q#)::: 。'
+title: '标准 libararies 中的流控制 Q#'
+description: '了解 Microsoft 标准库中的流控制操作和函数 Q# 。'
 author: QuantumWriter
 uid: microsoft.quantum.concepts.control-flow
 ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: ad107f5c65a4bf368d12d30e4a72786f2076205c
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -19,7 +19,7 @@ ms.locfileid: "92690860"
 # <a name="higher-order-control-flow"></a><span data-ttu-id="c7cde-103">Higher-Order 控制流</span><span class="sxs-lookup"><span data-stu-id="c7cde-103">Higher-Order Control Flow</span></span> #
 
 <span data-ttu-id="c7cde-104">标准库的主要角色之一是，更轻松地将高级算法想法作为 [量程程序](https://en.wikipedia.org/wiki/Quantum_programming)进行表达。</span><span class="sxs-lookup"><span data-stu-id="c7cde-104">One of the primary roles of the standard library is to make it easier to express high-level algorithmic ideas as [quantum programs](https://en.wikipedia.org/wiki/Quantum_programming).</span></span>
-<span data-ttu-id="c7cde-105">因此， :::no-loc(Q#)::: canon 提供了各种不同的流控制构造，每个构造使用函数和操作的部分应用程序实现。</span><span class="sxs-lookup"><span data-stu-id="c7cde-105">Thus, the :::no-loc(Q#)::: canon provides a variety of different flow control constructs, each implemented using partial application of functions and operations.</span></span>
+<span data-ttu-id="c7cde-105">因此， Q# canon 提供了各种不同的流控制构造，每个构造使用函数和操作的部分应用程序实现。</span><span class="sxs-lookup"><span data-stu-id="c7cde-105">Thus, the Q# canon provides a variety of different flow control constructs, each implemented using partial application of functions and operations.</span></span>
 <span data-ttu-id="c7cde-106">立即跳转到一个示例，请考虑要在收银机上构造 "CNOT-CONTAINS 阶梯" 的情况：</span><span class="sxs-lookup"><span data-stu-id="c7cde-106">Jumping immediately into an example, consider the case in which one wants to construct a "CNOT ladder" on a register:</span></span>
 
 ```qsharp
@@ -50,7 +50,7 @@ ApplyToEachCA(CNOT, Zip(register[0..nQubits - 2], register[1..nQubits - 1]));
 
 <span data-ttu-id="c7cde-111">Canon 提供的一项主要抽象是迭代的一部分。</span><span class="sxs-lookup"><span data-stu-id="c7cde-111">One of the primary abstractions provided by the canon is that of iteration.</span></span>
 <span data-ttu-id="c7cde-112">例如，对于单 qubit 单一 $U $，请考虑窗体的单一窗体 $U \otimes U \otimes \cdots \otimes U $。</span><span class="sxs-lookup"><span data-stu-id="c7cde-112">For instance, consider a unitary of the form $U \otimes U \otimes \cdots \otimes U$ for a single-qubit unitary $U$.</span></span>
-<span data-ttu-id="c7cde-113">在中 :::no-loc(Q#)::: ，我们可能会使用 <xref:Microsoft.Quantum.Arrays.IndexRange> 将此表示为 `for` 对寄存器的循环：</span><span class="sxs-lookup"><span data-stu-id="c7cde-113">In :::no-loc(Q#):::, we might use <xref:Microsoft.Quantum.Arrays.IndexRange> to represent this as as a `for` loop over a register:</span></span>
+<span data-ttu-id="c7cde-113">在中 Q# ，我们可能会使用 <xref:Microsoft.Quantum.Arrays.IndexRange> 将此表示为 `for` 对寄存器的循环：</span><span class="sxs-lookup"><span data-stu-id="c7cde-113">In Q#, we might use <xref:Microsoft.Quantum.Arrays.IndexRange> to represent this as as a `for` loop over a register:</span></span>
 
 ```qsharp
 /// # Summary
@@ -91,7 +91,7 @@ ApplyToEachCA(Adjoint U, register);
 > <span data-ttu-id="c7cde-124">然后， `ApplyToEach(Recover(code, recoveryFn, _), codeBlocks)` 将错误更正代码 `code` 和恢复函数独立应用于 `recoveryFn` 每个块。</span><span class="sxs-lookup"><span data-stu-id="c7cde-124">Then `ApplyToEach(Recover(code, recoveryFn, _), codeBlocks)` will apply the error-correcting code `code` and recovery function `recoveryFn` to each block independently.</span></span>
 > <span data-ttu-id="c7cde-125">即使对于传统输入，此操作也是如此： `ApplyToEach(R(_, _, qubit), [(PauliX, PI() / 2.0); (PauliY(), PI() / 3.0]))` 将应用 $ \pi/$2 的旋转约 $X $，后跟 $pi/$3 的旋转 $Y $。</span><span class="sxs-lookup"><span data-stu-id="c7cde-125">This holds even for classical inputs: `ApplyToEach(R(_, _, qubit), [(PauliX, PI() / 2.0); (PauliY(), PI() / 3.0]))` will apply a rotation of $\pi / 2$ about $X$ followed by a rotation of $pi / 3$ about $Y$.</span></span>
 
-<span data-ttu-id="c7cde-126">:::no-loc(Q#):::Canon 还支持对函数编程熟悉的传统枚举模式。</span><span class="sxs-lookup"><span data-stu-id="c7cde-126">The :::no-loc(Q#)::: canon also provides support for classical enumeration patterns familiar to functional programming.</span></span>
+<span data-ttu-id="c7cde-126">Q#Canon 还支持对函数编程熟悉的传统枚举模式。</span><span class="sxs-lookup"><span data-stu-id="c7cde-126">The Q# canon also provides support for classical enumeration patterns familiar to functional programming.</span></span>
 <span data-ttu-id="c7cde-127">例如， <xref:Microsoft.Quantum.Arrays.Fold> 实现模式 $f (f (f (s \_ {\text{initial}}，x \_ 0) ，x \_ 1) ，\dots ..) $，以在列表中减少函数。</span><span class="sxs-lookup"><span data-stu-id="c7cde-127">For instance, <xref:Microsoft.Quantum.Arrays.Fold> implements the pattern $f(f(f(s\_{\text{initial}}, x\_0), x\_1), \dots)$ for reducing a function over a list.</span></span>
 <span data-ttu-id="c7cde-128">此模式可用于实现 sum、products、最小值、最大值和其他此类函数：</span><span class="sxs-lookup"><span data-stu-id="c7cde-128">This pattern can be used to implement sums, products, minima, maxima and other such functions:</span></span>
 
@@ -103,7 +103,7 @@ function Sum(xs : Int[]) {
 }
 ```
 
-<span data-ttu-id="c7cde-129">同样，类似于 <xref:Microsoft.Quantum.Arrays.Mapped> 和的函数 <xref:Microsoft.Quantum.Arrays.MappedByIndex> 可用于在中表达函数编程概念 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="c7cde-129">Similarly, functions like <xref:Microsoft.Quantum.Arrays.Mapped> and <xref:Microsoft.Quantum.Arrays.MappedByIndex> can be used to express functional programming concepts in :::no-loc(Q#):::.</span></span>
+<span data-ttu-id="c7cde-129">同样，类似于 <xref:Microsoft.Quantum.Arrays.Mapped> 和的函数 <xref:Microsoft.Quantum.Arrays.MappedByIndex> 可用于在中表达函数编程概念 Q# 。</span><span class="sxs-lookup"><span data-stu-id="c7cde-129">Similarly, functions like <xref:Microsoft.Quantum.Arrays.Mapped> and <xref:Microsoft.Quantum.Arrays.MappedByIndex> can be used to express functional programming concepts in Q#.</span></span>
 
 ## <a name="composing-operations-and-functions"></a><span data-ttu-id="c7cde-130">编写操作和函数</span><span class="sxs-lookup"><span data-stu-id="c7cde-130">Composing Operations and Functions</span></span> ##
 
@@ -173,7 +173,7 @@ U(1, time / Float(nSteps), target);
 DecomposeIntoTimeStepsCA((2, U), 1);
 ```
 
-<span data-ttu-id="c7cde-159">的签名 `DecomposeIntoTimeStepsCA` 遵循中的一种常用模式 :::no-loc(Q#)::: ，其中的集合可以由数组或动态计算元素所支持的元素来表示，这些集合的第一个元素是 `Int` 指示它们的长度的值。</span><span class="sxs-lookup"><span data-stu-id="c7cde-159">The signature of `DecomposeIntoTimeStepsCA` follows a common pattern in :::no-loc(Q#):::, where collections that may be backed either by arrays or by something which compute elements on the fly are represented by tuples whose first elements are `Int` values indicating their lengths.</span></span>
+<span data-ttu-id="c7cde-159">的签名 `DecomposeIntoTimeStepsCA` 遵循中的一种常用模式 Q# ，其中的集合可以由数组或动态计算元素所支持的元素来表示，这些集合的第一个元素是 `Int` 指示它们的长度的值。</span><span class="sxs-lookup"><span data-stu-id="c7cde-159">The signature of `DecomposeIntoTimeStepsCA` follows a common pattern in Q#, where collections that may be backed either by arrays or by something which compute elements on the fly are represented by tuples whose first elements are `Int` values indicating their lengths.</span></span>
 
 ## <a name="putting-it-together-controlling-operations"></a><span data-ttu-id="c7cde-160">将其放在一起：控制操作</span><span class="sxs-lookup"><span data-stu-id="c7cde-160">Putting it Together: Controlling Operations</span></span> ##
 
@@ -218,7 +218,7 @@ operation _ControlledOnBitString(
 
 <span data-ttu-id="c7cde-177">此时，我们可以这样做，但我们的新操作并不像应用函子，unsatisfying `Controlled` 。</span><span class="sxs-lookup"><span data-stu-id="c7cde-177">At this point, we could be done, but it is somehow unsatisfying that our new operation does not "feel" like applying the `Controlled` functor.</span></span>
 <span data-ttu-id="c7cde-178">因此，我们通过编写一个函数来控制新的控制流概念，该函数将 oracle 控制在一起并返回一个新的操作。</span><span class="sxs-lookup"><span data-stu-id="c7cde-178">Thus, we finish defining our new control flow concept by writing a function that takes the oracle to be controlled and that returns a new operation.</span></span>
-<span data-ttu-id="c7cde-179">通过这种方式，我们的新函数的外观和感觉非常类似 `Controlled` ，说明我们可以使用和 canon 来轻松定义功能强大的新控制流构造 :::no-loc(Q#)::: ：</span><span class="sxs-lookup"><span data-stu-id="c7cde-179">In this way, our new function looks and feels very much like `Controlled`, illustrating that we can easily define powerful new control flow constructs using :::no-loc(Q#)::: and the canon together:</span></span>
+<span data-ttu-id="c7cde-179">通过这种方式，我们的新函数的外观和感觉非常类似 `Controlled` ，说明我们可以使用和 canon 来轻松定义功能强大的新控制流构造 Q# ：</span><span class="sxs-lookup"><span data-stu-id="c7cde-179">In this way, our new function looks and feels very much like `Controlled`, illustrating that we can easily define powerful new control flow constructs using Q# and the canon together:</span></span>
 
 ```qsharp
 function ControlledOnBitString(

@@ -1,14 +1,14 @@
 ---
-title: '类型 :::no-loc(Q#):::'
-description: '了解编程语言中使用的不同类型 :::no-loc(Q#)::: 。'
+title: '类型 Q#'
+description: '了解编程语言中使用的不同类型 Q# 。'
 author: gillenhaalb
 ms.author: a-gibec
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.types
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 349138984387cc564cca18ea09c7bf161524b0b6
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -16,21 +16,21 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92691618"
 ---
-# <a name="types-in-no-locq"></a><span data-ttu-id="1c5dc-103">类型 :::no-loc(Q#):::</span><span class="sxs-lookup"><span data-stu-id="1c5dc-103">Types in :::no-loc(Q#):::</span></span>
+# <a name="types-in-no-locq"></a><span data-ttu-id="1c5dc-103">类型 Q#</span><span class="sxs-lookup"><span data-stu-id="1c5dc-103">Types in Q#</span></span>
 
-<span data-ttu-id="1c5dc-104">本文介绍 :::no-loc(Q#)::: 用于指定和使用类型的类型模型和语法。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-104">This article describes the :::no-loc(Q#)::: type model and the syntax for specifying and working with types.</span></span> <span data-ttu-id="1c5dc-105">有关如何创建和操作这些类型的表达式的详细信息，请参阅 [类型表达式](xref:microsoft.quantum.guide.expressions)。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-105">For details on how to create and operate on expressions of these types, see [Type Expressions](xref:microsoft.quantum.guide.expressions).</span></span>
+<span data-ttu-id="1c5dc-104">本文介绍 Q# 用于指定和使用类型的类型模型和语法。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-104">This article describes the Q# type model and the syntax for specifying and working with types.</span></span> <span data-ttu-id="1c5dc-105">有关如何创建和操作这些类型的表达式的详细信息，请参阅 [类型表达式](xref:microsoft.quantum.guide.expressions)。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-105">For details on how to create and operate on expressions of these types, see [Type Expressions](xref:microsoft.quantum.guide.expressions).</span></span>
 
-<span data-ttu-id="1c5dc-106">我们注意 :::no-loc(Q#)::: 到，是一种 *强类型* 语言，因此，仔细使用这些类型可帮助编译器 :::no-loc(Q#)::: 在编译时提供对程序的强保证。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-106">We note that :::no-loc(Q#)::: is a *strongly-typed* language, such that careful use of these types can help the compiler to provide strong guarantees about :::no-loc(Q#)::: programs at compile time.</span></span>
-<span data-ttu-id="1c5dc-107">若要提供最强的保证，中类型之间的转换 :::no-loc(Q#)::: 必须使用对函数的调用进行显式转换，这种转换可表达该转换。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-107">To provide the strongest guarantees possible, conversions between types in :::no-loc(Q#)::: must be explicit using calls to functions which express that conversion.</span></span> 
-<span data-ttu-id="1c5dc-108">:::no-loc(Q#)::: 提供各种此类函数作为 <xref:Microsoft.Quantum.Convert> 命名空间的一部分。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-108">:::no-loc(Q#)::: provides a variety of such functions as a part of the <xref:Microsoft.Quantum.Convert> namespace.</span></span>
+<span data-ttu-id="1c5dc-106">我们注意 Q# 到，是一种 *强类型* 语言，因此，仔细使用这些类型可帮助编译器 Q# 在编译时提供对程序的强保证。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-106">We note that Q# is a *strongly-typed* language, such that careful use of these types can help the compiler to provide strong guarantees about Q# programs at compile time.</span></span>
+<span data-ttu-id="1c5dc-107">若要提供最强的保证，中类型之间的转换 Q# 必须使用对函数的调用进行显式转换，这种转换可表达该转换。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-107">To provide the strongest guarantees possible, conversions between types in Q# must be explicit using calls to functions which express that conversion.</span></span> 
+<span data-ttu-id="1c5dc-108">Q# 提供各种此类函数作为 <xref:Microsoft.Quantum.Convert> 命名空间的一部分。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-108">Q# provides a variety of such functions as a part of the <xref:Microsoft.Quantum.Convert> namespace.</span></span>
 <span data-ttu-id="1c5dc-109">另一方面，向上转换到兼容类型是隐式发生的。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-109">Upcasts to compatible types, on the other hand, happen implicitly.</span></span> 
 
-<span data-ttu-id="1c5dc-110">:::no-loc(Q#)::: 提供直接使用的基元类型，以及从其他类型生成新类型的各种方法。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-110">:::no-loc(Q#)::: provides both primitive types, which are used directly, and a variety of ways to produce new types from other types.</span></span>
+<span data-ttu-id="1c5dc-110">Q# 提供直接使用的基元类型，以及从其他类型生成新类型的各种方法。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-110">Q# provides both primitive types, which are used directly, and a variety of ways to produce new types from other types.</span></span>
 <span data-ttu-id="1c5dc-111">本文的其余部分将对此进行介绍。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-111">We describe each in the rest of this article.</span></span>
 
 ## <a name="primitive-types"></a><span data-ttu-id="1c5dc-112">基元类型</span><span class="sxs-lookup"><span data-stu-id="1c5dc-112">Primitive Types</span></span>
 
-<span data-ttu-id="1c5dc-113">此 :::no-loc(Q#)::: 语言提供以下 *基元类型* ，所有这些类型都可直接在程序中使用 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-113">The :::no-loc(Q#)::: language provides the following *primitive types* , all of which you can use directly in :::no-loc(Q#)::: programs.</span></span> <span data-ttu-id="1c5dc-114">你还可以使用这些基元类型构造新类型。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-114">You can also use these primitive types to construct new types.</span></span>
+<span data-ttu-id="1c5dc-113">此 Q# 语言提供以下 *基元类型* ，所有这些类型都可直接在程序中使用 Q# 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-113">The Q# language provides the following *primitive types* , all of which you can use directly in Q# programs.</span></span> <span data-ttu-id="1c5dc-114">你还可以使用这些基元类型构造新类型。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-114">You can also use these primitive types to construct new types.</span></span>
 
 - <span data-ttu-id="1c5dc-115">`Int`类型表示64位有符号整数，例如，、 `2` `107` 、 `-5` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-115">The `Int` type represents a 64-bit signed integer, for example, `2`, `107`, `-5`.</span></span>
 - <span data-ttu-id="1c5dc-116">`BigInt`类型表示任意大小的有符号整数，例如、、 `2L` `107L` `-5L` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-116">The `BigInt` type represents a signed integer of arbitrary size, for example, `2L`, `107L`, `-5L`.</span></span>
@@ -44,7 +44,7 @@ ms.locfileid: "92691618"
 - <span data-ttu-id="1c5dc-123">`String`类型是一系列 Unicode 字符，在用户创建后不透明。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-123">The `String` type is a sequence of Unicode characters that is opaque to the user once created.</span></span>
   <span data-ttu-id="1c5dc-124">在发生 `string` 错误或诊断事件时，使用类型向传统主机报告消息。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-124">Use the `string` type to report messages to a classical host in the case of an error or diagnostic event.</span></span>
 - <span data-ttu-id="1c5dc-125">`Unit`类型只能有一个值 `()` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-125">The `Unit` type can have only one value, `()`.</span></span> 
-  <span data-ttu-id="1c5dc-126">使用此类型可指示 :::no-loc(Q#)::: 函数或操作不返回任何信息。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-126">Use this type to indicate that a :::no-loc(Q#)::: function or operation returns no information.</span></span> 
+  <span data-ttu-id="1c5dc-126">使用此类型可指示 Q# 函数或操作不返回任何信息。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-126">Use this type to indicate that a Q# function or operation returns no information.</span></span> 
 - <span data-ttu-id="1c5dc-127">`Qubit`类型表示量程位或 qubit。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-127">The `Qubit` type represents a quantum bit or qubit.</span></span>
    <span data-ttu-id="1c5dc-128">`Qubit`s 对用户不透明。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-128">`Qubit`s are opaque to the user.</span></span> <span data-ttu-id="1c5dc-129">仅在将其传递给其他操作时，才可以对其进行操作，而不是将其传递到另一个操作，而是测试 (相等性) </span><span class="sxs-lookup"><span data-stu-id="1c5dc-129">The only operation possible with them, other than passing them to another operation, is to test for identity (equality).</span></span>
    <span data-ttu-id="1c5dc-130">最终，你将通过在 `Qubit` 量程处理器 (或量程模拟器) 上调用内部指令来在上执行操作。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-130">Ultimately, you implement actions on `Qubit`s by calling intrinsic instructions on a quantum processor (or a quantum simulator).</span></span>
@@ -55,19 +55,19 @@ ms.locfileid: "92691618"
    <span data-ttu-id="1c5dc-135">它是具有两个可能值的枚举类型： `One` 和 `Zero` ，它们是类型的常量 `Result` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-135">It is an enumerated type with two possible values: `One` and `Zero`, which are constants of type `Result`.</span></span>
    <span data-ttu-id="1c5dc-136">`Zero` 指示已度量 + 1 eigenvalue; `One` 指示已测量-1 eigenvalue。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-136">`Zero` indicates that the +1 eigenvalue was measured; `One` indicates the -1 eigenvalue was measured.</span></span>
 
-<span data-ttu-id="1c5dc-137">常量 `true` 、、、、、、 `false` `PauliI` `PauliX` `PauliY` `PauliZ` `One` 和 `Zero` 是中的所有保留符号 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-137">The constants `true`, `false`, `PauliI`, `PauliX`, `PauliY`, `PauliZ`, `One`, and `Zero` are all reserved symbols in :::no-loc(Q#):::.</span></span>
+<span data-ttu-id="1c5dc-137">常量 `true` 、、、、、、 `false` `PauliI` `PauliX` `PauliY` `PauliZ` `One` 和 `Zero` 是中的所有保留符号 Q# 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-137">The constants `true`, `false`, `PauliI`, `PauliX`, `PauliY`, `PauliZ`, `One`, and `Zero` are all reserved symbols in Q#.</span></span>
 
 ## <a name="array-types"></a><span data-ttu-id="1c5dc-138">数组类型</span><span class="sxs-lookup"><span data-stu-id="1c5dc-138">Array Types</span></span>
 
-* <span data-ttu-id="1c5dc-139">对于任何有效 :::no-loc(Q#)::: 类型，都存在一个类型，该类型表示该类型的值的数组。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-139">For any valid :::no-loc(Q#)::: type, there is a type that represents an array of values of that type.</span></span>
+* <span data-ttu-id="1c5dc-139">对于任何有效 Q# 类型，都存在一个类型，该类型表示该类型的值的数组。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-139">For any valid Q# type, there is a type that represents an array of values of that type.</span></span>
     <span data-ttu-id="1c5dc-140">例如， `Qubit[]` 和 `(Bool, Pauli)[]` 表示 `Qubit` 值和 `(Bool, Pauli)` 元组值的数组。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-140">For example, `Qubit[]` and `(Bool, Pauli)[]` represent arrays of `Qubit` values and `(Bool, Pauli)` tuple values.</span></span>
 
 * <span data-ttu-id="1c5dc-141">数组的数组也是有效的。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-141">An array of arrays is also valid.</span></span> <span data-ttu-id="1c5dc-142">在前面的示例中，将指示数组的数组 `(Bool, Pauli)` `(Bool, Pauli)[][]` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-142">Expanding on the previous example, an array of `(Bool, Pauli)` arrays is denoted `(Bool, Pauli)[][]`.</span></span>
 
 > [!NOTE] 
-> <span data-ttu-id="1c5dc-143">此示例 `(Bool, Pauli)[][]` 表示数组的可能交错数组，而不是矩形二维数组。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-143">This example, `(Bool, Pauli)[][]`, represents a potentially jagged array of arrays and not a rectangular two-dimensional array.</span></span> <span data-ttu-id="1c5dc-144">:::no-loc(Q#)::: 不支持矩形多维数组。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-144">:::no-loc(Q#)::: does not support rectangular multi-dimensional arrays.</span></span>
+> <span data-ttu-id="1c5dc-143">此示例 `(Bool, Pauli)[][]` 表示数组的可能交错数组，而不是矩形二维数组。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-143">This example, `(Bool, Pauli)[][]`, represents a potentially jagged array of arrays and not a rectangular two-dimensional array.</span></span> <span data-ttu-id="1c5dc-144">Q# 不支持矩形多维数组。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-144">Q# does not support rectangular multi-dimensional arrays.</span></span>
 
-* <span data-ttu-id="1c5dc-145">使用方括号将数组值用方括号 :::no-loc(Q#)::: 括起来，如中所示 `[PauliI, PauliX, PauliY, PauliZ]` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-145">An array value can be written in :::no-loc(Q#)::: source code by using square brackets around the elements of an array, as in `[PauliI, PauliX, PauliY, PauliZ]`.</span></span>
+* <span data-ttu-id="1c5dc-145">使用方括号将数组值用方括号 Q# 括起来，如中所示 `[PauliI, PauliX, PauliY, PauliZ]` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-145">An array value can be written in Q# source code by using square brackets around the elements of an array, as in `[PauliI, PauliX, PauliY, PauliZ]`.</span></span>
 <span data-ttu-id="1c5dc-146">数组中所有项的通用基类型确定数组文本的类型。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-146">The common base type of all items in the array determines the type of an array literal.</span></span> <span data-ttu-id="1c5dc-147">因此，使用没有公共基类型的元素构造数组将引发错误。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-147">Hence, constructing an array with elements that have no common base type raises an error.</span></span>  
 <span data-ttu-id="1c5dc-148">有关示例，请参阅 [callables 的数组](xref:microsoft.quantum.guide.expressions#arrays-of-callables)。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-148">For an example, see [arrays of callables](xref:microsoft.quantum.guide.expressions#arrays-of-callables).</span></span>
 
@@ -95,7 +95,7 @@ ms.locfileid: "92691618"
 
 ## <a name="tuple-types"></a><span data-ttu-id="1c5dc-155">元组类型</span><span class="sxs-lookup"><span data-stu-id="1c5dc-155">Tuple Types</span></span>
 
-<span data-ttu-id="1c5dc-156">元组是一种功能强大的概念 :::no-loc(Q#)::: ，可用于将值组合成单个值，使其更易于传递。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-156">Tuples are a powerful concept used throughout :::no-loc(Q#)::: to collect values together into a single value, making it easier to pass them around.</span></span>
+<span data-ttu-id="1c5dc-156">元组是一种功能强大的概念 Q# ，可用于将值组合成单个值，使其更易于传递。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-156">Tuples are a powerful concept used throughout Q# to collect values together into a single value, making it easier to pass them around.</span></span>
 <span data-ttu-id="1c5dc-157">特别是，使用元组表示法，可以表达每个操作和可调用只采用一个输入，并只返回一个输出。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-157">In particular, using tuple notation, you can express that every operation and callable takes exactly one input and returns exactly one output.</span></span>
 
 * <span data-ttu-id="1c5dc-158">给定零个或多个不同类型 `T0` ， `T1` ，...， `Tn` 可将新的  *元组类型* 表示为 `(T0, T1, ..., Tn)` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-158">Given zero or more different types `T0`, `T1`, ..., `Tn`, you can denote a new  *tuple type* as `(T0, T1, ..., Tn)`.</span></span>
@@ -106,17 +106,17 @@ ms.locfileid: "92691618"
 <span data-ttu-id="1c5dc-162">例如， `(3, false)` 是一个其类型为元组类型的元组 `(Int, Bool)` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-162">For example, `(3, false)` is a tuple whose type is the tuple type `(Int, Bool)`.</span></span>
 <span data-ttu-id="1c5dc-163">可以创建元组、数组的元组、子元组的元组等的数组。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-163">It is possible to create arrays of tuples, tuples of arrays, tuples of sub-tuples, and so on.</span></span>
 
-* <span data-ttu-id="1c5dc-164">:::no-loc(Q#):::从0.3 到， `Unit` 是空元组的 *类型* 名称; `()` 用于空元组的 *值* 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-164">As of :::no-loc(Q#)::: 0.3, `Unit` is the name of the *type* of the empty tuple; `()` is used for the *value* of the empty tuple.</span></span>
+* <span data-ttu-id="1c5dc-164">Q#从0.3 到， `Unit` 是空元组的 *类型* 名称; `()` 用于空元组的 *值* 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-164">As of Q# 0.3, `Unit` is the name of the *type* of the empty tuple; `()` is used for the *value* of the empty tuple.</span></span>
 
 * <span data-ttu-id="1c5dc-165">元组实例是不可变的。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-165">Tuple instances are immutable.</span></span>
-<span data-ttu-id="1c5dc-166">:::no-loc(Q#)::: 创建后，不提供更改元组内容的机制。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-166">:::no-loc(Q#)::: does not provide a mechanism to change the contents of a tuple once created.</span></span>
+<span data-ttu-id="1c5dc-166">Q# 创建后，不提供更改元组内容的机制。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-166">Q# does not provide a mechanism to change the contents of a tuple once created.</span></span>
 
 
 
 ### <a name="singleton-tuple-equivalence"></a><span data-ttu-id="1c5dc-167">单一实例元组等效</span><span class="sxs-lookup"><span data-stu-id="1c5dc-167">Singleton Tuple Equivalence</span></span>
 
 <span data-ttu-id="1c5dc-168">可以创建单独 (单元素) 元组 `('T1)` ，例如 `(5)` 或 `([1,2,3])` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-168">It is possible to create a singleton (single-element) tuple `('T1)`, such as `(5)` or `([1,2,3])`.</span></span>
-<span data-ttu-id="1c5dc-169">但是，将 :::no-loc(Q#)::: 单一实例元组视为等效于所包含的类型的值。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-169">However, :::no-loc(Q#)::: treats a singleton tuple as equivalent to a value of the enclosed type.</span></span>
+<span data-ttu-id="1c5dc-169">但是，将 Q# 单一实例元组视为等效于所包含的类型的值。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-169">However, Q# treats a singleton tuple as equivalent to a value of the enclosed type.</span></span>
 <span data-ttu-id="1c5dc-170">也就是说，and `5` `(5)` 、or 和 between 之间没有区别 `5` `(((5)))` `(5, (6))` `(5, 6)` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-170">That is, there is no difference between `5` and `(5)`, or between `5` and `(((5)))`, or between `(5, (6))` and `(5, 6)`.</span></span>
 <span data-ttu-id="1c5dc-171">这与编写时一样有效 `(5)+3` `5+3` ; 两个表达式的计算结果均为 `8` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-171">It is just as valid to write `(5)+3` as it is to write `5+3`; both expressions evaluate to `8`.</span></span>
 
@@ -139,14 +139,14 @@ ms.locfileid: "92691618"
 newtype PairOfInts = (Int, Int);
 ```
     
-* <span data-ttu-id="1c5dc-180">每个 :::no-loc(Q#)::: 源文件可以声明任意数量的用户定义类型。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-180">Each :::no-loc(Q#)::: source file may declare any number of user-defined types.</span></span>
+* <span data-ttu-id="1c5dc-180">每个 Q# 源文件可以声明任意数量的用户定义类型。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-180">Each Q# source file may declare any number of user-defined types.</span></span>
 * <span data-ttu-id="1c5dc-181">类型名称在命名空间中必须是唯一的，且不能与操作和函数名称冲突。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-181">Type names must be unique within a namespace and may not conflict with operation and function names.</span></span>
 * <span data-ttu-id="1c5dc-182">用户定义类型是不同的，即使基类型相同也是如此。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-182">User-defined types are distinct, even if the base types are identical.</span></span>
 <span data-ttu-id="1c5dc-183">具体而言，两个用户定义类型的值之间不会自动转换，即使基础类型相同也是如此。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-183">In particular, there is no automatic conversion between the values of two user-defined types, even if the underlying types are identical.</span></span>
 
 ### <a name="named-vs-anonymous-items"></a><span data-ttu-id="1c5dc-184">命名与匿名项</span><span class="sxs-lookup"><span data-stu-id="1c5dc-184">Named vs. anonymous items</span></span>
 
-<span data-ttu-id="1c5dc-185">:::no-loc(Q#):::文件可以定义包含任何合法类型的单个值的新命名类型。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-185">A :::no-loc(Q#)::: file may define a new named type containing a single value of any legal type.</span></span>
+<span data-ttu-id="1c5dc-185">Q#文件可以定义包含任何合法类型的单个值的新命名类型。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-185">A Q# file may define a new named type containing a single value of any legal type.</span></span>
 <span data-ttu-id="1c5dc-186">对于任何元组类型 `T` ，可以使用语句声明一个新的用户定义类型，该类型是的子类型 `T` `newtype` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-186">For any tuple type `T`, you can declare a new user-defined type that is a subtype of `T` with the `newtype` statement.</span></span>
 <span data-ttu-id="1c5dc-187">@"microsoft.quantum.math"例如，在命名空间中，复数定义为用户定义的类型：</span><span class="sxs-lookup"><span data-stu-id="1c5dc-187">In the @"microsoft.quantum.math" namespace, for example, complex numbers are defined as a user-defined type:</span></span>
 
@@ -155,7 +155,7 @@ newtype Complex = (Double, Double);
 ```
 <span data-ttu-id="1c5dc-188">此语句创建一个新类型，其中包含两个匿名项类型 `Double` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-188">This statement creates a new type with two anonymous items of type `Double`.</span></span>   
 
-<span data-ttu-id="1c5dc-189">除了匿名项以外，用户定义类型还支持0.7 或更高版本中的 *命名项* :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-189">Aside from anonymous items, user-defined types also support *named items* as of :::no-loc(Q#)::: version 0.7 or higher.</span></span> <span data-ttu-id="1c5dc-190">例如，可以将的项命名为， `Real` 表示复数的实部和 `Imag` 虚部：</span><span class="sxs-lookup"><span data-stu-id="1c5dc-190">For example, you could name the items to `Real` for the double representing the real part of a complex number and `Imag` for the imaginary part:</span></span> 
+<span data-ttu-id="1c5dc-189">除了匿名项以外，用户定义类型还支持0.7 或更高版本中的 *命名项* Q# 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-189">Aside from anonymous items, user-defined types also support *named items* as of Q# version 0.7 or higher.</span></span> <span data-ttu-id="1c5dc-190">例如，可以将的项命名为， `Real` 表示复数的实部和 `Imag` 虚部：</span><span class="sxs-lookup"><span data-stu-id="1c5dc-190">For example, you could name the items to `Real` for the double representing the real part of a complex number and `Imag` for the imaginary part:</span></span> 
 
 ```qsharp
 newtype Complex = (Real : Double, Imag : Double);
@@ -182,7 +182,7 @@ function ComplexAddition(c1 : Complex, c2 : Complex) : Complex {
 newtype ComplexPolar = (Magnitude : Double, Argument : Double);
 ```
 
-<span data-ttu-id="1c5dc-197">尽管 `Complex` 和 `ComplexPolar` 都有基础类型，但这 `(Double, Double)` 两种类型在中完全不兼容 :::no-loc(Q#)::: ，但在极大程度上，最大程度地降低意外调用复杂数学函数的风险，反之亦然。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-197">Even though both `Complex` and `ComplexPolar` both have an underlying type `(Double, Double)`, the two types are wholly incompatible in :::no-loc(Q#):::, minimizing the risk of accidentally calling a complex math function with polar coordinates and vice versa.</span></span>
+<span data-ttu-id="1c5dc-197">尽管 `Complex` 和 `ComplexPolar` 都有基础类型，但这 `(Double, Double)` 两种类型在中完全不兼容 Q# ，但在极大程度上，最大程度地降低意外调用复杂数学函数的风险，反之亦然。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-197">Even though both `Complex` and `ComplexPolar` both have an underlying type `(Double, Double)`, the two types are wholly incompatible in Q#, minimizing the risk of accidentally calling a complex math function with polar coordinates and vice versa.</span></span>
 
 #### <a name="access-anonymous-items-with-the-unwrap-operator"></a><span data-ttu-id="1c5dc-198">使用解包运算符访问匿名项</span><span class="sxs-lookup"><span data-stu-id="1c5dc-198">Access anonymous items with the unwrap operator</span></span>
 
@@ -215,7 +215,7 @@ newtype DoublyWrappedInt = WrappedInt;
 ...
 ```
 
-<span data-ttu-id="1c5dc-205">有关解包运算符的更多详细信息，请参阅[ :::no-loc(Q#)::: 中的类型表达式](xref:microsoft.quantum.guide.expressions)。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-205">For more details on the unwrap operator, see [Type Expressions in :::no-loc(Q#):::](xref:microsoft.quantum.guide.expressions).</span></span>
+<span data-ttu-id="1c5dc-205">有关解包运算符的更多详细信息，请参阅[ Q# 中的类型表达式](xref:microsoft.quantum.guide.expressions)。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-205">For more details on the unwrap operator, see [Type Expressions in Q#](xref:microsoft.quantum.guide.expressions).</span></span>
 
 ### <a name="creating-values-of-user-defined-types"></a><span data-ttu-id="1c5dc-206">创建用户定义类型的值</span><span class="sxs-lookup"><span data-stu-id="1c5dc-206">Creating values of user-defined types</span></span>
 
@@ -264,7 +264,7 @@ function AsComplexArray (data : Double[]) : ComplexArray {
 
 <span data-ttu-id="1c5dc-221">这些是可调用的 *签名* 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-221">These are called the *signature* of the callable.</span></span>
 
-* <span data-ttu-id="1c5dc-222">所有 :::no-loc(Q#)::: callables 采用单个值作为输入，并返回单个值作为输出。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-222">All :::no-loc(Q#)::: callables take a single value as input and return a single value as output.</span></span>
+* <span data-ttu-id="1c5dc-222">所有 Q# callables 采用单个值作为输入，并返回单个值作为输出。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-222">All Q# callables take a single value as input and return a single value as output.</span></span>
 * <span data-ttu-id="1c5dc-223">可以对输入和输出值使用元组。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-223">You can use tuples for both the input and output values.</span></span>
 * <span data-ttu-id="1c5dc-224">不返回结果的 Callables，返回 `Unit` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-224">Callables that have no result, return `Unit`.</span></span>
 * <span data-ttu-id="1c5dc-225">不带输入的 Callables 将空元组作为输入。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-225">Callables that have no input take the empty tuple as input.</span></span>
@@ -277,7 +277,7 @@ function AsComplexArray (data : Double[]) : ComplexArray {
 <span data-ttu-id="1c5dc-231">例如，如果运行操作依赖于其他 qubits 的状态，则它应支持 `Controlled` 函子; 如果操作具有反向，则它应支持 `Adjoint` 函子。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-231">For example, if the running of the operation relies on the state of other qubits, then it should support the `Controlled` functor; if the operation has an inverse, then it should support the `Adjoint` functor.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1c5dc-232">本文仅讨论函子如何更改操作签名。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-232">This article only discuss how functors alter the operation signature.</span></span> <span data-ttu-id="1c5dc-233">有关函子和操作的更多详细信息，请参阅[中 :::no-loc(Q#)::: 的操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-233">For more details about functors and operations, see [Operations and Functions in :::no-loc(Q#):::](xref:microsoft.quantum.guide.operationsfunctions).</span></span> 
+> <span data-ttu-id="1c5dc-232">本文仅讨论函子如何更改操作签名。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-232">This article only discuss how functors alter the operation signature.</span></span> <span data-ttu-id="1c5dc-233">有关函子和操作的更多详细信息，请参阅[中 Q# 的操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-233">For more details about functors and operations, see [Operations and Functions in Q#](xref:microsoft.quantum.guide.operationsfunctions).</span></span> 
 
 <span data-ttu-id="1c5dc-234">若要要求对 `Controlled` 操作类型中的和/或函子提供支持 `Adjoint` ，需要添加指示相应特征的注释。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-234">To require support for the `Controlled` and/or `Adjoint` functor in an operation type, you need to add an annotation indicating the corresponding characteristics.</span></span>
 <span data-ttu-id="1c5dc-235">批注 `is Ctl` (例如， `(Qubit => Unit is Ctl)`) 指示操作可控制。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-235">The annotation `is Ctl` (for example, `(Qubit => Unit is Ctl)`) indicates that the operation is controllable.</span></span> <span data-ttu-id="1c5dc-236">也就是说，它的运行依赖于另一个 qubit 或 qubits 的状态。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-236">That is, its run relies on the state of another qubit or qubits.</span></span> <span data-ttu-id="1c5dc-237">同样，批注 `is Adj` 指示操作具有 adjoint，也就是说，它可以 "反转" 以便连续应用操作，然后将其 adjoint 为状态，使状态保持不变。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-237">Similarly, the annotation `is Adj` indicates that the operation has an adjoint, that is, it can be "inverted" such that successively applying an operation and then its adjoint to a state leaves the state unchanged.</span></span> 
@@ -290,7 +290,7 @@ function AsComplexArray (data : Double[]) : ComplexArray {
 
 <span data-ttu-id="1c5dc-242">可调用类型可以包含 *类型参数* 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-242">Callable types may contain *type parameters* .</span></span>
 <span data-ttu-id="1c5dc-243">使用以单引号为前缀的符号指示类型参数;例如， `'A` 是一个合法的类型参数。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-243">Use a symbol prefixed by a single quote to indicated a type parameter; for example, `'A` is a legal type parameter.</span></span>
-<span data-ttu-id="1c5dc-244">有关如何定义类型参数化 callables 的详细信息和详细信息，请参阅[中的 :::no-loc(Q#)::: 操作和函数](xref:microsoft.quantum.guide.operationsfunctions#generic-type-parameterized-callables)。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-244">For more information and details on how to define type-parameterized callables, see [Operations and Functions in :::no-loc(Q#):::](xref:microsoft.quantum.guide.operationsfunctions#generic-type-parameterized-callables).</span></span>
+<span data-ttu-id="1c5dc-244">有关如何定义类型参数化 callables 的详细信息和详细信息，请参阅[中的 Q# 操作和函数](xref:microsoft.quantum.guide.operationsfunctions#generic-type-parameterized-callables)。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-244">For more information and details on how to define type-parameterized callables, see [Operations and Functions in Q#](xref:microsoft.quantum.guide.operationsfunctions#generic-type-parameterized-callables).</span></span>
 
 <span data-ttu-id="1c5dc-245">类型参数可能在单个签名中出现多次。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-245">A type parameter may appear more than once in a single signature.</span></span>
 <span data-ttu-id="1c5dc-246">例如，将其他函数应用于数组的每个元素并返回所收集结果的函数具有签名 `(('A[], 'A->'A) -> 'A[])` 。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-246">For example, a function that applies another function to each element of an array and returns the collected results has the signature `(('A[], 'A->'A) -> 'A[])`.</span></span>
@@ -298,8 +298,8 @@ function AsComplexArray (data : Double[]) : ComplexArray {
 
 <span data-ttu-id="1c5dc-248">调用类型参数化的可调用时，具有相同类型参数的所有参数都必须具有相同的类型。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-248">When you invoke a type-parameterized callable, all arguments that have the same type parameter must be of the same type.</span></span>
 
-<span data-ttu-id="1c5dc-249">:::no-loc(Q#)::: 不提供一种机制来约束用户可能替换为类型参数的可能类型。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-249">:::no-loc(Q#)::: does not provide a mechanism for constraining the possible types that a user might substitute for a type parameter.</span></span>
+<span data-ttu-id="1c5dc-249">Q# 不提供一种机制来约束用户可能替换为类型参数的可能类型。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-249">Q# does not provide a mechanism for constraining the possible types that a user might substitute for a type parameter.</span></span>
 
 ## <a name="next-steps"></a><span data-ttu-id="1c5dc-250">后续步骤</span><span class="sxs-lookup"><span data-stu-id="1c5dc-250">Next steps</span></span>
 
-<span data-ttu-id="1c5dc-251">现在，你已了解构成语言的所有类型 :::no-loc(Q#)::: ，请参阅[中 :::no-loc(Q#)::: 的类型表达式](xref:microsoft.quantum.guide.expressions)，了解如何创建和操作这些不同类型的表达式。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-251">Now that you've seen all the types which comprise the :::no-loc(Q#)::: language, see [Type Expressions in :::no-loc(Q#):::](xref:microsoft.quantum.guide.expressions) to learn how to create and manipulate expressions of these various types.</span></span>
+<span data-ttu-id="1c5dc-251">现在，你已了解构成语言的所有类型 Q# ，请参阅[中 Q# 的类型表达式](xref:microsoft.quantum.guide.expressions)，了解如何创建和操作这些不同类型的表达式。</span><span class="sxs-lookup"><span data-stu-id="1c5dc-251">Now that you've seen all the types which comprise the Q# language, see [Type Expressions in Q#](xref:microsoft.quantum.guide.expressions) to learn how to create and manipulate expressions of these various types.</span></span>

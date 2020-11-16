@@ -1,14 +1,14 @@
 ---
-title: ':::no-loc(Q#)::: API 设计原则'
-description: ':::no-loc(Q#)::: API 设计原则'
+title: 'Q# API 设计原则'
+description: 'Q# API 设计原则'
 author: cgranade
 ms.author: chgranad
 ms.date: 3/9/2020
 ms.topic: article
 uid: microsoft.quantum.contributing.api-design
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 6b196cf1be584a3157c7a9eb8cf497fe1121dd7a
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -16,20 +16,20 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92691820"
 ---
-# <a name="no-locq-api-design-principles"></a><span data-ttu-id="3b10a-103">:::no-loc(Q#)::: API 设计原则</span><span class="sxs-lookup"><span data-stu-id="3b10a-103">:::no-loc(Q#)::: API Design Principles</span></span>
+# <a name="no-locq-api-design-principles"></a><span data-ttu-id="3b10a-103">Q# API 设计原则</span><span class="sxs-lookup"><span data-stu-id="3b10a-103">Q# API Design Principles</span></span>
 
 ## <a name="introduction"></a><span data-ttu-id="3b10a-104">简介</span><span class="sxs-lookup"><span data-stu-id="3b10a-104">Introduction</span></span>
 
-<span data-ttu-id="3b10a-105">作为一种语言和平台， :::no-loc(Q#)::: 使用户能够编写、运行、了解和探索量程应用程序。</span><span class="sxs-lookup"><span data-stu-id="3b10a-105">As a language and as a platform, :::no-loc(Q#)::: empowers users to write, run, understand, and explore quantum applications.</span></span>
-<span data-ttu-id="3b10a-106">若要为用户提供支持，设计 :::no-loc(Q#)::: 库时，请遵循一组 API 设计原则，指导我们的设计，并帮助我们为量子开发社区提供可用库。</span><span class="sxs-lookup"><span data-stu-id="3b10a-106">In order to empower users, when we design :::no-loc(Q#)::: libraries, we follow a set of API design principles to guide our designs and to help us make usable libraries for the the quantum development community.</span></span>
-<span data-ttu-id="3b10a-107">本文列出了这些原则，并提供示例来帮助指导如何在设计 api 时应用这些原则 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="3b10a-107">This article lists these principles, and gives examples to help guide how to apply them when designing :::no-loc(Q#)::: APIs.</span></span>
+<span data-ttu-id="3b10a-105">作为一种语言和平台， Q# 使用户能够编写、运行、了解和探索量程应用程序。</span><span class="sxs-lookup"><span data-stu-id="3b10a-105">As a language and as a platform, Q# empowers users to write, run, understand, and explore quantum applications.</span></span>
+<span data-ttu-id="3b10a-106">若要为用户提供支持，设计 Q# 库时，请遵循一组 API 设计原则，指导我们的设计，并帮助我们为量子开发社区提供可用库。</span><span class="sxs-lookup"><span data-stu-id="3b10a-106">In order to empower users, when we design Q# libraries, we follow a set of API design principles to guide our designs and to help us make usable libraries for the the quantum development community.</span></span>
+<span data-ttu-id="3b10a-107">本文列出了这些原则，并提供示例来帮助指导如何在设计 api 时应用这些原则 Q# 。</span><span class="sxs-lookup"><span data-stu-id="3b10a-107">This article lists these principles, and gives examples to help guide how to apply them when designing Q# APIs.</span></span>
 
 > [!TIP]
 > <span data-ttu-id="3b10a-108">这是一个相当详细的文档，旨在帮助指导库开发和深度库内容。</span><span class="sxs-lookup"><span data-stu-id="3b10a-108">This is a fairly detailed document that's intended to help guide library development and in-depth library contributions.</span></span>
-> <span data-ttu-id="3b10a-109">如果你在中编写自己的库 :::no-loc(Q#)::: ，或者如果你要将更大的功能提供给[ :::no-loc(Q#)::: 库存储库](https://github.com/microsoft/QuantumLibraries)，则可能会发现它最有用。</span><span class="sxs-lookup"><span data-stu-id="3b10a-109">You'll probably find it most useful if you're writing your own libraries in :::no-loc(Q#):::, or if you're contributing larger features to the [:::no-loc(Q#)::: libraries repository](https://github.com/microsoft/QuantumLibraries).</span></span>
+> <span data-ttu-id="3b10a-109">如果你在中编写自己的库 Q# ，或者如果你要将更大的功能提供给[ Q# 库存储库](https://github.com/microsoft/QuantumLibraries)，则可能会发现它最有用。</span><span class="sxs-lookup"><span data-stu-id="3b10a-109">You'll probably find it most useful if you're writing your own libraries in Q#, or if you're contributing larger features to the [Q# libraries repository](https://github.com/microsoft/QuantumLibraries).</span></span>
 >
 > <span data-ttu-id="3b10a-110">另一方面，如果你想要了解如何更常见地参与量程开发工具包，则建议从 [贡献指南](xref:microsoft.quantum.contributing)开始。</span><span class="sxs-lookup"><span data-stu-id="3b10a-110">On the other hand, if you're looking to learn how to contribute to the Quantum Development Kit more generally, we suggest starting with the [contribution guide](xref:microsoft.quantum.contributing).</span></span>
-> <span data-ttu-id="3b10a-111">如果你要查找有关我们如何推荐设置代码格式的更多常规信息 :::no-loc(Q#)::: ，你可能会对签出 [样式指南](xref:microsoft.quantum.contributing.style)感兴趣。</span><span class="sxs-lookup"><span data-stu-id="3b10a-111">If you're looking for more general information about how we recommend formatting your :::no-loc(Q#)::: code, you may be interested in checking out the [style guide](xref:microsoft.quantum.contributing.style).</span></span>
+> <span data-ttu-id="3b10a-111">如果你要查找有关我们如何推荐设置代码格式的更多常规信息 Q# ，你可能会对签出 [样式指南](xref:microsoft.quantum.contributing.style)感兴趣。</span><span class="sxs-lookup"><span data-stu-id="3b10a-111">If you're looking for more general information about how we recommend formatting your Q# code, you may be interested in checking out the [style guide](xref:microsoft.quantum.contributing.style).</span></span>
 
 ## <a name="general-principles"></a><span data-ttu-id="3b10a-112">一般原则</span><span class="sxs-lookup"><span data-stu-id="3b10a-112">General Principles</span></span>
 
@@ -84,7 +84,7 @@ ms.locfileid: "92691820"
 - <span data-ttu-id="3b10a-142">✅在同一 API 和之前的现有库中， **请设计函数** 和操作，使其与其他函数和操作很好地结合。</span><span class="sxs-lookup"><span data-stu-id="3b10a-142">✅ **DO** design functions and operations to compose well with other   functions and operations, both in the same API and in previously   existing libraries.</span></span>
 
   <span data-ttu-id="3b10a-143">*示例：*</span><span class="sxs-lookup"><span data-stu-id="3b10a-143">*Examples:*</span></span>
-  - <span data-ttu-id="3b10a-144">此 @"microsoft.quantum.canon.delay" 操作对其输入进行了最少的假设，因此可用于延迟跨 :::no-loc(Q#)::: 标准库或用户定义的操作的应用程序。</span><span class="sxs-lookup"><span data-stu-id="3b10a-144">The @"microsoft.quantum.canon.delay" operation makes minimal assumptions about its input, and thus can be used to delay applications of either operations across the :::no-loc(Q#)::: standard library or as defined by users.</span></span>
+  - <span data-ttu-id="3b10a-144">此 @"microsoft.quantum.canon.delay" 操作对其输入进行了最少的假设，因此可用于延迟跨 Q# 标准库或用户定义的操作的应用程序。</span><span class="sxs-lookup"><span data-stu-id="3b10a-144">The @"microsoft.quantum.canon.delay" operation makes minimal assumptions about its input, and thus can be used to delay applications of either operations across the Q# standard library or as defined by users.</span></span>
     <!-- TODO: define bad example. -->
 
 - <span data-ttu-id="3b10a-145">✅将纯粹确定的传统逻辑作为函数 **而不是操作公开。**</span><span class="sxs-lookup"><span data-stu-id="3b10a-145">✅ **DO** expose purely deterministic classical logic as   as functions rather than operations.</span></span>

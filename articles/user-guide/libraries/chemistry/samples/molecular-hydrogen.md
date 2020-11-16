@@ -1,14 +1,14 @@
 ---
 title: 获取能量级别估算
-description: '演练一个示例 :::no-loc(Q#)::: 程序，该程序估算分子 hydrogen 的能源级别值。'
+description: '演练一个示例 Q# 程序，该程序估算分子 hydrogen 的能源级别值。'
 author: guanghaolow
 ms.author: gulow
 ms.date: 07/02/2020
 ms.topic: article-type-from-white-list
 uid: microsoft.quantum.chemistry.examples.energyestimate
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 81fba0c52c854d61f9143659795fb4d3c3cee8b9
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -59,7 +59,7 @@ ms.locfileid: "92691524"
     var fermionWavefunction = fermionHamiltonian.CreateHartreeFockState(nElectrons);
 
     // This Jordan-Wigner data structure also contains a representation 
-    // of the Hamiltonian and wavefunction made for consumption by the :::no-loc(Q#)::: operations.
+    // of the Hamiltonian and wavefunction made for consumption by the Q# operations.
     var qSharpHamiltonianData = jordanWignerEncoding.ToQSharpFormat();
     var qSharpWavefunctionData = fermionWavefunction.ToQSharpFormat();
     var qSharpData = QSharpFormat.Convert.ToQSharpFormat(qSharpHamiltonianData, qSharpWavefunctionData);
@@ -124,7 +124,7 @@ operation GetEnergyByTrotterization (
 }
 ```
 
-<span data-ttu-id="98f4b-122">你现在可以 :::no-loc(Q#)::: 从宿主程序调用该代码。</span><span class="sxs-lookup"><span data-stu-id="98f4b-122">You can now invoke the :::no-loc(Q#)::: code from the host program.</span></span> <span data-ttu-id="98f4b-123">下面的 c # 代码创建一个全状态模拟器，并运行 `GetEnergyByTrotterization` 以获取地面状态能量。</span><span class="sxs-lookup"><span data-stu-id="98f4b-123">The following C# code creates a full-state simulator and runs `GetEnergyByTrotterization` to obtain the ground state energy.</span></span>
+<span data-ttu-id="98f4b-122">你现在可以 Q# 从宿主程序调用该代码。</span><span class="sxs-lookup"><span data-stu-id="98f4b-122">You can now invoke the Q# code from the host program.</span></span> <span data-ttu-id="98f4b-123">下面的 c # 代码创建一个全状态模拟器，并运行 `GetEnergyByTrotterization` 以获取地面状态能量。</span><span class="sxs-lookup"><span data-stu-id="98f4b-123">The following C# code creates a full-state simulator and runs `GetEnergyByTrotterization` to obtain the ground state energy.</span></span>
 
 ```csharp
 using (var qsim = new QuantumSimulator())

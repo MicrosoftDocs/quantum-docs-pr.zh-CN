@@ -1,14 +1,14 @@
 ---
 title: 宽度计数器-量程开发工具包
-description: '了解 Microsoft QDK width 计数器，该计数器使用量程跟踪模拟器来计算程序中由操作分配和借用的 qubits 的数量 :::no-loc(Q#)::: 。'
+description: '了解 Microsoft QDK width 计数器，该计数器使用量程跟踪模拟器来计算程序中由操作分配和借用的 qubits 的数量 Q# 。'
 author: vadym-kl
 ms.author: vadym
 ms.date: 06/25/2020
 ms.topic: article
 uid: microsoft.quantum.machines.qc-trace-simulator.width-counter
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: e54e92cc4a76ce9f9c5aead84f2b64320d6b4f1c
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "92691130"
 ---
 # <a name="quantum-trace-simulator-width-counter"></a><span data-ttu-id="62940-103">量程跟踪模拟器：宽度计数器</span><span class="sxs-lookup"><span data-stu-id="62940-103">Quantum trace simulator: width counter</span></span>
 
-<span data-ttu-id="62940-104">Width 计数器是量程开发工具包 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的一部分。</span><span class="sxs-lookup"><span data-stu-id="62940-104">The width counter is a part of the Quantum Development Kit [Quantum trace simulator](xref:microsoft.quantum.machines.qc-trace-simulator.intro).</span></span> <span data-ttu-id="62940-105">您可以使用它来计算程序中每个操作所分配和借用的 qubits 的数目 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="62940-105">You can use it to count the number of qubits allocated and borrowed by each operation in a :::no-loc(Q#)::: program.</span></span> <span data-ttu-id="62940-106">一些基元操作可以分配额外的 qubits，例如，将受控 `X` 操作或受控 `T` 操作相乘。</span><span class="sxs-lookup"><span data-stu-id="62940-106">Some primitive operations can allocate extra qubits, for example, multiply controlled `X` operations or controlled `T` operations.</span></span>
+<span data-ttu-id="62940-104">Width 计数器是量程开发工具包 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)的一部分。</span><span class="sxs-lookup"><span data-stu-id="62940-104">The width counter is a part of the Quantum Development Kit [Quantum trace simulator](xref:microsoft.quantum.machines.qc-trace-simulator.intro).</span></span> <span data-ttu-id="62940-105">您可以使用它来计算程序中每个操作所分配和借用的 qubits 的数目 Q# 。</span><span class="sxs-lookup"><span data-stu-id="62940-105">You can use it to count the number of qubits allocated and borrowed by each operation in a Q# program.</span></span> <span data-ttu-id="62940-106">一些基元操作可以分配额外的 qubits，例如，将受控 `X` 操作或受控 `T` 操作相乘。</span><span class="sxs-lookup"><span data-stu-id="62940-106">Some primitive operations can allocate extra qubits, for example, multiply controlled `X` operations or controlled `T` operations.</span></span>
 
 ## <a name="invoking-the-width-counter"></a><span data-ttu-id="62940-107">调用 width 计数器</span><span class="sxs-lookup"><span data-stu-id="62940-107">Invoking the width counter</span></span>
 
@@ -32,7 +32,7 @@ var sim = new QCTraceSimulator(config);
 
 ## <a name="using-the-width-counter-in-a-c-host-program"></a><span data-ttu-id="62940-109">在 c # 宿主程序中使用 width 计数器</span><span class="sxs-lookup"><span data-stu-id="62940-109">Using the width counter in a C# host program</span></span>
 
-<span data-ttu-id="62940-110">本部分中的 c # 示例将根据 <xref:Microsoft.Quantum.Intrinsic.X> 下面的示例代码，计算由执行乘法控制的操作所分配的额外 qubits 的数目 :::no-loc(Q#)::: ：</span><span class="sxs-lookup"><span data-stu-id="62940-110">The C# example that follows in this section computes the number of extra qubits allocated by the implementation of a multiply controlled <xref:Microsoft.Quantum.Intrinsic.X> operation, based on the following :::no-loc(Q#)::: sample code:</span></span>
+<span data-ttu-id="62940-110">本部分中的 c # 示例将根据 <xref:Microsoft.Quantum.Intrinsic.X> 下面的示例代码，计算由执行乘法控制的操作所分配的额外 qubits 的数目 Q# ：</span><span class="sxs-lookup"><span data-stu-id="62940-110">The C# example that follows in this section computes the number of extra qubits allocated by the implementation of a multiply controlled <xref:Microsoft.Quantum.Intrinsic.X> operation, based on the following Q# sample code:</span></span>
 
 ```qsharp
 open Microsoft.Quantum.Intrinsic;

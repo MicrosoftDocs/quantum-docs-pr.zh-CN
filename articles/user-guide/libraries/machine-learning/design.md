@@ -7,8 +7,8 @@ ms.date: 02/17/2020
 ms.topic: article
 uid: microsoft.quantum.libraries.machine-learning.design
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 221479e616ff7a03c4ac20e0062125660314e95b
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT

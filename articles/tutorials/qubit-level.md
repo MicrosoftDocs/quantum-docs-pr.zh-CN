@@ -1,5 +1,5 @@
 ---
-title: '在中编写和模拟 qubit 级程序 :::no-loc(Q#):::'
+title: '在中编写和模拟 qubit 级程序 Q#'
 description: 有关编写和模拟在单个 qubit 级别运行的量程程序的分步教程
 author: gillenhaalb
 ms.author: a-gibec
@@ -7,8 +7,8 @@ ms.date: 10/06/2019
 uid: microsoft.quantum.circuit-tutorial
 ms.topic: tutorial
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 1bb66ae0fe7de785c417b0bef480e52adea5534d
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -20,14 +20,14 @@ ms.locfileid: "92691720"
 
 <span data-ttu-id="9c4e6-104">欢迎使用量程开发工具包教程，介绍如何编写和模拟在各个 qubits 上运行的基本量程计划。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-104">Welcome to the Quantum Development Kit tutorial on writing and simulating a basic quantum program that operates on individual qubits.</span></span> 
 
-<span data-ttu-id="9c4e6-105">尽管 :::no-loc(Q#)::: 主要是为大规模的量程程序创建为高级编程语言，但也可以轻松地浏览更低级别的量程程序：直接解决特定的 qubits。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-105">Although :::no-loc(Q#)::: was primarily created as a high-level programming language for large-scale quantum programs, it can just as easily be used to explore the lower level of quantum programs: directly addressing specific qubits.</span></span>
-<span data-ttu-id="9c4e6-106">的灵活性 :::no-loc(Q#)::: 使用户能够从任何此类抽象级别来利用量程系统，在本教程中，我们将深入探讨 qubits 本身。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-106">The flexibility of :::no-loc(Q#)::: allows users to approach quantum systems from any such level of abstraction, and in this tutorial we dive into the qubits themselves.</span></span>
+<span data-ttu-id="9c4e6-105">尽管 Q# 主要是为大规模的量程程序创建为高级编程语言，但也可以轻松地浏览更低级别的量程程序：直接解决特定的 qubits。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-105">Although Q# was primarily created as a high-level programming language for large-scale quantum programs, it can just as easily be used to explore the lower level of quantum programs: directly addressing specific qubits.</span></span>
+<span data-ttu-id="9c4e6-106">的灵活性 Q# 使用户能够从任何此类抽象级别来利用量程系统，在本教程中，我们将深入探讨 qubits 本身。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-106">The flexibility of Q# allows users to approach quantum systems from any such level of abstraction, and in this tutorial we dive into the qubits themselves.</span></span>
 <span data-ttu-id="9c4e6-107">具体而言，我们将看一下 [量程傅立叶转换](https://en.wikipedia.org/wiki/Quantum_Fourier_transform)的组成部分，它是许多更大的量程算法的一个子例程。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-107">Specifically, we take a look under the hood of the [quantum Fourier transform](https://en.wikipedia.org/wiki/Quantum_Fourier_transform), a subroutine that is integral to many larger quantum algorithms.</span></span>
 
 <span data-ttu-id="9c4e6-108">请注意，通常以 "[量程线路](xref:microsoft.quantum.concepts.circuits)" 的形式描述这一低级别的量程信息处理方式，这种方式表示将入口的顺序应用到系统的特定 qubits。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-108">Note that this low-level view of quantum information processing is often described in terms of "[quantum circuits](xref:microsoft.quantum.concepts.circuits)," which represent the sequential application of gates to specific qubits of a system.</span></span>
 
 <span data-ttu-id="9c4e6-109">因此，按顺序应用的单个和多个 qubit 操作可以在 "电路图" 中轻松表示。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-109">Thus, the single- and multi-qubit operations we sequentially apply can be readily represented in a "circuit diagram."</span></span>
-<span data-ttu-id="9c4e6-110">在我们的示例中，我们将定义一个 :::no-loc(Q#)::: 操作来执行 qubit 量程傅立叶转换，并将以下表示形式作为线路：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-110">In our case, we will define a :::no-loc(Q#)::: operation to perform the full three-qubit quantum Fourier transform, which has the following representation as a circuit:</span></span>
+<span data-ttu-id="9c4e6-110">在我们的示例中，我们将定义一个 Q# 操作来执行 qubit 量程傅立叶转换，并将以下表示形式作为线路：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-110">In our case, we will define a Q# operation to perform the full three-qubit quantum Fourier transform, which has the following representation as a circuit:</span></span>
 
 <br/>
 <img src="../media/qft_full.PNG" alt="Three qubit quantum Fourier transform circuit diagram" width="600">
@@ -41,33 +41,33 @@ ms.locfileid: "92691720"
 ## <a name="in-this-tutorial-youll-learn-how-to"></a><span data-ttu-id="9c4e6-114">本教程介绍以下操作：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-114">In this tutorial, you'll learn how to:</span></span>
 
 > [!div class="checklist"]
-> * <span data-ttu-id="9c4e6-115">定义量程操作 :::no-loc(Q#):::</span><span class="sxs-lookup"><span data-stu-id="9c4e6-115">Define quantum operations in :::no-loc(Q#):::</span></span>
-> * <span data-ttu-id="9c4e6-116">:::no-loc(Q#):::直接从命令提示符或使用传统主机程序调用操作</span><span class="sxs-lookup"><span data-stu-id="9c4e6-116">Call :::no-loc(Q#)::: operations directly from the command prompt or using a classical host program</span></span>
+> * <span data-ttu-id="9c4e6-115">定义量程操作 Q#</span><span class="sxs-lookup"><span data-stu-id="9c4e6-115">Define quantum operations in Q#</span></span>
+> * <span data-ttu-id="9c4e6-116">Q#直接从命令提示符或使用传统主机程序调用操作</span><span class="sxs-lookup"><span data-stu-id="9c4e6-116">Call Q# operations directly from the command prompt or using a classical host program</span></span>
 > * <span data-ttu-id="9c4e6-117">模拟从 qubit 分配到测量输出的量程操作</span><span class="sxs-lookup"><span data-stu-id="9c4e6-117">Simulate a quantum operation from qubit allocation to measurement output</span></span>
 > * <span data-ttu-id="9c4e6-118">观察量程系统的模拟 wavefunction 在整个操作过程中的演变方式</span><span class="sxs-lookup"><span data-stu-id="9c4e6-118">Observe how the quantum system's simulated wavefunction evolves throughout the operation</span></span>
 
 <span data-ttu-id="9c4e6-119">使用 Microsoft 的量程开发工具包运行量程程序通常包括两个部分：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-119">Running a quantum program with Microsoft's Quantum Development Kit typically consists of two parts:</span></span>
-1. <span data-ttu-id="9c4e6-120">该程序本身是使用 :::no-loc(Q#)::: 量程编程语言实现的，然后调用以在量程计算机或量程模拟器上运行。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-120">The program itself, which is implemented using the :::no-loc(Q#)::: quantum programming language, and then invoked to run on a quantum computer or quantum simulator.</span></span> <span data-ttu-id="9c4e6-121">这些包括</span><span class="sxs-lookup"><span data-stu-id="9c4e6-121">These consist of</span></span> 
-    - <span data-ttu-id="9c4e6-122">:::no-loc(Q#)::: 操作：作用于量程寄存器和</span><span class="sxs-lookup"><span data-stu-id="9c4e6-122">:::no-loc(Q#)::: operations: subroutines acting on quantum registers, and</span></span> 
-    - <span data-ttu-id="9c4e6-123">:::no-loc(Q#)::: 函数：在量程算法中使用的传统子例程。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-123">:::no-loc(Q#)::: functions: classical subroutines used within the quantum algorithm.</span></span>
+1. <span data-ttu-id="9c4e6-120">该程序本身是使用 Q# 量程编程语言实现的，然后调用以在量程计算机或量程模拟器上运行。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-120">The program itself, which is implemented using the Q# quantum programming language, and then invoked to run on a quantum computer or quantum simulator.</span></span> <span data-ttu-id="9c4e6-121">这些包括</span><span class="sxs-lookup"><span data-stu-id="9c4e6-121">These consist of</span></span> 
+    - <span data-ttu-id="9c4e6-122">Q# 操作：作用于量程寄存器和</span><span class="sxs-lookup"><span data-stu-id="9c4e6-122">Q# operations: subroutines acting on quantum registers, and</span></span> 
+    - <span data-ttu-id="9c4e6-123">Q# 函数：在量程算法中使用的传统子例程。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-123">Q# functions: classical subroutines used within the quantum algorithm.</span></span>
 2. <span data-ttu-id="9c4e6-124">用于调用量程程序并指定应在其上运行该程序的目标计算机的入口点。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-124">The entry point used to call the quantum program and specify the target machine on which it should be run.</span></span>
     <span data-ttu-id="9c4e6-125">这可以直接在命令提示符下完成，也可以通过使用一种传统编程语言（如 Python 或 c #）编写的主机程序来完成。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-125">This can be done directly from the command prompt, or through a host program written in a classical programming language like Python or C#.</span></span>
     <span data-ttu-id="9c4e6-126">本教程包括你喜欢的任何方法的说明。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-126">This tutorial includes instructions for whichever method you prefer.</span></span>
 
 ## <a name="allocate-qubits-and-define-quantum-operations"></a><span data-ttu-id="9c4e6-127">分配 qubits 并定义量程操作</span><span class="sxs-lookup"><span data-stu-id="9c4e6-127">Allocate qubits and define quantum operations</span></span>
 
-<span data-ttu-id="9c4e6-128">本教程的第一部分包括定义 :::no-loc(Q#)::: 操作 `Perform3qubitQFT` ，该操作在三个 qubits 上执行量程傅立叶转换。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-128">The first part of this tutorial consists of defining the :::no-loc(Q#)::: operation `Perform3qubitQFT`, which performs the quantum Fourier transform on three qubits.</span></span> 
+<span data-ttu-id="9c4e6-128">本教程的第一部分包括定义 Q# 操作 `Perform3qubitQFT` ，该操作在三个 qubits 上执行量程傅立叶转换。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-128">The first part of this tutorial consists of defining the Q# operation `Perform3qubitQFT`, which performs the quantum Fourier transform on three qubits.</span></span> 
 
 <span data-ttu-id="9c4e6-129">此外，我们将使用 [`DumpMachine`](xref:Microsoft.Quantum.Diagnostics.DumpMachine) 函数来观察三个 qubit 系统的模拟 wavefunction 在整个操作中的发展情况。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-129">In addition, we will use the [`DumpMachine`](xref:Microsoft.Quantum.Diagnostics.DumpMachine) function to observe how the simulated wavefunction of our three qubit system evolves across the operation.</span></span>
 
-<span data-ttu-id="9c4e6-130">第一步是创建 :::no-loc(Q#)::: 项目和文件。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-130">The first step is creating your :::no-loc(Q#)::: project and file.</span></span>
+<span data-ttu-id="9c4e6-130">第一步是创建 Q# 项目和文件。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-130">The first step is creating your Q# project and file.</span></span>
 <span data-ttu-id="9c4e6-131">此操作的步骤取决于你将用于调用程序的环境，你可以在相应的 [安装指南](xref:microsoft.quantum.install)中找到相关详细信息。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-131">The steps for this depend on the environment you will use to call the program, and you can find the details in the respective [installation guides](xref:microsoft.quantum.install).</span></span>
 
 <span data-ttu-id="9c4e6-132">我们将逐步引导你完成文件的各个组件，但代码还可以作为完整的块提供。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-132">We will walk you through the components of the file step-by-step, but the code is also available as a full block below.</span></span>
 
-### <a name="namespaces-to-access-other-no-locq-operations"></a><span data-ttu-id="9c4e6-133">用于访问其他操作的命名空间 :::no-loc(Q#):::</span><span class="sxs-lookup"><span data-stu-id="9c4e6-133">Namespaces to access other :::no-loc(Q#)::: operations</span></span>
+### <a name="namespaces-to-access-other-no-locq-operations"></a><span data-ttu-id="9c4e6-133">用于访问其他操作的命名空间 Q#</span><span class="sxs-lookup"><span data-stu-id="9c4e6-133">Namespaces to access other Q# operations</span></span>
 <span data-ttu-id="9c4e6-134">在该文件中，我们首先定义 `NamespaceQFT` 将由编译器访问的命名空间。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-134">Inside the file, we first define the namespace `NamespaceQFT` which will be accessed by the compiler.</span></span>
-<span data-ttu-id="9c4e6-135">为了使我们的操作能够使用现有的 :::no-loc(Q#)::: 操作，我们打开了相关的 `Microsoft.Quantum.<>` 命名空间。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-135">For our operation to make use of existing :::no-loc(Q#)::: operations, we open the relevant `Microsoft.Quantum.<>` namespaces.</span></span>
+<span data-ttu-id="9c4e6-135">为了使我们的操作能够使用现有的 Q# 操作，我们打开了相关的 `Microsoft.Quantum.<>` 命名空间。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-135">For our operation to make use of existing Q# operations, we open the relevant `Microsoft.Quantum.<>` namespaces.</span></span>
 
 ```qsharp
 namespace NamespaceQFT {
@@ -93,7 +93,7 @@ namespace NamespaceQFT {
 <span data-ttu-id="9c4e6-139">稍后，我们将对其进行修改以返回度量值的数组，此时 `Unit` 将替换该结果 `Result[]` 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-139">Later, we will modify it to return an array of measurement results, at which point `Unit` will be replaced by `Result[]`.</span></span> 
 
 ### <a name="allocate-qubits-with-using"></a><span data-ttu-id="9c4e6-140">将 qubits 分配给 `using`</span><span class="sxs-lookup"><span data-stu-id="9c4e6-140">Allocate qubits with `using`</span></span>
-<span data-ttu-id="9c4e6-141">在我们 :::no-loc(Q#)::: 的操作中，我们首先使用以下语句分配三个 qubits 的寄存器 `using` ：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-141">Within our :::no-loc(Q#)::: operation, we first allocate a register of three qubits with the `using` statement:</span></span>
+<span data-ttu-id="9c4e6-141">在我们 Q# 的操作中，我们首先使用以下语句分配三个 qubits 的寄存器 `using` ：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-141">Within our Q# operation, we first allocate a register of three qubits with the `using` statement:</span></span>
 
 ```qsharp
         using (qs = Qubit[3]) {
@@ -107,16 +107,16 @@ namespace NamespaceQFT {
 <span data-ttu-id="9c4e6-142">`using`在中，qubits 会自动分配到 $ \ket {0} $ 状态。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-142">With `using`, the qubits are automatically allocated in the $\ket{0}$ state.</span></span> <span data-ttu-id="9c4e6-143">我们可以使用和来验证这一点 [`Message(<string>)`](xref:Microsoft.Quantum.Intrinsic.Message) [`DumpMachine()`](xref:Microsoft.Quantum.Diagnostics.DumpMachine) ，后者将字符串和系统的当前状态打印到控制台。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-143">We can verify this by using [`Message(<string>)`](xref:Microsoft.Quantum.Intrinsic.Message) and [`DumpMachine()`](xref:Microsoft.Quantum.Diagnostics.DumpMachine), which print a string and the system's current state to the console.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="9c4e6-144">`Message(<string>)`和 `DumpMachine()` 函数 [`Microsoft.Quantum.Intrinsic`](xref:Microsoft.Quantum.Intrinsic) 分别 (和 [`Microsoft.Quantum.Diagnostics`](xref:Microsoft.Quantum.Diagnostics)) 直接打印到控制台。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-144">The `Message(<string>)` and `DumpMachine()` functions (from [`Microsoft.Quantum.Intrinsic`](xref:Microsoft.Quantum.Intrinsic) and [`Microsoft.Quantum.Diagnostics`](xref:Microsoft.Quantum.Diagnostics), respectively) both print directly to the console.</span></span> <span data-ttu-id="9c4e6-145">与真实的量程计算一样，不 :::no-loc(Q#)::: 允许我们直接访问 qubit 状态。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-145">Just like a real quantum computation, :::no-loc(Q#)::: does not allow us to directly access qubit states.</span></span>
+> <span data-ttu-id="9c4e6-144">`Message(<string>)`和 `DumpMachine()` 函数 [`Microsoft.Quantum.Intrinsic`](xref:Microsoft.Quantum.Intrinsic) 分别 (和 [`Microsoft.Quantum.Diagnostics`](xref:Microsoft.Quantum.Diagnostics)) 直接打印到控制台。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-144">The `Message(<string>)` and `DumpMachine()` functions (from [`Microsoft.Quantum.Intrinsic`](xref:Microsoft.Quantum.Intrinsic) and [`Microsoft.Quantum.Diagnostics`](xref:Microsoft.Quantum.Diagnostics), respectively) both print directly to the console.</span></span> <span data-ttu-id="9c4e6-145">与真实的量程计算一样，不 Q# 允许我们直接访问 qubit 状态。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-145">Just like a real quantum computation, Q# does not allow us to directly access qubit states.</span></span>
 > <span data-ttu-id="9c4e6-146">但是， `DumpMachine` 当打印目标计算机的当前状态时，它可以在与完整状态模拟器结合使用时，为调试和学习提供有价值的见解。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-146">However, as `DumpMachine` prints the target machine's current state, it can provide valuable insight for debugging and learning when used in conjunction with the full state simulator.</span></span>
 
 
 ### <a name="applying-single-qubit-and-controlled-gates"></a><span data-ttu-id="9c4e6-147">应用单 qubit 和受控入口</span><span class="sxs-lookup"><span data-stu-id="9c4e6-147">Applying single-qubit and controlled gates</span></span>
 
 <span data-ttu-id="9c4e6-148">接下来，应用组成操作本身的入口。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-148">Next, we apply the gates which comprise the operation itself.</span></span>
-<span data-ttu-id="9c4e6-149">:::no-loc(Q#)::: 已在命名空间中包含许多基本的量程入口作为操作 [`Microsoft.Quantum.Intrinsic`](xref:Microsoft.Quantum.Intrinsic) ，并且这些都不是异常。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-149">:::no-loc(Q#)::: already contains many basic quantum gates as operations in the [`Microsoft.Quantum.Intrinsic`](xref:Microsoft.Quantum.Intrinsic) namespace, and these are no exception.</span></span> 
+<span data-ttu-id="9c4e6-149">Q# 已在命名空间中包含许多基本的量程入口作为操作 [`Microsoft.Quantum.Intrinsic`](xref:Microsoft.Quantum.Intrinsic) ，并且这些都不是异常。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-149">Q# already contains many basic quantum gates as operations in the [`Microsoft.Quantum.Intrinsic`](xref:Microsoft.Quantum.Intrinsic) namespace, and these are no exception.</span></span> 
 
-<span data-ttu-id="9c4e6-150">当然， :::no-loc(Q#)::: 调用 callables 的语句将按顺序运行。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-150">Within a :::no-loc(Q#)::: operation, the statements invoking callables will, of course, be run in sequential order.</span></span>
+<span data-ttu-id="9c4e6-150">当然， Q# 调用 callables 的语句将按顺序运行。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-150">Within a Q# operation, the statements invoking callables will, of course, be run in sequential order.</span></span>
 <span data-ttu-id="9c4e6-151">因此，要应用的第一个入口是 [`H`](xref:Microsoft.Quantum.Intrinsic.H) 第一个 qubit (Hadamard) ：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-151">Hence, the first gate to apply is the [`H`](xref:Microsoft.Quantum.Intrinsic.H) (Hadamard) to the first qubit:</span></span>
 
 <br/>
@@ -134,7 +134,7 @@ namespace NamespaceQFT {
 
 #### <a name="controlled-operations"></a><span data-ttu-id="9c4e6-156">可控运算</span><span class="sxs-lookup"><span data-stu-id="9c4e6-156">Controlled operations</span></span>
 
-<span data-ttu-id="9c4e6-157">:::no-loc(Q#)::: 使在一个或多个控件 qubits 上运行操作的条件非常简单。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-157">:::no-loc(Q#)::: makes it extremely easy to condition the run of an operation upon one or multiple control qubits.</span></span>
+<span data-ttu-id="9c4e6-157">Q# 使在一个或多个控件 qubits 上运行操作的条件非常简单。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-157">Q# makes it extremely easy to condition the run of an operation upon one or multiple control qubits.</span></span>
 <span data-ttu-id="9c4e6-158">通常，我们只是将调用置于 `Controlled` ，并将操作参数更改为：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-158">In general, we merely preface the call with `Controlled`, and the operation arguments change as:</span></span>
 
  <span data-ttu-id="9c4e6-159">`Op(<normal args>)` $ \to $ `Controlled Op([<control qubits>], (<normal args>))` 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-159">`Op(<normal args>)` $\to$ `Controlled Op([<control qubits>], (<normal args>))`.</span></span>
@@ -179,12 +179,12 @@ namespace NamespaceQFT {
 
 <span data-ttu-id="9c4e6-168">这是必需的，因为量程傅立叶转换的性质会按相反的顺序输出 qubits，因此交换允许将子例程无缝集成到更大的算法。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-168">This is necessary because the nature of the quantum Fourier transform outputs the qubits in reverse order, so the swaps allow for seamless integration of the subroutine into larger algorithms.</span></span>
 
-<span data-ttu-id="9c4e6-169">因此，我们已完成将量程傅立叶转换的 qubit 级操作写入到操作中 :::no-loc(Q#)::: ：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-169">Hence we have finished writing the qubit-level operations of the quantum Fourier transform into our :::no-loc(Q#)::: operation:</span></span>
+<span data-ttu-id="9c4e6-169">因此，我们已完成将量程傅立叶转换的 qubit 级操作写入到操作中 Q# ：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-169">Hence we have finished writing the qubit-level operations of the quantum Fourier transform into our Q# operation:</span></span>
 
 <img src="../media/qft_full.PNG" alt="Three qubit quantum Fourier transform circuit diagram" width="600">
 
 <span data-ttu-id="9c4e6-170">但是，我们现在不能调用它。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-170">However, we can't call it a day just yet.</span></span>
-<span data-ttu-id="9c4e6-171">我们分配 qubits 时，我们的状态为 $ \ket {0} $，但在生活中， :::no-loc(Q#)::: 我们应该按照与 ) 相同的方式来保留它们 (或更好的！。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-171">Our qubits were in state $\ket{0}$ when we allocated them, and much like in life, in :::no-loc(Q#)::: we should leave things the same way we found them (or better!).</span></span>
+<span data-ttu-id="9c4e6-171">我们分配 qubits 时，我们的状态为 $ \ket {0} $，但在生活中， Q# 我们应该按照与 ) 相同的方式来保留它们 (或更好的！。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-171">Our qubits were in state $\ket{0}$ when we allocated them, and much like in life, in Q# we should leave things the same way we found them (or better!).</span></span>
 
 ### <a name="deallocate-qubits"></a><span data-ttu-id="9c4e6-172">解除分配 qubits</span><span class="sxs-lookup"><span data-stu-id="9c4e6-172">Deallocate qubits</span></span>
 
@@ -197,11 +197,11 @@ namespace NamespaceQFT {
             ResetAll(qs);
 ```
 
-<span data-ttu-id="9c4e6-174">要求将所有释放的 qubits 显式设置为 $ \ket {0} $ 是的一项基本功能 :::no-loc(Q#)::: ，因为当它们开始使用同一 qubits (稀有资源) 时，它可以精确地了解其状态。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-174">Requiring that all deallocated qubits be explicitly set to $\ket{0}$ is a basic feature of :::no-loc(Q#):::, as it allows other operations to know their state precisely when they begin using those same qubits (a scarce resource).</span></span>
+<span data-ttu-id="9c4e6-174">要求将所有释放的 qubits 显式设置为 $ \ket {0} $ 是的一项基本功能 Q# ，因为当它们开始使用同一 qubits (稀有资源) 时，它可以精确地了解其状态。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-174">Requiring that all deallocated qubits be explicitly set to $\ket{0}$ is a basic feature of Q#, as it allows other operations to know their state precisely when they begin using those same qubits (a scarce resource).</span></span>
 <span data-ttu-id="9c4e6-175">此外，这可确保它们不会与系统中的任何其他 qubits 放大。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-175">Additionally, this assures that they not be entangled with any other qubits in the system.</span></span>
 <span data-ttu-id="9c4e6-176">如果在分配块结束时未执行重置 `using` ，则将引发运行时错误。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-176">If the reset is not performed at the end of a `using` allocation block, a runtime error will be thrown.</span></span>
 
-<span data-ttu-id="9c4e6-177">你的完整 :::no-loc(Q#)::: 文件现在应如下所示：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-177">Your full :::no-loc(Q#)::: file should now look like this:</span></span>
+<span data-ttu-id="9c4e6-177">你的完整 Q# 文件现在应如下所示：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-177">Your full Q# file should now look like this:</span></span>
 
 ```qsharp
 namespace NamespaceQFT {
@@ -242,18 +242,18 @@ namespace NamespaceQFT {
 ```
 
 
-<span data-ttu-id="9c4e6-178">:::no-loc(Q#):::完成文件和操作后，便可以调用和模拟我们的量程计划了。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-178">With the :::no-loc(Q#)::: file and operation complete, our quantum program is ready to be called and simulated.</span></span>
+<span data-ttu-id="9c4e6-178">Q#完成文件和操作后，便可以调用和模拟我们的量程计划了。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-178">With the Q# file and operation complete, our quantum program is ready to be called and simulated.</span></span>
 
 ## <a name="run-the-program"></a><span data-ttu-id="9c4e6-179">运行程序</span><span class="sxs-lookup"><span data-stu-id="9c4e6-179">Run the program</span></span>
 
-<span data-ttu-id="9c4e6-180">:::no-loc(Q#):::在文件中定义了操作后 `.qs` ，我们现在需要调用该操作并观察返回的任何传统数据。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-180">Having defined our :::no-loc(Q#)::: operation in a `.qs` file, we now need to call that operation and observe any returned classical data.</span></span>
-<span data-ttu-id="9c4e6-181">目前，没有返回任何内容 (回忆，上面定义的操作返回 `Unit`) ，但当我们稍后修改 :::no-loc(Q#)::: 操作以返回度量结果的数组 (`Result[]`) 时，我们将解决此情况。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-181">For now, there isn't anything returned (recall that our operation defined above returns `Unit`), but when we later modify the :::no-loc(Q#)::: operation to return an array of measurement results (`Result[]`), we will address this.</span></span>
+<span data-ttu-id="9c4e6-180">Q#在文件中定义了操作后 `.qs` ，我们现在需要调用该操作并观察返回的任何传统数据。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-180">Having defined our Q# operation in a `.qs` file, we now need to call that operation and observe any returned classical data.</span></span>
+<span data-ttu-id="9c4e6-181">目前，没有返回任何内容 (回忆，上面定义的操作返回 `Unit`) ，但当我们稍后修改 Q# 操作以返回度量结果的数组 (`Result[]`) 时，我们将解决此情况。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-181">For now, there isn't anything returned (recall that our operation defined above returns `Unit`), but when we later modify the Q# operation to return an array of measurement results (`Result[]`), we will address this.</span></span>
 
-<span data-ttu-id="9c4e6-182">尽管该 :::no-loc(Q#)::: 程序在用于调用它的环境中无处不在，但这样做的方式当然会有所不同。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-182">While the :::no-loc(Q#)::: program is ubiquitous across the environments used to call it, the manner of doing so will of course vary.</span></span> <span data-ttu-id="9c4e6-183">因此，只需按照与设置相对应的选项卡中的说明进行操作：从 :::no-loc(Q#)::: 应用程序或使用 Python 或 c # 中的主机程序进行操作。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-183">As such, simply follow the instructions in the tab corresponding to your setup: working from the :::no-loc(Q#)::: application or using a host program in Python or C#.</span></span>
+<span data-ttu-id="9c4e6-182">尽管该 Q# 程序在用于调用它的环境中无处不在，但这样做的方式当然会有所不同。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-182">While the Q# program is ubiquitous across the environments used to call it, the manner of doing so will of course vary.</span></span> <span data-ttu-id="9c4e6-183">因此，只需按照与设置相对应的选项卡中的说明进行操作：从 Q# 应用程序或使用 Python 或 c # 中的主机程序进行操作。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-183">As such, simply follow the instructions in the tab corresponding to your setup: working from the Q# application or using a host program in Python or C#.</span></span>
 
 #### <a name="command-prompt"></a>[<span data-ttu-id="9c4e6-184">命令提示符</span><span class="sxs-lookup"><span data-stu-id="9c4e6-184">Command prompt</span></span>](#tab/tabid-cmdline)
 
-<span data-ttu-id="9c4e6-185">:::no-loc(Q#):::从命令提示符运行程序只需对文件进行少量更改 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-185">Running the :::no-loc(Q#)::: program from the command prompt requires only a small change to the :::no-loc(Q#)::: file.</span></span>
+<span data-ttu-id="9c4e6-185">Q#从命令提示符运行程序只需对文件进行少量更改 Q# 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-185">Running the Q# program from the command prompt requires only a small change to the Q# file.</span></span>
 
 <span data-ttu-id="9c4e6-186">只需在 `@EntryPoint()` 操作定义之前添加一行：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-186">Simply add `@EntryPoint()` to a line preceding the operation definition:</span></span>
 
@@ -277,17 +277,17 @@ dotnet run
 <span data-ttu-id="9c4e6-190">创建 Python 主机文件： `host.py` 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-190">Create a Python host file: `host.py`.</span></span>
 
 <span data-ttu-id="9c4e6-191">主机文件的构造如下所示：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-191">The host file is constructed as follows:</span></span> 
-1. <span data-ttu-id="9c4e6-192">首先，导入 `qsharp` 模块，该模块将注册模块加载程序以实现 :::no-loc(Q#)::: 互操作性。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-192">First, we import the `qsharp` module, which registers the module loader for :::no-loc(Q#)::: interoperability.</span></span> 
-    <span data-ttu-id="9c4e6-193">这允许 :::no-loc(Q#)::: 命名空间 (例如， `NamespaceQFT` 我们在文件中定义的 :::no-loc(Q#):::) 显示为 Python 模块，我们可以从这些模块中导入 :::no-loc(Q#)::: 操作。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-193">This allows :::no-loc(Q#)::: namespaces (e.g. the `NamespaceQFT` we defined in our :::no-loc(Q#)::: file) to appear as Python modules, from which we can import :::no-loc(Q#)::: operations.</span></span>
-2. <span data-ttu-id="9c4e6-194">然后，导入 :::no-loc(Q#)::: 在这种情况下将直接调用---的操作 `Perform3qubitQFT` 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-194">Then, import the :::no-loc(Q#)::: operations which we will directly invoke---in this case, `Perform3qubitQFT`.</span></span>
-    <span data-ttu-id="9c4e6-195">我们只需要将入口点导入到 :::no-loc(Q#)::: 程序中 (也就是说， _不_ 是像和这样的操作 `H` ，而 `R1` 是由其他操作调用，而不是 :::no-loc(Q#)::: 由经典主机) 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-195">We need only import the entry point into a :::no-loc(Q#)::: program (i.e. _not_ operations like `H` and `R1`, which are called by other :::no-loc(Q#)::: operations but never by the classical host).</span></span>
-3. <span data-ttu-id="9c4e6-196">在模拟 :::no-loc(Q#)::: 操作或函数时，使用窗体 `<:::no-loc(Q#):::callable>.simulate(<args>)` 在目标计算机上运行它们 `QuantumSimulator()` 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-196">In simulating :::no-loc(Q#)::: operations or functions, use the form `<:::no-loc(Q#):::callable>.simulate(<args>)` to run them on the `QuantumSimulator()` target machine.</span></span> 
+1. <span data-ttu-id="9c4e6-192">首先，导入 `qsharp` 模块，该模块将注册模块加载程序以实现 Q# 互操作性。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-192">First, we import the `qsharp` module, which registers the module loader for Q# interoperability.</span></span> 
+    <span data-ttu-id="9c4e6-193">这允许 Q# 命名空间 (例如， `NamespaceQFT` 我们在文件中定义的 Q#) 显示为 Python 模块，我们可以从这些模块中导入 Q# 操作。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-193">This allows Q# namespaces (e.g. the `NamespaceQFT` we defined in our Q# file) to appear as Python modules, from which we can import Q# operations.</span></span>
+2. <span data-ttu-id="9c4e6-194">然后，导入 Q# 在这种情况下将直接调用---的操作 `Perform3qubitQFT` 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-194">Then, import the Q# operations which we will directly invoke---in this case, `Perform3qubitQFT`.</span></span>
+    <span data-ttu-id="9c4e6-195">我们只需要将入口点导入到 Q# 程序中 (也就是说， _不_ 是像和这样的操作 `H` ，而 `R1` 是由其他操作调用，而不是 Q# 由经典主机) 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-195">We need only import the entry point into a Q# program (i.e. _not_ operations like `H` and `R1`, which are called by other Q# operations but never by the classical host).</span></span>
+3. <span data-ttu-id="9c4e6-196">在模拟 Q# 操作或函数时，使用窗体 `<Q#callable>.simulate(<args>)` 在目标计算机上运行它们 `QuantumSimulator()` 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-196">In simulating Q# operations or functions, use the form `<Q#callable>.simulate(<args>)` to run them on the `QuantumSimulator()` target machine.</span></span> 
 
 > [!NOTE]
-> <span data-ttu-id="9c4e6-197">如果我们要在另一台计算机上调用该操作，例如 `ResourceEstimator()` ，只需使用即可 `<:::no-loc(Q#):::callable>.estimate_resources(<args>)` 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-197">If we wanted to call the operation on a different machine, for example the `ResourceEstimator()`, we would simply use `<:::no-loc(Q#):::callable>.estimate_resources(<args>)`.</span></span>
-> <span data-ttu-id="9c4e6-198">通常， :::no-loc(Q#)::: 操作对运行它们的计算机是不可知的，但某些功能（例如）的 `DumpMachine` 行为可能有所不同。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-198">In general, :::no-loc(Q#)::: operations are agnostic to the machines on which they're run, but some features such as `DumpMachine` may behave differently.</span></span>
+> <span data-ttu-id="9c4e6-197">如果我们要在另一台计算机上调用该操作，例如 `ResourceEstimator()` ，只需使用即可 `<Q#callable>.estimate_resources(<args>)` 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-197">If we wanted to call the operation on a different machine, for example the `ResourceEstimator()`, we would simply use `<Q#callable>.estimate_resources(<args>)`.</span></span>
+> <span data-ttu-id="9c4e6-198">通常， Q# 操作对运行它们的计算机是不可知的，但某些功能（例如）的 `DumpMachine` 行为可能有所不同。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-198">In general, Q# operations are agnostic to the machines on which they're run, but some features such as `DumpMachine` may behave differently.</span></span>
 
-4. <span data-ttu-id="9c4e6-199">执行模拟时，操作调用将返回在文件中定义的值 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-199">Upon performing the simulation, the operation call will return values as defined in the :::no-loc(Q#)::: file.</span></span>
+4. <span data-ttu-id="9c4e6-199">执行模拟时，操作调用将返回在文件中定义的值 Q# 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-199">Upon performing the simulation, the operation call will return values as defined in the Q# file.</span></span>
     <span data-ttu-id="9c4e6-200">目前没有返回任何内容，但稍后我们将显示分配和处理这些值的示例。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-200">For now there is nothing returned, but later on we will see an example of assigning and processing these values.</span></span>
     <span data-ttu-id="9c4e6-201">通过我们的数据和完全传统的结果数据，我们可以执行所需的任何操作。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-201">With the resultant data in our hands and totally classical, we can do whatever we'd like with it.</span></span>
 
@@ -313,7 +313,7 @@ Perform3qubitQFT.simulate()
 2. <span data-ttu-id="9c4e6-209">计算量子算法所需的任何参数。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-209">Compute any arguments required for the quantum algorithm.</span></span>
     <span data-ttu-id="9c4e6-210">在此示例中，没有任何内容。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-210">There are none in this example.</span></span>
 3. <span data-ttu-id="9c4e6-211">运行量子算法。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-211">Run the quantum algorithm.</span></span> 
-    <span data-ttu-id="9c4e6-212">每个 :::no-loc(Q#)::: 操作都会生成一个同名的 c # 类。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-212">Each :::no-loc(Q#)::: operation generates a C# class with the same name.</span></span> 
+    <span data-ttu-id="9c4e6-212">每个 Q# 操作都会生成一个同名的 c # 类。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-212">Each Q# operation generates a C# class with the same name.</span></span> 
     <span data-ttu-id="9c4e6-213">此类有一个 `Run` **异步** 运行操作的方法。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-213">This class has a `Run` method that runs the operation **asynchronously** .</span></span>
     <span data-ttu-id="9c4e6-214">运行是异步的，因为在实际硬件上运行它将是异步的。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-214">The run is asynchronous because running it on actual hardware will be asynchronous.</span></span> 
     <span data-ttu-id="9c4e6-215">由于 `Run` 方法是异步的，因此我们调用 `Wait()` 方法; 这将阻止运行，直到任务完成并同步返回结果。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-215">Because the `Run` method is asynchronous, we call the `Wait()` method; this blocks the run until the task completes and returns the result synchronously.</span></span> 
@@ -409,7 +409,7 @@ After:
 <span data-ttu-id="9c4e6-247">有很多种类的量程度量，但我们将重点介绍单个 qubits 上的最基本的： projective 度量值。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-247">There are many sorts of quantum measurements, but we will focus on the most basic: projective measurements on single qubits.</span></span>
 <span data-ttu-id="9c4e6-248">根据给定基础的度量值 (例如，计算基础 $ \{ \ket {0} ，\ket {1} \} $) ，将 qubit 状态投影到---的度量值，从而破坏两者之间的任何 superposition。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-248">Upon measurement in a given basis (e.g. the computational basis $ \{ \ket{0}, \ket{1} \} $), the qubit state is projected onto whichever basis state was measured---hence destroying any superposition between the two.</span></span>
 
-<span data-ttu-id="9c4e6-249">若要在程序内实现度量 :::no-loc(Q#)::: ，我们使用 `M`) 的操作 (`Microsoft.Quantum.Intrinsic` ，这将返回一个 `Result` 类型。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-249">To implement measurements within a :::no-loc(Q#)::: program, we use the `M` operation (from `Microsoft.Quantum.Intrinsic`), which returns a `Result` type.</span></span>
+<span data-ttu-id="9c4e6-249">若要在程序内实现度量 Q# ，我们使用 `M`) 的操作 (`Microsoft.Quantum.Intrinsic` ，这将返回一个 `Result` 类型。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-249">To implement measurements within a Q# program, we use the `M` operation (from `Microsoft.Quantum.Intrinsic`), which returns a `Result` type.</span></span>
 
 <span data-ttu-id="9c4e6-250">首先，我们修改 `Perform3QubitQFT` 操作以返回度量结果的数组， `Result[]` 而不是 `Unit` 。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-250">First, we modify our `Perform3QubitQFT` operation to return an array of measurement results, `Result[]`, instead of `Unit`.</span></span>
 
@@ -440,7 +440,7 @@ After:
 <span data-ttu-id="9c4e6-258">每个测量的 `Result` 类型 (`Zero` 或 `One`) 随后将添加到中的相应索引位置， `resultArray` 其中包含更新和重新分配语句。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-258">Each measured `Result` type (either `Zero` or `One`) is then added to the corresponding index position in `resultArray` with an update-and-reassign statement.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="9c4e6-259">此语句的语法对是唯一的 :::no-loc(Q#)::: ，但与 `resultArray[i] <- M(qs[i])` 其他语言（如 F # 和 R）中所示的类似变量重新分配相对应。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-259">The syntax of this statement is unique to :::no-loc(Q#):::, but corresponds to the similar variable reassignment `resultArray[i] <- M(qs[i])` seen in other languages such as F# and R.</span></span>
+> <span data-ttu-id="9c4e6-259">此语句的语法对是唯一的 Q# ，但与 `resultArray[i] <- M(qs[i])` 其他语言（如 F # 和 R）中所示的类似变量重新分配相对应。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-259">The syntax of this statement is unique to Q#, but corresponds to the similar variable reassignment `resultArray[i] <- M(qs[i])` seen in other languages such as F# and R.</span></span>
 
 <span data-ttu-id="9c4e6-260">关键字 `set` 始终用于重新分配使用绑定 `mutable` 的变量。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-260">The keyword `set` is always used to reassign variables bound using `mutable`.</span></span>
 
@@ -503,7 +503,7 @@ After:
 
 #### <a name="command-prompt"></a>[<span data-ttu-id="9c4e6-270">命令提示符</span><span class="sxs-lookup"><span data-stu-id="9c4e6-270">Command prompt</span></span>](#tab/tabid-cmdline)
 
-<span data-ttu-id="9c4e6-271">为了更好地理解将在控制台中打印的返回数组，我们可以 `Message` 在 :::no-loc(Q#)::: 该语句的紧前面添加另一个文件 `return` ：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-271">To have more understanding of the returned array which will be printed in the console, we can add another `Message` in the :::no-loc(Q#)::: file just before the `return` statement:</span></span>
+<span data-ttu-id="9c4e6-271">为了更好地理解将在控制台中打印的返回数组，我们可以 `Message` 在 Q# 该语句的紧前面添加另一个文件 `return` ：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-271">To have more understanding of the returned array which will be printed in the console, we can add another `Message` in the Q# file just before the `return` statement:</span></span>
 
 ```qsharp
         Message("Post-QFT measurement results [qubit0, qubit1, qubit2]: ");
@@ -696,12 +696,12 @@ Press any key to continue...
 <span data-ttu-id="9c4e6-291">在生成的输出中，你将看到逐步投影到 subspaces，因为每个 qubit 都进行了度量。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-291">In the resulting output, you will see the gradual projection into subspaces as each qubit is measured.</span></span>
 
 
-## <a name="use-the-no-locq-libraries"></a><span data-ttu-id="9c4e6-292">使用 :::no-loc(Q#)::: 库</span><span class="sxs-lookup"><span data-stu-id="9c4e6-292">Use the :::no-loc(Q#)::: libraries</span></span>
-<span data-ttu-id="9c4e6-293">正如我们在简介中所提到的，很多人都是这样的，这样您就可以 :::no-loc(Q#)::: 抽象掉处理个别 qubits 的烦恼。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-293">As we mentioned in the introduction, much of :::no-loc(Q#):::'s power rests in the fact that it allows you to abstract-away the worries of dealing with individual qubits.</span></span>
+## <a name="use-the-no-locq-libraries"></a><span data-ttu-id="9c4e6-292">使用 Q# 库</span><span class="sxs-lookup"><span data-stu-id="9c4e6-292">Use the Q# libraries</span></span>
+<span data-ttu-id="9c4e6-293">正如我们在简介中所提到的，很多人都是这样的，这样您就可以 Q# 抽象掉处理个别 qubits 的烦恼。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-293">As we mentioned in the introduction, much of Q#'s power rests in the fact that it allows you to abstract-away the worries of dealing with individual qubits.</span></span>
 <span data-ttu-id="9c4e6-294">当然，如果您想要开发完全规模的适用量程程序，请考虑某个操作是 `H` 在特定旋转之前还是之后才会减慢您的速度。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-294">Indeed, if you want to develop full-scale, applicable quantum programs, worrying about whether an `H` operation goes before or after a particular rotation would only slow you down.</span></span> 
 
-<span data-ttu-id="9c4e6-295">这些 :::no-loc(Q#)::: 库包含 [QFT](xref:Microsoft.Quantum.Canon.QFT) 操作，你只需执行此操作，即可将其应用于任意数量的 qubits。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-295">The :::no-loc(Q#)::: libraries contain the [QFT](xref:Microsoft.Quantum.Canon.QFT) operation, which you can simply take and apply for any number of qubits.</span></span>
-<span data-ttu-id="9c4e6-296">若要进行尝试，请在文件中定义一个新操作 :::no-loc(Q#)::: ，该操作具有相同的内容 `Perform3QubitQFT` ，但从第一个 `H` 到的内容 `SWAP` 替换为两个简单的行：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-296">To give it a try, define a new operation in your :::no-loc(Q#)::: file which has the same contents of `Perform3QubitQFT`, but with everything from the first `H` to the `SWAP` replaced by two easy lines:</span></span>
+<span data-ttu-id="9c4e6-295">这些 Q# 库包含 [QFT](xref:Microsoft.Quantum.Canon.QFT) 操作，你只需执行此操作，即可将其应用于任意数量的 qubits。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-295">The Q# libraries contain the [QFT](xref:Microsoft.Quantum.Canon.QFT) operation, which you can simply take and apply for any number of qubits.</span></span>
+<span data-ttu-id="9c4e6-296">若要进行尝试，请在文件中定义一个新操作 Q# ，该操作具有相同的内容 `Perform3QubitQFT` ，但从第一个 `H` 到的内容 `SWAP` 替换为两个简单的行：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-296">To give it a try, define a new operation in your Q# file which has the same contents of `Perform3QubitQFT`, but with everything from the first `H` to the `SWAP` replaced by two easy lines:</span></span>
 ```qsharp
             let register = BigEndian(qs);    //from Microsoft.Quantum.Arithmetic
             QFT(register);                   //from Microsoft.Quantum.Canon
@@ -709,7 +709,7 @@ Press any key to continue...
 <span data-ttu-id="9c4e6-297">第一行只是创建 [`BigEndian`](xref:Microsoft.Quantum.Arithmetic.BigEndian) qubits 的已分配数组的表达式，即 `qs` [QFT](xref:Microsoft.Quantum.Canon.QFT) 操作将其作为参数。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-297">The first line simply creates a [`BigEndian`](xref:Microsoft.Quantum.Arithmetic.BigEndian) expression of the allocated array of qubits, `qs`, which is what the [QFT](xref:Microsoft.Quantum.Canon.QFT) operation takes as an argument.</span></span>
 <span data-ttu-id="9c4e6-298">这对应于寄存器中 qubits 的索引排序。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-298">This corresponds to index ordering of the qubits in the register.</span></span>
 
-<span data-ttu-id="9c4e6-299">若要访问这些操作，请 `open` 在文件开头为其各自的命名空间添加语句 :::no-loc(Q#)::: ：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-299">To have access to these operations, add `open` statements for their respective namespaces at the beginning of the :::no-loc(Q#)::: file:</span></span>
+<span data-ttu-id="9c4e6-299">若要访问这些操作，请 `open` 在文件开头为其各自的命名空间添加语句 Q# ：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-299">To have access to these operations, add `open` statements for their respective namespaces at the beginning of the Q# file:</span></span>
 ```qsharp
     open Microsoft.Quantum.Canon;
     open Microsoft.Quantum.Arithmetic;
@@ -717,7 +717,7 @@ Press any key to continue...
 
 <span data-ttu-id="9c4e6-300">现在，调整主机程序以调用新操作的名称， (例如 `PerformIntrinsicQFT`) ，并为其试。</span><span class="sxs-lookup"><span data-stu-id="9c4e6-300">Now, adjust your host program to call the name of your new operation (e.g. `PerformIntrinsicQFT`), and give it a whirl.</span></span>
 
-<span data-ttu-id="9c4e6-301">若要查看使用库操作的实际优点 :::no-loc(Q#)::: ，请将 qubits 数改为 `3` 以下值：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-301">To see the real benefit of using the :::no-loc(Q#)::: library operations, change the number of qubits to something other than `3`:</span></span>
+<span data-ttu-id="9c4e6-301">若要查看使用库操作的实际优点 Q# ，请将 qubits 数改为 `3` 以下值：</span><span class="sxs-lookup"><span data-stu-id="9c4e6-301">To see the real benefit of using the Q# library operations, change the number of qubits to something other than `3`:</span></span>
 ```qsharp
         mutable resultArray = new Result[4];
 

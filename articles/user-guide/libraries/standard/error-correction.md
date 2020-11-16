@@ -1,14 +1,14 @@
 ---
-title: '标准库中的错误更正 :::no-loc(Q#):::'
-description: '了解如何在程序中使用纠错代码， :::no-loc(Q#)::: 同时保护 qubits 的状态。'
+title: '标准库中的错误更正 Q#'
+description: '了解如何在程序中使用纠错代码， Q# 同时保护 qubits 的状态。'
 author: QuantumWriter
 uid: microsoft.quantum.libraries.error-correction
 ms.author: martinro
 ms.date: 12/11/2017
 ms.topic: article
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 94251e185cea65c5fc08ed70d5fba9b7b19501e3
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -51,7 +51,7 @@ ms.locfileid: "92692033"
 <span data-ttu-id="e614d-139">另一方面，$Z _0 Z_1 \ket {100} =-\ket {100} $ and $Z _0 Z_1 \ket {011} =-\ket {011} $，因此衡量 $Z _0 Z_1 $ 的结果将显示有关发生了哪些错误的有用信息。</span><span class="sxs-lookup"><span data-stu-id="e614d-139">On the other hand, $Z_0 Z_1 \ket{100} = - \ket{100}$ and $Z_0 Z_1 \ket{011} = -\ket{011}$, so the result of measuring $Z_0 Z_1$ reveals useful information about which error occurred.</span></span>
 
 <span data-ttu-id="e614d-140">为了强调这一点，请重复上述表，但在每一行上添加度量 $Z _0 Z_1 $ 和 $Z _1 Z_2 $ 的结果。</span><span class="sxs-lookup"><span data-stu-id="e614d-140">To emphasize this, we repeat the table above, but add the results of measuring $Z_0 Z_1$ and $Z_1 Z_2$ on each row.</span></span>
-<span data-ttu-id="e614d-141">我们将每个度量值的结果表示为所观察到的 eigenvalue 的符号，分别为 $ + $ 或 $-$，分别对应于 :::no-loc(Q#)::: `Result` 和的值 `Zero` `One` 。</span><span class="sxs-lookup"><span data-stu-id="e614d-141">We denote the results of each measurement by the sign of the eigenvalue that is observed, either $+$ or $-$, corresponding to the :::no-loc(Q#)::: `Result` values of `Zero` and `One`, respectively.</span></span>
+<span data-ttu-id="e614d-141">我们将每个度量值的结果表示为所观察到的 eigenvalue 的符号，分别为 $ + $ 或 $-$，分别对应于 Q# `Result` 和的值 `Zero` `One` 。</span><span class="sxs-lookup"><span data-stu-id="e614d-141">We denote the results of each measurement by the sign of the eigenvalue that is observed, either $+$ or $-$, corresponding to the Q# `Result` values of `Zero` and `One`, respectively.</span></span>
 
 | <span data-ttu-id="e614d-142">错误 $E $</span><span class="sxs-lookup"><span data-stu-id="e614d-142">Error $E$</span></span> | <span data-ttu-id="e614d-143">$E \ket{\overline {0} } $</span><span class="sxs-lookup"><span data-stu-id="e614d-143">$E\ket{\overline{0}}$</span></span> | <span data-ttu-id="e614d-144">$E \ket{\overline {1} } $</span><span class="sxs-lookup"><span data-stu-id="e614d-144">$E\ket{\overline{1}}$</span></span> | <span data-ttu-id="e614d-145">$Z _0 的结果 Z_1 $</span><span class="sxs-lookup"><span data-stu-id="e614d-145">Result of $Z_0 Z_1$</span></span> | <span data-ttu-id="e614d-146">$Z _1 Z_2 $ 的结果</span><span class="sxs-lookup"><span data-stu-id="e614d-146">Result of $Z_1 Z_2$</span></span> |
 | --- | --- | --- | --- | --- |
@@ -71,16 +71,16 @@ ms.locfileid: "92692033"
 > <span data-ttu-id="e614d-165">通常，可以创建代码来处理更多错误，并处理 $Z $ 个错误以及 $X $ 个错误。</span><span class="sxs-lookup"><span data-stu-id="e614d-165">More generally, codes can be created to handle larger number of errors, and to handle $Z$ errors as well as $X$ errors.</span></span>
 
 <span data-ttu-id="e614d-166">对于在所有代码状态下以相同方式操作的量程错误更正，我们可以对其进行描述，这就是 *稳定的形式* 。</span><span class="sxs-lookup"><span data-stu-id="e614d-166">The insight that we can describe measurements in quantum error correction that act the same way on all code states, is the essence of the *stabilizer formalism* .</span></span>
-<span data-ttu-id="e614d-167">:::no-loc(Q#):::Canon 提供了一个框架，用于描述从稳定程序代码进行的编码和解码，并描述了一个从错误中恢复的方法。</span><span class="sxs-lookup"><span data-stu-id="e614d-167">The :::no-loc(Q#)::: canon provides a framework for describing encoding into and decoding from stabilizer codes, and for describing how one recovers from errors.</span></span>
+<span data-ttu-id="e614d-167">Q#Canon 提供了一个框架，用于描述从稳定程序代码进行的编码和解码，并描述了一个从错误中恢复的方法。</span><span class="sxs-lookup"><span data-stu-id="e614d-167">The Q# canon provides a framework for describing encoding into and decoding from stabilizer codes, and for describing how one recovers from errors.</span></span>
 <span data-ttu-id="e614d-168">在本部分中，我们使用几个简单的量程纠错代码描述此框架及其应用程序。</span><span class="sxs-lookup"><span data-stu-id="e614d-168">In this section, we describe this framework and its application to a few simple quantum error-correcting codes.</span></span>
 
 > [!TIP]
 > <span data-ttu-id="e614d-169">稳定介绍了对稳定形式的介绍。</span><span class="sxs-lookup"><span data-stu-id="e614d-169">A full introduction to the stabilizer formalism is beyond the scope of this section.</span></span>
 > <span data-ttu-id="e614d-170">我们向读者介绍了了解更多 [Gottesman 2009](https://arxiv.org/abs/0904.2557)的兴趣。</span><span class="sxs-lookup"><span data-stu-id="e614d-170">We refer readers interested in learning more to [Gottesman 2009](https://arxiv.org/abs/0904.2557).</span></span>
 
-## <a name="representing-error-correcting-codes-in-no-locq"></a><span data-ttu-id="e614d-171">表示中的纠错代码 :::no-loc(Q#):::</span><span class="sxs-lookup"><span data-stu-id="e614d-171">Representing Error Correcting Codes in :::no-loc(Q#):::</span></span> ##
+## <a name="representing-error-correcting-codes-in-no-locq"></a><span data-ttu-id="e614d-171">表示中的纠错代码 Q#</span><span class="sxs-lookup"><span data-stu-id="e614d-171">Representing Error Correcting Codes in Q#</span></span> ##
 
-<span data-ttu-id="e614d-172">为了帮助指定错误更正代码， :::no-loc(Q#)::: canon 提供了几种不同的用户定义类型：</span><span class="sxs-lookup"><span data-stu-id="e614d-172">To help specify error correcting codes, the :::no-loc(Q#)::: canon provides several distinct user-defined types:</span></span>
+<span data-ttu-id="e614d-172">为了帮助指定错误更正代码， Q# canon 提供了几种不同的用户定义类型：</span><span class="sxs-lookup"><span data-stu-id="e614d-172">To help specify error correcting codes, the Q# canon provides several distinct user-defined types:</span></span>
 
 - <span data-ttu-id="e614d-173"><xref:Microsoft.Quantum.ErrorCorrection.LogicalRegister>`= Qubit[]`：表示 qubits 的寄存器应解释为纠错代码的代码块。</span><span class="sxs-lookup"><span data-stu-id="e614d-173"><xref:Microsoft.Quantum.ErrorCorrection.LogicalRegister> `= Qubit[]`: Denotes that a register of qubits should be interpreted as the code block of an error-correcting code.</span></span>
 - <span data-ttu-id="e614d-174"><xref:Microsoft.Quantum.ErrorCorrection.Syndrome>`= Result[]`：表示度量结果的数组应解释为在代码块上测量的症状。</span><span class="sxs-lookup"><span data-stu-id="e614d-174"><xref:Microsoft.Quantum.ErrorCorrection.Syndrome> `= Result[]`: Denotes that an array of measurement results should be interpreted as the syndrome measured on a code block.</span></span>
@@ -122,4 +122,4 @@ using (scratch = Qubit[nScratch]) {
 
 <span data-ttu-id="e614d-185">我们将在 [位翻转代码示例](https://github.com/microsoft/Quantum/tree/main/samples/error-correction/bit-flip-code)中更详细地探讨这一点。</span><span class="sxs-lookup"><span data-stu-id="e614d-185">We explore this in more detail in the [bit flip code sample](https://github.com/microsoft/Quantum/tree/main/samples/error-correction/bit-flip-code).</span></span>
 
-<span data-ttu-id="e614d-186">除了位翻转代码 :::no-loc(Q#)::: 外，canon 还提供了 [5 qubit 完美代码](https://arxiv.org/abs/quant-ph/9602019)的实现和 [七 qubit 代码](https://arxiv.org/abs/quant-ph/9705052)，这两者都可以更正任意单 qubit 错误。</span><span class="sxs-lookup"><span data-stu-id="e614d-186">Aside from the bit-flip code, the :::no-loc(Q#)::: canon is provided with implementations of the [five-qubit perfect code](https://arxiv.org/abs/quant-ph/9602019), and the [seven-qubit code](https://arxiv.org/abs/quant-ph/9705052), both of which can correct an arbitrary single-qubit error.</span></span>
+<span data-ttu-id="e614d-186">除了位翻转代码 Q# 外，canon 还提供了 [5 qubit 完美代码](https://arxiv.org/abs/quant-ph/9602019)的实现和 [七 qubit 代码](https://arxiv.org/abs/quant-ph/9705052)，这两者都可以更正任意单 qubit 错误。</span><span class="sxs-lookup"><span data-stu-id="e614d-186">Aside from the bit-flip code, the Q# canon is provided with implementations of the [five-qubit perfect code](https://arxiv.org/abs/quant-ph/9602019), and the [seven-qubit code](https://arxiv.org/abs/quant-ph/9705052), both of which can correct an arbitrary single-qubit error.</span></span>

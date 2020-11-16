@@ -1,14 +1,14 @@
 ---
-title: '中的变量 :::no-loc(Q#):::'
-description: '了解如何使用中的不同变量 :::no-loc(Q#):::'
+title: '中的变量 Q#'
+description: '了解如何使用中的不同变量 Q#'
 author: gillenhaalb
 ms.author: a-gibec
 ms.date: 03/05/2020
 ms.topic: article
 uid: microsoft.quantum.guide.variables
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 67c71c09e004d77360902360fefc7a7752e4a829
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -16,16 +16,16 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92690934"
 ---
-# <a name="variables-in-no-locq"></a><span data-ttu-id="39242-103">中的变量 :::no-loc(Q#):::</span><span class="sxs-lookup"><span data-stu-id="39242-103">Variables in :::no-loc(Q#):::</span></span>
+# <a name="variables-in-no-locq"></a><span data-ttu-id="39242-103">中的变量 Q#</span><span class="sxs-lookup"><span data-stu-id="39242-103">Variables in Q#</span></span>
 
-<span data-ttu-id="39242-104">:::no-loc(Q#)::: 区分可变和不可变的符号（或 *变量* ，它们被绑定/分配到表达式）。</span><span class="sxs-lookup"><span data-stu-id="39242-104">:::no-loc(Q#)::: distinguishes between mutable and immutable symbols, or *variables* , which are bound/assigned to expressions.</span></span>
+<span data-ttu-id="39242-104">Q# 区分可变和不可变的符号（或 *变量* ，它们被绑定/分配到表达式）。</span><span class="sxs-lookup"><span data-stu-id="39242-104">Q# distinguishes between mutable and immutable symbols, or *variables* , which are bound/assigned to expressions.</span></span>
 <span data-ttu-id="39242-105">通常，建议使用不可变符号，因为它允许编译器执行更多优化。</span><span class="sxs-lookup"><span data-stu-id="39242-105">In general, the use of immutable symbols is encouraged because it allows the compiler to perform more optimizations.</span></span>
 
 <span data-ttu-id="39242-106">绑定的左侧由一个符号元组和一个表达式的右侧组成。</span><span class="sxs-lookup"><span data-stu-id="39242-106">The left-hand-side of a binding consists of a symbol tuple and the right-hand side of an expression.</span></span>
 
 ## <a name="immutable-variables"></a><span data-ttu-id="39242-107">不可变变量</span><span class="sxs-lookup"><span data-stu-id="39242-107">Immutable Variables</span></span>
 
-<span data-ttu-id="39242-108">您可以通过使用关键字，将中任何类型的值分配 :::no-loc(Q#)::: 给变量以便在操作或函数内重复使用 `let` 。</span><span class="sxs-lookup"><span data-stu-id="39242-108">You can assign a value of any type in :::no-loc(Q#)::: to a variable for reuse within an operation or function by using the `let` keyword.</span></span> 
+<span data-ttu-id="39242-108">您可以通过使用关键字，将中任何类型的值分配 Q# 给变量以便在操作或函数内重复使用 `let` 。</span><span class="sxs-lookup"><span data-stu-id="39242-108">You can assign a value of any type in Q# to a variable for reuse within an operation or function by using the `let` keyword.</span></span> 
 
 <span data-ttu-id="39242-109">不可变绑定包含关键字 `let` ，后跟符号或符号元组、等号 `=` 、用于将 (符号绑定到) 的表达式以及终止分号。</span><span class="sxs-lookup"><span data-stu-id="39242-109">An immutable binding consists of the keyword `let`, followed by a symbol or symbol tuple, an equals sign `=`, an expression to bind the symbol(s) to, and a terminating semicolon.</span></span>
 
@@ -110,7 +110,7 @@ function ComplexSum(reals : Double[], ims : Double[]) : Complex[] {
 }
 ```
 
-<span data-ttu-id="39242-134">对于数组， [`Microsoft.Quantum.Arrays`](xref:Microsoft.Quantum.Arrays) 在标准库中， :::no-loc(Q#)::: 可以为许多常见数组初始化和操作需要提供所需的工具，从而有助于避免第一次更新数组项。</span><span class="sxs-lookup"><span data-stu-id="39242-134">In the case of arrays, [`Microsoft.Quantum.Arrays`](xref:Microsoft.Quantum.Arrays) in the :::no-loc(Q#)::: standard library provides the necessary tools for many common array initialization and manipulation needs, and thus helps avoid having to update array items in the first place.</span></span> 
+<span data-ttu-id="39242-134">对于数组， [`Microsoft.Quantum.Arrays`](xref:Microsoft.Quantum.Arrays) 在标准库中， Q# 可以为许多常见数组初始化和操作需要提供所需的工具，从而有助于避免第一次更新数组项。</span><span class="sxs-lookup"><span data-stu-id="39242-134">In the case of arrays, [`Microsoft.Quantum.Arrays`](xref:Microsoft.Quantum.Arrays) in the Q# standard library provides the necessary tools for many common array initialization and manipulation needs, and thus helps avoid having to update array items in the first place.</span></span> 
 
 <span data-ttu-id="39242-135">如果需要，更新和重新分配语句提供了一种替代方法：</span><span class="sxs-lookup"><span data-stu-id="39242-135">Update-and-reassign statements provide an alternative if needed:</span></span>
 
@@ -239,4 +239,4 @@ if (a == b) {
 
 ## <a name="next-steps"></a><span data-ttu-id="39242-158">后续步骤</span><span class="sxs-lookup"><span data-stu-id="39242-158">Next steps</span></span>
 
-<span data-ttu-id="39242-159">了解如何使用中 [的 Qubits](xref:microsoft.quantum.guide.qubits) :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="39242-159">Learn about [Working With Qubits](xref:microsoft.quantum.guide.qubits) in :::no-loc(Q#):::.</span></span>
+<span data-ttu-id="39242-159">了解如何使用中 [的 Qubits](xref:microsoft.quantum.guide.qubits) Q# 。</span><span class="sxs-lookup"><span data-stu-id="39242-159">Learn about [Working With Qubits](xref:microsoft.quantum.guide.qubits) in Q#.</span></span>

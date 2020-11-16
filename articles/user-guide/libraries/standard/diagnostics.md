@@ -1,13 +1,13 @@
 ---
-title: '标准库中的诊断 :::no-loc(Q#):::'
-description: '了解 :::no-loc(Q#)::: 用于在量程程序中捕获错误或错误的标准库中的诊断功能和操作。'
+title: '标准库中的诊断 Q#'
+description: '了解 Q# 用于在量程程序中捕获错误或错误的标准库中的诊断功能和操作。'
 author: cgranade
 uid: microsoft.quantum.libraries.diagnostics
 ms.author: chgranad
 ms.topic: article
 no-loc:
-- ':::no-loc(Q#):::'
-- ':::no-loc($$v):::'
+- 'Q#'
+- '$$v'
 ms.openlocfilehash: 1ab9b77c7536a1860064110810371d3a68e95b40
 ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
 ms.translationtype: MT
@@ -18,7 +18,7 @@ ms.locfileid: "92690846"
 # <a name="diagnostics"></a><span data-ttu-id="0d069-103">诊断</span><span class="sxs-lookup"><span data-stu-id="0d069-103">Diagnostics</span></span> #
 
 <span data-ttu-id="0d069-104">与传统开发一样，能够在量程程序中诊断错误和错误非常重要。</span><span class="sxs-lookup"><span data-stu-id="0d069-104">As with classical development, it is important to be able to diagnose mistakes and errors in quantum programs.</span></span>
-<span data-ttu-id="0d069-105">:::no-loc(Q#):::标准库提供各种不同的方法来确保量程程序的正确性，如中所述 <xref:microsoft.quantum.guide.testingdebugging> 。</span><span class="sxs-lookup"><span data-stu-id="0d069-105">The :::no-loc(Q#)::: standard libraries provide a variety of different ways to ensure the correctness of quantum programs, as detailed in <xref:microsoft.quantum.guide.testingdebugging>.</span></span>
+<span data-ttu-id="0d069-105">Q#标准库提供各种不同的方法来确保量程程序的正确性，如中所述 <xref:microsoft.quantum.guide.testingdebugging> 。</span><span class="sxs-lookup"><span data-stu-id="0d069-105">The Q# standard libraries provide a variety of different ways to ensure the correctness of quantum programs, as detailed in <xref:microsoft.quantum.guide.testingdebugging>.</span></span>
 <span data-ttu-id="0d069-106">很多情况下，这种支持采用函数和操作的形式，可指示目标计算机向宿主程序或开发人员提供额外的诊断信息，或强制执行由函数或操作调用表示的条件和固定条件的正确性。</span><span class="sxs-lookup"><span data-stu-id="0d069-106">Largely speaking, this support comes in the form of functions and operations that either instruct the target machine to provide additional diagnostic information to the host program or developer, or enforce the correctness of conditions and invariants expressed by the function or operation call.</span></span>
 
 ## <a name="machine-diagnostics"></a><span data-ttu-id="0d069-107">计算机诊断</span><span class="sxs-lookup"><span data-stu-id="0d069-107">Machine Diagnostics</span></span> ##
@@ -27,13 +27,13 @@ ms.locfileid: "92690846"
 <span data-ttu-id="0d069-109">默认情况下，这会将字符串写入控制台。</span><span class="sxs-lookup"><span data-stu-id="0d069-109">By default, this writes the string to the console.</span></span>
 <span data-ttu-id="0d069-110">与内插字符串一起使用， <xref:Microsoft.Quantum.Intrinsic.Message> 可以轻松地报告有关传统值的诊断信息：</span><span class="sxs-lookup"><span data-stu-id="0d069-110">Used together with interpolated strings, <xref:Microsoft.Quantum.Intrinsic.Message> makes it easy to report diagnostic information about classical values:</span></span>
 
-```:::no-loc(Q#):::
+```Q#
 let angle = Microsoft.Quantum.Math.PI() * 2.0 / 3.0;
 Message($"About to rotate by an angle of {angle}...");
 ```
 
 > [!NOTE]
-> <span data-ttu-id="0d069-111">`Message` 具有签名 `(String -> Unit)` ，而不能在中观察发出调试日志消息的 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="0d069-111">`Message` has signature `(String -> Unit)`, again representing that emitting a debug log message cannot be observed from within :::no-loc(Q#):::.</span></span>
+> <span data-ttu-id="0d069-111">`Message` 具有签名 `(String -> Unit)` ，而不能在中观察发出调试日志消息的 Q# 。</span><span class="sxs-lookup"><span data-stu-id="0d069-111">`Message` has signature `(String -> Unit)`, again representing that emitting a debug log message cannot be observed from within Q#.</span></span>
 
 <span data-ttu-id="0d069-112"><xref:Microsoft.Quantum.Diagnostics.DumpMachine>和 <xref:Microsoft.Quantum.Diagnostics.DumpRegister> callables 指示目标计算机提供有关当前已分配的所有 qubits 的诊断信息，或分别提供有关 qubits 的特定寄存器的诊断信息。</span><span class="sxs-lookup"><span data-stu-id="0d069-112">The <xref:Microsoft.Quantum.Diagnostics.DumpMachine> and <xref:Microsoft.Quantum.Diagnostics.DumpRegister> callables instruct target machines to provide diagnostic information about all currently allocated qubits or about a specific register of qubits, respectively.</span></span>
 <span data-ttu-id="0d069-113">每个目标计算机因提供的诊断信息而异，以响应转储指令。</span><span class="sxs-lookup"><span data-stu-id="0d069-113">Each target machine varies in what diagnostic information is provided in response to a dump instruction.</span></span>
@@ -52,7 +52,7 @@ Message($"About to rotate by an angle of {angle}...");
 <span data-ttu-id="0d069-121">例如， `EqualityFactI(1 + 1, 2, "1 + 1 != 2")` 表示 $1 + 1 = $2 的数学事实，而 `AssertQubit(One, qubit)` 表示测量 `qubit` 将返回具有确定性的条件的条件 `One` 。</span><span class="sxs-lookup"><span data-stu-id="0d069-121">For example, `EqualityFactI(1 + 1, 2, "1 + 1 != 2")` represents the mathematical fact that $1 + 1 = 2$, while `AssertQubit(One, qubit)` represents the condition that measuring `qubit` will return a `One` with certainty.</span></span>
 <span data-ttu-id="0d069-122">在前一种情况下，我们可以检查只给定其值的条件的正确性，而在后一种情况下，我们必须知道 qubit 的状态，以便评估断言。</span><span class="sxs-lookup"><span data-stu-id="0d069-122">In the former case, we can check the correctness of the condition given only its values, while in the latter, we must know something about the state of the qubit in order to evaluate the assertion.</span></span>
 
-<span data-ttu-id="0d069-123">:::no-loc(Q#):::标准库提供了若干不同的函数来表示事实，其中包括：</span><span class="sxs-lookup"><span data-stu-id="0d069-123">The :::no-loc(Q#)::: standard libraries provide several different functions for representing facts, including:</span></span>
+<span data-ttu-id="0d069-123">Q#标准库提供了若干不同的函数来表示事实，其中包括：</span><span class="sxs-lookup"><span data-stu-id="0d069-123">The Q# standard libraries provide several different functions for representing facts, including:</span></span>
 
 - <xref:Microsoft.Quantum.Diagnostics.Fact>
 - <xref:Microsoft.Quantum.Diagnostics.EqualityWithinToleranceFact>
@@ -70,7 +70,7 @@ Message($"About to rotate by an angle of {angle}...");
 <span data-ttu-id="0d069-129">如果断言失败，则运行将通过调用 `fail` 给定的消息结束。</span><span class="sxs-lookup"><span data-stu-id="0d069-129">If the assertion fails, the run ends by calling `fail` with the given message.</span></span>
 <span data-ttu-id="0d069-130">默认情况下，不实现此操作;可支持它的模拟器应该提供执行运行时检查的实现。</span><span class="sxs-lookup"><span data-stu-id="0d069-130">By default, this operation is not implemented; simulators that can support it should provide an implementation that performs runtime checking.</span></span>
 <span data-ttu-id="0d069-131">`AssertMeasurement` 具有签名 `((Pauli[], Qubit[], Result, String) -> ())` 。</span><span class="sxs-lookup"><span data-stu-id="0d069-131">`AssertMeasurement` has signature `((Pauli[], Qubit[], Result, String) -> ())`.</span></span>
-<span data-ttu-id="0d069-132">由于 `AssertMeasurement` 是一个带有空元组作为其输出类型的函数，因此不能在 `AssertMeasurement` 程序中使用具有调用的效果 :::no-loc(Q#)::: 。</span><span class="sxs-lookup"><span data-stu-id="0d069-132">Since `AssertMeasurement` is a function with an empty tuple as its output type, no effects from having called `AssertMeasurement` are observable within a :::no-loc(Q#)::: program.</span></span>
+<span data-ttu-id="0d069-132">由于 `AssertMeasurement` 是一个带有空元组作为其输出类型的函数，因此不能在 `AssertMeasurement` 程序中使用具有调用的效果 Q# 。</span><span class="sxs-lookup"><span data-stu-id="0d069-132">Since `AssertMeasurement` is a function with an empty tuple as its output type, no effects from having called `AssertMeasurement` are observable within a Q# program.</span></span>
 
 <span data-ttu-id="0d069-133">在 <xref:Microsoft.Quantum.Diagnostics.AssertMeasurementProbability> 给定 Pauli 基础上测量给定 qubits 的操作函数断言在某种程度上具有给定概率的给定结果。</span><span class="sxs-lookup"><span data-stu-id="0d069-133">The <xref:Microsoft.Quantum.Diagnostics.AssertMeasurementProbability> operation function asserts that measuring the given qubits in the given Pauli basis will have the given result with the given probability, within some tolerance.</span></span>
 <span data-ttu-id="0d069-134">容差是加法 (例如 `abs(expected-actual) < tol`) 。</span><span class="sxs-lookup"><span data-stu-id="0d069-134">Tolerance is additive (for example, `abs(expected-actual) < tol`).</span></span>
