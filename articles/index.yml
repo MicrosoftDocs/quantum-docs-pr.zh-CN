@@ -10,12 +10,12 @@ metadata:
   author: cjgronlund
   ms.author: cgronlun
   ms.date: 5/10/2020
-  ms.openlocfilehash: 313ee49f4e6ad25e57c47a9d95a1617326af3bec
-  ms.sourcegitcommit: 0181e7c9e98f9af30ea32d3cd8e7e5e30257a4dc
+  ms.openlocfilehash: 9359281ecb661d5697e94e75e549bf54f323efe8
+  ms.sourcegitcommit: fd57a845d013ae4578715d04b1ed1edc1c8ff6b4
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 06/23/2020
-  ms.locfileid: "85269518"
+  ms.lasthandoff: 11/18/2020
+  ms.locfileid: "94870730"
 landingContent:
 - title: 量子计算
   linkLists:
@@ -30,7 +30,7 @@ landingContent:
     - text: 用于量子计算的线性代数
       url: overview/algebra-for-quantum-computing.md
     - text: 用于量子计算的 Microsoft Learn 模块
-      url: https://docs.microsoft.com/users/buildcollections2020-6557/collections/1o2iogrmn8x4r
+      url: https://docs.microsoft.com/learn/paths/quantum-computing-fundamentals/
   - linkListType: concept
     links:
     - text: 量子计算概念
