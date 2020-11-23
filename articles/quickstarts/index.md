@@ -10,12 +10,12 @@ uid: microsoft.quantum.install
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 74b9b3d8f694072f5b5f4d0eb520263387de8919
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: f0c3df1998f9b64ff6544867b83a7afe52b6f46d
+ms.sourcegitcommit: fd57a845d013ae4578715d04b1ed1edc1c8ff6b4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834476"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94870758"
 ---
 # <a name="setting-up-the-microsoft-quantum-development-kit-qdk"></a>设置 Microsoft Quantum 开发工具包 (QDK)
 
@@ -40,12 +40,48 @@ Q# 程序可以使用 Visual Studio Code 或 Visual Studio，通过具有 IQ# Ju
 
 你可以在大多数你喜欢的 IDE 中开发 Q# 代码，还可以将 Q# 与其他语言（例如 Python 和 .NET (C#、F#)）集成。
 
-|&nbsp; | **VS Code<br>（2019 或更高版本）**| **Visual Studio<br>（2019 或更高版本）** | **Jupyter Notebook** | **命令行**|
-|:-----|:-----:|:-----:|:-----:|:-----:|
-|操作系统  |Windows、macOS、Linux |仅限 Windows |Windows、macOS、Linux |Windows、macOS、Linux |
-|<br>**Q# 独立** |<br>[安装](xref:microsoft.quantum.install.standalone) |<br> [安装](xref:microsoft.quantum.install.standalone)  |<br> [安装](xref:microsoft.quantum.install.jupyter) |<br>[安装](xref:microsoft.quantum.install.standalone)|
-|**Q# 和 Python** |[安装](xref:microsoft.quantum.install.python) |[安装](xref:microsoft.quantum.install.python) |[安装](xref:microsoft.quantum.install.jupyter) |[安装](xref:microsoft.quantum.install.python) |
-|**Q# 和 .NET（C#、F#）**|[安装](xref:microsoft.quantum.install.cs) |[安装](xref:microsoft.quantum.install.cs)|&#10006; |[安装](xref:microsoft.quantum.install.cs) |
+<table>
+    <tr>
+        <th width=10%>&nbsp;</th>
+        <th>&nbsp;</th>
+        <th align="center" width=18%><img src="~/media/vs_code.png" alt="VS Code" width="50"/><br><b>VS Code<br>(2019 年或以后)</b></th>
+        <th align="center" width=18%><img src="~/media/vs_studio.png" alt="VS Studio" width="50"/><br><b>VS Studio<br>(2019 年或以后)</b></th>
+        <th align="center" width=18%><img src="~/media/jupyter-wht.png" alt="jupyter install" width="65"/><br><b>Jupyter Notebook</b></th>
+        <th align="center" width=18%><img src="~/media/blank.png" alt="blank spacer" width="65"/><br><b>命令行</b></th>
+    </tr>
+    <tr>
+        <th>&nbsp;</th>
+        <td align="left"><b>OS 支持：</b></td>
+        <td align="center">Windows、macOS、Linux</td>
+        <td align="center">仅限 Windows</td>
+        <td align="center">Windows、macOS、Linux</td>
+        <td align="center">Windows、macOS、Linux</td>
+    </tr>
+    <tr>
+        <td align="right"><img src="~/media/quantum-wht.png" alt="QDK" width="60"/></td>
+        <td align="left"><b>Q# 独立</b></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.standalone">安装</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.standalone">安装</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.jupyter">安装</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.standalone">安装</a></td>
+    </tr>
+    <tr>
+        <td align="right"><img src="~/media/python.png" alt="python install" width="50"/></td>
+        <td align="left"><b>Q# 和 Python</b></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.python">安装</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.python">安装</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.jupyter">安装</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.python">安装</a></td>
+    </tr>
+    <tr>
+        <td align="right"><img src="~/media/dot_net.png" alt="dotnet install" width="50"/></td>
+        <td align="left"><b>Q# 和 .NET（C#、F#）</b></td> 
+        <td align="center"><a href="xref:microsoft.quantum.install.cs">安装</a></td>
+        <td align="center"><a href="xref:microsoft.quantum.install.cs">安装</a></td>
+        <td align="center">&#10006;</td>
+        <td align="center"><a href="xref:microsoft.quantum.install.cs">安装</a></td>
+   </tr>
+</table>
 
 ## <a name="use-the-qdk-online"></a>联机使用 QDK
 
