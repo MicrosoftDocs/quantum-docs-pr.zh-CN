@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AssertQubitIsInStateWithinTolerance
 title: AssertQubitIsInStateWithinTolerance 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Asserts that a qubit in the expected state.
 
   `expected` represents a complex vector, $\ket{\psi} = \begin{bmatrix}a & b\end{bmatrix}^{\mathrm{T}}$. The first element of the tuples representing each of $a$, $b$ is the real part of the complex number, while the second one is the imaginary part. The last argument defines the tolerance with which assertion is made.
-ms.openlocfilehash: 5d34bdac53870326dacb5a11c27c857793c3f420
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1ceb7243cba93e42c67cc3655283a5d07c96863e
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695592"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96202203"
 ---
 # <a name="assertqubitisinstatewithintolerance-operation"></a>AssertQubitIsInStateWithinTolerance 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Diagnostics)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 断言处于预期状态的 qubit。
@@ -58,7 +58,7 @@ operation AssertQubitIsInStateWithinTolerance (expected : (Microsoft.Quantum.Mat
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 以下 Mathematica 代码可用于验证 mi、mx、my、mz 的表达式：
 

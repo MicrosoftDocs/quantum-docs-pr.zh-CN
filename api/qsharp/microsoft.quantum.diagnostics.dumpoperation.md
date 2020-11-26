@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.DumpOperation
 title: DumpOperation 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: DumpOperation
 qsharp.summary: Given an operation, displays diagnostics about the operation that are made available by the current execution target.
-ms.openlocfilehash: 444d42e2440b30b3bdf50d55a399568bed063222
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: b0e07173ddbeb8a96d4a85928258b6e30deb394d
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695581"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96202050"
 ---
 # <a name="dumpoperation-operation"></a>DumpOperation 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Diagnostics)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 在给定操作的情况下，显示有关当前执行目标可用的操作的诊断。
@@ -35,7 +35,7 @@ operation DumpOperation (nQubits : Int, op : (Qubit[] => Unit is Adj)) : Unit
 给定操作对其起作用的 qubits 的数目。
 
 
-### <a name="op--qubit--unit-adj"></a>op： [Qubit](xref:microsoft.quantum.lang-ref.qubit)[] => [单位](xref:microsoft.quantum.lang-ref.unit) 形容词
+### <a name="op--qubit--unit--is-adj"></a>op： [Qubit](xref:microsoft.quantum.lang-ref.qubit)[] => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词
 
 要诊断的操作。
 
@@ -45,7 +45,7 @@ operation DumpOperation (nQubits : Int, op : (Qubit[] => Unit is Adj)) : Unit
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 调用此操作在 Q # 内没有明显的效果。 显示的确切诊断（如果有）依赖于当前的执行目标和编辑器环境。
 例如，在全状态量程模拟器上使用时，会显示一个用于表示的单一矩阵 `op` 。

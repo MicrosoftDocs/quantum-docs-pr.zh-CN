@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.EqualityFactR
 title: EqualityFactR 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: EqualityFactR
 qsharp.summary: Asserts that a classical Result variable has the expected value.
-ms.openlocfilehash: 2b293dc581ed58f7e3864a952fb3ecafa68e759c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 166dff211d6db9da5d39c607af1924ffd6d276dd
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695564"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96201761"
 ---
 # <a name="equalityfactr-function"></a>EqualityFactR 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Diagnostics)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 断言传统结果变量具有预期值。
@@ -30,7 +30,7 @@ function EqualityFactR (actual : Result, expected : Result, message : String) : 
 
 ## <a name="input"></a>输入
 
-### <a name="actual--__invalidresult__"></a>实际： __无效 <Result>__
+### <a name="actual--__invalidresult__"></a>实际：__无效 <Result>__
 
 要检查的变量。
 

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.FiveQubitCode
 title: FiveQubitCode 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: FiveQubitCode
 qsharp.summary: Returns a QECC value representing the ⟦5, 1, 3⟧ code encoder and decoder with in-place syndrome measurement.
-ms.openlocfilehash: 7509de880b1e3ea8964b61e4b3f034ce20b2f202
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 3b45af29897735905f7fe52340e2a8e425bd8cbe
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695507"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96200877"
 ---
 # <a name="fivequbitcode-function"></a>FiveQubitCode 函数
 
 命名空间： [ErrorCorrection](xref:Microsoft.Quantum.ErrorCorrection)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 返回一个 QECC 值，该值表示⟦5、1、3⟧代码编码器和解码器，并提供就地的症状度量。
@@ -32,7 +32,7 @@ function FiveQubitCode () : Microsoft.Quantum.ErrorCorrection.QECC
 
 通过指定类型返回量程错误更正代码的实现 `QECC` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 以下两篇文章中单独找到了此代码：
 

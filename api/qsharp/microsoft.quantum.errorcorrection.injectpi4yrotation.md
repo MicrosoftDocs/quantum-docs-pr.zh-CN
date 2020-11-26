@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.InjectPi4YRotation
 title: InjectPi4YRotation 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: InjectPi4YRotation
 qsharp.summary: Rotates a single qubit by π/4 about the Y-axis.
-ms.openlocfilehash: 8558767050c317661dfb490143fa3c8f4ea009e2
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 4ff0abe67a6d18204e417a45f8d8f1d092d02b88
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695504"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96200792"
 ---
 # <a name="injectpi4yrotation-operation"></a>InjectPi4YRotation 操作
 
 命名空间： [ErrorCorrection](xref:Microsoft.Quantum.ErrorCorrection)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 围绕 Y 轴旋转单个 qubit 乘以π/4。
 
 ```qsharp
-operation InjectPi4YRotation (data : Qubit, magic : Qubit) : Unit
+operation InjectPi4YRotation (data : Qubit, magic : Qubit) : Unit is Adj
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 执行关于的π/4 旋转 `Y` 。
 
@@ -52,7 +52,7 @@ operation InjectPi4YRotation (data : Qubit, magic : Qubit) : Unit
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 以下项是等效的：
 

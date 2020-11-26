@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AssertMeasurementProbability
 title: AssertMeasurementProbability 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: AssertMeasurementProbability
 qsharp.summary: Asserts that measuring the given qubits in the given Pauli basis will have the given result with the given probability, within some tolerance.
-ms.openlocfilehash: ff0419706d825442492f82e564f1cce86f1b112f
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 032b9224ad728f0637596668c2928a889deeba55
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695598"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96202356"
 ---
 # <a name="assertmeasurementprobability-operation"></a>AssertMeasurementProbability 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Diagnostics)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 在给定 Pauli 基础上测量给定 qubits 的断言在某种程度上具有给定概率的给定结果。
 
 ```qsharp
-operation AssertMeasurementProbability (bases : Pauli[], qubits : Qubit[], result : Result, prob : Double, msg : String, tol : Double) : Unit
+operation AssertMeasurementProbability (bases : Pauli[], qubits : Qubit[], result : Result, prob : Double, msg : String, tol : Double) : Unit is Adj + Ctl
 ```
 
 
@@ -40,7 +40,7 @@ operation AssertMeasurementProbability (bases : Pauli[], qubits : Qubit[], resul
 要对其进行断言的寄存器。
 
 
-### <a name="result--__invalidresult__"></a>结果： __无效 <Result>__
+### <a name="result--__invalidresult__"></a>结果：__无效 <Result>__
 
 的预期结果 `Measure(bases, qubits)` 。
 
@@ -65,7 +65,7 @@ operation AssertMeasurementProbability (bases : Pauli[], qubits : Qubit[], resul
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 请注意，此操作的 Adjoint 和受控版本将不检查该条件。
 

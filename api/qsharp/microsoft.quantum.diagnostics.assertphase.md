@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AssertPhase
 title: AssertPhase 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: AssertPhase
 qsharp.summary: Asserts that the phase of an equal superposition state has the expected value.
-ms.openlocfilehash: e042c03d2a72d9ce4816a8cdb56603e175b22807
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 9130d6c735d90abbc51989ef4a68a8eff8b41371
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695594"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96202254"
 ---
 # <a name="assertphase-operation"></a>AssertPhase 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Diagnostics)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 断言 superposition 状态相同的阶段具有预期值。
@@ -28,7 +28,7 @@ operation AssertPhase (expected : Double, qubit : Qubit, tolerance : Double) : U
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此操作断言对于一些任意实 $t $，可以表示为 $ \frac{e ^ {i t}} {\sqrt {2} } (e ^ {i\phi} \ 票证 {0} + e ^ {-i\phi} \ 票证) $ 的阶段 $ \phi $ {1} 具有预期值。
 

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.EqualityFactCP
 title: EqualityFactCP 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: EqualityFactCP
 qsharp.summary: Asserts that a complex number has the expected value.
-ms.openlocfilehash: 1ea790debb5a9123fb8bee3a5f8a1fde0a050b37
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 39b55e17302f9d2e5049169e9c1a74e53a8b1115
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695568"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96201846"
 ---
 # <a name="equalityfactcp-function"></a>EqualityFactCP 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Diagnostics)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 断言复数具有预期值。

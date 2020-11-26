@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AllowAtMostNQubits
 title: AllowAtMostNQubits 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: AllowAtMostNQubits
 qsharp.summary: Between a call to this operation and its adjoint, asserts that at most a given number of additional qubits are allocated with using statements.
-ms.openlocfilehash: ddbed96df0d95cfd78730c091a6a81ee6e49c349
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 5376b6f39d12d664342fbf71e67442c6ef8a0827
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695609"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96202543"
 ---
 # <a name="allowatmostnqubits-operation"></a>AllowAtMostNQubits 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Diagnostics)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 在对此操作及其 adjoint 的调用之间，将使用语句最多地断言给定数量的附加 qubits。
 
 ```qsharp
-operation AllowAtMostNQubits (nQubits : Int, message : String) : Unit
+operation AllowAtMostNQubits (nQubits : Int, message : String) : Unit is Adj
 ```
 
 
@@ -45,6 +45,6 @@ operation AllowAtMostNQubits (nQubits : Int, message : String) : Unit
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 对于不支持此操作的目标，此操作可能会替换为不支持操作。

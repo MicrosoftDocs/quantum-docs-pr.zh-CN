@@ -3,16 +3,16 @@ functions: []
 name: Microsoft.Quantum.Environment
 newtypes: []
 operations:
-- summary: 返回当前可用于借用的 qubits 的数目。 这包括未使用的 qubits;也就是说，这包括由返回的 qubits `GetQubitsAvailableToUse` 。
+- summary: 返回当前可用于借用的 qubits 的数目。
   uid: Microsoft.Quantum.Environment.GetQubitsAvailableToBorrow
 - summary: 返回当前可供使用的 qubits 的数目。
   uid: Microsoft.Quantum.Environment.GetQubitsAvailableToUse
 summary: 这些函数提供有关在其中发生量程计算的环境的信息。
 uid: Microsoft.Quantum.Environment
 metadata:
-  ms.openlocfilehash: 04a3ffe56be7da2c9adc13e2b27fe9ce0f982c44
-  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.openlocfilehash: 87e1659f8ecdd6df99271f7552f683ffed85b151
+  ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/27/2020
-  ms.locfileid: "92695627"
+  ms.lasthandoff: 11/26/2020
+  ms.locfileid: "96201438"

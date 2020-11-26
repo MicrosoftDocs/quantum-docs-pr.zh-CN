@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.KnillDistill
 title: KnillDistill 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: KnillDistill
 qsharp.summary: Implements the Knill magic state distillation algorithm.
-ms.openlocfilehash: 1135db83cf750918347df10c6f1301b636aaee0c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: df00c7572d909a67ec658bc8dccaf0e338afe5c5
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695498"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96200741"
 ---
 # <a name="knilldistill-operation"></a>KnillDistill 操作
 
 命名空间： [ErrorCorrection](xref:Microsoft.Quantum.ErrorCorrection)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 实现 Knill 幻状态升华算法。
@@ -28,7 +28,7 @@ operation KnillDistill (roughMagic : Qubit[]) : Bool
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 给定15个近似状态 $ $ \begin{align} \cos\frac{\pi} {8} \ket {0} + \sin \frac{\pi} \ket \end{align} 的 {8} 副本 {1} ，$ $ 会生成一个较高质量的副本。
 
@@ -44,7 +44,7 @@ operation KnillDistill (roughMagic : Qubit[]) : Bool
 
 如果为 `true` ，则过程成功并且应接受更高质量的副本。 如果 `false` 为，则过程失败，并且应将寄存器的状态视为未定义。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 我们采用 Knill 的算法。
 但当前的实现远不是最佳的，因为它使用过多的 qubits。

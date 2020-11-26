@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection._ExtractLogicalQubitFromSteaneCode
 title: _ExtractLogicalQubitFromSteaneCode 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Syndrome measurement and the inverse of embedding.
 
   $X$- and $Z$-stabilizers are not treated equally, which is due to the particular choice of the encoding circuit. This asymmetry leads to a different syndrome extraction routine. One could measure the syndrome by measuring multi-qubit Pauli operator directly on the code state, but for the distillation purpose the logical qubit is returned into a single qubit, in course of which the syndrome measurements can be done without further ancillas.
-ms.openlocfilehash: 71390feb84660cc9bf7bb12b64eac6d3ca512387
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 273692efa629cb8cc20069ef500c4e0902fbc3ff
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695538"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96201336"
 ---
 # <a name="_extractlogicalqubitfromsteanecode-operation"></a>_ExtractLogicalQubitFromSteaneCode 操作
 
 命名空间： [ErrorCorrection](xref:Microsoft.Quantum.ErrorCorrection)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 与嵌入有关的症状。
@@ -48,7 +48,7 @@ operation _ExtractLogicalQubitFromSteaneCode (code : Microsoft.Quantum.ErrorCorr
 逻辑 qubit 和一对整数，用于 $X $-症状和 $Z $-症状。
 它们表示代码 qubit 的索引，其中一次 $X $ 或 $Z $-错误将导致测定的症状。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 请注意，此操作不会标记为 `internal` ，因为单元测试直接依赖于此操作。 作为未来的改进，应重构单元测试，使其仅依赖公共 callables。
 
