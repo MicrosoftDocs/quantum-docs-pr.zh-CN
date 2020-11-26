@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.CX
 title: CX 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Applies the controlled-X (CX) gate to a pair of qubits.
 
   $$ \begin{align} \left(\begin{matrix} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & 1 \\\\ 0 & 0 & 1 & 0 \end{matrix}\right) \end{align}, $$ where rows and columns are organized as in the quantum concepts guide.
-ms.openlocfilehash: c430525b71ad4ef0812d90a8ff20c41a5d5b8708
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 4eaecf372f3054de4886b1e42c6b4ce386a22f73
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696083"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96207235"
 ---
 # <a name="cx-operation"></a>CX 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将受控-X (CX) 入口应用于一对 qubits。
@@ -29,7 +29,7 @@ ms.locfileid: "92696083"
 $ $ \begin{align} \left ( \begin{matrix} 1 & 0 & 0 & 0 \\ \\ 0 & 1 & 0 & 0 \\ \\ 0 & 0 & 0 & 1 \\ \\ 0 & 0 & 1 & 0 \end{matrix}\right) \end{align}，$ $，其中的行和列按 "量程概念" 指南进行组织。
 
 ```qsharp
-operation CX (control : Qubit, target : Qubit) : Unit
+operation CX (control : Qubit, target : Qubit) : Unit is Adj + Ctl
 ```
 
 
@@ -50,7 +50,7 @@ CX 入口的目标 qubit。
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 等效于：
 

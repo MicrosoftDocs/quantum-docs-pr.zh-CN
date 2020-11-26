@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToMost
 title: ApplyToMost 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToMost
 qsharp.summary: Applies an operation to all but the last element of an array.
-ms.openlocfilehash: 2c6c8873859439e71436f6beb0de40dfd1e21f43
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 7e7824b431ccff644cf5cc53145163327eb8ad36
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696205"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96208527"
 ---
 # <a name="applytomost-operation"></a>ApplyToMost 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将操作应用到数组中除最后一个元素之外的所有元素。
@@ -28,7 +28,7 @@ operation ApplyToMost<'T> (op : ('T[] => Unit), targets : 'T[]) : Unit
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 给定一个操作 `op` 和一个目标数组 `targets` ，适用于 `op(Most(targets))` 。
 

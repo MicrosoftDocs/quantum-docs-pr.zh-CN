@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.CControlledA
 title: CControlledA 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: CControlledA
 qsharp.summary: Given an operation op, returns a new operation which applies the op if a classical control bit is true. If `false`, nothing happens. The modifier `A` indicates that the operation is adjointable.
-ms.openlocfilehash: 30b5e3408fa6e5a79b2f3d63cccc11899c0405ef
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: cb72ca5b3dab99b9ee8a994ba9fde46e0eae5594
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696113"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96207507"
 ---
 # <a name="ccontrolleda-function"></a>CControlledA 函数
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果为，则不 `false` 执行任何操作。
@@ -31,13 +31,13 @@ function CControlledA<'T> (op : ('T => Unit is Adj)) : ((Bool, 'T) => Unit is Ad
 
 ## <a name="input"></a>输入
 
-### <a name="op--t--unit-adj"></a>op： t => [单位](xref:microsoft.quantum.lang-ref.unit) 形容词
+### <a name="op--t--unit--is-adj"></a>op： t => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词
 
 要有条件地应用的操作。
 
 
 
-## <a name="output--boolt--unit-adj"></a>Output： ([Bool](xref:microsoft.quantum.lang-ref.bool)，不) => [单位](xref:microsoft.quantum.lang-ref.unit) 形容词
+## <a name="output--boolt--unit--is-adj"></a>Output： ([Bool](xref:microsoft.quantum.lang-ref.bool)，不) => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词
 
 如果经典控制位为 true，则为 op 的新操作。
 

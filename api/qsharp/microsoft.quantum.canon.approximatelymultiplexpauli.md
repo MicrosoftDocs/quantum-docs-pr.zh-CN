@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.Quantum.Canon.ApproximatelyMultiplexPauli
 title: ApproximatelyMultiplexPauli 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApproximatelyMultiplexPauli
 qsharp.summary: Applies a Pauli rotation conditioned on an array of qubits, truncating small rotation angles according to a given tolerance.
-ms.openlocfilehash: c91937d9e82a2a1514d81529adb35a5f804a0e13
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8024df4608f14408bfcd46139e72454ff44b116f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696146"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96207745"
 ---
 # <a name="approximatelymultiplexpauli-operation"></a>ApproximatelyMultiplexPauli 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 应用对 qubits 数组使用的 Pauli 旋转，根据给定的公差截断小旋转角度。
 
 ```qsharp
-operation ApproximatelyMultiplexPauli (tolerance : Double, coefficients : Double[], pauli : Pauli, control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit
+operation ApproximatelyMultiplexPauli (tolerance : Double, coefficients : Double[], pauli : Pauli, control : Microsoft.Quantum.Arithmetic.LittleEndian, target : Qubit) : Unit is Adj + Ctl
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 这会应用一次受控的单一操作，该操作会按角度 $ theta_j \ qubit Pauli operator $P $ （由 $n $-qubit 号 state $ \ket{j} $ 控制）执行旋转。
 特别是，此操作的操作由单一
@@ -70,7 +70,7 @@ $n 以小字节序格式编码数字状态 $ \ket{j} $ 的 qubit 控制寄存器
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 `coefficients` 如果指定少于 $ 2 ^ n $，则将用元素 $ \ theta_j = $0.0 填充。
 
