@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Math.RealMod
 title: RealMod 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: RealMod
 qsharp.summary: Computes the modulus between two real numbers.
-ms.openlocfilehash: 6ec799885bd2f0d35314ed727356499efbe9fcf8
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 20916d8462288395384aa875bfae4f042ba6b6ad
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696711"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96228247"
 ---
 # <a name="realmod-function"></a>RealMod 函数
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Math)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 计算两个实数之间的模数。
@@ -50,7 +50,7 @@ function RealMod (value : Double, modulo : Double, minValue : Double) : Double
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 此函数通过包装关于单位圆的实际行，然后查找与输入对应的单位圆上的角度来计算实际的模数。
 `minValue`然后，输入有效地指定要将单位圆剪切到何处。

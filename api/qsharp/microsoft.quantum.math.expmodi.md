@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Math.ExpModI
 title: ExpModI 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ExpModI
 qsharp.summary: Returns an integer raised to a given power, with respect to a given modulus.
-ms.openlocfilehash: e31273702a9850d0162f160ca412ff6d50f38b28
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 197f7351ce76ebb7684ca8014cab9ab65d9c784c
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700536"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96228484"
 ---
 # <a name="expmodi-function"></a>ExpModI 函数
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Math)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 返回一个整数，该整数针对给定的模数引发了给定的幂。
@@ -28,7 +28,7 @@ function ExpModI (expBase : Int, power : Int, modulus : Int) : Int
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 让我们通过 $N $ $p $ 和模数来表示 $x expBase。
 该函数返回 $x ^ p \operatorname{mod} N $。
@@ -57,6 +57,6 @@ function ExpModI (expBase : Int, power : Int, modulus : Int) : Int
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 与中的位数成正比，而 `power` 不是 `power` 本身。

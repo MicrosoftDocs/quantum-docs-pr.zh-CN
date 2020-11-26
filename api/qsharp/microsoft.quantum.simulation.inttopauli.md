@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Simulation.IntToPauli
 title: IntToPauli 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: IntToPauli
 qsharp.summary: Converts a integer to a single-qubit Pauli operator.
-ms.openlocfilehash: f0f1186f14a0dc30bb34bd29f148cdc830fd1337
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 18edb600f7b5b33c7ad98e78e32903c570082225
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700960"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96229199"
 ---
 # <a name="inttopauli-function"></a>IntToPauli 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Simulation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将整数转换为 qubit Pauli 运算符。

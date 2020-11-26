@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Simulation.MultiplyGeneratorSystem
 title: MultiplyGeneratorSystem 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: MultiplyGeneratorSystem
 qsharp.summary: Multiplies the coefficient of all terms in a `GeneratorSystem`.
-ms.openlocfilehash: 1d28de99dab3f7aca4bf3706fe98f5ef7c5286a7
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: effb9e3ca754f77bbe1ea0fb6ca30ae49e92d531
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696683"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96229148"
 ---
 # <a name="multiplygeneratorsystem-function"></a>MultiplyGeneratorSystem 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Simulation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将中所有字词的系数相乘 `GeneratorSystem` 。

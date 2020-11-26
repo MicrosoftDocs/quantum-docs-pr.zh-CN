@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Simulation.InterpolateGeneratorSystemsImpl
 title: InterpolateGeneratorSystemsImpl 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: InterpolateGeneratorSystemsImpl
 qsharp.summary: Linearly interpolates between two `GeneratorSystems` according to a schedule parameter `s` between 0 and 1 (inclusive).
-ms.openlocfilehash: 212ed4c473fab3572f73ea250061057ad13e393f
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1ca9580ba603db8fee40e008a7ea51cb7a04d7d3
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695092"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96229216"
 ---
 # <a name="interpolategeneratorsystemsimpl-function"></a>InterpolateGeneratorSystemsImpl 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Simulation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 `GeneratorSystems`根据计划参数 `s` （介于0和1之间），以线性方式在两个之间内插 (包含) 。

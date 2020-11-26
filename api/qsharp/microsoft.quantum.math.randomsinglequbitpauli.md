@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Math.RandomSingleQubitPauli
 title: RandomSingleQubitPauli 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Math
@@ -10,18 +10,18 @@ qsharp.summary: >-
   > [!WARNING]
 
   > RandomSingleQubitPauli has been deprecated. Please use <xref:Microsoft.Quantum.Random.DrawRandomPauli> instead.
-ms.openlocfilehash: a8185ff5eb33a4abe7943d407f69ca96cd71890f
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: dfc769a4bbf88d853fbf7f6aa9993794674b8d6f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696713"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96227414"
 ---
 # <a name="randomsinglequbitpauli-operation"></a>RandomSingleQubitPauli 操作
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Math)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 > [!WARNING]
