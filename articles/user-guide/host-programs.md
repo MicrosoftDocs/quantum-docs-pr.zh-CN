@@ -9,12 +9,12 @@ uid: microsoft.quantum.guide.host-programs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f1a4ef0616a8a3f1548b7a7207cf8cbb9dcc7260
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 2c5bdebc826bb85f6d7e0ade6232e15e29e8fb19
+ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92691707"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96231683"
 ---
 # <a name="ways-to-run-a-no-locq-program"></a>运行程序的方式 Q#
 
@@ -26,7 +26,7 @@ ms.locfileid: "92691707"
 - 作为独立的应用程序，其中 Q# 是所涉及的唯一语言，直接调用程序。 这两种方法实际上属于此类别：
   - 命令行接口
   - Q# Jupyter 笔记本
-- 使用其他 *主机程序* （以 Python 或 .net 语言编写） (例如，c # 或 F # ) ，然后调用程序并可以进一步处理返回的结果。
+- 使用其他 *主机程序*（以 Python 或 .net 语言编写） (例如，c # 或 F # ) ，然后调用程序并可以进一步处理返回的结果。
 
 为了更好地了解这些过程及其区别，我们考虑了一个简单的 Q# 程序并对其运行方式进行比较。
 
@@ -45,7 +45,7 @@ ms.locfileid: "92691707"
 ```
 
 但是，此代码本身不能由运行 Q# 。
-为此，它需要构成 [操作](xref:microsoft.quantum.guide.basics#q-operations-and-functions)的主体，然后在直接或通过其他操作---调用时运行。 因此，您可以编写以下形式的操作：
+为此，它需要构成 [操作](xref:microsoft.quantum.qsharp.operationsandfunctions)的主体，然后在直接或通过其他操作---调用时运行。 因此，您可以编写以下形式的操作：
 ```qsharp
     operation MeasureSuperposition() : Result {
         using (q = Qubit()) {
@@ -54,9 +54,9 @@ ms.locfileid: "92691707"
         }
     }
 ```
-您定义了一个操作， `MeasureSuperposition` 该操作不使用输入并返回类型 [Result](xref:microsoft.quantum.guide.types)的值。
+您定义了一个操作， `MeasureSuperposition` 该操作不使用输入并返回类型 [Result](xref:microsoft.quantum.qsharp.typesystem-index#available-types)的值。
 
-虽然此页上的示例只包含 Q# *操作* ，但我们所讨论的所有概念将同样适用于 Q# *函数* ，因此，我们将它们统称为 *callables* 。 它们的差异在基础上进行了讨论[ Q# ：操作和功能](xref:microsoft.quantum.guide.basics#q-operations-and-functions)，以及有关如何定义它们的详细信息，请参阅[操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。
+除了操作外， Q# 还允许将确定性计算封装到函数中。 除了确定性保证以外，qubits 的计算需要封装到操作而不是函数中，操作和函数之间的差异很小。 我们将它们统称为 *callables*。
 
 ### <a name="callable-defined-in-a-no-locq-file"></a>在文件中定义的可调用 Q#
 
@@ -65,7 +65,7 @@ ms.locfileid: "92691707"
 
 所有 Q# 类型和 callables 都 (您定义的类型和) 在命名空间中定义的，这些都是在命名空间中定义的，这些 *命名空间* 提供了可引用的全名。
 
-例如，在 [`H`](xref:Microsoft.Quantum.Intrinsic.H) [`MResetZ`](xref:Microsoft.Quantum.Measurement.MResetZ) 和命名空间中找到和操作 [`Microsoft.Quantum.Instrinsic`](xref:Microsoft.Quantum.Intrinsic) ， [`Microsoft.Quantum.Measurement`](xref:Microsoft.Quantum.Measurement) ([ Q# 标准库](xref:microsoft.quantum.qsharplibintro)) 的一部分。
+例如，在 [`H`](xref:Microsoft.Quantum.Intrinsic.H) [`MResetZ`](xref:Microsoft.Quantum.Measurement.MResetZ) 和命名空间中找到和操作 [`Microsoft.Quantum.Instrinsic`](xref:Microsoft.Quantum.Intrinsic) ， [`Microsoft.Quantum.Measurement`](xref:Microsoft.Quantum.Measurement) ([ Q# 标准库](xref:microsoft.quantum.libraries.standard.intro)) 的一部分。
 因此，它们始终可以通过其 *完整* 名称调用， `Microsoft.Quantum.Intrinsic.H(<qubit>)` `Microsoft.Quantum.Measurement.MResetZ(<qubit>)` 但始终执行此操作会导致代码非常杂乱。
 
 相反， `open` 语句允许用更简洁的速记来引用 callables，正如以上操作体中所做的那样。
@@ -164,7 +164,7 @@ namespace NamespaceName {
 因此，您将看到 `One` 或已 `Zero` 打印。 
 
 请注意，如果下面定义了更多的 callables，则将只 `MeasureSuperposition` 运行。
-此外，如果您的可调用内容在其声明之前包含 [文档注释](xref:microsoft.quantum.guide.filestructure#documentation-comments) ，则不会出现问题 `@EntryPoint()` 。
+此外，如果您的可调用内容在其声明之前包含 [文档注释](xref:microsoft.quantum.qsharp.comments#documentation-comments) ，则不会出现问题 `@EntryPoint()` 。
 
 ### <a name="callable-arguments"></a>可调用参数
 
@@ -589,7 +589,7 @@ Q# Jupyter 笔记本利用 I Q# 内核，使你能够在单个笔记本中定义
 
 在 Q# Jupyter Notebook 中，你可以 Q# 像在文件的命名空间内一样输入代码 Q# 。
 
-因此，可以从具有相应命名空间的语句的[ Q# 标准库](xref:microsoft.quantum.qsharplibintro)中启用对 callables 的访问 `open` 。
+因此，可以从具有相应命名空间的语句的[ Q# 标准库](xref:microsoft.quantum.libraries.standard.intro)中启用对 callables 的访问 `open` 。
 使用此类语句运行单元时，这些命名空间中的定义在整个工作区中都可用。
 
 > [!NOTE]

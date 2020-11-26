@@ -87,7 +87,7 @@ author： bradben： benbra 毫秒。日期： 9/1/2020 ms. 主题：文章 uid�
 
 ## <a name="adjoint"></a>Adjoint
 
-[操作](xref:microsoft.quantum.glossary#operation)的复杂共轭转置。 对于实现 [单一](xref:microsoft.quantum.glossary#unitary-operator) 运算符的操作，adjoint 是操作的反向，由剑号符号指示。 例如，如果操作 `U` 表示单一运算符 $ U $ ，则 `Adjoint U` 表示 $ u ^ \dagger $ 。 有关详细信息，请参阅 [Adjoint](xref:microsoft.quantum.guide.operationsfunctions#controlled-and-adjoint-operations)。
+[操作](xref:microsoft.quantum.glossary#operation)的复杂共轭转置。 对于实现 [单一](xref:microsoft.quantum.glossary#unitary-operator) 运算符的操作，adjoint 是操作的反向，由剑号符号指示。 例如，如果操作 `U` 表示单一运算符 $ U $ ，则 `Adjoint U` 表示 $ u ^ \dagger $ 。 有关详细信息，请参阅 [函子应用程序](xref:microsoft.quantum.qsharp.functorapplication#functor-application)。
 
 ## <a name="ancilla"></a>Ancilla
 
@@ -103,7 +103,8 @@ author： bradben： benbra 毫秒。日期： 9/1/2020 ms. 主题：文章 uid�
 
 ## <a name="callable"></a>多次
 
-语言中的 [操作](xref:microsoft.quantum.glossary#operation) 或 [函数](xref:microsoft.quantum.glossary#function) Q# 。 有关详细信息，请参阅 [操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。
+[ Q# 语言](https://github.com/microsoft/qsharp-language/tree/main/Specifications/Language#q-language)中的[操作](xref:microsoft.quantum.glossary#operation)或[函数](xref:microsoft.quantum.glossary#function)。
+有关详细信息，请参阅[ Q# 程序](xref:microsoft.quantum.guide.programs)
 
 ## <a name="clifford-group"></a>Clifford 组
 
@@ -111,7 +112,7 @@ author： bradben： benbra 毫秒。日期： 9/1/2020 ms. 主题：文章 uid�
 
 ## <a name="controlled"></a>操控
 
-一个量程 [操作](xref:microsoft.quantum.glossary#operation) ，它将一个或多个 [qubits](xref:microsoft.quantum.glossary#qubit) 作为目标操作的启用程序。 有关详细信息，请参阅 [受控和 adjoint 操作](xref:microsoft.quantum.guide.operationsfunctions#controlled-and-adjoint-operations)。
+一个量程 [操作](xref:microsoft.quantum.glossary#operation) ，它将一个或多个 [qubits](xref:microsoft.quantum.glossary#qubit) 作为目标操作的启用程序。 有关详细信息，请参阅 [函子应用程序](xref:microsoft.quantum.qsharp.functorapplication#functor-application)。
 
 ## <a name="dirac-notation"></a>Dirac 表示法
 
@@ -138,11 +139,11 @@ author： bradben： benbra 毫秒。日期： 9/1/2020 ms. 主题：文章 uid�
 [量程状态](xref:microsoft.quantum.glossary#quantum-state)随时间变化的方式。 有关详细信息，请参阅 [Matrix 指数](xref:microsoft.quantum.concepts.matrix-advanced#matrix-exponentials)。
 
 ## <a name="function"></a>函数
-一种 Q# 纯传统 (非量程) 的一种子例程。 当函数在量程算法中使用时，它们不能作用于 [qubits](xref:microsoft.quantum.glossary#qubit) 或调用 [操作](xref:microsoft.quantum.glossary#operation)。 有关详细信息，请参阅 [操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。
+采用纯确定性的语言的子程序类型 Q# 。 当函数在量程算法中使用时，它们不能作用于 [qubits](xref:microsoft.quantum.glossary#qubit) 或调用 [操作](xref:microsoft.quantum.glossary#operation)。 有关详细信息，请参阅[ Q# 程序](xref:microsoft.quantum.guide.programs)
 
 ## <a name="gate"></a>护
 
-基于传统逻辑入口的概念的量程 [操作](xref:microsoft.quantum.glossary#operation)的旧术语。 [量程线路](xref:microsoft.quantum.glossary#quantum-circuit-diagram)是基于传统逻辑电路的类似概念的 (或操作) 的入口网络。
+基于传统逻辑入口的概念的特定内部量程 [操作](xref:microsoft.quantum.glossary#operation)的旧术语。 [量程线路](xref:microsoft.quantum.glossary#quantum-circuit-diagram)是入口的网络，基于传统逻辑电路的类似概念。
 
 ## <a name="global-phase"></a>全局阶段
 
@@ -166,15 +167,11 @@ Hadamard 操作 (也称为 Hadamard 入口或变换) 作用于单个[qubit](xref
 
 ## <a name="namespace"></a>命名空间
 
-相关名称集合的标签 (例如， [操作](xref:microsoft.quantum.glossary#operation)、 [函数](xref:microsoft.quantum.glossary#function)和 [用户定义的类型](xref:microsoft.quantum.glossary#user-defined-type)) 。 例如，命名空间为 ""。 [准备](xref:microsoft.quantum.preparation) 标签在标准库中定义的所有符号都有助于准备初始状态。
+相关名称集合的标签 (例如， [操作](xref:microsoft.quantum.glossary#operation)、 [函数](xref:microsoft.quantum.glossary#function)和 [用户定义的类型](xref:microsoft.quantum.glossary#user-defined-type)) 。 例如，命名空间为 ""。 [准备](xref:Microsoft.Quantum.Preparation) 标签在标准库中定义的所有符号都有助于准备初始状态。
 
-## <a name="operation"></a>Operation
+## <a name="operation"></a>操作
 
-中量程计算的基本单位 Q# 。 它大致等效于 C、c + + 或 Python 中的函数或 c # 或 Java 中的静态方法。 有关详细信息，请参阅 [操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。
-
-## <a name="operator-application"></a>操作员应用程序
-
-执行量程运算。 这通常会将单一矩阵应用于当前的量程状态向量。
+中量程计算的基本单位 Q# 。 它大致等效于 C、c + + 或 Python 中的函数或 c # 或 Java 中的静态方法。 有关详细信息，请参阅[ Q# 程序](xref:microsoft.quantum.guide.programs)。
 
 ## <a name="oracle"></a>Oracle
 
@@ -182,7 +179,7 @@ Hadamard 操作 (也称为 Hadamard 入口或变换) 作用于单个[qubit](xref
 
 ## <a name="partial-application"></a>部分应用程序
 
-调用不包含所有必需输入的 [函数](xref:microsoft.quantum.glossary#function) 或 [操作](xref:microsoft.quantum.glossary#operation) 。 这会返回一个新的可调用，该 [调用](xref:microsoft.quantum.glossary#callable) 只需在以后的应用程序中提供的下划线)  (所需的缺少参数。 例如，假设函数 `MyFunc(x : int, y : int) : int {return x + y;}` 可部分应用于新函数 `let NewFunc = MyFunc(_, 3)` 。 然后，你可以在以后使用缺少的参数 `NewFunc(2)` （返回值 *5* ）调用新函数。  有关详细信息，请参阅 [部分应用程序](xref:microsoft.quantum.guide.operationsfunctions#partial-application)。
+调用不包含所有必需输入的 [函数](xref:microsoft.quantum.glossary#function) 或 [操作](xref:microsoft.quantum.glossary#operation) 。 这会返回一个新的可调用，该 [调用](xref:microsoft.quantum.glossary#callable) 只需在以后的应用程序中提供的下划线)  (所需的缺少参数。 有关详细信息，请参阅 [部分应用程序](xref:microsoft.quantum.qsharp.partialapplication)。
 
 ## <a name="pauli-operators"></a>Pauli 运算符
 
@@ -190,7 +187,7 @@ Hadamard 操作 (也称为 Hadamard 入口或变换) 作用于单个[qubit](xref
 
 ## <a name="quantum-circuit-diagram"></a>量程线路关系图
 
-用于以图形方式表示简单量程程序的 [操作](xref:microsoft.quantum.glossary#operation) 序列 (或 [入口](xref:microsoft.quantum.glossary#gate)) 的方法，例如 
+用于以图形方式表示简单量程程序的 [入口](xref:microsoft.quantum.glossary#gate) 序列的方法，例如 
 
 ![示例线路图示](~/media/qpe.png). 
 
@@ -210,7 +207,7 @@ Hadamard 操作 (也称为 Hadamard 入口或变换) 作用于单个[qubit](xref
 
 ## <a name="repeat-until-success"></a>重复执行-成功
 
-Probabilistic 成功的量程算法。 如果失败，例程将重试，直到成功 (或已达到限制) 。 有关详细信息，请参阅 [重复到成功 (ru) ](xref:microsoft.quantum.guide.controlflow#repeat-until-success-loop)
+通常用于量程算法的一种概念，其中包括重复应用计算，直到满足某个条件。 如果不满足条件，则在通过输入下一次迭代重试之前，通常需要提供修正。 有关详细信息，请参阅[ Q# 用户指南](xref:microsoft.quantum.guide)
 
 ## <a name="standard-libraries"></a>标准库
 
@@ -230,7 +227,7 @@ Probabilistic 成功的量程算法。 如果失败，例程将重试，直到�
 
 ## <a name="tuple"></a>Tuple
 
-作为单个值的逗号分隔值的集合。 元组的 *类型* 由其包含的值的类型定义。 在中 Q# ，元组是 [不可变](xref:microsoft.quantum.glossary#immutable) 的，并且可以嵌套、包含数组或用于数组。 有关详细信息，请参阅[元组类型](xref:microsoft.quantum.guide.types#tuple-types)。
+作为单个值的逗号分隔值的集合。 元组的 *类型* 由其包含的值的类型定义。 在中 Q# ，元组是 [不可变](xref:microsoft.quantum.glossary#immutable) 的，并且可以嵌套、包含数组或用于数组。 有关详细信息，请参阅[元组](xref:microsoft.quantum.qsharp.valueliterals#tuple-literals)。
 
 ## <a name="unitary-operator"></a>单一运算符
 
@@ -238,4 +235,4 @@ Probabilistic 成功的量程算法。 如果失败，例程将重试，直到�
 
 ## <a name="user-defined-type"></a>用户定义类型
 
-可能称为单个单元的内置或以前定义的类型的集合。 有关详细信息，请参阅 [用户定义类型](xref:microsoft.quantum.guide.types#user-defined-types)。
+可能包含一个或多个已命名或匿名项的自定义类型。 有关详细信息，请参阅 [Type 声明] qsharp. typedeclarations # type 声明) 。

@@ -108,7 +108,7 @@ $$0 \equiv \begin{bmatrix} 1 \\\\  0 \end{bmatrix} ， \qquad 1 \equiv \begin{bm
 
 现在，我们知道了如何表示 qubit，我们可以通过讨论 [*度量*](https://en.wikipedia.org/wiki/Measurement_in_quantum_mechanics)概念来获取这些状态所表示内容的一些直觉。 度量值对应于 "查找" qubit 的非正式构想，这会立即将量程状态折叠为两种传统状态 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ 或 $ \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $ 。 当测量由量程状态向量指定的 qubit 时 $ \begin{bmatrix} \alpha \\\\ \beta \end{bmatrix} $ ，我们将获取 $ $ 概率为 ^ 2 的结果 0 $ | \alpha | $ ，并获得 $ $ 概率为 $ | \beta | ^ 2 $ 的结果1。   在结果 $ 0 上 $ ，qubit 的新状态为 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ ; 在结果 $ 1 上， $ 其状态为 $ \begin{bmatrix} 0 \\\\ 1 \end{bmatrix} $ 。 请注意， $ $ 由于规范化条件 $ | \alpha | ^ 2 + | \beta | ^ 2 = 1 $ ，这些概率的总和为1。
 
-度量值的属性也表示量程状态向量的整体符号是不相关的。 取消矢量等效于 $ \alpha \right 箭头- \alpha $ 和 $ \beta \right 箭头- \beta $ 。 由于度量值 $ 0 $ 和1的 $ 概率 $ 取决于术语的大小平方，因此插入此类符号不会改变概率。 此类阶段通常称为 [ `` *全局阶段* ""](https://en.wikipedia.org/wiki/Phase_factor) ，更常见的形式为 $ e ^ { i \phi } $ 而不只是 $ \pm 1 $ 。
+度量值的属性也表示量程状态向量的整体符号是不相关的。 取消矢量等效于 $ \alpha \right 箭头- \alpha $ 和 $ \beta \right 箭头- \beta $ 。 由于度量值 $ 0 $ 和1的 $ 概率 $ 取决于术语的大小平方，因此插入此类符号不会改变概率。 此类阶段通常称为 [ `` *全局阶段*""](https://en.wikipedia.org/wiki/Phase_factor) ，更常见的形式为 $ e ^ { i \phi } $ 而不只是 $ \pm 1 $ 。
 
 度量值的最后一个重要属性是它不一定损坏所有的量程状态向量。 如果我们以状态 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ （对应于古典状态0）开始，则 $ $ 测量此状态将始终产生结果 $ 0 $ 并使量程状态保持不变。 在这种情况下，如果我们仅具有 (为 $ \begin{bmatrix} 1 \\\\ 0 \end{bmatrix} $ 或 0 1) 的传统位， $ \begin{bmatrix} \\\\ \end{bmatrix} $ 则测量不会损坏系统。 这意味着，我们可以复制传统数据并在量程计算机上对其进行操作，就像在传统计算机上操作一样。 不过，同时将信息同时存储在这两个状态中的能力，就是将量程计算作为可能的经典以及进一步剥夺的量程计算能力，从而无法以无顺序复制量程数据，另请参阅 [无克隆定理](https://en.wikipedia.org/wiki/No-cloning_theorem)。
 
@@ -128,17 +128,6 @@ Qubits 还可以 $ $ 使用 [*Bloch 球*](https://en.wikipedia.org/wiki/Bloch_sp
 这种通用性的概念类似于传统 (的通用性概念，即传统的) 计算，如果输入位的每个转换都可以使用有限长度线路执行，则将门集视为通用的。
 在量程计算中，允许在 qubit 上执行的有效转换是单一转换和度量。
 *Adjoint 操作* 或复杂的共轭转置对量程计算至关重要，因为需要对量程转换进行反转。
-Q# 通过提供将入口序列自动编译到 adjoint 的方法来反映这一情况，这会使程序员在许多情况下都不得不 adjoints 代码。 下面显示了一个示例：
-
-```qsharp
-operation PrepareSuperposition(qubit : Qubit) : Unit
-is Adj { // Auto-generate the adjoint of the operation
-    H(qubit);
-}
-```
-
-尽管这是一个简单的示例 (因为 < x > 操作是) adjoint 的，所以，您可以看到对于更复杂的 qubit 操作，这一点非常有用。
-有关详细信息，请参阅 [操作和函数](xref:microsoft.quantum.guide.operationsfunctions)。
 
 传统计算机上只有四个可将一个位映射到一位的函数。 与此相反，在一个量程计算机上的单个 qubit 上存在无限数量的单一转换。 因此，一组有限的基元量程操作（称为 [*入口*](https://en.wikipedia.org/wiki/Quantum_logic_gate)）可以精确地复制量子计算中允许的无限单一转换集。 这意味着，与传统计算不同，量程计算机可能会完全使用有限数量的入口来实现每个可能的量程计划。 因此，在传统计算机上，量程计算机不能是通用的。 因此，当我们说一组入口对量程计算是 *通用* 的时，我们实际上意味着比传统计算略有不同。
 对于通用性，我们要求量程计算机仅在使用有限长度入口序列的有限错误内 *估算* 每个单一矩阵。

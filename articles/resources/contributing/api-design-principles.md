@@ -9,12 +9,12 @@ uid: microsoft.quantum.contributing.api-design
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 6b196cf1be584a3157c7a9eb8cf497fe1121dd7a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: b8623ba7e876c4ccda42d0ddaa07c0012a763292
+ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92691820"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96231768"
 ---
 # <a name="no-locq-api-design-principles"></a>Q# API 设计原则
 
@@ -215,7 +215,7 @@ ms.locfileid: "92691820"
   *示例：*
   - 首选 "调幅放大迭代" 到 "Grover 迭代"。
 
-- ✅**选择操作** 和函数名称可以清楚地传达可调用的预期效果，而不是其实现。 请注意，可在 [API 文档注释](xref:microsoft.quantum.guide.filestructure#documentation-comments)中记录实现。
+- ✅**选择操作** 和函数名称可以清楚地传达可调用的预期效果，而不是其实现。 请注意，可在 [API 文档注释](xref:microsoft.quantum.qsharp.comments#documentation-comments)中记录实现。
 
   *示例：*
   - 由于后者传达了前者的实现方式，因此更喜欢 "估计重叠" 到 "Hadamard 测试"。
@@ -224,32 +224,32 @@ ms.locfileid: "92691820"
 
   - **谓词**
 
-    - **断言** ：检查有关目标计算机及其 qubits 的状态的假设，可能是通过使用 unphysical 资源来保存。 使用此谓词的操作应始终安全删除，而不会影响库和可执行程序的功能。 请注意，与事实不同，断言可能通常依赖于外部状态，如 qubit 寄存器的状态、运行环境等。 由于与外部状态的依赖关系是一种副作用，因此必须将断言作为运算公开，而不是作为函数公开。
+    - **断言**：检查有关目标计算机及其 qubits 的状态的假设，可能是通过使用 unphysical 资源来保存。 使用此谓词的操作应始终安全删除，而不会影响库和可执行程序的功能。 请注意，与事实不同，断言可能通常依赖于外部状态，如 qubit 寄存器的状态、运行环境等。 由于与外部状态的依赖关系是一种副作用，因此必须将断言作为运算公开，而不是作为函数公开。
 
-    - **估计** ：使用一个或多个可能重复的度量，从度量结果中估计一个传统的数量。
+    - **估计**：使用一个或多个可能重复的度量，从度量结果中估计一个传统的数量。
 
       *示例：*
       - @"microsoft.quantum.characterization.estimatefrequency"
       - @"microsoft.quantum.characterization.estimateoverlapbetweenstates"
 
-    - **准备** ：将量程操作或一系列操作应用到一个或多个 qubits，假定其在特定初始状态下启动 (通常为 $ \ket{00\cdots 0} $) ，这将导致这些 qubits 的状态发展到所需的结束状态。 通常，在给定的开始状态以外的其他状态下， **可能会** 导致未定义的单一转换，但仍 **应** 保留操作及其 adjoint "取消"，并应用无操作。
+    - **准备**：将量程操作或一系列操作应用到一个或多个 qubits，假定其在特定初始状态下启动 (通常为 $ \ket{00\cdots 0} $) ，这将导致这些 qubits 的状态发展到所需的结束状态。 通常，在给定的开始状态以外的其他状态下， **可能会** 导致未定义的单一转换，但仍 **应** 保留操作及其 adjoint "取消"，并应用无操作。
 
       *示例：*
       - @"microsoft.quantum.preparation.preparearbitrarystate"
       - @"microsoft.quantum.preparation.prepareuniformsuperposition"
 
-    - **Measure** ：向一个或多个 qubits 应用量程操作或一系列操作，读取传统数据。
+    - **Measure**：向一个或多个 qubits 应用量程操作或一系列操作，读取传统数据。
 
       *示例：*
       - @"Microsoft.Quantum.Intrinsic.Measure"
       - @"microsoft.quantum.arithmetic.measurefxp"
       - @"microsoft.quantum.arithmetic.measureinteger"
 
-    - **Apply** ：向一个或多个 qubits 应用量程运算或一系列操作，从而使这些 qubits 的状态以一致的方式进行更改。 此谓词是 Q 命名法中最常见的动词 \# ， **不应** 在更具体的动词更直接相关时使用。
+    - **Apply**：向一个或多个 qubits 应用量程运算或一系列操作，从而使这些 qubits 的状态以一致的方式进行更改。 此谓词是 Q 命名法中最常见的动词 \# ， **不应** 在更具体的动词更直接相关时使用。
 
-  - **名词** ：
+  - **名词**：
 
-    - **事实** ：一个布尔条件，它仅依赖于其输入，而不依赖于目标计算机、其环境或计算机的 qubits 的状态。 与断言相比，事实只是对为该事实提供的 *值* 敏感。 例如：
+    - **事实**：一个布尔条件，它仅依赖于其输入，而不依赖于目标计算机、其环境或计算机的 qubits 的状态。 与断言相比，事实只是对为该事实提供的 *值* 敏感。 例如：
 
       *示例：*
       - @"microsoft.quantum.diagnostics.equalityfacti"：表示大约两个整数输入的相等性事实;作为输入提供的整数彼此相等，或不依赖于任何其他程序状态。
@@ -259,9 +259,9 @@ ms.locfileid: "92691820"
       *示例：*
       - @"microsoft.quantum.machinelearning.trainingoptions"UDT 包含用于学习速率、minibatch 大小和用于 ML 培训的其他可配置参数的命名项。
 
-  - **形容词** ：
+  - **形容词**：
 
-    - ⛔️ **New** ： **不应** 使用此形容词，因为这样可以避免在许多编程语言中将其用法与谓词混淆 (例如： c + +、c #、Java、TypeScript、PowerShell) 。
+    - ⛔️ **New**： **不应** 使用此形容词，因为这样可以避免在许多编程语言中将其用法与谓词混淆 (例如： c + +、c #、Java、TypeScript、PowerShell) 。
 
   - **介词：** 在某些情况下，介词可用于进一步消除或阐明函数和操作名称中的名词和动词的角色。 不过，请注意，这种情况并不一致。
 

@@ -9,12 +9,12 @@ uid: microsoft.quantum.contributing.style
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 7666974e255d537c8d611d0077b7f9b37a61f918
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: cfc201a16b1b42c82314220f77ae120076291759
+ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92691729"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96231649"
 ---
 # <a name="no-locq-style-guide"></a>Q# 样式指南 #
 ## <a name="general-conventions"></a>一般约定 ##
@@ -390,7 +390,7 @@ _*_
 利用文档注释，可以通过提供有用的参考来帮助用户理解代码，这是使用本文档中的其他约定不容易表达的详细信息。
 
 > [!div class="nextstepaction"]
-> [文档注释语法参考](xref:microsoft.quantum.guide.filestructure#documentation-comments)。
+> [文档注释语法参考](xref:microsoft.quantum.qsharp.comments#documentation-comments)。
 
 为了有效地使用此功能来帮助用户，我们建议你在编写文档注释时，记住几个事项。
 
@@ -400,7 +400,7 @@ _*_
 
 - 每个公共函数、操作和用户定义的类型后面都应跟有文档注释。
 - 每个文档注释至少应包含以下部分：
-    - 摘要
+    - 总结
     - 输入
     - 输出 (（如果适用）) 
 - 确保所有摘要都是两个句子或更少。 如果需要更多空间，请在 `# Description` 后面提供 `# Summary` 完整的详细信息部分。
