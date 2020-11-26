@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Targeting.RequiresCapability
 title: RequiresCapability 用户定义的类型
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Targeting
 qsharp.name: RequiresCapability
 qsharp.summary: Compiler-recognized attribute used to mark a callable with the runtime capabilities it requires.
-ms.openlocfilehash: 63b1952d402f1bcb81a8f9d0afc3cdf7aa7e5ed8
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 0d9e4eb294b3ce91058c204d5dba37ea29b4ac28
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92701041"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96231001"
 ---
 # <a name="requirescapability-user-defined-type"></a>RequiresCapability 用户定义的类型
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Targeting)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 编译器可识别的属性，用于使用其所需的运行时功能标记可调用的特性。
@@ -40,7 +40,7 @@ newtype RequiresCapability = (Level : String, Reason : String);
 
 此调用需要此运行时功能的原因的说明。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 编译器会自动将此特性添加到 callables，除非该属性的一个实例已存在于可调用的上。 在少数情况下不应使用它，除非编译器不会正确推断所需的功能。
 

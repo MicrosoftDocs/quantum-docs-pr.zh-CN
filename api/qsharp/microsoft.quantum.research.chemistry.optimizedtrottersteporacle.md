@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Research.Chemistry.OptimizedTrotterStepOracle
 title: OptimizedTrotterStepOracle 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Research.Chemistry
 qsharp.name: OptimizedTrotterStepOracle
 qsharp.summary: Returns optimized Trotter step operation and the parameters necessary to run it.
-ms.openlocfilehash: f78d80f7ab71f4fc759d8045c9a134d7178aaa15
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 04b1ea457277e0681596cb564fae3782a2d09db9
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695280"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96229811"
 ---
 # <a name="optimizedtrottersteporacle-function"></a>OptimizedTrotterStepOracle 函数
 
 命名空间： [...](xref:Microsoft.Quantum.Research.Chemistry)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft.](https://nuget.org/packages/Microsoft.Quantum.Research.Chemistry)
 
 
 返回优化的 Trotter 步骤操作和运行它所需的参数。
@@ -46,6 +46,6 @@ Trotter 集成器的顺序。
 
 
 
-## <a name="output--intdoublequbit--unit-adj--ctl"></a>Output： ([Int](xref:microsoft.quantum.lang-ref.int)、 ([Double](xref:microsoft.quantum.lang-ref.double)、[Qubit](xref:microsoft.quantum.lang-ref.qubit)[] => [Unit](xref:microsoft.quantum.lang-ref.unit) 形容词 + Ctl) # A3
+## <a name="output--intdoublequbit--unit--is-adj--ctl"></a>Output： ([Int](xref:microsoft.quantum.lang-ref.int)、 ([Double](xref:microsoft.quantum.lang-ref.double)、[Qubit](xref:microsoft.quantum.lang-ref.qubit)[] => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词 + Ctl) # A3
 
 元组，其中： `Int` 是已分配的 qubits 的数目， `Double` 是 `1.0/trotterStepSize` ，操作是 Trotter 步骤。

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Simulation.MultiplyGeneratorIndex
 title: MultiplyGeneratorIndex 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: MultiplyGeneratorIndex
 qsharp.summary: Multiplies the coefficient in a `GeneratorIndex`.
-ms.openlocfilehash: 9ee0568073b65b027cc98eb56934e9286b59c27f
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: dc2bd02c40b53eca726f70578e3c5918add8f1bb
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700857"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96230440"
 ---
 # <a name="multiplygeneratorindex-function"></a>MultiplyGeneratorIndex 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Simulation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将中的系数相乘 `GeneratorIndex` 。

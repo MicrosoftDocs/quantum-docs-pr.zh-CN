@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Simulation.QuantumProcessor.Extensions.ApplyIfZero
 title: ApplyIfZero 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Simulation.QuantumProcessor.Extensions
 qsharp.name: ApplyIfZero
 qsharp.summary: ''
-ms.openlocfilehash: a76c6269ac4445326ac357fe2cdd552847089a6f
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 867e2e78ea787c2376fb2b1dcc6c72694fe08621
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700341"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96230899"
 ---
 # <a name="applyifzero-operation"></a>ApplyIfZero 操作
 
 命名空间： [QuantumProcessor。](xref:Microsoft.Quantum.Simulation.QuantumProcessor.Extensions)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 
@@ -30,7 +30,7 @@ operation ApplyIfZero<'T> (measurementResult : Result, (onResultZeroOp : ('T => 
 
 ## <a name="input"></a>输入
 
-### <a name="measurementresult--__invalidresult__"></a>measurementResult： __无效 <Result>__
+### <a name="measurementresult--__invalidresult__"></a>measurementResult：__无效 <Result>__
 
 
 

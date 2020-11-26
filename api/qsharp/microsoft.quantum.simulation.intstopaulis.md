@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Simulation.IntsToPaulis
 title: IntsToPaulis 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: IntsToPaulis
 qsharp.summary: Converts an array of integers to an array of single-qubit Pauli operators.
-ms.openlocfilehash: 605257aa7ca39e457127e3c3459b5891145b1863
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 2333dcbd2988480e2b2b9b217b26705f3578de00
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695094"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96230525"
 ---
 # <a name="intstopaulis-function"></a>IntsToPaulis 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Simulation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将整数数组转换为 qubit Pauli 运算符的数组。
