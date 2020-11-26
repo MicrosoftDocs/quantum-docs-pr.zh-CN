@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.Quantum.Research.Chemistry
 title: "\"...\" 命名空间"
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: namespace
 qsharp.name: Microsoft.Quantum.Research.Chemistry
 qsharp.summary: This namespace provides advanced research methods for quantum chemistry simulation.
-ms.openlocfilehash: b84d2741cbd826bfa7de92fe339da9e42d807c57
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 90039c4b9506d663c0174f9dfacdebdfdd13d3f5
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695281"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96225663"
 ---
-# <a name="microsoftquantumresearchchemistry-namespace"></a><span data-ttu-id="39d1c-102">"..." 命名空间</span><span class="sxs-lookup"><span data-stu-id="39d1c-102">Microsoft.Quantum.Research.Chemistry namespace</span></span>
+# <a name="microsoftquantumresearchchemistry-namespace"></a><span data-ttu-id="ba1fb-102">"..." 命名空间</span><span class="sxs-lookup"><span data-stu-id="ba1fb-102">Microsoft.Quantum.Research.Chemistry namespace</span></span>
 
-<span data-ttu-id="39d1c-103">此命名空间提供了用于量程化学模拟的高级研究方法。</span><span class="sxs-lookup"><span data-stu-id="39d1c-103">This namespace provides advanced research methods for quantum chemistry simulation.</span></span>
+<span data-ttu-id="ba1fb-103">此命名空间提供了用于量程化学模拟的高级研究方法。</span><span class="sxs-lookup"><span data-stu-id="ba1fb-103">This namespace provides advanced research methods for quantum chemistry simulation.</span></span>
 
