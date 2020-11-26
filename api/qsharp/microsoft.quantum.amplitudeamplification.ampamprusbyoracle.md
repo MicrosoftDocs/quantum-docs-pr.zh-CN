@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpRUSByOracle
 title: AmpAmpRUSByOracle 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
@@ -14,18 +14,18 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.amplitudeamplification.applyfixedpointamplification".
-ms.openlocfilehash: 496f2f95185907278502e2a63fcf28b9bc826934
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: f3234568e6dde7028c5cbb49dc15a7d5623376c6
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700133"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96191663"
 ---
 # <a name="ampamprusbyoracle-operation"></a>AmpAmpRUSByOracle 操作
 
 命名空间： [AmplitudeAmplification](xref:Microsoft.Quantum.AmplitudeAmplification)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 > [!WARNING]

@@ -1,31 +1,31 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ApplyOuterCDKMAdder
 title: ApplyOuterCDKMAdder 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ApplyOuterCDKMAdder
 qsharp.summary: Reversible, in-place ripple-carry operation that is used in the integer addition operation RippleCarryAdderCDKM below. Given two qubit registers `xs` and `ys` of the same length, the operation applies a ripple carry sequence of CNOT and CCNOT gates with qubits in `xs` and `ys` as the controls and qubits in `xs` as the targets.
-ms.openlocfilehash: 5ec9d31252254e40efb22e06656294325b4cffcd
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 81311a75beedb62331184faf4e1523f3ccc74f43
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700016"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190660"
 ---
 # <a name="applyoutercdkmadder-operation"></a>ApplyOuterCDKMAdder 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Arithmetic)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 在下面的整数加法运算中使用的可逆的就地波纹-携带运算 RippleCarryAdderCDKM。
 假设有两个 qubit 寄存器， `xs` 并且 `ys` 具有相同的长度，则操作会将 CNOT-CONTAINS 和 CCNOT 入口序列应用到中的 qubits， `xs` 并将 `ys` 作为目标中的控件和 qubits `xs` 。
 
 ```qsharp
-operation ApplyOuterCDKMAdder (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, ancilla : Qubit) : Unit
+operation ApplyOuterCDKMAdder (xs : Microsoft.Quantum.Arithmetic.LittleEndian, ys : Microsoft.Quantum.Arithmetic.LittleEndian, ancilla : Qubit) : Unit is Adj + Ctl
 ```
 
 

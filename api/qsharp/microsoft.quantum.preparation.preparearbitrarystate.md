@@ -1,34 +1,43 @@
 ---
 uid: Microsoft.Quantum.Preparation.PrepareArbitraryState
 title: PrepareArbitraryState 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: PrepareArbitraryState
-qsharp.summary: Given a set of coefficients and a little-endian encoded quantum register, prepares an state on that register described by the given coefficients.
-ms.openlocfilehash: 18f45da601b02fc5f83936b086323e31a66fc20b
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+qsharp.summary: >-
+  > [!WARNING]
+
+  > PrepareArbitraryState has been deprecated. Please use <xref:Microsoft.Quantum.Preparation.PrepareArbitraryStateCP> instead.
+
+
+  Given a set of coefficients and a little-endian encoded quantum register, prepares an state on that register described by the given coefficients.
+ms.openlocfilehash: 18a1e86f8e110a8f48d7dd50961e1f1f471ffc4e
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700729"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190693"
 ---
 # <a name="preparearbitrarystate-operation"></a>PrepareArbitraryState 操作
 
 命名空间： [Microsoft 量子. 准备](xref:Microsoft.Quantum.Preparation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
+
+> [!WARNING]
+> PrepareArbitraryState 已被弃用。 请改用 <xref:Microsoft.Quantum.Preparation.PrepareArbitraryStateCP>。
 
 给定一组系数和一个小 endian 编码的量程寄存器，就给定的系数所描述的那个寄存器的状态进行准备。
 
 ```qsharp
-operation PrepareArbitraryState (coefficients : Microsoft.Quantum.Math.ComplexPolar[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit
+operation PrepareArbitraryState (coefficients : Microsoft.Quantum.Math.ComplexPolar[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit is Adj + Ctl
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此操作将准备一个具有复杂系数的任意量程状态 $ \ket{\psi} $ $r _j e ^ {$n t_j 计算基础状态 $ \ket{0 \cdots 0} $。
 具体而言，此操作的操作可以通过单一转换 $U $ 来模拟，该转换作用于全零状态
@@ -53,7 +62,7 @@ Qubit 寄存器编码号状态（以小字节序格式）。 这应在计算基�
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 负的输入系数 $r 将被视为值为 $ | r_j | $ 的 _j < $0。 `coefficients` 将用元素 $ (r_j，t_j) = (0.0，0.0) $ （如果指定少于 $ 2 ^ n $）。
 

@@ -1,17 +1,17 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification
 title: AmplitudeAmplification 命名空间
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: namespace
 qsharp.name: Microsoft.Quantum.AmplitudeAmplification
 qsharp.summary: This namespace contains functions and operations for performing amplitude amplification.
-ms.openlocfilehash: 09c29bd9d0648bb8652051ad97ceca6ef6557df3
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: f265f1f8b41513f9201a758f85451e768b7564e2
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700101"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96191408"
 ---
 # <a name="microsoftquantumamplitudeamplification-namespace"></a>AmplitudeAmplification 命名空间
 
@@ -19,7 +19,7 @@ ms.locfileid: "92700101"
 
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 采用部分反射的在意波幅放大是在此处实现的最常见的波幅放大形式。
 

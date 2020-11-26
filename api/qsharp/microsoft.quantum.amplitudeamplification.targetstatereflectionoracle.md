@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.TargetStateReflectionOracle
 title: TargetStateReflectionOracle 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Constructs a `ReflectionOracle` about the target state uniquely marked by the flag qubit.
 
   The target state has a single qubit set to 1, and all others 0: $\ket{1}_f$.
-ms.openlocfilehash: a6ed0397be57ef6f14a712749cc416e1fd98b71c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 65ad316a6ac986ebd0dc28b25859026a60aa3239
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700068"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96191102"
 ---
 # <a name="targetstatereflectionoracle-function"></a>TargetStateReflectionOracle 函数
 
 命名空间： [AmplitudeAmplification](xref:Microsoft.Quantum.AmplitudeAmplification)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 构造 `ReflectionOracle` qubit 标志唯一标记的目标状态。

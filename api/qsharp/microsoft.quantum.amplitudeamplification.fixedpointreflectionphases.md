@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.FixedPointReflectionPhases
 title: FixedPointReflectionPhases 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
 qsharp.name: FixedPointReflectionPhases
 qsharp.summary: Computes partial reflection phases for fixed-point amplitude amplification.
-ms.openlocfilehash: 6ab2a8c6cb0b390f96aa13ece5d5b89c196a6107
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8cc1073447f5fae87ece38db64dcc312f6208899
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700105"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96191442"
 ---
 # <a name="fixedpointreflectionphases-function"></a>FixedPointReflectionPhases 函数
 
 命名空间： [AmplitudeAmplification](xref:Microsoft.Quantum.AmplitudeAmplification)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 计算固定点幅度放大的部分反射阶段。

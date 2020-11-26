@@ -9,12 +9,12 @@ uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: d38482be17e67f180441440ee8ccc7f1f64ebc9d
-ms.sourcegitcommit: fb75d8f30f1d91f644b2a594f46867eb5968cfda
+ms.openlocfilehash: 93ece8cbaa2ac8e6e0c9bb417e8f40130cb8a3fa
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94448338"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96192088"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -23,6 +23,18 @@ ms.locfileid: "94448338"
 有关安装说明，请参阅[安装指南](xref:microsoft.quantum.install)。
 
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
+
+## <a name="version-0142011120240"></a>版本0.14.2011120240
+
+*发布日期：2020年11月25日*
+
+- 由于加快了引用加载，提高了编译器性能。
+- 为语言规范添加了[ANTLR 语法 Q# ](https://github.com/microsoft/qsharp-language/tree/main/Specifications/Language/5_Grammar) Q# 。
+- 已将[ `Microsoft.Quantum.Preparation` 命名空间](xref:Microsoft.Quantum.Preparation)更新为与样式指南和 API 设计原则更一致，若要支持 purified 混合状态和附加数据 (参阅[提议](https://github.com/microsoft/QuantumLibraries/issues/344)，[查看注释](https://github.com/microsoft/QuantumLibraries/blob/main/Design/meetings/2020/api-design-2020-11-05.md)和[pr #212](https://github.com/microsoft/QuantumLibraries/pull/212)， [#322](https://github.com/microsoft/QuantumLibraries/pull/322)， [#375](https://github.com/microsoft/QuantumLibraries/pull/375)， [#376](https://github.com/microsoft/QuantumLibraries/pull/376)) 。
+- 重复调用表达式两边的括号现在是可选的： `(Foo(x))(y)` 可以写入 `Foo(x)(y)` 。
+- 可能会提示已安装 .NET 5 或 Visual Studio 16.8 的 Visual Studio 或 Visual Studio Code 扩展的用户安装 .NET Core 3.1 以继续使用这些扩展。
+
+请参阅适用于[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+closed%3A2020-10-23..2020-11-18)、[编译器](https://github.com/microsoft/qsharp-compiler/pulls?q=is%3Apr+closed%3A2020-10-23..2020-11-18)、[运行时](https://github.com/microsoft/qsharp-runtime/pulls?q=is%3Apr+closed%3A2020-10-23..2020-11-18)、[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+closed%3A2020-10-23..2020-11-18)、 [I Q# ](https://github.com/microsoft/iqsharp/pulls?q=is%3Apr+closed%3A2020-10-23..2020-11-18)和[Katas](https://github.com/microsoft/QuantumKatas/pulls?q=is%3Apr+closed%3A2020-10-23..2020-11-18)的已关闭 pr 的完整列表。
 
 ## <a name="version-01320111004"></a>版本0.13.20111004
 
@@ -115,13 +127,13 @@ ms.locfileid: "94448338"
 
 ## <a name="version-0112006403"></a>版本 0.11.2006.403
 
-发行日期： *2020 年 6 月 4 日*
+发行日期：*2020 年 6 月 4 日*
 
 此版本修复了影响项目编译的 bug Q# 。
 
 ## <a name="version-0112006207"></a>版本 0.11.2006.207
 
-发行日期： *2020 年 6 月 3 日*
+发行日期：*2020 年 6 月 3 日*
 
 此版本包含以下各项：
 
@@ -137,7 +149,7 @@ ms.locfileid: "94448338"
 
 ## <a name="version-01120042825"></a>版本 0.11.2004.2825
 
-发行日期： *2020 年 4 月 30 日*
+发行日期：*2020 年 4 月 30 日*
 
 此版本包含以下各项：
 
@@ -151,13 +163,13 @@ ms.locfileid: "94448338"
 
 ## <a name="version-01120033107"></a>版本 0.11.2003.3107
 
-发行日期： *2020 年 3 月 31 日*
+发行日期：*2020 年 3 月 31 日*
 
 此版本包含针对版本 0.11.2003.2506 的小 Bug 修复。
 
 ## <a name="version-01120032506"></a>版本 0.11.2003.2506
 
-发行日期： *2020 年 3 月 26 日*
+发行日期：*2020 年 3 月 26 日*
 
 此版本包含以下各项：
 
@@ -195,7 +207,7 @@ ms.locfileid: "94448338"
 
 ## <a name="version-01019120501"></a>版本 0.10.1912.0501
 
-发行日期： *2019 年 12 月 5 日*
+发行日期：*2019 年 12 月 5 日*
 
 此版本包含以下各项：
 
@@ -207,7 +219,7 @@ ms.locfileid: "94448338"
 
 ## <a name="version-01019111607"></a>版本 0.10.1911.1607
 
-发行日期： *2019 年 11 月 17 日*
+发行日期：*2019 年 11 月 17 日*
 
 此版本包含以下各项：
 
@@ -218,7 +230,7 @@ ms.locfileid: "94448338"
 
 ## <a name="version-0101911307"></a>版本 0.10.1911.307
 
-发行日期： *2019 年 11 月 1 日*
+发行日期：*2019 年 11 月 1 日*
 
 此版本包含以下各项：
 
@@ -257,7 +269,7 @@ ms.locfileid: "94448338"
 
 此处汇总了这些更改，以及有关升级现有程序的说明。  有关这些更改的详细信息，请参阅[ Q# 开发博客](https://devblogs.microsoft.com/qsharp)。
 
-## <a name="version-08-packagereference-0819071701"></a>版本 0.8 ( *PackageReference 0.8.1907.1701* )
+## <a name="version-08-packagereference-0819071701"></a>版本 0.8 (*PackageReference 0.8.1907.1701*)
 
 发行日期：2019 年 7 月 12 日
 
@@ -269,7 +281,7 @@ ms.locfileid: "94448338"
 
 有关[库](https://github.com/Microsoft/QuantumLibraries/pulls?q=is%3Apr+is%3Aclosed)和[示例](https://github.com/Microsoft/Quantum/pulls?q=is%3Apr+is%3Aclosed)的信息，请参阅已结束的 PR 的完整列表。  
 
-## <a name="version-07-packagereference-0719053109"></a>版本 0.7 ( *PackageReference 0.7.1905.3109* )
+## <a name="version-07-packagereference-0719053109"></a>版本 0.7 (*PackageReference 0.7.1905.3109*)
 
 发行日期：2019 年 5 月 31 日
 

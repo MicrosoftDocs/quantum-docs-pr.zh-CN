@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ApplyPhaseLEOperationOnLE
 title: ApplyPhaseLEOperationOnLE 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ApplyPhaseLEOperationOnLE
 qsharp.summary: Applies an operation that takes a <xref:microsoft.quantum.arithmetic.littleendian> register as input on a target register of type <xref:microsoft.quantum.arithmetic.phaselittleendian>.
-ms.openlocfilehash: dacc52766cf72d2bd562b76fc4939f962133e9a7
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: adccad53e8d874cb2879d7005711624bbcc69201
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700009"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190762"
 ---
 # <a name="applyphaseleoperationonle-operation"></a>ApplyPhaseLEOperationOnLE 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Arithmetic)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 应用一个 <xref:microsoft.quantum.arithmetic.littleendian> 在类型为的目标寄存器上采用注册为输入的操作 <xref:microsoft.quantum.arithmetic.phaselittleendian> 。
@@ -45,7 +45,7 @@ operation ApplyPhaseLEOperationOnLE (op : (Microsoft.Quantum.Arithmetic.PhaseLit
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 通过使用将寄存器转换为 `PhaseLittleEndian` <xref:microsoft.quantum.canon.qftle> ，然后在应用后将其返回到其原始表示形式 `op` 。
 

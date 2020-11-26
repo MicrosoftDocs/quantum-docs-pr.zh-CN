@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.ApplyFixedPointAmplification
 title: ApplyFixedPointAmplification 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
 qsharp.name: ApplyFixedPointAmplification
 qsharp.summary: Fixed-Point Amplitude Amplification algorithm
-ms.openlocfilehash: f506be7b2e3f65cf89694e30d79c04ec30d25035
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 13e70b1ebd5e3bf0996e6a76f4bffe57ca2d2250
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700120"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96191527"
 ---
 # <a name="applyfixedpointamplification-operation"></a>ApplyFixedPointAmplification 操作
 
 命名空间： [AmplitudeAmplification](xref:Microsoft.Quantum.AmplitudeAmplification)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 Fixed-Point 振幅放大算法
@@ -45,6 +45,6 @@ Qubit 注册
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 StartQubits 必须处于 $ \ket{0 \cdots 0} $ 状态。 此操作将循环访问多个查询，以 $2 $ 的幂来循环访问，直到达到最大数量的查询或找到目标状态。

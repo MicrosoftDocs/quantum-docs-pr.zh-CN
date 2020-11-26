@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.AmplitudeAmplificationFromStatePreparation
 title: AmplitudeAmplificationFromStatePreparation 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
 qsharp.name: AmplitudeAmplificationFromStatePreparation
 qsharp.summary: Amplitude amplification by oracles for partial reflections.
-ms.openlocfilehash: 7725ff327e327578ff36242a2b1bc6d03fab0d0c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 30e1cf6e353b8a4491e13a9e2f588ec9cc103cb4
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700129"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96191595"
 ---
 # <a name="amplitudeamplificationfromstatepreparation-function"></a>AmplitudeAmplificationFromStatePreparation 函数
 
 命名空间： [AmplitudeAmplification](xref:Microsoft.Quantum.AmplitudeAmplification)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 用于部分反射的 oracles 放大幅度。
@@ -46,11 +46,11 @@ function AmplitudeAmplificationFromStatePreparation (phases : Microsoft.Quantum.
 
 
 
-## <a name="output--qubit--unit-adj--ctl"></a>Output： [Qubit](xref:microsoft.quantum.lang-ref.qubit)[] => [单位](xref:microsoft.quantum.lang-ref.unit) 调整 + Ctl
+## <a name="output--qubit--unit--is-adj--ctl"></a>Output： [Qubit](xref:microsoft.quantum.lang-ref.qubit)[] => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词 + Ctl
 
 实现由部分反射实现的 oracles 放大幅度的操作。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 这会在开始和目标状态的形式上强制实施更严格的条件，而不是在中 `AmpAmpByReflectionPhases` 。
 假定目标状态标有 $ \ket {1} \_ f $。

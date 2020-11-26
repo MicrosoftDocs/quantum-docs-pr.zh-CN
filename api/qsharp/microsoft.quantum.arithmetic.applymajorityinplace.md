@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ApplyMajorityInPlace
 title: ApplyMajorityInPlace 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ApplyMajorityInPlace
 qsharp.summary: Applies the three-qubit majority operation in-place on a register of qubits.
-ms.openlocfilehash: 3664ffe96cd1db8cf5e8898387fe7f2d45b4ea98
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: c32d7546fb753f78a72479cec11a6ed09c5e6179
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700025"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96190728"
 ---
 # <a name="applymajorityinplace-operation"></a>ApplyMajorityInPlace 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Arithmetic)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 在 qubits 的收银机上就地应用三个 qubit 多数操作。
 
 ```qsharp
-operation ApplyMajorityInPlace (output : Qubit, input : Qubit[]) : Unit
+operation ApplyMajorityInPlace (output : Qubit, input : Qubit[]) : Unit is Adj + Ctl
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此操作计算 3 qubits 上就地的函数。
 

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Simulation.TrotterSimulationAlgorithm
 title: TrotterSimulationAlgorithm 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: TrotterSimulationAlgorithm
 qsharp.summary: '`SimulationAlgorithm` function that uses a Trotter–Suzuki decomposition to approximate the time-evolution operator _exp(-iHt)_.'
-ms.openlocfilehash: c52acf293e69c78e7a82b0cf5d94de52d0f5a293
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: aa8338ab359441765db72a12f84a3a51e5bee3ce
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696621"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96192530"
 ---
 # <a name="trottersimulationalgorithm-function"></a>TrotterSimulationAlgorithm 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Simulation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 `SimulationAlgorithm` 使用 Trotter – Suzuki 分解来近似于时间演化运算符 _exp (-iHt)_ 的函数。

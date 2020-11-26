@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.Quantum.Synthesis.ApplyPermutationUsingDecomposition
 title: ApplyPermutationUsingDecomposition 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Synthesis
 qsharp.name: ApplyPermutationUsingDecomposition
 qsharp.summary: Permutes the amplitudes in a quantum state given a permutation using decomposition-based synthesis.
-ms.openlocfilehash: 40b51807da155c57c3fa8d740eff28ceef0a0ffc
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 5b25ef3327bbca2dfdbe8fa876f3f797dddf77e8
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92701093"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96192122"
 ---
 # <a name="applypermutationusingdecomposition-operation"></a>ApplyPermutationUsingDecomposition 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Synthesis)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 使用基于分解的合成，Permutes amplitudes 在量程状态中。
 
 ```qsharp
-operation ApplyPermutationUsingDecomposition (perm : Int[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit
+operation ApplyPermutationUsingDecomposition (perm : Int[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit is Adj + Ctl
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此过程实现基于分解的合成方法。  输入是一种排列 $ \pi $ over $ 2 ^ n $ 元素 $ \{ 0，\dots ..，2 ^ n-1 \} $，表示 $n $-可变可逆布尔函数。
 算法会对每个可变索引 $i $ 执行以下步骤：
@@ -59,8 +59,8 @@ operation ApplyPermutationUsingDecomposition (perm : Int[], qubits : Microsoft.Q
 
 ## <a name="references"></a>参考
 
-- [*Alexis De Vos* ， *Yvan Van Rentergem* ，高级. 2 (2) ，2008，pp 183--200](http://www.aimsciences.org/article/doi/10.3934/amc.2008.2.183)
-- [*Mathias Soeken* 、 *刘娜 Tague* 、 *Gerhard Dueck* 、 *Rolf Drechsler* 、) 符号计算 73 (2016、pp 1--26](https://www.sciencedirect.com/science/article/pii/S0747717115000188?via%3Dihub)
+- [*Alexis De Vos*， *Yvan Van Rentergem*，高级. 2 (2) ，2008，pp 183--200](http://www.aimsciences.org/article/doi/10.3934/amc.2008.2.183)
+- [*Mathias Soeken*、 *刘娜 Tague*、 *Gerhard Dueck*、 *Rolf Drechsler*、) 符号计算 73 (2016、pp 1--26](https://www.sciencedirect.com/science/article/pii/S0747717115000188?via%3Dihub)
 
 ## <a name="see-also"></a>另请参阅
 
