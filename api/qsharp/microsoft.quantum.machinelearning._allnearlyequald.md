@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.MachineLearning._AllNearlyEqualD
 title: _AllNearlyEqualD 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: _AllNearlyEqualD
 qsharp.summary: ''
-ms.openlocfilehash: 04c9e966ff322e5519b4726ac17e58d4aef89568
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 9a7dffd220e04b1a4bad55cba41cd49a1ce64a7a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92699732"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96197018"
 ---
-# <a name="_allnearlyequald-function"></a><span data-ttu-id="479ff-102">_AllNearlyEqualD 函数</span><span class="sxs-lookup"><span data-stu-id="479ff-102">_AllNearlyEqualD function</span></span>
+# <a name="_allnearlyequald-function"></a><span data-ttu-id="37d05-102">_AllNearlyEqualD 函数</span><span class="sxs-lookup"><span data-stu-id="37d05-102">_AllNearlyEqualD function</span></span>
 
-<span data-ttu-id="479ff-103">命名空间： [default-machinelearning-southcentralus](xref:Microsoft.Quantum.MachineLearning)</span><span class="sxs-lookup"><span data-stu-id="479ff-103">Namespace: [Microsoft.Quantum.MachineLearning](xref:Microsoft.Quantum.MachineLearning)</span></span>
+<span data-ttu-id="37d05-103">命名空间： [default-machinelearning-southcentralus](xref:Microsoft.Quantum.MachineLearning)</span><span class="sxs-lookup"><span data-stu-id="37d05-103">Namespace: [Microsoft.Quantum.MachineLearning](xref:Microsoft.Quantum.MachineLearning)</span></span>
 
-<span data-ttu-id="479ff-104">软件包 [](https://nuget.org/packages/)</span><span class="sxs-lookup"><span data-stu-id="479ff-104">Package: [](https://nuget.org/packages/)</span></span>
+<span data-ttu-id="37d05-104">Package： [default-machinelearning-southcentralus](https://nuget.org/packages/Microsoft.Quantum.MachineLearning)</span><span class="sxs-lookup"><span data-stu-id="37d05-104">Package: [Microsoft.Quantum.MachineLearning](https://nuget.org/packages/Microsoft.Quantum.MachineLearning)</span></span>
 
 
 
@@ -28,18 +28,18 @@ function _AllNearlyEqualD (v1 : Double[], v2 : Double[]) : Bool
 ```
 
 
-## <a name="input"></a><span data-ttu-id="479ff-105">输入</span><span class="sxs-lookup"><span data-stu-id="479ff-105">Input</span></span>
+## <a name="input"></a><span data-ttu-id="37d05-105">输入</span><span class="sxs-lookup"><span data-stu-id="37d05-105">Input</span></span>
 
-### <a name="v1--double"></a><span data-ttu-id="479ff-106">v1： [Double](xref:microsoft.quantum.lang-ref.double)[]</span><span class="sxs-lookup"><span data-stu-id="479ff-106">v1 : [Double](xref:microsoft.quantum.lang-ref.double)[]</span></span>
-
-
-
-
-### <a name="v2--double"></a><span data-ttu-id="479ff-107">v2： [Double](xref:microsoft.quantum.lang-ref.double)[]</span><span class="sxs-lookup"><span data-stu-id="479ff-107">v2 : [Double](xref:microsoft.quantum.lang-ref.double)[]</span></span>
+### <a name="v1--double"></a><span data-ttu-id="37d05-106">v1： [Double](xref:microsoft.quantum.lang-ref.double)[]</span><span class="sxs-lookup"><span data-stu-id="37d05-106">v1 : [Double](xref:microsoft.quantum.lang-ref.double)[]</span></span>
 
 
 
 
+### <a name="v2--double"></a><span data-ttu-id="37d05-107">v2： [Double](xref:microsoft.quantum.lang-ref.double)[]</span><span class="sxs-lookup"><span data-stu-id="37d05-107">v2 : [Double](xref:microsoft.quantum.lang-ref.double)[]</span></span>
 
-## <a name="output--bool"></a><span data-ttu-id="479ff-108">输出：[布尔](xref:microsoft.quantum.lang-ref.bool)值</span><span class="sxs-lookup"><span data-stu-id="479ff-108">Output : [Bool](xref:microsoft.quantum.lang-ref.bool)</span></span>
+
+
+
+
+## <a name="output--bool"></a><span data-ttu-id="37d05-108">输出：[布尔](xref:microsoft.quantum.lang-ref.bool)值</span><span class="sxs-lookup"><span data-stu-id="37d05-108">Output : [Bool](xref:microsoft.quantum.lang-ref.bool)</span></span>
 
