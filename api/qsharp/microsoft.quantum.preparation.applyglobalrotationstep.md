@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Preparation.ApplyGlobalRotationStep
 title: ApplyGlobalRotationStep 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: ApplyGlobalRotationStep
 qsharp.summary: ''
-ms.openlocfilehash: d70d28f4f6d87296797b7175c3512621380934f5
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 2af65344a37fbb3efb0421880b2868740f9c05fb
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700749"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96226547"
 ---
 # <a name="applyglobalrotationstep-operation"></a>ApplyGlobalRotationStep 操作
 
 命名空间： [Microsoft 量子. 准备](xref:Microsoft.Quantum.Preparation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 
 
 ```qsharp
-operation ApplyGlobalRotationStep (angle : Double, idxTarget : Int, register : Qubit[]) : Unit
+operation ApplyGlobalRotationStep (angle : Double, idxTarget : Int, register : Qubit[]) : Unit is Adj + Ctl
 ```
 
 

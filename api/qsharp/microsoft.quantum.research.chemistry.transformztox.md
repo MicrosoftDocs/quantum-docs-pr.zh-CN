@@ -1,31 +1,31 @@
 ---
 uid: Microsoft.Quantum.Research.Chemistry.TransformZToX
 title: TransformZToX 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Research.Chemistry
 qsharp.name: TransformZToX
 qsharp.summary: Used to change the basis of a Z operator to a Y operator. conjugation.
-ms.openlocfilehash: 1c887d3476bbfd184a15d80bb58fe39b7baa2752
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: c6356edfab64f2365ca39e6a735e422054c6e9bc
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695278"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96225629"
 ---
 # <a name="transformztox-operation"></a>TransformZToX 操作
 
 命名空间： [...](xref:Microsoft.Quantum.Research.Chemistry)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft.](https://nuget.org/packages/Microsoft.Quantum.Research.Chemistry)
 
 
 用于将 Z 运算符的基础更改为 Y 运算符。
 语态.
 
 ```qsharp
-operation TransformZToX (qubit : Qubit) : Unit
+operation TransformZToX (qubit : Qubit) : Unit is Adj + Ctl
 ```
 
 

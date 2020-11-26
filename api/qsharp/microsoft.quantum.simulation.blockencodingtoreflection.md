@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Simulation.BlockEncodingToReflection
 title: BlockEncodingToReflection 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Converts a `BlockEncoding` into an equivalent `BLockEncodingReflection`.
 
   That is, given a `BlockEncoding` unitary $U$ that encodes some operator $H$ of interest, converts it into a `BlockEncodingReflection` $U'$ that encodes the same operator, but also satisfies $U'^\dagger = U'$. This increases the size of the auxiliary register of $U$ by one qubit.
-ms.openlocfilehash: a8b4c65f8c32f7f9185f1dbdacf8fc75fd4573b1
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 742d4f5623c7c26810998f6c96e2c7b05cc452d3
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700165"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96225340"
 ---
 # <a name="blockencodingtoreflection-function"></a>BlockEncodingToReflection 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Simulation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将转换为 `BlockEncoding` 等效的 `BLockEncodingReflection` 。
@@ -46,7 +46,7 @@ function BlockEncodingToReflection (blockEncoding : Microsoft.Quantum.Simulation
 
 单一 $U ' $ 共同操作寄存器并对 `a` 其 `s` 进行块编码 $H $，并满足 $U ^ \Dagger = U ' $。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 这会将 $U $ 的辅助寄存器大小增加了一个 qubit。
 

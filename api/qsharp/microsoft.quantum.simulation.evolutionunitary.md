@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Simulation.EvolutionUnitary
 title: EvolutionUnitary 用户定义的类型
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Simulation
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Represents a unitary time-evolution operator.
 
   The first parameter is is duration of time-evolution, and the second parameter is the qubit register acted upon by the unitary.
-ms.openlocfilehash: 28ab492573b67e4aa42392e4ee499596b9c0225f
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 38e7da28d4146df9cc132ad69ee939c44bc917f7
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700961"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96225255"
 ---
 # <a name="evolutionunitary-user-defined-type"></a>EvolutionUnitary 用户定义的类型
 
 命名空间 [：](xref:Microsoft.Quantum.Simulation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 表示单一的时间演化运算符。

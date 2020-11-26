@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Simulation.IdxToCoeff
 title: IdxToCoeff 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: IdxToCoeff
 qsharp.summary: Used in implementation of `PauliBlockEncoding`
-ms.openlocfilehash: 50e0c536b01cddb56482580fd634270c4e104173
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 4e10b61e56b791a39841385ec79893c1392b9563
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700864"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96225119"
 ---
 # <a name="idxtocoeff-function"></a>IdxToCoeff 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Simulation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 用于实现 `PauliBlockEncoding`

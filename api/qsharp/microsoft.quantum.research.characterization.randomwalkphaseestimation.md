@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Research.Characterization.RandomWalkPhaseEstimation
 title: RandomWalkPhaseEstimation 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Research.Characterization
 qsharp.name: RandomWalkPhaseEstimation
 qsharp.summary: Performs iterative phase estimation using a random walk to approximate Bayesian inference on the classical measurement results from a given oracle and eigenstate.
-ms.openlocfilehash: 5e0c0871b916ff51b85dec8703111788b5204bc6
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 2c3afdd41da24a1f32f59f36f0f5c5ed29df1f0b
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695298"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96226156"
 ---
 # <a name="randomwalkphaseestimation-operation"></a>RandomWalkPhaseEstimation 操作
 
 命名空间 [： ...](xref:Microsoft.Quantum.Research.Characterization)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 信息](https://nuget.org/packages/Microsoft.Quantum.Research.Characterization)
 
 
 执行迭代阶段估算，并使用随机遍历来估算给定 oracle 和 eigenstate 的传统测量结果中的 Bayesian 推理。
@@ -70,7 +70,7 @@ $U $ 操作的寄存器。
 
 最终的估计 $ \hat{\phi} \mathrel{： =} \expect [\phi] $，其中，假定所有接受的数据都超出了后验。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 ### <a name="iterative-phase-estimation-and-eigenstates"></a>迭代阶段估计和 Eigenstates
 
@@ -80,7 +80,7 @@ $U $ 操作的寄存器。
 
 ### <a name="experiment-design"></a>试验设计
 
-根据粒子推测试探法 $ \theta $ 传递到的度量 $t 时间 $ $ `oracle` ， *particle guess heuristic* \Begin{align} \theta \sim \Pr ( \phi) ，\quad t \approx \frac {1} {\variance{\phi}}。
+根据粒子推测试探法 $ \theta $ 传递到的度量 $t 时间 $ $ `oracle` ， *particle guess heuristic*\Begin{align} \theta \sim \Pr ( \phi) ，\quad t \approx \frac {1} {\variance{\phi}}。
 \end{align} 这种试探的最佳做法是，在以前的假设条件下，使用迭代阶段估算来减少预期的后验方差。
 
 ### <a name="optimality"></a>最优性
@@ -93,4 +93,4 @@ $U $ 操作的寄存器。
 
 - Ferrie *et al.* 2011 [doi>10.1145： 10/tfx-cli](https://doi.org/10.1007/s11128-012-0407-6)， [arXiv： 1110.3067](https://arxiv.org/abs/1110.3067)。
 - Wiebe *et al.* 2013 [doi>10.1145： 10/tf3](https://doi.org/10.1103/PhysRevLett.112.190501)、 [arXiv： 1309.0876](https://arxiv.org/abs/1309.0876)
-- Wiebe 和 Granade 2018 *(准备)* 。
+- Wiebe 和 Granade 2018 *(准备)*。

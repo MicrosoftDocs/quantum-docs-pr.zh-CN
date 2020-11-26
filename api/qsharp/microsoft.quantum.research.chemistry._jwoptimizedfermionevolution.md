@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Research.Chemistry._JWOptimizedFermionEvolution
 title: _JWOptimizedFermionEvolution 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Research.Chemistry
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Represents a dynamical generator as a set of simulatable gates and an expansion in the JWOptimized basis.
 
   See [Dynamical Generator Modeling](../libraries/data-structures#dynamical-generator-modeling) for more details.
-ms.openlocfilehash: 5976b65d44c0e8597088dbaa6b85ffde634edcdb
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 670accb6288d26cc7deb89c8d580fe082e795d57
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700373"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96226003"
 ---
 # <a name="_jwoptimizedfermionevolution-operation"></a>_JWOptimizedFermionEvolution 操作
 
 命名空间： [...](xref:Microsoft.Quantum.Research.Chemistry)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft.](https://nuget.org/packages/Microsoft.Quantum.Research.Chemistry)
 
 
 将 dynamical 生成器表示为一组 simulatable 入口和 JWOptimized 中的扩展。
@@ -29,7 +29,7 @@ ms.locfileid: "92700373"
 有关更多详细信息，请参阅 [Dynamical 生成器建模](../libraries/data-structures#dynamical-generator-modeling) 。
 
 ```qsharp
-operation _JWOptimizedFermionEvolution (generatorIndex : Microsoft.Quantum.Simulation.GeneratorIndex, stepSize : Double, parityQubit : Qubit, qubits : Qubit[]) : Unit
+operation _JWOptimizedFermionEvolution (generatorIndex : Microsoft.Quantum.Simulation.GeneratorIndex, stepSize : Double, parityQubit : Qubit, qubits : Qubit[]) : Unit is Adj + Ctl
 ```
 
 

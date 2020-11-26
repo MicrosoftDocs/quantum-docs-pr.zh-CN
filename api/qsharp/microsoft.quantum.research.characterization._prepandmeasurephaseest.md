@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Research.Characterization._PrepAndMeasurePhaseEst
 title: _PrepAndMeasurePhaseEst 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Research.Characterization
 qsharp.name: _PrepAndMeasurePhaseEst
 qsharp.summary: ''
-ms.openlocfilehash: 3ab2c0eb7719c4a55a64e3e4a98bed2a570debc8
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 84677484e703315e4242a565a64470ab8e3d7030
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695303"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96226241"
 ---
 # <a name="_prepandmeasurephaseest-operation"></a>_PrepAndMeasurePhaseEst 操作
 
 命名空间 [： ...](xref:Microsoft.Quantum.Research.Characterization)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 信息](https://nuget.org/packages/Microsoft.Quantum.Research.Characterization)
 
 
 
@@ -46,5 +46,5 @@ operation _PrepAndMeasurePhaseEst (wInv : Double, t : Double, op : ((Double, Dou
 
 
 
-## <a name="output--__invalidresult__"></a>输出： __无效 <Result>__
+## <a name="output--__invalidresult__"></a>输出：__无效 <Result>__
 

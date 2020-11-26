@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Oracles.ObliviousOracleFromDeterministicStateOracle
 title: ObliviousOracleFromDeterministicStateOracle 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Oracles
 qsharp.name: ObliviousOracleFromDeterministicStateOracle
 qsharp.summary: Combines the oracles `DeterministicStateOracle` and `ObliviousOracle`.
-ms.openlocfilehash: 9e18776ad4d6adf0068213117c6d1d8ed5c5f126
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8f1fe34e38edefba228fb9d01e1712e4c0916970
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700209"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96226683"
 ---
 # <a name="obliviousoraclefromdeterministicstateoracle-function"></a>ObliviousOracleFromDeterministicStateOracle 函数
 
 命名空间： [Oracles](xref:Microsoft.Quantum.Oracles)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将 oracles 和组合在一起 `DeterministicStateOracle` `ObliviousOracle` 。
