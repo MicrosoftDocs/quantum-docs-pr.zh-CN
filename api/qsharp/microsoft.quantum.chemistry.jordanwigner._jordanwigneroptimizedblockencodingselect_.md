@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._JordanWignerOptimizedBlockEncodingSelect_
 title: _JordanWignerOptimizedBlockEncodingSelect_ 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _JordanWignerOptimizedBlockEncodingSelect_
 qsharp.summary: ''
-ms.openlocfilehash: 049d4c6c7b3d2f7c751206865d3b94e2c176f8e4
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: b24031bde0c62b738202ddd8242ca46bb985fd90
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695820"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96203801"
 ---
 # <a name="_jordanwigneroptimizedblockencodingselect_-operation"></a>_JordanWignerOptimizedBlockEncodingSelect_ 操作
 
 命名空间： [JordanWigner](xref:Microsoft.Quantum.Chemistry.JordanWigner)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子](https://nuget.org/packages/Microsoft.Quantum.Chemistry)
 
 
 
 
 ```qsharp
-operation _JordanWignerOptimizedBlockEncodingSelect_ (targetError : Double, nCoeffs : Int, optimizedBEGeneratorSystem : Microsoft.Quantum.Chemistry.JordanWigner.OptimizedBEGeneratorSystem, nZ : Int, nMaj : Int, nIdxRegQubits : Int, ctrlRegister : Qubit[], targetRegister : Qubit[]) : Unit
+operation _JordanWignerOptimizedBlockEncodingSelect_ (targetError : Double, nCoeffs : Int, optimizedBEGeneratorSystem : Microsoft.Quantum.Chemistry.JordanWigner.OptimizedBEGeneratorSystem, nZ : Int, nMaj : Int, nIdxRegQubits : Int, ctrlRegister : Qubit[], targetRegister : Qubit[]) : Unit is Adj + Ctl
 ```
 
 

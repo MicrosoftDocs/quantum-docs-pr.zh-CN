@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AllowAtMostNCallsCA
 title: AllowAtMostNCallsCA 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: AllowAtMostNCallsCA
 qsharp.summary: Between a call to this operation and its adjoint, asserts that a given operation is called at most a certain number of times.
-ms.openlocfilehash: 1a9975d2d2026749238430b247cf47738de545cd
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 7caf33e33318bb74cb160436940eff9f0f2782cc
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695610"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96202560"
 ---
 # <a name="allowatmostncallsca-operation"></a>AllowAtMostNCallsCA 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Diagnostics)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 在对此操作及其 adjoint 的调用之间，断言给定的操作最多可调用特定次数。
 
 ```qsharp
-operation AllowAtMostNCallsCA<'TInput, 'TOutput> (nTimes : Int, op : ('TInput => 'TOutput is Adj + Ctl), message : String) : Unit
+operation AllowAtMostNCallsCA<'TInput, 'TOutput> (nTimes : Int, op : ('TInput => 'TOutput is Adj + Ctl), message : String) : Unit is Adj
 ```
 
 
@@ -35,7 +35,7 @@ operation AllowAtMostNCallsCA<'TInput, 'TOutput> (nTimes : Int, op : ('TInput =>
 可调用的最大次数 `op` 。
 
 
-### <a name="op--tinput--toutput-adj--ctl"></a>op： ' TInput => ' TOutput 形容词 + Ctl
+### <a name="op--tinput--toutput--is-adj--ctl"></a>op： ' TInput => ' TOutput 是形容词 + Ctl
 
 要限制其调用的操作。
 
@@ -59,6 +59,6 @@ operation AllowAtMostNCallsCA<'TInput, 'TOutput> (nTimes : Int, op : ('TInput =>
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 对于不支持此操作的目标，此操作可能会替换为不支持操作。

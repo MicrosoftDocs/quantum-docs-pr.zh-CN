@@ -1,36 +1,36 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ApplyReversedOpLEA
 title: ApplyReversedOpLEA 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ApplyReversedOpLEA
 qsharp.summary: Applies an operation that takes little-endian input to a register encoding an unsigned integer using big-endian format.
-ms.openlocfilehash: 073ba908f2a06d36a8b73237f6a12d974b9d4d15
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: d5bc1b38500c449b58f8dafd640627b8e933e902
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92699977"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96202730"
 ---
 # <a name="applyreversedoplea-operation"></a>ApplyReversedOpLEA 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Arithmetic)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 应用一个操作，该操作将使用大字节序格式对无符号整数进行寄存器编码。
 
 ```qsharp
-operation ApplyReversedOpLEA (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj), register : Microsoft.Quantum.Arithmetic.BigEndian) : Unit
+operation ApplyReversedOpLEA (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Adj), register : Microsoft.Quantum.Arithmetic.BigEndian) : Unit is Adj
 ```
 
 
 ## <a name="input"></a>输入
 
-### <a name="op--littleendian--unit-adj"></a>op： [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian) => [Unit](xref:microsoft.quantum.lang-ref.unit) 形容词
+### <a name="op--littleendian--unit--is-adj"></a>op： [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian) => [Unit](xref:microsoft.quantum.lang-ref.unit)  为形容词
 
 作用于小 endian 寄存器的操作。
 

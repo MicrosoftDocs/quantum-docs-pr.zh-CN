@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._ApplyJordanWignerClusterOperatorPQRSTerm
 title: _ApplyJordanWignerClusterOperatorPQRSTerm 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _ApplyJordanWignerClusterOperatorPQRSTerm
 qsharp.summary: Applies time-evolution by a cluster operator PQRS term described by a `GeneratorIndex`.
-ms.openlocfilehash: 9f5cd58747b16d3fc755c202fd905394fc221d53
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 5e43f81714128629a63befccb31092adbe9c9e82
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695859"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96204039"
 ---
 # <a name="_applyjordanwignerclusteroperatorpqrsterm-operation"></a>_ApplyJordanWignerClusterOperatorPQRSTerm 操作
 
 命名空间： [JordanWigner](xref:Microsoft.Quantum.Chemistry.JordanWigner)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子](https://nuget.org/packages/Microsoft.Quantum.Chemistry)
 
 
 由描述的群集 operator PQRS 术语应用时间演变 `GeneratorIndex` 。
 
 ```qsharp
-operation _ApplyJordanWignerClusterOperatorPQRSTerm (term : Microsoft.Quantum.Simulation.GeneratorIndex, stepSize : Double, qubits : Qubit[]) : Unit
+operation _ApplyJordanWignerClusterOperatorPQRSTerm (term : Microsoft.Quantum.Simulation.GeneratorIndex, stepSize : Double, qubits : Qubit[]) : Unit is Adj + Ctl
 ```
 
 

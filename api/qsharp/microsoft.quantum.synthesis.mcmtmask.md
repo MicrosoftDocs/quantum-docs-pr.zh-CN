@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Synthesis.MCMTMask
 title: MCMTMask 用户定义的类型
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Synthesis
@@ -14,18 +14,18 @@ qsharp.summary: >-
   The second integer is a bit mask for target lines.  Bit indexes which are set correspond to target line indexes.
 
   The bit indexes of both integers must be disjoint.
-ms.openlocfilehash: 0d3ca12d55fa4b5e8332d50939954de29e39b715
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 3c2debbb1f2019c7188dcb00f8ac09154fd4fd4f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92701145"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96203004"
 ---
 # <a name="mcmtmask-user-defined-type"></a>MCMTMask 用户定义的类型
 
 命名空间 [：](xref:Microsoft.Quantum.Synthesis)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 一种类型，用于表示多受控多目标 Toffoli 入口。
