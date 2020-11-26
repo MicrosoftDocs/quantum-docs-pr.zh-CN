@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Math.Sin
 title: Sin 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: Sin
 qsharp.summary: Returns the sine of the specified angle.
-ms.openlocfilehash: e9aabc96247c6c702e22bf5b71a584ee8f930828
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: ff8c623c8e9d59bf54424d635a9894582bf991a4
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700929"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96194468"
 ---
 # <a name="sin-function"></a>Sin 函数
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Math)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 返回指定角度的正弦值。
@@ -40,6 +40,6 @@ function Sin (theta : Double) : Double
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 有关更多详细信息，请参阅 [system.object](https://docs.microsoft.com/dotnet/api/system.math.sin) 。

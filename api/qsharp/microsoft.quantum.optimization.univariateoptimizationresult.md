@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Optimization.UnivariateOptimizationResult
 title: UnivariateOptimizationResult 用户定义的类型
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Optimization
 qsharp.name: UnivariateOptimizationResult
 qsharp.summary: Represents the result of optimizing a univariate function.
-ms.openlocfilehash: c8aa91bbdc9e9e9bb4d110b470ff2041f9460a38
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 0bcdbda5586181f965297cb2a398d766f9c6fabb
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700809"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96194026"
 ---
 # <a name="univariateoptimizationresult-user-defined-type"></a>UnivariateOptimizationResult 用户定义的类型
 
 命名空间 [：](xref:Microsoft.Quantum.Optimization)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 表示优化单变量函数的结果。

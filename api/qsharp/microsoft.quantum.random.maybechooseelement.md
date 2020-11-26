@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Random.MaybeChooseElement
 title: MaybeChooseElement 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Random
 qsharp.name: MaybeChooseElement
 qsharp.summary: Given an array of data and an a distribution over its indices, attempts to choose an element at random.
-ms.openlocfilehash: 12640d9dc3aad301146eff7bcbbaae33d3ccd420
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1a69c8d5a6ae022ceda9269e17434b740809b107
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700193"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96192853"
 ---
 # <a name="maybechooseelement-operation"></a>MaybeChooseElement 操作
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Random)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 给定一个数据数组和一个针对其索引的分布，尝试随机选择一个元素。

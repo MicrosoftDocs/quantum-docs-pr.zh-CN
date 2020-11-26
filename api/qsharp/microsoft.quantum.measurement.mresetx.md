@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Measurement.MResetX
 title: MResetX 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Measurement
 qsharp.name: MResetX
 qsharp.summary: Measures a single qubit in the X basis, and resets it to a fixed initial state following the measurement.
-ms.openlocfilehash: a16d7405388b560edcdb6c36b6668791f7ba1398
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 04fb0f84ddf79a3d2cfc21fdaabd16c129f6d72f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92701004"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96194196"
 ---
 # <a name="mresetx-operation"></a>MResetX 操作
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Measurement)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 在 X 基础上测量单个 qubit，并将其重置为固定的初始状态。
@@ -28,7 +28,7 @@ operation MResetX (target : Qubit) : Result
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 以 $X $ 基数执行单 qubit 度量，并确保 qubit 返回到 {0} 度量值后的 $ \ket $。
 
@@ -40,6 +40,6 @@ operation MResetX (target : Qubit) : Result
 
 
 
-## <a name="output--__invalidresult__"></a>输出： __无效 <Result>__
+## <a name="output--__invalidresult__"></a>输出：__无效 <Result>__
 
 Pauli 中测量的结果 `target` $X $ basis。

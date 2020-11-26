@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Random.DrawRandomDouble
 title: DrawRandomDouble 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Random
 qsharp.name: DrawRandomDouble
 qsharp.summary: Draws a random real number in a given inclusive interval.
-ms.openlocfilehash: 6c0558ded2bd018afad84c42c2d15fc029ac0d44
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: d62416f4a222716edb9393fe4f43731d0e8aa9d3
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700713"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96192938"
 ---
 # <a name="drawrandomdouble-operation"></a>DrawRandomDouble 操作
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Random)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 以给定的非独占间隔绘制随机实数。
@@ -45,7 +45,7 @@ operation DrawRandomDouble (min : Double, max : Double) : Double
 
 从到的非独占时间间隔内的随机实数 `min` `max` ，采用统一的概率。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 如果为 `max <= min` ，则失败。
 

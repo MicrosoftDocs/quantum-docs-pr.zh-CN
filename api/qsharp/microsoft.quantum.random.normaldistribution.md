@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Random.NormalDistribution
 title: NormalDistribution 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Random
 qsharp.name: NormalDistribution
 qsharp.summary: Returns a normal distribution with a given mean and variance.
-ms.openlocfilehash: 849376258ea122a6dbe859dd08144e4d18434143
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: cfbf9c0918a571fefc4294befacf641d6a7835b8
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700376"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96192717"
 ---
 # <a name="normaldistribution-function"></a>NormalDistribution 函数
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Random)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 返回具有给定平均值和方差的正态分布。

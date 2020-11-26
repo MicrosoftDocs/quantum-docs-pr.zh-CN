@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Preparation.RoundedDiscretizationCoefficients
 title: RoundedDiscretizationCoefficients 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: RoundedDiscretizationCoefficients
 qsharp.summary: ''
-ms.openlocfilehash: 5fcd7a17e9c183789bcad06277e5133a86a63deb
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 98dfd41f46b7a7d29491b1e2b1a3f50a8194eecc
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700408"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96193533"
 ---
 # <a name="roundeddiscretizationcoefficients-function"></a>RoundedDiscretizationCoefficients 函数
 
 命名空间： [Microsoft 量子. 准备](xref:Microsoft.Quantum.Preparation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 

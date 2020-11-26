@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Optimization.LocalUnivariateMinimum
 title: LocalUnivariateMinimum 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Optimization
 qsharp.name: LocalUnivariateMinimum
 qsharp.summary: Returns the local minimum for a univariate function over a bounded interval, using a golden interval search.
-ms.openlocfilehash: 3b09af88bbed20a392768d005e5e9567b3bb7022
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: e804e6a6ed82f14dcc9b8f721ad503d77922dc0f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695318"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96194077"
 ---
 # <a name="localunivariateminimum-function"></a>LocalUnivariateMinimum 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Optimization)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 使用黄金间隔搜索，返回单变量函数在限定间隔内的本地最小值。
