@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Logical.LessThanD
 title: LessThanD 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: LessThanD
 qsharp.summary: Returns true if and only if a number is less than another number.
-ms.openlocfilehash: 8cd274d5e299df2f556006baf7457d54aebcd071
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 40f059e49affbb1b5af7dc349f6ee53dfb357873
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700572"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96197732"
 ---
 # <a name="lessthand-function"></a>LessThanD 函数
 
 命名空间： [Microsoft 量子. 逻辑](xref:Microsoft.Quantum.Logical)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 当且仅当一个数字小于另一个数字时，返回 true。
@@ -45,7 +45,7 @@ function LessThanD (a : Double, b : Double) : Bool
 
 `true` 当且仅当 `a` 严格小于时 `b` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 以下项是等效的：
 

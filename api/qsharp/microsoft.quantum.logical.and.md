@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Logical.And
 title: And 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: And
 qsharp.summary: Returns the Boolean conjunction of two values.
-ms.openlocfilehash: cc81f650216c4db219a79c4fe89a42447a4e95b8
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 279221ed785dd76e28146e4c22e70290936bf529
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92699760"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96198565"
 ---
 # <a name="and-function"></a>And 函数
 
 命名空间： [Microsoft 量子. 逻辑](xref:Microsoft.Quantum.Logical)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 返回两个值的布尔值。
@@ -45,7 +45,7 @@ function And (a : Bool, b : Bool) : Bool
 
 `true` 当且仅当 `a` 和 `b` 都是时 `true` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 与 `and` 运算符不同，此函数不会进行短路，因此，这两个输入都是完全计算的。
 

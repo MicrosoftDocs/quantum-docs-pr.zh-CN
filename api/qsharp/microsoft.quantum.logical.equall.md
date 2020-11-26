@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Logical.EqualL
 title: EqualL 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: EqualL
 qsharp.summary: Returns true if and only if two inputs are equal.
-ms.openlocfilehash: f0a2bfa866068746e9c6e249573eb61c0d08c0f0
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 395b8fedd3b3334939c2a4b5602ee19e0c6e34b0
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695178"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96198106"
 ---
 # <a name="equall-function"></a>EqualL 函数
 
 命名空间： [Microsoft 量子. 逻辑](xref:Microsoft.Quantum.Logical)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 当且仅当两个输入相等时，返回 true。
@@ -45,7 +45,7 @@ function EqualL (a : BigInt, b : BigInt) : Bool
 
 `true` 当且仅当 `a` 等于时 `b` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 以下项是等效的：
 

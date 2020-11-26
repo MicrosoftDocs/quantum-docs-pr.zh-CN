@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Logical.NearlyEqualD
 title: NearlyEqualD 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: NearlyEqualD
 qsharp.summary: Returns true if and only if two inputs are nearly equal (that is, within a tolerance of 1e-12).
-ms.openlocfilehash: 332f9ea1753b539eba7b931d5b948b2a238d1abf
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 246fad15c691a53fcc5be10f2c713672e0b54e6b
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695154"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96197460"
 ---
 # <a name="nearlyequald-function"></a>NearlyEqualD 函数
 
 命名空间： [Microsoft 量子. 逻辑](xref:Microsoft.Quantum.Logical)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 当且仅当两个输入几乎相等 (即在 1e-12) 的容错范围内时，返回 true。
@@ -45,7 +45,7 @@ function NearlyEqualD (a : Double, b : Double) : Bool
 
 `true` 当且仅当 `a` 约等于时 `b` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 以下项是等效的：
 

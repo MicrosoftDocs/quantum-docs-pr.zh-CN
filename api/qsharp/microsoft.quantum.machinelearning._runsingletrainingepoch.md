@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.MachineLearning._RunSingleTrainingEpoch
 title: _RunSingleTrainingEpoch 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: _RunSingleTrainingEpoch
 qsharp.summary: Perform one epoch of sequential classifier training on a subset of data samples.
-ms.openlocfilehash: 2b4f629eac0bd8e60bd4d86077521c60085d4809
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 71780645a025972f11f32f8ba8fd94d098604f9e
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696749"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96196746"
 ---
 # <a name="_runsingletrainingepoch-operation"></a>_RunSingleTrainingEpoch 操作
 
 命名空间： [default-machinelearning-southcentralus](xref:Microsoft.Quantum.MachineLearning)
 
-软件包 [](https://nuget.org/packages/)
+Package： [default-machinelearning-southcentralus](https://nuget.org/packages/Microsoft.Quantum.MachineLearning)
 
 
 在部分数据示例中执行顺序分类器培训的一个时期。

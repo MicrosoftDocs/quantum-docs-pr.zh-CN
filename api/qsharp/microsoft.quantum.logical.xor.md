@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Logical.Xor
 title: Xor 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: Xor
 qsharp.summary: Returns the Boolean exclusive disjunction of two values.
-ms.openlocfilehash: ae43545e19e81ed5da17c3d58c62ac0b7ee765f3
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: afb94bd1fd0b791a9a7d84bc28b0cc2baf9a0938
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700516"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96197086"
 ---
 # <a name="xor-function"></a>Xor 函数
 
 命名空间： [Microsoft 量子. 逻辑](xref:Microsoft.Quantum.Logical)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 返回两个值的布尔互斥析取。

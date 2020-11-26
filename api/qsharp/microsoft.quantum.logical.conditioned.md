@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Logical.Conditioned
 title: 可调函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: Conditioned
 qsharp.summary: Returns one of two values, depending on the value of a Boolean condition.
-ms.openlocfilehash: 8aabe8b018129ddee3b934c207d0a62e59fb6f4a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: c0f55d4db95ad1f0d2b7f291cbc6ba8ae704cb81
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92699756"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96198480"
 ---
 # <a name="conditioned-function"></a>可调函数
 
 命名空间： [Microsoft 量子. 逻辑](xref:Microsoft.Quantum.Logical)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 根据布尔条件的值返回两个值中的一个值。
@@ -56,7 +56,7 @@ function Conditioned<'T> (condition : Bool, ifTrue : 'T, ifFalse : 'T) : 'T
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 与 `?|` 运算符不同，此函数不会进行短路，因此，这两个输入都是完全计算的。
 
