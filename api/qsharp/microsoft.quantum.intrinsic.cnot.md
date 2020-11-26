@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.CNOT
 title: CNOT-CONTAINS 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -12,18 +12,18 @@ qsharp.summary: >-
   \begin{align} \operatorname{CNOT} \mathrel{:=} \begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & 1 \\\\ 0 & 0 & 1 & 0 \end{bmatrix}, \end{align}
 
   where rows and columns are ordered as in the quantum concepts guide.
-ms.openlocfilehash: 2fb5b4df189fb3ab23b2ca5cb273b2451ffcc067
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 90e84f7d0ea7373498632474dfafa23335f0c78e
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700337"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96198970"
 ---
 # <a name="cnot-operation"></a>CNOT-CONTAINS 操作
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Intrinsic)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 将受控-NOT (CNOT-CONTAINS) 入口应用于一对 qubits。
@@ -33,7 +33,7 @@ ms.locfileid: "92700337"
 行和列的排序顺序，如量程概念指南中所示。
 
 ```qsharp
-operation CNOT (control : Qubit, target : Qubit) : Unit
+operation CNOT (control : Qubit, target : Qubit) : Unit is Adj + Ctl
 ```
 
 
@@ -54,7 +54,7 @@ CNOT-CONTAINS 入口的目标 qubit。
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 等效于：
 

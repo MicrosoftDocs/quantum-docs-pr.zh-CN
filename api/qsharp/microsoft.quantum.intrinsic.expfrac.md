@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.ExpFrac
 title: ExpFrac 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Applies the exponential of a multi-qubit Pauli operator with an argument given by a dyadic fraction.
 
   \begin{align} e^{i \pi k [P_0 \otimes P_1 \cdots P_{N-1}] / 2^n}, \end{align} where $P_i$ is the $i$th element of `paulis`, and where $N = $`Length(paulis)`.
-ms.openlocfilehash: d11912a272387b087098f59e7ac071534b01c054
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8ccea068dd61aaf8c1ba384969adef5644e8401e
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695385"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96198989"
 ---
 # <a name="expfrac-operation"></a>ExpFrac 操作
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Intrinsic)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 使用由 dyadic 分式给定的自变量对 qubit Pauli 运算符应用指数。
@@ -29,7 +29,7 @@ ms.locfileid: "92695385"
 \begin{align} e ^ {i \pi k [P_0 \otimes P_1 \cdots P_ {N-1}]/2 ^ N}，\end{align} 其中 $P _i $ 是的 $i $ th 元素 `paulis` ，其中 $N = $ `Length(paulis)` 。
 
 ```qsharp
-operation ExpFrac (paulis : Pauli[], numerator : Int, power : Int, qubits : Qubit[]) : Unit
+operation ExpFrac (paulis : Pauli[], numerator : Int, power : Int, qubits : Qubit[]) : Unit is Adj + Ctl
 ```
 
 

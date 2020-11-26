@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.RFrac
 title: RFrac 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -12,18 +12,18 @@ qsharp.summary: >-
   \begin{align} R_{\mu}(n, k) \mathrel{:=} e^{i \pi n \sigma_{\mu} / 2^k}, \end{align} where $\mu \in \{I, X, Y, Z\}$.
 
   > [!WARNING] > This operation uses the **opposite** sign convention from > @"microsoft.quantum.intrinsic.r".
-ms.openlocfilehash: 9fe6aee6c7bb9e52538eae5d2caa2a6025cb85d8
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: bd182ea50d747e07bb0f8051c5dbc128b7ff7674
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700577"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96198633"
 ---
 # <a name="rfrac-operation"></a>RFrac 操作
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Intrinsic)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 通过指定为 dyadic 分数的角度，对给定 Pauli 轴进行旋转。
@@ -34,7 +34,7 @@ ms.locfileid: "92700577"
 > 此操作使用中的 **相反** 符号约定 @"microsoft.quantum.intrinsic.r" 。
 
 ```qsharp
-operation RFrac (pauli : Pauli, numerator : Int, power : Int, qubit : Qubit) : Unit
+operation RFrac (pauli : Pauli, numerator : Int, power : Int, qubit : Qubit) : Unit is Adj + Ctl
 ```
 
 
@@ -65,7 +65,7 @@ Dyadic 中要旋转 qubit 的角度的分数表示形式的分子。
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 等效于：
 

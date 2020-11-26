@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.Tanh
 title: Tanh 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,18 +14,18 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.tanh".
-ms.openlocfilehash: 56a6a4df64585b51a87812f9e665d3da84054d09
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: ad9ae6309b6dcfa6a59b5ae5ec7f765adf4a46c5
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700520"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96199245"
 ---
 # <a name="tanh-function"></a>Tanh 函数
 
 命名空间： [Microsoft 量子. Math](xref:Microsoft.Quantum.Extensions.Math)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 > [!WARNING]

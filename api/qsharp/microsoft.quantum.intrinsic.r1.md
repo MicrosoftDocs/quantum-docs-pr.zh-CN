@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.R1
 title: R1 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Applies a rotation about the $\ket{1}$ state by a given angle.
 
   \begin{align} R_1(\theta) \mathrel{:=} \operatorname{diag}(1, e^{i\theta}). \end{align}
-ms.openlocfilehash: 87302a4338af144ee6a8cec83ed1803581597482
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: a98c2cc0b309a239650afd2910cc74dffa9f899a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92699800"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96198803"
 ---
 # <a name="r1-operation"></a>R1 操作
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Intrinsic)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 {1}按给定角度对 $ \ket $ 状态应用旋转。
@@ -30,7 +30,7 @@ ms.locfileid: "92699800"
 \end{align}
 
 ```qsharp
-operation R1 (theta : Double, qubit : Qubit) : Unit
+operation R1 (theta : Double, qubit : Qubit) : Unit is Adj + Ctl
 ```
 
 
@@ -51,7 +51,7 @@ Qubit 要旋转的角度。
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 等效于：
 

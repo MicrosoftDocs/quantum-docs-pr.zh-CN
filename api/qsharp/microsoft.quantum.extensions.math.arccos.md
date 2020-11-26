@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.ArcCos
 title: ArcCos 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,18 +14,18 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.arccos".
-ms.openlocfilehash: c15b18eb84a843cf53938d7f255253b2d2c5dc69
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 76c090da485c857a1e5582d0a53146a6529c18d7
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695415"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96199806"
 ---
 # <a name="arccos-function"></a>ArcCos 函数
 
 命名空间： [Microsoft 量子. Math](xref:Microsoft.Quantum.Extensions.Math)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 > [!WARNING]

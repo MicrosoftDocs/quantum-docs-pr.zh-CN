@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Testing.AssertAllZeroTol
 title: AssertAllZeroTol 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Extensions.Testing
@@ -14,18 +14,18 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.diagnostics.assertallzerowithintolerance".
-ms.openlocfilehash: 6b0b8c592bef80b0c07e40c14300d07c2d44e2a0
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 026ef07689ab39b4b98e47fae93f5d9f58072831
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695413"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96199228"
 ---
 # <a name="assertallzerotol-operation"></a>AssertAllZeroTol 操作
 
 命名空间： [Microsoft.](xref:Microsoft.Quantum.Extensions.Testing)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 > [!WARNING]
@@ -36,7 +36,7 @@ ms.locfileid: "92695413"
 
 
 ```qsharp
-operation AssertAllZeroTol (qubits : Qubit[], tolerance : Double) : Unit
+operation AssertAllZeroTol (qubits : Qubit[], tolerance : Double) : Unit is Adj + Ctl
 ```
 
 

@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.Rx
 title: Rx 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Applies a rotation about the $x$-axis by a given angle.
 
   \begin{align} R_x(\theta) \mathrel{:=} e^{-i \theta \sigma_x / 2} = \begin{bmatrix} \cos \frac{\theta}{2} & -i\sin \frac{\theta}{2}  \\\\ -i\sin \frac{\theta}{2} & \cos \frac{\theta}{2} \end{bmatrix}. \end{align}
-ms.openlocfilehash: 6d11c8fa3c3fb2c07a88fdf2cba0ff2a7f51bf6b
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 49638c00967ff2f47dad41acfed05868d65a24a0
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700576"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96198582"
 ---
 # <a name="rx-operation"></a>Rx 操作
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Intrinsic)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 按给定角度向 $x $ 轴旋转。
@@ -30,7 +30,7 @@ ms.locfileid: "92700576"
 \end{align}
 
 ```qsharp
-operation Rx (theta : Double, qubit : Qubit) : Unit
+operation Rx (theta : Double, qubit : Qubit) : Unit is Adj + Ctl
 ```
 
 
@@ -51,7 +51,7 @@ Qubit 要旋转的角度。
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 等效于：
 

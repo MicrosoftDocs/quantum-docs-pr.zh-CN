@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.SteaneCodeRecoveryZ
 title: SteaneCodeRecoveryZ 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: SteaneCodeRecoveryZ
 qsharp.summary: Decoder for the Z-part of the stabilizer group of the ⟦7, 1, 3⟧ Steane quantum code.
-ms.openlocfilehash: 0405607669e295870947609f3e022d8fd8dc8cc4
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: cd555fdf50c2aef6ba84460e7b278373e56d0de4
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695476"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96200333"
 ---
 # <a name="steanecoderecoveryz-function"></a>SteaneCodeRecoveryZ 函数
 
 命名空间： [ErrorCorrection](xref:Microsoft.Quantum.ErrorCorrection)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 ⟦7，1，3⟧ Steane 量程代码的 "稳定" 组 Z 部分的解码器。
