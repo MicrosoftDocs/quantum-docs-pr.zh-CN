@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.M
 title: M 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Performs a measurement of a single qubit in the Pauli $Z$ basis.
 
   The output result is given by the distribution \begin{align} \Pr(\texttt{Zero} | \ket{\psi}) = \braket{\psi | 0} \braket{0 | \psi}. \end{align}
-ms.openlocfilehash: 8d4b120385bfc7086a7cb0e3f77034c760d78d92
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: ced3a617a7299e169c7a58a1cd0f83f656b2f0b3
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92699805"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96212335"
 ---
 # <a name="m-operation"></a>M 操作
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Intrinsic)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 对 Pauli $Z $ basis 中的单个 qubit 进行度量。
@@ -42,11 +42,11 @@ operation M (qubit : Qubit) : Result
 
 
 
-## <a name="output--__invalidresult__"></a>输出： __无效 <Result>__
+## <a name="output--__invalidresult__"></a>输出：__无效 <Result>__
 
 `Zero` 如果观察到 $ + $1 eigenvalue，并 `One` 观察到 $-$1 eigenvalue，则为。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 等效于：
 

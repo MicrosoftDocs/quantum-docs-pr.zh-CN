@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.InferredLabel
 title: InferredLabel 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: InferredLabel
 qsharp.summary: Given a of classification probability and a bias, returns the label inferred from that probability.
-ms.openlocfilehash: 1d6edec94f731fe96da797f0c3d77e6eba565149
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: b64bb1ec52d2456ee1b627b920890223d173533b
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700293"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96211774"
 ---
 # <a name="inferredlabel-function"></a>InferredLabel 函数
 
 命名空间： [default-machinelearning-southcentralus](xref:Microsoft.Quantum.MachineLearning)
 
-软件包 [](https://nuget.org/packages/)
+Package： [default-machinelearning-southcentralus](https://nuget.org/packages/Microsoft.Quantum.MachineLearning)
 
 
 给定一个分类概率和一个偏差，返回从该概率推导出的标签。

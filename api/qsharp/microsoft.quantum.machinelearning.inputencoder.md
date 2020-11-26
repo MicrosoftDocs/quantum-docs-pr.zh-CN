@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.InputEncoder
 title: InputEncoder 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: InputEncoder
 qsharp.summary: Given a set of coefficients and a tolerance, returns a state preparation operation that prepares each coefficient as the corresponding amplitude of a computational basis state.
-ms.openlocfilehash: 771cf01866498f4662864939e6946526c2b5827a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 019161c0ef6cdec6875518ab58c8159b0f142149
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695137"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96211740"
 ---
 # <a name="inputencoder-function"></a>InputEncoder 函数
 
 命名空间： [default-machinelearning-southcentralus](xref:Microsoft.Quantum.MachineLearning)
 
-软件包 [](https://nuget.org/packages/)
+Package： [default-machinelearning-southcentralus](https://nuget.org/packages/Microsoft.Quantum.MachineLearning)
 
 
 给定一组系数和公差后，将返回状态准备操作，以便将每个系数准备为计算基础状态的相应波幅。

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.EstimateClassificationProbabilities
 title: EstimateClassificationProbabilities 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: EstimateClassificationProbabilities
 qsharp.summary: Given a set of samples and a sequential classifier, estimates the classification probability for those samples by repeatedly measuring the output of the classifier on each sample.
-ms.openlocfilehash: 2b7845d39256f718cc3e415207b8a47b24620bdb
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1cd56f6a6483b00afb168f8d84301e73eae9af65
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695142"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96211893"
 ---
 # <a name="estimateclassificationprobabilities-operation"></a>EstimateClassificationProbabilities 操作
 
 命名空间： [default-machinelearning-southcentralus](xref:Microsoft.Quantum.MachineLearning)
 
-软件包 [](https://nuget.org/packages/)
+Package： [default-machinelearning-southcentralus](https://nuget.org/packages/Microsoft.Quantum.MachineLearning)
 
 
 给定一组示例和顺序分类器，通过反复测量每个样本上分类器的输出来估算这些样本的分类概率。

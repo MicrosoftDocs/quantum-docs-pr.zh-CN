@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.ExpD
 title: ExpD 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,18 +14,18 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.expd".
-ms.openlocfilehash: fb8811ecf544255ea384923ef2c3741015fff3c1
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 788a25eeccd7ff3341a1138f5a871d2305899f56
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695218"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96213015"
 ---
 # <a name="expd-function"></a>ExpD 函数
 
 命名空间： [Microsoft 量子. Math](xref:Microsoft.Quantum.Extensions.Math)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 > [!WARNING]

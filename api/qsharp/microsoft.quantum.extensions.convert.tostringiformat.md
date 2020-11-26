@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Convert.ToStringIFormat
 title: ToStringIFormat 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Convert
@@ -14,18 +14,18 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.convert.intasstringwithformat".
-ms.openlocfilehash: 4a492da77acbed3e2721ac9c4912ce5765af2cb7
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 41e310a51672d6b5c08b49517abad40bf3fbbf78
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695424"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96213321"
 ---
 # <a name="tostringiformat-function"></a>ToStringIFormat 函数
 
 命名空间： [Microsoft.](xref:Microsoft.Quantum.Extensions.Convert)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 > [!WARNING]

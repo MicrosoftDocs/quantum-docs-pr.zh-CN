@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.EstimateGradient
 title: EstimateGradient 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: EstimateGradient
 qsharp.summary: Estimates the training gradient for a sequential classifier at a particular model and for a given encoded input.
-ms.openlocfilehash: f42cc30c98346a25f584d7527227a95cb413c32b
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 79f4abdf131509d4948a3c114e631118329f88d8
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696639"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96211842"
 ---
 # <a name="estimategradient-operation"></a>EstimateGradient 操作
 
 命名空间： [default-machinelearning-southcentralus](xref:Microsoft.Quantum.MachineLearning)
 
-软件包 [](https://nuget.org/packages/)
+Package： [default-machinelearning-southcentralus](https://nuget.org/packages/Microsoft.Quantum.MachineLearning)
 
 
 估算特定模型和给定编码输入的顺序分类器的定型渐变。
@@ -50,6 +50,6 @@ operation EstimateGradient (model : Microsoft.Quantum.MachineLearning.Sequential
 
 给定输入和模型参数的定型渐变的估计值。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 此操作使用 Hadamard 测试和参数移位技术来估算渐变。

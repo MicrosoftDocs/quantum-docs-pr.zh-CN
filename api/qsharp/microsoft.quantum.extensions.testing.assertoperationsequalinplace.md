@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Testing.AssertOperationsEqualInPlace
 title: AssertOperationsEqualInPlace 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Extensions.Testing
@@ -16,18 +16,18 @@ qsharp.summary: >-
   > Please use @"microsoft.quantum.diagnostics.assertoperationsequalinplace".
 
   > Note that the order of the arguments to this operation has changed.
-ms.openlocfilehash: 6d2ead95a60ed3cc8ee95fb7f91e1aa49d366a48
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 0f22bcbf74a33b1501acf9222d6dc6327b16bbbe
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695412"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96212539"
 ---
 # <a name="assertoperationsequalinplace-operation"></a>AssertOperationsEqualInPlace 操作
 
 命名空间： [Microsoft.](xref:Microsoft.Quantum.Extensions.Testing)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 > [!WARNING]
@@ -50,7 +50,7 @@ operation AssertOperationsEqualInPlace (actual : (Qubit[] => Unit), expected : (
 
 
 
-### <a name="expected--qubit--unit-adj"></a>应为： [Qubit](xref:microsoft.quantum.lang-ref.qubit)[] => [单位](xref:microsoft.quantum.lang-ref.unit) 形容词
+### <a name="expected--qubit--unit--is-adj"></a>应为： [Qubit](xref:microsoft.quantum.lang-ref.qubit)[] => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词
 
 
 

@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.MaxD
 title: MaxD 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,18 +14,18 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.maxd".
-ms.openlocfilehash: ee0f9a61fa61e381076e9476c4c5cfc2f3d78b64
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: d6b0b5dd80cbaffd3a5146f1333e88eee0d08a67
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695202"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96212913"
 ---
 # <a name="maxd-function"></a>MaxD 函数
 
 命名空间： [Microsoft 量子. Math](xref:Microsoft.Quantum.Extensions.Math)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 > [!WARNING]

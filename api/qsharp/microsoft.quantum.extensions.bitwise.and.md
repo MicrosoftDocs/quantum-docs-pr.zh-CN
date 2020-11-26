@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Bitwise.And
 title: And 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Bitwise
@@ -14,18 +14,18 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.bitwise.and".
-ms.openlocfilehash: 2172e96052a3bbcf524a35fe5b507e2281c1d7cf
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: eabc656fdf34711e2feb5152f82543a2937dc33a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695463"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96213627"
 ---
 # <a name="and-function"></a>And 函数
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Extensions.Bitwise)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 > [!WARNING]
