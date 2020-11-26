@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.AssertProbInt
 title: AssertProbInt 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: AssertProbInt
 qsharp.summary: Asserts that the probability of a specific state of a quantum register has the expected value.
-ms.openlocfilehash: a8e4217e18528adc0aa9923f1c0dcfb59e1d2488
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: b95c2c6294dd5a95b7215c22bd6c50a41635f432
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92699948"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96223691"
 ---
 # <a name="assertprobint-operation"></a>AssertProbInt 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Arithmetic)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 断言量程寄存器的特定状态的概率具有预期值。
@@ -28,7 +28,7 @@ operation AssertProbInt (stateIndex : Int, expected : Double, qubits : Microsoft
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 如果给定 $n $-qubit 量程状态 $ \ket{\psi} = \sum ^ {2 ^ n-1} _ {j = 0} \ alpha_j \ket{j} $，则断言 $ $j 索引的状态 $ \ket{j} $ 的概率 $ | \ alpha_j | ^ 2 $ 具有预期值。
 

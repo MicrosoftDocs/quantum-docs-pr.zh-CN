@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.MultiplyAndAddPhaseByModularInteger
 title: MultiplyAndAddPhaseByModularInteger 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: MultiplyAndAddPhaseByModularInteger
 qsharp.summary: The same as MultiplyAndAddByModularInteger, but assumes that the summand encodes integers in QFT basis.
-ms.openlocfilehash: be7df50f040697329c2fe8bbc319c8cebb8b2687
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1ca20b525d2a76e554d5a2e8d4f40060b5ef51cf
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696611"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96223861"
 ---
 # <a name="multiplyandaddphasebymodularinteger-operation"></a>MultiplyAndAddPhaseByModularInteger 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Arithmetic)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 与 MultiplyAndAddByModularInteger 相同，但假定被加数将整数编码为 QFT。
 
 ```qsharp
-operation MultiplyAndAddPhaseByModularInteger (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, phaseSummand : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit
+operation MultiplyAndAddPhaseByModularInteger (constMultiplier : Int, modulus : Int, multiplier : Microsoft.Quantum.Arithmetic.LittleEndian, phaseSummand : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit is Adj + Ctl
 ```
 
 
@@ -55,7 +55,7 @@ operation MultiplyAndAddPhaseByModularInteger (constMultiplier : Int, modulus : 
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 假定 `phaseSummand` 将最高位设置为0。
 还假定的值 `phaseSummand` 小于 $N $。

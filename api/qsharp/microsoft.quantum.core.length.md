@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Core.Length
 title: Length 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Core
 qsharp.name: Length
 qsharp.summary: Returns the number of elements in an array.
-ms.openlocfilehash: 18976330929c4fbfd2ada5aa82a4e1ecc4397c3a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8216d291899c295aea603338f5db89955950368d
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695637"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96224065"
 ---
 # <a name="length-function"></a>Length 函数
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Core)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 返回数组中的元素数。

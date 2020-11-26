@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Convert.PauliArrayAsInt
 title: PauliArrayAsInt 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: PauliArrayAsInt
 qsharp.summary: Encodes a multi-qubit Pauli operator represented as an array of single-qubit Pauli operators into an integer.
-ms.openlocfilehash: f8ec468dd0f0cfd0d868dfc79ff715b3b4fc2f4a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 6077110cc07c8626b22eb404c1de096ed43efcc3
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695654"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96224235"
 ---
 # <a name="pauliarrayasint-function"></a>PauliArrayAsInt 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Convert)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 将表示为一个 qubit Pauli 运算符数组的多 qubit Pauli 运算符编码为一个整数。
@@ -40,7 +40,7 @@ function PauliArrayAsInt (paulis : Pauli[]) : Int
 
 唯一标识的整数 `paulis` ，如下所述。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 每个 Pauli 运算符都可以使用两个位进行编码： $ $ \begin{align} \boldone \mapsto 00，\quad X \mapsto 01，\quad Y \mapsto 11，\quad Z \mapsto 10。
 \end{align} $ $

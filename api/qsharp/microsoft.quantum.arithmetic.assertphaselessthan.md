@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.AssertPhaseLessThan
 title: AssertPhaseLessThan 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: AssertPhaseLessThan
 qsharp.summary: Asserts that the `number` encoded in PhaseLittleEndian is less than `value`.
-ms.openlocfilehash: d003d83a84356ce52c5601135000813c7f119e4d
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8a943ff937593801bd308ab4224c7051ff8a10cb
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92699952"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96223742"
 ---
 # <a name="assertphaselessthan-operation"></a>AssertPhaseLessThan 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Arithmetic)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 断言 `number` PhaseLittleEndian 中已编码的小于 `value` 。
 
 ```qsharp
-operation AssertPhaseLessThan (value : Int, number : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit
+operation AssertPhaseLessThan (value : Int, number : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit is Adj + Ctl
 ```
 
 
@@ -45,6 +45,6 @@ operation AssertPhaseLessThan (value : Int, number : Microsoft.Quantum.Arithmeti
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 此操作的受控版本将忽略控件。
