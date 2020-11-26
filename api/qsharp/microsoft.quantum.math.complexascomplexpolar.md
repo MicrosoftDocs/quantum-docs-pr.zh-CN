@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Math.ComplexAsComplexPolar
 title: ComplexAsComplexPolar 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ComplexAsComplexPolar
 qsharp.summary: Converts a complex number of type `Complex` to a complex number of type `ComplexPolar`.
-ms.openlocfilehash: b66ed56e2c7229d7b86a71a43e6672cfde97fb59
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 5155583291e69a78df66f3b77d758fc1708d9146
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695123"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96195624"
 ---
 # <a name="complexascomplexpolar-function"></a>ComplexAsComplexPolar 函数
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Math)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将类型的复杂数字转换 `Complex` 为类型的复数 `ComplexPolar` 。

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Math.ContinuedFractionConvergentI
 title: ContinuedFractionConvergentI 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ContinuedFractionConvergentI
 qsharp.summary: Finds the continued fraction convergent closest to `fraction` with the denominator less or equal to `denominatorBound`
-ms.openlocfilehash: 2322e005a5afb73d9719eb65d9ebf50740f1c9fc
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: d37bf1c10899d06e798d29c68f88b06f2d5918a9
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700484"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96195556"
 ---
 # <a name="continuedfractionconvergenti-function"></a>ContinuedFractionConvergentI 函数
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Math)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 查找最接近于 `fraction` 分母小于或等于的连续分数收敛性 `denominatorBound`

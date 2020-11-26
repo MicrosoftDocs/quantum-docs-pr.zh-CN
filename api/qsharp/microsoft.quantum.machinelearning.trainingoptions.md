@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.TrainingOptions
 title: TrainingOptions 用户定义的类型
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: TrainingOptions
 qsharp.summary: A collection of options to be used in training quantum classifiers.
-ms.openlocfilehash: 5ecc2b5175a4e8db78f72311ac1d5ff964bae811
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 280a3857aa7bc42f636a33f893d4f450e79b6a6a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700253"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96196117"
 ---
 # <a name="trainingoptions-user-defined-type"></a>TrainingOptions 用户定义的类型
 
 命名空间： [default-machinelearning-southcentralus](xref:Microsoft.Quantum.MachineLearning)
 
-软件包 [](https://nuget.org/packages/)
+Package： [default-machinelearning-southcentralus](https://nuget.org/packages/Microsoft.Quantum.MachineLearning)
 
 
 用于训练量子分类器的选项的集合。
@@ -61,7 +61,7 @@ newtype TrainingOptions = (LearningRate : Double, Tolerance : Double, MinibatchS
 
 可用于提供详细反馈的函数。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 不应直接创建此 UDT，而应通过调用 @"microsoft.quantum.machinelearning.defaulttrainingoptions" 并使用 `w/` 运算符重写不同的默认值来指定它。
 

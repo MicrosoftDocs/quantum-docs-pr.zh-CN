@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Math.Round
 title: Round 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: Round
 qsharp.summary: Rounds a value to the nearest integer.
-ms.openlocfilehash: 8d8bd27d094925d06cc2aeae6e2724991f496429
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: b84d8e557a8b025af947652c48662171d6da9081
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696709"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96194536"
 ---
 # <a name="round-function"></a>Round 函数
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Math)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 将值舍入到最接近的整数。
@@ -40,6 +40,6 @@ function Round (a : Double) : Int
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 有关更多详细信息，请参阅 [system.object](https://docs.microsoft.com/dotnet/api/system.math.round) 。
