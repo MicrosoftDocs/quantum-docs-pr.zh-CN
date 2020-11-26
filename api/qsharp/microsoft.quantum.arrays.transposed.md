@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.Transposed
 title: 转置函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Transposed
 qsharp.summary: Returns the transpose of a matrix represented as an array of arrays.
-ms.openlocfilehash: 54071c461cf9f9411c332763b81e3bc448fb6c6e
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: f293399d8e3a2cb32b2929e8d1591ac5eaefd277
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696446"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96219985"
 ---
 # <a name="transposed-function"></a>转置函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 返回一个矩阵的换位，该矩阵表示为数组的数组。
@@ -28,7 +28,7 @@ function Transposed<'T> (matrix : 'T[][]) : 'T[][]
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 使用 $r $ rows 和 $c $ 列作为 $r \times c $ matrix 的输入。  矩阵是基于行的，即， `matrix[i][j]` 访问行 $i $ 和 column $j $ 的元素。
 

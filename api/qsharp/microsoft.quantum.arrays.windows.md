@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.Windows
 title: Windows 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Windows
 qsharp.summary: Returns all consecutive subarrays of length `size`.
-ms.openlocfilehash: 6071d1c3e5981855c57abd0e741b1de0201c30a3
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8f32a23aa4379744b84c3b8d9c8f565e61c3c64e
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696435"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96219883"
 ---
 # <a name="windows-function"></a>Windows 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 返回子的所有连续的 `size` 。
@@ -28,7 +28,7 @@ function Windows<'T> (size : Int, array : 'T[]) : 'T[][]
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此函数 `n - size + 1` 按顺序返回所有长度的子 `size` ，其中 `n` 是的长度 `arr` 。
 第一个子 `arr[0..size - 1], arr[1..size], arr[2..size + 1]` 一直为最后一个子数组 `arr[n - size..n - 1]` 。

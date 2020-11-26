@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.Zipped
 title: Zipped 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Zipped
 qsharp.summary: Given two arrays, returns a new array of pairs such that each pair contains an element from each original array.
-ms.openlocfilehash: 67170fa005675f0e5d788c9c3b350fb9a961a597
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 56ed97d573bf29dddb7cdb1c3f360218bf97889a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696429"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96219747"
 ---
 # <a name="zipped-function"></a>Zipped 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定两个数组，返回一个新的对数组，以便每个对都包含来自每个原始数组的元素。

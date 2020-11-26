@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.Prefixes
 title: 前缀函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Prefixes
 qsharp.summary: Given an array, returns all its prefixes.
-ms.openlocfilehash: 1576e57e9dc64a605eb65cb841640e72a3b126ab
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 3501c11437534b1623bffba272a4517487e5634a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696467"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96220377"
 ---
 # <a name="prefixes-function"></a>前缀函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定一个数组，返回其所有前缀。
@@ -28,7 +28,7 @@ function Prefixes<'T> (array : 'T[]) : 'T[][]
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 返回一个数组，其中包含所有前缀（从仅具有第一个元素直到整个数组的数组开始）。
 

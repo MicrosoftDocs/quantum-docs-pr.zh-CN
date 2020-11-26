@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.Sorted
 title: 已排序函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Sorted
 qsharp.summary: Given an array, returns the elements of that array sorted by a given comparison function.
-ms.openlocfilehash: 14ac5325b81aec4ba0bf94a83cf00e086a075a7c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: bd8b869e03c7f4687c456a944e07a811ae0d2ce2
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696458"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96220223"
 ---
 # <a name="sorted-function"></a>已排序函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定一个数组，返回该数组的元素，这些元素按给定的比较函数排序。
@@ -51,7 +51,7 @@ function Sorted<'T> (comparison : (('T, 'T) -> Bool), array : 'T[]) : 'T[]
 
 的每个元素的类型 `array` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 假定函数是 `comparison` 可传递的，因此，如果 `comparison(a, b)` 和，则 `comparison(b, c)` `comparison(a, c)` 假定为。 如果此属性不存在，则此函数的输出可能不正确。
 

@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfElseBA
 title: ApplyIfElseBA 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfElseBA
 qsharp.summary: Applies one of two adjointable operations, depending on the value of a classical bit.
-ms.openlocfilehash: ce08907646c3210f76244f29aa0d936e2bd6ee43
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 74d43344481c5a808e84ce9c9e36fa3e83cd0d89
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696344"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96218659"
 ---
 # <a name="applyifelseba-operation"></a>ApplyIfElseBA 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 应用两个 adjointable 操作之一，具体取决于传统位的值。
 
 ```qsharp
-operation ApplyIfElseBA<'T, 'U> (bit : Bool, (trueOp : ('T => Unit is Adj), trueInput : 'T), (falseOp : ('U => Unit is Adj), falseInput : 'U)) : Unit
+operation ApplyIfElseBA<'T, 'U> (bit : Bool, (trueOp : ('T => Unit is Adj), trueInput : 'T), (falseOp : ('U => Unit is Adj), falseInput : 'U)) : Unit is Adj
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 给定一个位，在为时 `bit` 应用该操作，并在为时应用该操作 `trueOp` `trueInput` `bit` `true` `falseOp(falseInput)` `bit` `false` 。
 
@@ -39,7 +39,7 @@ operation ApplyIfElseBA<'T, 'U> (bit : Bool, (trueOp : ('T => Unit is Adj), true
 用于确定是否 `trueOp` 应用或的布尔值 `falseOp` 。
 
 
-### <a name="trueop--t--unit-adj"></a>trueOp：不等于> [单位](xref:microsoft.quantum.lang-ref.unit) 形容词
+### <a name="trueop--t--unit--is-adj"></a>trueOp： t => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词
 
 当为时要应用的 adjointable `bit` 操作 `true` 。
 
@@ -49,7 +49,7 @@ operation ApplyIfElseBA<'T, 'U> (bit : Bool, (trueOp : ('T => Unit is Adj), true
 当为时要向其提供的输入 `trueOp` `bit` `true` 。
 
 
-### <a name="falseop--u--unit-adj"></a>falseOp： ' U => [单位](xref:microsoft.quantum.lang-ref.unit) 形容词
+### <a name="falseop--u--unit--is-adj"></a>falseOp： ' U => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词
 
 当为时要应用的 adjointable `bit` 操作 `false` 。
 

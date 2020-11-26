@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Arrays.Zip
 title: Zip 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
@@ -13,18 +13,18 @@ qsharp.summary: >-
 
 
   Given two arrays, returns a new array of pairs such that each pair contains an element from each original array.
-ms.openlocfilehash: 32fea60fc36bfdbaa2ab2f3560f291bf4ce4fa51
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 44db8d38d96babd16ead5ae6dde91da23bdee2c9
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696432"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96219849"
 ---
 # <a name="zip-function"></a>Zip 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 > [!WARNING]

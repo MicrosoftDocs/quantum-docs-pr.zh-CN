@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.TupleArrayAsNestedArray
 title: TupleArrayAsNestedArray 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: TupleArrayAsNestedArray
 qsharp.summary: Turns a list of 2-tuples into a nested array.
-ms.openlocfilehash: 917f35db949790ab3ae6e7a2184bcfcf5ed50be6
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: c898178b6385b27f753509f0748a8b666b5066bd
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696445"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96220070"
 ---
 # <a name="tuplearrayasnestedarray-function"></a>TupleArrayAsNestedArray 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将2元组的列表转换为嵌套数组。

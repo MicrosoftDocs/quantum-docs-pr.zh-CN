@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.RectangularArrayFact
 title: RectangularArrayFact 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: RectangularArrayFact
 qsharp.summary: Represents a condition that a 2-dimensional array has a rectangular shape
-ms.openlocfilehash: f0d3f4d6bfa9e86f1c7a91792c09e16fe86433a0
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: b8ef7d52f7f815ca3e21ded1236e775a381646cb
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696464"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96220410"
 ---
 # <a name="rectangulararrayfact-function"></a>RectangularArrayFact 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 表示二维数组具有矩形形状的条件
@@ -28,7 +28,7 @@ function RectangularArrayFact<'T> (array : 'T[][], message : String) : Unit
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此函数断言数组中的每一行都具有相同的长度。
 

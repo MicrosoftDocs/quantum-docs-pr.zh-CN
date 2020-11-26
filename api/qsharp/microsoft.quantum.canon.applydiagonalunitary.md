@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyDiagonalUnitary
 title: ApplyDiagonalUnitary 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyDiagonalUnitary
 qsharp.summary: Applies an array of complex phases to numeric basis states of a register of qubits.
-ms.openlocfilehash: 6ecacf6e4fe2c505036de208c8aeb5350e479e3c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8f17c3cb222bef00ead5e7fea5d29d296b9a428a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696358"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96218846"
 ---
 # <a name="applydiagonalunitary-operation"></a>ApplyDiagonalUnitary 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将复杂阶段数组应用于 qubits 寄存器的数字基础状态。
 
 ```qsharp
-operation ApplyDiagonalUnitary (coefficients : Double[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit
+operation ApplyDiagonalUnitary (coefficients : Double[], qubits : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit is Adj + Ctl
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此操作实现在 $n $-qubit number state $ \ket{j} $ 上应用复杂阶段 $e ^ {i \ theta_j} $ 的对角线。
 具体而言，此操作可由单一
@@ -53,7 +53,7 @@ $n 以小字节序格式编码数字状态 $ \ket{j} $ 的 qubit 控制寄存器
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 `coefficients` 如果指定少于 $ 2 ^ n $，则将用元素 $ \ theta_j = $0.0 填充。
 

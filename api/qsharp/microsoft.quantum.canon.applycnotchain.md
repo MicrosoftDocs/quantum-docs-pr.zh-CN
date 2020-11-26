@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyCNOTChain
 title: ApplyCNOTChain 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyCNOTChain
 qsharp.summary: Computes the parity of a register of qubits in-place.
-ms.openlocfilehash: c98fe24ca352952162acb7a9c4fc93d5da4285b8
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: e237e4424661de816e73b0c78523180b41190cf9
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696373"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96219135"
 ---
 # <a name="applycnotchain-operation"></a>ApplyCNOTChain 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 计算 qubits 的寄存器的奇偶校验。
 
 ```qsharp
-operation ApplyCNOTChain (qubits : Qubit[]) : Unit
+operation ApplyCNOTChain (qubits : Qubit[]) : Unit is Adj + Ctl
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此操作将其输入的状态转换为 $ $ \begin{align} \ket{q_0} \ket{q_1} \cdots \ket{q_ {n-1}} & \mapsto \ket{q_0} \ket{q_0 \oplus q_1} \ket{q_0 \oplus q_1 \oplus q_2} \cdots \ket{q_0 \oplus \cdots \oplus q_ {n-1}}。
 \end{align} $ $

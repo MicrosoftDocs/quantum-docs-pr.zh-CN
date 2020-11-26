@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.Subarray
 title: 子数组函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Subarray
 qsharp.summary: Takes an array and a list of locations and produces a new array formed from the elements of the original array that match the given locations.
-ms.openlocfilehash: be7b6ee1a396d67ebc311d8d97f4bd751a32d171
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: cf72f04421b277ce64354d1eccec11cbc61d78cc
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696451"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96220155"
 ---
 # <a name="subarray-function"></a>子数组函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 采用一个数组和一个位置列表，并生成一个新数组，该数组由与给定位置匹配的原始数组的元素构成。
@@ -51,7 +51,7 @@ function Subarray<'T> (indices : Int[], array : 'T[]) : 'T[]
 
 元素的类型 `array` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 函数是为泛型类型定义的，即，只要有一个数组 `'T[]` 和一个定义子数组的位置列表 `Int[]` 。
 子数组的构造是基于生成给定数组的新深层副本的，而不是维护引用。
