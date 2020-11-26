@@ -176,12 +176,12 @@ operations:
   uid: Microsoft.Quantum.Arithmetic.SquareSI
 - summary: 实现可逆的 sum 入口。 给定一个以 qubit 编码的传入位 `carryIn` ，以及在和中编码的两个被加数位 `summand1` `summand2` ，计算的和的按位 xor `carryIn` `summand1` `summand2` `summand2` 。
   uid: Microsoft.Quantum.Arithmetic.Sum
-summary: ''
+summary: 此命名空间包含用于一致计算算法的函数和操作。
 uid: Microsoft.Quantum.Arithmetic
 metadata:
-  ms.openlocfilehash: 73e3ac964e19ce4613c9426bfc09a39aff4228cf
-  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.openlocfilehash: 687e23caf1e5844fcba3d8b6dbe09524903184a2
+  ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/27/2020
-  ms.locfileid: "92696642"
+  ms.lasthandoff: 11/26/2020
+  ms.locfileid: "96221753"
