@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.CurriedOp
 title: CurriedOp 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Returns a curried version of an operation on two inputs.
 
   That is, given an operation with two inputs, this function applies Curry's isomorphism $f(x, y) \equiv f(x)(y)$ to return an operation of one input which returns an operation of one input.
-ms.openlocfilehash: 13bc3e195d8a4ba26b726f96e4dc6b83da43c3e7
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 6c1917d6f1ee69cb29fed1ab173106af1e206533
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696082"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96216619"
 ---
 # <a name="curriedop-function"></a>CurriedOp 函数
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 返回对两个输入的操作的扩充版本。
@@ -54,7 +54,7 @@ function CurriedOp<'T, 'U> (op : (('T, 'U) => Unit)) : ('T -> ('U => Unit))
 
 成对定义的函数的第二个分量的类型。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 以下项是等效的：
 

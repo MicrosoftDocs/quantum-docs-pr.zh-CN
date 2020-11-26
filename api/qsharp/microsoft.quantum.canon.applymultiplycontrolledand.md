@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyMultiplyControlledAnd
 title: ApplyMultiplyControlledAnd 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyMultiplyControlledAnd
 qsharp.summary: Implements a multiple-controlled Toffoli gate, assuming that target qubit is initialized 0.  The adjoint operation assumes that the target qubit will be reset to 0.
-ms.openlocfilehash: feca28d394e4af31eb4ffe737111d00ede45e27e
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 17a757278500833bc5a5d0635af020cfe1fd569f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696309"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96218387"
 ---
 # <a name="applymultiplycontrolledand-operation"></a>ApplyMultiplyControlledAnd 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 实现多控制的 Toffoli 入口，假定目标 qubit 初始化为0。  Adjoint 操作假定目标 qubit 将重置为0。
 
 ```qsharp
-operation ApplyMultiplyControlledAnd (controls : Qubit[], target : Qubit) : Unit
+operation ApplyMultiplyControlledAnd (controls : Qubit[], target : Qubit) : Unit is Adj
 ```
 
 

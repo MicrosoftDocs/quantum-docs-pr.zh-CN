@@ -1,31 +1,31 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyMultiControlledC
 title: ApplyMultiControlledC 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyMultiControlledC
 qsharp.summary: Applies a multiply controlled version of a singly controlled operation. The modifier `C` indicates that the single-qubit operation is controllable.
-ms.openlocfilehash: 36010ba667190c237b64f60b7246010199a8ba1c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 2d5703eed3a3b6e611ae7c993febf018fcb148b3
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696311"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96218404"
 ---
 # <a name="applymulticontrolledc-operation"></a>ApplyMultiControlledC 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 应用单个受控操作的多重控制版本。
 修饰符 `C` 指示 qubit 操作可控制。
 
 ```qsharp
-operation ApplyMultiControlledC (singlyControlledOp : (Qubit[] => Unit), ccnot : Microsoft.Quantum.Canon.CCNOTop, controls : Qubit[], targets : Qubit[]) : Unit
+operation ApplyMultiControlledC (singlyControlledOp : (Qubit[] => Unit), ccnot : Microsoft.Quantum.Canon.CCNOTop, controls : Qubit[], targets : Qubit[]) : Unit is Ctl
 ```
 
 
@@ -59,7 +59,7 @@ operation ApplyMultiControlledC (singlyControlledOp : (Qubit[] => Unit), ccnot :
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 此操作仅使用 clean ancilla qubits。
 
@@ -67,7 +67,7 @@ operation ApplyMultiControlledC (singlyControlledOp : (Qubit[] => Unit), ccnot :
 
 ## <a name="references"></a>参考
 
-- [*Michael Nielsen、Isaac 语* 、量程计算和量程信息](http://doi.org/10.1017/CBO9780511976667)
+- [*Michael Nielsen、Isaac 语*、量程计算和量程信息](http://doi.org/10.1017/CBO9780511976667)
 
 ## <a name="see-also"></a>另请参阅
 

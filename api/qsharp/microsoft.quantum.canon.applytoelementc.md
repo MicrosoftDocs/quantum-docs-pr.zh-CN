@@ -1,40 +1,40 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToElementC
 title: ApplyToElementC 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToElementC
 qsharp.summary: Applies an operation to a given element of an array.
-ms.openlocfilehash: bd466ff59e6e962be9a7e58b6d298c60b0d1d90d
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: c8d7841e3846ab435671f7959c724f987d8ad5a0
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696237"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96217571"
 ---
 # <a name="applytoelementc-operation"></a>ApplyToElementC 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将操作应用到数组的给定元素。
 
 ```qsharp
-operation ApplyToElementC<'T> (op : ('T => Unit is Ctl), index : Int, targets : 'T[]) : Unit
+operation ApplyToElementC<'T> (op : ('T => Unit is Ctl), index : Int, targets : 'T[]) : Unit is Ctl
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 给定一个操作 `op` 、一个索引 `index` 和一个目标数组 `targets` ，适用于 `op(targets[index])` 。
 
 ## <a name="input"></a>输入
 
-### <a name="op--t--unit-ctl"></a>op： t => [单元](xref:microsoft.quantum.lang-ref.unit) Ctl
+### <a name="op--t--unit--is-ctl"></a>op： t => [单位](xref:microsoft.quantum.lang-ref.unit)  为 Ctl
 
 要应用的操作。
 

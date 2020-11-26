@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.CascadeCNOT
 title: CascadeCNOT 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -14,18 +14,18 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.canon.applycnotchain".
-ms.openlocfilehash: 4124c24bd2619b2f9188fe1d4d6097e913f9c15a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: a29b3221189fa654e69e46990a055684943bad98
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696117"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96216925"
 ---
 # <a name="cascadecnot-operation"></a>CascadeCNOT 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 > [!WARNING]
@@ -36,7 +36,7 @@ ms.locfileid: "92696117"
 
 
 ```qsharp
-operation CascadeCNOT (register : Qubit[]) : Unit
+operation CascadeCNOT (register : Qubit[]) : Unit is Adj + Ctl
 ```
 
 

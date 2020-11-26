@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.CControlledC
 title: CControlledC 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: CControlledC
 qsharp.summary: Given an operation op, returns a new operation which applies the op if a classical control bit is true. If `false`, nothing happens. The modifier `C` indicates that the operation is controllable.
-ms.openlocfilehash: e5975455385e182236d7e2864e26ca00795a40c6
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 25ac2b35047b1c33a89149eae6d40f6f7ae3b454
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696112"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96216908"
 ---
 # <a name="ccontrolledc-function"></a>CControlledC 函数
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定操作 op，返回一个新操作，该操作将应用操作（如果古典控制位为 true）。 如果为，则不 `false` 执行任何操作。
@@ -31,13 +31,13 @@ function CControlledC<'T> (op : ('T => Unit is Ctl)) : ((Bool, 'T) => Unit is Ct
 
 ## <a name="input"></a>输入
 
-### <a name="op--t--unit-ctl"></a>op： t => [单元](xref:microsoft.quantum.lang-ref.unit) Ctl
+### <a name="op--t--unit--is-ctl"></a>op： t => [单位](xref:microsoft.quantum.lang-ref.unit)  为 Ctl
 
 要有条件地应用的操作。
 
 
 
-## <a name="output--boolt--unit-ctl"></a>Output： ([Bool](xref:microsoft.quantum.lang-ref.bool)，不) => [Unit](xref:microsoft.quantum.lang-ref.unit) Ctl
+## <a name="output--boolt--unit--is-ctl"></a>Output： ([Bool](xref:microsoft.quantum.lang-ref.bool)，不) => [单位](xref:microsoft.quantum.lang-ref.unit)  为 Ctl
 
 如果经典控制位为 true，则为 op 的新操作。
 

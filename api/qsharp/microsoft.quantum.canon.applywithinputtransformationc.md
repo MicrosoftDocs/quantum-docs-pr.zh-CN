@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyWithInputTransformationC
 title: ApplyWithInputTransformationC 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyWithInputTransformationC
 qsharp.summary: Given an operation that accepts some input, a function that returns an output compatible with that operation, and an input to that function, applies the operation using the function to transform the input to a form expected by the operation.
-ms.openlocfilehash: f166880d3ca8a7fc45635c0105aa5c83fe1b4f4a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 030c41d3ce0a5d613a95c6511f7278497ec5cda1
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696150"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96217163"
 ---
 # <a name="applywithinputtransformationc-operation"></a>ApplyWithInputTransformationC 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定接受某些输入的操作，返回与该操作兼容的输出的函数以及该函数的输入将使用函数将输入转换为操作所需的格式。
 
 ```qsharp
-operation ApplyWithInputTransformationC<'T, 'U> (fn : ('U -> 'T), op : ('T => Unit is Ctl), input : 'U) : Unit
+operation ApplyWithInputTransformationC<'T, 'U> (fn : ('U -> 'T), op : ('T => Unit is Ctl), input : 'U) : Unit is Ctl
 ```
 
 
@@ -35,7 +35,7 @@ operation ApplyWithInputTransformationC<'T, 'U> (fn : ('U -> 'T), op : ('T => Un
 将给定输入转换为操作所需的格式的函数。
 
 
-### <a name="op--t--unit-ctl"></a>op： t => [单元](xref:microsoft.quantum.lang-ref.unit) Ctl
+### <a name="op--t--unit--is-ctl"></a>op： t => [单位](xref:microsoft.quantum.lang-ref.unit)  为 Ctl
 
 要应用的操作。
 

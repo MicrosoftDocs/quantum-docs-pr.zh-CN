@@ -1,36 +1,36 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplySeriesOfOpsCA
 title: ApplySeriesOfOpsCA 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplySeriesOfOpsCA
 qsharp.summary: Applies a list of ops and their targets sequentially on an array. (Adjoint + Controlled)
-ms.openlocfilehash: 2327a693e528cf46f95eae5ee052e9dd9b6ee187
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 9dd1343b3ebcc75592441f150eee822cfe83f9a1
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696263"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96217877"
 ---
 # <a name="applyseriesofopsca-operation"></a>ApplySeriesOfOpsCA 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 在数组上按顺序应用 ops 及其目标的列表。  (Adjoint + 受控) 
 
 ```qsharp
-operation ApplySeriesOfOpsCA<'T> (listOfOps : ('T[] => Unit is Adj + Ctl)[], targets : Int[][], register : 'T[]) : Unit
+operation ApplySeriesOfOpsCA<'T> (listOfOps : ('T[] => Unit is Adj + Ctl)[], targets : Int[][], register : 'T[]) : Unit is Adj + Ctl
 ```
 
 
 ## <a name="input"></a>输入
 
-### <a name="listofops--t--unit-adj--ctl"></a>listOfOps： t [] => [单位](xref:microsoft.quantum.lang-ref.unit) 调整 + Ctl []
+### <a name="listofops--t--unit--is-adj--ctl"></a>listOfOps： t [] => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词 + Ctl []
 
 要应用的 ops 列表，每个操作都采用 "t" 数组。 它们按顺序应用，最小索引优先。
 每个都必须同时具有 Adjoint 和受控函子。

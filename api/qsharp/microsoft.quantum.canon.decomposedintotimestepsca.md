@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.DecomposedIntoTimeStepsCA
 title: DecomposedIntoTimeStepsCA 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: DecomposedIntoTimeStepsCA
 qsharp.summary: Returns an operation implementing the Trotter–Suzuki integrator for a given operation.
-ms.openlocfilehash: cfd563c1c6350255364de1e227442624acc98c22
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: aa5f09f2e1fde878b523b4efc20b86c26ac738ff
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696078"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96216534"
 ---
 # <a name="decomposedintotimestepsca-function"></a>DecomposedIntoTimeStepsCA 函数
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 返回为给定操作实现 Trotter – Suzuki 集成器的操作。
@@ -35,7 +35,7 @@ function DecomposedIntoTimeStepsCA<'T> ((nSteps : Int, op : ((Int, Double, 'T) =
 要分解为时间步长的操作数。
 
 
-### <a name="op--intdoublet--unit-adj--ctl"></a>op： ([Int](xref:microsoft.quantum.lang-ref.int)、[Double](xref:microsoft.quantum.lang-ref.double)、t) => [单位](xref:microsoft.quantum.lang-ref.unit) 调整 + Ctl
+### <a name="op--intdoublet--unit--is-adj--ctl"></a>op： ([Int](xref:microsoft.quantum.lang-ref.int)，[Double](xref:microsoft.quantum.lang-ref.double)，is =) => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词 + Ctl
 
 接受 (类型的索引输入 `Int`) 和时间输入 (类型 `Double` 为分解的) 的操作。
 
@@ -47,7 +47,7 @@ function DecomposedIntoTimeStepsCA<'T> ((nSteps : Int, op : ((Int, Double, 'T) =
 
 
 
-## <a name="output--doublet--unit-adj--ctl"></a>输出： ([Double](xref:microsoft.quantum.lang-ref.double)，t) => [单位](xref:microsoft.quantum.lang-ref.unit) 形容词 + Ctl
+## <a name="output--doublet--unit--is-adj--ctl"></a>输出： ([Double](xref:microsoft.quantum.lang-ref.double)，t) => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词 + Ctl
 
 返回一个实现 Trotter – Suzuki 集成器的单一参数，其中第一个参数 `Double` 是集成步骤大小，第二个参数是目标。
 
@@ -57,7 +57,7 @@ function DecomposedIntoTimeStepsCA<'T> ((nSteps : Int, op : ((Int, Double, 'T) =
 
 每次步骤应执行的操作的类型;通常为 `Qubit[]` 或 `Qubit` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 当使用 `order` 等于时 `1` ，此函数将返回一个操作，该操作可由最低顺序 Trotter – Suzuki 集成器 $ $ \begin{align} S_1 ( \lambda) = \ prod_ {j = 1} ^ {m} e ^ {H_j \lambda}，\end{align} $ $，我们已遵循 [quant/0508139](https://arxiv.org/abs/quant-ph/0508139) 的表示法，并让 $ \lambda $ 成为) 的第一次输入所表示的演化时间 (并让 $ \{ H_j \} _ {j = 1} ^ {m} $ 是要集成的 (Hermitian) dynamical 生成器的集合，这 `op(j, lambda, _)` 是由单一运算符 $e ^ {H_j \lambda} $ 模拟的。
 

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Characterization.MeasureIdentity
 title: MeasureIdentity 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Characterization
 qsharp.name: MeasureIdentity
 qsharp.summary: Measures the identity operator on a register of qubits.
-ms.openlocfilehash: 71a103fddb3a27703318975bea94bc7a22a9ce81
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 4a169355d0669c67f0eb14c80e8554b2f24b035a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695882"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96216109"
 ---
 # <a name="measureidentity-operation"></a>MeasureIdentity 操作
 
 命名空间 [：](xref:Microsoft.Quantum.Characterization)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 测量 qubits 的寄存器上的标识运算符。
@@ -36,11 +36,11 @@ operation MeasureIdentity (register : Qubit[]) : Result
 
 
 
-## <a name="output--__invalidresult__"></a>输出： __无效 <Result>__
+## <a name="output--__invalidresult__"></a>输出：__无效 <Result>__
 
 结果值 `Zero` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 由于 $ \boldone $ 只有 eigenvalue $1 $，并且没有负 eigenvalue，此操作始终返回 `Zero` ，对应于 eigenvalue $ + 1 = (-1) ^ $0，而不会导致的状态折叠 `register` 。
 

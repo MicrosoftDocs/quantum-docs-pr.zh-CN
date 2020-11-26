@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToHead
 title: ApplyToHead 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToHead
 qsharp.summary: Applies an operation to the first element of an array.
-ms.openlocfilehash: 4e5fc439f48a5c7e527b7805c35cce18eca3ab36
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 35f19cbb1090e974e18f338239764c9c8b854116
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696211"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96217333"
 ---
 # <a name="applytohead-operation"></a>ApplyToHead 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将操作应用到数组的第一个元素。
@@ -28,7 +28,7 @@ operation ApplyToHead<'T> (op : ('T => Unit), targets : 'T[]) : Unit
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 给定一个操作 `op` 和一个目标数组 `targets` ，适用于 `op(Head(targets))` 。
 

@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyReversedOpBigEndianA
 title: ApplyReversedOpBigEndianA 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -14,18 +14,18 @@ qsharp.summary: >-
   >
 
   > Please use @"Microsoft.Quantum.Arithmetic.ApplyReversedOpBEA".
-ms.openlocfilehash: 2a5b0fd966e74c383c18bff4c5c749b9b3ce752a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: b87463dc6585a88ae88680728c608332478fd1e7
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696282"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96218149"
 ---
 # <a name="applyreversedopbigendiana-operation"></a>ApplyReversedOpBigEndianA 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 > [!WARNING]
@@ -36,13 +36,13 @@ ms.locfileid: "92696282"
 
 
 ```qsharp
-operation ApplyReversedOpBigEndianA (op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit is Adj), register : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit
+operation ApplyReversedOpBigEndianA (op : (Microsoft.Quantum.Arithmetic.BigEndian => Unit is Adj), register : Microsoft.Quantum.Arithmetic.LittleEndian) : Unit is Adj
 ```
 
 
 ## <a name="input"></a>输入
 
-### <a name="op--bigendian--unit-adj"></a>op： [BigEndian](xref:Microsoft.Quantum.Arithmetic.BigEndian) => [Unit](xref:microsoft.quantum.lang-ref.unit) 形容词
+### <a name="op--bigendian--unit--is-adj"></a>op： [BigEndian](xref:Microsoft.Quantum.Arithmetic.BigEndian) => [Unit](xref:microsoft.quantum.lang-ref.unit)  为形容词
 
 
 
