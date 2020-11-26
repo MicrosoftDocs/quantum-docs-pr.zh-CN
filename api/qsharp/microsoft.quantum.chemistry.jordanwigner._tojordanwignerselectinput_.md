@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._ToJordanWignerSelectInput_
 title: _ToJordanWignerSelectInput_ 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _ToJordanWignerSelectInput_
 qsharp.summary: ''
-ms.openlocfilehash: 21dca3c2121e80f0d1fab9130dfb1c0e1de1d139
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 785260c6f48d0b540615966245af421c6294823d
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695778"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96215157"
 ---
 # <a name="_tojordanwignerselectinput_-function"></a>_ToJordanWignerSelectInput_ 函数
 
 命名空间： [JordanWigner](xref:Microsoft.Quantum.Chemistry.JordanWigner)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子](https://nuget.org/packages/Microsoft.Quantum.Chemistry)
 
 
 
@@ -41,5 +41,5 @@ function _ToJordanWignerSelectInput_ (idx : Int, optimizedBEGeneratorSystem : Mi
 
 
 
-## <a name="output--qubitqubitqubitlittleendianlittleendian--unit-adj--ctl"></a>Output： ([Qubit](xref:microsoft.quantum.lang-ref.qubit)，[Qubit](xref:microsoft.quantum.lang-ref.qubit)[]，[Qubit](xref:microsoft.quantum.lang-ref.qubit)[]，[LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian)，[LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian)[] ) => [单位](xref:microsoft.quantum.lang-ref.unit) 调整 + Ctl
+## <a name="output--qubitqubitqubitlittleendianlittleendian--unit--is-adj--ctl"></a>Output： ([Qubit](xref:microsoft.quantum.lang-ref.qubit)，[Qubit](xref:microsoft.quantum.lang-ref.qubit)[]，[Qubit](xref:microsoft.quantum.lang-ref.qubit)[]，[LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian)，[LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian)[] ) => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词 + Ctl
 

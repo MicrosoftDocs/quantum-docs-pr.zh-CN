@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Convert.BoolArrayAsPauli
 title: BoolArrayAsPauli 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: BoolArrayAsPauli
 qsharp.summary: Given a bit string, returns a multi-qubit Pauli operator represented as an array of single-qubit Pauli operators.
-ms.openlocfilehash: c5ef71322dae248fc2c6b1db3adf891de7d72488
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8e7088ec3918165d7b2afb1056a8319c6fb17796
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695687"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96214273"
 ---
 # <a name="boolarrayaspauli-function"></a>BoolArrayAsPauli 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Convert)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定位字符串后，将返回一个 qubit Pauli 运算符，该运算符表示为一个 qubit Pauli 运算符的数组。
@@ -50,6 +50,6 @@ function BoolArrayAsPauli (pauli : Pauli, bitApply : Bool, bits : Bool[]) : Paul
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 布尔数组和量程寄存器的长度必须相等。

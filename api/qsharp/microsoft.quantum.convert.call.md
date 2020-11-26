@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Convert.Call
 title: 调用操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: Call
 qsharp.summary: Calls a function with a given input.
-ms.openlocfilehash: 8630f846b4b9823ce1c1dfd61dc8ca81e468517d
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 92c159cef878fb587b0ed514fd6660dd19527cab
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695677"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96214205"
 ---
 # <a name="call-operation"></a>调用操作
 
 命名空间 [：](xref:Microsoft.Quantum.Convert)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 调用具有给定输入的函数。
@@ -28,7 +28,7 @@ operation Call<'Input, 'Output> (fn : ('Input -> 'Output), input : 'Input) : 'Ou
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 给定函数和该函数的输入时，将调用函数并返回其输出。
 
@@ -58,6 +58,6 @@ operation Call<'Input, 'Output> (fn : ('Input -> 'Output), input : 'Input) : 'Ou
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 此操作主要适用于强制在操作内的特定位置调用函数，或用于调用应执行操作的函数。

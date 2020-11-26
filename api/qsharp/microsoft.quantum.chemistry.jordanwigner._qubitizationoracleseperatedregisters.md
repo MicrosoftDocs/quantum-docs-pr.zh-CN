@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._QubitizationOracleSeperatedRegisters
 title: _QubitizationOracleSeperatedRegisters 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _QubitizationOracleSeperatedRegisters
 qsharp.summary: ''
-ms.openlocfilehash: f21c5ea201afa5087f00bc25ef97a5ef62c382cb
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 72f5ed2546f4d47a7a6f0f1a9d427747dd455d50
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695787"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96215327"
 ---
 # <a name="_qubitizationoracleseperatedregisters-function"></a>_QubitizationOracleSeperatedRegisters 函数
 
 命名空间： [JordanWigner](xref:Microsoft.Quantum.Chemistry.JordanWigner)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子](https://nuget.org/packages/Microsoft.Quantum.Chemistry)
 
 
 
@@ -36,5 +36,5 @@ function _QubitizationOracleSeperatedRegisters (qSharpData : Microsoft.Quantum.C
 
 
 
-## <a name="output--intintdoublequbitqubit--unit-adj--ctl"></a>输出： ( # B1 [Int](xref:microsoft.quantum.lang-ref.int)，[int](xref:microsoft.quantum.lang-ref.int)) ， ([Double](xref:microsoft.quantum.lang-ref.double)， ([Qubit](xref:microsoft.quantum.lang-ref.qubit)[]，[Qubit](xref:microsoft.quantum.lang-ref.qubit)[] ) => [单位](xref:microsoft.quantum.lang-ref.unit) 调整 + Ctl) # A7
+## <a name="output--intintdoublequbitqubit--unit--is-adj--ctl"></a>输出： ( # B1 [Int](xref:microsoft.quantum.lang-ref.int)，[int](xref:microsoft.quantum.lang-ref.int)) ， ([Double](xref:microsoft.quantum.lang-ref.double)， ([Qubit](xref:microsoft.quantum.lang-ref.qubit)[]，[Qubit](xref:microsoft.quantum.lang-ref.qubit)[] ) => [Unit](xref:microsoft.quantum.lang-ref.unit)  为形容词 + Ctl) # A7
 

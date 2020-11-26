@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._ToJordanWignerSelectInput
 title: _ToJordanWignerSelectInput 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _ToJordanWignerSelectInput
 qsharp.summary: ''
-ms.openlocfilehash: c7e5ae2da86e38c7d6e1490654512583d47765e2
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1ce5d299db5e253765855c2a590539da2d833e48
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695781"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96215225"
 ---
 # <a name="_tojordanwignerselectinput-operation"></a>_ToJordanWignerSelectInput 操作
 
 命名空间： [JordanWigner](xref:Microsoft.Quantum.Chemistry.JordanWigner)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子](https://nuget.org/packages/Microsoft.Quantum.Chemistry)
 
 
 
 
 ```qsharp
-operation _ToJordanWignerSelectInput (idx : Int, optimizedBEGeneratorSystem : Microsoft.Quantum.Chemistry.JordanWigner.OptimizedBEGeneratorSystem, signQubit : Qubit, selectZControlRegisters : Qubit[], OptimizedBEControlRegisters : Qubit[], pauliBasesIdx : Microsoft.Quantum.Arithmetic.LittleEndian, indexRegisters : Microsoft.Quantum.Arithmetic.LittleEndian[]) : Unit
+operation _ToJordanWignerSelectInput (idx : Int, optimizedBEGeneratorSystem : Microsoft.Quantum.Chemistry.JordanWigner.OptimizedBEGeneratorSystem, signQubit : Qubit, selectZControlRegisters : Qubit[], OptimizedBEControlRegisters : Qubit[], pauliBasesIdx : Microsoft.Quantum.Arithmetic.LittleEndian, indexRegisters : Microsoft.Quantum.Arithmetic.LittleEndian[]) : Unit is Adj + Ctl
 ```
 
 

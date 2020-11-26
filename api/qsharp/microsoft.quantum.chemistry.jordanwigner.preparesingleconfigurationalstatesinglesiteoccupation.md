@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner.PrepareSingleConfigurationalStateSingleSiteOccupation
 title: PrepareSingleConfigurationalStateSingleSiteOccupation 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: PrepareSingleConfigurationalStateSingleSiteOccupation
 qsharp.summary: Simple state preparation of trial state by occupying spin-orbitals
-ms.openlocfilehash: de385b7ffd76c1deaa41cf0cd3338d3243feb1fd
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 360800037318f56d0bb659aeb2a2c6292f860b2c
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695725"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96214545"
 ---
 # <a name="preparesingleconfigurationalstatesinglesiteoccupation-operation"></a>PrepareSingleConfigurationalStateSingleSiteOccupation 操作
 
 命名空间： [JordanWigner](xref:Microsoft.Quantum.Chemistry.JordanWigner)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子](https://nuget.org/packages/Microsoft.Quantum.Chemistry)
 
 
 通过使用 orbitals 来准备试验状态的简单状态
 
 ```qsharp
-operation PrepareSingleConfigurationalStateSingleSiteOccupation (qubitIndices : Int[], qubits : Qubit[]) : Unit
+operation PrepareSingleConfigurationalStateSingleSiteOccupation (qubitIndices : Int[], qubits : Qubit[]) : Unit is Adj + Ctl
 ```
 
 

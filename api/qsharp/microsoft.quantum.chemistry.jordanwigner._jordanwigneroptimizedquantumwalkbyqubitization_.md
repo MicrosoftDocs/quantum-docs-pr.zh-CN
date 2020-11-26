@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._JordanWignerOptimizedQuantumWalkByQubitization_
 title: _JordanWignerOptimizedQuantumWalkByQubitization_ 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _JordanWignerOptimizedQuantumWalkByQubitization_
 qsharp.summary: ''
-ms.openlocfilehash: 71ab38750c4fa1f3945268dccfbf36a521daa3e5
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 66d4a975dd0e9a6912f2b4ba6dc8817cc7c018a7
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695815"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96215599"
 ---
 # <a name="_jordanwigneroptimizedquantumwalkbyqubitization_-function"></a>_JordanWignerOptimizedQuantumWalkByQubitization_ 函数
 
 命名空间： [JordanWigner](xref:Microsoft.Quantum.Chemistry.JordanWigner)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子](https://nuget.org/packages/Microsoft.Quantum.Chemistry)
 
 
 
@@ -46,5 +46,5 @@ function _JordanWignerOptimizedQuantumWalkByQubitization_ (targetError : Double,
 
 
 
-## <a name="output--intintdoublequbitqubit--unit-adj--ctl"></a>输出： ( # B1 [Int](xref:microsoft.quantum.lang-ref.int)，[int](xref:microsoft.quantum.lang-ref.int)) ， ([Double](xref:microsoft.quantum.lang-ref.double)， ([Qubit](xref:microsoft.quantum.lang-ref.qubit)[]，[Qubit](xref:microsoft.quantum.lang-ref.qubit)[] ) => [单位](xref:microsoft.quantum.lang-ref.unit) 调整 + Ctl) # A7
+## <a name="output--intintdoublequbitqubit--unit--is-adj--ctl"></a>输出： ( # B1 [Int](xref:microsoft.quantum.lang-ref.int)，[int](xref:microsoft.quantum.lang-ref.int)) ， ([Double](xref:microsoft.quantum.lang-ref.double)， ([Qubit](xref:microsoft.quantum.lang-ref.qubit)[]，[Qubit](xref:microsoft.quantum.lang-ref.qubit)[] ) => [Unit](xref:microsoft.quantum.lang-ref.unit)  为形容词 + Ctl) # A7
 
