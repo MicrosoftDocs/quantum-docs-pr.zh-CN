@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.NQubitsRequired
 title: NQubitsRequired 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: NQubitsRequired
 qsharp.summary: Returns the number of qubits required to apply a given sequential classifier.
-ms.openlocfilehash: d7ed687e9c75ed7cc71917aa1cdf32a6fbb93106
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: e910edb9bf432e6acb5c349ee6b9d65797aaaba7
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700596"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96211655"
 ---
 # <a name="nqubitsrequired-function"></a>NQubitsRequired 函数
 
 命名空间： [default-machinelearning-southcentralus](xref:Microsoft.Quantum.MachineLearning)
 
-软件包 [](https://nuget.org/packages/)
+Package： [default-machinelearning-southcentralus](https://nuget.org/packages/Microsoft.Quantum.MachineLearning)
 
 
 返回应用给定顺序分类器所需的 qubits 的数目。

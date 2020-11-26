@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Math._ExtendedGreatestCommonDivisorI
 title: _ExtendedGreatestCommonDivisorI 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: _ExtendedGreatestCommonDivisorI
 qsharp.summary: Internal recursive call to calculate the GCD.
-ms.openlocfilehash: c942c8bdbad950d051f698f9808c04e7fa6c7454
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: b9acb21d57053b374c3a1831a81820ffc2a78ebb
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700541"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96211453"
 ---
 # <a name="_extendedgreatestcommondivisori-function"></a>_ExtendedGreatestCommonDivisorI 函数
 
 命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Math)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 用于计算 GCD 的内部递归调用。

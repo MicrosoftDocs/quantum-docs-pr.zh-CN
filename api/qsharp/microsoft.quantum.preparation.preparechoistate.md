@@ -1,27 +1,27 @@
 ---
 uid: Microsoft.Quantum.Preparation.PrepareChoiState
 title: PrepareChoiState 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: PrepareChoiState
-qsharp.summary: Prepares the Choi–Jamiłkowski state for a given operation onto given reference and target registers.
-ms.openlocfilehash: 8b2917a7d9414539f2f7c821c4115fc4b21d0373
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+qsharp.summary: Prepares the Choi–Jamiołkowski state for a given operation onto given reference and target registers.
+ms.openlocfilehash: ced71c4278f42f577760acd54ae53e7f5e6dae4a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700717"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96210567"
 ---
 # <a name="preparechoistate-operation"></a>PrepareChoiState 操作
 
 命名空间： [Microsoft 量子. 准备](xref:Microsoft.Quantum.Preparation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
-将给定操作的 Choi – Jamiłkowski 状态准备到给定的引用和目标寄存器。
+将给定操作的 Choi – Jamiołkowski 状态准备到给定的引用和目标寄存器。
 
 ```qsharp
 operation PrepareChoiState (op : (Qubit[] => Unit), reference : Qubit[], target : Qubit[]) : Unit
@@ -32,7 +32,7 @@ operation PrepareChoiState (op : (Qubit[] => Unit), reference : Qubit[], target 
 
 ### <a name="op--qubit--unit"></a>op： [Qubit](xref:microsoft.quantum.lang-ref.qubit)[] => [单元](xref:microsoft.quantum.lang-ref.unit) 
 
-操作 $ \Lambda $，其 Choi – Jamiłkowski 状态 $J ( \Lambda) /2 ^ N $ 准备好，其中 $N $ 是其作用的 qubits 的数目 `op` 。
+操作 $ \Lambda $，其 Choi – Jamiołkowski 状态 $J ( \Lambda) /2 ^ N $ 准备好，其中 $N $ 是其作用的 qubits 的数目 `op` 。
 
 
 ### <a name="reference--qubit"></a>参考： [Qubit](xref:microsoft.quantum.lang-ref.qubit)[]
@@ -50,7 +50,7 @@ operation PrepareChoiState (op : (Qubit[] => Unit), reference : Qubit[], target 
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 Choi – Jamiłkowski 状态 $J 量程进程的 ( \Lambda) $ 定义为 $ $ \begin{align} J ( \Lambda) \mathrel{： =} ( \boldone \otimes \Lambda)  (| \boldone\rangle \! \rangle\langle \! \langle\boldone |) ，\end{align} $ $ where $ |X\rangle \! \rangle $ 是列堆栈约定中的矩阵 $X $ 的 *矢量化* 。 了解此状态的传统说明会提供有关 $ \Lambda $ 对任意输入状态的影响的完整信息，并构成 *量程进程 tomography* 的基础。
 
