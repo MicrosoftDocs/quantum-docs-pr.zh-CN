@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.StackPop
 title: StackPop 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -10,18 +10,18 @@ qsharp.summary: >-
   > [!WARNING]
 
   > StackPop has been deprecated.
-ms.openlocfilehash: 20c911302532a3772abfc15836cce1edc3f1e945
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 712a6c8698db5844733c7c015366f7f38cda8889
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695944"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96205025"
 ---
 # <a name="stackpop-function"></a>StackPop 函数
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 > [!WARNING]

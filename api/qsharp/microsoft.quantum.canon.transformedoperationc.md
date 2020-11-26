@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.TransformedOperationC
 title: TransformedOperationC 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: TransformedOperationC
 qsharp.summary: Given a function and an operation, returns a new operation whose input is transformed by the given function.
-ms.openlocfilehash: b6867a076b654337f6127657189a8453c9973cc2
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 964576788bc80dd8920acdfb62d5d69a060e75f6
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695933"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96204855"
 ---
 # <a name="transformedoperationc-function"></a>TransformedOperationC 函数
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定一个函数和一个操作，返回一个新的操作，其输入由给定函数转换。
@@ -35,13 +35,13 @@ function TransformedOperationC<'T, 'U> (fn : ('U -> 'T), op : ('T => Unit is Ctl
 将给定输入转换为操作所需的格式的函数。
 
 
-### <a name="op--t--unit-ctl"></a>op： t => [单元](xref:microsoft.quantum.lang-ref.unit) Ctl
+### <a name="op--t--unit--is-ctl"></a>op： t => [单位](xref:microsoft.quantum.lang-ref.unit)  为 Ctl
 
 要转换的操作。
 
 
 
-## <a name="output--u--unit-ctl"></a>输出： "U => [单位](xref:microsoft.quantum.lang-ref.unit) Ctl
+## <a name="output--u--unit--is-ctl"></a>输出： "U => [单位](xref:microsoft.quantum.lang-ref.unit)  为 Ctl
 
 新操作 tbat 的 `fn` 输入调用，然后将结果输出传递给 `op` 。
 

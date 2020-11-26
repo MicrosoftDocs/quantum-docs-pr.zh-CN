@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.RAll1
 title: RAll1 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Performs a phase shift operation.
 
   $R=\boldone-(1-e^{i \phi})\ket{1\cdots 1}\bra{1\cdots 1}$.
-ms.openlocfilehash: 45892f9811faf56d7b9a0eb34e4bde0a32d5586d
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 36e460f93b4349bc2e3da9bfb22cb0aa82ef1795
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695976"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96205520"
 ---
 # <a name="rall1-operation"></a>RAll1 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 执行阶段移位操作。
@@ -29,7 +29,7 @@ ms.locfileid: "92695976"
 $R = \boldone- (1-e ^ {i \phi} ) \ket{1\cdots 1} \bra{1\cdots 1} $。
 
 ```qsharp
-operation RAll1 (phase : Double, qubits : Qubit[]) : Unit
+operation RAll1 (phase : Double, qubits : Qubit[]) : Unit is Adj + Ctl
 ```
 
 

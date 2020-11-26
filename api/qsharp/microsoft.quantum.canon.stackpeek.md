@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.StackPeek
 title: StackPeek 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -10,18 +10,18 @@ qsharp.summary: >-
   > [!WARNING]
 
   > StackPeek has been deprecated.
-ms.openlocfilehash: 24704a2adc5bb910348d7e82ea53c356c585e236
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 053f3edde49e272639b9027a091c22278c7e218f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695947"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96205059"
 ---
 # <a name="stackpeek-function"></a>StackPeek 函数
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 > [!WARNING]
@@ -42,5 +42,5 @@ function StackPeek (stack : Microsoft.Quantum.Canon.ResultStack) : Result
 
 
 
-## <a name="output--__invalidresult__"></a>输出： __无效 <Result>__
+## <a name="output--__invalidresult__"></a>输出：__无效 <Result>__
 

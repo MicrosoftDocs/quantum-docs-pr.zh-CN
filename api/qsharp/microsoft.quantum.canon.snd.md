@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.Snd
 title: Snd 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: Snd
 qsharp.summary: Given a pair, returns its second element.
-ms.openlocfilehash: c05053b45d24c3398526d1269b90bb40d1e0ef27
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: c935a2bc9e3f5ab32669feae2bfc0f2ebf57e744
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695951"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96205314"
 ---
 # <a name="snd-function"></a>Snd 函数
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 如果给定对，则返回第二个元素。

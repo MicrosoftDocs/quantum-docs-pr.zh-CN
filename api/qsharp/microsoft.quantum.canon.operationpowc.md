@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.OperationPowC
 title: OperationPowC 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -10,18 +10,18 @@ qsharp.summary: >-
   Raises an operation to a power. The modifier `C` indicates that the operation is controllable.
 
   That is, given an operation representing a gate $U$, returns a new operation $U^m$ for a power $m$.
-ms.openlocfilehash: f3c51410fb7c091385b64a1c4c99b3972d5055b1
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 71f66dd0098ab58d327fc33dbe5af191df0d3dc3
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695985"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96205722"
 ---
 # <a name="operationpowc-function"></a>OperationPowC 函数
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 引发幂运算。
@@ -36,7 +36,7 @@ function OperationPowC<'T> (op : ('T => Unit is Ctl), power : Int) : ('T => Unit
 
 ## <a name="input"></a>输入
 
-### <a name="op--t--unit-ctl"></a>op： t => [单元](xref:microsoft.quantum.lang-ref.unit) Ctl
+### <a name="op--t--unit--is-ctl"></a>op： t => [单位](xref:microsoft.quantum.lang-ref.unit)  为 Ctl
 
 操作 $U $，表示要重复的入口。
 
@@ -47,7 +47,7 @@ function OperationPowC<'T> (op : ('T => Unit is Ctl), power : Int) : ('T => Unit
 
 
 
-## <a name="output--t--unit-ctl"></a>输出：不 => [单元](xref:microsoft.quantum.lang-ref.unit) Ctl
+## <a name="output--t--unit--is-ctl"></a>输出：不 => [单位](xref:microsoft.quantum.lang-ref.unit)  为 Ctl
 
 表示 $U ^ m $，其中 $m = \texttt{power} $ 的新操作。
 

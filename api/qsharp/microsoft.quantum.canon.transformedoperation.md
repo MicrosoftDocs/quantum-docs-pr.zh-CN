@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.TransformedOperation
 title: TransformedOperation 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: TransformedOperation
 qsharp.summary: Given a function and an operation, returns a new operation whose input is transformed by the given function.
-ms.openlocfilehash: d8c2f52290ce89d0a8ff138ba25f6b2e5e0516d5
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: a26cc178f67fd99324355ac230d9e91081b6e238
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695935"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96204923"
 ---
 # <a name="transformedoperation-function"></a>TransformedOperation 函数
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定一个函数和一个操作，返回一个新的操作，其输入由给定函数转换。

@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.Quantum.Canon.NoOp
 title: NoOp 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: NoOp
 qsharp.summary: Performs the identity operation (no-op) on an argument.
-ms.openlocfilehash: 987e39577c3b736418234431ed7a915ae461f763
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 35b6b62cab35f941f04b150dcca763457ddaa084
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695995"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96205960"
 ---
 # <a name="noop-operation"></a>NoOp 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)
 
 
 对参数执行 (no op) 的标识操作。
 
 ```qsharp
-operation NoOp<'T> (input : 'T) : Unit
+operation NoOp<'T> (input : 'T) : Unit is Adj + Ctl
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此操作采用任何类型的值，但不执行任何操作。
 这在需要输入操作类型时非常有用，但不应采取任何措施。
@@ -53,7 +53,7 @@ operation NoOp<'T> (input : 'T) : Unit
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 几乎在所有情况下，都 `NoOp` 需要显式指定的类型参数。 例如，与 `NoOp<Qubit>` 相同 <xref:microsoft.quantum.intrinsic.i> 。
 

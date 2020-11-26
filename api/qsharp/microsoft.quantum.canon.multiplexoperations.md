@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.MultiplexOperations
 title: MultiplexOperations 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -12,18 +12,18 @@ qsharp.summary: >-
   That is, applies Multiply-controlled unitary operation $U$ that applies a unitary $V_j$ when controlled by $n$-qubit number state $\ket{j}$.
 
   $U = \sum^{2^n-1}_{j=0}\ket{j}\bra{j}\otimes V_j$.
-ms.openlocfilehash: 267c9c2858090ebe024fd387938e8bd2f8c76867
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: ad66b39fcfacbe5231ec3b9ba96989d6d5d449c1
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696006"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96206096"
 ---
 # <a name="multiplexoperations-operation"></a>MultiplexOperations 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 应用由数值状态数组控制的操作的数组。
@@ -33,13 +33,13 @@ ms.locfileid: "92696006"
 $U = \sum ^ {2 ^ n-1} _ {j = 0} \ket{j}\bra{j}\otimes V_j $。
 
 ```qsharp
-operation MultiplexOperations<'T> (unitaries : ('T => Unit is Adj + Ctl)[], index : Microsoft.Quantum.Arithmetic.LittleEndian, target : 'T) : Unit
+operation MultiplexOperations<'T> (unitaries : ('T => Unit is Adj + Ctl)[], index : Microsoft.Quantum.Arithmetic.LittleEndian, target : 'T) : Unit is Adj + Ctl
 ```
 
 
 ## <a name="input"></a>输入
 
-### <a name="unitaries--t--unit-adj--ctl"></a>unitaries：不 => [单位](xref:microsoft.quantum.lang-ref.unit) 调整 + Ctl []
+### <a name="unitaries--t--unit--is-adj--ctl"></a>unitaries： t => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词 + Ctl []
 
 最多 $ 2 ^ n $ 单一操作的数组。 $J $ th 操作由以小字节序格式编码的数字状态 $ \ket{j} $ 进行索引。
 
@@ -65,7 +65,7 @@ $n 以小字节序格式编码数字状态 $ \ket{j} $ 的 qubit 控制寄存器
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 `coefficients` 如果指定少于 $ 2 ^ n $，则将用标识元素填充。 此实现使用 $n-$1 辅助 qubits。
 

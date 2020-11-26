@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.MultiplexZCoefficients
 title: MultiplexZCoefficients 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: MultiplexZCoefficients
 qsharp.summary: Implementation step of multiply-controlled Z rotations.
-ms.openlocfilehash: 33ab537d5e2b2953bbd4abfc36c85678c4e5e796
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 71bf85aeb4025a8c2a7fb56f29482ef74ae098f8
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695994"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96206011"
 ---
 # <a name="multiplexzcoefficients-function"></a>MultiplexZCoefficients 函数
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 乘以控制 Z 旋转的实现步骤。

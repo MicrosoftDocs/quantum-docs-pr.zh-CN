@@ -1,36 +1,36 @@
 ---
 uid: Microsoft.Quantum.Canon.RepeatCA
 title: RepeatCA 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: RepeatCA
 qsharp.summary: Repeats an operation a given number of times.
-ms.openlocfilehash: b68c3aa4298fffa76f7c43ac4c6d27cdf3b72fbf
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 24606486b3d5703065a7c7f62d3bbc7e3d07615f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695965"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96205399"
 ---
 # <a name="repeatca-operation"></a>RepeatCA 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 在给定的次数后重复操作。
 
 ```qsharp
-operation RepeatCA<'TInput> (op : ('TInput => Unit is Adj + Ctl), nTimes : Int, input : 'TInput) : Unit
+operation RepeatCA<'TInput> (op : ('TInput => Unit is Adj + Ctl), nTimes : Int, input : 'TInput) : Unit is Adj + Ctl
 ```
 
 
 ## <a name="input"></a>输入
 
-### <a name="op--tinput--unit-adj--ctl"></a>op： ' TInput => [单位](xref:microsoft.quantum.lang-ref.unit) 调整 + Ctl
+### <a name="op--tinput--unit--is-adj--ctl"></a>op： ' TInput => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词 + Ctl
 
 要重复调用的操作。
 
