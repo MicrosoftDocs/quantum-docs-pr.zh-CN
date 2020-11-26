@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfElseBC
 title: ApplyIfElseBC 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfElseBC
 qsharp.summary: Applies one of two controllable operations, depending on the value of a classical bit.
-ms.openlocfilehash: 032d92484dc96481cb981d9d8acfeed248a9116d
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: ea06b0a0a07659407e13caa2baa4f3e37ca2a0f7
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696346"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96209513"
 ---
 # <a name="applyifelsebc-operation"></a>ApplyIfElseBC 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 应用两个可控操作之一，具体取决于传统位的值。
 
 ```qsharp
-operation ApplyIfElseBC<'T, 'U> (bit : Bool, (trueOp : ('T => Unit is Ctl), trueInput : 'T), (falseOp : ('U => Unit is Ctl), falseInput : 'U)) : Unit
+operation ApplyIfElseBC<'T, 'U> (bit : Bool, (trueOp : ('T => Unit is Ctl), trueInput : 'T), (falseOp : ('U => Unit is Ctl), falseInput : 'U)) : Unit is Ctl
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 给定一个位，在为时 `bit` 应用该操作，并在为时应用该操作 `trueOp` `trueInput` `bit` `true` `falseOp(falseInput)` `bit` `false` 。
 
@@ -39,7 +39,7 @@ operation ApplyIfElseBC<'T, 'U> (bit : Bool, (trueOp : ('T => Unit is Ctl), true
 用于确定是否 `trueOp` 应用或的布尔值 `falseOp` 。
 
 
-### <a name="trueop--t--unit-ctl"></a>trueOp：不等于> [单元](xref:microsoft.quantum.lang-ref.unit) Ctl
+### <a name="trueop--t--unit--is-ctl"></a>trueOp： t => [单位](xref:microsoft.quantum.lang-ref.unit)  为 Ctl
 
 在为时要应用的可控 `bit` 操作 `true` 。
 
@@ -49,7 +49,7 @@ operation ApplyIfElseBC<'T, 'U> (bit : Bool, (trueOp : ('T => Unit is Ctl), true
 当为时要向其提供的输入 `trueOp` `bit` `true` 。
 
 
-### <a name="falseop--u--unit-ctl"></a>falseOp： ' U => [单元](xref:microsoft.quantum.lang-ref.unit) Ctl
+### <a name="falseop--u--unit--is-ctl"></a>falseOp： ' U => [单位](xref:microsoft.quantum.lang-ref.unit)  为 Ctl
 
 在为时要应用的可控 `bit` 操作 `false` 。
 

@@ -1,30 +1,38 @@
 ---
 uid: Microsoft.Quantum.Preparation.StatePreparationComplexCoefficients
 title: StatePreparationComplexCoefficients 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: StatePreparationComplexCoefficients
 qsharp.summary: >-
+  > [!WARNING]
+
+  > StatePreparationComplexCoefficients has been deprecated. Please use <xref:Microsoft.Quantum.Preparation.PrepareArbitraryStateCP> instead.
+
+
   Returns an operation that prepares a specific quantum state.
 
   The returned operation $U$ prepares an arbitrary quantum state $\ket{\psi}$ with complex coefficients $r_j e^{i t_j}$ from the $n$-qubit computational basis state $\ket{0...0}$.
 
   The action of U on a newly-allocated register is given by $$ \begin{align} U\ket{0...0}=\ket{\psi}=\frac{\sum_{j=0}^{2^n-1}r_j e^{i t_j}\ket{j}}{\sqrt{\sum_{j=0}^{2^n-1}|r_j|^2}}. \end{align} $$
-ms.openlocfilehash: 02e3d2fcf21b5bb4ed1bf7aa931597f918a1d369
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1d0efa7b83d2e8e75c4b293866f3929f357ec44b
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700405"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96210363"
 ---
 # <a name="statepreparationcomplexcoefficients-function"></a>StatePreparationComplexCoefficients 函数
 
 命名空间： [Microsoft 量子. 准备](xref:Microsoft.Quantum.Preparation)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
+
+> [!WARNING]
+> StatePreparationComplexCoefficients 已被弃用。 请改用 <xref:Microsoft.Quantum.Preparation.PrepareArbitraryStateCP>。
 
 返回准备特定量程状态的操作。
 
@@ -46,10 +54,10 @@ function StatePreparationComplexCoefficients (coefficients : Microsoft.Quantum.M
 
 
 
-## <a name="output--littleendian--unit-adj--ctl"></a>输出： [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian) => [Unit](xref:microsoft.quantum.lang-ref.unit) 形容词 + Ctl
+## <a name="output--littleendian--unit--is-adj--ctl"></a>输出： [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian) => [Unit](xref:microsoft.quantum.lang-ref.unit)  为形容词 + Ctl
 
 状态准备单一操作 $U $。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 负的输入系数 $r 将被视为值为 $ | r_j | $ 的 _j < $0。 `coefficients` 将用元素 $ (r_j，t_j) = (0.0，0.0) $ （如果指定少于 $ 2 ^ n $）。

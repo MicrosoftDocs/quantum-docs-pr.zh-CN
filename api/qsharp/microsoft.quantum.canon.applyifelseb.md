@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfElseB
 title: ApplyIfElseB 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfElseB
 qsharp.summary: Applies one of two operations, depending on the value of a classical bit.
-ms.openlocfilehash: 68c06a5141b9ff423c2d18adc3a9e162eed939f6
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 55ba3bc8c3efb87ef4d550cceeeecd8052e4d8c0
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696347"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96209581"
 ---
 # <a name="applyifelseb-operation"></a>ApplyIfElseB 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 应用两个操作之一，具体取决于传统位的值。
@@ -28,7 +28,7 @@ operation ApplyIfElseB<'T, 'U> (bit : Bool, (trueOp : ('T => Unit), trueInput : 
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 给定一个位，在为时 `bit` 应用该操作，并在为时应用该操作 `trueOp` `trueInput` `bit` `true` `falseOp(falseInput)` `bit` `false` 。
 

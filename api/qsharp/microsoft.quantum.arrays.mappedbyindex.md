@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.MappedByIndex
 title: MappedByIndex 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: MappedByIndex
 qsharp.summary: Given an array and a function that is defined for the indexed elements of the array, returns a new array that consists of the images of the original array under the function.
-ms.openlocfilehash: 07ca523248c363f2229551a14e77803dc4f4f82e
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 430495517974b641c249fa146aa9effec542e825
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696486"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96209921"
 ---
 # <a name="mappedbyindex-function"></a>MappedByIndex 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定数组和为数组的索引元素定义的函数后，将返回一个新数组，该数组由函数下的原始数组的图像组成。

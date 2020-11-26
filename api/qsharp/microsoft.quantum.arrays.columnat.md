@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.ColumnAt
 title: ColumnAt 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: ColumnAt
 qsharp.summary: Extracts a column from a matrix.
-ms.openlocfilehash: ad09ada1a2253a54e70dddd6dba8aa243d2cd5a6
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 097b3fdd6fc1843ada27052fcf08ee80d894d25a
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696553"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96210091"
 ---
 # <a name="columnat-function"></a>ColumnAt 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 提取矩阵中的列。
@@ -28,7 +28,7 @@ function ColumnAt<'T> (column : Int, matrix : 'T[][]) : 'T[]
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此函数按行顺序提取矩阵中的列。
 提取第一个索引的行 corrsponds 到元素的访问权限，因此无需进一步处理。

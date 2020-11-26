@@ -1,30 +1,30 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyPauliFromBitString
 title: ApplyPauliFromBitString 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyPauliFromBitString
 qsharp.summary: Applies a Pauli operator on each qubit in an array if the corresponding bit of a Boolean array matches a given input.
-ms.openlocfilehash: 09754accb92c1339b781003e5722e3c8f5884e6f
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: cf4c99ec5134fac788cdd4c8a057258790152a82
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696288"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96209054"
 ---
 # <a name="applypaulifrombitstring-operation"></a>ApplyPauliFromBitString 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 如果布尔数组的相应位与给定的输入相匹配，则对数组中的每个 qubit 应用 Pauli 运算符。
 
 ```qsharp
-operation ApplyPauliFromBitString (pauli : Pauli, bitApply : Bool, bits : Bool[], qubits : Qubit[]) : Unit
+operation ApplyPauliFromBitString (pauli : Pauli, bitApply : Bool, bits : Bool[], qubits : Qubit[]) : Unit is Adj + Ctl
 ```
 
 
@@ -55,6 +55,6 @@ operation ApplyPauliFromBitString (pauli : Pauli, bitApply : Bool, bits : Bool[]
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 布尔数组和量程寄存器的长度必须相等。

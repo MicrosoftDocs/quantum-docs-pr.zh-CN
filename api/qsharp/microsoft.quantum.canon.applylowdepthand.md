@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyLowDepthAnd
 title: ApplyLowDepthAnd 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyLowDepthAnd
 qsharp.summary: Inverts a given target qubit if and only if both control qubits are in the 1 state, with T-depth 1, using measurement to perform the adjoint operation.
-ms.openlocfilehash: 092a350e42d8d90942de13530fefd761b5187e1d
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 4c5e381227bf82415121add38d0c0d2959fb529d
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696313"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96209309"
 ---
 # <a name="applylowdepthand-operation"></a>ApplyLowDepthAnd 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 当且仅当两个 control qubits 都处于1状态时，使用 qubit 执行 adjoint 操作时，使用度量来反转给定目标。
 
 ```qsharp
-operation ApplyLowDepthAnd (control1 : Qubit, control2 : Qubit, target : Qubit) : Unit
+operation ApplyLowDepthAnd (control1 : Qubit, control2 : Qubit, target : Qubit) : Unit is Adj + Ctl
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 `target`当且仅当这两个控件都为1，但假定 `target` 处于状态0时，则反转。  操作具有 T 计数4、T 深度1和需要一个 helper qubit，因此，如果已知为0，则可能更适合 CCNOT 操作 `target` 。  此操作的 adjoint 是基于度量的，不需要任何 T 入口，也不需要 helper qubit。
 

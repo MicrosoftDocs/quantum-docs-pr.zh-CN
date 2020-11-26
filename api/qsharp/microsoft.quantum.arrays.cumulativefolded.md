@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.CumulativeFolded
 title: CumulativeFolded 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: CumulativeFolded
 qsharp.summary: Combines Mapped and Fold into a single function
-ms.openlocfilehash: a09c2779c8f06d8f6b7b0902366f3cefbbca4525
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: ffb934d06f6be06cbc35a523c90d2c54e0a51353
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696543"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96210023"
 ---
 # <a name="cumulativefolded-function"></a>CumulativeFolded 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 将映射和折叠合并为一个函数
@@ -28,7 +28,7 @@ function CumulativeFolded<'State, 'T> (fn : (('State, 'T) -> 'State), state : 'S
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此函数 `fn` 通过数组来循环访问函数，从初始状态开始， `state` 返回所有中间值，不包括初始状态。
 

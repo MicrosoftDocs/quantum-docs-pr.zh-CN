@@ -1,34 +1,34 @@
 ---
 uid: Microsoft.Quantum.Canon.AndLadder
 title: AndLadder 操作
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: AndLadder
 qsharp.summary: Performs a controlled "AND ladder" on a register of target qubits.
-ms.openlocfilehash: 05a0e8110539742501883fea75ac368d9946164d
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 2c6114ec8a5caabdeea8ab7e26a4877e1633671c
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696391"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96209717"
 ---
 # <a name="andladder-operation"></a>AndLadder 操作
 
 命名空间： [Canon](xref:Microsoft.Quantum.Canon)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 在目标 qubits 的寄存器上执行受控的 "AND 阶梯"。
 
 ```qsharp
-operation AndLadder (ccnot : Microsoft.Quantum.Canon.CCNOTop, controls : Qubit[], targets : Qubit[]) : Unit
+operation AndLadder (ccnot : Microsoft.Quantum.Canon.CCNOTop, controls : Qubit[], targets : Qubit[]) : Unit is Adj
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此操作应用以下映射中描述的转换： $ $ \begin{align} \ket{x \_ 1，\dots ..，x \_ n} \ket{y \_ 1，\dots ..，y \_ {n-1}} \mapsto \ket{x \_ 1，\dots ..，x \_ n} \ket{y \_ 1 \oplus (x \_ 1 \land x \_ 2) \dots ..，y \_ {n-1} \oplus (x \_ 1 \land x \_ 2 \land \cdots \land x \_ {n-1}}，\end{align} $ $，其中 $ \ket{x \_ 1，\dots ..，x \_ n} $ 表示的计算基础状态 `controls` ，其中 $ \ket{y \_ 1，\dots ..，y \_ {n-1}} $ 表示计算基础状态 `targets` 。
 
@@ -56,11 +56,11 @@ operation AndLadder (ccnot : Microsoft.Quantum.Canon.CCNOTop, controls : Qubit[]
 
 
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 - 用作和的一部分 <xref:microsoft.quantum.canon.applymulticontrolledc> <xref:microsoft.quantum.canon.applymulticontrolledca> 。
 - 有关说明和线路关系图，请参阅图4.10： Nielsen & 语中的第4.3 节。
 
 ## <a name="references"></a>参考
 
-- [*Michael Nielsen、Isaac 语* 、量程计算和量程信息](http://doi.org/10.1017/CBO9780511976667)
+- [*Michael Nielsen、Isaac 语*、量程计算和量程信息](http://doi.org/10.1017/CBO9780511976667)

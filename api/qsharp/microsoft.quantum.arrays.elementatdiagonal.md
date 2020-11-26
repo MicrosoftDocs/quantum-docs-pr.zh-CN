@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.ElementAtDiagonal
 title: ElementAtDiagonal 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: ElementAtDiagonal
 qsharp.summary: ''
-ms.openlocfilehash: fc87167671826aa3ab56c8b6946a802ef360df63
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 787aac9264cd878205e90c6510650a4fbdc6821f
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696536"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96209955"
 ---
 # <a name="elementatdiagonal-function"></a>ElementAtDiagonal 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 
