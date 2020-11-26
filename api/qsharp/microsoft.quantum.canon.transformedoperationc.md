@@ -1,63 +1,63 @@
 ---
 uid: Microsoft.Quantum.Canon.TransformedOperationC
 title: TransformedOperationC 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: TransformedOperationC
 qsharp.summary: Given a function and an operation, returns a new operation whose input is transformed by the given function.
-ms.openlocfilehash: b6867a076b654337f6127657189a8453c9973cc2
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 964576788bc80dd8920acdfb62d5d69a060e75f6
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92695933"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96204855"
 ---
-# <a name="transformedoperationc-function"></a><span data-ttu-id="1470a-102">TransformedOperationC 函数</span><span class="sxs-lookup"><span data-stu-id="1470a-102">TransformedOperationC function</span></span>
+# <a name="transformedoperationc-function"></a><span data-ttu-id="3be38-102">TransformedOperationC 函数</span><span class="sxs-lookup"><span data-stu-id="3be38-102">TransformedOperationC function</span></span>
 
-<span data-ttu-id="1470a-103">命名空间： [Canon](xref:Microsoft.Quantum.Canon)</span><span class="sxs-lookup"><span data-stu-id="1470a-103">Namespace: [Microsoft.Quantum.Canon](xref:Microsoft.Quantum.Canon)</span></span>
+<span data-ttu-id="3be38-103">命名空间： [Canon](xref:Microsoft.Quantum.Canon)</span><span class="sxs-lookup"><span data-stu-id="3be38-103">Namespace: [Microsoft.Quantum.Canon](xref:Microsoft.Quantum.Canon)</span></span>
 
-<span data-ttu-id="1470a-104">软件包 [](https://nuget.org/packages/)</span><span class="sxs-lookup"><span data-stu-id="1470a-104">Package: [](https://nuget.org/packages/)</span></span>
+<span data-ttu-id="3be38-104">包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)</span><span class="sxs-lookup"><span data-stu-id="3be38-104">Package: [Microsoft.Quantum.Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span></span>
 
 
-<span data-ttu-id="1470a-105">给定一个函数和一个操作，返回一个新的操作，其输入由给定函数转换。</span><span class="sxs-lookup"><span data-stu-id="1470a-105">Given a function and an operation, returns a new operation whose input is transformed by the given function.</span></span>
+<span data-ttu-id="3be38-105">给定一个函数和一个操作，返回一个新的操作，其输入由给定函数转换。</span><span class="sxs-lookup"><span data-stu-id="3be38-105">Given a function and an operation, returns a new operation whose input is transformed by the given function.</span></span>
 
 ```qsharp
 function TransformedOperationC<'T, 'U> (fn : ('U -> 'T), op : ('T => Unit is Ctl)) : ('U => Unit is Ctl)
 ```
 
 
-## <a name="input"></a><span data-ttu-id="1470a-106">输入</span><span class="sxs-lookup"><span data-stu-id="1470a-106">Input</span></span>
+## <a name="input"></a><span data-ttu-id="3be38-106">输入</span><span class="sxs-lookup"><span data-stu-id="3be38-106">Input</span></span>
 
-### <a name="fn--u---t"></a><span data-ttu-id="1470a-107">fn： ' U-></span><span class="sxs-lookup"><span data-stu-id="1470a-107">fn : 'U -> 'T</span></span>
+### <a name="fn--u---t"></a><span data-ttu-id="3be38-107">fn： ' U-></span><span class="sxs-lookup"><span data-stu-id="3be38-107">fn : 'U -> 'T</span></span>
 
-<span data-ttu-id="1470a-108">将给定输入转换为操作所需的格式的函数。</span><span class="sxs-lookup"><span data-stu-id="1470a-108">A function that transforms the given input into a form expected by the operation.</span></span>
-
-
-### <a name="op--t--unit-ctl"></a><span data-ttu-id="1470a-109">op： t => [单元](xref:microsoft.quantum.lang-ref.unit) Ctl</span><span class="sxs-lookup"><span data-stu-id="1470a-109">op : 'T => [Unit](xref:microsoft.quantum.lang-ref.unit) Ctl</span></span>
-
-<span data-ttu-id="1470a-110">要转换的操作。</span><span class="sxs-lookup"><span data-stu-id="1470a-110">The operation to be transformed.</span></span>
+<span data-ttu-id="3be38-108">将给定输入转换为操作所需的格式的函数。</span><span class="sxs-lookup"><span data-stu-id="3be38-108">A function that transforms the given input into a form expected by the operation.</span></span>
 
 
+### <a name="op--t--unit--is-ctl"></a><span data-ttu-id="3be38-109">op： t => [单位](xref:microsoft.quantum.lang-ref.unit)  为 Ctl</span><span class="sxs-lookup"><span data-stu-id="3be38-109">op : 'T => [Unit](xref:microsoft.quantum.lang-ref.unit)  is Ctl</span></span>
 
-## <a name="output--u--unit-ctl"></a><span data-ttu-id="1470a-111">输出： "U => [单位](xref:microsoft.quantum.lang-ref.unit) Ctl</span><span class="sxs-lookup"><span data-stu-id="1470a-111">Output : 'U => [Unit](xref:microsoft.quantum.lang-ref.unit) Ctl</span></span>
-
-<span data-ttu-id="1470a-112">新操作 tbat 的 `fn` 输入调用，然后将结果输出传递给 `op` 。</span><span class="sxs-lookup"><span data-stu-id="1470a-112">A new operation tbat calls `fn` with its input, then passes the resulting output to `op`.</span></span>
-
-## <a name="type-parameters"></a><span data-ttu-id="1470a-113">类型参数</span><span class="sxs-lookup"><span data-stu-id="1470a-113">Type Parameters</span></span>
-
-### <a name="t"></a><span data-ttu-id="1470a-114">找</span><span class="sxs-lookup"><span data-stu-id="1470a-114">'T</span></span>
-
-
-### <a name="u"></a><span data-ttu-id="1470a-115">' U</span><span class="sxs-lookup"><span data-stu-id="1470a-115">'U</span></span>
+<span data-ttu-id="3be38-110">要转换的操作。</span><span class="sxs-lookup"><span data-stu-id="3be38-110">The operation to be transformed.</span></span>
 
 
 
-## <a name="see-also"></a><span data-ttu-id="1470a-116">另请参阅</span><span class="sxs-lookup"><span data-stu-id="1470a-116">See Also</span></span>
+## <a name="output--u--unit--is-ctl"></a><span data-ttu-id="3be38-111">输出： "U => [单位](xref:microsoft.quantum.lang-ref.unit)  为 Ctl</span><span class="sxs-lookup"><span data-stu-id="3be38-111">Output : 'U => [Unit](xref:microsoft.quantum.lang-ref.unit)  is Ctl</span></span>
 
-- [<span data-ttu-id="1470a-117">Canon. TransformedOperation</span><span class="sxs-lookup"><span data-stu-id="1470a-117">Microsoft.Quantum.Canon.TransformedOperation</span></span>](xref:Microsoft.Quantum.Canon.TransformedOperation)
-- [<span data-ttu-id="1470a-118">Canon. TransformedOperationA</span><span class="sxs-lookup"><span data-stu-id="1470a-118">Microsoft.Quantum.Canon.TransformedOperationA</span></span>](xref:Microsoft.Quantum.Canon.TransformedOperationA)
-- [<span data-ttu-id="1470a-119">Canon. TransformedOperationCA</span><span class="sxs-lookup"><span data-stu-id="1470a-119">Microsoft.Quantum.Canon.TransformedOperationCA</span></span>](xref:Microsoft.Quantum.Canon.TransformedOperationCA)
-- [<span data-ttu-id="1470a-120">Canon. ApplyWithInputTransformation</span><span class="sxs-lookup"><span data-stu-id="1470a-120">Microsoft.Quantum.Canon.ApplyWithInputTransformation</span></span>](xref:Microsoft.Quantum.Canon.ApplyWithInputTransformation)
-- [<span data-ttu-id="1470a-121">Canon。</span><span class="sxs-lookup"><span data-stu-id="1470a-121">Microsoft.Quantum.Canon.Composed</span></span>](xref:Microsoft.Quantum.Canon.Composed)
+<span data-ttu-id="3be38-112">新操作 tbat 的 `fn` 输入调用，然后将结果输出传递给 `op` 。</span><span class="sxs-lookup"><span data-stu-id="3be38-112">A new operation tbat calls `fn` with its input, then passes the resulting output to `op`.</span></span>
+
+## <a name="type-parameters"></a><span data-ttu-id="3be38-113">类型参数</span><span class="sxs-lookup"><span data-stu-id="3be38-113">Type Parameters</span></span>
+
+### <a name="t"></a><span data-ttu-id="3be38-114">找</span><span class="sxs-lookup"><span data-stu-id="3be38-114">'T</span></span>
+
+
+### <a name="u"></a><span data-ttu-id="3be38-115">' U</span><span class="sxs-lookup"><span data-stu-id="3be38-115">'U</span></span>
+
+
+
+## <a name="see-also"></a><span data-ttu-id="3be38-116">另请参阅</span><span class="sxs-lookup"><span data-stu-id="3be38-116">See Also</span></span>
+
+- [<span data-ttu-id="3be38-117">Canon. TransformedOperation</span><span class="sxs-lookup"><span data-stu-id="3be38-117">Microsoft.Quantum.Canon.TransformedOperation</span></span>](xref:Microsoft.Quantum.Canon.TransformedOperation)
+- [<span data-ttu-id="3be38-118">Canon. TransformedOperationA</span><span class="sxs-lookup"><span data-stu-id="3be38-118">Microsoft.Quantum.Canon.TransformedOperationA</span></span>](xref:Microsoft.Quantum.Canon.TransformedOperationA)
+- [<span data-ttu-id="3be38-119">Canon. TransformedOperationCA</span><span class="sxs-lookup"><span data-stu-id="3be38-119">Microsoft.Quantum.Canon.TransformedOperationCA</span></span>](xref:Microsoft.Quantum.Canon.TransformedOperationCA)
+- [<span data-ttu-id="3be38-120">Canon. ApplyWithInputTransformation</span><span class="sxs-lookup"><span data-stu-id="3be38-120">Microsoft.Quantum.Canon.ApplyWithInputTransformation</span></span>](xref:Microsoft.Quantum.Canon.ApplyWithInputTransformation)
+- [<span data-ttu-id="3be38-121">Canon。</span><span class="sxs-lookup"><span data-stu-id="3be38-121">Microsoft.Quantum.Canon.Composed</span></span>](xref:Microsoft.Quantum.Canon.Composed)
