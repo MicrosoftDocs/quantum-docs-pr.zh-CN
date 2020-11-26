@@ -1,45 +1,45 @@
 ---
 uid: Microsoft.Quantum.Math.Tanh
 title: Tanh 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: Tanh
 qsharp.summary: Returns the hyperbolic tangent of the specified angle.
-ms.openlocfilehash: e10befa5f6f7cef99194d0a66334012c7adb2486
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: c6d1bf8cead85bcd944aeb7d4a720d454efbb310
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92700820"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96227244"
 ---
-# <a name="tanh-function"></a><span data-ttu-id="36408-102">Tanh 函数</span><span class="sxs-lookup"><span data-stu-id="36408-102">Tanh function</span></span>
+# <a name="tanh-function"></a><span data-ttu-id="99092-102">Tanh 函数</span><span class="sxs-lookup"><span data-stu-id="99092-102">Tanh function</span></span>
 
-<span data-ttu-id="36408-103">命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Math)</span><span class="sxs-lookup"><span data-stu-id="36408-103">Namespace: [Microsoft.Quantum.Math](xref:Microsoft.Quantum.Math)</span></span>
+<span data-ttu-id="99092-103">命名空间： [Microsoft 量子](xref:Microsoft.Quantum.Math)</span><span class="sxs-lookup"><span data-stu-id="99092-103">Namespace: [Microsoft.Quantum.Math](xref:Microsoft.Quantum.Math)</span></span>
 
-<span data-ttu-id="36408-104">软件包 [](https://nuget.org/packages/)</span><span class="sxs-lookup"><span data-stu-id="36408-104">Package: [](https://nuget.org/packages/)</span></span>
+<span data-ttu-id="99092-104">包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)</span><span class="sxs-lookup"><span data-stu-id="99092-104">Package: [Microsoft.Quantum.QSharp.Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)</span></span>
 
 
-<span data-ttu-id="36408-105">返回指定角度的双曲正切值。</span><span class="sxs-lookup"><span data-stu-id="36408-105">Returns the hyperbolic tangent of the specified angle.</span></span>
+<span data-ttu-id="99092-105">返回指定角度的双曲正切值。</span><span class="sxs-lookup"><span data-stu-id="99092-105">Returns the hyperbolic tangent of the specified angle.</span></span>
 
 ```qsharp
 function Tanh (d : Double) : Double
 ```
 
 
-## <a name="input"></a><span data-ttu-id="36408-106">输入</span><span class="sxs-lookup"><span data-stu-id="36408-106">Input</span></span>
+## <a name="input"></a><span data-ttu-id="99092-106">输入</span><span class="sxs-lookup"><span data-stu-id="99092-106">Input</span></span>
 
-### <a name="d--double"></a><span data-ttu-id="36408-107">d： [Double](xref:microsoft.quantum.lang-ref.double)</span><span class="sxs-lookup"><span data-stu-id="36408-107">d : [Double](xref:microsoft.quantum.lang-ref.double)</span></span>
-
-
+### <a name="d--double"></a><span data-ttu-id="99092-107">d： [Double](xref:microsoft.quantum.lang-ref.double)</span><span class="sxs-lookup"><span data-stu-id="99092-107">d : [Double](xref:microsoft.quantum.lang-ref.double)</span></span>
 
 
 
-## <a name="output--double"></a><span data-ttu-id="36408-108">输出： [Double](xref:microsoft.quantum.lang-ref.double)</span><span class="sxs-lookup"><span data-stu-id="36408-108">Output : [Double](xref:microsoft.quantum.lang-ref.double)</span></span>
+
+
+## <a name="output--double"></a><span data-ttu-id="99092-108">输出： [Double](xref:microsoft.quantum.lang-ref.double)</span><span class="sxs-lookup"><span data-stu-id="99092-108">Output : [Double](xref:microsoft.quantum.lang-ref.double)</span></span>
 
 
 
-## <a name="remarks"></a><span data-ttu-id="36408-109">注解</span><span class="sxs-lookup"><span data-stu-id="36408-109">Remarks</span></span>
+## <a name="remarks"></a><span data-ttu-id="99092-109">备注</span><span class="sxs-lookup"><span data-stu-id="99092-109">Remarks</span></span>
 
-<span data-ttu-id="36408-110">有关更多详细信息，请参阅 [Tanh](https://docs.microsoft.com/dotnet/api/system.math.tanh) 。</span><span class="sxs-lookup"><span data-stu-id="36408-110">See [System.Math.Tanh](https://docs.microsoft.com/dotnet/api/system.math.tanh) for more details.</span></span>
+<span data-ttu-id="99092-110">有关更多详细信息，请参阅 [Tanh](https://docs.microsoft.com/dotnet/api/system.math.tanh) 。</span><span class="sxs-lookup"><span data-stu-id="99092-110">See [System.Math.Tanh](https://docs.microsoft.com/dotnet/api/system.math.tanh) for more details.</span></span>
