@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.All
 title: All 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: All
 qsharp.summary: Given an array and a predicate that is defined for the elements of the array, and checks if all elements of the array satisfy the predicate.
-ms.openlocfilehash: 345c3fb92babd4ae2e54803b6c3b79b3313ef417
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: a7c83e38c3c101b712215eb664486fe29863a52b
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696557"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96221685"
 ---
 # <a name="all-function"></a>All 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定为数组元素定义的数组和谓词，并检查数组的所有元素是否都满足该谓词。
@@ -51,6 +51,6 @@ function All<'T> (predicate : ('T -> Bool), array : 'T[]) : Bool
 
 元素的类型 `array` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 函数是为泛型类型定义的，也就是说，只要有一个数组 `'T[]` 和一个函数， `predicate: 'T -> Bool` 我们就可以生成一个 `Bool` 值，该值指示所有元素是否满足 `predicate` 。

@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.FlatMapped
 title: FlatMapped 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: FlatMapped
 qsharp.summary: Given an array and a function that maps an array element to some output array, returns the concatenated output arrays for each array element.
-ms.openlocfilehash: 3e75c7703471a2986812df660c2f9328f1536d22
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: e851e8503b3afcb4572f09fe39079247518c22c4
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696519"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96221243"
 ---
 # <a name="flatmapped-function"></a>FlatMapped 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定一个数组和一个将数组元素映射到某个输出数组的函数，将返回每个数组元素的串联输出数组。

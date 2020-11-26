@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.IsSorted
 title: IsSorted 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: IsSorted
 qsharp.summary: Given an array, returns whether that array is sorted as defined by a given comparison function.
-ms.openlocfilehash: 330c1f789585f64cf255bc74f8a9c1ccf81b009e
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: b2c5f11c0d92ddf9214de2d439c175319c569be0
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696494"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96220824"
 ---
 # <a name="issorted-function"></a>IsSorted 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定数组，返回数组是否按给定比较函数的定义进行排序。
@@ -51,6 +51,6 @@ function IsSorted<'T> (comparison : (('T, 'T) -> Bool), array : 'T[]) : Bool
 
 的每个元素的类型 `array` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 假定函数是 `comparison` 可传递的，因此，如果 `comparison(a, b)` 和，则 `comparison(b, c)` `comparison(a, c)` 假定为。 如果此属性不存在，则此函数的输出可能不正确。

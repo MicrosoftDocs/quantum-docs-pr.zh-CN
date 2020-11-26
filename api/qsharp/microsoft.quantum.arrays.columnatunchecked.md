@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.ColumnAtUnchecked
 title: ColumnAtUnchecked 函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: ColumnAtUnchecked
 qsharp.summary: This function does not check for matrix shape
-ms.openlocfilehash: 17211c1ae1fe12fcadf34a9411f9b0cf0cdcab50
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 06fce23bbf7142ee0e0b0ed3f2c0578676f2097b
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696552"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96221583"
 ---
 # <a name="columnatunchecked-function"></a>ColumnAtUnchecked 函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 此函数不检查矩阵形状
@@ -28,7 +28,7 @@ function ColumnAtUnchecked<'T> (column : Int, matrix : 'T[][]) : 'T[]
 ```
 
 
-## <a name="description"></a>说明
+## <a name="description"></a>描述
 
 此函数可用于其他多维函数，这些函数已检查输入矩阵的有效矩形。
 

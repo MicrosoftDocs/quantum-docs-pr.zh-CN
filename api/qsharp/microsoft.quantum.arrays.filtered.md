@@ -1,24 +1,24 @@
 ---
 uid: Microsoft.Quantum.Arrays.Filtered
 title: 筛选函数
-ms.date: 10/26/2020 12:00:00 AM
+ms.date: 11/25/2020 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Filtered
 qsharp.summary: Given an array and a predicate that is defined for the elements of the array, returns an array that consists of those elements that satisfy the predicate.
-ms.openlocfilehash: 4c786c69b0896b517f108611e32501867838aeb1
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: fa8600f4d773daf6eabf8b9961ab46961155d1fd
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92696522"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96221260"
 ---
 # <a name="filtered-function"></a>筛选函数
 
 命名空间 [：](xref:Microsoft.Quantum.Arrays)
 
-软件包 [](https://nuget.org/packages/)
+包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)
 
 
 给定为数组元素定义的数组和谓词后，将返回一个数组，其中包含满足谓词的元素。
@@ -51,6 +51,6 @@ function Filtered<'T> (predicate : ('T -> Bool), array : 'T[]) : 'T[]
 
 元素的类型 `array` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 函数是为泛型类型定义的，也就是说，只要有一个数组 `'T[]` 和一个谓词，就 `'T -> Bool` 可以筛选元素。
