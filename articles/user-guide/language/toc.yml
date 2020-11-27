@@ -1,4 +1,12 @@
-- name: Q# 中的类型
-  href: types.md
+- name: 概述
+  href: index.md
+- name: 程序结构
+  href: programstructure/toc.yml
+- name: 语句
+  href: statements/toc.yml
 - name: 表达式
-  href: expressions.md
+  href: expressions/toc.yml
+- name: 类型系统
+  href: typesystem/toc.yml
+- name: 语法
+  href: grammar.md
