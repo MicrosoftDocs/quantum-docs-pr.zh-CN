@@ -10,12 +10,12 @@ uid: microsoft.quantum.install.standalone
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a6823888dcbe8cf79f0045d2615fe8b889dcc7c3
-ms.sourcegitcommit: a13c7c86fd52a05cbf129b8dd713d6586ca1cc2c
+ms.openlocfilehash: eeb567dedc1b8123b32faf7ed3a42bb51f16a7d2
+ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93376416"
+ms.lasthandoff: 11/26/2020
+ms.locfileid: "96228723"
 ---
 # <a name="develop-with-no-locq-applications-in-an-ide"></a>在 IDE 中使用 Q# 应用程序进行开发
 
@@ -63,7 +63,7 @@ dotnet new -i Microsoft.Quantum.ProjectTemplates
 
 1. 单击“查看” -> “命令面板” ，然后选择“Q#:Create New Project”。
 2. 单击“独立控制台应用程序”。
-3. 导航到项目的保存位置，然后单击“创建项目”。
+3. 导航到要保存项目的位置。 输入项目名称，然后单击“创建项目”。
 4. 成功创建项目后，单击右下方的“打开新项目…”。
 
 检查项目。 你应该会看到一个名为 `Program.qs` 的源文件，该文件是一个 Q# 程序，用于定义将消息输出到控制台的简单操作。

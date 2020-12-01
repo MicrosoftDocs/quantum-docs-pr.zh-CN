@@ -1,0 +1,32 @@
+- name: 用 Q# 编写的表达式
+  href: index.md
+- name: 优先级和结合性
+  href: precedenceandassociativity.md
+- name: 运算符
+  items:
+    - name: 复制和更新表达式
+      href: copyandupdateexpressions.md
+    - name: 条件表达式
+      href: conditionalexpressions.md
+    - name: 比较表达式
+      href: comparativeexpressions.md
+    - name: 逻辑表达式
+      href: logicalexpressions.md
+    - name: 按位表达式
+      href: bitwiseexpressions.md
+    - name: 算术表达式
+      href: arithmeticexpressions.md
+    - name: 串联
+      href: concatenation.md
+- name: 修饰符和连结符
+  items:
+    - name: 偏函数应用
+      href: partialapplication.md
+    - name: 仿函数应用
+      href: functorapplication.md
+    - name: 项访问表达式
+      href: itemaccessexpressions.md
+- name: 上下文表达式
+  href: contextualexpressions.md
+- name: 值文本和默认值
+  href: valueliterals.md
