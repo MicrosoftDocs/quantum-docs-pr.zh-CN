@@ -9,12 +9,12 @@ uid: microsoft.quantum.machines.resources-estimator
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 57f6602effd25fff353a8fee7f27acc529ce82af
-ms.sourcegitcommit: c3c892ef35eae6926d0c4339d9d26bfd8be77e9a
+ms.openlocfilehash: de425c2d91c6528b13c3bedd81acb4b4273ed711
+ms.sourcegitcommit: 7c687495a79d75ae9e029e5a41baec84d9e07bb0
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96318484"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96604637"
 ---
 # <a name="quantum-development-kit-qdk-resources-estimator"></a>量程开发工具包 (QDK) 资源估计器
 
@@ -28,9 +28,9 @@ ms.locfileid: "96318484"
 
 ### <a name="invoking-the-resources-estimator-from-c"></a>从 C 调用资源估计器# 
 
-与使用其他目标计算机一样，你首先创建 `ResourceEstimator` 类的实例，然后将其作为操作的 `Run` 方法的第一个参数传递。
+与使用其他目标计算机一样，你首先创建 `ResourcesEstimator` 类的实例，然后将其作为操作的 `Run` 方法的第一个参数传递。
 
-请注意，与 `QuantumSimulator` 类不同，`ResourceEstimator` 类不实现 <xref:System.IDisposable> 接口，因此不需要将其放在 `using` 语句中。
+请注意，与 `QuantumSimulator` 类不同，`ResourcesEstimator` 类不实现 <xref:System.IDisposable> 接口，因此不需要将其放在 `using` 语句中。
 
 ```csharp
 using Microsoft.Quantum.Simulation.Core;
