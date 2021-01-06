@@ -9,12 +9,12 @@ ms.topic: article
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 51e7b3bcf4402a4d0ba5647643f284e9f10c3bb3
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 72af3f5517b272d6d8159b158103b5af91d266b5
+ms.sourcegitcommit: c48cdafccb3487bf93d67fa80cdc64768445b691
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92692149"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97940880"
 ---
 # <a name="quantum-characterization-and-statistics"></a>量程特性和统计信息 #
 
@@ -56,7 +56,7 @@ ms.locfileid: "92692149"
 
 如果提供的是不是 eigenstate 的输入状态，这意味着如果 $U (m) \ket{\phi \_ j} = e ^ {im\phi \_ j} $，则阶段估算的进程将以非确定性的顺序引导单能耗 eigenstate 的量程状态。  它最终聚合为的 eigenstate 是最有可能产生观察到的 eigenstate `Result` 。
 
-具体而言，PE 的单个步骤会在状态 \begin{align} \ sum_j \sqrt{\Pr ( \phi \_ j) } \ket{\phi \_ j} \mapsto \sum \_ j\frac {\ Sqrt {\ Pr ( \phi \_ j) } \sqrt{\Pr ( \text{result} | \phi \_ j) } \Ket{\phi \_ j}} {\sqrt{\Pr ( \phi j) \_ \_ \_ }} 上执行以下非单一转换。
+具体而言，PE 的单个步骤会在状态 \begin{align} \ sum_j \sqrt{\Pr ( \phi \_ j) } \ket{\phi \_ j} \mapsto \sum \_ J\frac ( { \_ \phi) \sqrt{\Pr | \text{result} j (} \phi \_ \_ j}} {\ket{\phi) \sqrt{\Pr \_ j ( \phi \_ k \sum) \Pr | \text{result} \_ k (}} 执行以下非单一转换。
 \end{align} 由于将循环访问多个值，因此未将最大 `Result` 值为 $ \ prod_k \pr ( \text{result} \_ k | \phi \_ j) $ 的 eigenstates 将以指数方式取消。
 这样一来，如果正确选择了试验，推理过程将成为一种 eigenvalue 的状态。
 
