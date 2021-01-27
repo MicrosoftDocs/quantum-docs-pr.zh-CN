@@ -4,17 +4,17 @@ description: 了解 Microsoft 量子化学库的示例应用程序。
 author: guanghaolow
 ms.author: gulow
 ms.date: 10/23/2018
-ms.topic: article-type-from-white-list
+ms.topic: conceptual
 uid: microsoft.quantum.chemistry.examples
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a0bc79c7fb41069ee7865dbf2f1cfd7851fda32d
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: b2a8740f9c94ca733e24012aaf5c80b15b731c2e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87869284"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858921"
 ---
 # <a name="quantum-chemistry-examples"></a>量子化学示例
 

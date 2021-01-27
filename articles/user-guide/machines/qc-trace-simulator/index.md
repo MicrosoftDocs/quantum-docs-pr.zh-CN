@@ -4,17 +4,17 @@ description: 了解如何使用 Microsoft 量子计算机跟踪模拟器来调�
 author: vadym-kl
 ms.author: vadym
 ms.date: 06/25/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.machines.qc-trace-simulator.intro
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 2e2d9f8494d8709fba34123793cecce4011b609a
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 1e9207d7dcd6ec09353b234654e0567b377144e9
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92690837"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858636"
 ---
 # <a name="microsoft-quantum-development-kit-qdk-quantum-trace-simulator"></a>Microsoft Quantum 开发工具包 (QDK) 量子跟踪模拟器
 
@@ -74,7 +74,7 @@ operation TeleportQubit(source : Qubit, target : Qubit) : Unit {
 }
 ```
 
-当量子跟踪模拟器遇到 `AssertMeasurementProbability` 时，它将在 `source` 上记录该测量 `PauliZ`，而 `q` 应提供结果 `Zero`，其概率为 **0.5** 。 当它稍后运行 `M` 操作时，它会找到结果概率的记录值，而 `M` 将返回 `Zero` 或 `One`，其概率为 **0.5** 。 当相同的代码在跟踪量子状态的模拟器上运行时，该模拟器会检查 `AssertMeasurementProbability` 中提供的概率是否正确。
+当量子跟踪模拟器遇到 `AssertMeasurementProbability` 时，它将在 `source` 上记录该测量 `PauliZ`，而 `q` 应提供结果 `Zero`，其概率为 **0.5**。 当它稍后运行 `M` 操作时，它会找到结果概率的记录值，而 `M` 将返回 `Zero` 或 `One`，其概率为 **0.5**。 当相同的代码在跟踪量子状态的模拟器上运行时，该模拟器会检查 `AssertMeasurementProbability` 中提供的概率是否正确。
 
 请注意，如果至少有一个测量操作未使用 `AssertMeasurementProbability` 进行批注，则模拟器会引发 [`UnconstrainedMeasurementException`](https://docs.microsoft.com/dotnet/api/microsoft.quantum.simulation.simulators.qctracesimulators.unconstrainedmeasurementexception)。
 
