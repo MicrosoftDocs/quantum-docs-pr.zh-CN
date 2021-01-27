@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.IsEmpty
 title: IsEmpty 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: IsEmpty
 qsharp.summary: Returns true if and only if an array is empty.
-ms.openlocfilehash: ae3ad8763987bab9fdae07a5fe9bd4aabef65205
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1d402b5cfe3a42b47d4ded7064fee06a393772b9
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220971"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845759"
 ---
 # <a name="isempty-function"></a>IsEmpty 函数
 

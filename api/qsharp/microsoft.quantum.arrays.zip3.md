@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Arrays.Zip3
 title: List.zip3 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
@@ -13,12 +13,12 @@ qsharp.summary: >-
 
 
   Given three arrays, returns a new array of 3-tuples such that each 3-tuple contains an element from each original array.
-ms.openlocfilehash: a6e7519755c4d473f6ba255ac5f877b2a3894d71
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b41b0789cdf90db534ee7a50ff25eb3a931ec683
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219815"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845351"
 ---
 # <a name="zip3-function"></a>List.zip3 函数
 

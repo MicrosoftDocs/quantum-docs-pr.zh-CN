@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.LookupFunction
 title: LookupFunction 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: LookupFunction
 qsharp.summary: Given an array, returns a function which returns elements of that array.
-ms.openlocfilehash: db20795719d11138cbdc5a38c0a19d0f247af059
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 22b56bb7e9f03ebc5b2225efb2e6450d56022664
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220767"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845704"
 ---
 # <a name="lookupfunction-function"></a>LookupFunction 函数
 

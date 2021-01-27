@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Mapped
 title: 映射函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Mapped
 qsharp.summary: Given an array and a function that is defined for the elements of the array, returns a new array that consists of the images of the original array under the function.
-ms.openlocfilehash: 9632b9f53ffad8ece958ab1dc9ad446c7dcb9e13
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 00ea0803faf6e8edfa748af63dd6c7e217b1de41
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220733"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845678"
 ---
 # <a name="mapped-function"></a>映射函数
 

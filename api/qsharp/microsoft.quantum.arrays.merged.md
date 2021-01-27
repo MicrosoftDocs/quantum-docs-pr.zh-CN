@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Merged
 title: 合并函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Merged
 qsharp.summary: Given two sorted arrays, returns a single array containing the elements of both in sorted order. Used internally by merge sort.
-ms.openlocfilehash: b3383f8a04e6fa23562aa81e5b911d06752f4fb5
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 262e7450188370212a7e2a57bf15e9f8ab162814
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220631"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845607"
 ---
 # <a name="merged-function"></a>合并函数
 

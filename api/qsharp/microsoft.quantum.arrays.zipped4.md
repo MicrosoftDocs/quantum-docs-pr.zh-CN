@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Zipped4
 title: Zipped4 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Zipped4
 qsharp.summary: Given four arrays, returns a new array of 4-tuples such that each 4-tuple contains an element from each original array.
-ms.openlocfilehash: d5ee10ac9776383e75bc16a5c003a8b1a65c5698
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e932cd4c266b39a3a88da48e649448d0028f61e3
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219628"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845325"
 ---
 # <a name="zipped4-function"></a>Zipped4 函数
 

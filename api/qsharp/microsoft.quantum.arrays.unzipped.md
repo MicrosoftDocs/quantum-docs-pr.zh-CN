@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Unzipped
 title: 解压缩函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Unzipped
 qsharp.summary: Given an array of 2-tuples, returns a tuple of two arrays, each containing the elements of the tuples of the input array.
-ms.openlocfilehash: aee1d48c9e0a1f104040bc56c78fdbb8bc4d34ba
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7eea7982721dc596b8660be5f3634df71b1ddf95
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219951"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845371"
 ---
 # <a name="unzipped-function"></a>解压缩函数
 
@@ -48,6 +48,13 @@ function Unzipped<'T, 'U> (arr : ('T, 'U)[]) : ('T[], 'U[])
 ### <a name="u"></a>' U
 
 每个元组中第二个元素的类型
+
+## <a name="example"></a>示例
+
+```qsharp
+// split is same as ([6, 5, 5, 3, 2, 1], [true, false, false, false, true, false])
+let split = Unzipped([(6, true), (5, false), (5, false), (3, false), (2, true), (1, false)]);
+```
 
 ## <a name="see-also"></a>另请参阅
 

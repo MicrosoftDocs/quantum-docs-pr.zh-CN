@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyAnd
 title: 现在操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyAnd
 qsharp.summary: Inverts a given target qubit if and only if both control qubits are in the 1 state, using measurement to perform the adjoint operation.
-ms.openlocfilehash: b749013584c89273375da002ac36b3575085b7f2
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 39ffb9c598b6345c0d63c0c0d9705d84e101cc47
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219288"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845187"
 ---
 # <a name="applyand-operation"></a>现在操作
 
@@ -28,7 +28,7 @@ operation ApplyAnd (control1 : Qubit, control2 : Qubit, target : Qubit) : Unit i
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 `target`当且仅当这两个控件都为1，但假定 `target` 处于状态0时，则反转。  操作具有 T 计数4、T 深度2和不需要 helper qubit，因此，如果已知为0，则可能更适合 CCNOT 操作 `target` 。  此操作的 adjoint 是基于度量的，不需要任何 T 入口。
 

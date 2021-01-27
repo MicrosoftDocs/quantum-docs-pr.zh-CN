@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.MostAndTail
 title: MostAndTail 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: MostAndTail
 qsharp.summary: Returns a tuple of all but one and the last element of the array.
-ms.openlocfilehash: 392efb20e4aaba80a77664444bb415d8bc9b0930
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: fd5569f1b71ac2fdf2b5c08ba7dde172e3a6744e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220563"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845592"
 ---
 # <a name="mostandtail-function"></a>MostAndTail 函数
 

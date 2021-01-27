@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Tail
 title: Tail 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Tail
 qsharp.summary: Returns the last element of the array.
-ms.openlocfilehash: 7084cd8bc75f295024dce361153b58490074cdc5
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 680562228a39263ef87ba053e6b7683412947e46
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220087"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845408"
 ---
 # <a name="tail-function"></a>Tail 函数
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.MappedByIndex
 title: MappedByIndex 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: MappedByIndex
 qsharp.summary: Given an array and a function that is defined for the indexed elements of the array, returns a new array that consists of the images of the original array under the function.
-ms.openlocfilehash: 430495517974b641c249fa146aa9effec542e825
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 584cabcb7b6059ae5d311f13f5f75bd1f87bdba5
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96209921"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845665"
 ---
 # <a name="mappedbyindex-function"></a>MappedByIndex 函数
 
@@ -53,6 +53,20 @@ function MappedByIndex<'T, 'U> (mapper : ((Int, 'T) -> 'U), array : 'T[]) : 'U[]
 ### <a name="u"></a>' U
 
 函数的结果类型 `mapper` 。
+
+## <a name="example"></a>示例
+
+以下两行是等效的：
+
+```qsharp
+let arr = MapIndex(f, [x0, x1, x2]);
+```
+
+和
+
+```qsharp
+let arr = [f(0, x0), f(1, x1), f(2, x2)];
+```
 
 ## <a name="see-also"></a>另请参阅
 

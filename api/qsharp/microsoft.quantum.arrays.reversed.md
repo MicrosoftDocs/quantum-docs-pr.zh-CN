@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Reversed
 title: 反转函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Reversed
 qsharp.summary: Create an array that contains the same elements as an input array but in Reversed order.
-ms.openlocfilehash: 270f15c1d10b4397e258c750876095efc2b8e951
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 50699465711de45ff994095e6c098550d637d608
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220427"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845455"
 ---
 # <a name="reversed-function"></a>反转函数
 

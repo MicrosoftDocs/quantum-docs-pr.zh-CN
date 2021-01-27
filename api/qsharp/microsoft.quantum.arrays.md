@@ -1,17 +1,17 @@
 ---
 uid: Microsoft.Quantum.Arrays
 title: Microsoft 量子命名空间
-ms.date: 11/25/2020 12:00:00 AM
-ms.topic: article
+ms.date: 1/23/2021 12:00:00 AM
+ms.topic: managed-reference
 qsharp.kind: namespace
 qsharp.name: Microsoft.Quantum.Arrays
 qsharp.summary: This namespace contains functions for creating and manipulating arrays of data.
-ms.openlocfilehash: 70cb8583e0d35c7c554dfa781082017a25bec197
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 5b3a057073739607624de358216781e84d5e435d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220665"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845636"
 ---
 # <a name="microsoftquantumarrays-namespace"></a>Microsoft 量子命名空间
 

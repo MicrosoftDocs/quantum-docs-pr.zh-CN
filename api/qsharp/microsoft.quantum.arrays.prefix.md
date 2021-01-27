@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Prefix
 title: Prefix 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Prefix
 qsharp.summary: ''
-ms.openlocfilehash: ad84faeccc0856a26cd5c8e70d7cc527205ddfcf
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 9f43b0b868b083e048c02deca7ad9236ce7ca641
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220461"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845525"
 ---
 # <a name="prefix-function"></a>Prefix 函数
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Zipped
 title: Zipped 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Zipped
 qsharp.summary: Given two arrays, returns a new array of pairs such that each pair contains an element from each original array.
-ms.openlocfilehash: 56ed97d573bf29dddb7cdb1c3f360218bf97889a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 5177ab0ade5a9ad7788e60c1028befb84b0191d4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219747"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845336"
 ---
 # <a name="zipped-function"></a>Zipped 函数
 
@@ -53,6 +53,14 @@ function Zipped<'T, 'U> (left : 'T[], right : 'U[]) : ('T, 'U)[]
 ### <a name="u"></a>' U
 
 右侧数组元素的类型。
+
+## <a name="example"></a>示例
+
+```qsharp
+let left = [1, 3, 71];
+let right = [false, true];
+let pairs = Zipped(left, right); // [(1, false), (3, true)]
+```
 
 ## <a name="see-also"></a>另请参阅
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Subarray
 title: 子数组函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Subarray
 qsharp.summary: Takes an array and a list of locations and produces a new array formed from the elements of the original array that match the given locations.
-ms.openlocfilehash: cf72f04421b277ce64354d1eccec11cbc61d78cc
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: ccc041da0213d1f5dc5c8b4ff7a03b8b01ad107d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220155"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845422"
 ---
 # <a name="subarray-function"></a>子数组函数
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.IsSorted
 title: IsSorted 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: IsSorted
 qsharp.summary: Given an array, returns whether that array is sorted as defined by a given comparison function.
-ms.openlocfilehash: b2c5f11c0d92ddf9214de2d439c175319c569be0
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a5916b5cbf36e1b6c421a81e04016a333e2b5be7
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220824"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845738"
 ---
 # <a name="issorted-function"></a>IsSorted 函数
 
