@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.HTerm
 title: HTerm 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Chemistry
 qsharp.name: HTerm
 qsharp.summary: Format of data passed from C# to Q# to represent a term of the Hamiltonian. The meaning of the data represented is determined by the algorithm that receives it.
-ms.openlocfilehash: 504d55dc57ce92c12e6f016e9afcedfd59664aa1
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 744668a4fe96ee00fe2f7991f4e1f05eea19d417
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96204124"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851790"
 ---
 # <a name="hterm-user-defined-type"></a>HTerm 用户定义的类型
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.UncurriedOp
 title: UncurriedOp 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: UncurriedOp
 qsharp.summary: Given a function which returns operations, returns a new operation which takes both inputs as a tuple.
-ms.openlocfilehash: cad508f166d4af805cb98cd21a0260d9babb6a4c
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: d707b52bb17f4dea795fa4ff824c785e506b8b20
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96204634"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98852008"
 ---
 # <a name="uncurriedop-function"></a>UncurriedOp 函数
 

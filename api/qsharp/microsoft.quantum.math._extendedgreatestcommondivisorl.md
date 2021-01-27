@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math._ExtendedGreatestCommonDivisorL
 title: _ExtendedGreatestCommonDivisorL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: _ExtendedGreatestCommonDivisorL
 qsharp.summary: Internal recursive call to calculate the GCD.
-ms.openlocfilehash: 8798026de0c468562630f6441f8cf0c7b2b82850
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c259007cac08cc0efbd25244713d62e8fe130d6f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96196032"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851418"
 ---
 # <a name="_extendedgreatestcommondivisorl-function"></a>_ExtendedGreatestCommonDivisorL 函数
 

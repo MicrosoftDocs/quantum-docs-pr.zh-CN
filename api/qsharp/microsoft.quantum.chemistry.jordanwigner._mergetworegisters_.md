@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._MergeTwoRegisters_
 title: _MergeTwoRegisters_ 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _MergeTwoRegisters_
 qsharp.summary: ''
-ms.openlocfilehash: 28831cee3bdad25a7a0932a1bb0b90e7be55cd7b
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1e73f383f8b222b4558cf3fdd569ce53e5e92afa
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96215497"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851531"
 ---
 # <a name="_mergetworegisters_-operation"></a>_MergeTwoRegisters_ 操作
 

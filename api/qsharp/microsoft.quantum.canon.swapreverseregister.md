@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.SwapReverseRegister
 title: SwapReverseRegister 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: SwapReverseRegister
 qsharp.summary: Uses SWAP gates to Reversed the order of the qubits in a register.
-ms.openlocfilehash: 9df62c4ef97a186b274a62bd493fa9e7bbb74fa1
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: ca553670719c7cfff84f2eedad8cbc16189e0e98
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96204974"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98852076"
 ---
 # <a name="swapreverseregister-operation"></a>SwapReverseRegister 操作
 

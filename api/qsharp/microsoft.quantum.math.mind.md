@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.MinD
 title: 构思函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: MinD
 qsharp.summary: Returns the smaller of two specified numbers.
-ms.openlocfilehash: 6ffa06d270df3ff9b427ee765c0a4e2ea3c386cd
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: d350336fa0a1dddd0f694b252f82ecdfe2ec29f8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96195165"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851244"
 ---
 # <a name="mind-function"></a>构思函数
 

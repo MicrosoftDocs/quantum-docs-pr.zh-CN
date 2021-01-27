@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._OptimizedQubitizationOracleSeperatedRegisters_
 title: _OptimizedQubitizationOracleSeperatedRegisters_ 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _OptimizedQubitizationOracleSeperatedRegisters_
 qsharp.summary: ''
-ms.openlocfilehash: 80f34923fd360fbed0e6126bfb08af8dfa09c91d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 31b0051c81d8ecc2993935456430fde4660e626b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96215463"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851484"
 ---
 # <a name="_optimizedqubitizationoracleseperatedregisters_-function"></a>_OptimizedQubitizationOracleSeperatedRegisters_ 函数
 

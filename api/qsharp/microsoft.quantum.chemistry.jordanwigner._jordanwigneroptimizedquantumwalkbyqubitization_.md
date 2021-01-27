@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._JordanWignerOptimizedQuantumWalkByQubitization_
 title: _JordanWignerOptimizedQuantumWalkByQubitization_ 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _JordanWignerOptimizedQuantumWalkByQubitization_
 qsharp.summary: ''
-ms.openlocfilehash: 66d4a975dd0e9a6912f2b4ba6dc8817cc7c018a7
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e0529ae40dd7449514f6f7346ba777bce7d81f26
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96215599"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851562"
 ---
 # <a name="_jordanwigneroptimizedquantumwalkbyqubitization_-function"></a>_JordanWignerOptimizedQuantumWalkByQubitization_ 函数
 

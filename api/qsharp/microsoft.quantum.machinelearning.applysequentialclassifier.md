@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.ApplySequentialClassifier
 title: ApplySequentialClassifier 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: ApplySequentialClassifier
 qsharp.summary: Given the structure and parameterization of a sequential classifier, applies the classifier to a register of qubits.
-ms.openlocfilehash: fe1ca5717f18cc0816b96ddd29ce89c568571791
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8186bc57e64a52e123bef8e3556d3385c4df7034
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96212012"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851441"
 ---
 # <a name="applysequentialclassifier-operation"></a>ApplySequentialClassifier 操作
 

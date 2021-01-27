@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math._ContinuedFractionConvergentL
 title: _ContinuedFractionConvergentL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: _ContinuedFractionConvergentL
 qsharp.summary: Internal recursive call to calculate the GCD with a bound
-ms.openlocfilehash: 456893b414373728fff2079e7a9bbbe068edac55
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c656b026022b8e4166346bcf82dc4014fdd57834
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96196066"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851421"
 ---
 # <a name="_continuedfractionconvergentl-function"></a>_ContinuedFractionConvergentL 函数
 

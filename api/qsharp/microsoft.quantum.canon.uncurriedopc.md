@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.UncurriedOpC
 title: UncurriedOpC 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: UncurriedOpC
 qsharp.summary: Given a function which returns operations, returns a new operation which takes both inputs as a tuple. The modifier `C` indicates that the operations are controllable.
-ms.openlocfilehash: 35be5425fcd76eae9e0a6fde6a689a5db00da52f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 05df99dce8b167f32078ce256748647ceb94d0fe
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96204583"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851992"
 ---
 # <a name="uncurriedopc-function"></a>UncurriedOpC 函数
 
