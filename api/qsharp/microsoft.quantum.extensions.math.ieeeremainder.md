@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.IEEERemainder
 title: IEEERemainder 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.ieeeremainder".
-ms.openlocfilehash: 7ae18fbe9ccde4c9f49e83abe5b33a342e22698e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7f54d69760078593f8952e24f33b8c9a0876c0bd
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96212981"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98822225"
 ---
 # <a name="ieeeremainder-function"></a>IEEERemainder 函数
 

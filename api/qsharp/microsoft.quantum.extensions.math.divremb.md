@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.DivRemB
 title: DivRemB 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.divreml".
-ms.openlocfilehash: 8e6d6196de8d3e4ef031a0b6a938feddd78d1599
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 57806702f386f30d52312c01a1b1b8cf7a407d5e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96213066"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98822495"
 ---
 # <a name="divremb-function"></a>DivRemB 函数
 

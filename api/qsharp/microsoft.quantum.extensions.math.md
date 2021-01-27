@@ -1,17 +1,17 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math
 title: Microsoft 量子命名空间
-ms.date: 11/25/2020 12:00:00 AM
-ms.topic: article
+ms.date: 1/23/2021 12:00:00 AM
+ms.topic: managed-reference
 qsharp.kind: namespace
 qsharp.name: Microsoft.Quantum.Extensions.Math
 qsharp.summary: ''
-ms.openlocfilehash: 99c29cf91c1d585b260cea981c1c4f9a8422d0f8
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 39de8505d6359f58447a0fcda8d90b7ab0f70385
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96212879"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98821652"
 ---
 # <a name="microsoftquantumextensionsmath-namespace"></a>Microsoft 量子命名空间
 
