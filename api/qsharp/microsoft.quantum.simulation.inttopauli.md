@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.IntToPauli
 title: IntToPauli 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: IntToPauli
 qsharp.summary: Converts a integer to a single-qubit Pauli operator.
-ms.openlocfilehash: 18edb600f7b5b33c7ad98e78e32903c570082225
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 76f482b86ff4a27b6e6ce6ae4ec3d59422563f12
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96229199"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842251"
 ---
 # <a name="inttopauli-function"></a>IntToPauli 函数
 

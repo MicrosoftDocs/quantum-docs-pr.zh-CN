@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Windows
 title: Windows 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Windows
 qsharp.summary: Returns all consecutive subarrays of length `size`.
-ms.openlocfilehash: 8f32a23aa4379744b84c3b8d9c8f565e61c3c64e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: adfea2b9a2f6c22446817538d29586284dba723e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219883"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842200"
 ---
 # <a name="windows-function"></a>Windows 函数
 
@@ -28,7 +28,7 @@ function Windows<'T> (size : Int, array : 'T[]) : 'T[][]
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 此函数 `n - size + 1` 按顺序返回所有长度的子 `size` ，其中 `n` 是的长度 `arr` 。
 第一个子 `arr[0..size - 1], arr[1..size], arr[2..size + 1]` 一直为最后一个子数组 `arr[n - size..n - 1]` 。
@@ -57,3 +57,10 @@ function Windows<'T> (size : Int, array : 'T[]) : 'T[][]
 ### <a name="t"></a>找
 
 元素的类型 `array` 。
+
+## <a name="example"></a>示例
+
+```qsharp
+// same as [[1, 2, 3], [2, 3, 4], [3, 4, 5]]
+let windows = Windows(3, [1, 2, 3, 4, 5]);
+```

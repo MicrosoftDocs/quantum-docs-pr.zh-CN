@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Preparation.IgnoreDataRegister
 title: IgnoreDataRegister 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: IgnoreDataRegister
 qsharp.summary: ''
-ms.openlocfilehash: fc16f57054f224b7a77f3898afe9da4a88d5a9ee
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1f605b8ea9e985c625c2876f0f9d629ef05a58f1
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96226462"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842414"
 ---
 # <a name="ignoredataregister-operation"></a>IgnoreDataRegister 操作
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfOneC
 title: ApplyIfOneC 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfOneC
 qsharp.summary: Applies a controllable operation conditioned on a classical result value being one.
-ms.openlocfilehash: 24a00d83c1bbe6b07adb27c58fc70bc76af0a910
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: ebeec5b46567892ad30f194ababb42876ba08bcb
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96209411"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841762"
 ---
 # <a name="applyifonec-operation"></a>ApplyIfOneC 操作
 
@@ -28,7 +28,7 @@ operation ApplyIfOneC<'T> (result : Result, (op : ('T => Unit is Ctl), target : 
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 给定一个操作 `op` 和一个结果值时 `result` ， `op` `target` 如果为， `result` 则应用于 `One` 。 如果 `Zero` 为，则不会发生任何事情 `target` 。
 后缀 `C` 指示要应用的操作可控制。

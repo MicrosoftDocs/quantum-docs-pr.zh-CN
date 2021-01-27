@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyBoundCA
 title: ApplyBoundCA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyBoundCA
 qsharp.summary: ''
-ms.openlocfilehash: 8eb41318fbb9cbee46159ac3a570b21874358d32
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8f6007055c9e96f843689f4500642c6f0e5813ae
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219203"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841973"
 ---
 # <a name="applyboundca-operation"></a>ApplyBoundCA 操作
 

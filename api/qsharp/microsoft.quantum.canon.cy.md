@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.CY
 title: CY 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Applies the controlled-Y (CY) gate to a pair of qubits.
 
   $$ \begin{align} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & -i \\\\ 0 & 0 & i & 0 \end{align}, $$ where rows and columns are organized as in the quantum concepts guide.
-ms.openlocfilehash: 4a1a533421dd9205e973d5e8237d67b20bc4886d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 862f058e630ee6d9159e0fe514ca2dd1179ea9a2
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96216568"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840733"
 ---
 # <a name="cy-operation"></a>CY 操作
 

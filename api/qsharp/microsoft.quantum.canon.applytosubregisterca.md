@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToSubregisterCA
 title: ApplyToSubregisterCA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToSubregisterCA
 qsharp.summary: Applies an operation to a subregister of a register, with qubits specified by an array of their indices. The modifier `CA` indicates that the operation is controllable and adjointable.
-ms.openlocfilehash: a5ebfb17b1e66bd509f3a562f852986c83d0fef0
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 9f24c3ca9b152cf9bbf81e59b86f83a0ab459031
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96208000"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841204"
 ---
 # <a name="applytosubregisterca-operation"></a>ApplyToSubregisterCA 操作
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.Delay
 title: 延迟操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: Delay
 qsharp.summary: Applies a given operation with a delay.
-ms.openlocfilehash: 4f45527faa49f79fccff3892e928fed09f9f0bc8
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c8ba128e44a9b217ec196e39ff1df639ef276784
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96216500"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840653"
 ---
 # <a name="delay-operation"></a>延迟操作
 
@@ -28,7 +28,7 @@ operation Delay<'T, 'U> (op : ('T => 'U), arg : 'T, aux : Unit) : 'U
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 给定一个操作和一个对该操作的输入时，只要提供附加输入，就会应用该操作。
 具体而言，表达式 `Delay(op, arg, _)` 是 `op` 在调用时应用于的操作 `arg` 。

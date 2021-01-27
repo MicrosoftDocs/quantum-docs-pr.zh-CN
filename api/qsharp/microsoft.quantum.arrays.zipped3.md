@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Zipped3
 title: Zipped3 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Zipped3
 qsharp.summary: Given three arrays, returns a new array of 3-tuples such that each 3-tuple contains an element from each original array.
-ms.openlocfilehash: 37fda4082a46870270414649f807659fa561962b
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 6a4ffaeff8e6248a708ab9f8f9a6ff0c2e9e08d1
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219679"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842175"
 ---
 # <a name="zipped3-function"></a>Zipped3 函数
 

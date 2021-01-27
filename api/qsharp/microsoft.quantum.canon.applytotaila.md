@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToTailA
 title: ApplyToTailA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToTailA
 qsharp.summary: Applies an operation to the last element of an array.
-ms.openlocfilehash: 2cacac14ad6e5003f1a50d9b84c4e0f96950dd7d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 5ca22be7a38d466f9413977de663f10606171dea
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96207915"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841173"
 ---
 # <a name="applytotaila-operation"></a>ApplyToTailA 操作
 
@@ -28,7 +28,7 @@ operation ApplyToTailA<'T> (op : ('T => Unit is Adj), targets : 'T[]) : Unit is 
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 给定一个操作 `op` 和一个目标数组 `targets` ，适用于 `op(Tail(targets))` 。
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfZeroC
 title: ApplyIfZeroC 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfZeroC
 qsharp.summary: Applies a controllable operation conditioned on a classical result value being zero.
-ms.openlocfilehash: c89490b13d946d119f3fd38d130d90847d67fea6
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 3876e2baf1b3ad5bbfa0097d468b1e88adf05db4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96209343"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841723"
 ---
 # <a name="applyifzeroc-operation"></a>ApplyIfZeroC 操作
 
@@ -28,7 +28,7 @@ operation ApplyIfZeroC<'T> (result : Result, (op : ('T => Unit is Ctl), target :
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 给定一个操作 `op` 和一个结果值时 `result` ， `op` `target` 如果为， `result` 则应用于 `Zero` 。 如果 `One` 为，则不会发生任何事情 `target` 。
 后缀 `C` 指示要应用的操作可控制。

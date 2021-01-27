@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.CZ
 title: CZ 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Applies the controlled-Z (CZ) gate to a pair of qubits.
 
   $$ \begin{align} 1 & 0 & 0 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 0 & 0 & -1 \end{align}, $$ where rows and columns are organized as in the quantum concepts guide.
-ms.openlocfilehash: 419082dbf8f96a9fe2dfabeab77e1823cb59a8f2
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: cef1544fb76d561cfd0949c84c487550d523bb85
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96207201"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840710"
 ---
 # <a name="cz-operation"></a>CZ 操作
 

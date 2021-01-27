@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Random.CategoricalDistribution
 title: CategoricalDistribution 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Random
 qsharp.name: CategoricalDistribution
 qsharp.summary: Returns a discrete categorical distribution, in which the probability for each of a finite list of given outcomes is explicitly specified.
-ms.openlocfilehash: 2e3d9b17939d5a9a5bc5e7d89a843e0ff5a848ba
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 754ada71078bd5446f78885ace31d92dce6bf1a4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210244"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842351"
 ---
 # <a name="categoricaldistribution-function"></a>CategoricalDistribution 函数
 
@@ -40,3 +40,12 @@ function CategoricalDistribution (probs : Double[]) : Microsoft.Quantum.Random.D
 ## <a name="output--discretedistribution"></a>输出： [DiscreteDistribution](xref:Microsoft.Quantum.Random.DiscreteDistribution)
 
 `i`带有概率的索引 `probs[i] / sum` ，其中 `sum` 是给定的和的总和 `probs` `Fold(PlusD, 0.0, probs)` 。
+
+## <a name="example"></a>示例
+
+以下 Q # 代码将显示0，概率为30%，1的概率为70%：
+
+```qsharp
+let dist = CategoricalDistribution([0.3, 0.7]);
+Message($"Got sample: {dist::Sample()}");
+```

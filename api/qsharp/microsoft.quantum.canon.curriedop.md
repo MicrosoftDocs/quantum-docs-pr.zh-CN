@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.CurriedOp
 title: CurriedOp 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Returns a curried version of an operation on two inputs.
 
   That is, given an operation with two inputs, this function applies Curry's isomorphism $f(x, y) \equiv f(x)(y)$ to return an operation of one input which returns an operation of one input.
-ms.openlocfilehash: 6c1917d6f1ee69cb29fed1ab173106af1e206533
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f811347d65a6460690163e9df631979c906bd89f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96216619"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840766"
 ---
 # <a name="curriedop-function"></a>CurriedOp 函数
 

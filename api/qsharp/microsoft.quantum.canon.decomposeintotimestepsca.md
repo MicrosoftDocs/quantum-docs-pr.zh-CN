@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.DecomposeIntoTimeStepsCA
 title: DecomposeIntoTimeStepsCA 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -10,12 +10,12 @@ qsharp.summary: >-
   > [!WARNING]
 
   > DecomposeIntoTimeStepsCA has been deprecated. Please use <xref:Microsoft.Quantum.Canon.DecomposedIntoTimeStepsCA> instead.
-ms.openlocfilehash: 4443af5884755f72fac6f9b76f95c3831c67b13f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: aa004098cbc805126109d3356f0f6550b85cd60b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96207167"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840720"
 ---
 # <a name="decomposeintotimestepsca-function"></a>DecomposeIntoTimeStepsCA 函数
 

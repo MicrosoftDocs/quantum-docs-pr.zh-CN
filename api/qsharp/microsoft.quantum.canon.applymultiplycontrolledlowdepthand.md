@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyMultiplyControlledLowDepthAnd
 title: ApplyMultiplyControlledLowDepthAnd 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyMultiplyControlledLowDepthAnd
 qsharp.summary: Implements a multiple-controlled Toffoli gate, assuming that target qubit is initialized 0.  The adjoint operation assumes that the target qubit will be reset to 0.  Requires a Rz depth of 1, while the number of helper qubits are exponential in the number of qubits.
-ms.openlocfilehash: 1aeab429bd6304c621e0d5225b43a76eab607c84
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0ad4b6eabcbbb63751489dd92a13a6673c1ae6b1
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96209190"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841678"
 ---
 # <a name="applymultiplycontrolledlowdepthand-operation"></a>ApplyMultiplyControlledLowDepthAnd 操作
 

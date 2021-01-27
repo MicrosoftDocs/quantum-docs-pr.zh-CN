@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyDiagonalUnitary
 title: ApplyDiagonalUnitary 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyDiagonalUnitary
 qsharp.summary: Applies an array of complex phases to numeric basis states of a register of qubits.
-ms.openlocfilehash: 8f17c3cb222bef00ead5e7fea5d29d296b9a428a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 14ab8d7beddda26594967225934d472d52bac9eb
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96218846"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841891"
 ---
 # <a name="applydiagonalunitary-operation"></a>ApplyDiagonalUnitary 操作
 
@@ -28,7 +28,7 @@ operation ApplyDiagonalUnitary (coefficients : Double[], qubits : Microsoft.Quan
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 此操作实现在 $n $-qubit number state $ \ket{j} $ 上应用复杂阶段 $e ^ {i \ theta_j} $ 的对角线。
 具体而言，此操作可由单一

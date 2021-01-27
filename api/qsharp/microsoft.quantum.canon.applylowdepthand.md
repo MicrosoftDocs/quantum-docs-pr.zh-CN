@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyLowDepthAnd
 title: ApplyLowDepthAnd 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyLowDepthAnd
 qsharp.summary: Inverts a given target qubit if and only if both control qubits are in the 1 state, with T-depth 1, using measurement to perform the adjoint operation.
-ms.openlocfilehash: 4c5e381227bf82415121add38d0c0d2959fb529d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7fa9d9bf2f1905bf1b59e783d7bceb8cb2e09fa4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96209309"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841711"
 ---
 # <a name="applylowdepthand-operation"></a>ApplyLowDepthAnd 操作
 
@@ -28,7 +28,7 @@ operation ApplyLowDepthAnd (control1 : Qubit, control2 : Qubit, target : Qubit) 
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 `target`当且仅当这两个控件都为1，但假定 `target` 处于状态0时，则反转。  操作具有 T 计数4、T 深度1和需要一个 helper qubit，因此，如果已知为0，则可能更适合 CCNOT 操作 `target` 。  此操作的 adjoint 是基于度量的，不需要任何 T 入口，也不需要 helper qubit。
 

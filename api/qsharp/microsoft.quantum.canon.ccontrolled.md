@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.CControlled
 title: CControlled 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: CControlled
 qsharp.summary: Given an operation op, returns a new operation which applies the op if a classical control bit is true. If `false`, nothing happens.
-ms.openlocfilehash: 76e663e9a4b53c7ed74a1b70da516fb07958923b
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f4d91471eae859b7018c9e7ea0c1c853619c484d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96216888"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841009"
 ---
 # <a name="ccontrolled-function"></a>CControlled 函数
 

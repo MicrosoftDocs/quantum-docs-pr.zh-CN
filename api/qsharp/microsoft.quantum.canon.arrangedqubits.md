@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ArrangedQubits
 title: ArrangedQubits 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ArrangedQubits
 qsharp.summary: Arrange control, target, and helper qubits according to an index
-ms.openlocfilehash: 7f3bc4dff73d5ad6393294fc3770b8d36e6094fb
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 07a4ed5fe99dedb333246f7161d157dcd01a01da
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96217061"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841076"
 ---
 # <a name="arrangedqubits-function"></a>ArrangedQubits 函数
 
@@ -28,7 +28,7 @@ function ArrangedQubits (controls : Qubit[], target : Qubit, helper : Qubit[]) :
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 返回一个 Qubit 数组，其目标位于索引0，并在索引 2 ^ i 处控制 i。  帮助器 qubits 将被插入到数组中的其他所有位置。
 

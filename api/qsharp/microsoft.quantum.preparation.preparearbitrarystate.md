@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Preparation.PrepareArbitraryState
 title: PrepareArbitraryState 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
@@ -13,12 +13,12 @@ qsharp.summary: >-
 
 
   Given a set of coefficients and a little-endian encoded quantum register, prepares an state on that register described by the given coefficients.
-ms.openlocfilehash: 18a1e86f8e110a8f48d7dd50961e1f1f471ffc4e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e2e4818e5d30b17dd1984c36da92d76b84403e1c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190693"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842380"
 ---
 # <a name="preparearbitrarystate-operation"></a>PrepareArbitraryState 操作
 
@@ -37,7 +37,7 @@ operation PrepareArbitraryState (coefficients : Microsoft.Quantum.Math.ComplexPo
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 此操作将准备一个具有复杂系数的任意量程状态 $ \ket{\psi} $ $r _j e ^ {$n t_j 计算基础状态 $ \ket{0 \cdots 0} $。
 具体而言，此操作的操作可以通过单一转换 $U $ 来模拟，该转换作用于全零状态

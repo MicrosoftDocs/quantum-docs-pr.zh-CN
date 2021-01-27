@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyWithCA
 title: ApplyWithCA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyWithCA
 qsharp.summary: Given two operations, applies one as conjugated with the other.
-ms.openlocfilehash: e86c452e9693c5a4d0d4e5a36471ab46bbf66dfe
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a5ce7dc5ddfbb2fc06743d36614129c371850da2
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96208136"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841150"
 ---
 # <a name="applywithca-operation"></a>ApplyWithCA 操作
 
@@ -28,7 +28,7 @@ operation ApplyWithCA<'T> (outerOperation : ('T => Unit is Adj), innerOperation 
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 给定两个操作，分别由单一运算符 $U $ 和 $V $，按 $U ^ {\dagger} V U $ 的顺序应用。 也就是说，此操作实现由 $U $ $V $ conjugated 指定的单一运算符。
 

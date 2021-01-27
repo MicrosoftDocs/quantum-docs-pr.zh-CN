@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ComposedOutput
 title: ComposedOutput 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ComposedOutput
 qsharp.summary: Returns the output of the composition of `inner` and `outer` for a given input.
-ms.openlocfilehash: 7e361a62679ab93e9a0ebc04fa52be193805c78d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: d39fcd6b2987b3a4f69df13fa83b69a199d6eddb
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96207456"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840891"
 ---
 # <a name="composedoutput-function"></a>ComposedOutput 函数
 

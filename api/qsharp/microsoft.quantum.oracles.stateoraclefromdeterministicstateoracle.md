@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Oracles.StateOracleFromDeterministicStateOracle
 title: StateOracleFromDeterministicStateOracle 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Oracles
 qsharp.name: StateOracleFromDeterministicStateOracle
 qsharp.summary: Converts an oracle of type `DeterministicStateOracle` to `StateOracle`.
-ms.openlocfilehash: f3c225ee185b4b70ab0ea60af6f0fb154288d9bf
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 4eed29072cab9e8c106509a6a114c8a071441079
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96193805"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842505"
 ---
 # <a name="stateoraclefromdeterministicstateoracle-function"></a>StateOracleFromDeterministicStateOracle 函数
 

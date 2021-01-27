@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.CControlledA
 title: CControlledA 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: CControlledA
 qsharp.summary: Given an operation op, returns a new operation which applies the op if a classical control bit is true. If `false`, nothing happens. The modifier `A` indicates that the operation is adjointable.
-ms.openlocfilehash: cb72ca5b3dab99b9ee8a994ba9fde46e0eae5594
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 823d80182621691f4fa6f42246b3d671f3adfc3a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96207507"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840996"
 ---
 # <a name="ccontrolleda-function"></a>CControlledA 函数
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Bitwise.Parity
 title: 奇偶校验函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Bitwise
 qsharp.name: Parity
 qsharp.summary: Returns the bitwise PARITY of an integer (1 if its binary representation contains odd number of ones and 0 otherwise).
-ms.openlocfilehash: 7a590fa05e8dc0d13bdf58412d928fcf7141c1b0
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b34ef36b0336ec1dea7fdbd878c6d695b38d623e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219543"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842131"
 ---
 # <a name="parity-function"></a>奇偶校验函数
 
@@ -38,3 +38,11 @@ function Parity (a : Int) : Int
 
 ## <a name="output--int"></a>输出： [Int](xref:microsoft.quantum.lang-ref.int)
 
+
+
+## <a name="example"></a>示例
+
+```qsharp
+let a = 248;
+let x = Parity(a); // x : Int = 1.
+```

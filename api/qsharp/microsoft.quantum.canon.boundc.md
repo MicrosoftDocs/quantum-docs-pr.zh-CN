@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.BoundC
 title: BoundC 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: BoundC
 qsharp.summary: Given an array of operations acting on a single input, produces a new operation that performs each given operation in sequence. The modifier `C` indicates that all operations in the array are controllable.
-ms.openlocfilehash: 02e9b6a9676cdd1996d3a2413b2a6383e3a4e90e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 6b640c0dab14778336f42098e699e7e68cc726df
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96207575"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98841047"
 ---
 # <a name="boundc-function"></a>BoundC 函数
 
@@ -46,6 +46,21 @@ function BoundC<'T> (operations : ('T => Unit is Ctl)[]) : ('T => Unit is Ctl)
 ### <a name="t"></a>找
 
 数组中的每个操作的作用。
+
+## <a name="example"></a>示例
+
+以下项是等效的：
+
+```qsharp
+let bound = BoundC([U, V]);
+bound(x);
+```
+
+和
+
+```qsharp
+U(x); V(x);
+```
 
 ## <a name="see-also"></a>另请参阅
 

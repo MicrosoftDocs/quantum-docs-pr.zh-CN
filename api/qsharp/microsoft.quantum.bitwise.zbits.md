@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Bitwise.ZBits
 title: ZBits 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Bitwise
 qsharp.name: ZBits
 qsharp.summary: Returns an integer representing the Z bits of an array of Pauli operators.
-ms.openlocfilehash: 3ded981dc53236a48f1fb8f6ae12e39c17469447
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: d1ddc2a4cdbdfd3945885de856456b3108592594
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219441"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842060"
 ---
 # <a name="zbits-function"></a>ZBits 函数
 

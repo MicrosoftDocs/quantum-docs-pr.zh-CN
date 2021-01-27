@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Preparation.MixedStatePreparation
 title: MixedStatePreparation 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: MixedStatePreparation
 qsharp.summary: Represents a particular mixed state that can be prepared on an index and a garbage register.
-ms.openlocfilehash: 94d6483914b5d21bb51a5469c7123f834e9eb5da
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7e5b6ca755aac19a31b7e27e32e934bb823b128e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96193567"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842402"
 ---
 # <a name="mixedstatepreparation-user-defined-type"></a>MixedStatePreparation 用户定义的类型
 

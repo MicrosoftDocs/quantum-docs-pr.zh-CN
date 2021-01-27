@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.Angle
 title: Angle 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: Angle
 qsharp.summary: Returns 1, if `index` has an odd number of 1s and -1, if `index` has an even number of 1s.
-ms.openlocfilehash: 1d8a9c2c19469e4949f043edd1ba91021fa42e78
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0528f21b2d9c98b6497e28741964e6497d4d0fb9
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219407"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842038"
 ---
 # <a name="angle-function"></a>Angle 函数
 
@@ -28,7 +28,7 @@ function Angle (index : Int) : Int
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 值对应于指定赋值的 n 变量和函数的 Rademacher-Walsh 的系数的符号，用于决定旋转角度。
 
