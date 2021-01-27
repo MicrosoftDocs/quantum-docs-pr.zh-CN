@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.ExpModI
 title: ExpModI 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ExpModI
 qsharp.summary: Returns an integer raised to a given power, with respect to a given modulus.
-ms.openlocfilehash: 197f7351ce76ebb7684ca8014cab9ab65d9c784c
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: dd4fc7d98275f6a02e3b13163b92f0812c92a82f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96228484"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857036"
 ---
 # <a name="expmodi-function"></a>ExpModI 函数
 
@@ -28,7 +28,7 @@ function ExpModI (expBase : Int, power : Int, modulus : Int) : Int
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 让我们通过 $N $ $p $ 和模数来表示 $x expBase。
 该函数返回 $x ^ p \operatorname{mod} N $。

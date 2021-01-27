@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Convert.DoubleAsStringWithFormat
 title: DoubleAsStringWithFormat 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: DoubleAsStringWithFormat
 qsharp.summary: Converts a given double-precision floating-point number to an equivalent string representation, using the given format.
-ms.openlocfilehash: e2c2f8692d2ef63510c36777aef83699339b774e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 36511d9736e90b4285f68ef640318a2ae8d3c56a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96214171"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850178"
 ---
 # <a name="doubleasstringwithformat-function"></a>DoubleAsStringWithFormat 函数
 

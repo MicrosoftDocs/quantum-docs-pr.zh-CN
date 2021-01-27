@@ -4,17 +4,17 @@ description: 了解如何加载自己的数据集，以便使用 Microsoft Quant
 author: geduardo
 ms.author: v-edsanc
 ms.date: 02/16/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.libraries.machine-learning.load
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: cd6fdb6bb33a65ee02ac8c43f40df9abeff9c841
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 7ebfe085e50d4647fdb1027250cf3134f8d8f8c2
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833695"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856459"
 ---
 # <a name="load-and-classify-your-own-datasets"></a>对你自己的数据集进行加载和分类
 
@@ -75,14 +75,14 @@ ms.locfileid: "90833695"
 
 假设我们有一个小型数据集，其中包含不同猫和狗的高度和权重。 此数据集非常小，不能定型模型，但足以显示加载数据集的过程。
 
-| 高度 (m)  | 重量 (千克)  | 动物 |
+| 高度 (m)  | 重量 (kg) | 动物 |
 |-----------|------------|--------|
 | 0.54      | 30         | 狗    |
-| 0.30      | 8          | Cat    |
+| 0.30      | 8          | 猫    |
 | 0.91      | 44         | 狗    |
 | 0.86      | 31          | 狗    |
-| 0.32      | 5         | Cat    |
-| 0.25      | 4          | Cat    |
+| 0.32      | 5         | 猫    |
+| 0.25      | 4          | 猫    |
 
 过程如下：
 

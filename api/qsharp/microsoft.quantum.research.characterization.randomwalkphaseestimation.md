@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Research.Characterization.RandomWalkPhaseEstimation
 title: RandomWalkPhaseEstimation 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Research.Characterization
 qsharp.name: RandomWalkPhaseEstimation
 qsharp.summary: Performs iterative phase estimation using a random walk to approximate Bayesian inference on the classical measurement results from a given oracle and eigenstate.
-ms.openlocfilehash: 2c3afdd41da24a1f32f59f36f0f5c5ed29df1f0b
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f9edafcce62c8b30a6bd52b7dbaa2df2c50c920d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96226156"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846002"
 ---
 # <a name="randomwalkphaseestimation-operation"></a>RandomWalkPhaseEstimation 操作
 
@@ -80,7 +80,7 @@ $U $ 操作的寄存器。
 
 ### <a name="experiment-design"></a>试验设计
 
-根据粒子推测试探法 $ \theta $ 传递到的度量 $t 时间 $ $ `oracle` ， *particle guess heuristic*\Begin{align} \theta \sim \Pr ( \phi) ，\quad t \approx \frac {1} {\variance{\phi}}。
+根据粒子推测试探法 $ \theta $ 传递到的度量 $t 时间 $ $ `oracle` ， \Begin{align} \theta \sim \Pr ( \phi) ，\quad t \approx \frac {1} {\variance{\phi}}。
 \end{align} 这种试探的最佳做法是，在以前的假设条件下，使用迭代阶段估算来减少预期的后验方差。
 
 ### <a name="optimality"></a>最优性

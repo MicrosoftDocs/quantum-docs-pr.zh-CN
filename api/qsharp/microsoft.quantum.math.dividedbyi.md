@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.DividedByI
 title: DividedByI 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: DividedByI
 qsharp.summary: Returns the quotient of two inputs.
-ms.openlocfilehash: 85b1c41ee1ddc1bb1e190a9815849ef8de067e08
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 511ca654befaafffacdd7ba4827062d775b108c9
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210822"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857127"
 ---
 # <a name="dividedbyi-function"></a>DividedByI 函数
 

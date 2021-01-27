@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Preparation.QuantumROMQubitCount
 title: QuantumROMQubitCount 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Preparation
@@ -13,12 +13,12 @@ qsharp.summary: >-
 
 
   Returns the total number of qubits that must be allocated to the operation returned by `QuantumROM`.
-ms.openlocfilehash: 0ec1e042b9f675505f73bfcdcc6706d0bc0367df
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: d6eac64eb62ec7a88d3231249b0bb1e05818f6e6
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210397"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856797"
 ---
 # <a name="quantumromqubitcount-function"></a>QuantumROMQubitCount 函数
 

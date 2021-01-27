@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.AbsComplexPolar
 title: AbsComplexPolar 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: AbsComplexPolar
 qsharp.summary: Returns the absolute value of a complex number of type `ComplexPolar`.
-ms.openlocfilehash: 01845556cbabde768f9c7c47c733453048df9416
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c2b60cbdf69723dfc1470535dbc5beb060e68b86
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96195981"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856403"
 ---
 # <a name="abscomplexpolar-function"></a>AbsComplexPolar 函数
 

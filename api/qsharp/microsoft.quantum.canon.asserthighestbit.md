@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.AssertHighestBit
 title: AssertHighestBit 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"Microsoft.Quantum.Arithmetic.AssertMostSignificantBit".
-ms.openlocfilehash: b0fea4b244f36d310aa2d65937681f2d4b3fa481
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e90159920be652b614a9b42b8de5676c532c1af0
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96207677"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850304"
 ---
 # <a name="asserthighestbit-operation"></a>AssertHighestBit 操作
 

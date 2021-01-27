@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.GreatestCommonDivisorL
 title: GreatestCommonDivisorL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: GreatestCommonDivisorL
 qsharp.summary: Computes the greatest common divisor of $a$ and $b$. The GCD is always positive.
-ms.openlocfilehash: 1bd18758bb2dea8a4801cbfdf258d91f81c5d9a4
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0f545f7888f5a9a353cc6000a12988648ac82dd8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96195497"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856373"
 ---
 # <a name="greatestcommondivisorl-function"></a>GreatestCommonDivisorL 函数
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToHeadCA
 title: ApplyToHeadCA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToHeadCA
 qsharp.summary: Applies an operation to the first element of an array.
-ms.openlocfilehash: f28cff599e06090145fac860dbaf8274c966f80a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1bb24006a2d52167dfc7a7871cfbf5a4378d1cb7
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96208544"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850617"
 ---
 # <a name="applytoheadca-operation"></a>ApplyToHeadCA 操作
 
@@ -28,7 +28,7 @@ operation ApplyToHeadCA<'T> (op : ('T => Unit is Adj + Ctl), targets : 'T[]) : U
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 给定一个操作 `op` 和一个目标数组 `targets` ，适用于 `op(Head(targets))` 。
 

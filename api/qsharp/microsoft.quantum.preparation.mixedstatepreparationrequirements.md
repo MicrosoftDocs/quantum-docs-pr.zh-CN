@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Preparation.MixedStatePreparationRequirements
 title: MixedStatePreparationRequirements 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: MixedStatePreparationRequirements
 qsharp.summary: Represents the number of qubits required in order to prepare a given mixed state.
-ms.openlocfilehash: 3ea4757f6aa5125418b1e81db9f32e7b668eb359
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: df57b7b43fc84f7ddf68392f6a2b7013225da730
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96228689"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856936"
 ---
 # <a name="mixedstatepreparationrequirements-user-defined-type"></a>MixedStatePreparationRequirements 用户定义的类型
 

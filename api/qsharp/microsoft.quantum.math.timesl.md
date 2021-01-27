@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.TimesL
 title: TimesL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: TimesL
 qsharp.summary: Returns the product of two inputs.
-ms.openlocfilehash: 095d408c674cae5f46a6fb1c1d8f4d7dba0d84e7
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c96438e5b050d422a3b20ba77beedbce729a90c4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96194281"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857023"
 ---
 # <a name="timesl-function"></a>TimesL 函数
 

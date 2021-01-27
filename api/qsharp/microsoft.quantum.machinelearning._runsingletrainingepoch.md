@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning._RunSingleTrainingEpoch
 title: _RunSingleTrainingEpoch 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: _RunSingleTrainingEpoch
 qsharp.summary: Perform one epoch of sequential classifier training on a subset of data samples.
-ms.openlocfilehash: 71780645a025972f11f32f8ba8fd94d098604f9e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a8ae35fdd6c4e219444e7d6f7587ea31603b9999
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96196746"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856188"
 ---
 # <a name="_runsingletrainingepoch-operation"></a>_RunSingleTrainingEpoch 操作
 

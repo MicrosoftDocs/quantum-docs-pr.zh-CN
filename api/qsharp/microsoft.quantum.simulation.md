@@ -1,17 +1,17 @@
 ---
 uid: Microsoft.Quantum.Simulation
 title: Microsoft 量子命名空间
-ms.date: 11/25/2020 12:00:00 AM
-ms.topic: article
+ms.date: 1/23/2021 12:00:00 AM
+ms.topic: managed-reference
 qsharp.kind: namespace
 qsharp.name: Microsoft.Quantum.Simulation
 qsharp.summary: This namespace contains functions and operations for coherently simulating the dynamics of quantum systems.
-ms.openlocfilehash: 1578c2d6ae50bf3127455060d29155823b5636cf
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a13e5a827fb29450da01311988002e44b7fdaddc
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96230491"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856754"
 ---
 # <a name="microsoftquantumsimulation-namespace"></a>Microsoft 量子命名空间
 

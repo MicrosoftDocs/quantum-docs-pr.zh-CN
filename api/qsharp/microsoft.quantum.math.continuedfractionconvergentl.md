@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.ContinuedFractionConvergentL
 title: ContinuedFractionConvergentL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ContinuedFractionConvergentL
 qsharp.summary: Finds the continued fraction convergent closest to `fraction` with the denominator less or equal to `denominatorBound`
-ms.openlocfilehash: c10fcbbe63d3d4c7d6c56196768c1062be1ca350
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 14f0eee5565b3e80f4090a2d3763ef96c928368d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210924"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856387"
 ---
 # <a name="continuedfractionconvergentl-function"></a>ContinuedFractionConvergentL 函数
 

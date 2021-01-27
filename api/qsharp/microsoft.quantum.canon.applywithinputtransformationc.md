@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyWithInputTransformationC
 title: ApplyWithInputTransformationC 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyWithInputTransformationC
 qsharp.summary: Given an operation that accepts some input, a function that returns an output compatible with that operation, and an input to that function, applies the operation using the function to transform the input to a form expected by the operation.
-ms.openlocfilehash: 030c41d3ce0a5d613a95c6511f7278497ec5cda1
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: d877fedbc0caa1a9ebc87d80cbce9ab54ca20d88
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96217163"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850357"
 ---
 # <a name="applywithinputtransformationc-operation"></a>ApplyWithInputTransformationC 操作
 
@@ -58,6 +58,14 @@ operation ApplyWithInputTransformationC<'T, 'U> (fn : ('U -> 'T), op : ('T => Un
 ### <a name="u"></a>' U
 
 
+
+## <a name="example"></a>示例
+
+以下调用使用将 @"Microsoft.Quantum.Arithmetic.LittleEndianAsBigEndian" 为输入设计的操作应用于 @"Microsoft.Quantum.Arithmetic.BigEndian" 类型的输入 @"Microsoft.Quantum.Arithmetic.LittleEndian" ：
+
+```qsharp
+ApplyWithInputTransformation(LittleEndianAsBigEndian, ApplyXorInPlaceBE, LittleEndian(qubits));
+```
 
 ## <a name="see-also"></a>另请参阅
 

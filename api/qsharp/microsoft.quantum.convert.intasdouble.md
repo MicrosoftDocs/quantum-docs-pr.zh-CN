@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Convert.IntAsDouble
 title: IntAsDouble 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: IntAsDouble
 qsharp.summary: Converts a given integer to an equivalent double-precision floating-point number.
-ms.openlocfilehash: 03658ab98296a52347bf27970753ba2ec5bd676a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: ea475bd71999cb5ed8dabef62d97db5ec87385b8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96214086"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850148"
 ---
 # <a name="intasdouble-function"></a>IntAsDouble 函数
 

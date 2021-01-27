@@ -5,16 +5,16 @@ author: bradben
 uid: microsoft.quantum.libraries.characterization
 ms.author: martinro
 ms.date: 12/11/2017
-ms.topic: article
+ms.topic: conceptual
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 72af3f5517b272d6d8159b158103b5af91d266b5
-ms.sourcegitcommit: c48cdafccb3487bf93d67fa80cdc64768445b691
+ms.openlocfilehash: 989806eeb58a0a50a00e9338c7ea653e1e47d7f4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97940880"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857223"
 ---
 # <a name="quantum-characterization-and-statistics"></a>量程特性和统计信息 #
 

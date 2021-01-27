@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Any
 title: 任何函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Any
 qsharp.summary: Given an array and a predicate that is defined for the elements of the array, checks if at least one element of the array satisfies the predicate.
-ms.openlocfilehash: 717ab9ebcbb864a6faf1c14cd36125e589849f2e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a05f9531168bf2b32977665d38cc00f3c8e64879
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96221651"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846284"
 ---
 # <a name="any-function"></a>任何函数
 
@@ -50,6 +50,23 @@ function Any<'T> (predicate : ('T -> Bool), array : 'T[]) : Bool
 ### <a name="t"></a>找
 
 元素的类型 `array` 。
+
+## <a name="example"></a>示例
+
+```qsharp
+open Microsoft.Quantum.Arrays;
+open Microsoft.Quantum.Logical;
+
+function IsThreePresent() : Bool {
+    let arrayOfInts = [1, 2, 3, 4, 5];
+    let is3Present = IsNumberPresentInArray(3, arrayOfInts);
+    return is3Present;
+}
+
+function IsNumberPresentInArray(n : Int, array : Int[]) : Bool {
+    return Any(EqualI(_, n), array);
+}
+```
 
 ## <a name="remarks"></a>备注
 

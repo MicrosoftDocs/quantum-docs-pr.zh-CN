@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.E
 title: E 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: E
 qsharp.summary: Returns the natural logarithmic base $e$.
-ms.openlocfilehash: 4c5be204a03661c23811e5c2c751e184b2f49d3f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c6127720a9beb31dedcf61ffd5b1c55946138eee
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96228519"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857072"
 ---
 # <a name="e-function"></a>E 函数
 

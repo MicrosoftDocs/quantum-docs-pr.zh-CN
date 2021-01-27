@@ -4,17 +4,17 @@ description: 了解如何在中使用复制和更新表达式 Q# 。
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.copyandupdateexpressions
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a5bb2844e08652189197d6fa32a13b277db7142a
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: 2475e345e44be6f86f1a0cc7231abdd87d799670
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96233205"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856518"
 ---
 <!---
 # Copy-and-update expressions in Q#

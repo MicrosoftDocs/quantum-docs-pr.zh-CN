@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToPartition
 title: ApplyToPartition 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToPartition
 qsharp.summary: Applies a pair of operations to a given partition of a register into two parts.
-ms.openlocfilehash: f36bccb727bb38a0cdf4f1fedabc9f3f554059ab
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a0dc3453e7501816132569869e858418d5f3f4e5
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96208391"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850544"
 ---
 # <a name="applytopartition-operation"></a>ApplyToPartition 操作
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Research.Chemistry._JWOptimized0123Term
 title: _JWOptimized0123Term 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Research.Chemistry
 qsharp.name: _JWOptimized0123Term
 qsharp.summary: Applies time-evolution by a PQRS term described by a `GeneratorIndex`.
-ms.openlocfilehash: 9d04a866323112944aa922fafdf6fd397851277d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8b304ee99bf4ebfbe925285df9ee6a60775c86c4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96226088"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845989"
 ---
 # <a name="_jwoptimized0123term-operation"></a>_JWOptimized0123Term 操作
 

@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Simulation.EvolutionGenerator
 title: EvolutionGenerator 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Simulation
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Represents a dynamical generator as a set of simulatable gates and an expansion in terms of that basis.
 
   Last parameter for number of terms.
-ms.openlocfilehash: 9e0fc5a232070c238aad943ab73f064999237c15
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 98241f77bfbd73929896bb114fad060001016a86
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96229437"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856087"
 ---
 # <a name="evolutiongenerator-user-defined-type"></a>EvolutionGenerator 用户定义的类型
 

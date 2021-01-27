@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.BigEndianToLittleEndian
 title: BigEndianToLittleEndian 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"Microsoft.Quantum.Arithmetic.BigEndianAsLittleEndian".
-ms.openlocfilehash: c3cc125223e0336b45a63f7003b59ecc4f9b6edc
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: cdddb5c80ae242a8ceaccc1710b792544838d6ec
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96217010"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850271"
 ---
 # <a name="bigendiantolittleendian-function"></a>BigEndianToLittleEndian 函数
 

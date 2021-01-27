@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Preparation.PrepareSingleQubitIdentity
 title: PrepareSingleQubitIdentity 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Prepares a qubit in the maximally mixed state.
 
   It prepares the given qubit in the $\boldone / 2$ state by applying the depolarizing channel $$ \begin{align} \Omega(\rho) \mathrel{:=} \frac{1}{4} \sum_{\mu \in \{0, 1, 2, 3\}} \sigma\_{\mu} \rho \sigma\_{\mu}^{\dagger}, \end{align} $$ where $\sigma\_i$ is the $i$th Pauli operator, and where $\rho$ is a density operator representing a mixed state.
-ms.openlocfilehash: 1c8c161ec2eae73a81c46e7941af49145cde0493
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c6c9b5724354d6ee034dd8b6733901ebdd8072d6
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96193618"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856866"
 ---
 # <a name="preparesinglequbitidentity-operation"></a>PrepareSingleQubitIdentity 操作
 

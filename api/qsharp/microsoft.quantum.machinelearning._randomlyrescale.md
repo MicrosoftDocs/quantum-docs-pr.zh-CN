@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning._RandomlyRescale
 title: _RandomlyRescale 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: _RandomlyRescale
 qsharp.summary: Randomly rescales an input to either grow or shrink by a given factor.
-ms.openlocfilehash: a5ab5d3dc45fb51fe0ea7e201a9a936822285c3f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e9b121b3d9c6d2592f86ee2bf9905bcc0d45d0ca
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96196814"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846107"
 ---
 # <a name="_randomlyrescale-operation"></a>_RandomlyRescale 操作
 

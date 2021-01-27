@@ -1,6 +1,6 @@
 ---
 标题：量程计算词汇表说明：标准术语、操作和量程计算中使用的对象的词汇表。
-author： bradben： benbra 毫秒。日期： 9/1/2020 ms. 主题：文章 uid：。术语表：
+author： bradben： benbra 毫秒。日期： 9/1/2020 ms. 主题：引用 uid：不存在：
 - "Q#"
 - "$$v"
 - "$$"
@@ -151,7 +151,7 @@ author： bradben： benbra 毫秒。日期： 9/1/2020 ms. 主题：文章 uid�
 
 ## <a name="hadamard"></a>Hadamard
 
-Hadamard 操作 (也称为 Hadamard 入口或变换) 作用于单个[qubit](xref:microsoft.quantum.glossary#qubit) ，并将其置于[superposition](xref:microsoft.quantum.glossary#superposition) $ \ket { 0 或1之间， } $ $ \ket { } $ 如果 qubit 最初处于 $ \ket { 0 } $ 状态。 在中 Q# ，此操作由预定义的操作应用 [`H`](xref:Microsoft.Quantum.Intrinsic.H) 。
+Hadamard 操作 (也称为 Hadamard 入口或变换) 作用于单个[qubit](xref:microsoft.quantum.glossary#qubit) ，并将其置于[](xref:microsoft.quantum.glossary#superposition) $ \ket { 0 或1之间， } $ $ \ket { } $ 如果 qubit 最初处于 $ \ket { 0 } $ 状态。 在中 Q# ，此操作由预定义的操作应用 [`H`](xref:Microsoft.Quantum.Intrinsic.H) 。
 
 ## <a name="immutable"></a>不可变
 
@@ -169,7 +169,7 @@ Hadamard 操作 (也称为 Hadamard 入口或变换) 作用于单个[qubit](xref
 
 相关名称集合的标签 (例如， [操作](xref:microsoft.quantum.glossary#operation)、 [函数](xref:microsoft.quantum.glossary#function)和 [用户定义的类型](xref:microsoft.quantum.glossary#user-defined-type)) 。 例如，命名空间为 ""。 [准备](xref:Microsoft.Quantum.Preparation) 标签在标准库中定义的所有符号都有助于准备初始状态。
 
-## <a name="operation"></a>操作
+## <a name="operation"></a>Operation
 
 中量程计算的基本单位 Q# 。 它大致等效于 C、c + + 或 Python 中的函数或 c # 或 Java 中的静态方法。 有关详细信息，请参阅[ Q# 程序](xref:microsoft.quantum.guide.programs)。
 
@@ -177,7 +177,7 @@ Hadamard 操作 (也称为 Hadamard 入口或变换) 作用于单个[qubit](xref
 
 在运行时提供量程算法的数据相关信息的子例程。 通常，目标是提供与 superposition 中的输入对应的输出 [superposition](xref:microsoft.quantum.glossary#superposition) 。 有关详细信息，请参阅 [Oracles](xref:microsoft.quantum.libraries.data-structures#oracles)。
 
-## <a name="partial-application"></a>部分应用程序
+## <a name="partial-application"></a>偏函数应用
 
 调用不包含所有必需输入的 [函数](xref:microsoft.quantum.glossary#function) 或 [操作](xref:microsoft.quantum.glossary#operation) 。 这会返回一个新的可调用，该 [调用](xref:microsoft.quantum.glossary#callable) 只需在以后的应用程序中提供的下划线)  (所需的缺少参数。 有关详细信息，请参阅 [部分应用程序](xref:microsoft.quantum.qsharp.partialapplication)。
 

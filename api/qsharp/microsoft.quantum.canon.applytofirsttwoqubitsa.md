@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToFirstTwoQubitsA
 title: ApplyToFirstTwoQubitsA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToFirstTwoQubitsA
 qsharp.summary: Applies an operation to the first two qubits in the register. The modifier `A` indicates that the operation is adjointable.
-ms.openlocfilehash: 1a286c167a87372dc89d62ab3733b186298c43a1
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 197f1da6682b100a0b71f3548727188c0ef6f7c3
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96208697"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850684"
 ---
 # <a name="applytofirsttwoqubitsa-operation"></a>ApplyToFirstTwoQubitsA 操作
 

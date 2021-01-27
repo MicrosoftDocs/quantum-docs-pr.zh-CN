@@ -4,24 +4,24 @@ description: 了解如何使用量程建模来模拟分子电子系统。
 author: bradben
 ms.author: v-benbra
 ms.date: 10/09/2017
-ms.topic: article-type-from-white-list
+ms.topic: conceptual
 uid: microsoft.quantum.chemistry.concepts.quantummodels
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 4ff3d11bfd4dae5489fc4b7efe4da4ccda00882f
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: c12ab277f06bed61991a26af96953ccdbf72b642
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833915"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856221"
 ---
 # <a name="quantum-models-for-electronic-systems"></a>适用于电子系统的量程模型
 
 为了模拟电子系统，我们需要首先指定 Hamiltonian，这可通过上述规范量化过程来找到。
 具体而言，对于 $N _e $ 电子 with momenta $p _i 在三个维度中的 $ () $m $ 和位置矢量 _e $x $ 和 nuclei，同时 _i $Z $，Hamiltonian 运算符读取 \begin{equation} \hat{H} = \sum \_ {i = 1} ^ {N \_ e} \frac{\hat{p} \_ i ^ 2} {2m \_ e} + \frac {1} {2} \sum \_ {i\ne j} \frac{e ^ 2} {| \hat{x} \hat{x} \_ \_ j |}-\sum \_ {i，k} \frac{Z \_ ke ^ 2} {| \hat{x} \_ i-{y} \_ k |}+ \frac {1} {2} \ sum_ {k\ne k '} \frac{Z \_ kZ \_ {k '} e ^ 2} {| y \_ k y \_ k ' |}。 \label{eq： Ham} \end{equation} momenta 运算符 $ \hat{p} \_ i ^ 2 $ 可以在实际空间中查看为 Laplacian 运算符，即 $ \hat{p} \_ i ^ 2 =-\partial \_ {x \_ i} ^ 2-\partial { \_ y i} \_ ^ 2-\partial \_ {z \_ i} ^ 2 $。
 在这里，我们已简化了分子的 nuclei。
-这称为 "Oppenheimer" 近似值，它往往适用于 $ \hat{H} $ 的低能耗能量，因为 electron 质量约为 $ 1/1836 $ proton 的质量。
+这称为 Born-Oppenheimer 近似值，它往往适用于 $ \hat{H} $ 的低能耗能量，因为 electron 的质量大约是 $ 1/1836 $ proton 的质量。
 可以通过为 $N e $ 电子的系统写出能量 \_ ，并应用 [量程动态](xref:microsoft.quantum.chemistry.concepts.quantumdynamics)中所述的规范量化过程，轻松找到此 Hamiltonian 运算符。
 
 为了构造 $e ^ {-i\hat {H} t} $ 的单一矩阵表示形式，我们需要将运算符 $ \hat{H} $ 表示为矩阵。
@@ -36,7 +36,7 @@ ms.locfileid: "90833915"
 
 可以使用许多合适的基准，并选择适当的基础来适应问题，这是量程化学的一大优点。
 最简单的这种基本设置可能是 Slater Orbitals (停止) ， (orthogonalized) 到 Schrödinger 的 eigenfunctions 的解决方案 (例如，\hat{H} 的。
-可以使用其他基础集（如平面-波浪或实空格 orbitals），更详细地说，我们将好奇的读者称为标准文本 ["分子电子结构理论"](https://onlinelibrary.wiley.com/doi/book/10.1002/9781119019572) 的 Helgaker。
+可以使用其他基础集（如平面-波浪或实空格 orbitals），更详细地说，我们将好奇的读者称为标准文本 ["分子 Electronic-Structure 理论"](https://onlinelibrary.wiley.com/doi/book/10.1002/9781119019572) Helgaker。
 
 虽然以上模型中使用的状态看起来可能是任意的，但量程机制对可在本质上发现的状态施加限制。
 特别是，在 electron 标签的交换下，所有有效的电子量程状态都必须是反对称状态。

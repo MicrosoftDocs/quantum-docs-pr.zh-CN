@@ -4,17 +4,17 @@ description: 了解 Microsoft Quantum 开发工具包预览版的最新更新。
 author: bradben
 ms.author: v-benbra
 ms.date: 8/30/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 1c3c502b6487482f06820e07425b8516f259fb0d
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: 8aa6072e9b495db6e127cac350d5bfaec1b090ce
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96231785"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856667"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -24,6 +24,16 @@ ms.locfileid: "96231785"
 
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
 
+## <a name="version-0152101125897"></a>版本0.15.2101125897
+
+*发布日期：2021年1月26日*
+
+- 简化的 qubit 分配，提供更方便的用于分配 qubits 的语法， [请参阅 Q# 语言存储库中的详细信息](https://github.com/microsoft/qsharp-language/blob/main/Approved/1-implicitly-scoped-qubit-allocation.md)。
+- 创建的 QDK-Python 存储库，其中包括用于将 `azure-quantum` 量程效果优化作业提交到 Azure 量程服务的 Python 客户端，以及包含用于 `qdk` `qdk.chemistry` Q# 生成多个化学包（如 NWChem、Psi4 和 OpenMolcas）的输入文件的分子可视化和功能的适用于化学库的基于 python 的便利层。
+- 对于操作和函数类型以及 `if` 、 `elif` `while` 和语句，括号现在是可选的 `until` 。 已不 `for` `use` `borrow` 推荐使用和语句的括号。
+- 提高了最佳深度的宽度估算， [请参阅详细信息](https://github.com/MicrosoftDocs/quantum-docs-pr/pull/1159)。
+- 使用 `ApplyUnitary` ([QuantumLibraries # 391](https://github.com/microsoft/QuantumLibraries/pull/391)，External 投稿 by Dmytro Fedoriaka 将作为显式矩阵提供的单一操作) 
+- https://github.com/microsoft/iqsharp/issues/387通过缓解内核启动的性能影响来修复 Q# 。
 ## <a name="version-0142011120240"></a>版本0.14.2011120240
 
 *发布日期：2020年11月25日*
@@ -211,7 +221,7 @@ ms.locfileid: "96231785"
 
 此版本包含以下各项：
 
-- 用于单元测试的新测试属性 Q# ，请参阅[此处](xref:Microsoft.Quantum.Diagnostics.Test)的更新 API 文档和更新的[here](xref:microsoft.quantum.guide.testingdebugging)测试 & 调试指南
+- 用于单元测试的新测试属性 Q# ，请参阅[此处](xref:Microsoft.Quantum.Diagnostics.Test)的更新 API 文档和更新的[](xref:microsoft.quantum.guide.testingdebugging)测试 & 调试指南
 - 在出现 Q# 程序运行错误的情况下添加堆栈跟踪
 - 对 Visual Studio Code 中的断点的支持（由于 [OmniSharp C# Visual Studio Code 扩展](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)中的更新）
 
@@ -486,14 +496,7 @@ ms.locfileid: "96231785"
 
 使用新的化学库，我们将库划分成新的 GitHub 存储库 [Microsoft/QuantumLibraries](https://github.com/Microsoft/QuantumLibraries)。  示例保留在 [Microsoft/Quantum](https://github.com/Microsoft/Quantum) 存储库中。  我们欢迎大家参与到这两个库的构建中！
 
-此版本包括社区报告的问题对应的 bug 修复和功能：
-
-* Q#的 Intellisense ([UserVoice](https://quantum.uservoice.com/forums/906943/suggestions/32656918))。
-* .qs 文件 ([UserVoice](https://quantum.uservoice.com/forums/906097/suggestions/32593049))。
-* 当 if 语句中大括号缩写时，请改进错误消息 ([UserVoice](https://quantum.uservoice.com/forums/906208/suggestions/34718518))。
-* 支持在可变（重新）绑定上进行元组析构 ([UserVoice](https://quantum.uservoice.com/forums/906208/suggestions/35020444))。
-* 运行提供的 BitFlipCode 时出错 ([UserVoice](https://quantum.uservoice.com/forums/906940/suggestions/35008546))。
-* H2SimulationGUI 有时会显示较大峰值 ([UserVoice](https://quantum.uservoice.com/forums/906946/suggestions/34668370))。
+此版本包括针对社区报告的问题的 bug 修复和功能。
 
 ### <a name="community-contributions"></a>社区贡献
 
@@ -509,15 +512,7 @@ ms.locfileid: "96231785"
 
 发行日期：2018 年 9 月 10 日
 
-此版本包括社区报告的问题对应的 bug 修复。 其中包括：
-
-* 无法使用移位运算符 ([GitHub](https://github.com/Microsoft/Quantum/issues/75))。
-* 打印到控制台时，`DumpMachine` / `DumpRegister` 在 `QCTraceSimulator` 上失败 ([UserVoice](https://quantum.uservoice.com/forums/906946/suggestions/34709680))。
-* 允许分配 0 个量子位 ([UserVoice](https://quantum.uservoice.com/forums/906208-q-language/suggestions/34768069-allow-allocating-0-qubits))。
-* `AssertQubitState` 需要显式 Complex() 调用 ([UserVoice](https://quantum.uservoice.com/forums/906208-q-language/suggestions/34713733-assertqubitstate-requires-explicit-complex-call))。
-* `Measure` 操作始终在 macOS 上返回 `One` ([UserVoice](https://quantum.uservoice.com/forums/906940/suggestions/35008546))。
-
-谢谢！ 
+此版本包括社区报告的问题对应的 bug 修复。
 
 ## <a name="version-0218063001"></a>版本 0.2.1806.3001
 

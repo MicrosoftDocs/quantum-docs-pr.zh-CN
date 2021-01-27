@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Simulation.EvolutionSet
 title: EvolutionSet 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Simulation
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Represents a set of gates that can be readily implemented and used to implement simulation algorithms.
 
   Elements in the set are indexed by a  <xref:microsoft.quantum.simulation.generatorindex>, and each set is described by a function from `GeneratorIndex` to  <xref:microsoft.quantum.simulation.evolutionunitary>, which are operations parameterized by a real number representing time
-ms.openlocfilehash: ee8f3c0716f035dcb0c4fad557092fbf8dd3c356
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 35c0b24da284a5871fd11b6d624102b853b89d19
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96229403"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856075"
 ---
 # <a name="evolutionset-user-defined-type"></a>EvolutionSet 用户定义的类型
 

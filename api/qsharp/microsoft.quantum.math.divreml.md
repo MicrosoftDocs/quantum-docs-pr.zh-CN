@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.DivRemL
 title: DivRemL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: DivRemL
 qsharp.summary: Divides one BigInteger value by another, returns the result and the remainder as a tuple.
-ms.openlocfilehash: 40ce295b82d138ad0b5261641c7f3649631d309d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 329f4d0bc21e74ab6c138af39c88cdcd964e63cf
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210839"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857093"
 ---
 # <a name="divreml-function"></a>DivRemL 函数
 

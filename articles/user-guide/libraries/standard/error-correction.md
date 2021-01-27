@@ -5,16 +5,16 @@ author: QuantumWriter
 uid: microsoft.quantum.libraries.error-correction
 ms.author: martinro
 ms.date: 12/11/2017
-ms.topic: article
+ms.topic: conceptual
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 94251e185cea65c5fc08ed70d5fba9b7b19501e3
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: fc8e46aa22cb2575de42cfc3d4f57c43e5d3f7b0
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92692033"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857210"
 ---
 # <a name="error-correction"></a>错误更正 #
 
@@ -61,7 +61,7 @@ ms.locfileid: "92692033"
 | $X_2$ | $ \ket {001} $ | $ \ket {110} $ | $+$ | $-$ |
 
 因此，两个度量值的结果可唯一确定发生了哪个位翻转错误，但不会泄漏有关所编码的状态的任何信息。
-我们将这些结果称为 "不 *症状* "，并参阅将一个症状映射回导致其 *恢复* 的错误的过程。
+我们将这些结果称为 "不 *症状*"，并参阅将一个症状映射回导致其 *恢复* 的错误的过程。
 特别是，我们强调，恢复是一种 *传统* 的推理过程，该过程会将发生的症状作为其输入，并返回一个指示，说明如何修复可能发生的任何错误。
 
 > [!NOTE]
@@ -70,7 +70,7 @@ ms.locfileid: "92692033"
 > 同样，应用阶段翻转操作 `Z` 会将 $ \ket{\overline {1} } $ 映射到 $-\ket{\overline {1} } $，因此会将 $ \ket{\overline{+}} $ 映射到 $ \ket{\overline {-} } $。
 > 通常，可以创建代码来处理更多错误，并处理 $Z $ 个错误以及 $X $ 个错误。
 
-对于在所有代码状态下以相同方式操作的量程错误更正，我们可以对其进行描述，这就是 *稳定的形式* 。
+对于在所有代码状态下以相同方式操作的量程错误更正，我们可以对其进行描述，这就是 *稳定的形式*。
 Q#Canon 提供了一个框架，用于描述从稳定程序代码进行的编码和解码，并描述了一个从错误中恢复的方法。
 在本部分中，我们使用几个简单的量程纠错代码描述此框架及其应用程序。
 

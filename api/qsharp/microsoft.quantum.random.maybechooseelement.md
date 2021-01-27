@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Random.MaybeChooseElement
 title: MaybeChooseElement 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Random
 qsharp.name: MaybeChooseElement
 qsharp.summary: Given an array of data and an a distribution over its indices, attempts to choose an element at random.
-ms.openlocfilehash: 1a69c8d5a6ae022ceda9269e17434b740809b107
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 86a69110fc92a2b6238cc757c09185c9fbcdb035
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96192853"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856115"
 ---
 # <a name="maybechooseelement-operation"></a>MaybeChooseElement 操作
 
@@ -49,3 +49,16 @@ operation MaybeChooseElement<'T> (data : 'T[], indexDistribution : Microsoft.Qua
 
 ### <a name="t"></a>找
 
+
+
+## <a name="example"></a>示例
+
+以下 Q # 代码段从数组中随机选择一个元素：
+
+```qsharp
+let (succeeded, element) = MaybeChooseElement(
+    data,
+    DiscreteUniformDistribution(0, Length(data) - 1)
+);
+Fact(succeeded, "Index chosen by MaybeChooseElement was not valid.");
+```

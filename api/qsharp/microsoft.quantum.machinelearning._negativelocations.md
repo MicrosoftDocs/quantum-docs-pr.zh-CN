@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning._NegativeLocations
 title: _NegativeLocations 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: _NegativeLocations
 qsharp.summary: ''
-ms.openlocfilehash: bb00749452ed6b132fc20ea8e17bc86ea3e42c6b
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8f238a7759b3d89ade1b2dd344c568ea21eb6802
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96196797"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846144"
 ---
 # <a name="_negativelocations-function"></a>_NegativeLocations 函数
 

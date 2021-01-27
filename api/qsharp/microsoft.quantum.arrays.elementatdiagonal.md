@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.ElementAtDiagonal
 title: ElementAtDiagonal 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: ElementAtDiagonal
 qsharp.summary: ''
-ms.openlocfilehash: 787aac9264cd878205e90c6510650a4fbdc6821f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7d405db3b2adc8d390143bc102a17183168a3fef
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96209955"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846186"
 ---
 # <a name="elementatdiagonal-function"></a>ElementAtDiagonal 函数
 

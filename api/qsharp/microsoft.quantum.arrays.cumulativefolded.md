@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.CumulativeFolded
 title: CumulativeFolded 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: CumulativeFolded
 qsharp.summary: Combines Mapped and Fold into a single function
-ms.openlocfilehash: ffb934d06f6be06cbc35a523c90d2c54e0a51353
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 95cd5233a09a1234bba4de9fe870b9d93c0f86a4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210023"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846248"
 ---
 # <a name="cumulativefolded-function"></a>CumulativeFolded 函数
 
@@ -28,7 +28,7 @@ function CumulativeFolded<'State, 'T> (fn : (('State, 'T) -> 'State), state : 'S
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 此函数 `fn` 通过数组来循环访问函数，从初始状态开始， `state` 返回所有中间值，不包括初始状态。
 
@@ -63,3 +63,10 @@ function CumulativeFolded<'State, 'T> (fn : (('State, 'T) -> 'State), state : 'S
 ### <a name="t"></a>找
 
 元素的类型 `array` 。
+
+## <a name="example"></a>示例
+
+```qsharp
+// same as sums = [1, 3, 6, 10, 15]
+let sums = CumulativeFolded(PlusI, 0, SequenceI(1, 5));
+```

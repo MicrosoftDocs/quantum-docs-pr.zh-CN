@@ -4,17 +4,17 @@ description: 使用 Microsoft 量程化学库了解 wavefunctions 中的动态�
 author: guanghaolow
 ms.author: gulow
 ms.date: 05/28/2019
-ms.topic: article-type-from-white-list
+ms.topic: conceptual
 uid: microsoft.quantum.chemistry.concepts.multireference
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 420fc8e108852f6548e2147693e089f5ce970aa9
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: ab3d90d79c7c14a1ef5b3aa833df49be186f3dd7
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835479"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856273"
 ---
 # <a name="correlated-wavefunctions"></a>相关波函数
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.ApproximateInputEncoder
 title: ApproximateInputEncoder 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: ApproximateInputEncoder
 qsharp.summary: Given a set of coefficients and a tolerance, returns a state preparation operation that prepares each coefficient as the corresponding amplitude of a computational basis state, up to the given tolerance.
-ms.openlocfilehash: 2e39318cfaf3321c33b08f742bb25a9276b7e660
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 035c353c34362aa3486a7df9e7bb1bc95a6f63be
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96196593"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856166"
 ---
 # <a name="approximateinputencoder-function"></a>ApproximateInputEncoder 函数
 

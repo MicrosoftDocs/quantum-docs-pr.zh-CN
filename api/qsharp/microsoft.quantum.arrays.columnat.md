@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.ColumnAt
 title: ColumnAt 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: ColumnAt
 qsharp.summary: Extracts a column from a matrix.
-ms.openlocfilehash: 097b3fdd6fc1843ada27052fcf08ee80d894d25a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 32dc814de9b04563c2798a768f121723a1a8252c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210091"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846258"
 ---
 # <a name="columnat-function"></a>ColumnAt 函数
 
@@ -28,7 +28,7 @@ function ColumnAt<'T> (column : Int, matrix : 'T[][]) : 'T[]
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 此函数按行顺序提取矩阵中的列。
 提取第一个索引的行 corrsponds 到元素的访问权限，因此无需进一步处理。
@@ -55,6 +55,14 @@ function ColumnAt<'T> (column : Int, matrix : 'T[][]) : 'T[]
 ### <a name="t"></a>找
 
 的每个元素的类型 `matrix` 。
+
+## <a name="example"></a>示例
+
+```qsharp
+let matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+let column = ColumnAt(0, matrix);
+// same as: column = [1, 4, 7]
+```
 
 ## <a name="see-also"></a>另请参阅
 

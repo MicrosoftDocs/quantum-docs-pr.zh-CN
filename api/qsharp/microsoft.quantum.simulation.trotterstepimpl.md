@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.TrotterStepImpl
 title: TrotterStepImpl 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: TrotterStepImpl
 qsharp.summary: Implements time-evolution by a term contained in a `GeneratorSystem`.
-ms.openlocfilehash: bc6c3c6656da319fce9c7c48824dbc4ad75ccc83
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 33dc922cd5a60590a1306369fb99615fc6575b22
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96203409"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856730"
 ---
 # <a name="trotterstepimpl-operation"></a>TrotterStepImpl 操作
 

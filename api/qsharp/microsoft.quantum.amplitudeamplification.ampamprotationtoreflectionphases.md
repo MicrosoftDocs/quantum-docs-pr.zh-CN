@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpRotationToReflectionPhases
 title: AmpAmpRotationToReflectionPhases 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
@@ -16,12 +16,12 @@ qsharp.summary: >-
   > Please use
 
   > @"microsoft.quantum.amplitudeamplification.rotationphasesasreflectionphases".
-ms.openlocfilehash: d43d3aa978bb4efee510ddc9f0ee862ac2daacdb
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 2744e6635e87d3003ced48fa6126d3f15ec450b0
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96191646"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845944"
 ---
 # <a name="ampamprotationtoreflectionphases-function"></a>AmpAmpRotationToReflectionPhases 函数
 

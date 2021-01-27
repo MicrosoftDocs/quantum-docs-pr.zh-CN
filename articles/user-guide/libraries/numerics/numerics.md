@@ -4,17 +4,17 @@ description: 了解有关 Microsoft 量程数字库中可用的类型和操作�
 author: thomashaener
 ms.author: thhaner
 ms.date: 5/14/2019
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.numerics.usage
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: dfcb8e9e5a15d0881750d67cf58d7ad47cbecd3a
-ms.sourcegitcommit: 897ace8b506adb2331e911ee5633dceced566174
+ms.openlocfilehash: 92efd3b8677d2f27bc59f986ce6c9e915cd23652
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91764129"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856442"
 ---
 # <a name="using-the-numerics-library"></a>使用数字库
 
@@ -22,9 +22,9 @@ ms.locfileid: "91764129"
 
 数字库包括三个组件
 
-1. 带有整数添加器和比较运算符的**基本整数算法**
-1. 基于基本功能构建的**高级整数功能**;它包括乘法、除法、反转等。 对于有符号和无符号整数。
-1. 固定点**算术功能**，具有定点初始化、加法、乘法、倒数、多项式计算和度量。
+1. 带有整数添加器和比较运算符的 **基本整数算法**
+1. 基于基本功能构建的 **高级整数功能**;它包括乘法、除法、反转等。 对于有符号和无符号整数。
+1. 固定点 **算术功能**，具有定点初始化、加法、乘法、倒数、多项式计算和度量。
 
 所有这些组件均可使用单个语句进行访问 `open` ：
 ```qsharp
@@ -95,7 +95,7 @@ operation TestMyAddition(xValue : Int, yValue : Int, n : Int) : Unit {
 
 若要在量程计算机上评估平滑功能，如 $ \sin (x) $，其中 $x $ 是一个量程 `FixedPoint` 号，量子开发工具包数字库将提供操作 `EvaluatePolynomialFxP` 和 `Evaluate[Even/Odd]PolynomialFxP` 。
 
-第一种是，可 `EvaluatePolynomialFxP` 计算 $ $ P (x) = a_0 + a_1x + a_2x ^ 2 + \cdots + a_dx ^ d，$ $ 其中 $d $ 表示 *度*的多项式。 为此，所需的全部都是多项式系数 `[a_0,..., a_d]` (类型 `Double[]`) 、输入 `x : FixedPoint` 和输出 `y : FixedPoint` (最初为零) ：
+第一种是，可 `EvaluatePolynomialFxP` 计算 $ $ P (x) = a_0 + a_1x + a_2x ^ 2 + \cdots + a_dx ^ d，$ $ 其中 $d $ 表示 *度* 的多项式。 为此，所需的全部都是多项式系数 `[a_0,..., a_d]` (类型 `Double[]`) 、输入 `x : FixedPoint` 和输出 `y : FixedPoint` (最初为零) ：
 ```qsharp
 EvaluatePolynomialFxP([1.0, 2.0], x, y);
 ```

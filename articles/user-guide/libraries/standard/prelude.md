@@ -4,17 +4,17 @@ description: 了解 QDK 中的内部操作和函数，包括传统函数和单�
 author: QuantumWriter
 ms.author: martinro
 ms.date: 12/11/2017
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.libraries.standard.prelude
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 4d15226fe46be79b7d3e6f414f33f1debd691f40
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 6ed5b1677a204b9425f229a3ea0855bb789f3f75
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92692116"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857193"
 ---
 # <a name="the-prelude"></a>Prelude #
 
@@ -109,13 +109,13 @@ Hadamard 入口特别重要，因为它可用于创建 $ \ket {0} $ 和 $ \ket {
 操作将实现 $ 门 <xref:Microsoft.Quantum.Intrinsic.T> ，并具有签名 `(Qubit => Unit is Adj + Ctl)` ，这表示它是 qubit 上的单一操作。 $T
 
 尽管这是足以描述任意单 qubit 操作的原则，但不同的目标计算机可能具有更有效的方法来旋转 Pauli 运算符，因此 prelude 包括多种方法来 convienently 表达此类旋转。
-其中最基本的 <xref:Microsoft.Quantum.Intrinsic.r> 操作是操作，该操作实现围绕指定 Pauli 轴的旋转，\Begin{equation} R ( \sigma，\phi) \mathrel{： =} \exp (-i \phi \sigma/2) ，\end{equation} 其中，$ \sigma $ 是 Pauli 运算符，$ \phi $ 是角度，其中 $ \exp $ 表示矩阵指数。
+其中最基本的 <xref:Microsoft.Quantum.Intrinsic.R> 操作是操作，该操作实现围绕指定 Pauli 轴的旋转，\Begin{equation} R ( \sigma，\phi) \mathrel{： =} \exp (-i \phi \sigma/2) ，\end{equation} 其中，$ \sigma $ 是 Pauli 运算符，$ \phi $ 是角度，其中 $ \exp $ 表示矩阵指数。
 它具有签名 `((Pauli, Double, Qubit) => Unit is Adj + Ctl)` ，其中输入的前两个部分表示指定单一运算符所需的传统参数 $ \sigma $ 和 $ \phi $ $R ( \sigma，\phi) $。
 可以部分应用 $ \sigma $ 和 $ \phi $，以获取其类型为单一 qubit 单一的操作。
 例如， `R(PauliZ, PI() / 4, _)` 具有类型 `(Qubit => Unit is Adj + Ctl)` 。
 
 > [!NOTE]
-> <xref:Microsoft.Quantum.Intrinsic.r>操作将输入角度除以2并将其与-1 相乘。
+> <xref:Microsoft.Quantum.Intrinsic.R>操作将输入角度除以2并将其与-1 相乘。
 > 对于 $Z $ 旋转，这意味着 $ \ket {0} $ eigenstate 通过 $-\phi/$2 进行旋转，$ \ket {1} $ eigenstate 旋转了 $ \phi/$2，以便 $ \ket {1} $ eigenstate 相对于 $ \phi $ \ket 旋转 $ eigenstate $ {0} 。
 >
 > 具体而言，这意味着 `T` 和 `R(PauliZ, PI() / 8, _)` 仅因无关的 [全局阶段](xref:microsoft.quantum.glossary#global-phase)而异。
@@ -217,7 +217,7 @@ $Z 度量 Z_1 $，则会得到一个结果 $r _ {\textrm{joint}} = $0，表示 $
 <xref:Microsoft.Quantum.Intrinsic.M>操作对单个 qubit 上的 Pauli $Z $ 运算符进行度量，并具有签名 `(Qubit => Result)` 。
 `M(q)` 等效于 `Measure([PauliZ], [q])`。
 
-<xref:microsoft.quantum.measurement.MultiM>*分别* 对每个 Qubits 数组的 Pauli $Z $ operator 进行度量，返回 *array* `Result` 为每个 qubit 获取的值的数组。
+<xref:Microsoft.Quantum.Measurement.MultiM>*分别* 对每个 Qubits 数组的 Pauli $Z $ operator 进行度量，返回 `Result` 为每个 qubit 获取的值的数组。
 在某些情况下，这可以进行优化。 它 (签名 `Qubit[] => Result[])` 。
 `MultiM(qs)` 等效于：
 

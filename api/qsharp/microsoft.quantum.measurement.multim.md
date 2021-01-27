@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Measurement.MultiM
 title: MultiM 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Measurement
 qsharp.name: MultiM
 qsharp.summary: Measures each qubit in a given array in the standard basis.
-ms.openlocfilehash: c39601f3e8b272b9341f1789b4c8e7230cb4182c
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b7f4083bde84c204611ea33746ae351a3e27b946
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96226989"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856996"
 ---
 # <a name="multim-operation"></a>MultiM 操作
 

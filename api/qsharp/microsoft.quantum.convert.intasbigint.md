@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Convert.IntAsBigInt
 title: IntAsBigInt 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: IntAsBigInt
 qsharp.summary: Converts a given integer to an equivalent big integer.
-ms.openlocfilehash: 80fe4f0def684b7e2f8c364f2ef76801998a35d1
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: da78d6cc1111d48bab8d431114b6695e520a7a3f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96214120"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850172"
 ---
 # <a name="intasbigint-function"></a>IntAsBigInt 函数
 

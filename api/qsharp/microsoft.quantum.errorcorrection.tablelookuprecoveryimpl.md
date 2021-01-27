@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.TableLookupRecoveryImpl
 title: TableLookupRecoveryImpl 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: TableLookupRecoveryImpl
 qsharp.summary: ''
-ms.openlocfilehash: 8b6528a40052dc62773f0991c145450751d2dd53
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0d4318b591272a9d2d9560744529b0b7d579d8fe
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96200282"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850040"
 ---
 # <a name="tablelookuprecoveryimpl-function"></a>TableLookupRecoveryImpl 函数
 

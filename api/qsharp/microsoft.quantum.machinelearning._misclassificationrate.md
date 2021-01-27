@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning._MisclassificationRate
 title: _MisclassificationRate 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: _MisclassificationRate
 qsharp.summary: ''
-ms.openlocfilehash: e6afb95c51fd8bbc5964992ae75c68e3f67c2802
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 32139b6103de23ba5e7c983178eb1920bb976314
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96212199"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846159"
 ---
 # <a name="_misclassificationrate-function"></a>_MisclassificationRate 函数
 
