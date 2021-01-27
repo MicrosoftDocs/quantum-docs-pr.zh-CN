@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Testing.AssertOperationsEqualReferenced
 title: AssertOperationsEqualReferenced 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Extensions.Testing
@@ -16,12 +16,12 @@ qsharp.summary: >-
   > Please use @"microsoft.quantum.diagnostics.assertoperationsequalreferenced".
 
   > Note that the order of the arguments to this operation has changed.
-ms.openlocfilehash: e6c5d4b0005cc0cf1fb62a52b4a75a0370dfa293
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1f4d98006677dc532d45ffb797fe0a8e05496640
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96212505"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98820094"
 ---
 # <a name="assertoperationsequalreferenced-operation"></a>AssertOperationsEqualReferenced 操作
 

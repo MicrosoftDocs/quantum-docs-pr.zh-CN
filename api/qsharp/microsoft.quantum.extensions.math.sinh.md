@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.Sinh
 title: Sinh 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.sinh".
-ms.openlocfilehash: 1d5fa04758793da5cead3355f449588293bcd78b
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7edf3528b88f964b5325fe269136c4c127ff4f57
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96212675"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98821209"
 ---
 # <a name="sinh-function"></a>Sinh 函数
 
