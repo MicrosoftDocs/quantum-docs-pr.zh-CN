@@ -4,17 +4,17 @@ description: 了解 Microsoft QDK distinct 输入检查器，该检查器使用�
 author: vadym-kl
 ms.author: vadym
 ms.date: 06/25/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.machines.qc-trace-simulator.distinct-inputs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: bcb0bc92a546279496d27ad9b8c5f943ac133e2a
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 8076a705b1960ae8e23be4cea87e613329a24f77
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833466"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858648"
 ---
 # <a name="quantum-trace-simulator-distinct-inputs-checker"></a>量程跟踪模拟器：不同的输入检查器
 
@@ -50,7 +50,7 @@ operation ApplyWithNonDistinctInputs() : Unit {
 }
 ```
 
-请注意， `op1` 和 `op2` 均使用部分应用程序获取，并共享 qubit。 `ApplyBoth`在此示例中调用时，操作的结果取决于 `op1` 预期发生的顺序和 `op2` 内部 `ApplyBoth` 。 启用 distinct 输入检查器时，它会检测到这种情况并引发 `DistinctInputsCheckerException` 。 有关详细信息，请参阅 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.DistinctInputsCheckerException> Q# API 库中的。
+请注意， `op1` 和 `op2` 均使用部分应用程序获取，并共享 qubit。 `ApplyBoth`在此示例中调用时，操作的结果取决于 `op1` 预期发生的顺序和 `op2` 内部 `ApplyBoth` 。 启用 distinct 输入检查器时，它会检测到这种情况并引发 `DistinctInputsCheckerException` 。 有关详细信息，请参阅 <xref:Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.DistinctInputsCheckerException> Q# API 库中的。
 
 ## <a name="invoking-the-distinct-inputs-checker"></a>调用 distinct 输入检查器
 
@@ -88,9 +88,9 @@ namespace Quantum.MyProgram
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - 量程开发工具包 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro) 概述。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>API 参考。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration>API 参考。
-- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.DistinctInputsCheckerException>API 参考。
+- <xref:Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.DistinctInputsCheckerException>API 参考。

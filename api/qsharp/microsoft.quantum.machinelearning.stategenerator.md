@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.StateGenerator
 title: StateGenerator 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: StateGenerator
 qsharp.summary: Describes an operation that prepares a given input to a sequential classifier.
-ms.openlocfilehash: 5c9643f5c917ff3cb25fa8c046856b03cc287edd
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b4f6c3ca28e2976b6a0d58f4ef25ea943de9811e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96211553"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854878"
 ---
 # <a name="stategenerator-user-defined-type"></a>StateGenerator 用户定义的类型
 

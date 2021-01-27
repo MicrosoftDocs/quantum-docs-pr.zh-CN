@@ -4,17 +4,17 @@ description: 演练一个示例 Q# 程序，该程序估算分子 hydrogen 的�
 author: guanghaolow
 ms.author: gulow
 ms.date: 07/02/2020
-ms.topic: article-type-from-white-list
+ms.topic: sample
 uid: microsoft.quantum.chemistry.examples.energyestimate
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 81fba0c52c854d61f9143659795fb4d3c3cee8b9
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 60935e7c1e8c674fab3a546c1f110f589d2e6b77
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92691524"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98855045"
 ---
 # <a name="obtaining-energy-level-estimates"></a>获取能量级别估算
 估计能耗级别的值是量程化学的主要应用程序之一。 本文概述了如何针对分子 hydrogen 的规范示例执行此操作。 此部分中引用的示例位于 [`MolecularHydrogen`](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogen) 化学示例存储库中。 演示中绘制出了一个更直观的示例 [`MolecularHydrogenGUI`](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogenGUI) 。

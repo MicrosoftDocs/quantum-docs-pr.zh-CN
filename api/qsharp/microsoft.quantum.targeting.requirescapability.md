@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Targeting.RequiresCapability
 title: RequiresCapability 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Targeting
 qsharp.name: RequiresCapability
 qsharp.summary: Compiler-recognized attribute used to mark a callable with the runtime capabilities it requires.
-ms.openlocfilehash: 0d9e4eb294b3ce91058c204d5dba37ea29b4ac28
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 5e0db49d6f73398ac36003eb0f44e3a6520b7f1e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96231001"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98855153"
 ---
 # <a name="requirescapability-user-defined-type"></a>RequiresCapability 用户定义的类型
 

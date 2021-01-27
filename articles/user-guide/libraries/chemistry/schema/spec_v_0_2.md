@@ -4,17 +4,17 @@ description: 详细说明了适用于 Microsoft 量程化学库的 Broombridge �
 author: guanghaolow
 ms.author: gulow
 ms.date: 05/28/2019
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.libraries.chemistry.schema.spec_v_0_2
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 851d10c0137deecf8e861aad30b5e08a9ae61754
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 8d26b56d88f365144510692466bfffc7feb71d88
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833767"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854060"
 ---
 # <a name="broombridge-specification-v02"></a>Broombridge 规范 v 0。2 #
 
@@ -47,7 +47,7 @@ Broombridge 文档必须序列化为表示 JSON 对象的 [YAML 1.2 文档](http
 
 本部分进行了规范。
 
-_数量对象_是 JSON 对象，并且必须具有一个属性， `units` 其值为表1中列出的允许值之一。
+_数量对象_ 是 JSON 对象，并且必须具有一个属性， `units` 其值为表1中列出的允许值之一。
 
 如果某个数量对象除了其属性之外有一个属性，则它是一个 _简单的数量对象_ `value` `units` 。
 属性的值 `value` 必须是数字。
@@ -171,7 +171,7 @@ $$
 每个问题说明对象都必须具有一个属性 `energy_offet` ，其值为简单数量对象。
 > 纪录 `coulomb_repulsion` 和一起添加的值将 `energy_offet` 捕获 Hamiltonian 的标识术语。
 
-##### <a name="one-electron-integrals-object"></a>Electron 整型对象 #####
+##### <a name="one-electron-integrals-object"></a>One-Electron 整型对象 #####
 
 本部分进行了规范。
 
@@ -201,7 +201,7 @@ one_electron_integrals:     # required
 > Broombridge 使用基于1的索引。
 
 
-##### <a name="two-electron-integrals-object"></a>Electron 整型对象 #####
+##### <a name="two-electron-integrals-object"></a>Two-Electron 整型对象 #####
 
 本部分进行了规范。
 

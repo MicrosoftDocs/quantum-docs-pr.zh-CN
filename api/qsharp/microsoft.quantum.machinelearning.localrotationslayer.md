@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.LocalRotationsLayer
 title: LocalRotationsLayer 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: LocalRotationsLayer
 qsharp.summary: Returns an array of uncontrolled (single-qubit) rotations along a given axis, with one rotation for each qubit in a register, parameterized by distinct model parameters.
-ms.openlocfilehash: 1549f24427f19bacbadf72e00c1c0181b64bcb73
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a3658bbf62068c9eea2d9b763cbff5596f426135
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96211723"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854979"
 ---
 # <a name="localrotationslayer-function"></a>LocalRotationsLayer 函数
 

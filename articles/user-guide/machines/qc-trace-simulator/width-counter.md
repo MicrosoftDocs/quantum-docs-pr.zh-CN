@@ -4,17 +4,17 @@ description: 了解 Microsoft QDK width 计数器，该计数器使用量程跟�
 author: vadym-kl
 ms.author: vadym
 ms.date: 06/25/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.machines.qc-trace-simulator.width-counter
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: e54e92cc4a76ce9f9c5aead84f2b64320d6b4f1c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: e9a526ee1440544aace922bd83c6ea39cb83c1ae
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92691130"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858576"
 ---
 # <a name="quantum-trace-simulator-width-counter"></a>量程跟踪模拟器：宽度计数器
 
@@ -22,7 +22,7 @@ Width 计数器是量程开发工具包 [量程跟踪模拟器](xref:microsoft.q
 
 ## <a name="invoking-the-width-counter"></a>调用 width 计数器
 
-若要运行具有 width 计数器的量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将 `UseWidthCounter` 属性设置为 **true** ，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。 
+若要运行具有 width 计数器的量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将 `UseWidthCounter` 属性设置为 **true**，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。 
 
 ```csharp
 var config = new QCTraceSimulatorConfiguration();
@@ -44,7 +44,7 @@ operation ApplyMultiControlledX( numberOfQubits : Int ) : Unit {
 }
 ```
 
-乘法控制 <xref:Microsoft.Quantum.Intrinsic.X> 运算的作用是总共5个 qubits，分配两个 [辅助 qubits](xref:microsoft.quantum.glossary#ancilla)，且输入宽度为 **5** 。 使用以下 c # 程序来验证计数：
+乘法控制 <xref:Microsoft.Quantum.Intrinsic.X> 运算的作用是总共5个 qubits，分配两个 [辅助 qubits](xref:microsoft.quantum.glossary#ancilla)，且输入宽度为 **5**。 使用以下 c # 程序来验证计数：
 
 ```csharp 
 var config = new QCTraceSimulatorConfiguration();

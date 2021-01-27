@@ -4,17 +4,17 @@ description: 了解 Microsoft QDK 失效 qubits use 检查器，它使用量程�
 author: vadym-kl
 ms.author: vadym
 ms.date: 06/25/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.machines.qc-trace-simulator.invalidated-qubits
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 18371b3798d0eaa12d4e7107f58f44379594619f
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 9014097ace7c9f19d93a92372da40f71fa7f87ee
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835989"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858621"
 ---
 # <a name="quantum-trace-simulator-invalidated-qubits-use-checker"></a>量程跟踪模拟器： qubits use 检查器失效
 
@@ -34,7 +34,7 @@ operation UseReleasedQubit() : Unit {
 }
 ```
 
-将 `H` 操作应用到时 `q[0]` ，它会指向已释放的 qubit，这可能会导致未定义的行为。 当启用了无效的 Qubits Use 检查器时， `InvalidatedQubitsUseCheckerException` 如果程序将操作应用于已发布的 qubit，则会引发异常。 有关详细信息，请参阅 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.InvalidatedQubitsUseCheckerException>。
+将 `H` 操作应用到时 `q[0]` ，它会指向已释放的 qubit，这可能会导致未定义的行为。 当启用了无效的 Qubits Use 检查器时， `InvalidatedQubitsUseCheckerException` 如果程序将操作应用于已发布的 qubit，则会引发异常。 有关详细信息，请参阅 <xref:Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.InvalidatedQubitsUseCheckerException>。
 
 ## <a name="invoking-the-invalidated-qubits-use-checker"></a>调用无效的 qubits use 检查器
 
@@ -73,9 +73,9 @@ namespace Quantum.MyProgram
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - 量程开发工具包 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro) 概述。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator>API 参考。
 - <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration>API 参考。
-- <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.InvalidatedQubitsUseCheckerException>API 参考。
+- <xref:Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.InvalidatedQubitsUseCheckerException>API 参考。

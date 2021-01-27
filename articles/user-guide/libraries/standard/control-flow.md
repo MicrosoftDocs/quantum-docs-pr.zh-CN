@@ -5,16 +5,16 @@ author: QuantumWriter
 uid: microsoft.quantum.concepts.control-flow
 ms.author: martinro
 ms.date: 12/11/2017
-ms.topic: article
+ms.topic: conceptual
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: ad107f5c65a4bf368d12d30e4a72786f2076205c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8f4b69250ed49bd56c3066d5cd40db4b8abfc9cb
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92690860"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858704"
 ---
 # <a name="higher-order-control-flow"></a>Higher-Order 控制流 #
 
@@ -162,9 +162,9 @@ U(1, time / Float(nSteps), target);
 // ...
 ```
 
-此时，我们现在可以了解 Trotter – Suzuki 扩展， *根本不需引用量程机制* 。
+此时，我们现在可以了解 Trotter – Suzuki 扩展， *根本不需引用量程机制*。
 此扩展实际上是一个由 $ \eqref{eq： trotter-suzuki-0} $ 使用的特殊迭代模式。
-此迭代模式的实现方式 <xref:Microsoft.Quantum.Canon.DecomposedIntoTimestepsCA> 如下：
+此迭代模式的实现方式 <xref:Microsoft.Quantum.Canon.DecomposedIntoTimeStepsCA> 如下：
 
 ```qsharp
 // The 2 indicates how many terms we need to decompose,

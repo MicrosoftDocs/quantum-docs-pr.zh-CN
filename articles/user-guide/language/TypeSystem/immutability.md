@@ -4,17 +4,17 @@ description: 了解不可变性和 Q# 类型。
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.immutability
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a66f3a765a708a98196d17161cadf68164a83618
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: b8e93a60d4d2f626d83a01015894736fb61dfa69
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96233099"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98855062"
 ---
 <!---
 # Immutability in Q#

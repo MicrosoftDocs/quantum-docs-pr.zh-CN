@@ -4,17 +4,17 @@ description: 了解如何在量程系统上使用机器学习
 author: alexeib2
 ms.author: alexeib
 ms.date: 11/22/2019
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.libraries.machine-learning.intro
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 9f7f892fb2b76432942c86163497c22f0c73d51f
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: e2f4a4a63eef40474856426b3b29652b5d3053b2
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833805"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854030"
 ---
 # <a name="introduction-to-quantum-machine-learning"></a>量程机器学习简介
 
@@ -30,7 +30,7 @@ ms.locfileid: "90833805"
 类似于传统方法，量程分类包含三个步骤：
 - 数据编码
 - 分类器状态的准备工作
-- 由于度量值的概率，需要多次重复这三个步骤。 分类器状态的编码和计算都是通过 *量程线路*来完成的。 尽管编码线路通常是数据驱动的和无参数的，但分类器线路包含一组足够的 learnable 参数。 
+- 由于度量值的概率，需要多次重复这三个步骤。 分类器状态的编码和计算都是通过 *量程线路* 来完成的。 尽管编码线路通常是数据驱动的和无参数的，但分类器线路包含一组足够的 learnable 参数。 
 
 在建议的解决方案中，分类器线路由单 qubit 旋转和两 qubit 控制旋转组成。 此处的 learnable 参数为旋转角度。 对于量程计算，旋转和控制旋转入口已知为 *通用* ，这意味着任何单一权重矩阵都可以分解为包含此类入口的足够长的线路。
 
@@ -41,7 +41,7 @@ ms.locfileid: "90833805"
 
 可以将简单的量程分类器设计与传统的支持向量计算机进行比较 (SVM) 解决方案。 使用最佳内核窗体 $ \sum \ alpha_j k (x_j，x) $，其中 $k $ 是特定内核函数，SVM 的数据 $x 示例的推理。
 
-与此相反，量程分类器使用预测器 $p (y │ x，U ( \theta) # B3 = 〈 U ( \theta) x |M |U ( \theta) x 〉 $，这在精神上类似，但在技术上非常不同。 因此，在使用简单的幅度编码时，$p (y │ x，U ( \theta) # B3 $ 是 $x $ 的 amplitudes 中的二次窗体，但不再单独了解此窗体的系数;它们改为从线路的矩阵元素聚合 $U ( \theta) $，通常，learnable 参数 $ \theta $ 比向量 $x $ 的维度少很多。 通过在 $l $ $x $ 个副本上使用量程产品编码，可以将原始功能中 $p (y │ x、U ( \theta) # B3 $ 的多项式度提高到 $ 2 ^ l $。
+与此相反，量程分类器使用预测器 $p (y │ x，U ( \theta) # B3 = 〈 U ( \theta) x | M | U ( \theta) x 〉 $，这在精神中类似，但在技术上非常不同。 因此，在使用简单的幅度编码时，$p (y │ x，U ( \theta) # B3 $ 是 $x $ 的 amplitudes 中的二次窗体，但不再单独了解此窗体的系数;它们改为从线路的矩阵元素聚合 $U ( \theta) $，通常，learnable 参数 $ \theta $ 比向量 $x $ 的维度少很多。 通过在 $l $ $x $ 个副本上使用量程产品编码，可以将原始功能中 $p (y │ x、U ( \theta) # B3 $ 的多项式度提高到 $ 2 ^ l $。
 
 这种体系结构探讨了相对浅的线路，因此必须 *快速 entangling* 才能捕获所有范围内数据功能之间的所有相关性。 下图显示了最有用的快速 entangling 线路组件示例。 尽管具有此几何的线路仅包含 $3 n + 1 $ 入口，但它计算的单一权重矩阵可确保 $ 2 ^ n $ 功能之间的明显交叉对话。
 
@@ -69,7 +69,7 @@ ms.locfileid: "90833805"
 
 明确 $b $ 必须在时间间隔 $ (-0.5，+ 0.5) $ 才能有意义。
 
-如果根据 RULE1 为 $x $ $b 推断的标签与 $y $) ，则将定型事例 $ (x、y \in \mathcal{D} $ 视为 *错误分类* 。 Misclassifications 的总数是分类器的 *定型分数* （给定偏差 $b $）。 *最佳*分类器偏差 $b $ 将定型分数降到最低。 在给定预计算概率估计 $ \{ P (M = y_2 的情况下，很容易就会看到。U ( \theta) x) | (x，* ) \in\mathcal{D} \} $，通过最多 $ \ log_2 (| \mathcal{D} |) $ 个步骤，可以通过二进制搜索以 "间隔 $ (-0.5，+ 0.5) $" 来找到最佳分类符偏移量。
+如果根据 RULE1 为 $x $ $b 推断的标签与 $y $) ，则将定型事例 $ (x、y \in \mathcal{D} $ 视为 *错误分类* 。 Misclassifications 的总数是分类器的 *定型分数* （给定偏差 $b $）。 *最佳* 分类器偏差 $b $ 将定型分数降到最低。 在给定预计算概率估计 $ \{ P (M = y_2 的情况下，很容易就会看到。U ( \theta) x) | (x，* ) \in\mathcal{D} \} $，通过最多 $ \ log_2 (| \mathcal{D} |) $ 个步骤，可以通过二进制搜索以 "间隔 $ (-0.5，+ 0.5) $" 来找到最佳分类符偏移量。
 
 ### <a name="reference"></a>参考
 

@@ -8,6 +8,8 @@ functions:
   uid: Microsoft.Quantum.Synthesis.Extended
 - summary: '{-1,1}使用 fisher-yates 的方法计算使用编码的布尔函数的 Hadamard 转换'
   uid: Microsoft.Quantum.Synthesis.FastHadamardTransformed
+- summary: 对于每个2级单一计算 "翻转掩码"，表示应在应用相应的 qubits 门之前和之后进行反转。 为方便起见，在前面加上0。
+  uid: Microsoft.Quantum.Synthesis.FlipMasks
 - summary: 如果目标不是0，则将 MCMTMask 类型构造为单一数组，否则返回空数组。
   uid: Microsoft.Quantum.Synthesis.GateMask
 - summary: 计算多达两个 MCMT 掩码，以将 y 转换为 x。
@@ -20,6 +22,8 @@ functions:
   uid: Microsoft.Quantum.Synthesis.RMEncoding
 - summary: 根据变量的数量，根据变量的数量调整事实数据表新数组的长度返回 `2^numVars` ，可能要求 `table` 使用条目扩展大小 `false` 或将其截断到 `2^numVars` 元素。
   uid: Microsoft.Quantum.Synthesis.SizeAdjustedTruthTable
+- summary: 检查给定数组是否表示正方形矩阵。
+  uid: Microsoft.Quantum.Synthesis.SquareMatrixFact
 - summary: 计算用于合成排列的入口掩码。
   uid: Microsoft.Quantum.Synthesis.TBSMain
 - summary: 计算用于将永久状态 [x] 转换为 x 并更新当前排列的入口掩码。
@@ -34,6 +38,8 @@ functions:
   uid: Microsoft.Quantum.Synthesis.UpdatedPermutation
 - summary: 将0位插入到整数中
   uid: Microsoft.Quantum.Synthesis.WithZeroInsertedAt
+- summary: ''
+  uid: Microsoft.Quantum.Synthesis._TwoLevelDecomposition
 name: Microsoft.Quantum.Synthesis
 newtypes:
 - summary: 基于变量索引的分解过程中的状态
@@ -54,8 +60,15 @@ operations:
   uid: Microsoft.Quantum.Synthesis.ApplyPermutationUsingDecompositionWithVariableOrder
 - summary: 使用基于转换的合成，将 amplitudes Permutes 为量程状态。
   uid: Microsoft.Quantum.Synthesis.ApplyPermutationUsingTransformation
+- summary: 应用2x2 单一矩阵定义的 qubit 入口。
+  uid: Microsoft.Quantum.Synthesis.ApplySingleQubitUnitary
 - summary: ''
   uid: Microsoft.Quantum.Synthesis.ApplyTransposition
+- summary: >-
+    应用由 2 ^ n x 2 ^ n 单一矩阵定义的门。
+
+    如果矩阵不是单一的或大小不正确，则会失败。
+  uid: Microsoft.Quantum.Synthesis.ApplyUnitary
 - summary: '@"microsoft.quantum.intrinsic.x" `target` 如果布尔函数的 `func` 计算结果为 true （对于中的传统分配），则应用操作 `controlRegister` 。'
   uid: Microsoft.Quantum.Synthesis.ApplyXControlledOnTruthTable
 - summary: '@"microsoft.quantum.intrinsic.x" `target` 如果布尔函数的 `func` 计算结果为 true （对于中的传统分配），则应用操作 `controlRegister` 。'
@@ -63,9 +76,9 @@ operations:
 summary: 此命名空间包含基于排列和布尔函数的综合量程操作的函数和操作。
 uid: Microsoft.Quantum.Synthesis
 metadata:
-  ms.openlocfilehash: 2f92f4662252148ff0e093f5392f5f00f26b661f
-  ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+  ms.openlocfilehash: e238fdedcc931bb02c35591014d20b50b695b116
+  ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/27/2020
-  ms.locfileid: "92701209"
+  ms.lasthandoff: 01/26/2021
+  ms.locfileid: "98855191"

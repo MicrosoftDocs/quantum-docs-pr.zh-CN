@@ -4,17 +4,17 @@ description: 了解 Microsoft QDK Toffoli 模拟器，它是一种特殊用途�
 author: alan-geller
 ms.author: ageller
 ms.date: 6/25/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.machines.toffoli-simulator
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 036896a33fa02db671a5fd07421160df164bd41d
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 84b958912ab5116a3181c8eff4f331fc8394604c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92690789"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858564"
 ---
 # <a name="quantum-development-kit-qdk-toffoli-simulator"></a>量程开发工具包 (QDK) Toffoli 模拟器
 
@@ -67,7 +67,7 @@ dotnet run -s ToffoliSimulator
 Toffoli 模拟器支持：
 
 * `R` `Exp` 当结果操作等于或标识矩阵时，旋转和指数化 Paulis （如和） `X` 。
-* 度量和 [断言](xref:Microsoft.Quantum.Diagnostics.AssertMeasurement) 操作，但仅在 Pauli `Z` 基础中。 请注意，度量操作的概率始终为 **0** 或 **1** ;Toffoli 模拟器中没有随机性。
+* 度量和 [断言](xref:Microsoft.Quantum.Diagnostics.AssertMeasurement) 操作，但仅在 Pauli `Z` 基础中。 请注意，度量操作的概率始终为 **0** 或 **1**;Toffoli 模拟器中没有随机性。
 * `DumpMachine` 和 `DumpRegister` 函数。
 这两个函数输出 `Z` 每个 qubit 的当前基础状态，每行一个 qubit。
 

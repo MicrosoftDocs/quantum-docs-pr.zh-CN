@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Synthesis.WithZeroInsertedAt
 title: WithZeroInsertedAt 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Synthesis
 qsharp.name: WithZeroInsertedAt
 qsharp.summary: Insert a 0-bit into an integer
-ms.openlocfilehash: 414b703151b9152aa69709d9c28e68e5ae63506f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7d5f8838b6ae555524fb0e82e14f93e6c77e43d4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96228859"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98855199"
 ---
 # <a name="withzeroinsertedat-function"></a>WithZeroInsertedAt 函数
 
@@ -28,7 +28,7 @@ function WithZeroInsertedAt (position : Int, value : Int) : Int
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 此操作采用一个整数，插入0位 `position` ，并将更新后的值作为整数返回。  例如，在第2个 (¥10 _ = 1010_ $) 的位置2处插入0将 {10} {2} 返回数字 18 ($18 _ {10} = 10010_ {2} $) 。
 

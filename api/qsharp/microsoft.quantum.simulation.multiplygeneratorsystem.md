@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.MultiplyGeneratorSystem
 title: MultiplyGeneratorSystem 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: MultiplyGeneratorSystem
 qsharp.summary: Multiplies the coefficient of all terms in a `GeneratorSystem`.
-ms.openlocfilehash: effb9e3ca754f77bbe1ea0fb6ca30ae49e92d531
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: cebd08c86ad8a3793ba7d0e9ce241d7a1ef046ae
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96229148"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858498"
 ---
 # <a name="multiplygeneratorsystem-function"></a>MultiplyGeneratorSystem 函数
 

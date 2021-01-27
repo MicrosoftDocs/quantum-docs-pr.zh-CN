@@ -4,26 +4,26 @@ description: 了解如何安装 Microsoft 量程化学库，并将其与 NWChem 
 author: guanghaolow
 ms.author: gulow
 ms.date: 10/12/2018
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.chemistry.concepts.installation
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f1a7d1d041dab73980d8debc179d6c79acac6d33
-ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
+ms.openlocfilehash: 5d32544bbce527a376345023d5549308fd4e7c79
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90759793"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854084"
 ---
 # <a name="chemistry-library-installation"></a>化学库安装
 
-[ **MolecularHydrogen**示例](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogen)使用手动配置的分子输入数据。
+[ **MolecularHydrogen** 示例](https://github.com/microsoft/Quantum/tree/main/samples/chemistry/MolecularHydrogen)使用手动配置的分子输入数据。
 虽然这对小型示例而言很不错，但大规模的量程化学要求 Hamiltonians 或数十亿。
 此类 Hamiltonians 是由可扩展的计算化学包生成的，太大，无法手动导入。
 
 用于量程开发工具包的量程化学库旨在与计算化学包一起正常工作，尤其是在太平洋西北部国家实验室，环境分子科学实验室实验室 (EMSL) 开发的 [**NWChem**](http://www.nwchem-sw.org/) 计算化学平台。
-具体而言，Broombridge [ **Microsoft.Quantum.Chemistry**包](https://www.nuget.org/packages/Microsoft.Quantum.Chemistry)提供的工具可用于加载在[架构](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)中表示的量程化学模拟问题的实例，还支持在最新版本的 NWChem 中导出。
+具体而言，Broombridge [ 包](https://www.nuget.org/packages/Microsoft.Quantum.Chemistry)提供的工具可用于加载在[架构](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)中表示的量程化学模拟问题的实例，还支持在最新版本的 NWChem 中导出。
 
 量程开发工具包化学库还提供了一个命令行工具， `qdk-chem` 用于在旧式格式与 [Broombridge](xref:microsoft.quantum.libraries.chemistry.schema.broombridge)之间进行转换。
 

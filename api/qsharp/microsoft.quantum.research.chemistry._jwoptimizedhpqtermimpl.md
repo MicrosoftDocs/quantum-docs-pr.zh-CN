@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Research.Chemistry._JWOptimizedHpqTermImpl
 title: _JWOptimizedHpqTermImpl 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Research.Chemistry
 qsharp.name: _JWOptimizedHpqTermImpl
 qsharp.summary: Implementation step of `JWOptimizedHpqTerm_`.
-ms.openlocfilehash: 08a506e4eb9c2f11765d25137dd2a94f70c536cf
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 17c31ed52ea2b830a314266005ed65b692a92f2a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96225918"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854788"
 ---
 # <a name="_jwoptimizedhpqtermimpl-operation"></a>_JWOptimizedHpqTermImpl 操作
 

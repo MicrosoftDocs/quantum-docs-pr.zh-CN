@@ -4,16 +4,16 @@ description: 了解 Q# 用于在量程程序中捕获错误或错误的标准库
 author: cgranade
 uid: microsoft.quantum.libraries.diagnostics
 ms.author: chgranad
-ms.topic: article
+ms.topic: conceptual
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 1ab9b77c7536a1860064110810371d3a68e95b40
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: d13122187a24893d297cfdbb3ad4db03eb22ded0
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92690846"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858684"
 ---
 # <a name="diagnostics"></a>诊断 #
 
@@ -27,7 +27,7 @@ Q#标准库提供各种不同的方法来确保量程程序的正确性，如中
 默认情况下，这会将字符串写入控制台。
 与内插字符串一起使用， <xref:Microsoft.Quantum.Intrinsic.Message> 可以轻松地报告有关传统值的诊断信息：
 
-```Q#
+```qsharp
 let angle = Microsoft.Quantum.Math.PI() * 2.0 / 3.0;
 Message($"About to rotate by an angle of {angle}...");
 ```
@@ -45,9 +45,9 @@ Message($"About to rotate by an angle of {angle}...");
 
 ## <a name="facts-and-assertions"></a>事实和断言 ##
 
-如 [测试和调试](xref:microsoft.quantum.guide.testingdebugging)中所述，可以将具有签名的函数或操作 `Unit -> Unit` `Unit => Unit` 分别标记为 *单元测试* 。
+如 [测试和调试](xref:microsoft.quantum.guide.testingdebugging)中所述，可以将具有签名的函数或操作 `Unit -> Unit` `Unit => Unit` 分别标记为 *单元测试*。
 每个单元测试通常包含一个小型量程计划，以及一个或多个检查该程序的正确性的条件。
-这些条件可采用以下两种形式之一：检查输入的值或 _断言_ ，这些 _事实_ 检查作为输入传递的一个或多个 qubits 的状态。
+这些条件可采用以下两种形式之一：检查输入的值或 _断言_，这些 _事实_ 检查作为输入传递的一个或多个 qubits 的状态。
 
 例如， `EqualityFactI(1 + 1, 2, "1 + 1 != 2")` 表示 $1 + 1 = $2 的数学事实，而 `AssertQubit(One, qubit)` 表示测量 `qubit` 将返回具有确定性的条件的条件 `One` 。
 在前一种情况下，我们可以检查只给定其值的条件的正确性，而在后一种情况下，我们必须知道 qubit 的状态，以便评估断言。

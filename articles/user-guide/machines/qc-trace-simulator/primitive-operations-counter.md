@@ -4,17 +4,17 @@ description: 了解 Microsoft QDK 基元操作计数器，该计数器使用量�
 author: vadym-kl
 ms.author: vadym
 ms.date: 06/25/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.machines.qc-trace-simulator.primitive-counter
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: bf75eb94696a489a587316928bc3f33baa4a1785
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 19ea3c1f5a91c00de4d3e435318bf4cf8cdd83be
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92690959"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858608"
 ---
 # <a name="quantum-trace-simulator-primitive-operations-counter"></a>量程跟踪模拟器：基元操作计数器
 
@@ -24,7 +24,7 @@ ms.locfileid: "92690959"
 
 ## <a name="invoking-the-primitive-operation-counter"></a>调用基元操作计数器
 
-若要使用基元操作计数器运行量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将属性设置 `UsePrimitiveOperationsCounter` 为 **true** ，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。
+若要使用基元操作计数器运行量程跟踪模拟器，您必须创建一个 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulatorConfiguration> 实例，将属性设置 `UsePrimitiveOperationsCounter` 为 **true**，然后 <xref:Microsoft.Quantum.Simulation.Simulators.QCTraceSimulators.QCTraceSimulator> 使用作为参数创建新的实例 `QCTraceSimulatorConfiguration` 。
 
 ```csharp
 var config = new QCTraceSimulatorConfiguration();
@@ -34,7 +34,7 @@ var sim = new QCTraceSimulator(config);
 
 ## <a name="using-the-primitive-operation-counter-in-a-c-host-program"></a>在 c # 宿主程序中使用基元操作计数器
 
-本部分中的 c # 示例将根据 <xref:Microsoft.Quantum.Intrinsic.T> <xref:Microsoft.Quantum.Intrinsic.ccnot> 下面的示例代码，计算实现该操作所需的操作数 Q# ：
+本部分中的 c # 示例将根据 <xref:Microsoft.Quantum.Intrinsic.T> <xref:Microsoft.Quantum.Intrinsic.CCNOT> 下面的示例代码，计算实现该操作所需的操作数 Q# ：
 
 ```qsharp
 open Microsoft.Quantum.Intrinsic;

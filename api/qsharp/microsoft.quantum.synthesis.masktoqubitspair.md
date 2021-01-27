@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Synthesis.MaskToQubitsPair
 title: MaskToQubitsPair 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Synthesis
 qsharp.name: MaskToQubitsPair
 qsharp.summary: Transform mask of control and target bits to a pair of control qubits and target qubits
-ms.openlocfilehash: 493949b7e9f449ee6d5fca7c9f76ec4b2b0c37a3
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: fed196a2f2b64dae9f34f399477db14740af6f8a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96203003"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98855390"
 ---
 # <a name="masktoqubitspair-function"></a>MaskToQubitsPair 函数
 

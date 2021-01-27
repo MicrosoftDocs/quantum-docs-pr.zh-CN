@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.PlusL
 title: PlusL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: PlusL
 qsharp.summary: Returns the sum of two inputs.
-ms.openlocfilehash: 7622ae95fa7ef33041bbc5173f95f5b9507d52ae
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 101834551439cf4fd3acf9ef303b16dc2d0f3eef
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96227567"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854866"
 ---
 # <a name="plusl-function"></a>PlusL 函数
 

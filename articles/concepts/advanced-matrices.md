@@ -1,6 +1,6 @@
 ---
 标题：高级矩阵概念说明：了解本征向量、本征值和 matrix 指数，这是用于描述和模拟量程算法的基本工具。
-author： QuantumWriter uid： benbra-advanced： v-ms。 date： 12/11/2017 ms. 主题：项目不是：
+author： QuantumWriter uid： benbra-advanced： v-ms。 date： 12/11/2017 ms. 主题：概念非 loc：
 - "Q#"
 - "$$v"
 - "$$"
@@ -93,7 +93,7 @@ author： QuantumWriter uid： benbra-advanced： v-ms。 date： 12/11/2017 ms.
 
 假设 $ M 是 $ 正方形矩阵， $ v 是 $ 不是全零向量的向量 (即，其所有条目都等于 $ 0) 的矢量 $ 。
 
-假设 $ v $ 是 M 的 [*eigenvector*](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors) ，  $ 如果 $ 将 $ Mv = cv $ 用于某个数字 $ c $ 。 我们说 $ c $ 是对应[*eigenvalue*](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors)于 eigenvector v 的 eigenvalue $ $ 。 通常 $ ，矩阵 M $ 可以将矢量转换为任何其他向量，但 eigenvector 是特殊的，因为它会保持不变，但会乘以数字。 请注意，如果 $ v $ 是带有 eigenvalue c 的 eigenvector $ $ ，则 $ av $ 也是 $ $ 具有相同 eigenvalue 的任何非零) 的 eigenvector (。
+假设 $ v $ 是 M 的 [*eigenvector*](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors) ，  $ 如果 $ 将 $ Mv = cv $ 用于某个数字 $ c $ 。 我们说 $ c $ 是对应[](https://en.wikipedia.org/wiki/Eigenvalues_and_eigenvectors)于 eigenvector v 的 eigenvalue $ $ 。 通常 $ ，矩阵 M $ 可以将矢量转换为任何其他向量，但 eigenvector 是特殊的，因为它会保持不变，但会乘以数字。 请注意，如果 $ v $ 是带有 eigenvalue c 的 eigenvector $ $ ，则 $ av $ 也是 $ $ 具有相同 eigenvalue 的任何非零) 的 eigenvector (。
 
 例如，对于恒等矩阵，每个向量 $ v $ 均为 eigenvalue 1 的 $ eigenvector $ 。
 
