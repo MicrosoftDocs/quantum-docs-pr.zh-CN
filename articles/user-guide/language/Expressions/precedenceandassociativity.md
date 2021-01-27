@@ -4,17 +4,17 @@ description: 了解中的运算符优先级 Q# 。
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.precedenceandassociativity
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 6813330d46ae105c3da70086ba28c534e0cb297d
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: 9f78a8bd8a1806c4493ee4fc391ab0fc5d21fb3c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96233197"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98856304"
 ---
 <!---
 # Operator precedence in Q#
