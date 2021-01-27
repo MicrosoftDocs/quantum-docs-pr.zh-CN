@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.Exp
 title: Exp 运算
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Applies the exponential of a multi-qubit Pauli operator.
 
   \begin{align} e^{i \theta [P_0 \otimes P_1 \cdots P_{N-1}]}, \end{align} where $P_i$ is the $i$th element of `paulis`, and where $N = $`Length(paulis)`.
-ms.openlocfilehash: 2eea29ec08260ea9cee1bafde80a0942e06f5abc
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7aa6974e83e917125b63ef91fb5c3b1238f6e856
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96212403"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98819011"
 ---
 # <a name="exp-operation"></a>Exp 运算
 

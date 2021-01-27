@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.RFrac
 title: RFrac 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -12,12 +12,12 @@ qsharp.summary: >-
   \begin{align} R_{\mu}(n, k) \mathrel{:=} e^{i \pi n \sigma_{\mu} / 2^k}, \end{align} where $\mu \in \{I, X, Y, Z\}$.
 
   > [!WARNING] > This operation uses the **opposite** sign convention from > @"microsoft.quantum.intrinsic.r".
-ms.openlocfilehash: bd182ea50d747e07bb0f8051c5dbc128b7ff7674
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c80bb2b394e83c1133ed6ddc1640a3d88563ca6e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198633"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98818481"
 ---
 # <a name="rfrac-operation"></a>RFrac 操作
 

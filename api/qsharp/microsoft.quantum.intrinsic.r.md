@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.R
 title: R 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Applies a rotation about the given Pauli axis.
 
   \begin{align} R_{\mu}(\theta) \mathrel{:=} e^{-i \theta \sigma_{\mu} / 2}, \end{align} where $\mu \in \{I, X, Y, Z\}$.
-ms.openlocfilehash: 89aa5b2867068d4352a0b9550e8d22aa77439111
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1df4b1197e885e479339e542e8c1ffaeb392543d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199022"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98818716"
 ---
 # <a name="r-operation"></a>R 操作
 

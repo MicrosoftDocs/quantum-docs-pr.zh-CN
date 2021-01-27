@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.R1Frac
 title: R1Frac 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -12,12 +12,12 @@ qsharp.summary: >-
   \begin{align} R_1(n, k) \mathrel{:=} \operatorname{diag}(1, e^{i \pi k / 2^n}). \end{align}
 
   > [!WARNING] > This operation uses the **opposite** sign convention from > @"microsoft.quantum.intrinsic.r", and does not include the > factor of $1/ 2$ included by @"microsoft.quantum.intrinsic.r1".
-ms.openlocfilehash: eb2dd8750ed5ad9fc75ca24bb4c8ef36298f69f4
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: bfae01d11524f64ceebd53aa8544d7ea48c40f31
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198769"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98818686"
 ---
 # <a name="r1frac-operation"></a>R1Frac 操作
 

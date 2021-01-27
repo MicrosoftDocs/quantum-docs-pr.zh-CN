@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.Y
 title: Y 运算
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Applies the Pauli $Y$ gate.
 
   \begin{align} \sigma_y \mathrel{:=} \begin{bmatrix} 0 & -i \\\\ i & 0 \end{bmatrix}. \end{align}
-ms.openlocfilehash: 0a1908585ad9d9d4416ab7158be7335a5f2719b7
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 241a8bd4ffac3d723c9ac94aa9ecaab6823db9e8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198514"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98817327"
 ---
 # <a name="y-operation"></a>Y 运算
 

@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.Z
 title: Z 运算
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Applies the Pauli $Z$ gate.
 
   \begin{align} \sigma_z \mathrel{:=} \begin{bmatrix} 1 & 0 \\\\ 0 & -1 \end{bmatrix}. \end{align}
-ms.openlocfilehash: 5bfb435a1e7a7b90da807e7c6edb8358fb006e34
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 02c7cb4dfd13fb5be12e81188b4f388b70fb3241
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198429"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98817315"
 ---
 # <a name="z-operation"></a>Z 运算
 
