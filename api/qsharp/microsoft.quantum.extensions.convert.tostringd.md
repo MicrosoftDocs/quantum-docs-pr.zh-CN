@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Convert.ToStringD
 title: ToStringD 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Convert
@@ -14,24 +14,24 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.convert.doubleasstring".
-ms.openlocfilehash: 58725eceb6cee8414099b8677818ee7ca2427273
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 3617ee6dcc6e90c87a38393275e6fe9a10a253c1
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199942"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849879"
 ---
-# <a name="tostringd-function"></a><span data-ttu-id="4bbaa-102">ToStringD 函数</span><span class="sxs-lookup"><span data-stu-id="4bbaa-102">ToStringD function</span></span>
+# <a name="tostringd-function"></a><span data-ttu-id="d4213-102">ToStringD 函数</span><span class="sxs-lookup"><span data-stu-id="d4213-102">ToStringD function</span></span>
 
-<span data-ttu-id="4bbaa-103">命名空间： [Microsoft.](xref:Microsoft.Quantum.Extensions.Convert)</span><span class="sxs-lookup"><span data-stu-id="4bbaa-103">Namespace: [Microsoft.Quantum.Extensions.Convert](xref:Microsoft.Quantum.Extensions.Convert)</span></span>
+<span data-ttu-id="d4213-103">命名空间： [Microsoft.](xref:Microsoft.Quantum.Extensions.Convert)</span><span class="sxs-lookup"><span data-stu-id="d4213-103">Namespace: [Microsoft.Quantum.Extensions.Convert](xref:Microsoft.Quantum.Extensions.Convert)</span></span>
 
-<span data-ttu-id="4bbaa-104">包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)</span><span class="sxs-lookup"><span data-stu-id="4bbaa-104">Package: [Microsoft.Quantum.QSharp.Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)</span></span>
+<span data-ttu-id="d4213-104">包： [QSharp。](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)</span><span class="sxs-lookup"><span data-stu-id="d4213-104">Package: [Microsoft.Quantum.QSharp.Core](https://nuget.org/packages/Microsoft.Quantum.QSharp.Core)</span></span>
 
 
 > [!WARNING]
-> <span data-ttu-id="4bbaa-105">ToStringD 已被弃用。</span><span class="sxs-lookup"><span data-stu-id="4bbaa-105">ToStringD has been deprecated.</span></span> <span data-ttu-id="4bbaa-106">请改用 <xref:Microsoft.Quantum.Convert.DoubleAsString>。</span><span class="sxs-lookup"><span data-stu-id="4bbaa-106">Please use <xref:Microsoft.Quantum.Convert.DoubleAsString> instead.</span></span>
+> <span data-ttu-id="d4213-105">ToStringD 已被弃用。</span><span class="sxs-lookup"><span data-stu-id="d4213-105">ToStringD has been deprecated.</span></span> <span data-ttu-id="d4213-106">请改用 <xref:Microsoft.Quantum.Convert.DoubleAsString>。</span><span class="sxs-lookup"><span data-stu-id="d4213-106">Please use <xref:Microsoft.Quantum.Convert.DoubleAsString> instead.</span></span>
 >
-> <span data-ttu-id="4bbaa-107">请使用 @"microsoft.quantum.convert.doubleasstring"。</span><span class="sxs-lookup"><span data-stu-id="4bbaa-107">Please use @"microsoft.quantum.convert.doubleasstring".</span></span>
+> <span data-ttu-id="d4213-107">请使用 @"microsoft.quantum.convert.doubleasstring"。</span><span class="sxs-lookup"><span data-stu-id="d4213-107">Please use @"microsoft.quantum.convert.doubleasstring".</span></span>
 
 
 
@@ -40,13 +40,13 @@ function ToStringD (a : Double) : String
 ```
 
 
-## <a name="input"></a><span data-ttu-id="4bbaa-108">输入</span><span class="sxs-lookup"><span data-stu-id="4bbaa-108">Input</span></span>
+## <a name="input"></a><span data-ttu-id="d4213-108">输入</span><span class="sxs-lookup"><span data-stu-id="d4213-108">Input</span></span>
 
-### <a name="a--double"></a><span data-ttu-id="4bbaa-109">答： [Double](xref:microsoft.quantum.lang-ref.double)</span><span class="sxs-lookup"><span data-stu-id="4bbaa-109">a : [Double](xref:microsoft.quantum.lang-ref.double)</span></span>
-
-
+### <a name="a--double"></a><span data-ttu-id="d4213-109">答： [Double](xref:microsoft.quantum.lang-ref.double)</span><span class="sxs-lookup"><span data-stu-id="d4213-109">a : [Double](xref:microsoft.quantum.lang-ref.double)</span></span>
 
 
 
-## <a name="output--string"></a><span data-ttu-id="4bbaa-110">Output： [字符串](xref:microsoft.quantum.lang-ref.string)</span><span class="sxs-lookup"><span data-stu-id="4bbaa-110">Output : [String](xref:microsoft.quantum.lang-ref.string)</span></span>
+
+
+## <a name="output--string"></a><span data-ttu-id="d4213-110">Output： [字符串](xref:microsoft.quantum.lang-ref.string)</span><span class="sxs-lookup"><span data-stu-id="d4213-110">Output : [String](xref:microsoft.quantum.lang-ref.string)</span></span>
 
