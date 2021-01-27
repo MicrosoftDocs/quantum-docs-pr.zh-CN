@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ReversedOpLE
 title: ReversedOpLE 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ReversedOpLE
 qsharp.summary: Given an operation that takes a little-endian input, returns a new operation that takes a big-endian input.
-ms.openlocfilehash: 91b98663028b8a1d54c546e70d8bfe603d71d041
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: d02817e5372b841f3ab633cafa22af603c5310c2
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96222246"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846396"
 ---
 # <a name="reversedople-function"></a>ReversedOpLE 函数
 

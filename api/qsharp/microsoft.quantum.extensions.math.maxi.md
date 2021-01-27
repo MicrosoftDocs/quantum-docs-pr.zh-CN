@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.MaxI
 title: MaxI 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.maxi".
-ms.openlocfilehash: 2796fe1075a531a7706d37dcb7f7682c81c53f80
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 20172ae48c8574588ce23d7a447019017bee81a7
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199551"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849679"
 ---
 # <a name="maxi-function"></a>MaxI 函数
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ReversedOpLEC
 title: ReversedOpLEC 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ReversedOpLEC
 qsharp.summary: Given an operation that takes a little-endian input, returns a new operation that takes a big-endian input.
-ms.openlocfilehash: 8c91391691b23786df02ae2a35264b578dccad41
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 2dc6a596970f909af9c329dbe7002c165854cfec
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96222076"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846381"
 ---
 # <a name="reversedoplec-function"></a>ReversedOpLEC 函数
 

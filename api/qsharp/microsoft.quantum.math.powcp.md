@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.PowCP
 title: PowCP 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: PowCP
 qsharp.summary: Returns a number raised to a given power.
-ms.openlocfilehash: 185d40acff6027a775130faaff64582c58384a90
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 573eb4ecab62ad117787e0d248f00c7e51f7f98b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96194638"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847043"
 ---
 # <a name="powcp-function"></a>PowCP 函数
 

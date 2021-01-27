@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.Log
 title: Log 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: Log
 qsharp.summary: Returns the natural (base $e$) logarithm of a specified number.
-ms.openlocfilehash: f718a0ea5fc7c7bce7862579145936d5a1902b90
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0ef79f7bb4318aeed9841bd4b13ab7359269a62a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96228111"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846867"
 ---
 # <a name="log-function"></a>Log 函数
 

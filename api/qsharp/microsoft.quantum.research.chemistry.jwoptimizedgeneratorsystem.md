@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Research.Chemistry.JWOptimizedGeneratorSystem
 title: JWOptimizedGeneratorSystem 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Research.Chemistry
 qsharp.name: JWOptimizedGeneratorSystem
 qsharp.summary: Converts a Hamiltonian described by `JWOptimizedHTerms` to a `GeneratorSystem` expressed in terms of the `GeneratorIndex` convention defined in this file.
-ms.openlocfilehash: 321b58ba4a458ad53579d2480258a92ba48de169
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 13e3386a612b238c29a9e3368eed8628e8ed9b66
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96225697"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847020"
 ---
 # <a name="jwoptimizedgeneratorsystem-function"></a>JWOptimizedGeneratorSystem 函数
 

@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.ExpFrac
 title: ExpFrac 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Applies the exponential of a multi-qubit Pauli operator with an argument given by a dyadic fraction.
 
   \begin{align} e^{i \pi k [P_0 \otimes P_1 \cdots P_{N-1}] / 2^n}, \end{align} where $P_i$ is the $i$th element of `paulis`, and where $N = $`Length(paulis)`.
-ms.openlocfilehash: 8ccea068dd61aaf8c1ba384969adef5644e8401e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 6634caff164c841876fb53e79c3f93254a7d624c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198989"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849421"
 ---
 # <a name="expfrac-operation"></a>ExpFrac 操作
 

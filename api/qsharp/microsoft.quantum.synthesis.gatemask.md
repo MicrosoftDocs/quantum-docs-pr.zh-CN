@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Synthesis.GateMask
 title: GateMask 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Synthesis
 qsharp.name: GateMask
 qsharp.summary: Constructs a MCMTMask type as a singleton array if targets is not 0, otherwise returns an empty array.
-ms.openlocfilehash: f0716e6986fb2e9c8aab26fbfe2098058a81829f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f8c8738c1a7dff0435c8391254fdab1d3f6aebf8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96203104"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98855442"
 ---
 # <a name="gatemask-function"></a>GateMask 函数
 

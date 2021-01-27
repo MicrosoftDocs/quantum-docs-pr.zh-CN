@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ReversedOpLEA
 title: ReversedOpLEA 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ReversedOpLEA
 qsharp.summary: Given an operation that takes a little-endian input, returns a new operation that takes a big-endian input.
-ms.openlocfilehash: 71b6b87a44f541e5379d8de8a3562febbfa49e1d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b0fcf1c735bb19308a381307e64314d9d961e5da
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96222161"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846427"
 ---
 # <a name="reversedoplea-function"></a>ReversedOpLEA 函数
 

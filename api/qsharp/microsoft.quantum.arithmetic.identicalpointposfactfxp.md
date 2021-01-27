@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.IdenticalPointPosFactFxP
 title: IdenticalPointPosFactFxP 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: IdenticalPointPosFactFxP
 qsharp.summary: Assert that all fixed-point numbers in the provided array have identical point positions when counting from the least- significant bit. I.e., number of bits minus point position must be constant for all fixed-point numbers in the array.
-ms.openlocfilehash: 907e270e1c3710fb346044ad7757171c6d5f568d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7212f918e1d0ee86b12b85caa6e0c27bc2cebe58
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96223045"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846616"
 ---
 # <a name="identicalpointposfactfxp-function"></a>IdenticalPointPosFactFxP 函数
 

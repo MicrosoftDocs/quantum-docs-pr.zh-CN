@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.Round
 title: Round 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.round".
-ms.openlocfilehash: c691e4bdf99a0a19a13a4b3ed3c4dbe6049fadc3
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b7b675e328003731e251566c2f791808d6286d8d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199398"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849604"
 ---
 # <a name="round-function"></a>Round 函数
 

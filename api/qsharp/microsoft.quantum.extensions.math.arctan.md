@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.ArcTan
 title: ArcTan 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.arctan".
-ms.openlocfilehash: b0f937ed919d8316cb96304de2b144510d9853ca
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 686ecfce0b7e0381d7dcd666fb87b5613ece1e3a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199789"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849796"
 ---
 # <a name="arctan-function"></a>ArcTan 函数
 

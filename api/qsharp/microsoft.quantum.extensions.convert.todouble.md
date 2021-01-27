@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Convert.ToDouble
 title: ToDouble 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Convert
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.convert.intasdouble".
-ms.openlocfilehash: f883eaaba40aa1f120c2e44173c9643aa1cda12d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: df3a9df038e45c4483476e46c847fde78e397ac7
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96200044"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849904"
 ---
 # <a name="todouble-function"></a>ToDouble 函数
 

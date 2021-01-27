@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.Message
 title: 消息函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Intrinsic
 qsharp.name: Message
 qsharp.summary: Logs a message.
-ms.openlocfilehash: 4eb55dd4fd8d78e4b5a9bb289dacfbdb3aa4beb8
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 652e33de69ffb725f117db3beeffa66558776f49
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199006"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849362"
 ---
 # <a name="message-function"></a>消息函数
 

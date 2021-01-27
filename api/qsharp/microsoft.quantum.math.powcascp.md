@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.PowCAsCP
 title: PowCAsCP 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: PowCAsCP
 qsharp.summary: Internal. Since it is easiest to define the power of two complex numbers in cartesian form as returning in polar form, we define that here, then convert as needed.
-ms.openlocfilehash: b24b4787743baa447ed8ab6cc61a13e4a18316e9
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: fb629f360e4b19715e406d4a4f4fae7a31e81736
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96227499"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847058"
 ---
 # <a name="powcascp-function"></a>PowCAsCP 函数
 

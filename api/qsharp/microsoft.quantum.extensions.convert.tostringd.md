@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Convert.ToStringD
 title: ToStringD 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Convert
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.convert.doubleasstring".
-ms.openlocfilehash: 58725eceb6cee8414099b8677818ee7ca2427273
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 3617ee6dcc6e90c87a38393275e6fe9a10a253c1
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199942"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849879"
 ---
 # <a name="tostringd-function"></a>ToStringD 函数
 

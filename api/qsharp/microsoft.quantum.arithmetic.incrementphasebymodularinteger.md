@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.IncrementPhaseByModularInteger
 title: IncrementPhaseByModularInteger 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: IncrementPhaseByModularInteger
 qsharp.summary: Performs a modular increment of a qubit register by an integer constant.
-ms.openlocfilehash: 6a39ce49dfa28c1f1cbe6b29e526144c3ac19e53
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 4ba35010d56ad01c73cb563646dc8150842da12e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96222875"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846575"
 ---
 # <a name="incrementphasebymodularinteger-operation"></a>IncrementPhaseByModularInteger 操作
 
@@ -28,7 +28,7 @@ operation IncrementPhaseByModularInteger (increment : Int, modulus : Int, target
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 通过 `increment` `modulus` $y $ $N $ 和在中编码的整数，让我们以 $a $ 表示。 `target`
 然后，该操作将执行以下转换： \begin{align} \ket{y} \mapsto \ket{ (y + a) \operatorname{mod} N} \end{align} 将以小字节序格式编码。

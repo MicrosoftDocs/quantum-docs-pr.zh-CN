@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.MinB
 title: MinB 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.minl".
-ms.openlocfilehash: 0e29bd57cb58cd9704ae6c32df89122fd0e898d0
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 9affb6fd24fe445ad736702a62793cbb43fd940b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199449"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849658"
 ---
 # <a name="minb-function"></a>MinB 函数
 

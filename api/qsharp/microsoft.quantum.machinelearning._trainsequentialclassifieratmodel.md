@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning._TrainSequentialClassifierAtModel
 title: _TrainSequentialClassifierAtModel 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: _TrainSequentialClassifierAtModel
 qsharp.summary: ''
-ms.openlocfilehash: ad2c4ad19efa8aafd40838a671b5a0d1efe5c16c
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8f4f3e02b35639434ee45f7c875e2247e1e3138b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96212063"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848992"
 ---
 # <a name="_trainsequentialclassifieratmodel-operation"></a>_TrainSequentialClassifierAtModel 操作
 

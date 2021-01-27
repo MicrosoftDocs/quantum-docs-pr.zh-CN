@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.QuantumProcessor.Extensions.ApplyIfElseRA
 title: ApplyIfElseRA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Simulation.QuantumProcessor.Extensions
 qsharp.name: ApplyIfElseRA
 qsharp.summary: ''
-ms.openlocfilehash: 48819440bf0d55f9a44ca8f76927692d48925e50
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 11427026d66fc6f46f05004db4dae6f9fa05d921
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96192700"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98855657"
 ---
 # <a name="applyifelsera-operation"></a>ApplyIfElseRA 操作
 

@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.AssertProb
 title: AssertProb 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -10,12 +10,12 @@ qsharp.summary: >-
   > [!WARNING]
 
   > AssertProb has been deprecated. Please use <xref:Microsoft.Quantum.Diagnostics.AssertMeasurementProbability> instead.
-ms.openlocfilehash: 3c0f7c7a9e0190c5a8e5f3e70a5f82a8c23a97bc
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a3bdf8d6ae64f0d462da1781a723b27b6e1db05e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199076"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849460"
 ---
 # <a name="assertprob-operation"></a>AssertProb 操作
 

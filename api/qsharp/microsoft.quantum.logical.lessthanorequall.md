@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Logical.LessThanOrEqualL
 title: LessThanOrEqualL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: LessThanOrEqualL
 qsharp.summary: Returns true if and only if a number is less than or equal to another number.
-ms.openlocfilehash: 2322ae4dd6025108d322d29770f42953213aa025
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1de3fdb0fa53fef9cbf4b9ee9b6a1c54865bd093
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96197595"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849116"
 ---
 # <a name="lessthanorequall-function"></a>LessThanOrEqualL 函数
 
@@ -49,7 +49,7 @@ function LessThanOrEqualL (a : BigInt, b : BigInt) : Bool
 
 以下项是等效的：
 
-```Q#
+```qsharp
 let cond = a <= b;
 let cond = LessThanOrEqualL(a, b);
 ```

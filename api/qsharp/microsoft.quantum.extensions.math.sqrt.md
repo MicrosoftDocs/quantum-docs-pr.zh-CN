@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Math.Sqrt
 title: Sqrt 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Math
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.math.sqrt".
-ms.openlocfilehash: ef83670507a19c43119b2b0c671df212c859f016
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 97b704d5d08499da068d1fe094ae9af5851dc0be
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199330"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849561"
 ---
 # <a name="sqrt-function"></a>Sqrt 函数
 

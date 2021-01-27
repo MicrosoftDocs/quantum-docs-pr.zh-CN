@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Diagnostics.DumpRegister
 title: DumpRegister 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Diagnostics
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.diagnostics.dumpregister".
-ms.openlocfilehash: ff5231477906e742ecd3f0b74e1776bc936674f3
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8dde9f58fd32b2901a123006473f8a494e44d415
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199908"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849843"
 ---
 # <a name="dumpregister-function"></a>DumpRegister 函数
 

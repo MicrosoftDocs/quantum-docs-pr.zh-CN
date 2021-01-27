@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Logical.GreaterThanD
 title: GreaterThanD 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: GreaterThanD
 qsharp.summary: Returns true if and only if a number is greater than another number.
-ms.openlocfilehash: c23d85cf513bb6d37e67260eeeb3b81b42e6771a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 26a963645758b6de83654304c38830af5c561b3a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198021"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849217"
 ---
 # <a name="greaterthand-function"></a>GreaterThanD 函数
 
@@ -49,7 +49,7 @@ function GreaterThanD (a : Double, b : Double) : Bool
 
 以下项是等效的：
 
-```Q#
+```qsharp
 let cond = a > b;
 let cond = GreaterThanD(a, b);
 ```

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ReversedOpBEC
 title: ReversedOpBEC 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ReversedOpBEC
 qsharp.summary: Given an operation that takes a big-endian input, returns a new operation that takes a little-endian input.
-ms.openlocfilehash: 5bafe71b665eda082eafbe06be1308d6b042db2c
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0674567f5d45890aa2f631b2e0e4d75d20a72449
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96222263"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846451"
 ---
 # <a name="reversedopbec-function"></a>ReversedOpBEC 函数
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.PowC
 title: PowC 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: PowC
 qsharp.summary: Returns a number raised to a given power.
-ms.openlocfilehash: 57a0f4c8176a7f87835c7d096136e288c4875eea
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7dbadbd4c3cc16c3fa0bcd9b5b1acbee990e24ac
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96194706"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846825"
 ---
 # <a name="powc-function"></a>PowC 函数
 

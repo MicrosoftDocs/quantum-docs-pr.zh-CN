@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Arrays.Zip4
 title: Zip4 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
@@ -13,12 +13,12 @@ qsharp.summary: >-
 
 
   Given four arrays, returns a new array of 4-tuples such that each 4-tuple contains an element from each original array.
-ms.openlocfilehash: c9dd07ddc63f1d75952d3841997eed0f78e054b9
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 534721e6544a31f6f5d27db0c077e9d8c574aecd
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219781"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850884"
 ---
 # <a name="zip4-function"></a>Zip4 函数
 

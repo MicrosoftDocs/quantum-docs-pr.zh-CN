@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.InterpolateGeneratorSystemsImpl
 title: InterpolateGeneratorSystemsImpl 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: InterpolateGeneratorSystemsImpl
 qsharp.summary: Linearly interpolates between two `GeneratorSystems` according to a schedule parameter `s` between 0 and 1 (inclusive).
-ms.openlocfilehash: 1ca9580ba603db8fee40e008a7ea51cb7a04d7d3
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a902a93968d221349f9a6fa977bbc1706971fcfd
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96229216"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98855756"
 ---
 # <a name="interpolategeneratorsystemsimpl-function"></a>InterpolateGeneratorSystemsImpl 函数
 

@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Convert.PauliArrayToInt
 title: PauliArrayToInt 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Convert
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.convert.pauliarrayasint".
-ms.openlocfilehash: f059991c2d3ea4d283c539fa057e4aaff6f3830a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: af1d96770ab039ccb2c546f43cd2b5819dd139ce
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96200010"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849918"
 ---
 # <a name="pauliarraytoint-function"></a>PauliArrayToInt 函数
 

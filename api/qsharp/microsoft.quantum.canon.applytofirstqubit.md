@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToFirstQubit
 title: ApplyToFirstQubit 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToFirstQubit
 qsharp.summary: Applies an operation to the first qubit in the register.
-ms.openlocfilehash: 851f2b58a914c8b09188f442e442b91a8ede5416
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 381f8d689fba1984ba7fa287d658578bd5b6c48c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96217486"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850736"
 ---
 # <a name="applytofirstqubit-operation"></a>ApplyToFirstQubit 操作
 

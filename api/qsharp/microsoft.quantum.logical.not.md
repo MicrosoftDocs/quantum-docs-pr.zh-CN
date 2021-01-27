@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Logical.Not
 title: Not 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: Not
 qsharp.summary: Returns the Boolean negation of a value.
-ms.openlocfilehash: f2db43f4a2ce83d8cad1d60aa8c481a33b0c7d44
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: bf09cac8d126371df6218b7e92d68a881b732dc8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96197443"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849074"
 ---
 # <a name="not-function"></a>Not 函数
 
@@ -44,7 +44,7 @@ function Not (value : Bool) : Bool
 
 以下项是等效的：
 
-```Q#
+```qsharp
 let x = not value;
 let x = Not(value);
 ```

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.ArcCosh
 title: ArcCosh 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ArcCosh
 qsharp.summary: Computes the inverse hyperbolic cosine of a number.
-ms.openlocfilehash: a919cd200b378e22aaef609e3c89ba39f3338042
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 5598e45f7cc34cdc686b26655c267a06b8476db0
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96211213"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848967"
 ---
 # <a name="arccosh-function"></a>ArcCosh 函数
 

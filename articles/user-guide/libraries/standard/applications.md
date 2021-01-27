@@ -5,16 +5,16 @@ author: QuantumWriter
 uid: microsoft.quantum.libraries.applications
 ms.author: martinro
 ms.date: 12/11/2017
-ms.topic: article
+ms.topic: conceptual
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 5a29dcc74c638cb8ecbeb1f924d0e50d40d19f66
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 214d584840f235868c66a1fb3ee24d0acab49630
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92692162"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857242"
 ---
 # <a name="applications"></a>应用程序 #
 
@@ -140,7 +140,7 @@ operation EstimateAdiabaticStateEnergy(
 
 ## <a name="shors-algorithm"></a>秀尔算法 ##
 选定的算法仍是量程计算中最重要的开发，因为它显示了量程计算机可以用于解决重要的当前经典棘手问题。
-选定的算法提供了一种使用量程计算机（称为 " *分解* " 的问题）对较大数字进行因式分解的快速方法。
+选定的算法提供了一种使用量程计算机（称为 " *分解*" 的问题）对较大数字进行因式分解的快速方法。
 许多 cryptosystems 的安全是基于不存在任何快速算法以进行分解的假设。
 因此，选定的算法对我们在一个量程后世界中的安全性的看法产生了深远的影响。
 
@@ -178,7 +178,7 @@ $U _a $ 的本征值是 $ $ U \_ a \ket{x \_ s} = e ^ {2 \ pi i s/r} \ket{x \_ s
 若要实现 $ (^ nx) \text{mod} N $，只需应用受控-$U _ {a ^ N} $，在此计算 $a ^ N \text{mod} N $ 经典，以插入量程线路。  
 [量程算法文档](./algorithms.md#arithmetic)中介绍了实现这种模块化算法的线路，具体而言，我们需要使用模块求幂线路来实现受控-$U \_ {a ^ i} $ 操作。
 
-尽管上面的线路对应于 [量程阶段估算](xref:Microsoft.Quantum.Characterization.QuantumPhaseEstimation) ，并显式启用了订单查找，但我们可以减少所需的 qubits 数量。 我们可以按照 [arXiv： quant/0205095V3 第8页](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=8)中所述的顺序查找 Beauregard 的方法，或使用中提供的一个阶段估算例程。 例如， [强健的阶段估算](xref:microsoft.quantum.characterization.robustphaseestimation) 还使用一个额外的 qubit。
+尽管上面的线路对应于 [量程阶段估算](xref:Microsoft.Quantum.Characterization.QuantumPhaseEstimation) ，并显式启用了订单查找，但我们可以减少所需的 qubits 数量。 我们可以按照 [arXiv： quant/0205095V3 第8页](https://arxiv.org/pdf/quant-ph/0205095v3.pdf#page=8)中所述的顺序查找 Beauregard 的方法，或使用中提供的一个阶段估算例程。 例如， [强健的阶段估算](xref:Microsoft.Quantum.Characterization.RobustPhaseEstimation) 还使用一个额外的 qubit。
 
 ### <a name="factoring"></a>分解 ###
 因式分解的目标是确定整数 $N $ 的两个质数因素，其中 $N $ 是 $n $ 位数字。  

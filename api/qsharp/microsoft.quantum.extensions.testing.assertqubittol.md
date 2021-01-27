@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Testing.AssertQubitTol
 title: AssertQubitTol 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Extensions.Testing
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.diagnostics.assertqubitwithintolerance".
-ms.openlocfilehash: acd13277dfd451af7a99d5d3c3958994b81e23ea
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 16a060462eae168b29f18755c23d887e132aed3b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199126"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849481"
 ---
 # <a name="assertqubittol-operation"></a>AssertQubitTol 操作
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.QuantumProcessor.Extensions.ApplyConditionallyIntrinsicC
 title: ApplyConditionallyIntrinsicC 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Simulation.QuantumProcessor.Extensions
 qsharp.name: ApplyConditionallyIntrinsicC
 qsharp.summary: ''
-ms.openlocfilehash: 847865c04bdaa51cec97826eddcdb95c66001e67
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 64c6693181704d229e36a3e3748258f66e093d96
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96228961"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98855746"
 ---
 # <a name="applyconditionallyintrinsicc-operation"></a>ApplyConditionallyIntrinsicC 操作
 

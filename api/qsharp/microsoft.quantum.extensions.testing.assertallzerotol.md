@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Testing.AssertAllZeroTol
 title: AssertAllZeroTol 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Extensions.Testing
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.diagnostics.assertallzerowithintolerance".
-ms.openlocfilehash: 026ef07689ab39b4b98e47fae93f5d9f58072831
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7f628b8a89f2f97a96153b912a8bf0d8a808b95b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96199228"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849523"
 ---
 # <a name="assertallzerotol-operation"></a>AssertAllZeroTol 操作
 

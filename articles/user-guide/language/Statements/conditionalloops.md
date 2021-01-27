@@ -4,17 +4,17 @@ description: 了解编程语言中的条件循环 Q# 。
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.conditionalloops
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: ef1c8e3fee118efd7534bd8d8031ca1b4c1783d2
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: 127a8a0b4ef0c91d02cd5b2e83fe767586a9557c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96233075"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857299"
 ---
 <!---
 # Conditional loops in Q#

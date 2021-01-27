@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.QuantumProcessor.Extensions.ApplyIfElseIntrinsicCA
 title: ApplyIfElseIntrinsicCA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Simulation.QuantumProcessor.Extensions
 qsharp.name: ApplyIfElseIntrinsicCA
 qsharp.summary: ''
-ms.openlocfilehash: 40513e407d4f7a42dffde940cd4b3548d8738a4d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 6ba83f7344c77b95f2e7397cd42f39884556547a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96192649"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98855701"
 ---
 # <a name="applyifelseintrinsicca-operation"></a>ApplyIfElseIntrinsicCA 操作
 

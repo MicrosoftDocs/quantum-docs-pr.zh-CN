@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.I
 title: 我的操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
 qsharp.name: I
 qsharp.summary: Performs the identity operation (no-op) on a single qubit.
-ms.openlocfilehash: 5aae7a5e3b5b441829de8f10f4df539ffc374954
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0af14a9aff20da493e95c7feba6afbb907d3d69f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198939"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849410"
 ---
 # <a name="i-operation"></a>我的操作
 

@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.SWAP
 title: 交换操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
@@ -12,12 +12,12 @@ qsharp.summary: >-
   \begin{align} \operatorname{SWAP} \mathrel{:=} \begin{bmatrix} 1 & 0 & 0 & 0 \\\\ 0 & 0 & 1 & 0 \\\\ 0 & 1 & 0 & 0 \\\\ 0 & 0 & 0 & 1 \end{bmatrix}, \end{align}
 
   where rows and columns are ordered as in the quantum concepts guide.
-ms.openlocfilehash: e93c976f2fdf02de77fafa4d22e95fe9a33a9ba6
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 4d8d037404ac835a1dd032790e7fd03f29591c41
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198412"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849276"
 ---
 # <a name="swap-operation"></a>交换操作
 

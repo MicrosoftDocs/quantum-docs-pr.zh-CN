@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.EvaluateOddPolynomialFxP
 title: EvaluateOddPolynomialFxP 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: EvaluateOddPolynomialFxP
 qsharp.summary: Evaluates an odd polynomial in a fixed-point representation.
-ms.openlocfilehash: 1bf9b6e7c416e994e70b93e5967caefd444f6426
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 852e986cd09c3b2e31263f53e381d9da73298415
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96223215"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846664"
 ---
 # <a name="evaluateoddpolynomialfxp-operation"></a>EvaluateOddPolynomialFxP 操作
 

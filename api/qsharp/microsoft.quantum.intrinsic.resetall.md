@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Intrinsic.ResetAll
 title: ResetAll 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Intrinsic
 qsharp.name: ResetAll
 qsharp.summary: Given an array of qubits, measure them and ensure they are in the |0⟩ state such that they can be safely released.
-ms.openlocfilehash: d22ce607e8e5cb3a1c041dc1973875f2a0777d2b
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 2b8e7fc0e7881d8c1bd6f14c150476262b7a2b19
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198684"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98849319"
 ---
 # <a name="resetall-operation"></a>ResetAll 操作
 

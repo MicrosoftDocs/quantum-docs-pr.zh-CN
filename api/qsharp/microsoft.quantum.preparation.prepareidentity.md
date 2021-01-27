@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Preparation.PrepareIdentity
 title: PrepareIdentity 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Given a register, prepares that register in the maximally mixed state.
 
   The register is prepared in the $\boldone / 2^N$ state by applying the complete depolarizing channel to each qubit, where $N$ is the length of the register.
-ms.openlocfilehash: 6e0a43e61e3c49edef94db63f07ed29132d84c83
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: ec7e813110ccd9e6d499fc469fa27249a182b870
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210431"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98855876"
 ---
 # <a name="prepareidentity-operation"></a>PrepareIdentity 操作
 

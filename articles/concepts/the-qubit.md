@@ -1,6 +1,6 @@
 ---
 标题：量程计算说明中的 qubit：了解 qubits，这是量程计算中信息的基本单位。
-author： QuantumWriter uid： qubit： benbra： v-ms. 日期： 12/11/2017 ms. 主题：文章不是：
+author： QuantumWriter uid： qubit： benbra： v-ms. 日期： 12/11/2017 ms. 主题：概念非 loc：
 - "Q#"
 - "$$v"
 - "$$"

@@ -4,17 +4,17 @@ description: 了解如何以编程语言声明操作和函数（或 callables）
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.callabledeclarations
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 1e40937db80b1df2f32deaaf70fbf1be704d3dd7
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: 14db0833b21bc89e986cf35577d445fe6f3fce03
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96233077"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98846756"
 ---
 <!-- 
 # Callable declarations in Q#

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyToEachIndexA
 title: ApplyToEachIndexA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyToEachIndexA
 qsharp.summary: Applies a single-qubit operation to each indexed element in a register. The modifier `A` indicates that the single-qubit operation is adjointable.
-ms.openlocfilehash: e3ff812f14181e676fddf436af8a14f9a58271ec
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: fb278f217ac450ab48aa37b0035cd1bdd295d3e5
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96217588"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850832"
 ---
 # <a name="applytoeachindexa-operation"></a>ApplyToEachIndexA 操作
 
