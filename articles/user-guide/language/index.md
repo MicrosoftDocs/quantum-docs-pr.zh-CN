@@ -4,17 +4,17 @@ description: 了解 Q# 编程语言。
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.index
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a739b20edada9652f5727b972ec76bdc4aed2a4c
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: c5b544462cbcae8b0475e2869557cefea5bec0c7
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96232702"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847496"
 ---
 <!---
 # Q# language
