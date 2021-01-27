@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.EncodeIntoFiveQubitCode
 title: EncodeIntoFiveQubitCode 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: EncodeIntoFiveQubitCode
 qsharp.summary: Encodes into the ⟦5, 1, 3⟧ quantum code.
-ms.openlocfilehash: 70e52b7440dca1fa8761db13d6187cb6bf8c43c4
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1bccf46453ad34199dcebc5bcff693359fe2254c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96200979"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98826324"
 ---
 # <a name="encodeintofivequbitcode-operation"></a>EncodeIntoFiveQubitCode 操作
 
