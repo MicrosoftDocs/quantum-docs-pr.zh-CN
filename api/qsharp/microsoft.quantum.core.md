@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.Quantum.Core
 title: Microsoft 量子命名空间
-ms.date: 11/25/2020 12:00:00 AM
-ms.topic: article
+ms.date: 1/23/2021 12:00:00 AM
+ms.topic: managed-reference
 qsharp.kind: namespace
 qsharp.name: Microsoft.Quantum.Core
 qsharp.summary: This namespace includes Q# core functions and operations.
-ms.openlocfilehash: 634252c0fd358242d897d1eaedb3a624476b96cd
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0fee72bffcb808bf85fe1a4a28fddae9d3f5ad60
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96213865"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853622"
 ---
-# <a name="microsoftquantumcore-namespace"></a><span data-ttu-id="1f973-102">Microsoft 量子命名空间</span><span class="sxs-lookup"><span data-stu-id="1f973-102">Microsoft.Quantum.Core namespace</span></span>
+# <a name="microsoftquantumcore-namespace"></a><span data-ttu-id="27a1b-102">Microsoft 量子命名空间</span><span class="sxs-lookup"><span data-stu-id="27a1b-102">Microsoft.Quantum.Core namespace</span></span>
 
-<span data-ttu-id="1f973-103">此命名空间包括 Q # 核心函数和操作。</span><span class="sxs-lookup"><span data-stu-id="1f973-103">This namespace includes Q# core functions and operations.</span></span>
+<span data-ttu-id="27a1b-103">此命名空间包括 Q # 核心函数和操作。</span><span class="sxs-lookup"><span data-stu-id="27a1b-103">This namespace includes Q# core functions and operations.</span></span>
 

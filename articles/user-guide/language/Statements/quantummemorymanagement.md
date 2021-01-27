@@ -4,17 +4,17 @@ description: 了解如何在程序中分配和释放量程内存 Q# 。
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.quantummemorymanagement
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 2d18280fbb57d1d43f46e96d3479d0b0160820ab
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: 08902a0f5e3545f71b4b412d3e3cf1439e1b1c8f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96233071"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854117"
 ---
 <!---
 # Quantum memory management in Q#
