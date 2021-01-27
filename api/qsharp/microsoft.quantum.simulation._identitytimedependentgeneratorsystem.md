@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation._IdentityTimeDependentGeneratorSystem
 title: _IdentityTimeDependentGeneratorSystem 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: _IdentityTimeDependentGeneratorSystem
 qsharp.summary: Returns a generator system consistent with the Hamiltonian `H(s) = 0`, where `s` is a schedule parameter.
-ms.openlocfilehash: 7b93a6674bec974e61496696a3d8403225b16d80
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 960842f50353c01362f90eb38d979fb7c4f15d9a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96225595"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857987"
 ---
 # <a name="_identitytimedependentgeneratorsystem-function"></a>_IdentityTimeDependentGeneratorSystem 函数
 

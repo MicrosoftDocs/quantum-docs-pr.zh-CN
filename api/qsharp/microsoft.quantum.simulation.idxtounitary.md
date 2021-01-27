@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.IdxToUnitary
 title: IdxToUnitary 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: IdxToUnitary
 qsharp.summary: Used in implementation of `PauliBlockEncoding`
-ms.openlocfilehash: dd13b2d2e846dcddb820599ea26aa25b90903dbd
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: ceba7cdb02a2ed8bf280f1b300d881eec1323b38
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96229267"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858104"
 ---
 # <a name="idxtounitary-function"></a>IdxToUnitary 函数
 

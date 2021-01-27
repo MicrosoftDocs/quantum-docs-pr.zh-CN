@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.ArgComplexPolar
 title: ArgComplexPolar 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ArgComplexPolar
 qsharp.summary: Returns the phase of a complex number of type `ComplexPolar`.
-ms.openlocfilehash: 7088397bd60e2779ef60afc1bb7108d937a62c97
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 5809b5463e6bf8ee73d095dfe4eafedfbb5e0702
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96195760"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98852899"
 ---
 # <a name="argcomplexpolar-function"></a>ArgComplexPolar 函数
 

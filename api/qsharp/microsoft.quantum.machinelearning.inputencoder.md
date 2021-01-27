@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.InputEncoder
 title: InputEncoder 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: InputEncoder
 qsharp.summary: Given a set of coefficients and a tolerance, returns a state preparation operation that prepares each coefficient as the corresponding amplitude of a computational basis state.
-ms.openlocfilehash: 019161c0ef6cdec6875518ab58c8159b0f142149
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: ed70d9f24af06f8918083307c98a5f6c4671f1c3
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96211740"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98852941"
 ---
 # <a name="inputencoder-function"></a>InputEncoder 函数
 

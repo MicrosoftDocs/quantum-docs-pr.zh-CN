@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.OperationPowCA
 title: OperationPowCA 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Raises an operation to a power. The modifier `A` indicates that the operation is controllable and adjointable.
 
   That is, given an operation representing a gate $U$, returns a new operation $U^m$ for a power $m$.
-ms.openlocfilehash: 32de77cbd54cc8eeb8c4a967fd046dca709cd9ea
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 338c40f8eb9d6f1782989f2a91c86df561d480bf
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96205637"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98852311"
 ---
 # <a name="operationpowca-function"></a>OperationPowCA 函数
 

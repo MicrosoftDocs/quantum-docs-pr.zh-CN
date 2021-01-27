@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation._AddGeneratorSystems
 title: _AddGeneratorSystems 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: _AddGeneratorSystems
 qsharp.summary: Adds two `GeneratorSystem`s to create a new `GeneratorSystem`.
-ms.openlocfilehash: ffb635d7cb6c388c2158b7adb6bb872b0c77cdb1
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e51addb38da99e508a71dffa757cd7fb19c89dcd
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96229743"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858010"
 ---
 # <a name="_addgeneratorsystems-function"></a>_AddGeneratorSystems 函数
 

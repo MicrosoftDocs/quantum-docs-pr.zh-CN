@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Excluding
 title: 排除函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Excluding
 qsharp.summary: Returns an array containing the elements of another array, excluding elements at a given list of indices.
-ms.openlocfilehash: 6585e619834a96953c9eae2d36a8ebe0a11dbda0
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c117431e3d98bba4ed3d29cb0b171247bf77be0b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96221311"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848657"
 ---
 # <a name="excluding-function"></a>排除函数
 
@@ -50,3 +50,11 @@ function Excluding<'T> (remove : Int[], array : 'T[]) : 'T[]
 ### <a name="t"></a>找
 
 数组元素的类型。
+
+## <a name="example"></a>示例
+
+```qsharp
+let array = [10, 11, 12, 13, 14, 15];
+// The following line returns [10, 12, 15].
+let subarray = Excluding([1, 3, 4], array);
+```

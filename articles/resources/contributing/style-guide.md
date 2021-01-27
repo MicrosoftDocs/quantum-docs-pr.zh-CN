@@ -4,17 +4,17 @@ description: 了解程序和库的命名、输入、文档和格式设置约定 
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
-ms.topic: article
+ms.topic: contributor-guide
 uid: microsoft.quantum.contributing.style
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: cfc201a16b1b42c82314220f77ae120076291759
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: 2edd6baf7375415e395d15bac422168216bcff9a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96231649"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98852747"
 ---
 # <a name="no-locq-style-guide"></a>Q# 样式指南 #
 ## <a name="general-conventions"></a>一般约定 ##
@@ -68,7 +68,7 @@ ms.locfileid: "96231649"
 | 应用 | 作为输入提供的操作称为 |
 | Assert | 模拟器检查可能的量程度量结果的假设 |
 | 估算 | 返回一个传统值，表示从一个或多个度量值中提取的估计值 |
-| 测量 | 将执行量程度量，并将其结果返回给用户 |
+| 度量 | 将执行量程度量，并将其结果返回给用户 |
 | 准备 | 给定的 qubits 寄存器初始化为特定状态 |
 | 示例 | 从某一分布中随机返回一个传统值 |
 

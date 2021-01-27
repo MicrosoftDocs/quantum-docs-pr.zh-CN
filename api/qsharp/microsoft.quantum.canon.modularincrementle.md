@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.ModularIncrementLE
 title: ModularIncrementLE 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"Microsoft.Quantum.Arithmetic.ModularIncrementByInteger".
-ms.openlocfilehash: 5df0ef928c89b2062f1465e99bb31180efed1b4f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 341f7077c905ba34b32dbf68d3a99e3385cb6ae8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96206300"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98852625"
 ---
 # <a name="modularincrementle-operation"></a>ModularIncrementLE 操作
 

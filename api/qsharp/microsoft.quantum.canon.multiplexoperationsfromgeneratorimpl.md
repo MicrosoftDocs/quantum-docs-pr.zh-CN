@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.MultiplexOperationsFromGeneratorImpl
 title: MultiplexOperationsFromGeneratorImpl 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: MultiplexOperationsFromGeneratorImpl
 qsharp.summary: Implementation step of `MultiplexOperationsFromGenerator`.
-ms.openlocfilehash: 98ba9cd24f04b8417cb176ee1630402483bc3b52
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 68c9fcf7ee7893dc3ef6600cc5d6c5be807f9eb4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96206045"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98852484"
 ---
 # <a name="multiplexoperationsfromgeneratorimpl-operation"></a>MultiplexOperationsFromGeneratorImpl 操作
 

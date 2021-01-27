@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Simulation.GeneratorSystem
 title: GeneratorSystem 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Simulation
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Represents a collection of `GeneratorIndex`es.
 
   We iterate over this collection using a single-index integer, and the size of the collection is assumed to be known.
-ms.openlocfilehash: 20092a8deca50c90f46f4d79c6b40b805f135754
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 3748d3fb79597fb526c86a91bc28290155189014
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96225221"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858409"
 ---
 # <a name="generatorsystem-user-defined-type"></a>GeneratorSystem 用户定义的类型
 

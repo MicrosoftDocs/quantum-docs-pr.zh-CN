@@ -4,17 +4,17 @@ description: 了解编程语言中本地变量的可见性 Q# 。
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.bindingscopes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 50cd8722599a4388a4fe786a4e2eb64b50717385
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: 457ea99f79b8d35c41daf9512d37ebb567d7a4e5
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96233101"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858228"
 ---
 <!---
 # Binding scopes in Q#

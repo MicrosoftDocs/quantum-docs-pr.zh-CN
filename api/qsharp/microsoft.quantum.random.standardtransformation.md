@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Random.StandardTransformation
 title: StandardTransformation 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Random
 qsharp.name: StandardTransformation
 qsharp.summary: ''
-ms.openlocfilehash: 23bcc6000821ac6816736bf993c36c81c5feef7f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c5e8110b25ab02b55f02d886fa081a32d7dffb1d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96226309"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857789"
 ---
 # <a name="standardtransformation-function"></a>StandardTransformation 函数
 

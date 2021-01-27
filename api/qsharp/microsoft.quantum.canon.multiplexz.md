@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.MultiplexZ
 title: MultiplexZ 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: MultiplexZ
 qsharp.summary: Applies a Pauli Z rotation conditioned on an array of qubits.
-ms.openlocfilehash: 364d23a0e57a2510f069b6db66b085368f20162e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: dccfe86104263e23794bce33279e8748f11f5a54
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96206062"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98852432"
 ---
 # <a name="multiplexz-operation"></a>MultiplexZ 操作
 
@@ -28,7 +28,7 @@ operation MultiplexZ (coefficients : Double[], control : Microsoft.Quantum.Arith
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 这将应用按角度 $ \ theta_j $ 来执行循环的多次控制的单一操作，该操作将由 $n $-qubit 号 state $ \ket{j} $ 控制，按角度 $ \ qubit Pauli operator $Z $ 进行旋转。
 具体而言，此操作可由单一

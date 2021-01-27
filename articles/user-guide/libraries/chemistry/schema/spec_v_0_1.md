@@ -4,17 +4,17 @@ description: 详细说明了适用于 Microsoft 量程化学库的 Broombridge �
 author: cgranade
 ms.author: chgranad
 ms.date: 10/17/2018
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.libraries.chemistry.schema.spec_v_0_1
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: b99c90c434958f7b04712580789b203766cd084d
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 0a306f59a823e76ba0518d023a41f1f9d5670e7a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835734"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858194"
 ---
 # <a name="broombridge-specification-v01"></a>Broombridge 规范 v 0。1 #
 
@@ -47,7 +47,7 @@ Broombridge 文档必须序列化为表示 JSON 对象的 [YAML 1.2 文档](http
 
 本部分进行了规范。
 
-_数量对象_是 JSON 对象，并且必须具有一个属性， `units` 其值为表1中列出的允许值之一。
+_数量对象_ 是 JSON 对象，并且必须具有一个属性， `units` 其值为表1中列出的允许值之一。
 
 如果某个数量对象除了其属性之外有一个属性，则它是一个 _简单的数量对象_ `value` `units` 。
 属性的值 `value` 必须是数字。
@@ -169,7 +169,7 @@ $$
 Hamiltonian 对象还可以具有属性 `particle_hole_representation` 。
 如果存在，则的值 `particle_hole_representation` 必须遵循本部分的其余部分所述的格式。
 
-##### <a name="one-electron-integrals-object"></a>Electron 整型对象 #####
+##### <a name="one-electron-integrals-object"></a>One-Electron 整型对象 #####
 
 本部分进行了规范。
 
@@ -199,7 +199,7 @@ one_electron_integrals:     # required
 > Broombridge 使用基于1的索引。
 
 
-##### <a name="two-electron-integrals-object"></a>Electron 整型对象 #####
+##### <a name="two-electron-integrals-object"></a>Two-Electron 整型对象 #####
 
 本部分进行了规范。
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.PlusI
 title: PlusI 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: PlusI
 qsharp.summary: Returns the sum of two inputs.
-ms.openlocfilehash: 4c3c6698f26e5d06a81245b9bfb9b7842b766fd5
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 3fc6969496bfb11d959d3724c91b7499a36c4dd2
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96194774"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848734"
 ---
 # <a name="plusi-function"></a>PlusI 函数
 

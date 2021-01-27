@@ -4,17 +4,17 @@ description: 了解如何报告 Microsoft Quantum Development Kit (QDK) 的 bug 
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
-ms.topic: article
+ms.topic: contributor-guide
 uid: microsoft.quantum.contributing.reporting
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f8fd5de99a742c07f367bad6830d37e0e45573b5
-ms.sourcegitcommit: 6bf99d93590d6aa80490e88f2fd74dbbee8e0371
+ms.openlocfilehash: e15bfd0933aa10ae8f3c52295f50126d1d887dc7
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/06/2020
-ms.locfileid: "87867533"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857621"
 ---
 # <a name="reporting-bugs"></a>报告 Bug #
 
@@ -33,5 +33,5 @@ ms.locfileid: "87867533"
 - 实际发生的情况
 - 有关软件环境的信息 (例如： OS、.NET Core 和量子开发工具包版本) 
 
-你还可以[创建拉取请求](https://help.github.com/articles/about-pull-requests/)以直接修复 bug，如果它非常简单且不值得讨论 (例如，键入错误) 。
+你还可以 [创建拉取请求](https://help.github.com/articles/about-pull-requests/) 以直接修复 bug，如果它非常简单且不值得讨论 (例如，键入错误) 。
 

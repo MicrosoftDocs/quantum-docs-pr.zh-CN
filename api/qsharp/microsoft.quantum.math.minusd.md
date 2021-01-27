@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.MinusD
 title: MinusD 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: MinusD
 qsharp.summary: Returns the difference between two inputs.
-ms.openlocfilehash: ebb8ef7b3126f9ec38402b171051dd5f62652601
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f1f518ed6595870d572f93747dc9815eedf8cce2
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96227856"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848783"
 ---
 # <a name="minusd-function"></a>MinusD 函数
 

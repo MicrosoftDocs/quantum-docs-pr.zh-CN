@@ -4,17 +4,17 @@ description: 了解编程语言中的特性 Q# 。
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.attributes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: cecaa43743bf7cfd3341e10fca3d2691a4a3b697
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: 360a8b337f28abf7bd22fc93e93b4a19be2fc3f8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96233193"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858347"
 ---
 # <a name="attributes-in-no-locq"></a>属性 Q#
 

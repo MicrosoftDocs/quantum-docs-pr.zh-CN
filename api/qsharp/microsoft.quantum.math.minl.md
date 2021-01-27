@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.MinL
 title: MinL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: MinL
 qsharp.summary: Returns the smaller of two specified numbers.
-ms.openlocfilehash: 28387c75607ac6c96065508bc46e177e3d3987d9
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8dd4acd815c6818496b45be3faacadbfe02321e2
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96195114"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848823"
 ---
 # <a name="minl-function"></a>MinL 函数
 

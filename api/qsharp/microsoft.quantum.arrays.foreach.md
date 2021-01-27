@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.ForEach
 title: ForEach 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: ForEach
 qsharp.summary: Given an array and an operation that is defined for the elements of the array, returns a new array that consists of the images of the original array under the operation.
-ms.openlocfilehash: b362d28e77c8dea2b3daeed4a4d605e1dd42e487
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 90dd6f94408d37d2b32d82e772a482b0e69c523f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96221141"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848584"
 ---
 # <a name="foreach-operation"></a>ForEach 操作
 

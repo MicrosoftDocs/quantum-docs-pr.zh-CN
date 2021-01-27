@@ -1,6 +1,6 @@
 ---
 标题：量程计算说明中的矢量和矩阵：了解有关如何使用向量和矩阵的基本知识。
-author： QuantumWriter uid： benbra 毫秒。作者： v-毫秒。日期： 12/11/2017 ms. 主题：项目不是：
+author： QuantumWriter uid： benbra 毫秒。作者： v-ms. 日期： 12/11/2017 ms. 主题：概念非 loc：
 - "Q#"
 - "$$v"
 - "$$"
@@ -85,7 +85,7 @@ author： QuantumWriter uid： benbra 毫秒。作者： v-毫秒。日期： 12
 
 # <a name="vectors-and-matrices"></a>向量和矩阵
 
-熟悉矢量和矩阵对于了解量程计算至关重要。 我们提供了以下简短简介，并建议读者阅读有关线性代数（如 *Strang、 (1993) 的标准引用。线性代数简介 () 。Wellesley、MA： Wellesley-剑桥按下* 或联机引用，如 [线性代数](http://joshua.smcvt.edu/linearalgebra/)。
+熟悉矢量和矩阵对于了解量程计算至关重要。 我们提供了以下简短简介，并建议读者阅读有关线性代数（如 *Strang、 (1993) 的标准引用。线性代数简介 () 。Wellesley，MA： Wellesley-Cambridge 按下* 或联机参考，如 [线性代数](http://joshua.smcvt.edu/linearalgebra/)。
 
 列向量 (或只是 [*矢量*](https://en.wikipedia.org/wiki/Vector_(mathematics_and_physics))) $ v of $ dimension (或 size) $ n $ 为 $ n 复数的集合 $ (v_1 $ 、v_2、\ldots、v_n) $ 排列为一列：
 
@@ -95,7 +95,7 @@ v_2\\\\
 \vdots\\\\
 v_n \end{bmatrix}$$
 
-向量 v 的标准 $ $ 定义为 $ \sqrt { \sum \_ i i | \_ i i | ^ 2 } $ 。 矢量称为单位规范 (或如果其标准为1，则称为 [*单位矢量*](https://en.wikipedia.org/wiki/Unit_vector)) $ $ 。 向量 v 的[*adjoint*](https://en.wikipedia.org/wiki/Adjoint_matrix) $ $ 表示 $ v ^ \dagger $ ，并定义为以下行向量 $ \* $ ，其中表示复数共轭。
+向量 v 的标准 $ $ 定义为 $ \sqrt { \sum \_ i i | \_ i i | ^ 2 } $ 。 矢量称为单位规范 (或如果其标准为1，则称为 [*单位矢量*](https://en.wikipedia.org/wiki/Unit_vector)) $ $ 。 向量 v 的 [*adjoint*](https://en.wikipedia.org/wiki/Adjoint_matrix) $ $ 表示 $ v ^ \dagger $ ，并定义为以下行向量 $ \* $ ，其中表示复数共轭。
 
 $$\begin{bmatrix}v_1 \\\\ \vdots \\\\ v_n \end{bmatrix} ^ \dagger = \begin{bmatrix} v_1 ^ * & \cdots & v_n ^ *\end{bmatrix}$$
 
@@ -126,7 +126,7 @@ au_2 + bv_2\\\\
 au_n + bv_n \end{bmatrix} 。
 $$
 
-大小[*matrix*](https://en.wikipedia.org/wiki/Matrix_(mathematics))为 $ m n 的 \times 矩阵 $ 是 $ $ 按 $ m 行和 n 列排列的 mn 复数的集合，如下 $ $ $ 所示：
+大小[](https://en.wikipedia.org/wiki/Matrix_(mathematics))为 $ m n 的 \times 矩阵 $ 是 $ $ 按 $ m 行和 n 列排列的 mn 复数的集合，如下 $ $ $ 所示：
 
 $$年 = 
 \begin{bmatrix}
@@ -164,7 +164,7 @@ P_ { m1 } ~~ P_ { m2 } ~~ \cdots ~~ P_ { mp}
 
 其中，P 条目 $ $ $ P_ { ik } = \sum _j M_ { ij } N_ { jk } $ 。 例如，条目 $ P_ { 11 } $ 是 M 第一行的第一行的第一 $ 列， $ 第一列是 $ N $ 。请注意，由于矢量只是矩阵的一种特殊情况，因此此定义延伸到矩阵向量乘法。 
 
-我们考虑的所有矩阵均为方形矩阵，其中的行数和列数相等，或向量仅对应于 $ 1 $ 列。 一个特殊的正方形矩阵是表示的[*标识矩阵*](https://en.wikipedia.org/wiki/Identity_matrix)， $ \boldone $ 它的所有对角线元素都等于 $ 1， $ 剩余元素等于 $ 0 $ ：
+我们考虑的所有矩阵均为方形矩阵，其中的行数和列数相等，或向量仅对应于 $ 1 $ 列。 一个特殊的正方形矩阵是表示的 [*标识矩阵*](https://en.wikipedia.org/wiki/Identity_matrix)， $ \boldone $ 它的所有对角线元素都等于 $ 1， $ 剩余元素等于 $ 0 $ ：
 
 $$\boldone=\begin{bmatrix}
 1 ~~ 0 ~~ \cdots ~~ 0\\\\
@@ -172,13 +172,13 @@ $$\boldone=\begin{bmatrix}
 ~~ \ddots\\\\
 0 ~~ 0 ~~ \cdots ~~ 1 \end{bmatrix} 。$$
 
-对于正方形矩阵 $ a $ ，我们说， $ $ 如果 AB BA，矩阵 B 是[*相反*](https://en.wikipedia.org/wiki/Invertible_matrix)的 $ = = \boldone $ 。 矩阵的逆矩阵不需要存在，但如果它存在，则它是唯一的，并 $ 将其表示为 ^ { -1 } $ 。 
+对于正方形矩阵 $ a $ ，我们说， $ $ 如果 AB BA，矩阵 B 是 [*相反*](https://en.wikipedia.org/wiki/Invertible_matrix)的 $ = = \boldone $ 。 矩阵的逆矩阵不需要存在，但如果它存在，则它是唯一的，并 $ 将其表示为 ^ { -1 } $ 。 
 
-对于任何矩阵 $ m $ ，m 的 adjoint 或共轭转 $ 置 $ 为 matrix $ N， $ 以便 $ N_ { ij } = M_ { ji } ^ \* $ 。 M 的 adjoint $ $ 通常表示为 $ m ^ \dagger $ 。 $ $ 如果为[*unitary*](https://en.wikipedia.org/wiki/Unitary_matrix) $ UU ^ \dagger = u ^ \dagger u = \boldone $ 或等效 $ 项 u ^ { -1 } = u ^ \dagger $ ，则假设矩阵 U 为单一矩阵。  单一矩阵的最重要的属性可能是它们保留向量的标准。  出现这种情况的原因是 
+对于任何矩阵 $ m $ ，m 的 adjoint 或共轭转 $ 置 $ 为 matrix $ N， $ 以便 $ N_ { ij } = M_ { ji } ^ \* $ 。 M 的 adjoint $ $ 通常表示为 $ m ^ \dagger $ 。 $ $ 如果为[](https://en.wikipedia.org/wiki/Unitary_matrix) $ UU ^ \dagger = u ^ \dagger u = \boldone $ 或等效 $ 项 u ^ { -1 } = u ^ \dagger $ ，则假设矩阵 U 为单一矩阵。  单一矩阵的最重要的属性可能是它们保留向量的标准。  出现这种情况的原因是 
 
 $$\langlev、v \rangle = v ^ \dagger v = v ^ \dagger u ^ { -1 } U v = v ^ \dagger u ^ \dagger u v = \langle u v、u v \rangle 。$$  
 
-$ $ 如果[*Hermitian*](https://en.wikipedia.org/wiki/Hermitian_matrix) $ m m ^，则认为矩阵 M 是 Hermitian 的 = \dagger $ 。
+$ $ 如果[](https://en.wikipedia.org/wiki/Hermitian_matrix) $ m m ^，则认为矩阵 M 是 Hermitian 的 = \dagger $ 。
 
 最后， [*tensor product*](https://en.wikipedia.org/wiki/Tensor_product) (或 Kronecker product) 2 个2个矩阵，大小为 $ p q 的2个矩阵 $ $ \times $ ，第 n 个大小 $ $ 为 p q，为大小为 $ \times $ $ = \otimes $ 的 $ mp \times nq $ ， $ 并 $ $ 按如下所示从 M 和 n 获取 $ ：
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.QuantumProcessor.Extensions.DelayCA
 title: DelayCA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Simulation.QuantumProcessor.Extensions
 qsharp.name: DelayCA
 qsharp.summary: ''
-ms.openlocfilehash: aacbf6fb595700cf0631263ddbc1925846f9ad9f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 3b98cb25adc4e7b39a6139ce1631b1a4505a69bc
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96192581"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857855"
 ---
 # <a name="delayca-operation"></a>DelayCA 操作
 

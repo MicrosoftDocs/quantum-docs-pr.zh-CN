@@ -5,16 +5,16 @@ author: QuantumWriter
 uid: microsoft.quantum.libraries.data-structures
 ms.author: martinro
 ms.date: 12/11/2017
-ms.topic: article
+ms.topic: conceptual
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: c3ce5d531618c269d15be3e4eb58ecbb597a022c
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: e9b593ba69ed41a9fb3c1298b5b945a4cbe43d5d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92692239"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858334"
 ---
 # <a name="data-structures-and-modeling"></a>数据结构和建模 #
 
@@ -72,7 +72,7 @@ ApplyToEach(
 ## <a name="oracles"></a>Oracles ##
 
 在 [阶段估算](https://en.wikipedia.org/wiki/Quantum_phase_estimation_algorithm) 和 [振幅放大](https://en.wikipedia.org/wiki/Amplitude_amplification) 文献中，oracle 的概念经常显示。
-此处的术语 "oracle" 指的是一组 qubits 的黑盒量程子例程，并以阶段的形式返回答案。
+此处的术语 "oracle" 指的是一个用于处理一组 qubits 的量程子例程，并以阶段形式返回答案。
 通常，可以将此子例程视为接受 oracle 的量程算法的输入，以及其他一些参数，并应用一系列的量程操作，并将对此量程子例程的调用视为一个基本入口。
 很明显，若要实际实现更大的算法，必须提供 oracle 到基本入口的具体分解，但这种情况下无需进行此类分解即可了解调用 oracle 的算法。
 在中 Q# ，此抽象通过使用该操作是第一类值来表示，这样，就可以将操作以黑白方式传递到量程算法的实现中。

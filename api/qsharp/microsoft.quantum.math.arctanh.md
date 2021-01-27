@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.ArcTanh
 title: ArcTanh 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ArcTanh
 qsharp.summary: Computes the inverse hyperbolic tangent of a number.
-ms.openlocfilehash: 269cee5c8fc8d87f6ea1e97cc87e777bad813019
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 328f943ed7cc179d18f4ef349f681023a94b6347
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96195814"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848927"
 ---
 # <a name="arctanh-function"></a>ArcTanh 函数
 

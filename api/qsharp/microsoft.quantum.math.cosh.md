@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.Cosh
 title: Cosh 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: Cosh
 qsharp.summary: Returns the hyperbolic cosine of the specified angle.
-ms.openlocfilehash: cbf549dcfb5ae500428a6f3a0cbd4f1329d83068
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1ec63a40b5710cc82cbe0b0d48d25d2f9f153efb
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210907"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848388"
 ---
 # <a name="cosh-function"></a>Cosh 函数
 

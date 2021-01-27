@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.FeatureRegisterSize
 title: FeatureRegisterSize 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: FeatureRegisterSize
 qsharp.summary: Returns the number of qubits required to encode a particular feature vector.
-ms.openlocfilehash: bc5d5a23cfb431f9506b15bc404ab6955d1c2a35
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 2754e901d74175c1841a38d795f5de02dabc9b8d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96196406"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848428"
 ---
 # <a name="featureregistersize-function"></a>FeatureRegisterSize 函数
 

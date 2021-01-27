@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.PartialRotationsLayer
 title: PartialRotationsLayer 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: PartialRotationsLayer
 qsharp.summary: Returns an array of single-qubit rotations along a given axis, parameterized by distinct model parameters.
-ms.openlocfilehash: ade0640b07f633982e98d5d02239fa205909bcce
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e230df9b28c59e1d532d5b36adf90efa01f0f33e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96196236"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98852925"
 ---
 # <a name="partialrotationslayer-function"></a>PartialRotationsLayer 函数
 

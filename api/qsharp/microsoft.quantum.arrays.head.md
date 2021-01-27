@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.Head
 title: Head 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Head
 qsharp.summary: Returns the first element of the array.
-ms.openlocfilehash: 834cbe2384122463be6a0efcb6e09785aae9c092
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 6dd181914b5ed3ef16a02b31cb6131daf2a34e19
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96221107"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848572"
 ---
 # <a name="head-function"></a>Head 函数
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.ApplyBlockEncodingFromBEandQubit
 title: ApplyBlockEncodingFromBEandQubit 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: ApplyBlockEncodingFromBEandQubit
 qsharp.summary: Conversion of ((LittleEndian, Qubit[]) => () is Adj + Ctl) to BlockEncoding
-ms.openlocfilehash: 16d54a982b020f4d4ded5901ec07de44a2d09726
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 616ca9a78918199057e203a825cdcde7aeb75de2
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96229607"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98852797"
 ---
 # <a name="applyblockencodingfrombeandqubit-operation"></a>ApplyBlockEncodingFromBEandQubit 操作
 

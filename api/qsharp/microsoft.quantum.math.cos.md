@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.Cos
 title: Cos 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: Cos
 qsharp.summary: Returns the cosine of the specified angle.
-ms.openlocfilehash: 3a4af6d0cf0332e34447e374fd45a81944daad94
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 851f955248c29d35f5f4d0abc3c169e2dce1129c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96228587"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848844"
 ---
 # <a name="cos-function"></a>Cos 函数
 

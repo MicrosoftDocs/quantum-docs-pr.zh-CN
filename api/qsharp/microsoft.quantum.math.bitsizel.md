@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Math.BitSizeL
 title: BitSizeL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
@@ -10,12 +10,12 @@ qsharp.summary: >-
   For a non-negative integer `a`, returns the number of bits required to represent `a`.
 
   That is, returns the smallest $n$ such that $a < 2^n$.
-ms.openlocfilehash: 8b3d4cceb69619ed32977337fc0fe7401db38cbd
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c94d873d7117fd2ee66226fab6d4bfc5b33bc46d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96211043"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848912"
 ---
 # <a name="bitsizel-function"></a>BitSizeL 函数
 
