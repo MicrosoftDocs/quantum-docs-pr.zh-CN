@@ -1,19 +1,19 @@
 ---
 uid: Microsoft.Quantum.MachineLearning
 title: Default-machinelearning-southcentralus 命名空间
-ms.date: 11/25/2020 12:00:00 AM
-ms.topic: article
+ms.date: 1/23/2021 12:00:00 AM
+ms.topic: managed-reference
 qsharp.kind: namespace
 qsharp.name: Microsoft.Quantum.MachineLearning
 qsharp.summary: This namespace provides functions and operations used in quantum machine learning applications.
-ms.openlocfilehash: 497454e1cafba6354ce01401fdb8b0beaf169ca1
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 726738aad23c24b442692f04ca0518d6d25db96a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96196253"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98814339"
 ---
-# <a name="microsoftquantummachinelearning-namespace"></a><span data-ttu-id="cc1d4-102">Default-machinelearning-southcentralus 命名空间</span><span class="sxs-lookup"><span data-stu-id="cc1d4-102">Microsoft.Quantum.MachineLearning namespace</span></span>
+# <a name="microsoftquantummachinelearning-namespace"></a><span data-ttu-id="4075c-102">Default-machinelearning-southcentralus 命名空间</span><span class="sxs-lookup"><span data-stu-id="4075c-102">Microsoft.Quantum.MachineLearning namespace</span></span>
 
-<span data-ttu-id="cc1d4-103">此命名空间提供量程机器学习应用程序中使用的函数和操作。</span><span class="sxs-lookup"><span data-stu-id="cc1d4-103">This namespace provides functions and operations used in quantum machine learning applications.</span></span>
+<span data-ttu-id="4075c-103">此命名空间提供量程机器学习应用程序中使用的函数和操作。</span><span class="sxs-lookup"><span data-stu-id="4075c-103">This namespace provides functions and operations used in quantum machine learning applications.</span></span>
 
