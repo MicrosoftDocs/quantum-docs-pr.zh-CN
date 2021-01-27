@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Convert.BoolAsString
 title: BoolAsString 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: BoolAsString
 qsharp.summary: Converts a given boolean value to an equivalent string representation.
-ms.openlocfilehash: 3be291e7466060d19b4008d2526d796be932e443
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 54053dcd01ee563eb015972c981f6b3508c0f418
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96224422"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98834128"
 ---
 # <a name="boolasstring-function"></a>BoolAsString 函数
 

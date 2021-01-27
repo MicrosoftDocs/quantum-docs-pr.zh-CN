@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Convert.BoolArrayAsPauli
 title: BoolArrayAsPauli 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: BoolArrayAsPauli
 qsharp.summary: Given a bit string, returns a multi-qubit Pauli operator represented as an array of single-qubit Pauli operators.
-ms.openlocfilehash: 8e7088ec3918165d7b2afb1056a8319c6fb17796
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c11ca05ad8a939d704547c65a8e8a6537d0df4b7
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96214273"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98834234"
 ---
 # <a name="boolarrayaspauli-function"></a>BoolArrayAsPauli 函数
 

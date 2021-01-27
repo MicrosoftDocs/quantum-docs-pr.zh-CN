@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Convert.IntAsString
 title: IntAsString 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: IntAsString
 qsharp.summary: Converts a given integer number to an equivalent string representation.
-ms.openlocfilehash: 96d876d61644d002887d86704f3a292e61f3784f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e61932a442a6c303353adc06cc07d79d7830f282
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96224303"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98833027"
 ---
 # <a name="intasstring-function"></a>IntAsString 函数
 

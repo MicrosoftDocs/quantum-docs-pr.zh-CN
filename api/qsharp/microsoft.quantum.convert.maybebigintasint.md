@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Convert.MaybeBigIntAsInt
 title: MaybeBigIntAsInt 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: MaybeBigIntAsInt
 qsharp.summary: Converts a given big integer to an equivalent integer, if possible. The function returns a pair of the resulting integer and a Boolean flag which is true, if and only if the conversion was possible.
-ms.openlocfilehash: d0a598497e8a8f019bbd8da7db1c6cc4d7bde017
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1f10ac027f8f289e5ea554a7804abeb33def4df8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96224269"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98832769"
 ---
 # <a name="maybebigintasint-function"></a>MaybeBigIntAsInt 函数
 
