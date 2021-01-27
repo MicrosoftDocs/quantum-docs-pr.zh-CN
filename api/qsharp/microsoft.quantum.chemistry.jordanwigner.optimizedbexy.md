@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner.OptimizedBEXY
 title: OptimizedBEXY 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: OptimizedBEXY
 qsharp.summary: A unitary $U$ that applies the Pauli string on $(X^{z+1}\_pY^{z}\_p)Z\_{p-1}...Z_0$ on qubits $0..p$ conditioned on an index $z\in\{0,1\}$ and $p$. That is, $$ \begin{align} U\ket{z}\ket{p}\ket{\psi} = \ket{z}\ket{p}(X^{z+1}\_pY^{z}\_p)Z\_{p-1}...Z_0\ket{\psi} \end{align} $$
-ms.openlocfilehash: 3530e62671e16cfb5500c56c8e5e477dbb56e67e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 28a7c7877a3d48fd5ba50384d7996017e7cdb14f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96224847"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98837252"
 ---
 # <a name="optimizedbexy-operation"></a>OptimizedBEXY 操作
 
