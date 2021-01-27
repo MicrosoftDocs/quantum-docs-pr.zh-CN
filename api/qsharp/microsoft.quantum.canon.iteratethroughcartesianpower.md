@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.IterateThroughCartesianPower
 title: IterateThroughCartesianPower 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: IterateThroughCartesianPower
 qsharp.summary: Applies an operation for each index in the Cartesian power of an integer range.
-ms.openlocfilehash: 2883e7cb30633afe51d380befe806665207c5abd
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 3a303d13c4a6f102dab92d814e24df9d90213fbe
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96206470"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840299"
 ---
 # <a name="iteratethroughcartesianpower-operation"></a>IterateThroughCartesianPower 操作
 
@@ -28,7 +28,7 @@ operation IterateThroughCartesianPower (power : Int, bound : Int, op : (Int[] =>
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 以迭代方式为范围的笛卡尔幂的每个元素应用操作 `0..(bound - 1)` 。
 
@@ -53,6 +53,23 @@ operation IterateThroughCartesianPower (power : Int, bound : Int, op : (Int[] =>
 ## <a name="output--unit"></a>输出： [单元](xref:microsoft.quantum.lang-ref.unit)
 
 
+
+## <a name="example"></a>示例
+
+给定一个操作 `op` ，以下两个代码段是等效的：
+
+```qsharp
+IterateThroughCartesianPower(2, 3, op);
+```
+
+```qsharp
+op([0, 0]);
+op([1, 0]);
+op([2, 0]);
+op([0, 1]);
+// ..
+op([2, 2]);
+```
 
 ## <a name="see-also"></a>另请参阅
 

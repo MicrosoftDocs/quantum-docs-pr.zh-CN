@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._ToPauliBases
 title: _ToPauliBases 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _ToPauliBases
 qsharp.summary: ''
-ms.openlocfilehash: d718a2a44fff0d61f3254e48e4d6c57ba68872d1
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 04310467442bf56e19d5937a8d9b7731c8b3f899
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96215124"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98839157"
 ---
 # <a name="_topaulibases-operation"></a>_ToPauliBases 操作
 

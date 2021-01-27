@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Characterization.HeadMeasurement
 title: HeadMeasurement 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Characterization
 qsharp.name: HeadMeasurement
 qsharp.summary: ''
-ms.openlocfilehash: 114aacafb7d23ed3f4af1b76187708b94e0b8e8a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: fcd8fab2a5d614ce509400710a41e146070d8df4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96204328"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98839695"
 ---
 # <a name="headmeasurement-function"></a>HeadMeasurement 函数
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._PrepareSingleConfigurationalStateSingleSiteOccupation
 title: _PrepareSingleConfigurationalStateSingleSiteOccupation 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _PrepareSingleConfigurationalStateSingleSiteOccupation
 qsharp.summary: ''
-ms.openlocfilehash: 664973e0690c3007f6934691ec69a60212ed5f45
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 12914f5ff60e21fef66ff49782d092ce80a33ff5
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96215344"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98839269"
 ---
 # <a name="_preparesingleconfigurationalstatesinglesiteoccupation-function"></a>_PrepareSingleConfigurationalStateSingleSiteOccupation 函数
 

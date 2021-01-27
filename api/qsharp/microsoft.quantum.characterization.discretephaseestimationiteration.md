@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Characterization.DiscretePhaseEstimationIteration
 title: DiscretePhaseEstimationIteration 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Characterization
 qsharp.name: DiscretePhaseEstimationIteration
 qsharp.summary: Performs a single iteration of an iterative (classically-controlled) phase estimation algorithm using integer powers of a unitary oracle.
-ms.openlocfilehash: 8ce1e1a2bda6507285f055c87619a8760c891082
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 03e2300dcc2d2cb42992e074833c8cd2530e898b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96204379"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98839978"
 ---
 # <a name="discretephaseestimationiteration-operation"></a>DiscretePhaseEstimationIteration 操作
 

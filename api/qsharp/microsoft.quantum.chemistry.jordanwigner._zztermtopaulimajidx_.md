@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._ZZTermToPauliMajIdx_
 title: _ZZTermToPauliMajIdx_ 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _ZZTermToPauliMajIdx_
 qsharp.summary: Converts a GeneratorIndex describing a ZZ term to an expression 'GeneratorIndex[]' in terms of Paulis.
-ms.openlocfilehash: ca713260da2dd717cb1548ef86b7faa0d1b826aa
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b18529182083ae6a905036ce6c00c3a0695ffccf
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96214919"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98839053"
 ---
 # <a name="_zztermtopaulimajidx_-function"></a>_ZZTermToPauliMajIdx_ 函数
 

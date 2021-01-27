@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.TrotterArbitraryImplCA
 title: TrotterArbitraryImplCA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: TrotterArbitraryImplCA
 qsharp.summary: Recursive implementation of even-order Trotter–Suzuki integrator.
-ms.openlocfilehash: 2abfbb9d51a98d8ede1b0835875a3771ffda0691
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: bb93517a479ce344277bfe97d070e6630a8fccc0
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96204719"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840082"
 ---
 # <a name="trotterarbitraryimplca-operation"></a>TrotterArbitraryImplCA 操作
 

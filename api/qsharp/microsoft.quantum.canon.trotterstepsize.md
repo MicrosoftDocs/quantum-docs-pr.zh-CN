@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.TrotterStepSize
 title: TrotterStepSize 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: TrotterStepSize
 qsharp.summary: Computes Trotter step size in recursive implementation of Trotter simulation algorithm.
-ms.openlocfilehash: aa5b63e058e1ea726b0d4c6eca73078831daaf3b
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c7b6432645dcad2bd47c62b91e04e0b42cd04ca9
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96204685"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840072"
 ---
 # <a name="trotterstepsize-function"></a>TrotterStepSize 函数
 

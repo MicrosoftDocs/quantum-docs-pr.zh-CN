@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._ApplyJordanWignerClusterOperatorPQRSTerm
 title: _ApplyJordanWignerClusterOperatorPQRSTerm 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _ApplyJordanWignerClusterOperatorPQRSTerm
 qsharp.summary: Applies time-evolution by a cluster operator PQRS term described by a `GeneratorIndex`.
-ms.openlocfilehash: 5e43f81714128629a63befccb31092adbe9c9e82
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f5f77c102596c26100c85eaac42f5f88848e4550
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96204039"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98839573"
 ---
 # <a name="_applyjordanwignerclusteroperatorpqrsterm-operation"></a>_ApplyJordanWignerClusterOperatorPQRSTerm 操作
 

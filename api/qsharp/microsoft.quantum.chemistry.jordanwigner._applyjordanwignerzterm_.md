@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._ApplyJordanWignerZTerm_
 title: _ApplyJordanWignerZTerm_ 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _ApplyJordanWignerZTerm_
 qsharp.summary: Applies time-evolution by a Z term described by a `GeneratorIndex`.
-ms.openlocfilehash: ad9245b0fd79b4f383d1ef8531537b03d78ae9b8
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c27255409061a28668270d69133fbccb6b01b493
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96203988"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98839542"
 ---
 # <a name="_applyjordanwignerzterm_-operation"></a>_ApplyJordanWignerZTerm_ 操作
 

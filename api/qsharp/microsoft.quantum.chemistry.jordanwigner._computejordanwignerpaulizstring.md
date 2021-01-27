@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._ComputeJordanWignerPauliZString
 title: _ComputeJordanWignerPauliZString 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _ComputeJordanWignerPauliZString
 qsharp.summary: ''
-ms.openlocfilehash: ec8efac58fbb7c066de5da3625c4bc21ccecbe5d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: dc85035c914a2104494b5e3defc2789a3ba40747
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96203903"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98839513"
 ---
 # <a name="_computejordanwignerpaulizstring-function"></a>_ComputeJordanWignerPauliZString 函数
 

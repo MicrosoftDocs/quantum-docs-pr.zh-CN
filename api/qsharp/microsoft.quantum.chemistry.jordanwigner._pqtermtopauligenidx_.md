@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._PQTermToPauliGenIdx_
 title: _PQTermToPauliGenIdx_ 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _PQTermToPauliGenIdx_
 qsharp.summary: Converts a GeneratorIndex describing a PQ term to an expression 'GeneratorIndex[]' in terms of Paulis
-ms.openlocfilehash: 7f1794f9e46323ccf722407fb7ae82f73ed76e40
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 046b3b7b78cee7f046607277896100e20c33a32d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96215429"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98839316"
 ---
 # <a name="_pqtermtopauligenidx_-function"></a>_PQTermToPauliGenIdx_ 函数
 

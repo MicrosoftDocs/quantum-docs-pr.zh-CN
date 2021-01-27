@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.EmbedPauli
 title: EmbedPauli 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: EmbedPauli
 qsharp.summary: Given a single-qubit Pauli operator and the index of a qubit, returns a multi-qubit Pauli operator with the given single-qubit operator at that index and `PauliI` at every other index.
-ms.openlocfilehash: e9042ca9eac4b8791057037dc5698eb14deadd31
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0e6a93e22ee495abcc44bdf522e7c72c0981308b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96207031"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840535"
 ---
 # <a name="embedpauli-function"></a>EmbedPauli 函数
 
@@ -48,3 +48,12 @@ function EmbedPauli (pauli : Pauli, location : Int, n : Int) : Pauli[]
 
 ## <a name="output--pauli"></a>Output： [Pauli](xref:microsoft.quantum.lang-ref.pauli)[]
 
+
+
+## <a name="example"></a>示例
+
+获取阵列 `[PauliI, PauliI, PauliX, PauliI]` ：
+
+```qsharp
+EmbedPauli(PauliX, 2, 3);
+```

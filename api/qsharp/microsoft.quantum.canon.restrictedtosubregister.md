@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.RestrictedToSubregister
 title: RestrictedToSubregister 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: RestrictedToSubregister
 qsharp.summary: Restricts an operation to an array of indices of a register, i.e., a subregister.
-ms.openlocfilehash: a49b15ac9c3ba9c1959bdead11549c1f37caabf9
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c5a6bbe16d2f6a317f6ed6f258077095465995f9
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96205365"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840226"
 ---
 # <a name="restrictedtosubregister-function"></a>RestrictedToSubregister 函数
 

@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.HY
 title: 1XT-HY-UBW 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -12,12 +12,12 @@ qsharp.summary: >-
   The Y Hadamard transformation $H_Y = S H$ on a single qubit is:
 
   \begin{align} H_Y \mathrel{:=} \frac{1}{\sqrt{2}} \begin{bmatrix} 1 & 1 \\\\ i & -i \end{bmatrix}. \end{align}
-ms.openlocfilehash: ceca8eab8cb8f16333cd7a1e3c24e6cebe4ec8d7
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 119d78c4cd8d5e5d92cb54ff652b082a1b99ae06
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96206827"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840449"
 ---
 # <a name="hy-operation"></a>1XT-HY-UBW 操作
 

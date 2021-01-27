@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.WithFirstInputApplied
 title: WithFirstInputApplied 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: WithFirstInputApplied
 qsharp.summary: ''
-ms.openlocfilehash: d825a0b497c2a15047b552b954529889fb784337
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 2fd541ee2e78bae8416cf62bd362b65c5de48e13
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96204498"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840017"
 ---
 # <a name="withfirstinputapplied-function"></a>WithFirstInputApplied 函数
 

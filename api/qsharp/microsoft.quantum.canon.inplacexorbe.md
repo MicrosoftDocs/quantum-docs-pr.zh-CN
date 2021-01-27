@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.InPlaceXorBE
 title: InPlaceXorBE 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > This operation has been removed.
-ms.openlocfilehash: 918041c0b57ddb1c03c2c0025991436c3deef15c
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 76cf389a72f7606c32545981d7d31b2f58a0091b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96206725"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840406"
 ---
 # <a name="inplacexorbe-operation"></a>InPlaceXorBE 操作
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner._SelectZ
 title: _SelectZ 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: _SelectZ
 qsharp.summary: ''
-ms.openlocfilehash: 73f4cfb14ecc9bff8f5e4b1f5fec6036decfb6a5
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 27a3314e7bd95d7f9be9a7a564458e16424444d9
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96215293"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98839232"
 ---
 # <a name="_selectz-operation"></a>_SelectZ 操作
 

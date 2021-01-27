@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.IsRangeEmpty
 title: IsRangeEmpty 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: IsRangeEmpty
 qsharp.summary: Returns true if and only if input range is empty.
-ms.openlocfilehash: 029de3ca81002bd0e460135bb8e70e92019588ae
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a36d174bd0e89df0f546290fc469214fd820aa5c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96206589"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98840339"
 ---
 # <a name="israngeempty-function"></a>IsRangeEmpty 函数
 
