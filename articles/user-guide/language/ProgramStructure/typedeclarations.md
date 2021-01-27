@@ -4,17 +4,17 @@ description: 了解如何以编程语言声明用户定义类型 Q# 。
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.typedeclarations
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 7bd04cd89f33f0442042c0bdb3dda57aea84b74f
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: 505628b63cb116d94c6f8b11b7abfc63a650eab6
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96233076"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858251"
 ---
 <!-- 
 # Type declarations in Q#
