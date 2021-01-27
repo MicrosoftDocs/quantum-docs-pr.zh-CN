@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Synthesis.ApplyPermutationUsingDecompositionWithVariableOrder
 title: ApplyPermutationUsingDecompositionWithVariableOrder 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Synthesis
 qsharp.name: ApplyPermutationUsingDecompositionWithVariableOrder
 qsharp.summary: Permutes the amplitudes in a quantum state given a permutation using decomposition-based synthesis.
-ms.openlocfilehash: a5ca9b366f7ff477070e21fea047ff04b425439c
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f33d2980ff1775b1ae8d2e2e7a4fa1e5cbe7d5ba
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96203427"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858869"
 ---
 # <a name="applypermutationusingdecompositionwithvariableorder-operation"></a>ApplyPermutationUsingDecompositionWithVariableOrder 操作
 
@@ -28,7 +28,7 @@ operation ApplyPermutationUsingDecompositionWithVariableOrder (perm : Int[], var
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 此操作是 @"microsoft.quantum.synthesis.applypermutationusingdecomposition" 可在其中指定可变顺序的更通用版本。 不同的变量顺序将更改分解序列和用于受控入口的事实数据表 @"microsoft.quantum.intrinsic.x" 。  因此，更改可变顺序会改变用于实现排列的总入口数。
 
@@ -53,6 +53,16 @@ operation ApplyPermutationUsingDecompositionWithVariableOrder (perm : Int[], var
 ## <a name="output--unit"></a>输出： [单元](xref:microsoft.quantum.lang-ref.unit)
 
 
+
+## <a name="example"></a>示例
+
+要合成 `SWAP` 操作：
+
+```qsharp
+using (qubits = Qubit[2]) {
+  ApplyPermutationUsingDecompositionWithVariableOrder([0, 2, 1, 3], [1, 0], LittleEndian(qubits));
+}
+```
 
 ## <a name="see-also"></a>另请参阅
 

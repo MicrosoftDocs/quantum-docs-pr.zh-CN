@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.TrotterSimulationAlgorithmImpl
 title: TrotterSimulationAlgorithmImpl 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: TrotterSimulationAlgorithmImpl
 qsharp.summary: Makes repeated calls to `TrotterStep` to approximate the time-evolution operator exp(_-iHt_).
-ms.openlocfilehash: 5b796245e2a4434228260a229cb61be66f3e38d6
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b2411950b90eb676b1da53bd06bde648099e2db4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96203393"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858890"
 ---
 # <a name="trottersimulationalgorithmimpl-operation"></a>TrotterSimulationAlgorithmImpl 操作
 

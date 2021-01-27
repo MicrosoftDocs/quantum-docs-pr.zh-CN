@@ -4,17 +4,17 @@ description: 了解如何使用 Q# OrbitalIntegral 类型枚举分子 symmetries
 author: bradben
 ms.author: v-benbra
 ms.date: 10/09/2017
-ms.topic: article-type-from-white-list
+ms.topic: conceptual
 uid: microsoft.quantum.chemistry.concepts.symmetries
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 9ebb8e9bda06967d3cfa002a7d074933d9135ada
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 2622285fd95eddf0d70402ae99dd18bfd8c38087
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833813"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858826"
 ---
 # <a name="symmetries-of-molecular-integrals"></a>Symmetries of 分子积分
 

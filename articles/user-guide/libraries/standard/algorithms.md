@@ -4,17 +4,17 @@ description: 了解基本的量程计算算法，包括波幅放大、傅立叶�
 author: QuantumWriter
 ms.author: martinro
 ms.date: 12/11/2017
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.libraries.standard.algorithms
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 982103876b00718aa3b42c6bc3a07d242cde7594
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: d4d8c35b3196ffb9915c6da06116b3c7dfd0562a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92692223"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98859008"
 ---
 # <a name="quantum-algorithms"></a>量程算法 #
 
@@ -49,7 +49,7 @@ Q# 将振幅放大引入为在意波幅放大的专用化。  在意波幅放大
 傅立叶转换是一种古典型分析工具，与量程计算一样重要。
 此外，在设计量程算法时， *量程傅立叶转换* (QFT) 远远超过了在传统计算机上可能会出现的情况。
 
-作为 QFT 的大致通用化，我们提供了这样的 <xref:Microsoft.Quantum.Canon.ApproximateQft> 操作：通过修剪旋转（对所需的算法准确性并不是绝对必需的）来实现进一步的优化。
+作为 QFT 的大致通用化，我们提供了这样的 <xref:Microsoft.Quantum.Canon.ApproximateQFT> 操作：通过修剪旋转（对所需的算法准确性并不是绝对必需的）来实现进一步的优化。
 大致的 QFT 要求 dyadic $Z $ 旋转操作以及 <xref:Microsoft.Quantum.Intrinsic.RFrac> <xref:Microsoft.Quantum.Intrinsic.H> 操作。
 输入和输出假设编码为大字节序编码---也就是说，带有索引的 qubit `0` 在二进制整数表示形式的最左边 (最高) 位进行编码。
 这与 [票证表示法](xref:microsoft.quantum.concepts.dirac)一致，因为状态 $ \ket $ 中的三个 qubits 的寄存器对应 $q 于状态 $ \ket $ 中的三个， {100} {1} 而 $q _1 $ 和 $q _2 $ 都处于状态 $ \ket {0} $ 中。

@@ -1,6 +1,6 @@
 ---
 title：量程 oracles 说明：了解如何使用和定义量程 oracles、用于作为其他算法的输入的黑色框操作。
-author： cgranade uid： oracles： chgranad： ms. 日期： 07/11/2018 ms. 主题：文章不是：
+author： cgranade uid： oracles： chgranad： ms. 日期： 07/11/2018 ms. 主题：概念非 loc：
 - "Q#"
 - "$$v"
 - "$$"
@@ -134,7 +134,7 @@ $$
 
 $$
 \begin{align}
-O \ket { \psi } & = o \sum _ { x \in \\ { 0、1 \\ } ^ n、y \in \\ { 0、1 \\ } ^ m } \alpha (x、y) \ket { x } \ket { y } x \\\\ 0 & 、 = 1 ^ n、y 0、1 ^ m (x、y) O \sum _ { \in \\ { \\ } \in \\ { \\ } } \alpha \ket { x } \ket { y }\\\\
+O \ket { \psi } & = o \sum _{ x \in \\ { 0、1 \\ } ^ n、y \in \\ { 0、1 \\ } ^ m } \alpha (x、y) \ket { x } \ket { y } x \\\\ 0 & 、 = 1 ^ n、y 0、1 ^ m (x、y) O \sum_ { \in \\ { \\ } \in \\ { \\ } } \alpha \ket { x } \ket { y }\\\\
              &= \sum _ { x \in \\ { 0、1 \\ } ^ n、y \in \\ { 0、1 \\ } ^ m } \alpha (x、y) \ket { x } \ket { y \oplus f (x) } 。
 \end{align}
 $$
@@ -157,6 +157,9 @@ $$
         &= (-1) ^ { f (0) } Z ^ { f (0)  (1) } \ket { + } 。
 \end{align}
 $$
+
+> [!NOTE]
+>请注意， $ z ^ { -1 } = z ^ { \dagger } = z $ 和 $ z ^ { f (0) -f (1) } = Z ^ { f (1) -f (0) } 。$
 
 更常见的情况是，oracles 的两个视图都可以扩大了，以表示返回实数而不只是一位的传统函数。
 

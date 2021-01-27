@@ -1,6 +1,6 @@
 ---
 title： Pauli 度量说明：了解如何使用单 qubit Pauli 度量值操作。
-author： bradben uid： pauli： benbra： v-ms. 日期： 12/11/2017 ms. 主题：文章不是：
+author： bradben uid： pauli： benbra： v-ms. 日期： 12/11/2017 ms. 主题：概念非 loc：
 - "Q#"
 - "$$v"
 - "$$"
@@ -139,7 +139,7 @@ $$
 
 它还等效于将 $ HS ^ 应用于 \dagger $ 量程状态向量，然后再测量 $ Z，以使 $ 以下操作等效于 `Measure([PauliY], [q])` ：
 
-```Q#
+```qsharp
 operation MeasureY(qubit : Qubit) : Result {
     mutable result = Zero;
     within {
