@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.ExtendedGreatestCommonDivisorL
 title: ExtendedGreatestCommonDivisorL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ExtendedGreatestCommonDivisorL
 qsharp.summary: Computes a tuple $(u,v)$ such that $u \cdot a + v \cdot b = \operatorname{GCD}(a, b)$, where $\operatorname{GCD}$ is $a$ greatest common divisor of $a$ and $b$. The GCD is always positive.
-ms.openlocfilehash: abbbd367859952180f181a245ca0754646529b18
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1445f1c3d2a5852459a492fa5e6bfd2a685786d9
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210703"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857527"
 ---
 # <a name="extendedgreatestcommondivisorl-function"></a>ExtendedGreatestCommonDivisorL 函数
 

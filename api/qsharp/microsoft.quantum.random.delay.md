@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Random.Delay
 title: 延迟操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Random
 qsharp.name: Delay
 qsharp.summary: ''
-ms.openlocfilehash: 98be442282d03f47d446dbb08635d79de00a2aad
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0e80a799ce8aa1aca3d5b077dfb04b5619de75a7
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210193"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847642"
 ---
 # <a name="delay-operation"></a>延迟操作
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.AbsSquaredComplex
 title: AbsSquaredComplex 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: AbsSquaredComplex
 qsharp.summary: Returns the squared absolute value of a complex number of type `Complex`.
-ms.openlocfilehash: d48212d7f861b3ff9e37d078742f53f0cd8c71ba
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 5e08f76a175abdcd96b493a5708b3e5fc18eda61
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96195896"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857577"
 ---
 # <a name="abssquaredcomplex-function"></a>AbsSquaredComplex 函数
 

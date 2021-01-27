@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.QuantumProcessor.Extensions.DelayC
 title: DelayC 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Simulation.QuantumProcessor.Extensions
 qsharp.name: DelayC
 qsharp.summary: ''
-ms.openlocfilehash: 665d374455a369cef97d2a31208b6e97f260eae7
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 857e25ac7930563d7c94228b56bbbfdce0b6d354
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96230729"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847819"
 ---
 # <a name="delayc-operation"></a>DelayC 操作
 

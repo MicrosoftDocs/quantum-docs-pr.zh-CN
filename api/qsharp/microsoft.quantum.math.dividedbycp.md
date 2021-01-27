@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.DividedByCP
 title: DividedByCP 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: DividedByCP
 qsharp.summary: Returns the quotient of two inputs.
-ms.openlocfilehash: 745cb108463a62af8861b44a9667163327d1eb89
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 32919b5b4d3a9a15a63ad57f14c5d3761f7306c4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210873"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847111"
 ---
 # <a name="dividedbycp-function"></a>DividedByCP 函数
 

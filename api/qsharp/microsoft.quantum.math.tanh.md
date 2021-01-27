@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.Tanh
 title: Tanh 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: Tanh
 qsharp.summary: Returns the hyperbolic tangent of the specified angle.
-ms.openlocfilehash: c6d1bf8cead85bcd944aeb7d4a720d454efbb310
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 6c95b56cfe999fde69e3318c9e535c4005377d64
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96227244"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848183"
 ---
 # <a name="tanh-function"></a>Tanh 函数
 

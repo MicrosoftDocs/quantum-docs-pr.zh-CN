@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Arrays.Zip
 title: Zip 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
@@ -13,12 +13,12 @@ qsharp.summary: >-
 
 
   Given two arrays, returns a new array of pairs such that each pair contains an element from each original array.
-ms.openlocfilehash: 44db8d38d96babd16ead5ae6dde91da23bdee2c9
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8ed658003f749efd31b8d841cecbb0a23a471af5
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96219849"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850904"
 ---
 # <a name="zip-function"></a>Zip 函数
 
@@ -62,6 +62,14 @@ function Zip<'T, 'U> (left : 'T[], right : 'U[]) : ('T, 'U)[]
 ### <a name="u"></a>' U
 
 右侧数组元素的类型。
+
+## <a name="example"></a>示例
+
+```qsharp
+let left = [1, 3, 71];
+let right = [false, true];
+let pairs = Zip(left, right); // [(1, false), (3, true)]
+```
 
 ## <a name="see-also"></a>另请参阅
 

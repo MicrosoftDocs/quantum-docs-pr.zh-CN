@@ -4,16 +4,17 @@ description: 使用 NWChem 输入纸牌，演练一个示例，了解如何获�
 author: cgranade
 ms.author: chgranad
 ms.date: 10/23/2018
+ms.topic: sample
 uid: microsoft.quantum.chemistry.examples.endtoend
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 986ff2c2ff144c57bd01ddeea0467d0168fd9334
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: e0ec7dcbdccbab5c81177a4223c71fd3f2ce57d8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90835751"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847775"
 ---
 # <a name="end-to-end-with-nwchem"></a>NWChem 端到端 #
 

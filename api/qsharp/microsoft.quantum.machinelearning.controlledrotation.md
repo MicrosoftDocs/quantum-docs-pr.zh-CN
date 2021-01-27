@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning.ControlledRotation
 title: ControlledRotation 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: ControlledRotation
 qsharp.summary: Describes a controlled rotation in terms of its target and control indices, rotation axis, and index into a model parameter vector.
-ms.openlocfilehash: 1e664b470caeba656ea4a73f70bbc0ef5fe76f7e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 231afe65da3640218cbc97b9d49eae21bf6e1786
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96196559"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847396"
 ---
 # <a name="controlledrotation-user-defined-type"></a>ControlledRotation 用户定义的类型
 
@@ -44,6 +44,18 @@ newtype ControlledRotation = ((TargetIndex : Int, ControlIndices : Int[]), Axis 
 ### <a name="parameterindex--int"></a>ParameterIndex： [Int](xref:microsoft.quantum.lang-ref.int)
 
 用于描述此旋转角度的模型参数向量的索引。
+
+## <a name="example"></a>示例
+
+以下内容表示对寄存器中第一个 qubit 的 $X $ 轴的旋转，在第二个 qubit 上控制，以及在顺序模型中使用第四个参数提供的角度：
+
+```qsharp
+let controlledRotation = ControlledRotation(
+    (0, [1]),
+    PauliX,
+    3
+)
+```
 
 ## <a name="remarks"></a>备注
 

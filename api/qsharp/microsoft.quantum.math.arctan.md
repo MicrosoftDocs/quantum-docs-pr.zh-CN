@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.ArcTan
 title: ArcTan 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ArcTan
 qsharp.summary: Returns the angle whose tangent is the specified number.
-ms.openlocfilehash: 87c6690355ca38ed702c04b464d22c2d58b77b40
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 6c7b22ce1278c2cb45f16330b0c2276ac15296cf
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96195812"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847359"
 ---
 # <a name="arctan-function"></a>ArcTan 函数
 

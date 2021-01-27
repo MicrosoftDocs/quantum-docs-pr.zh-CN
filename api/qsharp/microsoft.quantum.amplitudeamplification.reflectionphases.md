@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.ReflectionPhases
 title: ReflectionPhases 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
 qsharp.name: ReflectionPhases
 qsharp.summary: Phases for a sequence of partial reflections in amplitude amplification.
-ms.openlocfilehash: 743ece778239c223573a3a8536ae8059cea09d5f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: fc3642b76c6e01f0709e78ea42c9ea7237389afa
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96191340"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847183"
 ---
 # <a name="reflectionphases-user-defined-type"></a>ReflectionPhases 用户定义的类型
 

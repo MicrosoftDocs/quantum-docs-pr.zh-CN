@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.MultiplyGeneratorIndex
 title: MultiplyGeneratorIndex 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: MultiplyGeneratorIndex
 qsharp.summary: Multiplies the coefficient in a `GeneratorIndex`.
-ms.openlocfilehash: dc2bd02c40b53eca726f70578e3c5918add8f1bb
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b53a483a0c2b8c99b733c9c87289fb212b5ffc89
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96230440"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848030"
 ---
 # <a name="multiplygeneratorindex-function"></a>MultiplyGeneratorIndex 函数
 
@@ -44,6 +44,14 @@ function MultiplyGeneratorIndex (multiplier : Double, generatorIndex : Microsoft
 ## <a name="output--generatorindex"></a>输出： [GeneratorIndex](xref:Microsoft.Quantum.Simulation.GeneratorIndex)
 
 一个， `GeneratorIndex` 它表示一个系数大于系数的字词 `multiplier` 。
+
+## <a name="example"></a>示例
+
+```qsharp
+let gen = GeneratorIndex(([1,2,3],[coeff]),[1,2,3]);
+let ((idxPaulis, idxDoubles), idxQubits) = MultiplyGeneratorIndex(multiplier, gen);
+// idxDoubles[0] == multiplier * coeff;
+```
 
 ## <a name="see-also"></a>另请参阅
 

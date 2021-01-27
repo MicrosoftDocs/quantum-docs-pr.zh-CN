@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.Tan
 title: Tan 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: Tan
 qsharp.summary: Returns the tangent of the specified angle.
-ms.openlocfilehash: abf7ccf92e60b6c2d6d9dd8219e5500e41b5c703
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f8c4a554df2f854eb2e6294d325b0f3b007b44bd
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96194417"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848198"
 ---
 # <a name="tan-function"></a>Tan 函数
 

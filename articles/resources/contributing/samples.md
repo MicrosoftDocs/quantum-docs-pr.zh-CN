@@ -4,17 +4,17 @@ description: 了解如何向 Microsoft Quantum Development Kit (QDK) 提供示�
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
-ms.topic: article
+ms.topic: contributor-guide
 uid: microsoft.quantum.contributing.samples
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: ae29614cc9c8bf965ea3cb373dc17470aec21252
-ms.sourcegitcommit: 8256ff463eb9319f1933820a36c0838cf1e024e8
+ms.openlocfilehash: 0c940a4cf228c694a899988f469158b1bb6e2425
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90759180"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847583"
 ---
 # <a name="contributing-samples-to-the-quantum-development-kit"></a>向量程开发工具包贡献示例
 
@@ -48,7 +48,7 @@ microsoft/Quantum
 
 查看构成每个文件夹的文件，让我们深入了解 [`algorithms/chsh-game/`](https://github.com/microsoft/Quantum/tree/main/samples/algorithms/chsh-game) 示例。
 
-| 文件              | 描述                                                |
+| 文件              | 说明                                                |
 |-------------------|------------------------------------------------------------|
 | `CHSHGame.csproj` | Q# 用于使用 .NET Core SDK 生成示例的项目 |
 | `Game.qs`         | Q# 示例的操作和函数                 |

@@ -1,6 +1,6 @@
 ---
 标题：多个 qubits 说明：了解如何对两个或更多个 qubits 执行操作。
-author： bradben uid： benbra-qubits：： v-ms. 日期： 12/11/2017 ms. 主题：文章不是：
+author： bradben uid： qubits： benbra： v-ms. 日期： 12/11/2017 ms. 主题：概念非 loc：
 - "Q#"
 - "$$v"
 - "$$"
@@ -105,10 +105,10 @@ Qubit 状态之间的主要区别在于两 qubit 状态为四维，而不是二�
 这种情况很容易看出，n qubits 的量程状态 $ $ $ 使用此构造由维度 2 ^ n 的单位向量表示 $ 。  矢量
 
 $$
-\begin{bmatrix}\alpha _ { 00 } 01 \\\\ 10 \alpha   _ { } \\\\ \alpha _ { 11 } \\\\ \alpha   _ { }  \end{bmatrix}
+\begin{bmatrix}\alpha _{ 00 } 01 \\\\ 10 \alpha_ { } \\\\ \alpha _{ 11 } \\\\ \alpha_ { }  \end{bmatrix}
 $$
 
-表示两个 qubits 的量程状态（如果 $ | \alpha _ { 00 } | ^ 2 | \alpha +_ { 01 } | ^ 2 + | \alpha _ { 10 } | ^ 2 | \alpha +_ { 11 } | ^ 2 = 1） $ 。 与单个 qubits 一样，多个 qubits 的量程状态向量包含描述系统行为所需的所有信息。
+表示两个 qubits 的量程状态（如果 $ | \alpha _{ 00 } | ^ 2 | \alpha +_ { 01 } | ^ 2 + | \alpha _{ 10 } | ^ 2 | \alpha +_ { 11 } | ^ 2 = 1） $ 。 与单个 qubits 一样，多个 qubits 的量程状态向量包含描述系统行为所需的所有信息。
 
 如果提供两个单独的 qubits，其中一个处于状态， $ \begin{bmatrix} \alpha \\\\ \beta \end{bmatrix} $ 另一个 qubit 处于状态 $ \begin{bmatrix} \gamma \\\\ \delta \end{bmatrix} $ ，则对应的双 qubit 状态为    
 
@@ -124,22 +124,22 @@ $$\psi\otimes\phi = \begin{bmatrix}1/ \sqrt { 2 } \\\\ 0 \\\\ 0 \\\\ 1/ \sqrt { 
 
 这种 qubit 状态（不能编写为单 qubit 状态的 tensor 产品）称为 "放大状态";这两个 qubits 称为 [*放大*](https://en.wikipedia.org/wiki/Quantum_entanglement)。  由于不能将量程状态视为单一 qubit 状态的 tensor 产品，因此，状态保存的信息并不局限于每个 qubits。  相反，该信息在两个状态之间的关联中以非本地方式存储。  此非区域信息是针对传统计算的量程计算的主要区别功能之一，并且对于大量的量程协议（包括 [量程 teleportation](https://github.com/microsoft/Quantum/tree/main/samples/getting-started/teleportation) 和 [量程错误更正](xref:microsoft.quantum.libraries.error-correction)）非常重要。
 
-## <a name="measuring-two-qubit-states"></a>度量 Qubit 状态 ##
+## <a name="measuring-two-qubit-states"></a>度量 Two-Qubit 状态 ##
 测量 qubit 状态与 qubit 度量非常类似。 测量状态
 
 $$
     \begin{bmatrix}
-        \alpha_ { 00 } 01 \\\\ \alpha _ { }\\\\ 
-        \alpha_ { 10 } 11 \\\\ \alpha _ {}
+        \alpha_{ 00 } 01 \\\\ \alpha_ { }\\\\ 
+        \alpha_{ 10 } 11 \\\\ \alpha_ {}
     \end{bmatrix}
 $$
 
-生成 $ 00 $ ，概率为 $ | \alpha _ { 00 } | ^ 2 $ ， $ 01， $ $ 概率 | 为 \alpha _ { 01 } | ^ 2 $ ， $ 10 $ 的概率为 $ | \alpha _ { 10 } | ^ 2 $ ， $ 11 $ 的 $ 概率 | 为 \alpha _ { 11 } | ^ 2 $ 。 变量 $ \alpha _ { 00 } 、 \alpha _ { 01 } 、 \alpha _ { 10 } $ 和 $ 11 \alpha _ { } $ 特意进行了命名，使此连接清晰明了。 完成度量后，如果结果为00，则 $ $ qubit 系统的量程状态已折叠，现在为
+生成 $ 00 $ ，概率为 $ | \alpha _{ 00 } | ^ 2 $ ， $ 01， $ $ 概率 | 为 \alpha_ { 01 } | ^ 2 $ ， $ 10 $ 的概率为 $ | \alpha _{ 10 } | ^ 2 $ ， $ 11 $ 的 $ 概率 | 为 \alpha_ { 11 } | ^ 2 $ 。 变量 $ \alpha _{ 00 } 、 \alpha_ { 01 } 、 \alpha _{ 10 } $ 和 $ 11 \alpha_ { } $ 特意进行了命名，使此连接清晰明了。 完成度量后，如果结果为00，则 $ $ qubit 系统的量程状态已折叠，现在为
 
 $$
     – \equiv
     \begin{bmatrix}
-        2 \\\\ 
+        1 \\\\ 
         0 \\\\ 
         0 \\\\ 
         0 \end{bmatrix} 。
@@ -193,7 +193,7 @@ $$
 
 再次遵循我们的直觉。
 
-## <a name="two-qubit-operations"></a>Qubit 操作
+## <a name="two-qubit-operations"></a>Two-Qubit 操作
 与 qubit 情况一样，任何单一转换都是对 qubits 的有效操作。 通常，n qubits 上的单一 $ 转换 $ 是 $ $ 大小为 $ 2 ^ n \times 2 ^ n (的矩阵 U， $ 因此它作用于大小为 $ 2 ^ n) 的向量 $ ，如 $ u ^ { -1 } = U ^ \dagger $ 。
 例如，CNOT-CONTAINS (控制-NOT) 门是一种常用的 qubit 门，由以下单一矩阵表示：
 
@@ -240,7 +240,7 @@ $$
 就像在 qubit 情况下，如果有4个 qubit 的入口 $ \times $ 矩阵可通过此集的产品/服务的任意精度来逼近，则这是通用的。
 通用入口集的一个示例是 Hadamard 门、T 门和 CNOT-CONTAINS 入口。 通过采用这些入口的产品，我们可以将两个 qubits 上的任何单一矩阵近似。
 
-## <a name="many-qubit-systems"></a>多 Qubit 系统
+## <a name="many-qubit-systems"></a>Many-Qubit 系统
 我们按照两个 qubit 案例中所述的完全相同的模式，从较小的系统生成 qubit 的量程状态。  此类状态是通过构建较小状态的 tensor 产品生成的。  例如，请考虑 $ $ 对量程计算机中的位字符串1011001进行编码。  我们可以将此编码为
 
 $$

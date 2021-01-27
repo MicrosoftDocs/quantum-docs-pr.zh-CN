@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.PowL
 title: PowL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: PowL
 qsharp.summary: Returns a number raised to a given power.
-ms.openlocfilehash: b3207d1854f6b69cdb5b68d354000a0b6746c0c2
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f7282a3639ca87dae731e39594576aa73c4602ac
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96228315"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857465"
 ---
 # <a name="powl-function"></a>PowL 函数
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.PauliEvolutionSet
 title: PauliEvolutionSet 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: PauliEvolutionSet
 qsharp.summary: Represents a dynamical generator as a set of simulatable gates and an expansion in the Pauli basis.
-ms.openlocfilehash: fb53b90b6ab5ce1003f66b68a8c2ad8b3631f627
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 961c95e6787b69e35ca531fa36164cc988ad660d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96230338"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847957"
 ---
 # <a name="paulievolutionset-function"></a>PauliEvolutionSet 函数
 

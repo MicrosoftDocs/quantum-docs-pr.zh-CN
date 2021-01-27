@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.Sum
 title: 操作总数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: Sum
 qsharp.summary: Implements a reversible sum gate. Given a carry-in bit encoded in qubit `carryIn` and two summand bits encoded in `summand1` and `summand2`, computes the bitwise xor of `carryIn`, `summand1` and `summand2` in the qubit `summand2`.
-ms.openlocfilehash: 7758e29c9f08f4d05253defbe5a43a5316289522
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: e659c77a876e10df75f28ca1798fb0335e1bfb22
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96221787"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847757"
 ---
 # <a name="sum-operation"></a>操作总数
 

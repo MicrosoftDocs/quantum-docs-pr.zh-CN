@@ -1,20 +1,20 @@
 ---
 title: 量程资源估计器-量程开发工具包
 description: 了解 Microsoft QDK resources 估计器，它估算 Q# 在量程计算机上运行某一给定操作实例所需的资源。
-author: anpaz-msft
+author: anpaz
 ms.author: anpaz
 ms.date: 06/26/2020
-ms.topic: article
+ms.topic: conceptual
 uid: microsoft.quantum.machines.resources-estimator
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: de425c2d91c6528b13c3bedd81acb4b4273ed711
-ms.sourcegitcommit: 7c687495a79d75ae9e029e5a41baec84d9e07bb0
+ms.openlocfilehash: c3aa94c8b34ad7247fbdeab4bf4dcb96ce746014
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96604637"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847465"
 ---
 # <a name="quantum-development-kit-qdk-resources-estimator"></a>量程开发工具包 (QDK) 资源估计器
 
@@ -123,15 +123,15 @@ namespace Quantum.MyProgram
 
 资源估计器跟踪以下度量值：
 
-|指标|描述|
+|指标|说明|
 |----|----|
 |__CNOT__    |操作的运行计数 `CNOT` (也称为受控 Pauli X 操作) 。|
 |__QubitClifford__ |任何单个 qubit Clifford 和 Pauli 操作的运行计数。|
 |度量     |任何度量值的运行计数。  |
 |__R__    |任何单 qubit 循环、不包括 `T` 、Clifford 和 Pauli 操作的运行计数。  |
 |__T__    |操作的运行计数 `T` 及其词干，包括 `T` 操作、T_x = 1xt-hy-ubw 和 T_y = 1Xt-hy-ubw。。  |
-|__深度__|操作运行的量程线路的深度 Q# (参见 [下面](#depth-width-and-qubitcount)) 。 默认情况下，深度指标仅计算 `T` 入口。 有关更多详细信息，请参阅 [深度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)。   |
-|Width |操作运行的量程线路的宽度 Q# (参见 [下面](#depth-width-and-qubitcount)) 。 默认情况下，深度指标仅计算 `T` 入口。 有关更多详细信息，请参阅 [Width Counter](xref:microsoft.quantum.machines.qc-trace-simulator.width-counter)。   |
+|__Depth__|操作运行的量程线路的深度 Q# (参见 [下面](#depth-width-and-qubitcount)) 。 默认情况下，深度指标仅计算 `T` 入口。 有关更多详细信息，请参阅 [深度计数器](xref:microsoft.quantum.machines.qc-trace-simulator.depth-counter)。   |
+|__Width__|操作运行的量程线路的宽度 Q# (参见 [下面](#depth-width-and-qubitcount)) 。 默认情况下，深度指标仅计算 `T` 入口。 有关更多详细信息，请参阅 [Width Counter](xref:microsoft.quantum.machines.qc-trace-simulator.width-counter)。   |
 |__QubitCount__    |运行操作期间分配的最大 qubits 数的下限 Q# 。 此指标可能不与 __深度__ 兼容 (请参阅下面) 。  |
 |__BorrowedWidth__    |操作中借用的最大 qubits 数 Q# 。  |
 
@@ -143,7 +143,7 @@ namespace Quantum.MyProgram
 
 报告以下指标：
 
-__深度：__ 对于根操作-执行此操作所用的时间（假定特定的入口时间）。
+__深度：__ 对于根操作-执行此操作所用的时间（假定配置的入口时间）。
 对于调用的操作或后续操作-在操作开始和结束时最新 qubit 可用性时间之间的时间差。
 
 __宽度：__ 对于根操作-实际用于执行它的 qubits 的数目 (和操作，它将调用) 。
@@ -157,15 +157,15 @@ __QubitCount：__ 对于根操作-qubits 执行此 (操作所需的最小数量�
 
 支持两种操作模式。 通过设置 QCTraceSimulatorConfiguration 来选择模式。
 
-__OptimizeDepth = true：__ 不建议在 qubit 重复使用 QubitManager，并在每次请求 qubit 时分配新的 qubit。 对于根操作 __深度__ ，将成为下限)  (最小深度。 为此深度报告兼容的 __宽度__ (同时) 可以实现这两者。 请注意，对于此深度，此宽度可能并不是最佳的。 __QubitCount__ 可能低于根操作的宽度，因为它会采用重复使用。
+__OptimizeDepth = false：__ 这是默认模式。 建议使用 QubitManager，以便在分配新的 qubits 之前重复使用已发布的。 对于根操作，" __宽度__ " 将成为 (下限) 的最小宽度。 系统会报告兼容 __深度__ ，可对其进行实现。 __QubitCount__ 将与根操作的 __宽度__ 相同，假设没有借款。
 
-__OptimizeDepth = false：__ 建议使用 QubitManager，以便在分配新的 qubits 之前重复使用已发布的。 对于根操作，" __宽度__ " 将成为 (下限) 的最小宽度。 系统会报告兼容 __深度__ ，可对其进行实现。 __QubitCount__ 将与根操作的 __宽度__ 相同，假设没有借款。
+__OptimizeDepth = true：__ 不建议在执行和执行过程中执行 QubitManager，qubit 重复使用和基于启发式的优化进行 qubit。 对于根操作 __深度__ ，将成为下限)  (最小深度。 为此深度报告兼容的 __宽度__ (同时) 可以实现这两者。 若要优化宽度，程序中稍后遇到的入口可能计划在程序前面所遇到的关口之前，但 qubits 计划为在深度保持最少的情况下重复使用。 由于 qubits 基于时间值重用，因此建议将入口时间配置为整数值。 不保证 __宽度__ 是最佳的。 有关详细信息，请参阅跟踪的白皮书 [宽度和深度](https://github.com/microsoft/qsharp-runtime/tree/main/src/Simulation/Simulators/QCTraceSimulator/Docs)。
 
 ## <a name="providing-the-probability-of-measurement-outcomes"></a>提供测量结果的概率
 
 您可以使用 <xref:Microsoft.Quantum.Diagnostics.AssertMeasurementProbability> <xref:Microsoft.Quantum.Diagnostics> 命名空间中的来提供有关测量操作预期概率的信息。 有关详细信息，请参阅 [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [量程跟踪模拟器](xref:microsoft.quantum.machines.qc-trace-simulator.intro)
 - [量子 Toffoli 模拟器](xref:microsoft.quantum.machines.toffoli-simulator)

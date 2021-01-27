@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.SumGeneratorSystems
 title: SumGeneratorSystems 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: SumGeneratorSystems
 qsharp.summary: Adds multiple `GeneratorSystem`s to create a new GeneratorSystem.
-ms.openlocfilehash: 7cb18e161dce3a52d7c9a0bf6a45d4818db2b849
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0e64d2b599c55c19711208670030fd01e09aff7e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96192462"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851025"
 ---
 # <a name="sumgeneratorsystems-function"></a>SumGeneratorSystems 函数
 

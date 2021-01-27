@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Research.Chemistry.JWOptimizedStatePreparation
 title: JWOptimizedStatePreparation 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Research.Chemistry
 qsharp.name: JWOptimizedStatePreparation
 qsharp.summary: Simple state preparation of trial state by occupying spin-orbitals
-ms.openlocfilehash: a2e0c24eaa1f5326f2d531b4e7e55b2c440bc795
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 539736ddb04b32c877664d91e20d76facd4d7ecf
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96229845"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851079"
 ---
 # <a name="jwoptimizedstatepreparation-operation"></a>JWOptimizedStatePreparation 操作
 

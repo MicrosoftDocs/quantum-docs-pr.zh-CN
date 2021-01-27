@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.ModI
 title: ModI 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ModI
 qsharp.summary: Returns the modulus of a number with respect to another number.
-ms.openlocfilehash: e0d735096ce00b97ac42b336ac226e8e25879c94
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8f4ff37767e5120b99834a63ed19055ba1806907
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96195012"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848061"
 ---
 # <a name="modi-function"></a>ModI 函数
 

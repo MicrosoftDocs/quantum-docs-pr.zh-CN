@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Random.DrawCategorical
 title: DrawCategorical 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Random
 qsharp.name: DrawCategorical
 qsharp.summary: Draws a random sample from a categorical distribution specified by a list of probablities.
-ms.openlocfilehash: a5826aa5f658fea766db0ca5ccbb9c0d7d056d4c
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a9fe1b08e80abc65a5c4b803f0cb8a5e7a62759c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96192989"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851155"
 ---
 # <a name="drawcategorical-operation"></a>DrawCategorical 操作
 
@@ -28,7 +28,7 @@ operation DrawCategorical (probs : Double[]) : Int
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 选择特定索引的概率与该索引处数组元素的值成正比。
 将忽略等于零的数组元素并从不返回它们的索引。 如果任何数组元素小于0，或者如果没有数组元素大于零，则操作将失败。

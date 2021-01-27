@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.PlusC
 title: PlusC 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: PlusC
 qsharp.summary: Returns the sum of two inputs.
-ms.openlocfilehash: bd04445c19ffc9184f4cf6cf6cf5c8d1258b6763
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: d13c6061702ecf4c62f03e229008cc8441ee92ab
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96227635"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851191"
 ---
 # <a name="plusc-function"></a>PlusC 函数
 

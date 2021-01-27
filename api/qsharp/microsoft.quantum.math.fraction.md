@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.Fraction
 title: 分式用户定义类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: Fraction
 qsharp.summary: Represents a rational number of the form `p/q`. Integer `p` is the first element of the tuple and `q` is the second element of the tuple.
-ms.openlocfilehash: 1838bb2b605b109742948ec0633b08ca01baea98
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a56d28e34938729a8e4ffda5f870e0b6a25be017
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210669"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857517"
 ---
 # <a name="fraction-user-defined-type"></a>分式用户定义类型
 

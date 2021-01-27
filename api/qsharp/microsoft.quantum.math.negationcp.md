@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.NegationCP
 title: NegationCP 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: NegationCP
 qsharp.summary: Returns the unary negation of an input.
-ms.openlocfilehash: 3c794e9b161400632bdcd4cf349b238ddba4495c
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: cd6a75a0107c97089a7693d3e580d6e1c3e23930
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96194910"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847285"
 ---
 # <a name="negationcp-function"></a>NegationCP 函数
 

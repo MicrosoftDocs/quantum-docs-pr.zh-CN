@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Math.ComplexPolar
 title: ComplexPolar 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Math
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Represents a complex number in polar form.
 
   The polar representation of a complex number is $c=r e^{i t}$.
-ms.openlocfilehash: a4f3a7b6ffa73271d7ac9674d8c718f6f09c0291
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 174e75b82a3ee740cd4d07e5bcd091de65bbc6b6
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210975"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847347"
 ---
 # <a name="complexpolar-user-defined-type"></a>ComplexPolar 用户定义的类型
 

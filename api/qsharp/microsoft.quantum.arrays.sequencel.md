@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arrays.SequenceL
 title: SequenceL 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: SequenceL
 qsharp.summary: Get an array of integers in a given interval.
-ms.openlocfilehash: 3e5c7f64825f09d82792d3e46fe3f53f5814510b
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 7e3c5c31428f9be152e28afbe478a3d15eb0a56c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220257"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98850992"
 ---
 # <a name="sequencel-function"></a>SequenceL 函数
 
@@ -44,6 +44,14 @@ function SequenceL (from : BigInt, to : BigInt) : BigInt[]
 ## <a name="output--bigint"></a>输出： [BigInt](xref:microsoft.quantum.lang-ref.bigint)[]
 
 一个包含数字序列的数组， `from` `from + 1` ，...， `to` 。
+
+## <a name="example"></a>示例
+
+```qsharp
+let arr1 = SequenceL(0L, 3L); // [0L, 1L, 2L, 3L]
+let arr2 = SequenceL(23L, 29L); // [23L, 24L, 25L, 26L, 27L, 28L, 29L]
+let arr3 = SequenceL(-5L, -2L); // [-5L, -4L, -3L, -2L]
+```
 
 ## <a name="remarks"></a>备注
 

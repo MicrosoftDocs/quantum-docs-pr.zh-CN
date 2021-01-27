@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Research.Chemistry.ApplyDeltaParity
 title: ApplyDeltaParity 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Research.Chemistry
 qsharp.name: ApplyDeltaParity
 qsharp.summary: Computes difference in parity between a previous PQRS... terms and the next PQRS... term. This difference is computed on a auxiliary qubit.
-ms.openlocfilehash: 40157b6a166b09c6fee63d86e203f92069d008f1
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f5f1d74274994f042f1bc3f2e0d5332f504be02c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96225748"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851096"
 ---
 # <a name="applydeltaparity-operation"></a>ApplyDeltaParity 操作
 

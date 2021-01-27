@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Synthesis.ApplyPermutationUsingDecomposition
 title: ApplyPermutationUsingDecomposition 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Synthesis
 qsharp.name: ApplyPermutationUsingDecomposition
 qsharp.summary: Permutes the amplitudes in a quantum state given a permutation using decomposition-based synthesis.
-ms.openlocfilehash: 5b25ef3327bbca2dfdbe8fa876f3f797dddf77e8
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 765b6d301363021f5b57a22f90e2ada38c9c09ec
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96192122"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857398"
 ---
 # <a name="applypermutationusingdecomposition-operation"></a>ApplyPermutationUsingDecomposition 操作
 
@@ -28,7 +28,7 @@ operation ApplyPermutationUsingDecomposition (perm : Int[], qubits : Microsoft.Q
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 此过程实现基于分解的合成方法。  输入是一种排列 $ \pi $ over $ 2 ^ n $ 元素 $ \{ 0，\dots ..，2 ^ n-1 \} $，表示 $n $-可变可逆布尔函数。
 算法会对每个可变索引 $i $ 执行以下步骤：
@@ -56,6 +56,16 @@ operation ApplyPermutationUsingDecomposition (perm : Int[], qubits : Microsoft.Q
 ## <a name="output--unit"></a>输出： [单元](xref:microsoft.quantum.lang-ref.unit)
 
 
+
+## <a name="example"></a>示例
+
+要合成 `SWAP` 操作：
+
+```qsharp
+using (qubits = Qubit[2]) {
+  ApplyPermutationUsingDecomposition([0, 2, 1, 3], LittleEndian(qubits));
+}
+```
 
 ## <a name="references"></a>参考
 

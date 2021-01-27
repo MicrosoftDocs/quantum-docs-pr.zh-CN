@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.Sqrt
 title: Sqrt 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: Sqrt
 qsharp.summary: Returns the square root of a specified number.
-ms.openlocfilehash: c2f49017350b9126353efaef83a70e43a6d344a2
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 741003a4fc046d769550a4667a9921ff0825b031
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96194434"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848238"
 ---
 # <a name="sqrt-function"></a>Sqrt 函数
 

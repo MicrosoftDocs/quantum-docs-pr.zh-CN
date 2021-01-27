@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Random.DiscreteDistribution
 title: DiscreteDistribution 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Random
 qsharp.name: DiscreteDistribution
 qsharp.summary: Represents a univariate probability distribution over integers.
-ms.openlocfilehash: d492c86a6d72144695e1d0c2a94e8fe64cf1d3ef
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a3278d03dee9b30acd6fc6b61b94267adb4ae44f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96193040"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98851177"
 ---
 # <a name="discretedistribution-user-defined-type"></a>DiscreteDistribution 用户定义的类型
 

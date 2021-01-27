@@ -4,17 +4,17 @@ description: 了解如何向 Microsoft 量程文档集提供概念性或 API 内
 author: cgranade
 ms.author: chgranad
 ms.date: 10/12/2018
-ms.topic: article
+ms.topic: contributor-guide
 uid: microsoft.quantum.contributing.docs
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 2debef858c38b9a8f11264858130ed7cb41543ae
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: 8602705d2dd071e822e2ff58a9a44cd0684f77f1
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92691791"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857356"
 ---
 # <a name="improving-documentation"></a>改进文档
 
@@ -42,7 +42,7 @@ ms.locfileid: "92691791"
 - 有些读者将查找抽象语句和定义，这些语句和定义最有用，而其他读者最好通过推断具体的示例。 同时提供常规事例和具体的示例可帮助读者充分利用量程编程。
 - 尤其是在编写记录的代码的情况下，如果您的读者并不明显，您可能会很明显。 没有一种独特的最佳方式来编程，因此无论读者有多么聪明，都不能猜到您在代码中表达创意最有用的设计模式。 清楚地了解读者如何预期使用您的代码可以帮助提供该上下文。
 - 量程编程社区的许多成员都是学术研究人员，主要通过向社区发布内容的引文来识别。 除了帮助读者查找其他资料外，还请确保正确引用学术输出（如论文、讨论、博客文章和软件工具），以帮助学术撰稿人继续提高社区的工作效果。
-- 量程编程社区是广泛且 wonderfully 多样的社区。 在第三人示例中使用 gendered 代词 (例如： "如果用户 ...，他将 ..." ) 可用于排除，而不是包括在内。 如果要在引文和链接中 cognizant 人们的姓名，并正确包含非 ASCII 字符，则可以通过显示其成员来为社区的多样性提供服务。 同样，英语中的许多词语通常以 hateful 的方式使用，因此，它们在技术文档中的使用可能会对单个读者和大型团体造成损害。
+- 量程编程社区是广泛且 wonderfully 多样的社区。 在第三人示例中使用 gendered 代词 (例如： "如果用户 ...，它们将 ..." ) 可用于排除，而不是包括在内。 如果要在引文和链接中 cognizant 人们的姓名，并正确包含非 ASCII 字符，则可以通过显示其成员来为社区的多样性提供服务。 同样，英语中的许多词语通常以 hateful 的方式使用，因此，它们在技术文档中的使用可能会对单个读者和大型团体造成损害。
 
 ### <a name="referencing-sample-code-from-conceptual-articles"></a>从概念文章中引用示例代码
 
@@ -54,6 +54,19 @@ ms.locfileid: "92691791"
 
 此命令将[ `Game.qs` 从该 `chsh-game` 示例](https://github.com/microsoft/Quantum/blob/main/samples/algorithms/chsh-game/Game.qs)中导入第4行到第8行的文件，并将它们标记为 Q# 代码以进行语法突出显示。
 使用此命令，您可以避免在概念项目和示例存储库之间复制代码，以便文档中的示例代码始终尽可能地保持最新。
+
+### <a name="contributing-image-files"></a>参与图像文件
+
+**重要提示**：若要使图像在暗色模式下正确呈现，必须避免使用透明胶片。
+
+- 对于 .jpg 文件。 不需要执行任何操作，因为 .jpg 格式不支持透明元素。
+- 对于 .png 文件，必须添加白色背景或将 alpha 通道的值更改为 **100**。 在 Windows 中执行此操作的最简单方法是在 " **画图** " 中打开该文件，并保存该文件，覆盖原始文件。
+- 对于 svg 文件，必须在最底层添加白色矩形。 可以通过 **Inkscape** 执行此操作：
+  1. 打开 svg 文件。
+  1. 选择 "方形 maker" 工具，并在原始图形顶部绘制一个白色矩形。
+  1. 选择工具 **选择并转换对象，** 方法是单击黑色箭头或按 **F1**。
+  1. 选择该矩形时，单击工具栏元素 **将 (末尾) 底部的选定内容减小**。
+  1. 用鼠标或箭头键调整矩形。
 
 ## <a name="contributing-to-the-api-references"></a>参与 API 参考
 

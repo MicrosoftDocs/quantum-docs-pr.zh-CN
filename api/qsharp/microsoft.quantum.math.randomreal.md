@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Math.RandomReal
 title: RandomReal 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Math
@@ -10,12 +10,12 @@ qsharp.summary: >-
   > [!WARNING]
 
   > RandomReal has been deprecated. Please use <xref:Microsoft.Quantum.Random.DrawRandomDouble> instead.
-ms.openlocfilehash: 2159995a1df6fd8e96ee37d910e4c6287033fedc
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 6f07399fea3fa0ba345dc71183468e057cb21ed6
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96194570"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857411"
 ---
 # <a name="randomreal-operation"></a>RandomReal 操作
 

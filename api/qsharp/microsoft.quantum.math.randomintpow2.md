@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Math.RandomIntPow2
 title: RandomIntPow2 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Math
@@ -10,12 +10,12 @@ qsharp.summary: >-
   > [!WARNING]
 
   > RandomIntPow2 has been deprecated. Please use <xref:Microsoft.Quantum.Random.DrawRandomInt> instead.
-ms.openlocfilehash: 134127704894069f3c8d4186ab31051a1cdfb3e3
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1291cf5c861ca595edd1fc3b618c5a6b89555586
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96227465"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857420"
 ---
 # <a name="randomintpow2-operation"></a>RandomIntPow2 操作
 

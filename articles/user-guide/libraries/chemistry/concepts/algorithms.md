@@ -4,17 +4,17 @@ description: 了解如何使用 Trotter-Suzuki 公式和 qubitization 来处理 
 author: bradben
 ms.author: v-benbra
 ms.date: 10/09/2017
-ms.topic: article-type-from-white-list
+ms.topic: conceptual
 uid: microsoft.quantum.chemistry.concepts.simulationalgorithms
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a303d54476e42b98a14c6b452227b0e1346567c8
-ms.sourcegitcommit: 29e0d88a30e4166fa580132124b0eb57e1f0e986
+ms.openlocfilehash: eeaa13b99ab07ce22f8a3306a756bf7ac7cde65b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92691880"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98857599"
 ---
 # <a name="simulating-hamiltonian-dynamics"></a>模拟 Hamiltonian Dynamics
 
@@ -28,7 +28,7 @@ Trotter – Suzuki 公式背后的理念非常简单：将 Hamiltonian 表达为
 具体而言，让 $H = \ sum_ {j = 1} ^ m H_j $ 为 Hamiltonian。
 然后，$ $ e ^ {-i \ sum_ {j = 1} ^ m H_j t} = \ prod_ {j = 1} ^ m e ^ {-iH_j t} + O (m ^ 2 t ^ 2) ，$ $ 这就是，如果 $t \ll $1，则此近似值中的错误将变为可忽略的。
 请注意，如果 $e ^ {-i H t} $ 是普通指数，则不会 $O 此近似值中的错误 (m ^ 2 t ^ 2) $：该值为零。
-之所以发生此错误，是因为 $e ^ {-iHt} $ 是运算符指数，因此，使用此公式时出现错误，原因是 $H _j $ 词条不 *在 (的* $H _j H_k H_k H_j) $。
+之所以发生此错误，是因为 $e ^ {-iHt} $ 是运算符指数，因此，使用此公式时出现错误，原因是 $H _j $ 词条不 *在 (的*$H _j H_k H_k H_j) $。
 
 如果 $t $ 是大的，则仍可以使用 Trotter – Suzuki 公式来准确模拟动态，方法是将其分解为一系列简短的时间。
 让 $r $ 是在时间演化过程中执行的步骤数，因此每次运行的时间 $t/r $。 接下来，我们将使用 $ $ e ^ {-i \ sum_ {j = 1} ^ m H_j t} = \left ( \ prod_ {j = 1} ^ m e ^ {-iH_j t/r} \ 右) ^ r + O (m ^ 2 t ^ 2/r) $ $ 这意味着如果 $r $ 缩放为 $m ^ 2 t ^ 2/\ epsilon $，则对于任何 $ \epsilon>$0，最多可以执行 $ \epsilon $ 此错误。
