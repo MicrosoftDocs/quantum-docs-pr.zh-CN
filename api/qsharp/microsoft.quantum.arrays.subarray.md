@@ -1,60 +1,60 @@
 ---
 uid: Microsoft.Quantum.Arrays.Subarray
 title: 子数组函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Arrays
 qsharp.name: Subarray
 qsharp.summary: Takes an array and a list of locations and produces a new array formed from the elements of the original array that match the given locations.
-ms.openlocfilehash: cf72f04421b277ce64354d1eccec11cbc61d78cc
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: ccc041da0213d1f5dc5c8b4ff7a03b8b01ad107d
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96220155"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845422"
 ---
-# <a name="subarray-function"></a><span data-ttu-id="231bb-102">子数组函数</span><span class="sxs-lookup"><span data-stu-id="231bb-102">Subarray function</span></span>
+# <a name="subarray-function"></a><span data-ttu-id="51948-102">子数组函数</span><span class="sxs-lookup"><span data-stu-id="51948-102">Subarray function</span></span>
 
-<span data-ttu-id="231bb-103">命名空间 [：](xref:Microsoft.Quantum.Arrays)</span><span class="sxs-lookup"><span data-stu-id="231bb-103">Namespace: [Microsoft.Quantum.Arrays](xref:Microsoft.Quantum.Arrays)</span></span>
+<span data-ttu-id="51948-103">命名空间 [：](xref:Microsoft.Quantum.Arrays)</span><span class="sxs-lookup"><span data-stu-id="51948-103">Namespace: [Microsoft.Quantum.Arrays](xref:Microsoft.Quantum.Arrays)</span></span>
 
-<span data-ttu-id="231bb-104">包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)</span><span class="sxs-lookup"><span data-stu-id="231bb-104">Package: [Microsoft.Quantum.Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span></span>
+<span data-ttu-id="51948-104">包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)</span><span class="sxs-lookup"><span data-stu-id="51948-104">Package: [Microsoft.Quantum.Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span></span>
 
 
-<span data-ttu-id="231bb-105">采用一个数组和一个位置列表，并生成一个新数组，该数组由与给定位置匹配的原始数组的元素构成。</span><span class="sxs-lookup"><span data-stu-id="231bb-105">Takes an array and a list of locations and produces a new array formed from the elements of the original array that match the given locations.</span></span>
+<span data-ttu-id="51948-105">采用一个数组和一个位置列表，并生成一个新数组，该数组由与给定位置匹配的原始数组的元素构成。</span><span class="sxs-lookup"><span data-stu-id="51948-105">Takes an array and a list of locations and produces a new array formed from the elements of the original array that match the given locations.</span></span>
 
 ```qsharp
 function Subarray<'T> (indices : Int[], array : 'T[]) : 'T[]
 ```
 
 
-## <a name="input"></a><span data-ttu-id="231bb-106">输入</span><span class="sxs-lookup"><span data-stu-id="231bb-106">Input</span></span>
+## <a name="input"></a><span data-ttu-id="51948-106">输入</span><span class="sxs-lookup"><span data-stu-id="51948-106">Input</span></span>
 
-### <a name="indices--int"></a><span data-ttu-id="231bb-107">索引： [Int](xref:microsoft.quantum.lang-ref.int)[]</span><span class="sxs-lookup"><span data-stu-id="231bb-107">indices : [Int](xref:microsoft.quantum.lang-ref.int)[]</span></span>
+### <a name="indices--int"></a><span data-ttu-id="51948-107">索引： [Int](xref:microsoft.quantum.lang-ref.int)[]</span><span class="sxs-lookup"><span data-stu-id="51948-107">indices : [Int](xref:microsoft.quantum.lang-ref.int)[]</span></span>
 
-<span data-ttu-id="231bb-108">用于定义子数组的整数的列表。</span><span class="sxs-lookup"><span data-stu-id="231bb-108">A list of integers that is used to define the subarray.</span></span>
-
-
-### <a name="array--t"></a><span data-ttu-id="231bb-109">array： t []</span><span class="sxs-lookup"><span data-stu-id="231bb-109">array : 'T[]</span></span>
-
-<span data-ttu-id="231bb-110">上的元素的数组 `'T` 。</span><span class="sxs-lookup"><span data-stu-id="231bb-110">An array of elements over `'T`.</span></span>
+<span data-ttu-id="51948-108">用于定义子数组的整数的列表。</span><span class="sxs-lookup"><span data-stu-id="51948-108">A list of integers that is used to define the subarray.</span></span>
 
 
+### <a name="array--t"></a><span data-ttu-id="51948-109">array： t []</span><span class="sxs-lookup"><span data-stu-id="51948-109">array : 'T[]</span></span>
 
-## <a name="output--t"></a><span data-ttu-id="231bb-111">输出： t []</span><span class="sxs-lookup"><span data-stu-id="231bb-111">Output : 'T[]</span></span>
+<span data-ttu-id="51948-110">上的元素的数组 `'T` 。</span><span class="sxs-lookup"><span data-stu-id="51948-110">An array of elements over `'T`.</span></span>
 
-<span data-ttu-id="231bb-112">`out`元素的数组，这些元素的索引对应于子数组，因此为 `out[idx] == array[indices[idx]]` 。</span><span class="sxs-lookup"><span data-stu-id="231bb-112">An array `out` of elements whose indices correspond to the subarray, such that `out[idx] == array[indices[idx]]`.</span></span>
 
-## <a name="type-parameters"></a><span data-ttu-id="231bb-113">类型参数</span><span class="sxs-lookup"><span data-stu-id="231bb-113">Type Parameters</span></span>
 
-### <a name="t"></a><span data-ttu-id="231bb-114">找</span><span class="sxs-lookup"><span data-stu-id="231bb-114">'T</span></span>
+## <a name="output--t"></a><span data-ttu-id="51948-111">输出： t []</span><span class="sxs-lookup"><span data-stu-id="51948-111">Output : 'T[]</span></span>
 
-<span data-ttu-id="231bb-115">元素的类型 `array` 。</span><span class="sxs-lookup"><span data-stu-id="231bb-115">The type of `array` elements.</span></span>
+<span data-ttu-id="51948-112">`out`元素的数组，这些元素的索引对应于子数组，因此为 `out[idx] == array[indices[idx]]` 。</span><span class="sxs-lookup"><span data-stu-id="51948-112">An array `out` of elements whose indices correspond to the subarray, such that `out[idx] == array[indices[idx]]`.</span></span>
 
-## <a name="remarks"></a><span data-ttu-id="231bb-116">备注</span><span class="sxs-lookup"><span data-stu-id="231bb-116">Remarks</span></span>
+## <a name="type-parameters"></a><span data-ttu-id="51948-113">类型参数</span><span class="sxs-lookup"><span data-stu-id="51948-113">Type Parameters</span></span>
 
-<span data-ttu-id="231bb-117">函数是为泛型类型定义的，即，只要有一个数组 `'T[]` 和一个定义子数组的位置列表 `Int[]` 。</span><span class="sxs-lookup"><span data-stu-id="231bb-117">The function is defined for generic types, i.e., whenever we have an array `'T[]` and a list of locations `Int[]` defining the subarray.</span></span>
-<span data-ttu-id="231bb-118">子数组的构造是基于生成给定数组的新深层副本的，而不是维护引用。</span><span class="sxs-lookup"><span data-stu-id="231bb-118">The construction of the subarray is a based on generating a new, deep copy of the given array as opposed to maintaining references.</span></span>
+### <a name="t"></a><span data-ttu-id="51948-114">找</span><span class="sxs-lookup"><span data-stu-id="51948-114">'T</span></span>
 
-<span data-ttu-id="231bb-119">如果为 `Length(indices) < Length(array)` ，则此函数将返回的子集 `array` 。</span><span class="sxs-lookup"><span data-stu-id="231bb-119">If `Length(indices) < Length(array)`, this function will return a subset of `array`.</span></span> <span data-ttu-id="231bb-120">另一方面，如果 `indices` 包含重复的元素，则 `array` 同样会重复执行的相应元素。</span><span class="sxs-lookup"><span data-stu-id="231bb-120">On the other hand, if `indices` contains repeated elements, the corresponding elements of `array` will likewise be repeated.</span></span>
-<span data-ttu-id="231bb-121">如果 `indices` 和的 `array` 长度相同，则此函数将提供 `array` 。</span><span class="sxs-lookup"><span data-stu-id="231bb-121">If `indices` and `array` are the same length, this function provides permutations of `array`.</span></span>
+<span data-ttu-id="51948-115">元素的类型 `array` 。</span><span class="sxs-lookup"><span data-stu-id="51948-115">The type of `array` elements.</span></span>
+
+## <a name="remarks"></a><span data-ttu-id="51948-116">备注</span><span class="sxs-lookup"><span data-stu-id="51948-116">Remarks</span></span>
+
+<span data-ttu-id="51948-117">函数是为泛型类型定义的，即，只要有一个数组 `'T[]` 和一个定义子数组的位置列表 `Int[]` 。</span><span class="sxs-lookup"><span data-stu-id="51948-117">The function is defined for generic types, i.e., whenever we have an array `'T[]` and a list of locations `Int[]` defining the subarray.</span></span>
+<span data-ttu-id="51948-118">子数组的构造是基于生成给定数组的新深层副本的，而不是维护引用。</span><span class="sxs-lookup"><span data-stu-id="51948-118">The construction of the subarray is a based on generating a new, deep copy of the given array as opposed to maintaining references.</span></span>
+
+<span data-ttu-id="51948-119">如果为 `Length(indices) < Length(array)` ，则此函数将返回的子集 `array` 。</span><span class="sxs-lookup"><span data-stu-id="51948-119">If `Length(indices) < Length(array)`, this function will return a subset of `array`.</span></span> <span data-ttu-id="51948-120">另一方面，如果 `indices` 包含重复的元素，则 `array` 同样会重复执行的相应元素。</span><span class="sxs-lookup"><span data-stu-id="51948-120">On the other hand, if `indices` contains repeated elements, the corresponding elements of `array` will likewise be repeated.</span></span>
+<span data-ttu-id="51948-121">如果 `indices` 和的 `array` 长度相同，则此函数将提供 `array` 。</span><span class="sxs-lookup"><span data-stu-id="51948-121">If `indices` and `array` are the same length, this function provides permutations of `array`.</span></span>
