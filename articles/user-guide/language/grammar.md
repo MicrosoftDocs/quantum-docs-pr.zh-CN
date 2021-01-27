@@ -4,17 +4,17 @@ description: 了解 Q# 编程语言语法如何使用操作和语义谓词。
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.grammar
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: d12ad930d495ddb1cb15a38155efbf616d0ad2f3
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: a2c9f9f63cfbf98a60760e2da2b7045bd3375303
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96233061"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98847524"
 ---
 <!---
 # Grammar in Q#
