@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Extensions.Convert.BigIntToBools
 title: BigIntToBools 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Extensions.Convert
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.convert.bigintasboolarray".
-ms.openlocfilehash: a82e76597e8b85c7bd997e2c9bc98f4af2f0e174
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: cf81814edfaaf19570936177cb6f9fc6acea65dd
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96213491"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98824296"
 ---
 # <a name="biginttobools-function"></a>BigIntToBools 函数
 
