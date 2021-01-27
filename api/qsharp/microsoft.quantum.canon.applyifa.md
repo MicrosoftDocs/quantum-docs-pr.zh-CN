@@ -1,68 +1,81 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfA
 title: ApplyIfA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfA
 qsharp.summary: Applies a adjointable operation conditioned on a classical bit.
-ms.openlocfilehash: d2880bbb95ebaf621ef9e5885051b94f32a3f1cc
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8bdca1bf286d564dfbb540bc9d63c035d2196f00
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96218761"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845042"
 ---
-# <a name="applyifa-operation"></a><span data-ttu-id="9b3c3-102">ApplyIfA 操作</span><span class="sxs-lookup"><span data-stu-id="9b3c3-102">ApplyIfA operation</span></span>
+# <a name="applyifa-operation"></a><span data-ttu-id="5408e-102">ApplyIfA 操作</span><span class="sxs-lookup"><span data-stu-id="5408e-102">ApplyIfA operation</span></span>
 
-<span data-ttu-id="9b3c3-103">命名空间： [Canon](xref:Microsoft.Quantum.Canon)</span><span class="sxs-lookup"><span data-stu-id="9b3c3-103">Namespace: [Microsoft.Quantum.Canon](xref:Microsoft.Quantum.Canon)</span></span>
+<span data-ttu-id="5408e-103">命名空间： [Canon](xref:Microsoft.Quantum.Canon)</span><span class="sxs-lookup"><span data-stu-id="5408e-103">Namespace: [Microsoft.Quantum.Canon](xref:Microsoft.Quantum.Canon)</span></span>
 
-<span data-ttu-id="9b3c3-104">包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)</span><span class="sxs-lookup"><span data-stu-id="9b3c3-104">Package: [Microsoft.Quantum.Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span></span>
+<span data-ttu-id="5408e-104">包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)</span><span class="sxs-lookup"><span data-stu-id="5408e-104">Package: [Microsoft.Quantum.Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span></span>
 
 
-<span data-ttu-id="9b3c3-105">应用以传统位为依据的 adjointable 操作。</span><span class="sxs-lookup"><span data-stu-id="9b3c3-105">Applies a adjointable operation conditioned on a classical bit.</span></span>
+<span data-ttu-id="5408e-105">应用以传统位为依据的 adjointable 操作。</span><span class="sxs-lookup"><span data-stu-id="5408e-105">Applies a adjointable operation conditioned on a classical bit.</span></span>
 
 ```qsharp
 operation ApplyIfA<'T> (op : ('T => Unit is Adj), bit : Bool, target : 'T) : Unit is Adj
 ```
 
 
-## <a name="description"></a><span data-ttu-id="9b3c3-106">描述</span><span class="sxs-lookup"><span data-stu-id="9b3c3-106">Description</span></span>
+## <a name="description"></a><span data-ttu-id="5408e-106">说明</span><span class="sxs-lookup"><span data-stu-id="5408e-106">Description</span></span>
 
-<span data-ttu-id="9b3c3-107">给定一个操作 `op` 和一个位值 `bit` 后， `op` 如果为，则应用于 `target` `bit` `true` 。</span><span class="sxs-lookup"><span data-stu-id="9b3c3-107">Given an operation `op` and a bit value `bit`, applies `op` to the `target` if `bit` is `true`.</span></span> <span data-ttu-id="9b3c3-108">如果 `false` 为，则不会发生任何事情 `target` 。</span><span class="sxs-lookup"><span data-stu-id="9b3c3-108">If `false`, nothing happens to the `target`.</span></span>
-<span data-ttu-id="9b3c3-109">后缀 `A` 指示要应用的操作是 adjointable。</span><span class="sxs-lookup"><span data-stu-id="9b3c3-109">The suffix `A` indicates that the operation to be applied is adjointable.</span></span>
+<span data-ttu-id="5408e-107">给定一个操作 `op` 和一个位值 `bit` 后， `op` 如果为，则应用于 `target` `bit` `true` 。</span><span class="sxs-lookup"><span data-stu-id="5408e-107">Given an operation `op` and a bit value `bit`, applies `op` to the `target` if `bit` is `true`.</span></span> <span data-ttu-id="5408e-108">如果 `false` 为，则不会发生任何事情 `target` 。</span><span class="sxs-lookup"><span data-stu-id="5408e-108">If `false`, nothing happens to the `target`.</span></span>
+<span data-ttu-id="5408e-109">后缀 `A` 指示要应用的操作是 adjointable。</span><span class="sxs-lookup"><span data-stu-id="5408e-109">The suffix `A` indicates that the operation to be applied is adjointable.</span></span>
 
-## <a name="input"></a><span data-ttu-id="9b3c3-110">输入</span><span class="sxs-lookup"><span data-stu-id="9b3c3-110">Input</span></span>
+## <a name="input"></a><span data-ttu-id="5408e-110">输入</span><span class="sxs-lookup"><span data-stu-id="5408e-110">Input</span></span>
 
-### <a name="op--t--unit--is-adj"></a><span data-ttu-id="9b3c3-111">op： t => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词</span><span class="sxs-lookup"><span data-stu-id="9b3c3-111">op : 'T => [Unit](xref:microsoft.quantum.lang-ref.unit)  is Adj</span></span>
+### <a name="op--t--unit--is-adj"></a><span data-ttu-id="5408e-111">op： t => [单位](xref:microsoft.quantum.lang-ref.unit)  为形容词</span><span class="sxs-lookup"><span data-stu-id="5408e-111">op : 'T => [Unit](xref:microsoft.quantum.lang-ref.unit)  is Adj</span></span>
 
-<span data-ttu-id="9b3c3-112">要有条件地应用的操作。</span><span class="sxs-lookup"><span data-stu-id="9b3c3-112">An operation to be conditionally applied.</span></span>
-
-
-### <a name="bit--bool"></a><span data-ttu-id="9b3c3-113">bit： [Bool](xref:microsoft.quantum.lang-ref.bool)</span><span class="sxs-lookup"><span data-stu-id="9b3c3-113">bit : [Bool](xref:microsoft.quantum.lang-ref.bool)</span></span>
-
-<span data-ttu-id="9b3c3-114">用于控制是否应用 op 的布尔值。</span><span class="sxs-lookup"><span data-stu-id="9b3c3-114">a boolean that controls whether op is applied or not.</span></span>
+<span data-ttu-id="5408e-112">要有条件地应用的操作。</span><span class="sxs-lookup"><span data-stu-id="5408e-112">An operation to be conditionally applied.</span></span>
 
 
-### <a name="target--t"></a><span data-ttu-id="9b3c3-115">目标： t</span><span class="sxs-lookup"><span data-stu-id="9b3c3-115">target : 'T</span></span>
+### <a name="bit--bool"></a><span data-ttu-id="5408e-113">bit： [Bool](xref:microsoft.quantum.lang-ref.bool)</span><span class="sxs-lookup"><span data-stu-id="5408e-113">bit : [Bool](xref:microsoft.quantum.lang-ref.bool)</span></span>
 
-<span data-ttu-id="9b3c3-116">将操作应用到的输入。</span><span class="sxs-lookup"><span data-stu-id="9b3c3-116">The input to which the operation is applied.</span></span>
+<span data-ttu-id="5408e-114">用于控制是否应用 op 的布尔值。</span><span class="sxs-lookup"><span data-stu-id="5408e-114">a boolean that controls whether op is applied or not.</span></span>
 
 
+### <a name="target--t"></a><span data-ttu-id="5408e-115">目标： t</span><span class="sxs-lookup"><span data-stu-id="5408e-115">target : 'T</span></span>
 
-## <a name="output--unit"></a><span data-ttu-id="9b3c3-117">输出： [单元](xref:microsoft.quantum.lang-ref.unit)</span><span class="sxs-lookup"><span data-stu-id="9b3c3-117">Output : [Unit](xref:microsoft.quantum.lang-ref.unit)</span></span>
+<span data-ttu-id="5408e-116">将操作应用到的输入。</span><span class="sxs-lookup"><span data-stu-id="5408e-116">The input to which the operation is applied.</span></span>
 
 
 
-## <a name="type-parameters"></a><span data-ttu-id="9b3c3-118">类型参数</span><span class="sxs-lookup"><span data-stu-id="9b3c3-118">Type Parameters</span></span>
+## <a name="output--unit"></a><span data-ttu-id="5408e-117">输出： [单元](xref:microsoft.quantum.lang-ref.unit)</span><span class="sxs-lookup"><span data-stu-id="5408e-117">Output : [Unit](xref:microsoft.quantum.lang-ref.unit)</span></span>
 
-### <a name="t"></a><span data-ttu-id="9b3c3-119">找</span><span class="sxs-lookup"><span data-stu-id="9b3c3-119">'T</span></span>
 
-<span data-ttu-id="9b3c3-120">要有条件地应用的操作的输入类型。</span><span class="sxs-lookup"><span data-stu-id="9b3c3-120">The input type of the operation to be conditionally applied.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="9b3c3-121">另请参阅</span><span class="sxs-lookup"><span data-stu-id="9b3c3-121">See Also</span></span>
+## <a name="type-parameters"></a><span data-ttu-id="5408e-118">类型参数</span><span class="sxs-lookup"><span data-stu-id="5408e-118">Type Parameters</span></span>
 
-- [<span data-ttu-id="9b3c3-122">Canon. ApplyIfC</span><span class="sxs-lookup"><span data-stu-id="9b3c3-122">Microsoft.Quantum.Canon.ApplyIfC</span></span>](xref:Microsoft.Quantum.Canon.ApplyIfC)
-- [<span data-ttu-id="9b3c3-123">Canon. ApplyIfA</span><span class="sxs-lookup"><span data-stu-id="9b3c3-123">Microsoft.Quantum.Canon.ApplyIfA</span></span>](xref:Microsoft.Quantum.Canon.ApplyIfA)
-- [<span data-ttu-id="9b3c3-124">Canon. ApplyIfCA</span><span class="sxs-lookup"><span data-stu-id="9b3c3-124">Microsoft.Quantum.Canon.ApplyIfCA</span></span>](xref:Microsoft.Quantum.Canon.ApplyIfCA)
+### <a name="t"></a><span data-ttu-id="5408e-119">找</span><span class="sxs-lookup"><span data-stu-id="5408e-119">'T</span></span>
+
+<span data-ttu-id="5408e-120">要有条件地应用的操作的输入类型。</span><span class="sxs-lookup"><span data-stu-id="5408e-120">The input type of the operation to be conditionally applied.</span></span>
+
+## <a name="example"></a><span data-ttu-id="5408e-121">示例</span><span class="sxs-lookup"><span data-stu-id="5408e-121">Example</span></span>
+
+<span data-ttu-id="5408e-122">下面的 qubits 将注册为一个计算基础状态，该状态由给定为值数组的传统位字符串表示 `Bool` ：</span><span class="sxs-lookup"><span data-stu-id="5408e-122">The following prepares a register of qubits into a computational basis state represented by a classical bit string given as an array of `Bool` values:</span></span>
+
+```qsharp
+let bitstring = [true, false, true];
+using (register = Qubit(3)) {
+    ApplyToEach(ApplyIf(X, _, _), Zipped(bitstring, register));
+    // register should now be in the state |101⟩.
+    ...
+}
+```
+
+## <a name="see-also"></a><span data-ttu-id="5408e-123">另请参阅</span><span class="sxs-lookup"><span data-stu-id="5408e-123">See Also</span></span>
+
+- [<span data-ttu-id="5408e-124">Canon. ApplyIfC</span><span class="sxs-lookup"><span data-stu-id="5408e-124">Microsoft.Quantum.Canon.ApplyIfC</span></span>](xref:Microsoft.Quantum.Canon.ApplyIfC)
+- [<span data-ttu-id="5408e-125">Canon. ApplyIfA</span><span class="sxs-lookup"><span data-stu-id="5408e-125">Microsoft.Quantum.Canon.ApplyIfA</span></span>](xref:Microsoft.Quantum.Canon.ApplyIfA)
+- [<span data-ttu-id="5408e-126">Canon. ApplyIfCA</span><span class="sxs-lookup"><span data-stu-id="5408e-126">Microsoft.Quantum.Canon.ApplyIfCA</span></span>](xref:Microsoft.Quantum.Canon.ApplyIfCA)

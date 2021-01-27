@@ -1,56 +1,56 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ApplyLEOperationOnPhaseLEC
 title: ApplyLEOperationOnPhaseLEC 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ApplyLEOperationOnPhaseLEC
 qsharp.summary: Applies an operation that takes a <xref:microsoft.quantum.arithmetic.phaselittleendian> register as input on a target register of type <xref:microsoft.quantum.arithmetic.littleendian>.
-ms.openlocfilehash: dafe27f66f967fb641a8898672e124c0a51fe687
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 60d84e2f6c3693ba0c40e2eb034b658ac8097ad8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190830"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843760"
 ---
-# <a name="applyleoperationonphaselec-operation"></a><span data-ttu-id="949ee-102">ApplyLEOperationOnPhaseLEC 操作</span><span class="sxs-lookup"><span data-stu-id="949ee-102">ApplyLEOperationOnPhaseLEC operation</span></span>
+# <a name="applyleoperationonphaselec-operation"></a><span data-ttu-id="02e4b-102">ApplyLEOperationOnPhaseLEC 操作</span><span class="sxs-lookup"><span data-stu-id="02e4b-102">ApplyLEOperationOnPhaseLEC operation</span></span>
 
-<span data-ttu-id="949ee-103">命名空间 [：](xref:Microsoft.Quantum.Arithmetic)</span><span class="sxs-lookup"><span data-stu-id="949ee-103">Namespace: [Microsoft.Quantum.Arithmetic](xref:Microsoft.Quantum.Arithmetic)</span></span>
+<span data-ttu-id="02e4b-103">命名空间 [：](xref:Microsoft.Quantum.Arithmetic)</span><span class="sxs-lookup"><span data-stu-id="02e4b-103">Namespace: [Microsoft.Quantum.Arithmetic](xref:Microsoft.Quantum.Arithmetic)</span></span>
 
-<span data-ttu-id="949ee-104">包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)</span><span class="sxs-lookup"><span data-stu-id="949ee-104">Package: [Microsoft.Quantum.Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span></span>
+<span data-ttu-id="02e4b-104">包： [Microsoft 量子. 标准版](https://nuget.org/packages/Microsoft.Quantum.Standard)</span><span class="sxs-lookup"><span data-stu-id="02e4b-104">Package: [Microsoft.Quantum.Standard](https://nuget.org/packages/Microsoft.Quantum.Standard)</span></span>
 
 
-<span data-ttu-id="949ee-105">应用一个 <xref:microsoft.quantum.arithmetic.phaselittleendian> 在类型为的目标寄存器上采用注册为输入的操作 <xref:microsoft.quantum.arithmetic.littleendian> 。</span><span class="sxs-lookup"><span data-stu-id="949ee-105">Applies an operation that takes a <xref:microsoft.quantum.arithmetic.phaselittleendian> register as input on a target register of type <xref:microsoft.quantum.arithmetic.littleendian>.</span></span>
+<span data-ttu-id="02e4b-105">应用一个 <xref:microsoft.quantum.arithmetic.phaselittleendian> 在类型为的目标寄存器上采用注册为输入的操作 <xref:microsoft.quantum.arithmetic.littleendian> 。</span><span class="sxs-lookup"><span data-stu-id="02e4b-105">Applies an operation that takes a <xref:microsoft.quantum.arithmetic.phaselittleendian> register as input on a target register of type <xref:microsoft.quantum.arithmetic.littleendian>.</span></span>
 
 ```qsharp
 operation ApplyLEOperationOnPhaseLEC (op : (Microsoft.Quantum.Arithmetic.LittleEndian => Unit is Ctl), target : Microsoft.Quantum.Arithmetic.PhaseLittleEndian) : Unit is Ctl
 ```
 
 
-## <a name="input"></a><span data-ttu-id="949ee-106">输入</span><span class="sxs-lookup"><span data-stu-id="949ee-106">Input</span></span>
+## <a name="input"></a><span data-ttu-id="02e4b-106">输入</span><span class="sxs-lookup"><span data-stu-id="02e4b-106">Input</span></span>
 
-### <a name="op--littleendian--unit--is-ctl"></a><span data-ttu-id="949ee-107">op： [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian) => [Unit](xref:microsoft.quantum.lang-ref.unit)  为 Ctl</span><span class="sxs-lookup"><span data-stu-id="949ee-107">op : [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian) => [Unit](xref:microsoft.quantum.lang-ref.unit)  is Ctl</span></span>
+### <a name="op--littleendian--unit--is-ctl"></a><span data-ttu-id="02e4b-107">op： [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian) => [Unit](xref:microsoft.quantum.lang-ref.unit)  为 Ctl</span><span class="sxs-lookup"><span data-stu-id="02e4b-107">op : [LittleEndian](xref:Microsoft.Quantum.Arithmetic.LittleEndian) => [Unit](xref:microsoft.quantum.lang-ref.unit)  is Ctl</span></span>
 
-<span data-ttu-id="949ee-108">要应用的操作。</span><span class="sxs-lookup"><span data-stu-id="949ee-108">The operation to be applied.</span></span>
-
-
-### <a name="target--phaselittleendian"></a><span data-ttu-id="949ee-109">目标： [PhaseLittleEndian](xref:Microsoft.Quantum.Arithmetic.PhaseLittleEndian)</span><span class="sxs-lookup"><span data-stu-id="949ee-109">target : [PhaseLittleEndian](xref:Microsoft.Quantum.Arithmetic.PhaseLittleEndian)</span></span>
-
-<span data-ttu-id="949ee-110">要向其应用操作的寄存器。</span><span class="sxs-lookup"><span data-stu-id="949ee-110">The register to which the operation is applied.</span></span>
+<span data-ttu-id="02e4b-108">要应用的操作。</span><span class="sxs-lookup"><span data-stu-id="02e4b-108">The operation to be applied.</span></span>
 
 
+### <a name="target--phaselittleendian"></a><span data-ttu-id="02e4b-109">目标： [PhaseLittleEndian](xref:Microsoft.Quantum.Arithmetic.PhaseLittleEndian)</span><span class="sxs-lookup"><span data-stu-id="02e4b-109">target : [PhaseLittleEndian](xref:Microsoft.Quantum.Arithmetic.PhaseLittleEndian)</span></span>
 
-## <a name="output--unit"></a><span data-ttu-id="949ee-111">输出： [单元](xref:microsoft.quantum.lang-ref.unit)</span><span class="sxs-lookup"><span data-stu-id="949ee-111">Output : [Unit](xref:microsoft.quantum.lang-ref.unit)</span></span>
+<span data-ttu-id="02e4b-110">要向其应用操作的寄存器。</span><span class="sxs-lookup"><span data-stu-id="02e4b-110">The register to which the operation is applied.</span></span>
 
 
 
-## <a name="remarks"></a><span data-ttu-id="949ee-112">备注</span><span class="sxs-lookup"><span data-stu-id="949ee-112">Remarks</span></span>
+## <a name="output--unit"></a><span data-ttu-id="02e4b-111">输出： [单元](xref:microsoft.quantum.lang-ref.unit)</span><span class="sxs-lookup"><span data-stu-id="02e4b-111">Output : [Unit](xref:microsoft.quantum.lang-ref.unit)</span></span>
 
-<span data-ttu-id="949ee-113">通过使用将寄存器转换为 `LittleEndian` <xref:microsoft.quantum.canon.qftle> ，然后在应用后将其返回到其原始表示形式 `op` 。</span><span class="sxs-lookup"><span data-stu-id="949ee-113">The register is transformed to `LittleEndian` by the use of <xref:microsoft.quantum.canon.qftle> and is then returned to its original representation after application of `op`.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="949ee-114">另请参阅</span><span class="sxs-lookup"><span data-stu-id="949ee-114">See Also</span></span>
 
-- [<span data-ttu-id="949ee-115">Canon. ApplyLEOperationonPhaseLE</span><span class="sxs-lookup"><span data-stu-id="949ee-115">Microsoft.Quantum.Canon.ApplyLEOperationonPhaseLE</span></span>](xref:Microsoft.Quantum.Canon.ApplyLEOperationonPhaseLE)
-- [<span data-ttu-id="949ee-116">Canon. ApplyLEOperationonPhaseLEA</span><span class="sxs-lookup"><span data-stu-id="949ee-116">Microsoft.Quantum.Canon.ApplyLEOperationonPhaseLEA</span></span>](xref:Microsoft.Quantum.Canon.ApplyLEOperationonPhaseLEA)
-- [<span data-ttu-id="949ee-117">Canon. ApplyLEOperationonPhaseLECA</span><span class="sxs-lookup"><span data-stu-id="949ee-117">Microsoft.Quantum.Canon.ApplyLEOperationonPhaseLECA</span></span>](xref:Microsoft.Quantum.Canon.ApplyLEOperationonPhaseLECA)
+## <a name="remarks"></a><span data-ttu-id="02e4b-112">备注</span><span class="sxs-lookup"><span data-stu-id="02e4b-112">Remarks</span></span>
+
+<span data-ttu-id="02e4b-113">通过使用将寄存器转换为 `LittleEndian` <xref:microsoft.quantum.canon.qftle> ，然后在应用后将其返回到其原始表示形式 `op` 。</span><span class="sxs-lookup"><span data-stu-id="02e4b-113">The register is transformed to `LittleEndian` by the use of <xref:microsoft.quantum.canon.qftle> and is then returned to its original representation after application of `op`.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="02e4b-114">另请参阅</span><span class="sxs-lookup"><span data-stu-id="02e4b-114">See Also</span></span>
+
+- [<span data-ttu-id="02e4b-115">Canon. ApplyLEOperationonPhaseLE</span><span class="sxs-lookup"><span data-stu-id="02e4b-115">Microsoft.Quantum.Canon.ApplyLEOperationonPhaseLE</span></span>](xref:Microsoft.Quantum.Canon.ApplyLEOperationonPhaseLE)
+- [<span data-ttu-id="02e4b-116">Canon. ApplyLEOperationonPhaseLEA</span><span class="sxs-lookup"><span data-stu-id="02e4b-116">Microsoft.Quantum.Canon.ApplyLEOperationonPhaseLEA</span></span>](xref:Microsoft.Quantum.Canon.ApplyLEOperationonPhaseLEA)
+- [<span data-ttu-id="02e4b-117">Canon. ApplyLEOperationonPhaseLECA</span><span class="sxs-lookup"><span data-stu-id="02e4b-117">Microsoft.Quantum.Canon.ApplyLEOperationonPhaseLECA</span></span>](xref:Microsoft.Quantum.Canon.ApplyLEOperationonPhaseLECA)
