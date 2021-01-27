@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Logical.EqualCP
 title: EqualCP 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: EqualCP
 qsharp.summary: Returns true if and only if two inputs are equal.
-ms.openlocfilehash: e3175b9b6fd2890963de0452102e2f0de1026b91
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 83bf5ba245038ad1c7c6ed4e8cdb493317276e6a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198225"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98817163"
 ---
 # <a name="equalcp-function"></a>EqualCP 函数
 

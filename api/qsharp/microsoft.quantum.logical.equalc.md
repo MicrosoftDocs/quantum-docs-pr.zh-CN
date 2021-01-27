@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Logical.EqualC
 title: EqualC 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: EqualC
 qsharp.summary: Returns true if and only if two inputs are equal.
-ms.openlocfilehash: 4c511489888613d95adaf154c005b3211af75446
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 829af5424432b89adeae5243e6caac6a02f3e384
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198378"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98817246"
 ---
 # <a name="equalc-function"></a>EqualC 函数
 

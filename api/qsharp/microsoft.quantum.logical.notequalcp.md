@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Logical.NotEqualCP
 title: NotEqualCP 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: NotEqualCP
 qsharp.summary: Returns true if and only if two inputs are not equal.
-ms.openlocfilehash: df735408f76eb6b88f0d867021d69b83edd69b7d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 85225109a3822a9b63a231631f3d7265143418b6
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96197290"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98814400"
 ---
 # <a name="notequalcp-function"></a>NotEqualCP 函数
 

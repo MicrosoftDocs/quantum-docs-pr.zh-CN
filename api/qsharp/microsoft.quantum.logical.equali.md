@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Logical.EqualI
 title: EqualI 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: EqualI
 qsharp.summary: Returns true if and only if two inputs are equal.
-ms.openlocfilehash: be92ef2b63981094e1a95c38e02de95c3c2bbf3a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 87cf00ea8bb738cda30092b3d80940291beb1fb9
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198157"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98816750"
 ---
 # <a name="equali-function"></a>EqualI 函数
 
@@ -49,7 +49,7 @@ function EqualI (a : Int, b : Int) : Bool
 
 以下项是等效的：
 
-```Q#
+```qsharp
 let cond = a == b;
 let cond = EqualI(a, b);
 ```

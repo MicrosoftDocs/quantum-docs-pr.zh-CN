@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Logical.EqualD
 title: EqualD 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: EqualD
 qsharp.summary: Returns true if and only if two inputs are equal.
-ms.openlocfilehash: d6731b293ba402f5cd43591d3c2bcd258e8ebe32
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f8a24d7bfb9b4f7b8b0e1f68a94bfb341716b024
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96198140"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98816868"
 ---
 # <a name="equald-function"></a>EqualD 函数
 
@@ -49,7 +49,7 @@ function EqualD (a : Double, b : Double) : Bool
 
 以下项是等效的：
 
-```Q#
+```qsharp
 let cond = a == b;
 let cond = EqualD(a, b);
 ```

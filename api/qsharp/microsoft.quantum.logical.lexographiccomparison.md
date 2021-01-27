@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Logical.LexographicComparison
 title: LexographicComparison 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: LexographicComparison
 qsharp.summary: Given a comparison function, returns a new function that lexographically compares two arrays.
-ms.openlocfilehash: 4d8596c52b0fc8082a2b766d95d4052a4964b8b9
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: de8179ab6e835d08e7f41287f31a876b7ecc91c5
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96197578"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98814389"
 ---
 # <a name="lexographiccomparison-function"></a>LexographicComparison 函数
 

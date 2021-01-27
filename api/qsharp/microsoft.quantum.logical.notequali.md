@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Logical.NotEqualI
 title: NotEqualI 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Logical
 qsharp.name: NotEqualI
 qsharp.summary: Returns true if and only if two inputs are not equal.
-ms.openlocfilehash: dc132cbab556bd4b5d5c557ad267f1839e8039fc
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f88ae08f45c284f65151419c214705c74c3fadac
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96197205"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98814510"
 ---
 # <a name="notequali-function"></a>NotEqualI 函数
 
@@ -49,7 +49,7 @@ function NotEqualI (a : Int, b : Int) : Bool
 
 以下项是等效的：
 
-```Q#
+```qsharp
 let cond = a != b;
 let cond = NotEqualI(a, b);
 ```
