@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.EqualityWithinToleranceFact
 title: EqualityWithinToleranceFact 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: EqualityWithinToleranceFact
 qsharp.summary: Represents the claim that a classical floating point value has the expected value up to a given absolute tolerance.
-ms.openlocfilehash: 6ada2632974fddd6dd0fd8e4e6ab0866e4f29524
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: ab7e43d951bf741926b15f27f94d176e88609d4a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96201710"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98828753"
 ---
 # <a name="equalitywithintolerancefact-function"></a>EqualityWithinToleranceFact 函数
 

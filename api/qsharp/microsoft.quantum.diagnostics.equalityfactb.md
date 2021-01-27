@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.EqualityFactB
 title: EqualityFactB 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: EqualityFactB
 qsharp.summary: Asserts that a classical Bool variable has the expected value.
-ms.openlocfilehash: a87d6690e701eb1530be3134d24884a8c19357e9
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: cb1d4c471c528d2d3c08c92619fafd532a88c8f0
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96201914"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98829202"
 ---
 # <a name="equalityfactb-function"></a>EqualityFactB 函数
 

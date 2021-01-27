@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AssertQubitIsInStateWithinTolerance
 title: AssertQubitIsInStateWithinTolerance 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Asserts that a qubit in the expected state.
 
   `expected` represents a complex vector, $\ket{\psi} = \begin{bmatrix}a & b\end{bmatrix}^{\mathrm{T}}$. The first element of the tuples representing each of $a$, $b$ is the real part of the complex number, while the second one is the imaginary part. The last argument defines the tolerance with which assertion is made.
-ms.openlocfilehash: 1ceb7243cba93e42c67cc3655283a5d07c96863e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b40c5c4f731190c8c0d00d33718680e5448bf767
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96202203"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98829783"
 ---
 # <a name="assertqubitisinstatewithintolerance-operation"></a>AssertQubitIsInStateWithinTolerance 操作
 
@@ -57,6 +57,19 @@ operation AssertQubitIsInStateWithinTolerance (expected : (Microsoft.Quantum.Mat
 ## <a name="output--unit"></a>输出： [单元](xref:microsoft.quantum.lang-ref.unit)
 
 
+
+## <a name="example"></a>示例
+
+```qsharp
+using (qubits = Qubit[2]) {
+    // Both qubits are initialized as |0〉: a=(1 + 0*i), b=(0 + 0*i)
+    AssertQubitIsInStateWithinTolerance((Complex(1., 0.), Complex(0., 0.)), qubits[0], 1e-5);
+    AssertQubitIsInStateWithinTolerance((Complex(1., 0.), Complex(0., 0.)), qubits[1], 1e-5);
+    Y(qubits[1]);
+    // Y |0〉 = i |1〉: a=(0 + 0*i), b=(0 + 1*i)
+    AssertQubitIsInStateWithinTolerance((Complex(0., 0.), Complex(0., 1.)), qubits[1], 1e-5);
+}
+```
 
 ## <a name="remarks"></a>备注
 
