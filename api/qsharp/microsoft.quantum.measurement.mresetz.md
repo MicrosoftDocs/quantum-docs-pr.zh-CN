@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Measurement.MResetZ
 title: MResetZ 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Measurement
 qsharp.name: MResetZ
 qsharp.summary: Measures a single qubit in the Z basis, and resets it to a fixed initial state following the measurement.
-ms.openlocfilehash: 494f11c8129175ddd84c6539f5e9df1a758e8a82
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: fc9ba6576b56d7df1a57334e1da46b9c48376ecb
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96194128"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853741"
 ---
 # <a name="mresetz-operation"></a>MResetZ 操作
 
@@ -28,7 +28,7 @@ operation MResetZ (target : Qubit) : Result
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 以 $Z $ 基数执行单 qubit 度量，并确保 qubit 返回到 {0} 度量值后的 $ \ket $。
 

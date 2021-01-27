@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AssertOperationsEqualReferenced
 title: AssertOperationsEqualReferenced 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Given two operations, asserts that they act identically for all input states.
 
   This assertion is implemented by using the Choi–Jamiołkowski isomorphism to reduce the assertion to one of a qubit state assertion on two entangled registers. Thus, this operation needs only a single call to each operation being tested, but requires twice as many qubits to be allocated. This assertion can be used to ensure, for instance, that an optimized version of an operation acts identically to its naïve implementation, or that an operation which acts on a range of non-quantum inputs agrees with known cases.
-ms.openlocfilehash: 59c0fa72c9ca8f3bc512b6ed674fd73babc57f84
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 045f00a720e9f4d2e6993c66ace44a81e192ff30
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96202305"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853466"
 ---
 # <a name="assertoperationsequalreferenced-operation"></a>AssertOperationsEqualReferenced 操作
 

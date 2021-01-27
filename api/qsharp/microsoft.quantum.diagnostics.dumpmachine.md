@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.DumpMachine
 title: DumpMachine 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: DumpMachine
 qsharp.summary: Dumps the current target machine's status.
-ms.openlocfilehash: e7eb2dfce060b61e27deae31e3c1fc6dc3d7655c
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 579300d4efb9e22cb671fbb4bce0a6f72dd0e2ca
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96202101"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853421"
 ---
 # <a name="dumpmachine-function"></a>DumpMachine 函数
 

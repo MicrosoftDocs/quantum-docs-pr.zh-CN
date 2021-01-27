@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.EnableTestingViaName
 title: EnableTestingViaName 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: EnableTestingViaName
 qsharp.summary: Compiler-recognized attribute via which an alternative name can be defined that may be used when loading a type or callable for testing purposes.
-ms.openlocfilehash: 52ec8e670744586f85ee642b0e991734ff91afff
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c488b6f3d22fd0c6d4e950070464e914f757654c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96201965"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853379"
 ---
 # <a name="enabletestingvianame-user-defined-type"></a>EnableTestingViaName 用户定义的类型
 

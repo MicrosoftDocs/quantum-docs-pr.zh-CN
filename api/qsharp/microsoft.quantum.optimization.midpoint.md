@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Optimization.Midpoint
 title: 中点函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Optimization
 qsharp.name: Midpoint
 qsharp.summary: Returns the midpoint for an interval.
-ms.openlocfilehash: 32e50813f8a1bc342d794a5b63dd2a4f7262a400
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 4b415787d2e3508bca6df4a7ddee2591513f215c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96194060"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854595"
 ---
 # <a name="midpoint-function"></a>中点函数
 

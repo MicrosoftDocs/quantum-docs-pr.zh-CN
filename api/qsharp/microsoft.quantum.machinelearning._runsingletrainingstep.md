@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning._RunSingleTrainingStep
 title: _RunSingleTrainingStep 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: _RunSingleTrainingStep
 qsharp.summary: attempts a single parameter update in the direction of mini batch gradient
-ms.openlocfilehash: 2ee6dbbf26e8514ad59d156da12e0bcaca4ad7ae
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 3a3fa1ae34bbcc046f3b3cef4c13c0a84c7cc2b4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96212097"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853961"
 ---
 # <a name="_runsingletrainingstep-operation"></a>_RunSingleTrainingStep 操作
 

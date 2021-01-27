@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Random.DiscreteUniformDistribution
 title: DiscreteUniformDistribution 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Random
 qsharp.name: DiscreteUniformDistribution
 qsharp.summary: Returns a uniform distribution over a given inclusive range.
-ms.openlocfilehash: 08a62805f59df339ef6b91dff802c40c407808f4
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f909e7def5439ec0feef4ca4dc0cf8ed12374dfe
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96193006"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853721"
 ---
 # <a name="discreteuniformdistribution-function"></a>DiscreteUniformDistribution 函数
 
@@ -44,6 +44,15 @@ function DiscreteUniformDistribution (min : Int, max : Int) : Microsoft.Quantum.
 ## <a name="output--discretedistribution"></a>输出： [DiscreteDistribution](xref:Microsoft.Quantum.Random.DiscreteDistribution)
 
 一种分布，其随机 variates 是从到的非独占概率中的整数 `min` `max` 。
+
+## <a name="example"></a>示例
+
+以下 Q # 代码段随机滚动六面骰子：
+
+```qsharp
+let dieDistribution = DiscreteUniformDistribution(1, 6);
+let dieRoll = dieDistribution::Sample();
+```
 
 ## <a name="remarks"></a>备注
 

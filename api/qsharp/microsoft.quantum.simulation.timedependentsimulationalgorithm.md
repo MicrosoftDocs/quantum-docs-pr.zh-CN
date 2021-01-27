@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Simulation.TimeDependentSimulationAlgorithm
 title: TimeDependentSimulationAlgorithm 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Simulation
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Represents a time-dependent simulation algorithm.
 
   A time-dependent simulation technique converts an <xref:microsoft.quantum.simulation.evolutionschedule> to unitary time-evolution for some time-interval.
-ms.openlocfilehash: b495a9fd96c78872f84e8f8183105f6290f70655
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 4f393c958e686f2ded3bf3372ff9fd52b2a363cd
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96192513"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854122"
 ---
 # <a name="timedependentsimulationalgorithm-user-defined-type"></a>TimeDependentSimulationAlgorithm 用户定义的类型
 

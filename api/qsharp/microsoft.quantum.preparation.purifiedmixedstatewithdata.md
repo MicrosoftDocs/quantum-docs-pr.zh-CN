@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Preparation.PurifiedMixedStateWithData
 title: PurifiedMixedStateWithData 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: PurifiedMixedStateWithData
 qsharp.summary: "Returns an operation that prepares a a purification of a given mixed\rstate, entangled with a register representing a given collection of data.\rA \"purified mixed state with data\" refers to a state of the form Σᵢ √\U0001D45Dᵢ |\U0001D456⟩ |\U0001D465ᵢ⟩ |garbageᵢ⟩,\rwhere each \U0001D465ᵢ is a bitstring encoding additional data associated with the register |\U0001D456⟩.\r\rSee https://arxiv.org/pdf/1805.03662.pdf?page=15 for further discussion."
-ms.openlocfilehash: c89ee8f5df58e5d6b154b67d2b39db208bc8a215
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: fc7bf8e6157af079ae4233ef45e67ce8ddfb8fe3
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96229947"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854282"
 ---
 # <a name="purifiedmixedstatewithdata-function"></a>PurifiedMixedStateWithData 函数
 
@@ -31,7 +31,7 @@ function PurifiedMixedStateWithData (targetError : Double, coefficients : (Doubl
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 使用量程 ROM 技术来表示给定密度矩阵，并将该表示形式作为状态准备操作返回。
 

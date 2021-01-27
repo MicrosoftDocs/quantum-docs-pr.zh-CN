@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AssertQubit
 title: AssertQubit 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: AssertQubit
 qsharp.summary: Asserts that the qubit `q` is in the expected eigenstate of the Pauli Z operator.
-ms.openlocfilehash: 0e005230427bbd570133712679c51661e7ae6496
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8fcdd8de9250348e1dd1173052b53be978f2a0c5
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96202237"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853456"
 ---
 # <a name="assertqubit-operation"></a>AssertQubit 操作
 

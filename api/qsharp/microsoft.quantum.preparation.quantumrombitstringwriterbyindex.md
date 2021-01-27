@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Preparation.QuantumROMBitStringWriterByIndex
 title: QuantumROMBitStringWriterByIndex 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: QuantumROMBitStringWriterByIndex
 qsharp.summary: ''
-ms.openlocfilehash: 7a0a8668a8e771268dda0e17e15942e6d30c7deb
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a3b3932350ea93bb811c0011e2b9a9240600cdad
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96226445"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854270"
 ---
 # <a name="quantumrombitstringwriterbyindex-function"></a>QuantumROMBitStringWriterByIndex 函数
 

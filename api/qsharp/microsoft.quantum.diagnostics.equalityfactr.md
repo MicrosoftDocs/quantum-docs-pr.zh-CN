@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.EqualityFactR
 title: EqualityFactR 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: EqualityFactR
 qsharp.summary: Asserts that a classical Result variable has the expected value.
-ms.openlocfilehash: 166dff211d6db9da5d39c607af1924ffd6d276dd
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 86d2ddff79f0bca7badd95a2fe2156c558fa7f86
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96201761"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853336"
 ---
 # <a name="equalityfactr-function"></a>EqualityFactR 函数
 

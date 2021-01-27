@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AllEqualityFactB
 title: AllEqualityFactB 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: AllEqualityFactB
 qsharp.summary: Asserts that two arrays of boolean values are equal.
-ms.openlocfilehash: 79dcf65956ba9436fb6fdd452f22f35d4852d6f8
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 725291e8b5d12683ad580d5938dadd561831e88e
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96213695"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853554"
 ---
 # <a name="allequalityfactb-function"></a>AllEqualityFactB 函数
 

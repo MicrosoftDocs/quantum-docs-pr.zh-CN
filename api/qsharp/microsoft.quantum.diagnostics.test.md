@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.Test
 title: 测试用户定义类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: Test
 qsharp.summary: Compiler-recognized attribute used to mark a unit test.
-ms.openlocfilehash: 80821cb46d773d84085838d9ee539a8a45c43e61
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 2f1b521c4ef2bf8e672ca4fe7a5f380d744300b7
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96201489"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853256"
 ---
 # <a name="test-user-defined-type"></a>测试用户定义类型
 

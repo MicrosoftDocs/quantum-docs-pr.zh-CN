@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Measurement.BasisChangeZtoY
 title: BasisChangeZtoY 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Measurement
 qsharp.name: BasisChangeZtoY
 qsharp.summary: ''
-ms.openlocfilehash: 59ffa01d197a2588c619c0cf8fdbeae63000c1e5
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 16ace82247020aed8d8ee2cefa02ac6fb239e4ba
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96227125"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853809"
 ---
 # <a name="basischangeztoy-operation"></a>BasisChangeZtoY 操作
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Core.RangeReverse
 title: RangeReverse 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Core
 qsharp.name: RangeReverse
 qsharp.summary: Returns a new range which is the reverse of the input range.
-ms.openlocfilehash: 7bd7c55abe0b56b9d30b4c6e91f7175101dd2948
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f3b94d3c6fa6350a2c337f8bc8d889d24d87a85b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96213831"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853659"
 ---
 # <a name="rangereverse-function"></a>RangeReverse 函数
 

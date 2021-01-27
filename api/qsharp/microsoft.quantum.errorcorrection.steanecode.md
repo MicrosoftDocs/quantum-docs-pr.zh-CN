@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.SteaneCode
 title: SteaneCode 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: SteaneCode
 qsharp.summary: Returns a CSS value representing the ⟦7, 1, 3⟧ Steane code encoder and decoder with in-place syndrome measurement.
-ms.openlocfilehash: b981c82acfa82cd58d82666703d4bb95ac5df280
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: af3f3ef5088b898bd827ebca00fdc7fcb992f2a1
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96200469"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853057"
 ---
 # <a name="steanecode-function"></a>SteaneCode 函数
 

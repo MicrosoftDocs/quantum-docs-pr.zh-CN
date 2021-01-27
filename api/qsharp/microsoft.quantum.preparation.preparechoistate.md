@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Preparation.PrepareChoiState
 title: PrepareChoiState 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: PrepareChoiState
 qsharp.summary: Prepares the Choi–Jamiołkowski state for a given operation onto given reference and target registers.
-ms.openlocfilehash: ced71c4278f42f577760acd54ae53e7f5e6dae4a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: cb34078c09f8c28b5b9bbda1bae6936d13ffcc78
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210567"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854404"
 ---
 # <a name="preparechoistate-operation"></a>PrepareChoiState 操作
 

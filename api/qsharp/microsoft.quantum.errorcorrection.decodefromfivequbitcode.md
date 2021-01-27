@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.DecodeFromFiveQubitCode
 title: DecodeFromFiveQubitCode 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: DecodeFromFiveQubitCode
 qsharp.summary: Decodes the ⟦5, 1, 3⟧ quantum code.
-ms.openlocfilehash: 77c5614684f416c7d2e12914ec6246d3ef7098fb
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 9b4580cb88f03a16e3c9c55511d0ec5968cc636f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96201098"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853153"
 ---
 # <a name="decodefromfivequbitcode-operation"></a>DecodeFromFiveQubitCode 操作
 

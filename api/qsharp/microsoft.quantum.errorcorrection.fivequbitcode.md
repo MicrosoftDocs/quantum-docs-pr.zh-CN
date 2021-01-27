@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection.FiveQubitCode
 title: FiveQubitCode 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
 qsharp.name: FiveQubitCode
 qsharp.summary: Returns a QECC value representing the ⟦5, 1, 3⟧ code encoder and decoder with in-place syndrome measurement.
-ms.openlocfilehash: 3b45af29897735905f7fe52340e2a8e425bd8cbe
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 540dcf1eafa7449f386676a9a3c9562a4d4bf29c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96200877"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853138"
 ---
 # <a name="fivequbitcode-function"></a>FiveQubitCode 函数
 

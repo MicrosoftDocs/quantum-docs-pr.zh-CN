@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Preparation.PurifiedMixedState
 title: PurifiedMixedState 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Preparation
 qsharp.name: PurifiedMixedState
 qsharp.summary: "Returns an operation that prepares a a purification of a given mixed state.\rA \"purified mixed state\" refers to states of the form |ψ⟩ = Σᵢ √\U0001D45Dᵢ |\U0001D456⟩ |garbageᵢ⟩ specified by a vector of\rcoefficients {\U0001D45Dᵢ}. States of this form can be reduced to mixed states ρ ≔ \U0001D45Dᵢ |\U0001D456⟩⟨\U0001D456| by tracing over the \"garbage\"\rregister (that is, a mixed state that is diagonal in the computational basis).\r\rSee https://arxiv.org/pdf/1805.03662.pdf?page=15 for further discussion."
-ms.openlocfilehash: 73b031f1082d0a12975abad074b07184dcbabdbe
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 594a1d9fa674e457ab88072ade4198283b677af6
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96230015"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854302"
 ---
 # <a name="purifiedmixedstate-function"></a>PurifiedMixedState 函数
 
@@ -31,7 +31,7 @@ function PurifiedMixedState (targetError : Double, coefficients : Double[]) : Mi
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 使用量程 ROM 技术来表示给定密度矩阵，并将该表示形式作为状态准备操作返回。
 
@@ -56,6 +56,21 @@ $N $ 系数的数组，用于指定基础状态的概率。
 ## <a name="output--mixedstatepreparation"></a>输出： [MixedStatePreparation](xref:Microsoft.Quantum.Preparation.MixedStatePreparation)
 
 一种操作，用于将 $ \tilde \rho $ 作为 purification 准备到联合索引和垃圾寄存器。
+
+## <a name="example"></a>示例
+
+下面的代码段准备了 $ 3 $-qubit state $ \rho = \ sum_ {j = 0} ^ {4} \frac{| alpha_j |} 的 purification{\ sum_k | \ alpha_k |}\ket{j}\bra{j} $，其中 $ \vec\alpha = (1.0，2.0，3.0，4.0，5.0) $，目标错误为 $10 ^ {-3} $：
+
+```qsharp
+let coefficients = [1.0, 2.0, 3.0, 4.0, 5.0];
+let targetError = 1e-3;
+let purifiedState = PurifiedMixedState(targetError, coefficients);
+using (indexRegister = Qubit[purifiedState::Requirements::NIndexQubits]) {
+    using (garbageRegister = Qubit[purifiedState::Requirements::NGarbageQubits]) {
+        purifiedState::Prepare(LittleEndian(indexRegister), new Qubit[0], garbageRegister);
+    }
+}
+```
 
 ## <a name="remarks"></a>备注
 

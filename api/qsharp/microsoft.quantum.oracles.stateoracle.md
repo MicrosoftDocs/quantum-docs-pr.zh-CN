@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Oracles.StateOracle
 title: StateOracle 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Oracles
@@ -12,12 +12,12 @@ qsharp.summary: >-
   The inputs to the oracle $O$ are:
 
   - An integer indexing the flag qubit $f$. - The system register $s$ that will store the desired quantum state $\ket{\psi}\_s$.
-ms.openlocfilehash: 6b2cf09c23942a586414daccb99cbb27b5026b9d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 005d7862214abb3dcb9c0caa006343720d179a52
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96226598"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854463"
 ---
 # <a name="stateoracle-user-defined-type"></a>StateOracle 用户定义的类型
 

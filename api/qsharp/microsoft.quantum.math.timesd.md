@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.TimesD
 title: TimesD 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: TimesD
 qsharp.summary: Returns the product of two inputs.
-ms.openlocfilehash: b67e31e62757ef51ece5495860d55b9dbc1f3120
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 679461eb71f39660e79003d641141c111a3dd62f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96194315"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853840"
 ---
 # <a name="timesd-function"></a>TimesD 函数
 

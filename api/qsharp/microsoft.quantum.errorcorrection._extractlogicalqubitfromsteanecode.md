@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.ErrorCorrection._ExtractLogicalQubitFromSteaneCode
 title: _ExtractLogicalQubitFromSteaneCode 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.ErrorCorrection
@@ -10,12 +10,12 @@ qsharp.summary: >-
   Syndrome measurement and the inverse of embedding.
 
   $X$- and $Z$-stabilizers are not treated equally, which is due to the particular choice of the encoding circuit. This asymmetry leads to a different syndrome extraction routine. One could measure the syndrome by measuring multi-qubit Pauli operator directly on the code state, but for the distillation purpose the logical qubit is returned into a single qubit, in course of which the syndrome measurements can be done without further ancillas.
-ms.openlocfilehash: 273692efa629cb8cc20069ef500c4e0902fbc3ff
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: fe64343e30a0a3f0d05382e7812d37d5b13133d3
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96201336"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853214"
 ---
 # <a name="_extractlogicalqubitfromsteanecode-operation"></a>_ExtractLogicalQubitFromSteaneCode 操作
 

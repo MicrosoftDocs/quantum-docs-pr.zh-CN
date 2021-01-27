@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Research.Chemistry._JWOptimizedZ
 title: _JWOptimizedZ 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Research.Chemistry
 qsharp.name: _JWOptimizedZ
 qsharp.summary: Applies a Rz rotation, with a C-NOT trick to double phase in phase estimation.
-ms.openlocfilehash: e0b442a7ac237525acdc80e8e79044ebb523f8a2
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 76c96153b6baf8b593e0770a44b6190c075c8f53
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96225901"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98854234"
 ---
 # <a name="_jwoptimizedz-operation"></a>_JWOptimizedZ 操作
 

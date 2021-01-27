@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AssertAllZero
 title: AssertAllZero 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: AssertAllZero
 qsharp.summary: Assert that given qubits are all in $\ket{0}$ state.
-ms.openlocfilehash: ed629fb04526f388824e67563be36eaf716754b1
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 92224f21c4a9ff77b5aeefb7769009f7d3986af8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96202509"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853517"
 ---
 # <a name="assertallzero-operation"></a>AssertAllZero 操作
 

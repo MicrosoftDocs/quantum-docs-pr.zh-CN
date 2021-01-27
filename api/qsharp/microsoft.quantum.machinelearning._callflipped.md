@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning._CallFlipped
 title: _CallFlipped 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: _CallFlipped
 qsharp.summary: ''
-ms.openlocfilehash: 52ba0ba2d67526123b681ed112554784497fe125
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: f1133dfc67b514d427d720d3b284b46d0a3c63ab
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96196899"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853971"
 ---
 # <a name="_callflipped-function"></a>_CallFlipped 函数
 

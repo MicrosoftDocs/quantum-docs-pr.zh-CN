@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.ArcCos
 title: ArcCos 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: ArcCos
 qsharp.summary: Returns the angle whose cosine is the specified number.
-ms.openlocfilehash: a76898045f7576e039fe30f64526fc70708570dd
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 705b7d89673de5bb05b8490cd86d6352ff4edf08
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96195777"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98848948"
 ---
 # <a name="arccos-function"></a>ArcCos 函数
 

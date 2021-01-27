@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Diagnostics._assertEqualOnBasisVector
 title: _assertEqualOnBasisVector 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: _assertEqualOnBasisVector
 qsharp.summary: Checks if the result of applying two operations `givenU` and `expectedU` to a basis state is the same. The basis state is described by `basis` parameter. See <xref:microsoft.quantum.extensions.fliptobasis> function for more details on this description.
-ms.openlocfilehash: d8f2195f75de49918032053dc8d1fa4fb4eba840
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 041fecfa27ae5bd17fa8fdc89ce964f985f6124b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96213763"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98853587"
 ---
 # <a name="_assertequalonbasisvector-operation"></a>_assertEqualOnBasisVector 操作
 
