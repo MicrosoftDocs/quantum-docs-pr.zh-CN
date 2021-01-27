@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Convert.BoolArrayAsBigInt
 title: BoolArrayAsBigInt 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Convert
 qsharp.name: BoolArrayAsBigInt
 qsharp.summary: Converts a given array of Booleans to an equivalent big integer. The 0 element of the array is the least significant bit of the big integer.
-ms.openlocfilehash: 5a85fd9f81cec0f2de7e7807622aab9604a4db7c
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 220a733b94fd62cef21ab13e1cb3d3f973861506
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96214307"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98834411"
 ---
 # <a name="boolarrayasbigint-function"></a>BoolArrayAsBigInt 函数
 

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner.VQE.MeasurementOperators
 title: MeasurementOperators 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner.VQE
 qsharp.name: MeasurementOperators
 qsharp.summary: Computes all the measurement operators required to compute the expectation of a Jordan-Wigner term.
-ms.openlocfilehash: a5ea9a776f522e927f2f4545bd417d35bda83994
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 204ae621b77559a894f0bce14e494824d58e4ad6
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96214341"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98835402"
 ---
 # <a name="measurementoperators-function"></a>MeasurementOperators 函数
 

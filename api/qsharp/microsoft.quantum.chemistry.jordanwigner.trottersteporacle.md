@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Chemistry.JordanWigner.TrotterStepOracle
 title: TrotterStepOracle 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Chemistry.JordanWigner
 qsharp.name: TrotterStepOracle
 qsharp.summary: Returns Trotter step operation and the parameters necessary to run it.
-ms.openlocfilehash: be3354a60bab6b065b42df7db9ae8ff3340be8e7
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: a3164da1ce9ae1f72ec2fb1fa151159768cd5a4a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96214460"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98835802"
 ---
 # <a name="trottersteporacle-function"></a>TrotterStepOracle 函数
 
