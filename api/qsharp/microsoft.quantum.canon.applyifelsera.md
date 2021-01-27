@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfElseRA
 title: ApplyIfElseRA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfElseRA
 qsharp.summary: Applies one of two adjointable operations, depending on the value of a classical result.
-ms.openlocfilehash: 3ebd09b1e5876ff397f3524ba828ba26a271e91e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 0a7683adfa15f787f96c7ae55f94e2c52426df75
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96218591"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845016"
 ---
 # <a name="applyifelsera-operation"></a>ApplyIfElseRA 操作
 
@@ -28,7 +28,7 @@ operation ApplyIfElseRA<'T, 'U> (result : Result, (zeroOp : ('T => Unit is Adj),
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 如果结果为 `result` ，则在等于时应用该操作， `zeroOp` `zeroInput` `result` `Zero` 并应用 `oneOp(oneInput)` `result == One` 该操作。
 

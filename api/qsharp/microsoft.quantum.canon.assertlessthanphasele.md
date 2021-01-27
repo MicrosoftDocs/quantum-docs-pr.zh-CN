@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Canon.AssertLessThanPhaseLE
 title: AssertLessThanPhaseLE 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"Microsoft.Quantum.Arithmetic.AssertPhaseLessThan".
-ms.openlocfilehash: 9ba41c0fa068196b74fc2dfb13615c5a0c25424a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b26a76adbd81dd256d907c6b17de2d5965dfbfb4
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96216993"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844555"
 ---
 # <a name="assertlessthanphasele-operation"></a>AssertLessThanPhaseLE 操作
 

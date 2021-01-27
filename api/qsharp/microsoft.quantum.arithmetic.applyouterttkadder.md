@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ApplyOuterTTKAdder
 title: ApplyOuterTTKAdder 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ApplyOuterTTKAdder
 qsharp.summary: Implements the outer operation for RippleCarryAdderTTK to conjugate the inner operation to construct the full adder.
-ms.openlocfilehash: aed15a4d1f3ca7121d6da665f5c08442fd495619
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: afcc3085965907b7478b513028e25d1813cf7b76
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190609"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843691"
 ---
 # <a name="applyouterttkadder-operation"></a>ApplyOuterTTKAdder 操作
 

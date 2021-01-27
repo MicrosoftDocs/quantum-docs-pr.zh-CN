@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfOneA
 title: ApplyIfOneA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfOneA
 qsharp.summary: Applies an adjointable operation conditioned on a classical result value being one.
-ms.openlocfilehash: 200908f2958b74e4823c891ef901474d75d18336
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1593f565e950a9410df0ae9de59e6d0e6a7b99b0
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96218540"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844928"
 ---
 # <a name="applyifonea-operation"></a>ApplyIfOneA 操作
 
@@ -28,7 +28,7 @@ operation ApplyIfOneA<'T> (result : Result, (op : ('T => Unit is Adj), target : 
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 给定一个操作 `op` 和一个结果值时 `result` ， `op` `target` 如果为， `result` 则应用于 `One` 。 如果 `Zero` 为，则不会发生任何事情 `target` 。
 后缀 `A` 指示要应用的操作是 adjointable。

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyFermionicSWAP
 title: ApplyFermionicSWAP 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyFermionicSWAP
 qsharp.summary: Applies the Fermionic SWAP.
-ms.openlocfilehash: 0c470705843a6360df0a72374570d86571397e41
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 334f407a32dabc8f4e0a1a29c8f06a1b9f40dc59
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96218795"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845054"
 ---
 # <a name="applyfermionicswap-operation"></a>ApplyFermionicSWAP 操作
 
@@ -28,7 +28,7 @@ operation ApplyFermionicSWAP (qubit1 : Qubit, qubit2 : Qubit) : Unit is Adj + Ct
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 如果两个 qubits 都是1，则这实质上是交换 qubits，同时应用-1 的全局阶段。 保留 orbitals 的 symmetrization。
 有关详细信息，请参阅。

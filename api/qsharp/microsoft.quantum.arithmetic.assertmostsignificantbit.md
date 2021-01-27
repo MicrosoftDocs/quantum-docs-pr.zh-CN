@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.AssertMostSignificantBit
 title: AssertMostSignificantBit 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: AssertMostSignificantBit
 qsharp.summary: Asserts that the most significant qubit of a qubit register representing an unsigned integer is in a particular state.
-ms.openlocfilehash: 41381455d1a96970647f887e038f7dff3a4eb204
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b0b52a4ba7492d68896669aeb0b6b550d2f27f64
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96223776"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843424"
 ---
 # <a name="assertmostsignificantbit-operation"></a>AssertMostSignificantBit 操作
 

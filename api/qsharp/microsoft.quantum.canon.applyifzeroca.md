@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyIfZeroCA
 title: ApplyIfZeroCA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyIfZeroCA
 qsharp.summary: Applies a unitary operation conditioned on a classical result value being zero.
-ms.openlocfilehash: 4baae1fe7d615cbbf01935b4eca05fe947ff296e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 4ed0660e2fe3623d0a8e4e4f3bd0bddb536b7b5c
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96218455"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844883"
 ---
 # <a name="applyifzeroca-operation"></a>ApplyIfZeroCA 操作
 
@@ -28,7 +28,7 @@ operation ApplyIfZeroCA<'T> (result : Result, (op : ('T => Unit is Adj + Ctl), t
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 给定一个操作 `op` 和一个结果值时 `result` ， `op` `target` 如果为， `result` 则应用于 `Zero` 。 如果 `One` 为，则不会发生任何事情 `target` 。
 后缀 `CA` 指示要应用的操作是单一 (可控和 adjointable) 。

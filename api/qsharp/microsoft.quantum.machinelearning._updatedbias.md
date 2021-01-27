@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.MachineLearning._UpdatedBias
 title: _UpdatedBias 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.MachineLearning
 qsharp.name: _UpdatedBias
 qsharp.summary: Returns a bias value that leads to near-minimum misclassification score.
-ms.openlocfilehash: 141edf6e425a060a995bfc181aefb1bcffdb128b
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 41a51d8a6a8af299ce3e84b727336b098a3d1160
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96196695"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844444"
 ---
 # <a name="_updatedbias-function"></a>_UpdatedBias 函数
 

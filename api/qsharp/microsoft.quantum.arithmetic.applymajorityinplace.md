@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ApplyMajorityInPlace
 title: ApplyMajorityInPlace 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ApplyMajorityInPlace
 qsharp.summary: Applies the three-qubit majority operation in-place on a register of qubits.
-ms.openlocfilehash: c32d7546fb753f78a72479cec11a6ed09c5e6179
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 10b512392b2098663c09b2e07a09c4025da90706
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190728"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843729"
 ---
 # <a name="applymajorityinplace-operation"></a>ApplyMajorityInPlace 操作
 
@@ -28,7 +28,7 @@ operation ApplyMajorityInPlace (output : Qubit, input : Qubit[]) : Unit is Adj +
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 此操作计算 3 qubits 上就地的函数。
 

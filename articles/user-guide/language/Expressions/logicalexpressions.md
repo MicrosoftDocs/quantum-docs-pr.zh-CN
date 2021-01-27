@@ -4,17 +4,17 @@ description: 了解编程语言中的逻辑运算符 Q# 。
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.logicalexpressions
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: a400a6813f1a4efa18ccce7c6ca6237db7f56684
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: ab47c71f1278c9cd630d9f8a17764124238a9ef2
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96233218"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844194"
 ---
 <!---
 # Logical operators in Q#

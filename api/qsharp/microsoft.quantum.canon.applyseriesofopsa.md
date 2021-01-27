@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplySeriesOfOpsA
 title: ApplySeriesOfOpsA 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplySeriesOfOpsA
 qsharp.summary: Applies a list of ops and their targets sequentially on an array. (Adjoint)
-ms.openlocfilehash: e5b3527507f79dcc77803ce01472856145df0e9f
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 052cb52d4ee6500e60043ab7f808497058924afe
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96217962"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844666"
 ---
 # <a name="applyseriesofopsa-operation"></a>ApplySeriesOfOpsA 操作
 
@@ -56,6 +56,10 @@ operation ApplySeriesOfOpsA<'T> (listOfOps : ('T[] => Unit is Adj)[], targets : 
 ### <a name="t"></a>找
 
 
+
+## <a name="example"></a>示例
+
+以下应用了 Exp ( [PauliX，PauliY]，0.5) 到 qubits 0，1//then X 到 qubit 2 let ops = [Exp ( [PauliX，PauliY]，0.5，_) ，ApplyToFirstQubitA (X，_) ];let 索引 = [[0，1]，[2]];ApplySeriesOfOpsA (ops，索引，qubitArray) ;
 
 ## <a name="see-also"></a>另请参阅
 

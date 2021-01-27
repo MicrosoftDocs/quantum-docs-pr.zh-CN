@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyPauli
 title: ApplyPauli 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyPauli
 qsharp.summary: Given a multi-qubit Pauli operator, applies the corresponding operation to a register.
-ms.openlocfilehash: 7f42d9cab2f80f8f826ad1268b050134f0540cdd
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b3557c6d8b5a90019f6d4cfa7b405475a3ab39fb
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96218217"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844740"
 ---
 # <a name="applypauli-operation"></a>ApplyPauli 操作
 
@@ -43,3 +43,20 @@ operation ApplyPauli (pauli : Pauli[], target : Qubit[]) : Unit is Adj + Ctl
 
 ## <a name="output--unit"></a>输出： [单元](xref:microsoft.quantum.lang-ref.unit)
 
+
+
+## <a name="example"></a>示例
+
+以下项是等效的：
+
+```qsharp
+ApplyPauli([PauliY, PauliZ, PauliX], target);
+```
+
+和
+
+```qsharp
+Y(target[0]);
+Z(target[1]);
+X(target[2]);
+```

@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyOperationRepeatedlyC
 title: ApplyOperationRepeatedlyC 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyOperationRepeatedlyC
 qsharp.summary: ''
-ms.openlocfilehash: e37d3df6e06104d70936423745a0dd4b8c5a9225
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 82088c7923e7558ae98fc67aae598f20744fd055
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96218319"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844814"
 ---
 # <a name="applyoperationrepeatedlyc-operation"></a>ApplyOperationRepeatedlyC 操作
 

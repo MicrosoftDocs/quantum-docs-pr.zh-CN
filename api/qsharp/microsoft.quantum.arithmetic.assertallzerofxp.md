@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.AssertAllZeroFxP
 title: AssertAllZeroFxP 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: AssertAllZeroFxP
 qsharp.summary: Helper function to assert that a quantum fixed-point number is initialized to zero, i.e., all qubits are in state $\ket{0}$.
-ms.openlocfilehash: 068e535ac6856e67899e6b8d222b9796d02eb57e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 5d8416211ac225ee09199c86860600fe93d32af7
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96223759"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843459"
 ---
 # <a name="assertallzerofxp-operation"></a>AssertAllZeroFxP 操作
 

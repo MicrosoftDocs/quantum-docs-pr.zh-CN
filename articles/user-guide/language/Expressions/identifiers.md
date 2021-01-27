@@ -4,17 +4,17 @@ description: 了解编程语言中的标识符 Q# 。
 author: bettinaheim
 ms.author: beheim
 ms.date: 10/07/2020
-ms.topic: article
+ms.topic: reference
 uid: microsoft.quantum.qsharp.identifiers
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 85128f7c8d93c664aa095738d864632727009282
-ms.sourcegitcommit: b930bb59a1ba8f41d2edc9ed98197109aa8c7f1b
+ms.openlocfilehash: af8f819644e23d6e401394d5736a5b33318d8ad2
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96233217"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844252"
 ---
 # <a name="identifiers-in-no-locq"></a>标识符 Q#
 

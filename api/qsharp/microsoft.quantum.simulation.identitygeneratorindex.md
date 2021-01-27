@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Simulation.IdentityGeneratorIndex
 title: IdentityGeneratorIndex 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Simulation
 qsharp.name: IdentityGeneratorIndex
 qsharp.summary: Returns a generator index consistent with the zero Hamiltonian, `H = 0`, which corresponds to the identity evolution operation.
-ms.openlocfilehash: 2dd3c705b0496df1719dc677e4defea5e435b839
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: b389ca1e0737463e6ccd5ce885b849c6b32d65d1
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96229284"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844343"
 ---
 # <a name="identitygeneratorindex-function"></a>IdentityGeneratorIndex 函数
 

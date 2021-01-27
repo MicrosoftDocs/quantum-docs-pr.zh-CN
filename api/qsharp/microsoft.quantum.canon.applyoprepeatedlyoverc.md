@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyOpRepeatedlyOverC
 title: ApplyOpRepeatedlyOverC 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyOpRepeatedlyOverC
 qsharp.summary: Applies the same op over a qubit register multiple times.
-ms.openlocfilehash: 08c3af3a4877481833973061aa4d54c2b29304c9
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 1cf3f32f0d25c1b4437f2bdbd93171a1a2e1e760
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96218251"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844779"
 ---
 # <a name="applyoprepeatedlyoverc-operation"></a>ApplyOpRepeatedlyOverC 操作
 

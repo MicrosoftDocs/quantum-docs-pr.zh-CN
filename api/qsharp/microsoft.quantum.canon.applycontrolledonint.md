@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Canon.ApplyControlledOnInt
 title: ApplyControlledOnInt 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Canon
 qsharp.name: ApplyControlledOnInt
 qsharp.summary: Applies a unitary operation on the target register if the control register state corresponds to a specified positive integer.
-ms.openlocfilehash: 3dd17e6bc913e84941a6b81f134e60536a4c4122
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 499a25104742b2d03886065baad4d535ea92e83b
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96218999"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98845098"
 ---
 # <a name="applycontrolledonint-operation"></a>ApplyControlledOnInt 操作
 

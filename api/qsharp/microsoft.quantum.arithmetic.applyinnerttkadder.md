@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ApplyInnerTTKAdder
 title: ApplyInnerTTKAdder 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ApplyInnerTTKAdder
 qsharp.summary: Implements the inner addition function for the operation RippleCarryAdderTTK. This is the inner operation that is conjugated with the outer operation to construct the full adder.
-ms.openlocfilehash: 1de0248066aec531d78130703414067603ffd34d
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c822933340d592061eb039af7c6e438212abc265
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96191000"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843828"
 ---
 # <a name="applyinnerttkadder-operation"></a>ApplyInnerTTKAdder 操作
 

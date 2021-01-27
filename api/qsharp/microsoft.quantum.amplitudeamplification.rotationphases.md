@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.RotationPhases
 title: RotationPhases 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
 qsharp.name: RotationPhases
 qsharp.summary: Phases for a sequence of single-qubit rotations in amplitude amplification.
-ms.openlocfilehash: 60fcda7d58a19f8891e252ddb18b504afddf5514
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 2f955ce3bfb9ea057c26c79547895df39ed322ab
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96191357"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843965"
 ---
 # <a name="rotationphases-user-defined-type"></a>RotationPhases 用户定义的类型
 

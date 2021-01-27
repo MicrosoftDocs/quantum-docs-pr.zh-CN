@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ApplyXorInPlace
 title: ApplyXorInPlace 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ApplyXorInPlace
 qsharp.summary: Applies a bitwise-XOR operation between a classical integer and an integer represented by a register of qubits.
-ms.openlocfilehash: b7fc20ac421d5cff9baa3fe05450c1564f123505
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8f338d6638d554f3ead1f3c0e7b6605c7937abd8
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96210100"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843473"
 ---
 # <a name="applyxorinplace-operation"></a>ApplyXorInPlace 操作
 
@@ -28,7 +28,7 @@ operation ApplyXorInPlace (value : Int, target : Microsoft.Quantum.Arithmetic.Li
 ```
 
 
-## <a name="description"></a>描述
+## <a name="description"></a>说明
 
 将 `X` 操作应用到基于整数中的1位的小 endian 寄存器中的 qubits。
 

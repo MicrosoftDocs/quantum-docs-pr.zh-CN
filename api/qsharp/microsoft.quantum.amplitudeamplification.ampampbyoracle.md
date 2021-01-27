@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.AmplitudeAmplification.AmpAmpByOracle
 title: AmpAmpByOracle 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.AmplitudeAmplification
@@ -14,12 +14,12 @@ qsharp.summary: >-
   >
 
   > Please use @"microsoft.quantum.amplitudeamplification.standardamplitudeamplification".
-ms.openlocfilehash: bd9cb0ae54d6b09a1945df80b6c62c1e966fd282
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 27775b35523522298cbca5d6d1e3c36ea24acf97
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96191816"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844019"
 ---
 # <a name="ampampbyoracle-function"></a>AmpAmpByOracle 函数
 

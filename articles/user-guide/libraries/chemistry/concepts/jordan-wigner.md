@@ -1,30 +1,30 @@
 ---
-title: 约旦-Wigner 表示形式
-description: 了解 Wigner 表示形式，它将 Hamiltonian 运算符映射到可以更轻松地在量程计算机上实现的单一矩阵。
+title: Jordan-Wigner 表示形式
+description: 了解 Jordan-Wigner 表示形式，它将 Hamiltonian 运算符映射到可以更轻松地在量程计算机上实现的单一矩阵。
 author: bradben
 ms.author: v-benbra
 ms.date: 10/09/2017
-ms.topic: article-type-from-white-list
+ms.topic: conceptual
 uid: microsoft.quantum.chemistry.concepts.jordanwigner
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 29abb4d2ef11239a58af45bc4eee3bd60d20a6c7
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 738c8262ea66b8a02ea7541e402953237dc2ea48
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90833857"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844133"
 ---
-# <a name="jordan-wigner-representation"></a>约旦-Wigner 表示形式
+# <a name="jordan-wigner-representation"></a>Jordan-Wigner 表示形式
 
 尽管第二个量化 Hamiltonians 可根据 $a ^ \dagger $ (创建来方便地表示) 并 $a $ (annihilation) ，但这些操作不是量子计算机的基本操作。
 因此，如果想要在量程计算机上实现它们，则需要将这些操作员映射到可在量程计算机上实现的单一矩阵。
 约旦– Wigner 表示形式提供了一个此类地图。
 但有些其他类（例如 Bravyi – Kitaev 表示形式）也存在，并有其各自的优点和缺点。
-约旦 Wigner 表示形式的主要优点是它的简单性。
+Jordan-Wigner 表示形式的主要优点是它的简单性。
 
-约旦 Wigner 表示形式是直接派生的。
+Jordan-Wigner 表示形式是直接派生的。
 回忆一下，状态 $ \ket {0} _j $ 表示自旋 orbital $j $ 为空，$ \ket {1} _j $ 表示其已被占用。
 这意味着 qubits 可以自然地存储给定旋转 orbital 的职业。
 接下来，我们将 $a ^ \ dagger_j \ket {0} _j = \ket {1} _j $ 和 $a ^ \ dagger_j \ket {1} _j = $0。
@@ -51,14 +51,14 @@ ms.locfileid: "90833857"
 \begin{align} ^ \ dagger_1 &= \left ( \frac{X-iY} {2} \right) \otimes 1 \otimes 1 \otimes 1 \otimes \cdots \otimes 1， \\ \\ ^ \ dagger_2 &= Z\otimes\left ( \frac{x-iy} {2} \right) \otimes 1 \ otimes 1 \otimes \cdots \otimes 1， \\ \\ a ^ \ dagger_3 &= Z\otimes Z\otimes \left ( \frac{x-iy} {2} \right) \otimes 1 \otimes \cdots \otimes 1， \\ \\ & \Vdots \\ \\ a ^ \ dagger_N &= Z\otimes Z\otimes Z\otimes Z \otimes \cdots \otimes Z\otimes \left ( \frac{x-iy} {2} \right) 。 \label{eq： JW} \end{align}
 
 也可以根据 Pauli 运算符来表达数字运算符，$n _j $。
-令人欣慰，$Z $ operators 的字符串 (称为 Wigner 字符串，) 在进行一项替换后取消。
+令人欣慰，$Z $ 运算符的字符串 (称为 Jordan-Wigner 字符串) 在执行此替换操作后取消。
 在执行此 (并撤回 $X _jY_j = iZ_j $) 的情况下，我们的 \begin{equation} n_j = a ^ \ dagger_j a_j = \frac{ (1-Z_j) } {2} 。
 \end{equation}
 
 
-## <a name="constructing-hamiltonians-in-jordan-wigner-representation"></a>构建约旦 Wigner 表示形式的 Hamiltonians
+## <a name="constructing-hamiltonians-in-jordan-wigner-representation"></a>构造 Jordan-Wigner 表示形式的 Hamiltonians
 
-一旦我们调用了 Wigner 表示形式，则将 Hamiltonian 转换为 Pauli 运算符的总和就是一种直接的方法。
+一旦我们调用了 Jordan-Wigner 表示法，将 Hamiltonian 转换为 Pauli 运算符的总和即可。
 只需将 Fermionic Hamiltonian 中的每个 $a ^ \dagger $ 和 $a $ 运算符替换为上面给定的 Pauli 运算符。
 当一次执行此替换时，Hamiltonian 中只有五个术语。
 这五个类对应于我们可以选择 $p、q $ 和 $p、q、r、Hamiltonian 中的单正文和两正文术语中的方法的不同方式。
