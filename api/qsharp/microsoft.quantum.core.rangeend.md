@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Core.RangeEnd
 title: RangeEnd 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Core
 qsharp.name: RangeEnd
 qsharp.summary: Returns the defined end value of the given range, which is not necessarily the last element in the sequence.
-ms.openlocfilehash: 90a9e31bf5c4a5e92a35998ddaec8c9e9de9888e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 196fab0bd97a441a16976033dc0d660c54cdfd6a
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96224031"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98831362"
 ---
 # <a name="rangeend-function"></a>RangeEnd 函数
 

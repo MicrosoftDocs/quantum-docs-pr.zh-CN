@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Diagnostics.AssertAllZeroWithinTolerance
 title: AssertAllZeroWithinTolerance 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Diagnostics
 qsharp.name: AssertAllZeroWithinTolerance
 qsharp.summary: Assert that given qubits are all in $\ket{0}$ state up to a given tolerance.
-ms.openlocfilehash: a2e73bbc8949b3cdb7733cfc8aae35680e54d2cf
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 281855ec79d280c903ebb4d05614081767840778
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96202475"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98830860"
 ---
 # <a name="assertallzerowithintolerance-operation"></a>AssertAllZeroWithinTolerance 操作
 
