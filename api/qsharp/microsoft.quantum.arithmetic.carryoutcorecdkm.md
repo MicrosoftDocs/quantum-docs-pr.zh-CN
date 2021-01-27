@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.CarryOutCoreCDKM
 title: CarryOutCoreCDKM 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: CarryOutCoreCDKM
 qsharp.summary: The core operation in the RippleCarryAdderCDKM, used with the above ApplyOuterCDKMAdder operation, i.e. conjugated with this operation to obtain the inner operation of the RippleCarryAdderCDKM. This operation computes the carry out qubit and applies a sequence of NOT gates on part of the input `ys`.
-ms.openlocfilehash: 19a692a3b54a413f25a474c361e773ab6c65579e
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 2065c767b341241d32e5ac06bcff0071cbadb266
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96223538"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843329"
 ---
 # <a name="carryoutcorecdkm-operation"></a>CarryOutCoreCDKM 操作
 

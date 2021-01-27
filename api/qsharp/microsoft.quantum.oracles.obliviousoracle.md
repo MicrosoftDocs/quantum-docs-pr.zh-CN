@@ -1,7 +1,7 @@
 ---
 uid: Microsoft.Quantum.Oracles.ObliviousOracle
 title: ObliviousOracle 用户定义的类型
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: udt
 qsharp.namespace: Microsoft.Quantum.Oracles
@@ -12,12 +12,12 @@ qsharp.summary: >-
   The inputs to the oracle $O$ are:
 
   - The ancilla register $a$ that $O$ acts on. - The system register $s$ on which the desired unitary $U$ is applied, post-selected on register $a$ being in state $\ket{t}\_a$.
-ms.openlocfilehash: 2f92dcb28ec669229dfaf9bcb23eef9234552b8a
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 793e72af56e288f9b437302f9958665e92e5e763
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96193873"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842547"
 ---
 # <a name="obliviousoracle-user-defined-type"></a>ObliviousOracle 用户定义的类型
 

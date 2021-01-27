@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.ComputeReciprocalFxP
 title: ComputeReciprocalFxP 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: ComputeReciprocalFxP
 qsharp.summary: Computes $1/x$ for a fixed-point number $x$.
-ms.openlocfilehash: 3ca050d6ce9daaa10e14c2f12dd571398cf436b0
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: db7425f1a8a9b5ddfdc6b123dad003298e3670e6
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96223385"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843247"
 ---
 # <a name="computereciprocalfxp-operation"></a>ComputeReciprocalFxP 操作
 

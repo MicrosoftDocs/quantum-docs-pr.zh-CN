@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.EvaluateEvenPolynomialFxP
 title: EvaluateEvenPolynomialFxP 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: EvaluateEvenPolynomialFxP
 qsharp.summary: Evaluates an even polynomial in a fixed-point representation.
-ms.openlocfilehash: 21c700ccb2b87b906fc4d8b65eddf962353948c1
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: c3129cb796a344f7ad38a585183db285d48892bf
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96223249"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843233"
 ---
 # <a name="evaluateevenpolynomialfxp-operation"></a>EvaluateEvenPolynomialFxP 操作
 

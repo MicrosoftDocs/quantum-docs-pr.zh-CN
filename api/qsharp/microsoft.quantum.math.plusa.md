@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Math.PlusA
 title: PlusA 函数
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: function
 qsharp.namespace: Microsoft.Quantum.Math
 qsharp.name: PlusA
 qsharp.summary: Returns the sum (concatenation) of two inputs.
-ms.openlocfilehash: fe19c5d2e075624516376a5d5fa49014acb295ec
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 14e9bfdbe4b70b4730e5bfc64a0ee81ab3cecaaf
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96194825"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842705"
 ---
 # <a name="plusa-function"></a>PlusA 函数
 

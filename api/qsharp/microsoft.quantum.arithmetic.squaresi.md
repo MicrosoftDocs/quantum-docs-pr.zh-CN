@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.SquareSI
 title: SquareSI 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: SquareSI
 qsharp.summary: Square signed integer `xs` and store the result in `result`, which must be zero initially.
-ms.openlocfilehash: 7fe4d27b974a06b019a2b15710fbc51b598027b4
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 161b45766c6f4d500d25def24aa509ee7fdc8628
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96221821"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842925"
 ---
 # <a name="squaresi-operation"></a>SquareSI 操作
 

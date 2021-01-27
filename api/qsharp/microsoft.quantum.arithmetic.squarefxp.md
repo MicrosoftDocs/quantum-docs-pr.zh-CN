@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.SquareFxP
 title: SquareFxP 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: SquareFxP
 qsharp.summary: Squares a fixed-point number.
-ms.openlocfilehash: 8d08cb51e3a7ae892b23be0adbb7cdf3ee0f4de5
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: ba0364d7c649c2a949fc52f89409a5280f71a82f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96221872"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98842917"
 ---
 # <a name="squarefxp-operation"></a>SquareFxP 操作
 

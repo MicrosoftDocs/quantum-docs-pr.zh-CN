@@ -1,18 +1,18 @@
 ---
 uid: Microsoft.Quantum.Arithmetic.MultiplyI
 title: MultiplyI 操作
-ms.date: 11/25/2020 12:00:00 AM
+ms.date: 1/23/2021 12:00:00 AM
 ms.topic: article
 qsharp.kind: operation
 qsharp.namespace: Microsoft.Quantum.Arithmetic
 qsharp.name: MultiplyI
 qsharp.summary: Multiply integer `xs` by integer `ys` and store the result in `result`, which must be zero initially.
-ms.openlocfilehash: 96922f0147788b37cc9bace5154288a722d4ba95
-ms.sourcegitcommit: a87c1aa8e7453360025e47ba614f25b02ea84ec3
+ms.openlocfilehash: 8615d0d5100c26f86264ceaecadb7783563216a6
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96222501"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98843030"
 ---
 # <a name="multiplyi-operation"></a>MultiplyI 操作
 
