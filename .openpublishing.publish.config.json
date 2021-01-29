@@ -4,14 +4,14 @@
       "docset_name": "quamtum-api",
       "build_source_folder": "api",
       "build_output_subfolder": "quamtum-api",
-      "locale": "zh-CN",
+      "locale": "zh-cn",
       "monikers": [],
       "moniker_ranges": [],
       "xref_query_tags": [
         "/quantum"
       ],
       "enable_xrefmap_share": true,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "QSharpNamespace": "Content",
@@ -37,7 +37,7 @@
       "docset_name": "quantum-docs",
       "build_source_folder": "articles",
       "build_output_subfolder": "quantum-docs",
-      "locale": "zh-CN",
+      "locale": "zh-cn",
       "monikers": [],
       "moniker_ranges": [],
       "xref_query_tags": [
@@ -45,11 +45,12 @@
         "/dotnet"
       ],
       "enable_xrefmap_share": true,
-      "open_to_public_contributors": false,
+      "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",
         "ManagedReference": "Content",
-        "Odata": "Content"
+        "Odata": "Content",
+        "ZonePivotGroups": "Toc"
       },
       "build_entry_point": "docs",
       "template_folder": "_themes"
@@ -58,17 +59,28 @@
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [
-    "live-sxs",
-    "master-sxs"
+    "live",
+    "master-sxs",
+    "master"
   ],
+  "git_repository_url_open_to_public_contributors": "https://github.com/MicrosoftDocs/quantum-docs-pr.zh-cn",
+  "git_repository_branch_open_to_public_contributors": "live",
   "continue_with_document_error": true,
   "skip_source_output_uploading": false,
   "need_preview_pull_request": true,
-  "contribution_branch_mappings": {},
+  "contribution_branch_mappings": {
+    "live-sxs": "live"
+  },
   "dependent_repositories": [
     {
       "path_to_root": "_themes",
-      "url": "https://github.com/Microsoft/templates.docs.msft.zh-CN",
+      "url": "https://github.com/Microsoft/templates.docs.msft.zh-cn",
+      "branch": "master",
+      "branch_mapping": {}
+    },
+    {
+      "path_to_root": "articles/quantum",
+      "url": "https://github.com/microsoft/quantum",
       "branch": "master",
       "branch_mapping": {}
     },
@@ -80,6 +92,12 @@
         "live": "live",
         "master": "master"
       }
+    },
+    {
+      "path_to_root": "_themes",
+      "url": "https://github.com/Microsoft/templates.docs.msft.zh-CN",
+      "branch": "main",
+      "branch_mapping": {}
     }
   ],
   "branch_target_mapping": {},
