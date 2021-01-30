@@ -9,12 +9,12 @@ uid: microsoft.quantum.relnotes
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: 8aa6072e9b495db6e127cac350d5bfaec1b090ce
-ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
+ms.openlocfilehash: dd37581dff2a512a29eb7729ecbf81412917b8f8
+ms.sourcegitcommit: e915baf3b84ee3a562004c5b31d157d21533d450
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98856667"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99101452"
 ---
 # <a name="microsoft-quantum-development-kit-release-notes"></a>Microsoft 量子开发工具包发行说明
 
@@ -23,6 +23,15 @@ ms.locfileid: "98856667"
 有关安装说明，请参阅[安装指南](xref:microsoft.quantum.install)。
 
 有关更新说明，请参阅[更新指南](xref:microsoft.quantum.update)。
+
+## <a name="version-0152101126807"></a>版本0.15.2101.126807
+
+*发布日期：2021年1月29日*
+
+- 为 Q# 面向 IonQ 和 Honeywell 提供程序的可执行文件将项目模板添加到编译器
+- 更新我的 Q# 内核语法突出显示，以包括 Q# 版本[0.15.2101125897](#version-0152101125897)中引入的语法更改。
+- Bug 修复若要支持将数组作为输入参数传递到 Q# 通过提交到 Azure 量程的程序 `%azure.execute` ，请参阅问题 [#401](https://github.com/microsoft/iqsharp/issues/401)
+- 修复了在 Docker 映像中使用时遇到的 "权限被拒绝" 错误 `az` `iqsharp-base` ，请参阅问题 [#404](https://github.com/microsoft/iqsharp/issues/404)
 
 ## <a name="version-0152101125897"></a>版本0.15.2101125897
 
@@ -34,6 +43,7 @@ ms.locfileid: "98856667"
 - 提高了最佳深度的宽度估算， [请参阅详细信息](https://github.com/MicrosoftDocs/quantum-docs-pr/pull/1159)。
 - 使用 `ApplyUnitary` ([QuantumLibraries # 391](https://github.com/microsoft/QuantumLibraries/pull/391)，External 投稿 by Dmytro Fedoriaka 将作为显式矩阵提供的单一操作) 
 - https://github.com/microsoft/iqsharp/issues/387通过缓解内核启动的性能影响来修复 Q# 。
+
 ## <a name="version-0142011120240"></a>版本0.14.2011120240
 
 *发布日期：2020年11月25日*
