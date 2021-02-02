@@ -4,26 +4,25 @@ description: 了解如何使用 Jupyter Notebooks 创建 Q# 应用程序。
 author: bradben
 ms.author: v-benbra
 ms.date: 8/20/2020
-ms.topic: article
-ms.custom: how-to
+ms.topic: quickstart
 uid: microsoft.quantum.install.jupyter
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: b34d89ab33a4644c1dd4342949685f9bf84babd8
-ms.sourcegitcommit: d98190988ff03146d9ca2b0d325870cd717d729a
+ms.openlocfilehash: 4cef9b7252a2199b2ea995c4cf819a3582d9ca8f
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2020
-ms.locfileid: "91771387"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844280"
 ---
-# <a name="develop-with-no-locq-jupyter-notebooks"></a>使用 Jupyter Notebooks 开发 Q#
+# <a name="develop-with-q-jupyter-notebooks"></a>使用 Jupyter Notebooks 开发 Q#
 
 在 Q# Jupyter 笔记本上安装用于开发 Q# 操作的 QDK。
 
 Jupyter Notebook 支持在包含说明、注释和其他内容的情况下就地运行代码。 此环境非常适合编写包含嵌入式说明的 Q# 代码或量子计算交互式教程。 下面是开始创建自己的 Q# 笔记本时需要执行的操作。
 
-## <a name="install-the-ino-locq-jupyter-kernel"></a>安装 IQ# Jupyter 内核
+## <a name="install-the-iq-jupyter-kernel"></a>安装 IQ# Jupyter 内核
 
 IQ#（发音为 i-q-sharp）是主要由 Jupyter 和 Python 使用的 .NET Core SDK 的扩展，它提供用于编译和模拟 Q# 操作的核心功能。
 
@@ -69,11 +68,11 @@ IQ#（发音为 i-q-sharp）是主要由 Jupyter 和 Python 使用的 .NET Core 
 > 其中 `/path/to/dotnet-iqsharp` 应替换为文件系统中 `dotnet-iqsharp` 工具的绝对路径。
 > 通常，该工具在用户配置文件文件夹中的 `.dotnet/tools` 下。
     
-***
+**_
 
 就这么简单！ 你现在有了 Jupyter 的 IQ# 内核，它为用 Q# Jupyter Notebooks 来编译和运行 Q# 操作提供了核心功能。
 
-## <a name="create-your-first-no-locq-notebook"></a>创建你的第一个 Q# 笔记本
+## <a name="create-your-first-q-notebook"></a>创建你的第一个 Q# 笔记本
 
 你现可通过编写和运行简单的 Q# 操作来验证 Q# Jupyter Notebook 安装项。
 

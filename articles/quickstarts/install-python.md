@@ -4,20 +4,19 @@ description: 了解如何使用 Python 创建 Q# 应用程序。
 author: bradben
 ms.author: v-benbra
 ms.date: 8/20/2020
-ms.topic: article
-ms.custom: how-to
+ms.topic: quickstart
 uid: microsoft.quantum.install.python
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: f6a2a7d1888cfe458fa3989a27d71fcdeed0f01f
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 1ec40b6f1b7a8d9144860e3b8cfd554eb51bae81
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834153"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98844276"
 ---
-# <a name="develop-with-no-locq-and-python"></a>使用 Q# 和 Python 进行开发
+# <a name="develop-with-q-and-python"></a>使用 Q# 和 Python 进行开发
 
 安装用于开发 Python 主机程序的 QDK 以调用 Q# 操作。
 
@@ -72,7 +71,7 @@ ms.locfileid: "90834153"
     > 其中 `/path/to/dotnet-iqsharp` 应替换为文件系统中 `dotnet-iqsharp` 工具的绝对路径。
     > 通常，该工具在用户配置文件文件夹中的 `.dotnet/tools` 下。
     
-***
+**_
 
 就这么简单！ 你现在有了 `qsharp` Python 包和 Jupyter 的 IQ# 内核，它为用 Python 来编译和运行 Q# 操作提供了核心功能，你还可通过它使用 Q# Jupyter Notebooks。
 
@@ -87,7 +86,7 @@ ms.locfileid: "90834153"
 
 如果想要使用其他编辑器，则上述说明都已全部设置好。
 
-## <a name="write-your-first-no-locq-program"></a>编写你的第一个 Q# 程序
+## <a name="write-your-first-q-program"></a>编写你的第一个 Q# 程序
 
 你现可通过编写和运行简单的 Q# 程序来验证 `qsharp` Python 包安装项。
 
@@ -113,7 +112,7 @@ ms.locfileid: "90834153"
 1. 应会看到所调用的操作的结果。 在本例中，由于操作会生成一个随机结果，因此你将看到屏幕上输出 `0` 或 `1`。 如果重复运行该程序，则每个结果显示的时间大约减半。
 
 > [!NOTE]
-> * Python 代码只是普通的 Python 程序。 你可使用任何 Python 环境（包括基于 Python 的 Jupyter Notebooks）来编写 Python 程序和调用 Q# 操作。 Python 程序可从 Python 代码本身所在的文件夹中的任意 .qs 文件导入 Q# 操作。
+> Python 代码只是普通的 Python 程序。 你可使用任何 Python 环境（包括基于 Python 的 Jupyter Notebooks）来编写 Python 程序和调用 Q# 操作。 Python 程序可从 Python 代码本身所在的文件夹中的任意 .qs 文件导入 Q# 操作。
 
 ## <a name="next-steps"></a>后续步骤
 

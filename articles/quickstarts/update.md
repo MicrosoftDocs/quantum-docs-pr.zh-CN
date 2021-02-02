@@ -4,18 +4,17 @@ description: 介绍如何将 Q# 项目和 Microsoft Quantum 开发工具包更�
 author: bradben
 ms.author: v-benbra
 ms.date: 5/30/2020
-ms.topic: article
-ms.custom: how-to
+ms.topic: quickstart
 uid: microsoft.quantum.update
 no-loc:
 - Q#
 - $$v
-ms.openlocfilehash: d9678a61f5fe4ca466b6a84e9e4b68321c5baee3
-ms.sourcegitcommit: 9b0d1ffc8752334bd6145457a826505cc31fa27a
+ms.openlocfilehash: 1b5def3226bd073c878f8573aaddd757d733ec48
+ms.sourcegitcommit: 71605ea9cc630e84e7ef29027e1f0ea06299747e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/21/2020
-ms.locfileid: "90834912"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98858064"
 ---
 # <a name="update-the-microsoft-quantum-development-kit-qdk"></a>更新 Microsoft Quantum 开发工具包 (QDK)
 
@@ -27,7 +26,7 @@ ms.locfileid: "90834912"
 1. 更新现有 Q# 文件和项目，使代码与任何更新的语法保持一致。
 2. 为所选的开发环境更新 QDK。
 
-## <a name="updating-no-locq-projects"></a>更新 Q# 项目 
+## <a name="updating-q-projects"></a>更新 Q# 项目 
 
 无论你是使用 C# 还是 Python 来托管 Q# 操作，都请按照以下说明更新你的 Q# 项目。
 
@@ -39,7 +38,7 @@ ms.locfileid: "90834912"
 
     验证输出为 `3.1.100` 或更高版本。 如果未安装，请安装[最新版](https://dotnet.microsoft.com/download)并再次检查。 然后，根据自己的设置（Visual Studio、Visual Studio Code 或直接使用命令提示符）按照以下说明操作。
 
-### <a name="update-no-locq-projects-in-visual-studio"></a>更新 Visual Studio 中的 Q# 项目
+### <a name="update-q-projects-in-visual-studio"></a>更新 Visual Studio 中的 Q# 项目
  
 1. 更新到最新版 Visual Studio 2019，请参阅[此处](https://docs.microsoft.com/visualstudio/install/update-visual-studio)了解相关说明。
 2. 在 Visual Studio 中打开解决方案。
@@ -80,13 +79,13 @@ ms.locfileid: "90834912"
 现可直接跳到[更新 Visual Studio QDK 扩展](#update-visual-studio-qdk-extension)。
 
 
-### <a name="update-no-locq-projects-in-visual-studio-code"></a>更新 Visual Studio Code 中的 Q# 项目
+### <a name="update-q-projects-in-visual-studio-code"></a>更新 Visual Studio Code 中的 Q# 项目
 
 1. 在 Visual Studio Code 中，打开包含要更新的项目的文件夹。
 2. 选择“终端” -> “新终端” 。
 3. 按照使用命令提示符进行更新的相关说明操作（如下所示）。
 
-### <a name="update-no-locq-projects-using-the-command-prompt"></a>使用命令提示符更新 Q# 项目
+### <a name="update-q-projects-using-the-command-prompt"></a>使用命令提示符更新 Q# 项目
 
 1. 导航到包含主项目文件的文件夹。
 
@@ -234,7 +233,7 @@ Q# 项目已更新，现请按照下面的说明更新 QDK。
 
 你现可使用已更新的 `qsharp` Python 包来运行现有量子程序。
 
-### <a name="update-the-ino-locq-jupyter-kernel"></a>更新 IQ# Jupyter 内核
+### <a name="update-the-iq-jupyter-kernel"></a>更新 IQ# Jupyter 内核
 
 更新过程取决于你最初安装使用的是 conda 还是 .NET CLI 和 pip。
 
@@ -282,7 +281,7 @@ Q# 项目已更新，现请按照下面的说明更新 QDK。
     %workspace reload
     ```
 
-***
+**_
 
 你现可使用已更新的 IQ# 内核来运行现有 Q# Jupyter Notebooks。
 
