@@ -32,28 +32,6 @@
           "ConceptualTOCUrl": "/quantum/toc.json"
         }
       ]
-    },
-    {
-      "docset_name": "quantum-docs",
-      "build_source_folder": "articles",
-      "build_output_subfolder": "quantum-docs",
-      "locale": "zh-cn",
-      "monikers": [],
-      "moniker_ranges": [],
-      "xref_query_tags": [
-        "/qsharp",
-        "/dotnet"
-      ],
-      "enable_xrefmap_share": true,
-      "open_to_public_contributors": true,
-      "type_mapping": {
-        "Conceptual": "Content",
-        "ManagedReference": "Content",
-        "Odata": "Content",
-        "ZonePivotGroups": "Toc"
-      },
-      "build_entry_point": "docs",
-      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
